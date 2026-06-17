@@ -1,0 +1,17 @@
+{
+  "address": "0x3835c81a64ed1f17043b9b3f6534208027ede5e8",
+  "chain_id": 8453,
+  "contract_name": "RFL",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:08.434Z"
+}

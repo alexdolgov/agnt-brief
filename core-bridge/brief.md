@@ -5,10 +5,10 @@
 - Project: CORE Bridge (`core-bridge`)
 - Website: [https://bridge.coredao.org/bridge](https://bridge.coredao.org/bridge)
 - Lifecycle: active (Tier 0, 78% below peak)
-- Generated: 2026-06-14T07:06:02.309Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:00:52.427Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
-- Contract surface: 6 unique implementations (9 raw deployments)
+- Contract surface: 3 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $3,821,049.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ CORE Bridge is a cross-chain bridge for the Core DAO ecosystem, with observed br
 
 The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message verification and delivery. Both contracts are deployed by the same deployer, indicating a shared infrastructure for the bridge functionality.
 
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 6
-- Raw deployments: 9
+- Unverified implementations: 2
+- Unique implementations: 3
+- Raw deployments: 6
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -48,9 +56,9 @@ The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message v
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| OriginalTokenBridge | operational_periphery | arbitrum | 4 deployments: ethereum `0x52e75d...55b233`; polygon `0x52e75d...55b233`; base `0x84fb20...507879`; arbitrum [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| OriginalTokenBridge | operational_periphery | arbitrum | n/a | 4 deployments: ethereum `0x52e75d...55b233`; polygon `0x52e75d...55b233`; base `0x84fb20...507879`; arbitrum [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -64,17 +72,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | `0x29d096...04031a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x1eb362...57832e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x29d096...04031a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x2c5790...87ec29` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x48c28a...d9ad17` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | optimism | n/a | `0x29d096...04031a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x29d096...04031a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

@@ -1,0 +1,18 @@
+{
+  "address": "0xf8ec48e0022f4b59f120579dba3b472580c51066",
+  "chain_id": 56,
+  "contract_name": "FullRangeConvertorV2",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:18.294Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1ddc7038ed32c1137ef79e892c0b7d69485f61ed",
+  "chain_id": 8453,
+  "contract_name": "Rakeback",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SYMM-Core-Business-Source-License-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:07.566Z"
+}

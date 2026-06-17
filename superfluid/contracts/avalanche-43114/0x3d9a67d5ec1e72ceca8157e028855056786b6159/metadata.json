@@ -1,0 +1,17 @@
+{
+  "address": "0x3d9a67d5ec1e72ceca8157e028855056786b6159",
+  "chain_id": 43114,
+  "contract_name": "TOGA",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "00000000000000000000000060377c7016e4cdb03c87ef474896c11cb560752c0000000000000000000000000000000000000000000000000000000000093a80000000000000000000000000a4dd3f3b68647206e996e1c756f9c36096e65528",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:36.081Z"
+}

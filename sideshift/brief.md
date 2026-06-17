@@ -5,10 +5,10 @@
 - Project: SideShift (`sideshift`)
 - Website: [https://sideshift.ai](https://sideshift.ai)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T20:36:16.497Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9988
+- Generated: 2026-06-17T07:00:56.191Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 2 unique implementations (3 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $12,702,890.56
 - On-chain TVL (included contracts): $12,328,298.64
 - TVL by chain: Ethereum $12,328,298.64
@@ -21,6 +21,14 @@ SideShift is a direct-to-wallet crypto swap/exchange service that lets users swa
 
 The SideShiftVault contract handles the core bridging logic, while the XAI token likely serves as a governance or fee token within the ecosystem. Both contracts are deployed by the same deployer, indicating a unified infrastructure.
 
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/2 (0.0%)
@@ -28,7 +36,7 @@ The SideShiftVault contract handles the core bridging logic, while the XAI token
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
-- Raw deployments: 3
+- Raw deployments: 2
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $12,328,298.64
@@ -48,10 +56,10 @@ The SideShiftVault contract handles the core bridging logic, while the XAI token
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SideShiftVault | core_logic | ethereum | 2 deployments: ethereum [`0x380870...66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/); ethereum `0x74f06d...2561b9` | ⚠️ Unaudited |
-| XAI | unknown | ethereum | [`0x35e78b...dbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SideShiftVault | core_logic | ethereum | n/a | [`0x380870...66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/) | ⚠️ Unaudited |
+| XAI | unknown | ethereum | n/a | [`0x35e78b...dbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

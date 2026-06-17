@@ -1,0 +1,18 @@
+{
+  "address": "0xc08e10b7eb0736368a0b92ee7a140ec8c63a2dd1",
+  "chain_id": 56,
+  "contract_name": "MUSO",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, Unlicensed",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:45.533Z"
+}

@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (avalanche [`0x58a916ad66584811c939aa844025036e5078e811`](../0x58a916ad66584811c939aa844025036e5078e811/); linea `0x58a916ad66584811c939aa844025036e5078e811`) |
+| Deployments | 1 (avalanche [`0x58a916ad66584811c939aa844025036e5078e811`](../0x58a916ad66584811c939aa844025036e5078e811/)) |
 | Proxy | Yes → `0x29fcb4...00c762` |
 | Source | Etherscan |
 | TVL | n/a |

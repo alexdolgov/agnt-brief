@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lumenswap",
-  "generated_at": "2026-06-11T00:45:39.806Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-17T07:00:43.056Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,9 +19,9 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6325576.192400713,
-    "tvl_usd": 6325576.192400713,
-    "tvl_source": "defillama",
+    "dl_tvl_usd": null,
+    "tvl_usd": null,
+    "tvl_source": null,
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://lumenswap.io",
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Lumenswap is a decentralized exchange on the Stellar network. It enables users to swap Stellar-based assets and access liquidity through Stellar-specific exchange infrastructure. Unsupported claims about EVM multi-chain deployments, yield farming, vaults, MasterChef-style rewards, controllers, and cross-chain farming should be removed unless verified by Lumenswap-specific Stellar documentation.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

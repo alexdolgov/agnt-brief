@@ -1,15 +1,13 @@
 # trueo — Contract Index
 
-32 unique implementations on base · 59 deployments · 0 audited · 32 unaudited · 0 unverified
+28 unique implementations on base · 39 deployments · 0 audited · 28 unaudited · 0 unverified
 
-## adapter (4)
+## adapter (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [SwapRouter02](./base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | base | [`0x262666...41e481`](./base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | ⚠️ Unaudited | Verified |
-| [TruthMarketAdapter (2 deployments)](./base-8453/0x2bf3a47714c0275fcdf44d8052661f28cb553c0c/) | base | 2 deployments: base [`0x2bf3a4...553c0c`](./base-8453/0x2bf3a47714c0275fcdf44d8052661f28cb553c0c/); base `0x6e08d2...8125e1` | ⚠️ Unaudited | Verified |
 | [UniversalRouter](./base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | base | [`0x6ff569...299b43`](./base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | ⚠️ Unaudited | Verified |
-| [UniversalRouterAdapter (2 deployments)](./base-8453/0x0a1afc2121b4441127a02def72928f61f564034a/) | base | 2 deployments: base [`0x0a1afc...64034a`](./base-8453/0x0a1afc2121b4441127a02def72928f61f564034a/); base `0x647474...14c19e` | ⚠️ Unaudited | Verified |
 
 ## core_logic (6)
 
@@ -30,16 +28,16 @@
 | [OrderManager](./base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | base | [`0x8e5e63...5e3da7`](./base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | ⚠️ Unaudited | Verified |
 | [PositionManager](./base-8453/0x7c5f5a4bbd8fd63184577525326123b519429bdc/) | base | [`0x7c5f5a...429bdc`](./base-8453/0x7c5f5a4bbd8fd63184577525326123b519429bdc/) | ⚠️ Unaudited | Verified |
 | [TimelockController (2 deployments)](./base-8453/0x8963712bc91ae8c64d96293ed9a1157344f6fd04/) | base | 2 deployments: base [`0x896371...f6fd04`](./base-8453/0x8963712bc91ae8c64d96293ed9a1157344f6fd04/); base `0xc0a7e6...c4959a` | ⚠️ Unaudited | Verified |
-| [TruthMarketLPManager (5 deployments)](./base-8453/0x05ef8b05398a8479739658e47428076d456398fb/) | base | 5 deployments: base [`0x05ef8b...6398fb`](./base-8453/0x05ef8b05398a8479739658e47428076d456398fb/); base `0x68ff20...06d4b9`; base `0x909a43...5b42cb`; base `0xa0be61...c79f89`; base `0xea477d...b9858a` | ⚠️ Unaudited | Verified |
-| [TruthMarketManager (4 deployments)](./base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/) | base | 4 deployments: base [`0x21d652...bbe7b5`](./base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/); base `0x61a98b...c695d7`; base `0x83eaed...eeae2d`; base `0x8ddf40...d6dbe6` | ⚠️ Unaudited | Verified |
-| [TruthMarketV2LPManager (4 deployments)](./base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/) | base | 4 deployments: base [`0x1a6008...833443`](./base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/); base `0x351539...b6968d`; base `0x42db46...2bb04c`; base `0x5278ad...1e451b` | ⚠️ Unaudited | Verified |
+| [TruthMarketLPManager (3 deployments)](./base-8453/0x05ef8b05398a8479739658e47428076d456398fb/) | base | 3 deployments: base [`0x05ef8b...6398fb`](./base-8453/0x05ef8b05398a8479739658e47428076d456398fb/); base `0x68ff20...06d4b9`; base `0xa0be61...c79f89` | ⚠️ Unaudited | Verified |
+| [TruthMarketManager (2 deployments)](./base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/) | base | 2 deployments: base [`0x21d652...bbe7b5`](./base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/); base `0x83eaed...eeae2d` | ⚠️ Unaudited | Verified |
+| [TruthMarketV2LPManager (2 deployments)](./base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/) | base | 2 deployments: base [`0x1a6008...833443`](./base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/); base `0x42db46...2bb04c` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [OracleBonds (4 deployments)](./base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/) | base | 4 deployments: base [`0x118c2d...13f63e`](./base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/); base `0x388993...91a9c0`; base `0x8175b0...275baa`; base `0xff21c2...0d7b9a` | ⚠️ Unaudited | Verified |
-| [OracleCouncil (4 deployments)](./base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/) | base | 4 deployments: base [`0x87bc36...7992ab`](./base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/); base `0xb8e809...81c450`; base `0xca7af0...f198be`; base `0xf1df87...87481a` | ⚠️ Unaudited | Verified |
+| [OracleBonds (2 deployments)](./base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/) | base | 2 deployments: base [`0x118c2d...13f63e`](./base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/); base `0x388993...91a9c0` | ⚠️ Unaudited | Verified |
+| [OracleCouncil (2 deployments)](./base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/) | base | 2 deployments: base [`0x87bc36...7992ab`](./base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/); base `0xb8e809...81c450` | ⚠️ Unaudited | Verified |
 
 ## registry (1)
 
@@ -47,18 +45,16 @@
 |---|---|---|---|---|
 | [UniswapV3Factory](./base-8453/0x33128a8fc17869897dce68ed026d694621f6fdfd/) | base | [`0x33128a...f6fdfd`](./base-8453/0x33128a8fc17869897dce68ed026d694621f6fdfd/) | ⚠️ Unaudited | Verified |
 
-## token (2)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [TokenConverter (4 deployments)](./base-8453/0x74793d6111448df69e5a617f55a9d71a729364f5/) | base | 4 deployments: base [`0x74793d...9364f5`](./base-8453/0x74793d6111448df69e5a617f55a9d71a729364f5/); base `0x807825...81b792`; base `0xb416f7...63fbaf`; base `0xe4a50a...44f864` | ⚠️ Unaudited | Verified |
 | [TrueToken](./base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | base | [`0x21cfcf...6eb7ab`](./base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | ⚠️ Unaudited | Verified |
 
-## unknown (10)
+## unknown (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Escalation (2 deployments)](./base-8453/0x0dc1f7cb16389716710826ce74544d71fc0644a0/) | base | 2 deployments: base [`0x0dc1f7...0644a0`](./base-8453/0x0dc1f7cb16389716710826ce74544d71fc0644a0/); base `0x7397ef...940b27` | ⚠️ Unaudited | Verified |
 | [FeeCollector](./base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | base | [`0x39339e...755d9d`](./base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | ⚠️ Unaudited | Verified |
 | [Permit2](./base-8453/0x000000000022d473030f116ddee9f6b43ac78ba3/) | base | [`0x000000...c78ba3`](./base-8453/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited | Verified |
 | [StakingRewards (2 deployments)](./base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/) | base | 2 deployments: base [`0x1a4062...c035ed`](./base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/); base `0x688f5b...8af014` | ⚠️ Unaudited | Verified |

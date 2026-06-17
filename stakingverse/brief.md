@@ -5,33 +5,42 @@
 - Project: Stakingverse (`stakingverse`)
 - Website: [https://stakingverse.io](https://stakingverse.io)
 - Lifecycle: active (Tier 0, 62.1% below peak)
-- Generated: 2026-06-14T04:13:41.569Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
-- Chains: ethereum, lukso
-- Contract surface: 3 unique implementations (4 raw deployments)
+- Generated: 2026-06-17T07:00:47.107Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: lukso
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,278,435.93
-- On-chain TVL (included contracts): $3,542,371.79
-- TVL by chain: Ethereum $3,542,371.79
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Stakingverse is a liquid staking protocol operating on LUKSO and Ethereum, supporting liquid staking for LYX/LUKSO and ETH/Ethereum through a vault-based architecture. Receipt-token relationships should be stated only where independently verified; do not claim that SLYX represents staked ETH without verification.
 
-### Architecture
+## Contract Surface Quality
 
-The ERC1967Proxy delegates to the EthVault implementation, which likely mints and burns SLYX tokens in response to user deposits and withdrawals. The StakingverseVault may interact with the same SLYX token or share infrastructure with the main vault.
+- Indexed contracts: 4; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 3
-- Raw deployments: 4
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 18
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $3,542,371.79
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
 - Staleness: 2 fresh, 4 aging, 7 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,11 +55,9 @@ The ERC1967Proxy delegates to the EthVault implementation, which likely mints an
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EthVault | core_logic | ethereum | 2 deployments: ethereum [`0x8a93a8...c89f56`](./contracts/ethereum-1/0x8a93a876912c9f03f88bc9114847cf5b63c89f56/); ethereum `0x927a83...23e2cc` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -68,10 +75,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | lukso | `0x8a3982...bc8f7d` | ❓ Unverified |
-| UnnamedContract | unknown | lukso | `0x9f49a9...0f6f04` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | lukso | n/a | `0x8a3982...bc8f7d` | ❓ Unverified |
+| UnnamedContract | unknown | lukso | n/a | `0x9f49a9...0f6f04` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 2 |
 
 ## Scope Matching Notes

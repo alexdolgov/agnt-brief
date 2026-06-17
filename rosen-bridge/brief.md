@@ -5,21 +5,30 @@
 - Project: Rosen Bridge (`rosen-bridge`)
 - Website: [https://rosen.tech](https://rosen.tech)
 - Lifecycle: unknown
-- Generated: 2026-05-24T14:40:18.220Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:00.831Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,112,426.33
+- DeFi Llama TVL: $1,417,701.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Rosen Bridge is a cross-chain bridge protocol that enables the transfer of assets between different blockchain networks. It uses a network of watchers and guards to secure and validate cross-chain transactions.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No product families or contracts were identified in the provided data, so no relationships can be described.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum `0x5cdd7cd69cedb9b56b8ca47f844a0de16d8b5761`; bsc [`0x3c2b521be49aae9208f4f9766a63216afaced4d7`](../0x3c2b521be49aae9208f4f9766a63216afaced4d7/)) |
+| Deployments | 1 (bsc [`0x3c2b521be49aae9208f4f9766a63216afaced4d7`](../0x3c2b521be49aae9208f4f9766a63216afaced4d7/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | $0.00 |

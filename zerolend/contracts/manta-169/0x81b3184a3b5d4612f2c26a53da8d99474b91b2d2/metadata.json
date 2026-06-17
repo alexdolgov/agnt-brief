@@ -1,0 +1,17 @@
+{
+  "address": "0x81b3184a3b5d4612f2c26a53da8d99474b91b2d2",
+  "chain_id": 169,
+  "contract_name": "UiIncentiveDataProviderV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "berlin",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:40.631Z"
+}

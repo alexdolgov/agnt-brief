@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "firelight",
-  "generated_at": "2026-06-10T23:20:07.467Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-17T07:00:58.249Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 80322115.96757,
-    "tvl_usd": 80322115.96757,
+    "dl_tvl_usd": 67468072.29893,
+    "tvl_usd": 67468072.29893,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Firelight is a DeFi protection and cover marketplace on Flare. The protocol uses staked XRP and other digital assets to back coverage, issues liquid staking tokens on Flare, allows builders or protocols to buy cover, and lets stakers earn fees and rewards for providing protection capacity.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

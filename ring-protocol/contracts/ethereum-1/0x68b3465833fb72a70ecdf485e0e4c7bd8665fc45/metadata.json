@@ -1,0 +1,18 @@
+{
+  "address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "chain_id": 1,
+  "contract_name": "SwapRouter02",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 239,
+  "constructor_arguments": "",
+  "implementation_address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "fetched_at": "2026-06-17T06:51:12.938Z"
+}

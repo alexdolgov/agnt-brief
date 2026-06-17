@@ -1,0 +1,1328 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "controller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "block",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContractInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newValue",
+        "type": "address"
+      }
+    ],
+    "name": "ToolAddressUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "PRECISION",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "auctionBids",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "posId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.AuctionBid[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "borrowerPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "controller",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "created",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createdBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_controller",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_calculator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pawnshop",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "__controller",
+        "type": "address"
+      }
+    ],
+    "name": "initializeControllable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isController",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isGovernance",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "posId",
+        "type": "uint256"
+      }
+    ],
+    "name": "lenderAuctionBid",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "posId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.AuctionBid",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "lenderPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "openPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pawnshop",
+    "outputs": [
+      {
+        "internalType": "contract ITetuPawnShop",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "posId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "positionAuctionBids",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "posId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.AuctionBid[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "positions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "acquired",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "positionsByAcquired",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      }
+    ],
+    "name": "positionsByCollateral",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "open",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "posDurationBlocks",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "collateralToken",
+                "type": "address"
+              },
+              {
+                "internalType": "enum ITetuPawnShop.AssetType",
+                "name": "collateralType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionCollateral",
+            "name": "collateral",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "acquiredToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "acquiredAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionAcquired",
+            "name": "acquired",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posStartTs",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "posEndTs",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ITetuPawnShop.PositionExecution",
+            "name": "execution",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ITetuPawnShop.Position[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceCalculator",
+    "outputs": [
+      {
+        "internalType": "contract IPriceCalculator",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newValue",
+        "type": "address"
+      }
+    ],
+    "name": "setPawnShop",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newValue",
+        "type": "address"
+      }
+    ],
+    "name": "setPriceCalculator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

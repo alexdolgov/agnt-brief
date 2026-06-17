@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 4 (polygon `0xe5417af564e4bfda1c483642db72007871397896`; base `0x26196cde4a335590d605927bd6a37bfb46001b80`; base `0xfb1aaba03c31ea98a3eec7591808acb1947ee7ac`; arbitrum [`0x18c11fd286c5ec11c3b683caa813b77f5163a122`](../0x18c11fd286c5ec11c3b683caa813b77f5163a122/)) |
+| Deployments | 3 (polygon `0xe5417af564e4bfda1c483642db72007871397896`; base `0xfb1aaba03c31ea98a3eec7591808acb1947ee7ac`; arbitrum [`0x18c11fd286c5ec11c3b683caa813b77f5163a122`](../0x18c11fd286c5ec11c3b683caa813b77f5163a122/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | $10,951,361.44 |

@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (arbitrum [`0x4efc8a4ceeeeefbb81bfac55a001100b5af39e07`](../0x4efc8a4ceeeeefbb81bfac55a001100b5af39e07/); arbitrum `0xe7a5ce186a9b6bcfb71f5250dfe0305e5b8204d1`) |
+| Deployments | 1 (arbitrum [`0x4efc8a4ceeeeefbb81bfac55a001100b5af39e07`](../0x4efc8a4ceeeeefbb81bfac55a001100b5af39e07/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

@@ -1,12 +1,6 @@
 # stakingverse — Contract Index
 
-3 unique implementations across 2 chains · 4 deployments · 0 audited · 1 unaudited · 2 unverified
-
-## core_logic (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [EthVault (2 deployments)](./ethereum-1/0x8a93a876912c9f03f88bc9114847cf5b63c89f56/) | ethereum | 2 deployments: ethereum [`0x8a93a8...c89f56`](./ethereum-1/0x8a93a876912c9f03f88bc9114847cf5b63c89f56/); ethereum `0x927a83...23e2cc` | ⚠️ Unaudited | Verified |
+2 unique implementations on lukso · 2 deployments · 0 audited · 0 unaudited · 2 unverified
 
 ## unknown (2)
 

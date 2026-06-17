@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "initiadex",
-  "generated_at": "2026-06-11T00:05:24.098Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-17T07:00:49.613Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3028354.01193,
-    "tvl_usd": 3028354.01193,
+    "dl_tvl_usd": 2160984.63271,
+    "tvl_usd": 2160984.63271,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "InitiaDEX is a decentralized exchange on Initia L1 featuring Balancer-style weighted pools and StableSwap pools for token swaps and liquidity provision.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

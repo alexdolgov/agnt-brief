@@ -1,6 +1,6 @@
 # bouncebit-prime — Contract Index
 
-9 unique implementations across 2 chains · 14 deployments · 0 audited · 2 unaudited · 7 unverified
+5 unique implementations across 2 chains · 5 deployments · 0 audited · 2 unaudited · 3 unverified
 
 ## governance (1)
 
@@ -12,16 +12,12 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [TransparentUpgradeableProxy (6 deployments)](./ethereum-1/0x539f1d37983e31c70ce29c9384ac67f367b32484/) | ethereum | 6 deployments: ethereum [`0x539f1d...b32484`](./ethereum-1/0x539f1d37983e31c70ce29c9384ac67f367b32484/); ethereum `0x6f776d...95c580`; ethereum `0x95917f...3bb90c`; ethereum `0xa6b612...1630ba`; ethereum `0xcb7ad2...24726f`; bsc `0x6f776d...95c580` | ⚠️ Unaudited | Verified |
+| [TransparentUpgradeableProxy](./bsc-56/0x6f776d791612a22a70e206602cff96185695c580/) | bsc | [`0x6f776d...95c580`](./bsc-56/0x6f776d791612a22a70e206602cff96185695c580/) | ⚠️ Unaudited | Verified |
 
-## unknown (7)
+## unknown (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | UnnamedContract | ethereum | `0x235519...b9a19f` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x26fbb1...4fad1b` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0x33072b...97b9e1` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0x4e9041...6596f4` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0x7cd93d...c26712` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x98d1fd...d749d3` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0xf17c30...934208` | ❓ Unverified | Unverified |

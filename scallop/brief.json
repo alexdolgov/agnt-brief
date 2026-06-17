@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scallop",
-  "generated_at": "2026-06-11T02:30:36.258Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-17T07:00:57.398Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 38174851,
-    "tvl_usd": 38174851,
+    "dl_tvl_usd": 28349420,
+    "tvl_usd": 28349420,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Scallop is a DeFi money market on Sui focused on lending and borrowing. It enables users to supply assets to pooled markets and borrow supported assets against collateral.",
     "relationship_narrative": null,
-    "product_family_count": 2
+    "product_family_count": 2,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

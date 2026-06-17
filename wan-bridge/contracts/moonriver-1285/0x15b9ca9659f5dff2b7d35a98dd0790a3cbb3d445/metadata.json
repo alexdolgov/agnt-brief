@@ -1,0 +1,17 @@
+{
+  "address": "0x15b9ca9659f5dff2b7d35a98dd0790a3cbb3d445",
+  "chain_id": 1285,
+  "contract_name": "MappingTokenV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:08.092Z"
+}

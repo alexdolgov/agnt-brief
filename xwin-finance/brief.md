@@ -5,10 +5,10 @@
 - Project: xWin Finance (`xwin-finance`)
 - Website: [https://xwin.finance](https://xwin.finance)
 - Lifecycle: active (Tier 0, 64.9% below peak)
-- Generated: 2026-06-12T05:32:01.835Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:01:00.735Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, bsc, polygon
-- Contract surface: 19 unique implementations (43 raw deployments)
+- Contract surface: 28 unique implementations (43 raw deployments)
 - DeFi Llama TVL: $4,941,184.60
 - On-chain TVL (included contracts): $1,844,863.40
 - TVL by chain: Bsc $1,844,863.40
@@ -21,13 +21,21 @@ xWIN Finance is a multi-chain DeFi wealth-management platform offering robo-advi
 
 The project currently consists of a single token contract, with no additional infrastructure or product families identified. All functionality is encapsulated within the XWINToken contract.
 
+## Contract Surface Quality
+
+- Indexed contracts: 43; live-surface contracts included: 43 (0 live, 43 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/22 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/18 (0.0%)
-- Verified + Unaudited implementations: 18
+- Verified implementations audited: 0/26 (0.0%)
+- Verified + Unaudited implementations: 26
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 19
+- Unverified implementations: 2
+- Unique implementations: 28
 - Raw deployments: 43
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
@@ -46,28 +54,36 @@ The project currently consists of a single token contract, with no additional in
 
 - None
 
-### ⚠️ Verified + Unaudited (18)
+### ⚠️ Verified + Unaudited (26)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| XWINToken | token | bsc | [`0xd88ca0...bb5d28`](./contracts/bsc-56/0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28/) | ⚠️ Unaudited |
-| FundV2Factory | registry | arbitrum | 3 deployments: bsc `0x9ab3c5...bc60a0`; polygon `0x9ebc52...628a68`; arbitrum [`0x6cc1ca...1dfc03`](./contracts/arbitrum-42161/0x6cc1cad8b330731e6ff469eaebf19961ea1dfc03/) | ⚠️ Unaudited |
-| PancakePair | unknown | bsc | [`0xd4a3dc...0e5fb4`](./contracts/bsc-56/0xd4a3dcf47887636b19ed1b54aab722bd620e5fb4/) | ⚠️ Unaudited |
-| UniSwapV2TWAPOracle | unknown | bsc | [`0x7a8aa0...1299ac`](./contracts/bsc-56/0x7a8aa080eada0b670fb719d7e53f87898a1299ac/) | ⚠️ Unaudited |
-| xWinAllocations | unknown | polygon | 3 deployments: polygon [`0x75dab5...252a5a`](./contracts/polygon-137/0x75dab5000af15e7a9dd9c2365ae69e394c252a5a/); polygon `0xb4319e...440f69`; polygon `0xc1c53b...d422ac` | ⚠️ Unaudited |
-| xWinDCA | unknown | bsc | [`0x482ae9...b8602a`](./contracts/bsc-56/0x482ae949e4a70953fca090717b68359b73b8602a/) | ⚠️ Unaudited |
-| xWinDefi | unknown | bsc | [`0x1bf7fe...fe8092`](./contracts/bsc-56/0x1bf7fe7568211ecff68b6bc7ccad31ecd8fe8092/) | ⚠️ Unaudited |
-| xWinEmitEvent | unknown | polygon | 3 deployments: bsc `0xc4c017...703cc6`; polygon [`0x3f2bef...25c062`](./contracts/polygon-137/0x3f2bef656821fac3a969d6a1f831e5f3ce25c062/); arbitrum `0x87b340...7b8e5a` | ⚠️ Unaudited |
-| xWinERC20Alpha | token | bsc | [`0x0a6527...5c5b24`](./contracts/bsc-56/0x0a652784df3f8abde85daeeee77d1ea97f5c5b24/) | ⚠️ Unaudited |
-| xWinFarm | unknown | bsc | 3 deployments: bsc [`0x4fdca7...d0bc18`](./contracts/bsc-56/0x4fdca7b4c19c70ad1f275934160400f9ded0bc18/); bsc `0x8f52e0...e56088`; bsc `0x9236a0...269b22` | ⚠️ Unaudited |
-| xWinFund | unknown | bsc | 2 deployments: bsc [`0x548c42...3c7488`](./contracts/bsc-56/0x548c42fe3d1a44496491d09db2457d671f3c7488/); bsc `0x963039...4b9dc5` | ⚠️ Unaudited |
-| xWinLockedStake | unknown | bsc | [`0xa4ae0d...25a9fc`](./contracts/bsc-56/0xa4ae0dcc89af9855946c0b2ad4a10ff27125a9fc/) | ⚠️ Unaudited |
-| xWinMasterChef | unknown | bsc | [`0xd09774...900a60`](./contracts/bsc-56/0xd09774e3d5dc02fa969896c53d3cbb5bc8900a60/) | ⚠️ Unaudited |
-| xWinPriceMaster | unknown | polygon | 3 deployments: bsc `0xb12337...5e48e2`; polygon [`0x4259ed...e3feed`](./contracts/polygon-137/0x4259ed91681159e455629a35d81c0b0020e3feed/); arbitrum `0x8a3c24...83c667` | ⚠️ Unaudited |
-| xWinSingleAsset | unknown | bsc | [`0x8b7fca...77bdb2`](./contracts/bsc-56/0x8b7fcacb99124f009c8470fda6f5fcf60277bdb2/) | ⚠️ Unaudited |
-| xWinSingleAssetAave | unknown | polygon | 3 deployments: polygon [`0x1db49d...34af2c`](./contracts/polygon-137/0x1db49d9871a61101275ea72d9b9498948434af2c/); arbitrum `0x6ae475...aebda6`; arbitrum `0x8a0fa3...90ff62` | ⚠️ Unaudited |
-| xWinSwapV3 | unknown | polygon | 2 deployments: polygon [`0x549388...800707`](./contracts/polygon-137/0x5493881d5fc68be3519cb25f2a4717d192800707/); arbitrum `0x800b49...70406a` | ⚠️ Unaudited |
-| xWinSwapV3Pancake | unknown | bsc | [`0x9ce3fc...93d8d1`](./contracts/bsc-56/0x9ce3fcffaeb4b7fbdf39e9313f845d977393d8d1/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| XWINToken | token | bsc | n/a | [`0xd88ca0...bb5d28`](./contracts/bsc-56/0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28/) | ⚠️ Unaudited |
+| FundV2Factory | registry | bsc | unit-32537 | [`0x9ab3c5...bc60a0`](./contracts/bsc-56/0x9ab3c504de0fda0087d378123bdc318aadbc60a0/) | ⚠️ Unaudited |
+| FundV2Factory | registry | polygon | unit-32548 | [`0x9ebc52...628a68`](./contracts/polygon-137/0x9ebc52d849f961b43289d6da55663f3b9f628a68/) | ⚠️ Unaudited |
+| FundV2Factory | registry | arbitrum | unit-32551 | [`0x6cc1ca...1dfc03`](./contracts/arbitrum-42161/0x6cc1cad8b330731e6ff469eaebf19961ea1dfc03/) | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | n/a | [`0xd4a3dc...0e5fb4`](./contracts/bsc-56/0xd4a3dcf47887636b19ed1b54aab722bd620e5fb4/) | ⚠️ Unaudited |
+| UniSwapV2TWAPOracle | unknown | bsc | n/a | [`0x7a8aa0...1299ac`](./contracts/bsc-56/0x7a8aa080eada0b670fb719d7e53f87898a1299ac/) | ⚠️ Unaudited |
+| xWinAllocations | unknown | polygon | unit-32547 (3 proxies) | 3 deployments: polygon [`0x75dab5...252a5a`](./contracts/polygon-137/0x75dab5000af15e7a9dd9c2365ae69e394c252a5a/); polygon `0xb4319e...440f69`; polygon `0xc1c53b...d422ac` | ⚠️ Unaudited |
+| xWinDCA | unknown | bsc | unit-32535 | [`0x482ae9...b8602a`](./contracts/bsc-56/0x482ae949e4a70953fca090717b68359b73b8602a/) | ⚠️ Unaudited |
+| xWinDefi | unknown | bsc | n/a | [`0x1bf7fe...fe8092`](./contracts/bsc-56/0x1bf7fe7568211ecff68b6bc7ccad31ecd8fe8092/) | ⚠️ Unaudited |
+| xWinEmitEvent | unknown | bsc | unit-32541 | [`0xc4c017...703cc6`](./contracts/bsc-56/0xc4c0171a31b6ced6daa4342343425f2eea703cc6/) | ⚠️ Unaudited |
+| xWinEmitEvent | unknown | polygon | unit-32544 | [`0x3f2bef...25c062`](./contracts/polygon-137/0x3f2bef656821fac3a969d6a1f831e5f3ce25c062/) | ⚠️ Unaudited |
+| xWinEmitEvent | unknown | arbitrum | unit-32553 | [`0x87b340...7b8e5a`](./contracts/arbitrum-42161/0x87b34058a5d38bf6cabd0a1ac497183a1f7b8e5a/) | ⚠️ Unaudited |
+| xWinERC20Alpha | token | bsc | unit-32534 | [`0x0a6527...5c5b24`](./contracts/bsc-56/0x0a652784df3f8abde85daeeee77d1ea97f5c5b24/) | ⚠️ Unaudited |
+| xWinFarm | unknown | bsc | n/a | 3 deployments: bsc [`0x4fdca7...d0bc18`](./contracts/bsc-56/0x4fdca7b4c19c70ad1f275934160400f9ded0bc18/); bsc `0x8f52e0...e56088`; bsc `0x9236a0...269b22` | ⚠️ Unaudited |
+| xWinFund | unknown | bsc | n/a | 2 deployments: bsc [`0x548c42...3c7488`](./contracts/bsc-56/0x548c42fe3d1a44496491d09db2457d671f3c7488/); bsc `0x963039...4b9dc5` | ⚠️ Unaudited |
+| xWinLockedStake | unknown | bsc | unit-32539 | [`0xa4ae0d...25a9fc`](./contracts/bsc-56/0xa4ae0dcc89af9855946c0b2ad4a10ff27125a9fc/) | ⚠️ Unaudited |
+| xWinMasterChef | unknown | bsc | unit-32542 | [`0xd09774...900a60`](./contracts/bsc-56/0xd09774e3d5dc02fa969896c53d3cbb5bc8900a60/) | ⚠️ Unaudited |
+| xWinPriceMaster | unknown | bsc | unit-32540 | [`0xb12337...5e48e2`](./contracts/bsc-56/0xb1233713fea0984fff84c7456d2cced43e5e48e2/) | ⚠️ Unaudited |
+| xWinPriceMaster | unknown | polygon | unit-32545 | [`0x4259ed...e3feed`](./contracts/polygon-137/0x4259ed91681159e455629a35d81c0b0020e3feed/) | ⚠️ Unaudited |
+| xWinPriceMaster | unknown | arbitrum | unit-32554 | [`0x8a3c24...83c667`](./contracts/arbitrum-42161/0x8a3c24716447992c85a86231606759931f83c667/) | ⚠️ Unaudited |
+| xWinSingleAsset | unknown | bsc | unit-32536 | [`0x8b7fca...77bdb2`](./contracts/bsc-56/0x8b7fcacb99124f009c8470fda6f5fcf60277bdb2/) | ⚠️ Unaudited |
+| xWinSingleAssetAave | unknown | polygon | unit-32543 | [`0x1db49d...34af2c`](./contracts/polygon-137/0x1db49d9871a61101275ea72d9b9498948434af2c/) | ⚠️ Unaudited |
+| xWinSingleAssetAave | unknown | arbitrum | unit-32550 (2 proxies) | 2 deployments: arbitrum [`0x6ae475...aebda6`](./contracts/arbitrum-42161/0x6ae47584953ee351db0c089ece8e69429daebda6/); arbitrum `0x8a0fa3...90ff62` | ⚠️ Unaudited |
+| xWinSwapV3 | unknown | polygon | unit-32546 | [`0x549388...800707`](./contracts/polygon-137/0x5493881d5fc68be3519cb25f2a4717d192800707/) | ⚠️ Unaudited |
+| xWinSwapV3 | unknown | arbitrum | unit-32552 | [`0x800b49...70406a`](./contracts/arbitrum-42161/0x800b4980bcd3218761f43ac2098fc82a9670406a/) | ⚠️ Unaudited |
+| xWinSwapV3Pancake | unknown | bsc | unit-32538 | [`0x9ce3fc...93d8d1`](./contracts/bsc-56/0x9ce3fcffaeb4b7fbdf39e9313f845d977393d8d1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,13 +97,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| FundV2 | unknown | arbitrum | 11 deployments: bsc `0x0a0817...f495e5`; bsc `0x284b4a...5d0b48`; bsc `0x4d4f94...c64e4a`; bsc `0x61d572...837f37`; bsc `0xaaff5e...22aabe`; bsc `0xe949d2...b63f02`; bsc `0xfa4d4b...70635c`; arbitrum `0x03d6fe...9a6988`; arbitrum `0x5b0d58...ac47d2`; arbitrum `0xc9f555...3a0221`; arbitrum `0xed83fd...eeeed7` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| FundV2 | unknown | bsc | unit-32533 (7 proxies) | 7 deployments: bsc `0x0a0817...f495e5`; bsc `0x284b4a...5d0b48`; bsc `0x4d4f94...c64e4a`; bsc `0x61d572...837f37`; bsc `0xaaff5e...22aabe`; bsc `0xe949d2...b63f02`; bsc `0xfa4d4b...70635c` | ❓ Unverified |
+| FundV2 | unknown | arbitrum | unit-32549 (4 proxies) | 4 deployments: arbitrum `0x03d6fe...9a6988`; arbitrum `0x5b0d58...ac47d2`; arbitrum `0xc9f555...3a0221`; arbitrum `0xed83fd...eeeed7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,7 +125,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 18 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 

@@ -1,6 +1,6 @@
 # twyne — Contract Index
 
-59 unique implementations on ethereum · 102 deployments · 2 audited · 50 unaudited · 7 unverified
+60 unique implementations on ethereum · 88 deployments · 2 audited · 51 unaudited · 7 unverified
 
 ## adapter (4)
 
@@ -11,19 +11,18 @@
 | [EulerRouterFactory](./ethereum-1/0x928b7d2ccea72268a051a2807f7fd9585861cad9/) | ethereum | [`0x928b7d...61cad9`](./ethereum-1/0x928b7d2ccea72268a051a2807f7fd9585861cad9/) | ⚠️ Unaudited | Verified |
 | [Swapper](./ethereum-1/0x544410023cbccb2b141f13a7cee9d594e6685e65/) | ethereum | [`0x544410...685e65`](./ethereum-1/0x544410023cbccb2b141f13a7cee9d594e6685e65/) | ⚠️ Unaudited | Verified |
 
-## core_logic (9)
+## core_logic (8)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AaveV3CollateralVault](./ethereum-1/0x07acb5854090216585c28f5a230f1bb57e73d085/) | ethereum | [`0x07acb5...73d085`](./ethereum-1/0x07acb5854090216585c28f5a230f1bb57e73d085/) | ⚠️ Unaudited | Verified |
 | [Borrowing](./ethereum-1/0xf52bf182c5c5b053c827ccecb4016f985a0eb317/) | ethereum | [`0xf52bf1...0eb317`](./ethereum-1/0xf52bf182c5c5b053c827ccecb4016f985a0eb317/) | ⚠️ Unaudited | Verified |
 | [EthereumVaultConnector](./ethereum-1/0xef39d6493884c4c84d38a4bff879ce16cede702a/) | ethereum | [`0xef39d6...de702a`](./ethereum-1/0xef39d6493884c4c84d38a4bff879ce16cede702a/) | ⚠️ Unaudited | Verified |
-| [EulerCollateralVault (20 deployments)](./ethereum-1/0x04f48fc36185aea0d2f2567dbe02ee626d675ae2/) | ethereum | 20 deployments: ethereum [`0x04f48f...675ae2`](./ethereum-1/0x04f48fc36185aea0d2f2567dbe02ee626d675ae2/); ethereum `0x0df4a4...775a97`; ethereum `0x1d22ed...a8f6c4`; ethereum `0x2a2027...23a531`; ethereum `0x2b53e9...aa3502`; ethereum `0x2d776c...da4f5b`; ethereum `0x2f6b56...4ae796`; ethereum `0x310226...b9d60b`; ethereum `0x3bee82...253c7c`; ethereum `0x4fce64...242098`; ethereum `0x597c15...a3f754`; ethereum `0x718981...ca8557`; ethereum `0x8d2279...c34a5b`; ethereum `0x9a0374...f8e0c2`; ethereum `0xba4fed...300194`; ethereum `0xcf050c...3f048b`; ethereum `0xdcc611...25c3f3`; ethereum `0xea5f4c...1a4e38`; ethereum `0xf46910...5ef5b0`; ethereum `0xf6e0ae...973c51` | ✅ Audited | Verified |
+| [EulerCollateralVault (12 deployments)](./ethereum-1/0x04f48fc36185aea0d2f2567dbe02ee626d675ae2/) | ethereum | 12 deployments: ethereum [`0x04f48f...675ae2`](./ethereum-1/0x04f48fc36185aea0d2f2567dbe02ee626d675ae2/); ethereum `0x0df4a4...775a97`; ethereum `0x1d22ed...a8f6c4`; ethereum `0x2a2027...23a531`; ethereum `0x2f6b56...4ae796`; ethereum `0x3bee82...253c7c`; ethereum `0x4fce64...242098`; ethereum `0x597c15...a3f754`; ethereum `0x9a0374...f8e0c2`; ethereum `0xba4fed...300194`; ethereum `0xea5f4c...1a4e38`; ethereum `0xf46910...5ef5b0` | ✅ Audited | Verified |
 | [EulerEarnVaultLens](./ethereum-1/0x91bb674fcc7ca44ecf97d8330738f8c806318017/) | ethereum | [`0x91bb67...318017`](./ethereum-1/0x91bb674fcc7ca44ecf97d8330738f8c806318017/) | ⚠️ Unaudited | Verified |
-| [EVault (2 deployments)](./ethereum-1/0x2ff808ea1716d77cae91d85feeeef74baac85106/) | ethereum | 2 deployments: ethereum [`0x2ff808...c85106`](./ethereum-1/0x2ff808ea1716d77cae91d85feeeef74baac85106/); ethereum `0xb5eb1d...ff647a` | ⚠️ Unaudited | Verified |
 | [Vault](./ethereum-1/0x002c3eb2cb56fb252a5d1a88f27df27f0941bf00/) | ethereum | [`0x002c3e...41bf00`](./ethereum-1/0x002c3eb2cb56fb252a5d1a88f27df27f0941bf00/) | ⚠️ Unaudited | Verified |
 | [VaultLens (2 deployments)](./ethereum-1/0x1ebbf0a23a72806878eb1318fc45e7cdbced680e/) | ethereum | 2 deployments: ethereum [`0x1ebbf0...ed680e`](./ethereum-1/0x1ebbf0a23a72806878eb1318fc45e7cdbced680e/); ethereum `0x3f42b4...0eaa4d` | ⚠️ Unaudited | Verified |
-| [VaultManager (4 deployments)](./ethereum-1/0x0acd3a3c8ab6a5f7b5a594c88dfa28999da858ac/) | ethereum | 4 deployments: ethereum [`0x0acd3a...a858ac`](./ethereum-1/0x0acd3a3c8ab6a5f7b5a594c88dfa28999da858ac/); ethereum `0x318ee4...ac8935`; ethereum `0x7521da...032e9c`; ethereum `0xa25ba3...7c0a06` | ✅ Audited | Verified |
+| [VaultManager (2 deployments)](./ethereum-1/0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c/) | ethereum | 2 deployments: ethereum [`0x7521da...032e9c`](./ethereum-1/0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c/); ethereum `0xa25ba3...7c0a06` | ✅ Audited | Verified |
 
 ## governance (4)
 
@@ -58,7 +57,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CapRiskStewardFactory](./ethereum-1/0xd9d5bb195b1fb27dad5a36fdbb5abbae9e88456e/) | ethereum | [`0xd9d5bb...88456e`](./ethereum-1/0xd9d5bb195b1fb27dad5a36fdbb5abbae9e88456e/) | ⚠️ Unaudited | Verified |
-| [CollateralVaultFactory (4 deployments)](./ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/) | ethereum | 4 deployments: ethereum [`0x42ccba...7a4c05`](./ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/); ethereum `0x434cc8...831b66`; ethereum `0x6076d1...bfc04d`; ethereum `0xa1517c...d3a332` | ⚠️ Unaudited | Verified |
+| [CollateralVaultFactory (2 deployments)](./ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/) | ethereum | 2 deployments: ethereum [`0x42ccba...7a4c05`](./ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/); ethereum `0x434cc8...831b66` | ⚠️ Unaudited | Verified |
 | [EdgeFactory](./ethereum-1/0x39eaf0b106993fc241c4774921a0033e20c4ec96/) | ethereum | [`0x39eaf0...c4ec96`](./ethereum-1/0x39eaf0b106993fc241c4774921a0033e20c4ec96/) | ⚠️ Unaudited | Verified |
 | [EdgeFactoryPerspective](./ethereum-1/0xa9d1d1d13738a3c9d31ea32e118354221f167c89/) | ethereum | [`0xa9d1d1...167c89`](./ethereum-1/0xa9d1d1d13738a3c9d31ea32e118354221f167c89/) | ⚠️ Unaudited | Verified |
 | [EulerEarnFactory](./ethereum-1/0x9d96fa373368fc235a32434863dd4d34eda724a1/) | ethereum | [`0x9d96fa...a724a1`](./ethereum-1/0x9d96fa373368fc235a32434863dd4d34eda724a1/) | ⚠️ Unaudited | Verified |
@@ -72,11 +71,13 @@
 | [SequenceRegistry](./ethereum-1/0x84101fdec409e6446263c4738c3ae11166eaa392/) | ethereum | [`0x84101f...eaa392`](./ethereum-1/0x84101fdec409e6446263c4738c3ae11166eaa392/) | ⚠️ Unaudited | Verified |
 | [SnapshotRegistry (3 deployments)](./ethereum-1/0x0209798a20d1ee69bbac4c16f095e4e03ba86f0f/) | ethereum | 3 deployments: ethereum [`0x020979...a86f0f`](./ethereum-1/0x0209798a20d1ee69bbac4c16f095e4e03ba86f0f/); ethereum `0x0d69ea...41bf49`; ethereum `0x51cadf...54de9a` | ⚠️ Unaudited | Verified |
 
-## token (2)
+## token (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AaveV3ATokenWrapper (4 deployments)](./ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/) | ethereum | 4 deployments: ethereum [`0x106ac7...fe8def`](./ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/); ethereum `0x10e67b...ac5cb1`; ethereum `0x223d40...8139ef`; ethereum `0xfaba8f...3e1881` | ⚠️ Unaudited | Verified |
+| [AaveV3ATokenWrapper](./ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/) | ethereum | [`0x106ac7...fe8def`](./ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/) | ⚠️ Unaudited | Verified |
+| AaveV3ATokenWrapper | ethereum | `0x10e67b...ac5cb1` | ⚠️ Unaudited | Verified |
+| AaveV3ATokenWrapper (2 deployments) | ethereum | 2 deployments: ethereum `0x223d40...8139ef`; ethereum `0xfaba8f...3e1881` | ⚠️ Unaudited | Verified |
 | [Token](./ethereum-1/0xcdb9980eea4f7b4569862c49d9f7025157cd6b62/) | ethereum | [`0xcdb998...cd6b62`](./ethereum-1/0xcdb9980eea4f7b4569862c49d9f7025157cd6b62/) | ⚠️ Unaudited | Verified |
 
 ## unknown (17)

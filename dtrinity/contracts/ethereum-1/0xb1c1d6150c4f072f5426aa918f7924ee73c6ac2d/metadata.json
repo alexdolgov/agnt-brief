@@ -1,0 +1,17 @@
+{
+  "address": "0xb1c1d6150c4f072f5426aa918f7924ee73c6ac2d",
+  "chain_id": 1,
+  "contract_name": "WrappedTokenGatewayV3",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc20000000000000000000000000f5e3d9aee7ab5fda909af1ef147d98a7f4b30220000000000000000000000006598dad18bda89a0e58a1f427c8cebc0de90f153",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:48.673Z"
+}

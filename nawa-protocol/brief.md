@@ -5,11 +5,11 @@
 - Project: Nawa Protocol (`nawa-protocol`)
 - Website: [https://nawa.finance/](https://nawa.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:20:39.745Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:57.611Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,090,201.93
+- DeFi Llama TVL: $4,174,933.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Nawa Protocol offers Shariah-compliant DeFi vault products, including stable/auto-compounding vaults and liquid-staking vaults, with activity and TVL tracked primarily on ZIGChain and a smaller balance on CORE. Its current positioning also includes Bitcoin-related assets on Core Chain rather than a generic strategy-allocation yield aggregator description.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

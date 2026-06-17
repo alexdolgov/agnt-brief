@@ -1,0 +1,17 @@
+{
+  "address": "0xb34fff5efab92be9ea32fa56c6de9a1c04a62b4d",
+  "chain_id": 8453,
+  "contract_name": "ClawUSDC",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913000000000000000000000000f1c55b6e063ee90a33ffe62debe618962bae021e0000000000000000000000008fc068436e798997c29b767ef559a8ba51e253fb",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:13.385Z"
+}

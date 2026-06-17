@@ -1,0 +1,17 @@
+{
+  "address": "0x58d5c2068a61b8ad234f7280f0f94533418dbd3b",
+  "chain_id": 999,
+  "contract_name": "LstHypeDepositVault",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:01.016Z"
+}

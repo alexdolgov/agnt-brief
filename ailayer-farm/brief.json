@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ailayer-farm",
-  "generated_at": "2026-06-12T04:49:39.501Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
+  "generated_at": "2026-06-17T07:00:50.531Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ailayer-farm",
@@ -60,7 +60,18 @@
   "topography": {
     "project_purpose": "AILayer farm is the DefiLlama Farm listing for AILayer staking, associated with AILayer's broader AI-modular Bitcoin Layer2 ecosystem. The recorded BSC AILayerToken address represents only a token contract and should not be treated as the full protocol architecture or complete contract surface; additional staking, bridge, node/PoS, AI protocol controller, prover/miner/subnet, and reward contracts require discovery.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -76,6 +87,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x66e3daa0c86e0ad56302d36af0e7c1ba24442244",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AILayerToken",
       "role": "token",
       "origin_kind": "needs_review",
@@ -90,6 +103,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x66e3daa0c86e0ad56302d36af0e7c1ba24442244",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 211858.7133419305,

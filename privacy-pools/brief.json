@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "privacy-pools",
-  "generated_at": "2026-06-12T05:28:55.793Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
+  "generated_at": "2026-06-17T07:00:52.564Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "privacy-pools",
@@ -23,18 +23,18 @@
   },
   "summary": {
     "total_contracts": 5,
-    "total_addresses": 11,
+    "total_addresses": 5,
     "unique_implementations": 5,
-    "total_deployments": 11,
-    "audited_contracts": 1,
-    "unaudited_contracts": 4,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 4,
+    "total_deployments": 5,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 20,
+    "coverage_pct": 0,
     "total_audits": 4,
-    "scoreable_audits": 3,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 8128155.92018,
     "tvl_usd": 54356.63376585897,
     "tvl_source": "on_chain",
@@ -44,9 +44,7 @@
     "asd_usd": 54356.63376585897,
     "website_url": "https://privacypools.com/",
     "chains": [
-      "arbitrum",
-      "ethereum",
-      "optimism"
+      "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -62,7 +60,18 @@
   "topography": {
     "project_purpose": "Privacy Pools is a protocol enabling private transactions on Ethereum, Optimism, and Arbitrum One. It allows users to deposit and withdraw funds while preserving privacy through zero-knowledge proofs.",
     "relationship_narrative": "The protocol consists of a single product family with Entrypoint contracts deployed behind ERC1967Proxy proxies. All contracts share the same deployer and are deployed on multiple chains, indicating a unified infrastructure.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 11,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
+    "singleton_contracts": 6,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 3,
+    "deployment_units": 3,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 9,
+    "unverified_dependencies": 3,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 5,
@@ -78,6 +87,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1a604e9dfa0efdc7ffda378af16cb81243b61633",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "PrivacyPoolComplex",
       "role": "core_logic",
       "origin_kind": "needs_review",
@@ -92,6 +103,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1a604e9dfa0efdc7ffda378af16cb81243b61633",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 54356.6335991486,
@@ -109,6 +122,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "PrivacyPoolSimple",
       "role": "core_logic",
       "origin_kind": "needs_review",
@@ -123,6 +138,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00016671036934764539,
@@ -140,6 +157,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa45aca8604a73d80c551faad6355a5c3a5565ec6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "CommitmentVerifier",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -154,6 +173,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa45aca8604a73d80c551faad6355a5c3a5565ec6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -170,96 +191,44 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x15e355024de1cdc74addea7ebdf98418ba5b1a2c",
+      "address": "0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Entrypoint",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Privacy Pools",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
+      "impl_address": null,
       "impl_name": "Entrypoint",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x15e355024de1cdc74addea7ebdf98418ba5b1a2c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6818809eefce719e480a7526d76bd3e561526b46",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
         }
       ],
-      "audits_covering": [
-        "audit-7630",
-        "audit-7631",
-        "audit-7632"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WithdrawalVerifier",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -274,6 +243,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -324,19 +295,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Constants",
-        "Entrypoint",
-        "PrivacyPool",
-        "PrivacyPoolComplex",
-        "PrivacyPoolSimple",
-        "ProofLib",
-        "State"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -353,19 +316,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Constants",
-        "Entrypoint",
-        "PrivacyPool",
-        "PrivacyPoolComplex",
-        "PrivacyPoolSimple",
-        "ProofLib",
-        "State"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -382,26 +337,15 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Entrypoint",
-        "IEntrypoint"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": "2025-05"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
@@ -413,15 +357,25 @@
     "match_method_counts": {
       "extraction_exact": 9
     },
-    "extraction_confidence_counts": {
-      "high": 3
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 7629,
         "report_name": "circuits_audit_oxorio.md"
+      },
+      {
+        "audit_id": 7630,
+        "report_name": "contracts_audit_auditware.md"
+      },
+      {
+        "audit_id": 7631,
+        "report_name": "contracts_audit_oxorio.md"
+      },
+      {
+        "audit_id": 7632,
+        "report_name": "entrypoint_upgrade_audit_oxorio.md"
       }
     ],
     "inherited_remapped_matches": []

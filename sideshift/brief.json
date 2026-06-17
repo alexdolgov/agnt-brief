@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sideshift",
-  "generated_at": "2026-06-12T20:36:16.497Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
+  "generated_at": "2026-06-17T07:00:56.191Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sideshift",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 2,
-    "total_addresses": 3,
+    "total_addresses": 2,
     "unique_implementations": 2,
-    "total_deployments": 3,
+    "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
@@ -60,7 +60,18 @@
   "topography": {
     "project_purpose": "SideShift is a direct-to-wallet crypto swap/exchange service that lets users swap assets across networks. It is categorized by DefiLlama under Cross Chain Bridge, but vault-based lock-and-release bridge mechanics should not be claimed without verified contract source or documentation. XAI is SideShift's native ERC20 token and can be staked for a share of revenues; it should not be described as a governance or fee-utility token unless supported by current documentation.",
     "relationship_narrative": "The SideShiftVault contract handles the core bridging logic, while the XAI token likely serves as a governance or fee token within the ecosystem. Both contracts are deployed by the same deployer, indicating a unified infrastructure.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 2,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 2,
@@ -76,6 +87,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3808708e761b988d23ae011ed0e12674fb66bd62",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "SideShiftVault",
       "role": "core_logic",
       "origin_kind": "native",
@@ -90,18 +103,11 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3808708e761b988d23ae011ed0e12674fb66bd62",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 12328298.636670807,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x74f06d64da4452e63fb89c90783343517e2561b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -110,12 +116,14 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x35e78b3982e87ecfd5b3f3265b601c046cdbe232",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "XAI",
       "role": "unknown",
       "origin_kind": "native",
@@ -130,6 +138,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x35e78b3982e87ecfd5b3f3265b601c046cdbe232",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,

@@ -1,0 +1,17 @@
+{
+  "address": "0x9710e10a8f6fba8c391606fee18614885684548d",
+  "chain_id": 146,
+  "contract_name": "x33Adapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 333,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "0000000000000000000000003333111a391cc08fa51353e9195526a70b3333330000000000000000000000009f59398d0a397b2eeb8a6123a6c7295cb0b0062d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:58.416Z"
+}

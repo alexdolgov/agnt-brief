@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polynomial-protocol",
-  "generated_at": "2026-06-13T04:09:28.026Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
+  "generated_at": "2026-06-17T07:00:50.423Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polynomial-protocol",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 62.529351359852726
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 6,
-    "unique_implementations": 5,
-    "total_deployments": 6,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 18,
+    "total_audits": 17,
     "scoreable_audits": 0,
     "dl_tvl_usd": 5292392,
     "tvl_usd": 5292392,
@@ -52,18 +52,29 @@
       "fresh": 0,
       "aging": 4,
       "stale": 9,
-      "unknown": 5
+      "unknown": 4
     }
   },
   "topography": {
     "project_purpose": "Polynomial is a decentralized perpetual futures exchange powered by the Polynomial Ethereum Layer 2/rollup. The current protocol focus is perps trading and rollup-based exchange infrastructure; any options, structured vault, or automated options-yield products should be treated as broader or legacy/future platform areas unless separately supported by current product evidence.",
-    "relationship_narrative": "The Source Chain Contracts family provides the foundational cross-chain infrastructure, with the OptimismPortal2 and L1CrossDomainMessenger enabling secure message passing and asset transfers, while the L2OutputOracle ensures state root verification. These contracts are shared across the protocol's product families to facilitate seamless interaction between Ethereum and Optimism.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 6,
+    "live_contracts": 1,
+    "inactive_contracts": 3,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 6,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 26,
+    "unverified_dependencies": 21,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 1,
     "has_non_token_contracts": true,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -73,38 +84,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xd5890bbafafdce942597757385e55174569e8d1a",
-      "name": "L1ERC721Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x74f1ac50eb0be98853805d381c884f5f9abdecf9",
-      "impl_name": "L1ERC721Bridge",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd5890bbafafdce942597757385e55174569e8d1a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xe512d477cc89196af2ce837f6ab8ea30e199f757",
+      "deployment_unit": "unit-31163",
+      "deployment_unit_proxy_count": 1,
       "name": "L2OutputOracle",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -119,108 +101,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe512d477cc89196af2ce837f6ab8ea30e199f757",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x994233366c8e11da5c525ab903c04e7afb2915bd",
-      "name": "OptimismMintableERC20Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x8ee6fb13c6c9a7e401531168e196fbf8b05ceabb",
-      "impl_name": "OptimismMintableERC20Factory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x994233366c8e11da5c525ab903c04e7afb2915bd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x034cbb620d1e0e4c2e29845229beac57083b04ec",
-      "name": "OptimismPortal2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Source Chain Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x7cf803296662e8c72a6c1d6450572209acf7f202",
-      "impl_name": "OptimismPortal2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x034cbb620d1e0e4c2e29845229beac57083b04ec",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7cf803296662e8c72a6c1d6450572209acf7f202",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x58b51fb9feed00dd846f91d265eba3cdd855a413",
-      "name": "SystemConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x2fa28989fc559836e9d66dff3010c7f7f41c65ed",
-      "impl_name": "SystemConfig",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x58b51fb9feed00dd846f91d265eba3cdd855a413",
+          "deployment_unit": "unit-31163",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -592,41 +474,10 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 12576,
-      "audit_key": "audit-12576",
-      "report_name": "Link",
-      "report_url": "https://docs.conduit.xyz/chains/supported-stacks/op-stack",
-      "auditor": "Conduit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd5890bbafafdce942597757385e55174569e8d1a",
-      "name": "L1ERC721Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -636,40 +487,10 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x994233366c8e11da5c525ab903c04e7afb2915bd",
-      "name": "OptimismMintableERC20Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x034cbb620d1e0e4c2e29845229beac57083b04ec",
-      "name": "OptimismPortal2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x58b51fb9feed00dd846f91d265eba3cdd855a413",
-      "name": "SystemConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 5,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -747,10 +568,6 @@
       {
         "audit_id": 2500,
         "report_name": "v_3_1_incremental_audit.pdf"
-      },
-      {
-        "audit_id": 12576,
-        "report_name": "Link"
       }
     ],
     "inherited_remapped_matches": []

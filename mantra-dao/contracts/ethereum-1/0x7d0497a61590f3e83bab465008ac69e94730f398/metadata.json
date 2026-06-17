@@ -1,0 +1,17 @@
+{
+  "address": "0x7d0497a61590f3e83bab465008ac69e94730f398",
+  "chain_id": 1,
+  "contract_name": "HypERC20Collateral",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:04.738Z"
+}

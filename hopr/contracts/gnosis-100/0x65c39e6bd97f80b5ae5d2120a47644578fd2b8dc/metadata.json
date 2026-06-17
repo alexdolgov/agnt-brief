@@ -1,0 +1,18 @@
+{
+  "address": "0x65c39e6bd97f80b5ae5d2120a47644578fd2b8dc",
+  "chain_id": 100,
+  "contract_name": "HoprStakeSeason7",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:48.855Z"
+}

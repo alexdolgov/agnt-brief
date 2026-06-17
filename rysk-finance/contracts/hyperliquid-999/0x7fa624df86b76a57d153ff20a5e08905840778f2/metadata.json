@@ -1,0 +1,17 @@
+{
+  "address": "0x7fa624df86b76a57d153ff20a5e08905840778f2",
+  "chain_id": 999,
+  "contract_name": "OptionRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:23.996Z"
+}

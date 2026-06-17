@@ -1,0 +1,17 @@
+{
+  "address": "0x0d75108820d13ca90303ae4f9c7c4fffb102cfed",
+  "chain_id": 42161,
+  "contract_name": "VariableDebtToken",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:31.785Z"
+}

@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 13 (avalanche [`0x0253d249a5e16269230fa81a58c104f5aafee4f1`](../0x0253d249a5e16269230fa81a58c104f5aafee4f1/); avalanche `0x0811251d17eb692e644a3850d5503544d3e2ebbe`; avalanche `0x088703700f4fa35bf9eabc8cdbcead3678432779`; avalanche `0x272cd330263b85b6c1693c78ed1ad2a972ea4bfb`; avalanche `0x29cd8852ff040cfe74fb20277a121ed1293afb41`; avalanche `0x3c3945a9537ea1536a28bac135eed6cfb1509051`; avalanche `0x639c4ba572ed98180b2ccc306b25f2325bfb2c89`; avalanche `0x65b8ba2672ac8b8ac0f90c6c7cc3a368ed352d29`; avalanche `0x6c6fc88d8c06c7e29225dd00d422280e20a6eeb0`; avalanche `0x88451ac528cdf5ca4a853407db494455ff0c91e6`; avalanche `0xa9bf9027ecb4a71e6c274c83afdb4e1a488660f0`; avalanche `0xaa589d1740671c8f0e6ee89a0ac91fe9c45c92ae`; avalanche `0xc2a1044f8f67e65fed15644a76725b2637fc9eba`) |
+| Deployments | 9 (avalanche [`0x0253d249a5e16269230fa81a58c104f5aafee4f1`](../0x0253d249a5e16269230fa81a58c104f5aafee4f1/); avalanche `0x0811251d17eb692e644a3850d5503544d3e2ebbe`; avalanche `0x272cd330263b85b6c1693c78ed1ad2a972ea4bfb`; avalanche `0x639c4ba572ed98180b2ccc306b25f2325bfb2c89`; avalanche `0x6c6fc88d8c06c7e29225dd00d422280e20a6eeb0`; avalanche `0x88451ac528cdf5ca4a853407db494455ff0c91e6`; avalanche `0xa9bf9027ecb4a71e6c274c83afdb4e1a488660f0`; avalanche `0xaa589d1740671c8f0e6ee89a0ac91fe9c45c92ae`; avalanche `0xc2a1044f8f67e65fed15644a76725b2637fc9eba`) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scream",
-  "generated_at": "2026-06-14T11:05:05.093Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
+  "generated_at": "2026-06-17T07:00:49.801Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "scream",
@@ -68,7 +68,18 @@
   "topography": {
     "project_purpose": "Scream is a Fantom-based decentralized lending and borrowing protocol. Its complete contract architecture is not established by the current brief; the listed single contract is insufficient to represent the protocol's lending surface, which likely includes controller, market token, oracle, interest-rate, rewards/distribution, and dripper-related components that must be mapped before coverage can be assessed.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -84,6 +95,8 @@
       "chain_id": 250,
       "chain_name": "fantom",
       "address": "0xe0654c8e6fd4d733349ac7e09f6f23da256bf475",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -98,6 +111,8 @@
           "chain_id": 250,
           "chain_name": "fantom",
           "address": "0xe0654c8e6fd4d733349ac7e09f6f23da256bf475",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,

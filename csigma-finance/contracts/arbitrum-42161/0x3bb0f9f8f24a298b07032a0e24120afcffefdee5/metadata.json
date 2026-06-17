@@ -1,0 +1,17 @@
+{
+  "address": "0x3bb0f9f8f24a298b07032a0e24120afcffefdee5",
+  "chain_id": 42161,
+  "contract_name": "VaultFacetExtension",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:27.134Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x973670ce19594f857a7cd85ee834c7a74a941684",
+  "chain_id": 146,
+  "contract_name": "Reliquary",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "0000000000000000000000002d0e0814e62d80056181f5cd932274405966e4f00000000000000000000000003a3b8a7a95b5e76c79aa85d25bde4ee5a445a130",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:55.183Z"
+}

@@ -5,21 +5,30 @@
 - Project: Stobox (`stobox`)
 - Website: [https://www.stobox.io](https://www.stobox.io)
 - Lifecycle: unknown
-- Generated: 2026-05-22T20:33:17.319Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:00.835Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $15,122,059.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Stobox is a platform for tokenizing real-world assets (RWA), enabling compliant issuance and management of security tokens on blockchain. It provides infrastructure for asset-backed digital securities.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No contract families or relationships are defined in the provided inventory.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,0 +1,17 @@
+{
+  "address": "0x3bd090cf9e74f39033ca7f8e1b9f9e009e79cfb2",
+  "chain_id": 42161,
+  "contract_name": "GMXRadiantLiquidator",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:33.748Z"
+}

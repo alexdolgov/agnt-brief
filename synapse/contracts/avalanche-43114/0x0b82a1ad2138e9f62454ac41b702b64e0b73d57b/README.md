@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 4 (avalanche [`0x0b82a1ad2138e9f62454ac41b702b64e0b73d57b`](../0x0b82a1ad2138e9f62454ac41b702b64e0b73d57b/); avalanche `0x0cca76a90317e0a23a94d96055d1fb4070d60a6d`; avalanche `0x5643f4b25e36478ee1e90418d5343cb6591bcb9d`; avalanche `0xae64d55a6f09e4263421737397d1fdfa71896a69`) |
+| Deployments | 3 (avalanche [`0x0b82a1ad2138e9f62454ac41b702b64e0b73d57b`](../0x0b82a1ad2138e9f62454ac41b702b64e0b73d57b/); avalanche `0x5643f4b25e36478ee1e90418d5343cb6591bcb9d`; avalanche `0xae64d55a6f09e4263421737397d1fdfa71896a69`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

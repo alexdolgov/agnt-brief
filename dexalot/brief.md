@@ -5,10 +5,10 @@
 - Project: Dexalot (`dexalot`)
 - Website: [https://app.dexalot.com/](https://app.dexalot.com/)
 - Lifecycle: active (Tier 0, 83% below peak)
-- Generated: 2026-06-12T05:27:54.384Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:01:00.753Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: avalanche, bsc
-- Contract surface: 6 unique implementations (7 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $7,900,563.00
 - On-chain TVL (included contracts): $4,212,791.98
 - TVL by chain: Avalanche $4,212,791.98
@@ -21,14 +21,22 @@ Dexalot is an omni-chain, app-specific-chain order-book decentralized exchange. 
 
 The Dexalot Portfolio family centers on the DexalotToken, which is the sole contract identified. It likely integrates with the broader Dexalot DEX and bridge infrastructure, though those contracts are not listed in the inventory.
 
+## Contract Surface Quality
+
+- Indexed contracts: 7; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/6 (16.7%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 1/4 (25.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 7
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -40,25 +48,23 @@ The Dexalot Portfolio family centers on the DexalotToken, which is the sole cont
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 16.7% | 2022-02 |
+| unknown | Tier 2 | 1 | 25.0% | 2022-02 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DexalotToken | token | avalanche | [`0x093783...47bc69`](./contracts/avalanche-43114/0x093783055f9047c2bff99c4e414501f8a147bc69/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| DexalotToken | token | avalanche | n/a | [`0x093783...47bc69`](./contracts/avalanche-43114/0x093783055f9047c2bff99c4e414501f8a147bc69/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Exchange | unknown | avalanche | [`0x807687...3d5885`](./contracts/avalanche-43114/0x80768783d18ad5c9de46d2cde398fb0c193d5885/) | ⚠️ Unaudited |
-| MainnetRFQ | unknown | bsc | [`0x2a371c...ceb2dd`](./contracts/bsc-56/0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd/) | ⚠️ Unaudited |
-| Portfolio | unknown | avalanche | 2 deployments: avalanche [`0x6f8205...6b5c6e`](./contracts/avalanche-43114/0x6f8205cf222dd4c6615991c7f604f366526b5c6e/); avalanche `0xac0f30...0de0d4` | ⚠️ Unaudited |
-| ProxyAdmin | governance | avalanche | [`0x9faa0a...ae16f2`](./contracts/avalanche-43114/0x9faa0a5dcbc0cbc81719ba6f0f1726a8baae16f2/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | avalanche | [`0x12e2b3...694323`](./contracts/avalanche-43114/0x12e2b3236d338651f7ee2222e9756b4222694323/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MainnetRFQ | unknown | bsc | n/a | [`0x2a371c...ceb2dd`](./contracts/bsc-56/0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd/) | ⚠️ Unaudited |
+| Portfolio | unknown | avalanche | unit-32557 | [`0x6f8205...6b5c6e`](./contracts/avalanche-43114/0x6f8205cf222dd4c6615991c7f604f366526b5c6e/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | avalanche | unit-32556 | [`0x12e2b3...694323`](./contracts/avalanche-43114/0x12e2b3236d338651f7ee2222e9756b4222694323/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

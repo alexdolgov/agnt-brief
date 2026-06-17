@@ -1,0 +1,18 @@
+{
+  "address": "0x37cc674582049b579571e2ffd890a4d99355f6ba",
+  "chain_id": 42161,
+  "contract_name": "Socket",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 71,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:04.778Z"
+}

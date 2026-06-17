@@ -1,0 +1,18 @@
+{
+  "address": "0xd2c3da89188329c75caf10cab96fa063fb8e35aa",
+  "chain_id": 42161,
+  "contract_name": "LibFlashTake",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:55.076Z"
+}

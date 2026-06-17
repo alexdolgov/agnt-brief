@@ -1,0 +1,18 @@
+{
+  "address": "0x609b9d9d6ee9c3200745a79b9d3398dbd63d509f",
+  "chain_id": 42161,
+  "contract_name": "Resolver",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:35.600Z"
+}

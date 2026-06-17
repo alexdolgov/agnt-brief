@@ -7,10 +7,10 @@
 - Project: Credit Coop (`credit-coop`)
 - Website: [https://www.creditcoop.xyz/](https://www.creditcoop.xyz/)
 - Lifecycle: unknown (Tier 0, 48.5% below peak)
-- Generated: 2026-06-14T00:12:02.525Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Generated: 2026-06-17T07:00:50.004Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
-- Contract surface: 7 unique implementations (17 raw deployments)
+- Contract surface: 8 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $4,587,572.59
 - On-chain TVL (included contracts): $4,587,361.68
 - TVL by chain: Ethereum $2,511,563.19 | Base $2,075,798.49
@@ -23,14 +23,22 @@ Credit Coop is a decentralized lending protocol for real-world-asset-backed loan
 
 The Credit Coop lending vaults rely on the PayFi Vault's USDC tokens as the deposit and loan currency. All vaults interact with the same USDC contracts, sharing a common settlement layer across Ethereum and Base.
 
+## Contract Surface Quality
+
+- Indexed contracts: 17; live-surface contracts included: 15 (6 live, 9 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Unverified dependencies: 8/12.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 7
-- Raw deployments: 17
+- Unique implementations: 8
+- Raw deployments: 15
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,587,361.68
@@ -49,16 +57,17 @@ The Credit Coop lending vaults rely on the PayFi Vault's USDC tokens as the depo
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| LendingVault | core_logic | base | 4 deployments: ethereum `0x6c99a7...e01dbc`; ethereum `0x6dacaf...88b623`; base [`0x0cf11a...5fcf9d`](./contracts/base-8453/0x0cf11ac4ea33b6d7274cd7d6e7cea9f3f65fcf9d/); base `0x214699...dc85ce` | ⚠️ Unaudited |
-| CreditStrategy | unknown | ethereum | 2 deployments: ethereum [`0xb8c65c...beef6d`](./contracts/ethereum-1/0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d/); ethereum `0xf65c1f...42f6f4` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | base | 2 deployments: ethereum `0xa0b869...06eb48`; base [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
-| LendingVaultFactory | registry | base | 3 deployments: ethereum `0xecfd3e...a6fa63`; base [`0x1c4226...ebf83d`](./contracts/base-8453/0x1c4226eb7e7d2fa8a92ad0e181abe5718aebf83d/); base `0x445b79...f02801` | ⚠️ Unaudited |
-| LiquidStrategy | unknown | base | 4 deployments: ethereum `0x6df7ff...9d11f5`; ethereum `0xd462e8...87ac14`; base [`0x57184d...627e56`](./contracts/base-8453/0x57184d7ec2d4cf5dbb77cde2d39e127391627e56/); base `0xe2c119...1ce960` | ⚠️ Unaudited |
-| SpigotFactory | registry | base | [`0x360b33...c35ae0`](./contracts/base-8453/0x360b330f47a9b2f54aa53a962911366b37c35ae0/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| LendingVault | core_logic | base | n/a | 4 deployments: ethereum `0x6c99a7...e01dbc`; ethereum `0x6dacaf...88b623`; base [`0x0cf11a...5fcf9d`](./contracts/base-8453/0x0cf11ac4ea33b6d7274cd7d6e7cea9f3f65fcf9d/); base `0x214699...dc85ce` | ⚠️ Unaudited |
+| CreditStrategy | unknown | ethereum | n/a | [`0xb8c65c...beef6d`](./contracts/ethereum-1/0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | unit-30554 | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | base | unit-30555 | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
+| LendingVaultFactory | registry | base | n/a | 3 deployments: ethereum `0xecfd3e...a6fa63`; base [`0x1c4226...ebf83d`](./contracts/base-8453/0x1c4226eb7e7d2fa8a92ad0e181abe5718aebf83d/); base `0x445b79...f02801` | ⚠️ Unaudited |
+| LiquidStrategy | unknown | base | n/a | 3 deployments: ethereum `0xd462e8...87ac14`; base [`0x57184d...627e56`](./contracts/base-8453/0x57184d7ec2d4cf5dbb77cde2d39e127391627e56/); base `0xe2c119...1ce960` | ⚠️ Unaudited |
+| SpigotFactory | registry | base | n/a | [`0x360b33...c35ae0`](./contracts/base-8453/0x360b330f47a9b2f54aa53a962911366b37c35ae0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,9 +85,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | base | `0x0b4105...9ff4c4` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x0b4105...9ff4c4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 6 |
-| upstream | 1 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 0 |
 

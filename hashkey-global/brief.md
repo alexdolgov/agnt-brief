@@ -4,32 +4,40 @@
 
 - Project: HashKey Global (`hashkey-global`)
 - Website: [https://www.hashkey.com](https://www.hashkey.com)
-- Lifecycle: active (Tier 0, 87.3% below peak)
-- Generated: 2026-06-12T19:26:03.650Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9988
-- Chains: ethereum, scroll
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Lifecycle: active (Tier 0, 85.6% below peak)
+- Generated: 2026-06-17T07:01:00.797Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: scroll
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $13,434,700.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 HashKey Global is a centralized exchange (CEX) that provides trading and custody services for digital assets. The reviewed on-chain surface consists of two unverified Scroll addresses with unknown roles and an unconfirmed relationship to HashKey exchange operations; these addresses should not be described as a verified deposit/withdrawal or token-management system without further evidence.
 
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 3
-- Raw deployments: 3
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +55,9 @@ HashKey Global is a centralized exchange (CEX) that provides trading and custody
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| HSKImplementationV1 | unknown | ethereum | [`0x557683...cf647a`](./contracts/ethereum-1/0x557683a5fa469d00516dee63fbf345c450cf647a/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,10 +75,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | scroll | `0x08c974...6cab76` | ❓ Unverified |
-| UnnamedContract | unknown | scroll | `0xdd2613...479cdb` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | scroll | n/a | `0x08c974...6cab76` | ❓ Unverified |
+| UnnamedContract | unknown | scroll | n/a | `0xdd2613...479cdb` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -83,15 +89,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x557683...cf647a`](./contracts/ethereum-1/0x557683a5fa469d00516dee63fbf345c450cf647a/) | HSKImplementationV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 2 |

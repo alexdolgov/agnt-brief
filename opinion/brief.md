@@ -7,8 +7,8 @@
 - Project: OPINION (`opinion`)
 - Website: [https://app.opinion.trade](https://app.opinion.trade)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-14T06:06:16.456Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:57.632Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum
 - Contract surface: 8 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $5,770,543.49
@@ -22,6 +22,14 @@ Opinion is a prediction-market protocol on BNB Chain with contracts for conditio
 ### Architecture
 
 The OpinionToken likely serves as the native utility or governance token, while ConditionalTokens represent positions on event outcomes. They share infrastructure through a common deployer cluster, indicating a unified deployment.
+
+## Contract Surface Quality
+
+- Indexed contracts: 24; live-surface contracts included: 24 (1 live, 23 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,19 +59,19 @@ The OpinionToken likely serves as the native utility or governance token, while 
 
 ### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| OpinionToken | token | ethereum | [`0x7977bf...0b06e0`](./contracts/ethereum-1/0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0/) | ✅ Audited |
-| ConditionalTokens | token | bsc | 2 deployments: bsc [`0x51d1a6...c6eb54`](./contracts/bsc-56/0x51d1a62d41e93b983ef29aec04f30ded66c6eb54/); bsc `0xad1a38...10d774` | ✅ Audited |
-| CTFExchangeFeeManager | governance | bsc | 9 deployments: bsc [`0x1b4922...b25236`](./contracts/bsc-56/0x1b4922496994f2840e2886cf600c70eb66b25236/); bsc `0x2b1493...70068c`; bsc `0x32b770...428293`; bsc `0x33d2c9...86afa4`; bsc `0x3bb81f...c17cbc`; bsc `0x3c13ce...ab25a8`; bsc `0x6ae1a7...c9e695`; bsc `0xc9063d...5d7c36`; bsc `0xe9ced7...81ca85` | ✅ Audited |
-| CTFExecutionEngine | unknown | bsc | 8 deployments: bsc [`0x5f4534...7a7246`](./contracts/bsc-56/0x5f45344126d6488025b0b84a3a8189f2487a7246/); bsc `0x76527e...2b6b12`; bsc `0x7aeef4...223d1d`; bsc `0x932a47...7398d3`; bsc `0x95665d...e20585`; bsc `0xa26fbc...9cf9b0`; bsc `0xd6e1c9...3cf2c3`; bsc `0xe682cc...24789a` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| OpinionToken | token | ethereum | n/a | [`0x7977bf...0b06e0`](./contracts/ethereum-1/0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0/) | ✅ Audited |
+| ConditionalTokens | token | bsc | n/a | 2 deployments: bsc [`0x51d1a6...c6eb54`](./contracts/bsc-56/0x51d1a62d41e93b983ef29aec04f30ded66c6eb54/); bsc `0xad1a38...10d774` | ✅ Audited |
+| CTFExchangeFeeManager | governance | bsc | n/a | 9 deployments: bsc [`0x1b4922...b25236`](./contracts/bsc-56/0x1b4922496994f2840e2886cf600c70eb66b25236/); bsc `0x2b1493...70068c`; bsc `0x32b770...428293`; bsc `0x33d2c9...86afa4`; bsc `0x3bb81f...c17cbc`; bsc `0x3c13ce...ab25a8`; bsc `0x6ae1a7...c9e695`; bsc `0xc9063d...5d7c36`; bsc `0xe9ced7...81ca85` | ✅ Audited |
+| CTFExecutionEngine | unknown | bsc | n/a | 8 deployments: bsc [`0x5f4534...7a7246`](./contracts/bsc-56/0x5f45344126d6488025b0b84a3a8189f2487a7246/); bsc `0x76527e...2b6b12`; bsc `0x7aeef4...223d1d`; bsc `0x932a47...7398d3`; bsc `0x95665d...e20585`; bsc `0xa26fbc...9cf9b0`; bsc `0xd6e1c9...3cf2c3`; bsc `0xe682cc...24789a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MultiSend | unknown | bsc | [`0x998739...8f9eda`](./contracts/bsc-56/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
-| SafeL2 | unknown | bsc | [`0xe76e76...8cbb4b`](./contracts/bsc-56/0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MultiSend | unknown | bsc | n/a | [`0x998739...8f9eda`](./contracts/bsc-56/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
+| SafeL2 | unknown | bsc | unit-32399 | [`0xe76e76...8cbb4b`](./contracts/bsc-56/0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,10 +89,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x5948c9...1879b9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xd8ac33...bfce2a` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x5948c9...1879b9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd8ac33...bfce2a` | ❓ Unverified |
 
 ## Audit Inventory
 

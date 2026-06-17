@@ -5,21 +5,30 @@
 - Project: LBank (`lbank`)
 - Website: [https://www.lbank.com](https://www.lbank.com)
 - Lifecycle: unknown
-- Generated: 2026-05-23T05:10:13.679Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:01.903Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $9,760,848.81
+- DeFi Llama TVL: $9,186,990.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-LBank is a centralized cryptocurrency exchange (CEX) that facilitates spot and derivatives trading for retail and institutional users. It provides a platform for buying, selling, and managing digital assets with features like staking and fiat on/off ramps.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No on-chain product families or contract relationships are available for this centralized exchange.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,6 +1,6 @@
 # smilee-finance — Contract Index
 
-194 unique implementations across 2 chains · 232 deployments · 7 audited · 23 unaudited · 164 unverified
+191 unique implementations across 2 chains · 228 deployments · 5 audited · 23 unaudited · 163 unverified
 
 ## adapter (1)
 
@@ -17,12 +17,11 @@
 | [VaultLib (3 deployments)](./arbitrum-42161/0x5938431e5d5a4def3590206dbeafa164dc62629b/) | arbitrum | 3 deployments: arbitrum [`0x593843...62629b`](./arbitrum-42161/0x5938431e5d5a4def3590206dbeafa164dc62629b/); arbitrum `0x6ee8ae...f25724`; arbitrum `0xb7c607...e26739` | ⚠️ Unaudited | Verified |
 | [VaultProxy (2 deployments)](./arbitrum-42161/0x544f53b35a591df217e63725edb7bd597db3fbf8/) | arbitrum | 2 deployments: arbitrum [`0x544f53...b3fbf8`](./arbitrum-42161/0x544f53b35a591df217e63725edb7bd597db3fbf8/); arbitrum `0x732c5e...40fddf` | ⚠️ Unaudited | Verified |
 
-## governance (4)
+## governance (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FeeManager](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | arbitrum | [`0xff7699...700d75`](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | ⚠️ Unaudited | Verified |
-| [GBeraAssetManager (2 deployments)](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | berachain | 2 deployments: berachain [`0x3f7755...f2ebce`](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/); berachain `0xd7db4b...364602` | ✅ Audited | Verified |
 | [PositionManager (3 deployments)](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/) | arbitrum | 3 deployments: arbitrum [`0x49a07a...34056a`](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/); arbitrum `0x838370...05fee6`; arbitrum `0xabb4e0...fa10cb` | ⚠️ Unaudited | Verified |
 | [TimeLock](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | arbitrum | [`0x2f8b57...95ae80`](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | ⚠️ Unaudited | Verified |
 
@@ -55,7 +54,7 @@
 | [IGAccessNFT](./arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | arbitrum | [`0x3d4d50...f6dceb`](./arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | ⚠️ Unaudited | Verified |
 | [TokensPair (3 deployments)](./arbitrum-42161/0x082e02d16bcd9fc73be6a862070a56c7016ac6bf/) | arbitrum | 3 deployments: arbitrum [`0x082e02...6ac6bf`](./arbitrum-42161/0x082e02d16bcd9fc73be6a862070a56c7016ac6bf/); arbitrum `0xd92d3c...40ffea`; arbitrum `0xfb84f1...11a5ad` | ⚠️ Unaudited | Verified |
 
-## unknown (176)
+## unknown (174)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -67,7 +66,6 @@
 | [FinanceIGVega](./arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | arbitrum | [`0xb13170...5b9738`](./arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | ⚠️ Unaudited | Verified |
 | [GBera](./berachain-80094/0x3b3dd22625128ff1548110f9b7bc702f540668e2/) | berachain | [`0x3b3dd2...0668e2`](./berachain-80094/0x3b3dd22625128ff1548110f9b7bc702f540668e2/) | ✅ Audited | Verified |
 | [IG (9 deployments)](./arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/) | arbitrum | 9 deployments: arbitrum [`0x1e0aa0...c5c016`](./arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/); arbitrum `0x1ee870...9f003f`; arbitrum `0x4e5121...00c933`; arbitrum `0x521e16...7b7153`; arbitrum `0x550f20...3361b8`; arbitrum `0x70def9...0548ae`; arbitrum `0x9650a8...e86f77`; arbitrum `0xc5cd71...fc4fac`; arbitrum `0xc9293c...fed768` | ⚠️ Unaudited | Verified |
-| [NodeFeeReceiver](./berachain-80094/0xf2133a7140b928a4dc0e52dafabc454a81df88f2/) | berachain | [`0xf2133a...df88f2`](./berachain-80094/0xf2133a7140b928a4dc0e52dafabc454a81df88f2/) | ✅ Audited | Verified |
 | [Position](./arbitrum-42161/0xa452e8cd1a0028516fa75ddf0521b51f746a02bf/) | arbitrum | [`0xa452e8...6a02bf`](./arbitrum-42161/0xa452e8cd1a0028516fa75ddf0521b51f746a02bf/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | arbitrum | `0x038093...1ec40f` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x05dcaf...237449` | ❓ Unverified | Unverified |
@@ -232,6 +230,5 @@
 | UnnamedContract | arbitrum | `0xfedaa8...5bd117` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xff12b3...9e54df` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xffd8f9...61ef53` | ❓ Unverified | Unverified |
-| UnnamedContract | berachain | `0xb76ae8...25693f` | ❓ Unverified | Unverified |
 | [WadTime (3 deployments)](./arbitrum-42161/0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8/) | arbitrum | 3 deployments: arbitrum [`0x01a0ce...6eefd8`](./arbitrum-42161/0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8/); arbitrum `0x9f57d3...b95310`; arbitrum `0xed09db...8cdf5d` | ⚠️ Unaudited | Verified |
 | [WGBera](./berachain-80094/0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912/) | berachain | [`0xd77552...f4f912`](./berachain-80094/0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912/) | ✅ Audited | Verified |

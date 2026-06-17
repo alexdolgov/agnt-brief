@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "liquidity-house",
-  "generated_at": "2026-06-11T00:39:45.780Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-17T07:00:58.303Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1437366.58588,
-    "tvl_usd": 1437366.58588,
+    "dl_tvl_usd": 1231691.36799,
+    "tvl_usd": 1231691.36799,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Liquidity House is GambleFi liquidity infrastructure providing Bankroll-as-a-Service for casino operators, enabling liquidity/backing for on-chain gaming and casino operations rather than a user-facing prediction market for creating and trading event outcomes.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

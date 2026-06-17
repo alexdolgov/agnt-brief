@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bitvenus",
-  "generated_at": "2026-05-22T15:41:12.273Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-17T07:01:01.867Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 20897835.99019,
-    "tvl_usd": 20897835.99019,
+    "dl_tvl_usd": 19368111.187990002,
+    "tvl_usd": 19368111.187990002,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,25 @@
     }
   },
   "topography": {
-    "project_purpose": "BitVenus is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. Based on the provided metadata, it does not appear to have on-chain smart contracts, operating instead through off-chain infrastructure.",
-    "relationship_narrative": "No on-chain product families or contract relationships are present, as the project is a centralized exchange without deployed smart contracts.",
-    "product_family_count": 0
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

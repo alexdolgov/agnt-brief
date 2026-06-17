@@ -1,6 +1,6 @@
 # hyperwave — Contract Index
 
-12 unique implementations across 3 chains · 38 deployments · 0 audited · 8 unaudited · 4 unverified
+13 unique implementations across 3 chains · 38 deployments · 0 audited · 9 unaudited · 4 unverified
 
 ## core_logic (2)
 
@@ -21,11 +21,12 @@
 |---|---|---|---|---|
 | [AccountantWithRateProviders (4 deployments)](./hyperliquid-999/0x74f3b2edc56df9d2a7db9249d9bae6e346510e3b/) | hyperliquid | 4 deployments: hyperliquid [`0x74f3b2...510e3b`](./hyperliquid-999/0x74f3b2edc56df9d2a7db9249d9bae6e346510e3b/); hyperliquid `0x78e3ac...d0b03e`; hyperliquid `0xa77f32...46055d`; hyperliquid `0xcf9be8...ee2a32` | ⚠️ Unaudited | Verified |
 
-## token (1)
+## token (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ATokenInstance (4 deployments)](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ethereum | 4 deployments: ethereum [`0x238789...d4086a`](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c`; base `0x4e65fe...f5c0ab` | ⚠️ Unaudited | Verified |
+| [ATokenInstance (3 deployments)](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ethereum | 3 deployments: ethereum [`0x238789...d4086a`](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited | Verified |
+| ATokenInstance | base | `0x4e65fe...f5c0ab` | ⚠️ Unaudited | Verified |
 
 ## unknown (7)
 

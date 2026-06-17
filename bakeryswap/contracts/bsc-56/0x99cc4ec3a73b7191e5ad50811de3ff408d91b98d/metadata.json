@@ -1,0 +1,18 @@
+{
+  "address": "0x99cc4ec3a73b7191e5ad50811de3ff408d91b98d",
+  "chain_id": 56,
+  "contract_name": "CommonStakeERC721EarnBake",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:48.201Z"
+}

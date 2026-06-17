@@ -5,10 +5,10 @@
 - Project: Scrub Money (`scrub-money`)
 - Website: [https://scrub.money](https://scrub.money)
 - Lifecycle: active (Tier 0, 32.4% below peak)
-- Generated: 2026-06-13T00:47:25.157Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
-- Chains: arbitrum, kava
-- Contract surface: 20 unique implementations (20 raw deployments)
+- Generated: 2026-06-17T07:00:43.710Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: kava
+- Contract surface: 18 unique implementations (18 raw deployments)
 - DeFi Llama TVL: $7,156,266.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Scrub Money is a decentralized commerce and services ecosystem spanning DeFi vau
 
 The Scrub family provides core DeFi primitives (stablecoins, yield) that likely feed into the ScrubVault for optimized returns. Kava Football Club and Lion Commerce appear as separate verticals, possibly sharing the Scrub token or stablecoin as a medium of exchange.
 
+## Contract Surface Quality
+
+- Indexed contracts: 20; live-surface contracts included: 18 (0 live, 18 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 19
-- Unique implementations: 20
-- Raw deployments: 20
+- Unverified implementations: 18
+- Unique implementations: 18
+- Raw deployments: 18
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,11 +54,9 @@ The Scrub family provides core DeFi primitives (stablecoins, yield) that likely 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | arbitrum | [`0x439a92...cf3f9d`](./contracts/arbitrum-42161/0x439a923517c4dfd3f3d0abb0c36e356d39cf3f9d/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -64,31 +70,30 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (18)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | kava | `0x09d656...10a2e8` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x0db75e...dd4411` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x199a0c...a9ed1e` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x336771...81be2e` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x471f79...958154` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x52b180...17d79f` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x59e38a...2acb7b` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x670410...a4a080` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x6eff7d...325f0a` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x7bff6c...6370bc` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x7f8ed7...361501` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x83e315...36f649` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x990e15...1b9026` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x9e334c...63bbcf` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0xa07dee...4ae82e` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0xbd9881...ef9c50` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0xc0608a...d58d55` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0xea8481...b15ced` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xee3a10...e2347f` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0x09d656...10a2e8` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x0db75e...dd4411` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x199a0c...a9ed1e` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x336771...81be2e` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x471f79...958154` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x52b180...17d79f` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x59e38a...2acb7b` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x670410...a4a080` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x6eff7d...325f0a` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x7bff6c...6370bc` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x7f8ed7...361501` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x83e315...36f649` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x990e15...1b9026` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x9e334c...63bbcf` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xa07dee...4ae82e` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xbd9881...ef9c50` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xc0608a...d58d55` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xea8481...b15ced` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,8 +113,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 19 |
+| standard_library | 0 |
+| needs_review | 18 |
 
 ## Scope Matching Notes
 

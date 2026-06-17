@@ -7,30 +7,39 @@
 - Project: Pond0x (`pond0x`)
 - Website: [http://pond0x.com/](http://pond0x.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T09:31:10.112Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:52.224Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 16 unique implementations (22 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $2,062,590.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Pond0x, also referred to as Pond DEX, is a DEX aggregator for token swaps. Current sources frame the protocol around returning generated fees as claimable rewards or drops, with associated product areas such as Mine, Spawn, Water, pondSOL, and Teleport where independently verified. Unsupported governance or fee-discount utility claims for PondCoin or PondWater should be removed unless separately substantiated.
 
-### Architecture
+## Contract Surface Quality
 
-The Pond0x family consists of two core token contracts, PondCoin and PondWater, which are likely integrated into the aggregator's fee or incentive mechanisms. All contracts are deployed from a single cluster, indicating a unified infrastructure.
+- Indexed contracts: 22; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 19 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v3
+- Unverified dependencies: 5/35.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/11 (0.0%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 16
-- Raw deployments: 22
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,21 +58,12 @@ The Pond0x family consists of two core token contracts, PondCoin and PondWater, 
 
 - None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MiningRigV3 | unknown | ethereum | 2 deployments: ethereum [`0x2d50ef...31c00a`](./contracts/ethereum-1/0x2d50efbc3690b6d0ea0b179c18f016ae9031c00a/); ethereum `0x6de46a...be628f` | ⚠️ Unaudited |
-| MiningRigV4 | unknown | ethereum | [`0x86d27a...7e1edf`](./contracts/ethereum-1/0x86d27a2c844c1bc559599ce68aa15d54f57e1edf/) | ⚠️ Unaudited |
-| PondClaims | unknown | ethereum | [`0xe7f012...423c28`](./contracts/ethereum-1/0xe7f01261ef9792095e22abbf7f6f7b881d423c28/) | ⚠️ Unaudited |
-| PondCoin | unknown | ethereum | [`0x423f4e...631eea`](./contracts/ethereum-1/0x423f4e6138e475d85cf7ea071ac92097ed631eea/) | ⚠️ Unaudited |
-| PondWater | unknown | ethereum | [`0xed96e6...a1b470`](./contracts/ethereum-1/0xed96e69d54609d9f2cff8aacd66ccf83c8a1b470/) | ⚠️ Unaudited |
-| ProtoClaim | unknown | ethereum | 3 deployments: ethereum [`0x76cc94...8d803f`](./contracts/ethereum-1/0x76cc942ae5c68fba5dcbb67f07b77f35438d803f/); ethereum `0x8a3cfc...3fc3c6`; ethereum `0xc4258e...84e072` | ⚠️ Unaudited |
-| SablierV2LockupLinear | unknown | ethereum | [`0xafb979...e5dcc9`](./contracts/ethereum-1/0xafb979d9afad1ad27c5eff4e27226e3ab9e5dcc9/) | ⚠️ Unaudited |
-| SablierV2MerkleStreamerFactory | operational_periphery | ethereum | [`0x1a272b...d154e3`](./contracts/ethereum-1/0x1a272b596b10f02931480bc7a3617db4a8d154e3/) | ⚠️ Unaudited |
-| SpawnManager | governance | ethereum | 2 deployments: ethereum [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/); ethereum `0x4c0da5...4aec36` | ⚠️ Unaudited |
-| SpawnManagerV2 | governance | ethereum | 3 deployments: ethereum [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/); ethereum `0xab7b98...5dd3c5`; ethereum `0xcc57c9...9e946c` | ⚠️ Unaudited |
-| TadpoleClaimer | operational_periphery | ethereum | [`0x314a8e...ad3796`](./contracts/ethereum-1/0x314a8e2ea148c272ce379dee7580656159ad3796/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PondCoin | unknown | ethereum | n/a | [`0x423f4e...631eea`](./contracts/ethereum-1/0x423f4e6138e475d85cf7ea071ac92097ed631eea/) | ⚠️ Unaudited |
+| SablierV2LockupLinear | unknown | ethereum | n/a | [`0xafb979...e5dcc9`](./contracts/ethereum-1/0xafb979d9afad1ad27c5eff4e27226e3ab9e5dcc9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -77,17 +77,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x0bda79...30a72c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x38b10a...42d288` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4e810a...a225f8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x81ce23...b86437` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe9f234...93bf03` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x81ce23...b86437` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,24 +96,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2d50ef...31c00a`](./contracts/ethereum-1/0x2d50efbc3690b6d0ea0b179c18f016ae9031c00a/) | MiningRigV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x86d27a...7e1edf`](./contracts/ethereum-1/0x86d27a2c844c1bc559599ce68aa15d54f57e1edf/) | MiningRigV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe7f012...423c28`](./contracts/ethereum-1/0xe7f01261ef9792095e22abbf7f6f7b881d423c28/) | PondClaims | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x423f4e...631eea`](./contracts/ethereum-1/0x423f4e6138e475d85cf7ea071ac92097ed631eea/) | PondCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xed96e6...a1b470`](./contracts/ethereum-1/0xed96e69d54609d9f2cff8aacd66ccf83c8a1b470/) | PondWater | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76cc94...8d803f`](./contracts/ethereum-1/0x76cc942ae5c68fba5dcbb67f07b77f35438d803f/) | ProtoClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/) | SpawnManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/) | SpawnManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x314a8e...ad3796`](./contracts/ethereum-1/0x314a8e2ea148c272ce379dee7580656159ad3796/) | TadpoleClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
-| upstream | 2 |
+| native | 1 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

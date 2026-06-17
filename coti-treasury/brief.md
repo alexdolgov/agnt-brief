@@ -5,11 +5,11 @@
 - Project: COTI Treasury (`coti-treasury`)
 - Website: [https://treasury.coti.io](https://treasury.coti.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:31:31.192Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:40.381Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $9,889,159.25
+- DeFi Llama TVL: $8,065,399.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 COTI Treasury is the COTI staking/treasury pool tracked by DefiLlama on Coti. Users stake or deposit COTI into the treasury/staking system to participate in COTI yield or reward distribution. Unsupported claims that it is a multi-chain EVM yield aggregator with vault aggregation, liquidity pools, auto-compounding strategies, adapters, bridges, or governance controllers should be removed unless verified by official COTI documentation or the DefiLlama adapter.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

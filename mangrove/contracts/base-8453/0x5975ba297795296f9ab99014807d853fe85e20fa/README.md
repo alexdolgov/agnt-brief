@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (sei `0xadbb100770e1f9ac61eac9cca2ec05a0a66956a0`; base [`0x5975ba297795296f9ab99014807d853fe85e20fa`](../0x5975ba297795296f9ab99014807d853fe85e20fa/); base `0x92db74a11ec2b2acdcfc354cf55243cf33c052b8`) |
+| Deployments | 2 (base [`0x5975ba297795296f9ab99014807d853fe85e20fa`](../0x5975ba297795296f9ab99014807d853fe85e20fa/); base `0x92db74a11ec2b2acdcfc354cf55243cf33c052b8`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

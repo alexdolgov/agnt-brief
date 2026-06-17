@@ -1,0 +1,18 @@
+{
+  "address": "0x780f70882ff4929d1a658a4e8ec8d4316b24748a",
+  "chain_id": 10,
+  "contract_name": "VirtualAelinToken",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:49.845Z"
+}

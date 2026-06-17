@@ -5,21 +5,30 @@
 - Project: BitVenus (`bitvenus`)
 - Website: [https://www.bvox.com/](https://www.bvox.com/)
 - Lifecycle: unknown
-- Generated: 2026-05-22T15:41:12.273Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:01.867Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $20,897,835.99
+- DeFi Llama TVL: $19,368,111.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-BitVenus is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. Based on the provided metadata, it does not appear to have on-chain smart contracts, operating instead through off-chain infrastructure.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No on-chain product families or contract relationships are present, as the project is a centralized exchange without deployed smart contracts.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

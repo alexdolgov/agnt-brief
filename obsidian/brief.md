@@ -5,8 +5,8 @@
 - Project: Obsidian (`obsidian`)
 - Website: [https://obsidian.finance](https://obsidian.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T10:47:29.339Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:52.215Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: cronos
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $1,378,164.48
@@ -20,6 +20,14 @@ Obsidian is a Smart DEX and DEX aggregator ecosystem on Cronos and Cronos zkEVM,
 ### Architecture
 
 All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified beyond the aggregation logic.
+
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 6 (0 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -66,14 +74,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x1215b7...93904f` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x1ec6e8...d0c566` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x4e5cdf...877275` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x6d5599...e00deb` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xcd2e5c...1570c9` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xedc17b...7a7804` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x1215b7...93904f` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x1ec6e8...d0c566` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x4e5cdf...877275` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x6d5599...e00deb` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xcd2e5c...1570c9` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xedc17b...7a7804` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -1,0 +1,17 @@
+{
+  "address": "0x3e703fd2b6506e2abcce2c8b5633872a7d9b6fbc",
+  "chain_id": 8453,
+  "contract_name": "CLGaugeFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "00000000000000000000000016613524e02ad97edfef371bc883f2f5d6c480a5000000000000000000000000b4318c490e1bd4c0c01a8f0e3df26a28b1136f48",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:20.400Z"
+}

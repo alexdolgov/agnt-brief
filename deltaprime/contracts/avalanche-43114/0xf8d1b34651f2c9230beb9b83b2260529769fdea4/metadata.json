@@ -1,0 +1,17 @@
+{
+  "address": "0xf8d1b34651f2c9230beb9b83b2260529769fdea4",
+  "chain_id": 43114,
+  "contract_name": "BorrowAccessNFT",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:54:03.817Z"
+}

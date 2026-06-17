@@ -7,8 +7,8 @@
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-14T07:18:51.447Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:01:01.697Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
 - Contract surface: 13 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $3,061,809.18
@@ -22,6 +22,14 @@ Angstrom is a hybrid DEX built on Uniswap V4, currently tracked on Ethereum. It 
 ### Architecture
 
 The L1 family provides governance and core DEX logic, while L2 instances leverage a factory for deployment and MEV tax features. The AngstromInspector likely serves both layers for trade analysis.
+
+## Contract Surface Quality
+
+- Indexed contracts: 15; live-surface contracts included: 15 (15 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 4/25.
 
 ## Audit Coverage Summary
 
@@ -49,26 +57,26 @@ The L1 family provides governance and core DEX logic, while L2 instances leverag
 
 ### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Angstrom | unknown | ethereum | [`0x000000...edfad4`](./contracts/ethereum-1/0x0000000aa232009084bd71a5797d089aa4edfad4/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Angstrom | unknown | ethereum | n/a | [`0x000000...edfad4`](./contracts/ethereum-1/0x0000000aa232009084bd71a5797d089aa4edfad4/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (12)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| PoolManager | core_logic | ethereum | 2 deployments: ethereum [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/); base `0x498581...652b2b` | ⚠️ Unaudited |
-| AngstromAdapter | adapter | ethereum | [`0xb535ae...4efbf8`](./contracts/ethereum-1/0xb535aeb27335b91e1b5bccbd64888ba7574efbf8/) | ⚠️ Unaudited |
-| AngstromInspector | unknown | ethereum | [`0xd262c2...03b6c3`](./contracts/ethereum-1/0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3/) | ⚠️ Unaudited |
-| AngstromL2 | unknown | base | 2 deployments: base [`0x7fa49d...09e5cf`](./contracts/base-8453/0x7fa49d29481b6d168505ccde26635e204c09e5cf/); base `0xcd256a...1de5cf` | ⚠️ Unaudited |
-| AngstromL2Factory | registry | base | [`0x000000...69cd05`](./contracts/base-8453/0x0000000000fd3b85c30f942e8d878e858e69cd05/) | ⚠️ Unaudited |
-| AngstromVaultFactory | registry | ethereum | [`0x6582c7...0c169c`](./contracts/ethereum-1/0x6582c770fc4167aa807c3846c73e6006e90c169c/) | ⚠️ Unaudited |
-| ControllerV1 | governance | ethereum | [`0x174648...315fd4`](./contracts/ethereum-1/0x1746484ea5e11c75e009252c102c8c33e0315fd4/) | ⚠️ Unaudited |
-| EventEmitter | unknown | ethereum | [`0xb3df86...8a00df`](./contracts/ethereum-1/0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df/) | ⚠️ Unaudited |
-| PriceOracle | operational_periphery | ethereum | [`0x4cf26a...74b89d`](./contracts/ethereum-1/0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d/) | ⚠️ Unaudited |
-| Swapper | adapter | ethereum | [`0x814e3b...ebf8cc`](./contracts/ethereum-1/0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc/) | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | [`0x60d41d...526c01`](./contracts/ethereum-1/0x60d41d9708bbefd29000d1486c6406ef23526c01/) | ⚠️ Unaudited |
-| VaultExtension | adapter | ethereum | [`0x06d9f5...e06c79`](./contracts/ethereum-1/0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PoolManager | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/); base `0x498581...652b2b` | ⚠️ Unaudited |
+| AngstromAdapter | adapter | ethereum | n/a | [`0xb535ae...4efbf8`](./contracts/ethereum-1/0xb535aeb27335b91e1b5bccbd64888ba7574efbf8/) | ⚠️ Unaudited |
+| AngstromInspector | unknown | ethereum | n/a | [`0xd262c2...03b6c3`](./contracts/ethereum-1/0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3/) | ⚠️ Unaudited |
+| AngstromL2 | unknown | base | n/a | 2 deployments: base [`0x7fa49d...09e5cf`](./contracts/base-8453/0x7fa49d29481b6d168505ccde26635e204c09e5cf/); base `0xcd256a...1de5cf` | ⚠️ Unaudited |
+| AngstromL2Factory | registry | base | n/a | [`0x000000...69cd05`](./contracts/base-8453/0x0000000000fd3b85c30f942e8d878e858e69cd05/) | ⚠️ Unaudited |
+| AngstromVaultFactory | registry | ethereum | n/a | [`0x6582c7...0c169c`](./contracts/ethereum-1/0x6582c770fc4167aa807c3846c73e6006e90c169c/) | ⚠️ Unaudited |
+| ControllerV1 | governance | ethereum | n/a | [`0x174648...315fd4`](./contracts/ethereum-1/0x1746484ea5e11c75e009252c102c8c33e0315fd4/) | ⚠️ Unaudited |
+| EventEmitter | unknown | ethereum | n/a | [`0xb3df86...8a00df`](./contracts/ethereum-1/0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df/) | ⚠️ Unaudited |
+| PriceOracle | operational_periphery | ethereum | n/a | [`0x4cf26a...74b89d`](./contracts/ethereum-1/0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d/) | ⚠️ Unaudited |
+| Swapper | adapter | ethereum | n/a | [`0x814e3b...ebf8cc`](./contracts/ethereum-1/0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc/) | ⚠️ Unaudited |
+| TimelockController | governance | ethereum | n/a | [`0x60d41d...526c01`](./contracts/ethereum-1/0x60d41d9708bbefd29000d1486c6406ef23526c01/) | ⚠️ Unaudited |
+| VaultExtension | adapter | ethereum | n/a | [`0x06d9f5...e06c79`](./contracts/ethereum-1/0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

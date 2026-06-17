@@ -5,11 +5,11 @@
 - Project: Osmosis DEX (`osmosis-dex`)
 - Website: [https://osmosis.zone/](https://osmosis.zone/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:39:11.239Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:36.533Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $18,533,746.03
+- DeFi Llama TVL: $15,332,794.30
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Osmosis DEX is a Cosmos/Osmosis-chain native automated market maker decentralized exchange for token swaps and liquidity provision through Osmosis pools and Osmosis-native modules/components. It should not be described as an EVM multi-chain vault, farming, or unrelated contract-suite protocol unless specific Osmosis-owned deployments are independently verified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,0 +1,17 @@
+{
+  "address": "0xd2b62aef2102c09f475b23dda6b61072e848cf28",
+  "chain_id": 43114,
+  "contract_name": "mSpellReporter",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000003c2269811836af69497e5f486a85d7316753cf62000000000000000000000000ce1bffbd5374dac86a2893119683f4911a2f7814000000000000000000000000bd84472b31d947314fdfa2ea42460a2727f955af0000000000000000000000001440ecdfc61386a64116e58326bc7d6074e80815",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:22.017Z"
+}

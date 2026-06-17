@@ -1,6 +1,6 @@
 # predict-fun — Contract Index
 
-42 unique implementations across 2 chains · 70 deployments · 2 audited · 25 unaudited · 15 unverified
+39 unique implementations across 2 chains · 64 deployments · 2 audited · 22 unaudited · 15 unverified
 
 ## adapter (5)
 
@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | [RewardDistributor (3 deployments)](./bsc-56/0x14e3cb02f48818a8fef6bc257059767ca9d436ae/) | bsc | 3 deployments: bsc [`0x14e3cb...d436ae`](./bsc-56/0x14e3cb02f48818a8fef6bc257059767ca9d436ae/); bsc `0x54870a...f77a3c`; blast `0xfebfe1...dba20d` | ⚠️ Unaudited | Verified |
 | [UmaCompatibleOptimisticOracle](./bsc-56/0x76f42e5520e62ad88f8fe583cbb4bff27eec2531/) | bsc | [`0x76f42e...ec2531`](./bsc-56/0x76f42e5520e62ad88f8fe583cbb4bff27eec2531/) | ⚠️ Unaudited | Verified |
-| [ZeroDevWithdrawalHelper (4 deployments)](./blast-81457/0x834b7ec39082bb51d2c46197b71bc926178600de/) | blast | 4 deployments: bsc `0xf4aa30...a77b00`; blast [`0x834b7e...8600de`](./blast-81457/0x834b7ec39082bb51d2c46197b71bc926178600de/); blast `0xc45343...bde7fd`; blast `0xd25366...e71d37` | ⚠️ Unaudited | Verified |
+| [ZeroDevWithdrawalHelper](./bsc-56/0xf4aa30b537882eca7e69defb68d6f631cda77b00/) | bsc | [`0xf4aa30...a77b00`](./bsc-56/0xf4aa30b537882eca7e69defb68d6f631cda77b00/) | ⚠️ Unaudited | Verified |
 
 ## periphery (1)
 
@@ -32,23 +32,20 @@
 |---|---|---|---|---|
 | [CTFAutoRedemptionHelper (2 deployments)](./bsc-56/0x6422e0ad3deb7de5c3bdb5c9b517bceb72f235e3/) | bsc | 2 deployments: bsc [`0x6422e0...f235e3`](./bsc-56/0x6422e0ad3deb7de5c3bdb5c9b517bceb72f235e3/); bsc `0xfca64d...47cbec` | ⚠️ Unaudited | Verified |
 
-## token (6)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BlastConditionalTokens](./blast-81457/0x8f9c9f888a4268ab0e2dda03a291769479bac285/) | blast | [`0x8f9c9f...bac285`](./blast-81457/0x8f9c9f888a4268ab0e2dda03a291769479bac285/) | ⚠️ Unaudited | Verified |
 | [ConditionalTokens (2 deployments)](./bsc-56/0x22da1810b194ca018378464a58f6ac2b10c9d244/) | bsc | 2 deployments: bsc [`0x22da18...c9d244`](./bsc-56/0x22da1810b194ca018378464a58f6ac2b10c9d244/); bsc `0xf64b0b...19a07f` | ⚠️ Unaudited | Verified |
 | [ConditionalTokensFeesHandler (2 deployments)](./bsc-56/0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e/) | bsc | 2 deployments: bsc [`0xb4d9f1...645f6e`](./bsc-56/0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e/); bsc `0xd63206...e64030` | ⚠️ Unaudited | Verified |
 | [ConditionalTokensFeesHandlerV2 (4 deployments)](./bsc-56/0x13ba3d9f7da3f8ae955df4f01f01d7218f81d8fa/) | bsc | 4 deployments: bsc [`0x13ba3d...81d8fa`](./bsc-56/0x13ba3d9f7da3f8ae955df4f01f01d7218f81d8fa/); bsc `0x2d4370...24093e`; bsc `0x57f12f...883ab2`; bsc `0xd573f4...2b5f3b` | ⚠️ Unaudited | Verified |
 | [RegisterTokenHelper (3 deployments)](./blast-81457/0x54dc9c76d024c136698db2cad66dd1517d4cb63a/) | blast | 3 deployments: bsc `0x89f92c...fd8e5e`; bsc `0xa48c26...9c2089`; blast [`0x54dc9c...4cb63a`](./blast-81457/0x54dc9c76d024c136698db2cad66dd1517d4cb63a/) | ⚠️ Unaudited | Verified |
 | [YieldBearingConditionalTokens](./bsc-56/0x9400f8ad57e9e0f352345935d6d3175975eb1d9f/) | bsc | [`0x9400f8...eb1d9f`](./bsc-56/0x9400f8ad57e9e0f352345935d6d3175975eb1d9f/) | ✅ Audited | Verified |
 
-## unknown (26)
+## unknown (24)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AddressFinder](./blast-81457/0xc31bb90ee75706911faf6b831699026e5eb6f24a/) | blast | [`0xc31bb9...b6f24a`](./blast-81457/0xc31bb90ee75706911faf6b831699026e5eb6f24a/) | ⚠️ Unaudited | Verified |
-| [BlastWrappedCollateral](./blast-81457/0xe1a2e68c401378050fdba9704fa8bcb1f72b98f4/) | blast | [`0xe1a2e6...2b98f4`](./blast-81457/0xe1a2e68c401378050fdba9704fa8bcb1f72b98f4/) | ⚠️ Unaudited | Verified |
 | [CTFExchange (2 deployments)](./bsc-56/0x6beb5a40c032afc305961162d8204cda16decfa5/) | bsc | 2 deployments: bsc [`0x6beb5a...decfa5`](./bsc-56/0x6beb5a40c032afc305961162d8204cda16decfa5/); bsc `0x8bc070...94b689` | ⚠️ Unaudited | Verified |
 | [FeeModuleV2 (2 deployments)](./bsc-56/0xf1f8f5c641f20c48526269ef7dff19172efa9783/) | bsc | 2 deployments: bsc [`0xf1f8f5...fa9783`](./bsc-56/0xf1f8f5c641f20c48526269ef7dff19172efa9783/); bsc `0xfbc225...7ba34f` | ⚠️ Unaudited | Verified |
 | [FeeModuleV3 (2 deployments)](./bsc-56/0xdcffeb0c30263888a48485a664ec9563a54891a1/) | bsc | 2 deployments: bsc [`0xdcffeb...4891a1`](./bsc-56/0xdcffeb0c30263888a48485a664ec9563a54891a1/); bsc `0xf291a6...f0a279` | ⚠️ Unaudited | Verified |

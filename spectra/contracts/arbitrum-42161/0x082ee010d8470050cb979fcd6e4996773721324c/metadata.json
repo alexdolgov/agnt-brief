@@ -1,0 +1,17 @@
+{
+  "address": "0x082ee010d8470050cb979fcd6e4996773721324c",
+  "chain_id": 42161,
+  "contract_name": "MetaVaultWrapper",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:40.021Z"
+}

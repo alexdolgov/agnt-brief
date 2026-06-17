@@ -1,0 +1,18 @@
+{
+  "address": "0x0178b56fea3d7b5b9f9e0cdad486522de948730f",
+  "chain_id": 42161,
+  "contract_name": "VaultV3",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:29.042Z"
+}

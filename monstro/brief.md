@@ -7,8 +7,8 @@
 - Project: MONSTRO (`monstro`)
 - Website: [https://v2.monstro.fun](https://v2.monstro.fun)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-14T09:32:19.545Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:49.639Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 13 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $2,009,550.15
@@ -22,6 +22,14 @@ MONSTRO is/was a Base protocol historically tracked as a yield project with $MON
 ### Architecture
 
 The MonstroToken is the core asset, and MonstroStaking is the contract that manages staking and reward distribution, with no additional shared infrastructure detected.
+
+## Contract Surface Quality
+
+- Indexed contracts: 20; live-surface contracts included: 20 (0 live, 20 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 5; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,21 +59,21 @@ The MonstroToken is the core asset, and MonstroStaking is the contract that mana
 
 ### ⚠️ Verified + Unaudited (13)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MonstroToken | token | base | [`0x1d3be1...e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | ⚠️ Unaudited |
-| BasedLoansLendingLedger | core_logic | base | [`0x278cfe...c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | ⚠️ Unaudited |
-| AlgebraPool | core_logic | base | [`0x174b09...154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | ⚠️ Unaudited |
-| MonstroDataTracker | unknown | base | [`0x813303...21f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | ⚠️ Unaudited |
-| MonstroNFT | token | base | [`0x553fa1...373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | ⚠️ Unaudited |
-| MonstroNFTFeatures | token | base | [`0x0d949b...28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | ⚠️ Unaudited |
-| MonstroNFTProps | token | base | [`0xbb0c01...4b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | ⚠️ Unaudited |
-| MonstroNFTSale | token | base | 4 deployments: base [`0x53f3f5...f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/); base `0xcc0bec...29cec1`; base `0xcd6cda...76c76d`; base `0xf6509e...4ddcd4` | ⚠️ Unaudited |
-| MonstroPayUSDC | unknown | base | [`0x37db84...ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | ⚠️ Unaudited |
-| MonstroStaking | unknown | base | [`0x997417...f4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | ⚠️ Unaudited |
-| MonstroUSDC | unknown | base | [`0xfa68ac...6b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | ⚠️ Unaudited |
-| RatioDerivedAdapter | adapter | base | [`0xb5391e...f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | ⚠️ Unaudited |
-| SafeProxy | unknown | base | 5 deployments: base [`0x4713b3...5a8dd0`](./contracts/base-8453/0x4713b3ab36c9759043694757e6cb8123915a8dd0/); base `0xa67356...14085c`; base `0xa6cd98...5404dc`; base `0xcb7c19...9f4391`; base `0xce45b2...6f6b4a` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MonstroToken | token | base | n/a | [`0x1d3be1...e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | ⚠️ Unaudited |
+| BasedLoansLendingLedger | core_logic | base | n/a | [`0x278cfe...c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | ⚠️ Unaudited |
+| AlgebraPool | core_logic | base | n/a | [`0x174b09...154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | ⚠️ Unaudited |
+| MonstroDataTracker | unknown | base | n/a | [`0x813303...21f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | ⚠️ Unaudited |
+| MonstroNFT | token | base | n/a | [`0x553fa1...373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | ⚠️ Unaudited |
+| MonstroNFTFeatures | token | base | n/a | [`0x0d949b...28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | ⚠️ Unaudited |
+| MonstroNFTProps | token | base | n/a | [`0xbb0c01...4b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | ⚠️ Unaudited |
+| MonstroNFTSale | token | base | n/a | 4 deployments: base [`0x53f3f5...f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/); base `0xcc0bec...29cec1`; base `0xcd6cda...76c76d`; base `0xf6509e...4ddcd4` | ⚠️ Unaudited |
+| MonstroPayUSDC | unknown | base | n/a | [`0x37db84...ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | ⚠️ Unaudited |
+| MonstroStaking | unknown | base | n/a | [`0x997417...f4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | ⚠️ Unaudited |
+| MonstroUSDC | unknown | base | n/a | [`0xfa68ac...6b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | ⚠️ Unaudited |
+| RatioDerivedAdapter | adapter | base | n/a | [`0xb5391e...f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | ⚠️ Unaudited |
+| SafeProxy | unknown | base | n/a | 5 deployments: base [`0x4713b3...5a8dd0`](./contracts/base-8453/0x4713b3ab36c9759043694757e6cb8123915a8dd0/); base `0xa67356...14085c`; base `0xa6cd98...5404dc`; base `0xcb7c19...9f4391`; base `0xce45b2...6f6b4a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

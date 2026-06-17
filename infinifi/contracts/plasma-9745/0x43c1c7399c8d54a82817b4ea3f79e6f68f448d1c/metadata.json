@@ -1,0 +1,17 @@
+{
+  "address": "0x43c1c7399c8d54a82817b4ea3f79e6f68f448d1c",
+  "chain_id": 9745,
+  "contract_name": "LockingController",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "0000000000000000000000004de0b0fae1544f82640fa9fbaec44023800713db000000000000000000000000626c23fe62f5c3a45fe0f1e79ea577bd7d134d54000000000000000000000000bf69a4a09423e7ac37d5c7da0cd14f277f752488",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:25.211Z"
+}

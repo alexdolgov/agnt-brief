@@ -1,0 +1,17 @@
+{
+  "address": "0xaab08ab98c93696665454b8c0a6ef8c2cd0206ef",
+  "chain_id": 146,
+  "contract_name": "AdmiralsQuarters",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 63,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:51.772Z"
+}

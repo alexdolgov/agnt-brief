@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stobox",
-  "generated_at": "2026-05-22T20:33:17.319Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-17T07:01:00.835Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,25 @@
     }
   },
   "topography": {
-    "project_purpose": "Stobox is a platform for tokenizing real-world assets (RWA), enabling compliant issuance and management of security tokens on blockchain. It provides infrastructure for asset-backed digital securities.",
-    "relationship_narrative": "No contract families or relationships are defined in the provided inventory.",
-    "product_family_count": 0
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

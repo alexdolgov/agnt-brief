@@ -5,11 +5,11 @@
 - Project: Punks Terminal (`punks-terminal`)
 - Website: [https://punks.lightyear.build/stash](https://punks.lightyear.build/stash)
 - Lifecycle: active (Tier 0, 35.5% below peak)
-- Generated: 2026-06-11T02:05:36.331Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-17T07:00:50.429Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,490,670.98
+- DeFi Llama TVL: $985,465.11
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Punks Terminal is a CryptoPunks-focused Stash trading terminal on Ethereum. Its StashFactory deploys user-managed Stash contracts that support ETH/WETH liquidity, order placement, trading, and withdrawals for CryptoPunks-related activity.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -49,9 +57,9 @@ Punks Terminal is a CryptoPunks-focused Stash trading terminal on Ethereum. Its 
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StashFactory | registry | ethereum | [`0x000000...866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StashFactory | registry | ethereum | n/a | [`0x000000...866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -1,0 +1,18 @@
+{
+  "address": "0x67e0639d7898ffa12a64ef0eebaf70bcffdbe953",
+  "chain_id": 137,
+  "contract_name": "FixedPrice",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:16.615Z"
+}

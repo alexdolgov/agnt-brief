@@ -7,8 +7,8 @@
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
 - Lifecycle: unknown (Tier 0, 35.7% below peak)
-- Generated: 2026-06-12T19:07:43.443Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9988
+- Generated: 2026-06-17T07:00:57.604Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $46,894,437.22
@@ -22,6 +22,14 @@ Mezo Earn is the earning/allocation component of the Mezo protocol, allowing use
 ### Architecture
 
 The protocol consists of a single product family with one core allocator contract behind a transparent upgradeable proxy, indicating a simple, upgradeable incentive distribution system.
+
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 3 (2 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,11 +59,11 @@ The protocol consists of a single product family with one core allocator contrac
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MezoAllocator | operational_periphery | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
-| Portal | unknown | ethereum | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | [`0x260ca2...681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MezoAllocator | operational_periphery | ethereum | unit-32391 | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
+| Portal | unknown | ethereum | unit-32390 | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | [`0x260ca2...681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

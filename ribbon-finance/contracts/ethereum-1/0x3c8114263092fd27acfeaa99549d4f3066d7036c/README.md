@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 8 (ethereum [`0x3c8114263092fd27acfeaa99549d4f3066d7036c`](../0x3c8114263092fd27acfeaa99549d4f3066d7036c/); ethereum `0x8a09674406da7c96b7f6cb941e92b7cabec26fe3`; ethereum `0x9246cb31fdd179f266f3b5bb3a0f66e9cebe8b8e`; ethereum `0x961d3712f5835abb0b367f83807b2f61e7d819a5`; ethereum `0xab40513b6f0a33a68b59ccf90cb6f892b4be1573`; ethereum `0xb3578add8c92ced5f02b4909b6b04d3f6468ab39`; ethereum `0xd3c4e0cb2551f42ed4c0e4de95d7ee579e41d7c6`; ethereum `0xfd48f39be14990bd8d96a446c12e7fd08c51b451`) |
+| Deployments | 5 (ethereum [`0x3c8114263092fd27acfeaa99549d4f3066d7036c`](../0x3c8114263092fd27acfeaa99549d4f3066d7036c/); ethereum `0x8a09674406da7c96b7f6cb941e92b7cabec26fe3`; ethereum `0x9246cb31fdd179f266f3b5bb3a0f66e9cebe8b8e`; ethereum `0xab40513b6f0a33a68b59ccf90cb6f892b4be1573`; ethereum `0xfd48f39be14990bd8d96a446c12e7fd08c51b451`) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

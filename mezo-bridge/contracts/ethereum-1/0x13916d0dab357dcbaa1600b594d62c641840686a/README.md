@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x13916d0dab357dcbaa1600b594d62c641840686a`](../0x13916d0dab357dcbaa1600b594d62c641840686a/); ethereum `0x5293158bf7a81ed05418da497a80f7e6dbf4477e`) |
+| Deployments | 1 (ethereum [`0x13916d0dab357dcbaa1600b594d62c641840686a`](../0x13916d0dab357dcbaa1600b594d62c641840686a/)) |
 | Proxy | Yes → `0xce09df...85ce32` |
 | Source | Etherscan |
 | TVL | n/a |

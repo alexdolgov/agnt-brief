@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "coti-treasury",
-  "generated_at": "2026-06-10T22:31:31.192Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-17T07:00:40.381Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9889159.24616,
-    "tvl_usd": 9889159.24616,
+    "dl_tvl_usd": 8065399.4646,
+    "tvl_usd": 8065399.4646,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "COTI Treasury is the COTI staking/treasury pool tracked by DefiLlama on Coti. Users stake or deposit COTI into the treasury/staking system to participate in COTI yield or reward distribution. Unsupported claims that it is a multi-chain EVM yield aggregator with vault aggregation, liquidity pools, auto-compounding strategies, adapters, bridges, or governance controllers should be removed unless verified by official COTI documentation or the DefiLlama adapter.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

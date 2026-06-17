@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zoomex",
-  "generated_at": "2026-05-22T13:12:45.284Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-17T07:01:01.891Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 23793550.49507,
-    "tvl_usd": 23793550.49507,
+    "dl_tvl_usd": 24653721.234000005,
+    "tvl_usd": 24653721.234000005,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,25 @@
     }
   },
   "topography": {
-    "project_purpose": "Zoomex is a centralized exchange (CEX) for trading digital assets. It provides a platform for users to buy, sell, and trade cryptocurrencies with features typical of centralized exchanges.",
-    "relationship_narrative": "No on-chain contracts or product families were identified, as Zoomex operates as a centralized exchange without disclosed smart contract infrastructure.",
-    "product_family_count": 0
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

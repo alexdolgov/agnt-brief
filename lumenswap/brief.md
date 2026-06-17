@@ -5,11 +5,10 @@
 - Project: LumenSwap (`lumenswap`)
 - Website: [https://lumenswap.io](https://lumenswap.io)
 - Lifecycle: unknown
-- Generated: 2026-06-11T00:45:39.806Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-17T07:00:43.056Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $6,325,576.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +20,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Lumenswap is a decentralized exchange on the Stellar network. It enables users to swap Stellar-based assets and access liquidity through Stellar-specific exchange infrastructure. Unsupported claims about EVM multi-chain deployments, yield farming, vaults, MasterChef-style rewards, controllers, and cross-chain farming should be removed unless verified by Lumenswap-specific Stellar documentation.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

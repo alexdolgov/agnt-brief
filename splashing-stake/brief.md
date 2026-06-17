@@ -5,11 +5,11 @@
 - Project: Splashing Stake (`splashing-stake`)
 - Website: [https://www.splashing.xyz/](https://www.splashing.xyz/)
 - Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-05-23T12:46:09.758Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:00:46.098Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: sei
-- Contract surface: 8 unique implementations (22 raw deployments)
-- DeFi Llama TVL: $6,194,386.91
+- Contract surface: 7 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $4,309,361.21
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,14 +21,22 @@ Splashing Stake is a liquid staking protocol on Sei that allows users to stake a
 
 The Staking contract relies on StakingStorage for persistent data and OrderQueue for managing staking/unstaking requests, all deployed behind ERC1967Proxy upgradeable proxies.
 
+## Contract Surface Quality
+
+- Indexed contracts: 22; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 13 singleton, 0 uninitialized.
+- Deployment units: 5/10 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/4 (75.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 4/6 (66.7%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 8
-- Raw deployments: 22
+- Unverified implementations: 1
+- Unique implementations: 7
+- Raw deployments: 9
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -40,23 +48,25 @@ The Staking contract relies on StakingStorage for persistent data and OrderQueue
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 3 | 75.0% | 2025-07 |
+| PeckShield | Tier 2 | 4 | 66.7% | 2025-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| OrderQueue | unknown | sei | 7 deployments: sei [`0x0a4c54...e28ed2`](./contracts/sei-1329/0x0a4c5483111a44fc448111a552d2f87139e28ed2/); sei `0x4ed643...0ae090`; sei `0x88d7ff...c411fe`; sei `0x8f62b4...31b54d`; sei `0xc45c86...1b4e64`; sei `0xcd628b...cd8931`; sei `0xdeba5c...e34198` | ✅ Audited |
-| Staking | unknown | sei | 2 deployments: sei [`0x151669...f46bf4`](./contracts/sei-1329/0x151669b501b561a52ad95574603ad52546f46bf4/); sei `0xe04262...8f0d6d` | ✅ Audited |
-| StakingStorage | unknown | sei | 2 deployments: sei [`0x910d6a...3c4c9d`](./contracts/sei-1329/0x910d6afa46a4729a4bda2e02ca8f24bdf73c4c9d/); sei `0xb54e9b...a7c50b` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| OrderQueue | unknown | sei | unit-27636 (2 proxies) | 2 deployments: sei [`0x88d7ff...c411fe`](./contracts/sei-1329/0x88d7fff259ffac098c66d0d92284a3dfb2c411fe/); sei `0xc45c86...1b4e64` | ✅ Audited |
+| Staking | unknown | sei | unit-27634 | [`0x151669...f46bf4`](./contracts/sei-1329/0x151669b501b561a52ad95574603ad52546f46bf4/) | ✅ Audited |
+| Staking | unknown | sei | n/a | [`0xe04262...8f0d6d`](./contracts/sei-1329/0xe042621757737f0d5654a33d24343af7268f0d6d/) | ✅ Audited |
+| StakingStorage | unknown | sei | unit-27638 (2 proxies) | 2 deployments: sei [`0x910d6a...3c4c9d`](./contracts/sei-1329/0x910d6afa46a4729a4bda2e02ca8f24bdf73c4c9d/); sei `0xb54e9b...a7c50b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | sei | 7 deployments: sei [`0x03cc83...e5f9f9`](./contracts/sei-1329/0x03cc83d643ff38a4c16ddd3cf647515c76e5f9f9/); sei `0x0b7882...8d4433`; sei `0x0ddb96...3614c8`; sei `0x204d44...0b1d12`; sei `0x3b093d...705cd1`; sei `0xae30a9...bf9344`; sei `0xfeeb53...f1a8f7` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC1967Proxy | proxy | sei | unit-27632 | [`0x0b7882...8d4433`](./contracts/sei-1329/0x0b7882049aa9c2f9255dc87c01d4e230248d4433/) | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | sei | unit-27640 | [`0xfeeb53...f1a8f7`](./contracts/sei-1329/0xfeeb5318cc97f219ef7050d75d325e4ec1f1a8f7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -70,22 +80,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | sei | `0x223745...5b701b` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x67dc9a...1cf093` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x97715b...1a3218` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xb4f549...adba49` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | sei | n/a | `0xb4f549...adba49` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://2818732251-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FniaC1zjJFz2QDJGHFkFf%2Fuploads%2FAWE0jZ4hBKIuXyRpFtSk%2FPeckShield-Audit-Report-SplashingStake-v1.0.pdf) | PeckShield | Audit | 2025-07 | fresh | Direct | contract_name | 11 | high |
+| [Rendered PDF capture](https://2818732251-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FniaC1zjJFz2QDJGHFkFf%2Fuploads%2FAWE0jZ4hBKIuXyRpFtSk%2FPeckShield-Audit-Report-SplashingStake-v1.0.pdf) | PeckShield | Audit | 2025-07 | fresh | Direct | contract_name | 6 | high |
 
 ## Coverage Gaps
 
@@ -99,8 +106,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 4 |
+| standard_library | 5 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

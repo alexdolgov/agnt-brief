@@ -1,0 +1,16 @@
+# MarginCalculator
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x08edf17746ce47d5b42ed132875ac4d51bf3951c` |
+| Role | unknown |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 27 (ethereum [`0x08edf17746ce47d5b42ed132875ac4d51bf3951c`](../0x08edf17746ce47d5b42ed132875ac4d51bf3951c/); ethereum `0x11c5514dce51ecd5e9512b780ad243452a821631`; ethereum `0x189c97e5c8c0fb99846e0ea2eeee4e08dea10251`; ethereum `0x3093341dc663163992a094b76ef1343e32ba866f`; ethereum `0x36eb4ac7b1eabffc775bcb76ea5fe7525e482edf`; ethereum `0x3df5cc90d83c253ea312f151280fed79ab370052`; ethereum `0x46dd66cb7a34223f66a1010d3fc2bb7cb2980bc5`; ethereum `0x6c02b4044473668bcd4fb1d5d6d0644567128ddb`; ethereum `0x993543dc8bdfcba9fc7355d822108ef49db6b9f9`; ethereum `0xa98630723b4a6fc546dae134f40001cfddebad64`; ethereum `0xb68c0dd27801e18a9c6a3799cddf23cf294a1ed7`; ethereum `0xbb4ad1d0bac33f80e45e0a31dca169e3afb4160e`; ethereum `0xbe8383f5792d53044cc955e579fdd753880a10c0`; ethereum `0xc8bc1dbabc2318f90a02addda29f401d99ef169c`; ethereum `0xf73f37d622da3045d3f87986f5c91d08263c2e26`; hyperliquid `0x098cb8d4c8590ef1ae1110a791f3b2ea58aaa3c5`; hyperliquid `0x106b724439ef4e64f41ace34081ddd732cd26451`; hyperliquid `0x11b439f7c0ae64442c6431d9bb8b435de59c8650`; hyperliquid `0x3606371b8f36e5541674c677482faebd11a55ea3`; hyperliquid `0x4ccbee49a175069454ee8be0050baa661114df4c`; hyperliquid `0x80584112a0cdf70fc68fb26bf80b667af103ad00`; hyperliquid `0x980729fc1ea3ef3ba14ec94570a0c78124e88c51`; hyperliquid `0x99ea224815c83bda1e9485a03428f5419187765a`; hyperliquid `0xb362911250381400fbacea1f9cb0d3942d90ed22`; hyperliquid `0xb94ecd98ff6bb4a7952385575d54fe1a2db1e421`; hyperliquid `0xd7a209e1b0b4b1015e33f46c33e45e540f998431`; hyperliquid `0xe4b21c57fc5433ff2a979a5a0d6b59543e32e9c6`) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,6 +1,6 @@
 # safe — Contract Index
 
-12 unique implementations on ethereum · 17 deployments · 0 audited · 11 unaudited · 1 unverified
+12 unique implementations on ethereum · 15 deployments · 0 audited · 11 unaudited · 1 unverified
 
 ## governance (1)
 
@@ -24,8 +24,8 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CompatibilityFallbackHandler (2 deployments)](./ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/) | ethereum | 2 deployments: ethereum [`0x3efcbb...be77f4`](./ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/); ethereum `0xfd0732...59ec99` | ⚠️ Unaudited | Verified |
-| [CreateCall (2 deployments)](./ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/) | ethereum | 2 deployments: ethereum [`0x2ef5ec...da90b4`](./ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/); ethereum `0x9b35af...0a1a52` | ⚠️ Unaudited | Verified |
+| [CompatibilityFallbackHandler](./ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/) | ethereum | [`0x3efcbb...be77f4`](./ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/) | ⚠️ Unaudited | Verified |
+| [CreateCall](./ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/) | ethereum | [`0x2ef5ec...da90b4`](./ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/) | ⚠️ Unaudited | Verified |
 | [MultiSend (2 deployments)](./ethereum-1/0x218543288004cd07832472d464648173c77d7eb7/) | ethereum | 2 deployments: ethereum [`0x218543...7d7eb7`](./ethereum-1/0x218543288004cd07832472d464648173c77d7eb7/); ethereum `0xa238cb...7e7761` | ⚠️ Unaudited | Verified |
 | [MultiSendCallOnly](./ethereum-1/0x9641d764fc13c8b624c04430c7356c1c7c8102e2/) | ethereum | [`0x9641d7...8102e2`](./ethereum-1/0x9641d764fc13c8b624c04430c7356c1c7c8102e2/) | ⚠️ Unaudited | Verified |
 | [Safe (2 deployments)](./ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/) | ethereum | 2 deployments: ethereum [`0x41675c...c7461a`](./ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/); ethereum `0xff51a5...2ca44b` | ⚠️ Unaudited | Verified |

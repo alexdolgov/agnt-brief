@@ -1,0 +1,17 @@
+{
+  "address": "0x772960d9a88004cdb2cc0fca020e04bfea3790b3",
+  "chain_id": 42220,
+  "contract_name": "MultiFeeDistributionFactory",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:21.409Z"
+}

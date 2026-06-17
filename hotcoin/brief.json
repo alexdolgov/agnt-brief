@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hotcoin",
-  "generated_at": "2026-06-14T06:00:04.947Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
+  "generated_at": "2026-06-17T07:00:58.284Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hotcoin",
@@ -58,7 +58,18 @@
   "topography": {
     "project_purpose": "Hotcoin is a centralized exchange (CEX) that provides trading services for digital assets. One unverified Scroll address is tracked; its role is unknown.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -74,6 +85,8 @@
       "chain_id": 534352,
       "chain_name": "scroll",
       "address": "0xb54259245da3578c02591565fa88a678ad542146",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -88,6 +101,8 @@
           "chain_id": 534352,
           "chain_name": "scroll",
           "address": "0xb54259245da3578c02591565fa88a678ad542146",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,

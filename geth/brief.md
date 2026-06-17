@@ -5,8 +5,8 @@
 - Project: GETH (`geth`)
 - Website: [https://guarda.com/staking/ethereum-staking/](https://guarda.com/staking/ethereum-staking/)
 - Lifecycle: active (Tier 0, 61.8% below peak)
-- Generated: 2026-06-12T20:36:13.131Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9988
+- Generated: 2026-06-17T07:00:52.115Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $12,724,660.04
@@ -20,6 +20,14 @@ GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake 
 ### Architecture
 
 The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.
+
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,11 +56,11 @@ The protocol consists of a single product family with one core contract, the Sta
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakeToken | token | ethereum | [`0x3802c2...eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | ⚠️ Unaudited |
-| DepositContract | core_logic | ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x408d1f...2ce19f`](./contracts/ethereum-1/0x408d1f0a8a6f478f082f34c5eeb41541262ce19f/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakeToken | token | ethereum | n/a | [`0x3802c2...eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | ⚠️ Unaudited |
+| DepositContract | core_logic | ethereum | n/a | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x408d1f...2ce19f`](./contracts/ethereum-1/0x408d1f0a8a6f478f082f34c5eeb41541262ce19f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

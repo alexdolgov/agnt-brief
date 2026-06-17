@@ -1,0 +1,17 @@
+{
+  "address": "0x5e59a629103809b105745178649e2692e0cb6c70",
+  "chain_id": 8453,
+  "contract_name": "BridgeQueue",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "000000000000000000000000603821f86dedc794a3225d62afe1f175fe4ae86100000000000000000000000075793dab3b691f02673a7e70a5296e1ba29057c300000000000000000000000075793dab3b691f02673a7e70a5296e1ba29057c3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:52.503Z"
+}

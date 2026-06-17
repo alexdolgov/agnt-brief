@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "saber",
-  "generated_at": "2026-06-11T02:27:51.653Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-17T07:00:43.706Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4594263.02499,
-    "tvl_usd": 4594263.02499,
+    "dl_tvl_usd": 3967008.97468,
+    "tvl_usd": 3967008.97468,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Saber is a Solana-based automated market maker (AMM) and decentralized exchange focused on efficient swaps and liquidity for pegged assets such as stablecoins and wrapped assets. It should not be described as an EVM multi-chain yield optimizer or cross-chain yield-farming protocol. The listed website appears compromised or abandoned, so protocol identity and contract/program surface should be verified from authoritative Solana/Saber sources such as DefiLlama and on-chain Solana program data.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

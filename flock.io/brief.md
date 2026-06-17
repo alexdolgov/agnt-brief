@@ -7,13 +7,13 @@
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-13T02:52:56.787Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
+- Generated: 2026-06-17T07:00:35.870Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
-- Contract surface: 16 unique implementations (35 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $5,702,231.18
-- On-chain TVL (included contracts): $24,372,081.06
-- TVL by chain: Base $24,372,081.06
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
@@ -23,21 +23,29 @@ FLock.io is a private AI training platform for custom models that emphasizes use
 
 The Token and Staking family provides the FLock token and staking infrastructure used by the Task and Pool Management family to incentivize participation. The gmFlock Exchange family operates alongside, potentially offering liquidity for staked or reward tokens, while FlockConfig serves as a shared configuration contract across families.
 
+## Contract Surface Quality
+
+- Indexed contracts: 35; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 5 inactive, 26 singleton, 0 uninitialized.
+- Deployment units: 2/14 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/15 (0.0%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 16
-- Raw deployments: 35
+- Unverified implementations: 0
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $24,372,081.06
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $24,372,081.06 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -49,25 +57,14 @@ The Token and Staking family provides the FLock token and staking infrastructure
 
 - None
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| FlockTokenUpgradeable | token | base | 3 deployments: base [`0x22754d...45f784`](./contracts/base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/); base `0x5ab3d4...a7b691`; base `0x81e741...3ad626` | ⚠️ Unaudited |
-| FlockAirDrop | operational_periphery | base | 2 deployments: base [`0x05379b...e93d66`](./contracts/base-8453/0x05379b6dc36d264f535d35c7d9bbd50115e93d66/); base `0x7c3eac...988daf` | ⚠️ Unaudited |
-| FlockConfig | governance | base | 3 deployments: base [`0x64e545...1e4997`](./contracts/base-8453/0x64e5450bbddea04199fbbf1ca5c22a10701e4997/); base `0x769cec...a2148a`; base `0xf79584...8fb833` | ⚠️ Unaudited |
-| FlockPoolManagerUpgradeable | core_logic | base | 2 deployments: base [`0x1a15d5...d48af6`](./contracts/base-8453/0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6/); base `0x2d2f27...20dd65` | ⚠️ Unaudited |
-| FlockPoolManagerV2Upgradeable | core_logic | base | 2 deployments: base [`0x25c2d9...1f5137`](./contracts/base-8453/0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137/); base `0x5c4155...7a1502` | ⚠️ Unaudited |
-| FlockRewardPool | core_logic | base | 2 deployments: base [`0x86dbb3...1343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/); base `0xde02bb...8682b5` | ⚠️ Unaudited |
-| FlockStakeInfoUpgradeable | periphery | base | 2 deployments: base [`0x2886fd...d17883`](./contracts/base-8453/0x2886fd3861b09d6d7b3d7cf25c8ea2999ad17883/); base `0x8a83ef...6a400a` | ⚠️ Unaudited |
-| FlockStakeInfoV2Upgradeable | periphery | base | 2 deployments: base [`0x1b964b...9f1f98`](./contracts/base-8453/0x1b964b3df82238b404afd7db1c10b9c0c29f1f98/); base `0xa799ec...f5bf63` | ⚠️ Unaudited |
-| FlockTaskManagerUpgradeable | governance | base | 5 deployments: base [`0x05e42e...8b737a`](./contracts/base-8453/0x05e42e03996379cd0b6290cc2767a1bdd78b737a/); base `0x5813de...99aaa0`; base `0xac24d8...7d8fe4`; base `0xc4d8cf...31846a`; base `0xe8e31e...980d6c` | ⚠️ Unaudited |
-| FlockTaskManagerV2Upgradeable | governance | base | 3 deployments: base [`0x29d4ec...e69fed`](./contracts/base-8453/0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed/); base `0x360406...466a3d`; base `0x8884e9...5acdad` | ⚠️ Unaudited |
-| gmFlockExchangeUpgradeable | unknown | base | 2 deployments: base [`0x9e0acc...def83f`](./contracts/base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/); base `0xe1fa45...fc6123` | ⚠️ Unaudited |
-| gmFlockUpgradeable | unknown | base | 2 deployments: base [`0x781dd2...5cad24`](./contracts/base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/); base `0x7fe6d7...0c816c` | ⚠️ Unaudited |
-| LinearVestingRewards | operational_periphery | base | 2 deployments: base [`0x34e11c...dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/); base `0xf36088...752b53` | ⚠️ Unaudited |
-| ModelTokenLaunchUpgradeable | unknown | base | [`0x6f39fe...97f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | base | [`0xb6523d...7e9f06`](./contracts/base-8453/0xb6523d5d33d29a7e6573330310e3f0e6157e9f06/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| FlockTaskManagerV2Upgradeable | governance | base | unit-21653 | [`0x29d4ec...e69fed`](./contracts/base-8453/0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed/) | ⚠️ Unaudited |
+| FlockTaskManagerV2Upgradeable | governance | base | n/a | [`0x360406...466a3d`](./contracts/base-8453/0x36040670d539d13420f9d1caf605fa2901466a3d/) | ⚠️ Unaudited |
+| ModelTokenLaunchUpgradeable | unknown | base | unit-21659 | [`0x6f39fe...97f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | base | n/a | [`0xb6523d...7e9f06`](./contracts/base-8453/0xb6523d5d33d29a7e6573330310e3f0e6157e9f06/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,13 +78,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | base | `0x7bf579...5e195e` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -100,22 +95,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x22754d...45f784`](./contracts/base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/) | FlockTokenUpgradeable | token | $24,372,081.06 | Verified native implementation with $24,372,081.06 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a15d5...d48af6`](./contracts/base-8453/0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6/) | FlockPoolManagerUpgradeable | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x25c2d9...1f5137`](./contracts/base-8453/0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137/) | FlockPoolManagerV2Upgradeable | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x86dbb3...1343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/) | FlockRewardPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x05e42e...8b737a`](./contracts/base-8453/0x05e42e03996379cd0b6290cc2767a1bdd78b737a/) | FlockTaskManagerUpgradeable | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x9e0acc...def83f`](./contracts/base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/) | gmFlockExchangeUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x34e11c...dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/) | LinearVestingRewards | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x360406...466a3d`](./contracts/base-8453/0x36040670d539d13420f9d1caf605fa2901466a3d/) | FlockTaskManagerV2Upgradeable | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 8 |
-| needs_review | 1 |
+| standard_library | 3 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

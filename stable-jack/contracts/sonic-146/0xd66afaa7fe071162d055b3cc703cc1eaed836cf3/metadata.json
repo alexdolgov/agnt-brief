@@ -1,0 +1,17 @@
+{
+  "address": "0xd66afaa7fe071162d055b3cc703cc1eaed836cf3",
+  "chain_id": 146,
+  "contract_name": "OSonicVaultCore",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "000000000000000000000000039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:14.293Z"
+}

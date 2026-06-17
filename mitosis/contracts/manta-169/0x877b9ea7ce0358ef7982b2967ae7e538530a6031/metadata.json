@@ -1,0 +1,17 @@
+{
+  "address": "0x877b9ea7ce0358ef7982b2967ae7e538530a6031",
+  "chain_id": 169,
+  "contract_name": "CCDMClient",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000003a464f746d23ab22155710f44db16dca53e0775e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:18.928Z"
+}

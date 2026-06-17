@@ -1,0 +1,17 @@
+{
+  "address": "0x768ba6aab8b0531f66b517b988fe6aafc9892f1b",
+  "chain_id": 1,
+  "contract_name": "OperatorDelegatorLib",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:17.964Z"
+}

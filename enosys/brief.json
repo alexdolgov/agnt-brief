@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "enosys",
-  "generated_at": "2026-06-12T13:57:09.968Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
+  "generated_at": "2026-06-17T07:00:36.464Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "enosys",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 81.32489761022168
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 5,
-    "unique_implementations": 3,
-    "total_deployments": 5,
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -58,10 +58,21 @@
   "topography": {
     "project_purpose": "Enosys is a multi-chain DeFi ecosystem primarily centered on Flare and Songbird, with additional activity across other supported chains. Its product surface includes DEX/AMM liquidity, farms and yield products, loans/collateralized debt positions, bridge functionality, NFTs, governance/APYCloud, and supporting infrastructure. The currently listed Ethereum contracts represent only a small, incomplete subset of the project surface and should not be treated as project-wide Enosys coverage without mapping the non-Ethereum product contracts.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 3,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -73,38 +84,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x398e41ac3d5972b4bac2320cd130c7a25ca446f7",
-      "name": "Crowdsale",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Crowdsale",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x398e41ac3d5972b4bac2320cd130c7a25ca446f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "StandardToken",
       "role": "token",
       "origin_kind": "needs_review",
@@ -119,6 +101,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -136,6 +120,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WrapDepositRedeem",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -150,6 +136,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -159,15 +147,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8936761f2903ed1af2b269e6fa3a79ebb0162c51",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb3902647015c17fc3c2f5ca5f5cb68bbf2d9b1e2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -179,7 +160,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -189,7 +170,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 3
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,0 +1,17 @@
+{
+  "address": "0x4c8fc0691699710524d904b1d8de4cfb216189d6",
+  "chain_id": 42161,
+  "contract_name": "PartialLiquidation",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:27.783Z"
+}

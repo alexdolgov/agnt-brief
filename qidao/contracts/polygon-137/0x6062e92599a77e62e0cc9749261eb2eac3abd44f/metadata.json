@@ -1,0 +1,17 @@
+{
+  "address": "0x6062e92599a77e62e0cc9749261eb2eac3abd44f",
+  "chain_id": 137,
+  "contract_name": "miStableDai",
+  "compiler_version": "v0.5.5+commit.47a71e8f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:16.832Z"
+}

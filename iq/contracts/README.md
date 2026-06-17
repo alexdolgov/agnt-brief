@@ -1,6 +1,13 @@
 # iq — Contract Index
 
-2 unique implementations on ethereum · 2 deployments · 0 audited · 2 unaudited · 0 unverified
+4 unique implementations across 2 chains · 4 deployments · 0 audited · 4 unaudited · 0 unverified
+
+## registry (2)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [BAMMFactory](./fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | fraxtal | [`0x199281...7db0ba`](./fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | ⚠️ Unaudited | Verified |
+| [FraxswapFactory](./fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | fraxtal | [`0xe30521...a667e6`](./fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | ⚠️ Unaudited | Verified |
 
 ## token (1)
 

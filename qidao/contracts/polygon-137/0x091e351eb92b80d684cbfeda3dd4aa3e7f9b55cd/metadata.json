@@ -1,0 +1,17 @@
+{
+  "address": "0x091e351eb92b80d684cbfeda3dd4aa3e7f9b55cd",
+  "chain_id": 137,
+  "contract_name": "erc20QiStablecoin",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:13.960Z"
+}

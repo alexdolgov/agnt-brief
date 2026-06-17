@@ -5,8 +5,8 @@
 - Project: AILayer farm (`ailayer-farm`)
 - Website: [https://ailayer.xyz/](https://ailayer.xyz/)
 - Lifecycle: active (Tier 0, 89.1% below peak)
-- Generated: 2026-06-12T04:49:39.501Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:00:50.531Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $65,666,011.09
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 AILayer farm is the DefiLlama Farm listing for AILayer staking, associated with AILayer's broader AI-modular Bitcoin Layer2 ecosystem. The recorded BSC AILayerToken address represents only a token contract and should not be treated as the full protocol architecture or complete contract surface; additional staking, bridge, node/PoS, AI protocol controller, prover/miner/subnet, and reward contracts require discovery.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -49,9 +57,9 @@ AILayer farm is the DefiLlama Farm listing for AILayer staking, associated with 
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AILayerToken | token | bsc | [`0x66e3da...442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AILayerToken | token | bsc | n/a | [`0x66e3da...442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

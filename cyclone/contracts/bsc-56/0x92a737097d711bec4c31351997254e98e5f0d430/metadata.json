@@ -1,0 +1,17 @@
+{
+  "address": "0x92a737097d711bec4c31351997254e98e5f0d430",
+  "chain_id": 56,
+  "contract_name": "AeolusV2",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:28.481Z"
+}

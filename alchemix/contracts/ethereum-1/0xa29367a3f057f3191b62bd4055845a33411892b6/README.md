@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 4 (ethereum [`0xa29367a3f057f3191b62bd4055845a33411892b6`](../0xa29367a3f057f3191b62bd4055845a33411892b6/); ethereum `0xd875628b942f8970de3cceaf6417005f68540d4f`; ethereum `0xda2c338350a0e59ce71cdced9679a3a590dd9bec`; ethereum `0xdc65f3514725206dd83a8843aae2ac3d99771c88`) |
+| Deployments | 3 (ethereum [`0xa29367a3f057f3191b62bd4055845a33411892b6`](../0xa29367a3f057f3191b62bd4055845a33411892b6/); ethereum `0xd875628b942f8970de3cceaf6417005f68540d4f`; ethereum `0xda2c338350a0e59ce71cdced9679a3a590dd9bec`) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | $136,737.53 |

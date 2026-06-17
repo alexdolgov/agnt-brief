@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sonic-gateway",
-  "generated_at": "2026-06-12T16:09:34.125Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-9d35",
+  "generated_at": "2026-06-17T07:01:00.683Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "sonic-gateway",
@@ -32,29 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 17,
-    "unique_implementations": 9,
-    "total_deployments": 17,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
     "dl_tvl_usd": 45448524.3444,
-    "tvl_usd": 7800454.703418822,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 7800454.7
-    },
-    "asd_usd": 7800454.703418822,
+    "tvl_usd": 45448524.3444,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://gateway.soniclabs.com/ethereum/sonic/s",
     "chains": [
-      "ethereum",
       "sonic"
     ],
     "tier1_coverage_pct": 0,
@@ -70,13 +67,24 @@
   },
   "topography": {
     "project_purpose": "Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network for cross-chain asset transfers.",
-    "relationship_narrative": "The protocol consists of a single product family with one core proxy contract that delegates to a TokenDeposit implementation, with no additional supporting contracts or shared infrastructure identified.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 17,
+    "live_contracts": 3,
+    "inactive_contracts": 8,
+    "singleton_contracts": 6,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 6,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -84,49 +92,11 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
-      "name": "TokenDeposit",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Sonic Gateway",
-      "tvl_usd": 7800454.703418822,
-      "is_proxy": true,
-      "impl_address": "0xade2ef0101278fe11490f2ee2aad7915a094ade9",
-      "impl_name": "TokenDeposit",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7800454.703418822,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xade2ef0101278fe11490f2ee2aad7915a094ade9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0x9ef7629f9b930168b76283add7120777b3c895b3",
+      "deployment_unit": "unit-32520",
+      "deployment_unit_proxy_count": 1,
       "name": "Bridge",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -141,37 +111,8 @@
           "chain_id": 146,
           "chain_name": "sonic",
           "address": "0x9ef7629f9b930168b76283add7120777b3c895b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7390251bf35aa7ea7c196fc4750bd5d6c5918329",
-      "name": "DirectExitAdministrator",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DirectExitAdministrator",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7390251bf35aa7ea7c196fc4750bd5d6c5918329",
+          "deployment_unit": "unit-32520",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -189,6 +130,8 @@
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0xb5b371b75f9850ddd6ccb6c436db54972a925308",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "MessageBus",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -203,135 +146,8 @@
           "chain_id": 146,
           "chain_name": "sonic",
           "address": "0xb5b371b75f9850ddd6ccb6c436db54972a925308",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x921b147a90ef738bbb7c2c89d88ea9d8af3e9306",
-      "name": "MPTProofVerifier",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MPTProofVerifier",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x921b147a90ef738bbb7c2c89d88ea9d8af3e9306",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xd2f1e904daf7446686f8057b7dfeb068c75d29a9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x836664b0c0cb29b7877bccf94159cc996528f2c3",
-      "name": "StateOracle",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StateOracle",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb7e8cc3f5fea12443136f0cc13d81f109b2ded7f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x836664b0c0cb29b7877bccf94159cc996528f2c3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94",
-      "name": "TokenPairs",
-      "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xabf0c96d792491b0b9642c0648ca851a125ebf25",
-      "impl_name": "TokenPairs",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x68a4ddedc285241440733719e43b1bcb795dd8c7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf2b1510c2709072c88c5b14db90ec3b6297193e4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -349,6 +165,8 @@
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7",
+      "deployment_unit": "unit-32519",
+      "deployment_unit_proxy_count": 1,
       "name": "UpdateManager",
       "role": "governance",
       "origin_kind": "needs_review",
@@ -360,67 +178,11 @@
       "impl_name": "UpdateManager",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb0becf0fbfe431d42ba0fbd8dfbfbb0dcfd62da4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 146,
           "chain_name": "sonic",
           "address": "0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447",
-      "name": "ValidatorsRegistry",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ValidatorsRegistry",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x72965045a6691e5a74299d1e878f303264d4d910",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447",
+          "deployment_unit": "unit-32519",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -485,7 +247,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 9
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

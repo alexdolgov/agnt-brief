@@ -5,10 +5,10 @@
 - Project: Everything (`everything`)
 - Website: [https://everything.inc/](https://everything.inc/)
 - Lifecycle: active (Tier 0, 22.8% below peak)
-- Generated: 2026-06-13T22:41:34.988Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
+- Generated: 2026-06-17T07:00:33.164Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum
-- Contract surface: 14 unique implementations (16 raw deployments)
+- Contract surface: 7 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $710,207.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Everything is an Arbitrum-based unified-liquidity AMM and oracle-less lending, b
 
 The EV contract serves as the core lending logic, while WormholeTransceiver and NttManager contracts handle cross-chain messaging and asset transfers, all managed through upgradeable proxy patterns and a shared UpgradeableBeacon.
 
+## Contract Surface Quality
+
+- Indexed contracts: 16; live-surface contracts included: 7 (7 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 9 singleton, 0 uninitialized.
+- Deployment units: 3/8 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 14
-- Raw deployments: 16
+- Unverified implementations: 3
+- Unique implementations: 7
+- Raw deployments: 7
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,16 +54,14 @@ The EV contract serves as the core lending logic, while WormholeTransceiver and 
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EV | unknown | arbitrum | 2 deployments: arbitrum [`0xdcca77...515dc1`](./contracts/arbitrum-42161/0xdcca77dd282667561c4c611ff5de697002515dc1/); arbitrum `0xe7e7e7...c1e7e7` | ⚠️ Unaudited |
-| NttManager | governance | arbitrum | [`0xf432b2...f435cd`](./contracts/arbitrum-42161/0xf432b2564cc0e233482a1f2af0eda4832cf435cd/) | ⚠️ Unaudited |
-| UniPoolPair | core_logic | arbitrum | [`0xfa896e...fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | ⚠️ Unaudited |
-| UniPoolRouter | adapter | arbitrum | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | ⚠️ Unaudited |
-| UpgradeableBeacon | registry | arbitrum | [`0x4e04f0...a5e5b4`](./contracts/arbitrum-42161/0x4e04f0fcc6c153cc7ff21b8e49aa53053ba5e5b4/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | arbitrum | 2 deployments: arbitrum [`0x1ea94d...9d63b5`](./contracts/arbitrum-42161/0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5/); arbitrum `0x3d0f80...a945f6` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UniPoolPair | core_logic | arbitrum | unit-21093 | [`0xfa896e...fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | ⚠️ Unaudited |
+| UniPoolRouter | adapter | arbitrum | n/a | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | arbitrum | unit-21086 | [`0x1ea94d...9d63b5`](./contracts/arbitrum-42161/0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | arbitrum | unit-21087 | [`0x3d0f80...a945f6`](./contracts/arbitrum-42161/0x3d0f808e717943f7aa53c6285a33a2dfa2a945f6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,20 +75,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0x4e3ca901719c84cf86f4328d3d930b471de8acb5) | proxy | arbitrum | `0xabd8dc...917b91` | ❓ Unverified |
-| Proxy (impl: 0x9f38a0ec5daabd34fe8983cba24c9efb9572afaa) | proxy | arbitrum | `0xa88216...06b6a7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4e3ca9...e8acb5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6a53ed...c98003` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x99af3f...7cd682` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9f38a0...72afaa` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb0ef23...7bbd02` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xc26494...4fca44` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | arbitrum | n/a | `0x6a53ed...c98003` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x99af3f...7cd682` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc26494...4fca44` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,17 +96,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xdcca77...515dc1`](./contracts/arbitrum-42161/0xdcca77dd282667561c4c611ff5de697002515dc1/) | EV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | UniPoolRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 8 |
+| standard_library | 3 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

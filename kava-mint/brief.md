@@ -5,8 +5,8 @@
 - Project: Kava Mint (`kava-mint`)
 - Website: [https://www.kava.io/](https://www.kava.io/)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-06-14T05:40:36.925Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:50.100Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $11,055,555.28
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Kava Mint is the Kava ecosystem CDP/minting component that lets users lock collateral to mint stablecoins; Kava itself is a Cosmos/EVM-compatible blockchain and DeFi hub.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -67,9 +75,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | kava | `0xa8e48f...49fc1f` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0xa8e48f...49fc1f` | ❓ Unverified |
 
 ## Audit Inventory
 

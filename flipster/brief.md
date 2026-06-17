@@ -5,8 +5,8 @@
 - Project: Flipster (`flipster`)
 - Website: [https://flipster.io](https://flipster.io)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-14T05:26:58.685Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:52.107Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $33,006,244.36
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Flipster is a centralized cryptocurrency exchange and perpetual futures trading platform offering digital asset trading services such as spot trading, perpetuals, copy trading, earn/rewards programs, and proof-of-reserves related services. The two listed Klaytn/Kaia addresses are only the DB-known smart-contract surface and are skeletal/non-representative of the full Flipster exchange, reserve wallet, and off-chain system footprint; they should not be interpreted as securing the project-wide CEX reserve TVL.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -67,10 +75,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | `0x61e57f...737682` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x987753...93e698` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | klaytn | n/a | `0x61e57f...737682` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x987753...93e698` | ❓ Unverified |
 
 ## Audit Inventory
 

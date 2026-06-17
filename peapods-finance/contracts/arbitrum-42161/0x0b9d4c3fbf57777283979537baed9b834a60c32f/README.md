@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | Yes |
 | Audits | [Rendered PDF capture](https://3679785424-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FWWGuQ85FudSBhxhUZWcf%2Fuploads%2F1H0oxy7m5JgiUvW4syJW%2FPeapods-security-review_2024-11-16%20(2).pdf) |
-| Deployments | 4 (mode `0x948e2e5f60fdb55052bb9453bb641ca98518ad48`; arbitrum [`0x0b9d4c3fbf57777283979537baed9b834a60c32f`](../0x0b9d4c3fbf57777283979537baed9b834a60c32f/); arbitrum `0x88b6db67000f8ef34ae1a34542b2e4b43b87d9b7`; arbitrum `0xe8869f393d083bc41358b6c13b1ebce54fe11458`) |
+| Deployments | 3 (arbitrum [`0x0b9d4c3fbf57777283979537baed9b834a60c32f`](../0x0b9d4c3fbf57777283979537baed9b834a60c32f/); arbitrum `0x88b6db67000f8ef34ae1a34542b2e4b43b87d9b7`; arbitrum `0xe8869f393d083bc41358b6c13b1ebce54fe11458`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

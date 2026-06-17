@@ -5,11 +5,11 @@
 - Project: Rooster Protocol (`rooster-protocol`)
 - Website: [https://www.rooster.trade/](https://www.rooster.trade/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T02:24:35.502Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-17T07:00:56.137Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,227,185.00
+- DeFi Llama TVL: $2,357,746.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Rooster Protocol is Plume's native RWA-ready decentralized exchange and liquidity hub, providing token swaps and liquidity provision through concentrated-liquidity AMM functionality and plugin-based features.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

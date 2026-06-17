@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iq",
-  "generated_at": "2026-06-11T00:12:14.266Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-17T07:00:57.550Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "iq",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5039162.27656,
+    "dl_tvl_usd": 3712021.56956,
     "tvl_usd": 23853191.631720774,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,7 +44,8 @@
     "asd_usd": 23853191.631720774,
     "website_url": "https://iq.wiki",
     "chains": [
-      "ethereum"
+      "ethereum",
+      "fraxtal"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -59,13 +60,24 @@
   },
   "topography": {
     "project_purpose": "IQ.wiki is a blockchain and cryptocurrency encyclopedia powered by the IQ token. The IQ token is used within the ecosystem for governance and staking, including HiIQ staking as reflected in DefiLlama staking data.",
-    "relationship_narrative": null,
-    "product_family_count": 1
+    "relationship_narrative": "The IQ token contract is the core asset, while the Vyper contract likely serves as a supporting infrastructure component such as a staking or governance mechanism, sharing the same deployer cluster.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 6,
+    "live_contracts": 4,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -76,6 +88,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x579cea1889991f68acc35ff5c3dd0621ff29b0c9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "IQERC20",
       "role": "token",
       "origin_kind": "native",
@@ -90,6 +104,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x579cea1889991f68acc35ff5c3dd0621ff29b0c9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 23853191.631720774,
@@ -104,9 +120,81 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0x19928170d739139bfbbb6614007f8eeed17db0ba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BAMMFactory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BAMMFactory",
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x19928170d739139bfbbb6614007f8eeed17db0ba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xe30521fe7f3beb6ad556887b50739d6c7ca667e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FraxswapFactory",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "Frax",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FraxswapFactory",
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xe30521fe7f3beb6ad556887b50739d6c7ca667e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1bf5457ecaa14ff63cc89efd560e251e814e16ba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Vyper_contract",
       "role": "unknown",
       "origin_kind": "native",
@@ -121,6 +209,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1bf5457ecaa14ff63cc89efd560e251e814e16ba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -161,9 +251,9 @@
   ],
   "origin_summary": {
     "native": 2,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

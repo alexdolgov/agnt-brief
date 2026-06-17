@@ -7,31 +7,39 @@
 - Project: Reppo (`reppo`)
 - Website: [https://reppo.xyz/](https://reppo.xyz/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T05:34:03.338Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:00:47.349Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
-- Contract surface: 3 unique implementations (5 raw deployments)
+- Contract surface: 2 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,826,175.20
 - On-chain TVL (included contracts): $19,774,880.15
 - TVL by chain: Base $19,774,880.15
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Reppo is an AI training data network and data infrastructure project. Although it may be categorized under DefiLlama's "Prediction Market" label, the available verified information does not support describing it as a protocol for creating or trading real-world event outcome tokens.
 
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 3
-- Raw deployments: 5
+- Unique implementations: 2
+- Raw deployments: 3
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $19,774,880.15
@@ -50,12 +58,11 @@ Reppo is an AI training data network and data infrastructure project. Although i
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AgentTokenV2 | unknown | base | 2 deployments: base [`0x7bab5d...8ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/); base `0xff8104...8583d6` | ⚠️ Unaudited |
-| VeReppo | unknown | base | 2 deployments: base [`0x0ace0e...1bf988`](./contracts/base-8453/0x0ace0e652add81c8907e4ae8fd07adbdec1bf988/); base `0x0efbe1...8b9009` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AgentTokenV2 | unknown | base | n/a | 2 deployments: base [`0x7bab5d...8ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/); base `0xff8104...8583d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,9 +80,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | base | `0x365075...e25481` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x365075...e25481` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

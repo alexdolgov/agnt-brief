@@ -4,32 +4,40 @@
 
 - Project: BYDFi (`bydfi`)
 - Website: [https://www.bydfi.com/en](https://www.bydfi.com/en)
-- Lifecycle: active (Tier 0, 46.3% below peak)
-- Generated: 2026-06-12T06:42:02.182Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
-- Chains: ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:50.001Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $72,147,103.65
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 BYDFi is a centralized cryptocurrency exchange offering spot trading, futures/derivatives, copy trading, trading bots, and fiat access. The covered on-chain contract surface is limited to an Ethereum Gnosis Safe SafeProxy wallet used for custody and operational fund management, and does not represent the full BYDFi exchange or reserve/TVL surface across Ethereum, Bitcoin, and Ripple.
 
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +55,9 @@ BYDFi is a centralized cryptocurrency exchange offering spot trading, futures/de
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Safe | unknown | ethereum | 2 deployments: ethereum [`0x41675c...c7461a`](./contracts/ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/); ethereum `0x845dfa...d5acd4` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

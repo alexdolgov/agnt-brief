@@ -7,8 +7,8 @@
 - Project: Defi Kingdoms (`defi-kingdoms`)
 - Website: [https://www.defikingdoms.com](https://www.defikingdoms.com)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-14T05:53:19.544Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:56.219Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: harmony, klaytn, metis
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $7,689,270.13
@@ -22,6 +22,14 @@ DeFi Kingdoms is a cross-chain fantasy RPG/game integrated with DeFi features, i
 ### Architecture
 
 All contracts belong to a single product family and likely share infrastructure such as a common router or factory for liquidity pools, though specific relationships are not detailed in the provided data.
+
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 8 (0 live, 8 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,9 +59,9 @@ All contracts belong to a single product family and likely share infrastructure 
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| TransparentUpgradeableProxy | proxy | metis | [`0xa0d026...c5dd92`](./contracts/metis-1088/0xa0d026484859b84709749047a0118e3932c5dd92/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| TransparentUpgradeableProxy | proxy | metis | n/a | [`0xa0d026...c5dd92`](./contracts/metis-1088/0xa0d026484859b84709749047a0118e3932c5dd92/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -71,15 +79,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | metis | `0x4cb622...c35d14` | ❓ Unverified |
-| UnnamedContract | unknown | metis | `0xc76816...65b53b` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x30c103...527b43` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x36fae7...98db2b` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xaa8548...463ea6` | ❓ Unverified |
-| UnnamedContract | unknown | harmony | `0x72cb10...90048f` | ❓ Unverified |
-| UnnamedContract | unknown | harmony | `0x9014b9...faa5f7` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | metis | n/a | `0x4cb622...c35d14` | ❓ Unverified |
+| UnnamedContract | unknown | metis | n/a | `0xc76816...65b53b` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x30c103...527b43` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x36fae7...98db2b` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xaa8548...463ea6` | ❓ Unverified |
+| UnnamedContract | unknown | harmony | n/a | `0x72cb10...90048f` | ❓ Unverified |
+| UnnamedContract | unknown | harmony | n/a | `0x9014b9...faa5f7` | ❓ Unverified |
 
 ## Audit Inventory
 

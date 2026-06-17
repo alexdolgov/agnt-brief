@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | Yes |
 | Audits | [[\[Final Report\]]()](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20Nest%20-%20VE%20Core%20-%20Final%20Report.pdf) |
-| Deployments | 2 (hyperliquid [`0x224240310337462bde7fee244a6e07e35a231f47`](../0x224240310337462bde7fee244a6e07e35a231f47/); hyperliquid `0xa2e33f280d93621d967d273e33998da4935104bc`) |
+| Deployments | 1 (hyperliquid [`0x224240310337462bde7fee244a6e07e35a231f47`](../0x224240310337462bde7fee244a6e07e35a231f47/)) |
 | Proxy | Yes → `0x19534e...0a2785` |
 | Source | Etherscan |
 | TVL | n/a |

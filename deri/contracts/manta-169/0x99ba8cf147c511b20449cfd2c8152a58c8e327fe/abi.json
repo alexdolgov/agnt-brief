@@ -1,0 +1,137 @@
+[
+  {
+    "inputs": [],
+    "name": "BTokenDupInitialize",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BTokenNoOracle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BTokenNoSwapper",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotDelBToken",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "name": "IToUOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SendEthFail",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTokenOutAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "oracleId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "collateralFactor",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddBToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      }
+    ],
+    "name": "DelBToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "FinishCollectProtocolFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "actionId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executionFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetExecutionFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateBToken",
+    "type": "event"
+  }
+]

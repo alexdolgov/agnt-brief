@@ -5,30 +5,39 @@
 - Project: four.meme (`four.meme`)
 - Website: [https://four.meme](https://four.meme)
 - Lifecycle: active (Tier 0, 57% below peak)
-- Generated: 2026-06-13T04:55:22.061Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Generated: 2026-06-17T07:01:00.776Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $4,621,111.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.
 
-### Architecture
+## Contract Surface Quality
 
-The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.
+- Indexed contracts: 5; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 0/3 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -48,9 +57,9 @@ The two proxy contracts likely represent the main launchpad logic and a supporti
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | bsc | [`0xf251f8...e46034`](./contracts/bsc-56/0xf251f83e40a78868fcfa3fa4599dad6494e46034/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC1967Proxy | proxy | bsc | unit-32560 | [`0xf251f8...e46034`](./contracts/bsc-56/0xf251f83e40a78868fcfa3fa4599dad6494e46034/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -64,16 +73,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0x57df49f5d8412d05e792c30c023ee974c48a90b5) | proxy | bsc | `0xec4549...33bfbc` | ❓ Unverified |
-| Proxy (impl: 0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf) | proxy | bsc | `0x5c9520...50762b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x57df49...8a90b5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x7f9411...329bbf` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -91,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 0 |

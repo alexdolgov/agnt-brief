@@ -1,8 +1,8 @@
 # suzaku — Contract Index
 
-52 unique implementations on avalanche · 105 deployments · 2 audited · 22 unaudited · 28 unverified
+49 unique implementations on avalanche · 95 deployments · 2 audited · 19 unaudited · 28 unverified
 
-## core_logic (6)
+## core_logic (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -11,7 +11,6 @@
 | [MiddlewareVaultManager (25 deployments)](./avalanche-43114/0x08c1512f016ac9c1f7a3fff0c457d23010a64f81/) | avalanche | 25 deployments: avalanche [`0x08c151...a64f81`](./avalanche-43114/0x08c1512f016ac9c1f7a3fff0c457d23010a64f81/); avalanche `0x14d4fe...d23a76`; avalanche `0x21a2b3...09f328`; avalanche `0x239023...72bff8`; avalanche `0x2d4c52...f96a66`; avalanche `0x348d67...b8b082`; avalanche `0x382db9...c080dd`; avalanche `0x3d078d...00559a`; avalanche `0x430d60...86faed`; avalanche `0x6a1212...fe4d41`; avalanche `0x763afa...c1fad9`; avalanche `0x7e844e...fadb0d`; avalanche `0x91e112...36e329`; avalanche `0xb2a341...2c083f`; avalanche `0xbb2676...8d8a6f`; avalanche `0xbb9f20...f4d84f`; avalanche `0xbd1550...d8dfbf`; avalanche `0xc3b4d9...4aa5b8`; avalanche `0xc5f945...dca1b4`; avalanche `0xcc0bd1...6a2129`; avalanche `0xcf29f0...d2c418`; avalanche `0xd8e7db...648592`; avalanche `0xea47a2...153e4d`; avalanche `0xf34617...66e189`; avalanche `0xfd9387...27b408` | ⚠️ Unaudited | Verified |
 | [OperatorVaultOptInService](./avalanche-43114/0xe437b5efa4c0717ec15aced13a82bbd8ce92da47/) | avalanche | [`0xe437b5...92da47`](./avalanche-43114/0xe437b5efa4c0717ec15aced13a82bbd8ce92da47/) | ⚠️ Unaudited | Verified |
 | [VaultHelper (3 deployments)](./avalanche-43114/0x76e0b9d2c716840f597b3af1e2833f4b4098402a/) | avalanche | 3 deployments: avalanche [`0x76e0b9...98402a`](./avalanche-43114/0x76e0b9d2c716840f597b3af1e2833f4b4098402a/); avalanche `0x9677f7...8d95b8`; avalanche `0x9985e0...1bf970` | ⚠️ Unaudited | Verified |
-| [VaultTokenized (2 deployments)](./avalanche-43114/0xc9a25f0a8436de76e999787bd509edba0d2471a2/) | avalanche | 2 deployments: avalanche [`0xc9a25f...2471a2`](./avalanche-43114/0xc9a25f0a8436de76e999787bd509edba0d2471a2/); avalanche `0xce634f...e2f8ed` | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 
@@ -37,12 +36,10 @@
 | [SlasherFactory](./avalanche-43114/0x2eb000900452bcf56f607480f4872c07d45f4415/) | avalanche | [`0x2eb000...5f4415`](./avalanche-43114/0x2eb000900452bcf56f607480f4872c07d45f4415/) | ⚠️ Unaudited | Verified |
 | [VaultFactory](./avalanche-43114/0x3e669b3aec2227f1454cdad4b475a636e575694a/) | avalanche | [`0x3e669b...75694a`](./avalanche-43114/0x3e669b3aec2227f1454cdad4b475a636e575694a/) | ⚠️ Unaudited | Verified |
 
-## token (3)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [LSTWrapper (4 deployments)](./avalanche-43114/0x017d60fbf9e82ebf77860500e052287280eef453/) | avalanche | 4 deployments: avalanche [`0x017d60...eef453`](./avalanche-43114/0x017d60fbf9e82ebf77860500e052287280eef453/); avalanche `0x119c46...16b68c`; avalanche `0xa1c16a...438c7e`; avalanche `0xdc1c44...0da403` | ⚠️ Unaudited | Verified |
-| [RewardsNativeToken (4 deployments)](./avalanche-43114/0x0f388c7c6201014ad836400e9e2ebd211bdbcb00/) | avalanche | 4 deployments: avalanche [`0x0f388c...dbcb00`](./avalanche-43114/0x0f388c7c6201014ad836400e9e2ebd211bdbcb00/); avalanche `0x3d0330...5d6d32`; avalanche `0x430e1e...d1d077`; avalanche `0xff5d88...9efdd4` | ⚠️ Unaudited | Verified |
 | [SuzakuToken](./avalanche-43114/0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef/) | avalanche | [`0x451532...f6f5ef`](./avalanche-43114/0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef/) | ⚠️ Unaudited | Verified |
 
 ## unknown (34)

@@ -5,10 +5,10 @@
 - Project: YBTC.B (`ybtc.b`)
 - Website: [https://www.bitlayer.org/](https://www.bitlayer.org/)
 - Lifecycle: active (Tier 0, 81.6% below peak)
-- Generated: 2026-06-12T16:39:16.394Z
-- Pipeline run: v2-pipeline-2026-06-12-c7aee3-d3e0
-- Chains: avalanche, bsc, ethereum
-- Contract surface: 1 unique implementations (5 raw deployments)
+- Generated: 2026-06-17T07:00:36.313Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $69,267,722.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -22,6 +22,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/1 (0.0%)
@@ -29,7 +37,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
-- Raw deployments: 5
+- Raw deployments: 1
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,9 +57,9 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BridgedYBTCB | operational_periphery | bsc | 5 deployments: ethereum `0xf053a5...15a308`; bsc [`0x2cd3cd...3d7335`](./contracts/bsc-56/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335/); bsc `0xcde9d6...b7341b`; avalanche [`0x2cd3cd...3d7335`](./contracts/avalanche-43114/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335/); avalanche `0x786248...920d63` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BridgedYBTCB | unknown | ethereum | n/a | [`0xf053a5...15a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,15 +98,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xf053a5...15a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | BridgedYBTCB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

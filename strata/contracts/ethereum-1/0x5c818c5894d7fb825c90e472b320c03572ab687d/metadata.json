@@ -1,0 +1,17 @@
+{
+  "address": "0x5c818c5894d7fb825c90e472b320c03572ab687d",
+  "chain_id": 1,
+  "contract_name": "ERC20Cooldown",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:32.354Z"
+}

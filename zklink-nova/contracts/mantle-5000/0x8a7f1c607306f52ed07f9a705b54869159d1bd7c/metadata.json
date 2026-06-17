@@ -1,0 +1,17 @@
+{
+  "address": "0x8a7f1c607306f52ed07f9a705b54869159d1bd7c",
+  "chain_id": 5000,
+  "contract_name": "PositionRouter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "0000000000000000000000002e488d7ed78171793fa91fad5352be423a50dae1000000000000000000000000ea02deeb067acec119095845d780665883dc458300000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb8000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000005af3107a40000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:44.722Z"
+}

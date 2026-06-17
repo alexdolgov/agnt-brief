@@ -1,53 +1,50 @@
 {
   "schema_version": "2.0",
   "project_key": "alphax",
-  "generated_at": "2026-06-14T04:21:20.185Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
+  "generated_at": "2026-06-17T07:00:52.393Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alphax",
     "tier": 0,
     "peak_tvl": 1704152,
     "peak_date": "2025-02-23T00:00:00.000Z",
-    "tvl_30d_ago": 1379319,
-    "tvl_90d_ago": 6,
-    "tvl_current": 1490733,
+    "tvl_30d_ago": 1450392,
+    "tvl_90d_ago": 927097,
+    "tvl_current": 1482844,
     "tier0_reason": "healthy_tvl_level_and_change",
     "tvl_180d_ago": 6,
-    "change_30d_pct": 8.07746431391143,
-    "change_90d_pct": 24845450,
-    "days_since_peak": 455,
+    "change_30d_pct": 2.2374640786766613,
+    "change_90d_pct": 59.94486013869099,
+    "days_since_peak": 476,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 12.523472084649725
+    "drop_from_peak_pct": 12.986400274153947
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 7,
-    "unique_implementations": 2,
-    "total_deployments": 7,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1481982.44814,
-    "tvl_usd": 1151947.041264972,
+    "tvl_usd": 933747.338867972,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 933747.34,
-      "ethereum": 218199.7
+      "bsc": 933747.34
     },
-    "asd_usd": 1151947.041264972,
+    "asd_usd": 933747.338867972,
     "website_url": "https://alphax.com/",
     "chains": [
-      "arbitrum",
-      "bsc",
-      "ethereum"
+      "bsc"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -62,13 +59,24 @@
   },
   "topography": {
     "project_purpose": "AlphaX is a derivatives protocol that enables users to trade perpetual contracts and other derivative products on-chain. It uses vault-based architecture to manage liquidity and positions.",
-    "relationship_narrative": "The protocol consists of a single product family where DEXVaultV1 serves as the core logic contract, and ERC1967Proxy acts as the upgradeable proxy pointing to it. All contracts are deployed by the same deployer, indicating a unified infrastructure.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 1,
+    "inactive_contracts": 2,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 5,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": true,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -76,102 +84,30 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3afa86022a76e8ca6db1b530a93e33de2081428e",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8259f6010a030bcd54335503ba91bba70a534ca6",
+      "deployment_unit": "unit-18539",
+      "deployment_unit_proxy_count": 1,
       "name": "DEXVaultV1",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "AlphaX",
-      "tvl_usd": 1151946.739419972,
-      "is_proxy": false,
-      "impl_address": "0x87fcdec6a9e3133ea2b0f3d73e5ee96a570f2081",
-      "impl_name": "DEXVaultV1",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3afa86022a76e8ca6db1b530a93e33de2081428e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xec0377a6bc71c4a28288a5cfd307b80c53a7e1e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 218199.400552,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x8259f6010a030bcd54335503ba91bba70a534ca6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 933747.338867972,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3afa86022a76e8ca6db1b530a93e33de2081428e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x552e7a55802f3350c707a243e402aa50eda9d286",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xec0377a6bc71c4a28288a5cfd307b80c53a7e1e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa61a6e696b7c566da42b80da27d96e7104bcec99",
-      "name": "DEXVaultV2",
       "role": "core_logic",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
-      "tvl_usd": 0.301845,
+      "tvl_usd": 933747.338867972,
       "is_proxy": true,
-      "impl_address": "0x69af6f106354737885e55aa015c1ecd66c1ebe72",
-      "impl_name": "DEXVaultV2",
+      "impl_address": "0x6302e7948736baf985804f0dc6132baf6d86cc92",
+      "impl_name": "DEXVaultV1",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa61a6e696b7c566da42b80da27d96e7104bcec99",
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8259f6010a030bcd54335503ba91bba70a534ca6",
+          "deployment_unit": "unit-18539",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 0.301845,
+          "tvl_usd": 933747.338867972,
           "is_audited": false
         }
       ],
@@ -207,20 +143,9 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3afa86022a76e8ca6db1b530a93e33de2081428e",
-      "name": "DEXVaultV1",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 1151946.739419972,
-      "risk_note": "Verified native implementation with $1,151,946.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 0

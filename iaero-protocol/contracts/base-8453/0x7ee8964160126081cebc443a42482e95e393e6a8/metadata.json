@@ -1,0 +1,18 @@
+{
+  "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
+  "chain_id": 8453,
+  "contract_name": "LIQToken",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:00.401Z"
+}

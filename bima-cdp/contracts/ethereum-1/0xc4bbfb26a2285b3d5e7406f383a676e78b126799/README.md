@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | Yes |
 | Audits | [cantina_competition_bima_december2024.pdf](https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/cantina_competition_bima_december2024.pdf) |
-| Deployments | 3 (ethereum [`0xc4bbfb26a2285b3d5e7406f383a676e78b126799`](../0xc4bbfb26a2285b3d5e7406f383a676e78b126799/); bsc `0xc4bbfb26a2285b3d5e7406f383a676e78b126799`; sonic `0xc4bbfb26a2285b3d5e7406f383a676e78b126799`) |
+| Deployments | 1 (ethereum [`0xc4bbfb26a2285b3d5e7406f383a676e78b126799`](../0xc4bbfb26a2285b3d5e7406f383a676e78b126799/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

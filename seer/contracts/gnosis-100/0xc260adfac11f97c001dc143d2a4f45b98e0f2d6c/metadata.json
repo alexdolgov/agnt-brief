@@ -1,0 +1,17 @@
+{
+  "address": "0xc260adfac11f97c001dc143d2a4f45b98e0f2d6c",
+  "chain_id": 100,
+  "contract_name": "RealityProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "000000000000000000000000ceafdd6bc0bef976fdcd1112955828e00543c0ce000000000000000000000000e78996a233895be74a66f451f1019ca9734205cc",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:56.998Z"
+}

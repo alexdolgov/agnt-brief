@@ -5,13 +5,13 @@
 - Project: Orbit Bridge (`orbit-bridge`)
 - Website: [https://bridge.orbitchain.io](https://bridge.orbitchain.io)
 - Lifecycle: active (Tier 0, 94.4% below peak)
-- Generated: 2026-06-12T14:47:12.239Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
-- Chains: bsc, celo, ethereum, heco, klaytn, polygon
-- Contract surface: 24 unique implementations (29 raw deployments)
+- Generated: 2026-06-17T07:00:35.591Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: bsc, ethereum, heco, klaytn, polygon
+- Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $15,310,376.14
-- On-chain TVL (included contracts): $829,871.42
-- TVL by chain: Ethereum $631,043.73 | Bsc $189,641.01 | Polygon $9,164.65 | Celo $22.03
+- On-chain TVL (included contracts): $820,684.74
+- TVL by chain: Ethereum $631,043.73 | Bsc $189,641.01
 
 ## Project Description
 
@@ -21,17 +21,25 @@ Orbit Bridge is an active interchain bridge supporting a broad set of EVM and no
 
 The Orbit Bridge family consists of vault contracts deployed across multiple chains, all sharing the same core logic for asset locking and release. The ORCToken likely serves as the governance or utility token for the bridge ecosystem, while the unnamed contracts may provide supporting infrastructure such as access control or adapters.
 
+## Contract Surface Quality
+
+- Indexed contracts: 29; live-surface contracts included: 6 (4 live, 2 unknown).
+- Excluded by liveness: 17 inactive, 6 singleton, 0 uninitialized.
+- Deployment units: 2/5 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 19
-- Unique implementations: 24
-- Raw deployments: 29
+- Unverified implementations: 3
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $829,871.42
+- ASD (verified + unaudited TVL): $820,684.74
 - Latest audit: 2022-01 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,15 +54,13 @@ The Orbit Bridge family consists of vault contracts deployed across multiple cha
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ORCToken | token | ethereum | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ⚠️ Unaudited |
-| Vault | core_logic | polygon | 2 deployments: bsc `0x89c527...beb780`; polygon [`0x506dc4...28dbd5`](./contracts/polygon-137/0x506dc4c6408813948470a06ef6e4a1daf228dbd5/) | ⚠️ Unaudited |
-| EthVaultImpl | core_logic | ethereum | 3 deployments: ethereum [`0x1bf68a...cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/); ethereum `0x4f16a2...9ff81e`; ethereum `0xc3430b...ee9454` | ⚠️ Unaudited |
-| CeloVaultImpl | core_logic | celo | 2 deployments: celo [`0x7eaab7...80af17`](./contracts/celo-42220/0x7eaab7a96fc311377709b12a81cd87228780af17/); celo `0x979cd0...da3777` | ⚠️ Unaudited |
-| ProxyAdmin | governance | polygon | 2 deployments: polygon [`0x3b31c9...174720`](./contracts/polygon-137/0x3b31c980598f9237d9c14bb44118773b92174720/); celo `0x6a1cf2...510f53` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ORCToken | token | ethereum | n/a | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ⚠️ Unaudited |
+| Vault | core_logic | bsc | unit-21367 | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | ⚠️ Unaudited |
+| EthVaultImpl | core_logic | ethereum | unit-21366 | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -68,31 +74,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x0207ec...cab30b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x093333...25d0cf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x123d6d...0f79d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2127ed...24b79f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4ff16c...95fbe8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x54ad07...34a4d4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6bd8e3...e6706f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6c943d...0463c6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7f1014...d8a1f4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd23c23...8721b0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd8c163...9b8ac4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xff3eb6...a912a7` | ❓ Unverified |
-| UnnamedContract | unknown | heco | `0x38c92a...4d279f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x6aeec0...dbaee8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x98d729...a708b1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x9fad26...c4ee25` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xda4721...842303` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x9abc3f...3f648d` | ❓ Unverified |
-| UnnamedContract | unknown | celo | `0xe66502...eb76a7` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | heco | n/a | `0x38c92a...4d279f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x98d729...a708b1` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x9abc3f...3f648d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 24 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

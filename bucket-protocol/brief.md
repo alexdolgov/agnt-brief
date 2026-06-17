@@ -5,11 +5,11 @@
 - Project: Bucket Protocol (`bucket-protocol`)
 - Website: [https://bucketprotocol.io](https://bucketprotocol.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:14:26.747Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:00:57.509Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $65,133,048.00
+- DeFi Llama TVL: $57,931,000.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Bucket Protocol is a Sui-based DeFi protocol centered on collateralized debt positions and stablecoin borrowing/minting. Users can deposit collateral to mint/borrow the protocol stablecoin, with functionality including real-time liquidation and flash loans. Bucket Farm should be treated as a related DeFi product only where independently scoped, and unsupported claims about a shared native governance or reward token should be removed unless separately verified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

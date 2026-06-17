@@ -5,11 +5,11 @@
 - Project: Sprinter (`sprinter`)
 - Website: [https://sprinter.tech/](https://sprinter.tech/)
 - Lifecycle: active (Tier 0, 59.7% below peak)
-- Generated: 2026-06-11T03:02:55.720Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-17T07:00:49.846Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $940,717.31
+- DeFi Llama TVL: $923,972.99
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,6 +20,14 @@ Sprinter is credit and liquidity infrastructure with Sprinter Solve/Credit and S
 ### Architecture
 
 The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, while SprinterLiquidityMining distributes incentives to depositors. The TransparentUpgradeableProxy points to a LiquidityHub implementation, likely managing shared logic or access control across the system.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: aave-v2
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -47,12 +55,12 @@ The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, whil
 
 ### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| LiquidityHub | unknown | base | [`0xa593a9...539ff2`](./contracts/base-8453/0xa593a9bbbc65be342ff610a01e96da2eb8539ff2/) | ✅ Audited |
-| LiquidityPool | core_logic | base | [`0xb58bb9...e5c032`](./contracts/base-8453/0xb58bb9643884abbbad64fa7ebc874c5481e5c032/) | ✅ Audited |
-| LiquidityPoolAave | core_logic | base | [`0x7c2552...c09f4b`](./contracts/base-8453/0x7c255279c098fdf6c3116d2becd9978002c09f4b/) | ✅ Audited |
-| SprinterLiquidityMining | unknown | base | [`0x479d15...313c21`](./contracts/base-8453/0x479d158959b59328e89f0fbf7dfebb198c313c21/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| LiquidityHub | unknown | base | unit-30390 | [`0xa593a9...539ff2`](./contracts/base-8453/0xa593a9bbbc65be342ff610a01e96da2eb8539ff2/) | ✅ Audited |
+| LiquidityPool | core_logic | base | n/a | [`0xb58bb9...e5c032`](./contracts/base-8453/0xb58bb9643884abbbad64fa7ebc874c5481e5c032/) | ✅ Audited |
+| LiquidityPoolAave | core_logic | base | n/a | [`0x7c2552...c09f4b`](./contracts/base-8453/0x7c255279c098fdf6c3116d2becd9978002c09f4b/) | ✅ Audited |
+| SprinterLiquidityMining | unknown | base | n/a | [`0x479d15...313c21`](./contracts/base-8453/0x479d158959b59328e89f0fbf7dfebb198c313c21/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

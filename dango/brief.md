@@ -5,34 +5,42 @@
 - Project: Dango (`dango`)
 - Website: [https://dango.exchange/](https://dango.exchange/)
 - Lifecycle: active (Tier 0, 14.4% below peak)
-- Generated: 2026-06-14T00:03:26.172Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Generated: 2026-06-17T07:00:41.593Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 3 unique implementations (6 raw deployments)
+- Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,200,872.00
-- On-chain TVL (included contracts): $4,073,057.79
-- TVL by chain: Ethereum $4,073,057.79
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Dango is a trading-focused Layer 1 / DeFi hub with spot trading, perpetuals, lending, vaults, unified margin, and on-chain orderbook execution. In the currently verified EVM evidence set, the measured DefiLlama TVL is attributable to the Ethereum Dango Bridge contracts; the listed Ethereum contracts should not be treated as proof of a live multi-chain perps contract surface.
 
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 6
+- Unique implementations: 1
+- Raw deployments: 2
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $4,073,057.79
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -47,13 +55,11 @@ Dango is a trading-focused Layer 1 / DeFi hub with spot trading, perpetuals, len
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| HypERC20Collateral | token | ethereum | 2 deployments: ethereum [`0xd05909...c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/); ethereum `0xe07165...fc84f9` | ⚠️ Unaudited |
-| HypNative | unknown | ethereum | 2 deployments: ethereum [`0x9d0ea3...cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/); ethereum `0x9d259a...3154cb` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0x613942...09e601`](./contracts/ethereum-1/0x613942eff27c6886bb2a33a172cdaf03a009e601/); ethereum `0x947303...361fe6` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ProxyAdmin | governance | ethereum | n/a | 2 deployments: ethereum [`0x613942...09e601`](./contracts/ethereum-1/0x613942eff27c6886bb2a33a172cdaf03a009e601/); ethereum `0x947303...361fe6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
-| standard_library | 2 |
+| upstream | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

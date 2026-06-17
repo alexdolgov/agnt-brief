@@ -1,0 +1,17 @@
+{
+  "address": "0xebf15850f3405484a904b9454f2597bba91ae473",
+  "chain_id": 80094,
+  "contract_name": "GenericUtils",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 7500,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:50.209Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x258d485a17e1ba65ff6367d0e8b8acc70ab200f2",
+  "chain_id": 5000,
+  "contract_name": "Admin",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 48,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:22.170Z"
+}

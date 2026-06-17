@@ -5,11 +5,11 @@
 - Project: DefiChain DEX (`defichain-dex`)
 - Website: [https://defichain.com/dex](https://defichain.com/dex)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:44:45.391Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:42.715Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,167,102.70
+- DeFi Llama TVL: $2,057,516.98
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 DefiChain DEX is a DefiChain-native decentralized exchange for swapping DFI and wrapped tokens on the DefiChain network. Unsupported claims about multi-chain EVM deployments, yield farming, staking, vaults, liquidity aggregation, and auto-compounding should be removed unless independently verified from authoritative DefiChain sources.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

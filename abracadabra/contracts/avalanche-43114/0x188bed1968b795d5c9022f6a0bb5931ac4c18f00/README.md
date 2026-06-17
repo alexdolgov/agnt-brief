@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (avalanche [`0x188bed1968b795d5c9022f6a0bb5931ac4c18f00`](../0x188bed1968b795d5c9022f6a0bb5931ac4c18f00/); avalanche `0x3eb4ec45b791c6d43b8dd5373c2e94d8996e8945`) |
+| Deployments | 1 (avalanche [`0x188bed1968b795d5c9022f6a0bb5931ac4c18f00`](../0x188bed1968b795d5c9022f6a0bb5931ac4c18f00/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

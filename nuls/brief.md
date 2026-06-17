@@ -5,8 +5,8 @@
 - Project: Nuls (`nuls`)
 - Website: [https://nuls.io](https://nuls.io)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:30:00.304Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:41.803Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $7,331,698.00
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Nuls is a blockchain infrastructure project centered on a modular, microservices-based public chain ecosystem and cross-chain capabilities. It should be described as chain infrastructure rather than as a multi-chain DeFi yield farming, staking, vault, or liquidity-provision aggregator unless Nuls-owned DeFi deployments are independently verified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

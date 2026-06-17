@@ -1,0 +1,18 @@
+{
+  "address": "0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128",
+  "chain_id": 1,
+  "contract_name": "KUSDMinterDelegator",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xb11bc8e754e623ca175d87cde33eb99385743f43",
+  "fetched_at": "2026-06-17T06:49:17.246Z"
+}

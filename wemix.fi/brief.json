@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wemix.fi",
-  "generated_at": "2026-06-11T04:05:27.014Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-17T07:01:00.723Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 38180746,
-    "tvl_usd": 38180746,
+    "dl_tvl_usd": 33906891,
+    "tvl_usd": 33906891,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "WEMIX.FI is a fully on-chain DeFi platform and decentralized exchange on WEMIX3.0. Its sourced product surface includes Swap/exchange, Pool/liquidity, Liquid Staking, Dashboard, Portfolio, Claim, Help Center, and Docs, with DefiLlama describing support for storage, exchange, borrowing, settlement, and investment. Claims about governance participation, concentrated/full-range liquidity products, separate lending and staking-pool product families should be removed or qualified unless verified from current docs or contracts.",
     "relationship_narrative": null,
-    "product_family_count": 5
+    "product_family_count": 5,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

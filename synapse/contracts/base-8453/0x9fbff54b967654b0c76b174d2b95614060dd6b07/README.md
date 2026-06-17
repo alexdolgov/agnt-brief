@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (base [`0x9fbff54b967654b0c76b174d2b95614060dd6b07`](../0x9fbff54b967654b0c76b174d2b95614060dd6b07/); arbitrum `0x9fbff54b967654b0c76b174d2b95614060dd6b07`; avalanche `0x9fbff54b967654b0c76b174d2b95614060dd6b07`) |
+| Deployments | 2 (base [`0x9fbff54b967654b0c76b174d2b95614060dd6b07`](../0x9fbff54b967654b0c76b174d2b95614060dd6b07/); arbitrum `0x9fbff54b967654b0c76b174d2b95614060dd6b07`) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

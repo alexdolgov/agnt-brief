@@ -1,0 +1,18 @@
+{
+  "address": "0x3f74ddb979f508a43a92eb0cc2bc3dc4aaf6407d",
+  "chain_id": 56,
+  "contract_name": "ReclaimQueueWithExtraData",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "prague",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:16.319Z"
+}

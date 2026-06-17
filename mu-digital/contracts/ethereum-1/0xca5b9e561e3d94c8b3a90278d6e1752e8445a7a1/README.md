@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | Yes |
 | Audits | [Mu Protocol - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Mu%20Protocol%20-%20SlowMist%20Audit%20Report.pdf) |
-| Deployments | 2 (ethereum [`0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1`](../0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1/); ethereum `0xdefb60c6c3d46cf324c8fad8edb989c47192ed70`) |
+| Deployments | 1 (ethereum [`0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1`](../0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1/)) |
 | Proxy | Yes → `0x9462fd...772365` |
 | Source | Etherscan |
 | TVL | n/a |

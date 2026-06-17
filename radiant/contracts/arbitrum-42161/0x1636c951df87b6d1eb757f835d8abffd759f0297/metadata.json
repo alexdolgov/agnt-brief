@@ -1,0 +1,17 @@
+{
+  "address": "0x1636c951df87b6d1eb757f835d8abffd759f0297",
+  "chain_id": 42161,
+  "contract_name": "TokenizedStrategy",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "0000000000000000000000009af01a0cdf11656051cb473edb7341eef382bfc8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:33.401Z"
+}

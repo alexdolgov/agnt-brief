@@ -1,0 +1,17 @@
+{
+  "address": "0x63bc33a6e6adfdf1a94613bded1ad13fb7307639",
+  "chain_id": 42161,
+  "contract_name": "PermissionedMulticall3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:55.644Z"
+}

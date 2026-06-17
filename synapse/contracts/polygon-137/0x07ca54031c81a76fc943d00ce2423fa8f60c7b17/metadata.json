@@ -1,0 +1,17 @@
+{
+  "address": "0x07ca54031c81a76fc943d00ce2423fa8f60c7b17",
+  "chain_id": 137,
+  "contract_name": "ECDSAFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:39.333Z"
+}

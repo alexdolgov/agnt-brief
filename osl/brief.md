@@ -5,8 +5,8 @@
 - Project: OSL (`osl`)
 - Website: [https://www.osl.com/en](https://www.osl.com/en)
 - Lifecycle: active (Tier 0, 60% below peak)
-- Generated: 2026-06-14T04:18:36.204Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-17T07:00:52.556Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: scroll
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $92,558,443.35
@@ -20,6 +20,14 @@ OSL is a regulated centralized digital asset exchange and digital asset payments
 ### Architecture
 
 All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified; they likely interact directly to facilitate exchange operations.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -66,12 +74,12 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | scroll | `0x136848...ea11ce` | ❓ Unverified |
-| UnnamedContract | unknown | scroll | `0x14dc2b...91b15e` | ❓ Unverified |
-| UnnamedContract | unknown | scroll | `0x19c8ed...9f6175` | ❓ Unverified |
-| UnnamedContract | unknown | scroll | `0xa853b3...02efc6` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | scroll | n/a | `0x136848...ea11ce` | ❓ Unverified |
+| UnnamedContract | unknown | scroll | n/a | `0x14dc2b...91b15e` | ❓ Unverified |
+| UnnamedContract | unknown | scroll | n/a | `0x19c8ed...9f6175` | ❓ Unverified |
+| UnnamedContract | unknown | scroll | n/a | `0xa853b3...02efc6` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -5,11 +5,11 @@
 - Project: Nostra (`nostra`)
 - Website: [https://nostra.finance/](https://nostra.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:31:06.551Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:50.260Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $6,815,331.00
+- DeFi Llama TVL: $5,731,866.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Nostra is a DeFi protocol on Starknet offering lending, borrowing, swaps, liquidity pools, and bridging. It enables users to supply and borrow assets, swap tokens, provide liquidity, and bridge assets within the Starknet ecosystem.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

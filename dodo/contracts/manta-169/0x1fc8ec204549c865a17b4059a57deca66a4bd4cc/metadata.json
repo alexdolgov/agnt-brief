@@ -1,0 +1,17 @@
+{
+  "address": "0x1fc8ec204549c865a17b4059a57deca66a4bd4cc",
+  "chain_id": 169,
+  "contract_name": "DVM",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:52.572Z"
+}

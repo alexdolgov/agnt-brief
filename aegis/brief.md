@@ -5,10 +5,10 @@
 - Project: Aegis (`aegis`)
 - Website: [https://aegis.im/](https://aegis.im/)
 - Lifecycle: active (Tier 0, 19.1% below peak)
-- Generated: 2026-06-12T10:45:54.174Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
+- Generated: 2026-06-17T07:00:45.000Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum
-- Contract surface: 12 unique implementations (18 raw deployments)
+- Contract surface: 12 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $35,901,615.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,6 +21,14 @@ Aegis is an active stablecoin and yield protocol centered on YUSD and marketed/u
 
 The protocol consists of a single product family centered around the YUSD token, with no additional supporting contracts identified in the inventory.
 
+## Contract Surface Quality
+
+- Indexed contracts: 18; live-surface contracts included: 17 (16 live, 1 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Unverified dependencies: 4/17.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/12 (0.0%)
@@ -28,7 +36,7 @@ The protocol consists of a single product family centered around the YUSD token,
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 12
-- Raw deployments: 18
+- Raw deployments: 17
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -48,20 +56,20 @@ The protocol consists of a single product family centered around the YUSD token,
 
 ### ⚠️ Verified + Unaudited (12)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AegisConfig | governance | ethereum | 2 deployments: ethereum [`0x90ccf2...f1db00`](./contracts/ethereum-1/0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00/); bsc `0xb9f1e8...4ca9da` | ⚠️ Unaudited |
-| AegisMinting | unknown | bsc | 3 deployments: ethereum `0xa30644...bd815b`; ethereum `0xc4df68...820fc2`; bsc [`0x02bf8f...ce65cf`](./contracts/bsc-56/0x02bf8f0e046f471709e578b1e633077096ce65cf/) | ⚠️ Unaudited |
-| AegisMintingJUSD | unknown | ethereum | [`0xbb0f32...09b520`](./contracts/ethereum-1/0xbb0f32d176590faedc7bc552b7ead7a86809b520/) | ⚠️ Unaudited |
-| AegisOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x2b4ad1...041aec`](./contracts/ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/); bsc `0x588fd0...d8cf15` | ⚠️ Unaudited |
-| AegisOracleJUSD | unknown | ethereum | [`0xfa449d...17e0e7`](./contracts/ethereum-1/0xfa449dc17194fdaca1dd2237c828938f1917e0e7/) | ⚠️ Unaudited |
-| AegisRewards | unknown | ethereum | 2 deployments: ethereum [`0x8adcfa...ddeafd`](./contracts/ethereum-1/0x8adcfaf1b64cc514524b80565bcc732273ddeafd/); bsc `0x93efaa...e5b75e` | ⚠️ Unaudited |
-| sJUSD | unknown | ethereum | [`0x4aa894...90bdb3`](./contracts/ethereum-1/0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3/) | ⚠️ Unaudited |
-| sJUSDSilo | unknown | ethereum | [`0x22dace...688d9a`](./contracts/ethereum-1/0x22daceed48d7ee53f964a5aa3bdb6e4d3d688d9a/) | ⚠️ Unaudited |
-| sYUSD | unknown | ethereum | [`0xfe0ccc...a4cb64`](./contracts/ethereum-1/0xfe0ccc9942e98c963fe6b4e5194eb6e3baa4cb64/) | ⚠️ Unaudited |
-| sYUSDOFTAdapter | adapter | ethereum | [`0x1a7cde...0b41fc`](./contracts/ethereum-1/0x1a7cde558d318052add800ca30dc7464920b41fc/) | ⚠️ Unaudited |
-| YUSD | unknown | ethereum | [`0x4274cd...a8da0a`](./contracts/ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | ⚠️ Unaudited |
-| YUSDMintBurnOFTAdapter | adapter | bsc | 2 deployments: ethereum `0xaf12b0...143565`; bsc [`0x539e46...e602e3`](./contracts/bsc-56/0x539e46827c37a3ef11c7ce521cc56b4d59e602e3/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AegisConfig | governance | ethereum | n/a | 2 deployments: ethereum [`0x90ccf2...f1db00`](./contracts/ethereum-1/0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00/); bsc `0xb9f1e8...4ca9da` | ⚠️ Unaudited |
+| AegisMinting | unknown | bsc | n/a | 3 deployments: ethereum `0xa30644...bd815b`; ethereum `0xc4df68...820fc2`; bsc [`0x02bf8f...ce65cf`](./contracts/bsc-56/0x02bf8f0e046f471709e578b1e633077096ce65cf/) | ⚠️ Unaudited |
+| AegisMintingJUSD | unknown | ethereum | n/a | [`0xbb0f32...09b520`](./contracts/ethereum-1/0xbb0f32d176590faedc7bc552b7ead7a86809b520/) | ⚠️ Unaudited |
+| AegisOracle | operational_periphery | ethereum | n/a | [`0x2b4ad1...041aec`](./contracts/ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/) | ⚠️ Unaudited |
+| AegisOracleJUSD | unknown | ethereum | n/a | [`0xfa449d...17e0e7`](./contracts/ethereum-1/0xfa449dc17194fdaca1dd2237c828938f1917e0e7/) | ⚠️ Unaudited |
+| AegisRewards | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8adcfa...ddeafd`](./contracts/ethereum-1/0x8adcfaf1b64cc514524b80565bcc732273ddeafd/); bsc `0x93efaa...e5b75e` | ⚠️ Unaudited |
+| sJUSD | unknown | ethereum | unit-18255 | [`0x4aa894...90bdb3`](./contracts/ethereum-1/0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3/) | ⚠️ Unaudited |
+| sJUSDSilo | unknown | ethereum | n/a | [`0x22dace...688d9a`](./contracts/ethereum-1/0x22daceed48d7ee53f964a5aa3bdb6e4d3d688d9a/) | ⚠️ Unaudited |
+| sYUSD | unknown | ethereum | unit-18256 | [`0xfe0ccc...a4cb64`](./contracts/ethereum-1/0xfe0ccc9942e98c963fe6b4e5194eb6e3baa4cb64/) | ⚠️ Unaudited |
+| sYUSDOFTAdapter | adapter | ethereum | n/a | [`0x1a7cde...0b41fc`](./contracts/ethereum-1/0x1a7cde558d318052add800ca30dc7464920b41fc/) | ⚠️ Unaudited |
+| YUSD | unknown | ethereum | n/a | [`0x4274cd...a8da0a`](./contracts/ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | ⚠️ Unaudited |
+| YUSDMintBurnOFTAdapter | adapter | bsc | n/a | 2 deployments: ethereum `0xaf12b0...143565`; bsc [`0x539e46...e602e3`](./contracts/bsc-56/0x539e46827c37a3ef11c7ce521cc56b4d59e602e3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

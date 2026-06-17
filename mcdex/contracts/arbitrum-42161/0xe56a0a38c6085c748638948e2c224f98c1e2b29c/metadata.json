@@ -1,0 +1,17 @@
+{
+  "address": "0xe56a0a38c6085c748638948e2c224f98c1e2b29c",
+  "chain_id": 42161,
+  "contract_name": "Reader",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 135,
+  "constructor_arguments": "0000000000000000000000002ff2f1d9826ae2410979ae19b88c361073ab0918000000000000000000000000489ee077994b6658eafa855c308275ead8097c4a00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab100000000000000000000000045096e7aa921f27590f8f19e457794eb09678141000000000000000000000000fd70de6b91282d8017aa4e741e9ae325cab992d800000000000000000000000065a6cc451baff7e7b4fdab4157763ab4b6b44d0e000000000000000000000000e6fab3f0c7199b0d34d7fbe83394fc0e0d06e99d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:37.596Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4195faaba1cbad584fe2fec711d788cdb9a6a9a7",
+  "chain_id": 56,
+  "contract_name": "Distributor",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:24.627Z"
+}

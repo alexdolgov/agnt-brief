@@ -1,8 +1,8 @@
 # fulcrom — Contract Index
 
-79 unique implementations across 2 chains · 79 deployments · 0 audited · 0 unaudited · 79 unverified
+56 unique implementations across 2 chains · 56 deployments · 0 audited · 0 unaudited · 56 unverified
 
-## unknown (79)
+## unknown (56)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -46,42 +46,19 @@
 | UnnamedContract | cronos | `0xff7bba...4981f4` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x022b94...a17e3e` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x0cf436...105992` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x12dde9...cd7864` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x16db00...5e228f` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x1768f4...1bc3b8` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x1886df...44b982` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x1c25e8...a32709` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x233d74...2c251f` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x2fb401...6ef561` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x3a4d4e...a46f41` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x471037...4fbed5` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x4bb06e...8382ef` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x4bc463...781e3f` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x4d9193...118a33` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x539734...3164a4` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x54e710...6c45de` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x64b394...21dbc1` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x6f8681...c5aaf2` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x76df63...524c16` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x7d5b02...b55a1e` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x84dd02...16308b` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x850fe8...5e3926` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x873534...38e89f` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x88ca1f...19761b` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x93140f...51b325` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0x99819f...0243d6` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0x9f370f...00f8e3` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xb3fb42...d913dd` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xbca606...dc71ec` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xc1088d...698464` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xc76b71...6eb609` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xd136cb...b002fd` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xd939ba...c72954` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xdddf22...162075` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xe59385...097a6e` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xe6c1d5...d31e15` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xe89969...dab297` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xe9db75...562825` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xf2220a...f2491f` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xf60034...828078` | ❓ Unverified | Unverified |
-| UnnamedContract | zksync-era | `0xfa54f2...7ad12f` | ❓ Unverified | Unverified |

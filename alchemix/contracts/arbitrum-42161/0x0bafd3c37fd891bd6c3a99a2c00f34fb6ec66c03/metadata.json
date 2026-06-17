@@ -1,0 +1,17 @@
+{
+  "address": "0x0bafd3c37fd891bd6c3a99a2c00f34fb6ec66c03",
+  "chain_id": 42161,
+  "contract_name": "ATokenGateway",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:27.038Z"
+}

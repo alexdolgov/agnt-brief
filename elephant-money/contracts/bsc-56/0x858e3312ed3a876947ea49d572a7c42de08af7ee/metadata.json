@@ -1,0 +1,17 @@
+{
+  "address": "0x858e3312ed3a876947ea49d572a7c42de08af7ee",
+  "chain_id": 56,
+  "contract_name": "BiswapFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:09.321Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1a5e6af17e3aca2e5afb18bc18a87840875f9530",
+  "chain_id": 42161,
+  "contract_name": "LiquidityPoolHop1",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:52.247Z"
+}

@@ -5,10 +5,10 @@
 - Project: AITECH (`aitech`)
 - Website: [https://aitech.io](https://aitech.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T03:36:51.173Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-17T07:00:57.429Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
-- Contract surface: 3 unique implementations (4 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,497,966.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focus
 
 The AITECH token is used as the reward token in the DecubateMasterChef contract, which is deployed via a transparent upgradeable proxy, indicating a shared dependency on the token for reward distribution.
 
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 4
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,13 +54,12 @@ The AITECH token is used as the reward token in the DecubateMasterChef contract,
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AITECH | unknown | bsc | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | ⚠️ Unaudited |
-| DCBVault | core_logic | bsc | [`0xf1c3f6...84b096`](./contracts/bsc-56/0xf1c3f68f82e6d2560a12d977b322a5db4684b096/) | ⚠️ Unaudited |
-| DecubateMasterChef | unknown | bsc | 2 deployments: bsc [`0x2c4dd7...c31184`](./contracts/bsc-56/0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/); bsc `0xb934f5...f7f36f` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AITECH | unknown | bsc | n/a | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | unit-18288 | [`0xf1c3f6...84b096`](./contracts/bsc-56/0xf1c3f68f82e6d2560a12d977b322a5db4684b096/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

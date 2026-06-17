@@ -7,13 +7,13 @@
 - Project: Charm Finance (`charm-finance`)
 - Website: [https://www.charm.fi/](https://www.charm.fi/)
 - Lifecycle: declining (Tier 0, 82% below peak)
-- Generated: 2026-06-14T09:08:38.706Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
-- Chains: arbitrum, base, berachain, blast, boba, ethereum, linea, polygon, scroll
-- Contract surface: 20 unique implementations (49 raw deployments)
+- Generated: 2026-06-17T07:00:37.799Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: arbitrum, base, berachain, boba, ethereum, polygon
+- Contract surface: 7 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $2,322,579.00
-- On-chain TVL (included contracts): $14,217.52
-- TVL by chain: Ethereum $14,217.52
+- On-chain TVL (included contracts): $14,189.53
+- TVL by chain: Ethereum $14,189.53
 
 ## Project Description
 
@@ -23,57 +23,55 @@ Charm Finance is a permissionless liquidity management protocol with both legacy
 
 The protocol consists of a single product family, Charm Finance V2, centered around the AlphaProVaultFactory which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present.
 
+## Contract Surface Quality
+
+- Indexed contracts: 49; live-surface contracts included: 16 (15 live, 1 unknown).
+- Excluded by liveness: 33 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: uniswap-v3
+- Unverified dependencies: 1/14.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/15 (20.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 3/5 (60.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 20
-- Raw deployments: 49
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 16
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 4
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/charm/information))
 - ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2025-06 (aging)
 - Staleness: 0 fresh, 1 aging, 4 stale, 0 unknown
-- Tier 1 coverage: 20.0% (Code4rena, Spearbit)
+- Tier 1 coverage: 60.0% (Code4rena, Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $0.00 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 2 | 13.3% | 2023-06 |
-| Spearbit | Tier 1 | 2 | 13.3% | 2025-06 |
-| Code4rena | Tier 1 | 1 | 6.7% | 2021-06 |
+| PeckShield | Tier 2 | 2 | 40.0% | 2023-06 |
+| Spearbit | Tier 1 | 2 | 40.0% | 2025-06 |
+| Code4rena | Tier 1 | 1 | 20.0% | 2021-06 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AlphaVault | core_logic | ethereum | 4 deployments: ethereum [`0x55535c...d0d21a`](./contracts/ethereum-1/0x55535c4c56f6bf373e06c43e44c0356aafd0d21a/); ethereum `0x9bf7b4...164322`; ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited |
-| AlphaProVault | core_logic | berachain | 4 deployments: linea `0x8cbc88...91572c`; berachain [`0x0a4b7a...e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61`; blast `0x8cbc88...91572c` | ✅ Audited |
-| AlphaProVaultFactory | registry | berachain | 9 deployments: ethereum `0x5b7b8b...9b2afa`; polygon `0x5b7b8b...9b2afa`; base `0x5b7b8b...9b2afa`; arbitrum `0x5b7b8b...9b2afa`; linea `0x8c554f...e50e07`; berachain [`0x189bd7...6ed137`](./contracts/berachain-80094/0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137/); berachain `0x78f25a...b4ad15`; blast `0x8c554f...e50e07`; scroll `0xc2cc57...a32e77` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AlphaVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x9bf7b4...164322`](./contracts/ethereum-1/0x9bf7b46c7ad5ab62034e9349ab912c0345164322/); ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited |
+| AlphaProVault | core_logic | berachain | n/a | 2 deployments: berachain [`0x0a4b7a...e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61` | ✅ Audited |
+| AlphaProVaultFactory | registry | berachain | n/a | 6 deployments: ethereum `0x5b7b8b...9b2afa`; polygon `0x5b7b8b...9b2afa`; base `0x5b7b8b...9b2afa`; arbitrum `0x5b7b8b...9b2afa`; berachain [`0x189bd7...6ed137`](./contracts/berachain-80094/0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137/); berachain `0x78f25a...b4ad15` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| CubePool | core_logic | ethereum | 3 deployments: ethereum [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/); ethereum `0xd9bb96...38e8ff`; ethereum `0xe86e8f...430204` | ⚠️ Unaudited |
-| AlphaProPeriphery | periphery | berachain | 2 deployments: berachain [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f...39a7ee` | ⚠️ Unaudited |
-| CubePoolMulticall | core_logic | ethereum | 2 deployments: ethereum [`0x01cc4a...fffe04`](./contracts/ethereum-1/0x01cc4a364f16b9ed0b77b3be704a5b1b8dfffe04/); ethereum `0x1b1686...e6aba7` | ⚠️ Unaudited |
-| CubeToken | token | ethereum | [`0x63ac15...11a49e`](./contracts/ethereum-1/0x63ac156aab82af415dd24594529d13e47d11a49e/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | polygon | 2 deployments: polygon [`0x9c308a...62bcbb`](./contracts/polygon-137/0x9c308ab82286bfb212ec202bb2455958cf62bcbb/); arbitrum `0xde2ce9...ec108d` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | base | [`0x424cdd...1e32a1`](./contracts/base-8453/0x424cdd9021af88a86c76b245e24583f9a71e32a1/) | ⚠️ Unaudited |
-| OptionFactory | registry | ethereum | 3 deployments: ethereum [`0x443ec3...822e86`](./contracts/ethereum-1/0x443ec3dc7840c3eb610a2a80068dfe3c56822e86/); ethereum `0x849eb9...0377d5`; ethereum `0xcdfe16...742f2b` | ⚠️ Unaudited |
-| OptionMarket | unknown | ethereum | 3 deployments: ethereum [`0x063555...db3895`](./contracts/ethereum-1/0x063555aad59cf37ccf915a2dcc807b0a2adb3895/); ethereum `0x31d07b...f738ac`; ethereum `0xf3e900...410d80` | ⚠️ Unaudited |
-| OptionRegistry | registry | ethereum | 4 deployments: ethereum [`0x029b6e...533755`](./contracts/ethereum-1/0x029b6ed38c86bef3bd4fc2cb390ff00019533755/); ethereum `0x258ebe...ff33c7`; ethereum `0x574467...dad1cd`; ethereum `0x70de9a...113034` | ⚠️ Unaudited |
-| OptionToken | token | ethereum | 3 deployments: ethereum [`0x17b4c8...4b9357`](./contracts/ethereum-1/0x17b4c8562f644a87a3b5c1aa53846d61404b9357/); ethereum `0x22e425...4ddecf`; ethereum `0x51be15...d809a0` | ⚠️ Unaudited |
-| OptionViews | unknown | ethereum | 2 deployments: ethereum [`0x3cb5d4...e4e815`](./contracts/ethereum-1/0x3cb5d4aeb622a72cf971d4f308e767c53be4e815/); ethereum `0x4c4d29...afd64f` | ⚠️ Unaudited |
-| TokenVesting | operational_periphery | ethereum | [`0xcb591f...73aff4`](./contracts/ethereum-1/0xcb591fa448c9b67e206d404c0d3219011173aff4/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CubePool | core_logic | ethereum | n/a | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited |
+| AlphaProPeriphery | periphery | berachain | n/a | 2 deployments: berachain [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f...39a7ee` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,27 +85,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0xd4b456...1067cf` | ❓ Unverified |
-| UnnamedContract | unknown | boba | `0xfaf1af...6d8a07` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xc2cc57...a32e77` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0xfcc5d3...780d3b` | ❓ Unverified |
-| UnnamedContract | unknown | blast | `0xc2cc57...a32e77` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | boba | n/a | `0xfaf1af...6d8a07` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xfcc5d3...780d3b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Active Bug Bounty Program](https://immunefi.com/bug-bounty/charm/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 9 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf) | PeckShield | Audit | 2023-06 | stale | Direct | contract_name | 4 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 9 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf) | Code4rena | Contest | 2021-06 | stale | Direct | contract_name | 4 | high |
+| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 4 | high |
+| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf) | PeckShield | Audit | 2023-06 | stale | Direct | contract_name | 2 | high |
+| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 4 | high |
+| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf) | Code4rena | Contest | 2021-06 | stale | Direct | contract_name | 3 | high |
 | [Audit Report - Charm Finance [27.10.2020].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Charm%20Finance%20%5B27.10.2020%5D.pdf) | unknown | Audit | 2020-10 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -118,22 +113,14 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | CubePool | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | berachain | [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/) | AlphaProPeriphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01cc4a...fffe04`](./contracts/ethereum-1/0x01cc4a364f16b9ed0b77b3be704a5b1b8dfffe04/) | CubePoolMulticall | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x63ac15...11a49e`](./contracts/ethereum-1/0x63ac156aab82af415dd24594529d13e47d11a49e/) | CubeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x443ec3...822e86`](./contracts/ethereum-1/0x443ec3dc7840c3eb610a2a80068dfe3c56822e86/) | OptionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x063555...db3895`](./contracts/ethereum-1/0x063555aad59cf37ccf915a2dcc807b0a2adb3895/) | OptionMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x029b6e...533755`](./contracts/ethereum-1/0x029b6ed38c86bef3bd4fc2cb390ff00019533755/) | OptionRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17b4c8...4b9357`](./contracts/ethereum-1/0x17b4c8562f644a87a3b5c1aa53846d61404b9357/) | OptionToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3cb5d4...e4e815`](./contracts/ethereum-1/0x3cb5d4aeb622a72cf971d4f308e767c53be4e815/) | OptionViews | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcb591f...73aff4`](./contracts/ethereum-1/0xcb591fa448c9b67e206d404c0d3219011173aff4/) | TokenVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 18 |
+| native | 7 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

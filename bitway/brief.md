@@ -5,8 +5,8 @@
 - Project: Bitway (`bitway`)
 - Website: [https://bitway.com/](https://bitway.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T07:18:08.518Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
+- Generated: 2026-06-17T07:00:49.461Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $60,775,264.39
@@ -20,6 +20,14 @@ Bitway Earn is a BSC/BNB Chain asset-management and capital-gateway product in t
 ### Architecture
 
 The Bitway family shares LPToken and WithdrawVault contracts across multiple vault instances, indicating a modular design where vaults issue standardized LP tokens and use common withdrawal logic. The Strategy: Bitway Core Alpha vault is a separate core logic contract that may interact with the same stablecoin or token infrastructure.
+
+## Contract Surface Quality
+
+- Indexed contracts: 30; live-surface contracts included: 30 (30 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
+- Detected codebases: none
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,15 +56,15 @@ The Bitway family shares LPToken and WithdrawVault contracts across multiple vau
 
 ### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BitwayToken | token | bsc | 3 deployments: bsc [`0x32e060...3270e0`](./contracts/bsc-56/0x32e060f88398d16b086e5040566cb1897d3270e0/); bsc `0x3a63de...16d25d`; bsc `0x444045...35acaa` | ⚠️ Unaudited |
-| Vault | core_logic | bsc | 4 deployments: bsc [`0x1f0681...538188`](./contracts/bsc-56/0x1f068133a960ecf58f938164e0fd5364cb538188/); bsc `0x3db84f...fffee1`; bsc `0x5c4a69...d52bd1`; bsc `0xb82e32...ae3b63` | ⚠️ Unaudited |
-| BitwayOFTAdapter | adapter | bsc | [`0x76d775...0f1e50`](./contracts/bsc-56/0x76d77531258b4dddfa4087e97a6c89bc0f0f1e50/) | ⚠️ Unaudited |
-| BitwayTokenLock | token | bsc | 4 deployments: bsc [`0x4e1743...c81b73`](./contracts/bsc-56/0x4e1743201775794e313dd621dfe89c61eec81b73/); bsc `0xca5715...879832`; bsc `0xd15f47...da1b4c`; bsc `0xfa0f1a...665c90` | ⚠️ Unaudited |
-| LPToken | token | bsc | 12 deployments: bsc [`0x2a0109...65dbee`](./contracts/bsc-56/0x2a0109ac682794b78a9715568abac9d60665dbee/); bsc `0x4effb6...b106d5`; bsc `0x66f2c4...c5370e`; bsc `0x73af54...2ba3a1`; bsc `0x8042c9...3ef00a`; bsc `0x82356c...a8ef71`; bsc `0x8a928c...713386`; bsc `0xaa3d25...ffffb7`; bsc `0xb5c361...2307f9`; bsc `0xccafb7...ed2fd2`; bsc `0xd8a246...08d813`; bsc `0xeebfe7...68229b` | ⚠️ Unaudited |
-| StablecoinV2 | token | bsc | [`0xce2443...666666`](./contracts/bsc-56/0xce24439f2d9c6a2289f741120fe202248b666666/) | ⚠️ Unaudited |
-| WithdrawVault | operational_periphery | bsc | 4 deployments: bsc [`0x2b8464...f157cb`](./contracts/bsc-56/0x2b8464ffb2b77de64cfefdeb00ad925576f157cb/); bsc `0xb466f0...c07f9b`; bsc `0xeff69f...21f09d`; bsc `0xfc8e6b...1d04ef` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BitwayToken | token | bsc | n/a | 3 deployments: bsc [`0x32e060...3270e0`](./contracts/bsc-56/0x32e060f88398d16b086e5040566cb1897d3270e0/); bsc `0x3a63de...16d25d`; bsc `0x444045...35acaa` | ⚠️ Unaudited |
+| Vault | core_logic | bsc | n/a | 4 deployments: bsc [`0x1f0681...538188`](./contracts/bsc-56/0x1f068133a960ecf58f938164e0fd5364cb538188/); bsc `0x3db84f...fffee1`; bsc `0x5c4a69...d52bd1`; bsc `0xb82e32...ae3b63` | ⚠️ Unaudited |
+| BitwayOFTAdapter | adapter | bsc | n/a | [`0x76d775...0f1e50`](./contracts/bsc-56/0x76d77531258b4dddfa4087e97a6c89bc0f0f1e50/) | ⚠️ Unaudited |
+| BitwayTokenLock | token | bsc | n/a | 4 deployments: bsc [`0x4e1743...c81b73`](./contracts/bsc-56/0x4e1743201775794e313dd621dfe89c61eec81b73/); bsc `0xca5715...879832`; bsc `0xd15f47...da1b4c`; bsc `0xfa0f1a...665c90` | ⚠️ Unaudited |
+| LPToken | token | bsc | n/a | 12 deployments: bsc [`0x2a0109...65dbee`](./contracts/bsc-56/0x2a0109ac682794b78a9715568abac9d60665dbee/); bsc `0x4effb6...b106d5`; bsc `0x66f2c4...c5370e`; bsc `0x73af54...2ba3a1`; bsc `0x8042c9...3ef00a`; bsc `0x82356c...a8ef71`; bsc `0x8a928c...713386`; bsc `0xaa3d25...ffffb7`; bsc `0xb5c361...2307f9`; bsc `0xccafb7...ed2fd2`; bsc `0xd8a246...08d813`; bsc `0xeebfe7...68229b` | ⚠️ Unaudited |
+| StablecoinV2 | token | bsc | unit-19744 | [`0xce2443...666666`](./contracts/bsc-56/0xce24439f2d9c6a2289f741120fe202248b666666/) | ⚠️ Unaudited |
+| WithdrawVault | operational_periphery | bsc | n/a | 4 deployments: bsc [`0x2b8464...f157cb`](./contracts/bsc-56/0x2b8464ffb2b77de64cfefdeb00ad925576f157cb/); bsc `0xb466f0...c07f9b`; bsc `0xeff69f...21f09d`; bsc `0xfc8e6b...1d04ef` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -74,9 +82,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0xcfd67d...7c3415` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0xcfd67d...7c3415` | ❓ Unverified |
 
 ## Audit Inventory
 

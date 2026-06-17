@@ -4,11 +4,11 @@
 
 - Project: Tender Finance (`tender-finance`)
 - Lifecycle: active (Tier 0, 96.6% below peak)
-- Generated: 2026-06-11T03:30:05.096Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-17T07:00:57.650Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,287,317.93
+- DeFi Llama TVL: $1,158,130.17
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,6 +20,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Tender Finance is a live lending and borrowing protocol on Arbitrum One, plausibly Compound-style, with TVL-bearing money market infrastructure. The currently captured contract inventory only includes the TND token and should not be treated as representing the full protocol surface; the lending controller/comptroller, market tokens, oracle, interest-rate model, admin/governance, proxy, and related core contracts still need to be identified and scoped.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,9 +56,9 @@ Tender Finance is a live lending and borrowing protocol on Arbitrum One, plausib
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| TND | unknown | arbitrum | [`0xc47d97...d2798c`](./contracts/arbitrum-42161/0xc47d9753f3b32aa9548a7c3f30b6aec3b2d2798c/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| TND | unknown | arbitrum | n/a | [`0xc47d97...d2798c`](./contracts/arbitrum-42161/0xc47d9753f3b32aa9548a7c3f30b6aec3b2d2798c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

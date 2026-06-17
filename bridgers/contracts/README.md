@@ -6,7 +6,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| Bridgers (8 deployments) | sonic | 8 deployments: ethereum [`0xb68576...89895b`](./ethereum-1/0xb685760ebd368a891f27ae547391f4e2a289895b/); optimism `0xb68576...89895b`; bsc `0xb68576...89895b`; polygon `0xb68576...89895b`; sonic `0x89a70b...48d693`; arbitrum `0xb68576...89895b`; avalanche `0xb68576...89895b`; berachain `0x89a70b...48d693` | ⚠️ Unaudited | Verified |
+| Bridgers (8 deployments) | sonic | 8 deployments: ethereum [`0xb68576...89895b`](./ethereum-1/0xb685760ebd368a891f27ae547391f4e2a289895b/); optimism `0xb68576...89895b`; bsc `0xb68576...89895b`; polygon `0xb68576...89895b`; sonic `0x89a70b...48d693`; arbitrum `0xb68576...89895b`; avalanche `0xb68576...89895b`; berachain `0x89a70b...48d693` | ⚠️ Unaudited (bytecode match) | Verified |
 | UnnamedContract | opbnb | `0x8f957e...594dd1` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0x74b238...58c76d` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0xb68576...89895b` | ❓ Unverified | Unverified |

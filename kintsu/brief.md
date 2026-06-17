@@ -7,10 +7,10 @@
 - Project: Kintsu (`kintsu`)
 - Website: [https://kintsu.xyz/](https://kintsu.xyz/)
 - Lifecycle: declining (Tier 0, 60.2% below peak)
-- Generated: 2026-06-14T09:36:00.130Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:49.618Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: hyperliquid
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $2,158,496.70
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,14 +23,22 @@ Kintsu is a composable liquid staking protocol centered on Monad, where users st
 
 The Mainnet family uses a proxy pointing to the Kintsu family's implementation contract, indicating a shared codebase where the Kintsu contracts serve as the logic layer for the mainnet deployment.
 
+## Contract Surface Quality
+
+- Indexed contracts: 12; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 8 singleton, 0 uninitialized.
+- Deployment units: 0/4 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 4
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -65,24 +73,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b) | proxy | hyperliquid | `0x2b9005...761d04` | ❓ Unverified |
-| Proxy (impl: 0x46fe710f0a9288160fe43d502d6d5fc85de9c16d) | proxy | hyperliquid | `0x1810ae...390cbb` | ❓ Unverified |
-| Proxy (impl: 0x577635fa486382d139f9e99f32d67e6e041102cb) | proxy | hyperliquid | `0xddc126...4d2945` | ❓ Unverified |
-| Proxy (impl: 0xabf96a5c39761cbeddc09f94fb918932091728d8) | proxy | hyperliquid | `0xf82c9d...530659` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x1d0197...c57ba3` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x1ed00e...ea174b` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x46fe71...e9c16d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x478e01...04baac` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x577635...1102cb` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xabf96a...1728d8` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xaeb3b3...29b5f6` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xbef014...669d2d` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | hyperliquid | n/a | `0x1d0197...c57ba3` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x478e01...04baac` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xaeb3b3...29b5f6` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xbef014...669d2d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

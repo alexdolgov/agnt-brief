@@ -1,0 +1,18 @@
+{
+  "address": "0xa58a4f5c4bb043d2cc1e170613b74e767c94189b",
+  "chain_id": 1,
+  "contract_name": "UTUToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:03.307Z"
+}

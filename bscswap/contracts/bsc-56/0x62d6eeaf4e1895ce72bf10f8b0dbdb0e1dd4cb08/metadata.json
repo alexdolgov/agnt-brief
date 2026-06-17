@@ -1,0 +1,17 @@
+{
+  "address": "0x62d6eeaf4e1895ce72bf10f8b0dbdb0e1dd4cb08",
+  "chain_id": 56,
+  "contract_name": "LaunchField",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000001ebf0ee99971c6269062c3b480e8e23b7a74756b000000000000000000000000a6381c6fd8f40a44721ef4f61edc1a8ccca7bf3d0000000000000000000000000000000000000000000004c3ba39c5e411100000000000000000000000000000000000000000000000000000000000005f7d5960000000000000000000000000000000000000000000000000000000005f7eaae0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:51.552Z"
+}

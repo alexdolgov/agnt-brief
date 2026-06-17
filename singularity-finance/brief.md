@@ -7,8 +7,8 @@
 - Project: Singularity Finance (`singularity-finance`)
 - Website: [https://singularityfinance.ai/](https://singularityfinance.ai/)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-13T04:57:48.994Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Generated: 2026-06-17T07:00:49.810Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
 - Contract surface: 10 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $4,721,299.87
@@ -22,6 +22,14 @@ Singularity Finance is a broader AI/DeFAI finance platform positioned around AI-
 ### Architecture
 
 The protocol consists of a single product family built around the SFI token. All functionality is encapsulated within this token contract, with no additional supporting contracts identified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 16; live-surface contracts included: 16 (1 live, 15 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -49,23 +57,23 @@ The protocol consists of a single product family built around the SFI token. All
 
 ### ✅ Verified + Audited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DynaVaultManager | core_logic | base | 4 deployments: base [`0x478675...2bef7f`](./contracts/base-8453/0x478675aa4121c07825167bbb25a44aadd22bef7f/); base `0x67aaf2...9ea1dc`; base `0x95cf60...36688b`; base `0xac1800...2fae77` | ✅ Audited |
-| DynaVault | core_logic | base | 2 deployments: base [`0x9a3fba...2574b7`](./contracts/base-8453/0x9a3fba281b004882497d29b863c244619f2574b7/); base `0xc6b334...8ecf52` | ✅ Audited |
-| DynaVaultLib | unknown | base | [`0x3b94af...51ee08`](./contracts/base-8453/0x3b94afa809b113ef118c6d4ffc009fdf1a51ee08/) | ✅ Audited |
-| VaultConfigLib | unknown | base | [`0x3ce426...347db5`](./contracts/base-8453/0x3ce426bb2fcb9e1300bbe03e2d34d7b3b7347db5/) | ✅ Audited |
-| VaultFeesLib | unknown | base | [`0xb13037...d90db6`](./contracts/base-8453/0xb130375b543bd919d85351b73636439c28d90db6/) | ✅ Audited |
-| VaultManagerLib | unknown | base | [`0x7b273c...71c184`](./contracts/base-8453/0x7b273c267b7de25811883d69d26bffaebf71c184/) | ✅ Audited |
-| VaultManagerSimulatorLib | unknown | base | [`0x620978...33fb39`](./contracts/base-8453/0x620978615e37f2c494cb9fcc2f9981029533fb39/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| DynaVaultManager | core_logic | base | n/a | 4 deployments: base [`0x478675...2bef7f`](./contracts/base-8453/0x478675aa4121c07825167bbb25a44aadd22bef7f/); base `0x67aaf2...9ea1dc`; base `0x95cf60...36688b`; base `0xac1800...2fae77` | ✅ Audited |
+| DynaVault | core_logic | base | n/a | 2 deployments: base [`0x9a3fba...2574b7`](./contracts/base-8453/0x9a3fba281b004882497d29b863c244619f2574b7/); base `0xc6b334...8ecf52` | ✅ Audited |
+| DynaVaultLib | unknown | base | n/a | [`0x3b94af...51ee08`](./contracts/base-8453/0x3b94afa809b113ef118c6d4ffc009fdf1a51ee08/) | ✅ Audited |
+| VaultConfigLib | unknown | base | n/a | [`0x3ce426...347db5`](./contracts/base-8453/0x3ce426bb2fcb9e1300bbe03e2d34d7b3b7347db5/) | ✅ Audited |
+| VaultFeesLib | unknown | base | n/a | [`0xb13037...d90db6`](./contracts/base-8453/0xb130375b543bd919d85351b73636439c28d90db6/) | ✅ Audited |
+| VaultManagerLib | unknown | base | n/a | [`0x7b273c...71c184`](./contracts/base-8453/0x7b273c267b7de25811883d69d26bffaebf71c184/) | ✅ Audited |
+| VaultManagerSimulatorLib | unknown | base | n/a | [`0x620978...33fb39`](./contracts/base-8453/0x620978615e37f2c494cb9fcc2f9981029533fb39/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SFItoken | token | ethereum | [`0x7636d8...b386bf`](./contracts/ethereum-1/0x7636d8722fdf7cd34232a915e48e96aa3eb386bf/) | ⚠️ Unaudited |
-| PermissionedDynaVault | core_logic | base | 3 deployments: base [`0x1631ca...258274`](./contracts/base-8453/0x1631ca6543adcb61e2b9e30189c8477981258274/); base `0x67b93f...e14dcd`; base `0xea7975...816811` | ⚠️ Unaudited |
-| VaultStrategiesLib | unknown | base | [`0xf22bd3...663e9e`](./contracts/base-8453/0xf22bd338ccb6446a25920d1858e50d709b663e9e/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SFItoken | token | ethereum | n/a | [`0x7636d8...b386bf`](./contracts/ethereum-1/0x7636d8722fdf7cd34232a915e48e96aa3eb386bf/) | ⚠️ Unaudited |
+| PermissionedDynaVault | core_logic | base | n/a | 3 deployments: base [`0x1631ca...258274`](./contracts/base-8453/0x1631ca6543adcb61e2b9e30189c8477981258274/); base `0x67b93f...e14dcd`; base `0xea7975...816811` | ⚠️ Unaudited |
+| VaultStrategiesLib | unknown | base | n/a | [`0xf22bd3...663e9e`](./contracts/base-8453/0xf22bd338ccb6446a25920d1858e50d709b663e9e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

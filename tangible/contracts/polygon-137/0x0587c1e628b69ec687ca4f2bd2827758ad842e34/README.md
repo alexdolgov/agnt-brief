@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (polygon [`0x0587c1e628b69ec687ca4f2bd2827758ad842e34`](../0x0587c1e628b69ec687ca4f2bd2827758ad842e34/); polygon `0xc737eab847ae6a92028862fe38b828db41314772`) |
+| Deployments | 1 (polygon [`0x0587c1e628b69ec687ca4f2bd2827758ad842e34`](../0x0587c1e628b69ec687ca4f2bd2827758ad842e34/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

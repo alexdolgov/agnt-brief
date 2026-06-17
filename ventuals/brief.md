@@ -5,11 +5,11 @@
 - Project: Ventuals (`ventuals`)
 - Website: [https://ventuals.com/trade](https://ventuals.com/trade)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:54:51.641Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-17T07:01:01.857Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: hyperliquid
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $29,701,346.64
+- DeFi Llama TVL: $28,431,743.17
 - On-chain TVL (included contracts): $273.74
 - TVL by chain: Hyperliquid $273.74
 
@@ -20,6 +20,14 @@ Ventuals is a decentralized trading protocol/interface for creating and trading 
 ### Architecture
 
 The StakingVaultManager oversees multiple StakingVault instances, which hold user deposits and distribute rewards. The RoleRegistry provides access control for administrative functions across the system, and VHYPE likely serves as the reward or staking token.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 4/4 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -47,12 +55,12 @@ The StakingVaultManager oversees multiple StakingVault instances, which hold use
 
 ### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakingVault | core_logic | hyperliquid | [`0x888888...c3beda`](./contracts/hyperliquid-999/0x8888888192a4a0593c13532ba48449fc24c3beda/) | ✅ Audited |
-| StakingVaultManager | core_logic | hyperliquid | [`0x888888...05b20c`](./contracts/hyperliquid-999/0x88888880793f89ce85777ff2e0e2d366bf05b20c/) | ✅ Audited |
-| RoleRegistry | registry | hyperliquid | [`0x888888...d77930`](./contracts/hyperliquid-999/0x8888888f0651a534011d7ad277c302e7d2d77930/) | ✅ Audited |
-| VHYPE | unknown | hyperliquid | [`0x888888...c216fa`](./contracts/hyperliquid-999/0x8888888fdaac0e7cf8c6523c8955bf7954c216fa/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakingVault | core_logic | hyperliquid | unit-32789 | [`0x888888...c3beda`](./contracts/hyperliquid-999/0x8888888192a4a0593c13532ba48449fc24c3beda/) | ✅ Audited |
+| StakingVaultManager | core_logic | hyperliquid | unit-32788 | [`0x888888...05b20c`](./contracts/hyperliquid-999/0x88888880793f89ce85777ff2e0e2d366bf05b20c/) | ✅ Audited |
+| RoleRegistry | registry | hyperliquid | unit-32790 | [`0x888888...d77930`](./contracts/hyperliquid-999/0x8888888f0651a534011d7ad277c302e7d2d77930/) | ✅ Audited |
+| VHYPE | unknown | hyperliquid | unit-32791 | [`0x888888...c216fa`](./contracts/hyperliquid-999/0x8888888fdaac0e7cf8c6523c8955bf7954c216fa/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

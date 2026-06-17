@@ -1,0 +1,17 @@
+{
+  "address": "0x59d675f75f973835b94d02b6d27b8539757dc65f",
+  "chain_id": 1,
+  "contract_name": "Strategy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:26.371Z"
+}

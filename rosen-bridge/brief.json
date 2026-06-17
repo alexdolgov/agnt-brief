@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rosen-bridge",
-  "generated_at": "2026-05-24T14:40:18.220Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-17T07:01:00.831Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2112426.33212,
-    "tvl_usd": 2112426.33212,
+    "dl_tvl_usd": 1417701.5682199998,
+    "tvl_usd": 1417701.5682199998,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,25 @@
     }
   },
   "topography": {
-    "project_purpose": "Rosen Bridge is a cross-chain bridge protocol that enables the transfer of assets between different blockchain networks. It uses a network of watchers and guards to secure and validate cross-chain transactions.",
-    "relationship_narrative": "No product families or contracts were identified in the provided data, so no relationships can be described.",
-    "product_family_count": 0
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

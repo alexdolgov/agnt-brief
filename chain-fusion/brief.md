@@ -5,8 +5,8 @@
 - Project: Chain Fusion (`chain-fusion`)
 - Website: [https://dashboard.internetcomputer.org/chain-fusion](https://dashboard.internetcomputer.org/chain-fusion)
 - Lifecycle: unknown
-- Generated: 2026-06-13T12:41:06.328Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-06-17T07:00:58.236Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $18,155,753.71
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Chain Fusion is Internet Computer Protocol (ICP) multi-chain technology that enables decentralized interoperability with multiple blockchains, including Bitcoin and Ethereum, through threshold signatures, ICP smart contracts/canisters, and chain-key tokens, without trusted intermediaries or centralized bridges.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

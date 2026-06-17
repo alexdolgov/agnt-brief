@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "abc-pool",
-  "generated_at": "2026-06-10T20:58:56.430Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-17T07:00:57.719Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5958075.92789,
-    "tvl_usd": 5958075.92789,
+    "dl_tvl_usd": 4927916.86375,
+    "tvl_usd": 4927916.86375,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "ABC Pool, also described as ABC PoS Pool, is a Conflux PoS staking pool where users pledge or stake CFX and earn rewards in CFX and ABC. The project also advertises V2 features involving ABC/CFX LP conversion, dividends, and ABC buyback, but those features should be treated as active only where separately verified.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

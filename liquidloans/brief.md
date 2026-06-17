@@ -5,8 +5,8 @@
 - Project: LiquidLoans (`liquidloans`)
 - Website: [https://www.liquidloans.io](https://www.liquidloans.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-14T07:18:29.653Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:00:40.593Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 20 unique implementations (39 raw deployments)
 - DeFi Llama TVL: $2,859,995.07
@@ -20,6 +20,14 @@ LiquidLoans is a collateralized debt position (CDP) protocol live on Base and Pu
 ### Architecture
 
 The LiquidLoans family shares a single set of core logic contracts that manage vaults, pools, and stability. Supporting contracts like PriceFeed and LockupContractFactory provide oracle data and lockup functionality used across the core operations.
+
+## Contract Surface Quality
+
+- Indexed contracts: 39; live-surface contracts included: 39 (37 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 3/35.
 
 ## Audit Coverage Summary
 
@@ -46,33 +54,33 @@ The LiquidLoans family shares a single set of core logic contracts that manage v
 
 ### ✅ Verified + Audited (6)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| CommunityIssuance | unknown | base | 2 deployments: base [`0x025853...ae2903`](./contracts/base-8453/0x025853fafb436ee00542c414bc0292bf5cae2903/); base `0x40d561...f39db5` | ✅ Audited |
-| LockupContract | unknown | base | 2 deployments: base [`0x0e97a8...453a96`](./contracts/base-8453/0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96/); base `0xc0a202...641dd0` | ✅ Audited |
-| LockupContractCreator | unknown | base | 2 deployments: base [`0x57ed23...d58b3f`](./contracts/base-8453/0x57ed23f9d729031886ece75c31aef3f41bd58b3f/); base `0xe0117a...3c5ca1` | ✅ Audited |
-| LockupContractFactory | registry | base | 2 deployments: base [`0xcc296f...81aa7e`](./contracts/base-8453/0xcc296fb3c1d477129e0d5cfcb4a840f46781aa7e/); base `0xdfb363...182d27` | ✅ Audited |
-| PriceFeed | operational_periphery | base | 2 deployments: base [`0x76ada2...77d278`](./contracts/base-8453/0x76ada222f62d4709cfcbf5caf57ce8350277d278/); base `0xc32a3d...8ac70d` | ✅ Audited |
-| StabilityPool | core_logic | base | 2 deployments: base [`0x391dc2...7fa6ed`](./contracts/base-8453/0x391dc22eecf3f973993d0ecb6eafb1b7927fa6ed/); base `0x76826f...4f500e` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CommunityIssuance | unknown | base | n/a | 2 deployments: base [`0x025853...ae2903`](./contracts/base-8453/0x025853fafb436ee00542c414bc0292bf5cae2903/); base `0x40d561...f39db5` | ✅ Audited |
+| LockupContract | unknown | base | n/a | 2 deployments: base [`0x0e97a8...453a96`](./contracts/base-8453/0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96/); base `0xc0a202...641dd0` | ✅ Audited |
+| LockupContractCreator | unknown | base | n/a | 2 deployments: base [`0x57ed23...d58b3f`](./contracts/base-8453/0x57ed23f9d729031886ece75c31aef3f41bd58b3f/); base `0xe0117a...3c5ca1` | ✅ Audited |
+| LockupContractFactory | registry | base | n/a | 2 deployments: base [`0xcc296f...81aa7e`](./contracts/base-8453/0xcc296fb3c1d477129e0d5cfcb4a840f46781aa7e/); base `0xdfb363...182d27` | ✅ Audited |
+| PriceFeed | operational_periphery | base | n/a | 2 deployments: base [`0x76ada2...77d278`](./contracts/base-8453/0x76ada222f62d4709cfcbf5caf57ce8350277d278/); base `0xc32a3d...8ac70d` | ✅ Audited |
+| StabilityPool | core_logic | base | n/a | 2 deployments: base [`0x391dc2...7fa6ed`](./contracts/base-8453/0x391dc22eecf3f973993d0ecb6eafb1b7927fa6ed/); base `0x76826f...4f500e` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ActivePool | core_logic | base | 2 deployments: base [`0x5ff161...ee8fb2`](./contracts/base-8453/0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2/); base `0xa7d587...393044` | ⚠️ Unaudited |
-| BorrowerOperations | core_logic | base | 2 deployments: base [`0x3c7f90...eeef8b`](./contracts/base-8453/0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b/); base `0x7f6ba8...85f4d6` | ⚠️ Unaudited |
-| CollSurplusPool | core_logic | base | 2 deployments: base [`0xf9dea0...c18d09`](./contracts/base-8453/0xf9dea0ff3d899b39ae5ea7ff79965f2675c18d09/); base `0xfc952a...e76e9a` | ⚠️ Unaudited |
-| DefaultPool | core_logic | base | 2 deployments: base [`0x529ad5...3a585e`](./contracts/base-8453/0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e/); base `0xdb7fed...ba7f0a` | ⚠️ Unaudited |
-| ERC20Mock | token | base | 2 deployments: base [`0xa16770...33c9af`](./contracts/base-8453/0xa16770020925f504d9446adf218e91d56833c9af/); base `0xf3c951...05ad6d` | ⚠️ Unaudited |
-| GasPool | core_logic | base | 2 deployments: base [`0x9ebd99...cc6cde`](./contracts/base-8453/0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde/); base `0xb242c8...36478f` | ⚠️ Unaudited |
-| HintHelpers | periphery | base | 2 deployments: base [`0x3e30a6...f6f456`](./contracts/base-8453/0x3e30a6625b95cbb9f4ee03bef83a81f652f6f456/); base `0x53c427...04df37` | ⚠️ Unaudited |
-| LOANStaking | unknown | base | 2 deployments: base [`0x9e991a...dc649e`](./contracts/base-8453/0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e/); base `0xdc4675...2462b0` | ⚠️ Unaudited |
-| LOANToken | token | base | 2 deployments: base [`0x00fce0...fb88bb`](./contracts/base-8453/0x00fce0bb56105164a960fccb6e5e23e502fb88bb/); base `0x68b810...e4203f` | ⚠️ Unaudited |
-| MultiVaultGetter | core_logic | base | 2 deployments: base [`0x7bddc6...ec13d0`](./contracts/base-8453/0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0/); base `0x9a4ac6...88f016` | ⚠️ Unaudited |
-| SortedVaults | core_logic | base | 2 deployments: base [`0x6f2b22...dd2b20`](./contracts/base-8453/0x6f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20/); base `0xb4d379...b7e52a` | ⚠️ Unaudited |
-| Uniswappool | core_logic | base | [`0x571394...2d0375`](./contracts/base-8453/0x57139483191cd26474c6a26f83ecb89c242d0375/) | ⚠️ Unaudited |
-| USDLToken | token | base | 2 deployments: base [`0x46ee43...9a53c1`](./contracts/base-8453/0x46ee4379844a3b1866a546a9be8d47695e9a53c1/); base `0x78e8cf...c76414` | ⚠️ Unaudited |
-| VaultManager | core_logic | base | 2 deployments: base [`0x6b2983...a4029d`](./contracts/base-8453/0x6b2983e7d345eea1c385468bc110df94eba4029d/); base `0x6c4d82...8fbdc6` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ActivePool | core_logic | base | n/a | 2 deployments: base [`0x5ff161...ee8fb2`](./contracts/base-8453/0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2/); base `0xa7d587...393044` | ⚠️ Unaudited |
+| BorrowerOperations | core_logic | base | n/a | 2 deployments: base [`0x3c7f90...eeef8b`](./contracts/base-8453/0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b/); base `0x7f6ba8...85f4d6` | ⚠️ Unaudited |
+| CollSurplusPool | core_logic | base | n/a | 2 deployments: base [`0xf9dea0...c18d09`](./contracts/base-8453/0xf9dea0ff3d899b39ae5ea7ff79965f2675c18d09/); base `0xfc952a...e76e9a` | ⚠️ Unaudited |
+| DefaultPool | core_logic | base | n/a | 2 deployments: base [`0x529ad5...3a585e`](./contracts/base-8453/0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e/); base `0xdb7fed...ba7f0a` | ⚠️ Unaudited |
+| ERC20Mock | token | base | n/a | 2 deployments: base [`0xa16770...33c9af`](./contracts/base-8453/0xa16770020925f504d9446adf218e91d56833c9af/); base `0xf3c951...05ad6d` | ⚠️ Unaudited |
+| GasPool | core_logic | base | n/a | 2 deployments: base [`0x9ebd99...cc6cde`](./contracts/base-8453/0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde/); base `0xb242c8...36478f` | ⚠️ Unaudited |
+| HintHelpers | periphery | base | n/a | 2 deployments: base [`0x3e30a6...f6f456`](./contracts/base-8453/0x3e30a6625b95cbb9f4ee03bef83a81f652f6f456/); base `0x53c427...04df37` | ⚠️ Unaudited |
+| LOANStaking | unknown | base | n/a | 2 deployments: base [`0x9e991a...dc649e`](./contracts/base-8453/0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e/); base `0xdc4675...2462b0` | ⚠️ Unaudited |
+| LOANToken | token | base | n/a | 2 deployments: base [`0x00fce0...fb88bb`](./contracts/base-8453/0x00fce0bb56105164a960fccb6e5e23e502fb88bb/); base `0x68b810...e4203f` | ⚠️ Unaudited |
+| MultiVaultGetter | core_logic | base | n/a | 2 deployments: base [`0x7bddc6...ec13d0`](./contracts/base-8453/0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0/); base `0x9a4ac6...88f016` | ⚠️ Unaudited |
+| SortedVaults | core_logic | base | n/a | 2 deployments: base [`0x6f2b22...dd2b20`](./contracts/base-8453/0x6f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20/); base `0xb4d379...b7e52a` | ⚠️ Unaudited |
+| Uniswappool | core_logic | base | n/a | [`0x571394...2d0375`](./contracts/base-8453/0x57139483191cd26474c6a26f83ecb89c242d0375/) | ⚠️ Unaudited |
+| USDLToken | token | base | n/a | 2 deployments: base [`0x46ee43...9a53c1`](./contracts/base-8453/0x46ee4379844a3b1866a546a9be8d47695e9a53c1/); base `0x78e8cf...c76414` | ⚠️ Unaudited |
+| VaultManager | core_logic | base | n/a | 2 deployments: base [`0x6b2983...a4029d`](./contracts/base-8453/0x6b2983e7d345eea1c385468bc110df94eba4029d/); base `0x6c4d82...8fbdc6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

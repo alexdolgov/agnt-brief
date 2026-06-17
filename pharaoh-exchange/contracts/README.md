@@ -1,14 +1,16 @@
 # pharaoh-exchange — Contract Index
 
-60 unique implementations on avalanche · 123 deployments · 0 audited · 48 unaudited · 12 unverified
+61 unique implementations on avalanche · 101 deployments · 0 audited · 50 unaudited · 11 unverified
 
-## adapter (4)
+## adapter (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DLMMRouter](./avalanche-43114/0xff2befc4ff86cb0f3e8d3d9d6200b7a05bf5d93d/) | avalanche | [`0xff2bef...f5d93d`](./avalanche-43114/0xff2befc4ff86cb0f3e8d3d9d6200b7a05bf5d93d/) | ⚠️ Unaudited | Verified |
-| [Router (2 deployments)](./avalanche-43114/0x9cee04bdce127da7e448a333f006defb3d5e38cc/) | avalanche | 2 deployments: avalanche [`0x9cee04...5e38cc`](./avalanche-43114/0x9cee04bdce127da7e448a333f006defb3d5e38cc/); avalanche `0xaaa45c...711faa` | ⚠️ Unaudited | Verified |
-| [SwapRouter (3 deployments)](./avalanche-43114/0x062c62ca66e50cfe277a95564fe5bb504db1fab8/) | avalanche | 3 deployments: avalanche [`0x062c62...b1fab8`](./avalanche-43114/0x062c62ca66e50cfe277a95564fe5bb504db1fab8/); avalanche `0x9daea9...90acc5`; avalanche `0xc8b8fc...d3915c` | ⚠️ Unaudited | Verified |
+| [Router](./avalanche-43114/0x9cee04bdce127da7e448a333f006defb3d5e38cc/) | avalanche | [`0x9cee04...5e38cc`](./avalanche-43114/0x9cee04bdce127da7e448a333f006defb3d5e38cc/) | ⚠️ Unaudited | Verified |
+| Router | avalanche | `0xaaa45c...711faa` | ⚠️ Unaudited | Verified |
+| [SwapRouter](./avalanche-43114/0x062c62ca66e50cfe277a95564fe5bb504db1fab8/) | avalanche | [`0x062c62...b1fab8`](./avalanche-43114/0x062c62ca66e50cfe277a95564fe5bb504db1fab8/) | ⚠️ Unaudited | Verified |
+| SwapRouter (2 deployments) | avalanche | 2 deployments: avalanche `0x9daea9...90acc5`; avalanche `0xc8b8fc...d3915c` | ⚠️ Unaudited | Verified |
 | [UniversalRouter](./avalanche-43114/0x5acc35397d2ce81ac54a4b1c6d9e1fb29f8ec6c6/) | avalanche | [`0x5acc35...8ec6c6`](./avalanche-43114/0x5acc35397d2ce81ac54a4b1c6d9e1fb29f8ec6c6/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (5)
@@ -37,18 +39,17 @@
 | [FeeDistributorFactory](./avalanche-43114/0x5af7fad6e813fb4637e5cfacc7dde6c5445125ac/) | avalanche | [`0x5af7fa...5125ac`](./avalanche-43114/0x5af7fad6e813fb4637e5cfacc7dde6c5445125ac/) | ⚠️ Unaudited | Verified |
 | [FeeRecipientFactory](./avalanche-43114/0x227fabb4db11cc082ef8cd083cff5d034d4de16f/) | avalanche | [`0x227fab...4de16f`](./avalanche-43114/0x227fabb4db11cc082ef8cd083cff5d034d4de16f/) | ⚠️ Unaudited | Verified |
 | [GaugeFactory](./avalanche-43114/0xd9a63c24f69f015ebe3ff61817645dc7cc5906b1/) | avalanche | [`0xd9a63c...5906b1`](./avalanche-43114/0xd9a63c24f69f015ebe3ff61817645dc7cc5906b1/) | ⚠️ Unaudited | Verified |
-| [GaugeV3 (5 deployments)](./avalanche-43114/0x031a975187111afe6b9dc473cd317b00ed8cd262/) | avalanche | 5 deployments: avalanche [`0x031a97...8cd262`](./avalanche-43114/0x031a975187111afe6b9dc473cd317b00ed8cd262/); avalanche `0x15c50a...24d292`; avalanche `0x19ff41...d7fcd8`; avalanche `0xdb7361...0da90e`; avalanche `0xe56531...07d04e` | ⚠️ Unaudited | Verified |
+| [GaugeV3 (3 deployments)](./avalanche-43114/0x15c50acd86be6be893ab57cf4f47d0da7e24d292/) | avalanche | 3 deployments: avalanche [`0x15c50a...24d292`](./avalanche-43114/0x15c50acd86be6be893ab57cf4f47d0da7e24d292/); avalanche `0x19ff41...d7fcd8`; avalanche `0xdb7361...0da90e` | ⚠️ Unaudited | Verified |
 | [Minter](./avalanche-43114/0xd23f124bbbc958bcddc0ce624042b48154222fde/) | avalanche | [`0xd23f12...222fde`](./avalanche-43114/0xd23f124bbbc958bcddc0ce624042b48154222fde/) | ⚠️ Unaudited | Verified |
-| [RamsesTreasuryHelper (10 deployments)](./avalanche-43114/0x00409b267f4573f601cbcdf3b9f0b27a263a4eea/) | avalanche | 10 deployments: avalanche [`0x00409b...3a4eea`](./avalanche-43114/0x00409b267f4573f601cbcdf3b9f0b27a263a4eea/); avalanche `0x660862...e97882`; avalanche `0x906b98...81dfdb`; avalanche `0x9e89a0...727e01`; avalanche `0xa47aa2...466de0`; avalanche `0xaf9440...d4c011`; avalanche `0xd57ec4...d057e6`; avalanche `0xec8962...5fdc81`; avalanche `0xf03ce4...90a1f4`; avalanche `0xf2593b...5984b1` | ⚠️ Unaudited | Verified |
+| [RamsesTreasuryHelper (8 deployments)](./avalanche-43114/0x00409b267f4573f601cbcdf3b9f0b27a263a4eea/) | avalanche | 8 deployments: avalanche [`0x00409b...3a4eea`](./avalanche-43114/0x00409b267f4573f601cbcdf3b9f0b27a263a4eea/); avalanche `0x906b98...81dfdb`; avalanche `0x9e89a0...727e01`; avalanche `0xa47aa2...466de0`; avalanche `0xaf9440...d4c011`; avalanche `0xd57ec4...d057e6`; avalanche `0xec8962...5fdc81`; avalanche `0xf2593b...5984b1` | ⚠️ Unaudited | Verified |
 | [VotingEscrow](./avalanche-43114/0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f/) | avalanche | [`0xaaaea1...b9ce6f`](./avalanche-43114/0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f/) | ⚠️ Unaudited | Verified |
 
-## periphery (7)
+## periphery (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DLMMQuoter](./avalanche-43114/0xddae0aa4e93be4936c1bcc12d3001b35c75fef40/) | avalanche | [`0xddae0a...5fef40`](./avalanche-43114/0xddae0aa4e93be4936c1bcc12d3001b35c75fef40/) | ⚠️ Unaudited | Verified |
 | [MixedRouteQuoterV1](./avalanche-43114/0x3265d621c7d993151c8eb2acd4902cda0499a8a0/) | avalanche | [`0x3265d6...99a8a0`](./avalanche-43114/0x3265d621c7d993151c8eb2acd4902cda0499a8a0/) | ⚠️ Unaudited | Verified |
-| [PharaohMigrator (2 deployments)](./avalanche-43114/0x1a624ba3f3928b38990d9cc862ae5fb54ac66297/) | avalanche | 2 deployments: avalanche [`0x1a624b...c66297`](./avalanche-43114/0x1a624ba3f3928b38990d9cc862ae5fb54ac66297/); avalanche `0x2ca45d...3eac06` | ⚠️ Unaudited | Verified |
 | [Quoter](./avalanche-43114/0xadae75447d112cfc401c952744de3e6d32456465/) | avalanche | [`0xadae75...456465`](./avalanche-43114/0xadae75447d112cfc401c952744de3e6d32456465/) | ⚠️ Unaudited | Verified |
 | [QuoterV2](./avalanche-43114/0xb7297301b7cc659bb96d51754643a0df6eea2138/) | avalanche | [`0xb72973...ea2138`](./avalanche-43114/0xb7297301b7cc659bb96d51754643a0df6eea2138/) | ⚠️ Unaudited | Verified |
 | [TickLens](./avalanche-43114/0x3a7aeb3c33922073f4f23207d0ff247e9694a100/) | avalanche | [`0x3a7aeb...94a100`](./avalanche-43114/0x3a7aeb3c33922073f4f23207d0ff247e9694a100/) | ⚠️ Unaudited | Verified |
@@ -58,7 +59,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [TransparentUpgradeableProxy (2 deployments)](./avalanche-43114/0x065028dcf219d8622dd50231f188f2b315349aef/) | avalanche | 2 deployments: avalanche [`0x065028...349aef`](./avalanche-43114/0x065028dcf219d8622dd50231f188f2b315349aef/); avalanche `0xfe99e9...131aa0` | ⚠️ Unaudited | Verified |
+| [TransparentUpgradeableProxy](./avalanche-43114/0xfe99e92df71f53a26005d1bfbe54c941a3131aa0/) | avalanche | [`0xfe99e9...131aa0`](./avalanche-43114/0xfe99e92df71f53a26005d1bfbe54c941a3131aa0/) | ⚠️ Unaudited | Verified |
 
 ## registry (4)
 
@@ -79,20 +80,20 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccessHub (13 deployments)](./avalanche-43114/0x0253d249a5e16269230fa81a58c104f5aafee4f1/) | avalanche | 13 deployments: avalanche [`0x0253d2...fee4f1`](./avalanche-43114/0x0253d249a5e16269230fa81a58c104f5aafee4f1/); avalanche `0x081125...e2ebbe`; avalanche `0x088703...432779`; avalanche `0x272cd3...ea4bfb`; avalanche `0x29cd88...3afb41`; avalanche `0x3c3945...509051`; avalanche `0x639c4b...fb2c89`; avalanche `0x65b8ba...352d29`; avalanche `0x6c6fc8...a6eeb0`; avalanche `0x88451a...0c91e6`; avalanche `0xa9bf90...8660f0`; avalanche `0xaa589d...5c92ae`; avalanche `0xc2a104...fc9eba` | ⚠️ Unaudited | Verified |
+| [AccessHub (9 deployments)](./avalanche-43114/0x0253d249a5e16269230fa81a58c104f5aafee4f1/) | avalanche | 9 deployments: avalanche [`0x0253d2...fee4f1`](./avalanche-43114/0x0253d249a5e16269230fa81a58c104f5aafee4f1/); avalanche `0x081125...e2ebbe`; avalanche `0x272cd3...ea4bfb`; avalanche `0x639c4b...fb2c89`; avalanche `0x6c6fc8...a6eeb0`; avalanche `0x88451a...0c91e6`; avalanche `0xa9bf90...8660f0`; avalanche `0xaa589d...5c92ae`; avalanche `0xc2a104...fc9eba` | ⚠️ Unaudited | Verified |
 | [AccessHubDLMMActions](./avalanche-43114/0x1a4203a52ceed651d30cb038698382a8905d6cfb/) | avalanche | [`0x1a4203...5d6cfb`](./avalanche-43114/0x1a4203a52ceed651d30cb038698382a8905d6cfb/) | ⚠️ Unaudited | Verified |
-| [AccessHubPhar (5 deployments)](./avalanche-43114/0x06e05378a63a904afe03a6723cd1cbd9ec118e1b/) | avalanche | 5 deployments: avalanche [`0x06e053...118e1b`](./avalanche-43114/0x06e05378a63a904afe03a6723cd1cbd9ec118e1b/); avalanche `0x282a4f...c096ec`; avalanche `0x3176f6...4bf483`; avalanche `0x3f3af1...3c9e4f`; avalanche `0x973012...d0dd44` | ⚠️ Unaudited | Verified |
+| [AccessHubPhar (3 deployments)](./avalanche-43114/0x06e05378a63a904afe03a6723cd1cbd9ec118e1b/) | avalanche | 3 deployments: avalanche [`0x06e053...118e1b`](./avalanche-43114/0x06e05378a63a904afe03a6723cd1cbd9ec118e1b/); avalanche `0x282a4f...c096ec`; avalanche `0x3f3af1...3c9e4f` | ⚠️ Unaudited | Verified |
 | [AutomatedFeeNotifier (3 deployments)](./avalanche-43114/0x64963852966aa7ff2258434f361ec933bf0eaf03/) | avalanche | 3 deployments: avalanche [`0x649638...0eaf03`](./avalanche-43114/0x64963852966aa7ff2258434f361ec933bf0eaf03/); avalanche `0x7d51ed...fb37ab`; avalanche `0xbbe734...1ebb32` | ⚠️ Unaudited | Verified |
 | [DLMMFeeCollector](./avalanche-43114/0x684b340014556d15d754b812ef7d1b134b42289c/) | avalanche | [`0x684b34...42289c`](./avalanche-43114/0x684b340014556d15d754b812ef7d1b134b42289c/) | ⚠️ Unaudited | Verified |
-| [DLMMRewarder (5 deployments)](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/) | avalanche | 5 deployments: avalanche [`0x015f05...a037b3`](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/); avalanche `0xa2ab12...059513`; avalanche `0xc99757...43d783`; avalanche `0xd28467...88548c`; avalanche `0xf1996b...120ab7` | ⚠️ Unaudited | Verified |
-| [FeeCollector (4 deployments)](./avalanche-43114/0x088e2efad10f3262e745c6c01f661112f353bb64/) | avalanche | 4 deployments: avalanche [`0x088e2e...53bb64`](./avalanche-43114/0x088e2efad10f3262e745c6c01f661112f353bb64/); avalanche `0x1e1e2a...8437bc`; avalanche `0x82a411...185222`; avalanche `0xaaa2a4...e84a2f` | ⚠️ Unaudited | Verified |
-| [MevModule (4 deployments)](./avalanche-43114/0x21dadc5df1dcd425f8a1d936b9b037aa75261a16/) | avalanche | 4 deployments: avalanche [`0x21dadc...261a16`](./avalanche-43114/0x21dadc5df1dcd425f8a1d936b9b037aa75261a16/); avalanche `0x70fd0f...e39f43`; avalanche `0xab5598...5309d8`; avalanche `0xe7187f...9975c4` | ⚠️ Unaudited | Verified |
+| [DLMMRewarder (3 deployments)](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/) | avalanche | 3 deployments: avalanche [`0x015f05...a037b3`](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/); avalanche `0xa2ab12...059513`; avalanche `0xf1996b...120ab7` | ⚠️ Unaudited | Verified |
+| [FeeCollector (3 deployments)](./avalanche-43114/0x088e2efad10f3262e745c6c01f661112f353bb64/) | avalanche | 3 deployments: avalanche [`0x088e2e...53bb64`](./avalanche-43114/0x088e2efad10f3262e745c6c01f661112f353bb64/); avalanche `0x1e1e2a...8437bc`; avalanche `0x82a411...185222` | ⚠️ Unaudited | Verified |
+| FeeCollector | avalanche | `0xaaa2a4...e84a2f` | ⚠️ Unaudited | Verified |
+| [MevModule](./avalanche-43114/0xab559850a251a6ebdba31076019ccf44165309d8/) | avalanche | [`0xab5598...5309d8`](./avalanche-43114/0xab559850a251a6ebdba31076019ccf44165309d8/) | ⚠️ Unaudited | Verified |
+| MevModule | avalanche | `0xe7187f...9975c4` | ⚠️ Unaudited | Verified |
 | [P33 (4 deployments)](./avalanche-43114/0x26e9dbe75aed331e41272bece932ff1b48926ca9/) | avalanche | 4 deployments: avalanche [`0x26e9db...926ca9`](./avalanche-43114/0x26e9dbe75aed331e41272bece932ff1b48926ca9/); avalanche `0x640d2e...8867e6`; avalanche `0xcda419...22ca80`; avalanche `0xd8ee2b...4d4bd8` | ⚠️ Unaudited | Verified |
 | [Pharaoh](./avalanche-43114/0x13a466998ce03db73abc2d4df3bbd845ed1f28e7/) | avalanche | [`0x13a466...1f28e7`](./avalanche-43114/0x13a466998ce03db73abc2d4df3bbd845ed1f28e7/) | ⚠️ Unaudited | Verified |
-| [Pulse (2 deployments)](./avalanche-43114/0xb98c602d04ba75ccf2337c39156880f757006150/) | avalanche | 2 deployments: avalanche [`0xb98c60...006150`](./avalanche-43114/0xb98c602d04ba75ccf2337c39156880f757006150/); avalanche `0xfc508b...864c46` | ⚠️ Unaudited | Verified |
 | [SafeL2](./avalanche-43114/0xd1b27ccaf2a4ddca0ac32181374c70282492d843/) | avalanche | [`0xd1b27c...92d843`](./avalanche-43114/0xd1b27ccaf2a4ddca0ac32181374c70282492d843/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | avalanche | `0x15913e...2522bd` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x1a6ed8...d89d6f` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x428b74...9534ea` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x469ab2...cbd534` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x5d9916...968293` | ❓ Unverified | Unverified |
@@ -104,5 +105,5 @@
 | UnnamedContract | avalanche | `0xe63f0d...64ec12` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0xf31632...66d51b` | ❓ Unverified | Unverified |
 | [VoteModule](./avalanche-43114/0x34f233f868cdb42446a18562710ee705d66f846b/) | avalanche | [`0x34f233...6f846b`](./avalanche-43114/0x34f233f868cdb42446a18562710ee705d66f846b/) | ⚠️ Unaudited | Verified |
-| [Voter (7 deployments)](./avalanche-43114/0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35/) | avalanche | 7 deployments: avalanche [`0x31a8a3...925d35`](./avalanche-43114/0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35/); avalanche `0x5363e3...8f0f7b`; avalanche `0x677e39...ab35f2`; avalanche `0x922b9c...8a2aa7`; avalanche `0x9334f3...45af21`; avalanche `0xaf6c9a...af4019`; avalanche `0xe59b0f...12d82a` | ⚠️ Unaudited | Verified |
+| [Voter (5 deployments)](./avalanche-43114/0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35/) | avalanche | 5 deployments: avalanche [`0x31a8a3...925d35`](./avalanche-43114/0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35/); avalanche `0x677e39...ab35f2`; avalanche `0x9334f3...45af21`; avalanche `0xaf6c9a...af4019`; avalanche `0xe59b0f...12d82a` | ⚠️ Unaudited | Verified |
 | [XPhar](./avalanche-43114/0xe8164ea89665dab7a553e667f81f30cfda736b9a/) | avalanche | [`0xe8164e...736b9a`](./avalanche-43114/0xe8164ea89665dab7a553e667f81f30cfda736b9a/) | ⚠️ Unaudited | Verified |

@@ -1,0 +1,17 @@
+{
+  "address": "0x48ccc04dda3a904eaea3f94150310669b5e70727",
+  "chain_id": 8453,
+  "contract_name": "ExaPreviewer",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 416,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000000aeb0bcb919858c0a4dcec3eed879985034a597c00000000000000000000000061edacb54aa8a689013682529df8914c87692e4b000000000000000000000000b92e0a6e56d60aed6b99c21350d9de56ca8c648f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:19.614Z"
+}

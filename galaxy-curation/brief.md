@@ -5,11 +5,11 @@
 - Project: Galaxy Curation (`galaxy-curation`)
 - Website: [https://www.galaxy.com/](https://www.galaxy.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T23:29:09.080Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-17T07:01:00.780Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $67,495,010.25
+- DeFi Llama TVL: $69,705,483.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Galaxy Curation is a DefiLlama-listed risk-curation activity associated with Galaxy, with TVL tracked on Ethereum and Base. Available evidence does not identify a standalone smart-contract protocol or curation-tool product, and no project-owned contract inventory is currently captured.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

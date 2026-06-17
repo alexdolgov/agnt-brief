@@ -5,8 +5,8 @@
 - Project: TxFlow (`txflow`)
 - Website: [https://txflow.com/](https://txflow.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T06:57:12.783Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:01:00.715Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $4,123,570.00
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 TxFlow is an open Layer 1 blockchain built around TIP Liquidity Standards, enabling shared on-chain liquidity, settlement, and market data without bridging. The currently tracked Arbitrum Bridge2 contract should be treated as a limited DefiLlama bridge/TVL adapter surface, not as evidence that the whole project is primarily a cross-chain bridge or perpetuals platform.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -49,9 +57,9 @@ TxFlow is an open Layer 1 blockchain built around TIP Liquidity Standards, enabl
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Bridge2 | operational_periphery | arbitrum | [`0xcde3f9...c24565`](./contracts/arbitrum-42161/0xcde3f99bcb4c91e19124e41730489eaefec24565/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Bridge2 | operational_periphery | arbitrum | n/a | [`0xcde3f9...c24565`](./contracts/arbitrum-42161/0xcde3f99bcb4c91e19124e41730489eaefec24565/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

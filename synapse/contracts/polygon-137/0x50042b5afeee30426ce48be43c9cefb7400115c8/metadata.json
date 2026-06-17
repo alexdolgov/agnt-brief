@@ -1,0 +1,17 @@
+{
+  "address": "0x50042b5afeee30426ce48be43c9cefb7400115c8",
+  "chain_id": 137,
+  "contract_name": "BridgeConfigV3",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:40.743Z"
+}

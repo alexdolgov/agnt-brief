@@ -1,0 +1,17 @@
+{
+  "address": "0x840081c97256d553a8f234d469d797b9535a3b49",
+  "chain_id": 146,
+  "contract_name": "PoolBoosterFactorySwapxDouble",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "000000000000000000000000b1e25689d55734fd3fffc939c4c3eb52dff8a79400000000000000000000000031a91336414d3b955e494e7d485a6b06b55fc8fb0000000000000000000000004f3b656aa5fb5e708bf7b63d6ff71623eb4a218a",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:13.847Z"
+}

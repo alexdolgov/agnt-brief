@@ -1,0 +1,17 @@
+{
+  "address": "0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7",
+  "chain_id": 8453,
+  "contract_name": "DiamondInitializer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:04.107Z"
+}

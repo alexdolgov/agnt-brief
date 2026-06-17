@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zeebu",
-  "generated_at": "2026-06-11T04:19:53.779Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-17T07:00:41.349Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "zeebu",
@@ -22,37 +22,31 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 16,
-    "unique_implementations": 8,
-    "total_deployments": 16,
-    "audited_contracts": 2,
+    "total_contracts": 1,
+    "total_addresses": 2,
+    "unique_implementations": 1,
+    "total_deployments": 2,
+    "audited_contracts": 0,
     "unaudited_contracts": 1,
-    "contracts_verified_audited": 2,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
-    "coverage_pct": 66.7,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
     "total_audits": 3,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 5210326.346030001,
-    "tvl_usd": 87874707.28615615,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 52362720.01,
-      "ethereum": 35511987.28
-    },
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4563991.34339,
+    "tvl_usd": 4563991.34339,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.zeebu.com/",
     "chains": [
       "base",
       "ethereum"
     ],
-    "tier1_coverage_pct": 66.7,
-    "tier1_auditors": [
-      "Certora",
-      "OpenZeppelin"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-02",
     "audit_freshness": "aging",
     "staleness_breakdown": {
@@ -64,13 +58,24 @@
   },
   "topography": {
     "project_purpose": "Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers that uses the ZBU token as a loyalty and settlement token. The reviewed contract surface includes ZBU token deployments, voting-escrow/token-locking related contracts, Lens periphery contracts, and Launchpad contracts on Ethereum and Base; staking and voting-escrow functionality should be described as associated contract functionality rather than the core project purpose. DefiLlama also currently lists Binance/BSC staking activity for Zeebu, so any Ethereum/Base-only review should explicitly state that Binance/BSC staking is excluded from the covered contract surface.",
-    "relationship_narrative": "The ZeebuToken is deployed behind multiple TransparentUpgradeableProxy instances, and the Voting Escrow contracts interact with the token to enable locking and governance functionality.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 16,
+    "live_contracts": 2,
+    "inactive_contracts": 7,
+    "singleton_contracts": 7,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 3,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 8,
+    "unique_implementations": 1,
     "has_non_token_contracts": true,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -80,274 +85,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2c8c89c442436cc6c0a77943e09c8daf49da3161",
-      "name": "ZeebuToken",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Zeebu",
-      "tvl_usd": 87874707.28615615,
-      "is_proxy": true,
-      "impl_address": "0x6cf363388d4aa672df411efb1db4a49de38c0406",
-      "impl_name": "ZeebuToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2c8c89c442436cc6c0a77943e09c8daf49da3161",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6cf363388d4aa672df411efb1db4a49de38c0406",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe77f6acd24185e149e329c1c0f479201b9ec2f4b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 35511987.277226105,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2c8c89c442436cc6c0a77943e09c8daf49da3161",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 52362720.008930035,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6cf363388d4aa672df411efb1db4a49de38c0406",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2442"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x309755b3facb2092daa23ef723cb7d7cb0527971",
-      "name": "Proxy (impl: 0x57d882103d69d8e6a25fa64d387b66ab21fa4a7c)",
-      "role": "proxy",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x57d882103d69d8e6a25fa64d387b66ab21fa4a7c",
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x309755b3facb2092daa23ef723cb7d7cb0527971",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x17710aaeb8fce1d789c09f30bc7a4863363b3da1",
-      "name": "RewardDistributor",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "RewardDistributor",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x624658d0f9c903b8633e765b4e7b3552c9b568dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x17710aaeb8fce1d789c09f30bc7a4863363b3da1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2440",
-        "audit-2442"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x05279be5fe64146eca6a84c708bd2ef56874990d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x05279be5fe64146eca6a84c708bd2ef56874990d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x57d882103d69d8e6a25fa64d387b66ab21fa4a7c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x57d882103d69d8e6a25fa64d387b66ab21fa4a7c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xe3ea3d35e601704077ff56d6c93d835b6b0351d5",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xe3ea3d35e601704077ff56d6c93d835b6b0351d5",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xf8b0eb608ecb775dd65b0058a8533aedaa318b24",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf8b0eb608ecb775dd65b0058a8533aedaa318b24",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Voting Escrow",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -362,24 +102,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb36f4184a3b3f7fb2e1778e961f1b650e82ce2a4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x95a6b3054b469834a96548c98cc300b4ade6485d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -389,6 +113,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xcf08d1ec5d8e566d95299399307f75f98d6aea03",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -400,7 +126,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -418,22 +144,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Launchpad",
-        "Lens",
-        "ReentrancyGuard",
-        "ReferralCodeMapping",
-        "RewardDistributor",
-        "UserWaitList",
-        "VotingEscrow",
-        "rate",
-        "referral",
-        "tokensUSDRate"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -471,36 +186,15 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Launchpad",
-        "Lens",
-        "RewardDistributor",
-        "VotingEscrow",
-        "ZeebuToken"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Certora",
-      "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
-      "latest_audit": "2025-02"
-    },
-    {
-      "auditor": "OpenZeppelin",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 33.3,
-      "latest_audit": "2024-09"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -514,24 +208,30 @@
     }
   ],
   "origin_summary": {
-    "native": 7,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 9
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
+        "audit_id": 2440,
+        "report_name": "OZ Final Report.pdf"
+      },
+      {
         "audit_id": 2441,
         "report_name": "TOB final report.pdf"
+      },
+      {
+        "audit_id": 2442,
+        "report_name": "Zeebu_Certora_report v2.pdf"
       }
     ],
     "inherited_remapped_matches": []

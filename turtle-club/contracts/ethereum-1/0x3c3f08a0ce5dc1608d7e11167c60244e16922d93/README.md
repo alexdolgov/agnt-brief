@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x3c3f08a0ce5dc1608d7e11167c60244e16922d93`](../0x3c3f08a0ce5dc1608d7e11167c60244e16922d93/); ethereum `0xdbffc30f3b95b8ca5bab3e6c139076fea47f89b3`) |
+| Deployments | 1 (ethereum [`0x3c3f08a0ce5dc1608d7e11167c60244e16922d93`](../0x3c3f08a0ce5dc1608d7e11167c60244e16922d93/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

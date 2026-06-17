@@ -1,63 +1,33 @@
 {
   "schema_version": "2.0",
   "project_key": "sophon-farm",
-  "generated_at": "2026-06-11T02:52:26.858Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "sophon-farm",
-    "tier": 1,
-    "peak_tvl": 256380353,
-    "peak_date": "2025-01-28T00:00:00.000Z",
-    "tvl_30d_ago": 6990085,
-    "tvl_90d_ago": 7062927,
-    "tvl_current": 6759500,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 14100792,
-    "change_30d_pct": -3.298743863629698,
-    "change_90d_pct": -4.296051764374742,
-    "governance_raw": {
-      "evidence": "TVL is $0 on the homepage, indicating no user funds are deposited, and the protocol appears inactive.",
-      "confidence": 0.9,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 480,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 97.36348752121422,
-    "governance_evidence": "TVL is $0 on the homepage, indicating no user funds are deposited, and the protocol appears inactive.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 540,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-06-17T07:00:35.617Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 6,
-    "unique_implementations": 1,
-    "total_deployments": 6,
-    "audited_contracts": 1,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 0,
     "total_audits": 9,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 6795564.931519999,
-    "tvl_usd": 6795564.931519999,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 5527504.5257,
+    "tvl_usd": 5527504.5257,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://farm.sophon.xyz/",
-    "chains": [
-      "ethereum"
-    ],
-    "tier1_coverage_pct": 100,
-    "tier1_auditors": [
-      "Sherlock"
-    ],
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-05",
     "audit_freshness": "aging",
     "staleness_breakdown": {
@@ -70,10 +40,21 @@
   "topography": {
     "project_purpose": "Sophon Farm is a points farming protocol tracked by DefiLlama on Ethereum and Sophon. Users deposit tokens to farm Sophon Points, which are redeemable for $SOPH; the live protocol is not Ethereum-only and active TVL should be mapped to the relevant Ethereum and Sophon contract surfaces.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 6,
+    "live_contracts": 0,
+    "inactive_contracts": 2,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 0,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -81,88 +62,7 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x52df5e394469743839a47b4d0b1e09b8a84a774a",
-      "name": "SophonFarming",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xcea810168c41df6260518b17c64209920b3219b2",
-      "impl_name": "SophonFarming",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x52df5e394469743839a47b4d0b1e09b8a84a774a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x61916427307520be86f7cb53306a443b30e35f31",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x78910e1dfe6df94ea7eec54b25921673db0e2a06",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcea810168c41df6260518b17c64209920b3219b2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xda3bfca50d44b70c7b2f512f676579ea15807de8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xeff8e65ac06d7fe70842a4d54959e8692d6ae064",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2203",
-        "audit-2204",
-        "audit-2207"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    }
-  ],
+  "contracts": [],
   "audits": [
     {
       "audit_id": 2202,
@@ -199,14 +99,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "SophonFarming",
-        "SophonFarmingState"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -223,13 +120,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "SophonFarming"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -288,17 +183,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "MerkleAirdrop",
-        "SophonFarming",
-        "SophonFarmingL2",
-        "SophonFarmingState",
-        "UUPSProxy"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -365,32 +254,10 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Omniscia",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 100,
-      "latest_audit": "2025-02"
-    },
-    {
-      "auditor": "Quantstamp",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 100,
-      "latest_audit": "2024-11"
-    },
-    {
-      "auditor": "Sherlock",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 100,
-      "latest_audit": "2024-06"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -399,9 +266,7 @@
     "match_method_counts": {
       "extraction_exact": 18
     },
-    "extraction_confidence_counts": {
-      "high": 3
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -410,12 +275,24 @@
         "report_name": "DL audit link"
       },
       {
+        "audit_id": 2203,
+        "report_name": "Quantstamp Audit Report for Farming on Ethereum"
+      },
+      {
+        "audit_id": 2204,
+        "report_name": "Sherlock Audit Report for Farming on Ethereum"
+      },
+      {
         "audit_id": 2205,
         "report_name": "Omniscia Audit Report for Custom USDC Bridge"
       },
       {
         "audit_id": 2206,
         "report_name": "Omniscia Audit Report for Guardian NFT, L1 Paymaster, and SOPH Token"
+      },
+      {
+        "audit_id": 2207,
+        "report_name": "Omniscia Audit Report for Farming on layer-2 oracle based allocation reward system"
       },
       {
         "audit_id": 2208,

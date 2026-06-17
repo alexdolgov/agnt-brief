@@ -5,10 +5,10 @@
 - Project: AlphaPing (`alphaping`)
 - Website: [https://alphaping.ch/](https://alphaping.ch/)
 - Lifecycle: active (Tier 0, 30.4% below peak)
-- Generated: 2026-06-12T04:50:02.869Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:00:50.535Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 4 unique implementations (17 raw deployments)
+- Contract surface: 5 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $75,877,833.29
 - On-chain TVL (included contracts): $73,583,464.49
 - TVL by chain: Ethereum $73,583,464.49
@@ -21,13 +21,21 @@ AlphaPing is a mandate-driven, non-custodial on-chain credit/lending vault proto
 
 The protocol consists of a single product family centered on a Safe multisig, which serves as the core infrastructure for risk curation activities.
 
+## Contract Surface Quality
+
+- Indexed contracts: 17; live-surface contracts included: 17 (17 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 4
+- Unique implementations: 5
 - Raw deployments: 17
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
@@ -46,14 +54,15 @@ The protocol consists of a single product family centered on a Safe multisig, wh
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| VaultV2 | core_logic | ethereum | 9 deployments: ethereum [`0x0bf016...eaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xd8cd72...da0c27`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | ethereum | 6 deployments: ethereum [`0x47fe8a...f47efc`](./contracts/ethereum-1/0x47fe8ab9ee47dd65c24df52324181790b9f47efc/); ethereum `0x670195...45cb90`; ethereum `0x874e7f...81939c`; ethereum `0xb0f05e...504ba9`; ethereum `0xf9b85b...e8d4c8`; ethereum `0xfa7ed4...c40c63` | ⚠️ Unaudited |
-| Morpho | unknown | ethereum | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| VaultV2 | core_logic | ethereum | n/a | 8 deployments: ethereum [`0x0bf016...eaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | unit-18535 | [`0xd8cd72...da0c27`](./contracts/ethereum-1/0xd8cd72a2eb7a4312404c00aed5172c0026da0c27/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | ethereum | n/a | 6 deployments: ethereum [`0x47fe8a...f47efc`](./contracts/ethereum-1/0x47fe8ab9ee47dd65c24df52324181790b9f47efc/); ethereum `0x670195...45cb90`; ethereum `0x874e7f...81939c`; ethereum `0xb0f05e...504ba9`; ethereum `0xf9b85b...e8d4c8`; ethereum `0xfa7ed4...c40c63` | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | n/a | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-18536 | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

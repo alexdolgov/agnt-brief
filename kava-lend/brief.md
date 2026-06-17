@@ -5,8 +5,8 @@
 - Project: Kava Lend (`kava-lend`)
 - Website: [https://app.kava.io/lend](https://app.kava.io/lend)
 - Lifecycle: active (Tier 0, 94.7% below peak)
-- Generated: 2026-06-14T05:40:36.927Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:37.612Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $10,634,284.00
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Kava Lend is a Kava-based cross-chain money market that allows users to supply and borrow assets. The listed address 0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f on chain 2222 should be treated as an unverified/unconfirmed contract until its liveness, proxy status, and audit scope coverage are independently verified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -67,9 +75,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | kava | `0xa8e48f...49fc1f` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0xa8e48f...49fc1f` | ❓ Unverified |
 
 ## Audit Inventory
 

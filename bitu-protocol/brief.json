@@ -1,38 +1,38 @@
 {
   "schema_version": "2.0",
   "project_key": "bitu-protocol",
-  "generated_at": "2026-06-14T05:29:23.788Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
+  "generated_at": "2026-06-17T07:00:32.590Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitu-protocol",
     "tier": 0,
     "peak_tvl": 34990023,
     "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 24115974,
-    "tvl_90d_ago": 21992565,
-    "tvl_current": 19547798,
+    "tvl_30d_ago": 23369026,
+    "tvl_90d_ago": 20728272,
+    "tvl_current": 23093417,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 25282589,
-    "change_30d_pct": -18.942531618254357,
-    "change_90d_pct": -11.116334088361226,
-    "days_since_peak": 250,
+    "tvl_180d_ago": 25484241,
+    "change_30d_pct": -1.1793773518844985,
+    "change_90d_pct": 11.410237187161574,
+    "days_since_peak": 227,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 44.13322334769543
+    "drop_from_peak_pct": 33.99999479851728
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
-    "audited_contracts": 3,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 2,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 2,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 60,
+    "coverage_pct": 66.7,
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 19547798.50216,
@@ -44,7 +44,7 @@
     "chains": [
       "bsc"
     ],
-    "tier1_coverage_pct": 60,
+    "tier1_coverage_pct": 66.7,
     "tier1_auditors": [
       "SlowMist"
     ],
@@ -59,13 +59,24 @@
   },
   "topography": {
     "project_purpose": "BitU Protocol is a BNB Chain CeDeFi/CDP stablecoin protocol centered on the yield-embedded BITU stablecoin. It supports whitelisted collateralized minting, sBITU staking and yield features, and ALMM/CeDeFi trading functionality. Collateral should be described in plural unless project documentation or contract configuration confirms a single USDT-only collateral model.",
-    "relationship_narrative": "The Mint $BITU family provides the token contracts (USDT collateral and BITU stablecoin) that are used by the Smart Contracts family. BitUMinting manages collateral deposits and BITU issuance, while BitUStaking allows users to lock BITU to earn rewards, creating a circular token flow within the protocol.",
-    "product_family_count": 2
+    "relationship_narrative": null,
+    "product_family_count": 2,
+    "total_contracts_indexed": 5,
+    "live_contracts": 3,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 2,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -76,6 +87,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x55d398326f99059ff775485246999027b3197955",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BEP20USDT",
       "role": "token",
       "origin_kind": "upstream",
@@ -90,6 +103,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x55d398326f99059ff775485246999027b3197955",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -107,6 +122,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BITU",
       "role": "unknown",
       "origin_kind": "native",
@@ -121,6 +138,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -141,6 +160,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BitUMinting",
       "role": "unknown",
       "origin_kind": "native",
@@ -155,6 +176,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -169,71 +192,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
-      "name": "BitUStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Smart Contracts",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BitUStaking",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-11487",
-        "audit-11488"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x07c3c3ff0742a985cf15ca5a6b027679c2b57373",
-      "name": "GnosisSafeL2",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
-      "impl_name": "GnosisSafeL2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x07c3c3ff0742a985cf15ca5a6b027679c2b57373",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -262,7 +220,7 @@
         "SingleAdminAccessControl",
         "StakedBITU"
       ],
-      "matched_contracts": 3,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -290,7 +248,7 @@
         "SingleAdminAccessControl.sol",
         "StakedBITU.sol"
       ],
-      "matched_contracts": 3,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -301,23 +259,23 @@
     {
       "auditor": "SlowMist",
       "tier": 1,
-      "contracts_covered": 3,
-      "coverage_pct": 60,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 3,
-      "coverage_pct": 60,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
       "latest_audit": "2024-05"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 3,
+    "native": 2,
     "upstream": 1,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {

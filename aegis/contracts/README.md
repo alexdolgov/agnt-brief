@@ -1,6 +1,6 @@
 # aegis — Contract Index
 
-12 unique implementations across 2 chains · 18 deployments · 0 audited · 12 unaudited · 0 unverified
+12 unique implementations across 2 chains · 17 deployments · 0 audited · 12 unaudited · 0 unverified
 
 ## adapter (2)
 
@@ -19,7 +19,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AegisOracle (2 deployments)](./ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/) | ethereum | 2 deployments: ethereum [`0x2b4ad1...041aec`](./ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/); bsc `0x588fd0...d8cf15` | ⚠️ Unaudited | Verified |
+| [AegisOracle](./ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/) | ethereum | [`0x2b4ad1...041aec`](./ethereum-1/0x2b4ad1d479561064cd1c311004aca93d15041aec/) | ⚠️ Unaudited | Verified |
 
 ## unknown (8)
 

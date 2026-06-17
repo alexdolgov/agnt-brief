@@ -1,0 +1,904 @@
+[
+  {
+    "inputs": [],
+    "name": "ErrorAccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorActionIsAlreadyDone",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorAlreadyHead",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorArraysHaveDifferentLengths",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorDataNotChanged",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyArrayNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyString",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOrDepartmentHeadOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "rate",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorIncorrectRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncreaseRevisionForbidden",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "providedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorNotApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNotEnoughFund",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorRequestIsCanceled",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAllowedLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorTooLongString",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "countHours",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAllowedValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorTooManyHours",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorUnknownDepartment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "uid",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorUnknownRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "uid",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorWorkerNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroValueNotAllowed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "controller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "block",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContractInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.ApprovalUid",
+        "name": "approvalUid",
+        "type": "uint256"
+      }
+    ],
+    "name": "OnRequestApproved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum IClerkTypes.RequestStatus",
+        "name": "status",
+        "type": "uint8"
+      }
+    ],
+    "name": "RequestStatusChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "RevisionIncreased",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVAL_CANCELED",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVAL_NEGATIVE",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVAL_POSITIVE",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVAL_UNKNOWN",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CONTROLLABLE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_ALLOWED_HOURS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_EXPLANATION_LENGTH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_URL_LENGTH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "name": "__Controllable_init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.ApprovalUid",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "approvalExplanations",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "approveValue_",
+        "type": "bool"
+      },
+      {
+        "internalType": "string",
+        "name": "explanation_",
+        "type": "string"
+      }
+    ],
+    "name": "approve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid[]",
+        "name": "requestUids",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "approveBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.ApprovalUid",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "approverRequests",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "approver",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "approvedValue",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "controller",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "countHours_",
+        "type": "uint32"
+      },
+      {
+        "internalType": "string",
+        "name": "descriptionUrl_",
+        "type": "string"
+      }
+    ],
+    "name": "createRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "created",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createdBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestStatusValue",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "name": "decodeRequestStatusValue",
+    "outputs": [
+      {
+        "internalType": "enum IClerkTypes.RequestStatus",
+        "name": "requestStatus",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "countPositive",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "countNegative",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid[]",
+        "name": "requestUids",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "explanations",
+        "type": "string[]"
+      }
+    ],
+    "name": "disapproveBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IClerkTypes.RequestStatus",
+        "name": "requestStatus",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "countPositive",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "countNegative",
+        "type": "uint32"
+      }
+    ],
+    "name": "encodeRequestStatusValue",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.RequestStatusValue",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestStatusValue",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "name": "extractRequestStatus",
+    "outputs": [
+      {
+        "internalType": "enum IClerkTypes.RequestStatus",
+        "name": "requestStatus",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getApprovalUid",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApprovalUid",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRequestStatus",
+    "outputs": [
+      {
+        "internalType": "enum IClerkTypes.RequestStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.EpochType",
+        "name": "epoch_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "getRequestUid",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "increaseRevision",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isController",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isGovernance",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "requestUid",
+        "type": "uint256"
+      }
+    ],
+    "name": "lengthRequestApprovals",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.EpochType",
+        "name": "epoch",
+        "type": "uint16"
+      }
+    ],
+    "name": "lengthRequestsForEpoch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "previousImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestApprovals",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.EpochType",
+        "name": "",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestsForEpoch",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestsStatusValues",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.RequestStatusValue",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "revision",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

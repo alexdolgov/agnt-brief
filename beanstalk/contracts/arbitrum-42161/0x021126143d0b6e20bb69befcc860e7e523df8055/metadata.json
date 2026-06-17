@@ -1,0 +1,18 @@
+{
+  "address": "0x021126143d0b6e20bb69befcc860e7e523df8055",
+  "chain_id": 42161,
+  "contract_name": "EACAggregatorProxy",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:06.220Z"
+}

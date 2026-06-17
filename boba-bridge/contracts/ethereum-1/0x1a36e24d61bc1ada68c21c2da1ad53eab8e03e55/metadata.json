@@ -1,0 +1,18 @@
+{
+  "address": "0x1a36e24d61bc1ada68c21c2da1ad53eab8e03e55",
+  "chain_id": 1,
+  "contract_name": "Lib_ResolvedDelegateProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x2230c37cf0b8b88b3e14ccd849b178bb68e92cd5",
+  "fetched_at": "2026-06-17T06:53:11.146Z"
+}

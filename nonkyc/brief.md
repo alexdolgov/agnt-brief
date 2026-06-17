@@ -5,8 +5,8 @@
 - Project: NonKYC (`nonkyc`)
 - Website: [https://nonkyc.io](https://nonkyc.io)
 - Lifecycle: active (Tier 0, 72.7% below peak)
-- Generated: 2026-06-13T04:05:42.140Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Generated: 2026-06-17T07:00:52.212Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $5,365,294.88
@@ -20,6 +20,14 @@ NonKYC is primarily a centralized/no-KYC cryptocurrency exchange. The four recor
 ### Architecture
 
 Only one product family is identified, with four unnamed contracts at the same address, likely representing a single exchange contract or a set of related functions. No shared infrastructure or inter-family relationships are evident.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (2 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -66,12 +74,12 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x5d738f...de76e7` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x5d738f...de76e7` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x5d738f...de76e7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x5d738f...de76e7` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x5d738f...de76e7` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x5d738f...de76e7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x5d738f...de76e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5d738f...de76e7` | ❓ Unverified |
 
 ## Audit Inventory
 

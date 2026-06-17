@@ -4,32 +4,40 @@
 
 - Project: StableHodl (`stablehodl`)
 - Website: [https://stablehodl.com/](https://stablehodl.com/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-13T01:41:26.975Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
-- Chains: bsc, ethereum, polygon
-- Contract surface: 1 unique implementations (7 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:36.922Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $6,960,502.12
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 StableHodl is a stablecoin yield product powered by HeLa Network. It focuses on USDT, USDC, and HLUSD deposits/staking and generates yield through funding-arbitrage-based strategies, with HLUSD-related rewards described in public data sources. The indexed contract surface includes ERC1967 proxy-based stake pool deployments across Ethereum, BSC, and Polygon, plus OTC endpoint proxy deployments on BSC and Polygon; those OTC endpoint contracts should be treated as recorded contract-surface components unless product documentation confirms they are user-facing yield endpoints.
 
+## Contract Surface Quality
+
+- Indexed contracts: 7; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 7 singleton, 0 uninitialized.
+- Deployment units: 2/5 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 7
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +55,9 @@ StableHodl is a stablecoin yield product powered by HeLa Network. It focuses on 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| stake_pool | core_logic | ethereum | 7 deployments: ethereum [`0x109d30...a47544`](./contracts/ethereum-1/0x109d3042a3c682f94107b3818e93b3ade2a47544/); ethereum `0xc34df6...53e470`; bsc [`0x109d30...a47544`](./contracts/bsc-56/0x109d3042a3c682f94107b3818e93b3ade2a47544/); bsc `0x528d46...fe64aa`; bsc `0xc34df6...53e470`; polygon [`0x109d30...a47544`](./contracts/polygon-137/0x109d3042a3c682f94107b3818e93b3ade2a47544/); polygon `0xc34df6...53e470` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

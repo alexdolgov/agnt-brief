@@ -5,11 +5,11 @@
 - Project: Byte Exchange (`byte-exchange`)
 - Website: [https://bexc.io/](https://bexc.io/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:16:30.163Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:01:01.743Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $41,682,719.02
+- DeFi Llama TVL: $35,647,799.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Byte Exchange is a centralized cryptocurrency exchange (CEX) offering digital asset trading and account-based crypto services. Current public sources indicate offerings including spot trading, P2P markets, earn/staking products, and OTC services. No project-owned on-chain smart-contract product families were identified in the available scope.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

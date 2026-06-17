@@ -1,0 +1,17 @@
+{
+  "address": "0x39fa48bf36a65834c88ec4ecb44c867f7e071a69",
+  "chain_id": 137,
+  "contract_name": "CycloneV2dot3",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:28.692Z"
+}

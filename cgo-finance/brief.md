@@ -6,11 +6,11 @@
 
 - Project: CGO Finance (`cgo-finance`)
 - Lifecycle: declining (Tier 0, 96.9% below peak)
-- Generated: 2026-06-10T22:20:35.638Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:01:00.744Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: cronos
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,234,412.79
+- DeFi Llama TVL: $1,045,272.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,6 +22,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 CGO Finance is a Cronos yield optimizer/yield aggregator.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -69,10 +77,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x5795be...e23ca2` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x869c3e...0d4cb6` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x5795be...e23ca2` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x869c3e...0d4cb6` | ❓ Unverified |
 
 ## Audit Inventory
 

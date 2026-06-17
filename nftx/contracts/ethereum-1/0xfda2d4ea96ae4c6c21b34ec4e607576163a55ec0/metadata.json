@@ -1,0 +1,17 @@
+{
+  "address": "0xfda2d4ea96ae4c6c21b34ec4e607576163a55ec0",
+  "chain_id": 1,
+  "contract_name": "TimelockRewardDistributionTokenImpl",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:20.457Z"
+}

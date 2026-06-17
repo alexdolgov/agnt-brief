@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperion",
-  "generated_at": "2026-06-10T23:56:37.290Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-17T07:00:56.250Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 21073597.39304,
-    "tvl_usd": 21073597.39304,
+    "dl_tvl_usd": 11111943.38066,
+    "tvl_usd": 11111943.38066,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Hyperion is an Aptos-native, fully on-chain hybrid orderbook-AMM decentralized exchange (DEX). In addition to its core trading and liquidity functionality, audited Hyperion components include OFT, Token, LaunchPad, and Vaults scopes whose contract inventories have not yet been extracted or modeled.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

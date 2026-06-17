@@ -5,10 +5,10 @@
 - Project: LlamaPay (`llamapay`)
 - Website: [https://llamapay.io](https://llamapay.io)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-06-12T12:14:03.049Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
-- Chains: arbitrum, avalanche, base, berachain, blast, bsc, cronos, ethereum, fantom, fraxtal, gnosis, mantle, metis, mode, optimism, polygon, sonic, zora
-- Contract surface: 20 unique implementations (104 raw deployments)
+- Generated: 2026-06-17T07:00:41.745Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: arbitrum, avalanche, base, berachain, bsc, cronos, ethereum, fantom, gnosis, metis, optimism, polygon, sonic, zora
+- Contract surface: 13 unique implementations (33 raw deployments)
 - DeFi Llama TVL: $21,007,339.34
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ LlamaPay is a multi-chain protocol for by-the-second recurring payment streams, 
 
 The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow instances from the Scheduled Payments family, which hold and release funds. LlamaPayBot contracts interact with these escrows to automate payment execution, while Disperse assists in batch token distributions.
 
+## Contract Surface Quality
+
+- Indexed contracts: 104; live-surface contracts included: 33 (23 live, 10 unknown).
+- Excluded by liveness: 71 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 6
-- Verified by bytecode match: 3
-- Unverified implementations: 11
-- Unique implementations: 20
-- Raw deployments: 104
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 5
+- Verified by bytecode match: 1
+- Unverified implementations: 7
+- Unique implementations: 13
+- Raw deployments: 33
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,16 +54,15 @@ The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow 
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Disperse | unknown | arbitrum | 2 deployments: arbitrum [`0x6f9fb4...56301a`](./contracts/arbitrum-42161/0x6f9fb43274e9011804bf516e78caf5e89856301a/); avalanche [`0x6f9fb4...56301a`](./contracts/avalanche-43114/0x6f9fb43274e9011804bf516e78caf5e89856301a/) | ⚠️ Unaudited |
-| LlamaPayBot | unknown | ethereum | 17 deployments: ethereum [`0x0327a0...ae948e`](./contracts/ethereum-1/0x0327a00f37115115038c289827480ddaabae948e/); ethereum `0xc5a4fe...074ab9`; ethereum `0xe10eb2...218ee9`; optimism `0x6f9fb4...56301a`; optimism `0xc5a4fe...074ab9`; bsc `0xc5a4fe...074ab9`; polygon `0xc5a4fe...074ab9`; arbitrum `0xb1870e...b184e0`; avalanche [`0x0327a0...ae948e`](./contracts/avalanche-43114/0x0327a00f37115115038c289827480ddaabae948e/); avalanche `0x0e52b1...c258cf`; avalanche `0x3addfd...b6cb0f`; avalanche `0x57547f...0353d7`; avalanche `0x9410fb...1b633c`; avalanche `0xb7caa9...8b268c`; avalanche `0xda33d4...5294d1`; avalanche `0xe10eb2...218ee9`; avalanche `0xf13563...bac057` | ⚠️ Unaudited |
-| LlamaPayFactory | registry | sonic | 15 deployments: ethereum `0xde1c04...f84c7f`; optimism `0xde1c04...f84c7f`; bsc `0xde1c04...f84c7f`; gnosis `0xde1c04...f84c7f`; polygon `0xde1c04...f84c7f`; sonic [`0x09c39b...3aea07`](./contracts/sonic-146/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); metis `0x43634d...030600`; base [`0x09c39b...3aea07`](./contracts/base-8453/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); arbitrum `0xde1c04...f84c7f`; avalanche `0x27fba1...247f9b`; avalanche `0x402ab0...dd76b2`; avalanche `0x6bbafc...9fd768`; avalanche `0x7d507b...25f4a3`; avalanche `0xedf040...38c481`; berachain [`0x09c39b...3aea07`](./contracts/berachain-80094/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/) | ⚠️ Unaudited |
-| SimpleVestingEscrow | operational_periphery | mode | [`0x4ace3e...2b84bd`](./contracts/mode-34443/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | ethereum | 7 deployments: ethereum [`0x02266e...121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); ethereum `0x056e39...532b72`; optimism `0xb4e9d1...404779`; bsc [`0x02266e...121c01`](./contracts/bsc-56/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); polygon [`0x02266e...121c01`](./contracts/polygon-137/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); arbitrum `0x1564d7...528734`; avalanche `0x4c48f1...84fa0c` | ⚠️ Unaudited |
-| VestingEscrowFactory | operational_periphery | mode | [`0x62e13b...cd4c10`](./contracts/mode-34443/0x62e13be78af77c86d38a027ae432f67d9ecd4c10/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| LlamaPayBot | unknown | avalanche | n/a | 3 deployments: ethereum `0xc5a4fe...074ab9`; bsc `0xc5a4fe...074ab9`; avalanche [`0x57547f...0353d7`](./contracts/avalanche-43114/0x57547f79d8344accab21dc0a9c9d186e240353d7/) | ⚠️ Unaudited |
+| LlamaPayFactory | registry | base | n/a | 6 deployments: ethereum `0xde1c04...f84c7f`; bsc `0xde1c04...f84c7f`; metis `0x43634d...030600`; base [`0x09c39b...3aea07`](./contracts/base-8453/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); arbitrum `0xde1c04...f84c7f`; berachain [`0x09c39b...3aea07`](./contracts/berachain-80094/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/) | ⚠️ Unaudited |
+| Simple Vesting Escrow | operational_periphery | base | n/a | 3 deployments: base [`0x0d5e12...d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/); base `0x2b3a5d...d15e49`; base `0x4c0f3d...6d4be5` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x02266e...121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); optimism `0xb4e9d1...404779`; arbitrum `0x1564d7...528734`; avalanche `0x4c48f1...84fa0c` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | ethereum | unit-25361 | [`0x056e39...532b72`](./contracts/ethereum-1/0x056e39bdd2d35f4eb27478369bdade51e0532b72/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -63,33 +70,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (3)
+### ⚠️ Verified by Bytecode + Unaudited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Simple Vesting Escrow | operational_periphery | base | 16 deployments: ethereum `0x9dd5cf...14bad2`; optimism `0x4ace3e...2b84bd`; bsc `0x4ace3e...2b84bd`; gnosis `0x4ace3e...2b84bd`; polygon `0x4ace3e...2b84bd`; sonic `0xb61915...75a8b4`; mantle `0x4ace3e...2b84bd`; base [`0x0d5e12...d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/); base `0x2b3a5d...d15e49`; base `0x4ace3e...2b84bd`; base `0x4c0f3d...6d4be5`; base `0xb61915...75a8b4`; arbitrum `0x4ace3e...2b84bd`; avalanche `0x4ace3e...2b84bd`; berachain `0xb93427...10411a`; blast `0x4ace3e...2b84bd` | ⚠️ Unaudited (bytecode match) |
-| Vesting Escrow Factory | operational_periphery | berachain | 13 deployments: ethereum `0xcf6178...6ab347`; optimism `0x62e13b...cd4c10`; bsc `0x62e13b...cd4c10`; gnosis `0x62e13b...cd4c10`; polygon `0x62e13b...cd4c10`; sonic `0xb93427...10411a`; mantle `0x62e13b...cd4c10`; base `0x62e13b...cd4c10`; arbitrum `0x62e13b...cd4c10`; avalanche `0x62e13b...cd4c10`; berachain [`0x4ace3e...2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/); berachain `0xb61915...75a8b4`; blast `0x62e13b...cd4c10` | ⚠️ Unaudited (bytecode match) |
-| Vyper_contract | unknown | ethereum | 21 deployments: ethereum [`0xb61915...75a8b4`](./contracts/ethereum-1/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); ethereum `0xb93427...10411a`; optimism [`0xb61915...75a8b4`](./contracts/optimism-10/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); optimism `0xb93427...10411a`; bsc [`0xb61915...75a8b4`](./contracts/bsc-56/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); bsc `0xb93427...10411a`; gnosis [`0xb61915...75a8b4`](./contracts/gnosis-100/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); gnosis `0xb93427...10411a`; polygon [`0xb61915...75a8b4`](./contracts/polygon-137/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); polygon `0xb93427...10411a`; mantle [`0xb61915...75a8b4`](./contracts/mantle-5000/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); mantle `0xb93427...10411a`; base `0xb93427...10411a`; mode [`0xb61915...75a8b4`](./contracts/mode-34443/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); mode `0xb93427...10411a`; arbitrum [`0xb61915...75a8b4`](./contracts/arbitrum-42161/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); arbitrum `0xb93427...10411a`; avalanche [`0xb61915...75a8b4`](./contracts/avalanche-43114/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); avalanche `0xb93427...10411a`; blast [`0xb61915...75a8b4`](./contracts/blast-81457/0xb61915609e6dc7a7261b678073c53bac5875a8b4/); blast `0xb93427...10411a` | ⚠️ Unaudited (bytecode match) |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Vesting Escrow Factory | operational_periphery | berachain | n/a | 9 deployments: ethereum `0xcf6178...6ab347`; bsc `0x62e13b...cd4c10`; gnosis `0x62e13b...cd4c10`; polygon `0x62e13b...cd4c10`; sonic `0xb93427...10411a`; base `0x62e13b...cd4c10`; arbitrum `0x62e13b...cd4c10`; avalanche `0x62e13b...cd4c10`; berachain [`0x4ace3e...2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (11)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xc5a4fe...074ab9` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xda33d4...5294d1` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xde1c04...f84c7f` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | `0x4ace3e...2b84bd` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | `0xb61915...75a8b4` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | `0xb93427...10411a` | ❓ Unverified |
-| UnnamedContract | unknown | zora | `0x62e13b...cd4c10` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x62e13b...cd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x62e13b...cd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xc5a4fe...074ab9` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xd152f5...452150` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xda33d4...5294d1` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xde1c04...f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | zora | n/a | `0x62e13b...cd4c10` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -110,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 20 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

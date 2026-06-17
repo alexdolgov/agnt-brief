@@ -7,30 +7,39 @@
 - Project: Rainbow Bridge (`rainbow-bridge`)
 - Website: [https://rainbowbridge.app/transfer](https://rainbowbridge.app/transfer)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-14T10:43:15.394Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:52.228Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $1,673,576.84
 - On-chain TVL (included contracts): $23,285,836.32
 - TVL by chain: Ethereum $23,285,836.32
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Rainbow Bridge is an Aurora product that enables asset transfers between Ethereum, NEAR Protocol, and Aurora. Its Ethereum-side surface includes bridge infrastructure such as NearBridge, an EthCustodian contract for locking assets, and token/asset contracts such as eNear, with cross-chain transfers secured by light client verification.
 
-### Architecture
+## Contract Surface Quality
 
-The EthCustodian contract is the sole Ethereum component, interacting with NEAR's light client and prover contracts to validate transfers. No additional infrastructure contracts are present on Ethereum.
+- Indexed contracts: 5; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 4; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $23,285,836.32
@@ -49,15 +58,13 @@ The EthCustodian contract is the sole Ethereum component, interacting with NEAR'
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC20Locker | token | ethereum | [`0x23ddd3...9e127f`](./contracts/ethereum-1/0x23ddd3e3692d1861ed57ede224608875809e127f/) | ⚠️ Unaudited |
-| eNear | unknown | ethereum | [`0x85f17c...b9f6a4`](./contracts/ethereum-1/0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4/) | ⚠️ Unaudited |
-| EthCustodian | unknown | ethereum | [`0x6bfad4...89fa52`](./contracts/ethereum-1/0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52/) | ⚠️ Unaudited |
-| NearBridge | operational_periphery | ethereum | [`0x015156...efc362`](./contracts/ethereum-1/0x0151568af92125fb289f1dd81d9d8f7484efc362/) | ⚠️ Unaudited |
-| NearProver | unknown | ethereum | [`0x051ad3...5b46c4`](./contracts/ethereum-1/0x051ad3f020274910065dcb421629cd2e6e5b46c4/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC20Locker | token | ethereum | n/a | [`0x23ddd3...9e127f`](./contracts/ethereum-1/0x23ddd3e3692d1861ed57ede224608875809e127f/) | ⚠️ Unaudited |
+| eNear | unknown | ethereum | n/a | [`0x85f17c...b9f6a4`](./contracts/ethereum-1/0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4/) | ⚠️ Unaudited |
+| EthCustodian | unknown | ethereum | n/a | [`0x6bfad4...89fa52`](./contracts/ethereum-1/0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,14 +98,12 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x23ddd3...9e127f`](./contracts/ethereum-1/0x23ddd3e3692d1861ed57ede224608875809e127f/) | ERC20Locker | token | $23,285,836.32 | Verified native implementation with $23,285,836.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x85f17c...b9f6a4`](./contracts/ethereum-1/0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4/) | eNear | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6bfad4...89fa52`](./contracts/ethereum-1/0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52/) | EthCustodian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x015156...efc362`](./contracts/ethereum-1/0x0151568af92125fb289f1dd81d9d8f7484efc362/) | NearBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x051ad3...5b46c4`](./contracts/ethereum-1/0x051ad3f020274910065dcb421629cd2e6e5b46c4/) | NearProver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

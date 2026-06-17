@@ -1,0 +1,17 @@
+{
+  "address": "0x44fd0b2a4a358e72f011e240794d899480fccd6d",
+  "chain_id": 8453,
+  "contract_name": "RasaOffChainSymmioDepositor",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:08.694Z"
+}

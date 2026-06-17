@@ -1,0 +1,17 @@
+{
+  "address": "0x1bd704634a64654c2ff203823772561b2c49157d",
+  "chain_id": 137,
+  "contract_name": "Airdrop",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:27.556Z"
+}

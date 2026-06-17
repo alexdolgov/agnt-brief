@@ -7,74 +7,64 @@
 - Project: ObeliskBTC (`obeliskbtc`)
 - Website: [https://obelisk.nodedao.com](https://obelisk.nodedao.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-13T00:37:59.904Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
+- Generated: 2026-06-17T07:00:36.897Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 19 unique implementations (26 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $7,428,761.81
-- On-chain TVL (included contracts): $33,187,987.45
-- TVL by chain: Ethereum $33,187,987.45
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 ObeliskBTC is a Bitcoin asset-management and bridge protocol tracked as a separate DeFiLlama protocol. Its scope should be treated separately from broader NodeDAO/NETH liquid-staking or restaking contracts unless project documentation explicitly links those deployments to ObeliskBTC.
 
-### Architecture
+## Contract Surface Quality
 
-The protocol consists of a single product family with no shared infrastructure across multiple families. All contracts are deployed by the same deployer cluster, indicating a unified codebase.
+- Indexed contracts: 26; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 7 inactive, 18 singleton, 0 uninitialized.
+- Deployment units: 0/15 live.
+- Detected codebases: none
+- Unverified dependencies: 1/5.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 7/19 (36.8%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 1/1 (100.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 19
-- Raw deployments: 26
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $33,187,987.45
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $33,187,987.45 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CertiK | Tier 2 | 7 | 36.8% | 2024-08 |
+| CertiK | Tier 2 | 1 | 100.0% | 2024-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (7)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DefiStrategy | core_logic | ethereum | 3 deployments: ethereum [`0x174799...bfc410`](./contracts/ethereum-1/0x174799af838f3883e88161f04011e2a316bfc410/); ethereum `0x8446c9...ddf8f5`; ethereum `0xfc2891...14c4a7` | ✅ Audited |
-| MintSecurity | unknown | ethereum | [`0xa57dc7...f9d25f`](./contracts/ethereum-1/0xa57dc79b2852415448b66100bf59753318f9d25f/) | ✅ Audited |
-| MintStrategy | core_logic | ethereum | [`0xb97ab3...1f67a0`](./contracts/ethereum-1/0xb97ab3198f6117d2d093807faa670eb1c11f67a0/) | ✅ Audited |
-| ObeliskNetwork | unknown | ethereum | 3 deployments: ethereum [`0x934cbd...ebad42`](./contracts/ethereum-1/0x934cbd2af86c074478a1fe1d10d2c5d4adebad42/); ethereum `0xe423b9...1cd999`; ethereum `0xef2df4...43e80b` | ✅ Audited |
-| OBTC | unknown | ethereum | [`0xb1e128...de0e3c`](./contracts/ethereum-1/0xb1e12802831da99d2d47b6a55049d69bf7de0e3c/) | ✅ Audited |
-| OYBTCB2 | unknown | ethereum | [`0x7f58f8...3d24b6`](./contracts/ethereum-1/0x7f58f8d540324a7a895794bb819f2d635c3d24b6/) | ✅ Audited |
-| StrategyManager | core_logic | ethereum | 2 deployments: ethereum [`0x36f57f...a16e16`](./contracts/ethereum-1/0x36f57f0379cb36e54248d219954274ee86a16e16/); ethereum `0x995f4e...8d5e38` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| OBTC | unknown | ethereum | n/a | [`0xb1e128...de0e3c`](./contracts/ethereum-1/0xb1e12802831da99d2d47b6a55049d69bf7de0e3c/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| RestakingPool | core_logic | ethereum | [`0x0d6f76...a725bc`](./contracts/ethereum-1/0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc/) | ⚠️ Unaudited |
-| NethPool | core_logic | ethereum | [`0xf3c794...c07c18`](./contracts/ethereum-1/0xf3c79408164abfb6fd5ddfe33b084e4ad2c07c18/) | ⚠️ Unaudited |
-| ELVault | core_logic | ethereum | 2 deployments: ethereum [`0xa9d213...dee8f3`](./contracts/ethereum-1/0xa9d21395a58d832d2c44605d286560876ddee8f3/); ethereum `0xbdfe7f...def3d8` | ⚠️ Unaudited |
-| NodeDAOView | unknown | ethereum | [`0xd7c049...812121`](./contracts/ethereum-1/0xd7c049cd4ba216679ecc04eb2767cc5e39812121/) | ⚠️ Unaudited |
-| ObeliskCustody | unknown | ethereum | 2 deployments: ethereum [`0x385d89...93b4e3`](./contracts/ethereum-1/0x385d894a946be929cc1ba1a26331fd4ccd93b4e3/); ethereum `0x9f836f...8b1a2c` | ⚠️ Unaudited |
-| OBTCOFTAdapter | adapter | ethereum | [`0x5be163...3be65f`](./contracts/ethereum-1/0x5be1630b4241ebb479b2dd3a1917e3c4253be65f/) | ⚠️ Unaudited |
-| OYBTCBBN | unknown | ethereum | [`0x587fa5...c0f887`](./contracts/ethereum-1/0x587fa54a1682ae73ecc709e1439d096ff0c0f887/) | ⚠️ Unaudited |
-| OYBTCFBTC | unknown | ethereum | [`0xc47a9d...2ce338`](./contracts/ethereum-1/0xc47a9dce0192e0d82c0b6f8f75c1881df32ce338/) | ⚠️ Unaudited |
-| PoolConfig | core_logic | ethereum | [`0x54f661...d1ea62`](./contracts/ethereum-1/0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62/) | ⚠️ Unaudited |
-| RestakingPod | unknown | ethereum | [`0x9efdeb...a3b75c`](./contracts/ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/) | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | [`0xe4c555...312f20`](./contracts/ethereum-1/0xe4c555c2aa8f7fdb7baf90039b3a583c8e312f20/) | ⚠️ Unaudited |
-| TokenAuthority | governance | ethereum | [`0x6fdfd0...6d74a7`](./contracts/ethereum-1/0x6fdfd096687a2d7b83e4afdc05c43519166d74a7/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,27 +88,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | 12 | high |
+| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x385d89...93b4e3`](./contracts/ethereum-1/0x385d894a946be929cc1ba1a26331fd4ccd93b4e3/) | ObeliskCustody | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5be163...3be65f`](./contracts/ethereum-1/0x5be1630b4241ebb479b2dd3a1917e3c4253be65f/) | OBTCOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x587fa5...c0f887`](./contracts/ethereum-1/0x587fa54a1682ae73ecc709e1439d096ff0c0f887/) | OYBTCBBN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc47a9d...2ce338`](./contracts/ethereum-1/0xc47a9dce0192e0d82c0b6f8f75c1881df32ce338/) | OYBTCFBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fdfd0...6d74a7`](./contracts/ethereum-1/0x6fdfd096687a2d7b83e4afdc05c43519166d74a7/) | TokenAuthority | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 10 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

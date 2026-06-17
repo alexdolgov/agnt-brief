@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ethereal-season-zero",
-  "generated_at": "2026-06-14T08:06:58.494Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
+  "generated_at": "2026-06-17T07:01:01.689Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ethereal-season-zero",
@@ -70,7 +70,18 @@
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -86,6 +97,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "EtherealPreDepositVault",
       "role": "core_logic",
       "origin_kind": "native",
@@ -100,6 +113,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2820387.978379198,

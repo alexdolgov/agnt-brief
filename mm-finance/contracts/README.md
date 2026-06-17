@@ -1,6 +1,6 @@
 # mm-finance — Contract Index
 
-192 unique implementations across 3 chains · 262 deployments · 1 audited · 21 unaudited · 170 unverified
+157 unique implementations across 3 chains · 175 deployments · 1 audited · 19 unaudited · 137 unverified
 
 ## adapter (3)
 
@@ -23,12 +23,6 @@
 | [BatchSender](./polygon-137/0x40d87d548743d3f5242d6eae2199e8c064eba807/) | polygon | [`0x40d87d...eba807`](./polygon-137/0x40d87d548743d3f5242d6eae2199e8c064eba807/) | ⚠️ Unaudited | Verified |
 | [OmniInterfaceMulticall](./arbitrum-42161/0xfa34f4e90bb251e845d2ff8ced49c6454737c85e/) | arbitrum | [`0xfa34f4...37c85e`](./arbitrum-42161/0xfa34f4e90bb251e845d2ff8ced49c6454737c85e/) | ⚠️ Unaudited | Verified |
 
-## proxy (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [TransparentUpgradeableProxy (48 deployments)](./polygon-137/0x00c8ee42761c95b223676d6ea59c6b7f6f643a6e/) | polygon | 48 deployments: polygon [`0x00c8ee...643a6e`](./polygon-137/0x00c8ee42761c95b223676d6ea59c6b7f6f643a6e/); polygon `0x01a104...cdf702`; polygon `0x01ab57...c48b84`; polygon `0x06515a...fe9318`; polygon `0x0c1f15...2322f8`; polygon `0x0ece7b...152155`; polygon `0x102fcb...4f57ca`; polygon `0x145677...049a30`; polygon `0x1bc888...15fd2a`; polygon `0x244c4d...38162b`; polygon `0x2b9299...875d2a`; polygon `0x3026b2...98e35a`; polygon `0x3d014c...df5c7d`; polygon `0x4725e3...7c844f`; polygon `0x56cb79...2389f6`; polygon `0x5cfdf3...eab3b9`; polygon `0x658188...dce9cd`; polygon `0x67a41e...5655d1`; polygon `0x6b5c25...a715fb`; polygon `0x7dc291...7e6536`; polygon `0x7f6462...c45bc1`; polygon `0x804dc5...1cd456`; polygon `0x920b67...a616c5`; polygon `0x95258e...80f941`; polygon `0x9e3e9d...58016e`; polygon `0x9f7997...6bfe30`; polygon `0xb05cef...68ba3a`; polygon `0xb3b364...85345c`; polygon `0xb9b3d4...f5acba`; polygon `0xc267bd...45d38d`; polygon `0xc5966a...868830`; polygon `0xcdff7e...e4832a`; polygon `0xd56345...17de4c`; polygon `0xdc58c5...9c1b07`; polygon `0xeb6239...3f1227`; polygon `0xfa9f91...d1f7f7`; polygon `0xfaacea...273787`; polygon `0xff39fa...4fc579`; arbitrum `0x017512...125cf5`; arbitrum `0x060e24...53602f`; arbitrum `0x3510e4...962ec3`; arbitrum `0x53b901...6d3615`; arbitrum `0x7309bf...b5cea8`; arbitrum `0x7eee22...8f9efe`; arbitrum `0x9a92b9...8a1477`; arbitrum `0xa196f5...628306`; arbitrum `0xaea0b9...0d5734`; arbitrum `0xd4a8a5...24b643` | ⚠️ Unaudited | Verified |
-
 ## registry (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
@@ -46,15 +40,14 @@
 | [ReferralStorage](./polygon-137/0xe3eb5d1d601885113caa6a55372f8e0b2ccc762f/) | polygon | [`0xe3eb5d...cc762f`](./polygon-137/0xe3eb5d1d601885113caa6a55372f8e0b2ccc762f/) | ⚠️ Unaudited | Verified |
 | [xMeerkatToken](./arbitrum-42161/0xb8635f1644422e7ebca07c06b839075a74f57dbb/) | arbitrum | [`0xb8635f...f57dbb`](./arbitrum-42161/0xb8635f1644422e7ebca07c06b839075a74f57dbb/) | ⚠️ Unaudited | Verified |
 
-## unknown (178)
+## unknown (144)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AmplificationUtils](./polygon-137/0xff89646fe7ee62ea96050379a7a8c532dd431d10/) | polygon | [`0xff8964...431d10`](./polygon-137/0xff89646fe7ee62ea96050379a7a8c532dd431d10/) | ⚠️ Unaudited | Verified |
-| [LaunchpadProxy (4 deployments)](./arbitrum-42161/0x08382dd974322b9c292bbede5fef36dceda291f2/) | arbitrum | 4 deployments: polygon `0xef71d2...5945a9`; arbitrum [`0x08382d...a291f2`](./arbitrum-42161/0x08382dd974322b9c292bbede5fef36dceda291f2/); arbitrum `0x52392c...440da2`; arbitrum `0x5be85e...ce093d` | ⚠️ Unaudited | Verified |
 | [MadMeerkatBurrowPoly](./polygon-137/0x2f5b31d2b4891f0ed183d56dd6ebd55249ca1d0c/) | polygon | [`0x2f5b31...ca1d0c`](./polygon-137/0x2f5b31d2b4891f0ed183d56dd6ebd55249ca1d0c/) | ⚠️ Unaudited | Verified |
 | [MasterMeerkat (2 deployments)](./polygon-137/0xa2b417088d63400d211a4d5eb3c4c5363f834764/) | polygon | 2 deployments: polygon [`0xa2b417...834764`](./polygon-137/0xa2b417088d63400d211a4d5eb3c4c5363f834764/); arbitrum `0xa73ae6...04557a` | ⚠️ Unaudited | Verified |
-| [Swap (4 deployments)](./polygon-137/0x0ff317c94a31eb9b72766db892f77970eb488fb1/) | polygon | 4 deployments: polygon [`0x0ff317...488fb1`](./polygon-137/0x0ff317c94a31eb9b72766db892f77970eb488fb1/); polygon `0x45e46c...b22368`; polygon `0x690bba...2a5350`; polygon `0x9ee579...5dab56` | ⚠️ Unaudited | Verified |
+| [Swap (2 deployments)](./polygon-137/0x45e46c9dc647d0f89b8e692f327553e5bab22368/) | polygon | 2 deployments: polygon [`0x45e46c...b22368`](./polygon-137/0x45e46c9dc647d0f89b8e692f327553e5bab22368/); polygon `0x690bba...2a5350` | ⚠️ Unaudited | Verified |
 | [SwapDeployer](./polygon-137/0x95d5d401d3c4eacf12d71b4f98995076d6a3a85d/) | polygon | [`0x95d5d4...a3a85d`](./polygon-137/0x95d5d401d3c4eacf12d71b4f98995076d6a3a85d/) | ⚠️ Unaudited | Verified |
 | [SwapUtils](./polygon-137/0x855ccb701117dd34e30cfc0741c96cf8f56017a5/) | polygon | [`0x855ccb...6017a5`](./polygon-137/0x855ccb701117dd34e30cfc0741c96cf8f56017a5/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | cronos | `0x1a6ad4...c7ce0a` | ❓ Unverified | Unverified |
@@ -88,70 +81,47 @@
 | UnnamedContract | polygon | `0x2ba9e5...6f300a` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x2c456d...e40824` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x2c6978...12b4a2` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x2ef58f...1d38c2` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x308c22...5dccff` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x3392fb...e692b7` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x339f42...68f74b` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x34b0bd...8679b6` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x3d03db...f6e259` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x3e1402...d7749d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x443ec4...f9cf41` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x446e64...82e95e` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x4724ad...8356fa` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x47f6d9...45258a` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x48f274...8280af` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x4a114b...f39a2c` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x4bca9c...02f482` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x4ed9be...f1f526` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x567e7e...296b04` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x59044e...fb5c53` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x5a64e6...760c56` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x5c7658...31d147` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x67b462...35f14e` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x692db4...6887a7` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x699586...add3e9` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6c5638...ebe76b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6cc28c...26b0bd` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6d4bed...a1fe88` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6d713b...af0c72` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x6e6175...2ce1a7` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x705913...edd1a8` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x784085...540dda` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x799b03...c4cc39` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x7ae5b1...e22221` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x7aebfc...f93c40` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x7bb98a...5fc052` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x7e4129...b69545` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x8504f0...92188d` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x8523e6...2e30fd` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x8a3ae5...d75298` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x8bb9cc...faa4d5` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x8e0170...c97873` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x91b50e...b4993b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x94ee02...47e481` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x961c1d...d07494` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x9629a0...5b8d01` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x979ed6...449581` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x98c65f...3270e6` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x996a3d...a187bf` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x9bfd18...8341d8` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x9c5dc5...8badda` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x9e91ee...04a694` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xa4dab5...ab4253` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xa5cf7d...5afd6c` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xa7896e...84469b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xa827b9...c8f275` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xab51cb...4ff6e6` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xac5c85...8f9f5d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb208c0...59fd84` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb36424...638116` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xb64754...80e6b4` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xb7e97c...6a3ccb` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb9c4db...3ad137` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xbc67c7...2abc71` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xbeb921...8a0bcd` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xc2e0cb...2ebba4` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xc4ba95...e0d254` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xc5a3be...eada5a` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xc66477...3f3341` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xc67aa9...c849de` | ❓ Unverified | Unverified |
@@ -168,15 +138,14 @@
 | UnnamedContract | polygon | `0xe0d6b2...db0e5f` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xe48105...b3437a` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xed871d...984f6a` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0xef71d2...5945a9` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xef83cf...d3852f` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xf0364d...64c55f` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xf42de8...13c80d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xf4b8f6...5af225` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xf8eed9...5d833a` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xfa461f...c2eac7` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xfa4dd8...03e2a8` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xfeece2...2e8047` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x0c042a...9cfd51` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x1a4bc0...c67cb6` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x1b1d67...96a038` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x20bcbf...076517` | ❓ Unverified | Unverified |
@@ -184,14 +153,9 @@
 | UnnamedContract | arbitrum | `0x37e352...2f94a2` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x39fe31...61fd19` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x3b91d7...6be6e2` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x3cb693...936a8b` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x4325a5...3a1915` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x48603e...c8515d` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x49650f...fd977a` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x4ac4e3...9a4f4d` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x4d90b9...051d8c` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x4de75d...b2ea55` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x4f0521...300a5e` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x6c0959...a69e12` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x7438b5...59c5ea` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x79f00f...29b007` | ❓ Unverified | Unverified |
@@ -207,7 +171,6 @@
 | UnnamedContract | arbitrum | `0xa63c0f...9ebdd1` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xa739cd...5b8985` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xa761cb...d3f283` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xa93dd6...596e47` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xb188e6...700bef` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xb4e5e3...90d2bf` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xce17f8...8609ff` | ❓ Unverified | Unverified |
@@ -220,11 +183,8 @@
 | UnnamedContract | arbitrum | `0xe1243f...c17c41` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xe3bb7c...8a28bc` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xe4e391...1c2b20` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xe77c4a...e15b83` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xea660d...eee69b` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xf18036...61529d` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xf60997...fbffe3` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xfa1bdc...7d687d` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xfb3e47...974778` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xfd9c60...1b3982` | ❓ Unverified | Unverified |
 | [Vyper_contract (4 deployments)](./polygon-137/0x1eb430cac0ab8f84bbc646099a27955a688fa87d/) | polygon | 4 deployments: polygon [`0x1eb430...8fa87d`](./polygon-137/0x1eb430cac0ab8f84bbc646099a27955a688fa87d/); polygon `0x3a720c...850ceb`; polygon `0xd8e873...493e9e`; polygon `0xdb650c...d75ddd` | ⚠️ Unaudited | Verified |

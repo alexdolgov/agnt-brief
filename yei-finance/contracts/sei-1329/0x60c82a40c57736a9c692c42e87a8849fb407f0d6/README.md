@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (sei [`0x60c82a40c57736a9c692c42e87a8849fb407f0d6`](../0x60c82a40c57736a9c692c42e87a8849fb407f0d6/); sei `0xe77f4334d2ce16c19f66fd62c653377a39aefee1`) |
+| Deployments | 1 (sei [`0x60c82a40c57736a9c692c42e87a8849fb407f0d6`](../0x60c82a40c57736a9c692c42e87a8849fb407f0d6/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

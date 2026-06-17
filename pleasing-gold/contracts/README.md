@@ -1,6 +1,6 @@
 # pleasing-gold — Contract Index
 
-14 unique implementations across 2 chains · 20 deployments · 0 audited · 10 unaudited · 4 unverified
+11 unique implementations across 2 chains · 14 deployments · 0 audited · 7 unaudited · 4 unverified
 
 ## adapter (1)
 
@@ -27,14 +27,6 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FactoryBurnMintERC20](./ethereum-1/0xfb0bd86210d2a10543bb40289e92d108b3a5334f/) | ethereum | [`0xfb0bd8...a5334f`](./ethereum-1/0xfb0bd86210d2a10543bb40289e92d108b3a5334f/) | ⚠️ Unaudited | Verified |
-
-## token (3)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [PGOLDToken (2 deployments)](./arbitrum-42161/0x3e76bb02286bfeaa89dd35f11253f2cbce634f91/) | arbitrum | 2 deployments: arbitrum [`0x3e76bb...634f91`](./arbitrum-42161/0x3e76bb02286bfeaa89dd35f11253f2cbce634f91/); arbitrum `0xd81ea1...9788d7` | ⚠️ Unaudited | Verified |
-| [PLSPToken (2 deployments)](./arbitrum-42161/0x0f0bbce15c0b949b061a622e212fa8896eea69a5/) | arbitrum | 2 deployments: arbitrum [`0x0f0bbc...ea69a5`](./arbitrum-42161/0x0f0bbce15c0b949b061a622e212fa8896eea69a5/); arbitrum `0x274e09...96f4fa` | ⚠️ Unaudited | Verified |
-| [PUSDToken (2 deployments)](./arbitrum-42161/0x89ec479a783ff3747f2f0d3c2a292c5986cec099/) | arbitrum | 2 deployments: arbitrum [`0x89ec47...cec099`](./arbitrum-42161/0x89ec479a783ff3747f2f0d3c2a292c5986cec099/); arbitrum `0xc8fb64...c1dbec` | ⚠️ Unaudited | Verified |
 
 ## unknown (5)
 

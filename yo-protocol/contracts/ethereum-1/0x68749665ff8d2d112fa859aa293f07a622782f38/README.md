@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x68749665ff8d2d112fa859aa293f07a622782f38`](../0x68749665ff8d2d112fa859aa293f07a622782f38/); ethereum `0xdac17f958d2ee523a2206206994597c13d831ec7`) |
+| Deployments | 1 (ethereum [`0x68749665ff8d2d112fa859aa293f07a622782f38`](../0x68749665ff8d2d112fa859aa293f07a622782f38/)) |
 | Proxy | Yes → `0x4c0d2c...f9e566` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

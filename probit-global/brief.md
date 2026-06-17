@@ -7,8 +7,8 @@
 - Project: ProBit Global (`probit-global`)
 - Website: [https://www.probit.com](https://www.probit.com)
 - Lifecycle: dead (Tier 0, 51.6% below peak)
-- Generated: 2026-06-12T21:59:39.306Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
+- Generated: 2026-06-17T07:00:50.426Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: fantom
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $11,028,256.04
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 ProBit Global is a former centralized cryptocurrency exchange whose service has permanently terminated. The listed Fantom addresses are unidentified and unverified; their relationship to ProBit custody, exchange operations, or liquidity management is not established.
+
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 3 (0 live, 3 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -70,11 +78,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | fantom | `0x06ffd8...f9c35c` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0x813e71...3ca64f` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xc78600...054f86` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | fantom | n/a | `0x06ffd8...f9c35c` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x813e71...3ca64f` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xc78600...054f86` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "orangex",
-  "generated_at": "2026-06-12T10:47:06.759Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
+  "generated_at": "2026-06-17T07:01:00.816Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "orangex",
@@ -22,16 +22,16 @@
     "drop_from_peak_pct": 34.7606692539979
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 4,
-    "unique_implementations": 3,
-    "total_deployments": 4,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -42,8 +42,7 @@
     "asd_usd": null,
     "website_url": "https://www.orangex.com",
     "chains": [
-      "base",
-      "ethereum"
+      "base"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -59,10 +58,21 @@
   "topography": {
     "project_purpose": "OrangeX is an active centralized crypto exchange and trading platform. The listed on-chain contracts appear to be OrangeX-related token or ancillary deployments, such as ecosystem token contracts, and should not be treated as representing the exchange's full custody, matching, trading, or operational infrastructure.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 4,
+    "live_contracts": 0,
+    "inactive_contracts": 3,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -72,49 +82,11 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7",
-      "name": "GameBitCoin",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "OrangeX",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GameBitCoin",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd07d23e2c2901daa9093eee75753815898a4d07d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GPS",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -129,6 +101,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -141,37 +115,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1e8b34cac2c7da1361f2a18e6a7f7f450d6cad56",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1e8b34cac2c7da1361f2a18e6a7f7f450d6cad56",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
@@ -181,7 +124,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 3
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

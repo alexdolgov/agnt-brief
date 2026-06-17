@@ -1,0 +1,18 @@
+{
+  "address": "0x3a886455e5b33300a31c5e77bac01e76c0c7b29c",
+  "chain_id": 1,
+  "contract_name": "stkCvxFxsVault",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:27.237Z"
+}

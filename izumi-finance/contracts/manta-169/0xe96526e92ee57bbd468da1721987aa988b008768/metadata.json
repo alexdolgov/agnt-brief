@@ -1,0 +1,17 @@
+{
+  "address": "0xe96526e92ee57bbd468da1721987aa988b008768",
+  "chain_id": 169,
+  "contract_name": "LimitOrderModule",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:27.563Z"
+}

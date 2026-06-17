@@ -1,0 +1,17 @@
+{
+  "address": "0x2722fe570fa9f7fee1662deee01f5d76003de182",
+  "chain_id": 137,
+  "contract_name": "BoostedMasterWombat",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:42.769Z"
+}

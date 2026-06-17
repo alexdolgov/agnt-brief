@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (polygon [`0x99d8bb51ece0239ecf71fe5be9ccd8af9e386e21`](../0x99d8bb51ece0239ecf71fe5be9ccd8af9e386e21/); polygon `0xbbc843dcb1009bc7dc988bceb5bb1b50299d9a6d`) |
+| Deployments | 1 (polygon [`0x99d8bb51ece0239ecf71fe5be9ccd8af9e386e21`](../0x99d8bb51ece0239ecf71fe5be9ccd8af9e386e21/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

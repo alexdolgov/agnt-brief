@@ -5,8 +5,8 @@
 - Project: T RIZE (`t-rize`)
 - Website: [https://www.t-rize.io](https://www.t-rize.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T05:29:18.848Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:01:00.927Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $23,000,000.00
@@ -20,6 +20,14 @@ T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/in
 ### Architecture
 
 The protocol consists of a single product family with one core token contract; there are no additional families or shared infrastructure to relate.
+
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 8 (0 live, 8 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,16 +56,16 @@ The protocol consists of a single product family with one core token contract; t
 
 ### ⚠️ Verified + Unaudited (8)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| RizeToken | token | base | [`0x9818b6...c93583`](./contracts/base-8453/0x9818b6c09f5ecc843060927e8587c427c7c93583/) | ⚠️ Unaudited |
-| AccessList | unknown | base | [`0x136a42...ae87c9`](./contracts/base-8453/0x136a429bee94a5a02240ff74023b46347cae87c9/) | ⚠️ Unaudited |
-| BaseRizeMintBurnPool | core_logic | base | [`0xd4d129...8e16a0`](./contracts/base-8453/0xd4d129df31bf9d9ef7ff030adf984f3d028e16a0/) | ⚠️ Unaudited |
-| GovernanceBonding | unknown | base | [`0x5a1340...ed26ee`](./contracts/base-8453/0x5a134098bdbeb05da9eac35439c5624547ed26ee/) | ⚠️ Unaudited |
-| MerkleAirdrop | unknown | base | [`0x6426fd...873a98`](./contracts/base-8453/0x6426fd15a8531bf53d13d74e697e0c0d4c873a98/) | ⚠️ Unaudited |
-| TokenAdminRegistry | registry | base | [`0x6f6c37...731e37`](./contracts/base-8453/0x6f6c373d09c07425baae72317863d7f6bb731e37/) | ⚠️ Unaudited |
-| UnallocatedVesting | unknown | base | [`0xad12b1...6f5f2d`](./contracts/base-8453/0xad12b1421d14130633700af043445115d16f5f2d/) | ⚠️ Unaudited |
-| VestingWallet | operational_periphery | base | [`0x9525df...241e7b`](./contracts/base-8453/0x9525df984b7062c7c0fb103bc745467396241e7b/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| RizeToken | token | base | n/a | [`0x9818b6...c93583`](./contracts/base-8453/0x9818b6c09f5ecc843060927e8587c427c7c93583/) | ⚠️ Unaudited |
+| AccessList | unknown | base | n/a | [`0x136a42...ae87c9`](./contracts/base-8453/0x136a429bee94a5a02240ff74023b46347cae87c9/) | ⚠️ Unaudited |
+| BaseRizeMintBurnPool | core_logic | base | n/a | [`0xd4d129...8e16a0`](./contracts/base-8453/0xd4d129df31bf9d9ef7ff030adf984f3d028e16a0/) | ⚠️ Unaudited |
+| GovernanceBonding | unknown | base | n/a | [`0x5a1340...ed26ee`](./contracts/base-8453/0x5a134098bdbeb05da9eac35439c5624547ed26ee/) | ⚠️ Unaudited |
+| MerkleAirdrop | unknown | base | n/a | [`0x6426fd...873a98`](./contracts/base-8453/0x6426fd15a8531bf53d13d74e697e0c0d4c873a98/) | ⚠️ Unaudited |
+| TokenAdminRegistry | registry | base | n/a | [`0x6f6c37...731e37`](./contracts/base-8453/0x6f6c373d09c07425baae72317863d7f6bb731e37/) | ⚠️ Unaudited |
+| UnallocatedVesting | unknown | base | n/a | [`0xad12b1...6f5f2d`](./contracts/base-8453/0xad12b1421d14130633700af043445115d16f5f2d/) | ⚠️ Unaudited |
+| VestingWallet | operational_periphery | base | n/a | [`0x9525df...241e7b`](./contracts/base-8453/0x9525df984b7062c7c0fb103bc745467396241e7b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

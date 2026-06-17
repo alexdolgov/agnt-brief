@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (base [`0x696f9436b67233384889472cd7cd58a6fb5df4f1`](../0x696f9436b67233384889472cd7cd58a6fb5df4f1/); base `0xc009895d2f97966c1bddf36519cd44ccf789e070`) |
+| Deployments | 1 (base [`0x696f9436b67233384889472cd7cd58a6fb5df4f1`](../0x696f9436b67233384889472cd7cd58a6fb5df4f1/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | $150,918,147.34 |

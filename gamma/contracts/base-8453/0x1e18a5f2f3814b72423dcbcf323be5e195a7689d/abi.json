@@ -1,0 +1,1144 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_limitOrderManagerAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalOrders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minOrders",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientOrders",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidScaleParameters",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "Currency",
+        "name": "currency",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "MinAmountNotMet",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalOrders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxOrderLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "OrderLimitExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TickRangeTooSmall",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "poolManager",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PoolKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "PoolIdAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "poolManager",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PoolKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "PoolIdRemoved",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_ORDERS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_DELTA",
+    "outputs": [
+      {
+        "internalType": "BalanceDelta",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "addPoolId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalOrders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sizeSkew",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateOrderSizes",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "decodePositionKey",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "bottomTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "topTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "bool",
+        "name": "isToken0",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nonce",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "Currency",
+                "name": "currency0",
+                "type": "address"
+              },
+              {
+                "internalType": "Currency",
+                "name": "currency1",
+                "type": "address"
+              },
+              {
+                "internalType": "uint24",
+                "name": "fee",
+                "type": "uint24"
+              },
+              {
+                "internalType": "int24",
+                "name": "tickSpacing",
+                "type": "int24"
+              },
+              {
+                "internalType": "contract IHooks",
+                "name": "hooks",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct PoolKey",
+            "name": "poolKey",
+            "type": "tuple"
+          },
+          {
+            "internalType": "string",
+            "name": "token0Symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "token1Symbol",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct PoolStruct[]",
+        "name": "pools",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCancellablePositions",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "positionKeys",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getClaimablePositions",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "positionKeys",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "isToken0",
+        "type": "bool"
+      }
+    ],
+    "name": "getMinAndMaxTickForLimitOrders",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "minTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "maxTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "isToken0",
+        "type": "bool"
+      }
+    ],
+    "name": "getMinAndMaxTickForScaleOrders",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "minTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "maxTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPoolKey",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "positionKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPositionBalances",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "principal1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILimitOrderManager.PositionBalances",
+        "name": "balances",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint24",
+        "name": "numTicks",
+        "type": "uint24"
+      }
+    ],
+    "name": "getTickInfosAroundCurrent",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPrice",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalTokenAmountsinToken1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LimitOrderLens.TickInfo[]",
+        "name": "tickInfos",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserPositionCountsAcrossPools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "PoolId",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "count",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LimitOrderLens.PoolPositionCount[]",
+        "name": "counts",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUserPositionsPaginated",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "PoolId",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionKey",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "token0Symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "token1Symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "token0Decimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "token1Decimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isToken0",
+            "type": "bool"
+          },
+          {
+            "internalType": "int24",
+            "name": "bottomTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "topTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "currentTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "string",
+            "name": "orderType",
+            "type": "string"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPrice",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceBottomTick",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceTopTick",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionToken0Principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionToken1Principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionFeeRevenue0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionFeeRevenue1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCurrentToken0Principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCurrentToken1Principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeRevenue0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeRevenue1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalToken0AtExecution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalToken1AtExecution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "claimable",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct DetailedUserPosition[]",
+        "name": "positions",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "limitOrderManager",
+    "outputs": [
+      {
+        "internalType": "contract LimitOrderManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "int24",
+        "name": "bottomTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "topTick",
+        "type": "int24"
+      }
+    ],
+    "name": "minAndMaxScaleOrders",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "minOrders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxOrders",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "poolIdToKey",
+    "outputs": [
+      {
+        "internalType": "Currency",
+        "name": "currency0",
+        "type": "address"
+      },
+      {
+        "internalType": "Currency",
+        "name": "currency1",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      },
+      {
+        "internalType": "contract IHooks",
+        "name": "hooks",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolManager",
+    "outputs": [
+      {
+        "internalType": "contract IPoolManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "removePoolId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "isToken0",
+        "type": "bool"
+      },
+      {
+        "internalType": "int24",
+        "name": "bottomTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "topTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalOrders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sizeSkew",
+        "type": "uint256"
+      }
+    ],
+    "name": "verifyOrderSizes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OrderStruct[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

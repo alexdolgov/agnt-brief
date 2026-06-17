@@ -5,31 +5,38 @@
 - Project: IQ (`iq`)
 - Website: [https://iq.wiki](https://iq.wiki)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T00:12:14.266Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
-- Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $5,039,162.28
+- Generated: 2026-06-17T07:00:57.550Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: ethereum, fraxtal
+- Contract surface: 4 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $3,712,021.57
 - On-chain TVL (included contracts): $23,853,191.63
 - TVL by chain: Ethereum $23,853,191.63
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 IQ.wiki is a blockchain and cryptocurrency encyclopedia powered by the IQ token. The IQ token is used within the ecosystem for governance and staking, including HiIQ staking as reflected in DefiLlama staking data.
 
+### Architecture
+
+The IQ token contract is the core asset, while the Vyper contract likely serves as a supporting infrastructure component such as a staking or governance mechanism, sharing the same deployer cluster.
+
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $23,853,191.63
@@ -47,12 +54,14 @@ IQ.wiki is a blockchain and cryptocurrency encyclopedia powered by the IQ token.
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| IQERC20 | token | ethereum | [`0x579cea...29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0x1bf545...4e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| IQERC20 | token | ethereum | n/a | [`0x579cea...29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | ⚠️ Unaudited |
+| BAMMFactory | registry | fraxtal | n/a | [`0x199281...7db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | ⚠️ Unaudited |
+| FraxswapFactory | registry | fraxtal | n/a | [`0xe30521...a667e6`](./contracts/fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | [`0x1bf545...4e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,9 +100,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 2 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

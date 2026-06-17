@@ -5,8 +5,8 @@
 - Project: LeveX (`levex`)
 - Website: [https://levex.com/en/assets/proof-of-reserve](https://levex.com/en/assets/proof-of-reserve)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T22:33:09.282Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
+- Generated: 2026-06-17T07:01:00.806Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $10,514,156.45
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 LeveX is a centralized cryptocurrency exchange offering spot trading, leveraged futures trading, and proof-of-reserves across multiple chains. The listed Ethereum contracts are four recorded Safe/Gnosis Safe proxy wallet contracts and should be treated only as the currently recorded Ethereum multisig/wallet contract surface, not as a complete LeveX proof-of-reserve or reserve-address surface across all supported chains.
+
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 5 (4 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/3 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -49,11 +57,11 @@ LeveX is a centralized cryptocurrency exchange offering spot trading, leveraged 
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | [`0xa7c23c...536284`](./contracts/ethereum-1/0xa7c23c824fa730065ab9367947cc139687536284/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | [`0x247ee5...4f086c`](./contracts/bsc-56/0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | 3 deployments: ethereum [`0x0070fb...74be13`](./contracts/ethereum-1/0x0070fb0677edb8b6e61ce6f5976c32e99d74be13/); ethereum `0x9c9c67...569c56`; ethereum `0xd7b73e...51fbfb` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GnosisSafe | governance | ethereum | unit-32562 | [`0xa7c23c...536284`](./contracts/ethereum-1/0xa7c23c824fa730065ab9367947cc139687536284/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | unit-32563 | [`0x247ee5...4f086c`](./contracts/bsc-56/0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-32561 (3 proxies) | 3 deployments: ethereum [`0x0070fb...74be13`](./contracts/ethereum-1/0x0070fb0677edb8b6e61ce6f5976c32e99d74be13/); ethereum `0x9c9c67...569c56`; ethereum `0xd7b73e...51fbfb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

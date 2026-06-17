@@ -5,11 +5,11 @@
 - Project: POWERCITY (`powercity`)
 - Website: [https://powercity.io](https://powercity.io)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:59:23.194Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-17T07:00:57.636Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $3,252,107.00
+- DeFi Llama TVL: $2,387,597.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 POWERCITY is a PulseChain ecosystem DeFi protocol associated with CORE-connected products, including Earn, staking, and pool2 TVL components.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

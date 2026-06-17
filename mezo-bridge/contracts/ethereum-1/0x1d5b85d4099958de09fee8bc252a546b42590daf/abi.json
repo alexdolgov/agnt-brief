@@ -1,9 +1,0 @@
-[
-  {
-    "inputs": [],
-    "name": "noOp",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  }
-]

@@ -5,11 +5,11 @@
 - Project: REX Staking (`rex-staking`)
 - Website: [https://eosauthority.com/rex](https://eosauthority.com/rex)
 - Lifecycle: unknown
-- Generated: 2026-06-11T02:18:08.258Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-17T07:00:36.767Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,014,545.47
+- DeFi Llama TVL: $1,541,001.42
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 REX Staking refers to Resource Exchange staking / network-resource leasing activity on Telos/EOS-style infrastructure, where assets are staked or allocated to access or lease network resources. It should not be described as a multi-chain EVM yield-farming, vault, reward-contract, or liquidity-pool aggregator unless project-specific evidence supports those claims.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

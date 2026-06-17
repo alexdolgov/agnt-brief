@@ -1,0 +1,17 @@
+{
+  "address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
+  "chain_id": 59144,
+  "contract_name": "RamsesV3PositionManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 65,
+  "constructor_arguments": "00000000000000000000000080dca113b33ce4da3a7aac15c2e62fc6d6c7bec8000000000000000000000000e5d7c2a44ffddf6b295a15c148167daaaf5cf34f000000000000000000000000a44d051f76ac5dfb3ac61ae6e7099622099d8504000000000000000000000000683035188e3670fda1def2a7aa5742dea28ed5f3",
+  "implementation_address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
+  "fetched_at": "2026-06-17T06:47:00.588Z"
+}

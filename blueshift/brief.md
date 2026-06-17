@@ -5,30 +5,39 @@
 - Project: Blueshift (`blueshift`)
 - Website: [https://blueshift.fi/](https://blueshift.fi/)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-06-13T22:43:41.016Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
+- Generated: 2026-06-17T07:00:37.467Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: kava, polygon
-- Contract surface: 23 unique implementations (28 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,449,608.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Blueshift is a cross-chain portfolio-managed decentralized exchange, liquidity management, and crypto asset management protocol. Its product surface includes token swaps, liquidity portfolios, portfolio and asset-management functionality, farming and staking, analytics, and bridge/cross-chain functionality across active ecosystems including BOB, Milkomeda/Milkomeda A1, Polygon, and Kava.
 
-### Architecture
+## Contract Surface Quality
 
-The protocol consists of a single product family where the TransparentUpgradeableProxy serves as the main entry point, delegating to implementation contracts. WMATIC is used as the wrapped native token for operations on Polygon.
+- Indexed contracts: 28; live-surface contracts included: 3 (1 live, 2 unknown).
+- Excluded by liveness: 15 inactive, 10 singleton, 0 uninitialized.
+- Deployment units: 0/5 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 21
-- Unique implementations: 23
-- Raw deployments: 28
+- Unverified implementations: 3
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,12 +55,9 @@ The protocol consists of a single product family where the TransparentUpgradeabl
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ProxyAdmin | governance | polygon | 2 deployments: polygon [`0xdc05ba...2a3186`](./contracts/polygon-137/0xdc05bacc1f97f874d9d09860a8a93365372a3186/); polygon `0xf8c717...8065f5` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | polygon | 5 deployments: polygon [`0x2080a3...4edc83`](./contracts/polygon-137/0x2080a319a4b11d097050722b6b65d09f754edc83/); polygon `0x9b44b2...97f251`; polygon `0xb6b3b5...13c9cb`; polygon `0xeb7b35...3e9550`; polygon `0xf79900...37a4e1` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,33 +71,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (21)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | `0x0e4245...755310` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x12fd7e...c3789b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x27e552...1faa2e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x35701f...c96f3f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x3abd79...367b20` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x7b8343...ca2bca` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x800618...a6653c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x96c95d...7e7242` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xa5eddb...34959a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xa7555b...b44f73` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xac6e4f...7c9c43` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xadbd83...4e8fb5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xb470e9...adf2c4` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xbabbed...cc44f2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xbeb942...ddb49c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xce1083...ef743b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xcfbf08...8b861f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xe03d83...2a2a5a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xf5399b...323a4d` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x493996...2577b1` | ❓ Unverified |
-| UnnamedContract | unknown | kava | `0x7a6091...6a77e1` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | polygon | n/a | `0xadbd83...4e8fb5` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x493996...2577b1` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x7a6091...6a77e1` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,10 +97,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 4 |
+| standard_library | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

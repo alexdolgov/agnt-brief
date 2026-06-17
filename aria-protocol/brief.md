@@ -7,11 +7,11 @@
 - Project: Aria Protocol (`aria-protocol`)
 - Website: [https://ariaprotocol.xyz](https://ariaprotocol.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-10T20:58:57.742Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-17T07:00:47.763Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $181,053.04
+- DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Aria is an intellectual-property real-world asset protocol focused on music/IP rights, royalties and yield, staking or vault participation, and licensing/remix use cases, with current project context tied to the Story ecosystem. The BSC AriaOFT contract should be treated separately as a token/bridge-related deployment unless independently evidenced as the current core protocol surface.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -52,9 +60,9 @@ Aria is an intellectual-property real-world asset protocol focused on music/IP r
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AriaOFT | unknown | bsc | [`0x2a7e33...286836`](./contracts/bsc-56/0x2a7e3392458307493c86388d5e544aad93286836/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AriaOFT | unknown | bsc | n/a | [`0x2a7e33...286836`](./contracts/bsc-56/0x2a7e3392458307493c86388d5e544aad93286836/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

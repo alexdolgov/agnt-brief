@@ -1,0 +1,17 @@
+{
+  "address": "0x2adf038b67a8a29cda82f0eceb1ff0dba704b98d",
+  "chain_id": 1,
+  "contract_name": "AssetAdapter",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000b7570e32ded63b25163369d5eb4d8e89e70e5602000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48000000000000000000000000777791c4d6dc2ce140d00d2828a7c93503c67777",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:34.308Z"
+}

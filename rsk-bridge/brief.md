@@ -1,43 +1,49 @@
 # Agentic Audit Brief: RSK Bridge
 
-⚠️ Lifecycle status: DEAD - TVL dropped 9.1% over 90 days
-
 ## Project Overview
 
 - Project: RSK Bridge (`rsk-bridge`)
 - Website: [https://rootstock.io/](https://rootstock.io/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-13T22:58:58.719Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
-- Chains: ethereum
-- Contract surface: 13 unique implementations (21 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:46.808Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,026,235.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-The RSK Bridge is a canonical bridge that enables the transfer of assets between the Ethereum and RSK blockchains. It uses a federated model to lock tokens on one chain and mint equivalent tokens on the other, ensuring interoperability.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-The Bridge contract is the core operational contract, upgraded via AdminUpgradeabilityProxy, and interacts with SideToken to represent bridged assets. The Federation and AllowTokens contracts (not in the family but present as proxies) likely provide access control and token whitelisting for the bridge.
+- Indexed contracts: 21; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 15 inactive, 6 singleton, 0 uninitialized.
+- Deployment units: 0/4 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/12 (0.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 13
-- Raw deployments: 21
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -49,22 +55,9 @@ The Bridge contract is the core operational contract, upgraded via AdminUpgradea
 
 - None
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AllowTokens | token | ethereum | 3 deployments: ethereum [`0x118522...cd697c`](./contracts/ethereum-1/0x118522603dc0b8490fec2b8db92e6f1c66cd697c/); ethereum `0xa3fc98...0a15f3`; ethereum `0xe4aa0f...786653` | ⚠️ Unaudited |
-| Bridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x12ed69...6a7b5d`](./contracts/ethereum-1/0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d/); ethereum `0x9f29f9...c363d8` | ⚠️ Unaudited |
-| Bridge_v0 | operational_periphery | ethereum | [`0xe34f95...d1426a`](./contracts/ethereum-1/0xe34f957e42a3a2b5f8a64ee367851a088bd1426a/) | ⚠️ Unaudited |
-| Bridge_v1 | operational_periphery | ethereum | 2 deployments: ethereum [`0x8582f5...5aa5f1`](./contracts/ethereum-1/0x8582f510817731be46e6a8380cf4eeffc05aa5f1/); ethereum `0xabf8b0...92e07e` | ⚠️ Unaudited |
-| Federation | unknown | ethereum | 3 deployments: ethereum [`0x5631a6...9d76c5`](./contracts/ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/); ethereum `0x5e29c2...3abe17`; ethereum `0x8c1901...3f4944` | ⚠️ Unaudited |
-| Federation_v1 | unknown | ethereum | [`0x479f86...362a2b`](./contracts/ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0xbc4a94...d0bcbf`](./contracts/ethereum-1/0xbc4a94b0e07a8a453d382747741d4652a0d0bcbf/); ethereum `0xe4d351...51e7e6` | ⚠️ Unaudited |
-| SideToken | token | ethereum | [`0x73c084...7a498a`](./contracts/ethereum-1/0x73c08467e23f7dcb7ddbbc8d05041b74467a498a/) | ⚠️ Unaudited |
-| SideTokenFactory | registry | ethereum | 2 deployments: ethereum [`0xb3d061...7db0fa`](./contracts/ethereum-1/0xb3d06103af1a68026615e673d46047fab77db0fa/); ethereum `0xf73c60...e713fb` | ⚠️ Unaudited |
-| SideTokenFactory_v1 | registry | ethereum | [`0x578a80...bfb063`](./contracts/ethereum-1/0x578a80ad3f6d56f873da81b73b8d192ab6bfb063/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | [`0x5bce0a...145942`](./contracts/ethereum-1/0x5bce0ababa89e1d0e063978d87cff2f8f5145942/) | ⚠️ Unaudited |
-| Utils | unknown | ethereum | [`0x5f989f...0b6120`](./contracts/ethereum-1/0x5f989f2f323a1732a565c9a3f694f2fa8f0b6120/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,13 +71,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0xe3848f...3873a6` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -95,25 +86,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x118522...cd697c`](./contracts/ethereum-1/0x118522603dc0b8490fec2b8db92e6f1c66cd697c/) | AllowTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe34f95...d1426a`](./contracts/ethereum-1/0xe34f957e42a3a2b5f8a64ee367851a088bd1426a/) | Bridge_v0 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8582f5...5aa5f1`](./contracts/ethereum-1/0x8582f510817731be46e6a8380cf4eeffc05aa5f1/) | Bridge_v1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5631a6...9d76c5`](./contracts/ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/) | Federation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x479f86...362a2b`](./contracts/ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | Federation_v1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb3d061...7db0fa`](./contracts/ethereum-1/0xb3d06103af1a68026615e673d46047fab77db0fa/) | SideTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x578a80...bfb063`](./contracts/ethereum-1/0x578a80ad3f6d56f873da81b73b8d192ab6bfb063/) | SideTokenFactory_v1 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5f989f...0b6120`](./contracts/ethereum-1/0x5f989f2f323a1732a565c9a3f694f2fa8f0b6120/) | Utils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 2 |
+| standard_library | 0 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

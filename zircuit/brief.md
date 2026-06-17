@@ -7,11 +7,11 @@
 - Project: Zircuit (`zircuit`)
 - Website: [https://www.zircuit.com/](https://www.zircuit.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T04:25:22.141Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-17T07:00:47.061Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
-- Contract surface: 17 unique implementations (19 raw deployments)
-- DeFi Llama TVL: $13,098,809.53
+- Contract surface: 12 unique implementations (14 raw deployments)
+- DeFi Llama TVL: $9,641,288.58
 - On-chain TVL (included contracts): $144,242,723.68
 - TVL by chain: Ethereum $142,731,070.13 | Base $1,511,653.55
 
@@ -23,14 +23,22 @@ Zircuit is a secure onchain finance and zk-rollup platform. Its public product s
 
 The Ethereum family provides the canonical bridge infrastructure that connects to the Zircuit L2, while the Zircuit family includes the native token and lending products that operate on the L2. Governance is managed through the Multisig addresses, which control upgrades and parameters across both families.
 
+## Contract Surface Quality
+
+- Indexed contracts: 19; live-surface contracts included: 14 (13 live, 1 unknown).
+- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 9/15 live.
+- Detected codebases: none
+- Unverified dependencies: 13/15.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/16 (25.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 4/11 (36.4%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 17
-- Raw deployments: 19
+- Unique implementations: 12
+- Raw deployments: 14
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $144,242,723.68
@@ -43,37 +51,32 @@ The Ethereum family provides the canonical bridge infrastructure that connects t
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Dedaub | Tier 2 | 3 | 18.8% | 2024-07 |
-| Secure3 | Tier 2 | 1 | 6.3% | 2024-09 |
-| Unknown | Tier 2 | 1 | 6.3% | 2024-09 |
+| Dedaub | Tier 2 | 3 | 27.3% | 2024-07 |
+| Secure3 | Tier 2 | 1 | 9.1% | 2024-09 |
+| Unknown | Tier 2 | 1 | 9.1% | 2024-09 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| L1StandardBridge | operational_periphery | ethereum | [`0x386b76...b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
-| L2OutputOracle | operational_periphery | ethereum | [`0x92ef6a...9245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
-| OptimismPortal | unknown | ethereum | [`0x17bfaf...043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
-| ZRC | unknown | ethereum | [`0xfd418e...44d162`](./contracts/ethereum-1/0xfd418e42783382e86ae91e445406600ba144d162/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| L1StandardBridge | operational_periphery | ethereum | unit-28758 | [`0x386b76...b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
+| L2OutputOracle | operational_periphery | ethereum | unit-28764 | [`0x92ef6a...9245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
+| OptimismPortal | unknown | ethereum | unit-28754 | [`0x17bfaf...043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
+| ZRC | unknown | ethereum | n/a | [`0xfd418e...44d162`](./contracts/ethereum-1/0xfd418e42783382e86ae91e445406600ba144d162/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
-| TokenizedStrategy | core_logic | base | 2 deployments: base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
-| CrisisControlRegistry | registry | ethereum | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | 2 deployments: ethereum [`0x2c0b27...2db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
-| L1ERC721Bridge | operational_periphery | ethereum | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | ethereum | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | [`0x5b1ef6...fc5257`](./contracts/ethereum-1/0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257/) | ⚠️ Unaudited |
-| ResolverRegistry | registry | ethereum | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
-| SP1VerifierGateway | periphery | ethereum | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | ⚠️ Unaudited |
-| SuperchainConfig | governance | ethereum | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | ⚠️ Unaudited |
-| SystemConfig | governance | ethereum | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | unit-28759 | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | base | unit-28768 (2 proxies) | 2 deployments: base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
+| CrisisControlRegistry | registry | ethereum | unit-28763 | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-28756 (2 proxies) | 2 deployments: ethereum [`0x2c0b27...2db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | unit-28755 | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
+| ResolverRegistry | registry | ethereum | unit-28761 | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
+| SP1VerifierGateway | periphery | ethereum | n/a | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,9 +94,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x0792c4...df3f5b` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x0792c4...df3f5b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,19 +123,15 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/) | TokenizedStrategy | core_logic | $1,511,653.55 | Verified native implementation with $1,511,653.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | CrisisControlRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | L1ERC721Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | OptimismMintableERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ResolverRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | SuperchainConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | SystemConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 10 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

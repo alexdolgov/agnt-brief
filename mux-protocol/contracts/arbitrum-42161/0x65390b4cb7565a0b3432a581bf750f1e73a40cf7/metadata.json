@@ -1,0 +1,17 @@
+{
+  "address": "0x65390b4cb7565a0b3432a581bf750f1e73a40cf7",
+  "chain_id": 42161,
+  "contract_name": "DegenPOL",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:54.528Z"
+}

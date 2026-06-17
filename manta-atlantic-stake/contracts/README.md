@@ -1,6 +1,6 @@
 # manta-atlantic-stake — Contract Index
 
-109 unique implementations across 2 chains · 136 deployments · 0 audited · 68 unaudited · 41 unverified
+105 unique implementations across 2 chains · 132 deployments · 0 audited · 64 unaudited · 41 unverified
 
 ## adapter (5)
 
@@ -28,23 +28,21 @@
 | [VaultReaderV3](./manta-169/0xc5ecf064e1f8ff5a19ad5e4e32cf347ea6947b88/) | manta | [`0xc5ecf0...947b88`](./manta-169/0xc5ecf064e1f8ff5a19ad5e4e32cf347ea6947b88/) | ⚠️ Unaudited | Verified |
 | [VaultUtils](./manta-169/0xe84231ae15fea715dbd31b353f5b45bfea967fd9/) | manta | [`0xe84231...967fd9`](./manta-169/0xe84231ae15fea715dbd31b353f5b45bfea967fd9/) | ⚠️ Unaudited | Verified |
 
-## governance (11)
+## governance (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AddressManager](./ethereum-1/0x3ad319bb4872f8cb75a26ac30cc4bd2d56b67b05/) | ethereum | [`0x3ad319...b67b05`](./ethereum-1/0x3ad319bb4872f8cb75a26ac30cc4bd2d56b67b05/) | ⚠️ Unaudited | Verified |
 | [GlpManager](./manta-169/0xbba479d953d012256770e75e2e49af85f17a574b/) | manta | [`0xbba479...7a574b`](./manta-169/0xbba479d953d012256770e75e2e49af85f17a574b/) | ⚠️ Unaudited | Verified |
 | [GnosisSafe](./ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ethereum | [`0x3c46c0...3ea01e`](./ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ⚠️ Unaudited | Verified |
 | [GnosisSafeProxy](./manta-169/0x21d11343cd7c835069f560e2a42a5674dca7ca47/) | manta | [`0x21d113...a7ca47`](./manta-169/0x21d11343cd7c835069f560e2a42a5674dca7ca47/) | ⚠️ Unaudited | Verified |
 | [PositionManager (2 deployments)](./manta-169/0x2dca2753eb7a6d3521d3a6e37216c943480a43a8/) | manta | 2 deployments: manta [`0x2dca27...0a43a8`](./manta-169/0x2dca2753eb7a6d3521d3a6e37216c943480a43a8/); manta `0x996b5f...fadd8a` | ⚠️ Unaudited | Verified |
-| [ProxyAdmin](./ethereum-1/0xa2dca85bb892de55d8b262d1806114733106e8d1/) | ethereum | [`0xa2dca8...06e8d1`](./ethereum-1/0xa2dca85bb892de55d8b262d1806114733106e8d1/) | ⚠️ Unaudited | Verified |
 | [RapTimelock](./manta-169/0x308ad3b4712e4a64f798daa34b6f9a205dd6da84/) | manta | [`0x308ad3...d6da84`](./manta-169/0x308ad3b4712e4a64f798daa34b6f9a205dd6da84/) | ⚠️ Unaudited | Verified |
 | [ShortsTrackerTimelock](./manta-169/0x80a9ff4db9696d7365bb93aeb78f0c805c14ddda/) | manta | [`0x80a9ff...14ddda`](./manta-169/0x80a9ff4db9696d7365bb93aeb78f0c805c14ddda/) | ⚠️ Unaudited | Verified |
 | [SystemConfig](./ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ethereum | [`0x895e00...351a5d`](./ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ⚠️ Unaudited | Verified |
 | [Timelock (3 deployments)](./manta-169/0x44ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e/) | manta | 3 deployments: manta [`0x44ed2c...b3bc0e`](./manta-169/0x44ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e/); manta `0xc6b525...f392be`; manta `0xe8da44...0104e2` | ⚠️ Unaudited | Verified |
 | [TokenManager](./manta-169/0x0dc0761d71af3332a42fa2cf885e7c427ffad850/) | manta | [`0x0dc076...fad850`](./manta-169/0x0dc0761d71af3332a42fa2cf885e7c427ffad850/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (13)
+## operational_periphery (12)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -52,7 +50,6 @@
 | [FastPriceEvents](./manta-169/0xa14b81a69c5f542bbb1affad4f8ba720692fccd9/) | manta | [`0xa14b81...2fccd9`](./manta-169/0xa14b81a69c5f542bbb1affad4f8ba720692fccd9/) | ⚠️ Unaudited | Verified |
 | [FastPriceFeedV2](./manta-169/0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129/) | manta | [`0xb7b6ef...bc0129`](./manta-169/0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129/) | ⚠️ Unaudited | Verified |
 | [FastPriceFeedV3](./manta-169/0x4a98fe7dc066ede7321db81a16e31e6ddaf0efad/) | manta | [`0x4a98fe...f0efad`](./manta-169/0x4a98fe7dc066ede7321db81a16e31e6ddaf0efad/) | ⚠️ Unaudited | Verified |
-| [L1ERC721Bridge](./ethereum-1/0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f/) | ethereum | [`0xbe896f...481c8f`](./ethereum-1/0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f/) | ⚠️ Unaudited | Verified |
 | [L2OutputOracle](./ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ethereum | [`0x30c789...a05c1d`](./ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ⚠️ Unaudited | Verified |
 | [PriceFeedTimelock](./manta-169/0xdc1f37f66c2a013b859cefcb8de68dbea2999dfc/) | manta | [`0xdc1f37...999dfc`](./manta-169/0xdc1f37f66c2a013b859cefcb8de68dbea2999dfc/) | ⚠️ Unaudited | Verified |
 | [PriceWrapper](./manta-169/0x86b10048445553d38ade88ba8dd759ab9d0867ba/) | manta | [`0x86b100...0867ba`](./manta-169/0x86b10048445553d38ade88ba8dd759ab9d0867ba/) | ⚠️ Unaudited | Verified |
@@ -74,12 +71,6 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Proxy (14 deployments)](./manta-169/0x4200000000000000000000000000000000000007/) | manta | 14 deployments: manta [`0x420000...000007`](./manta-169/0x4200000000000000000000000000000000000007/); manta `0x420000...00000f`; manta `0x420000...000010`; manta `0x420000...000011`; manta `0x420000...000012`; manta `0x420000...000014`; manta `0x420000...000015`; manta `0x420000...000016`; manta `0x420000...000017`; manta `0x420000...000018`; manta `0x420000...000019`; manta `0x420000...00001a`; manta `0x420000...000020`; manta `0x420000...000021` | ⚠️ Unaudited | Verified |
-
-## registry (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [OptimismMintableERC20Factory](./ethereum-1/0x2165254f0dd74c19d07ed447b231447604d41e20/) | ethereum | [`0x216525...d41e20`](./ethereum-1/0x2165254f0dd74c19d07ed447b231447604d41e20/) | ⚠️ Unaudited | Verified |
 
 ## token (5)
 

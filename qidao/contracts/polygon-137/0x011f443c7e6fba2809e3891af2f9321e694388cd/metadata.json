@@ -1,0 +1,17 @@
+{
+  "address": "0x011f443c7e6fba2809e3891af2f9321e694388cd",
+  "chain_id": 137,
+  "contract_name": "shareOracle",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:11.104Z"
+}

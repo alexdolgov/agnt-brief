@@ -7,11 +7,11 @@
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T12:18:09.850Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-17T07:00:50.497Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: scroll
 - Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $763,328.84
+- DeFi Llama TVL: $763,468.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Public materials position USX as private, gasless, spendable in real life, and supporting staking and rewards. Morpho or Blend references should be treated as possible infrastructure dependencies unless directly documented as the user-facing USX protocol flow.
+
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -52,11 +60,11 @@ USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Pu
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | scroll | 4 deployments: scroll [`0x3b005f...a4cf03`](./contracts/scroll-534352/0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03/); scroll `0x9f3d4b...0e4c35`; scroll `0xcb14bc...c7f922`; scroll `0xd16909...f0d300` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | scroll | [`0xd39df2...e8a8ad`](./contracts/scroll-534352/0xd39df22a3cd1c91b22d5e748cc62b03ed3e8a8ad/) | ⚠️ Unaudited |
-| SafeProxy | unknown | scroll | [`0xd09e95...848f65`](./contracts/scroll-534352/0xd09e956353fc641792a0f1a7d748773358848f65/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC1967Proxy | proxy | scroll | n/a | 4 deployments: scroll [`0x3b005f...a4cf03`](./contracts/scroll-534352/0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03/); scroll `0x9f3d4b...0e4c35`; scroll `0xcb14bc...c7f922`; scroll `0xd16909...f0d300` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | scroll | n/a | [`0xd39df2...e8a8ad`](./contracts/scroll-534352/0xd39df22a3cd1c91b22d5e748cc62b03ed3e8a8ad/) | ⚠️ Unaudited |
+| SafeProxy | unknown | scroll | n/a | [`0xd09e95...848f65`](./contracts/scroll-534352/0xd09e956353fc641792a0f1a7d748773358848f65/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

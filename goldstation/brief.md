@@ -5,10 +5,10 @@
 - Project: GOLDSTATION (`goldstation`)
 - Website: [https://goldstation.io](https://goldstation.io)
 - Lifecycle: active (Tier 0, 63.1% below peak)
-- Generated: 2026-06-14T10:36:08.716Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:52.127Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: avalanche, klaytn
-- Contract surface: 7 unique implementations (7 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,755,730.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ GOLDSTATION is a broad RWA-focused DeFi platform with swap, liquidity provision,
 
 The DEX likely provides liquidity for the RWA token, while the staking contract may distribute rewards from DEX fees or RWA yields. All families share the same deployer and operate on Klaytn and Avalanche.
 
+## Contract Surface Quality
+
+- Indexed contracts: 7; live-surface contracts included: 5 (1 live, 4 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v3
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 7
-- Raw deployments: 7
+- Unverified implementations: 5
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,11 +54,9 @@ The DEX likely provides liquidity for the RWA token, while the staking contract 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DonaswapV3Factory | registry | avalanche | [`0xf72f46...c0ef5c`](./contracts/avalanche-43114/0xf72f4652785a5186edf7b93a9cfd246fefc0ef5c/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -64,18 +70,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | `0x347e5c...62ae88` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x4836cc...0cd95e` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x4d55b0...dc8954` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x6569b1...47dc76` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x1b27d7...64281d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x8f2855...59a244` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | klaytn | n/a | `0x347e5c...62ae88` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x4836cc...0cd95e` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x4d55b0...dc8954` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x6569b1...47dc76` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1b27d7...64281d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,9 +101,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

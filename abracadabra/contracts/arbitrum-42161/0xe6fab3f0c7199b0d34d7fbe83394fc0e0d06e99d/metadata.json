@@ -1,0 +1,18 @@
+{
+  "address": "0xe6fab3f0c7199b0d34d7fbe83394fc0e0d06e99d",
+  "chain_id": 42161,
+  "contract_name": "ReferralStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:22.672Z"
+}

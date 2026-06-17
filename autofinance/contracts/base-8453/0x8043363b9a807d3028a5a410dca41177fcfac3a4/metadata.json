@@ -1,0 +1,17 @@
+{
+  "address": "0x8043363b9a807d3028a5a410dca41177fcfac3a4",
+  "chain_id": 8453,
+  "contract_name": "HoldTokenCalculator",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 67,
+  "constructor_arguments": "00000000000000000000000018dc926095a7a007c01ef836683fdef4c4371b4e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:38.683Z"
+}

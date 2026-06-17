@@ -5,13 +5,13 @@
 ## Project Overview
 
 - Project: deBridge (`debridge`)
-- Website: [https://app.debridge.com/r/32425](https://app.debridge.com/r/32425)
+- Website: [https://app.debridge.com](https://app.debridge.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T22:42:41.164Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:37.607Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, hyperliquid, linea, optimism, polygon, sei
-- Contract surface: 161 unique implementations (435 raw deployments)
-- DeFi Llama TVL: $3,812,745.79
+- Contract surface: 60 unique implementations (60 raw deployments)
+- DeFi Llama TVL: $2,784,772.14
 - On-chain TVL (included contracts): $263,879,740.52
 - TVL by chain: Bsc $263,879,740.52
 
@@ -23,14 +23,22 @@ deBridge is a cross-chain interoperability protocol that enables users to transf
 
 The EVM Bridge Core provides foundational cross-chain messaging and token infrastructure, which the DLN Liquidity Network leverages for routing and executing user swaps. Both families share common proxy patterns and rely on SignatureVerifier for validation, while the Subscription module operates independently for recurring payments.
 
+## Contract Surface Quality
+
+- Indexed contracts: 435; live-surface contracts included: 60 (50 live, 10 unknown).
+- Excluded by liveness: 259 inactive, 116 singleton, 0 uninitialized.
+- Deployment units: 44/112 live.
+- Detected codebases: none
+- Unverified dependencies: 1/4.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 13/21 (61.9%)
-- Verified + Unaudited implementations: 8
-- Verified by bytecode match: 5
-- Unverified implementations: 140
-- Unique implementations: 161
-- Raw deployments: 435
+- Verified implementations audited: 23/47 (48.9%)
+- Verified + Unaudited implementations: 24
+- Verified by bytecode match: 0
+- Unverified implementations: 13
+- Unique implementations: 60
+- Raw deployments: 60
 - Audits discovered: 32
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): $263,879,740.52
@@ -43,48 +51,73 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 9 | 42.9% | 2023-10 |
-| unknown | Tier 2 | 9 | 42.9% | 2024-11 |
+| unknown | Tier 2 | 22 | 46.8% | 2024-11 |
+| Halborn | Tier 2 | 8 | 17.0% | 2023-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (8)
+### ✅ Verified + Audited (23)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BatchBalance | periphery | ethereum | 5 deployments: ethereum [`0x501886...98c814`](./contracts/ethereum-1/0x50188692d5549386d102642036bab916b998c814/); bsc [`0x501886...98c814`](./contracts/bsc-56/0x50188692d5549386d102642036bab916b998c814/); polygon [`0x501886...98c814`](./contracts/polygon-137/0x50188692d5549386d102642036bab916b998c814/); arbitrum [`0x501886...98c814`](./contracts/arbitrum-42161/0x50188692d5549386d102642036bab916b998c814/); avalanche `0x55c93b...91654a` | ✅ Audited |
-| CallProxy | unknown | ethereum | 39 deployments: ethereum [`0x0c4b79...e3b67a`](./contracts/ethereum-1/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); ethereum `0x4e446b...41c391`; ethereum `0x752a9e...861fef`; ethereum `0x8a0c79...28a824`; ethereum `0xbd3d65...a9b6f8`; ethereum `0xd5317e...c7d63b`; ethereum `0xe5a04b...845c7e`; optimism `0x4e446b...41c391`; optimism `0x8a0c79...28a824`; bsc [`0x0c4b79...e3b67a`](./contracts/bsc-56/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); bsc `0x4e446b...41c391`; bsc `0x752a9e...861fef`; bsc `0x8a0c79...28a824`; bsc `0xbd3d65...a9b6f8`; bsc `0xd5317e...c7d63b`; bsc `0xe5a04b...845c7e`; polygon [`0x0c4b79...e3b67a`](./contracts/polygon-137/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); polygon `0x4e446b...41c391`; polygon `0x752a9e...861fef`; polygon `0x8a0c79...28a824`; polygon `0xbd3d65...a9b6f8`; polygon `0xd5317e...c7d63b`; polygon `0xe5a04b...845c7e`; base `0x4e446b...41c391`; base `0x8a0c79...28a824`; arbitrum [`0x0c4b79...e3b67a`](./contracts/arbitrum-42161/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); arbitrum `0x4e446b...41c391`; arbitrum `0x752a9e...861fef`; arbitrum `0x8a0c79...28a824`; arbitrum `0xbd3d65...a9b6f8`; arbitrum `0xd5317e...c7d63b`; arbitrum `0xe5a04b...845c7e`; avalanche `0x1e4823...0570bc`; avalanche `0x4e446b...41c391`; avalanche `0x8a0c79...28a824`; avalanche `0x8b0e35...b01278`; avalanche `0xd34c23...5044d6`; linea `0x4e446b...41c391`; linea `0x8a0c79...28a824` | ✅ Audited |
-| DeBridgeGate | operational_periphery | ethereum | 32 deployments: ethereum [`0x24455a...35f8eb`](./contracts/ethereum-1/0x24455aa55ded7728783c9474be8ea2f5c935f8eb/); ethereum `0x43de2d...8398aa`; ethereum `0x51bfd4...0e0ce0`; ethereum `0xb1a20d...bdd20d`; ethereum `0xc8550d...4961bf`; ethereum `0xfce050...cfd576`; optimism `0x43de2d...8398aa`; optimism `0xb1a20d...bdd20d`; bsc [`0x24455a...35f8eb`](./contracts/bsc-56/0x24455aa55ded7728783c9474be8ea2f5c935f8eb/); bsc `0x43de2d...8398aa`; bsc `0x51bfd4...0e0ce0`; bsc `0xb1a20d...bdd20d`; bsc `0xc8550d...4961bf`; bsc `0xfce050...cfd576`; polygon `0x43de2d...8398aa`; polygon `0x51bfd4...0e0ce0`; polygon `0xb1a20d...bdd20d`; polygon `0xc8550d...4961bf`; polygon `0xcc7571...73c695`; polygon `0xfce050...cfd576`; base `0xc1656b...e5bcbf`; base `0xe4427a...7494fe`; arbitrum [`0x24455a...35f8eb`](./contracts/arbitrum-42161/0x24455aa55ded7728783c9474be8ea2f5c935f8eb/); arbitrum `0x43de2d...8398aa`; arbitrum `0x51bfd4...0e0ce0`; arbitrum `0xb1a20d...bdd20d`; arbitrum `0xc8550d...4961bf`; arbitrum `0xfce050...cfd576`; avalanche `0x43de2d...8398aa`; avalanche `0xb1a20d...bdd20d`; linea `0x43de2d...8398aa`; linea `0xb1a20d...bdd20d` | ✅ Audited |
-| DeBridgeTokenDeployer | operational_periphery | ethereum | 16 deployments: ethereum [`0x4c7ca8...785491`](./contracts/ethereum-1/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); ethereum `0x8244d6...4ea464`; optimism [`0x4c7ca8...785491`](./contracts/optimism-10/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); optimism `0x8244d6...4ea464`; bsc [`0x4c7ca8...785491`](./contracts/bsc-56/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); bsc `0x8244d6...4ea464`; polygon [`0x4c7ca8...785491`](./contracts/polygon-137/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); polygon `0x8244d6...4ea464`; base [`0x4c7ca8...785491`](./contracts/base-8453/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); base `0x8244d6...4ea464`; arbitrum [`0x4c7ca8...785491`](./contracts/arbitrum-42161/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); arbitrum `0x8244d6...4ea464`; avalanche [`0x4c7ca8...785491`](./contracts/avalanche-43114/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); avalanche `0x8244d6...4ea464`; linea [`0x4c7ca8...785491`](./contracts/linea-59144/0x4c7ca8fcffe77281a8b81d4580cff8257d785491/); linea `0x8244d6...4ea464` | ✅ Audited |
-| DlnExternalCallAdapter | adapter | ethereum | 8 deployments: ethereum [`0x61ef2e...8f6cf9`](./contracts/ethereum-1/0x61ef2e01e603aeb5cd96f9ec9ae76cc6a68f6cf9/); ethereum `0xa85437...555a3a`; optimism `0xa85437...555a3a`; bsc `0xa85437...555a3a`; polygon `0xa85437...555a3a`; base `0xa85437...555a3a`; arbitrum `0xa85437...555a3a`; linea `0xa85437...555a3a` | ✅ Audited |
-| DlnSource | unknown | sei | 15 deployments: ethereum `0x7ec2e5...f21677`; ethereum `0xef4fb2...30eb66`; optimism `0x7ec2e5...f21677`; optimism `0xef4fb2...30eb66`; bsc `0x7ec2e5...f21677`; bsc `0xef4fb2...30eb66`; polygon `0x7ec2e5...f21677`; polygon `0xef4fb2...30eb66`; sei [`0x2041cc...745973`](./contracts/sei-1329/0x2041cc32792884323ac519e3f9fd2802d6745973/); base `0x7ec2e5...f21677`; base `0xef4fb2...30eb66`; arbitrum `0x7ec2e5...f21677`; arbitrum `0xef4fb2...30eb66`; linea `0x7ec2e5...f21677`; linea `0xef4fb2...30eb66` | ✅ Audited |
-| SignatureVerifier | periphery | ethereum | 20 deployments: ethereum [`0x2a3e72...7b6250`](./contracts/ethereum-1/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); ethereum `0x949b3b...9c8a8c`; ethereum `0xfe7de3...f08df4`; optimism [`0x2a3e72...7b6250`](./contracts/optimism-10/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); optimism `0x949b3b...9c8a8c`; bsc [`0x2a3e72...7b6250`](./contracts/bsc-56/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); bsc `0x949b3b...9c8a8c`; bsc `0xfe7de3...f08df4`; polygon [`0x2a3e72...7b6250`](./contracts/polygon-137/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); polygon `0x949b3b...9c8a8c`; polygon `0xfe7de3...f08df4`; base [`0x2a3e72...7b6250`](./contracts/base-8453/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); base `0x949b3b...9c8a8c`; arbitrum [`0x2a3e72...7b6250`](./contracts/arbitrum-42161/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); arbitrum `0x949b3b...9c8a8c`; arbitrum `0xfe7de3...f08df4`; avalanche [`0x2a3e72...7b6250`](./contracts/avalanche-43114/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); avalanche `0x949b3b...9c8a8c`; linea [`0x2a3e72...7b6250`](./contracts/linea-59144/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250/); linea `0x949b3b...9c8a8c` | ✅ Audited |
-| WethGate | token | ethereum | 4 deployments: ethereum [`0xfcf836...4d6a59`](./contracts/ethereum-1/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/); bsc [`0xfcf836...4d6a59`](./contracts/bsc-56/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/); polygon [`0xfcf836...4d6a59`](./contracts/polygon-137/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/); avalanche [`0xfcf836...4d6a59`](./contracts/avalanche-43114/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CrosschainForwarder | periphery | ethereum | unit-23717 | [`0xc31fc9...a23c47`](./contracts/ethereum-1/0xc31fc94f3fd088ee53ac915d6e8a14ff25a23c47/) | ✅ Audited |
+| DeBridgeGate | operational_periphery | ethereum | unit-23708 | [`0x43de2d...8398aa`](./contracts/ethereum-1/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ✅ Audited |
+| DeBridgeGate | operational_periphery | bsc | unit-23733 | [`0x43de2d...8398aa`](./contracts/bsc-56/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ✅ Audited |
+| DeBridgeGate | operational_periphery | polygon | unit-23745 | [`0x43de2d...8398aa`](./contracts/polygon-137/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ✅ Audited |
+| DeBridgeGate | operational_periphery | arbitrum | unit-23792 | [`0x43de2d...8398aa`](./contracts/arbitrum-42161/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ✅ Audited |
+| DeBridgeGate | operational_periphery | avalanche | unit-23803 | [`0x43de2d...8398aa`](./contracts/avalanche-43114/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ✅ Audited |
+| DeBridgeToken | operational_periphery | base | n/a | [`0x0e4add...d5504d`](./contracts/base-8453/0x0e4add4dc86ae1aa0fa43bd7e6a9fb8be2d5504d/) | ✅ Audited |
+| DlnDestination | unknown | ethereum | unit-23718 | [`0xe7351f...d6dd7f`](./contracts/ethereum-1/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | optimism | unit-23728 | [`0xe7351f...d6dd7f`](./contracts/optimism-10/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | bsc | unit-23742 | [`0xe7351f...d6dd7f`](./contracts/bsc-56/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | polygon | unit-23755 | [`0xe7351f...d6dd7f`](./contracts/polygon-137/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | base | unit-23789 | [`0xe7351f...d6dd7f`](./contracts/base-8453/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | arbitrum | unit-23801 | [`0xe7351f...d6dd7f`](./contracts/arbitrum-42161/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnDestination | unknown | linea | unit-23816 | [`0xe7351f...d6dd7f`](./contracts/linea-59144/0xe7351fd770a37282b91d153ee690b63579d6dd7f/) | ✅ Audited |
+| DlnSource | unknown | ethereum | unit-23719 | [`0xef4fb2...30eb66`](./contracts/ethereum-1/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | optimism | unit-23729 | [`0xef4fb2...30eb66`](./contracts/optimism-10/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | bsc | unit-23743 | [`0xef4fb2...30eb66`](./contracts/bsc-56/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | polygon | unit-23756 | [`0xef4fb2...30eb66`](./contracts/polygon-137/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | sei | n/a | [`0x2041cc...745973`](./contracts/sei-1329/0x2041cc32792884323ac519e3f9fd2802d6745973/) | ✅ Audited |
+| DlnSource | unknown | base | unit-23790 | [`0xef4fb2...30eb66`](./contracts/base-8453/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | arbitrum | unit-23802 | [`0xef4fb2...30eb66`](./contracts/arbitrum-42161/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| DlnSource | unknown | linea | unit-23817 | [`0xef4fb2...30eb66`](./contracts/linea-59144/0xef4fb24ad0916217251f553c0596f8edc630eb66/) | ✅ Audited |
+| SimpleFeeProxy | unknown | ethereum | unit-23716 | [`0xc2bac0...623636`](./contracts/ethereum-1/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (24)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BEP20TokenImplementation | token | bsc | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | ⚠️ Unaudited |
-| CrosschainForwarderProxy | periphery | optimism | 2 deployments: optimism [`0x663dc1...83c251`](./contracts/optimism-10/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); linea [`0x663dc1...83c251`](./contracts/linea-59144/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
-| DeBridgeRouter | operational_periphery | ethereum | 3 deployments: ethereum [`0x663dc1...83c251`](./contracts/ethereum-1/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); bsc [`0x663dc1...83c251`](./contracts/bsc-56/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); base [`0x663dc1...83c251`](./contracts/base-8453/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | base | 22 deployments: ethereum `0xa7b88a...95f46b`; ethereum `0xc86ab7...997130`; ethereum `0xe4427a...7494fe`; optimism `0xa7b88a...95f46b`; optimism `0xc86ab7...997130`; optimism `0xe4427a...7494fe`; bsc `0xa7b88a...95f46b`; bsc `0xc86ab7...997130`; bsc `0xe4427a...7494fe`; polygon `0xa7b88a...95f46b`; polygon `0xc86ab7...997130`; polygon `0xe4427a...7494fe`; base [`0x43de2d...8398aa`](./contracts/base-8453/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/); base `0xa7b88a...95f46b`; base `0xc86ab7...997130`; arbitrum `0xa7b88a...95f46b`; arbitrum `0xc86ab7...997130`; arbitrum `0xe4427a...7494fe`; avalanche `0xe4427a...7494fe`; linea `0xa7b88a...95f46b`; linea `0xc86ab7...997130`; linea `0xe4427a...7494fe` | ⚠️ Unaudited |
-| Subscription | unknown | ethereum | 2 deployments: ethereum [`0x2328ee...0c91a7`](./contracts/ethereum-1/0x2328ee20fa271073328dc94e52dd5b61aa0c91a7/); ethereum `0xf46b9e...4f5e35` | ⚠️ Unaudited |
-| TetherToken | token | ethereum | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | 52 deployments: ethereum [`0x413ddd...c2b1b4`](./contracts/ethereum-1/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); ethereum `0x8b0e35...b01278`; optimism [`0x413ddd...c2b1b4`](./contracts/optimism-10/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); optimism `0x61ef2e...8f6cf9`; optimism `0xc2bac0...623636`; bsc [`0x413ddd...c2b1b4`](./contracts/bsc-56/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); bsc `0x61ef2e...8f6cf9`; bsc `0x8b0e35...b01278`; bsc `0xc2bac0...623636`; polygon [`0x413ddd...c2b1b4`](./contracts/polygon-137/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); polygon `0x61ef2e...8f6cf9`; polygon `0x663dc1...83c251`; polygon `0x8b0e35...b01278`; polygon `0xc2bac0...623636`; hyperliquid `0x43de2d...8398aa`; hyperliquid `0x663dc1...83c251`; hyperliquid `0x8244d6...4ea464`; hyperliquid `0x8a0c79...28a824`; hyperliquid `0x949b3b...9c8a8c`; hyperliquid `0xa7b88a...95f46b`; hyperliquid `0xc2bac0...623636`; hyperliquid `0xc86ab7...997130`; hyperliquid `0xe4427a...7494fe`; hyperliquid `0xe7351f...d6dd7f`; hyperliquid `0xe93356...cb624a`; hyperliquid `0xef4fb2...30eb66`; hyperliquid `0xfebdc8...1be0a1`; sei `0x43de2d...8398aa`; sei `0x663dc1...83c251`; sei `0x8244d6...4ea464`; sei `0x8a0c79...28a824`; sei `0x949b3b...9c8a8c`; sei `0xa7b88a...95f46b`; sei `0xc2bac0...623636`; sei `0xc86ab7...997130`; sei `0xe4427a...7494fe`; sei `0xe7351f...d6dd7f`; sei `0xe93356...cb624a`; sei `0xef4fb2...30eb66`; sei `0xfebdc8...1be0a1`; base [`0x413ddd...c2b1b4`](./contracts/base-8453/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); base `0x61ef2e...8f6cf9`; base `0xc2bac0...623636`; arbitrum [`0x413ddd...c2b1b4`](./contracts/arbitrum-42161/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); arbitrum `0x61ef2e...8f6cf9`; arbitrum `0x663dc1...83c251`; arbitrum `0x8b0e35...b01278`; arbitrum `0xc2bac0...623636`; avalanche `0xc2bac0...623636`; linea [`0x413ddd...c2b1b4`](./contracts/linea-59144/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); linea `0x61ef2e...8f6cf9`; linea `0xc2bac0...623636` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BEP20TokenImplementation | token | bsc | unit-23730 (12 proxies) | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | ⚠️ Unaudited |
+| CrosschainForwarderProxy | periphery | optimism | unit-23723 | [`0x663dc1...83c251`](./contracts/optimism-10/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| CrosschainForwarderProxy | periphery | linea | unit-23811 | [`0x663dc1...83c251`](./contracts/linea-59144/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| DeBridgeRouter | operational_periphery | ethereum | unit-23710 | [`0x663dc1...83c251`](./contracts/ethereum-1/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| DeBridgeRouter | operational_periphery | bsc | unit-23735 | [`0x663dc1...83c251`](./contracts/bsc-56/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| DeBridgeRouter | operational_periphery | base | unit-23783 | [`0x663dc1...83c251`](./contracts/base-8453/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | unit-23715 | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | base | n/a | [`0x43de2d...8398aa`](./contracts/base-8453/0x43de2d77bf8027e25dbd179b491e8d64f38398aa/) | ⚠️ Unaudited |
+| Subscription | unknown | ethereum | unit-23706 | [`0x2328ee...0c91a7`](./contracts/ethereum-1/0x2328ee20fa271073328dc94e52dd5b61aa0c91a7/) | ⚠️ Unaudited |
+| TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | optimism | unit-23727 | [`0xc2bac0...623636`](./contracts/optimism-10/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | bsc | unit-23734 | [`0x61ef2e...8f6cf9`](./contracts/bsc-56/0x61ef2e01e603aeb5cd96f9ec9ae76cc6a68f6cf9/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | bsc | unit-23740 | [`0xc2bac0...623636`](./contracts/bsc-56/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | polygon | unit-23747 | [`0x663dc1...83c251`](./contracts/polygon-137/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | polygon | unit-23752 | [`0xc2bac0...623636`](./contracts/polygon-137/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | hyperliquid | unit-23758 | [`0x663dc1...83c251`](./contracts/hyperliquid-999/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | hyperliquid | unit-23763 | [`0xc2bac0...623636`](./contracts/hyperliquid-999/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | sei | unit-23770 | [`0x663dc1...83c251`](./contracts/sei-1329/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | sei | unit-23775 | [`0xc2bac0...623636`](./contracts/sei-1329/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | base | unit-23788 | [`0xc2bac0...623636`](./contracts/base-8453/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | arbitrum | unit-23794 | [`0x663dc1...83c251`](./contracts/arbitrum-42161/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | arbitrum | unit-23799 | [`0xc2bac0...623636`](./contracts/arbitrum-42161/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | avalanche | unit-23807 | [`0xc2bac0...623636`](./contracts/avalanche-43114/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | linea | unit-23815 | [`0xc2bac0...623636`](./contracts/linea-59144/0xc2bac0db5b18b0c3225581ba14bd0b448c623636/) | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (5)
+### ✅ Verified by Bytecode + Audited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| CrosschainForwarder | unknown | linea | 17 deployments: ethereum `0x777c22...6e213a`; ethereum `0xbeb2b3...960ac0`; ethereum `0xc31fc9...a23c47`; ethereum `0xd095a2...414946`; optimism `0xf7399c...902688`; bsc `0xbeb2b3...960ac0`; bsc `0xc31fc9...a23c47`; bsc `0xd095a2...414946`; polygon `0xbeb2b3...960ac0`; polygon `0xc31fc9...a23c47`; polygon `0xd095a2...414946`; polygon `0xd24463...db5e30`; base `0xf7399c...902688`; arbitrum `0xbeb2b3...960ac0`; arbitrum `0xc31fc9...a23c47`; arbitrum `0xd095a2...414946`; linea [`0x4084fd...b0d55d`](./contracts/linea-59144/0x4084fdaa5088427496102a994b079c6018b0d55d/) | ✅ Audited (bytecode match) |
-| DeBridgeToken | operational_periphery | base | 13 deployments: ethereum `0xc1656b...e5bcbf`; ethereum `0xf8a290...734c2b`; optimism `0xc1656b...e5bcbf`; bsc `0xc1656b...e5bcbf`; bsc `0xf8a290...734c2b`; polygon `0xa029fc...381e59`; polygon `0xc1656b...e5bcbf`; polygon `0xf8a290...734c2b`; base [`0x0e4add...d5504d`](./contracts/base-8453/0x0e4add4dc86ae1aa0fa43bd7e6a9fb8be2d5504d/); arbitrum `0xc1656b...e5bcbf`; arbitrum `0xf8a290...734c2b`; avalanche `0xc1656b...e5bcbf`; linea `0x55c93b...91654a` | ✅ Audited (bytecode match) |
-| DlnDestination | unknown | ethereum | 22 deployments: ethereum [`0x33b72f...d81717`](./contracts/ethereum-1/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); ethereum `0x979791...1f592c`; ethereum `0xe7351f...d6dd7f`; optimism [`0x33b72f...d81717`](./contracts/optimism-10/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); optimism `0x979791...1f592c`; optimism `0xe7351f...d6dd7f`; bsc [`0x33b72f...d81717`](./contracts/bsc-56/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); bsc `0x979791...1f592c`; bsc `0xe7351f...d6dd7f`; polygon [`0x33b72f...d81717`](./contracts/polygon-137/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); polygon `0xe7351f...d6dd7f`; polygon `0xfb43e4...6ee807`; hyperliquid `0x60e501...57b91f`; base [`0x33b72f...d81717`](./contracts/base-8453/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); base `0x979791...1f592c`; base `0xe7351f...d6dd7f`; arbitrum [`0x33b72f...d81717`](./contracts/arbitrum-42161/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); arbitrum `0x979791...1f592c`; arbitrum `0xe7351f...d6dd7f`; linea [`0x33b72f...d81717`](./contracts/linea-59144/0x33b72f60f2ceb7bdb64873ac10015a35bed81717/); linea `0x979791...1f592c`; linea `0xe7351f...d6dd7f` | ✅ Audited (bytecode match) |
-| ExternalCallExecutor | unknown | ethereum | 7 deployments: ethereum [`0xae0361...4c7974`](./contracts/ethereum-1/0xae0361b1c3454b297129e01046057f1d294c7974/); optimism [`0xae0361...4c7974`](./contracts/optimism-10/0xae0361b1c3454b297129e01046057f1d294c7974/); bsc [`0xae0361...4c7974`](./contracts/bsc-56/0xae0361b1c3454b297129e01046057f1d294c7974/); polygon [`0xae0361...4c7974`](./contracts/polygon-137/0xae0361b1c3454b297129e01046057f1d294c7974/); base [`0xae0361...4c7974`](./contracts/base-8453/0xae0361b1c3454b297129e01046057f1d294c7974/); arbitrum [`0xae0361...4c7974`](./contracts/arbitrum-42161/0xae0361b1c3454b297129e01046057f1d294c7974/); linea [`0xae0361...4c7974`](./contracts/linea-59144/0xae0361b1c3454b297129e01046057f1d294c7974/) | ✅ Audited (bytecode match) |
-| SimpleFeeProxy | unknown | ethereum | 13 deployments: ethereum [`0x27406e...f11f87`](./contracts/ethereum-1/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); ethereum `0x37a52d...caa83c`; ethereum `0xc2bac0...623636`; optimism [`0x27406e...f11f87`](./contracts/optimism-10/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); bsc [`0x27406e...f11f87`](./contracts/bsc-56/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); bsc `0x37a52d...caa83c`; polygon [`0x27406e...f11f87`](./contracts/polygon-137/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); polygon `0x37a52d...caa83c`; base [`0x27406e...f11f87`](./contracts/base-8453/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); arbitrum [`0x27406e...f11f87`](./contracts/arbitrum-42161/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); arbitrum `0x37a52d...caa83c`; avalanche [`0x27406e...f11f87`](./contracts/avalanche-43114/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); linea [`0x27406e...f11f87`](./contracts/linea-59144/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/) | ✅ Audited (bytecode match) |
+- None
 
 ### ⚠️ Verified by Bytecode + Unaudited (0)
 
@@ -92,189 +125,62 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (140)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x069820...7c9e41` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x177c8a...56e4ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4084fd...b0d55d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x55c93b...91654a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x57d69a...86a837` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8aca11...c5b612` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd7bc54...5d3bda` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd8da6b...a96045` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x55c93b...91654a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x05bd82...10ebea` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x43de2d...8398aa` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x663dc1...83c251` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x8244d6...4ea464` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x8a0c79...28a824` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x949b3b...9c8a8c` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xc1656b...e5bcbf` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xe7351f...d6dd7f` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xe93356...cb624a` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xef4fb2...30eb66` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x069820...7c9e41` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x177c8a...56e4ab` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x4084fd...b0d55d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x55c93b...91654a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x57d69a...86a837` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x8aca11...c5b612` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xd7bc54...5d3bda` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x069820...7c9e41` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x177c8a...56e4ab` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x4084fd...b0d55d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x55c93b...91654a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x57d69a...86a837` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x8aca11...c5b612` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x979791...1f592c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xd7bc54...5d3bda` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x05bd82...10ebea` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x27406e...f11f87` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x2a3e72...7b6250` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x4c7ca8...785491` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x4e446b...41c391` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x62a8c4...db27dc` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x6a3615...dd5625` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x726f7a...6014a0` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xb1a20d...bdd20d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xb77426...af1716` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xc1656b...e5bcbf` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xf0bbd6...22d2a3` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xfcf836...4d6a59` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x05bd82...10ebea` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x1ed401...ef359d` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x27406e...f11f87` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x2a3e72...7b6250` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x4c7ca8...785491` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x4e446b...41c391` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x726f7a...6014a0` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xb1a20d...bdd20d` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xc1656b...e5bcbf` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xd3a5e4...5f8c62` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xf0bbd6...22d2a3` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xfcf836...4d6a59` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x069820...7c9e41` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x177c8a...56e4ab` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4084fd...b0d55d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x55c93b...91654a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x57d69a...86a837` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8aca11...c5b612` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd7bc54...5d3bda` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xfc2ca4...a28f19` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x4a8112...e22180` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x570687...3d2728` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x584049...d50336` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x60e501...57b91f` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xafcfda...686892` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xc1656b...e5bcbf` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xcb8e9e...6970bf` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xeae935...e7e000` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xf7399c...902688` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xfc2ca4...a28f19` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xd8da6b...a96045` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x05bd82...10ebea` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x43de2d...8398aa` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x663dc1...83c251` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x8244d6...4ea464` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x8a0c79...28a824` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x949b3b...9c8a8c` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xc1656b...e5bcbf` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xe7351f...d6dd7f` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xe93356...cb624a` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xef4fb2...30eb66` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc1656b...e5bcbf` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x62a8c4...db27dc` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CrosschainForwarder Allowances Audit.pdf](https://github.com/debridge-finance/debridge-security/blob/master/CrosschainForwarder%20Allowances%20Audit.pdf) | unknown | Audit | 2024-09 | aging | Direct | contract_name | 11 | high |
+| [CrosschainForwarder Allowances Audit.pdf](https://github.com/debridge-finance/debridge-security/blob/master/CrosschainForwarder%20Allowances%20Audit.pdf) | unknown | Audit | 2024-09 | aging | Direct | contract_name | 1 | high |
 | [DLN Solana Contracts _ SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN%20Solana%20Contracts%20_%20SSC.pdf) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [DLN Solana Release Assessment Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN%20Solana%20Release%20Assessment%20Report.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
-| [DLN-EVM_Upgrades_SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN-EVM_Upgrades_SSC.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 46 | high |
+| [DLN-EVM_Upgrades_SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN-EVM_Upgrades_SSC.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 15 | high |
 | [DeBridgde_Solana_Events_Reader_Rust_Program_Security_Audit_Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridgde_Solana_Events_Reader_Rust_Program_Security_Audit_Report.pdf) | unknown | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
 | [DeBridge_Airdrop_Contract _ SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Airdrop_Contract%20_%20SSC.pdf) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [DeBridge_Contracts_v1_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Contracts_v1_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-11 | stale | Direct | contract_name | 132 | high |
-| [DeBridge_DLN_EVM_Bridge_1_3_0_Smart_Contract_Security_Assessment.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_EVM_Bridge_1_3_0_Smart_Contract_Security_Assessment.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 46 | high |
-| [DeBridge_DLN_EVM_Contracts_Smart_Contract_Security_Audit_Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_EVM_Contracts_Smart_Contract_Security_Audit_Report.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 36 | high |
-| [DeBridge_DLN_External_Call_Smart_Contract_Security_Assessment_Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_External_Call_Smart_Contract_Security_Assessment_Report.pdf) | unknown | Audit | 2023-07 | stale | Direct | contract_name | 46 | high |
+| [DeBridge_Contracts_v1_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Contracts_v1_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-11 | stale | Direct | contract_name | 7 | high |
+| [DeBridge_DLN_EVM_Bridge_1_3_0_Smart_Contract_Security_Assessment.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_EVM_Bridge_1_3_0_Smart_Contract_Security_Assessment.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 15 | high |
+| [DeBridge_DLN_EVM_Contracts_Smart_Contract_Security_Audit_Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_EVM_Contracts_Smart_Contract_Security_Audit_Report.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 15 | high |
+| [DeBridge_DLN_External_Call_Smart_Contract_Security_Assessment_Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_External_Call_Smart_Contract_Security_Assessment_Report.pdf) | unknown | Audit | 2023-07 | stale | Direct | contract_name | 15 | high |
 | [DeBridge_DLN_Taker_Code_Security_Assessment_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_DLN_Taker_Code_Security_Assessment_Report_Halborn_Final.pdf) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
 | [DeBridge_EVM_to_Solana_Serializer_Smart_Contract_Security_Assessment.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_EVM_to_Solana_Serializer_Smart_Contract_Security_Assessment.pdf) | unknown | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
 | [DeBridge_Solana_Contracts_Solana_Program_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solana_Contracts_Solana_Program_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
-| [DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-06 | stale | Direct | contract_name | 132 | high |
+| [DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-06 | stale | Direct | contract_name | 7 | high |
 | [Debridge_DLN_Solana_Program_Security_Audit_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/Debridge_DLN_Solana_Program_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
 | [Debridge_Solana_Event_Reader_Whitebox_Pentest_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/Debridge_Solana_Event_Reader_Whitebox_Pentest_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
 | [Debridge_extcall_Solana_Program_Security_Assessment_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/Debridge_extcall_Solana_Program_Security_Assessment_Report_Halborn.pdf) | Halborn | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
 | [Debridge_solana_tx_parser_Whitebox_Pentest_Report_Halborn_Final.pdf](https://github.com/debridge-finance/debridge-security/blob/master/Debridge_solana_tx_parser_Whitebox_Pentest_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
 | [deBridge Core Protocol Solana Contracts _ SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge%20Core%20Protocol%20Solana%20Contracts%20_%20SSC.pdf) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [deBridge_Cloudflare_report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Cloudflare_report_Halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [deBridge_Cross_Chain_Forwarder_Update_Smart_Contract_Security_Audit.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Cross_Chain_Forwarder_Update_Smart_Contract_Security_Audit.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 11 | high |
-| [deBridge_Cross_Chain_Swap_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Cross_Chain_Swap_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 11 | high |
+| [deBridge_Cross_Chain_Forwarder_Update_Smart_Contract_Security_Audit.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Cross_Chain_Forwarder_Update_Smart_Contract_Security_Audit.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 1 | high |
+| [deBridge_Cross_Chain_Swap_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Cross_Chain_Swap_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 1 | high |
 | [deBridge_FrontEnd_WebApp_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_FrontEnd_WebApp_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | 132 | high |
-| [deBridge_Main_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf) | Halborn | Audit | 2021-09 | stale | Direct | contract_name | 100 | high |
-| [deBridge_Main_Smart_Contract_Security_Audit_Report_ZOKYO.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_ZOKYO.pdf) | unknown | Audit | 2021-10 | stale | Direct | contract_name | 100 | high |
+| [deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | 7 | high |
+| [deBridge_Main_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf) | Halborn | Audit | 2021-09 | stale | Direct | contract_name | 6 | high |
+| [deBridge_Main_Smart_Contract_Security_Audit_Report_ZOKYO.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Smart_Contract_Security_Audit_Report_ZOKYO.pdf) | unknown | Audit | 2021-10 | stale | Direct | contract_name | 6 | high |
 | [deBridge_Node_Security_Audit_Report_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Node_Security_Audit_Report_Halborn.pdf) | Halborn | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
 | [deBridge_Solana_Multisig_Solana_Program_Security_Audit_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Solana_Multisig_Solana_Program_Security_Audit_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
 | [deBridge_Solana_Security_Audit_Ackee.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Solana_Security_Audit_Ackee.pdf) | Ackee Blockchain | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
 | [deBridge_Solana_Security_Audit_Neodyme.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Solana_Security_Audit_Neodyme.pdf) | unknown | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 | [debridge_backend_pentest_report_halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_backend_pentest_report_halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [debridge_solidity_smart_contract_second_audit_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 137 | high |
+| [debridge_solidity_smart_contract_second_audit_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 7 | high |
 
 ## Coverage Gaps
 
@@ -283,16 +189,18 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | BEP20TokenImplementation | token | $263,879,740.52 | Verified native implementation with $263,879,740.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x663dc1...83c251`](./contracts/linea-59144/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | CrosschainForwarderProxy | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x663dc1...83c251`](./contracts/base-8453/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | DeBridgeRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2328ee...0c91a7`](./contracts/ethereum-1/0x2328ee20fa271073328dc94e52dd5b61aa0c91a7/) | Subscription | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 84 |
+| native | 11 |
 | upstream | 2 |
-| standard_library | 7 |
-| needs_review | 68 |
+| standard_library | 29 |
+| needs_review | 18 |
 
 ## Scope Matching Notes
 

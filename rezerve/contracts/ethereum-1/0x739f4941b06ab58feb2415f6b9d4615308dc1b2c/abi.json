@@ -1,0 +1,56 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "floorApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ceilApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "k1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "k2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pcvUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supply",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epochsPerYear",
+        "type": "uint256"
+      }
+    ],
+    "name": "calcEpoch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epochMint",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (linea [`0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d`](../0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/); linea `0xcc00f934a7541868b9a09f98d7928f727b9e4d75`) |
+| Deployments | 1 (linea [`0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d`](../0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

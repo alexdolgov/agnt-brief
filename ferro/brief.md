@@ -7,8 +7,8 @@
 - Project: Ferro (`ferro`)
 - Website: [https://ferroprotocol.com](https://ferroprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-14T06:50:52.414Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:01:00.757Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: cronos
 - Contract surface: 21 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $4,922,586.46
@@ -22,6 +22,14 @@ Ferro is a stableswap AMM/DEX on Cronos focused on stablecoins and pegged-value 
 ### Architecture
 
 Swap contracts interact with liquidity pool contracts to execute trades and manage reserves. The Ferro family likely orchestrates these interactions, while Other Contracts provide shared infrastructure like access control or adapters.
+
+## Contract Surface Quality
+
+- Indexed contracts: 21; live-surface contracts included: 21 (0 live, 21 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -69,29 +77,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x1578c5...185afa` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x1dd980...cebf53` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x260481...f41929` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x39bc1e...66c782` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x5fa941...ebdf96` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x6a4173...aa104b` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x6b82ea...5fdd88` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x719237...c31bde` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x74171b...55992d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x9fae23...7c08a6` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xa26a01...34f72e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xa34c0f...2b32d6` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xab50fb...3029d0` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xac974e...85750d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xb5c745...e67b86` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xc73b40...66dd85` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xcf3e15...64c92e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xd05a67...fc2c03` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xd42e07...edea78` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xe8d136...5da5cd` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xf2001b...5f677d` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x1578c5...185afa` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x1dd980...cebf53` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x260481...f41929` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x39bc1e...66c782` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x5fa941...ebdf96` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x6a4173...aa104b` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x6b82ea...5fdd88` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x719237...c31bde` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x74171b...55992d` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x9fae23...7c08a6` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xa26a01...34f72e` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xa34c0f...2b32d6` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xab50fb...3029d0` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xac974e...85750d` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xb5c745...e67b86` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xc73b40...66dd85` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xcf3e15...64c92e` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xd05a67...fc2c03` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xd42e07...edea78` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xe8d136...5da5cd` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xf2001b...5f677d` | ❓ Unverified |
 
 ## Audit Inventory
 

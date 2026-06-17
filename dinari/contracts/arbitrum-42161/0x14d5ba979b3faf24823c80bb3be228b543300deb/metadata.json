@@ -1,0 +1,17 @@
+{
+  "address": "0x14d5ba979b3faf24823c80bb3be228b543300deb",
+  "chain_id": 42161,
+  "contract_name": "OrderProcessor",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 53,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:53.029Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x401d83457951ef2c195d56e7d4a8f2d72c43bde8",
+  "chain_id": 146,
+  "contract_name": "AppBondDepository",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:09.231Z"
+}

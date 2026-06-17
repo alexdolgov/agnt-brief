@@ -1,35 +1,19 @@
 {
   "schema_version": "2.0",
   "project_key": "helix-finance",
-  "generated_at": "2026-06-12T22:22:33.668Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "helix-finance",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2024-03-21T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 801,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-06-17T07:00:36.831Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 14,
-    "unique_implementations": 9,
-    "total_deployments": 14,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
     "audited_contracts": 0,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -41,9 +25,7 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://helixfinance.io/",
-    "chains": [
-      "ethereum"
-    ],
+    "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -57,344 +39,30 @@
   },
   "topography": {
     "project_purpose": "Helix Finance is an institutional-grade RWAFi orchestration layer centered on Helix Hub, providing access to multi-strategy real-world-asset yield opportunities, omni-chain composability, attestations, and USHD/USHDx access. It connects on-chain investors to real-world asset yields using data and credit analytics while relying on off-chain RWA custody and related institutional infrastructure. The currently listed Ethereum contracts should be treated as a partial or legacy RWA lending/deal-management surface unless current Helix Hub and USHD/USHDx contract addresses are separately verified.",
-    "relationship_narrative": "All contracts are part of a single product family deployed by the same deployer. The HelixFactory creates deal instances using implementations from HelixDealImplementationRepository, while HelixDealTokens handles tokenization, HelixUniqueIdentity manages KYC, and HelixConfig provides global settings.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 14,
+    "live_contracts": 0,
+    "inactive_contracts": 3,
+    "singleton_contracts": 11,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 5,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
-      "name": "HelixAuthoriser",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HelixAuthoriser",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8c83f98953f5035cbef60d2da964f8111fa3dd4a",
-      "name": "HelixConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x8c83f98953f5035cbef60d2da964f8111fa3dd4a",
-      "impl_name": "HelixConfig",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8c83f98953f5035cbef60d2da964f8111fa3dd4a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb7c0d012380e1a2bd10b43e12fcfe17de38e0ba8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcef1ce6b10886a8e7698f51bad265c35883e62c6",
-      "name": "HelixDeal",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HelixDeal",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcef1ce6b10886a8e7698f51bad265c35883e62c6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4512abc6384431d107d264dc2c8cfe1c475df999",
-      "name": "HelixDealImplementationRepository",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xba665ae54b7b0215efce500c43adb061910e3e39",
-      "impl_name": "HelixDealImplementationRepository",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4512abc6384431d107d264dc2c8cfe1c475df999",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xba665ae54b7b0215efce500c43adb061910e3e39",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1c227497dea66f59811db6ee3a3bcfe148bab4dc",
-      "name": "HelixDealTokens",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x9279a50181cb469de58566eb3a12e77b64e1eed2",
-      "impl_name": "HelixDealTokens",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1c227497dea66f59811db6ee3a3bcfe148bab4dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9279a50181cb469de58566eb3a12e77b64e1eed2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36",
-      "name": "HelixFactory",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "HELIX Finance",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x5ab7ab4b70fe25f44fbcc261628b23df99d33632",
-      "impl_name": "HelixFactory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5ab7ab4b70fe25f44fbcc261628b23df99d33632",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x67c3a8ecd374b46d335105323f5888f70679d740",
-      "name": "HelixUniqueIdentity",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6b79b00bbd2e827fbd7c4e64668f9a84e6632315",
-      "impl_name": "HelixUniqueIdentity",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x67c3a8ecd374b46d335105323f5888f70679d740",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6b79b00bbd2e827fbd7c4e64668f9a84e6632315",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyAdmin",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x42012e315c70af46585581803066243f95153b95",
-      "name": "TransparentUpgradeableProxy",
-      "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
-      "impl_name": "TransparentUpgradeableProxy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x42012e315c70af46585581803066243f95153b95",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    }
-  ],
+  "contracts": [],
   "audits": [
     {
       "audit_id": 11587,
@@ -419,42 +87,11 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
-      "name": "HelixAuthoriser",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8c83f98953f5035cbef60d2da964f8111fa3dd4a",
-      "name": "HelixConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcef1ce6b10886a8e7698f51bad265c35883e62c6",
-      "name": "HelixDeal",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 3,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 6,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {

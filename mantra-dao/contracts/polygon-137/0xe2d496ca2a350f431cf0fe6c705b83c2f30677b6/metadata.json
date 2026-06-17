@@ -1,0 +1,17 @@
+{
+  "address": "0xe2d496ca2a350f431cf0fe6c705b83c2f30677b6",
+  "chain_id": 137,
+  "contract_name": "ZenterestPriceFeed",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000021ddf70bfb842e9eed59df7af411fc602d7eed4b000000000000000000000000ff0cfe2654125cb2683eeffab873658dcbe3fb5e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:05.887Z"
+}

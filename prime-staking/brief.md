@@ -5,10 +5,10 @@
 - Project: Prime Staking (`prime-staking`)
 - Website: [https://primestaking.xyz/](https://primestaking.xyz/)
 - Lifecycle: active (Tier 0, 66.4% below peak)
-- Generated: 2026-06-14T00:05:25.240Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Generated: 2026-06-17T07:00:40.235Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $2,467,609.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Prime Staking is an XDC staking/liquid staking protocol. Its public TVL-bearing 
 
 The ONFTDiamond token contract is the primary liquid staking derivative, while PRFI is a related token. The PRFIVestingV2Proxy manages vesting of PRFI tokens, indicating a shared token economy where staking rewards or allocations are distributed through vesting.
 
+## Contract Surface Quality
+
+- Indexed contracts: 10; live-surface contracts included: 6 (6 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: none
+- Dependencies extracted: 2; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 7
-- Unique implementations: 10
-- Raw deployments: 10
+- Unverified implementations: 5
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,13 +54,11 @@ The ONFTDiamond token contract is the primary liquid staking derivative, while P
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ONFTDiamond | token | base | [`0x693a3a...78dcf5`](./contracts/base-8453/0x693a3a45ff596024f844be1cc6845d59f778dcf5/) | ⚠️ Unaudited |
-| PRFI | unknown | base | [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
-| Staker | core_logic | base | [`0x63af36...242a2c`](./contracts/base-8453/0x63af36718dc17714805b3a988fced01c16242a2c/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PRFI | unknown | base | n/a | [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -66,19 +72,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (7)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | base | `0x1e8559...b97582` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x3d5154...563bca` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x793db5...bad98b` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x7d8f06...c68494` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x86ceb2...936f95` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xc7f171...000c7a` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xdf3206...22151a` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x3d5154...563bca` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x793db5...bad98b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7d8f06...c68494` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x86ceb2...936f95` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xdf3206...22151a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -93,18 +97,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x693a3a...78dcf5`](./contracts/base-8453/0x693a3a45ff596024f844be1cc6845d59f778dcf5/) | ONFTDiamond | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | PRFI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x63af36...242a2c`](./contracts/base-8453/0x63af36718dc17714805b3a988fced01c16242a2c/) | Staker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

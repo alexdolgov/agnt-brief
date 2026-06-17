@@ -1,0 +1,17 @@
+{
+  "address": "0x55d0ce6928598c6bfdf23fa72698ce68809a9328",
+  "chain_id": 8453,
+  "contract_name": "AquaVaultLogic",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:55.956Z"
+}

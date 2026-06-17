@@ -5,11 +5,11 @@
 - Project: Toobit (`toobit`)
 - Website: [https://www.toobit.com](https://www.toobit.com)
 - Lifecycle: unknown
-- Generated: 2026-06-11T03:35:58.829Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-17T07:01:01.849Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $69,148,305.81
+- DeFi Llama TVL: $61,521,980.38
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Toobit is a centralized crypto exchange offering spot trading, futures/perpetual contract trading, copy trading, OTC/P2P/fiat on-ramp options, trading bots, Earn, Proof of Reserves, and related digital asset services. It also advertises DEX+/on-chain Web3 token access, but no project-owned smart-contract deployments are recorded in the provided contract surface.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

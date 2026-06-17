@@ -1,0 +1,17 @@
+{
+  "address": "0xa452df37e4f845c15f49489486a9b4e8323bd7c4",
+  "chain_id": 42161,
+  "contract_name": "RamsesV3PoolRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000aa2cd7477c451e703f3b9ba5663334914763edf8000000000000000000000000f20c4c404b91edab2f341dfbaf295815cf695198",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:22.376Z"
+}

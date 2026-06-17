@@ -1,16 +1,14 @@
 # Agentic Audit Brief: ParagonsDAO
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: ParagonsDAO (`paragonsdao`)
 - Website: [https://app.paragonsdao.com](https://app.paragonsdao.com)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T06:06:06.378Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-17T07:00:50.397Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $6,503,573.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,46 +21,51 @@ ParagonsDAO is a web3 gaming community/guild with a Base PDT staking/farm compon
 
 The PDTOFT contract likely serves as the underlying token or a wrapper, while StakedPDT is the staking vault that issues a receipt token. Both contracts are deployed by the same address, indicating a single integrated system.
 
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 4 (2 live, 2 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 2; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/6 (16.7%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 1/4 (25.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 6
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 8
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-07 (aging)
 - Staleness: 0 fresh, 3 aging, 1 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hashlock | Tier 2 | 1 | 16.7% | 2024-07 |
-| Zellic | Tier 2 | 1 | 16.7% | 2024-07 |
+| Hashlock | Tier 2 | 1 | 25.0% | 2024-07 |
+| Zellic | Tier 2 | 1 | 25.0% | 2024-07 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakedPDT | token | base | [`0x51e025...29aa3e`](./contracts/base-8453/0x51e025cb3ee0b99a84f7fb80994198281e29aa3e/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakedPDT | token | base | n/a | [`0x51e025...29aa3e`](./contracts/base-8453/0x51e025cb3ee0b99a84f7fb80994198281e29aa3e/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| GnosisSafeL2 | governance | ethereum | [`0x11117f...5bf9c9`](./contracts/ethereum-1/0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9/) | ⚠️ Unaudited |
-| ParallelBondingContract | unknown | ethereum | [`0x3fe273...e786fd`](./contracts/ethereum-1/0x3fe2734d6a7a17a9e2e05f0b242c84b40ee786fd/) | ⚠️ Unaudited |
-| PDTOFT | unknown | base | [`0xeff2a4...61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | ⚠️ Unaudited |
-| PDTStaking | unknown | ethereum | [`0xe09c8a...2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | ⚠️ Unaudited |
-| VestingPool | unknown | ethereum | [`0xdd4cd0...59cb14`](./contracts/ethereum-1/0xdd4cd02b42c1b67afd49f9b866fa91a88c59cb14/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GnosisSafeL2 | governance | ethereum | unit-31079 | [`0x11117f...5bf9c9`](./contracts/ethereum-1/0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9/) | ⚠️ Unaudited |
+| PDTOFT | unknown | base | n/a | [`0xeff2a4...61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | ⚠️ Unaudited |
+| PDTStaking | unknown | ethereum | n/a | [`0xe09c8a...2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,7 +104,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3fe273...e786fd`](./contracts/ethereum-1/0x3fe2734d6a7a17a9e2e05f0b242c84b40ee786fd/) | ParallelBondingContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xeff2a4...61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | PDTOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe09c8a...2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | PDTStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -109,9 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

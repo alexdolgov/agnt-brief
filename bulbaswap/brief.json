@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bulbaswap",
-  "generated_at": "2026-06-10T22:14:26.531Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-17T07:01:00.739Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9041874,
-    "tvl_usd": 9041874,
+    "dl_tvl_usd": 8136543,
+    "tvl_usd": 8136543,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "BulbaSwap is a decentralized exchange (DEX) protocol enabling users to swap tokens, provide liquidity, and earn fees. It supports multiple automated market maker (AMM) versions, including V2 and V3, to offer flexible trading and liquidity provision options.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

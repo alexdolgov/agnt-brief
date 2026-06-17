@@ -7,8 +7,8 @@
 - Project: KlaySwap (`klayswap`)
 - Website: [https://klayswap.com/dashboard](https://klayswap.com/dashboard)
 - Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-14T07:02:29.184Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:00:56.015Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: klaytn
 - Contract surface: 22 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $3,852,968.00
@@ -22,6 +22,14 @@ KLAYswap is an AMM-based instant swap decentralized exchange on Kaia, formerly K
 ### Architecture
 
 KlaySwap V1 and V3 are separate product families sharing the same Klaytn deployment but likely operate independently with distinct contract sets. No shared infrastructure contracts are explicitly identified in the provided inventory.
+
+## Contract Surface Quality
+
+- Indexed contracts: 22; live-surface contracts included: 22 (0 live, 22 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -69,30 +77,30 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | `0x01431f...23341d` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x036305...4701cf` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x05343b...9e5987` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x09067f...9a5a5f` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x128955...2f837d` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x19aac5...1a4432` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x29990a...b4936e` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x2ce59e...38997f` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x2f3713...054830` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x3c9736...797887` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x3d5465...a1bc6c` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x3e8477...2dc293` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x51d233...5d317b` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x689d8e...923593` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x6c14e2...d141a0` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x71b59e...5b1890` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x7a74b3...5ac876` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xa15be7...502ac9` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xb43879...666bfc` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xc6a2ad...9e7654` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xd1890d...4009e6` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xe0fbb2...cf8cb9` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | klaytn | n/a | `0x01431f...23341d` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x036305...4701cf` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x05343b...9e5987` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x09067f...9a5a5f` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x128955...2f837d` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x19aac5...1a4432` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x29990a...b4936e` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x2ce59e...38997f` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x2f3713...054830` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x3c9736...797887` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x3d5465...a1bc6c` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x3e8477...2dc293` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x51d233...5d317b` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x689d8e...923593` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x6c14e2...d141a0` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x71b59e...5b1890` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x7a74b3...5ac876` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xa15be7...502ac9` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xb43879...666bfc` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xc6a2ad...9e7654` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xd1890d...4009e6` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xe0fbb2...cf8cb9` | ❓ Unverified |
 
 ## Audit Inventory
 

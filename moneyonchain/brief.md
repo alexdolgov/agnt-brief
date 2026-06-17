@@ -5,11 +5,11 @@
 - Project: MoneyOnChain (`moneyonchain`)
 - Website: [https://moneyonchain.com/](https://moneyonchain.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:10:46.605Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-17T07:00:56.256Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $43,710,308.64
+- DeFi Llama TVL: $34,702,840.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 MoneyOnChain is a dual-token stablecoin protocol that issues a price-stable token (DoC) pegged to fiat currency and a volatile token (BPro) that absorbs price fluctuations, enabling users to hedge or leverage Bitcoin exposure.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

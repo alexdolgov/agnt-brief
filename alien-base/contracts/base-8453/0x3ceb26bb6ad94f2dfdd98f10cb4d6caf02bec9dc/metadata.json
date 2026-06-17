@@ -1,0 +1,18 @@
+{
+  "address": "0x3ceb26bb6ad94f2dfdd98f10cb4d6caf02bec9dc",
+  "chain_id": 8453,
+  "contract_name": "BunniLensV2",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:25.066Z"
+}

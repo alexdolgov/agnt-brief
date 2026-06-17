@@ -7,11 +7,11 @@
 - Project: Silo Finance (`silo-finance`)
 - Website: [https://app.silo.finance](https://app.silo.finance)
 - Lifecycle: unknown (Tier 0, 92.5% below peak)
-- Generated: 2026-05-31T10:37:24.241Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-17T07:00:53.576Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, avalanche, base, ethereum, optimism, sonic
-- Contract surface: 529 unique implementations (1839 raw deployments)
-- DeFi Llama TVL: $92,123,113.00
+- Contract surface: 313 unique implementations (1166 raw deployments)
+- DeFi Llama TVL: $66,946,598.00
 - On-chain TVL (included contracts): $3,336,530.40
 - TVL by chain: Ethereum $3,336,530.40
 
@@ -23,604 +23,394 @@ Silo Finance is a decentralized lending protocol that enables isolated, risk-iso
 
 Silo V1, V2, and V3 represent progressive versions of the core lending protocol, each using factory contracts to deploy isolated silos. The ETH and USDC families provide asset-specific configurations and vaults that integrate with these silos, while shared infrastructure like ChainlinkV3OracleFactory bridges V2 and V3 for price feeds.
 
+## Contract Surface Quality
+
+- Indexed contracts: 1839; live-surface contracts included: 1166 (520 live, 646 unknown).
+- Excluded by liveness: 653 inactive, 20 singleton, 0 uninitialized.
+- Deployment units: 0/10 live.
+- Detected codebases: none
+- Unverified dependencies: 2/68.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 21/134 (15.7%)
-- Verified + Unaudited implementations: 109
-- Verified by bytecode match: 7
-- Unverified implementations: 395
-- Unique implementations: 529
-- Raw deployments: 1839
+- Verified implementations audited: 21/98 (21.4%)
+- Verified + Unaudited implementations: 77
+- Verified by bytecode match: 0
+- Unverified implementations: 215
+- Unique implementations: 313
+- Raw deployments: 1166
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): $641,315.14
 - Latest audit: 2026-03 (fresh)
 - Staleness: 8 fresh, 1 aging, 0 stale, 1 unknown
-- Tier 1 coverage: 4.5% (Spearbit)
+- Tier 1 coverage: 6.1% (Spearbit)
 - Note: This protocol is classified as [unknown]. ASD of $641,315.14 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 21 | 15.7% | 2026-03 |
-| Spearbit | Tier 1 | 6 | 4.5% | 2026-03 |
+| unknown | Tier 2 | 21 | 21.4% | 2026-03 |
+| Spearbit | Tier 1 | 6 | 6.1% | 2026-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (18)
+### ✅ Verified + Audited (21)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SiloVault | core_logic | ethereum | 6 deployments: ethereum [`0x5362d5...0c5b9c`](./contracts/ethereum-1/0x5362d5086fdef73450145492a66f8ebf210c5b9c/); ethereum `0xccd487...604417`; arbitrum `0x6bb55a...ab181e`; arbitrum `0xdaca54...1298b1`; arbitrum `0xe49122...4c26d9`; avalanche `0xb6f3a9...370475` | ✅ Audited |
-| ERC4626Oracle | operational_periphery | ethereum | 4 deployments: ethereum [`0x08a52e...3f9849`](./contracts/ethereum-1/0x08a52ec31e0e981bbd64082224185e420d3f9849/); ethereum `0xa5478c...b82189`; arbitrum `0x18c4db...56302e`; avalanche `0xccd487...604417` | ✅ Audited |
-| ERC4626OracleHardcodeQuote | operational_periphery | arbitrum | 3 deployments: ethereum `0xd831ad...7694cf`; arbitrum [`0x72b387...35945f`](./contracts/arbitrum-42161/0x72b387cede7f25d24e9f139e2175bb80d135945f/); avalanche `0xb49329...398abd` | ✅ Audited |
-| GaugeHookReceiver | operational_periphery | arbitrum | 12 deployments: optimism `0x35665d...bc9045`; optimism `0xd9f14f...abe1e4`; optimism `0xed25da...df15bf`; sonic `0x757748...f0584e`; sonic `0x7940cb...1d3008`; sonic `0x9d33d4...4796ce`; arbitrum [`0x24c22f...591824`](./contracts/arbitrum-42161/0x24c22f582cfebff49d1f5a534e200001a4591824/); arbitrum `0x51de49...8ec689`; arbitrum `0xc43820...efa80f`; arbitrum `0xdbfd29...b1c000`; arbitrum `0xfbc289...fc0ce5`; arbitrum `0xfe3c19...b7b3ca` | ✅ Audited |
-| ManageableOracleFactory | operational_periphery | sonic | 5 deployments: ethereum `0x9ff077...876c8d`; ethereum `0xe07783...1356be`; sonic [`0x26dd1f...624d90`](./contracts/sonic-146/0x26dd1fd7a429ced75e5042fa20d80539a6624d90/); arbitrum `0xccd487...604417`; avalanche `0xb1d1b1...4603d4` | ✅ Audited |
-| OracleForQA | operational_periphery | arbitrum | 10 deployments: sonic `0x200ae3...2b4cc1`; sonic `0xd27853...4e544b`; sonic `0xff03cb...8597cd`; arbitrum [`0x109e3e...efcff3`](./contracts/arbitrum-42161/0x109e3e4ec770d4609aeecdcc2c0b5a8afdefcff3/); arbitrum `0x5bb409...cb0e11`; arbitrum `0xa761e5...42f818`; arbitrum `0xcedbca...5e52ab`; arbitrum `0xf626a8...6526a8`; arbitrum `0xfc07a5...9089f2`; avalanche `0x7f4910...bc067d` | ✅ Audited |
-| sAVAXOracle | operational_periphery | avalanche | 3 deployments: avalanche [`0x2950b4...bdffeb`](./contracts/avalanche-43114/0x2950b435a59425340ff82b2a5c9240e856bdffeb/); avalanche `0x4f65ba...04514f`; avalanche `0xf4a46d...5ad6f3` | ✅ Audited |
-| Silo | unknown | sonic | 73 deployments: ethereum `0x1de3ba...bd9bc2`; ethereum `0x1f39ed...99b7fe`; ethereum `0x370f2a...b07288`; ethereum `0x650b50...0f0d09`; ethereum `0x6543ee...3bbaaa`; ethereum `0x97d6d6...11d8bd`; ethereum `0xef1bc6...41024b`; optimism `0x7720ef...9f2ab6`; optimism `0x7ef305...08bd78`; optimism `0x931cf9...d735d3`; optimism `0xbc0131...e24c69`; optimism `0xd48313...5736da`; sonic [`0x0ab02d...3e06d4`](./contracts/sonic-146/0x0ab02dd08c1555d1a20c76a6ea30e3e36f3e06d4/); sonic `0x1a0894...9e1d51`; sonic `0x1c1791...13f0fb`; sonic `0x219656...aca2aa`; sonic `0x22a3cf...f7b581`; sonic `0x27968d...b104be`; sonic `0x390216...6a861f`; sonic `0x3baa43...4b89a2`; sonic `0x435ab3...c4dc06`; sonic `0x4935fa...86f8d0`; sonic `0x4c5526...178043`; sonic `0x501ee3...a25e4d`; sonic `0x5954ce...3ab2de`; sonic `0x5ea25a...265c46`; sonic `0x6e8c15...2e2c22`; sonic `0x75c550...23b66e`; sonic `0x76df75...04eedf`; sonic `0x85b027...7f2a29`; sonic `0x8c98b4...ca2a90`; sonic `0x8eee64...c0118a`; sonic `0xa1627a...bed4b1`; sonic `0xaf1bda...a26aa9`; sonic `0xb14124...66e43f`; sonic `0xc2b2e6...44f0e3`; sonic `0xc6ee9a...3142b4`; sonic `0xccddbb...25ba71`; sonic `0xcfbebc...3db22d`; sonic `0xe5b39b...2da3ac`; sonic `0xed9777...f40908`; arbitrum `0x0c21e5...5c75ce`; arbitrum `0x2433d6...8ad18a`; arbitrum `0x30aaa8...3a29dc`; arbitrum `0x370f2a...b07288`; arbitrum `0x38d712...a7a725`; arbitrum `0x3abf62...224b8b`; arbitrum `0x457d10...aa2860`; arbitrum `0x45e673...81def5`; arbitrum `0x58274c...9eba36`; arbitrum `0x8ed9d9...4943a7`; arbitrum `0x92b70a...7940df`; arbitrum `0x9b550b...766238`; arbitrum `0xa69fa9...c78f49`; arbitrum `0xacb743...04f6f9`; arbitrum `0xad1875...11b9bf`; arbitrum `0xc216df...ac2535`; arbitrum `0xc29539...7c977f`; arbitrum `0xd9393f...2eabb5`; arbitrum `0xe2bd59...6d4e41`; arbitrum `0xe30369...220d95`; arbitrum `0xe8130a...c7a500`; arbitrum `0xf5d7d0...8d1144`; avalanche `0x147857...0ddae8`; avalanche `0x2c7e81...e26441`; avalanche `0x4a6c34...0737a6`; avalanche `0x4c5526...178043`; avalanche `0x672b77...d321a6`; avalanche `0x7437ac...13e2f1`; avalanche `0x9c4d48...e603f3`; avalanche `0xe0fc62...5a63f7`; avalanche `0xe3ae3f...7e8a87`; avalanche `0xf380f0...147004` | ✅ Audited |
-| SiloConfig | governance | ethereum | 4 deployments: ethereum [`0xad1875...11b9bf`](./contracts/ethereum-1/0xad1875af7e720e0058c27466a65372533b11b9bf/); ethereum `0xae01a8...faf7f8`; ethereum `0xf8d32d...b2c09d`; ethereum `0xfaa8b2...59357a` | ✅ Audited |
-| SiloDeployer | unknown | sonic | 71 deployments: ethereum `0x1a5bba...e30316`; ethereum `0x3fc40c...40545f`; ethereum `0x5418cc...ed558c`; ethereum `0x55c5b7...cd1372`; ethereum `0x734eec...0c3438`; ethereum `0xa95314...0bfe3a`; ethereum `0xb2f453...f30a00`; ethereum `0xb627bd...8338f8`; ethereum `0xc4832a...16311d`; ethereum `0xcdd4b5...168085`; ethereum `0xde3a6c...da633a`; optimism `0x12d73b...b7dd12`; optimism `0x1ff90e...f7e1e5`; optimism `0x557d83...b36937`; optimism `0x6225ef...4523dd`; optimism `0x8b8ace...d358e6`; sonic [`0x03e03b...b54279`](./contracts/sonic-146/0x03e03b56bd24e0b3b206403596a40cf48fb54279/); sonic `0x074388...43dfcc`; sonic `0x09402f...c0ae55`; sonic `0x1f39ed...99b7fe`; sonic `0x228a86...91d11c`; sonic `0x2efa5c...519c23`; sonic `0x363c09...a16b00`; sonic `0x3c9737...6f267e`; sonic `0x3ce73c...66d967`; sonic `0x44e9c6...b32d3d`; sonic `0x78330c...54f944`; sonic `0x7c7b42...ae8a8d`; sonic `0x931e59...3b9bde`; sonic `0x95a7bc...66affd`; sonic `0xa41868...c4e720`; sonic `0xd3e800...007116`; sonic `0xfcc5c4...953a23`; arbitrum `0x128982...0f9013`; arbitrum `0x1bdebe...9bc2f4`; arbitrum `0x1d244e...090ec5`; arbitrum `0x456af4...ddc884`; arbitrum `0x67d12c...80b167`; arbitrum `0x72ed06...039a5d`; arbitrum `0x734eec...0c3438`; arbitrum `0x74a421...cea85e`; arbitrum `0x8c3024...26db98`; arbitrum `0xa33b15...27b540`; arbitrum `0xa77baa...0aad00`; arbitrum `0xb30ee2...9beee5`; arbitrum `0xb8e5a3...304c10`; arbitrum `0xc6a7a0...72952e`; arbitrum `0xc8cd42...ad09ba`; arbitrum `0xc95149...a193b7`; arbitrum `0xc95cce...a9f521`; arbitrum `0xcc01a1...05efcf`; arbitrum `0xcc0fc2...8f18b8`; arbitrum `0xd248d7...a06658`; arbitrum `0xd37a51...d06aab`; arbitrum `0xd807fd...f24b21`; arbitrum `0xd962ff...b94518`; arbitrum `0xdb3062...1f6b45`; arbitrum `0xe09bd7...64486b`; arbitrum `0xf2d1f6...29ef7b`; arbitrum `0xf58754...bcdc88`; avalanche `0x2976d3...d49d30`; avalanche `0x3ce73c...66d967`; avalanche `0x3d1fe4...1ccd39`; avalanche `0x5660e3...d3bcbc`; avalanche `0x85b027...7f2a29`; avalanche `0xa59340...d1bbde`; avalanche `0xafbb48...7465e9`; avalanche `0xba4a54...39344e`; avalanche `0xcf8d34...9a8992`; avalanche `0xde67a8...4450cf`; avalanche `0xfdc13d...65ab47` | ✅ Audited |
-| SiloHookV2 | unknown | arbitrum | 26 deployments: ethereum `0x74a421...cea85e`; ethereum `0x9673d1...e45f07`; ethereum `0x9e6bd1...04301b`; ethereum `0xabcf5a...e08f22`; ethereum `0xda3975...330b85`; sonic `0x491961...9a9811`; sonic `0x8e1948...952126`; sonic `0x9e6bd1...04301b`; sonic `0xe9e4f5...b09283`; sonic `0xee6845...2ddedd`; sonic `0xf2d603...8cbcff`; arbitrum [`0x087ae3...c42697`](./contracts/arbitrum-42161/0x087ae3df6b4316e88a674cb691dfd644a6c42697/); arbitrum `0x2273c8...c7eded`; arbitrum `0x324e69...e31064`; arbitrum `0x491961...9a9811`; arbitrum `0x7f4910...bc067d`; arbitrum `0xca848f...cd773f`; arbitrum `0xe3ae3f...7e8a87`; arbitrum `0xf81d90...be58ad`; avalanche `0x5992e9...b1e494`; avalanche `0x6f3251...4f395f`; avalanche `0x8e1948...952126`; avalanche `0xe12a7a...9412c9`; avalanche `0xeb5a0e...5aa335`; avalanche `0xf2d603...8cbcff`; avalanche `0xff03cb...8597cd` | ✅ Audited |
-| SiloHookV3 | unknown | avalanche | 23 deployments: ethereum `0x2458ee...bdd845`; ethereum `0x5660e3...d3bcbc`; ethereum `0x6870a4...45db5e`; ethereum `0x889be5...8dbdf0`; ethereum `0x8c3024...26db98`; sonic `0x8c3024...26db98`; sonic `0xa8c5eb...78b390`; sonic `0xabcf5a...e08f22`; sonic `0xc759de...213c39`; sonic `0xd9393f...2eabb5`; arbitrum `0x83d787...c6c7ff`; arbitrum `0xa678ae...76ec9f`; arbitrum `0xc759de...213c39`; arbitrum `0xde67a8...4450cf`; arbitrum `0xe28a8e...993cd7`; arbitrum `0xea5359...45687b`; arbitrum `0xeb3c9f...07a21f`; avalanche [`0x04e209...e88049`](./contracts/avalanche-43114/0x04e209d70f7f834a7a5ab7bd31f48827f0e88049/); avalanche `0x087ae3...c42697`; avalanche `0x2aee31...20ea2a`; avalanche `0x2c650c...8a0678`; avalanche `0xabcf5a...e08f22`; avalanche `0xd27853...4e544b` | ✅ Audited |
-| SiloIncentivesController | governance | arbitrum | 19 deployments: ethereum `0x361384...6b6461`; ethereum `0x45adb0...9b6c3f`; ethereum `0x4d367e...6b638c`; ethereum `0x6c1603...a3c229`; ethereum `0xb14f20...a220e4`; optimism `0x6b2c80...20da7b`; optimism `0x847d94...7cb622`; optimism `0x9e286a...b8dc38`; base `0x5825e9...10860b`; base `0x626e6a...e3100e`; base `0xbf1b71...4f95ec`; arbitrum [`0x202346...40ba37`](./contracts/arbitrum-42161/0x2023464f0c103541e00067673c504304d140ba37/); arbitrum `0x499987...74fce8`; arbitrum `0x7e5bfb...1f8d20`; arbitrum `0xa64aa6...be8991`; arbitrum `0xb03a9c...83bb9d`; arbitrum `0xbdbbf7...37facf`; arbitrum `0xcc4933...c9ebcf`; arbitrum `0xe98d00...b205ee` | ✅ Audited |
-| SiloIncentivesControllerCompatible | governance | ethereum | [`0xe55eef...694eac`](./contracts/ethereum-1/0xe55eef968d564bef3aded428335badc864694eac/) | ✅ Audited |
-| SiloIncentivesControllerFactory | registry | avalanche | 31 deployments: ethereum `0x2a3ba3...05e3e2`; ethereum `0x57448f...01b151`; ethereum `0xbc4ee0...6f3f75`; ethereum `0xc27b33...7d97e4`; ethereum `0xf040ca...0f0d69`; optimism `0x3b75af...edc320`; optimism `0x9a8c03...199e14`; optimism `0xc75d8e...2fa1e8`; sonic `0x22fbf3...8460dd`; sonic `0x43c70c...65e923`; sonic `0x464785...0858d0`; sonic `0x9ea286...e21a10`; sonic `0xcdd4b5...168085`; sonic `0xcf9452...6bc763`; sonic `0xd55a06...f21fba`; sonic `0xf2c9fb...884d7d`; arbitrum `0x1c5286...9e44da`; arbitrum `0x2c650c...8a0678`; arbitrum `0x2efa5c...519c23`; arbitrum `0x390216...6a861f`; arbitrum `0x66cfbf...27bab8`; arbitrum `0x7c355e...f17374`; arbitrum `0x8e5715...bff5e8`; arbitrum `0xdce8da...6285b3`; arbitrum `0xe569bd...81733f`; avalanche [`0x0f0768...8eb5f6`](./contracts/avalanche-43114/0x0f07685a92c9b5c63a9e9af205948beceb8eb5f6/); avalanche `0x2375eb...887493`; avalanche `0x2a3ba3...05e3e2`; avalanche `0x66cfbf...27bab8`; avalanche `0xa013e7...afcfef`; avalanche `0xd9393f...2eabb5` | ✅ Audited |
-| SiloLens | periphery | avalanche | 76 deployments: ethereum `0x0e466f...1e76e9`; ethereum `0x27a969...384688`; ethereum `0x2c47f0...c180a1`; ethereum `0x32a4bc...fff2df`; ethereum `0x331243...33cc1c`; ethereum `0x80e3f3...cdee8e`; ethereum `0xb2d0fc...16ff2a`; ethereum `0xb47713...68a30c`; ethereum `0xc0e1bc...68b22b`; ethereum `0xec7ef4...bd28c9`; ethereum `0xf12c37...8d92ea`; ethereum `0xf2d603...8cbcff`; ethereum `0xf58754...bcdc88`; ethereum `0xfd1fd3...be6d72`; optimism `0x2003c7...1c9752`; optimism `0x49051a...5ee734`; optimism `0x50fba5...5dc21f`; optimism `0x812033...100fb6`; optimism `0x944bbd...fd8ec1`; optimism `0xb7d391...64cd0a`; optimism `0xd3de08...414fed`; optimism `0xe466eb...c4a01f`; sonic `0x0b3f8e...6acac2`; sonic `0x205e95...e88516`; sonic `0x4d2503...6c6a5f`; sonic `0x50967d...40b687`; sonic `0x52ad68...452cc2`; sonic `0x5a6694...2488a6`; sonic `0x5f351a...61d6ea`; sonic `0x925d54...15126a`; sonic `0x9e286a...b8dc38`; sonic `0x9f2647...7a638e`; sonic `0x9ff91e...b6a39a`; sonic `0xad84b0...9dfcfa`; sonic `0xb6adbb...70b198`; sonic `0xb95ad4...822c69`; sonic `0xdce8da...6285b3`; sonic `0xe05966...ce3b5e`; sonic `0xea5359...45687b`; sonic `0xef1bc6...41024b`; sonic `0xf040ca...0f0d69`; sonic `0xf5828a...42ca26`; sonic `0xf8cdb6...e4f615`; base `0x196d31...e123fd`; base `0xe89d07...c16c0f`; arbitrum `0x07b94e...15be47`; arbitrum `0x0ce273...81181a`; arbitrum `0x2458ee...bdd845`; arbitrum `0x2dd3fb...63a6e9`; arbitrum `0x363c09...a16b00`; arbitrum `0x386fd4...ebf826`; arbitrum `0x39f7ee...eee1cf`; arbitrum `0x81f55f...e503ab`; arbitrum `0x8fbe82...9d739f`; arbitrum `0xaece49...1277a9`; arbitrum `0xb627bd...8338f8`; arbitrum `0xbdb843...5d9536`; arbitrum `0xbdd37b...21d089`; arbitrum `0xbfde5f...6b8d51`; arbitrum `0xc27b33...7d97e4`; arbitrum `0xd4fab8...1fe101`; arbitrum `0xdd318a...6fa874`; arbitrum `0xdd3efa...a4a740`; arbitrum `0xe07783...1356be`; arbitrum `0xf0b021...539336`; arbitrum `0xf56cca...22aa96`; avalanche [`0x02c7b5...7d50f8`](./contracts/avalanche-43114/0x02c7b50b210a54390405f2ebb77c7697767d50f8/); avalanche `0x228a86...91d11c`; avalanche `0x2c47f0...c180a1`; avalanche `0x319f71...04c0b8`; avalanche `0x5c1d59...5ae5d1`; avalanche `0x626b6f...9f6c0a`; avalanche `0xa0380d...4dd521`; avalanche `0xb58b33...f17adf`; avalanche `0xca22fb...95c51c`; avalanche `0xe09bd7...64486b` | ✅ Audited |
-| SiloRouterV2Implementation | adapter | ethereum | 27 deployments: ethereum [`0x024b64...560a6f`](./contracts/ethereum-1/0x024b641f3582f5842714a8fd25d62be536560a6f/); ethereum `0x12152d...a8ac4b`; ethereum `0x16876a...503b1c`; ethereum `0x5a6694...2488a6`; ethereum `0x9ea286...e21a10`; ethereum `0x9f6a37...7cbe3a`; ethereum `0xd2bf58...55a235`; optimism `0x237556...99ba90`; optimism `0x581e1a...1fa8ab`; sonic `0x2c47f0...c180a1`; sonic `0x7eae43...846507`; sonic `0x9ee21d...748024`; sonic `0x9fa3c1...7b1e50`; sonic `0xe8b040...fdfa99`; sonic `0xf56cca...22aa96`; sonic `0xf58754...bcdc88`; arbitrum `0x02adc7...1716cf`; arbitrum `0x2aec24...2c1fd1`; arbitrum `0x57b02a...5d33d4`; arbitrum `0x6ac197...2cfb30`; arbitrum `0x8d3413...359883`; arbitrum `0xd03900...bdf623`; arbitrum `0xd9070b...1ac001`; avalanche `0x16876a...503b1c`; avalanche `0x268fc6...e636ce`; avalanche `0x4b8cbf...6457b6`; avalanche `0x7940cb...1d3008` | ✅ Audited |
-| SiloVaultsFactory | registry | sonic | 30 deployments: ethereum `0x9a5bb9...60a78b`; ethereum `0xb30ee2...9beee5`; ethereum `0xe09bd7...64486b`; ethereum `0xec09b9...c8a8cb`; ethereum `0xffd3cb...420506`; optimism `0x331243...33cc1c`; optimism `0x535f00...ea6d58`; sonic [`0x015bbc...4cf76d`](./contracts/sonic-146/0x015bbc6ca60390f3b48c63773f1b7022b14cf76d/); sonic `0x116c85...0d7b47`; sonic `0x144f21...50c59b`; sonic `0x178145...d23a27`; sonic `0x40734f...96c8de`; sonic `0x4b8cbf...6457b6`; sonic `0x4e125e...3d5dc6`; sonic `0x565193...a60d45`; sonic `0xbbdb53...ca5b82`; sonic `0xe3491e...a6a30b`; sonic `0xe4ac77...b1dee6`; arbitrum `0x2976d3...d49d30`; arbitrum `0x37fbc9...3588f2`; arbitrum `0x911e6e...8fccc2`; arbitrum `0xcae327...0fbde4`; arbitrum `0xcf9452...6bc763`; arbitrum `0xe4c72e...783841`; arbitrum `0xf2d131...223e70`; arbitrum `0xf8cdb6...e4f615`; arbitrum `0xfa2849...6999d9`; arbitrum `0xffd3cb...420506`; avalanche `0x6ec69e...f46bd7`; avalanche `0xb38182...0e3409` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SiloVault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x5362d5...0c5b9c`](./contracts/ethereum-1/0x5362d5086fdef73450145492a66f8ebf210c5b9c/); ethereum `0xccd487...604417`; arbitrum `0x6bb55a...ab181e`; arbitrum `0xdaca54...1298b1`; arbitrum `0xe49122...4c26d9`; avalanche `0xb6f3a9...370475` | ✅ Audited |
+| ERC4626Oracle | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x08a52e...3f9849`](./contracts/ethereum-1/0x08a52ec31e0e981bbd64082224185e420d3f9849/); ethereum `0xa5478c...b82189`; arbitrum `0x18c4db...56302e`; avalanche `0xccd487...604417` | ✅ Audited |
+| ERC4626OracleHardcodeQuote | operational_periphery | arbitrum | n/a | 3 deployments: ethereum `0xd831ad...7694cf`; arbitrum [`0x72b387...35945f`](./contracts/arbitrum-42161/0x72b387cede7f25d24e9f139e2175bb80d135945f/); avalanche `0xb49329...398abd` | ✅ Audited |
+| GaugeHookReceiver | operational_periphery | arbitrum | n/a | 6 deployments: arbitrum [`0x24c22f...591824`](./contracts/arbitrum-42161/0x24c22f582cfebff49d1f5a534e200001a4591824/); arbitrum `0x51de49...8ec689`; arbitrum `0xc43820...efa80f`; arbitrum `0xdbfd29...b1c000`; arbitrum `0xfbc289...fc0ce5`; arbitrum `0xfe3c19...b7b3ca` | ✅ Audited |
+| ManageableOracleFactory | operational_periphery | sonic | n/a | 5 deployments: ethereum `0x9ff077...876c8d`; ethereum `0xe07783...1356be`; sonic [`0x26dd1f...624d90`](./contracts/sonic-146/0x26dd1fd7a429ced75e5042fa20d80539a6624d90/); arbitrum `0xccd487...604417`; avalanche `0xb1d1b1...4603d4` | ✅ Audited |
+| OracleForQA | operational_periphery | arbitrum | n/a | 10 deployments: sonic `0x200ae3...2b4cc1`; sonic `0xd27853...4e544b`; sonic `0xff03cb...8597cd`; arbitrum [`0x109e3e...efcff3`](./contracts/arbitrum-42161/0x109e3e4ec770d4609aeecdcc2c0b5a8afdefcff3/); arbitrum `0x5bb409...cb0e11`; arbitrum `0xa761e5...42f818`; arbitrum `0xcedbca...5e52ab`; arbitrum `0xf626a8...6526a8`; arbitrum `0xfc07a5...9089f2`; avalanche `0x7f4910...bc067d` | ✅ Audited |
+| PartialLiquidation | unknown | arbitrum | n/a | 4 deployments: arbitrum [`0x4c8fc0...6189d6`](./contracts/arbitrum-42161/0x4c8fc0691699710524d904b1d8de4cfb216189d6/); arbitrum `0xb021b1...cf4da4`; arbitrum `0xb55fcb...226250`; arbitrum `0xef1bc6...41024b` | ✅ Audited |
+| sAVAXOracle | operational_periphery | avalanche | n/a | 3 deployments: avalanche [`0x2950b4...bdffeb`](./contracts/avalanche-43114/0x2950b435a59425340ff82b2a5c9240e856bdffeb/); avalanche `0x4f65ba...04514f`; avalanche `0xf4a46d...5ad6f3` | ✅ Audited |
+| ShareDebtToken | token | arbitrum | n/a | 33 deployments: ethereum `0x977e9b...3439cf`; ethereum `0xa69fa9...c78f49`; ethereum `0xc65de3...430354`; ethereum `0xd9070b...1ac001`; sonic `0x2ca8f5...efef3c`; sonic `0x4a6c34...0737a6`; sonic `0x9e64f0...013d0e`; sonic `0xf0c5ea...cfa0d3`; arbitrum [`0x058a54...3cd436`](./contracts/arbitrum-42161/0x058a54bf6560038ca2cb58d6cdaf17c5d93cd436/); arbitrum `0x06264d...270d34`; arbitrum `0x15f7ff...eb3f2c`; arbitrum `0x2cbb8b...46ff32`; arbitrum `0x3c9737...6f267e`; arbitrum `0x3f7966...3e7f55`; arbitrum `0x40734f...96c8de`; arbitrum `0x4e125e...3d5dc6`; arbitrum `0x53b462...1f1b8b`; arbitrum `0x672f1a...5fd159`; arbitrum `0x6f29fe...1efe4a`; arbitrum `0x78d692...88a4aa`; arbitrum `0x8cb547...f3b5ba`; arbitrum `0xae26ae...479d68`; arbitrum `0xcf2385...4493a7`; arbitrum `0xcf8278...bf8627`; arbitrum `0xd27853...4e544b`; arbitrum `0xee2a95...ec173b`; arbitrum `0xee6845...2ddedd`; avalanche `0x1f39ed...99b7fe`; avalanche `0x2ca8f5...efef3c`; avalanche `0x5420ef...37acea`; avalanche `0x7dc39c...9202ea`; avalanche `0x9d33d4...4796ce`; avalanche `0xf8b378...db4e6d` | ✅ Audited |
+| Silo | unknown | sonic | n/a | 58 deployments: ethereum `0x1de3ba...bd9bc2`; ethereum `0x1f39ed...99b7fe`; ethereum `0x650b50...0f0d09`; ethereum `0x97d6d6...11d8bd`; sonic [`0x0ab02d...3e06d4`](./contracts/sonic-146/0x0ab02dd08c1555d1a20c76a6ea30e3e36f3e06d4/); sonic `0x1a0894...9e1d51`; sonic `0x1c1791...13f0fb`; sonic `0x219656...aca2aa`; sonic `0x27968d...b104be`; sonic `0x390216...6a861f`; sonic `0x4935fa...86f8d0`; sonic `0x4c5526...178043`; sonic `0x501ee3...a25e4d`; sonic `0x5954ce...3ab2de`; sonic `0x5ea25a...265c46`; sonic `0x6e8c15...2e2c22`; sonic `0x75c550...23b66e`; sonic `0x76df75...04eedf`; sonic `0x8c98b4...ca2a90`; sonic `0xa1627a...bed4b1`; sonic `0xaf1bda...a26aa9`; sonic `0xb14124...66e43f`; sonic `0xc6ee9a...3142b4`; sonic `0xccddbb...25ba71`; sonic `0xe5b39b...2da3ac`; sonic `0xed9777...f40908`; arbitrum `0x0c21e5...5c75ce`; arbitrum `0x2433d6...8ad18a`; arbitrum `0x30aaa8...3a29dc`; arbitrum `0x370f2a...b07288`; arbitrum `0x38d712...a7a725`; arbitrum `0x3abf62...224b8b`; arbitrum `0x457d10...aa2860`; arbitrum `0x45e673...81def5`; arbitrum `0x58274c...9eba36`; arbitrum `0x8ed9d9...4943a7`; arbitrum `0x92b70a...7940df`; arbitrum `0x9b550b...766238`; arbitrum `0xa69fa9...c78f49`; arbitrum `0xacb743...04f6f9`; arbitrum `0xad1875...11b9bf`; arbitrum `0xc216df...ac2535`; arbitrum `0xc29539...7c977f`; arbitrum `0xd9393f...2eabb5`; arbitrum `0xe2bd59...6d4e41`; arbitrum `0xe30369...220d95`; arbitrum `0xe8130a...c7a500`; arbitrum `0xf5d7d0...8d1144`; avalanche `0x147857...0ddae8`; avalanche `0x2c7e81...e26441`; avalanche `0x4a6c34...0737a6`; avalanche `0x4c5526...178043`; avalanche `0x672b77...d321a6`; avalanche `0x7437ac...13e2f1`; avalanche `0x9c4d48...e603f3`; avalanche `0xe0fc62...5a63f7`; avalanche `0xe3ae3f...7e8a87`; avalanche `0xf380f0...147004` | ✅ Audited |
+| SiloConfig | governance | ethereum | n/a | 4 deployments: ethereum [`0xad1875...11b9bf`](./contracts/ethereum-1/0xad1875af7e720e0058c27466a65372533b11b9bf/); ethereum `0xae01a8...faf7f8`; ethereum `0xf8d32d...b2c09d`; ethereum `0xfaa8b2...59357a` | ✅ Audited |
+| SiloDeployer | unknown | sonic | n/a | 59 deployments: ethereum `0x1a5bba...e30316`; ethereum `0x3fc40c...40545f`; ethereum `0x5418cc...ed558c`; ethereum `0x55c5b7...cd1372`; ethereum `0xa95314...0bfe3a`; ethereum `0xb2f453...f30a00`; ethereum `0xb627bd...8338f8`; ethereum `0xc4832a...16311d`; ethereum `0xcdd4b5...168085`; ethereum `0xde3a6c...da633a`; sonic [`0x03e03b...b54279`](./contracts/sonic-146/0x03e03b56bd24e0b3b206403596a40cf48fb54279/); sonic `0x09402f...c0ae55`; sonic `0x1f39ed...99b7fe`; sonic `0x228a86...91d11c`; sonic `0x2efa5c...519c23`; sonic `0x363c09...a16b00`; sonic `0x3c9737...6f267e`; sonic `0x3ce73c...66d967`; sonic `0x78330c...54f944`; sonic `0x931e59...3b9bde`; sonic `0x95a7bc...66affd`; arbitrum `0x128982...0f9013`; arbitrum `0x1bdebe...9bc2f4`; arbitrum `0x1d244e...090ec5`; arbitrum `0x456af4...ddc884`; arbitrum `0x67d12c...80b167`; arbitrum `0x72ed06...039a5d`; arbitrum `0x734eec...0c3438`; arbitrum `0x74a421...cea85e`; arbitrum `0x8c3024...26db98`; arbitrum `0xa33b15...27b540`; arbitrum `0xa77baa...0aad00`; arbitrum `0xb30ee2...9beee5`; arbitrum `0xb8e5a3...304c10`; arbitrum `0xc6a7a0...72952e`; arbitrum `0xc8cd42...ad09ba`; arbitrum `0xc95149...a193b7`; arbitrum `0xc95cce...a9f521`; arbitrum `0xcc01a1...05efcf`; arbitrum `0xcc0fc2...8f18b8`; arbitrum `0xd248d7...a06658`; arbitrum `0xd37a51...d06aab`; arbitrum `0xd807fd...f24b21`; arbitrum `0xd962ff...b94518`; arbitrum `0xdb3062...1f6b45`; arbitrum `0xe09bd7...64486b`; arbitrum `0xf2d1f6...29ef7b`; arbitrum `0xf58754...bcdc88`; avalanche `0x2976d3...d49d30`; avalanche `0x3ce73c...66d967`; avalanche `0x3d1fe4...1ccd39`; avalanche `0x5660e3...d3bcbc`; avalanche `0x85b027...7f2a29`; avalanche `0xa59340...d1bbde`; avalanche `0xafbb48...7465e9`; avalanche `0xba4a54...39344e`; avalanche `0xcf8d34...9a8992`; avalanche `0xde67a8...4450cf`; avalanche `0xfdc13d...65ab47` | ✅ Audited |
+| SiloFactory | registry | avalanche | n/a | 30 deployments: ethereum `0x1dab4a...c3b48f`; ethereum `0x2534b2...7b96be`; ethereum `0xccf804...8878f8`; optimism `0xfa773e...236bc5`; sonic `0x4e9de3...be9203`; sonic `0x55c5b7...cd1372`; sonic `0xf81d90...be58ad`; base `0x13b7f8...2bb253`; base `0x2899b0...2462b5`; base `0x408822...d36f2b`; base `0xa40111...9a982a`; arbitrum `0x384dc7...5b657c`; arbitrum `0x416648...74b719`; arbitrum `0x4246c6...825dcb`; arbitrum `0x44347a...eda0a0`; arbitrum `0x504b8c...f9269f`; arbitrum `0x5418cc...ed558c`; arbitrum `0x621eac...693a33`; arbitrum `0x9ff077...876c8d`; arbitrum `0xae9461...132b40`; arbitrum `0xafd8f7...3b6fe2`; arbitrum `0xb158cb...f85b29`; arbitrum `0xb72007...e08122`; arbitrum `0xf7dc97...521442`; avalanche [`0x0f9d4f...4c5f39`](./contracts/avalanche-43114/0x0f9d4fa99a0ca3c3c0dedd287531c04e054c5f39/); avalanche `0x55c5b7...cd1372`; avalanche `0x92cecb...4c6ff9`; avalanche `0x931e59...3b9bde`; avalanche `0x9e64f0...013d0e`; avalanche `0xf1268f...487dd1` | ✅ Audited |
+| SiloHookV2 | unknown | arbitrum | n/a | 26 deployments: ethereum `0x74a421...cea85e`; ethereum `0x9673d1...e45f07`; ethereum `0x9e6bd1...04301b`; ethereum `0xabcf5a...e08f22`; ethereum `0xda3975...330b85`; sonic `0x491961...9a9811`; sonic `0x8e1948...952126`; sonic `0x9e6bd1...04301b`; sonic `0xe9e4f5...b09283`; sonic `0xee6845...2ddedd`; sonic `0xf2d603...8cbcff`; arbitrum [`0x087ae3...c42697`](./contracts/arbitrum-42161/0x087ae3df6b4316e88a674cb691dfd644a6c42697/); arbitrum `0x2273c8...c7eded`; arbitrum `0x324e69...e31064`; arbitrum `0x491961...9a9811`; arbitrum `0x7f4910...bc067d`; arbitrum `0xca848f...cd773f`; arbitrum `0xe3ae3f...7e8a87`; arbitrum `0xf81d90...be58ad`; avalanche `0x5992e9...b1e494`; avalanche `0x6f3251...4f395f`; avalanche `0x8e1948...952126`; avalanche `0xe12a7a...9412c9`; avalanche `0xeb5a0e...5aa335`; avalanche `0xf2d603...8cbcff`; avalanche `0xff03cb...8597cd` | ✅ Audited |
+| SiloHookV3 | unknown | avalanche | n/a | 23 deployments: ethereum `0x2458ee...bdd845`; ethereum `0x5660e3...d3bcbc`; ethereum `0x6870a4...45db5e`; ethereum `0x889be5...8dbdf0`; ethereum `0x8c3024...26db98`; sonic `0x8c3024...26db98`; sonic `0xa8c5eb...78b390`; sonic `0xabcf5a...e08f22`; sonic `0xc759de...213c39`; sonic `0xd9393f...2eabb5`; arbitrum `0x83d787...c6c7ff`; arbitrum `0xa678ae...76ec9f`; arbitrum `0xc759de...213c39`; arbitrum `0xde67a8...4450cf`; arbitrum `0xe28a8e...993cd7`; arbitrum `0xea5359...45687b`; arbitrum `0xeb3c9f...07a21f`; avalanche [`0x04e209...e88049`](./contracts/avalanche-43114/0x04e209d70f7f834a7a5ab7bd31f48827f0e88049/); avalanche `0x087ae3...c42697`; avalanche `0x2aee31...20ea2a`; avalanche `0x2c650c...8a0678`; avalanche `0xabcf5a...e08f22`; avalanche `0xd27853...4e544b` | ✅ Audited |
+| SiloIncentivesController | governance | arbitrum | n/a | 15 deployments: ethereum `0x361384...6b6461`; ethereum `0x6c1603...a3c229`; ethereum `0xb14f20...a220e4`; optimism `0x6b2c80...20da7b`; base `0x5825e9...10860b`; base `0x626e6a...e3100e`; base `0xbf1b71...4f95ec`; arbitrum [`0x202346...40ba37`](./contracts/arbitrum-42161/0x2023464f0c103541e00067673c504304d140ba37/); arbitrum `0x499987...74fce8`; arbitrum `0x7e5bfb...1f8d20`; arbitrum `0xa64aa6...be8991`; arbitrum `0xb03a9c...83bb9d`; arbitrum `0xbdbbf7...37facf`; arbitrum `0xcc4933...c9ebcf`; arbitrum `0xe98d00...b205ee` | ✅ Audited |
+| SiloIncentivesControllerCompatible | governance | ethereum | n/a | [`0xe55eef...694eac`](./contracts/ethereum-1/0xe55eef968d564bef3aded428335badc864694eac/) | ✅ Audited |
+| SiloIncentivesControllerFactory | registry | avalanche | n/a | 22 deployments: ethereum `0x2a3ba3...05e3e2`; ethereum `0x57448f...01b151`; ethereum `0xbc4ee0...6f3f75`; sonic `0x43c70c...65e923`; sonic `0x9ea286...e21a10`; sonic `0xcdd4b5...168085`; sonic `0xd55a06...f21fba`; arbitrum `0x1c5286...9e44da`; arbitrum `0x2c650c...8a0678`; arbitrum `0x2efa5c...519c23`; arbitrum `0x390216...6a861f`; arbitrum `0x66cfbf...27bab8`; arbitrum `0x7c355e...f17374`; arbitrum `0x8e5715...bff5e8`; arbitrum `0xdce8da...6285b3`; arbitrum `0xe569bd...81733f`; avalanche [`0x0f0768...8eb5f6`](./contracts/avalanche-43114/0x0f07685a92c9b5c63a9e9af205948beceb8eb5f6/); avalanche `0x2375eb...887493`; avalanche `0x2a3ba3...05e3e2`; avalanche `0x66cfbf...27bab8`; avalanche `0xa013e7...afcfef`; avalanche `0xd9393f...2eabb5` | ✅ Audited |
+| SiloLens | periphery | avalanche | n/a | 50 deployments: ethereum `0x27a969...384688`; ethereum `0x2c47f0...c180a1`; ethereum `0x80e3f3...cdee8e`; ethereum `0xb2d0fc...16ff2a`; ethereum `0xb47713...68a30c`; ethereum `0xc0e1bc...68b22b`; ethereum `0xf2d603...8cbcff`; ethereum `0xf58754...bcdc88`; optimism `0x812033...100fb6`; optimism `0x944bbd...fd8ec1`; sonic `0x4d2503...6c6a5f`; sonic `0x52ad68...452cc2`; sonic `0x9f2647...7a638e`; sonic `0xad84b0...9dfcfa`; sonic `0xb95ad4...822c69`; sonic `0xdce8da...6285b3`; sonic `0xea5359...45687b`; base `0x196d31...e123fd`; base `0xe89d07...c16c0f`; arbitrum `0x07b94e...15be47`; arbitrum `0x0ce273...81181a`; arbitrum `0x2458ee...bdd845`; arbitrum `0x2dd3fb...63a6e9`; arbitrum `0x363c09...a16b00`; arbitrum `0x386fd4...ebf826`; arbitrum `0x39f7ee...eee1cf`; arbitrum `0x81f55f...e503ab`; arbitrum `0x8fbe82...9d739f`; arbitrum `0xaece49...1277a9`; arbitrum `0xb627bd...8338f8`; arbitrum `0xbdb843...5d9536`; arbitrum `0xbdd37b...21d089`; arbitrum `0xbfde5f...6b8d51`; arbitrum `0xc27b33...7d97e4`; arbitrum `0xd4fab8...1fe101`; arbitrum `0xdd318a...6fa874`; arbitrum `0xdd3efa...a4a740`; arbitrum `0xe07783...1356be`; arbitrum `0xf0b021...539336`; arbitrum `0xf56cca...22aa96`; avalanche [`0x02c7b5...7d50f8`](./contracts/avalanche-43114/0x02c7b50b210a54390405f2ebb77c7697767d50f8/); avalanche `0x228a86...91d11c`; avalanche `0x2c47f0...c180a1`; avalanche `0x319f71...04c0b8`; avalanche `0x5c1d59...5ae5d1`; avalanche `0x626b6f...9f6c0a`; avalanche `0xa0380d...4dd521`; avalanche `0xb58b33...f17adf`; avalanche `0xca22fb...95c51c`; avalanche `0xe09bd7...64486b` | ✅ Audited |
+| SiloRouterV2Implementation | adapter | arbitrum | n/a | 12 deployments: ethereum `0xd2bf58...55a235`; optimism `0x581e1a...1fa8ab`; sonic `0x2c47f0...c180a1`; sonic `0x9ee21d...748024`; arbitrum [`0x02adc7...1716cf`](./contracts/arbitrum-42161/0x02adc7b2a7e23a325c0a0386ea787b853b1716cf/); arbitrum `0x2aec24...2c1fd1`; arbitrum `0x57b02a...5d33d4`; arbitrum `0x6ac197...2cfb30`; arbitrum `0xd9070b...1ac001`; avalanche `0x16876a...503b1c`; avalanche `0x268fc6...e636ce`; avalanche `0x4b8cbf...6457b6` | ✅ Audited |
+| SiloVaultsFactory | registry | arbitrum | n/a | 16 deployments: ethereum `0x9a5bb9...60a78b`; ethereum `0xe09bd7...64486b`; ethereum `0xffd3cb...420506`; sonic `0x4b8cbf...6457b6`; arbitrum [`0x2976d3...d49d30`](./contracts/arbitrum-42161/0x2976d3ea35adcd185bbf79b201424f9607d49d30/); arbitrum `0x37fbc9...3588f2`; arbitrum `0x911e6e...8fccc2`; arbitrum `0xcae327...0fbde4`; arbitrum `0xcf9452...6bc763`; arbitrum `0xe4c72e...783841`; arbitrum `0xf2d131...223e70`; arbitrum `0xf8cdb6...e4f615`; arbitrum `0xfa2849...6999d9`; arbitrum `0xffd3cb...420506`; avalanche `0x6ec69e...f46bd7`; avalanche `0xb38182...0e3409` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (109)
+### ⚠️ Verified + Unaudited (77)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SiloToken | token | ethereum | [`0xf0b2dd...486bb0`](./contracts/ethereum-1/0xf0b2dd79324a66d2108c961d680f7616e1486bb0/) | ⚠️ Unaudited |
-| SiloGovernanceToken | token | ethereum | [`0x6f8031...8ab1f8`](./contracts/ethereum-1/0x6f80310ca7f2c654691d1383149fa1a57d8ab1f8/) | ⚠️ Unaudited |
-| API3Adapter | adapter | arbitrum | [`0x596e37...000c6d`](./contracts/arbitrum-42161/0x596e37c72fbed6cec8afa4c7e9ac547a76000c6d/) | ⚠️ Unaudited |
-| CBBTCMagicianBase | unknown | base | [`0x480eb6...2ecf10`](./contracts/base-8453/0x480eb6d6e5dd228afdc0dcdcb81188b95c2ecf10/) | ⚠️ Unaudited |
-| ChainlinkV3OracleFactory | operational_periphery | ethereum | [`0xf7dc97...521442`](./contracts/ethereum-1/0xf7dc975c96b434d436b9bf45e7a45c95f0521442/) | ⚠️ Unaudited |
-| ChronicleAdapter | adapter | arbitrum | 5 deployments: optimism `0xcdc945...e4cdfd`; optimism `0xe2ac9d...cdff13`; base `0x77cbcb...aaac6a`; base `0xa91075...1bb369`; arbitrum [`0x57f3b7...50afcb`](./contracts/arbitrum-42161/0x57f3b70b5bd38642b06c5270173139dfc350afcb/) | ⚠️ Unaudited |
-| ConstantETHPriceProvider | operational_periphery | base | [`0x700730...d8673a`](./contracts/base-8453/0x70073098984050f5563333be76bcd94d21d8673a/) | ⚠️ Unaudited |
-| CrvUSDMagicianETH | unknown | ethereum | [`0x2375eb...887493`](./contracts/ethereum-1/0x2375eba92e1b7ace8585ae7e2d23fedc10887493/) | ⚠️ Unaudited |
-| CrvUSDViaTriCrvMagicianETH | unknown | ethereum | 3 deployments: ethereum [`0x24f1a7...e661c5`](./contracts/ethereum-1/0x24f1a7c0d05893182fd9443ea8835ffe2ce661c5/); ethereum `0x92d238...d5fec0`; ethereum `0x993797...6eed99` | ⚠️ Unaudited |
-| CrvUSDViaUSDCPriceProviderETH | operational_periphery | ethereum | [`0xa1c283...e86bba`](./contracts/ethereum-1/0xa1c2837b7a899d6f89282e9be9f1496d12e86bba/) | ⚠️ Unaudited |
-| CrvUSDViaUSDCPriceProviderETHV2 | operational_periphery | ethereum | [`0x178145...d23a27`](./contracts/ethereum-1/0x1781452ed27bba7fa8932b2d839f244facd23a27/) | ⚠️ Unaudited |
-| CrvViaTriCrvMagicianETH | unknown | ethereum | [`0x9deaa1...5be416`](./contracts/ethereum-1/0x9deaa1af59932c0d71de6c04e50581f4605be416/) | ⚠️ Unaudited |
-| CvxMining | unknown | ethereum | [`0x3ea735...83dc28`](./contracts/ethereum-1/0x3ea735304d2e5055a2e85987096da029a683dc28/) | ⚠️ Unaudited |
-| DIAOracleFactory | operational_periphery | sonic | 13 deployments: ethereum `0x66cfbf...27bab8`; ethereum `0xf5d7d0...8d1144`; ethereum `0xf81d90...be58ad`; optimism `0x1dd000...799c25`; sonic [`0x147857...0ddae8`](./contracts/sonic-146/0x1478570fc9c8422b6733455db5504378940ddae8/); sonic `0x2aec24...2c1fd1`; arbitrum `0x3d75ba...bd83c7`; arbitrum `0x4fd711...e2dcd2`; arbitrum `0xca22fb...95c51c`; arbitrum `0xd89dbc...74f82b`; arbitrum `0xdc0530...0d93ab`; avalanche `0x72ed06...039a5d`; avalanche `0x9ff077...876c8d` | ⚠️ Unaudited |
-| DiaPriceProvider | operational_periphery | arbitrum | [`0x2e4c07...05f247`](./contracts/arbitrum-42161/0x2e4c07a88ab9cba800f3d5377e21bbe45405f247/) | ⚠️ Unaudited |
-| DiaPriceProviderV2 | operational_periphery | optimism | 5 deployments: optimism [`0x0d0097...e5fc39`](./contracts/optimism-10/0x0d0097dda7b64ba228ceb557935732df0ae5fc39/); optimism `0x138b5e...ffa1cb`; arbitrum `0x5678eb...3faac8`; arbitrum `0xd05fe8...d0450e`; arbitrum `0xfa773e...236bc5` | ⚠️ Unaudited |
-| DividendsV2 | unknown | sonic | [`0x875548...9522c6`](./contracts/sonic-146/0x875548b1b9d2fe8554240a5be21d02352f9522c6/) | ⚠️ Unaudited |
-| DynamicKinkModel | unknown | ethereum | 25 deployments: ethereum [`0x09402f...c0ae55`](./contracts/ethereum-1/0x09402f0f9f490e38413a5d4892d1e927acc0ae55/); ethereum `0x2c8ed9...7e3c2a`; ethereum `0x5420ef...37acea`; ethereum `0x8ab5d8...8e4a9d`; ethereum `0xa1be84...8db7b1`; ethereum `0xa1d547...0ffa97`; sonic `0x2b58b3...7d827e`; sonic `0x4fff70...dbfe7c`; sonic `0x5bb409...cb0e11`; sonic `0x744a30...c7b702`; sonic `0xc65de3...430354`; sonic `0xeb3c9f...07a21f`; arbitrum `0x1157de...fbf779`; arbitrum `0x1d51f3...a03ed1`; arbitrum `0x34490c...2b079b`; arbitrum `0x774c59...5067bf`; arbitrum `0x95a7bc...66affd`; arbitrum `0xa8c5eb...78b390`; arbitrum `0xbdf161...4d58bc`; avalanche `0x363c09...a16b00`; avalanche `0x499c6e...1d9e5f`; avalanche `0x744a30...c7b702`; avalanche `0x9e6bd1...04301b`; avalanche `0xc65de3...430354`; avalanche `0xcf8278...bf8627` | ⚠️ Unaudited |
-| DynamicKinkModelFactory | registry | ethereum | 25 deployments: ethereum [`0x1d51f3...a03ed1`](./contracts/ethereum-1/0x1d51f30e5c8ec1c6efeb5d1877f7302a09a03ed1/); ethereum `0x315a83...00e479`; ethereum `0xba4a54...39344e`; ethereum `0xca22fb...95c51c`; ethereum `0xe9e4f5...b09283`; ethereum `0xedef34...a6d154`; sonic `0x7bd4d7...53b83f`; sonic `0xa1d547...0ffa97`; sonic `0xc4832a...16311d`; sonic `0xe60dfa...c99fdc`; sonic `0xf279ee...a04ef3`; sonic `0xfdc13d...65ab47`; arbitrum `0x205451...3d69b9`; arbitrum `0x28fcf0...965449`; arbitrum `0x4fff70...dbfe7c`; arbitrum `0x52ad68...452cc2`; arbitrum `0x98f231...cffb1c`; arbitrum `0xca1658...6efd83`; arbitrum `0xe37949...aa1024`; avalanche `0x5bb409...cb0e11`; avalanche `0x774c59...5067bf`; avalanche `0x8c3024...26db98`; avalanche `0xa1d547...0ffa97`; avalanche `0xc4832a...16311d`; avalanche `0xf0c5ea...cfa0d3` | ⚠️ Unaudited |
-| EggsToSonicAdapter | adapter | sonic | 4 deployments: sonic [`0x14c646...2accd9`](./contracts/sonic-146/0x14c646c6cf518cb6b515f95771cdb4948d2accd9/); sonic `0xa909c8...66de04`; sonic `0xb501c1...255607`; sonic `0xbd3958...81f4a9` | ⚠️ Unaudited |
-| ERC4626OracleFactory | operational_periphery | ethereum | 20 deployments: ethereum [`0x0094c5...2b2a2c`](./contracts/ethereum-1/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); ethereum `0x2aec24...2c1fd1`; ethereum `0xa678ae...76ec9f`; ethereum `0xcedbca...5e52ab`; ethereum `0xcf8278...bf8627`; ethereum `0xfe3c19...b7b3ca`; sonic `0x59382a...d14de5`; sonic `0x7dc39c...9202ea`; sonic `0x84905f...68c6a2`; sonic `0xc75d8e...2fa1e8`; sonic `0xcf8d34...9a8992`; sonic `0xedc9eb...b6f62f`; arbitrum `0x03722e...1baaa1`; arbitrum `0x5e695d...df727d`; arbitrum `0x6d4ce6...c24cd5`; arbitrum `0x72a852...c5e7c9`; arbitrum `0xb47713...68a30c`; avalanche `0x1a5bba...e30316`; avalanche `0x38d712...a7a725`; avalanche `0x7f736f...b08a47` | ⚠️ Unaudited |
-| ERC4626OracleWithUnderlyingFactory | operational_periphery | ethereum | 11 deployments: ethereum [`0x01590f...8bf294`](./contracts/ethereum-1/0x01590f788e1f7e102726a5b8d0d6332a4e8bf294/); ethereum `0x0d9256...033254`; ethereum `0x28fcf0...965449`; ethereum `0x3a2b2a...806dfd`; ethereum `0x7f736f...b08a47`; sonic `0x774c59...5067bf`; sonic `0x9ff077...876c8d`; arbitrum `0x1a5bba...e30316`; arbitrum `0xdb9141...67c68c`; avalanche `0x6ac197...2cfb30`; avalanche `0x8cb547...f3b5ba` | ⚠️ Unaudited |
-| FixedPricePTAMMOracleFactory | operational_periphery | avalanche | 3 deployments: avalanche [`0x047801...27505c`](./contracts/avalanche-43114/0x047801ed4f53ad3dc28649ab972b3c949f27505c/); avalanche `0x22c426...7f391d`; avalanche `0xb43406...d68358` | ⚠️ Unaudited |
-| FlatPriceOracleFactory | operational_periphery | arbitrum | 10 deployments: ethereum `0xde67a8...4450cf`; sonic `0x9a5bb9...60a78b`; arbitrum [`0x45909b...24317b`](./contracts/arbitrum-42161/0x45909be5015c2d0771ce687f26055c1cf124317b/); arbitrum `0x466cd1...857879`; arbitrum `0x8c11ed...c13577`; arbitrum `0xa65193...bc8868`; arbitrum `0xa86c22...c84244`; arbitrum `0xc87fb1...8b45dc`; arbitrum `0xe460e9...325a92`; avalanche `0xe55eef...694eac` | ⚠️ Unaudited |
-| ForwarderPriceProvider | operational_periphery | ethereum | 3 deployments: ethereum [`0xb664ca...7d0813`](./contracts/ethereum-1/0xb664ca87df549d110c59a96b10278439617d0813/); ethereum `0xb6bc6b...14b8be`; optimism `0xcfbebc...3db22d` | ⚠️ Unaudited |
-| Getters | unknown | sonic | [`0xe569bd...81733f`](./contracts/sonic-146/0xe569bdc18cd807ac1cfb2c926f50d0c9b881733f/) | ⚠️ Unaudited |
-| GlobalPause | unknown | ethereum | 16 deployments: ethereum [`0x2a1ee8...932bfa`](./contracts/ethereum-1/0x2a1ee876ed23d356a7b73b42c1c16a9bcd932bfa/); ethereum `0xdda2e9...aa1c44`; optimism `0x3bc972...511904`; optimism `0x81e92d...e90929`; optimism `0x9d52c4...84cf3f`; optimism `0xb6bc6b...14b8be`; sonic `0x6b70cd...1bfdf3`; sonic `0x7d827f...8a27b8`; sonic `0xdc2a02...972c11`; arbitrum `0x446ab3...ba4105`; arbitrum `0x795079...565676`; arbitrum `0x959595...4cb97d`; arbitrum `0x9b2ae5...f46c9d`; avalanche `0x528e61...9591a2`; avalanche `0xc9c78b...6245e2`; avalanche `0xfce6c6...f351a8` | ⚠️ Unaudited |
-| GOHMMagician | unknown | ethereum | 3 deployments: ethereum [`0x694616...e5676d`](./contracts/ethereum-1/0x694616063932ce36494b14ff8ab52bc364e5676d/); ethereum `0xd4240a...a72133`; ethereum `0xf363c6...3e8740` | ⚠️ Unaudited |
-| GOHMPriceProvider | operational_periphery | ethereum | [`0xba53d3...0ddb1f`](./contracts/ethereum-1/0xba53d3a08fb8dd4309881b4e8a3bc386ea0ddb1f/) | ⚠️ Unaudited |
-| GydTellorPriceProviderArb | operational_periphery | arbitrum | [`0x1197ac...b37341`](./contracts/arbitrum-42161/0x1197ac4a243fb5735bddde39d2ef33b6d4b37341/) | ⚠️ Unaudited |
-| IdleVault | core_logic | arbitrum | [`0xc6925c...4632da`](./contracts/arbitrum-42161/0xc6925c71f6ece02b1ee5ee18d7af0ba8f84632da/) | ⚠️ Unaudited |
-| IdleVaultsFactory | registry | arbitrum | 16 deployments: ethereum `0xa5e331...94e114`; ethereum `0xb6f3a9...370475`; optimism `0xfda22a...cff421`; sonic `0x1d0b02...ead91f`; sonic `0x35665d...bc9045`; sonic `0x4924b3...85a126`; sonic `0x83f369...548a14`; sonic `0x8a08c8...08b4bf`; sonic `0x9041a0...39f30b`; sonic `0xb72007...e08122`; arbitrum [`0x1c80e2...642d53`](./contracts/arbitrum-42161/0x1c80e2889c0f05ab2e655d2b73c585fa2e642d53/); arbitrum `0x391f04...cdd34c`; arbitrum `0x759620...194355`; arbitrum `0xd6980d...ac49de`; arbitrum `0xe45ff3...15ec4c`; avalanche `0x889be5...8dbdf0` | ⚠️ Unaudited |
-| InterestRateDataResolver | operational_periphery | ethereum | 12 deployments: ethereum [`0x13b7f8...2bb253`](./contracts/ethereum-1/0x13b7f88100e291d6f7aaca22300fbe91ac2bb253/); ethereum `0x69a753...708909`; ethereum `0xa8d5df...982cc6`; ethereum `0xcb6ccb...d715ec`; ethereum `0xf8e25f...d81b5d`; optimism `0xb59605...b21e55`; base `0x268fc6...e636ce`; base `0xd3de08...414fed`; arbitrum `0x242466...81fe31`; arbitrum `0x669673...124825`; arbitrum `0x694616...e5676d`; arbitrum `0x8ff5be...e8f0ce` | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | arbitrum | 3 deployments: ethereum `0x7e9e7e...a5fd44`; arbitrum [`0x116e14...45307c`](./contracts/arbitrum-42161/0x116e1475780977c351d2b9125006bd550545307c/); arbitrum `0xad8370...caae89` | ⚠️ Unaudited |
-| InterestRateModelV2 | operational_periphery | ethereum | 29 deployments: ethereum [`0x03ff53...26c821`](./contracts/ethereum-1/0x03ff53ee6b0c8221e5cf3829db1a1b2d5d26c821/); ethereum `0x408822...d36f2b`; ethereum `0x672f1a...5fd159`; ethereum `0x76074c...e18314`; ethereum `0xa41868...c4e720`; optimism `0x2cd4f5...581299`; optimism `0x3c7d2c...b5bab8`; optimism `0x76125b...77c7cb`; optimism `0xb562b6...74e6b5`; optimism `0xbd7a2f...6922d1`; sonic `0x23c245...81052f`; sonic `0x8509b9...1ae3f2`; sonic `0xb6d6ab...88e850`; sonic `0xf380f0...147004`; sonic `0xff5f7b...7c0641`; base `0xd0f2e2...780352`; base `0xf1268f...487dd1`; arbitrum `0x374d79...171d6c`; arbitrum `0x6705b0...9d96e8`; arbitrum `0x9f65b9...f8f55a`; arbitrum `0xaf3038...fb9a71`; arbitrum `0xb4aa64...f0f4f6`; arbitrum `0xc4ea88...3c4c15`; arbitrum `0xd6ea27...506e0a`; arbitrum `0xee95fb...f6ef38`; avalanche `0x700730...d8673a`; avalanche `0x95fb4b...a1204e`; avalanche `0xc0a646...607a8a`; avalanche `0xf66825...3caa67` | ⚠️ Unaudited |
-| InterestRateModelV2Factory | operational_periphery | sonic | 23 deployments: ethereum `0x4e33a8...514a14`; ethereum `0x9fcb9b...1cf39d`; optimism `0x2890ab...ee90e3`; optimism `0x5fdda0...9fd46c`; optimism `0x7e320f...9c688b`; optimism `0xc60d70...742043`; sonic [`0x12152d...a8ac4b`](./contracts/sonic-146/0x12152d5cc529d18564f8edfffac7fbe390a8ac4b/); sonic `0x45adb0...9b6c3f`; sonic `0x75dc71...8a11dc`; sonic `0xb6bc6b...14b8be`; sonic `0xf18e6f...8c954f`; arbitrum `0x1ff23f...7eb36c`; arbitrum `0x24ef2d...247214`; arbitrum `0x36bf16...3947a6`; arbitrum `0x5c7668...660089`; arbitrum `0xa41868...c4e720`; arbitrum `0xac7821...385201`; arbitrum `0xcce964...29bd69`; arbitrum `0xda91d9...960a53`; avalanche `0x26d185...c49c35`; avalanche `0xa42001...6b7170`; avalanche `0xf363c6...3e8740`; avalanche `0xf89e18...e732c8` | ⚠️ Unaudited |
-| InterestRateModelXAI | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x977488...7f1090`](./contracts/arbitrum-42161/0x97748870e9cd5eb59f39a870883dfa5f4a7f1090/); arbitrum `0x9eb892...864c0a` | ⚠️ Unaudited |
-| IRMZero | unknown | arbitrum | [`0xf4a46d...5ad6f3`](./contracts/arbitrum-42161/0xf4a46dc09e3e17d60ab54e1e9aeb47faaa5ad6f3/) | ⚠️ Unaudited |
-| LbtcAdapter | adapter | base | [`0x454e96...c07888`](./contracts/base-8453/0x454e9660915de040a1455ee550b32ce274c07888/) | ⚠️ Unaudited |
-| LeverageRouter | adapter | arbitrum | 12 deployments: ethereum `0x50daac...da22b1`; ethereum `0x612b08...c0886e`; ethereum `0x931e59...3b9bde`; ethereum `0xf5d029...b7a6b3`; sonic `0x2a3ba3...05e3e2`; sonic `0x451b35...9e28a5`; sonic `0xb1c407...4ce59b`; arbitrum [`0x128b7b...0af94b`](./contracts/arbitrum-42161/0x128b7b7457e35e201da5024c9e8d024e1b0af94b/); arbitrum `0x9e6bd1...04301b`; avalanche `0x2aec24...2c1fd1`; avalanche `0x9ac693...b08629`; avalanche `0xcfbebc...3db22d` | ⚠️ Unaudited |
-| LeverageUsingSiloFlashloanWithGeneralSwap | unknown | sonic | 5 deployments: ethereum `0x570730...f88167`; ethereum `0xcbee46...829df9`; sonic [`0x503628...358d8c`](./contracts/sonic-146/0x503628e0799ba076df56da7c0a51fe1426358d8c/); sonic `0x5f0234...aaef65`; sonic `0x7d5d34...9a8ca1` | ⚠️ Unaudited |
-| LeverageUsingSiloWithGeneralSwap | unknown | sonic | [`0x835e3b...3d4024`](./contracts/sonic-146/0x835e3bb0da8b7d304df2fe29fbaf751a0e3d4024/) | ⚠️ Unaudited |
-| LiquidationHelper | periphery | sonic | 80 deployments: ethereum `0x071caa...c6218e`; ethereum `0x116c85...0d7b47`; ethereum `0x1f510c...0f6a84`; ethereum `0x205e95...e88516`; ethereum `0x26c93b...7325dc`; ethereum `0x340a07...bbd10b`; ethereum `0x3c9b67...f2f668`; ethereum `0x53b462...1f1b8b`; ethereum `0x58f6a7...1ca85d`; ethereum `0x6bf552...117a0d`; ethereum `0x724f4b...c79450`; ethereum `0x757748...f0584e`; ethereum `0x77c5ab...bdc4c4`; ethereum `0x84fbf6...fb4ab9`; ethereum `0x904871...2a9afb`; ethereum `0x931cf9...d735d3`; ethereum `0xa0c863...a7818b`; ethereum `0xad84b0...9dfcfa`; ethereum `0xbc3c12...0b01a8`; ethereum `0xd1f8a4...75b54b`; ethereum `0xd384c9...dbf72e`; ethereum `0xd634d8...d72a61`; ethereum `0xdebe1d...be3214`; ethereum `0xe90b09...514efc`; ethereum `0xfcc5c4...953a23`; optimism `0x02c7b5...7d50f8`; optimism `0x7bdb25...351ea1`; optimism `0x7ed116...04cba5`; optimism `0x8ca6cd...f88bf4`; optimism `0x8ffc46...ca7ab1`; optimism `0xc3f01b...8c052a`; sonic [`0x0094c5...2b2a2c`](./contracts/sonic-146/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); sonic `0x08a52e...3f9849`; sonic `0x16bb96...0082fd`; sonic `0x1a5bba...e30316`; sonic `0x24f1a7...e661c5`; sonic `0x5660e3...d3bcbc`; sonic `0x7c185b...adc577`; sonic `0xccd487...604417`; sonic `0xd6b4a2...d1925d`; sonic `0xd6ea27...506e0a`; sonic `0xefca82...c6dfef`; sonic `0xf1268f...487dd1`; sonic `0xf363c6...3e8740`; base `0xd4576d...2fb73b`; base `0xf89e18...e732c8`; arbitrum `0x042d77...cf73d8`; arbitrum `0x069a9a...ad3a18`; arbitrum `0x1a7f0b...c3860f`; arbitrum `0x1f39ed...99b7fe`; arbitrum `0x20dd36...665204`; arbitrum `0x2ab8d9...c7f2e1`; arbitrum `0x346241...e68302`; arbitrum `0x4b8cbf...6457b6`; arbitrum `0x4e9de3...be9203`; arbitrum `0x66fa49...38a5b7`; arbitrum `0x711440...de79eb`; arbitrum `0x757748...f0584e`; arbitrum `0x7f736f...b08a47`; arbitrum `0x83f369...548a14`; arbitrum `0x953d07...d7b23c`; arbitrum `0xaa5703...321849`; arbitrum `0xb495c3...201991`; arbitrum `0xc421fe...42f8a7`; arbitrum `0xc70cb3...29cf3f`; arbitrum `0xc7ccc7...f8ee21`; arbitrum `0xc9f0fc...46bfbb`; arbitrum `0xd98c02...c750f8`; arbitrum `0xdf143c...142914`; arbitrum `0xe78e99...897ebf`; arbitrum `0xe7ed54...8469b0`; arbitrum `0xf3e0dc...4992bc`; avalanche `0x1157de...fbf779`; avalanche `0x2e0da2...aea09a`; avalanche `0x3b7466...c7d727`; avalanche `0x666146...2538cb`; avalanche `0x83d787...c6c7ff`; avalanche `0xad84b0...9dfcfa`; avalanche `0xca1658...6efd83`; avalanche `0xdb8838...231d87` | ⚠️ Unaudited |
-| ManualLiquidation | unknown | ethereum | 10 deployments: ethereum [`0x015bbc...4cf76d`](./contracts/ethereum-1/0x015bbc6ca60390f3b48c63773f1b7022b14cf76d/); ethereum `0x557d83...b36937`; ethereum `0x669229...69c72e`; ethereum `0x8431ad...c06b70`; ethereum `0xc99519...f14d6a`; optimism `0x662c3a...33e5fc`; base `0x66f617...7601fb`; base `0x92cecb...4c6ff9`; arbitrum `0x26d185...c49c35`; arbitrum `0xebf50c...022453` | ⚠️ Unaudited |
-| ManualLiquidationHelper | periphery | ethereum | 15 deployments: ethereum [`0x1d5ae0...39eb3f`](./contracts/ethereum-1/0x1d5ae059bb674e7dc78afcae86e19ba33539eb3f/); ethereum `0x899788...c2e043`; ethereum `0xed6673...cc1b56`; optimism `0xb03a9c...83bb9d`; optimism `0xb14f20...a220e4`; sonic `0x361384...6b6461`; sonic `0x953d07...d7b23c`; sonic `0x9ba51a...90cd42`; sonic `0xb49329...398abd`; arbitrum `0x56b928...4a59e2`; arbitrum `0x5b7930...25002a`; arbitrum `0x5defb0...42da14`; avalanche `0x31dfc9...e520ed`; avalanche `0x6ca841...a18462`; avalanche `0xc759de...213c39` | ⚠️ Unaudited |
-| MaxWithdraw | operational_periphery | sonic | [`0xdb8838...231d87`](./contracts/sonic-146/0xdb8838f8d035e5fa48b3481867424f5fc6231d87/) | ⚠️ Unaudited |
-| MiloToken | token | arbitrum | 2 deployments: optimism `0xbc49da...cc7c3a`; arbitrum [`0x8ffc46...ca7ab1`](./contracts/arbitrum-42161/0x8ffc46a1b7a3b12f4a11db8877d302876dca7ab1/) | ⚠️ Unaudited |
-| MiloTokenChildChain | token | optimism | [`0xe22fe6...16a6ce`](./contracts/optimism-10/0xe22fe63e20c3d817121022316b2430b5a516a6ce/) | ⚠️ Unaudited |
-| OHMMagician | unknown | ethereum | 3 deployments: ethereum [`0x92cecb...4c6ff9`](./contracts/ethereum-1/0x92cecb67ed267ff98026f814d813fdf3054c6ff9/); ethereum `0xd4bddd...b5ee08`; ethereum `0xf57d03...0077a7` | ⚠️ Unaudited |
-| OracleForwarderFactory | operational_periphery | sonic | 4 deployments: sonic [`0x1c80e2...642d53`](./contracts/sonic-146/0x1c80e2889c0f05ab2e655d2b73c585fa2e642d53/); sonic `0x38d712...a7a725`; sonic `0x7efd7c...8a0900`; sonic `0x9b1fcd...437a85` | ⚠️ Unaudited |
-| OracleScalerFactory | operational_periphery | arbitrum | 22 deployments: ethereum `0x26dd1f...624d90`; ethereum `0x37fbc9...3588f2`; ethereum `0x50f790...907789`; ethereum `0x6ac197...2cfb30`; ethereum `0x7dc39c...9202ea`; sonic `0x546b94...aa4cbe`; sonic `0x80953e...268496`; sonic `0xa71ba8...619c4e`; sonic `0xbf3c74...023446`; sonic `0xed2211...bc018d`; sonic `0xf5d7d0...8d1144`; arbitrum [`0x0094c5...2b2a2c`](./contracts/arbitrum-42161/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); arbitrum `0x9ce430...b031ae`; arbitrum `0xa59340...d1bbde`; arbitrum `0xb80271...35514b`; arbitrum `0xc2b3eb...35a06a`; arbitrum `0xd55a06...f21fba`; avalanche `0x01c6dc...67cd34`; avalanche `0x14e624...bce90a`; avalanche `0x26dd1f...624d90`; avalanche `0x390216...6a861f`; avalanche `0x51eaf3...ba93fb` | ⚠️ Unaudited |
-| PermissionedLiquidationControllerFactory | registry | arbitrum | 12 deployments: ethereum `0x2976d3...d49d30`; ethereum `0x75153a...93a99b`; ethereum `0xff8032...d31255`; sonic `0x8cee05...fe6ea2`; sonic `0xcedbca...5e52ab`; sonic `0xffd3cb...420506`; arbitrum [`0x1ff3be...35c243`](./contracts/arbitrum-42161/0x1ff3be55911289e5c794157ca285e6572835c243/); arbitrum `0xe36ed8...b33621`; arbitrum `0xe786fb...395926`; avalanche `0x78330c...54f944`; avalanche `0xad1875...11b9bf`; avalanche `0xbdd37b...21d089` | ⚠️ Unaudited |
-| PRBMathCommon | unknown | optimism | 3 deployments: ethereum `0x5dea8b...2bdc1b`; ethereum `0xbc73c4...73c3dc`; optimism [`0x142997...e98681`](./contracts/optimism-10/0x142997a09e822d1c9a9ab150179e754b0ce98681/) | ⚠️ Unaudited |
-| PRBMathSD59x18 | unknown | ethereum | 3 deployments: ethereum [`0x0f9d4f...4c5f39`](./contracts/ethereum-1/0x0f9d4fa99a0ca3c3c0dedd287531c04e054c5f39/); ethereum `0xd0ad0c...ea91f2`; optimism `0xd0f2e2...780352` | ⚠️ Unaudited |
-| PriceProvidersRepository | operational_periphery | base | 8 deployments: ethereum `0x7c2ca9...05029f`; ethereum `0xa40111...9a982a`; ethereum `0xe93cd8...d6d7c3`; optimism `0x1e915d...0beda3`; base [`0x17f2cd...3d4f04`](./contracts/base-8453/0x17f2cd2cfe241afb03950c2ce2bf6b42193d4f04/); base `0xf380f0...147004`; arbitrum `0x5bf4e6...4485fd`; arbitrum `0xa6c91b...de866e` | ⚠️ Unaudited |
-| PTLinearOracleFactory | operational_periphery | arbitrum | 13 deployments: ethereum `0x9e64f0...013d0e`; ethereum `0xbdf161...4d58bc`; ethereum `0xe12a7a...9412c9`; sonic `0x1bdebe...9bc2f4`; sonic `0x28fcf0...965449`; sonic `0xe37949...aa1024`; arbitrum [`0x08a52e...3f9849`](./contracts/arbitrum-42161/0x08a52ec31e0e981bbd64082224185e420d3f9849/); arbitrum `0x1c7861...78f6eb`; arbitrum `0x2cfc18...6c58a3`; arbitrum `0x3ce73c...66d967`; arbitrum `0x5992e9...b1e494`; arbitrum `0x79339e...d3de08`; avalanche `0x504b8c...f9269f` | ⚠️ Unaudited |
-| PublicAllocator | operational_periphery | sonic | 15 deployments: ethereum `0x711440...de79eb`; ethereum `0x8cee05...fe6ea2`; ethereum `0xafbb48...7465e9`; optimism `0xcb6ccb...d715ec`; sonic [`0x2fa303...3dc2b6`](./contracts/sonic-146/0x2fa303ba90a85ddfe0bce2de06ad7e3fe83dc2b6/); sonic `0x52b77a...146c77`; sonic `0xb8e5a3...304c10`; sonic `0xc95149...a193b7`; sonic `0xd0fd1d...24d7c3`; sonic `0xe2bd59...6d4e41`; arbitrum `0x597d27...f9fff7`; arbitrum `0x75153a...93a99b`; arbitrum `0x7988fe...d6dbf2`; arbitrum `0xf9d412...8d4fd2`; avalanche `0xda3975...330b85` | ⚠️ Unaudited |
-| PythAggregatorFactory | registry | sonic | 11 deployments: sonic [`0x1e305f...8c2a5f`](./contracts/sonic-146/0x1e305f8b392ff3b72f0024199ba0e518a08c2a5f/); sonic `0x212362...99de20`; sonic `0x446da3...1080a6`; sonic `0x60bc74...46d3f6`; sonic `0x911e6e...8fccc2`; sonic `0xa013e7...afcfef`; sonic `0xa87a04...bd4145`; sonic `0xb38182...0e3409`; sonic `0xb95aa7...0800e1`; sonic `0xf8ab97...0eb420`; sonic `0xfc4038...bcd42f` | ⚠️ Unaudited |
-| PythAggregatorV3 | unknown | sonic | 3 deployments: sonic [`0x3ed1f0...fd55c5`](./contracts/sonic-146/0x3ed1f0487c0c102c8c371fb3e5ad3e224dfd55c5/); sonic `0x700730...d8673a`; sonic `0xaeab67...b5e6c7` | ⚠️ Unaudited |
-| RescueWAVAX | token | avalanche | [`0x315a83...00e479`](./contracts/avalanche-43114/0x315a8319e94eff8aa5fb11923c32e73fca00e479/) | ⚠️ Unaudited |
-| RevertingOracle | operational_periphery | sonic | 4 deployments: ethereum `0xefd889...9e6075`; sonic [`0x889be5...8dbdf0`](./contracts/sonic-146/0x889be50f7ef7e0d88c2023c509f4e02d378dbdf0/); arbitrum `0xd5e41d...5d3b27`; avalanche `0xf238bf...c7be53` | ⚠️ Unaudited |
-| SiloConvexFactory | registry | ethereum | [`0x6d4a25...114d5a`](./contracts/ethereum-1/0x6d4a256695586f61b77b09bc3d28333a91114d5a/) | ⚠️ Unaudited |
-| SiloGovernanceTokenV2 | token | ethereum | [`0xc0c899...fc3248`](./contracts/ethereum-1/0xc0c89911c20453b1d897355ee7208e8270fc3248/) | ⚠️ Unaudited |
-| SiloGovernor | governance | ethereum | [`0xa89163...eeaf61`](./contracts/ethereum-1/0xa89163f7b2d68a8fba6ca36beed32bd4f3eeaf61/) | ⚠️ Unaudited |
-| SiloHookV1 | unknown | arbitrum | 33 deployments: ethereum `0x205451...3d69b9`; ethereum `0x346241...e68302`; ethereum `0x4bdde8...54e9bb`; ethereum `0x67d12c...80b167`; ethereum `0x8e1948...952126`; ethereum `0xc51f04...da3f5b`; ethereum `0xd6ea27...506e0a`; optimism `0x601744...d40266`; optimism `0x7dcb5c...ef375b`; optimism `0xc5d8a1...a622fd`; sonic `0x1d9289...ba0fd0`; sonic `0x1f28be...37fbaf`; sonic `0x342bf9...51d906`; sonic `0x4e15fd...6366e5`; sonic `0x5ef584...bc3a34`; sonic `0x6e83a2...2bd814`; sonic `0x6f3fe5...5b7d5d`; sonic `0xedef34...a6d154`; arbitrum [`0x0b6c64...e6a456`](./contracts/arbitrum-42161/0x0b6c649ffba713e45958a2c394ed8b422ae6a456/); arbitrum `0x2d94cf...a6fdff`; arbitrum `0x6b70cd...1bfdf3`; arbitrum `0x7bd4d7...53b83f`; arbitrum `0x82219e...1ea54a`; arbitrum `0xa7495e...ff42b0`; arbitrum `0xb38182...0e3409`; arbitrum `0xd9aeb7...5d090b`; arbitrum `0xe12a7a...9412c9`; avalanche `0x22aacd...7bdb76`; avalanche `0x28fcf0...965449`; avalanche `0x45adb0...9b6c3f`; avalanche `0x75153a...93a99b`; avalanche `0x91cdec...cab6ad`; avalanche `0xedef34...a6d154` | ⚠️ Unaudited |
-| SiloIncentivesControllerCLDeployer | governance | optimism | 16 deployments: ethereum `0x5415ce...21a11d`; ethereum `0xb49329...398abd`; ethereum `0xc759de...213c39`; optimism [`0x0ab251...687deb`](./contracts/optimism-10/0x0ab251c6dafb5598d6a6374030b1e0bfa6687deb/); sonic `0x1d5ae0...39eb3f`; sonic `0x5415ce...21a11d`; sonic `0x717fcf...75595e`; sonic `0x94e143...83b7c0`; sonic `0xa11f5a...e718d4`; sonic `0xa59340...d1bbde`; sonic `0xbea158...bbac96`; arbitrum `0x2fb48d...6ba718`; arbitrum `0x6b298f...a5d817`; arbitrum `0xe588ea...78e5e5`; avalanche `0xcedbca...5e52ab`; avalanche `0xffd3cb...420506` | ⚠️ Unaudited |
-| SiloIncentivesControllerCLFactory | registry | sonic | 18 deployments: ethereum `0x435ae7...212b00`; ethereum `0x491961...9a9811`; ethereum `0x4fd711...e2dcd2`; optimism `0x66c91b...efbcb3`; sonic [`0x06a371...506330`](./contracts/sonic-146/0x06a371cadeee25499c0ff5af57de1e83bb506330/); sonic `0x6f29fe...1efe4a`; sonic `0x8ed9d9...4943a7`; sonic `0xbfde5f...6b8d51`; sonic `0xca22fb...95c51c`; sonic `0xdf1e2a...c8867a`; sonic `0xe49efd...4757cb`; arbitrum `0x1b2267...1b5667`; arbitrum `0x38c5cc...f2269d`; arbitrum `0x6f3251...4f395f`; arbitrum `0xa3207c...f3ad49`; arbitrum `0xed397c...32509a`; avalanche `0x08a52e...3f9849`; avalanche `0x9a5bb9...60a78b` | ⚠️ Unaudited |
-| SiloIncentivesControllerGaugeLikeFactory | operational_periphery | sonic | 19 deployments: ethereum `0x4e15fd...6366e5`; ethereum `0x9ff91e...b6a39a`; optimism `0xaab8ef...4a8976`; optimism `0xbdbbf7...37facf`; sonic [`0x02f3da...d63373`](./contracts/sonic-146/0x02f3da7e49a877f157b8024e4800ce78bcd63373/); sonic `0x0ec2e1...9e701e`; sonic `0x0f0768...8eb5f6`; sonic `0x17f2cd...3d4f04`; sonic `0x2b07e8...b5bfe6`; sonic `0x2bb4c0...56a36f`; sonic `0x7dae41...44b14c`; sonic `0xdd318a...6fa874`; sonic `0xf9d412...8d4fd2`; arbitrum `0x2d386c...9d2211`; arbitrum `0x41fbdd...f39ee8`; arbitrum `0x435ab3...c4dc06`; arbitrum `0x949b90...b03218`; arbitrum `0xaf1b58...f48715`; arbitrum `0xd3e800...007116` | ⚠️ Unaudited |
-| SiloLiquidationLens | periphery | ethereum | 15 deployments: ethereum [`0x06bed4...2680a4`](./contracts/ethereum-1/0x06bed4637e8cf9e4efc1b227e0c322d7042680a4/); ethereum `0x68b346...9f02f0`; ethereum `0x95fb4b...a1204e`; ethereum `0xa5b7fa...151a3b`; ethereum `0xacf3dd...16853e`; optimism `0x5825e9...10860b`; base `0x2265b1...110a1e`; base `0xf363c6...3e8740`; arbitrum `0x20c3aa...0a3c4a`; arbitrum `0x3cac12...1d11fb`; arbitrum `0x48c030...e904b6`; arbitrum `0x581e1a...1fa8ab`; arbitrum `0xd4240a...a72133`; arbitrum `0xdc7066...506d98`; arbitrum `0xf8b378...db4e6d` | ⚠️ Unaudited |
-| SiloModule | unknown | ethereum | [`0xb98bc3...37f1af`](./contracts/ethereum-1/0xb98bc3e3b9ea8d86f6ee321737fa23710737f1af/) | ⚠️ Unaudited |
-| SiloRepository | registry | base | 8 deployments: ethereum `0xbacbbe...ed2d49`; ethereum `0xbcd67f...15377c`; ethereum `0xd998c3...cf309d`; optimism `0xd2767d...0acbe9`; base [`0x1e915d...0beda3`](./contracts/base-8453/0x1e915d8950f0c6bf9d01c603d33c50b6110beda3/); base `0xa42001...6b7170`; arbitrum `0x46603a...6f1ae3`; arbitrum `0x865804...10ff0a` | ⚠️ Unaudited |
-| SiloRouter | adapter | sonic | 15 deployments: ethereum `0x871ea4...fbd887`; ethereum `0xb2374f...322a0c`; optimism `0xc66d2a...2c76a9`; sonic [`0x22aacd...7bdb76`](./contracts/sonic-146/0x22aacdec57b13911de9f188cf69633cc537bdb76/); sonic `0x2c0fa0...6b56ea`; sonic `0x89c601...9c205b`; sonic `0xa40111...9a982a`; sonic `0xbb6af6...1ebd0b`; sonic `0xc0a646...607a8a`; base `0x757748...f0584e`; base `0xc3f01b...8c052a`; arbitrum `0x7547d6...426f82`; arbitrum `0x9992f6...4e3681`; arbitrum `0xd4bddd...b5ee08`; arbitrum `0xe83fdb...6b7231` | ⚠️ Unaudited |
-| SiloRouterImplementation | adapter | arbitrum | 3 deployments: sonic `0xba52be...7d95ff`; sonic `0xd9f14f...abe1e4`; arbitrum [`0x1a36c8...363353`](./contracts/arbitrum-42161/0x1a36c81756d09950acbd1abdc522c0dd41363353/) | ⚠️ Unaudited |
-| SiloRouterV2 | adapter | sonic | 21 deployments: ethereum `0x865804...10ff0a`; ethereum `0xb6d6ab...88e850`; ethereum `0xc5d945...6a1d08`; ethereum `0xedb517...f7ada0`; ethereum `0xf380f0...147004`; optimism `0x539ac1...3d53a4`; optimism `0xaea0c5...43b364`; sonic [`0x16876a...503b1c`](./contracts/sonic-146/0x16876af41e8beddbf9b67d2b66bb50abf3503b1c/); sonic `0x21cfe3...00b59c`; sonic `0x78517a...3a69f8`; sonic `0xd98c02...c750f8`; sonic `0xff1d03...b17a67`; arbitrum `0x27e585...fcd7d7`; arbitrum `0x637658...9e1467`; arbitrum `0xb1d1b1...4603d4`; arbitrum `0xcf8d34...9a8992`; arbitrum `0xeb5a0e...5aa335`; avalanche `0x39f7ee...eee1cf`; avalanche `0x4576fa...fa27bd`; avalanche `0x9ea286...e21a10`; avalanche `0xcdcbbb...1133f9` | ⚠️ Unaudited |
-| SiloSnapshotWrapper | unknown | ethereum | [`0xce3d2e...b168a4`](./contracts/ethereum-1/0xce3d2e0331d6776c79f329140d7ace2e94b168a4/) | ⚠️ Unaudited |
-| SiloVaultDeployer | core_logic | sonic | 33 deployments: ethereum `0x457d10...aa2860`; ethereum `0x463736...f8bcb4`; ethereum `0x4b8cbf...6457b6`; ethereum `0x72a852...c5e7c9`; ethereum `0xbefb20...856d97`; ethereum `0xe7ed54...8469b0`; optimism `0x03ff53...26c821`; optimism `0xa5dec4...eba7ce`; optimism `0xe96410...b3dfc9`; optimism `0xf8d496...9ba1e5`; sonic [`0x02bbb8...171b1d`](./contracts/sonic-146/0x02bbb86731ec6aa81b52961e14dd1aebe5171b1d/); sonic `0x04e209...e88049`; sonic `0x39f7ee...eee1cf`; sonic `0x7867f2...1ea06a`; sonic `0xa387a5...ed6f4b`; sonic `0xac7821...385201`; sonic `0xb08fc2...d116c0`; sonic `0xcc0fc2...8f18b8`; sonic `0xe54b13...5565ab`; arbitrum `0x2aee31...20ea2a`; arbitrum `0x340a07...bbd10b`; arbitrum `0x408a8d...a2c7ff`; arbitrum `0x451b35...9e28a5`; arbitrum `0x5d09b4...c462bb`; arbitrum `0x737c6a...2728d0`; arbitrum `0xafbb48...7465e9`; arbitrum `0xd18634...e6561b`; arbitrum `0xdd9382...26bd61`; arbitrum `0xf56dfe...53c78e`; avalanche `0x77cbcb...aaac6a`; avalanche `0x8cee05...fe6ea2`; avalanche `0xc1749f...c4c564`; avalanche `0xf81d90...be58ad` | ⚠️ Unaudited |
-| SiloVirtualAsset18Decimals | unknown | ethereum | [`0x1205e2...acd00b`](./contracts/ethereum-1/0x1205e29b15148e02214d421f446d2306c4acd00b/) | ⚠️ Unaudited |
-| SiloVirtualAsset8Decimals | unknown | arbitrum | 12 deployments: ethereum `0x89197b...2c94ca`; ethereum `0xa1bc7c...27674c`; ethereum `0xcce964...29bd69`; optimism `0x9b5136...ffe263`; sonic `0x4246c6...825dcb`; sonic `0x499574...3e2e4c`; sonic `0xad525f...fcaf0a`; sonic `0xfce6c6...f351a8`; arbitrum [`0x024b64...560a6f`](./contracts/arbitrum-42161/0x024b641f3582f5842714a8fd25d62be536560a6f/); arbitrum `0x50967d...40b687`; arbitrum `0xf66c3c...93e4ec`; avalanche `0xb6adbb...70b198` | ⚠️ Unaudited |
-| SiloVirtualAssetBTC | unknown | arbitrum | 4 deployments: ethereum `0xe90c78...509f0e`; sonic `0xdb9141...67c68c`; arbitrum [`0x6f6c31...78e3eb`](./contracts/arbitrum-42161/0x6f6c3101506ccb5d9cbfe0f419e49b00a078e3eb/); avalanche `0xd831ad...7694cf` | ⚠️ Unaudited |
-| SiloVirtualAssetEUR | unknown | arbitrum | 4 deployments: ethereum `0xd248d7...a06658`; sonic `0xde3a6c...da633a`; arbitrum [`0x52eb48...fed92a`](./contracts/arbitrum-42161/0x52eb48ecc36ccbbe0def05963ad80d13ebfed92a/); avalanche `0xafd8f7...3b6fe2` | ⚠️ Unaudited |
-| SiloVirtualAssetUSD | unknown | arbitrum | 4 deployments: ethereum `0xbdd37b...21d089`; sonic `0xb47713...68a30c`; arbitrum [`0x38d94c...687065`](./contracts/arbitrum-42161/0x38d94cf961bab0ca8f6ba394c0706ec19d687065/); avalanche `0xa5478c...b82189` | ⚠️ Unaudited |
-| SolvBtcAdapter | adapter | base | [`0xb51f3c...283b13`](./contracts/base-8453/0xb51f3c1153455fba654f9ee60cd15ee399283b13/) | ⚠️ Unaudited |
-| SolvBtcBbnAdapter | adapter | base | [`0xa21eae...9996d6`](./contracts/base-8453/0xa21eae5985a2a95c06cde83af891203a299996d6/) | ⚠️ Unaudited |
-| STETHMagician | unknown | ethereum | [`0xc07b94...6946fb`](./contracts/ethereum-1/0xc07b94b2a1f1bfc7381ffc72fe217063bf6946fb/) | ⚠️ Unaudited |
-| Stream | adapter | sonic | 3 deployments: sonic [`0x023d9b...06b90e`](./contracts/sonic-146/0x023d9bcb63532d1215d4adbdb66a4410e506b90e/); sonic `0x182057...eb3aa3`; sonic `0xaf1b58...f48715` | ⚠️ Unaudited |
-| TestDeploymentScriptsAutomaticVerification | unknown | ethereum | [`0xf1589b...e2365c`](./contracts/ethereum-1/0xf1589b96d7b0838ab7bfa94a85612553e5e2365c/) | ⚠️ Unaudited |
-| TestToken | token | arbitrum | 2 deployments: arbitrum [`0x0bdf3c...b102f6`](./contracts/arbitrum-42161/0x0bdf3ca9d5155eb24e3fb8569a69be77deb102f6/); arbitrum `0x19403c...755f2b` | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | [`0xe1f03b...aa7d22`](./contracts/ethereum-1/0xe1f03b7b0ebf84e9b9f62a1db40f1efb8faa7d22/) | ⚠️ Unaudited |
-| TokensFactory | registry | ethereum | 9 deployments: ethereum [`0x0e37df...6ad622`](./contracts/ethereum-1/0x0e37df413f97fc198a84a21bc463c41b516ad622/); ethereum `0x7ed116...04cba5`; optimism `0x8a3c8f...4ec0e8`; base `0x0f9d4f...4c5f39`; base `0x19ee5a...3a4529`; base `0x32a4bc...fff2df`; base `0xbcd67f...15377c`; arbitrum `0xba53d3...0ddb1f`; arbitrum `0xe067b9...1ea7d1` | ⚠️ Unaudited |
-| TokensFactoryV2 | registry | ethereum | [`0xb6adbb...70b198`](./contracts/ethereum-1/0xb6adbb29f2d8ae731c7c72036a7fd5a7e970b198/) | ⚠️ Unaudited |
-| Tower | unknown | ethereum | 28 deployments: ethereum [`0x0ab251...687deb`](./contracts/ethereum-1/0x0ab251c6dafb5598d6a6374030b1e0bfa6687deb/); ethereum `0x83b7e0...9fee70`; ethereum `0x9d33d4...4796ce`; ethereum `0xd98c02...c750f8`; ethereum `0xf238bf...c7be53`; ethereum `0xf6a89f...ba5f23`; optimism `0x2736df...125edb`; optimism `0x413e64...22bb93`; optimism `0x7a2e2f...e7401b`; optimism `0xbacbbe...ed2d49`; sonic `0x1ef07b...a35d5c`; sonic `0x597d27...f9fff7`; sonic `0xa48b70...3950f6`; sonic `0xcdc12f...463a23`; sonic `0xfbc289...fc0ce5`; base `0x22aacd...7bdb76`; base `0x847d94...7cb622`; arbitrum `0x22fbf3...8460dd`; arbitrum `0x4182ad...541457`; arbitrum `0x464785...0858d0`; arbitrum `0x70bc95...f0968b`; arbitrum `0x75dc71...8a11dc`; arbitrum `0x7867f2...1ea06a`; arbitrum `0x9767ae...6600e5`; arbitrum `0xaabc2c...e773d8`; arbitrum `0xc1b3fb...0b53ef`; avalanche `0x74477d...46884d`; avalanche `0xd13921...529a5d` | ⚠️ Unaudited |
-| TreasuryVester | operational_periphery | ethereum | 71 deployments: ethereum [`0x01d360...ed8508`](./contracts/ethereum-1/0x01d360c54eb27a6a95ea1f8e309e5c8263ed8508/); ethereum `0x05bca5...a98915`; ethereum `0x05f14f...7ab2b3`; ethereum `0x075dda...356b0e`; ethereum `0x08605e...72ab53`; ethereum `0x09c897...c92110`; ethereum `0x0a18c5...209b70`; ethereum `0x0b3f8e...6acac2`; ethereum `0x0bc03a...d9372b`; ethereum `0x0eb91b...699431`; ethereum `0x174ce3...687639`; ethereum `0x1ef119...a62db6`; ethereum `0x20a804...0fb412`; ethereum `0x239f61...128bdb`; ethereum `0x25d3a8...28a10c`; ethereum `0x292aef...341204`; ethereum `0x336db2...358112`; ethereum `0x3a6df8...26e8e1`; ethereum `0x3abf62...224b8b`; ethereum `0x44f76e...644b7a`; ethereum `0x4608f0...2ef0f2`; ethereum `0x48a6e2...0c4cc5`; ethereum `0x4924b3...85a126`; ethereum `0x4ec034...48a455`; ethereum `0x54bf63...00e0b2`; ethereum `0x6b1695...b72bcb`; ethereum `0x6e5c82...d07831`; ethereum `0x6e797e...8115cc`; ethereum `0x6f29fe...1efe4a`; ethereum `0x78517a...3a69f8`; ethereum `0x7ce34f...4b818b`; ethereum `0x81b8ae...103dcc`; ethereum `0x83053a...aadcd7`; ethereum `0x85578f...d2813a`; ethereum `0x86c9ec...d56a49`; ethereum `0x895bb5...f17002`; ethereum `0x8a2cac...4913d5`; ethereum `0x9bae78...4929bb`; ethereum `0x9cbe9a...c3d505`; ethereum `0x9dce9e...b64b94`; ethereum `0xa1c7dc...42f4da`; ethereum `0xa53890...7abc18`; ethereum `0xa84836...3dcf2a`; ethereum `0xa9f316...1b92cc`; ethereum `0xac2c2f...95dcc6`; ethereum `0xb08fc2...d116c0`; ethereum `0xb0ba55...4cf0b9`; ethereum `0xbd5fb1...0c1a2b`; ethereum `0xc0f9fe...0a9691`; ethereum `0xc26492...19069c`; ethereum `0xc43de3...dbf79e`; ethereum `0xcd7ac4...caa070`; ethereum `0xcdc12f...463a23`; ethereum `0xcfeedb...f87823`; ethereum `0xd0fd1d...24d7c3`; ethereum `0xd17bc3...ad46d4`; ethereum `0xd6b294...4bc22e`; ethereum `0xdb1a2f...18dfe1`; ethereum `0xdf1e2a...c8867a`; ethereum `0xe2bd59...6d4e41`; ethereum `0xe3006d...59cf23`; ethereum `0xe519f3...519c13`; ethereum `0xe594fd...9d2577`; ethereum `0xe951d0...97ffc9`; ethereum `0xea2703...7e5846`; ethereum `0xf2b438...81f276`; ethereum `0xf3bb2b...3ab414`; ethereum `0xf4428d...76d716`; ethereum `0xf56cca...22aa96`; ethereum `0xf60c1e...c321e1`; ethereum `0xfcc848...558fec` | ⚠️ Unaudited |
-| UniBTCAdapter | adapter | optimism | [`0x14c646...2accd9`](./contracts/optimism-10/0x14c646c6cf518cb6b515f95771cdb4948d2accd9/) | ⚠️ Unaudited |
-| UpgradableAggregator | unknown | sonic | 3 deployments: sonic [`0x6b14c4...b540b9`](./contracts/sonic-146/0x6b14c4450a29dd9562c20259ebff67a577b540b9/); sonic `0x8a3c8f...4ec0e8`; sonic `0xd2767d...0acbe9` | ⚠️ Unaudited |
-| USDCMagicianBase | unknown | base | [`0x29752e...ad4fca`](./contracts/base-8453/0x29752e1bbd2d67992a4a28900b4122ff99ad4fca/) | ⚠️ Unaudited |
-| USDCMagicianOptimism | unknown | optimism | [`0x480eb6...2ecf10`](./contracts/optimism-10/0x480eb6d6e5dd228afdc0dcdcb81188b95c2ecf10/) | ⚠️ Unaudited |
-| VirtualTokenPrice | operational_periphery | ethereum | 4 deployments: ethereum [`0x25a39b...73a6b8`](./contracts/ethereum-1/0x25a39b66fc3a85d13b3e9143d5095560fa73a6b8/); sonic `0x5992e9...b1e494`; arbitrum `0x27276d...784aac`; avalanche `0xc09ad8...71105c` | ⚠️ Unaudited |
-| WrappedMetaVaultOracleAdapter | operational_periphery | sonic | 5 deployments: sonic [`0x12a9fe...32e1c5`](./contracts/sonic-146/0x12a9fe9f6a1fea5f3c76773d09baa9e1a332e1c5/); sonic `0x169bd9...939659`; sonic `0x4460fd...c481d3`; sonic `0x4d5f6a...f0d199`; sonic `0x5509c7...de1a9e` | ⚠️ Unaudited |
-| WrappedUsdPlusMagicianArb | unknown | arbitrum | [`0x601744...d40266`](./contracts/arbitrum-42161/0x60174496accaeb8b0815c9fb75bac50230d40266/) | ⚠️ Unaudited |
-| WrappedUsdPlusPriceProvider | operational_periphery | base | 2 deployments: base [`0x081856...07fff9`](./contracts/base-8453/0x08185627a848c2cb8886bd89863869f41907fff9/); arbitrum `0x76125b...77c7cb` | ⚠️ Unaudited |
-| WSTETHMagician | unknown | ethereum | [`0xa2ed88...403a05`](./contracts/ethereum-1/0xa2ed88339701c209f3a72215164f0d97e7403a05/) | ⚠️ Unaudited |
-| WSTETHPriceProvider | operational_periphery | ethereum | [`0x3bc972...511904`](./contracts/ethereum-1/0x3bc972757798c346bbc87ede8d31cffcac511904/) | ⚠️ Unaudited |
-| WstEthToStEthAdapterMainnet | adapter | ethereum | 4 deployments: ethereum [`0x2fb48d...6ba718`](./contracts/ethereum-1/0x2fb48d62349dc24df1bf7dd44395aef6f86ba718/); ethereum `0x92b70a...7940df`; ethereum `0xa81745...bb1f27`; ethereum `0xe37949...aa1024` | ⚠️ Unaudited |
-| WsuperOETHbAdapter | adapter | base | [`0xf66825...3caa67`](./contracts/base-8453/0xf668250af083b2b963e9f99dd5713952ac3caa67/) | ⚠️ Unaudited |
-| WsuperOETHbPriceProvider | operational_periphery | base | 2 deployments: base [`0x3ed1f0...fd55c5`](./contracts/base-8453/0x3ed1f0487c0c102c8c371fb3e5ad3e224dfd55c5/); base `0x6b14c4...b540b9` | ⚠️ Unaudited |
-| X33ToUsdAdapter | adapter | sonic | 3 deployments: sonic [`0x6daeaf...862213`](./contracts/sonic-146/0x6daeaf0b5897423fe372a37ec4de825686862213/); sonic `0x80ca8a...01769f`; sonic `0xf8d496...9ba1e5` | ⚠️ Unaudited |
-| Xai | unknown | ethereum | [`0xd7c9f0...c3beac`](./contracts/ethereum-1/0xd7c9f0e536dc865ae858b0c0453fe76d13c3beac/) | ⚠️ Unaudited |
-| XSilo | unknown | sonic | 4 deployments: sonic [`0x445176...e1dcc9`](./contracts/sonic-146/0x4451765739b2d7bce5f8bc95beaf966c45e1dcc9/); sonic `0x7c355e...f17374`; sonic `0xd03900...bdf623`; sonic `0xd6980d...ac49de` | ⚠️ Unaudited |
-| XSiloToken | token | sonic | [`0xfe3c19...b7b3ca`](./contracts/sonic-146/0xfe3c1955d3a65154e75baa688342a66343b7b3ca/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SiloToken | token | ethereum | n/a | [`0xf0b2dd...486bb0`](./contracts/ethereum-1/0xf0b2dd79324a66d2108c961d680f7616e1486bb0/) | ⚠️ Unaudited |
+| SiloGovernanceToken | token | ethereum | n/a | [`0x6f8031...8ab1f8`](./contracts/ethereum-1/0x6f80310ca7f2c654691d1383149fa1a57d8ab1f8/) | ⚠️ Unaudited |
+| API3Adapter | adapter | arbitrum | n/a | [`0x596e37...000c6d`](./contracts/arbitrum-42161/0x596e37c72fbed6cec8afa4c7e9ac547a76000c6d/) | ⚠️ Unaudited |
+| CBBTCMagicianBase | unknown | base | n/a | [`0x480eb6...2ecf10`](./contracts/base-8453/0x480eb6d6e5dd228afdc0dcdcb81188b95c2ecf10/) | ⚠️ Unaudited |
+| ChainlinkV3OracleFactory | operational_periphery | ethereum | n/a | [`0xf7dc97...521442`](./contracts/ethereum-1/0xf7dc975c96b434d436b9bf45e7a45c95f0521442/) | ⚠️ Unaudited |
+| ChronicleAdapter | adapter | arbitrum | n/a | 3 deployments: base `0x77cbcb...aaac6a`; base `0xa91075...1bb369`; arbitrum [`0x57f3b7...50afcb`](./contracts/arbitrum-42161/0x57f3b70b5bd38642b06c5270173139dfc350afcb/) | ⚠️ Unaudited |
+| ConstantETHPriceProvider | operational_periphery | base | n/a | [`0x700730...d8673a`](./contracts/base-8453/0x70073098984050f5563333be76bcd94d21d8673a/) | ⚠️ Unaudited |
+| DIAOracleFactory | operational_periphery | sonic | n/a | 12 deployments: ethereum `0x66cfbf...27bab8`; ethereum `0xf5d7d0...8d1144`; ethereum `0xf81d90...be58ad`; sonic [`0x147857...0ddae8`](./contracts/sonic-146/0x1478570fc9c8422b6733455db5504378940ddae8/); sonic `0x2aec24...2c1fd1`; arbitrum `0x3d75ba...bd83c7`; arbitrum `0x4fd711...e2dcd2`; arbitrum `0xca22fb...95c51c`; arbitrum `0xd89dbc...74f82b`; arbitrum `0xdc0530...0d93ab`; avalanche `0x72ed06...039a5d`; avalanche `0x9ff077...876c8d` | ⚠️ Unaudited |
+| DiaPriceProvider | operational_periphery | arbitrum | n/a | [`0x2e4c07...05f247`](./contracts/arbitrum-42161/0x2e4c07a88ab9cba800f3d5377e21bbe45405f247/) | ⚠️ Unaudited |
+| DiaPriceProviderV2 | operational_periphery | arbitrum | n/a | 3 deployments: arbitrum [`0x5678eb...3faac8`](./contracts/arbitrum-42161/0x5678eb5aa136cd06c01f6f6bff841bcfad3faac8/); arbitrum `0xd05fe8...d0450e`; arbitrum `0xfa773e...236bc5` | ⚠️ Unaudited |
+| DynamicKinkModel | unknown | ethereum | n/a | 25 deployments: ethereum [`0x09402f...c0ae55`](./contracts/ethereum-1/0x09402f0f9f490e38413a5d4892d1e927acc0ae55/); ethereum `0x2c8ed9...7e3c2a`; ethereum `0x5420ef...37acea`; ethereum `0x8ab5d8...8e4a9d`; ethereum `0xa1be84...8db7b1`; ethereum `0xa1d547...0ffa97`; sonic `0x2b58b3...7d827e`; sonic `0x4fff70...dbfe7c`; sonic `0x5bb409...cb0e11`; sonic `0x744a30...c7b702`; sonic `0xc65de3...430354`; sonic `0xeb3c9f...07a21f`; arbitrum `0x1157de...fbf779`; arbitrum `0x1d51f3...a03ed1`; arbitrum `0x34490c...2b079b`; arbitrum `0x774c59...5067bf`; arbitrum `0x95a7bc...66affd`; arbitrum `0xa8c5eb...78b390`; arbitrum `0xbdf161...4d58bc`; avalanche `0x363c09...a16b00`; avalanche `0x499c6e...1d9e5f`; avalanche `0x744a30...c7b702`; avalanche `0x9e6bd1...04301b`; avalanche `0xc65de3...430354`; avalanche `0xcf8278...bf8627` | ⚠️ Unaudited |
+| DynamicKinkModelFactory | registry | ethereum | n/a | 25 deployments: ethereum [`0x1d51f3...a03ed1`](./contracts/ethereum-1/0x1d51f30e5c8ec1c6efeb5d1877f7302a09a03ed1/); ethereum `0x315a83...00e479`; ethereum `0xba4a54...39344e`; ethereum `0xca22fb...95c51c`; ethereum `0xe9e4f5...b09283`; ethereum `0xedef34...a6d154`; sonic `0x7bd4d7...53b83f`; sonic `0xa1d547...0ffa97`; sonic `0xc4832a...16311d`; sonic `0xe60dfa...c99fdc`; sonic `0xf279ee...a04ef3`; sonic `0xfdc13d...65ab47`; arbitrum `0x205451...3d69b9`; arbitrum `0x28fcf0...965449`; arbitrum `0x4fff70...dbfe7c`; arbitrum `0x52ad68...452cc2`; arbitrum `0x98f231...cffb1c`; arbitrum `0xca1658...6efd83`; arbitrum `0xe37949...aa1024`; avalanche `0x5bb409...cb0e11`; avalanche `0x774c59...5067bf`; avalanche `0x8c3024...26db98`; avalanche `0xa1d547...0ffa97`; avalanche `0xc4832a...16311d`; avalanche `0xf0c5ea...cfa0d3` | ⚠️ Unaudited |
+| ERC4626OracleFactory | operational_periphery | ethereum | n/a | 15 deployments: ethereum [`0x0094c5...2b2a2c`](./contracts/ethereum-1/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); ethereum `0x2aec24...2c1fd1`; ethereum `0xa678ae...76ec9f`; ethereum `0xcedbca...5e52ab`; ethereum `0xcf8278...bf8627`; sonic `0x7dc39c...9202ea`; sonic `0xcf8d34...9a8992`; arbitrum `0x03722e...1baaa1`; arbitrum `0x5e695d...df727d`; arbitrum `0x6d4ce6...c24cd5`; arbitrum `0x72a852...c5e7c9`; arbitrum `0xb47713...68a30c`; avalanche `0x1a5bba...e30316`; avalanche `0x38d712...a7a725`; avalanche `0x7f736f...b08a47` | ⚠️ Unaudited |
+| ERC4626OracleHardcodeQuoteFactory | operational_periphery | arbitrum | n/a | 18 deployments: ethereum `0x72ed06...039a5d`; ethereum `0x774c59...5067bf`; ethereum `0xafd8f7...3b6fe2`; ethereum `0xcf8d34...9a8992`; ethereum `0xda393f...8f7aab`; ethereum `0xed2211...bc018d`; sonic `0x3a2b2a...806dfd`; sonic `0x986009...95386a`; sonic `0xcf8278...bf8627`; arbitrum [`0x1ced03...90045a`](./contracts/arbitrum-42161/0x1ced03b5a0650d5ecb5d690e1e7f8e2afb90045a/); arbitrum `0x27fbd4...d4c7b2`; arbitrum `0xb49329...398abd`; arbitrum `0xde3a6c...da633a`; avalanche `0x72a852...c5e7c9`; avalanche `0xa87a04...bd4145`; avalanche `0xbf3c74...023446`; avalanche `0xc3f01b...8c052a`; avalanche `0xe07783...1356be` | ⚠️ Unaudited |
+| ERC4626OracleWithUnderlyingFactory | operational_periphery | ethereum | n/a | 10 deployments: ethereum [`0x0d9256...033254`](./contracts/ethereum-1/0x0d925653b179f6f661b7e99d634b7479ed033254/); ethereum `0x28fcf0...965449`; ethereum `0x3a2b2a...806dfd`; ethereum `0x7f736f...b08a47`; sonic `0x774c59...5067bf`; sonic `0x9ff077...876c8d`; arbitrum `0x1a5bba...e30316`; arbitrum `0xdb9141...67c68c`; avalanche `0x6ac197...2cfb30`; avalanche `0x8cb547...f3b5ba` | ⚠️ Unaudited |
+| FixedPricePTAMMOracleFactory | operational_periphery | avalanche | n/a | 3 deployments: avalanche [`0x047801...27505c`](./contracts/avalanche-43114/0x047801ed4f53ad3dc28649ab972b3c949f27505c/); avalanche `0x22c426...7f391d`; avalanche `0xb43406...d68358` | ⚠️ Unaudited |
+| FlatPriceOracleFactory | operational_periphery | arbitrum | n/a | 10 deployments: ethereum `0xde67a8...4450cf`; sonic `0x9a5bb9...60a78b`; arbitrum [`0x45909b...24317b`](./contracts/arbitrum-42161/0x45909be5015c2d0771ce687f26055c1cf124317b/); arbitrum `0x466cd1...857879`; arbitrum `0x8c11ed...c13577`; arbitrum `0xa65193...bc8868`; arbitrum `0xa86c22...c84244`; arbitrum `0xc87fb1...8b45dc`; arbitrum `0xe460e9...325a92`; avalanche `0xe55eef...694eac` | ⚠️ Unaudited |
+| Getters | unknown | sonic | n/a | [`0xe569bd...81733f`](./contracts/sonic-146/0xe569bdc18cd807ac1cfb2c926f50d0c9b881733f/) | ⚠️ Unaudited |
+| GlobalPause | unknown | ethereum | n/a | 16 deployments: ethereum [`0x2a1ee8...932bfa`](./contracts/ethereum-1/0x2a1ee876ed23d356a7b73b42c1c16a9bcd932bfa/); ethereum `0xdda2e9...aa1c44`; optimism `0x3bc972...511904`; optimism `0x81e92d...e90929`; optimism `0x9d52c4...84cf3f`; optimism `0xb6bc6b...14b8be`; sonic `0x6b70cd...1bfdf3`; sonic `0x7d827f...8a27b8`; sonic `0xdc2a02...972c11`; arbitrum `0x446ab3...ba4105`; arbitrum `0x795079...565676`; arbitrum `0x959595...4cb97d`; arbitrum `0x9b2ae5...f46c9d`; avalanche `0x528e61...9591a2`; avalanche `0xc9c78b...6245e2`; avalanche `0xfce6c6...f351a8` | ⚠️ Unaudited |
+| GydTellorPriceProviderArb | operational_periphery | arbitrum | n/a | [`0x1197ac...b37341`](./contracts/arbitrum-42161/0x1197ac4a243fb5735bddde39d2ef33b6d4b37341/) | ⚠️ Unaudited |
+| IdleVault | core_logic | arbitrum | n/a | [`0xc6925c...4632da`](./contracts/arbitrum-42161/0xc6925c71f6ece02b1ee5ee18d7af0ba8f84632da/) | ⚠️ Unaudited |
+| IdleVaultsFactory | registry | arbitrum | n/a | 7 deployments: ethereum `0xb6f3a9...370475`; arbitrum [`0x1c80e2...642d53`](./contracts/arbitrum-42161/0x1c80e2889c0f05ab2e655d2b73c585fa2e642d53/); arbitrum `0x391f04...cdd34c`; arbitrum `0x759620...194355`; arbitrum `0xd6980d...ac49de`; arbitrum `0xe45ff3...15ec4c`; avalanche `0x889be5...8dbdf0` | ⚠️ Unaudited |
+| InterestRateDataResolver | operational_periphery | arbitrum | n/a | 6 deployments: base `0x268fc6...e636ce`; base `0xd3de08...414fed`; arbitrum [`0x242466...81fe31`](./contracts/arbitrum-42161/0x2424665e4bd37e36f48990e4644782b2ff81fe31/); arbitrum `0x669673...124825`; arbitrum `0x694616...e5676d`; arbitrum `0x8ff5be...e8f0ce` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x116e14...45307c`](./contracts/arbitrum-42161/0x116e1475780977c351d2b9125006bd550545307c/); arbitrum `0xad8370...caae89` | ⚠️ Unaudited |
+| InterestRateModelV2 | operational_periphery | arbitrum | n/a | 14 deployments: base `0xd0f2e2...780352`; base `0xf1268f...487dd1`; arbitrum [`0x374d79...171d6c`](./contracts/arbitrum-42161/0x374d79ef2a75d5d25a4ce163d85ab0b579171d6c/); arbitrum `0x6705b0...9d96e8`; arbitrum `0x9f65b9...f8f55a`; arbitrum `0xaf3038...fb9a71`; arbitrum `0xb4aa64...f0f4f6`; arbitrum `0xc4ea88...3c4c15`; arbitrum `0xd6ea27...506e0a`; arbitrum `0xee95fb...f6ef38`; avalanche `0x700730...d8673a`; avalanche `0x95fb4b...a1204e`; avalanche `0xc0a646...607a8a`; avalanche `0xf66825...3caa67` | ⚠️ Unaudited |
+| InterestRateModelV2Factory | operational_periphery | arbitrum | n/a | 12 deployments: arbitrum [`0x1ff23f...7eb36c`](./contracts/arbitrum-42161/0x1ff23f0b2445051738b4f92b0483a27bf77eb36c/); arbitrum `0x24ef2d...247214`; arbitrum `0x36bf16...3947a6`; arbitrum `0x5c7668...660089`; arbitrum `0xa41868...c4e720`; arbitrum `0xac7821...385201`; arbitrum `0xcce964...29bd69`; arbitrum `0xda91d9...960a53`; avalanche `0x26d185...c49c35`; avalanche `0xa42001...6b7170`; avalanche `0xf363c6...3e8740`; avalanche `0xf89e18...e732c8` | ⚠️ Unaudited |
+| InterestRateModelXAI | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x977488...7f1090`](./contracts/arbitrum-42161/0x97748870e9cd5eb59f39a870883dfa5f4a7f1090/); arbitrum `0x9eb892...864c0a` | ⚠️ Unaudited |
+| IRMZero | unknown | arbitrum | n/a | [`0xf4a46d...5ad6f3`](./contracts/arbitrum-42161/0xf4a46dc09e3e17d60ab54e1e9aeb47faaa5ad6f3/) | ⚠️ Unaudited |
+| LbtcAdapter | adapter | base | n/a | [`0x454e96...c07888`](./contracts/base-8453/0x454e9660915de040a1455ee550b32ce274c07888/) | ⚠️ Unaudited |
+| LeverageRouter | adapter | arbitrum | n/a | 12 deployments: ethereum `0x50daac...da22b1`; ethereum `0x612b08...c0886e`; ethereum `0x931e59...3b9bde`; ethereum `0xf5d029...b7a6b3`; sonic `0x2a3ba3...05e3e2`; sonic `0x451b35...9e28a5`; sonic `0xb1c407...4ce59b`; arbitrum [`0x128b7b...0af94b`](./contracts/arbitrum-42161/0x128b7b7457e35e201da5024c9e8d024e1b0af94b/); arbitrum `0x9e6bd1...04301b`; avalanche `0x2aec24...2c1fd1`; avalanche `0x9ac693...b08629`; avalanche `0xcfbebc...3db22d` | ⚠️ Unaudited |
+| LeverageUsingSiloFlashloanWithGeneralSwap | unknown | sonic | n/a | 5 deployments: ethereum `0x570730...f88167`; ethereum `0xcbee46...829df9`; sonic [`0x503628...358d8c`](./contracts/sonic-146/0x503628e0799ba076df56da7c0a51fe1426358d8c/); sonic `0x5f0234...aaef65`; sonic `0x7d5d34...9a8ca1` | ⚠️ Unaudited |
+| LiquidationHelper | periphery | sonic | n/a | 54 deployments: ethereum `0x116c85...0d7b47`; ethereum `0x340a07...bbd10b`; ethereum `0x3c9b67...f2f668`; ethereum `0x904871...2a9afb`; ethereum `0x931cf9...d735d3`; ethereum `0xad84b0...9dfcfa`; ethereum `0xd384c9...dbf72e`; ethereum `0xd634d8...d72a61`; ethereum `0xe90b09...514efc`; optimism `0xc3f01b...8c052a`; sonic [`0x0094c5...2b2a2c`](./contracts/sonic-146/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); sonic `0x08a52e...3f9849`; sonic `0x16bb96...0082fd`; sonic `0x1a5bba...e30316`; sonic `0x5660e3...d3bcbc`; sonic `0xccd487...604417`; sonic `0xefca82...c6dfef`; sonic `0xf363c6...3e8740`; base `0xd4576d...2fb73b`; base `0xf89e18...e732c8`; arbitrum `0x042d77...cf73d8`; arbitrum `0x069a9a...ad3a18`; arbitrum `0x1a7f0b...c3860f`; arbitrum `0x1f39ed...99b7fe`; arbitrum `0x20dd36...665204`; arbitrum `0x2ab8d9...c7f2e1`; arbitrum `0x346241...e68302`; arbitrum `0x4b8cbf...6457b6`; arbitrum `0x4e9de3...be9203`; arbitrum `0x66fa49...38a5b7`; arbitrum `0x711440...de79eb`; arbitrum `0x757748...f0584e`; arbitrum `0x7f736f...b08a47`; arbitrum `0x83f369...548a14`; arbitrum `0x953d07...d7b23c`; arbitrum `0xaa5703...321849`; arbitrum `0xb495c3...201991`; arbitrum `0xc421fe...42f8a7`; arbitrum `0xc70cb3...29cf3f`; arbitrum `0xc7ccc7...f8ee21`; arbitrum `0xc9f0fc...46bfbb`; arbitrum `0xd98c02...c750f8`; arbitrum `0xdf143c...142914`; arbitrum `0xe78e99...897ebf`; arbitrum `0xe7ed54...8469b0`; arbitrum `0xf3e0dc...4992bc`; avalanche `0x1157de...fbf779`; avalanche `0x2e0da2...aea09a`; avalanche `0x3b7466...c7d727`; avalanche `0x666146...2538cb`; avalanche `0x83d787...c6c7ff`; avalanche `0xad84b0...9dfcfa`; avalanche `0xca1658...6efd83`; avalanche `0xdb8838...231d87` | ⚠️ Unaudited |
+| ManualLiquidation | unknown | arbitrum | n/a | 6 deployments: ethereum `0x669229...69c72e`; optimism `0x662c3a...33e5fc`; base `0x66f617...7601fb`; base `0x92cecb...4c6ff9`; arbitrum [`0x26d185...c49c35`](./contracts/arbitrum-42161/0x26d1857a87d733fba7a405767dae3c3c55c49c35/); arbitrum `0xebf50c...022453` | ⚠️ Unaudited |
+| ManualLiquidationHelper | periphery | avalanche | n/a | 12 deployments: ethereum `0x899788...c2e043`; ethereum `0xed6673...cc1b56`; optimism `0xb03a9c...83bb9d`; sonic `0x361384...6b6461`; sonic `0x9ba51a...90cd42`; sonic `0xb49329...398abd`; arbitrum `0x56b928...4a59e2`; arbitrum `0x5b7930...25002a`; arbitrum `0x5defb0...42da14`; avalanche [`0x31dfc9...e520ed`](./contracts/avalanche-43114/0x31dfc9b88cb4c1c4ac0f4a11f21a330620e520ed/); avalanche `0x6ca841...a18462`; avalanche `0xc759de...213c39` | ⚠️ Unaudited |
+| MaxWithdraw | operational_periphery | sonic | n/a | [`0xdb8838...231d87`](./contracts/sonic-146/0xdb8838f8d035e5fa48b3481867424f5fc6231d87/) | ⚠️ Unaudited |
+| MiloToken | token | arbitrum | n/a | [`0x8ffc46...ca7ab1`](./contracts/arbitrum-42161/0x8ffc46a1b7a3b12f4a11db8877d302876dca7ab1/) | ⚠️ Unaudited |
+| OracleForwarderFactory | operational_periphery | sonic | n/a | [`0x38d712...a7a725`](./contracts/sonic-146/0x38d712f9e105cdbe9367be9d8061d63bcba7a725/) | ⚠️ Unaudited |
+| OracleScalerFactory | operational_periphery | arbitrum | n/a | 19 deployments: ethereum `0x26dd1f...624d90`; ethereum `0x50f790...907789`; ethereum `0x6ac197...2cfb30`; ethereum `0x7dc39c...9202ea`; sonic `0x546b94...aa4cbe`; sonic `0xbf3c74...023446`; sonic `0xed2211...bc018d`; sonic `0xf5d7d0...8d1144`; arbitrum [`0x0094c5...2b2a2c`](./contracts/arbitrum-42161/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/); arbitrum `0x9ce430...b031ae`; arbitrum `0xa59340...d1bbde`; arbitrum `0xb80271...35514b`; arbitrum `0xc2b3eb...35a06a`; arbitrum `0xd55a06...f21fba`; avalanche `0x01c6dc...67cd34`; avalanche `0x14e624...bce90a`; avalanche `0x26dd1f...624d90`; avalanche `0x390216...6a861f`; avalanche `0x51eaf3...ba93fb` | ⚠️ Unaudited |
+| PermissionedLiquidationControllerFactory | registry | arbitrum | n/a | 12 deployments: ethereum `0x2976d3...d49d30`; ethereum `0x75153a...93a99b`; ethereum `0xff8032...d31255`; sonic `0x8cee05...fe6ea2`; sonic `0xcedbca...5e52ab`; sonic `0xffd3cb...420506`; arbitrum [`0x1ff3be...35c243`](./contracts/arbitrum-42161/0x1ff3be55911289e5c794157ca285e6572835c243/); arbitrum `0xe36ed8...b33621`; arbitrum `0xe786fb...395926`; avalanche `0x78330c...54f944`; avalanche `0xad1875...11b9bf`; avalanche `0xbdd37b...21d089` | ⚠️ Unaudited |
+| PriceProvidersRepository | operational_periphery | base | n/a | 4 deployments: base [`0x17f2cd...3d4f04`](./contracts/base-8453/0x17f2cd2cfe241afb03950c2ce2bf6b42193d4f04/); base `0xf380f0...147004`; arbitrum `0x5bf4e6...4485fd`; arbitrum `0xa6c91b...de866e` | ⚠️ Unaudited |
+| PTLinearOracleFactory | operational_periphery | arbitrum | n/a | 13 deployments: ethereum `0x9e64f0...013d0e`; ethereum `0xbdf161...4d58bc`; ethereum `0xe12a7a...9412c9`; sonic `0x1bdebe...9bc2f4`; sonic `0x28fcf0...965449`; sonic `0xe37949...aa1024`; arbitrum [`0x08a52e...3f9849`](./contracts/arbitrum-42161/0x08a52ec31e0e981bbd64082224185e420d3f9849/); arbitrum `0x1c7861...78f6eb`; arbitrum `0x2cfc18...6c58a3`; arbitrum `0x3ce73c...66d967`; arbitrum `0x5992e9...b1e494`; arbitrum `0x79339e...d3de08`; avalanche `0x504b8c...f9269f` | ⚠️ Unaudited |
+| PublicAllocator | operational_periphery | arbitrum | n/a | 8 deployments: ethereum `0x8cee05...fe6ea2`; ethereum `0xafbb48...7465e9`; sonic `0xc95149...a193b7`; arbitrum [`0x597d27...f9fff7`](./contracts/arbitrum-42161/0x597d275faa31e7eb8261b33bd32563fcf3f9fff7/); arbitrum `0x75153a...93a99b`; arbitrum `0x7988fe...d6dbf2`; arbitrum `0xf9d412...8d4fd2`; avalanche `0xda3975...330b85` | ⚠️ Unaudited |
+| PythAggregatorFactory | registry | sonic | n/a | [`0xb38182...0e3409`](./contracts/sonic-146/0xb381828ef5a8158893aa647823b73893d00e3409/) | ⚠️ Unaudited |
+| RescueWAVAX | token | avalanche | n/a | [`0x315a83...00e479`](./contracts/avalanche-43114/0x315a8319e94eff8aa5fb11923c32e73fca00e479/) | ⚠️ Unaudited |
+| RevertingOracle | operational_periphery | sonic | n/a | 4 deployments: ethereum `0xefd889...9e6075`; sonic [`0x889be5...8dbdf0`](./contracts/sonic-146/0x889be50f7ef7e0d88c2023c509f4e02d378dbdf0/); arbitrum `0xd5e41d...5d3b27`; avalanche `0xf238bf...c7be53` | ⚠️ Unaudited |
+| ShareProtectedCollateralToken | token | avalanche | n/a | 32 deployments: ethereum `0x2ca8f5...efef3c`; ethereum `0x81f55f...e503ab`; ethereum `0xa761e5...42f818`; sonic `0x499c6e...1d9e5f`; sonic `0x504b8c...f9269f`; sonic `0x6af76e...6e9b3d`; sonic `0x97d6d6...11d8bd`; arbitrum `0x0e8696...725b28`; arbitrum `0x145663...106f0e`; arbitrum `0x1dab4a...c3b48f`; arbitrum `0x3637e0...841046`; arbitrum `0x3cd34d...98c82a`; arbitrum `0x4a29b7...1e01ac`; arbitrum `0x78330c...54f944`; arbitrum `0x7dc39c...9202ea`; arbitrum `0x855b15...a122c2`; arbitrum `0x8cd687...8b6dbf`; arbitrum `0x9041a0...39f30b`; arbitrum `0x9fcb9b...1cf39d`; arbitrum `0xa387a5...ed6f4b`; arbitrum `0xa9360d...9990fa`; arbitrum `0xb2f453...f30a00`; arbitrum `0xbea158...bbac96`; arbitrum `0xbf3c74...023446`; arbitrum `0xdcad90...130641`; arbitrum `0xff03cb...8597cd`; avalanche [`0x012aa4...ec030f`](./contracts/avalanche-43114/0x012aa462471ee98c53b23a227754bc8d12ec030f/); avalanche `0x97d6d6...11d8bd`; avalanche `0xa95aa7...7bd0a5`; avalanche `0xb28869...fbad67`; avalanche `0xea5359...45687b`; avalanche `0xf5d7d0...8d1144` | ⚠️ Unaudited |
+| SiloHookV1 | unknown | arbitrum | n/a | 23 deployments: ethereum `0x205451...3d69b9`; ethereum `0x4bdde8...54e9bb`; ethereum `0x8e1948...952126`; ethereum `0xc51f04...da3f5b`; optimism `0xc5d8a1...a622fd`; sonic `0x1f28be...37fbaf`; sonic `0x6f3fe5...5b7d5d`; sonic `0xedef34...a6d154`; arbitrum [`0x0b6c64...e6a456`](./contracts/arbitrum-42161/0x0b6c649ffba713e45958a2c394ed8b422ae6a456/); arbitrum `0x2d94cf...a6fdff`; arbitrum `0x6b70cd...1bfdf3`; arbitrum `0x7bd4d7...53b83f`; arbitrum `0x82219e...1ea54a`; arbitrum `0xa7495e...ff42b0`; arbitrum `0xb38182...0e3409`; arbitrum `0xd9aeb7...5d090b`; arbitrum `0xe12a7a...9412c9`; avalanche `0x22aacd...7bdb76`; avalanche `0x28fcf0...965449`; avalanche `0x45adb0...9b6c3f`; avalanche `0x75153a...93a99b`; avalanche `0x91cdec...cab6ad`; avalanche `0xedef34...a6d154` | ⚠️ Unaudited |
+| SiloIncentivesControllerCLDeployer | governance | arbitrum | n/a | 8 deployments: ethereum `0xb49329...398abd`; ethereum `0xc759de...213c39`; sonic `0xa59340...d1bbde`; arbitrum [`0x2fb48d...6ba718`](./contracts/arbitrum-42161/0x2fb48d62349dc24df1bf7dd44395aef6f86ba718/); arbitrum `0x6b298f...a5d817`; arbitrum `0xe588ea...78e5e5`; avalanche `0xcedbca...5e52ab`; avalanche `0xffd3cb...420506` | ⚠️ Unaudited |
+| SiloIncentivesControllerCLFactory | registry | avalanche | n/a | 11 deployments: ethereum `0x491961...9a9811`; ethereum `0x4fd711...e2dcd2`; sonic `0xbfde5f...6b8d51`; sonic `0xca22fb...95c51c`; arbitrum `0x1b2267...1b5667`; arbitrum `0x38c5cc...f2269d`; arbitrum `0x6f3251...4f395f`; arbitrum `0xa3207c...f3ad49`; arbitrum `0xed397c...32509a`; avalanche [`0x08a52e...3f9849`](./contracts/avalanche-43114/0x08a52ec31e0e981bbd64082224185e420d3f9849/); avalanche `0x9a5bb9...60a78b` | ⚠️ Unaudited |
+| SiloIncentivesControllerGaugeLikeFactory | operational_periphery | arbitrum | n/a | 6 deployments: arbitrum [`0x2d386c...9d2211`](./contracts/arbitrum-42161/0x2d386cfe3246f1568cf1f78820f830f2e09d2211/); arbitrum `0x41fbdd...f39ee8`; arbitrum `0x435ab3...c4dc06`; arbitrum `0x949b90...b03218`; arbitrum `0xaf1b58...f48715`; arbitrum `0xd3e800...007116` | ⚠️ Unaudited |
+| SiloLiquidationLens | periphery | arbitrum | n/a | 9 deployments: base `0x2265b1...110a1e`; base `0xf363c6...3e8740`; arbitrum [`0x20c3aa...0a3c4a`](./contracts/arbitrum-42161/0x20c3aac97e1c85e66488c1ab960268561a0a3c4a/); arbitrum `0x3cac12...1d11fb`; arbitrum `0x48c030...e904b6`; arbitrum `0x581e1a...1fa8ab`; arbitrum `0xd4240a...a72133`; arbitrum `0xdc7066...506d98`; arbitrum `0xf8b378...db4e6d` | ⚠️ Unaudited |
+| SiloRepository | registry | base | n/a | 4 deployments: base [`0x1e915d...0beda3`](./contracts/base-8453/0x1e915d8950f0c6bf9d01c603d33c50b6110beda3/); base `0xa42001...6b7170`; arbitrum `0x46603a...6f1ae3`; arbitrum `0x865804...10ff0a` | ⚠️ Unaudited |
+| SiloRouter | adapter | sonic | n/a | 9 deployments: ethereum `0x871ea4...fbd887`; optimism `0xc66d2a...2c76a9`; sonic [`0x22aacd...7bdb76`](./contracts/sonic-146/0x22aacdec57b13911de9f188cf69633cc537bdb76/); base `0x757748...f0584e`; base `0xc3f01b...8c052a`; arbitrum `0x7547d6...426f82`; arbitrum `0x9992f6...4e3681`; arbitrum `0xd4bddd...b5ee08`; arbitrum `0xe83fdb...6b7231` | ⚠️ Unaudited |
+| SiloRouterImplementation | adapter | arbitrum | n/a | [`0x1a36c8...363353`](./contracts/arbitrum-42161/0x1a36c81756d09950acbd1abdc522c0dd41363353/) | ⚠️ Unaudited |
+| SiloRouterV2 | adapter | sonic | n/a | 14 deployments: ethereum `0x865804...10ff0a`; ethereum `0xc5d945...6a1d08`; ethereum `0xf380f0...147004`; optimism `0x539ac1...3d53a4`; sonic [`0x16876a...503b1c`](./contracts/sonic-146/0x16876af41e8beddbf9b67d2b66bb50abf3503b1c/); sonic `0x21cfe3...00b59c`; arbitrum `0x27e585...fcd7d7`; arbitrum `0x637658...9e1467`; arbitrum `0xb1d1b1...4603d4`; arbitrum `0xcf8d34...9a8992`; arbitrum `0xeb5a0e...5aa335`; avalanche `0x39f7ee...eee1cf`; avalanche `0x9ea286...e21a10`; avalanche `0xcdcbbb...1133f9` | ⚠️ Unaudited |
+| SiloVaultDeployer | core_logic | sonic | n/a | 22 deployments: ethereum `0x463736...f8bcb4`; ethereum `0x4b8cbf...6457b6`; ethereum `0x72a852...c5e7c9`; ethereum `0xe7ed54...8469b0`; sonic [`0x02bbb8...171b1d`](./contracts/sonic-146/0x02bbb86731ec6aa81b52961e14dd1aebe5171b1d/); sonic `0x04e209...e88049`; sonic `0x39f7ee...eee1cf`; sonic `0xa387a5...ed6f4b`; arbitrum `0x2aee31...20ea2a`; arbitrum `0x340a07...bbd10b`; arbitrum `0x408a8d...a2c7ff`; arbitrum `0x451b35...9e28a5`; arbitrum `0x5d09b4...c462bb`; arbitrum `0x737c6a...2728d0`; arbitrum `0xafbb48...7465e9`; arbitrum `0xd18634...e6561b`; arbitrum `0xdd9382...26bd61`; arbitrum `0xf56dfe...53c78e`; avalanche `0x77cbcb...aaac6a`; avalanche `0x8cee05...fe6ea2`; avalanche `0xc1749f...c4c564`; avalanche `0xf81d90...be58ad` | ⚠️ Unaudited |
+| SiloVirtualAsset8Decimals | unknown | arbitrum | n/a | 4 deployments: arbitrum [`0x024b64...560a6f`](./contracts/arbitrum-42161/0x024b641f3582f5842714a8fd25d62be536560a6f/); arbitrum `0x50967d...40b687`; arbitrum `0xf66c3c...93e4ec`; avalanche `0xb6adbb...70b198` | ⚠️ Unaudited |
+| SiloVirtualAssetBTC | unknown | arbitrum | n/a | 4 deployments: ethereum `0xe90c78...509f0e`; sonic `0xdb9141...67c68c`; arbitrum [`0x6f6c31...78e3eb`](./contracts/arbitrum-42161/0x6f6c3101506ccb5d9cbfe0f419e49b00a078e3eb/); avalanche `0xd831ad...7694cf` | ⚠️ Unaudited |
+| SiloVirtualAssetEUR | unknown | arbitrum | n/a | 4 deployments: ethereum `0xd248d7...a06658`; sonic `0xde3a6c...da633a`; arbitrum [`0x52eb48...fed92a`](./contracts/arbitrum-42161/0x52eb48ecc36ccbbe0def05963ad80d13ebfed92a/); avalanche `0xafd8f7...3b6fe2` | ⚠️ Unaudited |
+| SiloVirtualAssetUSD | unknown | arbitrum | n/a | 4 deployments: ethereum `0xbdd37b...21d089`; sonic `0xb47713...68a30c`; arbitrum [`0x38d94c...687065`](./contracts/arbitrum-42161/0x38d94cf961bab0ca8f6ba394c0706ec19d687065/); avalanche `0xa5478c...b82189` | ⚠️ Unaudited |
+| SolvBtcAdapter | adapter | base | n/a | [`0xb51f3c...283b13`](./contracts/base-8453/0xb51f3c1153455fba654f9ee60cd15ee399283b13/) | ⚠️ Unaudited |
+| SolvBtcBbnAdapter | adapter | base | n/a | [`0xa21eae...9996d6`](./contracts/base-8453/0xa21eae5985a2a95c06cde83af891203a299996d6/) | ⚠️ Unaudited |
+| Stream | adapter | sonic | n/a | 2 deployments: sonic [`0x023d9b...06b90e`](./contracts/sonic-146/0x023d9bcb63532d1215d4adbdb66a4410e506b90e/); sonic `0x182057...eb3aa3` | ⚠️ Unaudited |
+| TestToken | token | arbitrum | n/a | 2 deployments: arbitrum [`0x0bdf3c...b102f6`](./contracts/arbitrum-42161/0x0bdf3ca9d5155eb24e3fb8569a69be77deb102f6/); arbitrum `0x19403c...755f2b` | ⚠️ Unaudited |
+| TokensFactory | registry | base | n/a | 6 deployments: base [`0x0f9d4f...4c5f39`](./contracts/base-8453/0x0f9d4fa99a0ca3c3c0dedd287531c04e054c5f39/); base `0x19ee5a...3a4529`; base `0x32a4bc...fff2df`; base `0xbcd67f...15377c`; arbitrum `0xba53d3...0ddb1f`; arbitrum `0xe067b9...1ea7d1` | ⚠️ Unaudited |
+| Tower | unknown | base | n/a | 17 deployments: ethereum `0xd98c02...c750f8`; ethereum `0xf238bf...c7be53`; optimism `0xbacbbe...ed2d49`; sonic `0x597d27...f9fff7`; base [`0x22aacd...7bdb76`](./contracts/base-8453/0x22aacdec57b13911de9f188cf69633cc537bdb76/); base `0x847d94...7cb622`; arbitrum `0x22fbf3...8460dd`; arbitrum `0x4182ad...541457`; arbitrum `0x464785...0858d0`; arbitrum `0x70bc95...f0968b`; arbitrum `0x75dc71...8a11dc`; arbitrum `0x7867f2...1ea06a`; arbitrum `0x9767ae...6600e5`; arbitrum `0xaabc2c...e773d8`; arbitrum `0xc1b3fb...0b53ef`; avalanche `0x74477d...46884d`; avalanche `0xd13921...529a5d` | ⚠️ Unaudited |
+| TreasuryVester | operational_periphery | ethereum | n/a | 9 deployments: ethereum [`0x01d360...ed8508`](./contracts/ethereum-1/0x01d360c54eb27a6a95ea1f8e309e5c8263ed8508/); ethereum `0x0bc03a...d9372b`; ethereum `0x239f61...128bdb`; ethereum `0x3a6df8...26e8e1`; ethereum `0x48a6e2...0c4cc5`; ethereum `0x6f29fe...1efe4a`; ethereum `0xb0ba55...4cf0b9`; ethereum `0xc43de3...dbf79e`; ethereum `0xcd7ac4...caa070` | ⚠️ Unaudited |
+| USDCMagicianBase | unknown | base | n/a | [`0x29752e...ad4fca`](./contracts/base-8453/0x29752e1bbd2d67992a4a28900b4122ff99ad4fca/) | ⚠️ Unaudited |
+| VirtualTokenPrice | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x25a39b...73a6b8`](./contracts/ethereum-1/0x25a39b66fc3a85d13b3e9143d5095560fa73a6b8/); sonic `0x5992e9...b1e494`; arbitrum `0x27276d...784aac`; avalanche `0xc09ad8...71105c` | ⚠️ Unaudited |
+| WrappedMetaVaultOracleAdapter | operational_periphery | sonic | n/a | 2 deployments: sonic [`0x12a9fe...32e1c5`](./contracts/sonic-146/0x12a9fe9f6a1fea5f3c76773d09baa9e1a332e1c5/); sonic `0x4d5f6a...f0d199` | ⚠️ Unaudited |
+| WrappedUsdPlusMagicianArb | unknown | arbitrum | n/a | [`0x601744...d40266`](./contracts/arbitrum-42161/0x60174496accaeb8b0815c9fb75bac50230d40266/) | ⚠️ Unaudited |
+| WrappedUsdPlusPriceProvider | operational_periphery | base | n/a | 2 deployments: base [`0x081856...07fff9`](./contracts/base-8453/0x08185627a848c2cb8886bd89863869f41907fff9/); arbitrum `0x76125b...77c7cb` | ⚠️ Unaudited |
+| WstEthToStEthAdapterMainnet | adapter | ethereum | n/a | 4 deployments: ethereum [`0x2fb48d...6ba718`](./contracts/ethereum-1/0x2fb48d62349dc24df1bf7dd44395aef6f86ba718/); ethereum `0x92b70a...7940df`; ethereum `0xa81745...bb1f27`; ethereum `0xe37949...aa1024` | ⚠️ Unaudited |
+| WsuperOETHbAdapter | adapter | base | n/a | [`0xf66825...3caa67`](./contracts/base-8453/0xf668250af083b2b963e9f99dd5713952ac3caa67/) | ⚠️ Unaudited |
+| WsuperOETHbPriceProvider | operational_periphery | base | n/a | 2 deployments: base [`0x3ed1f0...fd55c5`](./contracts/base-8453/0x3ed1f0487c0c102c8c371fb3e5ad3e224dfd55c5/); base `0x6b14c4...b540b9` | ⚠️ Unaudited |
+| Xai | unknown | ethereum | n/a | [`0xd7c9f0...c3beac`](./contracts/ethereum-1/0xd7c9f0e536dc865ae858b0c0453fe76d13c3beac/) | ⚠️ Unaudited |
+| XSilo | unknown | sonic | n/a | [`0x445176...e1dcc9`](./contracts/sonic-146/0x4451765739b2d7bce5f8bc95beaf966c45e1dcc9/) | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (3)
+### ✅ Verified by Bytecode + Audited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| PartialLiquidation | unknown | optimism | 8 deployments: optimism [`0x06a4cb...a6d521`](./contracts/optimism-10/0x06a4cb70610784e4e5bbb8314568235291a6d521/); optimism `0x4aff6c...32ef28`; optimism `0xbf1ddb...3a3dee`; sonic `0xa95aa7...7bd0a5`; arbitrum `0x4c8fc0...6189d6`; arbitrum `0xb021b1...cf4da4`; arbitrum `0xb55fcb...226250`; arbitrum `0xef1bc6...41024b` | ✅ Audited (bytecode match) |
-| ShareDebtToken | token | optimism | 46 deployments: ethereum `0x06264d...270d34`; ethereum `0x977e9b...3439cf`; ethereum `0xa69fa9...c78f49`; ethereum `0xc65de3...430354`; ethereum `0xd9070b...1ac001`; optimism [`0x01764c...ffdd1e`](./contracts/optimism-10/0x01764cd27a2e57237a99d3c15ea0d80f66ffdd1e/); optimism `0x116c85...0d7b47`; optimism `0x8431ad...c06b70`; optimism `0x92d238...d5fec0`; optimism `0x994e89...e45ec3`; optimism `0xe8401c...da1a45`; sonic `0x26c93b...7325dc`; sonic `0x2ca8f5...efef3c`; sonic `0x4a6c34...0737a6`; sonic `0x4e33a8...514a14`; sonic `0x51eaf3...ba93fb`; sonic `0x74477d...46884d`; sonic `0x9e64f0...013d0e`; sonic `0xa8d9fa...8070fc`; sonic `0xe83fdb...6b7231`; sonic `0xf0c5ea...cfa0d3`; arbitrum `0x058a54...3cd436`; arbitrum `0x06264d...270d34`; arbitrum `0x15f7ff...eb3f2c`; arbitrum `0x2cbb8b...46ff32`; arbitrum `0x3c9737...6f267e`; arbitrum `0x3f7966...3e7f55`; arbitrum `0x40734f...96c8de`; arbitrum `0x4e125e...3d5dc6`; arbitrum `0x53b462...1f1b8b`; arbitrum `0x672f1a...5fd159`; arbitrum `0x6f29fe...1efe4a`; arbitrum `0x78d692...88a4aa`; arbitrum `0x8cb547...f3b5ba`; arbitrum `0xae26ae...479d68`; arbitrum `0xcf2385...4493a7`; arbitrum `0xcf8278...bf8627`; arbitrum `0xd27853...4e544b`; arbitrum `0xee2a95...ec173b`; arbitrum `0xee6845...2ddedd`; avalanche `0x1f39ed...99b7fe`; avalanche `0x2ca8f5...efef3c`; avalanche `0x5420ef...37acea`; avalanche `0x7dc39c...9202ea`; avalanche `0x9d33d4...4796ce`; avalanche `0xf8b378...db4e6d` | ✅ Audited (bytecode match) |
-| SiloFactory | registry | avalanche | 43 deployments: ethereum `0x1dab4a...c3b48f`; ethereum `0x22a3cf...f7b581`; ethereum `0x2534b2...7b96be`; ethereum `0x2c0fa0...6b56ea`; ethereum `0x4d919c...737589`; ethereum `0x9040a9...3ef8f2`; ethereum `0xb7d391...64cd0a`; ethereum `0xccf804...8878f8`; optimism `0x55a498...3d466b`; optimism `0x6b14c4...b540b9`; optimism `0x845839...c07c43`; optimism `0xb25255...f0c25d`; optimism `0xfa773e...236bc5`; sonic `0x4e9de3...be9203`; sonic `0x55c5b7...cd1372`; sonic `0x81e92d...e90929`; sonic `0x89e3cf...2904ef`; sonic `0xa42001...6b7170`; sonic `0xb9276b...182dfe`; sonic `0xf81d90...be58ad`; base `0x13b7f8...2bb253`; base `0x2899b0...2462b5`; base `0x408822...d36f2b`; base `0xa40111...9a982a`; arbitrum `0x384dc7...5b657c`; arbitrum `0x416648...74b719`; arbitrum `0x4246c6...825dcb`; arbitrum `0x44347a...eda0a0`; arbitrum `0x504b8c...f9269f`; arbitrum `0x5418cc...ed558c`; arbitrum `0x621eac...693a33`; arbitrum `0x9ff077...876c8d`; arbitrum `0xae9461...132b40`; arbitrum `0xafd8f7...3b6fe2`; arbitrum `0xb158cb...f85b29`; arbitrum `0xb72007...e08122`; arbitrum `0xf7dc97...521442`; avalanche [`0x0f9d4f...4c5f39`](./contracts/avalanche-43114/0x0f9d4fa99a0ca3c3c0dedd287531c04e054c5f39/); avalanche `0x55c5b7...cd1372`; avalanche `0x92cecb...4c6ff9`; avalanche `0x931e59...3b9bde`; avalanche `0x9e64f0...013d0e`; avalanche `0xf1268f...487dd1` | ✅ Audited (bytecode match) |
+- None
 
-### ⚠️ Verified by Bytecode + Unaudited (4)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC4626OracleHardcodeQuoteFactory | operational_periphery | arbitrum | 19 deployments: ethereum `0x72ed06...039a5d`; ethereum `0x774c59...5067bf`; ethereum `0xafd8f7...3b6fe2`; ethereum `0xcf8d34...9a8992`; ethereum `0xda393f...8f7aab`; ethereum `0xed2211...bc018d`; sonic `0x3a2b2a...806dfd`; sonic `0x986009...95386a`; sonic `0xcf8278...bf8627`; sonic `0xec00a1...9a87f8`; arbitrum [`0x1ced03...90045a`](./contracts/arbitrum-42161/0x1ced03b5a0650d5ecb5d690e1e7f8e2afb90045a/); arbitrum `0x27fbd4...d4c7b2`; arbitrum `0xb49329...398abd`; arbitrum `0xde3a6c...da633a`; avalanche `0x72a852...c5e7c9`; avalanche `0xa87a04...bd4145`; avalanche `0xbf3c74...023446`; avalanche `0xc3f01b...8c052a`; avalanche `0xe07783...1356be` | ⚠️ Unaudited (bytecode match) |
-| ShareProtectedCollateralToken | token | avalanche | 46 deployments: ethereum `0x2ca8f5...efef3c`; ethereum `0x81f55f...e503ab`; ethereum `0x8cd687...8b6dbf`; ethereum `0xa761e5...42f818`; ethereum `0xfbc289...fc0ce5`; optimism `0x015bbc...4cf76d`; optimism `0x1197ac...b37341`; optimism `0x42081f...ee04cf`; optimism `0x706489...bd7bad`; optimism `0xa4e921...bab638`; optimism `0xb34330...3b644f`; sonic `0x14e624...bce90a`; sonic `0x1a36c8...363353`; sonic `0x499c6e...1d9e5f`; sonic `0x504b8c...f9269f`; sonic `0x621eac...693a33`; sonic `0x6af76e...6e9b3d`; sonic `0x8586c8...5c4dea`; sonic `0x894957...41a128`; sonic `0x97d6d6...11d8bd`; sonic `0xb58b33...f17adf`; arbitrum `0x0e8696...725b28`; arbitrum `0x145663...106f0e`; arbitrum `0x1dab4a...c3b48f`; arbitrum `0x3637e0...841046`; arbitrum `0x3cd34d...98c82a`; arbitrum `0x4a29b7...1e01ac`; arbitrum `0x78330c...54f944`; arbitrum `0x7dc39c...9202ea`; arbitrum `0x855b15...a122c2`; arbitrum `0x8cd687...8b6dbf`; arbitrum `0x9041a0...39f30b`; arbitrum `0x9fcb9b...1cf39d`; arbitrum `0xa387a5...ed6f4b`; arbitrum `0xa9360d...9990fa`; arbitrum `0xb2f453...f30a00`; arbitrum `0xbea158...bbac96`; arbitrum `0xbf3c74...023446`; arbitrum `0xdcad90...130641`; arbitrum `0xff03cb...8597cd`; avalanche [`0x012aa4...ec030f`](./contracts/avalanche-43114/0x012aa462471ee98c53b23a227754bc8d12ec030f/); avalanche `0x97d6d6...11d8bd`; avalanche `0xa95aa7...7bd0a5`; avalanche `0xb28869...fbad67`; avalanche `0xea5359...45687b`; avalanche `0xf5d7d0...8d1144` | ⚠️ Unaudited (bytecode match) |
-| SiloCollateralOnlyFactory | unknown | arbitrum | 3 deployments: ethereum `0xbd7a2f...6922d1`; ethereum `0xfb94c3...208cb1`; arbitrum [`0xa82837...408878`](./contracts/arbitrum-42161/0xa82837464c1da27935e750717a423e738b408878/) | ⚠️ Unaudited (bytecode match) |
-| TestNatSpec | unknown | sonic | 10 deployments: sonic [`0x058a54...3cd436`](./contracts/sonic-146/0x058a54bf6560038ca2cb58d6cdaf17c5d93cd436/); sonic `0x0e8696...725b28`; sonic `0x30aaa8...3a29dc`; sonic `0x4c8fc0...6189d6`; sonic `0x51de49...8ec689`; sonic `0xc4ea88...3c4c15`; sonic `0xda91d9...960a53`; sonic `0xf2d1f6...29ef7b`; arbitrum `0x7eae43...846507`; arbitrum `0xff1d03...b17a67` | ⚠️ Unaudited (bytecode match) |
+- None
 
-### ❓ Unverified (395)
+### ❓ Unverified (215)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0x047801ed4f53ad3dc28649ab972b3c949f27505c) | proxy | arbitrum | `0xb43406...d68358` | ❓ Unverified |
-| Proxy (impl: 0x4aff6c8a1b78419be6bb30717bcd93775b32ef28) | proxy | arbitrum | `0x35665d...bc9045` | ❓ Unverified |
-| Proxy (impl: 0x626b6fd8cb764f1776bf7d65049d998d5a9f6c0a) | proxy | optimism | `0xd13921...529a5d` | ❓ Unverified |
-| Proxy (impl: 0x7a2e2fb81298d749f1b542ee8049070ba3e7401b) | proxy | arbitrum | `0xfd89f8...ac68b5` | ❓ Unverified |
-| Proxy (impl: 0x9308608b625b0868102595bd2403cf2cde842492) | proxy | arbitrum | `0xa5ec7e...9f0962` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x012d96...142923` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x03fcd0...acf88c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x047801...27505c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x04ed10...989c4a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0527e1...df8e98` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x069a9a...ad3a18` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0d0097...e5fc39` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0d9f3e...9061aa` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0f11c5...2cb341` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x102aad...e08401` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x138739...45e54b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x14522e...2e5d96` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x16230f...ee588c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1b87e1...af036b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1f6285...817fbd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x20c3aa...0a3c4a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x240a30...79d319` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2e2e7c...87946a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2fc9c3...4366f5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3205da...da2ffe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x335f9b...d13272` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x337752...f27097` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x372256...3af073` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x375037...7a5b3c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3bca0e...f1aa77` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3f03a2...fc48e1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4129fd...e8716d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x416648...74b719` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4d5831...96eb62` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x50967d...40b687` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x50ea68...7b6034` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x539ac1...3d53a4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x581e1a...1fa8ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5e1854...4bd422` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x66c91b...efbcb3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x692d20...bb7d8a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x731a78...a75b5b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x76577e...e3c79d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x78622f...21b16b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7a90f2...b86037` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7c0520...9c44be` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7dcb5c...ef375b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7e75c0...c03d7a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7e9a00...747f7d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8205ef...e76137` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8e3953...84e495` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8ed9d9...4943a7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x92dbc2...a33f29` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9480f4...2f0f12` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9546d8...3c9065` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x978fb4...657c8a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9b5136...ffe263` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9cc4d6...f63243` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9f5b4e...fd6a8e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9f9925...c6397b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa0f0e6...bcec58` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa40f6c...113857` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa70422...17ec6d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa98837...c76103` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xadf6a1...5d59ed` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb11bf3...cee4af` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb51889...8fe512` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb7dc4e...221e34` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xbacc38...306288` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc0583b...bb13ca` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc2ef8e...b2a81a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc572f9...a13e29` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc60d70...742043` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd00c5a...680808` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdcb76f...141ba2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe067b9...1ea7d1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe6c81b...a6b16c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe9f1a7...3dd0d4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xed065d...b8377a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xed0f68...942e81` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfc314c...d3570e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfda22a...cff421` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x01c6dc...67cd34` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x047801...27505c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x069a9a...ad3a18` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0a9b6d...a89f02` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0f0768...8eb5f6` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0f9d4f...4c5f39` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x103818...7ac600` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x110e9a...88addd` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x13b7f8...2bb253` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x17b0fd...a7f61d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x196d31...e123fd` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x1af9ab...da370a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x1e305f...8c2a5f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x1ef07b...a35d5c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x205e95...e88516` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x22aacd...7bdb76` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x22c426...7f391d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x24f1a7...e661c5` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x26d185...c49c35` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x29752e...ad4fca` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x2a4507...0f3faa` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x2c0fa0...6b56ea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x2c7e81...e26441` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x308c4b...d788de` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x31dfc9...e520ed` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x32a4bc...fff2df` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x361384...6b6461` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x3b7466...c7d727` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x3d1fe4...1ccd39` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x3ec720...977246` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x3ed1f0...fd55c5` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x404501...f656cd` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x408822...d36f2b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x42422c...86992f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x44e9c6...b32d3d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x4576fa...fa27bd` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x45adb0...9b6c3f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x474972...f2dc80` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x4d43e7...03834b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x528e61...9591a2` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x560a0c...bb5487` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x5a0408...29cceb` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x5f351a...61d6ea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x6228a4...53592e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x626b6f...9f6c0a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x626e6a...e3100e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x666146...2538cb` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x6bf552...117a0d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x700730...d8673a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x74477d...46884d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x757748...f0584e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x77cbcb...aaac6a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7940cb...1d3008` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7c7b42...ae8a8d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7cd617...721274` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7dd2d9...e9b0eb` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x8111bb...4ec3a3` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x85b027...7f2a29` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x87e385...e88c50` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x89c601...9c205b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x95fb4b...a1204e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x96c317...12efb9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x9d33d4...4796ce` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa013e7...afcfef` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa1c283...e86bba` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa40111...9a982a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa42001...6b7170` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa87a04...bd4145` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa91075...1bb369` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa95aa7...7bd0a5` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb05f47...d1f1b8` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb2f667...13e360` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb58b33...f17adf` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb6adbb...70b198` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb95aa7...0800e1` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xbcd67f...15377c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xbd4fa9...691975` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xbf1b71...4f95ec` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xc0a646...607a8a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xc66219...f0664f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xc9c78b...6245e2` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xd4df41...402269` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xdc228d...a1d4a7` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xde73c3...16e6b0` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xe05966...ce3b5e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xec862b...6b6602` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xececfc...3671ea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf1268f...487dd1` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf213ee...d855f1` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf363c6...3e8740` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf380f0...147004` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf66825...3caa67` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf89e18...e732c8` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf8b378...db4e6d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xfce6c6...f351a8` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0x04108a...c7cd9a` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0x087ae3...c42697` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0x18360b...dd2202` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0x5678eb...3faac8` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0xe12a7a...9412c9` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x0f0768...8eb5f6` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x142997...e98681` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xb59605...b21e55` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xcdcbbb...1133f9` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xde73c3...16e6b0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x011539...df648b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x02f3da...d63373` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x03ff53...26c821` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x047801...27505c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x04e209...e88049` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x06a371...506330` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x06a4cb...a6d521` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x078912...b553b1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0a9b6d...a89f02` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0b8b3d...210fac` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0bf60c...4b3112` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0e23c9...080973` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0f9d4f...4c5f39` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0fa3e1...536f10` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x103818...7ac600` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x110e9a...88addd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x116c85...0d7b47` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x13b7f8...2bb253` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x142997...e98681` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x14e624...bce90a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x169aae...823bf9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x178145...d23a27` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x17b0fd...a7f61d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x17f2cd...3d4f04` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x19ee5a...3a4529` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x1af9ab...da370a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x1dd000...799c25` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x1ef07b...a35d5c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x205e95...e88516` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x212362...99de20` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2265b1...110a1e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x22c426...7f391d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2375eb...887493` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x24f1a7...e661c5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x26c93b...7325dc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2890ab...ee90e3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x29752e...ad4fca` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2a4507...0f3faa` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2b07e8...b5bfe6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2c0fa0...6b56ea` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2cd4f5...581299` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2fa303...3dc2b6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x31dfc9...e520ed` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x32a4bc...fff2df` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x349b44...b7ef5d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x361384...6b6461` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x37ff61...0f1dae` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x3baa43...4b89a2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x3bc972...511904` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x408822...d36f2b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4129fd...e8716d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x413e64...22bb93` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x446da3...1080a6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4576fa...fa27bd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x45adb0...9b6c3f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x474972...f2dc80` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4aff6c...32ef28` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4b74b5...396fd9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x4d1e98...5fd423` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x518246...21427f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x528e61...9591a2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x557d83...b36937` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x560a0c...bb5487` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x593b38...430af1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x5a0408...29cceb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x5cf9f0...0a6c10` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x5ef584...bc3a34` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x5f351a...61d6ea` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x60bc74...46d3f6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6228a4...53592e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x626e6a...e3100e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x662c3a...33e5fc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x666146...2538cb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x66c91b...efbcb3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x66f617...7601fb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6b2c80...20da7b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6bf552...117a0d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6ca841...a18462` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x6ec69e...f46bd7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x70004f...754f7a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x700730...d8673a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x74477d...46884d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7720ef...9f2ab6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x77c5ab...bdc4c4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7940cb...1d3008` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7a2e2f...e7401b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7a90f2...b86037` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7a9aeb...827613` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7c0520...9c44be` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x7cd617...721274` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x80953e...268496` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8111bb...4ec3a3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x81e92d...e90929` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x822a12...194b00` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8431ad...c06b70` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x845839...c07c43` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x847d94...7cb622` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x85b027...7f2a29` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x86ae73...0b04f2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x871ea4...fbd887` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x874780...93369c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x87e385...e88c50` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x889be5...8dbdf0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8950af...9472d1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x89c601...9c205b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x89e3cf...2904ef` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8a08c8...08b4bf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8a3c8f...4ec0e8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8b85bb...028222` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8c1b49...376b1b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8cc19c...069ac0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x8dc829...48b4ba` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x92d238...d5fec0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x930860...842492` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x931cf9...d735d3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x95fb4b...a1204e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x96c317...12efb9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x993797...6eed99` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9ac693...b08629` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9b1fcd...437a85` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9d33d4...4796ce` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9d52c4...84cf3f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa0380d...4dd521` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa25a7e...9123b9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa2ffac...b6bd53` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa40111...9a982a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa42001...6b7170` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa4e921...bab638` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa5b7fa...151a3b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa5dec4...eba7ce` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa87a04...bd4145` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa909c8...66de04` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa95aa7...7bd0a5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xacf3dd...16853e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xad525f...fcaf0a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xadf6a1...5d59ed` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xae3402...f6d944` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xaeab67...b5e6c7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb0abdc...a07091` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb14f20...a220e4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb19c46...151bf1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb25255...f0c25d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb2aa2e...f30807` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb2f667...13e360` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb501c1...255607` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb562b6...74e6b5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb58b33...f17adf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb59605...b21e55` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb5aca3...21140c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb6adbb...70b198` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb6bc6b...14b8be` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb95aa7...0800e1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xba52be...7d95ff` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbb6af6...1ebd0b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbc1fcb...8a7ec1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbc73c4...73c3dc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbcd67f...15377c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbd3958...81f4a9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xc66d2a...2c76a9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xc99519...f14d6a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xc9c78b...6245e2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcb6ccb...d715ec` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcdc945...e4cdfd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcf99a7...c1605b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcfbebc...3db22d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd0f2e2...780352` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd176b9...614740` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd2368b...14951f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd2767d...0acbe9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd3de08...414fed` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd4576d...2fb73b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd4df41...402269` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xda3975...330b85` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xdbb928...0bbcbd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xdc228d...a1d4a7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xde73c3...16e6b0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe1a597...5ce3f8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe28d39...deeb8f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe2ac9d...cdff13` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe3491e...a6a30b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe37688...1c23ad` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe856a3...3d2b3a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe89d07...c16c0f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xec862b...6b6602` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xececfc...3671ea` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xedc9eb...b6f62f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xefc6ae...9419f8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf0750a...2a25df` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf3d2e7...36bcfe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf52240...6d4d62` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf66825...3caa67` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xfc4038...bcd42f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xff5f7b...7c0641` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x081856...07fff9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x0a9b6d...a89f02` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x2a4507...0f3faa` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x3025ba...b3fcec` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x42422c...86992f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x5a0408...29cceb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x626e6a...e3100e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x6ccf6a...c6b21e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xad525f...fcaf0a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xb19c46...151bf1` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xb2f667...13e360` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xbf1b71...4f95ec` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xd4576d...2fb73b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xde73c3...16e6b0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xfc4038...bcd42f` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | optimism | n/a | `0x757748...f0584e` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x087ae3...c42697` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe12a7a...9412c9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0f0768...8eb5f6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x142997...e98681` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb59605...b21e55` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xcdcbbb...1133f9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xde73c3...16e6b0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x011539...df648b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x02f3da...d63373` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x03ff53...26c821` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x04e209...e88049` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x06a371...506330` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x06a4cb...a6d521` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x078912...b553b1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0a9b6d...a89f02` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0b8b3d...210fac` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0bf60c...4b3112` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0e23c9...080973` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0f9d4f...4c5f39` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0fa3e1...536f10` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x103818...7ac600` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x110e9a...88addd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x116c85...0d7b47` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x13b7f8...2bb253` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x142997...e98681` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x14e624...bce90a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x169aae...823bf9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x178145...d23a27` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x17b0fd...a7f61d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x17f2cd...3d4f04` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x19ee5a...3a4529` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1af9ab...da370a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1dd000...799c25` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1ef07b...a35d5c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x205e95...e88516` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x212362...99de20` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2265b1...110a1e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x22c426...7f391d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2375eb...887493` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x24f1a7...e661c5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x26c93b...7325dc` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2890ab...ee90e3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x29752e...ad4fca` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2a4507...0f3faa` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2b07e8...b5bfe6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2c0fa0...6b56ea` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2cd4f5...581299` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2fa303...3dc2b6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x31dfc9...e520ed` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x32a4bc...fff2df` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x349b44...b7ef5d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x361384...6b6461` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x37ff61...0f1dae` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3baa43...4b89a2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3bc972...511904` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x408822...d36f2b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4129fd...e8716d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x413e64...22bb93` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x446da3...1080a6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4576fa...fa27bd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x45adb0...9b6c3f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x474972...f2dc80` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4b74b5...396fd9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4d1e98...5fd423` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x518246...21427f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x528e61...9591a2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x557d83...b36937` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x560a0c...bb5487` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x593b38...430af1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5a0408...29cceb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5cf9f0...0a6c10` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5ef584...bc3a34` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5f351a...61d6ea` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x60bc74...46d3f6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6228a4...53592e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x626e6a...e3100e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x662c3a...33e5fc` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x666146...2538cb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x66c91b...efbcb3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x66f617...7601fb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6b2c80...20da7b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6bf552...117a0d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6ca841...a18462` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6ec69e...f46bd7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x70004f...754f7a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x700730...d8673a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x74477d...46884d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7720ef...9f2ab6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x77c5ab...bdc4c4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7940cb...1d3008` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7a90f2...b86037` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7a9aeb...827613` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7c0520...9c44be` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7cd617...721274` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7eae43...846507` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x80953e...268496` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8111bb...4ec3a3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x81e92d...e90929` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x822a12...194b00` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8431ad...c06b70` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x845839...c07c43` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x847d94...7cb622` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x85b027...7f2a29` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x86ae73...0b04f2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x871ea4...fbd887` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x874780...93369c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x87e385...e88c50` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x889be5...8dbdf0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8950af...9472d1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x89c601...9c205b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x89e3cf...2904ef` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8a08c8...08b4bf` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8a3c8f...4ec0e8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8b85bb...028222` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8c1b49...376b1b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8cc19c...069ac0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8dc829...48b4ba` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x92d238...d5fec0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x931cf9...d735d3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x95fb4b...a1204e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x96c317...12efb9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x993797...6eed99` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9ac693...b08629` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9b1fcd...437a85` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9d33d4...4796ce` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9d52c4...84cf3f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa0380d...4dd521` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa25a7e...9123b9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa2ffac...b6bd53` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa40111...9a982a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa42001...6b7170` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa4e921...bab638` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa5b7fa...151a3b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa5dec4...eba7ce` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa82837...408878` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa87a04...bd4145` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa909c8...66de04` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa95aa7...7bd0a5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xacf3dd...16853e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xad525f...fcaf0a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xadf6a1...5d59ed` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xae3402...f6d944` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaeab67...b5e6c7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb0abdc...a07091` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb14f20...a220e4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb19c46...151bf1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb25255...f0c25d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb2aa2e...f30807` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb2f667...13e360` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb501c1...255607` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb562b6...74e6b5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb58b33...f17adf` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb59605...b21e55` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb5aca3...21140c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb6adbb...70b198` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb6bc6b...14b8be` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb95aa7...0800e1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xba52be...7d95ff` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbb6af6...1ebd0b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbc1fcb...8a7ec1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbc73c4...73c3dc` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbcd67f...15377c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbd3958...81f4a9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc66d2a...2c76a9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc99519...f14d6a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc9c78b...6245e2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcb6ccb...d715ec` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcdc945...e4cdfd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcf99a7...c1605b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcfbebc...3db22d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd0f2e2...780352` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd176b9...614740` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd2368b...14951f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd2767d...0acbe9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd3de08...414fed` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd4576d...2fb73b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd4df41...402269` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xda3975...330b85` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xdbb928...0bbcbd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xdc228d...a1d4a7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xde73c3...16e6b0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe1a597...5ce3f8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe28d39...deeb8f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe2ac9d...cdff13` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe3491e...a6a30b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe37688...1c23ad` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe856a3...3d2b3a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe89d07...c16c0f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xec862b...6b6602` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xececfc...3671ea` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xedc9eb...b6f62f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xefc6ae...9419f8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf0750a...2a25df` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf3d2e7...36bcfe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf52240...6d4d62` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf66825...3caa67` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfc4038...bcd42f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xff1d03...b17a67` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xff5f7b...7c0641` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x081856...07fff9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0a9b6d...a89f02` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2a4507...0f3faa` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x3025ba...b3fcec` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x42422c...86992f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5a0408...29cceb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x626e6a...e3100e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6ccf6a...c6b21e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xad525f...fcaf0a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb19c46...151bf1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb2f667...13e360` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbf1b71...4f95ec` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd4576d...2fb73b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xde73c3...16e6b0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfc4038...bcd42f` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Silo - Defaulting Liquidations - Final Report .pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 359 | high |
-| [25-11-2024_Certora.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/reports/25-11-2024_Certora.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 118 | high |
-| [Silo - Liquidation-by-Defaulting - Draft Report.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/reports/Silo%20-%20Liquidation-by-Defaulting%20-%20Draft%20Report.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 359 | high |
+| [Silo - Defaulting Liquidations - Final Report .pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/Silo%20-%20Defaulting%20Liquidations%20-%20Final%20Report%20.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 261 | high |
+| [25-11-2024_Certora.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/reports/25-11-2024_Certora.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 91 | high |
+| [Silo - Liquidation-by-Defaulting - Draft Report.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v2/reports/Silo%20-%20Liquidation-by-Defaulting%20-%20Draft%20Report.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 261 | high |
 | [0xJCN Audit GitHub.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/0xJCN%20Audit%20%C2%B7%20GitHub.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2026-02_Security Review_Silo Finance_Silo_v3.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/2026-02_Security%20Review_Silo%20Finance_Silo_v3.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 160 | high |
-| [Silo - Description - Final Report (2ad3aec).pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 359 | high |
+| [2026-02_Security Review_Silo Finance_Silo_v3.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/2026-02_Security%20Review_Silo%20Finance_Silo_v3.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 129 | high |
+| [Silo - Description - Final Report (2ad3aec).pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20-%20Description%20-%20Final%20Report%20(2ad3aec).pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 261 | high |
 | [Silo - Silo - Aggregator and Manageable Oracle - Final Report.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20-%20Silo%20-%20Aggregator%20and%20Manageable%20Oracle%20-%20Final%20Report.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 25 | high |
-| [Silo Enterprise Continuous Audit.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20Enterprise%20Continuous%20Audit.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 120 | high |
-| [report-cli-cantina-silo-finance-0124.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/report-cli-cantina-silo-finance-0124.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | contract_name | 160 | high |
+| [Silo Enterprise Continuous Audit.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/Silo%20Enterprise%20Continuous%20Audit.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 87 | high |
+| [report-cli-cantina-silo-finance-0124.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/audits/v3/report-cli-cantina-silo-finance-0124.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | contract_name | 129 | high |
 | [Kink_Interest_Rate_Model_V2_2025_10_16.pdf](https://github.com/silo-finance/silo-contracts-v3/blob/develop/silo-core/docs/Kink_Interest_Rate_Model_V2_2025_10_16.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -631,65 +421,28 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0xf0b2dd...486bb0`](./contracts/ethereum-1/0xf0b2dd79324a66d2108c961d680f7616e1486bb0/) | SiloToken | token | $641,209.89 | Verified native implementation with $641,209.89 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6f8031...8ab1f8`](./contracts/ethereum-1/0x6f80310ca7f2c654691d1383149fa1a57d8ab1f8/) | SiloGovernanceToken | token | $105.26 | Verified native implementation with $105.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2375eb...887493`](./contracts/ethereum-1/0x2375eba92e1b7ace8585ae7e2d23fedc10887493/) | CrvUSDMagicianETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x24f1a7...e661c5`](./contracts/ethereum-1/0x24f1a7c0d05893182fd9443ea8835ffe2ce661c5/) | CrvUSDViaTriCrvMagicianETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa1c283...e86bba`](./contracts/ethereum-1/0xa1c2837b7a899d6f89282e9be9f1496d12e86bba/) | CrvUSDViaUSDCPriceProviderETH | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x178145...d23a27`](./contracts/ethereum-1/0x1781452ed27bba7fa8932b2d839f244facd23a27/) | CrvUSDViaUSDCPriceProviderETHV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9deaa1...5be416`](./contracts/ethereum-1/0x9deaa1af59932c0d71de6c04e50581f4605be416/) | CrvViaTriCrvMagicianETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x09402f...c0ae55`](./contracts/ethereum-1/0x09402f0f9f490e38413a5d4892d1e927acc0ae55/) | DynamicKinkModel | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1d51f3...a03ed1`](./contracts/ethereum-1/0x1d51f30e5c8ec1c6efeb5d1877f7302a09a03ed1/) | DynamicKinkModelFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x14c646...2accd9`](./contracts/sonic-146/0x14c646c6cf518cb6b515f95771cdb4948d2accd9/) | EggsToSonicAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0094c5...2b2a2c`](./contracts/ethereum-1/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/) | ERC4626OracleFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01590f...8bf294`](./contracts/ethereum-1/0x01590f788e1f7e102726a5b8d0d6332a4e8bf294/) | ERC4626OracleWithUnderlyingFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb664ca...7d0813`](./contracts/ethereum-1/0xb664ca87df549d110c59a96b10278439617d0813/) | ForwarderPriceProvider | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0d9256...033254`](./contracts/ethereum-1/0x0d925653b179f6f661b7e99d634b7479ed033254/) | ERC4626OracleWithUnderlyingFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2a1ee8...932bfa`](./contracts/ethereum-1/0x2a1ee876ed23d356a7b73b42c1c16a9bcd932bfa/) | GlobalPause | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x694616...e5676d`](./contracts/ethereum-1/0x694616063932ce36494b14ff8ab52bc364e5676d/) | GOHMMagician | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xba53d3...0ddb1f`](./contracts/ethereum-1/0xba53d3a08fb8dd4309881b4e8a3bc386ea0ddb1f/) | GOHMPriceProvider | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x13b7f8...2bb253`](./contracts/ethereum-1/0x13b7f88100e291d6f7aaca22300fbe91ac2bb253/) | InterestRateDataResolver | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x03ff53...26c821`](./contracts/ethereum-1/0x03ff53ee6b0c8221e5cf3829db1a1b2d5d26c821/) | InterestRateModelV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x12152d...a8ac4b`](./contracts/sonic-146/0x12152d5cc529d18564f8edfffac7fbe390a8ac4b/) | InterestRateModelV2Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0094c5...2b2a2c`](./contracts/sonic-146/0x0094c5d6b460a2efff23420db097921bcc2b2a2c/) | LiquidationHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x015bbc...4cf76d`](./contracts/ethereum-1/0x015bbc6ca60390f3b48c63773f1b7022b14cf76d/) | ManualLiquidation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1d5ae0...39eb3f`](./contracts/ethereum-1/0x1d5ae059bb674e7dc78afcae86e19ba33539eb3f/) | ManualLiquidationHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xe22fe6...16a6ce`](./contracts/optimism-10/0xe22fe63e20c3d817121022316b2430b5a516a6ce/) | MiloTokenChildChain | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x92cecb...4c6ff9`](./contracts/ethereum-1/0x92cecb67ed267ff98026f814d813fdf3054c6ff9/) | OHMMagician | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x1c80e2...642d53`](./contracts/sonic-146/0x1c80e2889c0f05ab2e655d2b73c585fa2e642d53/) | OracleForwarderFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6d4a25...114d5a`](./contracts/ethereum-1/0x6d4a256695586f61b77b09bc3d28333a91114d5a/) | SiloConvexFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc0c899...fc3248`](./contracts/ethereum-1/0xc0c89911c20453b1d897355ee7208e8270fc3248/) | SiloGovernanceTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa89163...eeaf61`](./contracts/ethereum-1/0xa89163f7b2d68a8fba6ca36beed32bd4f3eeaf61/) | SiloGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0ab251...687deb`](./contracts/optimism-10/0x0ab251c6dafb5598d6a6374030b1e0bfa6687deb/) | SiloIncentivesControllerCLDeployer | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x06a371...506330`](./contracts/sonic-146/0x06a371cadeee25499c0ff5af57de1e83bb506330/) | SiloIncentivesControllerCLFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x02f3da...d63373`](./contracts/sonic-146/0x02f3da7e49a877f157b8024e4800ce78bcd63373/) | SiloIncentivesControllerGaugeLikeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06bed4...2680a4`](./contracts/ethereum-1/0x06bed4637e8cf9e4efc1b227e0c322d7042680a4/) | SiloLiquidationLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb98bc3...37f1af`](./contracts/ethereum-1/0xb98bc3e3b9ea8d86f6ee321737fa23710737f1af/) | SiloModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x16876a...503b1c`](./contracts/sonic-146/0x16876af41e8beddbf9b67d2b66bb50abf3503b1c/) | SiloRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xce3d2e...b168a4`](./contracts/ethereum-1/0xce3d2e0331d6776c79f329140d7ace2e94b168a4/) | SiloSnapshotWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x02bbb8...171b1d`](./contracts/sonic-146/0x02bbb86731ec6aa81b52961e14dd1aebe5171b1d/) | SiloVaultDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1205e2...acd00b`](./contracts/ethereum-1/0x1205e29b15148e02214d421f446d2306c4acd00b/) | SiloVirtualAsset18Decimals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc07b94...6946fb`](./contracts/ethereum-1/0xc07b94b2a1f1bfc7381ffc72fe217063bf6946fb/) | STETHMagician | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x023d9b...06b90e`](./contracts/sonic-146/0x023d9bcb63532d1215d4adbdb66a4410e506b90e/) | Stream | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf1589b...e2365c`](./contracts/ethereum-1/0xf1589b96d7b0838ab7bfa94a85612553e5e2365c/) | TestDeploymentScriptsAutomaticVerification | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x058a54...3cd436`](./contracts/sonic-146/0x058a54bf6560038ca2cb58d6cdaf17c5d93cd436/) | TestNatSpec | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e37df...6ad622`](./contracts/ethereum-1/0x0e37df413f97fc198a84a21bc463c41b516ad622/) | TokensFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb6adbb...70b198`](./contracts/ethereum-1/0xb6adbb29f2d8ae731c7c72036a7fd5a7e970b198/) | TokensFactoryV2 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ab251...687deb`](./contracts/ethereum-1/0x0ab251c6dafb5598d6a6374030b1e0bfa6687deb/) | Tower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x01d360...ed8508`](./contracts/ethereum-1/0x01d360c54eb27a6a95ea1f8e309e5c8263ed8508/) | TreasuryVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x14c646...2accd9`](./contracts/optimism-10/0x14c646c6cf518cb6b515f95771cdb4948d2accd9/) | UniBTCAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x480eb6...2ecf10`](./contracts/optimism-10/0x480eb6d6e5dd228afdc0dcdcb81188b95c2ecf10/) | USDCMagicianOptimism | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x25a39b...73a6b8`](./contracts/ethereum-1/0x25a39b66fc3a85d13b3e9143d5095560fa73a6b8/) | VirtualTokenPrice | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x12a9fe...32e1c5`](./contracts/sonic-146/0x12a9fe9f6a1fea5f3c76773d09baa9e1a332e1c5/) | WrappedMetaVaultOracleAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa2ed88...403a05`](./contracts/ethereum-1/0xa2ed88339701c209f3a72215164f0d97e7403a05/) | WSTETHMagician | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3bc972...511904`](./contracts/ethereum-1/0x3bc972757798c346bbc87ede8d31cffcac511904/) | WSTETHPriceProvider | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2fb48d...6ba718`](./contracts/ethereum-1/0x2fb48d62349dc24df1bf7dd44395aef6f86ba718/) | WstEthToStEthAdapterMainnet | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 158 |
-| upstream | 6 |
-| standard_library | 3 |
-| needs_review | 362 |
+| native | 21 |
+| upstream | 3 |
+| standard_library | 0 |
+| needs_review | 289 |
 
 ## Scope Matching Notes
 

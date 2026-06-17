@@ -1,6 +1,0 @@
-# @version 0.4.1
-
-
-@external
-def exchange(i: int128, j: int128, _dx: uint256, _min_dy: uint256) -> uint256:
-    ...

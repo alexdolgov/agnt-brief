@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (base [`0x6a1fe26d54ab0d3e1e3168f2e0c0cda5cc0a0a4a`](../0x6a1fe26d54ab0d3e1e3168f2e0c0cda5cc0a0a4a/); base `0x9381075774bcf3cdb382c354c8eae22d7dc55fb8`) |
+| Deployments | 1 (base [`0x6a1fe26d54ab0d3e1e3168f2e0c0cda5cc0a0a4a`](../0x6a1fe26d54ab0d3e1e3168f2e0c0cda5cc0a0a4a/)) |
 | Proxy | Yes → `0x48c157...338145` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

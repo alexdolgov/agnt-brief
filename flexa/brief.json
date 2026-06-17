@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flexa",
-  "generated_at": "2026-06-10T23:24:12.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-17T07:00:37.496Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "flexa",
@@ -45,8 +45,8 @@
     "coverage_pct": 100,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1365895.77682,
-    "tvl_usd": 1365895.77682,
+    "dl_tvl_usd": 892845.83493,
+    "tvl_usd": 892845.83493,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,6 +56,7 @@
     ],
     "tier1_coverage_pct": 100,
     "tier1_auditors": [
+      "ConsenSys Diligence",
       "Trail of Bits"
     ],
     "latest_audit_date": "2020-08",
@@ -70,7 +71,18 @@
   "topography": {
     "project_purpose": "Flexa is a payments-focused protocol built around Amp (AMP) as its core collateral token. The Flexa/Amp system uses collateralization to support payment settlement and merchant payment acceptance; AMP should be treated as the protocol's collateral token rather than as an unrelated upstream governance or staking component. Claims that Flexa is a collateralized stablecoin borrowing protocol, synthetic asset minting system, vault product, BAC/ARCx pool, or yield-staking protocol should be removed unless separately verified from Flexa documentation.",
     "relationship_narrative": null,
-    "product_family_count": 2
+    "product_family_count": 2,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 1,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 2,
@@ -86,6 +98,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Amp",
       "role": "unknown",
       "origin_kind": "upstream",
@@ -100,6 +114,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -120,6 +136,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x706d7f8b3445d8dfc790c524e3990ef014e7c578",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "FlexaCollateralManager",
       "role": "governance",
       "origin_kind": "native",
@@ -134,6 +152,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x706d7f8b3445d8dfc790c524e3990ef014e7c578",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -157,7 +177,7 @@
       "audit_key": "audit-3062",
       "report_name": "DL audit link",
       "report_url": "https://diligence.security/audits/2020/06/amp",
-      "auditor": "unknown",
+      "auditor": "Consensys Diligence",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2020-06",
@@ -227,18 +247,18 @@
   ],
   "auditor_coverage": [
     {
+      "auditor": "Consensys Diligence",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": "2020-06"
+    },
+    {
       "auditor": "Trail of Bits",
       "tier": 1,
       "contracts_covered": 2,
       "coverage_pct": 100,
       "latest_audit": "2020-08"
-    },
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 100,
-      "latest_audit": "2020-06"
     }
   ],
   "coverage_gaps": [],

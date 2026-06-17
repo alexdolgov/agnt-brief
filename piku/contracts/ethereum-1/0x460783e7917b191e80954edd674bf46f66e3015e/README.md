@@ -8,9 +8,9 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x460783e7917b191e80954edd674bf46f66e3015e`](../0x460783e7917b191e80954edd674bf46f66e3015e/); ethereum `0xfb71d1e85048fbe2149edbf7ca1d7797dfb1fefb`) |
+| Deployments | 1 (ethereum [`0x460783e7917b191e80954edd674bf46f66e3015e`](../0x460783e7917b191e80954edd674bf46f66e3015e/)) |
 | Proxy | Yes → `0x81002d...1eee73` |
 | Source | Sourcify (partial match) |
-| TVL | $255,529.21 |
+| TVL | $122,823.94 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

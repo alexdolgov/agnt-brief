@@ -1,0 +1,17 @@
+{
+  "address": "0x2873d94d21efa8af064b02174413966b357c69e7",
+  "chain_id": 56,
+  "contract_name": "MoMoProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xe704dc798c0bfa2d596048b2c311491ead8457d7",
+  "fetched_at": "2026-06-17T06:46:28.833Z"
+}

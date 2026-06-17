@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "toupee.tech",
-  "generated_at": "2026-06-13T04:42:14.122Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
+  "generated_at": "2026-06-17T07:00:41.282Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "toupee.tech",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 74.47415736750477
   },
   "summary": {
-    "total_contracts": 29,
-    "total_addresses": 53,
-    "unique_implementations": 29,
-    "total_deployments": 53,
+    "total_contracts": 9,
+    "total_addresses": 10,
+    "unique_implementations": 9,
+    "total_deployments": 10,
     "audited_contracts": 0,
-    "unaudited_contracts": 25,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 25,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 4,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
     "dl_tvl_usd": 4937999.36687,
-    "tvl_usd": 24.285757689042008,
+    "tvl_usd": 0.4935205613740554,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 24.29
+      "base": 0.49
     },
-    "asd_usd": 24.285757689042008,
+    "asd_usd": 0.4935205613740554,
     "website_url": "https://www.toupee.tech",
     "chains": [
       "base"
@@ -54,16 +54,29 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
     "project_purpose": "Toupee.tech is an incentive coordination protocol on Base centered on WIG, oWIG, and vWIG mechanics. The protocol combines farm emission voting, staking and farming rewards, voting rewards, WETH-backed bonding-curve/floor-price liquidity mechanics, and vWIG-backed borrowing. Gauge and plugin integrations with external protocols may be used as implementation details for directing incentives and rewards, but the primary product is incentive coordination rather than generic yield optimization.",
     "relationship_narrative": "The BASE Mainnet family contains all core and supporting contracts. The governance contracts (Controller, TOKENGovernor) manage the TOKEN and its emissions, while the Voter contract directs rewards to gauges created by GaugeFactory. Plugin factories (AeroGaugePluginFactory, VelociGaugePluginFactory, etc.) deploy plugin instances that integrate with external protocols, and these plugins are used by the core Pool and Voter to optimize yield. The testnet family only includes a Multicall contract for testing purposes.",
-    "product_family_count": 2
+    "product_family_count": 2,
+    "total_contracts_indexed": 53,
+    "live_contracts": 7,
+    "inactive_contracts": 43,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 43,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 29,
+    "unique_implementations": 9,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -75,38 +88,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x9f6a5f49e4d57a7de596c48181b65a0083ad343c",
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": 23.792237127667953,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pool",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x9f6a5f49e4d57a7de596c48181b65a0083ad343c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 23.792237127667953,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x8d05ef8093a746101cee1a0578edd277f3ecd6c1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "TOKENFees",
       "role": "token",
       "origin_kind": "native",
@@ -121,6 +105,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x8d05ef8093a746101cee1a0578edd277f3ecd6c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.4935205613740554,
@@ -137,7 +123,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x0195ba4c952c5aeefb3e57659a8b9a7a8b435479",
+      "address": "0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AeroGaugePlugin",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -151,79 +139,9 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x0195ba4c952c5aeefb3e57659a8b9a7a8b435479",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
           "address": "0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6115b7f86fb2f81fc8b459ead1ef9f092de338e5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6d84715afda79a237e407dce9b916f66115ecccd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x919d99b085583bff5833ff0cb0abea4af5d9d6b4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x96c1e3624005d3bc032c7fc36bfdb31413c4fd4a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xcdb6e9b7b3be971d23c7d194f72c2db6758738c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xdb55de47f1cb51d84442255d9eccc54559e2509f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf139c95e7e959ad1535c80ea7e021891891f7b6a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -240,38 +158,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed",
-      "name": "AeroGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AeroGaugePluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x047078e0ac22145a26c72e0fcac06cd82d043608",
+      "address": "0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AeroPairPlugin",
       "role": "unknown",
       "origin_kind": "upstream",
@@ -285,34 +174,9 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x047078e0ac22145a26c72e0fcac06cd82d043608",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x508006e083ad7d0df666e9224a1ca81922450f3d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x7ff9e636afe2697d9f7c6e0071d9c4c580455111",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
           "address": "0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -322,6 +186,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xef04879d23e4113bbc32898436241b7e382755bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -334,246 +200,13 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xeac05094887c6548f3054fc121c57844c2eb0448",
-      "name": "AeroPairPluginFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AeroPairPluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xeac05094887c6548f3054fc121c57844c2eb0448",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9714412e8838337e60c8f7b4c2bc49247964c0fd",
-      "name": "BribeFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BribeFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x9714412e8838337e60c8f7b4c2bc49247964c0fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1eeb34b653d396cdc60a9c434c09e1803dd4904e",
-      "name": "Controller",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Controller",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1eeb34b653d396cdc60a9c434c09e1803dd4904e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xe23e1a116090a0829b7ab536a3af463a5a36a5a5",
-      "name": "GaugeFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GaugeFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xe23e1a116090a0829b7ab536a3af463a5a36a5a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x5d82183db96e55a5f2caee691728584cd4a037e1",
-      "name": "MerkleClaim",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MerkleClaim",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x5d82183db96e55a5f2caee691728584cd4a037e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xf49222fccba2c149b3ff3ae9d3a30edb1f162576",
-      "name": "Minter",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Minter",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf49222fccba2c149b3ff3ae9d3a30edb1f162576",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x3bb30ca0bf95d6a2fc8ad9087bac92711bf0947e",
-      "name": "Multicall",
-      "role": "periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "Unknown Library",
-      "product_line": "BASE Goerli Testnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Multicall",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x3bb30ca0bf95d6a2fc8ad9087bac92711bf0947e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x752de9d1b6f8796d214d2a24a6f6f55ee9facc71",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xda81a398787f57810f1225db3a6dc12635aae82f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "OTOKEN",
       "role": "token",
       "origin_kind": "native",
@@ -588,6 +221,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -604,7 +239,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x6d4809cfbd7f4738d960a4d21cdd000b91ec97aa",
+      "address": "0xf19a7b64809dc969b173f40d3f8c6734935290b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "ScaleGaugePlugin",
       "role": "operational_periphery",
       "origin_kind": "upstream",
@@ -618,127 +255,9 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x6d4809cfbd7f4738d960a4d21cdd000b91ec97aa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x8e57da48f35217b13afce34eb244f8cfe7b8c5c4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
           "address": "0xf19a7b64809dc969b173f40d3f8c6734935290b8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf1f00aa00d6ed2e5190449f2ff3bcb72c8fdec6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xece72a27bbd6e667672ac226a26eaf3e2f71e22e",
-      "name": "ScaleGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ScaleGaugePluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xece72a27bbd6e667672ac226a26eaf3e2f71e22e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1667f3687bd71ce260d4b12b337b9b066b4471a9",
-      "name": "StargateFarmPlugin",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Stargate",
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StargateFarmPlugin",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1667f3687bd71ce260d4b12b337b9b066b4471a9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x110093de578ca0a202c85240f1ace3529e228f68",
-      "name": "StargateFarmPluginFactory",
-      "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "Stargate",
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StargateFarmPluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x110093de578ca0a202c85240f1ace3529e228f68",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -756,6 +275,8 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x58dd173f30ecffdfebcd242c71241fb2f179e9b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "TOKEN",
       "role": "token",
       "origin_kind": "native",
@@ -770,6 +291,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x58dd173f30ecffdfebcd242c71241fb2f179e9b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -782,322 +305,13 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4",
-      "name": "TOKENGovernor",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TOKENGovernor",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1441cba5a9df12f157c362ca0c8eed50c2b07d27",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1441cba5a9df12f157c362ca0c8eed50c2b07d27",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x56df157dec576cc2596257fb17115a7ea0329e01",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x56df157dec576cc2596257fb17115a7ea0329e01",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xd54b64a096b785d19cff3f19061509230736590c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd54b64a096b785d19cff3f19061509230736590c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x0d0127125cac70400839b6bdc652f82d56bc144e",
-      "name": "VelociGaugePlugin",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "velodrome",
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VelociGaugePlugin",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x0d0127125cac70400839b6bdc652f82d56bc144e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x227a7bfc7ceec7b019218d3ce4beb025fae74b19",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x37ca925d8e6028d36319563b09d2bf50f91c833a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x3e017d06483e345d709d5d623ff289293311372c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x60f2418e1835da1caf06f33c7fd4dfdb5a91f524",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x93fd987c5b671c1f61c33071e32829e37a137d61",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd0182481abf153704d607a0c7d0b41f0c91552dd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd0c41cc7433a9e234bb5ae14a668d56478ea4e99",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xc40215fedcc1475b5d767c4ebc7085501ffc8abf",
-      "name": "VelociGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "BASE Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VelociGaugePluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xc40215fedcc1475b5d767c4ebc7085501ffc8abf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xed8b18cdef8a70227e01395c2571d72867ef23a3",
-      "name": "VelociGrapheneGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VelociGrapheneGaugePluginFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xed8b18cdef8a70227e01395c2571d72867ef23a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x756fc5e6bdb26a85594346d7d0520e1c0e492452",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Voter",
       "role": "unknown",
       "origin_kind": "native",
@@ -1112,6 +326,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x756fc5e6bdb26a85594346d7d0520e1c0e492452",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1129,6 +345,8 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x60c08737877a5262bdb1c1cac8fb90b5e5b11515",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "VTOKEN",
       "role": "token",
       "origin_kind": "native",
@@ -1143,6 +361,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x60c08737877a5262bdb1c1cac8fb90b5e5b11515",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1160,6 +380,8 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0xdd3e797522e15c3ede6ed468738cba754e1de558",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "VTOKENRewarder",
       "role": "token",
       "origin_kind": "native",
@@ -1174,6 +396,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xdd3e797522e15c3ede6ed468738cba754e1de558",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1188,19 +412,52 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 12597,
+      "audit_key": "audit-12597",
+      "report_name": "DL audit link",
+      "report_url": "https://2268926613-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5qfDTx0sJybWgitP8x4j%2Fuploads%2FnzcUOiAySnZr2UQCCpsK%2FPeckShield-Audit-Report-LilToken-v1.0rc%20(1).pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12598,
+      "audit_key": "audit-12598",
+      "report_name": "DL audit link",
+      "report_url": "https://2268926613-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5qfDTx0sJybWgitP8x4j%2Fuploads%2F0dGTom7KMTseCGo56Xg0%2FZokyoAudit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9f6a5f49e4d57a7de596c48181b65a0083ad343c",
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 23.792237127667953,
-      "risk_note": "Verified native implementation with $23.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -1214,78 +471,8 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x0195ba4c952c5aeefb3e57659a8b9a7a8b435479",
+      "address": "0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040",
       "name": "AeroGaugePlugin",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed",
-      "name": "AeroGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xeac05094887c6548f3054fc121c57844c2eb0448",
-      "name": "AeroPairPluginFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9714412e8838337e60c8f7b4c2bc49247964c0fd",
-      "name": "BribeFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1eeb34b653d396cdc60a9c434c09e1803dd4904e",
-      "name": "Controller",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xe23e1a116090a0829b7ab536a3af463a5a36a5a5",
-      "name": "GaugeFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x5d82183db96e55a5f2caee691728584cd4a037e1",
-      "name": "MerkleClaim",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xf49222fccba2c149b3ff3ae9d3a30edb1f162576",
-      "name": "Minter",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1304,49 +491,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0xece72a27bbd6e667672ac226a26eaf3e2f71e22e",
-      "name": "ScaleGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x58dd173f30ecffdfebcd242c71241fb2f179e9b9",
       "name": "TOKEN",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4",
-      "name": "TOKENGovernor",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xc40215fedcc1475b5d767c4ebc7085501ffc8abf",
-      "name": "VelociGaugePluginFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xed8b18cdef8a70227e01395c2571d72867ef23a3",
-      "name": "VelociGrapheneGaugePluginFactory",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1383,9 +530,9 @@
     }
   ],
   "origin_summary": {
-    "native": 23,
-    "upstream": 5,
-    "standard_library": 1,
+    "native": 7,
+    "upstream": 2,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
@@ -1393,7 +540,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12597,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 12598,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

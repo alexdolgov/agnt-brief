@@ -1,0 +1,17 @@
+{
+  "address": "0x2e76a67ee5f134c939c4380c9e2b6bbf93aa668b",
+  "chain_id": 42161,
+  "contract_name": "Whitelist",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:26.791Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2cbf7604dd5b7cd4873917a5a5d06c6b2fd9c61b",
+  "chain_id": 1,
+  "contract_name": "PortfolioFactoryConfig",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:59.566Z"
+}

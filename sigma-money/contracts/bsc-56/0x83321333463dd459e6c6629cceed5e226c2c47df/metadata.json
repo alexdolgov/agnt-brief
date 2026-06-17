@@ -1,0 +1,17 @@
+{
+  "address": "0x83321333463dd459e6c6629cceed5e226c2c47df",
+  "chain_id": 56,
+  "contract_name": "ListaDAORateProvider",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:00.588Z"
+}

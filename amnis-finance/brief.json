@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "amnis-finance",
-  "generated_at": "2026-06-10T21:23:55.720Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-topography",
+  "generated_at": "2026-06-17T07:00:58.198Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11919450.59811,
-    "tvl_usd": 11919450.59811,
+    "dl_tvl_usd": 4810410.42028,
+    "tvl_usd": 4810410.42028,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Amnis Finance is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling participation in DeFi while earning staking rewards.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

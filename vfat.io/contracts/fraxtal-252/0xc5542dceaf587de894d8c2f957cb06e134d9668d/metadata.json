@@ -1,0 +1,18 @@
+{
+  "address": "0xc5542dceaf587de894d8c2f957cb06e134d9668d",
+  "chain_id": 252,
+  "contract_name": "NuriRouterConnector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:17.131Z"
+}

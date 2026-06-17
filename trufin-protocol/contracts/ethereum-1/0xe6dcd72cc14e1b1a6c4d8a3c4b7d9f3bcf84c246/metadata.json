@@ -1,0 +1,17 @@
+{
+  "address": "0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246",
+  "chain_id": 1,
+  "contract_name": "PausableModule",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000008fe52f3cf28e73d9ca7ce61e5d2d976924c97a770000000000000000000000007c5cce0a1d8ee7cde8c041b809742091ef72f0da000000000000000000000000c10214cde5d6754ec1e2220362f2120142c8e5e8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:03.438Z"
+}

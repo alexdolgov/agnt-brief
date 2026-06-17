@@ -5,30 +5,39 @@
 - Project: Neemo Finance (`neemo-finance`)
 - Website: [https://neemo.finance/](https://neemo.finance/)
 - Lifecycle: active (Tier 0, 74.5% below peak)
-- Generated: 2026-06-14T00:23:40.262Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Generated: 2026-06-17T07:00:52.474Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 14 unique implementations (15 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,118,880.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Neemo Finance is an Astar/Soneium-focused liquid staking and restaking protocol for ASTR and ETH. Users receive liquid derivative tokens such as nsASTR and nrETH while participating in staking/restaking strategies. Current public TVL attribution should be treated as Astar/Soneium-focused rather than Ethereum-mainnet-primary unless supported by matching chain TVL and deployed contracts.
 
-### Architecture
+## Contract Surface Quality
 
-The Neemo Finance family contains the core protocol logic, which is used by the Ethereum Mainnet and Soneium families through proxy contracts. The Ethereum Mainnet family includes a proxy pointing to an implementation shared with the Neemo Finance family, indicating shared infrastructure for liquid restaking across chains.
+- Indexed contracts: 15; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 12 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 14
-- Raw deployments: 15
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -48,9 +57,9 @@ The Neemo Finance family contains the core protocol logic, which is used by the 
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | ethereum | 2 deployments: ethereum [`0x54cd23...c13525`](./contracts/ethereum-1/0x54cd23460df45559fd5feeaada7ba25f89c13525/); ethereum `0x653415...ae2bdf` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC1967Proxy | proxy | ethereum | unit-31926 | [`0x54cd23...c13525`](./contracts/ethereum-1/0x54cd23460df45559fd5feeaada7ba25f89c13525/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -64,25 +73,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (13)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x02c5b1...da785a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0b43ae...64d807` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x131ae8...210f4a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5e6d79...b19342` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6dcdd4...ba141d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x85031e...16559c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x873059...b4ef63` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xaa75e4...6f364d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc67476...b44337` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xcfa66f...d0cec2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf13790...64dfe1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf18229...9d9418` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfb01af...fea0d3` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -100,10 +95,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 10 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

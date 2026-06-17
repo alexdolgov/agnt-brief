@@ -1,0 +1,17 @@
+{
+  "address": "0x9adcf1d79423f478aea60fb233f1fdf56d0ff6bd",
+  "chain_id": 8453,
+  "contract_name": "IssuerChecker",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 416,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "0000000000000000000000006561b09d5d6012d416dfdf9befe37228ae89434c000000000000000000000000ecedecf7803bf508c25b17924674996138bd95cf000000000000000000000000000000000000000000000000000000000049d400000000000000000000000000000000000000000000000000000000000049d400",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:19.784Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x0c2191d08d283120f663270616a1fe7bfaadbff2",
+  "chain_id": 8453,
+  "contract_name": "SweepStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "00000000000000000000000071d234a3e1dfc161cc1d081e6496e76627baac31000000000000000000000000540c02105f48d116902f1b6451078206d040a0ae0000000000000000000000007647f01454e09e4dc493f4ff2b2be29ba76beaa5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:17.811Z"
+}

@@ -5,8 +5,8 @@
 - Project: PAAL AI (`paal-ai`)
 - Website: [https://www.paal.ai/](https://www.paal.ai/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T11:02:31.707Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:01:01.720Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,299,518.17
@@ -20,6 +20,14 @@ PAAL AI is an AI bot and application ecosystem with on-chain infrastructure iden
 ### Architecture
 
 The PAALAI token is the central asset used across all staking pools. Each StakingPool contract operates independently but shares the same token, allowing users to stake PAALAI in different pools, likely with varying reward structures or conditions.
+
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v2
+- Unverified dependencies: 1/2.
 
 ## Audit Coverage Summary
 
@@ -48,11 +56,11 @@ The PAALAI token is the central asset used across all staking pools. Each Stakin
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakingPool | core_logic | ethereum | 3 deployments: ethereum [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/); ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
-| PAALAI | unknown | ethereum | [`0x14fee6...d10e16`](./contracts/ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x2a6c34...a9259f`](./contracts/ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakingPool | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/); ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
+| PAALAI | unknown | ethereum | n/a | [`0x14fee6...d10e16`](./contracts/ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x2a6c34...a9259f`](./contracts/ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -1,0 +1,17 @@
+{
+  "address": "0x0a9b3b5e6c4fde989a92ec714f24829a9b4db292",
+  "chain_id": 999,
+  "contract_name": "LiquidityPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:23.665Z"
+}

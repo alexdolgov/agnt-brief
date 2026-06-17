@@ -5,11 +5,11 @@
 - Project: Troves (`troves`)
 - Website: [https://www.troves.fi/](https://www.troves.fi/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T03:38:01.175Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-17T07:00:56.197Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $5,023,162.81
+- DeFi Llama TVL: $4,110,082.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Troves is a live Starknet yield protocol centered on curated vaults and automated strategy products. Users deposit assets into vaults that allocate through strategies and Starknet integrations such as Vesu, Ekubo, Endur, and Extended to generate yield.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

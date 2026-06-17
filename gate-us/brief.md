@@ -5,8 +5,8 @@
 - Project: Gate US (`gate-us`)
 - Website: [https://www.gate.com/en-us](https://www.gate.com/en-us)
 - Lifecycle: active (Tier 0, 13.5% below peak)
-- Generated: 2026-06-14T04:34:52.808Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-17T07:00:47.046Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: chain-200, cronos, klaytn, manta, metis, scroll, sei
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $49,098,762.82
@@ -20,6 +20,14 @@ Gate US is a centralized exchange (CEX) that provides trading and custody servic
 ### Architecture
 
 All contracts belong to a single product family with no shared infrastructure or dependencies visible beyond the centralized exchange operations.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 9 (2 live, 7 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -66,17 +74,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | manta | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | `0x1699db...6affbd` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | `0x67c30f...086ccb` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | `0xe74ac0...a10230` | ❓ Unverified |
-| UnnamedContract | unknown | metis | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | sei | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | scroll | `0xfc89c0...0bdec3` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | chain-200 | n/a | `0x1699db...6affbd` | ❓ Unverified |
+| UnnamedContract | unknown | chain-200 | n/a | `0x67c30f...086ccb` | ❓ Unverified |
+| UnnamedContract | unknown | chain-200 | n/a | `0xe74ac0...a10230` | ❓ Unverified |
+| UnnamedContract | unknown | metis | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | scroll | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
 
 ## Audit Inventory
 

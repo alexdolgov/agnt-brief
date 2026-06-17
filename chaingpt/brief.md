@@ -5,10 +5,10 @@
 - Project: ChainGPT (`chaingpt`)
 - Website: [https://pad.chaingpt.org/staking-pools](https://pad.chaingpt.org/staking-pools)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-14T06:57:13.139Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
-- Chains: arbitrum, avalanche, base, bsc, ethereum, linea, polygon, zksync-era
-- Contract surface: 94 unique implementations (99 raw deployments)
+- Generated: 2026-06-17T07:00:42.711Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: arbitrum, avalanche, base, bsc, ethereum, polygon
+- Contract surface: 33 unique implementations (38 raw deployments)
 - DeFi Llama TVL: $3,825,213.31
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ ChainGPT should be described as ChainGPT Pad, a launchpad/fundraising protocol w
 
 All contracts belong to a single product family deployed by two main deployer clusters, indicating a unified launchpad system. The unnamed contracts likely serve as supporting modules or instances for different chains or sale types, all tied to the central ChainGPT contract.
 
+## Contract Surface Quality
+
+- Indexed contracts: 99; live-surface contracts included: 38 (38 live, 0 unknown).
+- Excluded by liveness: 61 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 3/4 live.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/8 (0.0%)
-- Verified + Unaudited implementations: 8
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 86
-- Unique implementations: 94
-- Raw deployments: 99
+- Unverified implementations: 27
+- Unique implementations: 33
+- Raw deployments: 38
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,18 +54,16 @@ All contracts belong to a single product family deployed by two main deployer cl
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ChainGPT | unknown | bsc | [`0x984065...f00f98`](./contracts/bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ⚠️ Unaudited |
-| DCBLiqLocker | unknown | bsc | [`0x6ee8d7...0ca6c5`](./contracts/bsc-56/0x6ee8d743eb8bec665aacdb535f2f100f040ca6c5/) | ⚠️ Unaudited |
-| DCBVault | core_logic | bsc | [`0x5b1e72...340cfb`](./contracts/bsc-56/0x5b1e724b79087dae13517612a1e6575e9d340cfb/) | ⚠️ Unaudited |
-| DecubateMasterChef | unknown | bsc | [`0x765a6e...a8ed18`](./contracts/bsc-56/0x765a6ee976137801f2661c3644e1fde369a8ed18/) | ⚠️ Unaudited |
-| DecubateVestingV2 | operational_periphery | bsc | [`0x3a5326...3662f7`](./contracts/bsc-56/0x3a53269cae3281155e51d06ffe14fde8dc3662f7/) | ⚠️ Unaudited |
-| TokenSaleFactory | registry | base | 6 deployments: bsc `0x8c0ccc...017139`; bsc `0xb13adc...a9aa0e`; bsc `0xc0b589...4fc82b`; base [`0x29d6a0...f6d7e9`](./contracts/base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/); base `0x2c7544...9eede9`; base `0x9670f6...0669fa` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | bsc | [`0x62a402...88ccee`](./contracts/bsc-56/0x62a402def6ca37e9ca7a544be34954748088ccee/) | ⚠️ Unaudited |
-| VoteContract | unknown | bsc | [`0xb70af6...eab54c`](./contracts/bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ChainGPT | unknown | bsc | n/a | [`0x984065...f00f98`](./contracts/bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ⚠️ Unaudited |
+| DCBLiqLocker | unknown | bsc | unit-20305 | [`0x6ee8d7...0ca6c5`](./contracts/bsc-56/0x6ee8d743eb8bec665aacdb535f2f100f040ca6c5/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | unit-20303 | [`0x5b1e72...340cfb`](./contracts/bsc-56/0x5b1e724b79087dae13517612a1e6575e9d340cfb/) | ⚠️ Unaudited |
+| DecubateVestingV2 | operational_periphery | bsc | n/a | [`0x3a5326...3662f7`](./contracts/bsc-56/0x3a53269cae3281155e51d06ffe14fde8dc3662f7/) | ⚠️ Unaudited |
+| TokenSaleFactory | registry | base | n/a | 6 deployments: bsc `0x8c0ccc...017139`; bsc `0xb13adc...a9aa0e`; bsc `0xc0b589...4fc82b`; base [`0x29d6a0...f6d7e9`](./contracts/base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/); base `0x2c7544...9eede9`; base `0x9670f6...0669fa` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | bsc | unit-20304 | [`0x62a402...88ccee`](./contracts/bsc-56/0x62a402def6ca37e9ca7a544be34954748088ccee/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -71,98 +77,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (86)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x9fc1a3...506573` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa433b2...36420e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf276bf...7f5a4a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x047656...610758` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x04d608...ce3bab` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x07b904...bf09a5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x0bb670...cbcb0b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x0d2238...9c8407` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x0ed8f6...4354bb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x133b18...fb7666` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x1c9c5b...bd04d9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x2c45f2...2a36b1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x359993...d0c001` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x46e9de...8a37a8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x4baf0f...eff4bd` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x570182...552b21` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x5ae752...4b5256` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x5b6b1c...044b44` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x5fc223...55ed3f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x65307c...fd2d82` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x65ad27...7339d6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x710814...96b748` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x71d2e5...7943f3` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x73c244...f882ae` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x7fedc8...d82e7e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x8dca8f...a8a373` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa0fb7f...655b3c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa2aadd...81de99` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa58b13...216f97` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa622e9...e369ab` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xabc831...1b173b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xb4d0ce...10b30f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xc26336...f4e917` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcb5787...c76c2f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcfab58...97a6a7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xdaa386...52b280` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xea22b1...9f122e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xf84403...b81339` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xfdc70a...da0324` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x29d6a0...f6d7e9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x2c7544...9eede9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x32496c...d8f411` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x940541...325e99` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x9670f6...0669fa` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x9a6f64...55a0ea` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x9ed70f...4a2b38` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x9fc1a3...506573` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xa44b38...89b777` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xa6ac05...b5c38e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xa89eae...32b796` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xd5df66...f1a02b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xe09c2b...e42e46` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xf276bf...7f5a4a` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | `0xf25f7c...06885c` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x0cd66d...318193` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x291889...2375f1` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x32496c...d8f411` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x3255bd...fbea83` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x76de82...ee4d35` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x87307c...6aa68c` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x96420f...53db1e` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x9a6f64...55a0ea` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xa6ac05...b5c38e` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xd8affb...4601d3` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xe9349e...2f41fe` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xf967a4...2651d8` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xfb5cd8...098c79` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x0cd66d...318193` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x291889...2375f1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x2d4731...473bb6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x9fc1a3...506573` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xacaff3...a2eec7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xbb9667...0c5655` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xd8affb...4601d3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe9349e...2f41fe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xf276bf...7f5a4a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xfb5cd8...098c79` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x2d4731...473bb6` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x3255bd...fbea83` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x9fc1a3...506573` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xacaff3...a2eec7` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xf276bf...7f5a4a` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xbb9667...0c5655` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xd8affb...4601d3` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xe9349e...2f41fe` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xfb5cd8...098c79` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xa433b2...36420e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x04d608...ce3bab` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x07b904...bf09a5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0d2238...9c8407` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4baf0f...eff4bd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5fc223...55ed3f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa2aadd...81de99` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa622e9...e369ab` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcb5787...c76c2f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x29d6a0...f6d7e9` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x2c7544...9eede9` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x940541...325e99` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9670f6...0669fa` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa44b38...89b777` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe09c2b...e42e46` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0cd66d...318193` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x291889...2375f1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x87307c...6aa68c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x96420f...53db1e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf967a4...2651d8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfb5cd8...098c79` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0cd66d...318193` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x291889...2375f1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xacaff3...a2eec7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe9349e...2f41fe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfb5cd8...098c79` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2d4731...473bb6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -177,16 +124,15 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | bsc | [`0x984065...f00f98`](./contracts/bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ChainGPT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x29d6a0...f6d7e9`](./contracts/base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/) | TokenSaleFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb70af6...eab54c`](./contracts/bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | VoteContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 8 |
-| needs_review | 83 |
+| standard_library | 3 |
+| needs_review | 28 |
 
 ## Scope Matching Notes
 

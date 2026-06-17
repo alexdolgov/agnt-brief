@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (avalanche [`0x9ad6c38be94206ca50bb0d90783181662f0cfa10`](../0x9ad6c38be94206ca50bb0d90783181662f0cfa10/); avalanche `0xe2ecc226fd2d5cead96f3f9f00efae9fafe75eb8`) |
+| Deployments | 1 (avalanche [`0x9ad6c38be94206ca50bb0d90783181662f0cfa10`](../0x9ad6c38be94206ca50bb0d90783181662f0cfa10/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

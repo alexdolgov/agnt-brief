@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-mint",
-  "generated_at": "2026-06-14T05:40:36.925Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
+  "generated_at": "2026-06-17T07:00:50.100Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-mint",
@@ -58,7 +58,18 @@
   "topography": {
     "project_purpose": "Kava Mint is the Kava ecosystem CDP/minting component that lets users lock collateral to mint stablecoins; Kava itself is a Cosmos/EVM-compatible blockchain and DeFi hub.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -74,6 +85,8 @@
       "chain_id": 2222,
       "chain_name": "kava",
       "address": "0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "native",
@@ -88,6 +101,8 @@
           "chain_id": 2222,
           "chain_name": "kava",
           "address": "0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,

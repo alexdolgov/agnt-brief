@@ -1,0 +1,17 @@
+{
+  "address": "0x8a619d8e3bfab54f7c30ef39ce16c53429c739c3",
+  "chain_id": 8453,
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x01c46d99154b80f201803d6c16bccfb9a7832fae",
+  "fetched_at": "2026-06-17T06:47:58.969Z"
+}

@@ -5,8 +5,8 @@
 - Project: Bridgers (`bridgers`)
 - Website: [https://bridgers.ai/](https://bridgers.ai/)
 - Lifecycle: active (Tier 0, 40.4% below peak)
-- Generated: 2026-06-14T10:35:02.320Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:36.793Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, celo, ethereum, fantom, linea, mantle, opbnb, optimism, polygon, sonic, zksync-era
 - Contract surface: 11 unique implementations (18 raw deployments)
 - DeFi Llama TVL: $1,715,355.40
@@ -20,6 +20,14 @@ Bridgers is a cross-chain swap/DEX aggregation protocol that enables users to ex
 ### Architecture
 
 The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin, WLD) that represent bridged or wrapped assets, while operational periphery contracts handle routing and execution logic. All contracts are deployed across multiple chains to support cross-chain functionality.
+
+## Contract Surface Quality
+
+- Indexed contracts: 18; live-surface contracts included: 18 (16 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,9 +56,9 @@ The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin,
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| WLD | unknown | ethereum | [`0x163f8c...318753`](./contracts/ethereum-1/0x163f8c2467924be0ae7b5347228cabf260318753/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| WLD | unknown | ethereum | n/a | [`0x163f8c...318753`](./contracts/ethereum-1/0x163f8c2467924be0ae7b5347228cabf260318753/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -62,25 +70,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Bridgers | unknown | sonic | 8 deployments: ethereum `0xb68576...89895b`; optimism `0xb68576...89895b`; bsc `0xb68576...89895b`; polygon `0xb68576...89895b`; sonic [`0x89a70b...48d693`](./contracts/sonic-146/0x89a70b162be7dbc8b5e7579066fa58190c48d693/); arbitrum `0xb68576...89895b`; avalanche `0xb68576...89895b`; berachain [`0x89a70b...48d693`](./contracts/berachain-80094/0x89a70b162be7dbc8b5e7579066fa58190c48d693/) | ⚠️ Unaudited (bytecode match) |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Bridgers | unknown | sonic | n/a | 8 deployments: ethereum `0xb68576...89895b`; optimism `0xb68576...89895b`; bsc `0xb68576...89895b`; polygon `0xb68576...89895b`; sonic [`0x89a70b...48d693`](./contracts/sonic-146/0x89a70b162be7dbc8b5e7579066fa58190c48d693/); arbitrum `0xb68576...89895b`; avalanche `0xb68576...89895b`; berachain [`0x89a70b...48d693`](./contracts/berachain-80094/0x89a70b162be7dbc8b5e7579066fa58190c48d693/) | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | opbnb | `0x8f957e...594dd1` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0x74b238...58c76d` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | `0xb68576...89895b` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | `0x2042ec...c8b7eb` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0xd1088d...1be3e6` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xa18968...9f3501` | ❓ Unverified |
-| UnnamedContract | unknown | celo | `0xd1088d...1be3e6` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x815989...2acd0e` | ❓ Unverified |
-| UnnamedContract | unknown | blast | `0xd1088d...1be3e6` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | opbnb | n/a | `0x8f957e...594dd1` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x74b238...58c76d` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xb68576...89895b` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0x2042ec...c8b7eb` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xd1088d...1be3e6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa18968...9f3501` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xd1088d...1be3e6` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x815989...2acd0e` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xd1088d...1be3e6` | ❓ Unverified |
 
 ## Audit Inventory
 

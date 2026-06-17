@@ -7,11 +7,11 @@
 - Project: Anvil (`anvil`)
 - Website: [https://anvil.xyz/](https://anvil.xyz/)
 - Lifecycle: declining (Tier 0, 83.3% below peak)
-- Generated: 2026-06-10T20:58:57.579Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-17T07:00:49.007Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 3 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $17,516,974.93
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $11,196,966.19
 - On-chain TVL (included contracts): $672,999.95
 - TVL by chain: Ethereum $672,999.95
 
@@ -23,14 +23,22 @@ Anvil is a collateral-management protocol for fully backed credit and letter-of-
 
 The CollateralVault holds user deposits and interacts with TimeBasedCollateralPool for time-locked collateral management, while the LetterOfCredit contract issues credit instruments backed by the vault's collateral.
 
+## Contract Surface Quality
+
+- Indexed contracts: 7; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 3 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/3 (100.0%)
+- Verified implementations audited: 2/2 (100.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 7
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -43,18 +51,17 @@ The CollateralVault holds user deposits and interacts with TimeBasedCollateralPo
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 3 | 100.0% | 2025-10 |
-| Trail of Bits | Tier 1 | 1 | 33.3% | 2023-12 |
+| OpenZeppelin | Tier 1 | 2 | 100.0% | 2025-10 |
+| Trail of Bits | Tier 1 | 1 | 50.0% | 2023-12 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| CollateralVault | core_logic | ethereum | [`0x5d2725...1d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ✅ Audited |
-| LetterOfCredit | unknown | ethereum | 3 deployments: ethereum [`0x14db9a...7c4808`](./contracts/ethereum-1/0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808/); ethereum `0x1a3251...f42961`; ethereum `0x750ab7...59d5ad` | ✅ Audited |
-| TimeBasedCollateralPool | core_logic | ethereum | 3 deployments: ethereum [`0x1f00d6...9c9e14`](./contracts/ethereum-1/0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14/); ethereum `0xcc437a...4cf29f`; ethereum `0xd042c2...db3e5a` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CollateralVault | core_logic | ethereum | n/a | [`0x5d2725...1d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ✅ Audited |
+| LetterOfCredit | unknown | ethereum | unit-18768 | [`0x14db9a...7c4808`](./contracts/ethereum-1/0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,9 +90,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [<>\](https://www.openzeppelin.com/news/anvil-protocol-diff-audit) | OpenZeppelin | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
-| [<>](https://www.openzeppelin.com/news/anvil-protocol-audit) | OpenZeppelin | Audit | 2024-10 | aging | Direct | contract_name | 4 | high |
-| [<>](https://github.com/trailofbits/publications/blob/master/reviews/2023-12-acronym-foundation-securityreview.pdf) | Trail of Bits | Audit | 2023-12 | stale | Direct | contract_name | 3 | high |
-| [[](< https://blog.openzeppelin.com/anvil-audit>)](https://www.openzeppelin.com/news/anvil-audit) | OpenZeppelin | Audit | 2024-10 | aging | Direct | contract_name | 3 | high |
+| [<>](https://www.openzeppelin.com/news/anvil-protocol-audit) | OpenZeppelin | Audit | 2024-10 | aging | Direct | contract_name | 1 | high |
+| [<>](https://github.com/trailofbits/publications/blob/master/reviews/2023-12-acronym-foundation-securityreview.pdf) | Trail of Bits | Audit | 2023-12 | stale | Direct | contract_name | 1 | high |
+| [[](< https://blog.openzeppelin.com/anvil-audit>)](https://www.openzeppelin.com/news/anvil-audit) | OpenZeppelin | Audit | 2024-10 | aging | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -99,7 +106,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

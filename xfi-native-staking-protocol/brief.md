@@ -5,11 +5,11 @@
 - Project: XFI Native Staking Protocol (`xfi-native-staking-protocol`)
 - Website: [https://xficonsole.com/](https://xficonsole.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T04:09:40.034Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-17T07:01:00.728Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,173,680.82
+- DeFi Llama TVL: $1,309,273.74
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 The XFI Native Staking Protocol enables native staking of XFI within the CrossFi ecosystem, connecting CrossFi's EVM and Cosmos components so XFI holders can stake in the network and earn staking rewards.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

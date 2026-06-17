@@ -5,13 +5,13 @@
 - Project: Piku (`piku`)
 - Website: [https://piku.co/](https://piku.co/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T16:27:40.171Z
-- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
+- Generated: 2026-06-17T07:00:40.609Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 32 unique implementations (56 raw deployments)
+- Contract surface: 54 unique implementations (54 raw deployments)
 - DeFi Llama TVL: $18,279,989.32
-- On-chain TVL (included contracts): $189,251,878.33
-- TVL by chain: Ethereum $189,251,878.33
+- On-chain TVL (included contracts): $172,087,267.05
+- TVL by chain: Ethereum $172,087,267.05
 
 ## Project Description
 
@@ -21,17 +21,25 @@ Piku is a Piku Finance/PikuDAO yield-optimized stablecoin and global yield gatew
 
 The Piku family relies on the Oracle Module for asset pricing and the Token & Workflow Contracts for governance token issuance. All families share the Inverter beacon proxy pattern for upgradeability and access control, with Piku's SY wrappers and market depending on external Pendle infrastructure.
 
+## Contract Surface Quality
+
+- Indexed contracts: 56; live-surface contracts included: 54 (54 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 43/44 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/30 (13.3%)
-- Verified + Unaudited implementations: 26
+- Verified implementations audited: 4/52 (7.7%)
+- Verified + Unaudited implementations: 48
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 32
-- Raw deployments: 56
+- Unique implementations: 54
+- Raw deployments: 54
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $189,251,878.33
+- ASD (verified + unaudited TVL): $172,087,267.05
 - Latest audit: 2024-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -40,49 +48,71 @@ The Piku family relies on the Oracle Module for asset pricing and the Token & Wo
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| 0xMacro | Tier 2 | 4 | 13.3% | 2024-06 |
+| 0xMacro | Tier 2 | 4 | 7.7% | 2024-06 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AUT_Roles_v1 | unknown | ethereum | [`0x2f7656...7c2fb3`](./contracts/ethereum-1/0x2f76563dd0d491eb6c128f846cff2a98047c2fb3/) | ✅ Audited |
-| FM_PC_Oracle_Redeeming_v1 | operational_periphery | ethereum | [`0x7e0305...f9a797`](./contracts/ethereum-1/0x7e0305b212df3fb56366251c054c07748bf9a797/) | ✅ Audited |
-| LM_Oracle_Permissioned_v1 | operational_periphery | ethereum | [`0x433471...b33552`](./contracts/ethereum-1/0x433471901ba1a8bde764e8421790c7d9bab33552/) | ✅ Audited |
-| PP_Queue_ManualExecution_v1 | unknown | ethereum | [`0x5a2d08...0f6fd2`](./contracts/ethereum-1/0x5a2d08b194e1764b0ff271c691b6a46fa10f6fd2/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AUT_Roles_v1 | unknown | ethereum | unit-24754 | [`0x2f7656...7c2fb3`](./contracts/ethereum-1/0x2f76563dd0d491eb6c128f846cff2a98047c2fb3/) | ✅ Audited |
+| FM_PC_Oracle_Redeeming_v1 | operational_periphery | ethereum | unit-24771 | [`0x7e0305...f9a797`](./contracts/ethereum-1/0x7e0305b212df3fb56366251c054c07748bf9a797/) | ✅ Audited |
+| LM_Oracle_Permissioned_v1 | operational_periphery | ethereum | unit-24757 | [`0x433471...b33552`](./contracts/ethereum-1/0x433471901ba1a8bde764e8421790c7d9bab33552/) | ✅ Audited |
+| PP_Queue_ManualExecution_v1 | unknown | ethereum | unit-24766 | [`0x5a2d08...0f6fd2`](./contracts/ethereum-1/0x5a2d08b194e1764b0ff271c691b6a46fa10f6fd2/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (26)
+### ⚠️ Verified + Unaudited (48)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| PoolManager | core_logic | ethereum | [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/) | ⚠️ Unaudited |
-| ERC20IssuanceUpgradeable_Blacklist_v1 | token | ethereum | 2 deployments: ethereum [`0x098697...e95fe6`](./contracts/ethereum-1/0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6/); ethereum `0x9e40b6...e20370` | ⚠️ Unaudited |
-| VaultV2 | core_logic | ethereum | [`0x153bd1...d64a57`](./contracts/ethereum-1/0x153bd1abe60104bd46aa05a27fa12d1346d64a57/) | ⚠️ Unaudited |
-| PendlePrincipalToken | token | ethereum | [`0x3ffaa9...04d129`](./contracts/ethereum-1/0x3ffaa9ce7cfa5688277b97bf6a8c22249404d129/) | ⚠️ Unaudited |
-| PendleStrataMidasTrancheSY | core_logic | ethereum | 2 deployments: ethereum [`0x460783...e3015e`](./contracts/ethereum-1/0x460783e7917b191e80954edd674bf46f66e3015e/); ethereum `0xfb71d1...b1fefb` | ⚠️ Unaudited |
-| PendleMarketV7 | core_logic | ethereum | [`0x6354b7...7dcec4`](./contracts/ethereum-1/0x6354b7dd06050da44a21d680436838a08e7dcec4/) | ⚠️ Unaudited |
-| PendleYieldToken | token | ethereum | [`0xacd577...fdd6be`](./contracts/ethereum-1/0xacd577ccc29e88a2b7aaa15026533abd91fdd6be/) | ⚠️ Unaudited |
-| PendleERC4626SYYieldTokenScaled18 | token | ethereum | 2 deployments: ethereum [`0x488110...9c2f0d`](./contracts/ethereum-1/0x4881103c5209704fb93c5b7289b017c95a9c2f0d/); ethereum `0xadbeb9...82fb62` | ⚠️ Unaudited |
-| Morpho | unknown | ethereum | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
-| PendleAaveV3MerklRewardsSYUpg | unknown | ethereum | 3 deployments: ethereum [`0x514d2f...c102cb`](./contracts/ethereum-1/0x514d2ff735434696df3f4e6b73e2c9093fc102cb/); ethereum `0x751d64...96940e`; ethereum `0x936af9...773f54` | ⚠️ Unaudited |
-| PendleERC20WithOracleSY | operational_periphery | ethereum | 10 deployments: ethereum [`0x095707...9c1dab`](./contracts/ethereum-1/0x095707a011a500b2c2c043473249debb4e9c1dab/); ethereum `0x399e42...80a209`; ethereum `0x4a312f...e1ed36`; ethereum `0x6231e6...b9bed4`; ethereum `0x725e18...3381aa`; ethereum `0x785685...59f8e6`; ethereum `0xc34e7d...ec4c8d`; ethereum `0xdeb45c...03b75e`; ethereum `0xeefa42...0447c1`; ethereum `0xf51453...62a2d9` | ⚠️ Unaudited |
-| PendleERC4626NoRedeemNoDepositUpgSY | unknown | ethereum | 4 deployments: ethereum [`0x3f0293...5614b0`](./contracts/ethereum-1/0x3f029330c46049f97772295e3fb23721865614b0/); ethereum `0x44a4ff...08d2c3`; ethereum `0x47b50d...699629`; ethereum `0xc9950c...21283a` | ⚠️ Unaudited |
-| PendleERC4626NoRedeemWithAdapterAndSupplyCapSY | adapter | ethereum | [`0x10c5e7...666409`](./contracts/ethereum-1/0x10c5e7711eaddc1b6b64e40ef1976fc462666409/) | ⚠️ Unaudited |
-| PendleLidoGGVSY | unknown | ethereum | [`0x55cb95...a1c171`](./contracts/ethereum-1/0x55cb9535aa1ee7c98916b044af5679eb5ea1c171/) | ⚠️ Unaudited |
-| PendleMidasSY | unknown | ethereum | 4 deployments: ethereum [`0x093bb9...81bb4a`](./contracts/ethereum-1/0x093bb931965e10af75349b97d133aa8dab81bb4a/); ethereum `0x457904...a059d6`; ethereum `0xb3538a...d6bc17`; ethereum `0xe1e22d...9b4e58` | ⚠️ Unaudited |
-| PendleStrataNUSDTrancheSY | core_logic | ethereum | 2 deployments: ethereum [`0x928990...873fe5`](./contracts/ethereum-1/0x92899026d06343929c61e0987e09caeea6873fe5/); ethereum `0xdb8f1d...06c45f` | ⚠️ Unaudited |
-| PendleStrataUSDatTrancheSY | core_logic | ethereum | 2 deployments: ethereum [`0x9d0fc5...563185`](./contracts/ethereum-1/0x9d0fc59f88acb85520a8cfb74c7fe141d8563185/); ethereum `0xa26938...6e3c6a` | ⚠️ Unaudited |
-| PendleStrataUSDETrancheSY | core_logic | ethereum | 2 deployments: ethereum [`0x4f6673...c7d76f`](./contracts/ethereum-1/0x4f6673346ab4813f1665327ab39087008cc7d76f/); ethereum `0xc9bfeb...fd1b8e` | ⚠️ Unaudited |
-| PendleUniBTCSYUpgScaled18 | unknown | ethereum | 2 deployments: ethereum [`0x8d5cf5...9e3908`](./contracts/ethereum-1/0x8d5cf57ee0cd5ae3ace43a7d6a40807c2a9e3908/); ethereum `0xb99509...8d7353` | ⚠️ Unaudited |
-| PendleUpshiftTokenizedVaultSY | core_logic | ethereum | [`0x832bbd...e5ef2e`](./contracts/ethereum-1/0x832bbd18ba4407baeeb85cec5ceee21477e5ef2e/) | ⚠️ Unaudited |
-| PendleXPRISMSY | unknown | ethereum | [`0x84760f...1dcfdf`](./contracts/ethereum-1/0x84760fda5e2184ab989fffc6d77350fc491dcfdf/) | ⚠️ Unaudited |
-| PendleXStocksSY | unknown | ethereum | [`0x1c44f9...724450`](./contracts/ethereum-1/0x1c44f9be658bde68e7b4091e9bd349fc64724450/) | ⚠️ Unaudited |
-| PIKU | unknown | ethereum | [`0x2e4039...c02dc3`](./contracts/ethereum-1/0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | [`0xe08b04...f8a36f`](./contracts/ethereum-1/0xe08b04aa20f16fd0d5c38a98731d2d812bf8a36f/) | ⚠️ Unaudited |
-| StakedPikuV2 | token | ethereum | [`0x5da17c...839df8`](./contracts/ethereum-1/0x5da17ca137f1128d4be7ce574bc61f3ac4839df8/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | [`0x9e08c5...06896b`](./contracts/ethereum-1/0x9e08c5499f953c6297a7755bcbced383b606896b/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PoolManager | core_logic | ethereum | n/a | [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/) | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | n/a | [`0x153bd1...d64a57`](./contracts/ethereum-1/0x153bd1abe60104bd46aa05a27fa12d1346d64a57/) | ⚠️ Unaudited |
+| PendlePrincipalToken | token | ethereum | n/a | [`0x3ffaa9...04d129`](./contracts/ethereum-1/0x3ffaa9ce7cfa5688277b97bf6a8c22249404d129/) | ⚠️ Unaudited |
+| PendleStrataMidasTrancheSY | core_logic | ethereum | unit-24792 | [`0xfb71d1...b1fefb`](./contracts/ethereum-1/0xfb71d1e85048fbe2149edbf7ca1d7797dfb1fefb/) | ⚠️ Unaudited |
+| PendleStrataMidasTrancheSY | core_logic | ethereum | unit-24760 | [`0x460783...e3015e`](./contracts/ethereum-1/0x460783e7917b191e80954edd674bf46f66e3015e/) | ⚠️ Unaudited |
+| PendleMarketV7 | core_logic | ethereum | n/a | [`0x6354b7...7dcec4`](./contracts/ethereum-1/0x6354b7dd06050da44a21d680436838a08e7dcec4/) | ⚠️ Unaudited |
+| PendleYieldToken | token | ethereum | n/a | [`0xacd577...fdd6be`](./contracts/ethereum-1/0xacd577ccc29e88a2b7aaa15026533abd91fdd6be/) | ⚠️ Unaudited |
+| PendleERC4626SYYieldTokenScaled18 | token | ethereum | unit-24780 | [`0xadbeb9...82fb62`](./contracts/ethereum-1/0xadbeb9e3afe0186c57cac78c6a801cc38c82fb62/) | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | n/a | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | ethereum | unit-24764 | [`0x514d2f...c102cb`](./contracts/ethereum-1/0x514d2ff735434696df3f4e6b73e2c9093fc102cb/) | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | ethereum | unit-24769 | [`0x751d64...96940e`](./contracts/ethereum-1/0x751d64f7dd4082d95ad90e584857b8313b96940e/) | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | ethereum | unit-24776 | [`0x936af9...773f54`](./contracts/ethereum-1/0x936af9f9dd1f8f1377cdf3063690a9074a773f54/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24750 | [`0x095707...9c1dab`](./contracts/ethereum-1/0x095707a011a500b2c2c043473249debb4e9c1dab/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24755 | [`0x399e42...80a209`](./contracts/ethereum-1/0x399e426e6812943ac22976333698e16eaa80a209/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24762 | [`0x4a312f...e1ed36`](./contracts/ethereum-1/0x4a312fca9b7e568ab99e4e5ccbfb409221e1ed36/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24767 | [`0x6231e6...b9bed4`](./contracts/ethereum-1/0x6231e66491ad4e608a093a8806449fdcbbb9bed4/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24768 | [`0x725e18...3381aa`](./contracts/ethereum-1/0x725e18142472384e45e15084e308dbeae43381aa/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24770 | [`0x785685...59f8e6`](./contracts/ethereum-1/0x785685b3a6a2af752694fda7058965302e59f8e6/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24783 | [`0xc34e7d...ec4c8d`](./contracts/ethereum-1/0xc34e7d9d5ec0626ed14b6b7cee02fe904bec4c8d/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24787 | [`0xdeb45c...03b75e`](./contracts/ethereum-1/0xdeb45ce184fa26211e07ff8ad842807ad703b75e/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24790 | [`0xeefa42...0447c1`](./contracts/ethereum-1/0xeefa4255ba79ef3f6f769590e41fcfece10447c1/) | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | ethereum | unit-24791 | [`0xf51453...62a2d9`](./contracts/ethereum-1/0xf5145335540c4116956c0936b7db08d1a862a2d9/) | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | ethereum | unit-24756 | [`0x3f0293...5614b0`](./contracts/ethereum-1/0x3f029330c46049f97772295e3fb23721865614b0/) | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | ethereum | unit-24758 | [`0x44a4ff...08d2c3`](./contracts/ethereum-1/0x44a4ff3934cf3833903a04261bd0d962f008d2c3/) | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | ethereum | unit-24761 | [`0x47b50d...699629`](./contracts/ethereum-1/0x47b50da0e1186b27a2413b81a352d05853699629/) | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | ethereum | unit-24784 | [`0xc9950c...21283a`](./contracts/ethereum-1/0xc9950c55126c125173e9319077253d633221283a/) | ⚠️ Unaudited |
+| PendleERC4626NoRedeemWithAdapterAndSupplyCapSY | adapter | ethereum | unit-24752 | [`0x10c5e7...666409`](./contracts/ethereum-1/0x10c5e7711eaddc1b6b64e40ef1976fc462666409/) | ⚠️ Unaudited |
+| PendleERC4626SYYieldTokenScaled18 | token | ethereum | n/a | [`0x488110...9c2f0d`](./contracts/ethereum-1/0x4881103c5209704fb93c5b7289b017c95a9c2f0d/) | ⚠️ Unaudited |
+| PendleLidoGGVSY | unknown | ethereum | unit-24765 | [`0x55cb95...a1c171`](./contracts/ethereum-1/0x55cb9535aa1ee7c98916b044af5679eb5ea1c171/) | ⚠️ Unaudited |
+| PendleMidasSY | unknown | ethereum | unit-24749 | [`0x093bb9...81bb4a`](./contracts/ethereum-1/0x093bb931965e10af75349b97d133aa8dab81bb4a/) | ⚠️ Unaudited |
+| PendleMidasSY | unknown | ethereum | unit-24759 | [`0x457904...a059d6`](./contracts/ethereum-1/0x457904b54f47dd7a91253f225237a5b02ca059d6/) | ⚠️ Unaudited |
+| PendleMidasSY | unknown | ethereum | unit-24781 | [`0xb3538a...d6bc17`](./contracts/ethereum-1/0xb3538aab6a46572b118692a05915582857d6bc17/) | ⚠️ Unaudited |
+| PendleMidasSY | unknown | ethereum | unit-24789 | [`0xe1e22d...9b4e58`](./contracts/ethereum-1/0xe1e22d55e23900f30599d8bee74a0801f09b4e58/) | ⚠️ Unaudited |
+| PendleStrataNUSDTrancheSY | core_logic | ethereum | unit-24775 | [`0x928990...873fe5`](./contracts/ethereum-1/0x92899026d06343929c61e0987e09caeea6873fe5/) | ⚠️ Unaudited |
+| PendleStrataNUSDTrancheSY | core_logic | ethereum | unit-24786 | [`0xdb8f1d...06c45f`](./contracts/ethereum-1/0xdb8f1d15880b97dc38edfa46d8a5a7e5b506c45f/) | ⚠️ Unaudited |
+| PendleStrataUSDatTrancheSY | core_logic | ethereum | unit-24777 | [`0x9d0fc5...563185`](./contracts/ethereum-1/0x9d0fc59f88acb85520a8cfb74c7fe141d8563185/) | ⚠️ Unaudited |
+| PendleStrataUSDatTrancheSY | core_logic | ethereum | unit-24779 | [`0xa26938...6e3c6a`](./contracts/ethereum-1/0xa26938b7eb9f097e23e73af30c8f2ad6d06e3c6a/) | ⚠️ Unaudited |
+| PendleStrataUSDETrancheSY | core_logic | ethereum | unit-24763 | [`0x4f6673...c7d76f`](./contracts/ethereum-1/0x4f6673346ab4813f1665327ab39087008cc7d76f/) | ⚠️ Unaudited |
+| PendleStrataUSDETrancheSY | core_logic | ethereum | unit-24785 | [`0xc9bfeb...fd1b8e`](./contracts/ethereum-1/0xc9bfebc79a722c05dc34bd2a227ef2db19fd1b8e/) | ⚠️ Unaudited |
+| PendleUniBTCSYUpgScaled18 | unknown | ethereum | unit-24774 | [`0x8d5cf5...9e3908`](./contracts/ethereum-1/0x8d5cf57ee0cd5ae3ace43a7d6a40807c2a9e3908/) | ⚠️ Unaudited |
+| PendleUniBTCSYUpgScaled18 | unknown | ethereum | unit-24782 | [`0xb99509...8d7353`](./contracts/ethereum-1/0xb9950954d965550fabbe635a8ccb7ee1fe8d7353/) | ⚠️ Unaudited |
+| PendleUpshiftTokenizedVaultSY | core_logic | ethereum | unit-24772 | [`0x832bbd...e5ef2e`](./contracts/ethereum-1/0x832bbd18ba4407baeeb85cec5ceee21477e5ef2e/) | ⚠️ Unaudited |
+| PendleXPRISMSY | unknown | ethereum | unit-24773 | [`0x84760f...1dcfdf`](./contracts/ethereum-1/0x84760fda5e2184ab989fffc6d77350fc491dcfdf/) | ⚠️ Unaudited |
+| PendleXStocksSY | unknown | ethereum | unit-24753 | [`0x1c44f9...724450`](./contracts/ethereum-1/0x1c44f9be658bde68e7b4091e9bd349fc64724450/) | ⚠️ Unaudited |
+| PIKU | unknown | ethereum | n/a | [`0x2e4039...c02dc3`](./contracts/ethereum-1/0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-24788 | [`0xe08b04...f8a36f`](./contracts/ethereum-1/0xe08b04aa20f16fd0d5c38a98731d2d812bf8a36f/) | ⚠️ Unaudited |
+| StakedPikuV2 | token | ethereum | n/a | [`0x5da17c...839df8`](./contracts/ethereum-1/0x5da17ca137f1128d4be7ce574bc61f3ac4839df8/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | ethereum | unit-24778 | [`0x9e08c5...06896b`](./contracts/ethereum-1/0x9e08c5499f953c6297a7755bcbced383b606896b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,10 +130,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x6f7d5e...41a94f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x83515b...d8cb41` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x6f7d5e...41a94f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x83515b...d8cb41` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -126,7 +156,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 5 |
 | standard_library | 0 |
-| needs_review | 27 |
+| needs_review | 49 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "benddao",
-  "generated_at": "2026-06-10T21:55:51.698Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-17T07:00:41.463Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7146283,
-    "tvl_usd": 7146283,
+    "dl_tvl_usd": 5870646,
+    "tvl_usd": 5870646,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "BendDAO is a DeFi protocol focused on NFT-backed lending and related NFT liquidity products. Its core lending product lets users borrow ETH against supported NFT collateral, and its current product coverage should also include BendDAO-linked APE staking activity and relevant Ethereum and ApeChain components where supported by canonical sources such as DefiLlama, official documentation, repositories, or verified BendDAO-controlled contracts.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

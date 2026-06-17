@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (avalanche [`0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f`](../0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f/); linea `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f`) |
+| Deployments | 1 (avalanche [`0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f`](../0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f/)) |
 | Proxy | Yes → `0x776831...476eb3` |
 | Source | Etherscan |
 | TVL | n/a |

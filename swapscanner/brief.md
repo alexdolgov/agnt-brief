@@ -5,8 +5,8 @@
 - Project: Swapscanner (`swapscanner`)
 - Website: [https://swapscanner.io/](https://swapscanner.io/)
 - Lifecycle: active (Tier 0, 82.4% below peak)
-- Generated: 2026-06-14T07:18:13.926Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:01:00.869Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,101,384.00
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Swapscanner is a DEX aggregator on Kaia, formerly Klaytn, focused on routing and price optimization for token swaps. Any staking or wrapping functionality should be treated as separate site features unless official documentation verifies liquid-staking derivative issuance.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -67,10 +75,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | `0x888888...28d5f3` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | `0x999999...ac80e9` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | klaytn | n/a | `0x888888...28d5f3` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | `0x999999...ac80e9` | ❓ Unverified |
 
 ## Audit Inventory
 

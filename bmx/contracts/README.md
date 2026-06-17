@@ -1,6 +1,6 @@
 # bmx — Contract Index
 
-187 unique implementations across 3 chains · 651 deployments · 0 audited · 136 unaudited · 51 unverified
+61 unique implementations across 3 chains · 265 deployments · 0 audited · 60 unaudited · 1 unverified
 
 ## adapter (10)
 
@@ -8,84 +8,49 @@
 |---|---|---|---|---|
 | [PositionManagerAdapter (10 deployments)](./base-8453/0x1c4ddff94e3c940c0c8054f1996a00e45221a576/) | base | 10 deployments: base [`0x1c4ddf...21a576`](./base-8453/0x1c4ddff94e3c940c0c8054f1996a00e45221a576/); base `0x32d21f...fe0798`; base `0x4b819f...949453`; base `0x5f37da...4c06ce`; base `0x7ddd07...12fc44`; base `0x9f1bb9...760010`; base `0xac4e7d...60072c`; base `0xb05f9f...b9c42d`; base `0xe8f132...f1d352`; base `0xfd9ca0...763656` | ⚠️ Unaudited | Verified |
 | [PositionRouter (2 deployments)](./mode-34443/0x6d6ec3bd7c94ab35e7a0a6fda864ee35eb9fae04/) | mode | 2 deployments: base `0x927f9c...28d443`; mode [`0x6d6ec3...9fae04`](./mode-34443/0x6d6ec3bd7c94ab35e7a0a6fda864ee35eb9fae04/) | ⚠️ Unaudited | Verified |
-| [RewardRouterV3 (2 deployments)](./base-8453/0x49a97680938b4f1f73816d1b70c3ab801fad124b/) | base | 2 deployments: base [`0x49a976...ad124b`](./base-8453/0x49a97680938b4f1f73816d1b70c3ab801fad124b/); base `0x6a24df...111af0` | ⚠️ Unaudited | Verified |
-| [RewardRouterV4 (3 deployments)](./base-8453/0x5e6882ef2e69f041d8201bdcf52c3573ea4909de/) | base | 3 deployments: base [`0x5e6882...4909de`](./base-8453/0x5e6882ef2e69f041d8201bdcf52c3573ea4909de/); base `0x645603...bd4ff4`; mode `0x73bf80...42353c` | ⚠️ Unaudited | Verified |
-| [Router (3 deployments)](./mode-34443/0x7f04c08f1c870b58c5faebf87a6c53675210453a/) | mode | 3 deployments: base `0xc60818...c3b174`; mode [`0x7f04c0...10453a`](./mode-34443/0x7f04c08f1c870b58c5faebf87a6c53675210453a/); mode `0xaa4020...82e6e0` | ⚠️ Unaudited | Verified |
-| [StakingRewardRouter (5 deployments)](./base-8453/0x04c891380a505953aa7bf604b95cccdb548d3293/) | base | 5 deployments: base [`0x04c891...8d3293`](./base-8453/0x04c891380a505953aa7bf604b95cccdb548d3293/); base `0x820473...787d72`; base `0xa0b2b7...cbaae1`; base `0xc2c6e4...5b1cc9`; base `0xfbe760...49466c` | ⚠️ Unaudited | Verified |
+| [RewardRouterV3](./base-8453/0x49a97680938b4f1f73816d1b70c3ab801fad124b/) | base | [`0x49a976...ad124b`](./base-8453/0x49a97680938b4f1f73816d1b70c3ab801fad124b/) | ⚠️ Unaudited | Verified |
+| [RewardRouterV4 (2 deployments)](./base-8453/0x6456039168d3fe3bc5fcd9e46f3b716c1abd4ff4/) | base | 2 deployments: base [`0x645603...bd4ff4`](./base-8453/0x6456039168d3fe3bc5fcd9e46f3b716c1abd4ff4/); mode `0x73bf80...42353c` | ⚠️ Unaudited | Verified |
+| [Router (2 deployments)](./mode-34443/0xaa40201575140862e9ae4f00515245670582e6e0/) | mode | 2 deployments: base `0xc60818...c3b174`; mode [`0xaa4020...82e6e0`](./mode-34443/0xaa40201575140862e9ae4f00515245670582e6e0/) | ⚠️ Unaudited | Verified |
+| [StakingRewardRouter](./base-8453/0xfbe760ad3493dfa852f1e9f702992f5a1149466c/) | base | [`0xfbe760...49466c`](./base-8453/0xfbe760ad3493dfa852f1e9f702992f5a1149466c/) | ⚠️ Unaudited | Verified |
 | [StakingRewardsZap (2 deployments)](./mode-34443/0x22a2983ee9cc75d53c5f4adecf6299a77b8e94f4/) | mode | 2 deployments: base `0xb6e64e...9af9e0`; mode [`0x22a298...8e94f4`](./mode-34443/0x22a2983ee9cc75d53c5f4adecf6299a77b8e94f4/) | ⚠️ Unaudited | Verified |
-| [SudoVRFRouter (16 deployments)](./base-8453/0x073d8b46c525abfe6bea868642884389bfaf157b/) | base | 16 deployments: base [`0x073d8b...af157b`](./base-8453/0x073d8b46c525abfe6bea868642884389bfaf157b/); base `0x25136b...a25295`; base `0x3d1634...e0c578`; base `0x45bbbb...6147f4`; base `0x4c5215...b13e95`; base `0x4cae53...ab3518`; base `0x68d493...a466d3`; base `0x760370...35f23c`; base `0x8a5e2e...603ee4`; base `0x9f8d64...fb53cb`; base `0xbd9bbd...fbdeea`; base `0xc43cf1...f9a923`; base `0xdbb465...6326fe`; base `0xdf2c22...138f5d`; base `0xefdd8c...3bd936`; base `0xf9388d...4bd059` | ⚠️ Unaudited | Verified |
-| [wBLTRouter (3 deployments)](./base-8453/0x35e37d0b4960141740135e0742579aefe5f9d598/) | base | 3 deployments: base [`0x35e37d...f9d598`](./base-8453/0x35e37d0b4960141740135e0742579aefe5f9d598/); base `0x85237c...2246c0`; base `0xa713e7...9dd6a3` | ⚠️ Unaudited | Verified |
+| [SudoVRFRouter](./base-8453/0xbd9bbd45478259f513908c42ddf66de959fbdeea/) | base | [`0xbd9bbd...fbdeea`](./base-8453/0xbd9bbd45478259f513908c42ddf66de959fbdeea/) | ⚠️ Unaudited | Verified |
+| [wBLTRouter (2 deployments)](./base-8453/0x35e37d0b4960141740135e0742579aefe5f9d598/) | base | 2 deployments: base [`0x35e37d...f9d598`](./base-8453/0x35e37d0b4960141740135e0742579aefe5f9d598/); base `0x85237c...2246c0` | ⚠️ Unaudited | Verified |
 | [wMLTRouter](./mode-34443/0x7bf2e95088f127522d27ca0277a70ba03f0c37f0/) | mode | [`0x7bf2e9...0c37f0`](./mode-34443/0x7bf2e95088f127522d27ca0277a70ba03f0c37f0/) | ⚠️ Unaudited | Verified |
 
-## core_logic (10)
+## core_logic (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BMXGovernanceStrategy (6 deployments)](./base-8453/0x24b70a3b446b6db94d9434dcda1688290db5c342/) | base | 6 deployments: base [`0x24b70a...b5c342`](./base-8453/0x24b70a3b446b6db94d9434dcda1688290db5c342/); base `0x2cd5ac...3e522b`; base `0x2d62b6...14b27d`; base `0xfc3838...f186ff`; mode `0x290cba...e6d72d`; mode `0xe0bace...6ca278` | ⚠️ Unaudited | Verified |
-| [BuyBackAndBurnOTokenStrategy](./base-8453/0x4d7e65bb66c012e9d15161ffc6939ea99218fe71/) | base | [`0x4d7e65...18fe71`](./base-8453/0x4d7e65bb66c012e9d15161ffc6939ea99218fe71/) | ⚠️ Unaudited | Verified |
-| [CloverfieldMultiAccount](./mode-34443/0xd1215e77ed4468a7ec287daec2bc89178a138c9a/) | mode | [`0xd1215e...138c9a`](./mode-34443/0xd1215e77ed4468a7ec287daec2bc89178a138c9a/) | ⚠️ Unaudited | Verified |
-| [MultiAccount (16 deployments)](./mode-34443/0x0afb063ac78eb631b3c14cdbff9709ad11ed4049/) | mode | 16 deployments: base `0x1c03b6...78b780`; base `0x1ebcf9...e8934d`; base `0x2a8e61...47bc11`; base `0x6d6392...719ddd`; base `0x724796...b8cc98`; base `0x8ab178...3f3b86`; base `0x8b0119...ce29e7`; base `0x94af0e...4ccc5f`; base `0xa5ddc7...928e92`; base `0xc6ecf3...0bb774`; base `0xc8320d...1e8f2b`; base `0xdad41b...43d74f`; base `0xdc6ad9...dd7f7a`; base `0xf3a293...2fcb0c`; base `0xf7f56d...ef4580`; mode [`0x0afb06...ed4049`](./mode-34443/0x0afb063ac78eb631b3c14cdbff9709ad11ed4049/) | ⚠️ Unaudited | Verified |
-| [StrategyVelodromeMultiRewards (4 deployments)](./base-8453/0x1be4bb36e7ee4902d0bf9a94683163f39c6d4c97/) | base | 4 deployments: base [`0x1be4bb...6d4c97`](./base-8453/0x1be4bb36e7ee4902d0bf9a94683163f39c6d4c97/); base `0xa5ff7a...486f1a`; base `0xd32ed8...3dc64c`; mode `0x740cfc...819f7e` | ⚠️ Unaudited | Verified |
-| [Vault (4 deployments)](./mode-34443/0x0a2653a193595d91678830512de2733727953169/) | mode | 4 deployments: sonic `0x9cc4e8...a38acf`; base `0xec8d8d...b4272c`; mode [`0x0a2653...953169`](./mode-34443/0x0a2653a193595d91678830512de2733727953169/); mode `0xff745b...f1ae49` | ⚠️ Unaudited | Verified |
-| [VaultErrorController (3 deployments)](./mode-34443/0x071b4bda55ac6fa67f42a8477311f603d494c3e8/) | mode | 3 deployments: base `0x77f480...488246`; mode [`0x071b4b...94c3e8`](./mode-34443/0x071b4bda55ac6fa67f42a8477311f603d494c3e8/); mode `0xa2ce63...dae3ea` | ⚠️ Unaudited | Verified |
-| [VaultReader (2 deployments)](./base-8453/0xb7209ebcbf71c0ffa1585b4468a11cffdcdbb9a9/) | base | 2 deployments: base [`0xb7209e...dbb9a9`](./base-8453/0xb7209ebcbf71c0ffa1585b4468a11cffdcdbb9a9/); mode `0xc133f5...7b851a` | ⚠️ Unaudited | Verified |
-| [VaultUtils (5 deployments)](./mode-34443/0x533d54daf1392c90ed3b33b24e1d7d8602f779f0/) | mode | 5 deployments: base `0xcca8e0...63d405`; base `0xec31c8...022039`; base `0xfb7f4c...9699c3`; mode [`0x533d54...f779f0`](./mode-34443/0x533d54daf1392c90ed3b33b24e1d7d8602f779f0/); mode `0x7fb62e...811b46` | ⚠️ Unaudited | Verified |
+| [MultiAccount](./base-8453/0x1c03b6480a4efc2d4123ba90d7857f0e1878b780/) | base | [`0x1c03b6...78b780`](./base-8453/0x1c03b6480a4efc2d4123ba90d7857f0e1878b780/) | ⚠️ Unaudited | Verified |
+| MultiAccount | base | `0x6d6392...719ddd` | ⚠️ Unaudited | Verified |
+| MultiAccount | base | `0x8ab178...3f3b86` | ⚠️ Unaudited | Verified |
+| [StrategyVelodromeMultiRewards (3 deployments)](./base-8453/0x1be4bb36e7ee4902d0bf9a94683163f39c6d4c97/) | base | 3 deployments: base [`0x1be4bb...6d4c97`](./base-8453/0x1be4bb36e7ee4902d0bf9a94683163f39c6d4c97/); base `0xa5ff7a...486f1a`; mode `0x740cfc...819f7e` | ⚠️ Unaudited | Verified |
+| [Vault (2 deployments)](./base-8453/0xec8d8d4b215727f3476ff0ab41c406fa99b4272c/) | base | 2 deployments: base [`0xec8d8d...b4272c`](./base-8453/0xec8d8d4b215727f3476ff0ab41c406fa99b4272c/); mode `0xff745b...f1ae49` | ⚠️ Unaudited | Verified |
+| [VaultUtils (2 deployments)](./base-8453/0xcca8e0f7283e1859fc954f4852e1ca3e6d63d405/) | base | 2 deployments: base [`0xcca8e0...63d405`](./base-8453/0xcca8e0f7283e1859fc954f4852e1ca3e6d63d405/); base `0xfb7f4c...9699c3` | ⚠️ Unaudited | Verified |
 | [Yearn Token Vault](./base-8453/0x4e74d4db6c0726ccded4656d0bce448876bb4c7a/) | base | [`0x4e74d4...bb4c7a`](./base-8453/0x4e74d4db6c0726ccded4656d0bce448876bb4c7a/) | ⚠️ Unaudited | Verified |
 
-## governance (10)
+## governance (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BmxTimelock (2 deployments)](./base-8453/0x46e86356da6c544f7cdc43ea8ae8757d94203407/) | base | 2 deployments: base [`0x46e863...203407`](./base-8453/0x46e86356da6c544f7cdc43ea8ae8757d94203407/); mode `0x7c6012...8ca5e2` | ⚠️ Unaudited | Verified |
 | [BoardwalkLPManager (13 deployments)](./base-8453/0x4e500def833ef98560705e3a95ac66f01b233834/) | base | 13 deployments: base [`0x4e500d...233834`](./base-8453/0x4e500def833ef98560705e3a95ac66f01b233834/); base `0x74dcde...9a5164`; base `0x802795...3cc7e4`; base `0x833548...d317b0`; base `0x957617...57bbbe`; base `0x9b751d...0a317e`; base `0x9e5015...c9a193`; base `0xa3d701...6cd53f`; base `0xc14dd4...f7f375`; base `0xcaf8e0...5e0016`; base `0xe38425...e8bb1b`; base `0xecebe1...e311e7`; base `0xf984b3...d24a26` | ⚠️ Unaudited | Verified |
-| [GlpManager (4 deployments)](./base-8453/0x9fac7b75f367d5b35a6d6d0a09572efcc3d406c5/) | base | 4 deployments: sonic `0xc60818...c3b174`; base [`0x9fac7b...d406c5`](./base-8453/0x9fac7b75f367d5b35a6d6d0a09572efcc3d406c5/); mode `0xaeadcf...616e23`; mode `0xf9fc0b...258178` | ⚠️ Unaudited | Verified |
 | [PositionManager (3 deployments)](./base-8453/0x2ace8f6cc1ce4813bd2d3ace550ac95810855c40/) | base | 3 deployments: base [`0x2ace8f...855c40`](./base-8453/0x2ace8f6cc1ce4813bd2d3ace550ac95810855c40/); base `0xfcc1f4...791125`; mode `0x3cb54f...46563e` | ⚠️ Unaudited | Verified |
 | [PresaleManager (13 deployments)](./base-8453/0x12aa9936f5160f463b7cac1c370299e4a5c6ac47/) | base | 13 deployments: base [`0x12aa99...c6ac47`](./base-8453/0x12aa9936f5160f463b7cac1c370299e4a5c6ac47/); base `0x1a1bfe...8eea27`; base `0x233f68...97a193`; base `0x24d14f...96837b`; base `0x2b678e...4ed616`; base `0x33e476...193912`; base `0x68c899...e402e6`; base `0x729426...98a33a`; base `0x8895db...e91169`; base `0x955bf2...1fb567`; base `0xc89b2e...e7097c`; base `0xcea26f...51da55`; base `0xee08d8...e354d5` | ⚠️ Unaudited | Verified |
-| [ProxyAdmin (8 deployments)](./base-8453/0x1180e04187f798238d6c8272e8c2b1acc30b4db7/) | base | 8 deployments: base [`0x1180e0...0b4db7`](./base-8453/0x1180e04187f798238d6c8272e8c2b1acc30b4db7/); base `0x30ce19...333efa`; base `0x3b3c0b...1970db`; base `0x5acd59...a44b1b`; base `0x5db3c6...be3157`; base `0x942dd3...26d89f`; base `0xba2c07...d0dcf9`; mode `0x7bc8a2...91dc06` | ⚠️ Unaudited | Verified |
-| [StakeManager (2 deployments)](./base-8453/0x82b8c40d075244095743d56e0fa0938a9ae4c0e8/) | base | 2 deployments: base [`0x82b8c4...e4c0e8`](./base-8453/0x82b8c40d075244095743d56e0fa0938a9ae4c0e8/); mode `0xfc9a13...7bf5e0` | ⚠️ Unaudited | Verified |
-| [SymmioSymbolManager (3 deployments)](./base-8453/0x1060e8b480d19d5df763961faa4e11eab8012292/) | base | 3 deployments: base [`0x1060e8...012292`](./base-8453/0x1060e8b480d19d5df763961faa4e11eab8012292/); base `0xcd740b...9ebe20`; base `0xe07f8a...37c730` | ⚠️ Unaudited | Verified |
-| [SymmioTimelockController (3 deployments)](./base-8453/0x62d68cad88fef03a68e461b476cbb3d9681ccf2c/) | base | 3 deployments: base [`0x62d68c...1ccf2c`](./base-8453/0x62d68cad88fef03a68e461b476cbb3d9681ccf2c/); base `0x8cf650...ee5ba4`; base `0x92e89b...7b014d` | ⚠️ Unaudited | Verified |
-| [Timelock (4 deployments)](./base-8453/0x0682f37f9079ed18935bd26385745a0acf56f848/) | base | 4 deployments: base [`0x0682f3...56f848`](./base-8453/0x0682f37f9079ed18935bd26385745a0acf56f848/); base `0x20de7f...f55877`; base `0x4b7a40...6aa403`; mode `0x6c5a77...41bdd5` | ⚠️ Unaudited | Verified |
+| [Timelock (2 deployments)](./base-8453/0x0682f37f9079ed18935bd26385745a0acf56f848/) | base | 2 deployments: base [`0x0682f3...56f848`](./base-8453/0x0682f37f9079ed18935bd26385745a0acf56f848/); mode `0x6c5a77...41bdd5` | ⚠️ Unaudited | Verified |
 
-## operational_periphery (25)
+## operational_periphery (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AirdropClaim (10 deployments)](./base-8453/0x262912cd979ea16dd7a1c0b26838b96d421780ad/) | base | 10 deployments: base [`0x262912...1780ad`](./base-8453/0x262912cd979ea16dd7a1c0b26838b96d421780ad/); base `0x608ebb...486652`; base `0x755843...0bea71`; base `0xa07280...57dedb`; base `0xa1e374...05d37a`; base `0xaf944d...9891d6`; base `0xd73744...8d09d5`; base `0xe7107b...ae41cc`; base `0xf00466...0e1fe8`; base `0xf681e2...6dc060` | ⚠️ Unaudited | Verified |
-| [AirdropHelper](./base-8453/0x5a25cc94d628fedba715064bf101f24a81fef671/) | base | [`0x5a25cc...fef671`](./base-8453/0x5a25cc94d628fedba715064bf101f24a81fef671/) | ⚠️ Unaudited | Verified |
-| [BMXAllowanceReader (3 deployments)](./mode-34443/0x2cfaf7dfa158877c99b281d8d538bd559fa0c709/) | mode | 3 deployments: base `0x4cfd26...7c6305`; base `0x97495e...01bb34`; mode [`0x2cfaf7...a0c709`](./mode-34443/0x2cfaf7dfa158877c99b281d8d538bd559fa0c709/) | ⚠️ Unaudited | Verified |
-| [BnkrAllowanceReader](./base-8453/0x3305c42089991022f96860b2891888b38183660b/) | base | [`0x3305c4...83660b`](./base-8453/0x3305c42089991022f96860b2891888b38183660b/) | ⚠️ Unaudited | Verified |
-| [BonusDistributor (6 deployments)](./mode-34443/0x0df4dbeb0aeabbbb95cc600e7a268125a0bb8064/) | mode | 6 deployments: base `0x23461f...41d65c`; base `0x5fd734...2a18f1`; base `0x995a33...d82d13`; base `0xa440d2...c227ca`; base `0xe80211...334c40`; mode [`0x0df4db...bb8064`](./mode-34443/0x0df4dbeb0aeabbbb95cc600e7a268125a0bb8064/) | ⚠️ Unaudited | Verified |
-| [BribeTYBG](./base-8453/0xd3c2de8c17999c8b311bdde6fb0f52322dac36f7/) | base | [`0xd3c2de...ac36f7`](./base-8453/0xd3c2de8c17999c8b311bdde6fb0f52322dac36f7/) | ⚠️ Unaudited | Verified |
-| [BridgeFacet (4 deployments)](./base-8453/0x2948d25814fc0d58e94af32a3173613b9aa78469/) | base | 4 deployments: base [`0x2948d2...a78469`](./base-8453/0x2948d25814fc0d58e94af32a3173613b9aa78469/); base `0x594982...15f310`; base `0x9ea0a1...db9370`; base `0xdc8429...00c9ee` | ⚠️ Unaudited | Verified |
+| [AirdropClaim](./base-8453/0xf681e23419409964f99ea0a282665bfea96dc060/) | base | [`0xf681e2...6dc060`](./base-8453/0xf681e23419409964f99ea0a282665bfea96dc060/) | ⚠️ Unaudited | Verified |
 | [DailyEpochGauge (10 deployments)](./base-8453/0x001e45067c5f1915e33271b4167f13a7a2855b05/) | base | 10 deployments: base [`0x001e45...855b05`](./base-8453/0x001e45067c5f1915e33271b4167f13a7a2855b05/); base `0x0b14b0...0aa959`; base `0x25892e...f82bfe`; base `0x3656ca...063098`; base `0x39909c...e3589f`; base `0x4395b5...22786b`; base `0x577d95...9133f9`; base `0xd8df4f...01f0dc`; base `0xe578cc...9f2261`; base `0xe79dbb...59d2e1` | ⚠️ Unaudited | Verified |
-| [FastPriceEvents (3 deployments)](./mode-34443/0x005591d2b332e46fc1be1a7730b681f707c6e36b/) | mode | 3 deployments: sonic `0xc0136b...536df2`; base `0x662b64...72de27`; mode [`0x005591...c6e36b`](./mode-34443/0x005591d2b332e46fc1be1a7730b681f707c6e36b/) | ⚠️ Unaudited | Verified |
 | [FastPriceFeed (2 deployments)](./base-8453/0x1e4eed8fd57dfbaae060f894582ec0183c5d6e38/) | base | 2 deployments: base [`0x1e4eed...5d6e38`](./base-8453/0x1e4eed8fd57dfbaae060f894582ec0183c5d6e38/); mode `0x3d220d...c2b0e4` | ⚠️ Unaudited | Verified |
 | [FeeDistributor (13 deployments)](./base-8453/0x115eae08015d06509075292681514470349290d0/) | base | 13 deployments: base [`0x115eae...9290d0`](./base-8453/0x115eae08015d06509075292681514470349290d0/); base `0x221586...9761e2`; base `0x261764...16a4cc`; base `0x326b1b...43a2ea`; base `0x3f7b17...1a031c`; base `0x4f870d...7dcf5a`; base `0x576a43...9e371a`; base `0x7219c8...7e5d8c`; base `0x80cf58...c4af16`; base `0xac6a13...b4293f`; base `0xba05ef...d3a6ff`; base `0xc26a8b...1f74b5`; base `0xe8f5d4...910992` | ⚠️ Unaudited | Verified |
-| [GaugeReader](./base-8453/0x423c78faae04426506f12c5dd7d19208cfe3a849/) | base | [`0x423c78...e3a849`](./base-8453/0x423c78faae04426506f12c5dd7d19208cfe3a849/) | ⚠️ Unaudited | Verified |
 | [IncentiveGauge (10 deployments)](./base-8453/0x55b12709c8503aa9dfce964706a1665ce071da2a/) | base | 10 deployments: base [`0x55b127...71da2a`](./base-8453/0x55b12709c8503aa9dfce964706a1665ce071da2a/); base `0x584864...aca32a`; base `0x59d7bf...469213`; base `0x5fda45...bc4929`; base `0x840166...b5404a`; base `0x8546b4...861c60`; base `0xb727a2...896a05`; base `0xb86418...cb9dc7`; base `0xc04f64...162b6a`; base `0xc8c4b6...d64441` | ⚠️ Unaudited | Verified |
-| [NFTDistributor (3 deployments)](./base-8453/0x0c01e536721fe6334ab65a1598c79cd97a4656dc/) | base | 3 deployments: base [`0x0c01e5...4656dc`](./base-8453/0x0c01e536721fe6334ab65a1598c79cd97a4656dc/); base `0x248fb7...cb0176`; base `0xcc6d00...727828` | ⚠️ Unaudited | Verified |
 | [ParticipationDistributor (8 deployments)](./base-8453/0x0660eb3261eadf2e6c092f102f92cfbd65d2320d/) | base | 8 deployments: base [`0x0660eb...d2320d`](./base-8453/0x0660eb3261eadf2e6c092f102f92cfbd65d2320d/); base `0x326875...1288c4`; base `0x384e1e...19f13a`; base `0x4ea968...731803`; base `0x5f2e1c...eb7249`; base `0x68db72...967ecf`; base `0xe92e9e...6ecd41`; base `0xfbbdcc...f225a4` | ⚠️ Unaudited | Verified |
-| [RewardDistributor (5 deployments)](./base-8453/0x06c35893ba9bc454e12c36f4117bc99f75e34346/) | base | 5 deployments: base [`0x06c358...e34346`](./base-8453/0x06c35893ba9bc454e12c36f4117bc99f75e34346/); base `0x6c72ad...972a4f`; base `0x86260f...45f39b`; base `0xb03bd8...4911f6`; base `0xccbf79...842fc3` | ⚠️ Unaudited | Verified |
-| [RewardDistributorV2 (13 deployments)](./base-8453/0x0259083181ae54730f4fbb1c174a53e21bce5266/) | base | 13 deployments: base [`0x025908...ce5266`](./base-8453/0x0259083181ae54730f4fbb1c174a53e21bce5266/); base `0x07fc59...9040bf`; base `0x0e0088...ff5ae7`; base `0x1d556f...f5edec`; base `0x83a8fb...8aa117`; base `0x8de101...4b32d4`; base `0xc73b6d...aab2dc`; base `0xccd083...1c2c58`; base `0xdd8ca8...a099e6`; mode `0x26e6c4...a5e607`; mode `0x338cf5...b1d9c9`; mode `0x366152...c72ba3`; mode `0x749da3...846b9b` | ⚠️ Unaudited | Verified |
-| [SymmAllocationClaimer (2 deployments)](./base-8453/0x232b72527e3692e78d7f6d73634fc4e100e31f80/) | base | 2 deployments: base [`0x232b72...e31f80`](./base-8453/0x232b72527e3692e78d7f6d73634fc4e100e31f80/); base `0x8377c2...b79634` | ⚠️ Unaudited | Verified |
-| [SymmBriber (3 deployments)](./base-8453/0x604f861dc9fc6d5e685e4701d5668b16c08379ce/) | base | 3 deployments: base [`0x604f86...8379ce`](./base-8453/0x604f861dc9fc6d5e685e4701d5668b16c08379ce/); base `0x6ec1e5...c752bd`; base `0xa25022...728b06` | ⚠️ Unaudited | Verified |
-| [SymmioFeeDistributor (25 deployments)](./base-8453/0x02d27b868f07c7202a8b981e44497ad66171d7ec/) | base | 25 deployments: base [`0x02d27b...71d7ec`](./base-8453/0x02d27b868f07c7202a8b981e44497ad66171d7ec/); base `0x0ec978...4d745f`; base `0x127965...1d4f99`; base `0x410f01...dbf34a`; base `0x4ee4a8...c36ba1`; base `0x5555dc...b28975`; base `0x61649a...c5e305`; base `0x65b19b...07f60f`; base `0x68aefe...0a8aaf`; base `0x75171e...24b36c`; base `0x7547da...d45030`; base `0x8c217c...19c10b`; base `0x8cc788...177098`; base `0x9240c0...2e8b99`; base `0x97f1dc...66e1b0`; base `0xa234f3...2648e1`; base `0xc2c7d0...629766`; base `0xc89795...b1ff2f`; base `0xc9577c...9505a4`; base `0xdaa78e...d55592`; base `0xe5ccf4...888060`; base `0xebec8d...f9c38d`; base `0xf31873...53ca3b`; base `0xf403a1...cd07c4`; base `0xfeb4e8...f4f8d8` | ⚠️ Unaudited | Verified |
-| [VaultPriceFeed (3 deployments)](./base-8453/0x786acc981fb93a12d5d195903c5c0d6d9c633cd8/) | base | 3 deployments: base [`0x786acc...633cd8`](./base-8453/0x786acc981fb93a12d5d195903c5c0d6d9c633cd8/); mode `0x811f42...c0ec39`; mode `0x845349...a1edca` | ⚠️ Unaudited | Verified |
+| [RewardDistributor](./base-8453/0x06c35893ba9bc454e12c36f4117bc99f75e34346/) | base | [`0x06c358...e34346`](./base-8453/0x06c35893ba9bc454e12c36f4117bc99f75e34346/) | ⚠️ Unaudited | Verified |
+| [RewardDistributorV2 (2 deployments)](./base-8453/0x0259083181ae54730f4fbb1c174a53e21bce5266/) | base | 2 deployments: base [`0x025908...ce5266`](./base-8453/0x0259083181ae54730f4fbb1c174a53e21bce5266/); mode `0x366152...c72ba3` | ⚠️ Unaudited | Verified |
 | [VestingStream (13 deployments)](./base-8453/0x0a43c1000b2379463fa0073dbf1792f9c62b989e/) | base | 13 deployments: base [`0x0a43c1...2b989e`](./base-8453/0x0a43c1000b2379463fa0073dbf1792f9c62b989e/); base `0x0f3794...0b70a0`; base `0x31a1c2...95dc9e`; base `0x4197d7...537c43`; base `0x5736a2...e694a7`; base `0x64f250...36b051`; base `0x68fb62...2cda93`; base `0x6f4280...b71646`; base `0x8488d8...91cb37`; base `0x957662...caeace`; base `0xa77ab4...bd6fd6`; base `0xc92040...1d49c7`; base `0xdd8be2...48924d` | ⚠️ Unaudited | Verified |
-| [VolumeRewardDistributor (2 deployments)](./mode-34443/0x812481d5b698a254243678209d1fe279bc593fe8/) | mode | 2 deployments: base `0xf491a9...d5fc9b`; mode [`0x812481...593fe8`](./mode-34443/0x812481d5b698a254243678209d1fe279bc593fe8/) | ⚠️ Unaudited | Verified |
-| [wBltBmxGaugeReader](./base-8453/0xe6e1d655672ca4c5052b67ebdbeea62ed9cc49a6/) | base | [`0xe6e1d6...cc49a6`](./base-8453/0xe6e1d655672ca4c5052b67ebdbeea62ed9cc49a6/) | ⚠️ Unaudited | Verified |
-| [wBltOracle (2 deployments)](./base-8453/0x000256e734e2c754b64808bff5e5d2c07fb322b6/) | base | 2 deployments: base [`0x000256...b322b6`](./base-8453/0x000256e734e2c754b64808bff5e5d2c07fb322b6/); base `0xb3a398...83114c` | ⚠️ Unaudited | Verified |
-
-## periphery (5)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [BatchSender (2 deployments)](./mode-34443/0x4b3491b723a14454d8235452871810e79455f69d/) | mode | 2 deployments: base `0xf9a352...596461`; mode [`0x4b3491...55f69d`](./mode-34443/0x4b3491b723a14454d8235452871810e79455f69d/) | ⚠️ Unaudited | Verified |
-| [BatchSetForceCloseGapRatio](./base-8453/0x361808047235cddeb87482508b3ccc043d1e1320/) | base | [`0x361808...1e1320`](./base-8453/0x361808047235cddeb87482508b3ccc043d1e1320/) | ⚠️ Unaudited | Verified |
-| [MultiCall (2 deployments)](./base-8453/0x0fc53fc604709a763a0cf6ff5dd3943cc6a50cc4/) | base | 2 deployments: base [`0x0fc53f...a50cc4`](./base-8453/0x0fc53fc604709a763a0cf6ff5dd3943cc6a50cc4/); base `0xaa4756...1cfa21` | ⚠️ Unaudited | Verified |
-| [Multicall3](./base-8453/0xc943c7c06eb871f4b86dec9f2132d5e3cce3fcfb/) | base | [`0xc943c7...e3fcfb`](./base-8453/0xc943c7c06eb871f4b86dec9f2132d5e3cce3fcfb/) | ⚠️ Unaudited | Verified |
-| [SignatureVerifier](./base-8453/0x54b4c02ce6938c16fb19c0318fe8964ff12b1482/) | base | [`0x54b4c0...2b1482`](./base-8453/0x54b4c02ce6938c16fb19c0318fe8964ff12b1482/) | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
 
@@ -93,143 +58,47 @@
 |---|---|---|---|---|
 | [TransparentUpgradeableProxy](./mode-34443/0xc0ff4b56f62f20ba45f4229cc6baad986fa2a904/) | mode | [`0xc0ff4b...a2a904`](./mode-34443/0xc0ff4b56f62f20ba45f4229cc6baad986fa2a904/) | ⚠️ Unaudited | Verified |
 
-## registry (7)
+## registry (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Create2Factory](./base-8453/0x671b527046163b025aa30bf5cf506c8ec2cd7160/) | base | [`0x671b52...cd7160`](./base-8453/0x671b527046163b025aa30bf5cf506c8ec2cd7160/) | ⚠️ Unaudited | Verified |
-| DibsRepository (2 deployments) | base | 2 deployments: base `0x1f05d4...ca2ead`; base `0xbb8b71...c63fae` | ⚠️ Unaudited | Verified |
 | [LaunchFactory (12 deployments)](./base-8453/0x080ac5d7cc1396b75142ea82c123d0e11c04d6d7/) | base | 12 deployments: base [`0x080ac5...04d6d7`](./base-8453/0x080ac5d7cc1396b75142ea82c123d0e11c04d6d7/); base `0x0a818f...50bce7`; base `0x16cdca...c53b42`; base `0x3633ea...cd18ae`; base `0x36f70b...51821f`; base `0x452817...c93993`; base `0x6a1e5c...cd2c25`; base `0x78c5a4...460cba`; base `0x85b3e9...c950e8`; base `0x960b2a...e23b2d`; base `0x9772fc...1f256f`; base `0xc34df7...a3636e` | ⚠️ Unaudited | Verified |
-| [LSSVMPairFactory (2 deployments)](./base-8453/0x6cb1bd04d11375d1eeec23dc38a535b5fce8bb4c/) | base | 2 deployments: base [`0x6cb1bd...e8bb4c`](./base-8453/0x6cb1bd04d11375d1eeec23dc38a535b5fce8bb4c/); base `0xb8bfbf...f38673` | ⚠️ Unaudited | Verified |
-| [StakingRewardsRegistry (2 deployments)](./mode-34443/0xeaed1602bbff36136421b4dc6bf817b2d010c0dd/) | mode | 2 deployments: base `0xebd389...a42d56`; mode [`0xeaed16...10c0dd`](./mode-34443/0xeaed1602bbff36136421b4dc6bf817b2d010c0dd/) | ⚠️ Unaudited | Verified |
-| [SudoFactoryWrapper (5 deployments)](./base-8453/0x13918a541e129a7ef210183e5e9c54486da3fb04/) | base | 5 deployments: base [`0x13918a...a3fb04`](./base-8453/0x13918a541e129a7ef210183e5e9c54486da3fb04/); base `0x3223d9...945b74`; base `0x4e87fb...a9b8f4`; base `0x545e2b...bf9bcb`; base `0x84c34b...01ff75` | ⚠️ Unaudited | Verified |
-| [SudoSingleFactoryWrapper (3 deployments)](./base-8453/0x36a7ef78afb3d517fda1e091fff29c451465e035/) | base | 3 deployments: base [`0x36a7ef...65e035`](./base-8453/0x36a7ef78afb3d517fda1e091fff29c451465e035/); base `0x8e4ecb...b796f0`; base `0xe36639...04f647` | ⚠️ Unaudited | Verified |
+| [SudoFactoryWrapper](./base-8453/0x13918a541e129a7ef210183e5e9c54486da3fb04/) | base | [`0x13918a...a3fb04`](./base-8453/0x13918a541e129a7ef210183e5e9c54486da3fb04/) | ⚠️ Unaudited | Verified |
+| [SudoSingleFactoryWrapper](./base-8453/0x8e4ecbc8ecae876d61efeb17dbf908e6acb796f0/) | base | [`0x8e4ecb...b796f0`](./base-8453/0x8e4ecbc8ecae876d61efeb17dbf908e6acb796f0/) | ⚠️ Unaudited | Verified |
 
-## token (9)
+## token (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BoardwalkToken (13 deployments)](./base-8453/0x002e666fcd218d5880ee1c88e20cc139cb74d534/) | base | 13 deployments: base [`0x002e66...74d534`](./base-8453/0x002e666fcd218d5880ee1c88e20cc139cb74d534/); base `0x0fb370...6449fa`; base `0x1ad44c...8fdc6e`; base `0x2a0e6c...912b2a`; base `0x4fd2d0...60d651`; base `0x524a1a...7bc903`; base `0x6c4d08...66be3d`; base `0xc28822...7c1de5`; base `0xce9e00...6e7333`; base `0xd753e4...f0f8dc`; base `0xd88b8c...422dad`; base `0xeb084d...dbe73e`; base `0xf37d39...545ff4` | ⚠️ Unaudited | Verified |
-| [ClaimArtToken](./base-8453/0x77ef71e2898cfe0c8d1ff077320bb8a5adfad202/) | base | [`0x77ef71...fad202`](./base-8453/0x77ef71e2898cfe0c8d1ff077320bb8a5adfad202/) | ⚠️ Unaudited | Verified |
-| [ERC721SeaDrop](./base-8453/0xe9f324c621599debde8ff46bcace625c00ee3022/) | base | [`0xe9f324...ee3022`](./base-8453/0xe9f324c621599debde8ff46bcace625c00ee3022/) | ⚠️ Unaudited | Verified |
-| [MintableBaseToken (6 deployments)](./base-8453/0x0db1b9240b234c316b15e018a90d94409148e317/) | base | 6 deployments: base [`0x0db1b9...48e317`](./base-8453/0x0db1b9240b234c316b15e018a90d94409148e317/); base `0x10ab19...893db2`; base `0x99819d...cba1a2`; base `0xb47341...945069`; base `0xcb0e5d...a9829e`; mode `0x9d0bad...92449a` | ⚠️ Unaudited | Verified |
 | [OptionTokenV3](./base-8453/0x3ff7ab26f2dfd482c40bdadfc0e88d01bff79713/) | base | [`0x3ff7ab...f79713`](./base-8453/0x3ff7ab26f2dfd482c40bdadfc0e88d01bff79713/) | ⚠️ Unaudited | Verified |
-| [ReferralStorage (2 deployments)](./base-8453/0x7fb62eff63dee8b6d6654858c75e925c08811b46/) | base | 2 deployments: base [`0x7fb62e...811b46`](./base-8453/0x7fb62eff63dee8b6d6654858c75e925c08811b46/); base `0xd9d396...5e06ae` | ⚠️ Unaudited | Verified |
-| [StakedGlp (3 deployments)](./mode-34443/0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a/) | mode | 3 deployments: base `0x647559...8bc8de`; base `0xef1878...ec0b09`; mode [`0x0eb231...18c12a`](./mode-34443/0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a/) | ⚠️ Unaudited | Verified |
-| [SymmioDepositorLpToken (2 deployments)](./base-8453/0x1e1d004ba6c37f3dfe24b8020e2d9b741dde3153/) | base | 2 deployments: base [`0x1e1d00...de3153`](./base-8453/0x1e1d004ba6c37f3dfe24b8020e2d9b741dde3153/); base `0x7beca8...457020` | ⚠️ Unaudited | Verified |
-| [TokenLaunchOnAerodrome](./base-8453/0x8aa3d366c49674bed84e6adce52ca11e48295af9/) | base | [`0x8aa3d3...295af9`](./base-8453/0x8aa3d366c49674bed84e6adce52ca11e48295af9/) | ⚠️ Unaudited | Verified |
+| [StakedGlp (2 deployments)](./mode-34443/0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a/) | mode | 2 deployments: base `0x647559...8bc8de`; mode [`0x0eb231...18c12a`](./mode-34443/0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a/) | ⚠️ Unaudited | Verified |
+| [SymmioDepositorLpToken](./base-8453/0x7beca81a1c22eab15437f8530ed8c279f5457020/) | base | [`0x7beca8...457020`](./base-8453/0x7beca81a1c22eab15437f8530ed8c279f5457020/) | ⚠️ Unaudited | Verified |
 
-## unknown (110)
+## unknown (23)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccountFacet (6 deployments)](./base-8453/0x038971fc4480f022156de26d6ca27fa1adc2155d/) | base | 6 deployments: base [`0x038971...c2155d`](./base-8453/0x038971fc4480f022156de26d6ca27fa1adc2155d/); base `0x20328c...1f2fa0`; base `0x245ea9...9335c4`; base `0x40e3f6...1a4f27`; base `0x5d9c42...7b2361`; base `0xd1315a...0e770b` | ⚠️ Unaudited | Verified |
-| [AllowListHook (7 deployments)](./base-8453/0x2dd95c198675b0ef3a45c4d92954943979b15d0e/) | base | 7 deployments: base [`0x2dd95c...b15d0e`](./base-8453/0x2dd95c198675b0ef3a45c4d92954943979b15d0e/); base `0x4082f8...4d9dd8`; base `0x729501...0e2529`; base `0x7e8286...52f6a0`; base `0xdec1fb...d4e871`; base `0xedf2d8...49b8d2`; base `0xfc33cc...865489` | ⚠️ Unaudited | Verified |
-| [BMX (4 deployments)](./base-8453/0x46940dc651bfe3f2cc3e04cf9dc5579b50cf0765/) | base | 4 deployments: base [`0x46940d...cf0765`](./base-8453/0x46940dc651bfe3f2cc3e04cf9dc5579b50cf0765/); base `0x548f93...f059b7`; mode `0x66eed5...0657eb`; mode `0xbc609a...d4175d` | ⚠️ Unaudited | Verified |
+| [BMX (2 deployments)](./base-8453/0x548f93779fbc992010c07467cbaf329dd5f059b7/) | base | 2 deployments: base [`0x548f93...f059b7`](./base-8453/0x548f93779fbc992010c07467cbaf329dd5f059b7/); mode `0x66eed5...0657eb` | ⚠️ Unaudited | Verified |
 | [BmxLockingContract](./base-8453/0xff12748ed4e4cd5864a5e0b22e69bf572827a903/) | base | [`0xff1274...27a903`](./base-8453/0xff12748ed4e4cd5864a5e0b22e69bf572827a903/) | ⚠️ Unaudited | Verified |
-| [BMXSuperReader (6 deployments)](./base-8453/0x0f6795feca546bf250bcbd65cb2dd53a03ba5825/) | base | 6 deployments: base [`0x0f6795...ba5825`](./base-8453/0x0f6795feca546bf250bcbd65cb2dd53a03ba5825/); base `0x16dda3...eb4302`; base `0x5d36a8...ae1e3b`; base `0x922e4d...488d4a`; base `0xa223eb...503783`; base `0xc922e2...50f848` | ⚠️ Unaudited | Verified |
 | [BoardwalkFeeCollector (13 deployments)](./base-8453/0x0beefc1a7552055e7f12c3feb52ca49f209c477e/) | base | 13 deployments: base [`0x0beefc...9c477e`](./base-8453/0x0beefc1a7552055e7f12c3feb52ca49f209c477e/); base `0x22dee3...d5721e`; base `0x301cf8...67f822`; base `0x3fe706...a799c7`; base `0x667e91...872f62`; base `0x66a905...56f580`; base `0x6bfbd2...c19a24`; base `0x7009f5...2f605a`; base `0xa63946...5e7e1a`; base `0xc3006b...65b4a2`; base `0xdf2833...1fd1cb`; base `0xefa297...68b4ba`; base `0xfa170b...59ab96` | ⚠️ Unaudited | Verified |
 | [BoostBurn (4 deployments)](./base-8453/0x1a66610131905cb5922f41a8524ff3c7306f57b7/) | base | 4 deployments: base [`0x1a6661...6f57b7`](./base-8453/0x1a66610131905cb5922f41a8524ff3c7306f57b7/); base `0x4ba159...156438`; base `0x5d8c2c...0c3a85`; base `0xf6bddb...437ee1` | ⚠️ Unaudited | Verified |
-| [ControlFacet (5 deployments)](./base-8453/0x6f93caba41cf10983711608cb521fb060aae054a/) | base | 5 deployments: base [`0x6f93ca...ae054a`](./base-8453/0x6f93caba41cf10983711608cb521fb060aae054a/); base `0x8e2747...ad6b72`; base `0x924674...43ecba`; base `0x99eba3...91d574`; base `0xe1e3b7...5b5296` | ⚠️ Unaudited | Verified |
 | [DeliHook](./base-8453/0x570a48f96035c2874de1c0f13c5075a05683b0cc/) | base | [`0x570a48...83b0cc`](./base-8453/0x570a48f96035c2874de1c0f13c5075a05683b0cc/) | ⚠️ Unaudited | Verified |
-| [Diamond](./mode-34443/0x3d17f073ccb9c3764f105550b0bcf9550477d266/) | mode | [`0x3d17f0...77d266`](./mode-34443/0x3d17f073ccb9c3764f105550b0bcf9550477d266/) | ⚠️ Unaudited | Verified |
-| [DiamondCutFacet](./base-8453/0x74aa0c998f83e6c164c6d2444b1c3cbc233ef2bc/) | base | [`0x74aa0c...3ef2bc`](./base-8453/0x74aa0c998f83e6c164c6d2444b1c3cbc233ef2bc/) | ⚠️ Unaudited | Verified |
-| [DiamondInit](./base-8453/0x7c3cff5a0aab5b722d2f6b103351bc116b1cc665/) | base | [`0x7c3cff...1cc665`](./base-8453/0x7c3cff5a0aab5b722d2f6b103351bc116b1cc665/) | ⚠️ Unaudited | Verified |
-| [DiamondLoupeFacet (3 deployments)](./base-8453/0x0f1299e27eeed3256fc384541cf5502650083aee/) | base | 3 deployments: base [`0x0f1299...083aee`](./base-8453/0x0f1299e27eeed3256fc384541cf5502650083aee/); base `0x8d3abb...9cbefc`; base `0xa0e786...48bb2b` | ⚠️ Unaudited | Verified |
 | [FeeProcessor (10 deployments)](./base-8453/0x2954bcf89f115e5f37e385a0fef14eddf79e53ff/) | base | 10 deployments: base [`0x2954bc...9e53ff`](./base-8453/0x2954bcf89f115e5f37e385a0fef14eddf79e53ff/); base `0x2f2c54...b0f4c6`; base `0x584e21...c0a14d`; base `0x5aa156...146429`; base `0x650647...0b41c2`; base `0x94cbdb...df6c12`; base `0xb07cc7...066a63`; base `0xe2f160...3bd9cd`; base `0xe466d6...a2988a`; base `0xf6e369...325532` | ⚠️ Unaudited | Verified |
-| [ForceActionsFacet (3 deployments)](./base-8453/0x2491a9a56b13b1403d5d790b50406c2fdd3bc1fc/) | base | 3 deployments: base [`0x2491a9...3bc1fc`](./base-8453/0x2491a9a56b13b1403d5d790b50406c2fdd3bc1fc/); base `0x7331e3...2813aa`; base `0x8d0a7a...fa11db` | ⚠️ Unaudited | Verified |
-| [FundingRateFacet (4 deployments)](./base-8453/0x3e70311e7d93d96abd8f0eef5247486e562af1ab/) | base | 4 deployments: base [`0x3e7031...2af1ab`](./base-8453/0x3e70311e7d93d96abd8f0eef5247486e562af1ab/); base `0x7d6ea8...5a206b`; base `0xe2e705...a28b7b`; base `0xf8e5ef...3467cb` | ⚠️ Unaudited | Verified |
-| [GLP (2 deployments)](./mode-34443/0x952adbb385296dcf86a668f7eaa02df7eb684439/) | mode | 2 deployments: base `0xe771b4...dd0633`; mode [`0x952adb...684439`](./mode-34443/0x952adbb385296dcf86a668f7eaa02df7eb684439/) | ⚠️ Unaudited | Verified |
-| [GlpBalance (3 deployments)](./base-8453/0x05d97a8a5ef11010a6a5f89b3d4628ce43092614/) | base | 3 deployments: base [`0x05d97a...092614`](./base-8453/0x05d97a8a5ef11010a6a5f89b3d4628ce43092614/); base `0x47cd08...bfcfcb`; mode `0x7278ab...9128a9` | ⚠️ Unaudited | Verified |
 | [GovernanceVoter (8 deployments)](./base-8453/0x1417288a6a8a58f01983340c7b1e68c25101322d/) | base | 8 deployments: base [`0x141728...01322d`](./base-8453/0x1417288a6a8a58f01983340c7b1e68c25101322d/); base `0x1e319f...760b50`; base `0x487451...c4974c`; base `0x575599...84be8c`; base `0xbea2cd...84fbe7`; base `0xc02ee5...c82cf3`; base `0xee5451...cd303e`; base `0xf0586b...f26bdc` | ⚠️ Unaudited | Verified |
 | [IntegratorFeeCollector (6 deployments)](./base-8453/0x0e2b3fca07724dd220314561332bb85e2a589c8b/) | base | 6 deployments: base [`0x0e2b3f...589c8b`](./base-8453/0x0e2b3fca07724dd220314561332bb85e2a589c8b/); base `0x2aa3b0...52c87b`; base `0x2c4d52...744558`; base `0x58b766...ec38b4`; base `0x7e4b63...91673e`; base `0xfcb11f...4bd3a6` | ⚠️ Unaudited | Verified |
-| [LimitedSymbolAdder (2 deployments)](./base-8453/0xa3d2b4a6deab72cd887663afddff47205b1ac4c8/) | base | 2 deployments: base [`0xa3d2b4...1ac4c8`](./base-8453/0xa3d2b4a6deab72cd887663afddff47205b1ac4c8/); base `0xcf40fb...14051d` | ⚠️ Unaudited | Verified |
-| [LiquidationFacet (6 deployments)](./base-8453/0x15df9aacdc65e5a4cab2d89211145dadc8ac5f11/) | base | 6 deployments: base [`0x15df9a...ac5f11`](./base-8453/0x15df9aacdc65e5a4cab2d89211145dadc8ac5f11/); base `0x36dc7c...c3924e`; base `0x91cf2d...2dbe43`; base `0xb558fc...c8588c`; base `0xddbac9...686c7d`; base `0xedf731...c9f85d` | ⚠️ Unaudited | Verified |
-| [LockingContract (3 deployments)](./base-8453/0xa5aa6c5291394ec84896cbbc480cf077e1a85329/) | base | 3 deployments: base [`0xa5aa6c...a85329`](./base-8453/0xa5aa6c5291394ec84896cbbc480cf077e1a85329/); base `0xb81223...eea825`; base `0xe2d0bb...3f9799` | ⚠️ Unaudited | Verified |
 | [LPLocker (8 deployments)](./base-8453/0x04be36b4e26771710173ab180dcf8a7aa3894338/) | base | 8 deployments: base [`0x04be36...894338`](./base-8453/0x04be36b4e26771710173ab180dcf8a7aa3894338/); base `0x202357...07d47d`; base `0x564dfb...9c690d`; base `0x76b4ec...c29398`; base `0xa4048e...f7ec9c`; base `0xb5cdac...f9cee7`; base `0xd8989d...42ba99`; base `0xf34551...2e9afa` | ⚠️ Unaudited | Verified |
 | [LPStaking (13 deployments)](./base-8453/0x1443f15db5b9ae83b9904eb27c9b2ec3cf6cfc8c/) | base | 13 deployments: base [`0x1443f1...6cfc8c`](./base-8453/0x1443f15db5b9ae83b9904eb27c9b2ec3cf6cfc8c/); base `0x26f4d3...433f77`; base `0x2a91ee...961df1`; base `0x3875e8...684aee`; base `0x3c4c8c...2153f0`; base `0x3ea260...ac89d4`; base `0x82f209...3881d3`; base `0x9864cb...6a9c59`; base `0xac45d1...d34487`; base `0xb71f04...0e1c45`; base `0xc3adb3...058807`; base `0xe70bc4...94f1ae`; base `0xf78cb6...19a878` | ⚠️ Unaudited | Verified |
-| [MultiRewardsForStakingLP (2 deployments)](./base-8453/0x1926ec7671673135fd4af0c0f08c692e49db3e04/) | base | 2 deployments: base [`0x1926ec...db3e04`](./base-8453/0x1926ec7671673135fd4af0c0f08c692e49db3e04/); base `0xc77f39...ed3159` | ⚠️ Unaudited | Verified |
-| [oBMXConverter (3 deployments)](./base-8453/0x7c5383f312d63b42c06498afeae5e6f24feddcb7/) | base | 3 deployments: base [`0x7c5383...eddcb7`](./base-8453/0x7c5383f312d63b42c06498afeae5e6f24feddcb7/); base `0xe53e67...caa669`; base `0xe689db...036db0` | ⚠️ Unaudited | Verified |
-| [OrderBook (5 deployments)](./sonic-146/0x55f1234662bb538231d56636bb182915b43d4364/) | sonic | 5 deployments: sonic [`0x55f123...3d4364`](./sonic-146/0x55f1234662bb538231d56636bb182915b43d4364/); sonic `0x7e3f5e...3612a6`; base `0xb8372b...3faa2a`; base `0xf9fc0b...258178`; mode `0x714aad...09fd5d` | ⚠️ Unaudited | Verified |
-| [OrderBookReader (2 deployments)](./base-8453/0x3cb54f0eb62c371065d739a34a775cc16f46563e/) | base | 2 deployments: base [`0x3cb54f...46563e`](./base-8453/0x3cb54f0eb62c371065d739a34a775cc16f46563e/); mode `0xcaf486...909118` | ⚠️ Unaudited | Verified |
-| [PartyAFacet (5 deployments)](./base-8453/0x07139b7b67ffa6f6bcc24be898076493675e0d78/) | base | 5 deployments: base [`0x07139b...5e0d78`](./base-8453/0x07139b7b67ffa6f6bcc24be898076493675e0d78/); base `0x6caee2...278fba`; base `0x878de0...c2cb5c`; base `0xb3d411...93c9e1`; base `0xc3ce7a...b7ab9c` | ⚠️ Unaudited | Verified |
-| [PartyBFacet (2 deployments)](./base-8453/0x727133bba46e163eb733971e2474d120695f33cd/) | base | 2 deployments: base [`0x727133...5f33cd`](./base-8453/0x727133bba46e163eb733971e2474d120695f33cd/); base `0x91ba24...38f2ef` | ⚠️ Unaudited | Verified |
-| [PartyBGroupActionsFacet (2 deployments)](./base-8453/0x397e999f07968dd590ad009bba88e330bcdda35c/) | base | 2 deployments: base [`0x397e99...dda35c`](./base-8453/0x397e999f07968dd590ad009bba88e330bcdda35c/); base `0x7049f4...92c8de` | ⚠️ Unaudited | Verified |
-| [PartyBPositionActionsFacet (2 deployments)](./base-8453/0x1052f9ec3be13dbb2086ec675ee4f567b23667c3/) | base | 2 deployments: base [`0x1052f9...3667c3`](./base-8453/0x1052f9ec3be13dbb2086ec675ee4f567b23667c3/); base `0xa17617...8a01f4` | ⚠️ Unaudited | Verified |
-| [PartyBQuoteActionsFacet (2 deployments)](./base-8453/0x0ee043b102b320ad382f14cb2dc162a21455d305/) | base | 2 deployments: base [`0x0ee043...55d305`](./base-8453/0x0ee043b102b320ad382f14cb2dc162a21455d305/); base `0x24e332...f3528e` | ⚠️ Unaudited | Verified |
-| [RasaOffChainSymmioDepositor (4 deployments)](./base-8453/0x00afefa66ff775ae1c407fec613faab5e64fef94/) | base | 4 deployments: base [`0x00afef...4fef94`](./base-8453/0x00afefa66ff775ae1c407fec613faab5e64fef94/); base `0x10ed5f...1e345d`; base `0x44fd0b...fccd6d`; base `0x5fe05d...afacae` | ⚠️ Unaudited | Verified |
-| [RasaOnChainSymmioDepositor (2 deployments)](./base-8453/0x39208361cd0288960b4d889ab12c72f263419a81/) | base | 2 deployments: base [`0x392083...419a81`](./base-8453/0x39208361cd0288960b4d889ab12c72f263419a81/); base `0x891bab...75a941` | ⚠️ Unaudited | Verified |
-| [Reader (2 deployments)](./base-8453/0x92c97631450e804848781c0764907ec4fc6ffd29/) | base | 2 deployments: base [`0x92c976...6ffd29`](./base-8453/0x92c97631450e804848781c0764907ec4fc6ffd29/); mode `0xa3ea99...4340e9` | ⚠️ Unaudited | Verified |
-| [RedeemMorphies](./base-8453/0x25f112bb669b303348dca4e6ef8e47578bd458af/) | base | [`0x25f112...d458af`](./base-8453/0x25f112bb669b303348dca4e6ef8e47578bd458af/) | ⚠️ Unaudited | Verified |
-| [ReferralReader (2 deployments)](./mode-34443/0x266d4c8dc144259acd034357dae69eca9ba569b8/) | mode | 2 deployments: base `0x6d6ec3...9fae04`; mode [`0x266d4c...a569b8`](./mode-34443/0x266d4c8dc144259acd034357dae69eca9ba569b8/) | ⚠️ Unaudited | Verified |
-| [RewardReader (2 deployments)](./mode-34443/0x3c293f03700f873c8cfee7faae36e3437b673a50/) | mode | 2 deployments: base `0xe0a268...661362`; mode [`0x3c293f...673a50`](./mode-34443/0x3c293f03700f873c8cfee7faae36e3437b673a50/) | ⚠️ Unaudited | Verified |
-| [RewardTracker (24 deployments)](./base-8453/0x04e5ee4cef2bf4b91c2ac9048b959161247bc5b2/) | base | 24 deployments: base [`0x04e5ee...7bc5b2`](./base-8453/0x04e5ee4cef2bf4b91c2ac9048b959161247bc5b2/); base `0x08ad38...6e7c05`; base `0x2d5875...fbf63c`; base `0x2e4553...29f053`; base `0x3085f2...ae85cb`; base `0x36831b...b8fb8c`; base `0x38e5be...78077e`; base `0x4d4554...d3c469`; base `0x51db1c...1f7ceb`; base `0x55cca7...23846c`; base `0x76f7da...61dbbe`; base `0x982538...66da7c`; base `0x9a8f03...a8f70f`; base `0xa2242d...2badca`; base `0xa9f0fa...9879f3`; base `0xb7034a...b50fcf`; base `0xc3794a...9fe45a`; base `0xdf2e12...499b0c`; base `0xf30f3d...86fcd3`; mode `0x4a2b3c...944be9`; mode `0x548f93...f059b7`; mode `0x6c72ad...972a4f`; mode `0x773f34...4e00a3`; mode `0xccbf79...842fc3` | ⚠️ Unaudited | Verified |
-| [SealedArtMarket (2 deployments)](./base-8453/0x7ac5a25952c70ca88273f21e89148f8aba71786d/) | base | 2 deployments: base [`0x7ac5a2...71786d`](./base-8453/0x7ac5a25952c70ca88273f21e89148f8aba71786d/); base `0xde861a...bb1a3d` | ⚠️ Unaudited | Verified |
-| [SettlementFacet (2 deployments)](./base-8453/0x9afc2bea47f271c87b1ae068e0dacf1635d3ecf9/) | base | 2 deployments: base [`0x9afc2b...d3ecf9`](./base-8453/0x9afc2bea47f271c87b1ae068e0dacf1635d3ecf9/); base `0xf1cb50...1aa6f0` | ⚠️ Unaudited | Verified |
-| [ShortsTracker (3 deployments)](./base-8453/0x37e62664c7b78e1e05ca47aa80924d9a6280f420/) | base | 3 deployments: base [`0x37e626...80f420`](./base-8453/0x37e62664c7b78e1e05ca47aa80924d9a6280f420/); mode `0x6fd75b...08d80d`; mode `0x786acc...633cd8` | ⚠️ Unaudited | Verified |
-| [SignatureStore (6 deployments)](./base-8453/0x3668fa157a95f73216aa8cd12288794c59fa818c/) | base | 6 deployments: base [`0x3668fa...fa818c`](./base-8453/0x3668fa157a95f73216aa8cd12288794c59fa818c/); base `0xb24f95...de3ec6`; base `0xc16492...6e7f49`; base `0xc19e66...fb4996`; base `0xcbfb81...38268f`; mode `0xf05432...3ebb1a` | ⚠️ Unaudited | Verified |
+| [OrderBook (3 deployments)](./sonic-146/0x55f1234662bb538231d56636bb182915b43d4364/) | sonic | 3 deployments: sonic [`0x55f123...3d4364`](./sonic-146/0x55f1234662bb538231d56636bb182915b43d4364/); base `0xb8372b...3faa2a`; base `0xf9fc0b...258178` | ⚠️ Unaudited | Verified |
+| [RewardTracker (2 deployments)](./base-8453/0x2d5875ab0efb999c1f49c798acb9efbd1cfbf63c/) | base | 2 deployments: base [`0x2d5875...fbf63c`](./base-8453/0x2d5875ab0efb999c1f49c798acb9efbd1cfbf63c/); base `0xa2242d...2badca` | ⚠️ Unaudited | Verified |
+| [SealedArtMarket](./base-8453/0x7ac5a25952c70ca88273f21e89148f8aba71786d/) | base | [`0x7ac5a2...71786d`](./base-8453/0x7ac5a25952c70ca88273f21e89148f8aba71786d/) | ⚠️ Unaudited | Verified |
+| [ShortsTracker](./base-8453/0x37e62664c7b78e1e05ca47aa80924d9a6280f420/) | base | [`0x37e626...80f420`](./base-8453/0x37e62664c7b78e1e05ca47aa80924d9a6280f420/) | ⚠️ Unaudited | Verified |
+| [SignatureStore (5 deployments)](./base-8453/0x3668fa157a95f73216aa8cd12288794c59fa818c/) | base | 5 deployments: base [`0x3668fa...fa818c`](./base-8453/0x3668fa157a95f73216aa8cd12288794c59fa818c/); base `0xb24f95...de3ec6`; base `0xc19e66...fb4996`; base `0xcbfb81...38268f`; mode `0xf05432...3ebb1a` | ⚠️ Unaudited | Verified |
 | [StakingRewardsMulti (3 deployments)](./base-8453/0x3bff3cf47ffd50c41f0768da975da271157b51ac/) | base | 3 deployments: base [`0x3bff3c...7b51ac`](./base-8453/0x3bff3cf47ffd50c41f0768da975da271157b51ac/); base `0xe0792f...a75ebc`; mode `0x4ab0b7...1cb78b` | ⚠️ Unaudited | Verified |
-| [Symmio](./base-8453/0x8b551df89b4b72e367c3c810aac72857bb7b41cc/) | base | [`0x8b551d...7b41cc`](./base-8453/0x8b551df89b4b72e367c3c810aac72857bb7b41cc/) | ⚠️ Unaudited | Verified |
-| [SymmioPartyB (4 deployments)](./base-8453/0x26c572b793196b5bfc17042eb1caa9f904a294d2/) | base | 4 deployments: base [`0x26c572...a294d2`](./base-8453/0x26c572b793196b5bfc17042eb1caa9f904a294d2/); base `0x8299aa...86b5d0`; base `0x9206d9...a23c59`; base `0x958cae...71d954` | ⚠️ Unaudited | Verified |
-| [SymmioPartyBProxy (2 deployments)](./base-8453/0x1de09355907249e18eed89557a2c7fbd58bdcc63/) | base | 2 deployments: base [`0x1de093...bdcc63`](./base-8453/0x1de09355907249e18eed89557a2c7fbd58bdcc63/); base `0x56c811...8d5709` | ⚠️ Unaudited | Verified |
-| UnnamedContract | base | `0x02ca85...1949ee` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x034b7d...77ea5b` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x061489...392ff8` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x08e714...55826d` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x10926a...25d664` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x116598...76920b` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x14332c...f4fe6d` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x17aaa9...650137` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x222591...45e8f2` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x2fa7dc...58cb83` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x37aeb6...44cf3e` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x381f28...2d40f4` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x398ffb...2b2c59` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x3af3f9...21d6a4` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x3dafa0...b54179` | ❓ Unverified | Unverified |
+| [SymmioPartyB](./base-8453/0x9206d9d8f7f1b212a4183827d20de32af3a23c59/) | base | [`0x9206d9...a23c59`](./base-8453/0x9206d9d8f7f1b212a4183827d20de32af3a23c59/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | base | `0x4b32a4...470f6e` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x4cca5c...82750f` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x646374...c52972` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x70f4d7...9e64b8` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x731ae0...4c013f` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x7a15ff...bb3c78` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x7f3d04...4fb6bc` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x83b7b5...3faa2c` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x86fbf6...073231` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x8a52a3...c24a07` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x9133d1...930620` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x940c5c...61571a` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x942954...863476` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x9f0fb4...961488` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xa49bc3...5ae3bc` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xb15dd2...f86bea` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xb3181d...63dfec` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xbb970a...a556eb` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xc31f15...0a5c9e` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xc7cce6...a925e3` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xcb460e...65dbaa` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xcd3b3d...1b2c9f` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xcf2b70...ab710e` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xd101d8...da10c6` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xdfc74b...70bc50` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xe051dd...f7becb` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xe5c49c...0c1c6f` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xe63c2e...010b13` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xe84c00...1fbc8f` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xee6d30...609a70` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xf8ca10...7c2018` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xfb1970...126003` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xff3b46...16f710` | ❓ Unverified | Unverified |
-| UnnamedContract | mode | `0x16a386...c58340` | ❓ Unverified | Unverified |
-| UnnamedContract | mode | `0x88a3c3...ca6210` | ❓ Unverified | Unverified |
-| UnnamedContract | mode | `0xe974a8...0fa5f3` | ❓ Unverified | Unverified |
-| [USDG (3 deployments)](./mode-34443/0x77f480fdb7100d096c2de1876c1f4960fa488246/) | mode | 3 deployments: base `0xe974a8...0fa5f3`; mode [`0x77f480...488246`](./mode-34443/0x77f480fdb7100d096c2de1876c1f4960fa488246/); mode `0x8e28ed...e0beac` | ⚠️ Unaudited | Verified |
-| [UserPowers (3 deployments)](./base-8453/0x6eb41d755dc71bd7e9e6a6a78513cdc726760aa4/) | base | 3 deployments: base [`0x6eb41d...760aa4`](./base-8453/0x6eb41d755dc71bd7e9e6a6a78513cdc726760aa4/); base `0xb93475...1080f2`; base `0xed259a...7cc20a` | ⚠️ Unaudited | Verified |
 | [V2PositionHandler (10 deployments)](./base-8453/0x1735698ea06c9a5f910845187b7121c0207ba75b/) | base | 10 deployments: base [`0x173569...7ba75b`](./base-8453/0x1735698ea06c9a5f910845187b7121c0207ba75b/); base `0x51733d...8223bb`; base `0x6582fb...83a004`; base `0x795be1...46c011`; base `0xc3b408...57ebcb`; base `0xc41b64...946c1a`; base `0xd88c07...12da20`; base `0xef2914...945c91`; base `0xf76fb3...9646da`; base `0xffebac...77bd84` | ⚠️ Unaudited | Verified |
 | [V4PositionHandler (10 deployments)](./base-8453/0x0e726df793a41a6d5272af6d8961eed5f8bddbdd/) | base | 10 deployments: base [`0x0e726d...bddbdd`](./base-8453/0x0e726df793a41a6d5272af6d8961eed5f8bddbdd/); base `0x1ef22d...ddfeda`; base `0x20ca2c...422dba`; base `0x36c2a9...edeb2b`; base `0x41c467...d075f9`; base `0x4b1c67...b0c5cc`; base `0x6632e2...bae471`; base `0x7591c8...8ad44a`; base `0xc8cffa...f548d1`; base `0xd79092...abb797` | ⚠️ Unaudited | Verified |
-| [VelocimeterReader](./base-8453/0x2756ca4fa8e1c683c34d419a9a96e8393b38ea63/) | base | [`0x2756ca...38ea63`](./base-8453/0x2756ca4fa8e1c683c34d419a9a96e8393b38ea63/) | ⚠️ Unaudited | Verified |
-| [ViewFacet (4 deployments)](./base-8453/0x13ed7bf7686d9d57c62b466e6110b0d9d1dcf95e/) | base | 4 deployments: base [`0x13ed7b...dcf95e`](./base-8453/0x13ed7bf7686d9d57c62b466e6110b0d9d1dcf95e/); base `0x8dd419...0980bb`; base `0xa4f237...e79451`; base `0xf79f27...941611` | ⚠️ Unaudited | Verified |
 | [Voter (2 deployments)](./base-8453/0xb960afea0c71010f41b5562fcc40c00dc329e666/) | base | 2 deployments: base [`0xb960af...29e666`](./base-8453/0xb960afea0c71010f41b5562fcc40c00dc329e666/); base `0xce9e7c...5d77c2` | ⚠️ Unaudited | Verified |
-| [VRFConsumer (3 deployments)](./base-8453/0x0af5346ea7fc30d1c19626fc8ad7a73c9b7c4727/) | base | 3 deployments: base [`0x0af534...7c4727`](./base-8453/0x0af5346ea7fc30d1c19626fc8ad7a73c9b7c4727/); base `0x3e8120...6bd2ad`; base `0x5624f6...7761ef` | ⚠️ Unaudited | Verified |
-| [Vyper_contract (2 deployments)](./mode-34443/0x2a2dc9572519e7cdcba36d23957b573f9ee62b2a/) | mode | 2 deployments: mode [`0x2a2dc9...e62b2a`](./mode-34443/0x2a2dc9572519e7cdcba36d23957b573f9ee62b2a/); mode `0x8b2eea...70452c` | ⚠️ Unaudited | Verified |
+| [Vyper_contract](./mode-34443/0x8b2eea0999876aab1e7955fe01a5d261b570452c/) | mode | [`0x8b2eea...70452c`](./mode-34443/0x8b2eea0999876aab1e7955fe01a5d261b570452c/) | ⚠️ Unaudited | Verified |
 | [WeightedIndex](./base-8453/0x3dd79d6bd927615787cc95f2c7a77c9ac1af26f4/) | base | [`0x3dd79d...af26f4`](./base-8453/0x3dd79d6bd927615787cc95f2c7a77c9ac1af26f4/) | ⚠️ Unaudited | Verified |

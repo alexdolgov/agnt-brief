@@ -1,47 +1,21 @@
 {
   "schema_version": "2.0",
   "project_key": "derivadex",
-  "generated_at": "2026-06-14T00:17:00.921Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "derivadex",
-    "tier": 1,
-    "peak_tvl": 70466178,
-    "peak_date": "2021-10-29T00:00:00.000Z",
-    "tvl_30d_ago": 1624265,
-    "tvl_90d_ago": 1650049,
-    "tvl_current": 1618812,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 1446577,
-    "change_30d_pct": -0.3357210799961829,
-    "change_90d_pct": -1.8930952959578775,
-    "governance_raw": {
-      "evidence": "TVL dropped 97.7% from peak, but the homepage still promotes the exchange and waitlist, indicating ongoing operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1668,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 97.70271065361314,
-    "governance_evidence": "TVL dropped 97.7% from peak, but the homepage still promotes the exchange and waitlist, indicating ongoing operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 1546,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-06-17T07:00:35.839Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 9,
-    "unique_implementations": 8,
-    "total_deployments": 9,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
     "audited_contracts": 0,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -51,9 +25,7 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "http://derivadex.com",
-    "chains": [
-      "ethereum"
-    ],
+    "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -67,343 +39,35 @@
   },
   "topography": {
     "project_purpose": "DerivaDEX is a decentralized, community-governed crypto derivatives exchange. The protocol is associated with the DDX token and uses an insurance fund, including insurance mining, to help manage protocol risk.",
-    "relationship_narrative": "The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating the exchange logic is tightly coupled with the insurance fund. The CErc20Delegator token contract likely serves as the collateral asset, integrating with the exchange and insurance fund for trading and risk management.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 9,
+    "live_contracts": 0,
+    "inactive_contracts": 7,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 8,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a",
-      "name": "DDXWalletCloneable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DDXWalletCloneable",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xe49478b6973e7c9e0236081c89c609643f4ff91c",
-      "name": "DIFundTokenFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DIFundTokenFactory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe49478b6973e7c9e0236081c89c609643f4ff91c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbfd5a73bafc692190846e04fa7b3f22325b249c2",
-      "name": "Governance",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Governance",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbfd5a73bafc692190846e04fa7b3f22325b249c2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6fb8aa6fc6f27e591423009194529ae126660027",
-      "name": "InsuranceFund",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "DerivaDEX",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xccf3d6ed3e7db4c0274db2e1b921b87838ce656e",
-      "impl_name": "InsuranceFund",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6fb8aa6fc6f27e591423009194529ae126660027",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xccf3d6ed3e7db4c0274db2e1b921b87838ce656e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0c8813521196614c85c2fb121fb22f52dc94111a",
-      "name": "Pause",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pause",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0c8813521196614c85c2fb121fb22f52dc94111a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcb71303f4681aec73e137d096e0ef22464fe0d66",
-      "name": "Trader",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Trader",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcb71303f4681aec73e137d096e0ef22464fe0d66",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x44ee8de4b8b0d65aa62a5f17c0e9723bc0b2574e",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x44ee8de4b8b0d65aa62a5f17c0e9723bc0b2574e",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdb8dce3ffa6934c1ecbadc19a1e7205cfabcbad9",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdb8dce3ffa6934c1ecbadc19a1e7205cfabcbad9",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    }
-  ],
+  "contracts": [],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a",
-      "name": "DDXWalletCloneable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xe49478b6973e7c9e0236081c89c609643f4ff91c",
-      "name": "DIFundTokenFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbfd5a73bafc692190846e04fa7b3f22325b249c2",
-      "name": "Governance",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6fb8aa6fc6f27e591423009194529ae126660027",
-      "name": "InsuranceFund",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0c8813521196614c85c2fb121fb22f52dc94111a",
-      "name": "Pause",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcb71303f4681aec73e137d096e0ef22464fe0d66",
-      "name": "Trader",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 8,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

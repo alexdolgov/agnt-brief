@@ -5,33 +5,42 @@
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
 - Lifecycle: active (Tier 0, 99.8% below peak)
-- Generated: 2026-06-13T22:17:39.644Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
-- Chains: arbitrum, sonic
-- Contract surface: 7 unique implementations (13 raw deployments)
+- Generated: 2026-06-17T07:00:40.418Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: sonic
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,463,587.22
-- On-chain TVL (included contracts): $72,645.21
-- TVL by chain: Arbitrum $72,645.21
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Foxify is a funded-account/proprietary trading platform for leveraged perpetual trading. Its public product focuses on on-chain and partner-venue perpetual trading, funded trading accounts, and related FOX and ebFOX staking, membership, and rewards features. Current public sources do not evidence an options-trading product, so options should not be described as part of the protocol unless separately verified.
 
-### Architecture
+## Contract Surface Quality
 
-Vaults hold user funds and are managed by Controllers, which set trading rules. Foxify, FoxifyMaxi, and EBFOX tokens likely represent positions or governance within the ecosystem.
+- Indexed contracts: 13; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 5 inactive, 5 singleton, 0 uninitialized.
+- Deployment units: 0/6 live.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 7
-- Raw deployments: 13
+- Unverified implementations: 0
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $72,645.21
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,15 +55,13 @@ Vaults hold user funds and are managed by Controllers, which set trading rules. 
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Vault | core_logic | arbitrum | 3 deployments: arbitrum [`0x4b91bf...c2193b`](./contracts/arbitrum-42161/0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b/); arbitrum `0x74c6e8...1143e5`; arbitrum `0xe5a4f2...83446f` | ⚠️ Unaudited |
-| Controller | governance | arbitrum | 5 deployments: arbitrum [`0x035941...a24457`](./contracts/arbitrum-42161/0x0359410be114bea68120641cf6f97d5b4ca24457/); arbitrum `0x09523a...056f74`; arbitrum `0x97cf72...20a38b`; arbitrum `0xc82bd5...fa4f08`; arbitrum `0xda299b...b96c1e` | ⚠️ Unaudited |
-| EBFOX | unknown | sonic | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | ⚠️ Unaudited |
-| Foxify | unknown | sonic | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | ⚠️ Unaudited |
-| FoxifyMaxi | unknown | sonic | [`0x3725b7...4edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EBFOX | unknown | sonic | n/a | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | ⚠️ Unaudited |
+| Foxify | unknown | sonic | n/a | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | ⚠️ Unaudited |
+| FoxifyMaxi | unknown | sonic | n/a | [`0x3725b7...4edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -68,14 +75,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | sonic | `0x91fb98...a9287f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0xc23ce5...0b2779` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -88,8 +92,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x4b91bf...c2193b`](./contracts/arbitrum-42161/0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b/) | Vault | core_logic | $72,645.21 | Verified native implementation with $72,645.21 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x035941...a24457`](./contracts/arbitrum-42161/0x0359410be114bea68120641cf6f97d5b4ca24457/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | EBFOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | Foxify | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x3725b7...4edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | FoxifyMaxi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -98,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

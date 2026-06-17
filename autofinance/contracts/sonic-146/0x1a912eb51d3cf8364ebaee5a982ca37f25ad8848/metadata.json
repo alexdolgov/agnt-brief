@@ -1,0 +1,17 @@
+{
+  "address": "0x1a912eb51d3cf8364ebaee5a982ca37f25ad8848",
+  "chain_id": 146,
+  "contract_name": "SystemRegistryL2",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 68,
+  "constructor_arguments": "000000000000000000000000223c0d94dbc8c0e5df1f6b2c75f06c0229c91950000000000000000000000000039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:37.811Z"
+}

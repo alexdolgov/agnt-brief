@@ -1,0 +1,18 @@
+{
+  "address": "0x2ae4be809273bae142c938ae1ff6a3f6853d31af",
+  "chain_id": 8453,
+  "contract_name": "ExtensibleVaultWithExtraData",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "prague",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:17.092Z"
+}

@@ -7,11 +7,11 @@
 - Project: Flexa (`flexa`)
 - Website: [https://amp.xyz/](https://amp.xyz/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T23:24:12.909Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-17T07:00:37.496Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,365,895.78
+- DeFi Llama TVL: $892,845.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Flexa is a payments-focused protocol built around Amp (AMP) as its core collateral token. The Flexa/Amp system uses collateralization to support payment settlement and merchant payment acceptance; AMP should be treated as the protocol's collateral token rather than as an unrelated upstream governance or staking component. Claims that Flexa is a collateralized stablecoin borrowing protocol, synthetic asset minting system, vault product, BAC/ARCx pool, or yield-staking protocol should be removed unless separately verified from Flexa documentation.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 1/2.
 
 ## Audit Coverage Summary
 
@@ -37,24 +45,24 @@ Flexa is a payments-focused protocol built around Amp (AMP) as its core collater
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2020-08 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
-- Tier 1 coverage: 100.0% (Trail of Bits)
+- Tier 1 coverage: 100.0% (ConsenSys Diligence, Trail of Bits)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
+| Consensys Diligence | Tier 1 | 2 | 100.0% | 2020-06 |
 | Trail of Bits | Tier 1 | 2 | 100.0% | 2020-08 |
-| unknown | Tier 2 | 2 | 100.0% | 2020-06 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Amp | unknown | ethereum | [`0xff2081...1095c2`](./contracts/ethereum-1/0xff20817765cb7f73d4bde2e66e067e58d11095c2/) | ✅ Audited |
-| FlexaCollateralManager | governance | ethereum | [`0x706d7f...e7c578`](./contracts/ethereum-1/0x706d7f8b3445d8dfc790c524e3990ef014e7c578/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Amp | unknown | ethereum | n/a | [`0xff2081...1095c2`](./contracts/ethereum-1/0xff20817765cb7f73d4bde2e66e067e58d11095c2/) | ✅ Audited |
+| FlexaCollateralManager | governance | ethereum | n/a | [`0x706d7f...e7c578`](./contracts/ethereum-1/0x706d7f8b3445d8dfc790c524e3990ef014e7c578/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -82,7 +90,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://diligence.security/audits/2020/06/amp) | unknown | Audit | 2020-06 | stale | Direct | contract_name | 2 | high |
+| [DL audit link](https://diligence.security/audits/2020/06/amp) | Consensys Diligence | Audit | 2020-06 | stale | Direct | contract_name | 2 | high |
 | [amp.pdf](https://github.com/trailofbits/publications/blob/master/reviews/amp.pdf) | Trail of Bits | Audit | 2020-08 | stale | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps

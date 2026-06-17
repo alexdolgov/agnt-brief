@@ -5,10 +5,10 @@
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
 - Lifecycle: active (Tier 0, 22.1% below peak)
-- Generated: 2026-06-13T03:59:58.319Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Generated: 2026-06-17T07:00:35.596Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: plasma
-- Contract surface: 7 unique implementations (16 raw deployments)
+- Contract surface: 4 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $5,456,746.30
 - On-chain TVL (included contracts): $0.62
 - TVL by chain: Plasma $0.62
@@ -21,14 +21,22 @@ Plasma One is a non-custodial stablecoin money app and crypto card product focus
 
 The BoringVault holds user deposits and generates yield, while ATokenInstance represents tokenized positions. Multiple TetherTokenOFTExtension adapters enable cross-chain USDT transfers, and OUpgradeable contracts likely manage oracle or upgrade logic, all sharing the same deployer cluster.
 
+## Contract Surface Quality
+
+- Indexed contracts: 16; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 11 singleton, 0 uninitialized.
+- Deployment units: 0/4 live.
+- Detected codebases: aave-v2
+- Dependencies extracted: 5; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 7
-- Raw deployments: 16
+- Unique implementations: 4
+- Raw deployments: 5
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $0.62
@@ -46,15 +54,12 @@ The BoringVault holds user deposits and generates yield, while ATokenInstance re
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BoringVault | core_logic | plasma | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | ⚠️ Unaudited |
-| ATokenInstance | unknown | plasma | 2 deployments: plasma [`0x2ffb26...168406`](./contracts/plasma-9745/0x2ffb265d591809fb1c4baba84996507e3c168406/); plasma `0x5d72a9...30a948` | ⚠️ Unaudited |
-| OUpgradeable | proxy | plasma | 4 deployments: plasma [`0x0200c2...8470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/); plasma `0x4970ea...0e8752`; plasma `0x63ab93...08e6f7`; plasma `0xc00e2c...ae65c1` | ⚠️ Unaudited |
-| ProxyAdmin | governance | plasma | 2 deployments: plasma [`0x322483...773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | plasma | 5 deployments: plasma [`0x1b64b9...d4d193`](./contracts/plasma-9745/0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193/); plasma `0x4a5cd3...7a6e0e`; plasma `0xb8ce59...625ebb`; plasma `0xcab8f3...f50b90`; plasma `0xf555a1...db34b9` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BoringVault | core_logic | plasma | n/a | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | plasma | n/a | 2 deployments: plasma [`0x322483...773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -72,10 +77,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | plasma | `0x42529d...e11acc` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x779ded...713736` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | plasma | n/a | `0x42529d...e11acc` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x779ded...713736` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 3 |
+| standard_library | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

@@ -1,0 +1,18 @@
+{
+  "address": "0x3f4d6bf08cb7a003488ef082102c2e6418a4551e",
+  "chain_id": 56,
+  "contract_name": "DeepLockLocker",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:52.182Z"
+}

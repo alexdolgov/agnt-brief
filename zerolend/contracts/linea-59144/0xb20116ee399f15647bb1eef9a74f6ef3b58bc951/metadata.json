@@ -1,0 +1,17 @@
+{
+  "address": "0xb20116ee399f15647bb1eef9a74f6ef3b58bc951",
+  "chain_id": 59144,
+  "contract_name": "LyveDebtToken",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "000000000000000000000000b6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:39.826Z"
+}

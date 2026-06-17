@@ -1,0 +1,17 @@
+{
+  "address": "0x361808047235cddeb87482508b3ccc043d1e1320",
+  "chain_id": 8453,
+  "contract_name": "BatchSetForceCloseGapRatio",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "00000000000000000000000091cf2d8ed503ec52768999aa6d8dbea6e52dbe430000000000000000000000005146c35725d9b8f11a84ebd4a3abe9845698ada9",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:07.979Z"
+}

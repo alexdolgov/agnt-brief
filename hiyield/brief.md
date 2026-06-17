@@ -5,30 +5,39 @@
 - Project: HiYield (`hiyield`)
 - Website: [https://www.hiyield.xyz](https://www.hiyield.xyz)
 - Lifecycle: active (Tier 0, 33.6% below peak)
-- Generated: 2026-06-14T08:08:07.486Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:52.447Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: avalanche, canto, ethereum
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $2,729,501.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 HiYield is a single Real World Asset (RWA) protocol that tokenizes off-chain assets and enables users to earn yield from real-world financial instruments on-chain. The currently collected contract addresses should be treated as unclassified by chain unless further evidence establishes their specific roles or product relationships.
 
-### Architecture
+## Contract Surface Quality
 
-The HiYield family represents the core protocol logic, while the Mainnet family contains the deployed instances on Ethereum mainnet, sharing the same deployer cluster and likely interacting through shared token standards or oracle infrastructure.
+- Indexed contracts: 4; live-surface contracts included: 3 (1 live, 2 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 4
-- Raw deployments: 4
+- Unverified implementations: 3
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -62,16 +71,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0xaf5baa...cfeac2` | ❓ Unverified |
-| UnnamedContract | unknown | canto | `0x0e4289...4c3f72` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x847550...307b3e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xce6050...59e660` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xaf5baa...cfeac2` | ❓ Unverified |
+| UnnamedContract | unknown | canto | n/a | `0x0e4289...4c3f72` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x847550...307b3e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -91,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

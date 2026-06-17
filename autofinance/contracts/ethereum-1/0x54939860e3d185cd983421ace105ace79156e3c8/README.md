@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x54939860e3d185cd983421ace105ace79156e3c8`](../0x54939860e3d185cd983421ace105ace79156e3c8/); ethereum `0xcb29d488efcc308c07c3168c63d5e7aede4bc3ae`) |
+| Deployments | 1 (ethereum [`0x54939860e3d185cd983421ace105ace79156e3c8`](../0x54939860e3d185cd983421ace105ace79156e3c8/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

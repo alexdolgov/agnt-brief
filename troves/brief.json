@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "troves",
-  "generated_at": "2026-06-11T03:38:01.175Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-17T07:00:56.197Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5023162.81294,
-    "tvl_usd": 5023162.81294,
+    "dl_tvl_usd": 4110082.12707,
+    "tvl_usd": 4110082.12707,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Troves is a live Starknet yield protocol centered on curated vaults and automated strategy products. Users deposit assets into vaults that allocate through strategies and Starknet integrations such as Vesu, Ekubo, Endur, and Extended to generate yield.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

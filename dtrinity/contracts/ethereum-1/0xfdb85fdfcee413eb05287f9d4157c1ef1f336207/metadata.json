@@ -1,0 +1,17 @@
+{
+  "address": "0xfdb85fdfcee413eb05287f9d4157c1ef1f336207",
+  "chain_id": 1,
+  "contract_name": "PoolAddressesProviderRegistry",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000000f5e3d9aee7ab5fda909af1ef147d98a7f4b3022",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:50.979Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x10908c875d865c66f271f5d3949848971c9595c9",
+  "chain_id": 137,
+  "contract_name": "DMMFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000dc70a72abf352a0e3f75d737430eb896ba9bf9ea",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:49.273Z"
+}

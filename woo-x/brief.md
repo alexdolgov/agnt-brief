@@ -5,21 +5,30 @@
 - Project: WOO X (`woo-x`)
 - Website: [https://x.woo.org/en/trade](https://x.woo.org/en/trade)
 - Lifecycle: unknown
-- Generated: 2026-05-23T09:44:42.203Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:01.887Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $7,083,899.90
+- DeFi Llama TVL: $5,284,467.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-WOO X is a centralized exchange (CEX) that provides trading services for digital assets. It aims to offer deep liquidity and low fees through its network of market makers and institutional partners.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No on-chain product families or contracts were identified, as this is a centralized exchange with no smart contract inventory provided.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

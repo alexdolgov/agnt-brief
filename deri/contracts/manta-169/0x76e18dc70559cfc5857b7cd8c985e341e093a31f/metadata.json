@@ -1,0 +1,17 @@
+{
+  "address": "0x76e18dc70559cfc5857b7cd8c985e341e093a31f",
+  "chain_id": 169,
+  "contract_name": "LiqClaimImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:00.857Z"
+}

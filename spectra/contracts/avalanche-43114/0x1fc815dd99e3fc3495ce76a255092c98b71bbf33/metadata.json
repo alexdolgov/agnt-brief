@@ -1,0 +1,17 @@
+{
+  "address": "0x1fc815dd99e3fc3495ce76a255092c98b71bbf33",
+  "chain_id": 43114,
+  "contract_name": "BridgeInterfaceDeBridge",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:41.151Z"
+}

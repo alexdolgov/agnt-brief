@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "minefi",
-  "generated_at": "2026-06-11T01:04:14.475Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-17T07:00:57.608Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1405717.90914,
-    "tvl_usd": 1405717.90914,
+    "dl_tvl_usd": 1070632.92135,
+    "tvl_usd": 1070632.92135,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "MineFi is a Filecoin/FIL staking or liquid-staking protocol. Its smart-contract or Filecoin actor address inventory is currently unavailable, so deployment coverage should not be inferred from an empty contract list.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

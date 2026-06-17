@@ -4,32 +4,40 @@
 
 - Project: Crypto.com Liquid Staking (`crypto.com-liquid-staking`)
 - Website: [https://crypto.com/staking](https://crypto.com/staking)
-- Lifecycle: active (Tier 0, 88.9% below peak)
-- Generated: 2026-06-12T12:50:48.284Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
-- Chains: cronos, ethereum
-- Contract surface: 2 unique implementations (3 raw deployments)
+- Lifecycle: active (Tier 0, 86.8% below peak)
+- Generated: 2026-06-17T07:01:00.749Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: cronos
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $20,023,846.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cronos and Solana, including CDCETH for staked ETH and, per DefiLlama, CDCSOL for Solana liquid staking; note that the current homepage may primarily highlight ETH/CDCETH.
 
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 2
-- Raw deployments: 3
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +55,9 @@ Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cro
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| LiquidETHV1 | unknown | ethereum | 2 deployments: ethereum [`0x7e772e...669253`](./contracts/ethereum-1/0x7e772ed6e4bfeae80f2d58e4254f6b6e96669253/); ethereum `0xfe18ae...91c38e` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,9 +75,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x7a7c9d...ce3446` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x7a7c9d...ce3446` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -91,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

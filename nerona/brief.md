@@ -6,30 +6,39 @@
 
 - Project: Nerona (`nerona`)
 - Lifecycle: declining (Tier 0, 77.5% below peak)
-- Generated: 2026-06-13T04:03:22.461Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Generated: 2026-06-17T07:00:52.209Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $5,391,878.69
 - On-chain TVL (included contracts): $326,950,304.58
 - TVL by chain: Ethereum $326,950,304.58
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Nerona is a yield aggregator that allows users to deposit assets into vaults to earn optimized yield. It operates on Ethereum and uses a transparent upgradeable proxy for its core swap facility.
+Nerona is a yield aggregator. Current metadata describes the protocol as active on Fluent, with no separate homepage content available from the provided evidence.
 
-### Architecture
+## Contract Surface Quality
 
-The SwapFacility contract, deployed behind a transparent upgradeable proxy, serves as the core operational hub, while MToken acts as the receipt token for user deposits. Both contracts are part of the single Nerona family and share the same upgradeable infrastructure.
+- Indexed contracts: 4; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 1 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 4
-- Raw deployments: 4
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $326,950,304.58
@@ -48,13 +57,12 @@ The SwapFacility contract, deployed behind a transparent upgradeable proxy, serv
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MToken | token | ethereum | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
-| JMIExtension | unknown | ethereum | [`0x1028a0...d22ae0`](./contracts/ethereum-1/0x1028a0e146d2915c509c8e019e0e5c66d3d22ae0/) | ⚠️ Unaudited |
-| SwapFacility | unknown | ethereum | [`0xb68071...6f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MToken | token | ethereum | n/a | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
+| SwapFacility | unknown | ethereum | unit-31457 | [`0xb68071...6f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -72,9 +80,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0xd48e56...ef28f9` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xd48e56...ef28f9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

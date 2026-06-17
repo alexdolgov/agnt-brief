@@ -1,0 +1,18 @@
+{
+  "address": "0x4ac5000fa00e31b587f1b50d596b40b52e9c6c24",
+  "chain_id": 1329,
+  "contract_name": "Gyro3CLPPoolFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-or-later, LicenseRef-Gyro-1.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:54.707Z"
+}

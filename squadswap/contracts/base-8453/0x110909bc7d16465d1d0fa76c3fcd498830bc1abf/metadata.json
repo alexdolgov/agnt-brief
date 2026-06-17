@@ -1,0 +1,18 @@
+{
+  "address": "0x110909bc7d16465d1d0fa76c3fcd498830bc1abf",
+  "chain_id": 8453,
+  "contract_name": "SquadV3PoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:46.770Z"
+}

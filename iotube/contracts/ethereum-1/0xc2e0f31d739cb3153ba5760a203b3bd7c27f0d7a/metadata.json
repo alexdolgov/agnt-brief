@@ -1,0 +1,18 @@
+{
+  "address": "0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a",
+  "chain_id": 1,
+  "contract_name": "TokenSafe",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:25.898Z"
+}

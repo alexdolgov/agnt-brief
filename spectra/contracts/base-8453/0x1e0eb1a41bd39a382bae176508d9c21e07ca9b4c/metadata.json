@@ -1,0 +1,17 @@
+{
+  "address": "0x1e0eb1a41bd39a382bae176508d9c21e07ca9b4c",
+  "chain_id": 8453,
+  "contract_name": "BridgeGatekeeper",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:44.804Z"
+}

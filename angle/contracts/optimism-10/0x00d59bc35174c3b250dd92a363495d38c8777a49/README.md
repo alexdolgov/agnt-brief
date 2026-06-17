@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum `0x69369507aa7a44156cc297448ab57e3c15d26485`; optimism [`0x00d59bc35174c3b250dd92a363495d38c8777a49`](../0x00d59bc35174c3b250dd92a363495d38c8777a49/)) |
+| Deployments | 1 (optimism [`0x00d59bc35174c3b250dd92a363495d38c8777a49`](../0x00d59bc35174c3b250dd92a363495d38c8777a49/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "truefi",
-  "generated_at": "2026-06-11T03:45:11.751Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-17T07:00:47.716Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "truefi",
@@ -32,21 +32,21 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 11,
-    "unique_implementations": 8,
-    "total_deployments": 11,
-    "audited_contracts": 3,
+    "total_contracts": 6,
+    "total_addresses": 7,
+    "unique_implementations": 6,
+    "total_deployments": 7,
+    "audited_contracts": 1,
     "unaudited_contracts": 5,
-    "contracts_verified_audited": 3,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 37.5,
+    "coverage_pct": 16.7,
     "total_audits": 24,
-    "scoreable_audits": 6,
-    "dl_tvl_usd": 15393827.90294,
-    "tvl_usd": 15393827.90294,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 15380748.60416,
+    "tvl_usd": 15380748.60416,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -69,10 +69,21 @@
   "topography": {
     "project_purpose": "TrueFi is/was an uncollateralized lending protocol that enabled borrowers to access credit without posting collateral, using on-chain credit assessments, lending pools, credit lines, and governance mechanisms. However, the current app.truefi.io homepage resolves to Brila and does not present active TrueFi lending app content, so current protocol descriptions should distinguish the historical TrueFi lending system from the present homepage experience.",
     "relationship_narrative": "The TrueFi family's AutomatedLineOfCreditFactory is governed by the Explore Lending Vaults family's GnosisSafeProxy, which controls protocol configuration. The ProxyWrapper acts as a registry and proxy for the factory, linking governance decisions to credit line deployment.",
-    "product_family_count": 2
+    "product_family_count": 2,
+    "total_contracts_indexed": 11,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 6,
+    "deployment_units": 3,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 8,
+    "unique_implementations": 6,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,6 +96,8 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x607cedb42442e206fae3e2cc12afddd7e12fdd4f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AllowAllLenderVerifier",
       "role": "periphery",
       "origin_kind": "native",
@@ -99,6 +112,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x607cedb42442e206fae3e2cc12afddd7e12fdd4f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -116,6 +131,8 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x45277f7d263c83f8223460621f31774c52a46d97",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AutomatedLineOfCredit",
       "role": "unknown",
       "origin_kind": "native",
@@ -130,6 +147,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x45277f7d263c83f8223460621f31774c52a46d97",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -139,6 +158,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x8626a4234721a605fc84bb49d55194869ae95d98",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -159,53 +180,9 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x24d00e171da01124052a4b13931631ba7482cbb5",
-      "name": "AutomatedLineOfCreditFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "TrueFi",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x24d00e171da01124052a4b13931631ba7482cbb5",
-      "impl_name": "AutomatedLineOfCreditFactory",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x24d00e171da01124052a4b13931631ba7482cbb5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xca1353dab799d87d70e3750c2280205a5c8f62e9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-6680",
-        "audit-6688",
-        "audit-6690",
-        "audit-6691",
-        "audit-6692"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0xb4c8bfd082a47c008ce95dd13314105f6c0fe372",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "DepositController",
       "role": "governance",
       "origin_kind": "native",
@@ -220,6 +197,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xb4c8bfd082a47c008ce95dd13314105f6c0fe372",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -237,6 +216,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xdc0175978ae72383bbfdbe56fed69d3acd5d476a",
+      "deployment_unit": "unit-29172",
+      "deployment_unit_proxy_count": 1,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
@@ -251,6 +232,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xdc0175978ae72383bbfdbe56fed69d3acd5d476a",
+          "deployment_unit": "unit-29172",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -268,6 +251,8 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xa1259068ea5252a307ced730d758c2e8d7ae177f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "OpenTransferController",
       "role": "governance",
       "origin_kind": "native",
@@ -282,6 +267,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xa1259068ea5252a307ced730d758c2e8d7ae177f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -298,54 +285,9 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x5c67531524201d0a774405827ba4c2de15781dd0",
-      "name": "ProtocolConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xbc70fe8653d972936507f7306996d8f8e6823482",
-      "impl_name": "ProtocolConfig",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x5c67531524201d0a774405827ba4c2de15781dd0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xbc70fe8653d972936507f7306996d8f8e6823482",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-6680",
-        "audit-6688",
-        "audit-6689",
-        "audit-6690",
-        "audit-6691",
-        "audit-6692"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0xee3f9add26de00fcc02d4bc0e6d0dbee0e3c25e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WithdrawController",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -360,6 +302,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xee3f9add26de00fcc02d4bc0e6d0dbee0e3c25e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -641,32 +585,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BorrowerSignatureVerifier",
-        "BulletLoans",
-        "IBorrowerSignatureVerifier",
-        "IBulletLoans",
-        "IDebtInstrument",
-        "IERC20WithDecimals",
-        "IFinancialInstrument",
-        "ILenderVerifier",
-        "IManagedPortfolio",
-        "IPortfolio",
-        "IProtocolConfig",
-        "IVerifier",
-        "InitializableManageable",
-        "Manageable",
-        "ManagedPortfolio",
-        "ManagedPortfolioFactory",
-        "ProtocolConfig",
-        "ProxyWrapper",
-        "SignatureOnlyLenderVerifier",
-        "SignatureValidator"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -819,21 +742,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BorrowerSignatureVerifier",
-        "BulletLoans",
-        "InitializableManageable",
-        "Manageable",
-        "ManagedPortfolio",
-        "ManagedPortfolioFactory",
-        "ProtocolConfig",
-        "ProxyWrapper",
-        "SignatureOnlyLenderVerifier"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -850,18 +763,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BorrowerSignatureVerifier",
-        "BulletLoans",
-        "ILenderVerifier",
-        "ManagedPortfolio",
-        "ProtocolConfig",
-        "SignatureValidator"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -889,7 +795,7 @@
         "WhitelistDeposit",
         "WithdrawStrategy"
       ],
-      "matched_contracts": 6,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -953,7 +859,7 @@
         "WhitelistDeposit",
         "WithdrawStrategy"
       ],
-      "matched_contracts": 6,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1000,7 +906,7 @@
         "WhitelistDeposit",
         "WithdrawStrategy"
       ],
-      "matched_contracts": 6,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1011,15 +917,15 @@
     {
       "auditor": "ABDK",
       "tier": 2,
-      "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
       "latest_audit": "2022-06"
     },
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
       "latest_audit": "2022-08"
     }
   ],
@@ -1066,7 +972,7 @@
     }
   ],
   "origin_summary": {
-    "native": 7,
+    "native": 5,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 0
@@ -1076,8 +982,7 @@
       "extraction_exact": 26
     },
     "extraction_confidence_counts": {
-      "high": 5,
-      "medium": 1
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1131,6 +1036,10 @@
         "report_name": "2022-01-03 Injected Bugs - TrueFi Lending Marketplace V1.pdf"
       },
       {
+        "audit_id": 6680,
+        "report_name": "2022-01-20 Chainsulting Audit - TrueFi Lending Marketplace V1.pdf"
+      },
+      {
         "audit_id": 6681,
         "report_name": "1.md"
       },
@@ -1153,6 +1062,14 @@
       {
         "audit_id": 6686,
         "report_name": "2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf"
+      },
+      {
+        "audit_id": 6688,
+        "report_name": "2022-02-07 Solidified Audit - TrueFi Lending Marketplace V1.pdf"
+      },
+      {
+        "audit_id": 6689,
+        "report_name": "README.md"
       }
     ],
     "inherited_remapped_matches": []

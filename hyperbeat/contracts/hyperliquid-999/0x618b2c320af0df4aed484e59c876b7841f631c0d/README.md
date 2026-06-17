@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (hyperliquid [`0x618b2c320af0df4aed484e59c876b7841f631c0d`](../0x618b2c320af0df4aed484e59c876b7841f631c0d/); hyperliquid `0x9f05549998d55595fc2d457367ea3ecec29ea3f3`) |
+| Deployments | 1 (hyperliquid [`0x618b2c320af0df4aed484e59c876b7841f631c0d`](../0x618b2c320af0df4aed484e59c876b7841f631c0d/)) |
 | Proxy | Yes → `0x24b6ad...e0c8a3` |
 | Source | Etherscan |
 | TVL | n/a |

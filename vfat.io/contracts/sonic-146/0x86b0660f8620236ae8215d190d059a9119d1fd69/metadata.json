@@ -1,0 +1,17 @@
+{
+  "address": "0x86b0660f8620236ae8215d190d059a9119d1fd69",
+  "chain_id": 146,
+  "contract_name": "IchiVaultRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000ba74d4cc3fda0d243441e5390529ff2436abe07600000000000000000000000034513e8a327987bb44acf5a925a7f3b4092d8b5f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:21.173Z"
+}

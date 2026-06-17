@@ -1,43 +1,48 @@
 # Agentic Audit Brief: Umee
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 19.4% over 90 days
-
 ## Project Overview
 
 - Project: Umee (`umee`)
-- Lifecycle: declining (Tier 0, 98.8% below peak)
-- Generated: 2026-06-11T03:51:08.180Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
-- Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,510,742.00
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:57.417Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- DeFi Llama TVL: $105,416.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Umee is a decentralized lending protocol and blockchain with activity across Umee/Cosmos modules and Ethereum. The listed Ethereum proxy should be treated as partial EVM coverage, not as the complete lending surface for the protocol.
 
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
 - Staleness: 0 fresh, 0 aging, 7 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -65,13 +70,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0xcecb170a1d54985bf8d0ebb4d6d6d980cdacf992) | proxy | ethereum | `0xe296db...333ba6` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -95,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

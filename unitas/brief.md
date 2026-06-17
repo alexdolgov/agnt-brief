@@ -5,8 +5,8 @@
 - Project: Unitas (`unitas`)
 - Website: [https://app.unitas.so](https://app.unitas.so)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-06-14T04:38:18.295Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-17T07:00:48.962Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 12 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $59,863,077.28
@@ -20,6 +20,14 @@ Unitas is a yield-bearing stablecoin protocol listed as Basis Trading, with depl
 ### Architecture
 
 The protocol consists of a single product family centered around the USDu stablecoin, with all functionality likely contained within that contract or its associated deployer cluster, indicating a tightly integrated system without separate infrastructure contracts.
+
+## Contract Surface Quality
+
+- Indexed contracts: 12; live-surface contracts included: 12 (11 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v3
+- Unverified dependencies: 1/11.
 
 ## Audit Coverage Summary
 
@@ -47,18 +55,18 @@ The protocol consists of a single product family centered around the USDu stable
 
 ### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakedUSDuV2 | token | bsc | [`0x385c27...52ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
-| UnitasMintingV2 | unknown | bsc | [`0xbb984c...4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
-| USDu | unknown | bsc | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakedUSDuV2 | token | bsc | n/a | [`0x385c27...52ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
+| UnitasMintingV2 | unknown | bsc | n/a | [`0xbb984c...4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
+| USDu | unknown | bsc | n/a | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| PancakeV3Pool | core_logic | bsc | [`0x8aab55...852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | ⚠️ Unaudited |
-| SafeProxy | unknown | bsc | [`0xb464c9...0ed3a9`](./contracts/bsc-56/0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PancakeV3Pool | core_logic | bsc | n/a | [`0x8aab55...852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | n/a | [`0xb464c9...0ed3a9`](./contracts/bsc-56/0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,15 +84,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x3b5f4a...5fbb4c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x643c75...a6e4b4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x6e705a...2c0c0e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x82a7cc...95c361` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa1e952...31c89d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcfff99...39eb38` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xe60106...50ac91` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x3b5f4a...5fbb4c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x643c75...a6e4b4` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6e705a...2c0c0e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x82a7cc...95c361` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa1e952...31c89d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcfff99...39eb38` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe60106...50ac91` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -5,10 +5,10 @@
 - Project: Cozy Finance (`cozy-finance`)
 - Website: [https://www.cozy.finance](https://www.cozy.finance)
 - Lifecycle: active (Tier 0, 77.1% below peak)
-- Generated: 2026-06-14T09:36:30.038Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:49.499Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum, optimism
-- Contract surface: 64 unique implementations (65 raw deployments)
+- Contract surface: 13 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,965,031.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Cozy Finance is a DeFi safety stack for managing and underwriting on-chain risk.
 
 The Core Protocol relies on Model Factories and Trigger Factories to deploy the pricing models and payout triggers that parameterize each protection market. The Metadata Registry provides descriptive information for markets created by the Core Protocol, ensuring a consistent user experience across the system.
 
+## Contract Surface Quality
+
+- Indexed contracts: 65; live-surface contracts included: 13 (13 live, 0 unknown).
+- Excluded by liveness: 52 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: compound-v2
+- Unverified dependencies: 3/4.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 58
-- Unique implementations: 64
-- Raw deployments: 65
+- Unverified implementations: 13
+- Unique implementations: 13
+- Raw deployments: 13
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,16 +54,9 @@ The Core Protocol relies on Model Factories and Trigger Factories to deploy the 
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ChainlinkReporter | unknown | ethereum | [`0x6f6681...ca9092`](./contracts/ethereum-1/0x6f668117caa90ea73c27adc562f5a2a06cca9092/) | ⚠️ Unaudited |
-| ChainlinkTriggerFactory | registry | optimism | [`0x961277...f113e2`](./contracts/optimism-10/0x9612779e725f66f34efd94aa723bac28baf113e2/) | ⚠️ Unaudited |
-| CostModelDynamicLevelFactory | registry | optimism | 2 deployments: optimism [`0x5adf41...6cc4c8`](./contracts/optimism-10/0x5adf41d47767e61a9aed55b836194b9fd96cc4c8/); optimism `0xcfe0dd...17a79d` | ⚠️ Unaudited |
-| CostModelJumpRateFactory | registry | optimism | [`0xcd3b7b...2338e3`](./contracts/optimism-10/0xcd3b7b1981377b58e2dbdb95a5b7c939662338e3/) | ⚠️ Unaudited |
-| DripDecayModelConstantFactory | registry | optimism | [`0xa95019...11ee9a`](./contracts/optimism-10/0xa950195c07315eff3145839e7793580ca311ee9a/) | ⚠️ Unaudited |
-| UMATriggerFactory | registry | optimism | [`0xf98a76...078e5d`](./contracts/optimism-10/0xf98a7667fabdc2a9182f6600ad87332bff078e5d/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,70 +70,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (58)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x1b2e4a...5499b7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x20fd25...dd014f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x22893a...27d56d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x425640...7d28df` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4f993a...8d7759` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x527d9a...e34e5e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x640c73...920726` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6f4b2b...205bc0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x895879...664f92` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8e6b29...74e5c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x97d251...8c3843` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa97f85...c96dde` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdbdf2f...02b57e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe6ef65...fe3d82` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf146c2...45681f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf8ec0f...3e91ea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0749ca...0d4d9e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0a475f...70a5c0` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0aae8c...3f7864` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0bfdc9...0dea48` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x0e4e17...e7fdc8` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x1603f0...c0adb9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x17aff8...0e8410` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x20433c...46989e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x33970d...335d03` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x35b52d...bfd5ea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x3fe029...40dc61` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x483ddb...c8ac72` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x4ce4fc...cbfadc` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x4d2819...736d64` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x562460...3d53d8` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x57d255...ac7b6d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x5e8e77...110fa2` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x724ba9...6b8aa7` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7c6ef4...5c91e4` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7edfad...647a29` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7fdafc...8fb35d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x7ffbf9...46b3f4` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x8da6e9...6eaa8c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x953b21...6f9b6d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x996e0a...6fa668` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x9c5a8b...546f0c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa623e7...1b78f4` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xad4618...e3c28f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xb2fa45...0cf9ae` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xba4cb5...26a622` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xbfc907...774add` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xcb4c51...1b11ff` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xcff72f...53e9ad` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xd1ca15...77bd87` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xd29d0e...263352` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xd662db...c0e2d5` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xde7637...8859a0` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xdebe19...1e6447` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xe4bbfc...ad0ebf` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xe75b71...e63081` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf4c05f...d134f3` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xf8f351...d5316a` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x1b2e4a...5499b7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x20fd25...dd014f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x22893a...27d56d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x425640...7d28df` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4f993a...8d7759` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x527d9a...e34e5e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x640c73...920726` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6f4b2b...205bc0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8e6b29...74e5c2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x97d251...8c3843` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa97f85...c96dde` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf8ec0f...3e91ea` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x562460...3d53d8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -148,19 +104,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| optimism | [`0xcd3b7b...2338e3`](./contracts/optimism-10/0xcd3b7b1981377b58e2dbdb95a5b7c939662338e3/) | CostModelJumpRateFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xa95019...11ee9a`](./contracts/optimism-10/0xa950195c07315eff3145839e7793580ca311ee9a/) | DripDecayModelConstantFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 3 |
+| native | 1 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 51 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

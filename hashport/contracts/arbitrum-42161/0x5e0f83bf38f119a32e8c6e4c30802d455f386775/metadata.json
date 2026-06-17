@@ -1,0 +1,17 @@
+{
+  "address": "0x5e0f83bf38f119a32e8c6e4c30802d455f386775",
+  "chain_id": 42161,
+  "contract_name": "FeeCalculatorFacet",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:37.853Z"
+}

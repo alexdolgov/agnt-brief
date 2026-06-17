@@ -1,0 +1,18 @@
+{
+  "address": "0x16e08c02e4b78b0a5b3a917ff5feaedd349a5a95",
+  "chain_id": 42161,
+  "contract_name": "L2_AmmWrapper",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:05.052Z"
+}

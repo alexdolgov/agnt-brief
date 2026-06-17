@@ -1,0 +1,18 @@
+{
+  "address": "0x85859ab683019a4e345d963e455b5e3ce133ef49",
+  "chain_id": 42161,
+  "contract_name": "ServiceRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:49.605Z"
+}

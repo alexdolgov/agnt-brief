@@ -5,10 +5,10 @@
 - Project: Rank Trading (`rank-trading`)
 - Website: [https://rank.trading/](https://rank.trading/)
 - Lifecycle: active (Tier 0, 69.1% below peak)
-- Generated: 2026-06-14T09:42:48.736Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:45.536Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
-- Contract surface: 17 unique implementations (35 raw deployments)
+- Contract surface: 8 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $1,951,466.64
 - On-chain TVL (included contracts): $1,189,293.39
 - TVL by chain: Bsc $1,189,293.39
@@ -21,14 +21,22 @@ Rank Trading is a BSC-based decentralized quant and algorithmic trading platform
 
 The protocol consists of a single product family where the RankToken serves as the yield-bearing asset, and the UNCX_LiquidityLocker_UniV3 contract secures liquidity. Both contracts are deployed by the same cluster, indicating shared infrastructure.
 
+## Contract Surface Quality
+
+- Indexed contracts: 35; live-surface contracts included: 15 (14 live, 1 unknown).
+- Excluded by liveness: 20 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
+- Detected codebases: uniswap-v3
+- Dependencies extracted: 9; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/11 (27.3%)
-- Verified + Unaudited implementations: 8
+- Verified implementations audited: 2/5 (40.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 17
-- Raw deployments: 35
+- Unverified implementations: 3
+- Unique implementations: 8
+- Raw deployments: 15
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $343.39
@@ -40,30 +48,24 @@ The protocol consists of a single product family where the RankToken serves as t
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hashlock | Tier 2 | 3 | 27.3% | 2025-01 |
+| Hashlock | Tier 2 | 2 | 40.0% | 2025-01 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| RankToken | token | bsc | [`0x978ab3...cbf952`](./contracts/bsc-56/0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952/) | ✅ Audited |
-| RankFactory | registry | bsc | 10 deployments: bsc [`0x1563c9...447227`](./contracts/bsc-56/0x1563c9837f9b71ba6f69342276deda6158447227/); bsc `0x185f8b...31c82e`; bsc `0x276ee9...a17eb8`; bsc `0x6e9d30...286a3f`; bsc `0x7cd6ea...e7dc19`; bsc `0x8e9fc0...a90601`; bsc `0x95defc...b573f3`; bsc `0xab5389...40e452`; bsc `0xcbabba...b5a679`; bsc `0xf86ada...5b70db` | ✅ Audited |
-| RankStrategy | core_logic | bsc | [`0xf9b185...1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| RankToken | token | bsc | n/a | [`0x978ab3...cbf952`](./contracts/bsc-56/0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952/) | ✅ Audited |
+| RankFactory | registry | bsc | n/a | 8 deployments: bsc [`0x1563c9...447227`](./contracts/bsc-56/0x1563c9837f9b71ba6f69342276deda6158447227/); bsc `0x185f8b...31c82e`; bsc `0x276ee9...a17eb8`; bsc `0x8e9fc0...a90601`; bsc `0x95defc...b573f3`; bsc `0xab5389...40e452`; bsc `0xcbabba...b5a679`; bsc `0xf86ada...5b70db` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| StakingPool | core_logic | bsc | [`0xd6a07b...cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | ⚠️ Unaudited |
-| Erc20Simple | token | bsc | [`0x7d322e...8a9cc5`](./contracts/bsc-56/0x7d322eb2f7149de1613f4310a73254abd08a9cc5/) | ⚠️ Unaudited |
-| ExposedV3Math | unknown | bsc | 3 deployments: bsc [`0x15022f...d23a54`](./contracts/bsc-56/0x15022f35ce0837b3b524ec699ec8258a8fd23a54/); bsc `0x6c7a2f...873f9c`; bsc `0xc98f2a...caa232` | ⚠️ Unaudited |
-| FeeResolver | unknown | bsc | [`0xe9b5f4...b4b21f`](./contracts/bsc-56/0xe9b5f4b3d4796bf57dd9f23af09f310e19b4b21f/) | ⚠️ Unaudited |
-| FullRangeConvertor | adapter | bsc | 3 deployments: bsc [`0x247358...9d538c`](./contracts/bsc-56/0x247358c446bf11ae2b54b96faf0e04c8089d538c/); bsc `0x4a8d60...83a953`; bsc `0x955fae...c91db5` | ⚠️ Unaudited |
-| FullRangeConvertorV2 | adapter | bsc | 2 deployments: bsc [`0xf67875...55cd71`](./contracts/bsc-56/0xf678750ec4b7b8c9b2f414913de5b3781055cd71/); bsc `0xf8ec48...c51066` | ⚠️ Unaudited |
-| MigrateV3NFT | token | bsc | 5 deployments: bsc [`0x2df9b3...8620ab`](./contracts/bsc-56/0x2df9b322666f89418d4b5b0432aef891128620ab/); bsc `0x51907a...ba3201`; bsc `0x6113e8...7892c5`; bsc `0x8a3c8b...54d88c`; bsc `0xe4c7d0...13a52c` | ⚠️ Unaudited |
-| UNCX_LiquidityLocker_UniV3 | unknown | bsc | [`0xfe88da...bf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| StakingPool | core_logic | bsc | unit-27598 | [`0xd6a07b...cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | ⚠️ Unaudited |
+| FullRangeConvertorV2 | adapter | bsc | n/a | [`0xf8ec48...c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | ⚠️ Unaudited |
+| UNCX_LiquidityLocker_UniV3 | unknown | bsc | n/a | [`0xfe88da...bf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -77,25 +79,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x3d413f...ad7a36` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x582c5a...31a3b0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcb8b00...fb62ec` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xd041c5...e441c2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xd2b1c1...bb53f0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xe0c497...200ec3` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x582c5a...31a3b0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd041c5...e441c2` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd2b1c1...bb53f0` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://hashlock.com/audits/rank-trading) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [View Report](https://hashlock.com/wp-content/uploads/2025/02/RankTrading-Smart-Contract-Audit-Report-Final-Report.pdf) | Hashlock | Audit | 2025-01 | aging | Direct | contract_name | 12 | high |
+| [View Report](https://hashlock.com/wp-content/uploads/2025/02/RankTrading-Smart-Contract-Audit-Report-Final-Report.pdf) | Hashlock | Audit | 2025-01 | aging | Direct | contract_name | 9 | high |
 
 ## Coverage Gaps
 
@@ -103,20 +102,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x7d322e...8a9cc5`](./contracts/bsc-56/0x7d322eb2f7149de1613f4310a73254abd08a9cc5/) | Erc20Simple | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe9b5f4...b4b21f`](./contracts/bsc-56/0xe9b5f4b3d4796bf57dd9f23af09f310e19b4b21f/) | FeeResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x247358...9d538c`](./contracts/bsc-56/0x247358c446bf11ae2b54b96faf0e04c8089d538c/) | FullRangeConvertor | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf67875...55cd71`](./contracts/bsc-56/0xf678750ec4b7b8c9b2f414913de5b3781055cd71/) | FullRangeConvertorV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2df9b3...8620ab`](./contracts/bsc-56/0x2df9b322666f89418d4b5b0432aef891128620ab/) | MigrateV3NFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf8ec48...c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | FullRangeConvertorV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 5 |
+| standard_library | 1 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

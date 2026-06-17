@@ -7,8 +7,8 @@
 - Project: Ethereal Season Zero (`ethereal-season-zero`)
 - Website: [https://www.ethereal.trade/](https://www.ethereal.trade/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-14T08:06:58.494Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:01:01.689Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $2,628,769.21
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -52,9 +60,9 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EtherealPreDepositVault | core_logic | ethereum | [`0x90d2af...74cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EtherealPreDepositVault | core_logic | ethereum | n/a | [`0x90d2af...74cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

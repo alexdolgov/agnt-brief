@@ -5,11 +5,11 @@
 - Project: veDelegate (`vedelegate`)
 - Website: [https://vedelegate.vet/](https://vedelegate.vet/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T03:51:58.606Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-17T07:01:01.854Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,161,359.82
+- DeFi Llama TVL: $828,873.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 veDelegate is a VeChain B3TR governance incentives app that lets users stake tokens and automate governance participation to earn voting rewards.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

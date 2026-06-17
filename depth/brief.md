@@ -6,11 +6,11 @@
 
 - Project: Depth (`depth`)
 - Lifecycle: declining (Tier 0, 99.7% below peak)
-- Generated: 2026-06-10T22:47:41.388Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:52.431Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: heco
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,171,105.60
+- DeFi Llama TVL: $1,158,345.40
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,6 +22,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Depth is a stablecoin-focused asset management and stablecoin swap protocol. Current DefiLlama data attributes its TVL to Binance, with Heco TVL at zero; the listed Heco address is not sufficient to represent the full current contract surface and should not be described as the sole core protocol contract without further verification.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -69,9 +77,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | heco | `0x48c859...895c27` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | heco | n/a | `0x48c859...895c27` | ❓ Unverified |
 
 ## Audit Inventory
 

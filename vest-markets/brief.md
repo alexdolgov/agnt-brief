@@ -1,16 +1,16 @@
 # Agentic Audit Brief: Vest Markets
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 63.5% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 73.4% over 90 days
 
 ## Project Overview
 
 - Project: Vest Markets (`vest-markets`)
 - Website: [https://alpha.vestmarkets.com](https://alpha.vestmarkets.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-13T21:25:16.943Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
-- Chains: arbitrum, base, bsc, ethereum, optimism, polygon, zksync-era
-- Contract surface: 7 unique implementations (75 raw deployments)
+- Generated: 2026-06-17T07:00:37.485Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: arbitrum, bsc, zksync-era
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $1,172,935.07
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,14 +23,22 @@ Vest Markets is a perpetuals and leveraged trading DEX for equities, crypto and 
 
 The SrcBridge contract handles cross-chain asset transfers and is deployed on multiple chains, while the Treasury manages protocol fees. The Exchange and RouterV2 contracts facilitate trading and routing, sharing the bridge and treasury infrastructure.
 
+## Contract Surface Quality
+
+- Indexed contracts: 75; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 58 inactive, 14 singleton, 0 uninitialized.
+- Deployment units: 2/11 live.
+- Detected codebases: none
+- Unverified dependencies: 1/1.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 7
-- Raw deployments: 75
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,14 +57,12 @@ The SrcBridge contract handles cross-chain asset transfers and is deployed on mu
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DevSrcBridge | operational_periphery | arbitrum | 19 deployments: base `0x57b6f6...c27e61`; base `0x80ee95...d03dc0`; base `0x9d8381...47c01f`; base `0xb0a880...1e7982`; base `0xcab5c4...5ef90c`; arbitrum [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/); arbitrum `0x0b3b31...495e14`; arbitrum `0x15a6da...2051e5`; arbitrum `0x18b5b2...a28bd6`; arbitrum `0x208166...aac75b`; arbitrum `0x5cb2d8...ee2969`; arbitrum `0x6226cb...dadcfb`; arbitrum `0x648bcd...3cab29`; arbitrum `0x6c0f49...a9a1b2`; arbitrum `0x8092c5...9e1799`; arbitrum `0xa28b1b...a46851`; arbitrum `0xab99af...2f10d0`; arbitrum `0xb3df06...ccfcf5`; arbitrum `0xbfe4c2...b83dc8` | ⚠️ Unaudited |
-| ProxyAdmin | governance | arbitrum | 5 deployments: ethereum `0x769623...58229e`; optimism `0x769623...58229e`; polygon `0x769623...58229e`; base `0x769623...58229e`; arbitrum [`0x705aaf...6fa7f9`](./contracts/arbitrum-42161/0x705aaffeccb370883531f09c64133d3abb6fa7f9/) | ⚠️ Unaudited |
-| SrcBridge | operational_periphery | polygon | 46 deployments: ethereum `0x725f61...043a8f`; ethereum `0x7a6d7e...60d81b`; ethereum `0x80ee95...d03dc0`; ethereum `0x9f9cc9...f1dafc`; ethereum `0xcb0f6b...ba42a0`; ethereum `0xcc91f7...2c31dc`; ethereum `0xe80f92...e1c35a`; ethereum `0xe85e79...3e3c10`; ethereum `0xecd91c...c881e3`; optimism `0x725f61...043a8f`; optimism `0x760019...f4018d`; optimism `0x80ee95...d03dc0`; optimism `0x9f9cc9...f1dafc`; optimism `0xb0ebd4...c04d80`; optimism `0xcb0f6b...ba42a0`; optimism `0xcc91f7...2c31dc`; optimism `0xe80f92...e1c35a`; optimism `0xe85e79...3e3c10`; bsc `0xef14da...372c41`; polygon [`0x0b3b31...495e14`](./contracts/polygon-137/0x0b3b31da21ca84068be498394c64ad8447495e14/); polygon `0x218175...3eb56d`; polygon `0x407720...1e27d1`; polygon `0x508cb1...e02399`; polygon `0x760019...f4018d`; polygon `0xb0a880...1e7982`; polygon `0xb15e8b...fddbfe`; polygon `0xcb0f6b...ba42a0`; polygon `0xe80f92...e1c35a`; base [`0x0b3b31...495e14`](./contracts/base-8453/0x0b3b31da21ca84068be498394c64ad8447495e14/); base `0x218175...3eb56d`; base `0x6409df...4889bd`; base `0x6d7976...d0aee6`; base `0x791958...630d63`; base `0xb15e8b...fddbfe`; base `0xcb0f6b...ba42a0`; base `0xe80f92...e1c35a`; arbitrum `0x33c48d...64cffc`; arbitrum `0x48624e...950a75`; arbitrum `0x4e63e3...3ac2b7`; arbitrum `0x624556...d04a77`; arbitrum `0x7b3e67...3a4ad2`; arbitrum `0x80c526...0eda00`; arbitrum `0x8952c8...209a97`; arbitrum `0x8f1587...04cbd3`; arbitrum `0x9e5550...4d2564`; arbitrum `0xf863a9...2f78da` | ⚠️ Unaudited |
-| Treasury | operational_periphery | base | 2 deployments: base [`0x32d95f...27ef7e`](./contracts/base-8453/0x32d95f243f9e2c1344e4baa91a8d32711527ef7e/); base `0xeacad6...620e16` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SrcBridge | operational_periphery | bsc | unit-23669 | [`0xef14da...372c41`](./contracts/bsc-56/0xef14da66876476c1a75dc057343b97b6bd372c41/) | ⚠️ Unaudited |
+| SrcBridge | operational_periphery | arbitrum | unit-23677 | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -70,15 +76,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | zksync-era | `0x7ccf5b...eec9f3` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | `0xf0bcf4...fda56b` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | `0xf7483a...8f1f68` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | zksync-era | n/a | `0xf0bcf4...fda56b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -89,19 +93,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| arbitrum | [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/) | DevSrcBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0b3b31...495e14`](./contracts/polygon-137/0x0b3b31da21ca84068be498394c64ad8447495e14/) | SrcBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 3 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

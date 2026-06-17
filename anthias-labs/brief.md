@@ -5,8 +5,8 @@
 - Project: Anthias Labs (`anthias-labs`)
 - Website: [https://anthias.xyz](https://anthias.xyz)
 - Lifecycle: active (Tier 0, 19.4% below peak)
-- Generated: 2026-06-12T13:52:53.907Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
+- Generated: 2026-06-17T07:01:01.703Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 3 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $18,647,606.59
@@ -20,6 +20,14 @@ Anthias Labs is a boutique on-chain advisory, DeFi risk-management, monitoring, 
 ### Architecture
 
 All contracts are deployed under the single Anthias Labs family, with VaultV2 and MetaMorpho contracts likely sharing common risk management logic and infrastructure, though no explicit supporting contracts are identified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 10; live-surface contracts included: 10 (10 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,11 +56,11 @@ All contracts are deployed under the single Anthias Labs family, with VaultV2 an
 
 ### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| VaultV2 | core_logic | base | 5 deployments: base [`0x48a90e...c79965`](./contracts/base-8453/0x48a90e85be5c56b0a669985a12ee7c449fc79965/); base `0x5083b1...3f7c48`; base `0x89bedb...4d6f53`; base `0xbb2f06...d977c9`; base `0xdba76b...09f7a8` | ⚠️ Unaudited |
-| MetaMorpho | unknown | base | 4 deployments: base [`0x543257...f5a796`](./contracts/base-8453/0x543257ef2161176d7c8cd90ba65c2d4caef5a796/); base `0xa0e430...3d0ff1`; base `0xc1256a...00a2ca`; base `0xf24608...01a026` | ⚠️ Unaudited |
-| Morpho | unknown | base | [`0xbbbbbb...eeffcb`](./contracts/base-8453/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| VaultV2 | core_logic | base | n/a | 5 deployments: base [`0x48a90e...c79965`](./contracts/base-8453/0x48a90e85be5c56b0a669985a12ee7c449fc79965/); base `0x5083b1...3f7c48`; base `0x89bedb...4d6f53`; base `0xbb2f06...d977c9`; base `0xdba76b...09f7a8` | ⚠️ Unaudited |
+| MetaMorpho | unknown | base | n/a | 4 deployments: base [`0x543257...f5a796`](./contracts/base-8453/0x543257ef2161176d7c8cd90ba65c2d4caef5a796/); base `0xa0e430...3d0ff1`; base `0xc1256a...00a2ca`; base `0xf24608...01a026` | ⚠️ Unaudited |
+| Morpho | unknown | base | n/a | [`0xbbbbbb...eeffcb`](./contracts/base-8453/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

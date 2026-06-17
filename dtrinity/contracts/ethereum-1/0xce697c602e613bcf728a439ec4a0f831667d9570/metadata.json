@@ -1,0 +1,17 @@
+{
+  "address": "0xce697c602e613bcf728a439ec4a0f831667d9570",
+  "chain_id": 1,
+  "contract_name": "LiquidationLogic",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:50.643Z"
+}

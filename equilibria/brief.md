@@ -7,13 +7,13 @@
 - Project: Equilibria (`equilibria`)
 - Website: [https://equilibria.fi/home](https://equilibria.fi/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T23:08:06.695Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-17T07:00:41.636Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, base, berachain, bsc, ethereum, hyperliquid, mantle, optimism, plasma, sonic
-- Contract surface: 119 unique implementations (833 raw deployments)
-- DeFi Llama TVL: $18,142,263.85
-- On-chain TVL (included contracts): $26,877,414.73
-- TVL by chain: Ethereum $20,730,756.55 | Arbitrum $4,681,969.63 | Berachain $859,535.49 | Plasma $368,397.67 | Sonic $181,564.40 | Bsc $52,526.55 | Mantle $2,232.13 | Optimism $431.85 | Hyperliquid $0.45
+- Contract surface: 74 unique implementations (124 raw deployments)
+- DeFi Llama TVL: $12,923,882.38
+- On-chain TVL (included contracts): $12,609,211.10
+- TVL by chain: Ethereum $6,521,482.66 | Arbitrum $4,624,188.33 | Berachain $859,535.49 | Plasma $368,397.67 | Sonic $181,564.40 | Bsc $51,385.80 | Mantle $2,232.13 | Optimism $424.17 | Hyperliquid $0.45
 
 ## Project Description
 
@@ -23,191 +23,152 @@ Equilibria is a yield optimization protocol built on top of Pendle Finance, focu
 
 The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidechain deployments via XEqbToken and EPendleOFT tokens. Sidechain deployments replicate the booster/proxy/vault pattern and use shared infrastructure like BaseRewardPool and EqbZap, while the LRT family operates independently with its own set of oracles and deposit/withdrawal contracts.
 
+## Contract Surface Quality
+
+- Indexed contracts: 833; live-surface contracts included: 124 (122 live, 2 unknown).
+- Excluded by liveness: 164 inactive, 545 singleton, 0 uninitialized.
+- Deployment units: 37/228 live.
+- Detected codebases: none
+- Unverified dependencies: 3/10.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 15/85 (17.6%)
-- Verified + Unaudited implementations: 61
-- Verified by bytecode match: 15
-- Unverified implementations: 34
-- Unique implementations: 119
-- Raw deployments: 833
+- Verified implementations audited: 12/58 (20.7%)
+- Verified + Unaudited implementations: 41
+- Verified by bytecode match: 5
+- Unverified implementations: 16
+- Unique implementations: 74
+- Raw deployments: 124
 - Audits discovered: 6
-- Scoreable audits (matched contracts): 5
-- ASD (verified + unaudited TVL): $15,666,577.97
+- Scoreable audits (matched contracts): 3
+- ASD (verified + unaudited TVL): $11,050,032.51
 - Latest audit: 2025-06 (aging)
 - Staleness: 0 fresh, 3 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $15,666,577.97 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $11,050,032.51 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 15 | 17.6% | 2025-06 |
-| PeckShield | Tier 2 | 1 | 1.2% | 2023-05 |
+| WatchPug | Tier 2 | 12 | 20.7% | 2025-06 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (9)
+### ✅ Verified + Audited (12)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EPendleVaultSidechain | core_logic | optimism | 9 deployments: optimism [`0x261341...96f574`](./contracts/optimism-10/0x261341d7b6320aa4840639960c78d5fff296f574/); optimism `0xf19fbc...e94cec`; bsc `0x89a4e4...63186b`; sonic `0x9f1453...ca341a`; hyperliquid `0x7700eb...ed33b1`; mantle `0x9f1453...ca341a`; base `0x6ee066...01b923`; arbitrum `0x4250ea...654a92`; berachain `0x5e73e7...ea4531` | ✅ Audited |
-| BaseRewardPool | core_logic | ethereum | 113 deployments: ethereum [`0x00807f...3966f5`](./contracts/ethereum-1/0x00807f12343a039acce6c9446696c818b53966f5/); ethereum `0x051961...f422fd`; ethereum `0x06fd8e...534f37`; ethereum `0x072cf0...399b5f`; ethereum `0x0dc8b9...5279ce`; ethereum `0x13e029...1beb94`; ethereum `0x16f460...d01594`; ethereum `0x1785fd...03c344`; ethereum `0x17ea39...d1c8b7`; ethereum `0x1b3b6e...e3f091`; ethereum `0x2152e6...84ca14`; ethereum `0x28f35f...9f7bd2`; ethereum `0x2f3664...97606c`; ethereum `0x357f55...25e849`; ethereum `0x35fd17...ef2862`; ethereum `0x40312e...18bbfa`; ethereum `0x44284d...e62844`; ethereum `0x45449d...e913c3`; ethereum `0x4e7322...30c2af`; ethereum `0x54bfc9...1b18fd`; ethereum `0x56f41e...c720ff`; ethereum `0x598022...96545e`; ethereum `0x708544...c1ef49`; ethereum `0x70f619...7e72b9`; ethereum `0x7368cb...e36ac9`; ethereum `0x787fcb...3c2371`; ethereum `0x7ac9e2...01dc48`; ethereum `0x7fc285...48d00b`; ethereum `0x8c9590...2e8ec0`; ethereum `0x9596c5...febc43`; ethereum `0x97c9b0...91f5e1`; ethereum `0x9fe99f...23e0b1`; ethereum `0xa023a9...63c39c`; ethereum `0xa07c49...ffde9c`; ethereum `0xa48769...d7d023`; ethereum `0xa7946a...097064`; ethereum `0xaa4a7a...790b74`; ethereum `0xaab4b3...52fd6c`; ethereum `0xab5542...a106bf`; ethereum `0xb3b353...79fffa`; ethereum `0xb3c40b...df99ca`; ethereum `0xb68bba...d4bd34`; ethereum `0xc671ce...5ea3db`; ethereum `0xcd7246...9e2d65`; ethereum `0xce1533...c49ae3`; ethereum `0xd2d99a...3e2f39`; ethereum `0xdc947a...86c88c`; ethereum `0xe0402e...5f83c1`; ethereum `0xe0e1c3...83f343`; ethereum `0xfae4d4...78cd75`; optimism `0x0140de...91d3bc`; optimism `0x1679fe...46723b`; optimism `0x660e0d...cc9fa9`; optimism `0x898ca9...3602b3`; optimism `0x9cb59c...cc7353`; bsc `0x09bae4...c8e94d`; bsc `0x1679fe...46723b`; bsc `0x26ae16...186f5c`; bsc `0x52f0bb...789ca5`; bsc `0xd8d51c...aae903`; bsc `0xe2db20...01dde7`; sonic `0x52f0bb...789ca5`; sonic `0x660e0d...cc9fa9`; sonic `0x741620...c4fecc`; hyperliquid `0x22fc5a...ce4455`; hyperliquid `0x500d5e...84d3d6`; hyperliquid `0x71e0ce...401ebf`; mantle `0x52f0bb...789ca5`; mantle `0x660e0d...cc9fa9`; mantle `0x741620...c4fecc`; base `0x0140de...91d3bc`; base `0x71e0ce...401ebf`; base `0xb2d167...4264c8`; plasma `0x55f140...0433a8`; plasma `0xc7517f...421e32`; plasma `0xd8967b...73ec27`; arbitrum `0x0140de...91d3bc`; arbitrum `0x03b86b...c88e4e`; arbitrum `0x03e2bc...634513`; arbitrum `0x06fd8e...534f37`; arbitrum `0x114765...87c9a7`; arbitrum `0x16f460...d01594`; arbitrum `0x245f1d...37a960`; arbitrum `0x261341...96f574`; arbitrum `0x2e18b7...77ff78`; arbitrum `0x5017d2...3f9003`; arbitrum `0x507fdb...466ced`; arbitrum `0x5511c9...62d83b`; arbitrum `0x55f140...0433a8`; arbitrum `0x643df8...28fee1`; arbitrum `0x6668f0...e84431`; arbitrum `0x6e6bf7...2adf77`; arbitrum `0x71e0ce...401ebf`; arbitrum `0x74ddfb...2d0c34`; arbitrum `0x8181c8...07a6b2`; arbitrum `0x901e8f...0e1a88`; arbitrum `0x968e4a...32b49b`; arbitrum `0x96edd4...67c10b`; arbitrum `0x972eb6...4b0bee`; arbitrum `0x9739d1...bb4d6f`; arbitrum `0xabe223...ca0944`; arbitrum `0xb45271...afc033`; arbitrum `0xb9ee33...930718`; arbitrum `0xc72d63...5976ea`; arbitrum `0xcd7246...9e2d65`; arbitrum `0xce3fe5...44b596`; arbitrum `0xf306bd...e7d4e2`; arbitrum `0xf8aa1d...920332`; arbitrum `0xfaaec6...2a7f7a`; arbitrum `0xfc5d0f...d3bd10`; berachain `0x0140de...91d3bc`; berachain `0x2350ea...709913`; berachain `0x660e0d...cc9fa9` | ✅ Audited |
-| VaultEPendle | core_logic | ethereum | 2 deployments: ethereum [`0x7045b6...3852f2`](./contracts/ethereum-1/0x7045b65601d9c424b9f1283d1e49c80a833852f2/); ethereum `0xd30d6f...968059` | ✅ Audited |
-| ChainlinkOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x312e2a...83a990`](./contracts/ethereum-1/0x312e2a6c478916430bd102907b92f9200a83a990/); arbitrum `0x803551...aef1d7` | ✅ Audited |
-| EqbMinterMainchain | operational_periphery | ethereum | 2 deployments: ethereum [`0x09bae4...c8e94d`](./contracts/ethereum-1/0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d/); ethereum `0x52f0bb...789ca5` | ✅ Audited |
-| EqbRewardDistributor | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x64528d...b5d7ef`](./contracts/arbitrum-42161/0x64528d6d89c806af6a8df82f9e2f6805b4b5d7ef/); arbitrum `0xa4ffa4...cc2e88` | ✅ Audited |
-| SmartConvertor | adapter | ethereum | 6 deployments: ethereum [`0x112129...2e176c`](./contracts/ethereum-1/0x112129620f82fa4eec511bb2b43e487f872e176c/); ethereum `0x564754...79f0a6`; ethereum `0xa94603...342d63`; ethereum `0xdac550...74a06d`; ethereum `0xeded1c...394ae6`; ethereum `0xfdbe72...a4cf54` | ✅ Audited |
-| VaultDepositToken | core_logic | hyperliquid | 3 deployments: ethereum `0x3ce7f5...02d011`; ethereum `0xfbaa95...3783e3`; hyperliquid [`0x03b86b...c88e4e`](./contracts/hyperliquid-999/0x03b86b5b4f49fd2059c813b3f928c0b276c88e4e/) | ✅ Audited |
-| VaultDepositTokenFactory | registry | ethereum | 5 deployments: ethereum [`0x027df5...63e5fb`](./contracts/ethereum-1/0x027df5ca0596bac018330bce9b9263263a63e5fb/); ethereum `0x05eaaa...10f7a0`; ethereum `0x5eebaf...7dbb62`; ethereum `0xea2db4...edbf88`; ethereum `0xedc3bb...59be3f` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EPendleVaultSidechain | core_logic | arbitrum | unit-25253 | [`0x4250ea...654a92`](./contracts/arbitrum-42161/0x4250ea96f880c5725931a72a87dcbe01fc654a92/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | bsc | unit-25149 | [`0x89a4e4...63186b`](./contracts/bsc-56/0x89a4e4044bdb53e00e40c1b2e1005bd61663186b/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | optimism | unit-25135 | [`0xf19fbc...e94cec`](./contracts/optimism-10/0xf19fbc1d3693ecca9979ea31272e422903e94cec/) | ✅ Audited |
+| VaultEPendle | core_logic | ethereum | unit-25110 | [`0xd30d6f...968059`](./contracts/ethereum-1/0xd30d6fd662c0d92b49f3c3e478e125ba1d968059/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | sonic | unit-25168 | [`0x9f1453...ca341a`](./contracts/sonic-146/0x9f14535a90bc7ca72739a73c1d382bd272ca341a/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | hyperliquid | unit-25180 | [`0x7700eb...ed33b1`](./contracts/hyperliquid-999/0x7700eb46bb40163985c5337de39704482aed33b1/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | mantle | unit-25201 | [`0x9f1453...ca341a`](./contracts/mantle-5000/0x9f14535a90bc7ca72739a73c1d382bd272ca341a/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | base | unit-25210 | [`0x6ee066...01b923`](./contracts/base-8453/0x6ee066b813cd8c2586d86f79ed0025e81801b923/) | ✅ Audited |
+| EPendleVaultSidechain | core_logic | berachain | unit-25285 | [`0x5e73e7...ea4531`](./contracts/berachain-80094/0x5e73e741b0b15e10789a30a91953794e44ea4531/) | ✅ Audited |
+| EqbZap | adapter | ethereum | n/a | [`0x63b414...3f2d73`](./contracts/ethereum-1/0x63b4145152606619f12ea2dc054dca9e3f3f2d73/) | ✅ Audited |
+| VaultDepositToken | core_logic | hyperliquid | n/a | [`0x03b86b...c88e4e`](./contracts/hyperliquid-999/0x03b86b5b4f49fd2059c813b3f928c0b276c88e4e/) | ✅ Audited |
+| VaultDepositTokenFactory | registry | ethereum | n/a | [`0x05eaaa...10f7a0`](./contracts/ethereum-1/0x05eaaa615f01ab1b8a0bd1e6a487d80c8910f7a0/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (61)
+### ⚠️ Verified + Unaudited (41)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EPendleProxyOFT | core_logic | ethereum | [`0x6ae382...45c577`](./contracts/ethereum-1/0x6ae382814e24b6ddf588901c597f26a9e945c577/) | ⚠️ Unaudited |
-| EqbToken | token | ethereum | 2 deployments: ethereum [`0x0cf6ab...80e139`](./contracts/ethereum-1/0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139/); ethereum `0xfe80d6...740b2b` | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | 3 deployments: arbitrum [`0x0c880f...a8c9e8`](./contracts/arbitrum-42161/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8/); arbitrum `0xbfbcfe...bbad9c`; arbitrum `0xd48482...242ac3` | ⚠️ Unaudited |
-| WOFT | token | berachain | 3 deployments: berachain [`0x88bb2b...289032`](./contracts/berachain-80094/0x88bb2bf040fa5bf2bd3b79ff9dfa035ed1289032/); berachain `0xf9ee98...7e2037`; berachain `0xff9c59...88aef6` | ⚠️ Unaudited |
-| PendleOFT | token | plasma | [`0x17bac5...831f24`](./contracts/plasma-9745/0x17bac5f906c9a0282ac06a59958d85796c831f24/) | ⚠️ Unaudited |
-| MintedERC20 | token | sonic | 3 deployments: sonic [`0x48540d...6fc335`](./contracts/sonic-146/0x48540d1140331277b9157a096e40e6f5506fc335/); sonic `0x9cacb5...7e8c6b`; sonic `0xf1ef7d...71a74b` | ⚠️ Unaudited |
-| EclToken | token | ethereum | 3 deployments: ethereum [`0x642c9d...e3ec81`](./contracts/ethereum-1/0x642c9d741ab3de9a8b43b79f7e5bc8a953e3ec81/); ethereum `0x833017...5cccf3`; ethereum `0xf857c9...227e03` | ⚠️ Unaudited |
-| TokenImplementation | token | bsc | 2 deployments: bsc [`0x374ca3...468609`](./contracts/bsc-56/0x374ca32fd7934c5d43240e1e73fa9b2283468609/); bsc `0x5fec85...5bd6bc` | ⚠️ Unaudited |
-| VoEqb | token | arbitrum | 2 deployments: arbitrum [`0x172cdd...da9b4f`](./contracts/arbitrum-42161/0x172cdd024403f7cb7168db98df8ddbfe53da9b4f/); arbitrum `0xac1f84...305ab1` | ⚠️ Unaudited |
-| L2StandardERC20 | token | mantle | 2 deployments: mantle [`0x3e7ef8...276747`](./contracts/mantle-5000/0x3e7ef8f50246f725885102e8238cbba33f276747/); mantle `0x9e1028...6840e0` | ⚠️ Unaudited |
-| EpendleVault | core_logic | sonic | 8 deployments: optimism `0x4f1cdf...3d3452`; bsc `0x6668f0...e84431`; sonic [`0x02c033...d981e4`](./contracts/sonic-146/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); hyperliquid `0x5e73e7...ea4531`; mantle [`0x02c033...d981e4`](./contracts/mantle-5000/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); base `0x9f1453...ca341a`; arbitrum `0x35fd17...ef2862`; berachain `0x4f1cdf...3d3452` | ⚠️ Unaudited |
-| PendleCampaignSidechainV2 | core_logic | bsc | 2 deployments: bsc [`0x245f1d...37a960`](./contracts/bsc-56/0x245f1d70acaacd219564fccb75f108917037a960/); arbitrum `0xd8d51c...aae903` | ⚠️ Unaudited |
-| PendleCampaignSidechain | core_logic | arbitrum | [`0xfff4b0...7ec03e`](./contracts/arbitrum-42161/0xfff4b05a10c5df1382272e554254ea8b097ec03e/) | ⚠️ Unaudited |
-| LRTUnstakingVault | core_logic | ethereum | 3 deployments: ethereum [`0x22e85c...4145d5`](./contracts/ethereum-1/0x22e85c2d22f580bfbd1ee94c3bd3d5f4584145d5/); ethereum `0x552100...df19c7`; ethereum `0x7e1240...650f1b` | ⚠️ Unaudited |
-| LRTDepositPool | core_logic | ethereum | 4 deployments: ethereum [`0x22a359...40fe5f`](./contracts/ethereum-1/0x22a3594b634704119385a942469146535d40fe5f/); ethereum `0x26803c...d29947`; ethereum `0x54f203...d1ee05`; ethereum `0x74ddfb...2d0c34` | ⚠️ Unaudited |
-| PendleProxySidechain | core_logic | hyperliquid | 8 deployments: optimism `0x4d32c8...0c26bf`; bsc `0x646279...f1e6e3`; sonic `0x479603...9e218d`; hyperliquid [`0x18c616...e2b356`](./contracts/hyperliquid-999/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/); mantle `0x479603...9e218d`; base `0x920873...56a3b8`; arbitrum `0x646279...f1e6e3`; berachain `0x4d32c8...0c26bf` | ⚠️ Unaudited |
-| EQBOFT | token | hyperliquid | 3 deployments: hyperliquid [`0x3ce842...ad4e50`](./contracts/hyperliquid-999/0x3ce8426dc0b90a36f0e20d7c2acaaf4578ad4e50/); hyperliquid `0x73e247...4cac8c`; hyperliquid `0xb4484a...2cefd1` | ⚠️ Unaudited |
-| VaultEPendleArbi | core_logic | arbitrum | [`0x372277...b8319f`](./contracts/arbitrum-42161/0x37227785a1f4545ed914690e395e4cfe96b8319f/) | ⚠️ Unaudited |
-| IrrevocableLockingPool | core_logic | arbitrum | 3 deployments: arbitrum [`0x22126a...c1c3ad`](./contracts/arbitrum-42161/0x22126a0fb5cfbc327a8e36f141e4712e45c1c3ad/); arbitrum `0x7d0583...68b7c0`; arbitrum `0xed8262...b625bd` | ⚠️ Unaudited |
-| ArbVester | operational_periphery | arbitrum | 10 deployments: arbitrum [`0x02e666...5f25b6`](./contracts/arbitrum-42161/0x02e666f32979c973a0978d04a1c8fe33a35f25b6/); arbitrum `0x3138de...996d7c`; arbitrum `0x3c949d...340c85`; arbitrum `0x4e7322...30c2af`; arbitrum `0xaff75f...8bc5fe`; arbitrum `0xd40ccc...842bea`; arbitrum `0xdc947a...86c88c`; arbitrum `0xecc88a...718219`; arbitrum `0xf0b66f...1d00d9`; arbitrum `0xf857c9...227e03` | ⚠️ Unaudited |
-| BribeManager | operational_periphery | arbitrum | 14 deployments: ethereum `0xa26992...2bb03a`; ethereum `0xe7ec42...d9b50b`; ethereum `0xf21706...a60c39`; bsc `0x1f3ef2...562b40`; bsc `0xb9ee33...930718`; arbitrum [`0x1d0e04...83c477`](./contracts/arbitrum-42161/0x1d0e04dd2788f0b58a43957c4dc29b9d8783c477/); arbitrum `0x38622b...06f4b2`; arbitrum `0x576ab2...2f748d`; arbitrum `0x608205...5d2237`; arbitrum `0x8dbb5a...12125c`; arbitrum `0xb3c40b...df99ca`; arbitrum `0xd518db...077b7a`; arbitrum `0xe584cc...396b67`; arbitrum `0xe5b4b7...baef8e` | ⚠️ Unaudited |
-| DepositToken | token | optimism | 90 deployments: ethereum `0x03e2bc...634513`; ethereum `0x04336c...8cfa16`; ethereum `0x06c499...f663ce`; ethereum `0x0c3025...744c77`; ethereum `0x0d6a16...863660`; ethereum `0x1d9f65...13afff`; ethereum `0x1df87a...ddf1c9`; ethereum `0x2386f0...a56cdf`; ethereum `0x2406a4...d19c96`; ethereum `0x245f1d...37a960`; ethereum `0x28c751...14c127`; ethereum `0x2e4245...8264a5`; ethereum `0x3138de...996d7c`; ethereum `0x314cec...9b2e92`; ethereum `0x353879...0c06bd`; ethereum `0x3dbd7e...1b0707`; ethereum `0x3f978a...405071`; ethereum `0x4159ec...7a40bd`; ethereum `0x466732...49c918`; ethereum `0x4ecf06...3ad188`; ethereum `0x518ffb...0ad36d`; ethereum `0x576ab2...2f748d`; ethereum `0x602b88...e4e26c`; ethereum `0x623e16...509b60`; ethereum `0x646850...d330ac`; ethereum `0x66f928...847915`; ethereum `0x685a7d...086533`; ethereum `0x6a82a1...896c60`; ethereum `0x6fe020...503a9e`; ethereum `0x72bacc...29aaf4`; ethereum `0x7be9ce...15f153`; ethereum `0x7dddf1...0fd39f`; ethereum `0x803551...aef1d7`; ethereum `0x86a201...a818c5`; ethereum `0x87707d...e88046`; ethereum `0x898ca9...3602b3`; ethereum `0x8f8dbc...30268f`; ethereum `0x91b4ce...d0319f`; ethereum `0x929715...8f1378`; ethereum `0x92c26e...825299`; ethereum `0xa0087e...a039e9`; ethereum `0xa929e8...e06599`; ethereum `0xb0d718...78eb7a`; ethereum `0xd40ccc...842bea`; ethereum `0xd5d127...22ecbf`; ethereum `0xd804ab...9087ed`; ethereum `0xe77548...5e43e4`; ethereum `0xfa1f4c...6fa2ea`; optimism [`0x00807f...3966f5`](./contracts/optimism-10/0x00807f12343a039acce6c9446696c818b53966f5/); optimism `0x26ae16...186f5c`; optimism `0x55f140...0433a8`; bsc [`0x00807f...3966f5`](./contracts/bsc-56/0x00807f12343a039acce6c9446696c818b53966f5/); bsc `0x500d5e...84d3d6`; bsc `0x55f140...0433a8`; bsc `0xb2d167...4264c8`; arbitrum `0x072550...7aff61`; arbitrum `0x0c873e...ba7f9f`; arbitrum `0x0d7fd2...707fac`; arbitrum `0x180dd2...9e2f8e`; arbitrum `0x183b30...b75e78`; arbitrum `0x1f3ef2...562b40`; arbitrum `0x229de5...bc5b4f`; arbitrum `0x306264...dfcb1a`; arbitrum `0x312e2a...83a990`; arbitrum `0x3672ab...5e491a`; arbitrum `0x4159ec...7a40bd`; arbitrum `0x473229...27da5a`; arbitrum `0x5873f8...705d5c`; arbitrum `0x6d36ca...4ba295`; arbitrum `0x7a2d44...4763f4`; arbitrum `0x879382...1e942b`; arbitrum `0x898ca9...3602b3`; arbitrum `0x89f24c...69ef10`; arbitrum `0x950904...df354e`; arbitrum `0x96a375...656e98`; arbitrum `0x97c7d9...265459`; arbitrum `0x9be393...68b88c`; arbitrum `0xa6ec3c...9f05c3`; arbitrum `0xaa4a7a...790b74`; arbitrum `0xaa4ada...5c1204`; arbitrum `0xaab4b3...52fd6c`; arbitrum `0xb0d718...78eb7a`; arbitrum `0xb9b748...4105a8`; arbitrum `0xbaa2b0...256470`; arbitrum `0xd5d127...22ecbf`; arbitrum `0xe86037...38826a`; arbitrum `0xf10ae0...9d508f`; arbitrum `0xf19fbc...e94cec`; arbitrum `0xf7498d...052981`; arbitrum `0xfc09f3...9ff778` | ⚠️ Unaudited |
-| elETH | token | ethereum | 3 deployments: ethereum [`0x9f7902...1cf846`](./contracts/ethereum-1/0x9f7902705ee6f469a2ebfa628acd069b121cf846/); ethereum `0xa1aeea...5ed428`; ethereum `0xb873c8...b683ea` | ⚠️ Unaudited |
-| EPendleOFT | token | bsc | 8 deployments: optimism `0x8a5a43...bbd36c`; bsc [`0x06fd8e...534f37`](./contracts/bsc-56/0x06fd8e5dae63afcbfdf10604efca3143df534f37/); sonic `0x7700eb...ed33b1`; hyperliquid `0x6408d9...d16005`; hyperliquid `0xb2d167...4264c8`; mantle `0x7700eb...ed33b1`; base `0x2350ea...709913`; arbitrum `0x8c9b5b...0029f5` | ⚠️ Unaudited |
-| EqbInfo | periphery | ethereum | 9 deployments: ethereum [`0x2cdcdc...9495c6`](./contracts/ethereum-1/0x2cdcdcf3d91c88d5d29d527d1b77e3b3ac9495c6/); ethereum `0x97f071...799035`; ethereum `0x9d9d31...8cb249`; ethereum `0xb42c09...e2a714`; ethereum `0xdcf5da...d3837c`; arbitrum `0xb899db...d5c640`; arbitrum `0xd08511...0ed544`; arbitrum `0xda2b96...857467`; arbitrum `0xf29a4f...61fbc9` | ⚠️ Unaudited |
-| EthXPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x31f17b...985f82`](./contracts/ethereum-1/0x31f17bb9476db4ad4825df13c42ace776c985f82/); ethereum `0xcc771f...95bfd2` | ⚠️ Unaudited |
-| FairAuction | operational_periphery | arbitrum | 3 deployments: arbitrum [`0x0b6041...e31739`](./contracts/arbitrum-42161/0x0b60412431d5824532e3a89e41638724c6e31739/); arbitrum `0x1ef5e2...21fa39`; arbitrum `0x266d46...b5074f` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0x397aa0...51afa0`](./contracts/ethereum-1/0x397aa01343b89f18934979824c3ad227f251afa0/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | arbitrum | 2 deployments: arbitrum [`0x29828f...6f0444`](./contracts/arbitrum-42161/0x29828f442c98aaa71a853594fec7c0c3806f0444/); arbitrum `0xfda441...2724e4` | ⚠️ Unaudited |
-| HyperliquidExtension | adapter | hyperliquid | 2 deployments: hyperliquid [`0x4bb133...61b259`](./contracts/hyperliquid-999/0x4bb13347ce7cbf8884adb137aeda0355ef61b259/); hyperliquid `0xf4d923...e37949` | ⚠️ Unaudited |
-| IDOVest | operational_periphery | ethereum | 2 deployments: ethereum [`0x0d00da...5a5005`](./contracts/ethereum-1/0x0d00da54763ffc566bc643ee527a076f625a5005/); ethereum `0x9fef5b...c9a334` | ⚠️ Unaudited |
-| LRTConfig | governance | ethereum | 3 deployments: ethereum [`0x4e3e3d...7f96e0`](./contracts/ethereum-1/0x4e3e3d069a36f596e4538276fed18ad7b87f96e0/); ethereum `0xbf684d...7f2108`; ethereum `0xdabb6e...ae274e` | ⚠️ Unaudited |
-| LRTOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x0d7fd2...707fac`](./contracts/ethereum-1/0x0d7fd234d543a04cadeda3fc58df524656707fac/); ethereum `0xfc09f3...9ff778` | ⚠️ Unaudited |
-| LRTProxy | proxy | ethereum | 6 deployments: ethereum [`0x01e97a...a91f70`](./contracts/ethereum-1/0x01e97ae62edf041fea7a466778ce2803dea91f70/); ethereum `0x542744...7dc4e9`; ethereum `0x59a2d1...32fde2`; ethereum `0xacdafc...60c039`; ethereum `0xd72b94...94243a`; ethereum `0xeb628b...3a48a0` | ⚠️ Unaudited |
-| LRTWithdrawalManager | operational_periphery | ethereum | 3 deployments: ethereum [`0x3c949d...340c85`](./contracts/ethereum-1/0x3c949d3f1c6d603e063d66b7e8da203716340c85/); ethereum `0x41e433...897372`; ethereum `0x9a6dce...13d6b1` | ⚠️ Unaudited |
-| MerkleDistributorV2 | operational_periphery | arbitrum | 11 deployments: ethereum `0x5be392...254886`; sonic `0x4abc7c...6eadd2`; hyperliquid `0xbda88a...f6035b`; arbitrum [`0x097b76...4f9bb5`](./contracts/arbitrum-42161/0x097b765a94847d861defa072997f0d1ea74f9bb5/); arbitrum `0x2e1ac6...95968f`; arbitrum `0x6e3a28...a7c650`; arbitrum `0x9e2c5a...5d1ba1`; arbitrum `0xdcd16f...5d8b01`; arbitrum `0xff6697...2da328`; berachain `0x0cf4a2...a5997b`; berachain `0x672618...a73de9` | ⚠️ Unaudited |
-| MEthPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x5873f8...705d5c`](./contracts/ethereum-1/0x5873f82b241996f66dfdc6d64fe7d31066705d5c/); ethereum `0xc1554d...0cb6a7` | ⚠️ Unaudited |
-| OneETHPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x097b76...4f9bb5`](./contracts/ethereum-1/0x097b765a94847d861defa072997f0d1ea74f9bb5/); ethereum `0x9e2c5a...5d1ba1` | ⚠️ Unaudited |
-| OperatorDepositPool | core_logic | ethereum | 3 deployments: ethereum [`0x4c871d...4bf385`](./contracts/ethereum-1/0x4c871d28274fd5ef270fa89074f6fcd4854bf385/); ethereum `0x69c964...080c01`; ethereum `0xd5f247...dfc8d3` | ⚠️ Unaudited |
-| OptimismMintableERC20 | bridge_template | base | 6 deployments: optimism `0x76c37f...858481`; optimism `0xaf3a6f...dca2a0`; optimism `0xbc7b1f...6e66e1`; base [`0x010cd9...80a50a`](./contracts/base-8453/0x010cd9b9be7e416e07793dc6ce2f45868a80a50a/); base `0xa99f6e...9eeb3e`; base `0xc6e669...f239f0` | ⚠️ Unaudited |
-| OUpgradeable | proxy | hyperliquid | 2 deployments: hyperliquid [`0xad11a8...b35afa`](./contracts/hyperliquid-999/0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa/); hyperliquid `0xcd9a74...5aa7c8` | ⚠️ Unaudited |
-| PendleBoosterMainchain | core_logic | ethereum | [`0x4d32c8...0c26bf`](./contracts/ethereum-1/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
-| PendleBoosterSidechain | core_logic | optimism | 9 deployments: optimism [`0x18c616...e2b356`](./contracts/optimism-10/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/); bsc `0x4d32c8...0c26bf`; sonic `0x920873...56a3b8`; hyperliquid `0xad2995...53421c`; mantle `0x920873...56a3b8`; base `0x2583a2...b4821d`; plasma `0xd6ecfd...4fd54f`; arbitrum `0x4d32c8...0c26bf`; berachain [`0x18c616...e2b356`](./contracts/berachain-80094/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/) | ⚠️ Unaudited |
-| PendleCampaigns | core_logic | arbitrum | 3 deployments: optimism `0x576ab2...2f748d`; optimism `0xb3ad8c...32fbb8`; arbitrum [`0x4c960b...5362ef`](./contracts/arbitrum-42161/0x4c960b0dc60873d7f01bc393ff2d5443285362ef/) | ⚠️ Unaudited |
-| PendleDepositor | core_logic | ethereum | [`0x0140de...91d3bc`](./contracts/ethereum-1/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/) | ⚠️ Unaudited |
-| PendleProxyMainchain | core_logic | ethereum | [`0x646279...f1e6e3`](./contracts/ethereum-1/0x64627901dadb46ed7f275fd4fc87d086cff1e6e3/) | ⚠️ Unaudited |
-| RewardDistributor | operational_periphery | arbitrum | 14 deployments: ethereum `0x308d2e...0f4d71`; ethereum `0x64605d...55d14e`; ethereum `0x686fed...faafbe`; ethereum `0x696aa3...898239`; ethereum `0x6f6163...6d8ca8`; ethereum `0xd308ab...223fd1`; arbitrum [`0x273e61...06c399`](./contracts/arbitrum-42161/0x273e6197d4e0c1b3d8bf73615d0b88834006c399/); arbitrum `0x35e523...1f2d2c`; arbitrum `0x4abc7c...6eadd2`; arbitrum `0x696aa3...898239`; arbitrum `0x708544...c1ef49`; arbitrum `0x7b1210...8f40ca`; arbitrum `0x87707d...e88046`; arbitrum `0x919cf6...4187c5` | ⚠️ Unaudited |
-| SfrxETHPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x890ce2...b19946`](./contracts/ethereum-1/0x890ce2d161111be193b3a08bc50c8b0dd1b19946/); ethereum `0xf306bd...e7d4e2` | ⚠️ Unaudited |
-| SmartConvertorArbi | adapter | arbitrum | 3 deployments: arbitrum [`0x59fb35...29e295`](./contracts/arbitrum-42161/0x59fb350446ba1adb733713b0695cbb19a629e295/); arbitrum `0x6a82a1...896c60`; arbitrum `0xd72b94...94243a` | ⚠️ Unaudited |
-| StakingPool | core_logic | ethereum | 7 deployments: ethereum [`0x003fe3...be2aeb`](./contracts/ethereum-1/0x003fe3f1e8ca7d620e8d26bb6076e4d93bbe2aeb/); ethereum `0x30a7bc...e02d24`; ethereum `0x40bf7b...8d2adb`; ethereum `0x42ac72...f5a2c9`; ethereum `0x5df9a6...77b381`; ethereum `0x735aad...07b573`; ethereum `0xd5d87a...429aae` | ⚠️ Unaudited |
-| StakingPoolManager | core_logic | ethereum | 9 deployments: ethereum [`0x014e82...321f5d`](./contracts/ethereum-1/0x014e8248d3b681d4ed703de60885052ff4321f5d/); ethereum `0x473e84...8a713b`; ethereum `0x50c6f7...da5e97`; ethereum `0x694597...ab77df`; ethereum `0x73d705...1f57ac`; ethereum `0x8505b3...ac6b64`; ethereum `0x937682...41a67b`; ethereum `0xbf6871...8b372c`; ethereum `0xe0d775...959452` | ⚠️ Unaudited |
-| SwEthPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x0c873e...ba7f9f`](./contracts/ethereum-1/0x0c873efcce540b323aa194d63423581929ba7f9f/); ethereum `0x698565...fd800b` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | hyperliquid | 4 deployments: hyperliquid [`0xaf368c...bcbebf`](./contracts/hyperliquid-999/0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf/); hyperliquid `0xd94926...620cb4`; hyperliquid `0xe1ad84...93681e`; hyperliquid `0xe9aba8...0f7de7` | ⚠️ Unaudited |
-| TimelockController | governance | arbitrum | 2 deployments: ethereum `0xe2a634...c11d03`; arbitrum [`0x5c249a...e21886`](./contracts/arbitrum-42161/0x5c249a5f396638253470c4eae7bc5092dde21886/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | plasma | 19 deployments: ethereum `0x28ab7b...ecd7bf`; ethereum `0x6f2ff0...d5fd09`; bsc `0x86a201...a818c5`; bsc `0xc00371...9ef9dc`; base `0x0cf6ab...80e139`; base `0x96c4a4...19ad8e`; plasma [`0x0140de...91d3bc`](./contracts/plasma-9745/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); plasma `0x22fc5a...ce4455`; plasma `0x2350ea...709913`; plasma `0x357f55...25e849`; plasma `0x4f1cdf...3d3452`; plasma `0x500d5e...84d3d6`; plasma `0x52f0bb...789ca5`; plasma `0x5e73e7...ea4531`; plasma `0x7700eb...ed33b1`; plasma `0x9cb59c...cc7353`; plasma `0xa6ec3c...9f05c3`; plasma `0xfe80d6...740b2b`; berachain `0x187520...84b0ab` | ⚠️ Unaudited |
-| UpgradeableBeacon | registry | hyperliquid | 43 deployments: ethereum `0x07dc38...83de3c`; ethereum `0x0aab38...d6baab`; ethereum `0x358def...e8b6d8`; ethereum `0x60f3ca...cf27d7`; ethereum `0x779125...fa3c80`; ethereum `0x96f906...9e2498`; ethereum `0xca5d2c...c60968`; ethereum `0xccf949...5dc593`; ethereum `0xfcddfb...c7d1ec`; optimism `0x07dc38...83de3c`; optimism `0x666136...64f340`; optimism `0xf303f7...7c812b`; bsc `0x6f6163...6d8ca8`; bsc `0xbdd61e...0af179`; bsc `0xca93b4...a3b91b`; bsc `0xd804ab...9087ed`; sonic `0x187520...84b0ab`; sonic `0x672618...a73de9`; sonic `0xd8d51c...aae903`; sonic `0xf7498d...052981`; hyperliquid [`0x00807f...3966f5`](./contracts/hyperliquid-999/0x00807f12343a039acce6c9446696c818b53966f5/); hyperliquid `0x183b30...b75e78`; hyperliquid `0x2386f0...a56cdf`; hyperliquid `0x245f1d...37a960`; hyperliquid `0x26ae16...186f5c`; hyperliquid `0x55f140...0433a8`; hyperliquid `0xb0d718...78eb7a`; hyperliquid `0xf2d038...f7ca80`; mantle `0xa2cb78...e1ea19`; mantle `0xd8d51c...aae903`; mantle `0xf7498d...052981`; base `0x26ae16...186f5c`; base `0x950904...df354e`; base `0xf7498d...052981`; arbitrum `0x421c2c...c47ff0`; arbitrum `0x43a5bf...bd8c5f`; arbitrum `0x4b4f09...769db8`; arbitrum `0xd1705b...aeba15`; berachain `0x3a4db3...10d4b3`; berachain `0x55f140...0433a8`; berachain `0xa6ec3c...9f05c3`; berachain `0xb213f2...1247b5`; berachain `0xc3aa06...b451db` | ⚠️ Unaudited |
-| VestedEscrow | operational_periphery | ethereum | 10 deployments: ethereum [`0x0e9ff1...cbc965`](./contracts/ethereum-1/0x0e9ff124daa147c2744f8a6f64978e4052cbc965/); ethereum `0x370d08...0ef7aa`; ethereum `0xc72d63...5976ea`; ethereum `0xcb2dc3...f66ea4`; ethereum `0xfb2b52...19167f`; arbitrum `0x1e8248...eedf5e`; arbitrum `0x299c64...c748af`; arbitrum `0x6f6163...6d8ca8`; arbitrum `0x7aecd3...b17be9`; arbitrum `0xc3aa06...b451db` | ⚠️ Unaudited |
-| VestedEscrowFactory | operational_periphery | ethereum | 4 deployments: ethereum [`0x44d051...b714a9`](./contracts/ethereum-1/0x44d051a51ebb561149983fefb929f36790b714a9/); ethereum `0x666136...64f340`; arbitrum `0x54d715...eb13ec`; arbitrum `0x74138a...8d7ba8` | ⚠️ Unaudited |
-| VotingEscrowPendleMainchain | operational_periphery | ethereum | [`0x4f30a9...170210`](./contracts/ethereum-1/0x4f30a9d41b80ecc5b94306ab4364951ae3170210/) | ⚠️ Unaudited |
-| WBEthPriceOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x860c99...15da4e`](./contracts/ethereum-1/0x860c996d0de4919773ba9f04f1e1de5c0615da4e/); ethereum `0xa53736...1c94d9` | ⚠️ Unaudited |
-| XEPendleVester | operational_periphery | arbitrum | [`0x0f9492...ac45e6`](./contracts/arbitrum-42161/0x0f9492931cdd612ece9f7bbbe786490238ac45e6/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EPendleProxyOFT | core_logic | ethereum | n/a | [`0x6ae382...45c577`](./contracts/ethereum-1/0x6ae382814e24b6ddf588901c597f26a9e945c577/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | unit-25239 (3 proxies) | 3 deployments: arbitrum [`0x0c880f...a8c9e8`](./contracts/arbitrum-42161/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8/); arbitrum `0xbfbcfe...bbad9c`; arbitrum `0xd48482...242ac3` | ⚠️ Unaudited |
+| WOFT | token | berachain | n/a | 3 deployments: berachain [`0x88bb2b...289032`](./contracts/berachain-80094/0x88bb2bf040fa5bf2bd3b79ff9dfa035ed1289032/); berachain `0xf9ee98...7e2037`; berachain `0xff9c59...88aef6` | ⚠️ Unaudited |
+| PendleOFT | token | plasma | n/a | [`0x17bac5...831f24`](./contracts/plasma-9745/0x17bac5f906c9a0282ac06a59958d85796c831f24/) | ⚠️ Unaudited |
+| MintedERC20 | token | sonic | unit-25160 (3 proxies) | 3 deployments: sonic [`0x48540d...6fc335`](./contracts/sonic-146/0x48540d1140331277b9157a096e40e6f5506fc335/); sonic `0x9cacb5...7e8c6b`; sonic `0xf1ef7d...71a74b` | ⚠️ Unaudited |
+| TokenImplementation | token | bsc | unit-25144 (2 proxies) | 2 deployments: bsc [`0x374ca3...468609`](./contracts/bsc-56/0x374ca32fd7934c5d43240e1e73fa9b2283468609/); bsc `0x5fec85...5bd6bc` | ⚠️ Unaudited |
+| L2StandardERC20 | token | mantle | n/a | 2 deployments: mantle [`0x3e7ef8...276747`](./contracts/mantle-5000/0x3e7ef8f50246f725885102e8238cbba33f276747/); mantle `0x9e1028...6840e0` | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | bsc | unit-25146 | [`0x646279...f1e6e3`](./contracts/bsc-56/0x64627901dadb46ed7f275fd4fc87d086cff1e6e3/) | ⚠️ Unaudited |
+| EQBOFT | token | hyperliquid | n/a | 3 deployments: hyperliquid [`0x3ce842...ad4e50`](./contracts/hyperliquid-999/0x3ce8426dc0b90a36f0e20d7c2acaaf4578ad4e50/); hyperliquid `0x73e247...4cac8c`; hyperliquid `0xb4484a...2cefd1` | ⚠️ Unaudited |
+| VaultEPendleArbi | core_logic | arbitrum | unit-25251 | [`0x372277...b8319f`](./contracts/arbitrum-42161/0x37227785a1f4545ed914690e395e4cfe96b8319f/) | ⚠️ Unaudited |
+| EPendleOFT | token | bsc | n/a | 8 deployments: optimism `0x8a5a43...bbd36c`; bsc [`0x06fd8e...534f37`](./contracts/bsc-56/0x06fd8e5dae63afcbfdf10604efca3143df534f37/); sonic `0x7700eb...ed33b1`; hyperliquid `0x6408d9...d16005`; hyperliquid `0xb2d167...4264c8`; mantle `0x7700eb...ed33b1`; base `0x2350ea...709913`; arbitrum `0x8c9b5b...0029f5` | ⚠️ Unaudited |
+| EpendleVault | core_logic | hyperliquid | unit-25179 | [`0x5e73e7...ea4531`](./contracts/hyperliquid-999/0x5e73e741b0b15e10789a30a91953794e44ea4531/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-25083 | [`0x397aa0...51afa0`](./contracts/ethereum-1/0x397aa01343b89f18934979824c3ad227f251afa0/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | arbitrum | unit-25248 (2 proxies) | 2 deployments: arbitrum [`0x29828f...6f0444`](./contracts/arbitrum-42161/0x29828f442c98aaa71a853594fec7c0c3806f0444/); arbitrum `0xfda441...2724e4` | ⚠️ Unaudited |
+| MerkleDistributorV2 | operational_periphery | sonic | n/a | 3 deployments: ethereum `0x5be392...254886`; sonic [`0x4abc7c...6eadd2`](./contracts/sonic-146/0x4abc7c5f0445d847e1d4544dd15f049e996eadd2/); hyperliquid `0xbda88a...f6035b` | ⚠️ Unaudited |
+| OptimismMintableERC20 | bridge_template | base | n/a | 6 deployments: optimism `0x76c37f...858481`; optimism `0xaf3a6f...dca2a0`; optimism `0xbc7b1f...6e66e1`; base [`0x010cd9...80a50a`](./contracts/base-8453/0x010cd9b9be7e416e07793dc6ce2f45868a80a50a/); base `0xa99f6e...9eeb3e`; base `0xc6e669...f239f0` | ⚠️ Unaudited |
+| PendleBoosterMainchain | core_logic | ethereum | unit-25087 | [`0x4d32c8...0c26bf`](./contracts/ethereum-1/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | optimism | unit-25121 | [`0x18c616...e2b356`](./contracts/optimism-10/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | bsc | unit-25145 | [`0x4d32c8...0c26bf`](./contracts/bsc-56/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | sonic | unit-25165 | [`0x920873...56a3b8`](./contracts/sonic-146/0x920873e5b302a619c54c908adfb77a1c4256a3b8/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | hyperliquid | unit-25182 | [`0xad2995...53421c`](./contracts/hyperliquid-999/0xad29951cda3dcd0e570e65a6ee34aa455c53421c/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | mantle | unit-25199 | [`0x920873...56a3b8`](./contracts/mantle-5000/0x920873e5b302a619c54c908adfb77a1c4256a3b8/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | base | unit-25208 | [`0x2583a2...b4821d`](./contracts/base-8453/0x2583a2538272f31e9a15dd12a432b8c96ab4821d/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | plasma | unit-25232 | [`0xd6ecfd...4fd54f`](./contracts/plasma-9745/0xd6ecfd0d5f1dfd3ad30f267a3a29b3e1bc4fd54f/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | arbitrum | unit-25255 | [`0x4d32c8...0c26bf`](./contracts/arbitrum-42161/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
+| PendleBoosterSidechain | core_logic | berachain | unit-25278 | [`0x18c616...e2b356`](./contracts/berachain-80094/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/) | ⚠️ Unaudited |
+| PendleDepositor | core_logic | ethereum | unit-25065 | [`0x0140de...91d3bc`](./contracts/ethereum-1/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/) | ⚠️ Unaudited |
+| PendleProxyMainchain | core_logic | ethereum | unit-25093 | [`0x646279...f1e6e3`](./contracts/ethereum-1/0x64627901dadb46ed7f275fd4fc87d086cff1e6e3/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | optimism | unit-25125 | [`0x4d32c8...0c26bf`](./contracts/optimism-10/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | sonic | unit-25159 | [`0x479603...9e218d`](./contracts/sonic-146/0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | hyperliquid | unit-25172 | [`0x18c616...e2b356`](./contracts/hyperliquid-999/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | mantle | unit-25194 | [`0x479603...9e218d`](./contracts/mantle-5000/0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | base | unit-25214 | [`0x920873...56a3b8`](./contracts/base-8453/0x920873e5b302a619c54c908adfb77a1c4256a3b8/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | arbitrum | unit-25258 | [`0x646279...f1e6e3`](./contracts/arbitrum-42161/0x64627901dadb46ed7f275fd4fc87d086cff1e6e3/) | ⚠️ Unaudited |
+| PendleProxySidechain | core_logic | berachain | unit-25281 | [`0x4d32c8...0c26bf`](./contracts/berachain-80094/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
+| RestakeStrategy | core_logic | ethereum | n/a | [`0x16c72b...5ae2c6`](./contracts/ethereum-1/0x16c72bbc1dd1b5ba766c4d2d1466efa2845ae2c6/) | ⚠️ Unaudited |
+| StakingPoolManager | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x473e84...8a713b`](./contracts/ethereum-1/0x473e8407f2ad24148ac1fe18873b8a22aa8a713b/); ethereum `0x50c6f7...da5e97`; ethereum `0xbf6871...8b372c` | ⚠️ Unaudited |
+| TimelockController | governance | arbitrum | n/a | 2 deployments: ethereum `0xe2a634...c11d03`; arbitrum [`0x5c249a...e21886`](./contracts/arbitrum-42161/0x5c249a5f396638253470c4eae7bc5092dde21886/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | bsc | n/a | [`0xc00371...9ef9dc`](./contracts/bsc-56/0xc00371c83c0f943ab0deeff02288ac939a9ef9dc/) | ⚠️ Unaudited |
+| VotingEscrowPendleMainchain | operational_periphery | ethereum | n/a | [`0x4f30a9...170210`](./contracts/ethereum-1/0x4f30a9d41b80ecc5b94306ab4364951ae3170210/) | ⚠️ Unaudited |
+| XEPendleVester | operational_periphery | arbitrum | unit-25240 | [`0x0f9492...ac45e6`](./contracts/arbitrum-42161/0x0f9492931cdd612ece9f7bbbe786490238ac45e6/) | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (6)
+### ✅ Verified by Bytecode + Audited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EqbExternalToken | token | ethereum | 19 deployments: ethereum [`0x22fc5a...ce4455`](./contracts/ethereum-1/0x22fc5a29bd3d6cce19a06f844019fd506fce4455/); ethereum `0x71e0ce...401ebf`; optimism `0x507fdb...466ced`; optimism `0x86a201...a818c5`; bsc `0x898ca9...3602b3`; bsc `0x8a5a43...bbd36c`; sonic `0x5e73e7...ea4531`; sonic `0x6ee066...01b923`; hyperliquid `0x2350ea...709913`; hyperliquid `0x741620...c4fecc`; mantle `0x5e73e7...ea4531`; mantle `0x6ee066...01b923`; base `0x741620...c4fecc`; base `0x7700eb...ed33b1`; plasma `0xd8d51c...aae903`; arbitrum `0x3eabe1...114600`; arbitrum `0xddf45d...a15f2b`; berachain `0x6ee066...01b923`; berachain `0x7700eb...ed33b1` | ✅ Audited (bytecode match) |
-| EqbConfig | governance | bsc | 26 deployments: ethereum `0x23e944...08ad42`; ethereum `0x24d9b8...eeaa27`; ethereum `0x6109d4...319aea`; optimism `0x466732...49c918`; optimism `0x92c26e...825299`; optimism `0xa48769...d7d023`; optimism `0xcaed9f...b558d2`; bsc [`0x172cdd...da9b4f`](./contracts/bsc-56/0x172cdd024403f7cb7168db98df8ddbfe53da9b4f/); bsc `0x324cd3...ccaea6`; bsc `0xe343ed...31b454`; sonic `0x2350ea...709913`; sonic `0xb2d167...4264c8`; hyperliquid `0xa6ec3c...9f05c3`; hyperliquid `0xd8d51c...aae903`; mantle `0x2350ea...709913`; mantle `0x28f35f...9f7bd2`; mantle `0xb2d167...4264c8`; base `0x324cd3...ccaea6`; base `0x500d5e...84d3d6`; base `0xd8d51c...aae903`; plasma `0x26ae16...186f5c`; arbitrum `0x75759a...23e939`; arbitrum `0x941acd...727e0a`; arbitrum `0xef7382...44520b`; berachain `0x500d5e...84d3d6`; berachain `0xb2d167...4264c8` | ✅ Audited (bytecode match) |
-| EqbMinterSidechain | operational_periphery | hyperliquid | 18 deployments: optimism `0x09bae4...c8e94d`; optimism `0x52f0bb...789ca5`; bsc `0x96c4a4...19ad8e`; bsc `0xd6ecfd...4fd54f`; sonic `0x09bae4...c8e94d`; sonic `0xd6ecfd...4fd54f`; hyperliquid [`0x0140de...91d3bc`](./contracts/hyperliquid-999/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); hyperliquid `0x660e0d...cc9fa9`; mantle `0x09bae4...c8e94d`; mantle `0xd6ecfd...4fd54f`; base `0x52f0bb...789ca5`; base `0x5a27ac...dbf821`; base `0x660e0d...cc9fa9`; plasma `0x70f619...7e72b9`; arbitrum `0x09bae4...c8e94d`; arbitrum `0xd6ecfd...4fd54f`; berachain `0x09bae4...c8e94d`; berachain `0x52f0bb...789ca5` | ✅ Audited (bytecode match) |
-| EqbMsgReceiveEndpoint | operational_periphery | base | 28 deployments: ethereum `0x2583a2...b4821d`; ethereum `0x879382...1e942b`; ethereum `0xad2995...53421c`; ethereum `0xc0089c...8640df`; ethereum `0xf10ae0...9d508f`; optimism `0x0cf6ab...80e139`; optimism `0xfe67c2...5ec9a9`; optimism `0xfe80d6...740b2b`; bsc `0x2583a2...b4821d`; bsc `0xad2995...53421c`; bsc `0xcbad0c...2c4779`; sonic `0x0cf6ab...80e139`; sonic `0xad2995...53421c`; hyperliquid `0x96c4a4...19ad8e`; hyperliquid `0xd6ecfd...4fd54f`; mantle `0x0cf6ab...80e139`; mantle `0xa48769...d7d023`; mantle `0xad2995...53421c`; base [`0x00807f...3966f5`](./contracts/base-8453/0x00807f12343a039acce6c9446696c818b53966f5/); base `0x245f1d...37a960`; base `0xb3ad8c...32fbb8`; base `0xfe80d6...740b2b`; plasma `0x660e0d...cc9fa9`; arbitrum `0x2583a2...b4821d`; arbitrum `0xad2995...53421c`; arbitrum `0xd2eb8d...2f5fd2`; berachain `0x0cf6ab...80e139`; berachain `0xfe80d6...740b2b` | ✅ Audited (bytecode match) |
-| EqbZap | adapter | ethereum | 27 deployments: ethereum [`0x02c033...d981e4`](./contracts/ethereum-1/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); ethereum `0x4f1cdf...3d3452`; ethereum `0x5ef259...2fd1cc`; ethereum `0x63b414...3f2d73`; ethereum `0xa7e713...0b4c1c`; optimism `0x357f55...25e849`; optimism `0x41f5e9...45b8ed`; optimism `0x70f619...7e72b9`; bsc `0x03e2bc...634513`; bsc `0x22fc5a...ce4455`; bsc `0x71e0ce...401ebf`; bsc `0xcaed9f...b558d2`; sonic `0x22fc5a...ce4455`; sonic `0x70f619...7e72b9`; hyperliquid `0xc7517f...421e32`; hyperliquid `0xd8967b...73ec27`; mantle `0x22fc5a...ce4455`; mantle `0x70f619...7e72b9`; base `0x357f55...25e849`; base `0xc7517f...421e32`; plasma `0x9f1453...ca341a`; arbitrum `0x357f55...25e849`; arbitrum `0x39f478...f6993d`; arbitrum `0xc7517f...421e32`; berachain `0x357f55...25e849`; berachain `0x70f619...7e72b9`; berachain `0xf8aa1d...920332` | ✅ Audited (bytecode match) |
-| VlEqb | token | bsc | 19 deployments: ethereum `0xc7517f...421e32`; ethereum `0xd8967b...73ec27`; optimism `0x22fc5a...ce4455`; optimism `0x71e0ce...401ebf`; bsc [`0x0140de...91d3bc`](./contracts/bsc-56/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); bsc `0x660e0d...cc9fa9`; sonic [`0x0140de...91d3bc`](./contracts/sonic-146/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); sonic `0x71e0ce...401ebf`; hyperliquid `0x357f55...25e849`; hyperliquid `0x70f619...7e72b9`; mantle [`0x0140de...91d3bc`](./contracts/mantle-5000/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); mantle `0x71e0ce...401ebf`; base `0x22fc5a...ce4455`; base `0x70f619...7e72b9`; plasma `0x02c033...d981e4`; arbitrum `0x22fc5a...ce4455`; arbitrum `0x70f619...7e72b9`; berachain `0x22fc5a...ce4455`; berachain `0x71e0ce...401ebf` | ✅ Audited (bytecode match) |
+- None
 
-### ⚠️ Verified by Bytecode + Unaudited (9)
+### ⚠️ Verified by Bytecode + Unaudited (5)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BaseRewardPoolV2 | unknown | plasma | 15 deployments: ethereum `0x5c034a...cf608d`; ethereum `0xc31d74...779741`; ethereum `0xfda062...446711`; optimism `0x44d051...b714a9`; bsc `0xbc292e...6ebaca`; bsc `0xd308ab...223fd1`; sonic `0xa6ec3c...9f05c3`; hyperliquid `0x9cb59c...cc7353`; mantle `0xa6ec3c...9f05c3`; base `0x55f140...0433a8`; plasma [`0x00807f...3966f5`](./contracts/plasma-9745/0x00807f12343a039acce6c9446696c818b53966f5/); arbitrum `0x02414e...9d05bf`; arbitrum `0x91b4ce...d0319f`; arbitrum `0xc602bd...d837d1`; berachain `0xf7498d...052981` | ⚠️ Unaudited (bytecode match) |
-| BaseRewardPoolV2_1 | core_logic | hyperliquid | 11 deployments: ethereum `0x311ee0...c13c1e`; optimism `0xd8a365...2f39b2`; bsc `0x879382...1e942b`; bsc `0x972eb6...4b0bee`; sonic `0x1f4417...a9217b`; hyperliquid [`0x1679fe...46723b`](./contracts/hyperliquid-999/0x1679fe95b11959c694af8627e5360267e146723b/); mantle `0xb213f2...1247b5`; base `0x9be393...68b88c`; plasma `0x183b30...b75e78`; arbitrum `0x387aa2...100f6c`; berachain `0x811d98...6e3e8a` | ⚠️ Unaudited (bytecode match) |
-| DepositTokenV2 | token | bsc | 12 deployments: ethereum `0xabe3b0...4f4f3c`; optimism `0x370d08...0ef7aa`; optimism `0x642c9d...e3ec81`; optimism `0xcb2dc3...f66ea4`; bsc [`0x299c64...c748af`](./contracts/bsc-56/0x299c643a5d84c227705efa2eea00c41b6fc748af/); sonic `0x500d5e...84d3d6`; hyperliquid `0xf7498d...052981`; mantle `0x500d5e...84d3d6`; base `0xa6ec3c...9f05c3`; plasma `0xb0d718...78eb7a`; arbitrum `0x7368cb...e36ac9`; berachain `0xd8d51c...aae903` | ⚠️ Unaudited (bytecode match) |
-| EqbMsgSendEndpoint | unknown | plasma | 28 deployments: ethereum `0x18c616...e2b356`; ethereum `0x920873...56a3b8`; ethereum `0x950904...df354e`; ethereum `0xaa4ada...5c1204`; ethereum `0xd0739f...39421e`; optimism `0x2583a2...b4821d`; optimism `0xad2995...53421c`; optimism `0xb1a4bb...49a429`; bsc `0x18c616...e2b356`; bsc `0x920873...56a3b8`; bsc `0xb14f64...6e6453`; sonic `0x18c616...e2b356`; sonic `0x2583a2...b4821d`; hyperliquid `0x0cf6ab...80e139`; hyperliquid `0xfe80d6...740b2b`; mantle `0x18c616...e2b356`; mantle `0x2583a2...b4821d`; mantle `0x273e61...06c399`; base `0x576ab2...2f748d`; base `0x9cb59c...cc7353`; base `0xad2995...53421c`; base `0xb0d718...78eb7a`; plasma [`0x09bae4...c8e94d`](./contracts/plasma-9745/0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d/); arbitrum `0x18c616...e2b356`; arbitrum `0x8505b3...ac6b64`; arbitrum `0x920873...56a3b8`; berachain `0x2583a2...b4821d`; berachain `0xad2995...53421c` | ⚠️ Unaudited (bytecode match) |
-| ERC20MintBurn | token | hyperliquid | 19 deployments: optimism `0xc7517f...421e32`; optimism `0xd8967b...73ec27`; bsc `0x0dc8b9...5279ce`; bsc `0xa929e8...e06599`; sonic `0x357f55...25e849`; sonic `0xc7517f...421e32`; hyperliquid [`0x02c033...d981e4`](./contracts/hyperliquid-999/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); hyperliquid `0x4f1cdf...3d3452`; mantle `0x357f55...25e849`; mantle `0xc7517f...421e32`; base [`0x02c033...d981e4`](./contracts/base-8453/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); base `0xd8967b...73ec27`; plasma `0x6ee066...01b923`; arbitrum `0x03b611...0c83e8`; arbitrum `0x6cea12...63afb8`; arbitrum `0xbda88a...f6035b`; arbitrum `0xf2d038...f7ca80`; berachain `0xc7517f...421e32`; berachain `0xd8967b...73ec27` | ⚠️ Unaudited (bytecode match) |
-| MerkleDistributorFactory | operational_periphery | arbitrum | 11 deployments: ethereum `0x3f4329...c8eb62`; ethereum `0x56b26b...bb0a59`; ethereum `0x800c6c...db5f63`; sonic `0x950904...df354e`; sonic `0x9be393...68b88c`; hyperliquid `0x35fd17...ef2862`; hyperliquid `0x4ecf06...3ad188`; arbitrum [`0x2e4245...8264a5`](./contracts/arbitrum-42161/0x2e42452396a8f091703c0ed3c86ef4e3de8264a5/); arbitrum `0xce1533...c49ae3`; berachain `0x64239a...7ed2ac`; berachain `0xa2cb78...e1ea19` | ⚠️ Unaudited (bytecode match) |
-| ProxyAdmin | unknown | plasma | 16 deployments: ethereum `0xc12645...6e2fa5`; ethereum `0xd994fb...46b1da`; optimism `0x96a375...656e98`; sonic `0x646279...f1e6e3`; hyperliquid `0x6d2053...432c35`; hyperliquid `0x880f61...89167f`; hyperliquid `0x920873...56a3b8`; hyperliquid `0xb1eead...2b86c3`; hyperliquid `0xd8cf92...d6ff4d`; mantle `0x646279...f1e6e3`; base `0x4d32c8...0c26bf`; plasma [`0x0cf6ab...80e139`](./contracts/plasma-9745/0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139/); arbitrum `0x210c35...262c64`; arbitrum `0x24188b...1f0dbd`; arbitrum `0xd217be...91c8c3`; berachain `0x479603...9e218d` | ⚠️ Unaudited (bytecode match) |
-| RestakeStrategy | core_logic | ethereum | 8 deployments: ethereum [`0x02414e...9d05bf`](./contracts/ethereum-1/0x02414e51d06535fa85b738297a3947fd339d05bf/); ethereum `0x16c72b...5ae2c6`; ethereum `0x43a385...cbdbd2`; ethereum `0xa9aac1...2b510b`; ethereum `0xe4bf92...0ec1d1`; plasma `0x03b86b...c88e4e`; plasma `0x1679fe...46723b`; plasma `0x245f1d...37a960` | ⚠️ Unaudited (bytecode match) |
-| XEqbToken | token | hyperliquid | 19 deployments: ethereum `0x96c4a4...19ad8e`; ethereum `0xd6ecfd...4fd54f`; optimism `0x96c4a4...19ad8e`; optimism `0xd6ecfd...4fd54f`; bsc `0x0cf6ab...80e139`; bsc `0xfe80d6...740b2b`; sonic `0x96c4a4...19ad8e`; sonic `0xfe80d6...740b2b`; hyperliquid [`0x09bae4...c8e94d`](./contracts/hyperliquid-999/0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d/); hyperliquid `0x52f0bb...789ca5`; mantle `0x96c4a4...19ad8e`; mantle `0xfe80d6...740b2b`; base [`0x09bae4...c8e94d`](./contracts/base-8453/0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d/); base `0xd6ecfd...4fd54f`; plasma `0x71e0ce...401ebf`; arbitrum `0x96c4a4...19ad8e`; arbitrum `0xfe80d6...740b2b`; berachain `0x96c4a4...19ad8e`; berachain `0xd6ecfd...4fd54f` | ⚠️ Unaudited (bytecode match) |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BaseRewardPoolV2 | unknown | plasma | n/a | 2 deployments: hyperliquid `0x9cb59c...cc7353`; plasma [`0x00807f...3966f5`](./contracts/plasma-9745/0x00807f12343a039acce6c9446696c818b53966f5/) | ⚠️ Unaudited (bytecode match) |
+| BaseRewardPoolV2_1 | core_logic | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1679fe...46723b`](./contracts/hyperliquid-999/0x1679fe95b11959c694af8627e5360267e146723b/); plasma `0x183b30...b75e78` | ⚠️ Unaudited (bytecode match) |
+| DepositTokenV2 | unknown | plasma | n/a | 2 deployments: hyperliquid `0xf7498d...052981`; plasma [`0xb0d718...78eb7a`](./contracts/plasma-9745/0xb0d7182ba15ed02326590f033f72c393c978eb7a/) | ⚠️ Unaudited (bytecode match) |
+| ProxyAdmin | unknown | plasma | n/a | 6 deployments: sonic `0x646279...f1e6e3`; hyperliquid `0x920873...56a3b8`; mantle `0x646279...f1e6e3`; base `0x4d32c8...0c26bf`; plasma [`0x0cf6ab...80e139`](./contracts/plasma-9745/0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139/); berachain `0x479603...9e218d` | ⚠️ Unaudited (bytecode match) |
+| UpgradeableBeacon | registry | hyperliquid | n/a | 15 deployments: ethereum `0xca5d2c...c60968`; ethereum `0xccf949...5dc593`; bsc `0xd804ab...9087ed`; sonic `0x187520...84b0ab`; hyperliquid [`0x00807f...3966f5`](./contracts/hyperliquid-999/0x00807f12343a039acce6c9446696c818b53966f5/); hyperliquid `0x183b30...b75e78`; hyperliquid `0x2386f0...a56cdf`; hyperliquid `0x245f1d...37a960`; hyperliquid `0x26ae16...186f5c`; hyperliquid `0x55f140...0433a8`; hyperliquid `0xb0d718...78eb7a`; hyperliquid `0xf2d038...f7ca80`; plasma `0x03b86b...c88e4e`; plasma `0x1679fe...46723b`; plasma `0x245f1d...37a960` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (34)
+### ❓ Unverified (16)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x0b4275...d5b9e5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1e511a...f0f6e4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1eb13a...78ae88` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x29e6d8...147216` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4ced3f...e80c3e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x53d68b...8aa7fd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x740775...06249e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x781b75...118d25` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8cdaff...ccd6b3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb3d88f...7fb683` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb5fd13...a9e2c8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xbf46e3...ceed9b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd4aa08...9080de` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe5fa7e...bdfeed` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x13e029...1beb94` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x3521b7...1eb705` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x893bb3...219cb6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xab5542...a106bf` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | `0xe0e1c3...83f343` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x017778...29cd7b` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x36ff28...c3d32f` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x647316...482ee9` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x741620...c4fecc` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x77b777...d65973` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0x8d9467...a50ba7` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0xad2995...53421c` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0xb2d167...4264c8` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0xd51d25...86aef1` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | `0xf7498d...052981` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa1b1af...d04e55` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xcd76ca...728567` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0x4abc7c...6eadd2` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0x950904...df354e` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0xce740f...e7b76a` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x1e511a...f0f6e4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x740775...06249e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe5fa7e...bdfeed` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3521b7...1eb705` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x893bb3...219cb6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xab5542...a106bf` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xe0e1c3...83f343` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x017778...29cd7b` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x36ff28...c3d32f` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x647316...482ee9` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x77b777...d65973` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x8d9467...a50ba7` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xd51d25...86aef1` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xf7498d...052981` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa1b1af...d04e55` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcd76ca...728567` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FQKP8F3G6lbidKTu8nkEc%2FEquilibria_Staked_LP_Audit_Report_by_WatchPug-rev1.pdf) | WatchPug | Audit | 2025-06 | aging | Direct | contract_name | 59 | high |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FQKP8F3G6lbidKTu8nkEc%2FEquilibria_Staked_LP_Audit_Report_by_WatchPug-rev1.pdf) | WatchPug | Audit | 2025-06 | aging | Direct | contract_name | 3 | high |
 | [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2Fb8B3TscrPCJ1YmEeCb4Q%2FEquilibria_Continuous_Audit_May_21%2C_25_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FmmHtThc39pihExxQM3Jx%2FEquilibria_%232__Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2024-11 | aging | Direct | contract_name | 19 | high |
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FT7caQbKvLq6KPy2IRcuY%2FEquilibria_ePENDLE_Auto_Compounder_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2023-10 | stale | Direct | contract_name | 121 | high |
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2F5r1RtgYBP522L4FGQ3lx%2FEquilibria_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2023-06 | stale | Direct | contract_name | 194 | high |
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FFHRXG7oZJB5z0Ir5Ybpa%2FPeckShield-Audit-Report-Equilibria-v1.0.pdf) | PeckShield | Audit | 2023-05 | stale | Direct | contract_name | 113 | high |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FmmHtThc39pihExxQM3Jx%2FEquilibria_%232__Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2024-11 | aging | Direct | contract_name | 8 | high |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FT7caQbKvLq6KPy2IRcuY%2FEquilibria_ePENDLE_Auto_Compounder_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2023-10 | stale | Direct | contract_name | 1 | high |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2F5r1RtgYBP522L4FGQ3lx%2FEquilibria_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2023-06 | stale | Direct | contract_name | 0 | n/a |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FFHRXG7oZJB5z0Ir5Ybpa%2FPeckShield-Audit-Report-Equilibria-v1.0.pdf) | PeckShield | Audit | 2023-05 | stale | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -216,49 +177,37 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x6ae382...45c577`](./contracts/ethereum-1/0x6ae382814e24b6ddf588901c597f26a9e945c577/) | EPendleProxyOFT | core_logic | $6,521,423.96 | Verified native implementation with $6,521,423.96 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0cf6ab...80e139`](./contracts/ethereum-1/0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139/) | EqbToken | token | $4,467,691.39 | Verified native implementation with $4,467,691.39 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x22a359...40fe5f`](./contracts/ethereum-1/0x22a3594b634704119385a942469146535d40fe5f/) | LRTDepositPool | core_logic | $2.47 | Verified native implementation with $2.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x3ce842...ad4e50`](./contracts/hyperliquid-999/0x3ce8426dc0b90a36f0e20d7c2acaaf4578ad4e50/) | EQBOFT | token | $0.45 | Verified native implementation with $0.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x02e666...5f25b6`](./contracts/arbitrum-42161/0x02e666f32979c973a0978d04a1c8fe33a35f25b6/) | ArbVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x1679fe...46723b`](./contracts/hyperliquid-999/0x1679fe95b11959c694af8627e5360267e146723b/) | BaseRewardPoolV2_1 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x299c64...c748af`](./contracts/bsc-56/0x299c643a5d84c227705efa2eea00c41b6fc748af/) | DepositTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0xb0d718...78eb7a`](./contracts/plasma-9745/0xb0d7182ba15ed02326590f033f72c393c978eb7a/) | DepositTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x06fd8e...534f37`](./contracts/bsc-56/0x06fd8e5dae63afcbfdf10604efca3143df534f37/) | EPendleOFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2cdcdc...9495c6`](./contracts/ethereum-1/0x2cdcdcf3d91c88d5d29d527d1b77e3b3ac9495c6/) | EqbInfo | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x02c033...d981e4`](./contracts/hyperliquid-999/0x02c033574b6ca02ddae8e0b4070d551149d981e4/) | ERC20MintBurn | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x31f17b...985f82`](./contracts/ethereum-1/0x31f17bb9476db4ad4825df13c42ace776c985f82/) | EthXPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0b6041...e31739`](./contracts/arbitrum-42161/0x0b60412431d5824532e3a89e41638724c6e31739/) | FairAuction | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0d00da...5a5005`](./contracts/ethereum-1/0x0d00da54763ffc566bc643ee527a076f625a5005/) | IDOVest | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4e3e3d...7f96e0`](./contracts/ethereum-1/0x4e3e3d069a36f596e4538276fed18ad7b87f96e0/) | LRTConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01e97a...a91f70`](./contracts/ethereum-1/0x01e97ae62edf041fea7a466778ce2803dea91f70/) | LRTProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3c949d...340c85`](./contracts/ethereum-1/0x3c949d3f1c6d603e063d66b7e8da203716340c85/) | LRTWithdrawalManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2e4245...8264a5`](./contracts/arbitrum-42161/0x2e42452396a8f091703c0ed3c86ef4e3de8264a5/) | MerkleDistributorFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x4abc7c...6eadd2`](./contracts/sonic-146/0x4abc7c5f0445d847e1d4544dd15f049e996eadd2/) | MerkleDistributorV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x010cd9...80a50a`](./contracts/base-8453/0x010cd9b9be7e416e07793dc6ce2f45868a80a50a/) | OptimismMintableERC20 | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x59fb35...29e295`](./contracts/arbitrum-42161/0x59fb350446ba1adb733713b0695cbb19a629e295/) | SmartConvertorArbi | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x003fe3...be2aeb`](./contracts/ethereum-1/0x003fe3f1e8ca7d620e8d26bb6076e4d93bbe2aeb/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x44d051...b714a9`](./contracts/ethereum-1/0x44d051a51ebb561149983fefb929f36790b714a9/) | VestedEscrowFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x860c99...15da4e`](./contracts/ethereum-1/0x860c996d0de4919773ba9f04f1e1de5c0615da4e/) | WBEthPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x09bae4...c8e94d`](./contracts/hyperliquid-999/0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d/) | XEqbToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16c72b...5ae2c6`](./contracts/ethereum-1/0x16c72bbc1dd1b5ba766c4d2d1466efa2845ae2c6/) | RestakeStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x473e84...8a713b`](./contracts/ethereum-1/0x473e8407f2ad24148ac1fe18873b8a22aa8a713b/) | StakingPoolManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 44 |
-| upstream | 4 |
-| standard_library | 16 |
-| needs_review | 55 |
+| native | 20 |
+| upstream | 3 |
+| standard_library | 23 |
+| needs_review | 28 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
+- Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=506
 
 Zero-match audit list:
 
 - [3550] Rendered PDF capture
+- [3553] Rendered PDF capture
+- [3554] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

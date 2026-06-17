@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "plasma-saving-vaults",
-  "generated_at": "2026-06-12T09:16:52.903Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
+  "generated_at": "2026-06-17T07:00:43.621Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "plasma-saving-vaults",
@@ -32,14 +32,14 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 15,
-    "unique_implementations": 6,
-    "total_deployments": 15,
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
@@ -70,10 +70,23 @@
   "topography": {
     "project_purpose": "Plasma Saving Vaults is an on-chain savings/yield vault product. Its live Savings Lending Vault is publicly described as using Veda vault infrastructure to deploy deposited assets into Aave for yield. BoringVault-style vault infrastructure may be part of the checked surface, but ATokenInstance receipt-token claims and TetherTokenOFTExtension adapter scope should be treated as unconfirmed unless supported by project documentation or source verification.",
     "relationship_narrative": "The BoringVault serves as the main asset management contract, while multiple TetherTokenOFTExtension adapters (deployed as proxies) enable cross-chain token transfers. The ATokenInstance proxy issues receipt tokens to users, linking deposits to yield accrual.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 15,
+    "live_contracts": 4,
+    "inactive_contracts": 0,
+    "singleton_contracts": 11,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 4,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 5,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "aave-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 3,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -86,6 +99,8 @@
       "chain_id": 9745,
       "chain_name": "plasma",
       "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BoringVault",
       "role": "core_logic",
       "origin_kind": "needs_review",
@@ -100,6 +115,8 @@
           "chain_id": 9745,
           "chain_name": "plasma",
           "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2646281.073605,
@@ -116,105 +133,9 @@
     {
       "chain_id": 9745,
       "chain_name": "plasma",
-      "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
-      "name": "ATokenInstance",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Plasma Saving Vaults",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
-      "impl_name": "ATokenInstance",
-      "deployments": [
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
-      "name": "OUpgradeable",
-      "role": "proxy",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752",
-      "impl_name": "OUpgradeable",
-      "deployments": [
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0xc00e2c0b38082c5b144aa86d0027360dc8ae65c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
       "address": "0x3224831b5f45c616f8accba907798c6236773772",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "needs_review",
@@ -229,6 +150,8 @@
           "chain_id": 9745,
           "chain_name": "plasma",
           "address": "0x3224831b5f45c616f8accba907798c6236773772",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -238,73 +161,8 @@
           "chain_id": 9745,
           "chain_name": "plasma",
           "address": "0x5be536efb28c8efbd2da6894996f5df88347d8b2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
-      "name": "TetherTokenOFTExtension",
-      "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Plasma Saving Vaults",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
-      "impl_name": "TetherTokenOFTExtension",
-      "deployments": [
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x4a5cd36c33d9f2986e5d39ff5b9918af547a6e0e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0xcab8f3ed8528655e0c2fad1c504c6cfeccf50b90",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -322,6 +180,8 @@
       "chain_id": 9745,
       "chain_name": "plasma",
       "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -336,6 +196,8 @@
           "chain_id": 9745,
           "chain_name": "plasma",
           "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -357,7 +219,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 6
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

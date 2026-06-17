@@ -4,31 +4,40 @@
 
 - Project: HELIX Finance (`helix-finance`)
 - Website: [https://helixfinance.io/](https://helixfinance.io/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T22:22:33.668Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
-- Chains: ethereum
-- Contract surface: 9 unique implementations (14 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:36.831Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $10,996,980.30
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Helix Finance is an institutional-grade RWAFi orchestration layer centered on Helix Hub, providing access to multi-strategy real-world-asset yield opportunities, omni-chain composability, attestations, and USHD/USHDx access. It connects on-chain investors to real-world asset yields using data and credit analytics while relying on off-chain RWA custody and related institutional infrastructure. The currently listed Ethereum contracts should be treated as a partial or legacy RWA lending/deal-management surface unless current Helix Hub and USHD/USHDx contract addresses are separately verified.
 
-### Architecture
+## Contract Surface Quality
 
-All contracts are part of a single product family deployed by the same deployer. The HelixFactory creates deal instances using implementations from HelixDealImplementationRepository, while HelixDealTokens handles tokenization, HelixUniqueIdentity manages KYC, and HelixConfig provides global settings.
+- Indexed contracts: 14; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 3 inactive, 11 singleton, 0 uninitialized.
+- Deployment units: 0/5 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 9
-- Raw deployments: 14
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,19 +55,9 @@ All contracts are part of a single product family deployed by the same deployer.
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| HelixAuthoriser | unknown | ethereum | [`0x3e3386...61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | ⚠️ Unaudited |
-| HelixConfig | governance | ethereum | 2 deployments: ethereum [`0x8c83f9...a3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/); ethereum `0xb7c0d0...8e0ba8` | ⚠️ Unaudited |
-| HelixDeal | unknown | ethereum | [`0xcef1ce...3e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | ⚠️ Unaudited |
-| HelixDealImplementationRepository | registry | ethereum | 2 deployments: ethereum [`0x4512ab...5df999`](./contracts/ethereum-1/0x4512abc6384431d107d264dc2c8cfe1c475df999/); ethereum `0xba665a...0e3e39` | ⚠️ Unaudited |
-| HelixDealTokens | token | ethereum | 2 deployments: ethereum [`0x1c2274...bab4dc`](./contracts/ethereum-1/0x1c227497dea66f59811db6ee3a3bcfe148bab4dc/); ethereum `0x9279a5...e1eed2` | ⚠️ Unaudited |
-| HelixFactory | registry | ethereum | 2 deployments: ethereum [`0x274515...a4cc36`](./contracts/ethereum-1/0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36/); ethereum `0x5ab7ab...d33632` | ⚠️ Unaudited |
-| HelixUniqueIdentity | unknown | ethereum | 2 deployments: ethereum [`0x67c3a8...79d740`](./contracts/ethereum-1/0x67c3a8ecd374b46d335105323f5888f70679d740/); ethereum `0x6b79b0...632315` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | [`0x7ce464...c64e3b`](./contracts/ethereum-1/0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | [`0x42012e...153b95`](./contracts/ethereum-1/0x42012e315c70af46585581803066243f95153b95/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,19 +87,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x3e3386...61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | HelixAuthoriser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8c83f9...a3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/) | HelixConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcef1ce...3e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | HelixDeal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 6 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

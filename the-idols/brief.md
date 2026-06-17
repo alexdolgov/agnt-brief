@@ -5,10 +5,10 @@
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-06-14T06:52:41.430Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Generated: 2026-06-17T07:00:57.656Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 20 unique implementations (23 raw deployments)
+- Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $4,487,977.67
 - On-chain TVL (included contracts): $85,360,320.48
 - TVL by chain: Ethereum $85,360,320.48
@@ -21,14 +21,22 @@ The Idols is an Ethereum NFT collection and membership community centered on 10,
 
 All contracts are deployed by the same address and form a single integrated system. VirtueToken serves as the reserve asset, IdolMain manages idol NFTs, IdolMarketplace enables trading, and VirtueEthRewards/RewardsCollector handle staking and reward distribution.
 
+## Contract Surface Quality
+
+- Indexed contracts: 23; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 15 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 17; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/16 (0.0%)
-- Verified + Unaudited implementations: 16
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 20
-- Raw deployments: 23
+- Unverified implementations: 0
+- Unique implementations: 8
+- Raw deployments: 8
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $85,360,320.48
@@ -46,26 +54,18 @@ All contracts are deployed by the same address and form a single integrated syst
 
 - None
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (8)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| VirtueToken | token | ethereum | [`0x9416ba...86b863`](./contracts/ethereum-1/0x9416ba76e88d873050a06e5956a3ebf10386b863/) | ⚠️ Unaudited |
-| EthClaimContract | unknown | ethereum | [`0x6e8886...69f19a`](./contracts/ethereum-1/0x6e88861a1ff98f713753b9506638c7c49269f19a/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0x82af9d...73f616`](./contracts/ethereum-1/0x82af9d2ea81810582657f6dc04b1d7d0d573f616/) | ⚠️ Unaudited |
-| IdolGoldlist | unknown | ethereum | [`0x6dc988...986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | ⚠️ Unaudited |
-| IdolMain | unknown | ethereum | [`0x439cac...d17094`](./contracts/ethereum-1/0x439cac149b935ae1d726569800972e1669d17094/) | ⚠️ Unaudited |
-| IdolMarketplace | unknown | ethereum | 4 deployments: ethereum [`0x0dd5a3...ea29e7`](./contracts/ethereum-1/0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7/); ethereum `0x4a0ced...b76652`; ethereum `0x4ce4f4...db3bbf`; ethereum `0x523fbd...2df5e6` | ⚠️ Unaudited |
-| IdolMintContract | unknown | ethereum | [`0x7b4b02...3cdc5e`](./contracts/ethereum-1/0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e/) | ⚠️ Unaudited |
-| Lido | unknown | ethereum | [`0xae7ab9...d7fe84`](./contracts/ethereum-1/0xae7ab96520de3a18e5e111b5eaab095312d7fe84/) | ⚠️ Unaudited |
-| MarketplaceRefundContract | unknown | ethereum | [`0x87d2ed...8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | ⚠️ Unaudited |
-| OfferingRefundContract | unknown | ethereum | [`0x2e94c0...78e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | ⚠️ Unaudited |
-| RewardsCollector | unknown | ethereum | [`0x7d624c...61256a`](./contracts/ethereum-1/0x7d624c34e475a2eca893d0c118527b6e2061256a/) | ⚠️ Unaudited |
-| VirtueClaimContract | unknown | ethereum | [`0x5a5e20...1cd6c4`](./contracts/ethereum-1/0x5a5e20e29d000762bf33e29c0a2091d78f1cd6c4/) | ⚠️ Unaudited |
-| VirtueEthRewards | unknown | ethereum | [`0xc73b93...9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | ⚠️ Unaudited |
-| VirtueZapperContract | adapter | ethereum | [`0x42455b...daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | ⚠️ Unaudited |
-| VirtuousHourAirdrop | operational_periphery | ethereum | [`0x5fc37a...263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0xdc2431...f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| VirtueToken | token | ethereum | n/a | [`0x9416ba...86b863`](./contracts/ethereum-1/0x9416ba76e88d873050a06e5956a3ebf10386b863/) | ⚠️ Unaudited |
+| IdolGoldlist | unknown | ethereum | n/a | [`0x6dc988...986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | ⚠️ Unaudited |
+| IdolMain | unknown | ethereum | n/a | [`0x439cac...d17094`](./contracts/ethereum-1/0x439cac149b935ae1d726569800972e1669d17094/) | ⚠️ Unaudited |
+| IdolMarketplace | unknown | ethereum | n/a | [`0x0dd5a3...ea29e7`](./contracts/ethereum-1/0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7/) | ⚠️ Unaudited |
+| Lido | unknown | ethereum | unit-32401 | [`0xae7ab9...d7fe84`](./contracts/ethereum-1/0xae7ab96520de3a18e5e111b5eaab095312d7fe84/) | ⚠️ Unaudited |
+| VirtueZapperContract | adapter | ethereum | n/a | [`0x42455b...daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | ⚠️ Unaudited |
+| VirtuousHourAirdrop | operational_periphery | ethereum | n/a | [`0x5fc37a...263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | [`0xdc2431...f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,16 +79,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x17d7e5...9b4eaa` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x734324...a7c677` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x815c5d...a7741e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd272d2...47be2c` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -102,16 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x9416ba...86b863`](./contracts/ethereum-1/0x9416ba76e88d873050a06e5956a3ebf10386b863/) | VirtueToken | token | $85,360,320.48 | Verified native implementation with $85,360,320.48 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6e8886...69f19a`](./contracts/ethereum-1/0x6e88861a1ff98f713753b9506638c7c49269f19a/) | EthClaimContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6dc988...986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | IdolGoldlist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x439cac...d17094`](./contracts/ethereum-1/0x439cac149b935ae1d726569800972e1669d17094/) | IdolMain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0dd5a3...ea29e7`](./contracts/ethereum-1/0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7/) | IdolMarketplace | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7b4b02...3cdc5e`](./contracts/ethereum-1/0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e/) | IdolMintContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x87d2ed...8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | MarketplaceRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2e94c0...78e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | OfferingRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7d624c...61256a`](./contracts/ethereum-1/0x7d624c34e475a2eca893d0c118527b6e2061256a/) | RewardsCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5a5e20...1cd6c4`](./contracts/ethereum-1/0x5a5e20e29d000762bf33e29c0a2091d78f1cd6c4/) | VirtueClaimContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc73b93...9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | VirtueEthRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x42455b...daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | VirtueZapperContract | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5fc37a...263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | VirtuousHourAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -119,9 +107,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 6 |
 | upstream | 2 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "polkastarter",
-  "generated_at": "2026-06-14T08:10:42.832Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-17T07:00:48.763Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "polkastarter",
     "tier": 0,
@@ -16,23 +16,23 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1621,
+    "days_since_peak": 1635,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 4,
-    "unique_implementations": 3,
-    "total_deployments": 4,
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
     "audited_contracts": 1,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 33.3,
+    "coverage_pct": 50,
     "total_audits": 3,
     "scoreable_audits": 1,
     "dl_tvl_usd": 2731722.0607000003,
@@ -61,10 +61,21 @@
   "topography": {
     "project_purpose": "Polkastarter is a curated crypto launchpad and IDO platform that connects blockchain projects with early backers for token launches and fundraising. The POLS token is used for access, staking/POLS Power, and related launchpad participation.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 4,
+    "live_contracts": 3,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -77,6 +88,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "PolkastarterToken",
       "role": "token",
       "origin_kind": "needs_review",
@@ -91,6 +104,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9606725.608491847,
@@ -107,38 +122,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
-      "name": "PolkastarterDistributionContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PolkastarterDistributionContract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc24a365a870821eb83fd216c9596edd89479d8d7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "PolsStake",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -153,6 +139,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc24a365a870821eb83fd216c9596edd89479d8d7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -162,6 +150,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xd558675a8c8e1fd45002010bac970b115163de3a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -250,7 +240,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 33.3,
+      "coverage_pct": 50,
       "latest_audit": "2021-06"
     }
   ],
@@ -259,7 +249,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 3
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {

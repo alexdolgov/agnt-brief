@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wanswap-dex",
-  "generated_at": "2026-06-11T04:03:39.050Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-17T07:00:42.652Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,9 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 1069651.89138,
-    "tvl_usd": 1069651.89138,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 936348.0264,
+    "tvl_usd": 936348.0264,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "WanSwap Dex is a Wanchain-based cross-chain AMM decentralized exchange that enables users to swap tokens and provide liquidity. Farming, staking, or non-Wanchain deployments should only be included when supported by current official WanSwap documentation or verified WanSwap deployments.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -67,27 +78,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Babylonian",
-        "FixedPoint",
-        "Math",
-        "Multicall",
-        "SafeMath",
-        "TransferHelper",
-        "UQ112x112",
-        "UniswapV2ERC20",
-        "UniswapV2Factory",
-        "UniswapV2Library",
-        "UniswapV2Migrator",
-        "UniswapV2OracleLibrary",
-        "UniswapV2Pair",
-        "UniswapV2Router01",
-        "UniswapV2Router02"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -103,12 +98,15 @@
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3226,
+        "report_name": "Haechi Audit"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

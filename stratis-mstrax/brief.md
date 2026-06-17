@@ -5,21 +5,30 @@
 - Project: Stratis mSTRAX (`stratis-mstrax`)
 - Website: [https://staking.masternode.stratisevm.com/stake/?tab=stake](https://staking.masternode.stratisevm.com/stake/?tab=stake)
 - Lifecycle: unknown
-- Generated: 2026-05-24T15:02:43.652Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:00.839Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,043,873.88
+- DeFi Llama TVL: $1,953,152.73
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Stratis mSTRAX is a liquid staking protocol that allows users to stake STRAX tokens and receive mSTRAX, a liquid staking derivative representing their staked position. This enables users to earn staking rewards while maintaining liquidity to participate in other DeFi activities.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-The protocol consists of a single liquid staking product family with no additional families or shared infrastructure identified from the provided metadata.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

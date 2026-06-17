@@ -5,10 +5,10 @@
 - Project: Manta Pacific (`manta-pacific`)
 - Website: [https://pacific-bridge.manta.network](https://pacific-bridge.manta.network)
 - Lifecycle: active (Tier 0, 92.7% below peak)
-- Generated: 2026-06-12T12:12:13.295Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
+- Generated: 2026-06-17T07:00:50.163Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum, manta
-- Contract surface: 12 unique implementations (14 raw deployments)
+- Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $21,114,059.06
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ This record covers the canonical bridge for transferring assets between Ethereum
 
 All contracts belong to a single product family that implements the OP Stack bridging system. The L1StandardBridge and L1ERC721Bridge handle asset transfers, while the OptimismPortal manages deposits and withdrawals, and the L1CrossDomainMessenger enables cross-chain communication, all configured by the SystemConfig and secured by the L2OutputOracle.
 
+## Contract Surface Quality
+
+- Indexed contracts: 14; live-surface contracts included: 9 (8 live, 1 unknown).
+- Excluded by liveness: 1 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 6/8 live.
+- Detected codebases: none
+- Unverified dependencies: 3/6.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/10 (0.0%)
-- Verified + Unaudited implementations: 10
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 12
-- Raw deployments: 14
+- Unique implementations: 9
+- Raw deployments: 9
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,20 +54,17 @@ All contracts belong to a single product family that implements the OP Stack bri
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BLSApkRegistry | unknown | ethereum | [`0xa80f24...25fd60`](./contracts/ethereum-1/0xa80f2401c8ae7d95c7995295dc2c0d651f25fd60/) | ⚠️ Unaudited |
-| FinalityRelayerManager | governance | ethereum | [`0x8e132b...74c94e`](./contracts/ethereum-1/0x8e132b3bd37f3f6e223cd23add390111e674c94e/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0x3c46c0...3ea01e`](./contracts/ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | [`0x635ba6...13c310`](./contracts/ethereum-1/0x635ba609680c55c3bdd0b3627b4c5db21b13c310/) | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | 2 deployments: ethereum [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/); ethereum `0x62b257...41cd58` | ⚠️ Unaudited |
-| L2OutputOracle | unknown | ethereum | [`0x30c789...a05c1d`](./contracts/ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ⚠️ Unaudited |
-| Manta | unknown | manta | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | 2 deployments: ethereum [`0x4feee2...1ee388`](./contracts/ethereum-1/0x4feee20712abf5724c2bc0476bd87cbf1f1ee388/); ethereum `0x916876...0b7622` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | [`0xa2dca8...06e8d1`](./contracts/ethereum-1/0xa2dca85bb892de55d8b262d1806114733106e8d1/) | ⚠️ Unaudited |
-| SystemConfig | unknown | ethereum | [`0x895e00...351a5d`](./contracts/ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BLSApkRegistry | unknown | ethereum | unit-30745 | [`0xa80f24...25fd60`](./contracts/ethereum-1/0xa80f2401c8ae7d95c7995295dc2c0d651f25fd60/) | ⚠️ Unaudited |
+| FinalityRelayerManager | governance | ethereum | unit-30743 | [`0x8e132b...74c94e`](./contracts/ethereum-1/0x8e132b3bd37f3f6e223cd23add390111e674c94e/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-30740 | [`0x3c46c0...3ea01e`](./contracts/ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | unit-30741 | [`0x635ba6...13c310`](./contracts/ethereum-1/0x635ba609680c55c3bdd0b3627b4c5db21b13c310/) | ⚠️ Unaudited |
+| L2OutputOracle | unknown | ethereum | unit-30738 | [`0x30c789...a05c1d`](./contracts/ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ⚠️ Unaudited |
+| Manta | unknown | manta | n/a | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited |
+| SystemConfig | unknown | ethereum | unit-30742 | [`0x895e00...351a5d`](./contracts/ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -77,10 +82,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0xab64a3...e46366` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xec638d...7d8262` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xab64a3...e46366` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xec638d...7d8262` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 12 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

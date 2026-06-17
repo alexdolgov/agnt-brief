@@ -1,8 +1,8 @@
 # snuggle — Contract Index
 
-88 unique implementations across 2 chains · 179 deployments · 12 audited · 39 unaudited · 37 unverified
+87 unique implementations across 2 chains · 159 deployments · 12 audited · 41 unaudited · 34 unverified
 
-## adapter (8)
+## adapter (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -11,11 +11,12 @@
 | [CamelotPositionAdapter (2 deployments)](./arbitrum-42161/0x19ec46eb3cbcec146de2d9b4336187e4f147f217/) | arbitrum | 2 deployments: arbitrum [`0x19ec46...47f217`](./arbitrum-42161/0x19ec46eb3cbcec146de2d9b4336187e4f147f217/); arbitrum `0xbfbf7d...9a8956` | ⚠️ Unaudited | Verified |
 | [PancakeSwapPositionAdapter (4 deployments)](./base-8453/0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5/) | base | 4 deployments: base [`0x0c0ba0...1b39e5`](./base-8453/0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5/); base `0xad35ec...bf0a71`; arbitrum `0x78bb36...bd4589`; arbitrum `0xf20bc2...2b84d9` | ✅ Audited | Verified |
 | [PancakeSwapRewardAdapter (4 deployments)](./arbitrum-42161/0x4cd1a0b610117a688998325e3779e858ff62a065/) | arbitrum | 4 deployments: base `0x63de14...18b1cf`; arbitrum [`0x4cd1a0...62a065`](./arbitrum-42161/0x4cd1a0b610117a688998325e3779e858ff62a065/); arbitrum `0x6af9c5...8d19a8`; arbitrum `0xb668e7...69f7c9` | ✅ Audited | Verified |
-| [SwapRouter (8 deployments)](./arbitrum-42161/0x17585d045eb322d292e0166a4cd643f793640b50/) | arbitrum | 8 deployments: arbitrum [`0x17585d...640b50`](./arbitrum-42161/0x17585d045eb322d292e0166a4cd643f793640b50/); arbitrum `0x1b81d6...13eb14`; arbitrum `0x1f721e...339e18`; arbitrum `0x22535b...18ad98`; arbitrum `0x377b58...93c51d`; arbitrum `0x49c98f...1d951a`; arbitrum `0xa55582...839ef5`; arbitrum `0xad3a43...b64e12` | ⚠️ Unaudited | Verified |
+| [SwapRouter (7 deployments)](./arbitrum-42161/0x17585d045eb322d292e0166a4cd643f793640b50/) | arbitrum | 7 deployments: arbitrum [`0x17585d...640b50`](./arbitrum-42161/0x17585d045eb322d292e0166a4cd643f793640b50/); arbitrum `0x1b81d6...13eb14`; arbitrum `0x22535b...18ad98`; arbitrum `0x377b58...93c51d`; arbitrum `0x49c98f...1d951a`; arbitrum `0xa55582...839ef5`; arbitrum `0xad3a43...b64e12` | ⚠️ Unaudited | Verified |
+| SwapRouter | arbitrum | `0x1f721e...339e18` | ⚠️ Unaudited | Verified |
 | [TridentRouter](./arbitrum-42161/0xd9988b4b5bbc53a794240496cfa9bf5b1f8e0523/) | arbitrum | [`0xd9988b...8e0523`](./arbitrum-42161/0xd9988b4b5bbc53a794240496cfa9bf5b1f8e0523/) | ⚠️ Unaudited | Verified |
 | [UniswapV3Adapter (4 deployments)](./arbitrum-42161/0x76bdb43d2ec3b190087076649224f47a58c44ef2/) | arbitrum | 4 deployments: base `0xca4cf9...debabd`; base `0xf757c9...f33010`; arbitrum [`0x76bdb4...c44ef2`](./arbitrum-42161/0x76bdb43d2ec3b190087076649224f47a58c44ef2/); arbitrum `0xa6e465...be082c` | ✅ Audited | Verified |
 
-## core_logic (5)
+## core_logic (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -23,7 +24,9 @@
 | [AlgebraCustomPoolEntryPoint](./arbitrum-42161/0xbf1849090b659505a0d7a75fead3068020aea3ef/) | arbitrum | [`0xbf1849...aea3ef`](./arbitrum-42161/0xbf1849090b659505a0d7a75fead3068020aea3ef/) | ⚠️ Unaudited | Verified |
 | [AlgebraPoolDeployer (8 deployments)](./arbitrum-42161/0x0f9dff83d8b1f1b41dfbe340b8d9d75aa1741870/) | arbitrum | 8 deployments: arbitrum [`0x0f9dff...741870`](./arbitrum-42161/0x0f9dff83d8b1f1b41dfbe340b8d9d75aa1741870/); arbitrum `0x34f74f...c69bd2`; arbitrum `0x5e1e14...45ffe1`; arbitrum `0x6dd3fb...974f65`; arbitrum `0x89aee0...fff226`; arbitrum `0x8b5665...ca6f15`; arbitrum `0xd5143d...c4fa56`; arbitrum `0xf09c08...74af8d` | ⚠️ Unaudited | Verified |
 | [SnuggleVaultAdminSatellite (3 deployments)](./arbitrum-42161/0x1195c074f898b7644ba732407619c9804dfe6dce/) | arbitrum | 3 deployments: base `0x5a332c...e4d271`; arbitrum [`0x1195c0...fe6dce`](./arbitrum-42161/0x1195c074f898b7644ba732407619c9804dfe6dce/); arbitrum `0x454059...d7d3f4` | ⚠️ Unaudited | Verified |
-| [SnuggleVaultUpgradeable (11 deployments)](./base-8453/0x02415b4e29e00cf76b27ab0403e1e1382d0224c0/) | base | 11 deployments: base [`0x02415b...0224c0`](./base-8453/0x02415b4e29e00cf76b27ab0403e1e1382d0224c0/); base `0x43ca8d...43f043`; base `0x7d27cd...2afd55`; base `0xd3923b...6b7470`; arbitrum `0x0d8039...da22da`; arbitrum `0x1638b6...894f9d`; arbitrum `0x413ca9...2630f6`; arbitrum `0x4b1cbd...bcb07d`; arbitrum `0x572351...9cd430`; arbitrum `0x9da886...bab114`; arbitrum `0xa86b81...a85c68` | ⚠️ Unaudited | Verified |
+| SnuggleVaultUpgradeable | base | `0x43ca8d...43f043` | ⚠️ Unaudited | Verified |
+| SnuggleVaultUpgradeable | base | `0x7d27cd...2afd55` | ⚠️ Unaudited | Verified |
+| [SnuggleVaultUpgradeable (3 deployments)](./arbitrum-42161/0x1638b6a0477bf09163531279dc535d6c40894f9d/) | arbitrum | 3 deployments: arbitrum [`0x1638b6...894f9d`](./arbitrum-42161/0x1638b6a0477bf09163531279dc535d6c40894f9d/); arbitrum `0x572351...9cd430`; arbitrum `0xa86b81...a85c68` | ⚠️ Unaudited | Verified |
 
 ## governance (3)
 
@@ -59,7 +62,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [TransparentUpgradeableProxy (4 deployments)](./arbitrum-42161/0x903293c1e922a72a95a69c61ede74073c8594c13/) | arbitrum | 4 deployments: arbitrum [`0x903293...594c13`](./arbitrum-42161/0x903293c1e922a72a95a69c61ede74073c8594c13/); arbitrum `0xa76021...280b5c`; arbitrum `0xd8676f...0e34ae`; arbitrum `0xfecbac...7e4321` | ⚠️ Unaudited | Verified |
+| [TransparentUpgradeableProxy](./arbitrum-42161/0x903293c1e922a72a95a69c61ede74073c8594c13/) | arbitrum | [`0x903293...594c13`](./arbitrum-42161/0x903293c1e922a72a95a69c61ede74073c8594c13/) | ⚠️ Unaudited | Verified |
 
 ## registry (6)
 
@@ -72,16 +75,15 @@
 | [ConstantProductPoolFactoryHelper](./arbitrum-42161/0x827179dd56d07a7eea32e3873493835da2866976/) | arbitrum | [`0x827179...866976`](./arbitrum-42161/0x827179dd56d07a7eea32e3873493835da2866976/) | ⚠️ Unaudited | Verified |
 | [StablePoolFactory](./arbitrum-42161/0xc2fb256aba36852dccea92181ec6b355f09a0288/) | arbitrum | [`0xc2fb25...9a0288`](./arbitrum-42161/0xc2fb256aba36852dccea92181ec6b355f09a0288/) | ⚠️ Unaudited | Verified |
 
-## token (4)
+## token (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FixedToken](./arbitrum-42161/0xcaabdd9cf4b61813d4a52f980d6bc1b713fe66f5/) | arbitrum | [`0xcaabdd...fe66f5`](./arbitrum-42161/0xcaabdd9cf4b61813d4a52f980d6bc1b713fe66f5/) | ⚠️ Unaudited | Verified |
 | [NFTDescriptor (3 deployments)](./arbitrum-42161/0x0367a647a68f304f2a6e453c25033a4249d7f2c6/) | arbitrum | 3 deployments: arbitrum [`0x0367a6...d7f2c6`](./arbitrum-42161/0x0367a647a68f304f2a6e453c25033a4249d7f2c6/); arbitrum `0x1e12aa...781dae`; arbitrum `0xff7da6...fb3a62` | ⚠️ Unaudited | Verified |
-| [NonfungibleTokenPositionDescriptor (7 deployments)](./arbitrum-42161/0x1ad8c5aed1d18cb7c5f30cd2b486251e87e14abc/) | arbitrum | 7 deployments: arbitrum [`0x1ad8c5...e14abc`](./arbitrum-42161/0x1ad8c5aed1d18cb7c5f30cd2b486251e87e14abc/); arbitrum `0x2d22aa...7606dc`; arbitrum `0x49f598...32067c`; arbitrum `0x52d2eb...b48325`; arbitrum `0x674d07...e7a7ef`; arbitrum `0x89a13b...b8a68a`; arbitrum `0x96e045...c19385` | ⚠️ Unaudited | Verified |
-| [NonfungibleTokenPositionDescriptorOffChain (2 deployments)](./arbitrum-42161/0x3d00cdb4785f0ef20c903a13596e0b9b2c652227/) | arbitrum | 2 deployments: arbitrum [`0x3d00cd...652227`](./arbitrum-42161/0x3d00cdb4785f0ef20c903a13596e0b9b2c652227/); arbitrum `0xb099b4...456cff` | ⚠️ Unaudited | Verified |
+| [NonfungibleTokenPositionDescriptor](./arbitrum-42161/0x96e04591579f298681361c6122dc4ef405c19385/) | arbitrum | [`0x96e045...c19385`](./arbitrum-42161/0x96e04591579f298681361c6122dc4ef405c19385/) | ⚠️ Unaudited | Verified |
 
-## unknown (49)
+## unknown (46)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -115,7 +117,6 @@
 | UnnamedContract | arbitrum | `0x48813f...7caf33` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x4b5348...8c72f4` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x5629ce...d851d9` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x5822a4...6bc460` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x67468e...f70792` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x6e9aed...a1bc56` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x790b6c...f049a8` | ❓ Unverified | Unverified |
@@ -129,8 +130,6 @@
 | UnnamedContract | arbitrum | `0xdcd6a4...1232d3` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xe4331d...304d36` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xeae23c...c130ca` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xf4c88b...e7dd41` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0xf53b4b...edd8c1` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xf78031...cf9bef` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xf8644a...243c33` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xfdd069...2eb659` | ❓ Unverified | Unverified |

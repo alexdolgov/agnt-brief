@@ -1,0 +1,17 @@
+{
+  "address": "0xdee10310e729c36a560c72c0e8e3be0e46673063",
+  "chain_id": 8453,
+  "contract_name": "SquadInterfaceMulticall",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:47.203Z"
+}

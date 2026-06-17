@@ -1,0 +1,797 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mux3OrderBook",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "mux2ProxyFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "muxOrderBook",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "muxDegenOrderBook",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "delegator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "actionCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetDelegator",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "delegator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "actionCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "delegate",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "getDelegationByOwner",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "delegator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "actionCount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Delegator.Delegation",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "proxyCalls",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "multicall",
+    "outputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "results",
+        "type": "bytes[]"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "projectId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "assetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLong",
+            "type": "bool"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "proxyCallData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IMux2ProxyFactory.ProxyCallParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "mux2ProxyFunctionCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "projectId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isLong",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux2TransferToken",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "projectId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isLong",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux2WrapAndTransferNative",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      }
+    ],
+    "name": "mux3CancelOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux3DepositCollateral",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux3DepositGas",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpPriceDiff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slPriceDiff",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ModifyPositionOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "mux3ModifyPositionOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "marketId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "flags",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiration",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "lastConsumedToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawSwapToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawSwapSlippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpPriceDiff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slPriceDiff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tpslExpiration",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpslFlags",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tpslWithdrawSwapToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpslWithdrawSwapSlippage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "referralCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "mux3PlacePositionOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rawAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isUnwrapWeth",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "lastConsumedToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawSwapToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawSwapSlippage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WithdrawalOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "mux3PlaceWithdrawalOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "positionOrderCallData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialLeverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gas",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux3PositionCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialLeverage",
+        "type": "uint256"
+      }
+    ],
+    "name": "mux3SetInitialLeverage",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isUnwrapWeth",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct WithdrawAllOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "mux3WithdrawAllCollateral",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      }
+    ],
+    "name": "muxCancelOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      }
+    ],
+    "name": "muxDegenCancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "subAccountId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "muxDegenDepositCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "subAccountId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint96",
+            "name": "collateral",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "size",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "price",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "tpPrice",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "slPrice",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpslExpiration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "profitTokenId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tpslProfitTokenId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "flags",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IMuxDegenOrderBook.PositionOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "referralCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "muxDegenPlacePositionOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "subAccountId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint96",
+            "name": "rawAmount",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint8",
+            "name": "profitTokenId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProfit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMuxDegenOrderBook.WithdrawalOrderParams",
+        "name": "orderParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "muxDegenPlaceWithdrawalOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "subAccountId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "muxDegenWithdrawAllCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "muxCallData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "muxFunctionCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

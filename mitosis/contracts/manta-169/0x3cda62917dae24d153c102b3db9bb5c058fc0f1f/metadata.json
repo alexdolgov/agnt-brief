@@ -1,0 +1,17 @@
+{
+  "address": "0x3cda62917dae24d153c102b3db9bb5c058fc0f1f",
+  "chain_id": 169,
+  "contract_name": "BasicVaultFactory",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:18.490Z"
+}

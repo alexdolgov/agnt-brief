@@ -1,0 +1,18 @@
+{
+  "address": "0xc40d7b9ca90eaca4a6e067b6ec689fd29f4a8b3c",
+  "chain_id": 1,
+  "contract_name": "Nest_NToken_OfferMain",
+  "compiler_version": "v0.6.0+commit.26b70077",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:07.332Z"
+}

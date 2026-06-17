@@ -1,0 +1,17 @@
+{
+  "address": "0xcbc1c89a89b8b5371f50acccbc6b5185ecc0587c",
+  "chain_id": 42161,
+  "contract_name": "JuniorBoostHelperFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:55.013Z"
+}

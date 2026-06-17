@@ -5,31 +5,39 @@
 - Project: OrangeX (`orangex`)
 - Website: [https://www.orangex.com](https://www.orangex.com)
 - Lifecycle: active (Tier 0, 34.8% below peak)
-- Generated: 2026-06-12T10:47:06.759Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
-- Chains: base, ethereum
-- Contract surface: 3 unique implementations (4 raw deployments)
+- Generated: 2026-06-17T07:01:00.816Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: base
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $33,703,827.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 OrangeX is an active centralized crypto exchange and trading platform. The listed on-chain contracts appear to be OrangeX-related token or ancillary deployments, such as ecosystem token contracts, and should not be treated as representing the exchange's full custody, matching, trading, or operational infrastructure.
 
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 3
-- Raw deployments: 4
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,12 +55,11 @@ OrangeX is an active centralized crypto exchange and trading platform. The liste
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| GameBitCoin | unknown | ethereum | 2 deployments: ethereum [`0x19eb66...d17ff7`](./contracts/ethereum-1/0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7/); ethereum `0xd07d23...a4d07d` | ⚠️ Unaudited |
-| GPS | unknown | base | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GPS | unknown | base | n/a | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -66,13 +73,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x1e8b34...6cad56` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -92,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

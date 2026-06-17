@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aftermath-finance",
-  "generated_at": "2026-06-10T20:58:56.583Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-17T07:00:37.722Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4981345.38014,
-    "tvl_usd": 4981345.38014,
+    "dl_tvl_usd": 3731422.69049,
+    "tvl_usd": 3731422.69049,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Aftermath Finance is a Sui-based on-chain trading platform offering spot and perpetuals trading, smart-router swaps, afSUI liquid staking, LP pools, and farm rewards across its Sui Move protocol components.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

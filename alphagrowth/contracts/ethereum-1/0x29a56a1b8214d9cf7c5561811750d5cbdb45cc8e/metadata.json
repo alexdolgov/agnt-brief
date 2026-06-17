@@ -1,0 +1,18 @@
+{
+  "address": "0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e",
+  "chain_id": 1,
+  "contract_name": "GenericFactory",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d",
+  "fetched_at": "2026-06-17T06:48:07.948Z"
+}

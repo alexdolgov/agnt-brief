@@ -4,32 +4,40 @@
 
 - Project: Meld Gold (`meld-gold`)
 - Website: [https://meld.gold](https://meld.gold)
-- Lifecycle: active (Tier 0, 27.2% below peak)
-- Generated: 2026-06-13T00:13:42.275Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
-- Chains: ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:57.598Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $9,694,298.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +55,9 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EACAggregatorProxy | unknown | ethereum | 2 deployments: ethereum [`0x214ed9...c1a0d6`](./contracts/ethereum-1/0x214ed9da11d2fbe465a6fc601a91e62ebec1a0d6/); ethereum `0x379589...f95235` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 

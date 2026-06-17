@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 8 (ethereum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; optimism `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; bsc `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; base `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; arbitrum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; linea [`0x34f52752975222d5994c206ce08c1d5b329f24dd`](../0x34f52752975222d5994c206ce08c1d5b329f24dd/); blast `0x34f52752975222d5994c206ce08c1d5b329f24dd`; scroll `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`) |
+| Deployments | 7 (ethereum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; optimism `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; base `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; arbitrum `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`; linea [`0x34f52752975222d5994c206ce08c1d5b329f24dd`](../0x34f52752975222d5994c206ce08c1d5b329f24dd/); blast `0x34f52752975222d5994c206ce08c1d5b329f24dd`; scroll `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

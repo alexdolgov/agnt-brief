@@ -1,12 +1,6 @@
 # wrapped — Contract Index
 
-2 unique implementations across 2 chains · 2 deployments · 0 audited · 2 unaudited · 0 unverified
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [TokenSoftToken](./ethereum-1/0x0ab2851cf7bdd6309c8507ea5cc52e2ec3ece8dc/) | ethereum | [`0x0ab285...ece8dc`](./ethereum-1/0x0ab2851cf7bdd6309c8507ea5cc52e2ec3ece8dc/) | ⚠️ Unaudited | Verified |
+1 unique implementations on celo · 1 deployments · 0 audited · 1 unaudited · 0 unverified
 
 ## unknown (1)
 

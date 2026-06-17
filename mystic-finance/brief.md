@@ -5,11 +5,11 @@
 - Project: Mystic Finance (`mystic-finance`)
 - Website: [https://www.mysticfinance.xyz/](https://www.mysticfinance.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-11T01:17:45.547Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-17T07:00:53.471Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $5,786,169.00
+- DeFi Llama TVL: $4,978,719.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Mystic Finance is a DeFi lending and money-market protocol that enables users to supply assets, borrow against collateral, access leverage, and participate in curated lending markets.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

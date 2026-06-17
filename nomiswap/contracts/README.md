@@ -1,6 +1,6 @@
 # nomiswap — Contract Index
 
-47 unique implementations on bsc · 85 deployments · 3 audited · 16 unaudited · 28 unverified
+46 unique implementations on bsc · 81 deployments · 3 audited · 15 unaudited · 28 unverified
 
 ## adapter (6)
 
@@ -17,7 +17,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Airdrop (4 deployments)](./bsc-56/0xb4058be8cf73cb4d07caaf2e87c9b38dbf0eb627/) | bsc | 4 deployments: bsc [`0xb4058b...0eb627`](./bsc-56/0xb4058be8cf73cb4d07caaf2e87c9b38dbf0eb627/); bsc `0xc56d6b...1f106b`; bsc `0xd584fa...7dc511`; bsc `0xd75dd2...c3565b` | ⚠️ Unaudited | Verified |
+| [Airdrop (2 deployments)](./bsc-56/0xd584fa2d979460f33eee8282a83dfa88d17dc511/) | bsc | 2 deployments: bsc [`0xd584fa...7dc511`](./bsc-56/0xd584fa2d979460f33eee8282a83dfa88d17dc511/); bsc `0xd75dd2...c3565b` | ⚠️ Unaudited | Verified |
 
 ## periphery (3)
 
@@ -27,11 +27,10 @@
 | [Migrator](./bsc-56/0x3e87c24bafd6aedff0a860b717d8b28042c376b7/) | bsc | [`0x3e87c2...c376b7`](./bsc-56/0x3e87c24bafd6aedff0a860b717d8b28042c376b7/) | ⚠️ Unaudited | Verified |
 | [StableswapMigrator (2 deployments)](./bsc-56/0xf750baee569852d2a8ac052aef96f242191146db/) | bsc | 2 deployments: bsc [`0xf750ba...1146db`](./bsc-56/0xf750baee569852d2a8ac052aef96f242191146db/); bsc `0xfa8811...5f41ce` | ⚠️ Unaudited | Verified |
 
-## registry (3)
+## registry (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [FactoryOwnerUpgradeable (2 deployments)](./bsc-56/0x4aa998539a8b79e7f14d36fc6a081c182ea1502e/) | bsc | 2 deployments: bsc [`0x4aa998...a1502e`](./bsc-56/0x4aa998539a8b79e7f14d36fc6a081c182ea1502e/); bsc `0x80f173...39ba63` | ⚠️ Unaudited | Verified |
 | [NomiswapFactory](./bsc-56/0xd6715a8be3944ec72738f0bfdc739d48c3c29349/) | bsc | [`0xd6715a...c29349`](./bsc-56/0xd6715a8be3944ec72738f0bfdc739d48c3c29349/) | ⚠️ Unaudited | Verified |
 | [NomiswapStableFactory (4 deployments)](./bsc-56/0x35ddc24e4f5be30262e36b50e7795fae880bc4cf/) | bsc | 4 deployments: bsc [`0x35ddc2...0bc4cf`](./bsc-56/0x35ddc24e4f5be30262e36b50e7795fae880bc4cf/); bsc `0x4c8214...3d92cc`; bsc `0xc443b6...d7b33b`; bsc `0xc6b7ee...1f6285` | ⚠️ Unaudited | Verified |
 

@@ -1,0 +1,18 @@
+{
+  "address": "0x4bca8d73561aaeee2d3a584b9f4665310de1dd69",
+  "chain_id": 42161,
+  "contract_name": "AssetVault",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 888,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, BUSL-1.1, GPL-2.0-or-later, GPL-3.0, MIT, UNLICENCED, UNLICENSED, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 108,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:50.501Z"
+}

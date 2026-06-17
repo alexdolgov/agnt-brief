@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sovryn",
-  "generated_at": "2026-06-11T02:53:18.371Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-17T07:00:57.643Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 11,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 38321665,
-    "tvl_usd": 38321665,
+    "dl_tvl_usd": 30778855,
+    "tvl_usd": 30778855,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Sovryn is a non-custodial Bitcoin DeFi protocol offering trading, margin trading, lending and borrowing on Bitcoin sidechain ecosystems. Its broader product and ecosystem surface includes staking and governance, the Zero/Sovryn Dollar stablecoin system, and Origins/BitcoinOS-related initiatives.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

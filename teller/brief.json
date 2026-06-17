@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "teller",
-  "generated_at": "2026-06-11T03:28:34.950Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-17T07:00:52.383Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1870840.19154,
-    "tvl_usd": 1870840.19154,
+    "dl_tvl_usd": 1339587.60339,
+    "tvl_usd": 1339587.60339,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Teller is a collateralized crypto lending protocol that offers instant loans with fixed APRs, flexible durations, and time-based liquidation mechanics. The protocol enables users to borrow against crypto collateral and earn by supplying lending capital, with an emphasis on avoiding margin calls rather than providing uncollateralized credit.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

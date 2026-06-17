@@ -1,6 +1,6 @@
 # meeds-finance — Contract Index
 
-5 unique implementations across 5 chains · 10 deployments · 0 audited · 5 unaudited · 0 unverified
+4 unique implementations across 5 chains · 9 deployments · 0 audited · 4 unaudited · 0 unverified
 
 ## core_logic (1)
 
@@ -20,9 +20,3 @@
 |---|---|---|---|---|
 | [MeedsToken](./ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | ethereum | [`0x8503a7...0547b7`](./ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | ⚠️ Unaudited | Verified |
 | [XMeedsNFTRewarding](./ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | ethereum | [`0x44d6d6...e1bcd4`](./ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | ⚠️ Unaudited | Verified |
-
-## unknown (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [Vyper_contract](./ethereum-1/0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa/) | ethereum | [`0x440701...f37dfa`](./ethereum-1/0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa/) | ⚠️ Unaudited | Verified |

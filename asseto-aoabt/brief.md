@@ -4,32 +4,40 @@
 
 - Project: Asseto AoABT (`asseto-aoabt`)
 - Website: [https://asseto.finance/product](https://asseto.finance/product)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T05:27:17.126Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
-- Chains: avalanche
-- Contract surface: 2 unique implementations (2 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:52.402Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $24,281,398.56
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Asseto AoABT is an Asseto-operated real-world asset token/product backed 1:1 by Class C Shares of an underlying fund, with subscribe and redeem functionality. DefiLlama tracks AoABT on Avalanche and HashKey Chain; currently only one Avalanche proxy contract is identified in the mapped contract surface, so the HashKey Chain deployment surface remains missing or unmapped.
 
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 2
-- Raw deployments: 2
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -63,14 +71,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd) | proxy | avalanche | `0xb2ea3e...5834e2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xee23c7...b704bd` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -91,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

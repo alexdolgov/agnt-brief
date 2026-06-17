@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (sonic [`0x023d9bcb63532d1215d4adbdb66a4410e506b90e`](../0x023d9bcb63532d1215d4adbdb66a4410e506b90e/); sonic `0x18205731e2d93b9baa4c7eba58bd1bdde0eb3aa3`; sonic `0xaf1b583df865f438c50f20eee85b65dc6ff48715`) |
+| Deployments | 2 (sonic [`0x023d9bcb63532d1215d4adbdb66a4410e506b90e`](../0x023d9bcb63532d1215d4adbdb66a4410e506b90e/); sonic `0x18205731e2d93b9baa4c7eba58bd1bdde0eb3aa3`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

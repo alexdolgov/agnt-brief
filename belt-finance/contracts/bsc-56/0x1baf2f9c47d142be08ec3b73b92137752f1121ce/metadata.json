@@ -1,0 +1,17 @@
+{
+  "address": "0x1baf2f9c47d142be08ec3b73b92137752f1121ce",
+  "chain_id": 56,
+  "contract_name": "SingleStrategyToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x445068d992891b5e12128ab8440d548e151b4389",
+  "fetched_at": "2026-06-17T06:50:46.414Z"
+}

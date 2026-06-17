@@ -5,13 +5,13 @@
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
 - Lifecycle: active (Tier 0, 26.1% below peak)
-- Generated: 2026-06-13T23:56:24.683Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Generated: 2026-06-17T07:00:41.840Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base, ethereum
-- Contract surface: 8 unique implementations (20 raw deployments)
+- Contract surface: 6 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $1,787,164.27
-- On-chain TVL (included contracts): $62,793.72
-- TVL by chain: Base $48,088.21 | Ethereum $14,705.51
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
@@ -21,17 +21,25 @@ Privacy Cash is a privacy-focused protocol spanning Solana and Base that enables
 
 The protocol consists of a single product family with two core pool contracts (EtherPool and ERCPool) that share the same proxy pattern via ERC1967Proxy, indicating a unified upgradeable infrastructure for managing deposits and withdrawals.
 
+## Contract Surface Quality
+
+- Indexed contracts: 20; live-surface contracts included: 10 (10 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 10 singleton, 0 uninitialized.
+- Deployment units: 0/5 live.
+- Detected codebases: none
+- Unverified dependencies: 1/3.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 5
-- Unique implementations: 8
-- Raw deployments: 20
+- Unique implementations: 6
+- Raw deployments: 10
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $62,793.72
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-02 (fresh)
 - Staleness: 8 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,13 +54,11 @@ The protocol consists of a single product family with two core pool contracts (E
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERCPool | core_logic | base | 4 deployments: ethereum `0x803db1...583958`; ethereum `0xc88f4d...a7527f`; base [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/); base `0xe91dd4...5a905b` | ⚠️ Unaudited |
-| EtherPool | core_logic | ethereum | 6 deployments: ethereum [`0x77a10a...830dd0`](./contracts/ethereum-1/0x77a10ae3e513c2d73d73eb52212c6918c8830dd0/); ethereum `0xec5266...f3b738`; base `0x7f6737...b081ec`; base `0xa9cefe...99ecdd`; base `0xbcffce...982c98`; base `0xfee24c...c832a1` | ⚠️ Unaudited |
-| Verifier2 | periphery | base | 5 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; base [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Verifier2 | periphery | base | n/a | 5 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; base [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -70,13 +76,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x1d4fe6...d3106d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x22d850...391f77` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x045596...88d2e3` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xbb0c7f...c9013f` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0xf48b36...24e9ac` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x1d4fe6...d3106d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x22d850...391f77` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x045596...88d2e3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbb0c7f...c9013f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf48b36...24e9ac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -99,16 +105,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ERCPool | core_logic | $37,392.36 | Verified native implementation with $37,392.36 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/) | Verifier2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 5 |
 
 ## Scope Matching Notes

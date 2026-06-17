@@ -7,11 +7,11 @@
 - Project: NeuralAI (`neuralai`)
 - Website: [https://goneural.ai/](https://goneural.ai/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:28:48.642Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:43.088Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,220,164.43
+- DeFi Llama TVL: $1,205,215.33
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token is part of the project's tokenomics, while any launchpad, staking, or related ecosystem mechanics should be treated as tokenomics or upcoming ecosystem features only where separately supported. wTAO should not be described as a core NeuralAI staking component without evidence of integration, and the broader project identity should account for both Ethereum and Solana $NEURAL token presence where in scope.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -52,10 +60,10 @@ NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| NeuralAI | unknown | ethereum | [`0x32b053...bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | ⚠️ Unaudited |
-| NeuralStaking | token | ethereum | [`0xbe2cf8...9b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| NeuralAI | unknown | ethereum | n/a | [`0x32b053...bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | ⚠️ Unaudited |
+| NeuralStaking | token | ethereum | n/a | [`0xbe2cf8...9b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

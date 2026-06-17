@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "okcoin",
-  "generated_at": "2026-06-11T01:33:07.387Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-17T07:01:01.844Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 25768090.199860003,
-    "tvl_usd": 25768090.199860003,
+    "dl_tvl_usd": 21650475.19559,
+    "tvl_usd": 21650475.19559,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Okcoin is a centralized cryptocurrency exchange (CEX) currently rebranding to OKX, with a US-focused customer context. The platform supports buying, selling, spot trading, withdrawals, and management of digital assets, and presents proof-of-reserves messaging for its exchange reserves.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

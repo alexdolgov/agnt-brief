@@ -8,7 +8,7 @@
 | Origin | native |
 | Audited | Yes |
 | Audits | [SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf); [SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf) |
-| Deployments | 3 (ethereum [`0x11c907b3aedbd863e551c37f21dd3f36b28a6784`](../0x11c907b3aedbd863e551c37f21dd3f36b28a6784/); ethereum `0xa3f4fb87e19b60622bea119c4469c0df2c7c4739`; ethereum `0xaf345c813ce17cc5837bfd14a910d365223f3b95`) |
+| Deployments | 1 (ethereum [`0x11c907b3aedbd863e551c37f21dd3f36b28a6784`](../0x11c907b3aedbd863e551c37f21dd3f36b28a6784/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | $0.03 |

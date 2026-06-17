@@ -1,6 +1,6 @@
 # hyperswap — Contract Index
 
-30 unique implementations on hyperliquid · 32 deployments · 0 audited · 11 unaudited · 19 unverified
+24 unique implementations on hyperliquid · 26 deployments · 0 audited · 9 unaudited · 15 unverified
 
 ## adapter (2)
 
@@ -27,7 +27,7 @@
 |---|---|---|---|---|
 | [HyperswapV3Factory](./hyperliquid-999/0xb1c0fa0b789320044a6f623cfe5ebda9562602e3/) | hyperliquid | [`0xb1c0fa...2602e3`](./hyperliquid-999/0xb1c0fa0b789320044a6f623cfe5ebda9562602e3/) | ⚠️ Unaudited | Verified |
 
-## unknown (25)
+## unknown (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -36,23 +36,17 @@
 | [MixedRouteQuoterV1](./hyperliquid-999/0xec8f3d08dd762e935fb914bd2b2e788e5e423516/) | hyperliquid | [`0xec8f3d...423516`](./hyperliquid-999/0xec8f3d08dd762e935fb914bd2b2e788e5e423516/) | ⚠️ Unaudited | Verified |
 | [Permit2](./hyperliquid-999/0x000000000022d473030f116ddee9f6b43ac78ba3/) | hyperliquid | [`0x000000...c78ba3`](./hyperliquid-999/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited | Verified |
 | Proxy (impl: 0x6eda206207c09e5428f281761ddc0d300851fbc8) | hyperliquid | `0x6eda20...51fbc8` | ❓ Unverified | Unverified |
-| [TickLens](./hyperliquid-999/0x8f1ea97ffdfeda3be7eabfed95ef49f909b2975a/) | hyperliquid | [`0x8f1ea9...b2975a`](./hyperliquid-999/0x8f1ea97ffdfeda3be7eabfed95ef49f909b2975a/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | hyperliquid | `0x038327...cfadb8` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x03a918...a45c7c` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x093de4...b53661` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x0b7ce1...34c9fc` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x19967b...3ccf6e` | ❓ Unverified | Unverified |
-| UnnamedContract | hyperliquid | `0x4a6907...9c8e98` | ❓ Unverified | Unverified |
-| UnnamedContract | hyperliquid | `0x56dee1...44bb15` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x70f57e...2a8d65` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x724412...ea1c48` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x744c89...5c96dc` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0x9f35ae...76e28e` | ❓ Unverified | Unverified |
-| UnnamedContract | hyperliquid | `0xb4610e...b222e0` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xb58388...dcad46` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xd86d0f...7da315` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xefabeb...afd229` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xf535d7...ab01fe` | ❓ Unverified | Unverified |
-| UnnamedContract | hyperliquid | `0xf86571...0b8139` | ❓ Unverified | Unverified |
-| [V3Migrator](./hyperliquid-999/0x820ec81e0556f2f94f4725d358b399c11cd78cf8/) | hyperliquid | [`0x820ec8...d78cf8`](./hyperliquid-999/0x820ec81e0556f2f94f4725d358b399c11cd78cf8/) | ⚠️ Unaudited | Verified |
 | [WHYPE9](./hyperliquid-999/0x5555555555555555555555555555555555555555/) | hyperliquid | [`0x555555...555555`](./hyperliquid-999/0x5555555555555555555555555555555555555555/) | ⚠️ Unaudited | Verified |

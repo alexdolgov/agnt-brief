@@ -1,0 +1,17 @@
+{
+  "address": "0x488913833474bbd9b11f844fdc2f0897fac0ca43",
+  "chain_id": 137,
+  "contract_name": "VestingSchedulerV3",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "0000000000000000000000003e14dc1b13c488a8d5d310918780c983bd5982e7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:35.913Z"
+}

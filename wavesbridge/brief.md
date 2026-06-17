@@ -7,11 +7,11 @@
 - Project: WavesBridge (`wavesbridge`)
 - Website: [https://wavesbridge.io/](https://wavesbridge.io/)
 - Lifecycle: declining (Tier 0, 78.9% below peak)
-- Generated: 2026-06-11T04:06:30.926Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-17T07:00:48.966Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,026,786.12
+- DeFi Llama TVL: $353,348.74
 - On-chain TVL (included contracts): $136,632,939.38
 - TVL by chain: Ethereum $136,632,939.38
 
@@ -22,6 +22,14 @@ WavesBridge is a multi-chain token bridge supporting asset transfers across Wave
 ### Architecture
 
 The Bridge contract serves as the operational core, interacting with token contracts like PepeToken and SimpleToken to manage locked assets. Supporting contracts Neiro and RealGames likely provide auxiliary functions or token instances used within the bridge ecosystem.
+
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,13 +59,13 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SimpleToken | token | ethereum | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
-| Bridge | operational_periphery | ethereum | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
-| Neiro | unknown | ethereum | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
-| PepeToken | token | ethereum | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
-| RealGames | unknown | ethereum | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SimpleToken | token | ethereum | n/a | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | ethereum | n/a | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
+| Neiro | unknown | ethereum | n/a | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
+| PepeToken | token | ethereum | n/a | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
+| RealGames | unknown | ethereum | n/a | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

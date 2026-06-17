@@ -1,0 +1,17 @@
+{
+  "address": "0x1bfe50bb2a8a75fefa46892db10313898ddbff8f",
+  "chain_id": 137,
+  "contract_name": "ECDSANodeManagement",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:39.539Z"
+}

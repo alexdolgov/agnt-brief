@@ -1,0 +1,17 @@
+{
+  "address": "0x00ff05abab62c88d5fa50583b08e35908b70db99",
+  "chain_id": 1,
+  "contract_name": "AppTreasury",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:08.861Z"
+}

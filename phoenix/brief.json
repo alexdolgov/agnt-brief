@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "phoenix",
-  "generated_at": "2026-06-11T01:52:28.595Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-17T07:00:36.737Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1190998,
-    "tvl_usd": 1190998,
+    "dl_tvl_usd": 1064913,
+    "tvl_usd": 1064913,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Phoenix is a Solana-based DeFi trading protocol. It is associated with Phoenix Perpetuals for perpetuals trading on Solana and Phoenix's fully on-chain, non-custodial, crankless decentralized limit order book on Solana. Unsupported claims about EVM liquidity pools, yield farming vaults, staking, and broad multi-chain EVM deployments should be removed unless independently verified from official Phoenix sources.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

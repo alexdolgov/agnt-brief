@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pnetwork",
-  "generated_at": "2026-06-12T19:29:52.711Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
+  "generated_at": "2026-06-17T07:00:45.419Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pnetwork",
@@ -17,31 +17,31 @@
     "change_30d_pct": 0,
     "change_90d_pct": 0,
     "governance_raw": {
-      "evidence": "TVL dropped 95% from peak with no shutdown announcement, but protocol still has staking and DAO functionality.",
-      "confidence": 0.8,
+      "evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
+      "confidence": 0.9,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 1690,
+    "days_since_peak": 1669,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
     "drop_from_peak_pct": 95.30467762433108,
-    "governance_evidence": "TVL dropped 95% from peak with no shutdown announcement, but protocol still has staking and DAO functionality.",
-    "governance_confidence": 0.8,
+    "governance_evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
+    "governance_confidence": 0.9,
     "governance_text_chars": 283,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 15,
-    "unique_implementations": 12,
-    "total_deployments": 15,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 11,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 11,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -52,9 +52,6 @@
     "asd_usd": null,
     "website_url": "https://p.network",
     "chains": [
-      "arbitrum",
-      "ethereum",
-      "gnosis",
       "polygon"
     ],
     "tier1_coverage_pct": 0,
@@ -70,13 +67,24 @@
   },
   "topography": {
     "project_purpose": "pNetwork is primarily a cross-chain interoperability and bridge protocol, governed by the pNetwork DAO, for moving assets and messages across blockchains. Farming, staking, or reward contracts should be treated only as ancillary or legacy components where current pNetwork ownership and operation are independently verified, not as a core current product line.",
-    "relationship_narrative": "The pNetwork family shares infrastructure through proxy contracts like ArcProxy and TransparentUpgradeableProxy, which manage upgradeable logic for tokens and gateways. Vaults and pools interact with reward contracts and external DeFi protocols to facilitate yield generation and cross-chain asset transfers.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 15,
+    "live_contracts": 1,
+    "inactive_contracts": 14,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 3,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -84,71 +92,11 @@
   },
   "contracts": [
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xb970e280f9ddaa3349ab9f3ecf778970cde46655",
-      "name": "ApeRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ApeRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xb970e280f9ddaa3349ab9f3ecf778970cde46655",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-      "name": "ARBIS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ARBIS",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x89d065572136814230a55ddeeddec9df34eb0b76",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AutoFarmV2_CrossChain",
       "role": "unknown",
       "origin_kind": "native",
@@ -160,18 +108,11 @@
       "impl_name": "AutoFarmV2_CrossChain",
       "deployments": [
         {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfada8cc923514f1d7b0586ad554b4a0cead4680e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x89d065572136814230a55ddeeddec9df34eb0b76",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -183,329 +124,12 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45",
-      "name": "CarbonRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CarbonRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
-      "name": "L2TBTC",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xda534b567099ca481384133bc121d5843f681365",
-      "impl_name": "L2TBTC",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x1922c36f3bc762ca300b4a46bb2102f84b1684ab",
-      "name": "MarinateAutoCompounder",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MarinateAutoCompounder",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x1922c36f3bc762ca300b4a46bb2102f84b1684ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
-      "name": "NyanRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "NyanRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x62ff5be795262999fc1ebac29277575031d2da2c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf6a37745fc911666132e8b8f29fc9c4f5c4a703d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
-      "name": "PbtcV1StrategiesMigrator",
-      "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x7d2452f21b4a2b6263e1325eb438faad3052a55c",
-      "impl_name": "PbtcV1StrategiesMigrator",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
-      "name": "PONGRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PONGRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
-      "name": "PTokenMigrator",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x76c6d6b39c43135cb6c7b4a7fe72f461bfdf2111",
-      "impl_name": "PTokenMigrator",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
-      "name": "stARBIS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "stARBIS",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x374e9f3affb6a2c3e388aa69c21d925c193af13a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "pNetwork",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x374e9f3affb6a2c3e388aa69c21d925c193af13a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
       "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xb970e280f9ddaa3349ab9f3ecf778970cde46655",
-      "name": "ApeRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-      "name": "ARBIS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 137,
       "chain_name": "polygon",
@@ -515,83 +139,13 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45",
-      "name": "CarbonRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x1922c36f3bc762ca300b4a46bb2102f84b1684ab",
-      "name": "MarinateAutoCompounder",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
-      "name": "NyanRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
-      "name": "PbtcV1StrategiesMigrator",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
-      "name": "PONGRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
-      "name": "PTokenMigrator",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
-      "name": "stARBIS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 10,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 1
+    "standard_library": 0,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

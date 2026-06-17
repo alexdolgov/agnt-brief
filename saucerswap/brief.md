@@ -5,21 +5,30 @@
 - Project: SaucerSwap (`saucerswap`)
 - Website: [https://www.saucerswap.finance](https://www.saucerswap.finance)
 - Lifecycle: unknown
-- Generated: 2026-05-27T05:54:34.373Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-a9ad
+- Generated: 2026-06-17T07:00:56.763Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $32,902,662.00
+- DeFi Llama TVL: $28,917,193.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-SaucerSwap is a decentralized exchange (DEX) protocol on the Hedera network that enables users to swap tokens, provide liquidity, and earn yield through automated market maker (AMM) pools and liquidity mining.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No contract inventory or structural relationships are available to analyze.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,0 +1,17 @@
+{
+  "address": "0x43466ca285c7e57744b649d4e7f3dde47dbc9a3f",
+  "chain_id": 137,
+  "contract_name": "OracleTetu",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:15.679Z"
+}

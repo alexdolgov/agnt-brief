@@ -1,0 +1,17 @@
+{
+  "address": "0xc9b53ab2679f573e480d01e0f49e2b5cfb7a3eab",
+  "chain_id": 8453,
+  "contract_name": "WXTZ",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 50,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:26.679Z"
+}

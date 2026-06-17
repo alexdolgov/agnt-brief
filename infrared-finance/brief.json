@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "infrared-finance",
-  "generated_at": "2026-06-11T00:07:58.490Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-17T07:00:36.023Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "infrared-finance",
@@ -32,24 +32,24 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 27,
-    "total_addresses": 121,
-    "unique_implementations": 27,
-    "total_deployments": 121,
-    "audited_contracts": 15,
+    "total_contracts": 8,
+    "total_addresses": 22,
+    "unique_implementations": 8,
+    "total_deployments": 22,
+    "audited_contracts": 8,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 15,
+    "contracts_verified_audited": 8,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 12,
+    "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 27,
-    "scoreable_audits": 14,
-    "dl_tvl_usd": 50681737.57562,
-    "tvl_usd": 861900.5874273787,
+    "scoreable_audits": 10,
+    "dl_tvl_usd": 30216782.27221,
+    "tvl_usd": 861893.5292350037,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "berachain": 861900.59
+      "berachain": 861893.53
     },
     "asd_usd": null,
     "website_url": "https://infrared.finance",
@@ -57,7 +57,7 @@
       "berachain",
       "bsc"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 50,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -73,10 +73,21 @@
   "topography": {
     "project_purpose": "Infrared Finance is a Berachain Proof-of-Liquidity and liquid-products protocol. Its product suite includes PoL vaults, iBGT, iBERA as the BERA liquid staking receipt token, sIR, and IR Swap. BSC IROFT/OFT deployments should be described separately as token/OFT infrastructure rather than as the main BERA staking derivative or a TVL-bearing protocol chain.",
     "relationship_narrative": "The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with supporting infrastructure: depositor and withdrawor handle user flows, distributor manages reward distribution, fee receivor collects protocol fees, and bribe collector optimizes yield, all sharing the iROFT token.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 121,
+    "live_contracts": 22,
+    "inactive_contracts": 95,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 7,
+    "live_deployment_units": 5,
+    "dependencies_extracted": 8,
+    "unverified_dependencies": 5,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 27,
+    "unique_implementations": 8,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,12 +100,14 @@
       "chain_id": 80094,
       "chain_name": "berachain",
       "address": "0x021f62d74f97f63575f8c608ab7cc3c591eccb0d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WrappedVault",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 861900.5874273787,
+      "tvl_usd": 861893.5292350037,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "WrappedVault",
@@ -103,6 +116,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x021f62d74f97f63575f8c608ab7cc3c591eccb0d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0005826903501695948,
@@ -111,61 +126,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x023e5d8740823bb19401cbf561bf322ef93124f0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.46115127593935e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x03c2ef90ec1f5deab5a16accfb49c42ac602ba65",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.000001047394709801185,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x04bd6ed6408cb573419fd763e3b7ced57de69bd5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x04edcc9715445dd38f9fb327af8740bdfb81b739",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.3360186462811758e-16,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x0cb3e2482357d1ac7df0f9ac2df776717142d009",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.171519769001881e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x0fff6d1907eced46bc660643f022ddc1db9ddc97",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x104e92e8f7aa38a6e2f5f52adff357ab05738d71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2852.124769649784,
@@ -175,6 +138,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x1109bf8125a52fb8a92f1ee5cd3d9f988a80f954",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 142644.22985642002,
@@ -183,151 +148,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x1453c6883c3492654757fe9ac048f98c69eba339",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0506215714694004e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x16275c1cae13131b153cec4f8178304c7ae730f4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.051790475838382e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x1a18f5546ddd417933db08bdb7325916d71a2241",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.880983652045132e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x22a3fb83478b2c4aa4b166dda78192284a488715",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7462802148234763,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x23ed71a0d5a1583233115d25a22e96cd30fd8864",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.195036926971078e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x2415fee8af7c121e17ae1b78e0891a8c6112cf8f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x27b03a57418dd0d827ac99d279a1bf3bd89086db",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.2309565564382005e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x2a447fe46490b5086557ce6e7b0609f845e69ac2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.171519769001881e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x2e113998f4561cc15543c380b0a92c60657ae031",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x2e32ddd251bdbc0daf272c703ed04e306fe2b00f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x2f511975290121b5937a1bbc836c256244723c9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x3904aaa585d846096fcdb38ef516c3ebace1ab84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.00005029580894943078,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x3b43d2c548038167da3351318aae879af60462b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5.226164349951179e-16,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x3fc37a9989520747df339c7928f569f9bf798d00",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.2309565564382005e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x42cd67e9aecd4bc18a8b63750811092f367262b6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7308405587645165,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x47590f8c83bb99ff9c9d6640f007722a79f0ab02",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3.002135437835549e-13,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x4fce306384228d708e63b6300f4ee3357cf64444",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5879.011575405648,
@@ -337,6 +160,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x57684b647d4cc6b151e7476355fcfdc174da7ece",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 185994.0571950515,
@@ -345,16 +170,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x5782d6f9b7cba0a0e9151aecbd26acdc64d5aaa5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x58b34e79d53cacbbc9920477c5bea55a832871fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 213130.44342564308,
@@ -363,115 +181,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x58b61ed5c1657e78ffc7e574e8ac42c6f20ebe1e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.352582351396796e-16,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x5d51a2034c3a830b6e50620f210e6882d3620224",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7506581289238369,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x6503a84a4b64db7d0617ed200328562c3e1796c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x6e0d09b502c6e561b287cd4e66c8ef879c86e20d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.3575041745548104e-16,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x70d6cf978364543b5fc48107b513da65ed1ad2ad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.051790475838382e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x732dfb929cdea0b05508f8f9d9695b88f9987a42",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7506581289238369,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x78808a499e163a5a88499f4f0d1f1457489f503c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.464513105682455e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x79a27a5b2a84b60e2869dd09c46d537b1a6f4ef8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.03706043280182275,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7bc28c1bf423fd364994815bc4e82c596a5a375a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7c010b2f8e994bc86827a1fc7122792e2bc5b5c6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.1899930405655004e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7cc2485c334a9c04f40cfc6e36ca8be7f2a4efe1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.1899930405655004e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7cde0a989c97a15b6f2b63f0b7582d40a4e86d23",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7308405587645165,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x7e312939980b2842b524d3418aa9b7498054e39a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 69254.88972747454,
@@ -480,34 +192,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x7e571726fa7e734d8c6bfc335df860f5b9286355",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7ef1f9f4e6e2f8f112b953f3b0a71ed1311f4730",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0000010432996657493122,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7f6ed59799d4cfac23d20b623974e9fca287da17",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.00002844879196978181,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x81ba24b92b162ba56c622b4b80e4ce26426f490a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 161.7697249503398,
@@ -516,61 +203,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x81fb2a522cef613da927eb2e7899b8c1a6893a1b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.1885048416802842e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x82609f09fbc441d1cbbed47a4479ea33d062f587",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7563016515859928,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x82d7503225f98b999cafdfbaab803d52f122dd2b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0642699635565392e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x85550269f0ed260a6603a3502e805fc2099034bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7493426776246711,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x86fee05992b8bcccf4d46160beca0daba90ac240",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.464513105682455e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x8b492ee2fbc146ed845cbd05e4e2eb59bfe030f9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.880983652045132e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0x920598318d0c48a19a9cbd26d86aa0d8079b139a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 18757.667350404514,
@@ -579,61 +214,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0x9433ccf93ac084f7191b78d7bd0e7d64ed344e27",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.10173156692119185,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x95c1f2e36ca90898c893ab4caa4aff79ab14ebf7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0010492427107015856,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x9f47f2b56a2767e01d15ed3c8d3fb5283c5d5c80",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0526164592096383e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x9f898e9c5863a13f68a714044d380e9ffff7b732",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xa2b10d1ee0c0f715ef0694e25984d01ac8bf83d4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0221793619727713,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xa2e5e46b0d13bf5534d204f8a49a099e47559ed4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0xa3a376e370666d0c3e10a5b1067095f2f080f26f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 16651.43474929277,
@@ -642,97 +225,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0xa3fd520cba6f44ffc4437a74865cea5d2f93ce06",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0506215714694004e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xa63ff996cc93bd4e0623f5038ad31d1146ae4f88",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xa6899cce1cea2c2c921ccbcbad296fefd0c7a955",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.1885048416802842e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xa81dde743030592237c6b3b6b3e55a9bf15abee4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5.226164349951179e-16,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xab71f6637623e3310940e6624355a094cc7c42e6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7563016515859928,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xac36a93737cd4ca67fbea7a826a45098afe53529",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.195036926971078e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xb0292fff5c5544ffa3e6a362d622b0f4eda535ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0010618226280176373,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xb04a2a6059ee328ad740b8c66b4cd69716ad3839",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.693329280196667e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xb065f887f23d3707386b3fdfecb252e3c50f5088",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.052962033367647e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xb17f63aed263d6be67d817053d664190fba15a50",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.693329280196667e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0xb38b0d08965654f11377c0c90f2338d63926c9b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 65910.3721434606,
@@ -741,88 +236,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0xb59aa6e935c66eea5dedc0eb385ceb62fbe85757",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.07131621622280064,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xba7f7d6a07ae4f42f4add5d360d9ca6d41825073",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xbc44617088aeaafacdeb6de68cfa287fb2cda130",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xbcd6819a00df6e7f7e6d5e073ff00a91bc876a9d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.10209532179324321,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xbf19612f6ef35fe411801509e4c284647213f5fe",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0000010377791874566099,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xc2f57489a989c41bf3f5db00d7ccda3639eee206",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0526164592096383e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xc6b6b099cfbcbc3d23ea9abfe4da500134479a29",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.2376489115954709e-13,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xc9adf89f108992af6094d0d217e09e54237250db",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.7493426776246711,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xcc0c3f6c8c7a9a7c7788d85ff720830f8af6d05c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.583220276800355e-13,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0xcc824b6b022e53c564c60d16b1a4e4bb93851a75",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 110713.34791544077,
@@ -832,6 +248,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0xd10759bd1ebd69a4e0873dc3c08c43cff1f166f4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 29890.351352300433,
@@ -840,25 +258,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0xd39b77918d1897b900490f3e519350cc2a09f907",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0642699635565392e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xd5ae03140fcbccbde82756489d5b13f46a37d25a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7.46115127593935e-11,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0xde747203c338993fbea53c61e5b2f558c4687958",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5.40976130443506,
@@ -867,70 +269,9 @@
         {
           "chain_id": 80094,
           "chain_name": "berachain",
-          "address": "0xdfd21d8190f444437a5f791ef920b57ac43184ca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0010492427107015856,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xe193336621b91d9034a7668fd5fe0065ad84f34f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.971181466959169e-13,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xeb6e02ad20e35ad1f2266b98f703757b493bbcce",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf3a956b2c29f5c1216a72c88259db9e66e1f3aa1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.000001044683313739551,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf3cbc6876bc2b364eca48295f17c87c821ad8c7b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.0446462442953449e-15,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf4c35f3a334ca73a229d9d416924f51675240796",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf69cf3afc2aa3d58b32fe365e6c47cafb42f18a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.086035582987394e-12,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
           "address": "0xfe7a781914525e7e7c93b30c213fbfcde1c5f575",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 48.41910551498244,
@@ -950,43 +291,9 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x61bd35fbec49b144a1953f48f84ef8d2b321da40",
-      "name": "BribeCollector",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BribeCollector",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x61bd35fbec49b144a1953f48f84ef8d2b321da40",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5732",
-        "audit-5734",
-        "audit-5736",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0x8d44170e120b80a7e898bfba8cb26b01ad21298c",
+      "deployment_unit": "unit-21703",
+      "deployment_unit_proxy_count": 1,
       "name": "BribeCollectorV1_4",
       "role": "operational_periphery",
       "origin_kind": "standard_library",
@@ -1001,6 +308,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x8d44170e120b80a7e898bfba8cb26b01ad21298c",
+          "deployment_unit": "unit-21703",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1019,116 +328,9 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x559d1347242f350bdc44f99c729984bfb188092f",
-      "name": "Infrared",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Infrared",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x559d1347242f350bdc44f99c729984bfb188092f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5712",
-        "audit-5716",
-        "audit-5723",
-        "audit-5732",
-        "audit-5734",
-        "audit-5736",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x94b5d53483117fe3832c8e08d2a71ab8ab546d81",
-      "name": "InfraredBERA",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "InfraredBERA",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x94b5d53483117fe3832c8e08d2a71ab8ab546d81",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5732",
-        "audit-5734",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xef26bcfb9ce4e807465a46087e9dd73b652fef87",
-      "name": "InfraredBERADepositor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "InfraredBERADepositor",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xef26bcfb9ce4e807465a46087e9dd73b652fef87",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5732",
-        "audit-5734",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0x04cddc538ea65908106416986adaecefd4cab7d7",
+      "deployment_unit": "unit-21700",
+      "deployment_unit_proxy_count": 1,
       "name": "InfraredBERADepositorV2",
       "role": "unknown",
       "origin_kind": "standard_library",
@@ -1143,6 +345,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x04cddc538ea65908106416986adaecefd4cab7d7",
+          "deployment_unit": "unit-21700",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1164,50 +368,9 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0xab2dadd15af962b036d361849c024a3f70b18254",
-      "name": "InfraredBERAFeeReceivor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xab2dadd15af962b036d361849c024a3f70b18254",
-      "impl_name": "InfraredBERAFeeReceivor",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xab2dadd15af962b036d361849c024a3f70b18254",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf6a4a6acecd5311327ae3866624486b6179fef97",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5724",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+      "deployment_unit": "unit-21704",
+      "deployment_unit_proxy_count": 1,
       "name": "InfraredBERAV2_1",
       "role": "unknown",
       "origin_kind": "standard_library",
@@ -1222,6 +385,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
+          "deployment_unit": "unit-21704",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1242,6 +407,8 @@
       "chain_id": 80094,
       "chain_name": "berachain",
       "address": "0x8c0e122960dc2e97dc0059c07d6901dce72818e1",
+      "deployment_unit": "unit-21702",
+      "deployment_unit_proxy_count": 1,
       "name": "InfraredBERAWithdrawor",
       "role": "operational_periphery",
       "origin_kind": "standard_library",
@@ -1256,6 +423,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x8c0e122960dc2e97dc0059c07d6901dce72818e1",
+          "deployment_unit": "unit-21702",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1280,45 +449,9 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x725a5576232220132f129f08e4a9eb7d4be92444",
-      "name": "InfraredBERAWithdraworLite",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "InfraredBERAWithdraworLite",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x725a5576232220132f129f08e4a9eb7d4be92444",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5714",
-        "audit-5727",
-        "audit-5729",
-        "audit-5732",
-        "audit-5734",
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "InfraredBGT",
       "role": "unknown",
       "origin_kind": "native",
@@ -1333,6 +466,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1340,52 +475,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5738"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x1fad980dfaff71e3fdd9bef643ab2ff2bdc4ccd6",
-      "name": "InfraredDistributor",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x742ebbf91a37064e89e5628d139070b73aa90247",
-      "impl_name": "InfraredDistributor",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x1fad980dfaff71e3fdd9bef643ab2ff2bdc4ccd6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x742ebbf91a37064e89e5628d139070b73aa90247",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-5724",
-        "audit-5732",
-        "audit-5734",
-        "audit-5736",
         "audit-5738"
       ],
       "is_audited": true,
@@ -1398,6 +487,8 @@
       "chain_id": 80094,
       "chain_name": "berachain",
       "address": "0xb71b3daea39012fb0f2b14d2a9c86da9292fc126",
+      "deployment_unit": "unit-21705",
+      "deployment_unit_proxy_count": 1,
       "name": "InfraredV1_10",
       "role": "unknown",
       "origin_kind": "standard_library",
@@ -1412,6 +503,8 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0xb71b3daea39012fb0f2b14d2a9c86da9292fc126",
+          "deployment_unit": "unit-21705",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1432,6 +525,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xace9de5af92eb82a97a5973b00eff85024bdcb39",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "IROFT",
       "role": "unknown",
       "origin_kind": "native",
@@ -1446,6 +541,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xace9de5af92eb82a97a5973b00eff85024bdcb39",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1460,378 +557,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x01b775b353176bb1b9075c5d344c2b689285282a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x01b775b353176bb1b9075c5d344c2b689285282a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x1ece52a596c2cbef7b71fa8fa8fc738aa7ad441f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x1ece52a596c2cbef7b71fa8fa8fc738aa7ad441f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x718874a9402f8e5802607d4d1cc008274f0bd3d4",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x718874a9402f8e5802607d4d1cc008274f0bd3d4",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x778e9294af38dfc8b92e8969953eb559b47e896e",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x778e9294af38dfc8b92e8969953eb559b47e896e",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x7d763143a5c037a03d29b4f7049fe71b197fec40",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7d763143a5c037a03d29b4f7049fe71b197fec40",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x7de65e4fcc6a0b411b90a24cc33741ab3cd00262",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x7de65e4fcc6a0b411b90a24cc33741ab3cd00262",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xb13a7d1361bd6f6734078654047daae210f2d4d4",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xb13a7d1361bd6f6734078654047daae210f2d4d4",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xbdc6d8481ba06fa7bb043ab0fb74bae9e774bf12",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xbdc6d8481ba06fa7bb043ab0fb74bae9e774bf12",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xd452dd6424d78a0a12bd0462ae6868e7da28e5cb",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xd452dd6424d78a0a12bd0462ae6868e7da28e5cb",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xd76707ffb9feb81eda0d6d0ea56d4eb0325d5673",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xd76707ffb9feb81eda0d6d0ea56d4eb0325d5673",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xdd0a77eb6235d714d612a4f3f5d2185874c3ee39",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xdd0a77eb6235d714d612a4f3f5d2185874c3ee39",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xff343f31a6e327a6d52f7d4125e1b6f4054deaa6",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xff343f31a6e327a6d52f7d4125e1b6f4054deaa6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -1849,18 +574,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IBGT",
-        "Infrared",
-        "InfraredVault",
-        "InfraredVaultDeployer",
-        "MultiRewards",
-        "ValidatorSet"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1907,7 +625,7 @@
         "InfraredBERAWithdraworLite",
         "UpgradeInfraredBERAWithdrawor"
       ],
-      "matched_contracts": 3,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1948,13 +666,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Infrared"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2104,13 +820,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Infrared"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2148,7 +862,7 @@
         "WrappedRewardToken",
         "WrappedVault"
       ],
-      "matched_contracts": 102,
+      "matched_contracts": 20,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -2218,7 +932,7 @@
         "InfraredBERAWithdraworLite",
         "MerkleTree"
       ],
-      "matched_contracts": 3,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "medium",
       "scope_section_found": false,
@@ -2267,7 +981,7 @@
         "InfraredBERAWithdraworLite",
         "MerkleTree"
       ],
-      "matched_contracts": 3,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "medium",
       "scope_section_found": false,
@@ -2344,7 +1058,7 @@
         "RewardsLib",
         "VaultManagerLib"
       ],
-      "matched_contracts": 8,
+      "matched_contracts": 1,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": false,
@@ -2404,7 +1118,7 @@
         "RewardsLib",
         "VaultManagerLib"
       ],
-      "matched_contracts": 8,
+      "matched_contracts": 1,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": false,
@@ -2452,29 +1166,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BalanceLogicLibrary",
-        "BribeCollector",
-        "BribeVotingReward",
-        "IBGT",
-        "IInfraredDistributor",
-        "IVoter",
-        "IVotingEscrow",
-        "Infrared",
-        "InfraredDistributor",
-        "InfraredUpgradeable",
-        "InfraredVault",
-        "MultiRewards",
-        "Reward",
-        "VelodromeTimeLibrary",
-        "Voter",
-        "VotingEscrow",
-        "VotingReward"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2528,7 +1224,7 @@
         "ValidatorManagerLib",
         "WrappedVault"
       ],
-      "matched_contracts": 103,
+      "matched_contracts": 16,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -2539,43 +1235,40 @@
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 15,
+      "contracts_covered": 8,
       "coverage_pct": 100,
       "latest_audit": "2026-04"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
-      "contracts_covered": 10,
-      "coverage_pct": 66.7,
+      "contracts_covered": 4,
+      "coverage_pct": 50,
       "latest_audit": "2026-03"
-    },
-    {
-      "auditor": "Zellic",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 6.7,
-      "latest_audit": "2024-10"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 19,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 6,
-    "needs_review": 2
+    "standard_library": 5,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 241
     },
     "extraction_confidence_counts": {
-      "high": 12,
+      "high": 8,
       "medium": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
+      {
+        "audit_id": 5712,
+        "report_name": "Infrared - Zellic Audit Report.pdf"
+      },
       {
         "audit_id": 5713,
         "report_name": "Infrared - Zenith Audit Report - 20082025.pdf"
@@ -2583,6 +1276,10 @@
       {
         "audit_id": 5715,
         "report_name": "Infrared - Zenith Audit Report.pdf"
+      },
+      {
+        "audit_id": 5716,
+        "report_name": "Infrared Berachain Core Integration - Zellic Audit Report.pdf"
       },
       {
         "audit_id": 5717,
@@ -2605,6 +1302,10 @@
         "report_name": "Infraredv1.5.pdf"
       },
       {
+        "audit_id": 5723,
+        "report_name": "Zenith Audit Report - Infrared Finance.pdf"
+      },
+      {
         "audit_id": 5725,
         "report_name": "cantinacode-24.01.2026.pdf"
       },
@@ -2623,6 +1324,10 @@
       {
         "audit_id": 5731,
         "report_name": "report-cantinacode-infrared-0320.pdf"
+      },
+      {
+        "audit_id": 5736,
+        "report_name": "report-cantinacode-infrared.pdf"
       },
       {
         "audit_id": 5737,

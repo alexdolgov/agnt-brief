@@ -7,30 +7,39 @@
 - Project: DAO Maker (`dao-maker`)
 - Website: [https://daomaker.com/](https://daomaker.com/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-14T10:50:54.849Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:40.386Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum
-- Contract surface: 20 unique implementations (27 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $1,526,441.00
 - On-chain TVL (included contracts): $9,341,771.08
 - TVL by chain: Ethereum $9,341,771.08
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 DAO Maker is a launchpad, fundraising, and growth-platform ecosystem for crypto projects, with user-facing products that include token launches, airdrops, vesting, staking, farms, vaults, and DAO Swap. Vesting and token distribution are product components rather than the full scope of the protocol.
 
-### Architecture
+## Contract Surface Quality
 
-The vesting family is self-contained, with the token contract serving as the core asset and the staking contract providing utility for token holders.
+- Indexed contracts: 27; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 24 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 1/7.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 20
-- Raw deployments: 27
+- Unverified implementations: 0
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $9,341,771.08
@@ -49,17 +58,13 @@ The vesting family is self-contained, with the token contract serving as the cor
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Token | token | ethereum | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | ⚠️ Unaudited |
-| BuyNLock | unknown | ethereum | [`0x9b8cc9...bf13ae`](./contracts/ethereum-1/0x9b8cc92cee71e789e6a69e5996cee43fa3bf13ae/) | ⚠️ Unaudited |
-| DAOFarm | unknown | bsc | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | ⚠️ Unaudited |
-| DAOPrefundingRaise | unknown | bsc | [`0x0530c7...97fe02`](./contracts/bsc-56/0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02/) | ⚠️ Unaudited |
-| Farm | unknown | ethereum | 6 deployments: ethereum [`0x141ba8...307346`](./contracts/ethereum-1/0x141ba88b17442f4fe305871c9642e3c1c6307346/); ethereum `0x17aa35...ea8490`; ethereum `0x6d2976...f87b45`; ethereum `0x7c27bc...d1a9ff`; ethereum `0xc8cf20...cb4ef6`; ethereum `0xea7891...3e553e` | ⚠️ Unaudited |
-| SHO | unknown | bsc | [`0xe8ea59...24b3fc`](./contracts/bsc-56/0xe8ea597b795815f971cdd88258b31faa0a24b3fc/) | ⚠️ Unaudited |
-| Staking | unknown | ethereum | 3 deployments: ethereum [`0xabfb0a...8f531e`](./contracts/ethereum-1/0xabfb0aa83b427519cc27da5b6357a0ccbd8f531e/); ethereum `0xd07e86...d6a847`; ethereum `0xefee37...b66188` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Token | token | ethereum | n/a | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | ⚠️ Unaudited |
+| DAOFarm | unknown | bsc | n/a | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | ⚠️ Unaudited |
+| Staking | unknown | ethereum | n/a | [`0xd07e86...d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,25 +78,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (13)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x30e8de...2747bd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x47617f...669f42` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4fa001...d87cf8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x608926...58d856` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6347d8...1f5bf8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6a45b5...4182f6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7b03e2...079e0b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7db84c...f9357f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb7301d...7cc23d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xcf5180...3b0490` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xddde91...fdb351` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe55c9a...b0dde5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xecb621...b1f74a` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -112,18 +103,14 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | Token | token | $9,341,771.08 | Verified native implementation with $9,341,771.08 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9b8cc9...bf13ae`](./contracts/ethereum-1/0x9b8cc92cee71e789e6a69e5996cee43fa3bf13ae/) | BuyNLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | DAOFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0530c7...97fe02`](./contracts/bsc-56/0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02/) | DAOPrefundingRaise | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x141ba8...307346`](./contracts/ethereum-1/0x141ba88b17442f4fe305871c9642e3c1c6307346/) | Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe8ea59...24b3fc`](./contracts/bsc-56/0xe8ea597b795815f971cdd88258b31faa0a24b3fc/) | SHO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xabfb0a...8f531e`](./contracts/ethereum-1/0xabfb0aa83b427519cc27da5b6357a0ccbd8f531e/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd07e86...d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

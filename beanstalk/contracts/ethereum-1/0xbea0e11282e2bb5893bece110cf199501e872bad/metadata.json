@@ -1,0 +1,17 @@
+{
+  "address": "0xbea0e11282e2bb5893bece110cf199501e872bad",
+  "chain_id": 1,
+  "contract_name": "Well",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:06.626Z"
+}

@@ -5,11 +5,11 @@
 - Project: PuzzleSwapOrg (`puzzleswaporg`)
 - Website: [https://puzzleswap.org/trade](https://puzzleswap.org/trade)
 - Lifecycle: unknown
-- Generated: 2026-06-11T02:06:48.681Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-17T07:00:36.175Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,378,880.00
+- DeFi Llama TVL: $1,069,047.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 PuzzleSwapOrg is a Waves-based DeFi protocol offering DEX 2.0 and lending services. Unsupported claims about broad multi-chain EVM deployments, staking, yield farming, and cross-chain products should be removed unless independently evidenced.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -5,34 +5,42 @@
 - Project: AXC GIFT (`axc-gift`)
 - Website: [https://axc.xyz](https://axc.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T05:30:48.500Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:01:00.879Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
-- Contract surface: 3 unique implementations (4 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,290,517.00
-- On-chain TVL (included contracts): $5,290,517.00
-- TVL by chain: Bsc $5,290,517.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 AXC GIFT is a permissioned asset-backed token on BNB Chain/BSC that seeks to match the performance of the GROW Heritage Fund.
 
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 3
-- Raw deployments: 4
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $5,290,517.00
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -47,11 +55,9 @@ AXC GIFT is a permissioned asset-backed token on BNB Chain/BSC that seeks to mat
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ShareToken | unknown | bsc | 2 deployments: bsc [`0x4e255f...447b75`](./contracts/bsc-56/0x4e255f4f1a5575d20e14334c90b9605af3447b75/); bsc `0x6eca9d...502be9` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,10 +75,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x6bbf01...1df2a5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xa856ff...069027` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x6bbf01...1df2a5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa856ff...069027` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -92,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

@@ -5,11 +5,11 @@
 - Project: Splash Protocol (`splash-protocol`)
 - Website: [https://www.splash.trade](https://www.splash.trade)
 - Lifecycle: unknown
-- Generated: 2026-06-11T02:57:31.399Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-17T07:00:35.748Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $5,153,353.52
+- DeFi Llama TVL: $3,626,998.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Splash Protocol is a Cardano-based decentralized exchange, trading, and market-making protocol. Its scope should be described around Cardano DEX liquidity, swaps/trading, and market-making infrastructure, not as a multi-chain EVM yield-farming, staking-vault, liquidity-optimization, or cross-chain bridge platform unless supported by current Splash documentation.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

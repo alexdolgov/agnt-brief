@@ -5,11 +5,11 @@
 - Project: DefiTuna (`defituna`)
 - Website: [https://defituna.com](https://defituna.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:48:50.564Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:40.388Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,626,739.00
+- DeFi Llama TVL: $3,117,876.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 DefiTuna is a Solana DeFi protocol focused on liquidity-provider tooling, AMM/DEX functionality, liquidity management, and lending. Its scope should be described around DefiTuna's Solana programs and repositories, including tuna-sdk and fusionamm-sdk, rather than unsupported EVM multi-chain yield-farming or broad cross-chain aggregation claims.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,0 +1,17 @@
+{
+  "address": "0xd23431f39c88875d1cd6b517d4e54b752fe5776d",
+  "chain_id": 1,
+  "contract_name": "CalldataLogic",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:49.574Z"
+}

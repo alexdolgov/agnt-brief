@@ -7,11 +7,11 @@
 - Project: TrueFi (`truefi`)
 - Website: [https://app.truefi.io/](https://app.truefi.io/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-11T03:45:11.751Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-17T07:00:47.716Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, ethereum
-- Contract surface: 8 unique implementations (11 raw deployments)
-- DeFi Llama TVL: $15,393,827.90
+- Contract surface: 6 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $15,380,748.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,16 +23,24 @@ TrueFi is/was an uncollateralized lending protocol that enabled borrowers to acc
 
 The TrueFi family's AutomatedLineOfCreditFactory is governed by the Explore Lending Vaults family's GnosisSafeProxy, which controls protocol configuration. The ProxyWrapper acts as a registry and proxy for the factory, linking governance decisions to credit line deployment.
 
+## Contract Surface Quality
+
+- Indexed contracts: 11; live-surface contracts included: 7 (1 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 1/3 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/8 (37.5%)
+- Verified implementations audited: 1/6 (16.7%)
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 11
+- Unique implementations: 6
+- Raw deployments: 7
 - Audits discovered: 24
-- Scoreable audits (matched contracts): 6
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
 - Staleness: 0 fresh, 0 aging, 17 stale, 7 unknown
@@ -43,28 +51,26 @@ The TrueFi family's AutomatedLineOfCreditFactory is governed by the Explore Lend
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ABDK | Tier 2 | 3 | 37.5% | 2022-06 |
-| unknown | Tier 2 | 3 | 37.5% | 2022-08 |
+| ABDK | Tier 2 | 1 | 16.7% | 2022-06 |
+| unknown | Tier 2 | 1 | 16.7% | 2022-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AutomatedLineOfCredit | unknown | arbitrum | 2 deployments: arbitrum [`0x45277f...a46d97`](./contracts/arbitrum-42161/0x45277f7d263c83f8223460621f31774c52a46d97/); arbitrum `0x8626a4...e95d98` | ✅ Audited |
-| AutomatedLineOfCreditFactory | registry | arbitrum | 2 deployments: arbitrum [`0x24d00e...82cbb5`](./contracts/arbitrum-42161/0x24d00e171da01124052a4b13931631ba7482cbb5/); arbitrum `0xca1353...8f62e9` | ✅ Audited |
-| ProtocolConfig | governance | arbitrum | 2 deployments: arbitrum [`0x5c6753...781dd0`](./contracts/arbitrum-42161/0x5c67531524201d0a774405827ba4c2de15781dd0/); arbitrum `0xbc70fe...823482` | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AutomatedLineOfCredit | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x45277f...a46d97`](./contracts/arbitrum-42161/0x45277f7d263c83f8223460621f31774c52a46d97/); arbitrum `0x8626a4...e95d98` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AllowAllLenderVerifier | periphery | arbitrum | [`0x607ced...2fdd4f`](./contracts/arbitrum-42161/0x607cedb42442e206fae3e2cc12afddd7e12fdd4f/) | ⚠️ Unaudited |
-| DepositController | governance | arbitrum | [`0xb4c8bf...0fe372`](./contracts/arbitrum-42161/0xb4c8bfd082a47c008ce95dd13314105f6c0fe372/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0xdc0175...5d476a`](./contracts/ethereum-1/0xdc0175978ae72383bbfdbe56fed69d3acd5d476a/) | ⚠️ Unaudited |
-| OpenTransferController | governance | arbitrum | [`0xa12590...ae177f`](./contracts/arbitrum-42161/0xa1259068ea5252a307ced730d758c2e8d7ae177f/) | ⚠️ Unaudited |
-| WithdrawController | operational_periphery | arbitrum | [`0xee3f9a...3c25e6`](./contracts/arbitrum-42161/0xee3f9add26de00fcc02d4bc0e6d0dbee0e3c25e6/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AllowAllLenderVerifier | periphery | arbitrum | n/a | [`0x607ced...2fdd4f`](./contracts/arbitrum-42161/0x607cedb42442e206fae3e2cc12afddd7e12fdd4f/) | ⚠️ Unaudited |
+| DepositController | governance | arbitrum | n/a | [`0xb4c8bf...0fe372`](./contracts/arbitrum-42161/0xb4c8bfd082a47c008ce95dd13314105f6c0fe372/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-29172 | [`0xdc0175...5d476a`](./contracts/ethereum-1/0xdc0175978ae72383bbfdbe56fed69d3acd5d476a/) | ⚠️ Unaudited |
+| OpenTransferController | governance | arbitrum | n/a | [`0xa12590...ae177f`](./contracts/arbitrum-42161/0xa1259068ea5252a307ced730d758c2e8d7ae177f/) | ⚠️ Unaudited |
+| WithdrawController | operational_periphery | arbitrum | n/a | [`0xee3f9a...3c25e6`](./contracts/arbitrum-42161/0xee3f9add26de00fcc02d4bc0e6d0dbee0e3c25e6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,18 +106,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [truefi_audit_jakub_wojciechowski_november_22_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrueFi/truefi_audit_jakub_wojciechowski_november_22_2020.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [truefi_audit_slowmist_november_21_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrueFi/truefi_audit_slowmist_november_21_2020.pdf) | SlowMist | Audit | 2020-11 | stale | Direct | n/a | 0 | n/a |
 | [2022-01-03 Injected Bugs - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-03%20Injected%20Bugs%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [2022-01-20 Chainsulting Audit - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-20%20Chainsulting%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-01 | stale | Direct | contract_name | 3 | high |
+| [2022-01-20 Chainsulting Audit - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-20%20Chainsulting%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-01 | stale | Direct | contract_name | 0 | n/a |
 | [1.md (also discovered via alternate URL)](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/1.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [3.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/3.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [4.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/4.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [5.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/5.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-22%20Internal%20Security%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [2022-02-07 Solidified Audit - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-02-07%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 3 | high |
-| [README.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/README.md) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 2 | medium |
-| [2022-05-26 G0 Group Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-05-26%20G0%20Group%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-05 | stale | Direct | contract_name | 6 | high |
-| [2022-06-07 ABDK Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-06-07%20ABDK%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | ABDK | Audit | 2022-06 | stale | Direct | contract_name | 6 | high |
-| [2022-08-10 Solidified Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-08-10%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 6 | high |
+| [2022-02-07 Solidified Audit - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-02-07%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 0 | n/a |
+| [README.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/README.md) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 0 | n/a |
+| [2022-05-26 G0 Group Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-05-26%20G0%20Group%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-05 | stale | Direct | contract_name | 2 | high |
+| [2022-06-07 ABDK Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-06-07%20ABDK%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | ABDK | Audit | 2022-06 | stale | Direct | contract_name | 2 | high |
+| [2022-08-10 Solidified Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-08-10%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -128,7 +134,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 0 |
@@ -137,9 +143,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 18
+- Audits with zero matched contracts: 21
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5, medium=1
+- Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=26
 
 Zero-match audit list:
@@ -156,11 +162,14 @@ Zero-match audit list:
 - [6677] truefi_audit_jakub_wojciechowski_november_22_2020.pdf
 - [6678] truefi_audit_slowmist_november_21_2020.pdf
 - [6679] 2022-01-03 Injected Bugs - TrueFi Lending Marketplace V1.pdf
+- [6680] 2022-01-20 Chainsulting Audit - TrueFi Lending Marketplace V1.pdf
 - [6681] 1.md
 - [6682] 2.md
 - [6683] 3.md
 - [6684] 4.md
 - [6685] 5.md
 - [6686] 2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf
+- [6688] 2022-02-07 Solidified Audit - TrueFi Lending Marketplace V1.pdf
+- [6689] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

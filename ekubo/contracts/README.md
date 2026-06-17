@@ -1,6 +1,6 @@
 # ekubo — Contract Index
 
-15 unique implementations on ethereum · 17 deployments · 4 audited · 5 unaudited · 6 unverified
+14 unique implementations on ethereum · 15 deployments · 3 audited · 5 unaudited · 6 unverified
 
 ## adapter (2)
 
@@ -8,12 +8,6 @@
 |---|---|---|---|---|
 | [MEVResistRouter](./ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ethereum | [`0x0c95ea...44aeab`](./ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ⚠️ Unaudited | Verified |
 | [Router](./ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ethereum | [`0x999585...dff931`](./ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ✅ Audited | Verified |
-
-## operational_periphery (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [Oracle (2 deployments)](./ethereum-1/0x514d5de68852628af2f1236f780866989660ada6/) | ethereum | 2 deployments: ethereum [`0x514d5d...60ada6`](./ethereum-1/0x514d5de68852628af2f1236f780866989660ada6/); ethereum `0x51d02a...42527c` | ✅ Audited | Verified |
 
 ## registry (1)
 

@@ -5,11 +5,11 @@
 - Project: Sceptre Liquid (`sceptre-liquid`)
 - Website: [https://flare.sceptre.fi](https://flare.sceptre.fi)
 - Lifecycle: unknown
-- Generated: 2026-06-11T02:30:35.008Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-17T07:01:00.621Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $20,032,855.90
+- DeFi Llama TVL: $17,243,517.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Sceptre Liquid is a liquid staking protocol that allows users to stake assets and receive liquid staking tokens in return, enabling them to earn staking rewards while maintaining liquidity.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

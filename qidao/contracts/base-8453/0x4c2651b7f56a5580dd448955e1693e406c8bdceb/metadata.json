@@ -1,0 +1,17 @@
+{
+  "address": "0x4c2651b7f56a5580dd448955e1693e406c8bdceb",
+  "chain_id": 8453,
+  "contract_name": "graceQiVaultPeriphery",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:14.784Z"
+}

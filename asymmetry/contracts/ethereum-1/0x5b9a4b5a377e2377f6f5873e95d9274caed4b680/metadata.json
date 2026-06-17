@@ -1,0 +1,17 @@
+{
+  "address": "0x5b9a4b5a377e2377f6f5873e95d9274caed4b680",
+  "chain_id": 1,
+  "contract_name": "dASF Redemptions",
+  "compiler_version": "vyper:0.4.1",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000000ef268a2421f490a2d14a955d9d7325054f2918e0000000000000000000000000ef268a2421f490a2d14a955d9d7325054f2918e000000000000000000000000e7f2800d075ca41d1a206dfaf3fb37171825ea9800000000000000000000000059a529070fbb61e6d6c91f952ccb7f35c34cf8aa000000000000000000000000f119b5aa93a7755b09952b3a88d04cdaf5329034000000000000000000000000f941898f4207c75ed5032bd28f696253b810dffa00000000000000000000000085e30b8b263bc64d94b827ed450f2edfee8579da",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:47.745Z"
+}

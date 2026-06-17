@@ -5,11 +5,11 @@
 - Project: K2 (`k2`)
 - Website: [https://opengdp.network/](https://opengdp.network/)
 - Lifecycle: active (Tier 0, 80.4% below peak)
-- Generated: 2026-06-11T00:12:14.116Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-17T07:00:52.455Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 30 unique implementations (53 raw deployments)
-- DeFi Llama TVL: $4,657,315.72
+- Contract surface: 12 unique implementations (12 raw deployments)
+- DeFi Llama TVL: $3,732,008.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,14 +21,22 @@ K2 should be described as part of the broader OpenGDP/Karak ecosystem rather tha
 
 The L1ChugSplashProxy (L1StandardBridge) and OptimismPortal work together to handle deposits and withdrawals, with the bridge managing token transfers and the portal processing transaction commitments and fraud proofs.
 
+## Contract Surface Quality
+
+- Indexed contracts: 62; live-surface contracts included: 12 (12 live, 0 unknown).
+- Excluded by liveness: 38 inactive, 12 singleton, 0 uninitialized.
+- Deployment units: 3/13 live.
+- Detected codebases: none
+- Unverified dependencies: 47/57.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/21 (0.0%)
-- Verified + Unaudited implementations: 21
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 30
-- Raw deployments: 53
+- Unverified implementations: 7
+- Unique implementations: 12
+- Raw deployments: 12
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,31 +54,15 @@ The L1ChugSplashProxy (L1StandardBridge) and OptimismPortal work together to han
 
 - None
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AddressManager | governance | ethereum | 2 deployments: ethereum [`0x14d25e...a9a837`](./contracts/ethereum-1/0x14d25e9632a628a986343d8f603f64c464a9a837/); ethereum `0xf2c899...26e8c9` | ⚠️ Unaudited |
-| Claim | unknown | ethereum | 2 deployments: ethereum [`0x2f1976...35e3ba`](./contracts/ethereum-1/0x2f197670fcf3d952be099d8559e80a3a1535e3ba/); ethereum `0x3f71b5...a3863d` | ⚠️ Unaudited |
-| Core | unknown | ethereum | [`0xd5b017...d12bfd`](./contracts/ethereum-1/0xd5b017695f9b516a90f81e268aef59b0d0d12bfd/) | ⚠️ Unaudited |
-| DelegationSupervisor | unknown | ethereum | [`0xdd5e5e...39b79e`](./contracts/ethereum-1/0xdd5e5ec73707d74210f380f5b9bb85868639b79e/) | ⚠️ Unaudited |
-| ERC1967Factory | registry | ethereum | [`0x947804...3aff2c`](./contracts/ethereum-1/0x947804256c9c46967cc55bbbbf6c0e93923aff2c/) | ⚠️ Unaudited |
-| ERC20SlashingHandler | token | ethereum | [`0x25f192...c7fb01`](./contracts/ethereum-1/0x25f1928ba030ea2b3aea49b71974db6221c7fb01/) | ⚠️ Unaudited |
-| KarakNFT | token | ethereum | 2 deployments: ethereum [`0x47c92a...97e09b`](./contracts/ethereum-1/0x47c92a446596aff7480bca7bddb3230e6a97e09b/); ethereum `0x5f7645...84a106` | ⚠️ Unaudited |
-| L1ChugSplashProxy | bridge_template | ethereum | [`0x19a1c2...80495a`](./contracts/ethereum-1/0x19a1c224107e0498229ddb68b1d8ecf3a980495a/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | 2 deployments: ethereum [`0x186324...a320c8`](./contracts/ethereum-1/0x186324b6c0f0c0e7491a20d388ac60f569a320c8/); ethereum `0x9bffa6...77022d` | ⚠️ Unaudited |
-| L1ERC721Bridge | operational_periphery | ethereum | 3 deployments: ethereum [`0x55d588...ee0f94`](./contracts/ethereum-1/0x55d588941f90fb8a71fe1442acc2af6d5eee0f94/); ethereum `0x56e511...ea21f0`; ethereum `0x952851...e7491e` | ⚠️ Unaudited |
-| L1StandardBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x0ba663...501158`](./contracts/ethereum-1/0x0ba6637f01fc5f1ac76beca8fb2c3d3b2d501158/); ethereum `0xba61f2...4b48a3` | ⚠️ Unaudited |
-| L2OutputOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x0a2334...731637`](./contracts/ethereum-1/0x0a23342520aa8ca963c4201801f4d3e95e731637/); ethereum `0x66445a...5e8425` | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | ethereum | 3 deployments: ethereum [`0x7b0aea...01c7a6`](./contracts/ethereum-1/0x7b0aea1b0889378af4caf0ed59df1d7b6a01c7a6/); ethereum `0xa41502...962c8d`; ethereum `0xf04a74...9c13db` | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | 3 deployments: ethereum [`0x32a5a8...03c4fd`](./contracts/ethereum-1/0x32a5a89ea2d0fc4128bb975ff63589090003c4fd/); ethereum `0x5cdaa3...352630`; ethereum `0xeece9c...47ea73` | ⚠️ Unaudited |
-| Proxy | proxy | ethereum | [`0xc5d81c...b042ea`](./contracts/ethereum-1/0xc5d81ca04acdb10e02e8fefa10e70cb634b042ea/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0x1612f8...d4065c`](./contracts/ethereum-1/0x1612f868eba1cea65ee66bf4a7c75001b0d4065c/); ethereum `0x94cd27...93b4b0` | ⚠️ Unaudited |
-| ResolvedDelegateProxy | unknown | ethereum | [`0x543805...3773b9`](./contracts/ethereum-1/0x5438051c64388b91baf5d28706fa33d6ee3773b9/) | ⚠️ Unaudited |
-| SystemConfig | governance | ethereum | 3 deployments: ethereum [`0x622333...8788a7`](./contracts/ethereum-1/0x622333688cc1878c7ff4205c89bde051798788a7/); ethereum `0xa99640...b3a418`; ethereum `0xd0f379...e5e830` | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | 2 deployments: ethereum [`0x275ac9...76ca65`](./contracts/ethereum-1/0x275ac9c64ef372f528f7c87d3a987d1e3d76ca65/); ethereum `0x5cde0c...7f5ef8` | ⚠️ Unaudited |
-| Vault | core_logic | ethereum | 3 deployments: ethereum [`0x01ba52...d61479`](./contracts/ethereum-1/0x01ba5212201a26c9a212f4261e49e7e0b5d61479/); ethereum `0x05cd29...7c948e`; ethereum `0x46c64c...24b0c7` | ⚠️ Unaudited |
-| VaultSupervisor | core_logic | ethereum | 6 deployments: ethereum [`0x210caf...77292c`](./contracts/ethereum-1/0x210cafd20672ca2bd98ccd4b9ec52fbe1877292c/); ethereum `0x350246...ec49c2`; ethereum `0x7cc943...a39d0a`; ethereum `0xa1b8e3...ac90e0`; ethereum `0xf29ef3...bee457`; ethereum `0xf3fafb...71a636` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Claim | unknown | ethereum | n/a | [`0x3f71b5...a3863d`](./contracts/ethereum-1/0x3f71b535c733096f303d5a495e410d3f90a3863d/) | ⚠️ Unaudited |
+| KarakNFT | token | ethereum | n/a | [`0x5f7645...84a106`](./contracts/ethereum-1/0x5f7645eeabc5eebbcca3783d96d130d03484a106/) | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | ethereum | unit-31916 | [`0xba61f2...4b48a3`](./contracts/ethereum-1/0xba61f25dd9f2d5f02d01b1c2c1c5f0b14c4b48a3/) | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | ethereum | unit-31907 | [`0x0a2334...731637`](./contracts/ethereum-1/0x0a23342520aa8ca963c4201801f4d3e95e731637/) | ⚠️ Unaudited |
+| OptimismPortal | unknown | ethereum | unit-31918 | [`0xeece9c...47ea73`](./contracts/ethereum-1/0xeece9cd7abd1cc84d9dfc7493e7e68079e47ea73/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,21 +76,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0xd1cd25597e79c2037f9bfc4b908b6184ef183a58) | proxy | ethereum | `0x1dbfb4...a1a88e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x01d962...2f78ce` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x578e61...776399` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x622017...77cd33` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x77b932...f87ecd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x80bd39...313192` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8827bb...d6043a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xcc4924...1bfea9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd1cd25...183a58` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Karak DelegationSupervisor proxy | core_logic | ethereum | n/a | `0xafa904...4449e0` | ❓ Unverified |
+| Karak v1 VaultSupervisor / factory | registry | ethereum | n/a | `0x54e44d...1ef1cc` | ❓ Unverified |
+| KarakMultisig for K2 OP Stack | governance | ethereum | n/a | `0x28a227...abb920` | ❓ Unverified |
+| Representative Karak v2 vault created by Core, pufETH collateral | core_logic | ethereum | n/a | `0x1f2aa9...3f60b4` | ❓ Unverified |
+| Representative Karak v2 vault created by Core, sUSDe collateral | core_logic | ethereum | n/a | `0x7a4b1a...b0dbca` | ❓ Unverified |
+| Representative Karak v2 vault created by Core, USDC collateral | core_logic | ethereum | n/a | `0x52d7e0...32a531` | ❓ Unverified |
+| Representative Karak v2 vault created by Core, USDe collateral | core_logic | ethereum | n/a | `0x3735e3...969378` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,25 +101,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x14d25e...a9a837`](./contracts/ethereum-1/0x14d25e9632a628a986343d8f603f64c464a9a837/) | AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2f1976...35e3ba`](./contracts/ethereum-1/0x2f197670fcf3d952be099d8559e80a3a1535e3ba/) | Claim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd5b017...d12bfd`](./contracts/ethereum-1/0xd5b017695f9b516a90f81e268aef59b0d0d12bfd/) | Core | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdd5e5e...39b79e`](./contracts/ethereum-1/0xdd5e5ec73707d74210f380f5b9bb85868639b79e/) | DelegationSupervisor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x25f192...c7fb01`](./contracts/ethereum-1/0x25f1928ba030ea2b3aea49b71974db6221c7fb01/) | ERC20SlashingHandler | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x47c92a...97e09b`](./contracts/ethereum-1/0x47c92a446596aff7480bca7bddb3230e6a97e09b/) | KarakNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x19a1c2...80495a`](./contracts/ethereum-1/0x19a1c224107e0498229ddb68b1d8ecf3a980495a/) | L1ChugSplashProxy | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x543805...3773b9`](./contracts/ethereum-1/0x5438051c64388b91baf5d28706fa33d6ee3773b9/) | ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01ba52...d61479`](./contracts/ethereum-1/0x01ba5212201a26c9a212f4261e49e7e0b5d61479/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x210caf...77292c`](./contracts/ethereum-1/0x210cafd20672ca2bd98ccd4b9ec52fbe1877292c/) | VaultSupervisor | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3f71b5...a3863d`](./contracts/ethereum-1/0x3f71b535c733096f303d5a495e410d3f90a3863d/) | Claim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5f7645...84a106`](./contracts/ethereum-1/0x5f7645eeabc5eebbcca3783d96d130d03484a106/) | KarakNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xba61f2...4b48a3`](./contracts/ethereum-1/0xba61f25dd9f2d5f02d01b1c2c1c5f0b14c4b48a3/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 4 |
-| standard_library | 3 |
-| needs_review | 13 |
+| native | 3 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

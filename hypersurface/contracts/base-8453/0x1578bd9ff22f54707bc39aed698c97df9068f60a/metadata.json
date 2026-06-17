@@ -1,0 +1,17 @@
+{
+  "address": "0x1578bd9ff22f54707bc39aed698c97df9068f60a",
+  "chain_id": 8453,
+  "contract_name": "Multicall",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:04.642Z"
+}

@@ -42,7 +42,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CometWithExtendedAssetList](./polygon-137/0xaeb318360f27748acb200ce616e389a6c9409a07/) | polygon | [`0xaeb318...409a07`](./polygon-137/0xaeb318360f27748acb200ce616e389a6c9409a07/) | ⚠️ Unaudited | Verified |
-| ElementalParticles | polygon | `0x60ed6a...751af2` | ✅ Audited | Verified |
+| [ElementalParticles](./polygon-137/0x60ed6acef3a96f8cdaf0c0d207bbafa66e751af2/) | polygon | [`0x60ed6a...751af2`](./polygon-137/0x60ed6acef3a96f8cdaf0c0d207bbafa66e751af2/) | ✅ Audited | Verified |
 | [Farm (2 deployments)](./polygon-137/0x92a9180af33531a5d78d81d90afc0523dc6c62c9/) | polygon | 2 deployments: polygon [`0x92a918...6c62c9`](./polygon-137/0x92a9180af33531a5d78d81d90afc0523dc6c62c9/); polygon `0xf65c47...f57ab8` | ⚠️ Unaudited | Verified |
 | [firebot_market (3 deployments)](./polygon-137/0x02e219d7b59c43cb012bb87dcab86172ff31dd86/) | polygon | 3 deployments: polygon [`0x02e219...31dd86`](./polygon-137/0x02e219d7b59c43cb012bb87dcab86172ff31dd86/); polygon `0x242fa7...af9538`; polygon `0xd709e1...d2d0bd` | ⚠️ Unaudited | Verified |
 | [firebotMarket (2 deployments)](./polygon-137/0xc99567b0b5649120fe882554cacfcaa68bc1d334/) | polygon | 2 deployments: polygon [`0xc99567...c1d334`](./polygon-137/0xc99567b0b5649120fe882554cacfcaa68bc1d334/); polygon `0xf312bf...7eb39c` | ⚠️ Unaudited | Verified |

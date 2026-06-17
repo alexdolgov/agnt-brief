@@ -1,0 +1,17 @@
+{
+  "address": "0x07711bb6dfbc99a1df1f2d7f57545a67519941e7",
+  "chain_id": 137,
+  "contract_name": "InstantDistributionAgreementV1",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:35.324Z"
+}

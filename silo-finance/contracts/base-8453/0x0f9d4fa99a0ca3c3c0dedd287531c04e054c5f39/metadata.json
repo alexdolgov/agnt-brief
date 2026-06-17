@@ -1,0 +1,17 @@
+{
+  "address": "0x0f9d4fa99a0ca3c3c0dedd287531c04e054c5f39",
+  "chain_id": 8453,
+  "contract_name": "TokensFactory",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:25.375Z"
+}

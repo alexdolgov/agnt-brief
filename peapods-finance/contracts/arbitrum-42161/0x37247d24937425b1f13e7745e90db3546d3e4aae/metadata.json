@@ -1,0 +1,17 @@
+{
+  "address": "0x37247d24937425b1f13e7745e90db3546d3e4aae",
+  "chain_id": 42161,
+  "contract_name": "TokenRewards",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:06.138Z"
+}

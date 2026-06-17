@@ -5,11 +5,11 @@
 - Project: Bonzo Finance (`bonzo-finance`)
 - Website: [https://bonzo.finance/](https://bonzo.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:06:10.449Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:00:49.490Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $22,968,423.00
+- DeFi Llama TVL: $21,006,591.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Bonzo Finance is a Hedera-focused liquidity-layer ecosystem that includes Bonzo Lend, an Aave-based lending and borrowing protocol, along with Bonzo Vaults, staking and xBONZO, points, token and NFT utilities, and related protocol-owned integrations such as incentives, vault, and cross-chain/OFT connector components where applicable.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

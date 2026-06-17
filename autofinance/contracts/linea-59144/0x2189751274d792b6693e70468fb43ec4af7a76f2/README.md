@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 4 (base `0xa628e88155ff063d92f6fb39b58a2f39c0740e1e`; plasma `0x88ccc293b3708b781a3fc843b2133b037a48d171`; arbitrum `0x86abaa236f76c1406404c9e78b142c72ca3308b3`; linea [`0x2189751274d792b6693e70468fb43ec4af7a76f2`](../0x2189751274d792b6693e70468fb43ec4af7a76f2/)) |
+| Deployments | 3 (plasma `0x88ccc293b3708b781a3fc843b2133b037a48d171`; arbitrum `0x86abaa236f76c1406404c9e78b142c72ca3308b3`; linea [`0x2189751274d792b6693e70468fb43ec4af7a76f2`](../0x2189751274d792b6693e70468fb43ec4af7a76f2/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

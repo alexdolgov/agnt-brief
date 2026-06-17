@@ -5,8 +5,8 @@
 - Project: CEX.IO (`cex.io`)
 - Website: [http://cex.io/](http://cex.io/)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-12T21:53:17.347Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
+- Generated: 2026-06-17T07:00:52.420Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum, polygon
 - Contract surface: 4 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $12,099,478.96
@@ -20,6 +20,14 @@ CEX.IO is a centralized cryptocurrency exchange offering services such as buying
 ### Architecture
 
 All contracts are Gnosis Safe multisig wallets deployed by the same deployer cluster, indicating a single operational entity managing funds across multiple chains.
+
+## Contract Surface Quality
+
+- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 3/3 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,12 +56,12 @@ All contracts are Gnosis Safe multisig wallets deployed by the same deployer clu
 
 ### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | [`0x2818e5...5932ca`](./contracts/ethereum-1/0x2818e54e0489274f61f33f163504074bee5932ca/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | [`0xc48c74...69d996`](./contracts/ethereum-1/0xc48c74c4eda47f915e8580391ec2f386f769d996/) | ⚠️ Unaudited |
-| SafeL2 | unknown | bsc | [`0x8e7b54...91684d`](./contracts/bsc-56/0x8e7b542d93901560583c0c22d156ecca5191684d/) | ⚠️ Unaudited |
-| SafeProxy | unknown | polygon | 3 deployments: bsc `0xc48c74...69d996`; polygon [`0x8e7b54...91684d`](./contracts/polygon-137/0x8e7b542d93901560583c0c22d156ecca5191684d/); polygon `0xc48c74...69d996` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GnosisSafe | governance | ethereum | unit-20298 | [`0x2818e5...5932ca`](./contracts/ethereum-1/0x2818e54e0489274f61f33f163504074bee5932ca/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-20299 | [`0xc48c74...69d996`](./contracts/ethereum-1/0xc48c74c4eda47f915e8580391ec2f386f769d996/) | ⚠️ Unaudited |
+| SafeL2 | unknown | bsc | unit-20300 | [`0x8e7b54...91684d`](./contracts/bsc-56/0x8e7b542d93901560583c0c22d156ecca5191684d/) | ⚠️ Unaudited |
+| SafeProxy | unknown | polygon | n/a | 3 deployments: bsc `0xc48c74...69d996`; polygon [`0x8e7b54...91684d`](./contracts/polygon-137/0x8e7b542d93901560583c0c22d156ecca5191684d/); polygon `0xc48c74...69d996` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

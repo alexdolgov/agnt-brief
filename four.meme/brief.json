@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "four.meme",
-  "generated_at": "2026-06-13T04:55:22.061Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
+  "generated_at": "2026-06-17T07:01:00.776Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "four.meme",
@@ -22,16 +22,16 @@
     "drop_from_peak_pct": 56.953685322468004
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 4,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -57,13 +57,24 @@
   },
   "topography": {
     "project_purpose": "Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.",
-    "relationship_narrative": "The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 3,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -74,6 +85,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xf251f83e40a78868fcfa3fa4599dad6494e46034",
+      "deployment_unit": "unit-32560",
+      "deployment_unit_proxy_count": 1,
       "name": "ERC1967Proxy",
       "role": "proxy",
       "origin_kind": "standard_library",
@@ -88,6 +101,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xf251f83e40a78868fcfa3fa4599dad6494e46034",
+          "deployment_unit": "unit-32560",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -99,130 +114,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xec4549cadce5da21df6e6422d448034b5233bfbc",
-      "name": "Proxy (impl: 0x57df49f5d8412d05e792c30c023ee974c48a90b5)",
-      "role": "proxy",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "four.meme",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xec4549cadce5da21df6e6422d448034b5233bfbc",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x5c952063c7fc8610ffdb798152d69f0b9550762b",
-      "name": "Proxy (impl: 0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf)",
-      "role": "proxy",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "four.meme",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x5c952063c7fc8610ffdb798152d69f0b9550762b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "four.meme",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "four.meme",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
       "contamination_flag": null
     }
   ],
@@ -252,7 +143,7 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 4,
+    "native": 0,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 0

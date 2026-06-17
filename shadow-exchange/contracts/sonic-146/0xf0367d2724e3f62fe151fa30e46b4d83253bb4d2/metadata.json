@@ -1,0 +1,17 @@
+{
+  "address": "0xf0367d2724e3f62fe151fa30e46b4d83253bb4d2",
+  "chain_id": 146,
+  "contract_name": "PythOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:58.811Z"
+}

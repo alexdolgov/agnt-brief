@@ -1,37 +1,21 @@
 {
   "schema_version": "2.0",
   "project_key": "uranium.io",
-  "generated_at": "2026-06-14T00:21:22.901Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "uranium.io",
-    "tier": 0,
-    "peak_tvl": 8054298,
-    "peak_date": "2026-01-30T00:00:00.000Z",
-    "tvl_30d_ago": 7451731,
-    "tvl_90d_ago": 7589801,
-    "tvl_current": 7358759,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 6974651,
-    "change_30d_pct": -1.2476564170123694,
-    "change_90d_pct": -3.0441114332246655,
-    "days_since_peak": 113,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 8.635625351830786
-  },
+  "generated_at": "2026-06-17T07:00:52.606Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 7,
-    "unique_implementations": 3,
-    "total_deployments": 7,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -41,9 +25,7 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://uranium.io/en",
-    "chains": [
-      "ethereum"
-    ],
+    "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -58,10 +40,21 @@
   "topography": {
     "project_purpose": "Uranium.io is the xU3O8 real-world asset protocol for fractional ownership and trading of physical uranium ore concentrate. Current public/project sources emphasize Tezos/Archax/Curzon, and DefiLlama currently tracks the protocol's TVL on Etherlink. Ethereum mainnet contracts should not be presented as the live TVL-bearing protocol surface unless an explicit Ethereum-to-Etherlink/product mapping is independently verified.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 0,
+    "inactive_contracts": 2,
+    "singleton_contracts": 5,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 0,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -69,153 +62,12 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0f974dfb0d5d4850db78c56f07c7d62a3efe0652",
-      "name": "ExtendedERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Uranium.io",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x953f471d35a99c57edc9cad5edeae440beb098ec",
-      "impl_name": "ExtendedERC20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0f974dfb0d5d4850db78c56f07c7d62a3efe0652",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6238993291d9b483004d759a88e4d8894db6b141",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x79052ab3c166d4899a1e0dd033ac3b379af0b1fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x953f471d35a99c57edc9cad5edeae440beb098ec",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xaa307249f677c03874609f7d1867b1c05d6aca62",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x45f8110bc03c9396ccfbb07a16d58785bfd67f22",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x45f8110bc03c9396ccfbb07a16d58785bfd67f22",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d5eb40ce9592e43eaeac7a2e93f06c32f583a42",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5d5eb40ce9592e43eaeac7a2e93f06c32f583a42",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    }
-  ],
+  "contracts": [],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0f974dfb0d5d4850db78c56f07c7d62a3efe0652",
-      "name": "ExtendedERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 3,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

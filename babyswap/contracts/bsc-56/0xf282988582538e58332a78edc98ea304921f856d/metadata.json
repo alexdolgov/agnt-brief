@@ -1,0 +1,17 @@
+{
+  "address": "0xf282988582538e58332a78edc98ea304921f856d",
+  "chain_id": 56,
+  "contract_name": "RewardClaim",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000b9f9688542df018b68e0e19dbfeb8d465b406bd100000000000000000000000039fb42813aaa96cb15fc4cdefd3194baaccb86b8000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:50.095Z"
+}

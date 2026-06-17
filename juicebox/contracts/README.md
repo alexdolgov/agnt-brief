@@ -1,48 +1,40 @@
 # juicebox — Contract Index
 
-77 unique implementations across 8 chains · 236 deployments · 13 audited · 55 unaudited · 9 unverified
+57 unique implementations across 8 chains · 210 deployments · 7 audited · 42 unaudited · 8 unverified
 
-## governance (4)
+## governance (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [JBController (8 deployments)](./ethereum-1/0x27da30646502e2f642be5281322ae8c394f7668a/) | ethereum | 8 deployments: ethereum [`0x27da30...f7668a`](./ethereum-1/0x27da30646502e2f642be5281322ae8c394f7668a/); ethereum `0xf3cc99...9987e1`; optimism `0x27da30...f7668a`; optimism `0xf3cc99...9987e1`; base `0x27da30...f7668a`; base `0xf3cc99...9987e1`; arbitrum `0x27da30...f7668a`; arbitrum `0xf3cc99...9987e1` | ✅ Audited | Verified |
-| [JBController3_0_1](./ethereum-1/0xa139d37275d1ff7275e6f33821898934bc8cb7b6/) | ethereum | [`0xa139d3...8cb7b6`](./ethereum-1/0xa139d37275d1ff7275e6f33821898934bc8cb7b6/) | ⚠️ Unaudited | Verified |
-| [JBController3_1 (2 deployments)](./ethereum-1/0x32834829927d872869918e5f415f9732bd7b6768/) | ethereum | 2 deployments: ethereum [`0x328348...7b6768`](./ethereum-1/0x32834829927d872869918e5f415f9732bd7b6768/); ethereum `0x97a5b9...4bb59b` | ⚠️ Unaudited | Verified |
-| [JBReconfigurationBufferBallot](./ethereum-1/0xa2154abd135be068540073cb4390139906d0fdc6/) | ethereum | [`0xa2154a...d0fdc6`](./ethereum-1/0xa2154abd135be068540073cb4390139906d0fdc6/) | ⚠️ Unaudited | Verified |
+| [JBController3_1](./ethereum-1/0x97a5b9d9f0f7cd676b69f584f29048d0ef4bb59b/) | ethereum | [`0x97a5b9...4bb59b`](./ethereum-1/0x97a5b9d9f0f7cd676b69f584f29048d0ef4bb59b/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (5)
+## operational_periphery (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [JBChainlinkV3PriceFeed](./ethereum-1/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | ethereum | [`0x6ed8ee...28bba4`](./ethereum-1/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | ✅ Audited | Verified |
 | [JBChainlinkV3SequencerPriceFeed (3 deployments)](./optimism-10/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | optimism | 3 deployments: optimism [`0x6ed8ee...28bba4`](./optimism-10/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/); base `0x6ed8ee...28bba4`; arbitrum `0x6ed8ee...28bba4` | ⚠️ Unaudited | Verified |
 | [JBMatchingPriceFeed (4 deployments)](./ethereum-1/0x6fbf8dc66b1879ff0ae243500f8b1e6f6d9e138a/) | ethereum | 4 deployments: ethereum [`0x6fbf8d...9e138a`](./ethereum-1/0x6fbf8dc66b1879ff0ae243500f8b1e6f6d9e138a/); optimism `0x6fbf8d...9e138a`; base `0x6fbf8d...9e138a`; arbitrum `0x6fbf8d...9e138a` | ⚠️ Unaudited | Verified |
-| [JBMigrationOperator](./ethereum-1/0x004d50e8552f7e811e7df913a3205abf48e47b52/) | ethereum | [`0x004d50...e47b52`](./ethereum-1/0x004d50e8552f7e811e7df913a3205abf48e47b52/) | ⚠️ Unaudited | Verified |
 | [JBPrices (4 deployments)](./ethereum-1/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/) | ethereum | 4 deployments: ethereum [`0x9b90e5...e614c4`](./ethereum-1/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); optimism `0x9b90e5...e614c4`; base `0x9b90e5...e614c4`; arbitrum `0x9b90e5...e614c4` | ✅ Audited | Verified |
 
-## registry (4)
+## registry (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [JBBuybackHookRegistry (4 deployments)](./ethereum-1/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/) | ethereum | 4 deployments: ethereum [`0x9e1e0f...a12b1a`](./ethereum-1/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/); optimism `0x9e1e0f...a12b1a`; base `0x9e1e0f...a12b1a`; arbitrum `0x9e1e0f...a12b1a` | ⚠️ Unaudited | Verified |
-| [JBDelegatesRegistry](./ethereum-1/0x33265d9ead1291faa981a177278df8053af24221/) | ethereum | [`0x33265d...f24221`](./ethereum-1/0x33265d9ead1291faa981a177278df8053af24221/) | ⚠️ Unaudited | Verified |
 | [JBSuckerRegistry (4 deployments)](./ethereum-1/0x07c8c5bf08f0361883728a8a5f8824ba5724ece3/) | ethereum | 4 deployments: ethereum [`0x07c8c5...24ece3`](./ethereum-1/0x07c8c5bf08f0361883728a8a5f8824ba5724ece3/); optimism `0x07c8c5...24ece3`; base `0x07c8c5...24ece3`; arbitrum `0x07c8c5...24ece3` | ⚠️ Unaudited | Verified |
 | [JBSwapTerminalRegistry (8 deployments)](./ethereum-1/0x1ce40d201cdec791de05810d17aaf501be167422/) | ethereum | 8 deployments: ethereum [`0x1ce40d...167422`](./ethereum-1/0x1ce40d201cdec791de05810d17aaf501be167422/); ethereum `0x60b4f5...e6a4f6`; optimism `0x1ce40d...167422`; optimism `0x60b4f5...e6a4f6`; base `0x1ce40d...167422`; base `0x60b4f5...e6a4f6`; arbitrum `0x1ce40d...167422`; arbitrum `0x60b4f5...e6a4f6` | ⚠️ Unaudited | Verified |
 
-## token (7)
+## token (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [JBERC20 (4 deployments)](./ethereum-1/0xaeac450c8522e40244bdfb8120ee398207be5d31/) | ethereum | 4 deployments: ethereum [`0xaeac45...be5d31`](./ethereum-1/0xaeac450c8522e40244bdfb8120ee398207be5d31/); optimism `0xaeac45...be5d31`; base `0xaeac45...be5d31`; arbitrum `0xaeac45...be5d31` | ⚠️ Unaudited | Verified |
-| [JBETHERC20ProjectPayerDeployer](./ethereum-1/0xa5ca9cea71df4b680484e5ff753a1b1185ba5b43/) | ethereum | [`0xa5ca9c...ba5b43`](./ethereum-1/0xa5ca9cea71df4b680484e5ff753a1b1185ba5b43/) | ⚠️ Unaudited | Verified |
-| [JBETHERC20SplitsPayerDeployer](./ethereum-1/0x3ff1f0583a41ce8b9463f74a1227c75fc13f7c27/) | ethereum | [`0x3ff1f0...3f7c27`](./ethereum-1/0x3ff1f0583a41ce8b9463f74a1227c75fc13f7c27/) | ⚠️ Unaudited | Verified |
-| [JBSingleTokenPaymentTerminalStore3_1](./ethereum-1/0x77b0a81aeb61d08c0b23c739969d22c5c9950336/) | ethereum | [`0x77b0a8...950336`](./ethereum-1/0x77b0a81aeb61d08c0b23c739969d22c5c9950336/) | ⚠️ Unaudited | Verified |
-| [JBSingleTokenPaymentTerminalStore3_1_1](./ethereum-1/0x82129d4109625f94582bddf6101a8cd1a27919f5/) | ethereum | [`0x82129d...7919f5`](./ethereum-1/0x82129d4109625f94582bddf6101a8cd1a27919f5/) | ⚠️ Unaudited | Verified |
 | [JBTerminalStore (8 deployments)](./ethereum-1/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/) | ethereum | 8 deployments: ethereum [`0x5cdfcf...a1d964`](./ethereum-1/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/); ethereum `0xfe33b4...014744`; optimism `0x5cdfcf...a1d964`; optimism `0xfe33b4...014744`; base `0x5cdfcf...a1d964`; base `0xfe33b4...014744`; arbitrum `0x5cdfcf...a1d964`; arbitrum `0xfe33b4...014744` | ⚠️ Unaudited | Verified |
 | [JBTokens (4 deployments)](./ethereum-1/0x4d0edd347fb1fa21589c1e109b3474924be87636/) | ethereum | 4 deployments: ethereum [`0x4d0edd...e87636`](./ethereum-1/0x4d0edd347fb1fa21589c1e109b3474924be87636/); optimism `0x4d0edd...e87636`; base `0x4d0edd...e87636`; arbitrum `0x4d0edd...e87636` | ✅ Audited | Verified |
 
-## unknown (57)
+## unknown (45)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -50,30 +42,24 @@
 | [CTProjectOwner (4 deployments)](./ethereum-1/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/) | ethereum | 4 deployments: ethereum [`0x127fa6...690883`](./ethereum-1/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/); optimism `0x127fa6...690883`; base `0x127fa6...690883`; arbitrum `0x127fa6...690883` | ⚠️ Unaudited | Verified |
 | [CTPublisher (4 deployments)](./ethereum-1/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/) | ethereum | 4 deployments: ethereum [`0x03ef9e...20ee24`](./ethereum-1/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/); optimism `0x03ef9e...20ee24`; base `0x03ef9e...20ee24`; arbitrum `0x03ef9e...20ee24` | ⚠️ Unaudited | Verified |
 | [ERC2771Forwarder (4 deployments)](./ethereum-1/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/) | ethereum | 4 deployments: ethereum [`0xc29d69...cbb566`](./ethereum-1/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/); optimism `0xc29d69...cbb566`; base `0xc29d69...cbb566`; arbitrum `0xc29d69...cbb566` | ⚠️ Unaudited | Verified |
-| [JB721GlobalGovernance](./ethereum-1/0x50cd1e33f818d402a9fd406b5b3fbc88f1fe6f80/) | ethereum | [`0x50cd1e...fe6f80`](./ethereum-1/0x50cd1e33f818d402a9fd406b5b3fbc88f1fe6f80/) | ✅ Audited | Verified |
-| [JB721TieredGovernance](./ethereum-1/0xf27aaa1240a09f2a995542e6bd38b52125a4209f/) | ethereum | [`0xf27aaa...a4209f`](./ethereum-1/0xf27aaa1240a09f2a995542e6bd38b52125a4209f/) | ✅ Audited | Verified |
 | [JB721TiersHook (4 deployments)](./ethereum-1/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/) | ethereum | 4 deployments: ethereum [`0x749ac9...8eb25b`](./ethereum-1/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/); optimism `0x749ac9...8eb25b`; base `0x749ac9...8eb25b`; arbitrum `0x749ac9...8eb25b` | ⚠️ Unaudited | Verified |
 | [JB721TiersHookDeployer (8 deployments)](./ethereum-1/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/) | ethereum | 8 deployments: ethereum [`0x792bdd...6d2732`](./ethereum-1/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/); ethereum `0xef6087...d41ca7`; optimism `0x792bdd...6d2732`; optimism `0xef6087...d41ca7`; base `0x792bdd...6d2732`; base `0xef6087...d41ca7`; arbitrum `0x792bdd...6d2732`; arbitrum `0xef6087...d41ca7` | ⚠️ Unaudited | Verified |
 | [JB721TiersHookProjectDeployer (8 deployments)](./ethereum-1/0x048626e715a194fc38dd9be12f516b54b10e725a/) | ethereum | 8 deployments: ethereum [`0x048626...0e725a`](./ethereum-1/0x048626e715a194fc38dd9be12f516b54b10e725a/); ethereum `0xeb15c1...c9a7f8`; optimism `0x048626...0e725a`; optimism `0xeb15c1...c9a7f8`; base `0x048626...0e725a`; base `0xeb15c1...c9a7f8`; arbitrum `0x048626...0e725a`; arbitrum `0xeb15c1...c9a7f8` | ⚠️ Unaudited | Verified |
 | [JB721TiersHookStore (4 deployments)](./ethereum-1/0x2bc696b0af74042b30b2687ab5817cc824eba8ee/) | ethereum | 4 deployments: ethereum [`0x2bc696...eba8ee`](./ethereum-1/0x2bc696b0af74042b30b2687ab5817cc824eba8ee/); optimism `0x2bc696...eba8ee`; base `0x2bc696...eba8ee`; arbitrum `0x2bc696...eba8ee` | ⚠️ Unaudited | Verified |
 | [JBArbitrumSuckerDeployer (2 deployments)](./ethereum-1/0xea06bd663a1cec97b5bdec9375ab9a63695c9699/) | ethereum | 2 deployments: ethereum [`0xea06bd...5c9699`](./ethereum-1/0xea06bd663a1cec97b5bdec9375ab9a63695c9699/); arbitrum `0xea06bd...5c9699` | ⚠️ Unaudited | Verified |
 | [JBBaseSuckerDeployer (2 deployments)](./ethereum-1/0xd9f35d8dd36046f14479e6dced03733724947efd/) | ethereum | 2 deployments: ethereum [`0xd9f35d...947efd`](./ethereum-1/0xd9f35d8dd36046f14479e6dced03733724947efd/); base `0xd9f35d...947efd` | ⚠️ Unaudited | Verified |
-| [JBBuybackDelegate (2 deployments)](./ethereum-1/0x6338b523fc355197e6f723bf10c0cc2da7c8a868/) | ethereum | 2 deployments: ethereum [`0x6338b5...c8a868`](./ethereum-1/0x6338b523fc355197e6f723bf10c0cc2da7c8a868/); ethereum `0xf4bf4d...529f03` | ⚠️ Unaudited | Verified |
 | [JBBuybackHook (4 deployments)](./optimism-10/0x318f8aa6a95cb83419985c0d797c762f5a7824f3/) | optimism | 4 deployments: ethereum `0xd34249...fe0f9b`; optimism [`0x318f8a...7824f3`](./optimism-10/0x318f8aa6a95cb83419985c0d797c762f5a7824f3/); base `0xb6133a...51d088`; arbitrum `0x4ac3e2...4f0320` | ⚠️ Unaudited | Verified |
 | [JBCCIPSuckerDeployer (12 deployments)](./ethereum-1/0x172ad9b3df724ee0422ea85b7799a3f7ca761816/) | ethereum | 12 deployments: ethereum [`0x172ad9...761816`](./ethereum-1/0x172ad9b3df724ee0422ea85b7799a3f7ca761816/); ethereum `0x195b4d...f88814`; ethereum `0xf816d2...ca4bcf`; optimism `0x172ad9...761816`; optimism `0x586839...4a3d7d`; optimism `0xaa0dbd...c8bcd1`; base `0x195b4d...f88814`; base `0x586839...4a3d7d`; base `0xc295a8...88c8a7`; arbitrum `0xaa0dbd...c8bcd1`; arbitrum `0xc295a8...88c8a7`; arbitrum `0xf816d2...ca4bcf` | ⚠️ Unaudited | Verified |
 | [JBDeadline1Day (4 deployments)](./ethereum-1/0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7/) | ethereum | 4 deployments: ethereum [`0xcffdd1...b924d7`](./ethereum-1/0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7/); optimism `0xcffdd1...b924d7`; base `0xcffdd1...b924d7`; arbitrum `0xcffdd1...b924d7` | ⚠️ Unaudited | Verified |
 | [JBDeadline3Days (4 deployments)](./ethereum-1/0x09b23b09af88bb6d7e9c957ff9f861f1c917111b/) | ethereum | 4 deployments: ethereum [`0x09b23b...17111b`](./ethereum-1/0x09b23b09af88bb6d7e9c957ff9f861f1c917111b/); optimism `0x09b23b...17111b`; base `0x09b23b...17111b`; arbitrum `0x09b23b...17111b` | ⚠️ Unaudited | Verified |
 | [JBDeadline3Hours (4 deployments)](./ethereum-1/0x4eeb65e13ade86155d169ba1fabd06828171799a/) | ethereum | 4 deployments: ethereum [`0x4eeb65...71799a`](./ethereum-1/0x4eeb65e13ade86155d169ba1fabd06828171799a/); optimism `0x4eeb65...71799a`; base `0x4eeb65...71799a`; arbitrum `0x4eeb65...71799a` | ⚠️ Unaudited | Verified |
 | [JBDeadline7Days (4 deployments)](./ethereum-1/0xdf911b94712cf117fb63b69838b16e1710636031/) | ethereum | 4 deployments: ethereum [`0xdf911b...636031`](./ethereum-1/0xdf911b94712cf117fb63b69838b16e1710636031/); optimism `0xdf911b...636031`; base `0xdf911b...636031`; arbitrum `0xdf911b...636031` | ⚠️ Unaudited | Verified |
-| [JBDirectory (5 deployments)](./ethereum-1/0x0061e516886a0540f63157f112c0588ee0651dcf/) | ethereum | 5 deployments: ethereum [`0x0061e5...651dcf`](./ethereum-1/0x0061e516886a0540f63157f112c0588ee0651dcf/); ethereum `0xcc8f7a...79ac9c`; optimism `0x0061e5...651dcf`; base `0x0061e5...651dcf`; arbitrum `0x0061e5...651dcf` | ✅ Audited | Verified |
+| [JBDirectory (4 deployments)](./ethereum-1/0x0061e516886a0540f63157f112c0588ee0651dcf/) | ethereum | 4 deployments: ethereum [`0x0061e5...651dcf`](./ethereum-1/0x0061e516886a0540f63157f112c0588ee0651dcf/); optimism `0x0061e5...651dcf`; base `0x0061e5...651dcf`; arbitrum `0x0061e5...651dcf` | ✅ Audited | Verified |
 | [JBETHPaymentTerminal (2 deployments)](./ethereum-1/0x594cb208b5bb48db1bcbc9354d1694998864ec63/) | ethereum | 2 deployments: ethereum [`0x594cb2...64ec63`](./ethereum-1/0x594cb208b5bb48db1bcbc9354d1694998864ec63/); ethereum `0x7ae63f...3b8397` | ✅ Audited | Verified |
 | [JBETHPaymentTerminal3_1](./ethereum-1/0xfa391de95fcbcd3157268b91d8c7af083e607a5c/) | ethereum | [`0xfa391d...607a5c`](./ethereum-1/0xfa391de95fcbcd3157268b91d8c7af083e607a5c/) | ⚠️ Unaudited | Verified |
-| [JBETHPaymentTerminal3_1_1](./ethereum-1/0x457cd63bee88ac01f3cd4a67d5dcc921d8c0d573/) | ethereum | [`0x457cd6...c0d573`](./ethereum-1/0x457cd63bee88ac01f3cd4a67d5dcc921d8c0d573/) | ⚠️ Unaudited | Verified |
 | [JBETHPaymentTerminal3_1_2](./ethereum-1/0x1d9619e10086fdc1065b114298384aae3f680cc0/) | ethereum | [`0x1d9619...680cc0`](./ethereum-1/0x1d9619e10086fdc1065b114298384aae3f680cc0/) | ⚠️ Unaudited | Verified |
 | [JBFeelessAddresses (4 deployments)](./ethereum-1/0xfc702a0190f3edbc369208dfe77bf273add91d53/) | ethereum | 4 deployments: ethereum [`0xfc702a...d91d53`](./ethereum-1/0xfc702a0190f3edbc369208dfe77bf273add91d53/); optimism `0xfc702a...d91d53`; base `0xfc702a...d91d53`; arbitrum `0xfc702a...d91d53` | ⚠️ Unaudited | Verified |
-| [JBFundAccessConstraintsStore](./ethereum-1/0xa4425a1e5b7b28cb689719b1428e3088c1f89e30/) | ethereum | [`0xa4425a...f89e30`](./ethereum-1/0xa4425a1e5b7b28cb689719b1428e3088c1f89e30/) | ⚠️ Unaudited | Verified |
 | [JBFundAccessLimits (4 deployments)](./ethereum-1/0x3a46b21720c8b70184b0434a2293b2fdcc497ce7/) | ethereum | 4 deployments: ethereum [`0x3a46b2...497ce7`](./ethereum-1/0x3a46b21720c8b70184b0434a2293b2fdcc497ce7/); optimism `0x3a46b2...497ce7`; base `0x3a46b2...497ce7`; arbitrum `0x3a46b2...497ce7` | ⚠️ Unaudited | Verified |
-| [JBGenericBuybackDelegate](./ethereum-1/0x6b700b54bbf7a93f453ffbf58df0fe1ab2aada08/) | ethereum | [`0x6b700b...aada08`](./ethereum-1/0x6b700b54bbf7a93f453ffbf58df0fe1ab2aada08/) | ⚠️ Unaudited | Verified |
 | [JBMultiTerminal (8 deployments)](./ethereum-1/0x2db6d704058e552defe415753465df8df0361846/) | ethereum | 8 deployments: ethereum [`0x2db6d7...361846`](./ethereum-1/0x2db6d704058e552defe415753465df8df0361846/); ethereum `0x52869d...cd371c`; optimism `0x2db6d7...361846`; optimism `0x52869d...cd371c`; base `0x2db6d7...361846`; base `0x52869d...cd371c`; arbitrum `0x2db6d7...361846`; arbitrum `0x52869d...cd371c` | ⚠️ Unaudited | Verified |
 | [JBOmnichainDeployer (8 deployments)](./ethereum-1/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/) | ethereum | 8 deployments: ethereum [`0x587bf8...c2fc71`](./ethereum-1/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/); ethereum `0x8f5ded...101590`; optimism `0x587bf8...c2fc71`; optimism `0x8f5ded...101590`; base `0x587bf8...c2fc71`; base `0x8f5ded...101590`; arbitrum `0x587bf8...c2fc71`; arbitrum `0x8f5ded...101590` | ⚠️ Unaudited | Verified |
 | [JBOptimismSuckerDeployer (2 deployments)](./ethereum-1/0x77cdb0f5eef8febd67dd6e594ff654fb12cc3057/) | ethereum | 2 deployments: ethereum [`0x77cdb0...cc3057`](./ethereum-1/0x77cdb0f5eef8febd67dd6e594ff654fb12cc3057/); optimism `0x77cdb0...cc3057` | ⚠️ Unaudited | Verified |
@@ -85,16 +71,10 @@
 | [JBSplits (4 deployments)](./ethereum-1/0x7160a322fea44945a6ef9adfd65c322258df3c5e/) | ethereum | 4 deployments: ethereum [`0x7160a3...df3c5e`](./ethereum-1/0x7160a322fea44945a6ef9adfd65c322258df3c5e/); optimism `0x7160a3...df3c5e`; base `0x7160a3...df3c5e`; arbitrum `0x7160a3...df3c5e` | ⚠️ Unaudited | Verified |
 | [JBSwapTerminal (4 deployments)](./ethereum-1/0x259385b97dfbd5576bd717dc7b25967ec8b145dd/) | ethereum | 4 deployments: ethereum [`0x259385...b145dd`](./ethereum-1/0x259385b97dfbd5576bd717dc7b25967ec8b145dd/); optimism `0x73d045...aad774`; base `0x4fd73d...832edd`; arbitrum `0x483c9b...c752ad` | ⚠️ Unaudited | Verified |
 | [JBSwapTerminal5_1 (4 deployments)](./arbitrum-42161/0x36379b28e67b73f5ae9e3de320ce1dbd7fd99c08/) | arbitrum | 4 deployments: ethereum `0x642f6f...378f80`; optimism `0x7ba67a...f4a0ed`; base `0x7e000e...bee8ab`; arbitrum [`0x36379b...d99c08`](./arbitrum-42161/0x36379b28e67b73f5ae9e3de320ce1dbd7fd99c08/) | ⚠️ Unaudited | Verified |
-| [JBTiered721Delegate (2 deployments)](./ethereum-1/0x2b9f2f30f722dd4917bd877d976adc4966a99333/) | ethereum | 2 deployments: ethereum [`0x2b9f2f...a99333`](./ethereum-1/0x2b9f2f30f722dd4917bd877d976adc4966a99333/); ethereum `0xb41f6c...ce436c` | ✅ Audited | Verified |
-| [JBTiered721DelegateDeployer (2 deployments)](./ethereum-1/0x55ff1d8093166c1ff9664efd613d8c543b95fefc/) | ethereum | 2 deployments: ethereum [`0x55ff1d...95fefc`](./ethereum-1/0x55ff1d8093166c1ff9664efd613d8c543b95fefc/); ethereum `0x5c9f2f...b6353b` | ✅ Audited | Verified |
-| [JBTiered721DelegateProjectDeployer (2 deployments)](./ethereum-1/0xba6dc6c5a41e1fbe0e33d43884d3c0fd7e4ea056/) | ethereum | 2 deployments: ethereum [`0xba6dc6...4ea056`](./ethereum-1/0xba6dc6c5a41e1fbe0e33d43884d3c0fd7e4ea056/); ethereum `0xfbd1b7...07fb3e` | ✅ Audited | Verified |
-| [JBTiered721DelegateStore](./ethereum-1/0x8e3118fa2f90e8ae7da08c6d444bf93ef1dc16ad/) | ethereum | [`0x8e3118...dc16ad`](./ethereum-1/0x8e3118fa2f90e8ae7da08c6d444bf93ef1dc16ad/) | ✅ Audited | Verified |
-| [JBTiered721GovernanceDelegate](./ethereum-1/0x7bfcdb1649053919d65b17e0edd5068e535a3a66/) | ethereum | [`0x7bfcdb...5a3a66`](./ethereum-1/0x7bfcdb1649053919d65b17e0edd5068e535a3a66/) | ⚠️ Unaudited | Verified |
 | [REVDeployer (4 deployments)](./ethereum-1/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/) | ethereum | 4 deployments: ethereum [`0x2ca27b...de251d`](./ethereum-1/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/); optimism `0x2ca27b...de251d`; base `0x2ca27b...de251d`; arbitrum `0x2ca27b...de251d` | ⚠️ Unaudited | Verified |
 | [REVLoans (4 deployments)](./ethereum-1/0x1880d832aa283d05b8eab68877717e25fbd550bb/) | ethereum | 4 deployments: ethereum [`0x1880d8...d550bb`](./ethereum-1/0x1880d832aa283d05b8eab68877717e25fbd550bb/); optimism `0x1880d8...d550bb`; base `0x1880d8...d550bb`; arbitrum `0x1880d8...d550bb` | ⚠️ Unaudited | Verified |
 | [TerminalV1](./ethereum-1/0xd569d3cce55b71a8a3f3c418c329a66e5f714431/) | ethereum | [`0xd569d3...714431`](./ethereum-1/0xd569d3cce55b71a8a3f3c418c329a66e5f714431/) | ⚠️ Unaudited | Verified |
 | [TerminalV1_1](./ethereum-1/0x981c8ecd009e3e84ee1ff99266bf1461a12e5c68/) | ethereum | [`0x981c8e...2e5c68`](./ethereum-1/0x981c8ecd009e3e84ee1ff99266bf1461a12e5c68/) | ⚠️ Unaudited | Verified |
-| UnnamedContract | ethereum | `0xb657f1...267a81` | ❓ Unverified | Unverified |
 | UnnamedContract | chain-84532 | `0x79e5ca...1aa8fd` | ❓ Unverified | Unverified |
 | UnnamedContract | chain-84532 | `0xc7369f...d4d32d` | ❓ Unverified | Unverified |
 | UnnamedContract | chain-421614 | `0x5f820a...67c41c` | ❓ Unverified | Unverified |

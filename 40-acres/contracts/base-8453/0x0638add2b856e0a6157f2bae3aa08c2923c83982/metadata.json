@@ -1,0 +1,18 @@
+{
+  "address": "0x0638add2b856e0a6157f2bae3aa08c2923c83982",
+  "chain_id": 8453,
+  "contract_name": "Swapper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:59.036Z"
+}

@@ -41,7 +41,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [VaultsFactory (4 deployments)](./ethereum-1/0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c/) | ethereum | 4 deployments: ethereum [`0x7bdb8b...56bb0c`](./ethereum-1/0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c/); base `0x7bdb8b...56bb0c`; arbitrum `0x7bdb8b...56bb0c`; avalanche `0x7bdb8b...56bb0c` | ⚠️ Unaudited | Verified |
+| [VaultsFactory (4 deployments)](./ethereum-1/0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c/) | ethereum | 4 deployments: ethereum [`0x7bdb8b...56bb0c`](./ethereum-1/0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c/); base `0x7bdb8b...56bb0c`; arbitrum `0x7bdb8b...56bb0c`; avalanche `0x7bdb8b...56bb0c` | ⚠️ Unaudited (bytecode match) | Verified |
 | [VaultsRegistry](./ethereum-1/0x6a0b3724af49ce6f14669d07823650ec26553890/) | ethereum | [`0x6a0b37...553890`](./ethereum-1/0x6a0b3724af49ce6f14669d07823650ec26553890/) | ⚠️ Unaudited | Verified |
 
 ## unknown (9)

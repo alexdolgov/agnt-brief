@@ -1,12 +1,13 @@
 # alphaping — Contract Index
 
-4 unique implementations on ethereum · 17 deployments · 0 audited · 4 unaudited · 0 unverified
+5 unique implementations on ethereum · 17 deployments · 0 audited · 5 unaudited · 0 unverified
 
-## core_logic (1)
+## core_logic (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [VaultV2 (9 deployments)](./ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/) | ethereum | 9 deployments: ethereum [`0x0bf016...eaa334`](./ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xd8cd72...da0c27`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited | Verified |
+| [VaultV2 (8 deployments)](./ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/) | ethereum | 8 deployments: ethereum [`0x0bf016...eaa334`](./ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited | Verified |
+| VaultV2 | ethereum | `0xd8cd72...da0c27` | ⚠️ Unaudited | Verified |
 
 ## unknown (3)
 

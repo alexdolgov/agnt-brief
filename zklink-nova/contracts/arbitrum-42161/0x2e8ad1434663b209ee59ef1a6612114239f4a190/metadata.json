@@ -1,0 +1,17 @@
+{
+  "address": "0x2e8ad1434663b209ee59ef1a6612114239f4a190",
+  "chain_id": 42161,
+  "contract_name": "UpgradeGatekeeper",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000003169844a120c0f517b4eb4a750c08d8518c8466a",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:44.106Z"
+}

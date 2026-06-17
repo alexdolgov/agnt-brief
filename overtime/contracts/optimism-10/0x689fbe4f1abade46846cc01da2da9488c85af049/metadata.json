@@ -1,0 +1,17 @@
+{
+  "address": "0x689fbe4f1abade46846cc01da2da9488c85af049",
+  "chain_id": 10,
+  "contract_name": "SpeedMarketsAMMResolver",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:32.106Z"
+}

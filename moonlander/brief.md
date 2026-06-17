@@ -5,8 +5,8 @@
 - Project: Moonlander (`moonlander`)
 - Website: [https://moonlander.trade/](https://moonlander.trade/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T05:26:18.758Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:52.166Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: cronos
 - Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $30,027,993.27
@@ -20,6 +20,14 @@ Moonlander is a social perpetual DEX/decentralized perpetual trading platform on
 ### Architecture
 
 The Moonlander token contract likely governs or incentivizes the Cronos EVM derivative contracts, which share a common deployment environment and may interact through shared liquidity pools or fee distribution mechanisms.
+
+## Contract Surface Quality
+
+- Indexed contracts: 11; live-surface contracts included: 11 (0 live, 11 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -66,19 +74,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | `0x02ae2e...717a05` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x071788...0e9034` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x378881...ede8dd` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x544923...bea6d1` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x6f27c8...21f2f6` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x7ec427...ed3a04` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x8dbebe...68917e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xb4c700...27df13` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xb7fe13...06330d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xbf438c...f849cc` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0xe6f635...fbeec9` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | cronos | n/a | `0x02ae2e...717a05` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x071788...0e9034` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x378881...ede8dd` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x544923...bea6d1` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x6f27c8...21f2f6` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x7ec427...ed3a04` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0x8dbebe...68917e` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xb4c700...27df13` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xb7fe13...06330d` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xbf438c...f849cc` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | `0xe6f635...fbeec9` | ❓ Unverified |
 
 ## Audit Inventory
 

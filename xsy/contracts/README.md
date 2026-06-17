@@ -1,6 +1,6 @@
 # xsy — Contract Index
 
-15 unique implementations on avalanche · 22 deployments · 1 audited · 3 unaudited · 11 unverified
+6 unique implementations on avalanche · 7 deployments · 0 audited · 3 unaudited · 3 unverified
 
 ## core_logic (1)
 
@@ -12,7 +12,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ERC1967Proxy (7 deployments)](./avalanche-43114/0x3183236cdce208888c1857c2f718e3628c063b73/) | avalanche | 7 deployments: avalanche [`0x318323...063b73`](./avalanche-43114/0x3183236cdce208888c1857c2f718e3628c063b73/); avalanche `0x580d5e...f2ab01`; avalanche `0x65a83c...d33b6e`; avalanche `0x9b9cf4...d4c77a`; avalanche `0x9cf467...ef51f8`; avalanche `0xdbc519...f02b4a`; avalanche `0xf8adf3...a401a9` | ⚠️ Unaudited | Verified |
+| [ERC1967Proxy](./avalanche-43114/0x580d5e1399157fd0d58218b7a514b60974f2ab01/) | avalanche | [`0x580d5e...f2ab01`](./avalanche-43114/0x580d5e1399157fd0d58218b7a514b60974f2ab01/) | ⚠️ Unaudited | Verified |
 
 ## registry (1)
 
@@ -20,19 +20,10 @@
 |---|---|---|---|---|
 | [BeaconProxy (2 deployments)](./avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/) | avalanche | 2 deployments: avalanche [`0x76de25...167e40`](./avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/); avalanche `0x902714...3ecc0a` | ⚠️ Unaudited | Verified |
 
-## unknown (12)
+## unknown (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Unity](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | avalanche | [`0x639c72...2587c4`](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ✅ Audited | Verified |
 | UnnamedContract | avalanche | `0x0a006e...cd359e` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x1fe74c...6d20e3` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x2d2fbf...1ffecf` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x3d3f8f...66c6bc` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x495b23...0a4179` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x5c1b14...7df411` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x617777...4e0a23` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x7f2239...cd51c2` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x8b0645...a18924` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0xe67348...344310` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0xecc6ad...ae08d3` | ❓ Unverified | Unverified |

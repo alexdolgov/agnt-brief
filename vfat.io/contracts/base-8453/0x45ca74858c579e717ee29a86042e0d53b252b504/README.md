@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (optimism `0x756e7c245c69d351fffbfb88ba234aa395ada8ec`; base [`0x45ca74858c579e717ee29a86042e0d53b252b504`](../0x45ca74858c579e717ee29a86042e0d53b252b504/)) |
+| Deployments | 1 (base [`0x45ca74858c579e717ee29a86042e0d53b252b504`](../0x45ca74858c579e717ee29a86042e0d53b252b504/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

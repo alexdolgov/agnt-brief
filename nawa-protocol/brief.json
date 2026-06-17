@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nawa-protocol",
-  "generated_at": "2026-06-11T01:20:39.745Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-17T07:00:57.611Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4090201.93392,
-    "tvl_usd": 4090201.93392,
+    "dl_tvl_usd": 4174933.5945,
+    "tvl_usd": 4174933.5945,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Nawa Protocol offers Shariah-compliant DeFi vault products, including stable/auto-compounding vaults and liquid-staking vaults, with activity and TVL tracked primarily on ZIGChain and a smaller balance on CORE. Its current positioning also includes Bitcoin-related assets on Core Chain rather than a generic strategy-allocation yield aggregator description.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

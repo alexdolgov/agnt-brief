@@ -1,43 +1,49 @@
 # Agentic Audit Brief: DerivaDEX
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 1.9% over 90 days
-
 ## Project Overview
 
 - Project: DerivaDEX (`derivadex`)
 - Website: [http://derivadex.com](http://derivadex.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-14T00:17:00.921Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
-- Chains: ethereum
-- Contract surface: 8 unique implementations (9 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:35.839Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,616,621.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 DerivaDEX is a decentralized, community-governed crypto derivatives exchange. The protocol is associated with the DDX token and uses an insurance fund, including insurance mining, to help manage protocol risk.
 
-### Architecture
+## Contract Surface Quality
 
-The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating the exchange logic is tightly coupled with the insurance fund. The CErc20Delegator token contract likely serves as the collateral asset, integrating with the exchange and insurance fund for trading and risk management.
+- Indexed contracts: 9; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 7 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: none
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 8
-- Raw deployments: 9
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,16 +55,9 @@ The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating th
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DDXWalletCloneable | unknown | ethereum | [`0xc1e9e3...edfb3a`](./contracts/ethereum-1/0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a/) | ⚠️ Unaudited |
-| DIFundTokenFactory | registry | ethereum | [`0xe49478...4ff91c`](./contracts/ethereum-1/0xe49478b6973e7c9e0236081c89c609643f4ff91c/) | ⚠️ Unaudited |
-| Governance | unknown | ethereum | [`0xbfd5a7...b249c2`](./contracts/ethereum-1/0xbfd5a73bafc692190846e04fa7b3f22325b249c2/) | ⚠️ Unaudited |
-| InsuranceFund | unknown | ethereum | 2 deployments: ethereum [`0x6fb8aa...660027`](./contracts/ethereum-1/0x6fb8aa6fc6f27e591423009194529ae126660027/); ethereum `0xccf3d6...ce656e` | ⚠️ Unaudited |
-| Pause | unknown | ethereum | [`0x0c8813...94111a`](./contracts/ethereum-1/0x0c8813521196614c85c2fb121fb22f52dc94111a/) | ⚠️ Unaudited |
-| Trader | unknown | ethereum | [`0xcb7130...fe0d66`](./contracts/ethereum-1/0xcb71303f4681aec73e137d096e0ef22464fe0d66/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -72,14 +71,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x44ee8d...b2574e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdb8dce...bcbad9` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -90,20 +86,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0xc1e9e3...edfb3a`](./contracts/ethereum-1/0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a/) | DDXWalletCloneable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe49478...4ff91c`](./contracts/ethereum-1/0xe49478b6973e7c9e0236081c89c609643f4ff91c/) | DIFundTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbfd5a7...b249c2`](./contracts/ethereum-1/0xbfd5a73bafc692190846e04fa7b3f22325b249c2/) | Governance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fb8aa...660027`](./contracts/ethereum-1/0x6fb8aa6fc6f27e591423009194529ae126660027/) | InsuranceFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0c8813...94111a`](./contracts/ethereum-1/0x0c8813521196614c85c2fb121fb22f52dc94111a/) | Pause | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcb7130...fe0d66`](./contracts/ethereum-1/0xcb71303f4681aec73e137d096e0ef22464fe0d66/) | Trader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

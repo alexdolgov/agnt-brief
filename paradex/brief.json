@@ -1,59 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "paradex",
-  "generated_at": "2026-06-12T16:23:27.146Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-9d35",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "paradex",
-    "tier": 1,
-    "peak_tvl": 226830531,
-    "peak_date": "2026-01-20T00:00:00.000Z",
-    "tvl_30d_ago": 44052920,
-    "tvl_90d_ago": 154219780,
-    "tvl_current": 33184815,
-    "tier0_reason": "sustained_90d_and_30d_decline",
-    "tvl_180d_ago": 145284788,
-    "change_30d_pct": -24.670566672992393,
-    "change_90d_pct": -78.48212790862496,
-    "governance_raw": {
-      "evidence": "TVL dropped 85% from peak but protocol still operational with active trading and no shutdown announcement.",
-      "confidence": 0.9,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 126,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 85.37021676328042,
-    "governance_evidence": "TVL dropped 85% from peak but protocol still operational with active trading and no shutdown announcement.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 3022,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-06-17T07:00:46.739Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 7,
-    "unique_implementations": 5,
-    "total_deployments": 7,
-    "audited_contracts": 1,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
-    "coverage_pct": 50,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
     "total_audits": 5,
-    "scoreable_audits": 1,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 27280553,
     "tvl_usd": 27280553,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://app.paradex.trade/r/defillama",
-    "chains": [
-      "ethereum"
-    ],
+    "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-05",
@@ -67,195 +39,30 @@
   },
   "topography": {
     "project_purpose": "Paradex is a perpetuals decentralized exchange. The recorded Ethereum contracts appear to represent bridge/deposit-withdrawal infrastructure for Ethereum/Starknet connectivity, not the complete trading protocol or sole on-chain infrastructure.",
-    "relationship_narrative": "The Paradex Bridge serves as the sole on-chain infrastructure, with the Proxy contract managing upgrades to the StarknetTokenBridge implementation, which handles all cross-chain token transfers.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 0,
+    "inactive_contracts": 5,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6fd62239f3a441d1898683c5a84ce3681bb42c16",
-      "name": "StarknetERC20Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StarknetERC20Bridge",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6fd62239f3a441d1898683c5a84ce3681bb42c16",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8a4e51ff0f2a45899519e6049fb2d1f038be1e77",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdcbd52ffaf81bf0aa5bd38b0c15f60345e8eec86",
-      "name": "StarknetTokenBridge",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Paradex Bridge",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xdcbd52ffaf81bf0aa5bd38b0c15f60345e8eec86",
-      "impl_name": "StarknetTokenBridge",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdcbd52ffaf81bf0aa5bd38b0c15f60345e8eec86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe3cbe3a636ab6a754e9e41b12b09d09ce9e53db3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12220"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2b3c19d6d08019556c7a2652bee88b24679d5f8d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2b3c19d6d08019556c7a2652bee88b24679d5f8d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5dacc4f337d5d9e25abeec9faa1064e82dc2fcc3",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5dacc4f337d5d9e25abeec9faa1064e82dc2fcc3",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd8d79d3d481aa2e1b7288a5a08b36152af97152a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd8d79d3d481aa2e1b7288a5a08b36152af97152a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    }
-  ],
+  "contracts": [],
   "audits": [
     {
       "audit_id": 12218,
@@ -313,24 +120,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "PermissionedERC20",
-        "StarkgateManager",
-        "StarkgateManager.sol",
-        "StarkgateRegistry",
-        "StarkgateRegistry.sol",
-        "StarknetEthBridge",
-        "StarknetTokenBridge",
-        "StarknetTokenBridge.sol",
-        "TokenBridge",
-        "WithdrawalLimit.sol",
-        "permissioned_erc20.cairo",
-        "token_bridge.cairo"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -376,29 +170,19 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Zellic",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 50,
-      "latest_audit": "2024-10"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 5
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -409,6 +193,10 @@
       {
         "audit_id": 12219,
         "report_name": "Oct 2024 (Zellic)"
+      },
+      {
+        "audit_id": 12220,
+        "report_name": "Oct 2023 (Zellic)"
       },
       {
         "audit_id": 12221,

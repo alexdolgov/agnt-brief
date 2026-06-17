@@ -1,6 +1,6 @@
 # latch — Contract Index
 
-5 unique implementations on ethereum · 7 deployments · 0 audited · 5 unaudited · 0 unverified
+3 unique implementations on ethereum · 5 deployments · 0 audited · 3 unaudited · 0 unverified
 
 ## core_logic (2)
 
@@ -14,15 +14,3 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [GnosisSafe](./ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ethereum | [`0x774388...4562e7`](./ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ⚠️ Unaudited | Verified |
-
-## operational_periphery (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [Abridge](./ethereum-1/0x0a7d280a0ed7d46c7be58a939f69c3d5c047dbe4/) | ethereum | [`0x0a7d28...47dbe4`](./ethereum-1/0x0a7d280a0ed7d46c7be58a939f69c3d5c047dbe4/) | ⚠️ Unaudited | Verified |
-
-## unknown (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [VaultNav](./ethereum-1/0x5d3920ccc068039e5b6fe680cab7aa09fe8e053c/) | ethereum | [`0x5d3920...8e053c`](./ethereum-1/0x5d3920ccc068039e5b6fe680cab7aa09fe8e053c/) | ⚠️ Unaudited | Verified |

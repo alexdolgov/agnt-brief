@@ -7,11 +7,11 @@
 - Project: Pay Protocol (`pay-protocol`)
 - Website: [https://payprotocol.network](https://payprotocol.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:50:22.280Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-17T07:00:49.686Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 8 unique implementations (8 raw deployments)
-- DeFi Llama TVL: $1,422,299.22
+- DeFi Llama TVL: $277,351.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,6 +22,14 @@ Pay Protocol is a non-custodial crypto payment and wallet infrastructure product
 ### Architecture
 
 All contracts are deployed by the same address and belong to a single product family, indicating a tightly integrated system. The supporting contracts likely provide shared infrastructure such as access control or configuration for the core payment contracts.
+
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 8 (1 live, 7 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -69,16 +77,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x3f44b6...c1a820` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x56768a...8de220` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5dff63...053e4c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x65594f...2a850e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa0000a...ec164f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xaaa035...3874c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd16be5...244ad3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdc60c8...174431` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x3f44b6...c1a820` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x56768a...8de220` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5dff63...053e4c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x65594f...2a850e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa0000a...ec164f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaaa035...3874c2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd16be5...244ad3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdc60c8...174431` | ❓ Unverified |
 
 ## Audit Inventory
 

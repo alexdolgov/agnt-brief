@@ -1,0 +1,18 @@
+{
+  "address": "0x85bcb7da3cd1782489d5331bc24a4bc806ec16a5",
+  "chain_id": 1,
+  "contract_name": "SmarDexDegen",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:38.957Z"
+}

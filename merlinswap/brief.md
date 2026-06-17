@@ -7,8 +7,8 @@
 - Project: MerlinSwap (`merlinswap`)
 - Website: [https://merlinswap.org](https://merlinswap.org)
 - Lifecycle: declining (Tier 0, 94.8% below peak)
-- Generated: 2026-06-14T05:48:50.452Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:58.315Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: merlin
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $6,894,830.37
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabling users to swap tokens and provide liquidity through automated market-making pools.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -70,10 +78,10 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | merlin | `0x261507...4c0467` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | `0xbd40c7...430bba` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | merlin | n/a | `0x261507...4c0467` | ❓ Unverified |
+| UnnamedContract | unknown | merlin | n/a | `0xbd40c7...430bba` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x552f4b850d4963d914e6b2c011b5fe475468d3b8`](../0x552f4b850d4963d914e6b2c011b5fe475468d3b8/); ethereum `0xdd737dada46f3a111074dce29b9430a7ea000092`) |
+| Deployments | 1 (ethereum [`0x552f4b850d4963d914e6b2c011b5fe475468d3b8`](../0x552f4b850d4963d914e6b2c011b5fe475468d3b8/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

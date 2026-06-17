@@ -5,10 +5,10 @@
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-14T09:46:06.929Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:00:49.918Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 30 unique implementations (31 raw deployments)
+- Contract surface: 20 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $1,828,126.03
 - On-chain TVL (included contracts): $4,617,109.60
 - TVL by chain: Ethereum $4,617,109.60
@@ -21,14 +21,22 @@ Yala should be described with a caveat: the legacy/DefiLlama DeFi protocol was a
 
 The Yala family consists of a core DebtToken for CDP operations and a supporting BridgeToken for cross-chain transfers, both deployed by the same deployer cluster.
 
+## Contract Surface Quality
+
+- Indexed contracts: 31; live-surface contracts included: 20 (20 live, 0 unknown).
+- Excluded by liveness: 11 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 18; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/11 (0.0%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 19
-- Unique implementations: 30
-- Raw deployments: 31
+- Unverified implementations: 14
+- Unique implementations: 20
+- Raw deployments: 20
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,617,109.60
@@ -46,21 +54,16 @@ The Yala family consists of a core DebtToken for CDP operations and a supporting
 
 - None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DebtToken | token | ethereum | [`0xe86808...9463f7`](./contracts/ethereum-1/0xe868084cf08f3c3db11f4b73a95473762d9463f7/) | ⚠️ Unaudited |
-| AssetWrapper | unknown | ethereum | [`0xd5d027...fc21b9`](./contracts/ethereum-1/0xd5d027108264000f3670a623dceb8d14ecfc21b9/) | ⚠️ Unaudited |
-| BorrowerOperations | core_logic | ethereum | [`0x4fb4c4...d923a0`](./contracts/ethereum-1/0x4fb4c4ade2a7ffe765d8193610779ff01dd923a0/) | ⚠️ Unaudited |
-| BridgeToken | operational_periphery | ethereum | [`0x27a70b...0ba589`](./contracts/ethereum-1/0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589/) | ⚠️ Unaudited |
-| Factory | registry | ethereum | [`0xca61a7...02e66c`](./contracts/ethereum-1/0xca61a7be20d361b21c0ad7fa61e241c56202e66c/) | ⚠️ Unaudited |
-| GasPool | core_logic | ethereum | [`0x306698...268784`](./contracts/ethereum-1/0x306698f58c0670ea2be3d325e61582ae61268784/) | ⚠️ Unaudited |
-| PriceFeed | operational_periphery | ethereum | [`0xf6fe54...4f7b6e`](./contracts/ethereum-1/0xf6fe5413361d8fa7df08c50a9211167ecd4f7b6e/) | ⚠️ Unaudited |
-| PSM | unknown | ethereum | 2 deployments: ethereum [`0x0b4e03...ee41fd`](./contracts/ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/); ethereum `0x4171e2...6e6a12` | ⚠️ Unaudited |
-| StabilityPool | core_logic | ethereum | [`0x959380...b1e7fe`](./contracts/ethereum-1/0x9593807414124328e9033756309a985799b1e7fe/) | ⚠️ Unaudited |
-| TroveManager | governance | ethereum | [`0xdcd922...6622f2`](./contracts/ethereum-1/0xdcd922cba657b7c07fd114bf6734069bd66622f2/) | ⚠️ Unaudited |
-| YalaCore | unknown | ethereum | [`0xd5eeaf...c20c8b`](./contracts/ethereum-1/0xd5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| DebtToken | token | ethereum | n/a | [`0xe86808...9463f7`](./contracts/ethereum-1/0xe868084cf08f3c3db11f4b73a95473762d9463f7/) | ⚠️ Unaudited |
+| AssetWrapper | unknown | ethereum | n/a | [`0xd5d027...fc21b9`](./contracts/ethereum-1/0xd5d027108264000f3670a623dceb8d14ecfc21b9/) | ⚠️ Unaudited |
+| BorrowerOperations | core_logic | ethereum | n/a | [`0x4fb4c4...d923a0`](./contracts/ethereum-1/0x4fb4c4ade2a7ffe765d8193610779ff01dd923a0/) | ⚠️ Unaudited |
+| BridgeToken | operational_periphery | ethereum | n/a | [`0x27a70b...0ba589`](./contracts/ethereum-1/0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589/) | ⚠️ Unaudited |
+| PSM | unknown | ethereum | n/a | [`0x0b4e03...ee41fd`](./contracts/ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/) | ⚠️ Unaudited |
+| StabilityPool | core_logic | ethereum | n/a | [`0x959380...b1e7fe`](./contracts/ethereum-1/0x9593807414124328e9033756309a985799b1e7fe/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -74,31 +77,26 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x0c229b...995829` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0d2ebf...e95978` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x0eedc0...48fb2e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x14b515...8206ba` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2ee7e1...d7cdd9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x356123...511950` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3bce66...532431` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3cae6f...54d0b5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x546007...8a4288` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x599d9c...807e8f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7066e3...a67748` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7aa1d5...8de749` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x80010d...326e18` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x86df4c...c4fc92` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9767f4...e5927d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa96a92...9a9a4a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb977a8...9e2d33` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xbf4c0b...64239f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xef2352...7867d6` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x0c229b...995829` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0eedc0...48fb2e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x14b515...8206ba` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2ee7e1...d7cdd9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3bce66...532431` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3cae6f...54d0b5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x546007...8a4288` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7066e3...a67748` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7aa1d5...8de749` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x86df4c...c4fc92` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9767f4...e5927d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb977a8...9e2d33` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbf4c0b...64239f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xef2352...7867d6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,19 +114,15 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xd5d027...fc21b9`](./contracts/ethereum-1/0xd5d027108264000f3670a623dceb8d14ecfc21b9/) | AssetWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4fb4c4...d923a0`](./contracts/ethereum-1/0x4fb4c4ade2a7ffe765d8193610779ff01dd923a0/) | BorrowerOperations | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x27a70b...0ba589`](./contracts/ethereum-1/0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589/) | BridgeToken | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xca61a7...02e66c`](./contracts/ethereum-1/0xca61a7be20d361b21c0ad7fa61e241c56202e66c/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x306698...268784`](./contracts/ethereum-1/0x306698f58c0670ea2be3d325e61582ae61268784/) | GasPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0b4e03...ee41fd`](./contracts/ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/) | PSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x959380...b1e7fe`](./contracts/ethereum-1/0x9593807414124328e9033756309a985799b1e7fe/) | StabilityPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdcd922...6622f2`](./contracts/ethereum-1/0xdcd922cba657b7c07fd114bf6734069bd66622f2/) | TroveManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd5eeaf...c20c8b`](./contracts/ethereum-1/0xd5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b/) | YalaCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 29 |
-| upstream | 1 |
+| native | 20 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 

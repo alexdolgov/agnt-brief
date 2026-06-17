@@ -1,0 +1,18 @@
+{
+  "address": "0x6123b0049f904d730db3c36a31167d9d4121fa6b",
+  "chain_id": 1,
+  "contract_name": "RibbonToken",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:36.769Z"
+}

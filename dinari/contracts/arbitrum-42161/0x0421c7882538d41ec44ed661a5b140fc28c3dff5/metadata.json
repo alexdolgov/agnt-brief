@@ -1,0 +1,17 @@
+{
+  "address": "0x0421c7882538d41ec44ed661a5b140fc28c3dff5",
+  "chain_id": 42161,
+  "contract_name": "UsdPlusMinter",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:53.188Z"
+}

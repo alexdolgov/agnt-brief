@@ -7,8 +7,8 @@
 - Project: Scream (`scream`)
 - Website: [https://scream.sh/](https://scream.sh/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-14T11:05:05.093Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:49.801Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,288,676.91
@@ -23,6 +23,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Scream is a Fantom-based decentralized lending and borrowing protocol. Its complete contract architecture is not established by the current brief; the listed single contract is insufficient to represent the protocol's lending surface, which likely includes controller, market token, oracle, interest-rate, rewards/distribution, and dripper-related components that must be mapped before coverage can be assessed.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -70,9 +78,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | fantom | `0xe0654c...6bf475` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | fantom | n/a | `0xe0654c...6bf475` | ❓ Unverified |
 
 ## Audit Inventory
 

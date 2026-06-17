@@ -1,23 +1,16 @@
 # hanji-protocol — Contract Index
 
-381 unique implementations on base · 383 deployments · 1 audited · 5 unaudited · 375 unverified
-
-## proxy (2)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [Proxy (3 deployments)](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/) | base | 3 deployments: base [`0x15c8cb...25eee3`](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d...30eb28`; base `0xf455b3...354eea` | ✅ Audited | Verified |
-| Proxy (impl: 0x66672de0d193c5e988d40f6b9d948c2dc811c865) | base | `0xc032b6...3609de` | ❓ Unverified | Unverified |
+374 unique implementations on base · 374 deployments · 0 audited · 5 unaudited · 369 unverified
 
 ## token (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| FiatTokenV2_1 | base | `0xcbb7c0...ed33bf` | ⚠️ Unaudited | Verified |
+| [FiatTokenV2_1](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | base | [`0xcbb7c0...ed33bf`](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2](./base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | base | [`0x833589...a02913`](./base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited | Verified |
 | [WETH9](./base-8453/0x4200000000000000000000000000000000000006/) | base | [`0x420000...000006`](./base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited | Verified |
 
-## unknown (376)
+## unknown (371)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -32,7 +25,6 @@
 | UnnamedContract | base | `0x089127...aa0635` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x08faef...dc31b0` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x09db7f...29b493` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x0b4105...9ff4c4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0d9965...908bb4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0db171...dde234` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0f5c2b...204868` | ❓ Unverified | Unverified |
@@ -101,12 +93,10 @@
 | UnnamedContract | base | `0x365fb6...9c9c3f` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x369aee...1e5e6e` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3901fc...d69992` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x397db7...2da1ea` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x399899...8d8e25` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x39c31a...22051b` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3a370b...cb90bd` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3b2521...c52686` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x3b6fe3...620632` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3bc223...1ad6ca` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3be143...7b7298` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x3d444c...598fad` | ❓ Unverified | Unverified |
@@ -169,7 +159,6 @@
 | UnnamedContract | base | `0x6590d3...649049` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x65c388...852fbb` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x65dbb1...0b2cbf` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x66672d...11c865` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x66a11a...fc2458` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x66dc89...6c4f23` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x674fab...a820d8` | ❓ Unverified | Unverified |
@@ -269,7 +258,6 @@
 | UnnamedContract | base | `0xa36a43...83c1ff` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xa40a74...2f8565` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xa43373...baa614` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0xa4af2f...21b3b9` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xa5dda8...9b4e31` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xa5f333...1bf18c` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xa6496e...e353e8` | ❓ Unverified | Unverified |
@@ -396,4 +384,4 @@
 | UnnamedContract | base | `0xff0f59...b020f0` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xff2d53...078e03` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xff515c...223222` | ❓ Unverified | Unverified |
-| WXTZ | base | `0xc9b53a...7a3eab` | ⚠️ Unaudited | Verified |
+| [WXTZ](./base-8453/0xc9b53ab2679f573e480d01e0f49e2b5cfb7a3eab/) | base | [`0xc9b53a...7a3eab`](./base-8453/0xc9b53ab2679f573e480d01e0f49e2b5cfb7a3eab/) | ⚠️ Unaudited | Verified |

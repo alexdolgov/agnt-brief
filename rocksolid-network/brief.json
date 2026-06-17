@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rocksolid-network",
-  "generated_at": "2026-06-12T05:36:29.275Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
+  "generated_at": "2026-06-17T07:00:53.452Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rocksolid-network",
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 32.76862716071411
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 5,
-    "unique_implementations": 2,
-    "total_deployments": 5,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
     "dl_tvl_usd": 19763159.08277,
-    "tvl_usd": 24958194.472221095,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 24958194.47
-    },
-    "asd_usd": 24958194.472221095,
+    "tvl_usd": 19763159.08277,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://rocksolid.network/",
     "chains": [
       "ethereum"
@@ -59,13 +57,24 @@
   },
   "topography": {
     "project_purpose": "RockSolid Network is an actively managed liquid DeFi vault platform that offers single-click deposits into vault strategies and supports institutional, white-label, and tailored vault solutions. Its vault products may use ERC-4626-style tokenized vault standards where verified, but should not be described only as passive yield vaults.",
-    "relationship_narrative": "All vaults share the same implementation contract (Vault) and are deployed by a single deployer, indicating a unified infrastructure with no separate product families.",
-    "product_family_count": 1
+    "relationship_narrative": null,
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -75,65 +84,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x7a12d4b719f5aa479ecd60defed909fb2a37e428",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Grow Passively",
-      "tvl_usd": 24958194.472221095,
-      "is_proxy": true,
-      "impl_address": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf",
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7a12d4b719f5aa479ecd60defed909fb2a37e428",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4156182.094489388,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x936facdf10c8c36294e7b9d28345255539d81bc7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 20467938.239067707,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xba71097e426983d840569edfa1a01396b56d86ad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 334074.138664,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x716f0c5453099690b54e7b72d9491a72b8df445e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "CombinedRateProvider",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -148,6 +101,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x716f0c5453099690b54e7b72d9491a72b8df445e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -212,7 +167,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

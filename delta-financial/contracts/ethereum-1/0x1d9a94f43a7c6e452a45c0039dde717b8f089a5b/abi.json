@@ -1,9 +1,0 @@
-[
-  {
-    "inputs": [],
-    "name": "killMe",
-    "outputs": [],
-    "stateMutability": "pure",
-    "type": "function"
-  }
-]

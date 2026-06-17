@@ -1,0 +1,17 @@
+{
+  "address": "0x6063597b9356b246e706fd6a48c780f897e3ef55",
+  "chain_id": 43114,
+  "contract_name": "VaultAdaptorMK2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000d586e7f844cea2f87f50152665bcbc2c279d8d70000000000000000000000000000000000000000000000000000000000000138800000000000000000000000060861b5afdf4b6e449dd194a6b54d6a64dfe2d81",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:30.405Z"
+}

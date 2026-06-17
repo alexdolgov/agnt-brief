@@ -5,8 +5,8 @@
 - Project: GoldFinger (`goldfinger`)
 - Website: [https://goldfinger.finance/en](https://goldfinger.finance/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T11:36:39.159Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-17T07:00:52.121Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -20,6 +20,14 @@ GoldFinger is a BSC Real World Asset protocol centered on ART, a gold-backed tok
 ### Architecture
 
 The protocol consists of a single product family centered around the ARTToken contract, with no additional infrastructure or inter-family relationships.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 2/10.
 
 ## Audit Coverage Summary
 
@@ -48,12 +56,12 @@ The protocol consists of a single product family centered around the ARTToken co
 
 ### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ARTToken | token | bsc | 2 deployments: bsc [`0x0b3f46...c67424`](./contracts/bsc-56/0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424/); bsc `0xb8a1ed...feaae1` | ⚠️ Unaudited |
-| GFDistributor | operational_periphery | bsc | 4 deployments: bsc [`0x92558b...154079`](./contracts/bsc-56/0x92558bda86a95cdbff7bdebfe5c2ba7723154079/); bsc `0xcee77c...d8572b`; bsc `0xeae164...18e32c`; bsc `0xf9e11e...efaa62` | ⚠️ Unaudited |
-| GFPriceOracle | operational_periphery | bsc | [`0x2c1bd6...03b4f4`](./contracts/bsc-56/0x2c1bd629a23322bd54d403c9139743795903b4f4/) | ⚠️ Unaudited |
-| GFRegistry | registry | bsc | [`0xd1ab3b...f17a9a`](./contracts/bsc-56/0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ARTToken | token | bsc | n/a | 2 deployments: bsc [`0x0b3f46...c67424`](./contracts/bsc-56/0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424/); bsc `0xb8a1ed...feaae1` | ⚠️ Unaudited |
+| GFDistributor | operational_periphery | bsc | n/a | 4 deployments: bsc [`0x92558b...154079`](./contracts/bsc-56/0x92558bda86a95cdbff7bdebfe5c2ba7723154079/); bsc `0xcee77c...d8572b`; bsc `0xeae164...18e32c`; bsc `0xf9e11e...efaa62` | ⚠️ Unaudited |
+| GFPriceOracle | operational_periphery | bsc | n/a | [`0x2c1bd6...03b4f4`](./contracts/bsc-56/0x2c1bd629a23322bd54d403c9139743795903b4f4/) | ⚠️ Unaudited |
+| GFRegistry | registry | bsc | n/a | [`0xd1ab3b...f17a9a`](./contracts/bsc-56/0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -71,9 +79,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x2232a5...06859a` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x2232a5...06859a` | ❓ Unverified |
 
 ## Audit Inventory
 

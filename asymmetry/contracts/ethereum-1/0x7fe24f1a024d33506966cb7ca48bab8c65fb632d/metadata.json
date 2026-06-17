@@ -1,0 +1,18 @@
+{
+  "address": "0x7fe24f1a024d33506966cb7ca48bab8c65fb632d",
+  "chain_id": 1,
+  "contract_name": "dASF",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:51:47.456Z"
+}

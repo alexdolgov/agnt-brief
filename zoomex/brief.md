@@ -5,21 +5,30 @@
 - Project: Zoomex (`zoomex`)
 - Website: [https://www.zoomex.com](https://www.zoomex.com)
 - Lifecycle: unknown
-- Generated: 2026-05-22T13:12:45.284Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-17T07:01:01.891Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $23,793,550.50
+- DeFi Llama TVL: $24,653,721.23
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Zoomex is a centralized exchange (CEX) for trading digital assets. It provides a platform for users to buy, sell, and trade cryptocurrencies with features typical of centralized exchanges.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
-### Architecture
+## Contract Surface Quality
 
-No on-chain contracts or product families were identified, as Zoomex operates as a centralized exchange without disclosed smart contract infrastructure.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

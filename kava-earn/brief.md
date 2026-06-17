@@ -7,11 +7,11 @@
 - Project: Kava Earn (`kava-earn`)
 - Website: [https://app.kava.io/home](https://app.kava.io/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T00:15:36.246Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-17T07:00:49.615Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,568,529.04
+- DeFi Llama TVL: $1,195,362.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -30,6 +30,14 @@ This project is a code fork of **Kava Mint** (`kava-mint`).
 1 audits are inherited from this parent project.
 
 Total inherited audits: 1.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -77,9 +85,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | kava | `0xa8e48f...49fc1f` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0xa8e48f...49fc1f` | ❓ Unverified |
 
 ## Audit Inventory
 

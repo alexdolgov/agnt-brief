@@ -1,43 +1,49 @@
 # Agentic Audit Brief: Verus Market
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 52.9% over 90 days
-
 ## Project Overview
 
 - Project: Verus Market (`verus-market`)
 - Website: [https://eth.verusbridge.io/](https://eth.verusbridge.io/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-13T02:06:57.344Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
-- Chains: ethereum
-- Contract surface: 33 unique implementations (33 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-06-17T07:00:42.627Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $6,360,640.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Verus Market is a DefiLlama-listed decentralized exchange (DEX) on the Verus chain. Separately, multiple Ethereum contracts are associated or suspected in the available contract surface, including VerusProof and NotarizationSerializer, but their roles should be treated as verifier/support/unknown infrastructure unless independently verified. The current evidence does not support describing the product as an Ethereum DEX or as a single-proxy contract family.
 
-### Architecture
+## Contract Surface Quality
 
-The protocol consists of a single product family with one proxy contract; no shared infrastructure or inter-family relationships are present.
+- Indexed contracts: 33; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 31 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 32
-- Unique implementations: 33
-- Raw deployments: 33
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,11 +55,9 @@ The protocol consists of a single product family with one proxy contract; no sha
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| SubmitImports | unknown | ethereum | [`0xa045cf...6fc87f`](./contracts/ethereum-1/0xa045cf963b79833faf445f555ee1a6812d6fc87f/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -67,44 +71,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (32)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0xa045cf963b79833faf445f555ee1a6812d6fc87f) | proxy | ethereum | `0x715185...cd7f63` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1cc501...562b9a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x39ee9c...b2d512` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3a3017...4d2888` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3a8bd9...093646` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x40ec84...400aae` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4f8666...0dce15` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5355ca...2e91ea` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x56b88c...afc25c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6a1d5b...9cc069` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6aff72...20e8e3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x709afa...88eb8a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x794944...4dc89a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x8f70d1...e3b79c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x90dee0...50f3e4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x918d6f...983ffb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x972d75...7e8979` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x99587c...d7e100` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa274b8...690dd2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb95b7f...ec2ccd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc706df...bb70e5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd2d809...4f5997` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd8c203...171f98` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdac256...038b9c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdc7f78...91ddde` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdecdc7...86cc7b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdfd901...adad7d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe2a711...32598e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe9bd85...51dca7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xec8da8...dcb3e9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfa6cf9...ca78e1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfbf982...c1da20` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -121,10 +92,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 32 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

@@ -5,11 +5,11 @@
 - Project: 1sec (`1sec`)
 - Website: [https://1sec.to/](https://1sec.to/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:58:56.362Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-17T07:00:57.716Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,478,271.63
+- DeFi Llama TVL: $1,442,716.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 1Sec is a message-passing bridge between ICP and EVM chains.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

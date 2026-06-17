@@ -1,0 +1,18 @@
+{
+  "address": "0xdaf1695c41327b61b9b9965ac6a5843a3198cf07",
+  "chain_id": 1,
+  "contract_name": "DepositBridge",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:39.472Z"
+}

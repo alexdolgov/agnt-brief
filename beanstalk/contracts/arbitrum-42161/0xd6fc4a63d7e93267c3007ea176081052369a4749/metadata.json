@@ -1,0 +1,18 @@
+{
+  "address": "0xd6fc4a63d7e93267c3007ea176081052369a4749",
+  "chain_id": 42161,
+  "contract_name": "UnwrapAndSendETH",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:06.885Z"
+}

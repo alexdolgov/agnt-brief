@@ -1,37 +1,21 @@
 {
   "schema_version": "2.0",
   "project_key": "asseto-aoabt",
-  "generated_at": "2026-06-12T05:27:17.126Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "asseto-aoabt",
-    "tier": 0,
-    "peak_tvl": 22280390,
-    "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": 17971199,
-    "tvl_90d_ago": 19000111,
-    "tvl_current": 22280390,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 13920824,
-    "change_30d_pct": 23.978316638750705,
-    "change_90d_pct": 17.26452545461445,
-    "days_since_peak": 1,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-06-17T07:00:52.402Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -41,9 +25,7 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://asseto.finance/product",
-    "chains": [
-      "avalanche"
-    ],
+    "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -58,10 +40,21 @@
   "topography": {
     "project_purpose": "Asseto AoABT is an Asseto-operated real-world asset token/product backed 1:1 by Class C Shares of an underlying fund, with subscribe and redeem functionality. DefiLlama tracks AoABT on Avalanche and HashKey Chain; currently only one Avalanche proxy contract is identified in the mapped contract surface, so the HashKey Chain deployment surface remains missing or unmapped.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 2,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 0,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -69,70 +62,7 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0xb2ea3e7b80317c4e20d1927034162176e25834e2",
-      "name": "Proxy (impl: 0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd)",
-      "role": "proxy",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Asseto AoABT",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd",
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xb2ea3e7b80317c4e20d1927034162176e25834e2",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Asseto AoABT",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    }
-  ],
+  "contracts": [],
   "audits": [
     {
       "audit_id": 11541,
@@ -162,7 +92,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,0 +1,18 @@
+{
+  "address": "0x09c39b8311e4b7c678cbdad76556877ecd3aea07",
+  "chain_id": 8453,
+  "contract_name": "LlamaPayFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT, None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:28.706Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x42dd5168eda433d9c7523ad11ea15264343b1862",
+  "chain_id": 169,
+  "contract_name": "RebateImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000b73603c5d87fa094b7314c74ace2e64d165016fb000000000000000000000000cbca586bf9706706398164bb5eb8e48f220fe408",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:49:00.590Z"
+}

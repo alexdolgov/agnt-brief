@@ -1,0 +1,18 @@
+{
+  "address": "0xc85f5dd5880d5162faf5fdb24d40845b7c8f976f",
+  "chain_id": 1,
+  "contract_name": "DAOToken",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:52:48.862Z"
+}

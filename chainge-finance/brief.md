@@ -4,8 +4,8 @@
 
 - Project: Chainge Finance (`chainge-finance`)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:25:12.922Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:00:36.400Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $12,140,920.14
@@ -20,6 +20,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Chainge Finance is a cross-chain aggregated DEX and mobile DeFi app. It provides cross-chain wallet functionality, cross-chain swaps/roaming, decentralized earning features, and smart escrow services, with current DefiLlama tracking centered on Fusion and Rollux rather than broad unrelated EVM-chain deployments.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

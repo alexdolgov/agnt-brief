@@ -7,10 +7,10 @@
 - Project: DeSyn Protocol (`desyn-protocol`)
 - Website: [https://www.desyn.io/#/](https://www.desyn.io/#/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-14T04:27:09.753Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
-- Chains: ethereum, linea, mode
-- Contract surface: 15 unique implementations (21 raw deployments)
+- Generated: 2026-06-17T07:00:50.043Z
+- Pipeline run: brief-regen-topo-2026-06-17
+- Chains: ethereum, mode
+- Contract surface: 12 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $1,401,973.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,14 +23,22 @@ DeSyn Protocol is a decentralized asset management platform spanning multiple pr
 
 The governance family (GnosisSafeProxy) likely manages upgrades and parameters for the DeSyn Safe liquidity pools. The unnamed supporting contracts in DeSyn Safe may include adapters, registries, or access control modules that facilitate pool operations and strategy execution.
 
+## Contract Surface Quality
+
+- Indexed contracts: 21; live-surface contracts included: 16 (2 live, 14 unknown).
+- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
+- Detected codebases: none
+- Unverified dependencies: 1/3.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 15
-- Raw deployments: 21
+- Unverified implementations: 9
+- Unique implementations: 12
+- Raw deployments: 16
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,15 +57,13 @@ The governance family (GnosisSafeProxy) likely manages upgrades and parameters f
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Actions | unknown | mode | 2 deployments: mode [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/); linea `0xc88d43...d6f891` | ⚠️ Unaudited |
-| CRPFactory | registry | linea | [`0x90ac49...61f86f`](./contracts/linea-59144/0x90ac490b6d384290618c61e49182b3d3cc61f86f/) | ⚠️ Unaudited |
-| Factory | registry | mode | 2 deployments: mode [`0x09dfee...b0d17b`](./contracts/mode-34443/0x09dfee598d5217da799bead56206bec0fdb0d17b/); linea `0x5c3027...7e88c5` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0xf87709...20e174`](./contracts/ethereum-1/0xf8770931fc94d05ab4982d06bd6572bdf520e174/) | ⚠️ Unaudited |
-| LiquidityPool | core_logic | mode | 5 deployments: mode [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/); mode `0x26f9fa...cd9805`; mode `0x34075f...879eef`; mode `0x87374d...ed3d0a`; mode `0xbfb3a6...e34c96` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Actions | unknown | mode | n/a | [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-30595 | [`0xf87709...20e174`](./contracts/ethereum-1/0xf8770931fc94d05ab4982d06bd6572bdf520e174/) | ⚠️ Unaudited |
+| LiquidityPool | core_logic | mode | n/a | 5 deployments: mode [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/); mode `0x26f9fa...cd9805`; mode `0x34075f...879eef`; mode `0x87374d...ed3d0a`; mode `0xbfb3a6...e34c96` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -71,22 +77,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | mode | `0x0c4d31...240a9a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0x203cbb...dc7faa` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0x5d2b9c...242ce3` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0x5e69d8...7b44bb` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0x66a50e...d2dc5c` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0x6cb698...518079` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0xb7669c...1ef23a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0xc017af...8f5943` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0xd4d402...f7889a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | `0xda8c0b...b3e95d` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | mode | n/a | `0x203cbb...dc7faa` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x5d2b9c...242ce3` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x5e69d8...7b44bb` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x66a50e...d2dc5c` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x6cb698...518079` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xb7669c...1ef23a` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xc017af...8f5943` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xd4d402...f7889a` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xda8c0b...b3e95d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,17 +105,16 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | mode | [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/) | Actions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x09dfee...b0d17b`](./contracts/mode-34443/0x09dfee598d5217da799bead56206bec0fdb0d17b/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/) | LiquidityPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
-| upstream | 2 |
+| native | 11 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

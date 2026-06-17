@@ -1,0 +1,17 @@
+{
+  "address": "0x47451e1508d0f43406b1115f6ed222cf05c70668",
+  "chain_id": 137,
+  "contract_name": "StrategyPenroseTetuUsdPlus",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:38.064Z"
+}

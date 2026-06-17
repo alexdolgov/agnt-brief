@@ -5,11 +5,11 @@
 - Project: Flamingo (`flamingo`)
 - Website: [https://flamingo.finance/lend/overview](https://flamingo.finance/lend/overview)
 - Lifecycle: unknown
-- Generated: 2026-06-10T23:21:11.929Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-17T07:00:35.865Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,154,213.00
+- DeFi Llama TVL: $1,644,821.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Flamingo is a NEO-based DeFi protocol currently tracked as Flamingo Lend, focused on lending within the Flamingo/NEO ecosystem. Its contract/component surface should be derived from verified NEO Flamingo contracts, documentation, or DefiLlama adapter data, not from unrelated multi-chain EVM vault, yield-farming, or LP optimizer contracts.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

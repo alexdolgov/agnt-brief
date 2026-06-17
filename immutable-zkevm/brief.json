@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "immutable-zkevm",
-  "generated_at": "2026-06-11T00:02:15.327Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-17T07:00:42.934Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "immutable-zkevm",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 55.08810185655925
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 9,
-    "unique_implementations": 9,
-    "total_deployments": 9,
-    "audited_contracts": 2,
-    "unaudited_contracts": 7,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 7,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 1,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 22.2,
+    "coverage_pct": 33.3,
     "total_audits": 4,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 28544432.06595,
-    "tvl_usd": 28544432.06595,
+    "dl_tvl_usd": 25111259.22883,
+    "tvl_usd": 25111259.22883,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -58,10 +58,21 @@
   "topography": {
     "project_purpose": "Immutable zkEVM is Immutable's EVM-compatible gaming chain and Layer 2 infrastructure for Ethereum, designed to support blockchain games and related products in the Immutable ecosystem such as Passport and Immutable Chain. It should not be described as a Doodles-related bridge or NFT-collection project unless independently evidenced.",
     "relationship_narrative": "The RootERC20BridgeFlowRate and RootAxelarBridgeAdaptor contracts handle token bridging, while GnosisSafe manages governance. Doodles represents an NFT collection deployed on the chain, leveraging the bridge for cross-chain functionality.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 9,
+    "live_contracts": 3,
+    "inactive_contracts": 6,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 4,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
+    "unique_implementations": 3,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -73,40 +84,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8804a8aa1f18f23ae8a456dd73806fda3219fad1",
-      "name": "ChildERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ChildERC20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8804a8aa1f18f23ae8a456dd73806fda3219fad1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-1814"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x466cfcd0525189b573e794f554b8a751279213ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Dooplicator",
       "role": "unknown",
       "origin_kind": "native",
@@ -121,6 +101,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x466cfcd0525189b573e794f554b8a751279213ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -133,166 +115,13 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9fbe92624b48ba00545c2573801c8e38e8285830",
-      "name": "ERC721CreatorImplementation",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xe4e4003afe3765aca8149a82fc064c0b125b9e5a",
-      "impl_name": "ERC721CreatorImplementation",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9fbe92624b48ba00545c2573801c8e38e8285830",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5a019874f4fae314b0eaa4606be746366e661306",
-      "name": "GnosisSafe",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Immutable zkEVM",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
-      "impl_name": "GnosisSafe",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5a019874f4fae314b0eaa4606be746366e661306",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x90da206238384d33d7a35dcd7119c0ce76d37921",
-      "name": "OwnableCreate2Deployer",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OwnableCreate2Deployer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x90da206238384d33d7a35dcd7119c0ce76d37921",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xba606be61572510d8118127a82faff6027641401",
-      "name": "OwnableCreate3Deployer",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OwnableCreate3Deployer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xba606be61572510d8118127a82faff6027641401",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xde2bcd3f0297d29c25e83228e5a33c0b43b51ec8",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyAdmin",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xde2bcd3f0297d29c25e83228e5a33c0b43b51ec8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+      "deployment_unit": "unit-26362",
+      "deployment_unit_proxy_count": 1,
       "name": "RootAxelarBridgeAdaptor",
       "role": "operational_periphery",
       "origin_kind": "standard_library",
@@ -307,6 +136,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+          "deployment_unit": "unit-26362",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -324,6 +155,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+      "deployment_unit": "unit-26365",
+      "deployment_unit_proxy_count": 1,
       "name": "RootERC20BridgeFlowRate",
       "role": "operational_periphery",
       "origin_kind": "standard_library",
@@ -338,6 +171,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+          "deployment_unit": "unit-26365",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -378,7 +213,7 @@
         "RootERC20BridgeFlowRate",
         "WIMX"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 1,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -452,8 +287,8 @@
     {
       "auditor": "Perimeter",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 22.2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
       "latest_audit": "2024-09"
     }
   ],
@@ -467,22 +302,12 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9fbe92624b48ba00545c2573801c8e38e8285830",
-      "name": "ERC721CreatorImplementation",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 6,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {

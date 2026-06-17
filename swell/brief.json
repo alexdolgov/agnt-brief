@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swell",
-  "generated_at": "2026-06-13T10:03:34.755Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-06-17T07:00:33.383Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Swell is a non-custodial ETH liquid staking and restaking protocol offering products such as swETH, rswETH, swBTC, and earnETH. The protocol is live on Ethereum and has been associated with Swellchain, with current lifecycle context including the Faro transition and Swellchain sunset/deprecation messaging.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": null,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

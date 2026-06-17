@@ -1,0 +1,17 @@
+{
+  "address": "0xca8a932e5aa63961d975afa005d34ef73c59bb45",
+  "chain_id": 1285,
+  "contract_name": "CrossChainHub",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000fb2019dfd635a03cfff624d210aee6af2b00fc2c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:50:10.922Z"
+}

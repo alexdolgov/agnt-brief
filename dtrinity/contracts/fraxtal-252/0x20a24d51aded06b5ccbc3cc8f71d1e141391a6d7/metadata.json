@@ -1,0 +1,18 @@
+{
+  "address": "0x20a24d51aded06b5ccbc3cc8f71d1e141391a6d7",
+  "chain_id": 252,
+  "contract_name": "L2Pool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, BUSL-1.1, LGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 53,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:46:46.445Z"
+}

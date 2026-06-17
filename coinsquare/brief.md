@@ -5,8 +5,8 @@
 - Project: Coinsquare (`coinsquare`)
 - Website: [https://coinsquare.com](https://coinsquare.com)
 - Lifecycle: unknown
-- Generated: 2026-06-14T05:38:33.433Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:45.193Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $8,989,665.69
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocurrency trading and related financial services. No validated Coinsquare-owned smart contract surface has been identified from the provided inventory; the listed KittyCore contract is an unrelated CryptoKitties contract and should not be counted as a Coinsquare contract.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 2/2.
 
 ## Audit Coverage Summary
 

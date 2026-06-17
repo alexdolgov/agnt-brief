@@ -1,35 +1,21 @@
 # veno-finance — Contract Index
 
-51 unique implementations across 3 chains · 58 deployments · 0 audited · 11 unaudited · 40 unverified
-
-## governance (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [ValidatorTimelock](./ethereum-1/0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e/) | ethereum | [`0x5d8ba1...bad06e`](./ethereum-1/0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e/) | ⚠️ Unaudited | Verified |
+44 unique implementations across 3 chains · 44 deployments · 0 audited · 5 unaudited · 39 unverified
 
 ## operational_periphery (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BridgeMiddleware (2 deployments)](./ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/) | ethereum | 2 deployments: ethereum [`0x248c73...a0b01e`](./ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/); ethereum `0x3766eb...3c356d` | ⚠️ Unaudited | Verified |
-| [YbEthBridge (2 deployments)](./ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/) | ethereum | 2 deployments: ethereum [`0xd91629...bdf73f`](./ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/); ethereum `0xded4dd...50643d` | ⚠️ Unaudited | Verified |
-| [YBUSDBridge (2 deployments)](./ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/) | ethereum | 2 deployments: ethereum [`0x17daca...d014f8`](./ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/); ethereum `0x42696a...7b0dff` | ⚠️ Unaudited | Verified |
+| [BridgeMiddleware](./ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/) | ethereum | [`0x248c73...a0b01e`](./ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/) | ⚠️ Unaudited | Verified |
+| [YbEthBridge](./ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/) | ethereum | [`0xd91629...bdf73f`](./ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/) | ⚠️ Unaudited | Verified |
+| [YBUSDBridge](./ethereum-1/0x42696a64a238e5c661b1bad2530198d54e7b0dff/) | ethereum | [`0x42696a...7b0dff`](./ethereum-1/0x42696a64a238e5c661b1bad2530198d54e7b0dff/) | ⚠️ Unaudited | Verified |
 | [ZkCroMintAndBridge](./ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ethereum | [`0xe69a53...ab4e12`](./ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ⚠️ Unaudited | Verified |
 
-## token (1)
+## unknown (40)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [YbEthNft (2 deployments)](./ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/) | ethereum | 2 deployments: ethereum [`0x43df9d...86d2c5`](./ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/); ethereum `0x8f6b05...90762d` | ⚠️ Unaudited | Verified |
-
-## unknown (45)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [EthereumDeposit](./ethereum-1/0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac/) | ethereum | [`0xe8dd48...32d2ac`](./ethereum-1/0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac/) | ⚠️ Unaudited | Verified |
 | [L1Nullifier](./ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ethereum | [`0xd7f9f5...8cb2cb`](./ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ⚠️ Unaudited | Verified |
-| UnnamedContract | ethereum | `0x3fa18f...d0daa2` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x0bbe7e...2af25d` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x10a1d7...e5d191` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x186a96...05c7c1` | ❓ Unverified | Unverified |
@@ -69,6 +55,3 @@
 | UnnamedContract | zksync-era | `0xe7895e...2e7f9d` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xf8b19e...e903ab` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xfea419...404936` | ❓ Unverified | Unverified |
-| [YbEth (2 deployments)](./ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/) | ethereum | 2 deployments: ethereum [`0x76bf2d...dfc351`](./ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/); ethereum `0xc0c23f...52d6a2` | ⚠️ Unaudited | Verified |
-| [YBUSD (2 deployments)](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited | Verified |
-| [ZkCro (2 deployments)](./ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/) | ethereum | 2 deployments: ethereum [`0x28ff2e...1e44e2`](./ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/); ethereum `0x34b35b...4616a5` | ⚠️ Unaudited | Verified |

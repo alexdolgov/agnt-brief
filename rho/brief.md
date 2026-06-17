@@ -5,10 +5,10 @@
 - Project: Rho (`rho`)
 - Website: [https://www.rho.trading/](https://www.rho.trading/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-14T04:14:34.724Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-17T07:00:43.651Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum, ethereum
-- Contract surface: 35 unique implementations (39 raw deployments)
+- Contract surface: 28 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,307,119.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Rho is a crypto-native interest-rate derivatives and funding-rate trading venue.
 
 The Mainnet family provides the foundational vault logic and proxy infrastructure, while Rho X extends it with a stablecoin minted against LP vault positions. Both families share the same deployer cluster and likely interact through token flows between vaults and the YUSD contract.
 
+## Contract Surface Quality
+
+- Indexed contracts: 39; live-surface contracts included: 30 (30 live, 0 unknown).
+- Excluded by liveness: 3 inactive, 6 singleton, 0 uninitialized.
+- Deployment units: 1/6 live.
+- Detected codebases: none
+- Unverified dependencies: 2/9.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
-- Verified by bytecode match: 1
-- Unverified implementations: 33
-- Unique implementations: 35
-- Raw deployments: 39
+- Verified by bytecode match: 0
+- Unverified implementations: 27
+- Unique implementations: 28
+- Raw deployments: 30
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -48,9 +56,9 @@ The Mainnet family provides the foundational vault logic and proxy infrastructur
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| FixedRateMaturityVault | core_logic | ethereum | 3 deployments: ethereum [`0x535a5d...e9bb68`](./contracts/ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/); ethereum `0x9fc8b7...92b297`; ethereum `0xfa01d7...a6948a` | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| FixedRateMaturityVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x535a5d...e9bb68`](./contracts/ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/); ethereum `0x9fc8b7...92b297`; ethereum `0xfa01d7...a6948a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -58,53 +66,45 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (1)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | ethereum | 3 deployments: ethereum [`0x461ffa...f7ba36`](./contracts/ethereum-1/0x461ffa24b716f68c5a4fb583592f295db5f7ba36/); ethereum `0xcf60f0...a340ec`; ethereum `0xed96fe...c91fc1` | ⚠️ Unaudited (bytecode match) |
+- None
 
-### ❓ Unverified (33)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy (impl: 0x0feef3d05fedad3290c73cfff2f250bf0246bd8e) | proxy | arbitrum | `0xbef011...b87e8c` | ❓ Unverified |
-| Proxy (impl: 0x7c4a7cc34288e8bae093e96586629c8ed7a60b2b) | unknown | arbitrum | `0xdcb233...f86586` | ❓ Unverified |
-| Proxy (impl: 0xbbf60a272eb36a8684666528e99b1723b8eb6b34) | unknown | arbitrum | `0x1e5024...d5aaca` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x037b13...677bec` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x061765...f6c242` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x111b39...bce0d7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x184506...8bb00a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x18c1c0...26e8d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x38e1b0...6cb603` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x3a8931...1634f3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x4d27c0...a51fa0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5d9573...7ceb25` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x695ce4...a218ec` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6e1ea5...cdcfce` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x6f93c4...48d77c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7094d8...cd1862` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x78daa3...a09e52` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x83a321...ae2f21` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x853e21...4bc0e7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x9cf959...002b0f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xa7561a...bb1af9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xab0313...e98a76` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xbc77f3...31bfea` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc2aebd...924c4c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xced447...55493b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd15a09...924942` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe2b85f...ec4932` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xefe4c3...7a1685` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf0a940...cd5e5b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf33bcb...a5330d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf95441...aaed06` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xfbb3c9...bdcd4a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xb5855e...621a4d` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Proxy (impl: 0x0feef3d05fedad3290c73cfff2f250bf0246bd8e) | proxy | arbitrum | unit-26863 | `0xbef011...b87e8c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x037b13...677bec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x061765...f6c242` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x111b39...bce0d7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x184506...8bb00a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x18c1c0...26e8d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3a8931...1634f3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4d27c0...a51fa0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5d9573...7ceb25` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x695ce4...a218ec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6e1ea5...cdcfce` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7094d8...cd1862` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x78daa3...a09e52` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x83a321...ae2f21` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x853e21...4bc0e7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9cf959...002b0f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa7561a...bb1af9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xab0313...e98a76` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbc77f3...31bfea` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc2aebd...924c4c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd15a09...924942` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe2b85f...ec4932` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xefe4c3...7a1685` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf0a940...cd5e5b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf33bcb...a5330d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf95441...aaed06` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfbb3c9...bdcd4a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -127,10 +127,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 31 |
+| needs_review | 25 |
 
 ## Scope Matching Notes
 

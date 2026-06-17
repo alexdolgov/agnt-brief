@@ -5,11 +5,11 @@
 - Project: Canopy (`canopy`)
 - Website: [https://app.canopyhub.xyz](https://app.canopyhub.xyz)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:17:39.999Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:00:58.232Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,338,781.87
+- DeFi Llama TVL: $853,519.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Canopy is a DeFi yield aggregation platform for the Movement Network that simplifies liquidity deployment.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

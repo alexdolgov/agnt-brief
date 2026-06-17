@@ -5,8 +5,8 @@
 - Project: Keeta Bridge (`keeta-bridge`)
 - Website: [https://keeta.com/](https://keeta.com/)
 - Lifecycle: active (Tier 0, 20.4% below peak)
-- Generated: 2026-06-14T11:02:19.894Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Generated: 2026-06-17T07:00:57.558Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,342,968.02
@@ -20,6 +20,14 @@ Keeta Bridge is a canonical bridge between Base and the Keeta network.
 ### Architecture
 
 The Bridge contract serves as the core operational component, while the supporting Contract likely provides auxiliary functionality such as access control or registry services. Both contracts are deployed by the same deployer, indicating a unified infrastructure.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,12 +56,12 @@ The Bridge contract serves as the core operational component, while the supporti
 
 ### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BatchPermit | periphery | base | [`0x9d4e74...e1a1ab`](./contracts/base-8453/0x9d4e74fa61715fa077dcced4acc8096958e1a1ab/) | ⚠️ Unaudited |
-| BatchSender | periphery | base | [`0x036c16...d5bf36`](./contracts/base-8453/0x036c169dcb2f1b24500be6cb0e1b6d6f6fd5bf36/) | ⚠️ Unaudited |
-| Bridge | operational_periphery | base | [`0x1c24a0...fcc698`](./contracts/base-8453/0x1c24a0fb7bcf2154a9d37b7b3aa443bc63fcc698/) | ⚠️ Unaudited |
-| Contract | unknown | base | [`0xc06340...498973`](./contracts/base-8453/0xc0634090f2fe6c6d75e61be2b949464abb498973/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BatchPermit | periphery | base | n/a | [`0x9d4e74...e1a1ab`](./contracts/base-8453/0x9d4e74fa61715fa077dcced4acc8096958e1a1ab/) | ⚠️ Unaudited |
+| BatchSender | periphery | base | n/a | [`0x036c16...d5bf36`](./contracts/base-8453/0x036c169dcb2f1b24500be6cb0e1b6d6f6fd5bf36/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | base | n/a | [`0x1c24a0...fcc698`](./contracts/base-8453/0x1c24a0fb7bcf2154a9d37b7b3aa443bc63fcc698/) | ⚠️ Unaudited |
+| Contract | unknown | base | n/a | [`0xc06340...498973`](./contracts/base-8453/0xc0634090f2fe6c6d75e61be2b949464abb498973/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

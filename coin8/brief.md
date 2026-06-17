@@ -4,11 +4,11 @@
 
 - Project: Coin8 (`coin8`)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:28:10.147Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-17T07:01:01.750Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $53,739,805.15
+- DeFi Llama TVL: $45,827,426.34
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,6 +20,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Coin8 is a centralized exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

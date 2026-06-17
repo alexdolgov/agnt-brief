@@ -1,13 +1,12 @@
 # canto-lending — Contract Index
 
-84 unique implementations across 2 chains · 84 deployments · 0 audited · 2 unaudited · 82 unverified
+83 unique implementations across 2 chains · 83 deployments · 0 audited · 1 unaudited · 82 unverified
 
-## unknown (84)
+## unknown (83)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CantoOFTV2](./ethereum-1/0x56c03b8c4fa80ba37f5a7b60caaaef749bb5b220/) | ethereum | [`0x56c03b...b5b220`](./ethereum-1/0x56c03b8c4fa80ba37f5a7b60caaaef749bb5b220/) | ⚠️ Unaudited | Verified |
-| [CNoteOFT](./ethereum-1/0xebe265c9299d0c879bcc2a76948511ba6ed6c36d/) | ethereum | [`0xebe265...d6c36d`](./ethereum-1/0xebe265c9299d0c879bcc2a76948511ba6ed6c36d/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | canto | `0x000000...000000` | ❓ Unverified | Unverified |
 | UnnamedContract | canto | `0x0355e3...33c2f1` | ❓ Unverified | Unverified |
 | UnnamedContract | canto | `0x03f734...0b5e5f` | ❓ Unverified | Unverified |

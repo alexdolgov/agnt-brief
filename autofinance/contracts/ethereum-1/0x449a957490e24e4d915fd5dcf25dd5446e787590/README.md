@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x449a957490e24e4d915fd5dcf25dd5446e787590`](../0x449a957490e24e4d915fd5dcf25dd5446e787590/); ethereum `0xad6d0ecee007145d76c7a9b9551af560a718a223`) |
+| Deployments | 1 (ethereum [`0x449a957490e24e4d915fd5dcf25dd5446e787590`](../0x449a957490e24e4d915fd5dcf25dd5446e787590/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

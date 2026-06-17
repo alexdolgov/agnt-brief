@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (optimism `0x94a14ba6e59f4be36a77041ef5590fe24445876a`; arbitrum [`0x5be49b2e04ac55a17c72ac37e3a85d9602322021`](../0x5be49b2e04ac55a17c72ac37e3a85d9602322021/); arbitrum `0xe8c85b60cb3ba32369c699015621813fb2fea56c`) |
+| Deployments | 2 (arbitrum [`0x5be49b2e04ac55a17c72ac37e3a85d9602322021`](../0x5be49b2e04ac55a17c72ac37e3a85d9602322021/); arbitrum `0xe8c85b60cb3ba32369c699015621813fb2fea56c`) |
 | Proxy | Yes → `0xb537af...91ccce` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

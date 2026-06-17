@@ -1,0 +1,17 @@
+{
+  "address": "0x783c13b94123ccdcc5d597deb93a69983e1d4a51",
+  "chain_id": 1,
+  "contract_name": "PirexDistributorZaps",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000b192908e533fc64109a20ee7d056175a24f17a550000000000000000000000009da701a9b76e0dd136d3508cb60a4c436dda25e40000000000000000000000008659fc767cad6005de79af65dafe4249c57927af",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:27.820Z"
+}

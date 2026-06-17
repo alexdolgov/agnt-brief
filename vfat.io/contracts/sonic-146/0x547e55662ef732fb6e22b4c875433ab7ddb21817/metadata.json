@@ -1,0 +1,17 @@
+{
+  "address": "0x547e55662ef732fb6e22b4c875433ab7ddb21817",
+  "chain_id": 146,
+  "contract_name": "GaugeRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "00000000000000000000000017fa9da6e01ad59513707f92033a6eb03ccb10b4000000000000000000000000b051f35a2b629ab6f9cd8ff2776caf8c0d800307",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:20.768Z"
+}

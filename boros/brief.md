@@ -5,11 +5,11 @@
 - Project: Boros (`boros`)
 - Website: [https://boros.pendle.finance/markets](https://boros.pendle.finance/markets)
 - Lifecycle: active (Tier 0, 16.9% below peak)
-- Generated: 2026-06-10T22:08:17.382Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:01:01.899Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: arbitrum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $10,311,393.62
+- DeFi Llama TVL: $9,749,792.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,6 +20,14 @@ Boros is Pendle's Arbitrum-based interest-rate and funding-rate derivatives plat
 ### Architecture
 
 The MarketHubEntry serves as the main entry point for user interactions, while the Router handles trade execution and liquidity aggregation. Both contracts are upgradeable proxies, indicating a shared upgrade management pattern.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -47,10 +55,10 @@ The MarketHubEntry serves as the main entry point for user interactions, while t
 
 ### ✅ Verified + Audited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MarketHubEntry | unknown | arbitrum | [`0x108080...12adad`](./contracts/arbitrum-42161/0x1080808080f145b14228443212e62447c112adad/) | ✅ Audited |
-| Router | adapter | arbitrum | [`0x808080...52def6`](./contracts/arbitrum-42161/0x8080808080dab95efed788a9214e400ba552def6/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| MarketHubEntry | unknown | arbitrum | unit-19872 | [`0x108080...12adad`](./contracts/arbitrum-42161/0x1080808080f145b14228443212e62447c112adad/) | ✅ Audited |
+| Router | adapter | arbitrum | unit-19873 | [`0x808080...52def6`](./contracts/arbitrum-42161/0x8080808080dab95efed788a9214e400ba552def6/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

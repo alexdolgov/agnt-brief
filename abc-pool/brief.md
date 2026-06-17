@@ -5,11 +5,11 @@
 - Project: ABC Pool (`abc-pool`)
 - Website: [https://confluxpos.cn](https://confluxpos.cn)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:58:56.430Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-17T07:00:57.719Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $5,958,075.93
+- DeFi Llama TVL: $4,927,916.86
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 ABC Pool, also described as ABC PoS Pool, is a Conflux PoS staking pool where users pledge or stake CFX and earn rewards in CFX and ABC. The project also advertises V2 features involving ABC/CFX LP conversion, dividends, and ABC buyback, but those features should be treated as active only where separately verified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

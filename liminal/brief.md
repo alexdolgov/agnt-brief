@@ -5,11 +5,11 @@
 - Project: Liminal (`liminal`)
 - Website: [https://liminal.money/join/DEFILLAMA](https://liminal.money/join/DEFILLAMA)
 - Lifecycle: unknown
-- Generated: 2026-06-11T00:39:46.059Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-17T07:00:45.354Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $24,930,841.00
+- DeFi Llama TVL: $26,992,483.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Liminal is a Hyperliquid-focused automated yield protocol centered on limUSD-oriented yield automation. Its TVL should be tracked primarily on Hyperliquid L1 via DefiLlama, and unsupported claims about multi-chain EVM perpetuals, leveraged trading, staking, EVM vaults, liquidity pools, or a "Liminal Perps" product family should be removed unless verified by official Liminal sources.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

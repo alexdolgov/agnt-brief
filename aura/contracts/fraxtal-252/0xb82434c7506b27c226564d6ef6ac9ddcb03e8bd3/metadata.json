@@ -1,0 +1,17 @@
+{
+  "address": "0xb82434c7506b27c226564d6ef6ac9ddcb03e8bd3",
+  "chain_id": 252,
+  "contract_name": "StashRewardDistro",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "00000000000000000000000098ef32edd24e2c92525e59afc4475c1242a30184",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:41.565Z"
+}

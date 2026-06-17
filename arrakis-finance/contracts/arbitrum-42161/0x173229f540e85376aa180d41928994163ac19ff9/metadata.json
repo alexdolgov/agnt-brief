@@ -1,0 +1,17 @@
+{
+  "address": "0x173229f540e85376aa180d41928994163ac19ff9",
+  "chain_id": 42161,
+  "contract_name": "UniV4Oracle",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "000000000000000000000000360e68faccca8ca495c1b759fd9eee466db9fb320000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:40.927Z"
+}

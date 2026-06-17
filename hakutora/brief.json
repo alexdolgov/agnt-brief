@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hakutora",
-  "generated_at": "2026-06-10T23:40:52.457Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-17T07:00:58.281Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 23796953.38378,
-    "tvl_usd": 23796953.38378,
+    "dl_tvl_usd": 27886968.87929,
+    "tvl_usd": 27886968.87929,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -40,7 +40,18 @@
   "topography": {
     "project_purpose": "Hakutora provides on-chain asset management and risk control solutions for DeFi users, apps, communities, and protocols. Its offerings include DeFi strategy and risk analysis, optional protective withdrawal services, and customized low-risk arbitrage and asset management strategies such as spread arbitrage, carry trade, depeg arbitrage, and liquidation arbitrage.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,

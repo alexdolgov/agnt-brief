@@ -5,8 +5,8 @@
 - Project: Capx AI (`capx-ai`)
 - Website: [https://capx.ai](https://capx.ai)
 - Lifecycle: active (Tier 0, 17.6% below peak)
-- Generated: 2026-06-14T09:26:54.049Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Generated: 2026-06-17T07:01:00.898Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $2,216,946.73
@@ -20,6 +20,14 @@ Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, 
 ### Architecture
 
 The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (1 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v3
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -48,10 +56,10 @@ The single product family contains the core factory contract, which serves as th
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| PancakeV3Pool | core_logic | bsc | [`0x39aae2...390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | ⚠️ Unaudited |
-| FactoryBurnMintERC20 | registry | bsc | [`0x71fb17...42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| PancakeV3Pool | core_logic | bsc | n/a | [`0x39aae2...390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | registry | bsc | n/a | [`0x71fb17...42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

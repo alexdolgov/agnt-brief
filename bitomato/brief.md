@@ -5,11 +5,11 @@
 - Project: BiTomato (`bitomato`)
 - Website: [https://bitomato.com/](https://bitomato.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T22:00:16.169Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-17T07:01:01.725Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,598,667.08
+- DeFi Llama TVL: $1,522.53
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 BiTomato is listed on DefiLlama as a CEX / cryptocurrency exchange for meme tokens; its homepage currently displays a maintenance notice.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

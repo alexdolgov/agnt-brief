@@ -1,0 +1,377 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "storageData",
+        "type": "CrossTypesV1.Data storage"
+      },
+      {
+        "components": [
+          {
+            "name": "smgID",
+            "type": "bytes32"
+          },
+          {
+            "name": "tokenPairID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenIDs",
+            "type": "uint256[]"
+          },
+          {
+            "name": "tokenValues",
+            "type": "uint256[]"
+          },
+          {
+            "name": "currentChainID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenPairContractFee",
+            "type": "uint256"
+          },
+          {
+            "name": "srcTokenAccount",
+            "type": "address"
+          },
+          {
+            "name": "destUserAccount",
+            "type": "bytes"
+          },
+          {
+            "name": "smgFeeProxy",
+            "type": "address"
+          }
+        ],
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "userBurnNFT",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "storageData",
+        "type": "CrossTypesV1.Data storage"
+      },
+      {
+        "components": [
+          {
+            "name": "smgID",
+            "type": "bytes32"
+          },
+          {
+            "name": "tokenPairID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenIDs",
+            "type": "uint256[]"
+          },
+          {
+            "name": "tokenValues",
+            "type": "uint256[]"
+          },
+          {
+            "name": "currentChainID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenPairContractFee",
+            "type": "uint256"
+          },
+          {
+            "name": "destUserAccount",
+            "type": "bytes"
+          },
+          {
+            "name": "smgFeeProxy",
+            "type": "address"
+          }
+        ],
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "userLockNFT",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "storageData",
+        "type": "CrossTypesV1.Data storage"
+      },
+      {
+        "components": [
+          {
+            "name": "uniqueID",
+            "type": "bytes32"
+          },
+          {
+            "name": "smgID",
+            "type": "bytes32"
+          },
+          {
+            "name": "tokenPairID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenIDs",
+            "type": "uint256[]"
+          },
+          {
+            "name": "tokenValues",
+            "type": "uint256[]"
+          },
+          {
+            "name": "destTokenAccount",
+            "type": "address"
+          },
+          {
+            "name": "destUserAccount",
+            "type": "address"
+          }
+        ],
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "smgReleaseNFT",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "storageData",
+        "type": "CrossTypesV1.Data storage"
+      },
+      {
+        "name": "tokenPairID",
+        "type": "uint256"
+      },
+      {
+        "name": "tokenPairContractFee",
+        "type": "uint256"
+      },
+      {
+        "name": "currentChainID",
+        "type": "uint256"
+      },
+      {
+        "name": "batchLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTokenScAddrAndContractFee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "storageData",
+        "type": "CrossTypesV1.Data storage"
+      },
+      {
+        "components": [
+          {
+            "name": "uniqueID",
+            "type": "bytes32"
+          },
+          {
+            "name": "smgID",
+            "type": "bytes32"
+          },
+          {
+            "name": "tokenPairID",
+            "type": "uint256"
+          },
+          {
+            "name": "tokenIDs",
+            "type": "uint256[]"
+          },
+          {
+            "name": "tokenValues",
+            "type": "uint256[]"
+          },
+          {
+            "name": "extData",
+            "type": "bytes"
+          },
+          {
+            "name": "destTokenAccount",
+            "type": "address"
+          },
+          {
+            "name": "destUserAccount",
+            "type": "address"
+          }
+        ],
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "smgMintNFT",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "smgID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "tokenPairID",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "tokenAccount",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "keys",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "name": "values",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "UserLockNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "smgID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "tokenPairID",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "name": "tokenAccount",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "keys",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "name": "values",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "UserBurnNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "uniqueID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "smgID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "tokenPairID",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "keys",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "name": "values",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "SmgMintNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "uniqueID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "smgID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "tokenPairID",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "keys",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "name": "values",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "SmgReleaseNFT",
+    "type": "event"
+  }
+]

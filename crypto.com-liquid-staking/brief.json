@@ -1,35 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "crypto.com-liquid-staking",
-  "generated_at": "2026-06-12T12:50:48.284Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-fc52",
+  "generated_at": "2026-06-17T07:01:00.749Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "crypto.com-liquid-staking",
     "tier": 0,
     "peak_tvl": 182986909,
     "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 27233620,
-    "tvl_90d_ago": 25602396,
-    "tvl_current": 20258540,
+    "tvl_30d_ago": 27313486,
+    "tvl_90d_ago": 23626901,
+    "tvl_current": 24064032,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 120066494,
-    "change_30d_pct": -25.612019261486353,
-    "change_90d_pct": -20.872483965953812,
-    "days_since_peak": 293,
+    "tvl_180d_ago": 117986241,
+    "change_30d_pct": -11.896884930762774,
+    "change_90d_pct": 1.8501410743626514,
+    "days_since_peak": 278,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 88.92896759079088
+    "drop_from_peak_pct": 86.84931499662635
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 3,
-    "unique_implementations": 2,
-    "total_deployments": 3,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
@@ -42,8 +42,7 @@
     "asd_usd": null,
     "website_url": "https://crypto.com/staking",
     "chains": [
-      "cronos",
-      "ethereum"
+      "cronos"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -59,10 +58,21 @@
   "topography": {
     "project_purpose": "Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cronos and Solana, including CDCETH for staked ETH and, per DefiLlama, CDCSOL for Solana liquid staking; note that the current homepage may primarily highlight ETH/CDCETH.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -72,49 +82,11 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7e772ed6e4bfeae80f2d58e4254f6b6e96669253",
-      "name": "LiquidETHV1",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x7e772ed6e4bfeae80f2d58e4254f6b6e96669253",
-      "impl_name": "LiquidETHV1",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7e772ed6e4bfeae80f2d58e4254f6b6e96669253",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfe18ae03741a5b84e39c295ac9c856ed7991c38e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 25,
       "chain_name": "cronos",
       "address": "0x7a7c9db510ab29a2fc362a4c34260becb5ce3446",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -129,6 +101,8 @@
           "chain_id": 25,
           "chain_name": "cronos",
           "address": "0x7a7c9db510ab29a2fc362a4c34260becb5ce3446",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -150,7 +124,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

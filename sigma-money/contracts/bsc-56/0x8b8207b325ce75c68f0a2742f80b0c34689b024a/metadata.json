@@ -1,0 +1,17 @@
+{
+  "address": "0x8b8207b325ce75c68f0a2742f80b0c34689b024a",
+  "chain_id": 56,
+  "contract_name": "SigmaClisBNBSYSlisBNBRateProvider",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:01.385Z"
+}

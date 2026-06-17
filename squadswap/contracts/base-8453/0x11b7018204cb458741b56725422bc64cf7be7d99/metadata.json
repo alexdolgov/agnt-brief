@@ -1,0 +1,18 @@
+{
+  "address": "0x11b7018204cb458741b56725422bc64cf7be7d99",
+  "chain_id": 8453,
+  "contract_name": "SquadswapFactory",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:48:45.983Z"
+}

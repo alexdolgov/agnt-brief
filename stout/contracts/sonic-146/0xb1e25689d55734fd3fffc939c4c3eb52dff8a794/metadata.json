@@ -1,0 +1,17 @@
+{
+  "address": "0xb1e25689d55734fd3fffc939c4c3eb52dff8a794",
+  "chain_id": 146,
+  "contract_name": "OSonicVaultProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x31e6205437c1a0b7cdb5b693ffb4c2a3d24fa270",
+  "fetched_at": "2026-06-17T06:52:14.746Z"
+}

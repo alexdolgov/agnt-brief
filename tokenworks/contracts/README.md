@@ -1,6 +1,6 @@
 # tokenworks — Contract Index
 
-71 unique implementations on ethereum · 113 deployments · 0 audited · 38 unaudited · 33 unverified
+70 unique implementations on ethereum · 111 deployments · 0 audited · 37 unaudited · 33 unverified
 
 ## core_logic (14)
 
@@ -35,19 +35,13 @@
 | [GlobalDistributorHandler](./ethereum-1/0xdf99bd1218e7eb288cffecf9775385167bb09b2d/) | ethereum | [`0xdf99bd...b09b2d`](./ethereum-1/0xdf99bd1218e7eb288cffecf9775385167bb09b2d/) | ⚠️ Unaudited | Verified |
 | [RecursiveStrategy](./ethereum-1/0xd9e9f443f653bd72e44a87ea6cb27b9721465481/) | ethereum | [`0xd9e9f4...465481`](./ethereum-1/0xd9e9f443f653bd72e44a87ea6cb27b9721465481/) | ⚠️ Unaudited | Verified |
 
-## periphery (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [V4Quoter](./ethereum-1/0x1a382acdabb6ec137cbd65f40d84c5e55aa65a15/) | ethereum | [`0x1a382a...a65a15`](./ethereum-1/0x1a382acdabb6ec137cbd65f40d84c5e55aa65a15/) | ⚠️ Unaudited | Verified |
-
 ## registry (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ERC1155StrategyFactory](./ethereum-1/0x698ba054a8dd4535753aa14e6d67ddaa59f5328d/) | ethereum | [`0x698ba0...f5328d`](./ethereum-1/0x698ba054a8dd4535753aa14e6d67ddaa59f5328d/) | ⚠️ Unaudited | Verified |
 | [ERC20StrategyFactory](./ethereum-1/0x9f834e16b709c0781537186e7bb09de42a000a0a/) | ethereum | [`0x9f834e...000a0a`](./ethereum-1/0x9f834e16b709c0781537186e7bb09de42a000a0a/) | ⚠️ Unaudited | Verified |
-| [FundingWorksFactory (4 deployments)](./ethereum-1/0x2b591c6de84fbcdbfd4813f9ae263c9e872e119d/) | ethereum | 4 deployments: ethereum [`0x2b591c...2e119d`](./ethereum-1/0x2b591c6de84fbcdbfd4813f9ae263c9e872e119d/); ethereum `0x67c8a7...0b8b4c`; ethereum `0xa4cde7...091783`; ethereum `0xccf047...6567b2` | ⚠️ Unaudited | Verified |
+| [FundingWorksFactory (3 deployments)](./ethereum-1/0x2b591c6de84fbcdbfd4813f9ae263c9e872e119d/) | ethereum | 3 deployments: ethereum [`0x2b591c...2e119d`](./ethereum-1/0x2b591c6de84fbcdbfd4813f9ae263c9e872e119d/); ethereum `0x67c8a7...0b8b4c`; ethereum `0xccf047...6567b2` | ⚠️ Unaudited | Verified |
 | [NFTStrategyFactory (6 deployments)](./ethereum-1/0x12405f0de64393d863699cf954d790a44b7599a3/) | ethereum | 6 deployments: ethereum [`0x12405f...7599a3`](./ethereum-1/0x12405f0de64393d863699cf954d790a44b7599a3/); ethereum `0x196678...64390d`; ethereum `0x6c108b...83b70a`; ethereum `0x84cf6b...9faec3`; ethereum `0xa1a196...3c22e5`; ethereum `0xd1b396...fc0636` | ⚠️ Unaudited | Verified |
 | [NFTStrategyRangeFactory](./ethereum-1/0x05852ed6b0397f252969ec6a92b26c725bd975ff/) | ethereum | [`0x05852e...d975ff`](./ethereum-1/0x05852ed6b0397f252969ec6a92b26c725bd975ff/) | ⚠️ Unaudited | Verified |
 

@@ -7,8 +7,8 @@
 - Project: Armitage by Wintermute (`armitage-by-wintermute`)
 - Website: [https://armitage.wintermute.com](https://armitage.wintermute.com)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-12T08:37:39.206Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
+- Generated: 2026-06-17T07:01:01.861Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
 - Contract surface: 7 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $52,007,611.73
@@ -22,6 +22,14 @@ Armitage by Wintermute is Wintermute's onchain vault curation product for yield-
 ### Architecture
 
 The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 9 (8 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -51,15 +59,15 @@ The protocol consists of a single product family with two instances of the Vault
 
 ### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| VaultV2 | core_logic | ethereum | 2 deployments: ethereum [`0x5dc53a...71ff2b`](./contracts/ethereum-1/0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b/); ethereum `0xa2eaad...7d68cd` | ⚠️ Unaudited |
-| Morpho | unknown | ethereum | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
-| MorphoMarketV1AdapterV2Factory | adapter | ethereum | [`0x32bb1c...61ccc1`](./contracts/ethereum-1/0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1/) | ⚠️ Unaudited |
-| MorphoVaultV1AdapterFactory | adapter | ethereum | [`0xd1b8e2...f63394`](./contracts/ethereum-1/0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394/) | ⚠️ Unaudited |
-| RegistryList | registry | ethereum | [`0x3696c5...d9364e`](./contracts/ethereum-1/0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | 2 deployments: ethereum [`0x4687e4...1d74d8`](./contracts/ethereum-1/0x4687e45bb5518a995913a24bb2816fe2031d74d8/); ethereum `0xb83a77...559e5e` | ⚠️ Unaudited |
-| VaultV2Factory | registry | ethereum | [`0xa1d94f...6c0405`](./contracts/ethereum-1/0xa1d94f746defa1928926b84fb2596c06926c0405/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| VaultV2 | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x5dc53a...71ff2b`](./contracts/ethereum-1/0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b/); ethereum `0xa2eaad...7d68cd` | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | n/a | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| MorphoMarketV1AdapterV2Factory | adapter | ethereum | n/a | [`0x32bb1c...61ccc1`](./contracts/ethereum-1/0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1/) | ⚠️ Unaudited |
+| MorphoVaultV1AdapterFactory | adapter | ethereum | n/a | [`0xd1b8e2...f63394`](./contracts/ethereum-1/0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394/) | ⚠️ Unaudited |
+| RegistryList | registry | ethereum | n/a | [`0x3696c5...d9364e`](./contracts/ethereum-1/0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-18913 (2 proxies) | 2 deployments: ethereum [`0x4687e4...1d74d8`](./contracts/ethereum-1/0x4687e45bb5518a995913a24bb2816fe2031d74d8/); ethereum `0xb83a77...559e5e` | ⚠️ Unaudited |
+| VaultV2Factory | registry | ethereum | n/a | [`0xa1d94f...6c0405`](./contracts/ethereum-1/0xa1d94f746defa1928926b84fb2596c06926c0405/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

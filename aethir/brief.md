@@ -5,10 +5,10 @@
 - Project: Aethir (`aethir`)
 - Website: [https://aethir.com/](https://aethir.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-13T01:51:10.825Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
+- Generated: 2026-06-17T07:00:49.003Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 7 unique implementations (8 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $6,787,676.00
 - On-chain TVL (included contracts): $257,030,903.70
 - TVL by chain: Ethereum $257,030,903.70
@@ -21,14 +21,22 @@ Aethir is an on-demand distributed GPU compute and cloud infrastructure network.
 
 The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWrapper implementation, allowing the wrapper logic to be updated while preserving state. The AethirToken is the core asset that the wrapper likely interacts with.
 
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 1 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 7
-- Raw deployments: 8
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $257,030,903.70
@@ -46,17 +54,15 @@ The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWr
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AethirToken | token | ethereum | [`0xbe0ed4...c5226b`](./contracts/ethereum-1/0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b/) | ⚠️ Unaudited |
-| AethirWrapper | unknown | ethereum | 2 deployments: ethereum [`0x1ecb43...33a13c`](./contracts/ethereum-1/0x1ecb43e02d6573119eaf0e6509a4725b8633a13c/); ethereum `0x3f69bb...3f7fee` | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | ethereum | [`0xb91eb8...41bed4`](./contracts/ethereum-1/0xb91eb8907c34147b1ab58dc663a3594bb241bed4/) | ⚠️ Unaudited |
-| StAethir | unknown | ethereum | [`0xc96aa6...19e59c`](./contracts/ethereum-1/0xc96aa65f31e41b4ca6924b86d93e25686019e59c/) | ⚠️ Unaudited |
-| VeAethir | unknown | ethereum | [`0x1b49f5...1b7490`](./contracts/ethereum-1/0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490/) | ⚠️ Unaudited |
-| VestingWallet | operational_periphery | ethereum | [`0xf9d9f4...6336b6`](./contracts/ethereum-1/0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6/) | ⚠️ Unaudited |
-| Voting Escrow | operational_periphery | ethereum | [`0x6f5c81...0c6b31`](./contracts/ethereum-1/0x6f5c81fe067ae25afd52218f140a73d51f0c6b31/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AethirToken | token | ethereum | n/a | [`0xbe0ed4...c5226b`](./contracts/ethereum-1/0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b/) | ⚠️ Unaudited |
+| StAethir | unknown | ethereum | n/a | [`0xc96aa6...19e59c`](./contracts/ethereum-1/0xc96aa65f31e41b4ca6924b86d93e25686019e59c/) | ⚠️ Unaudited |
+| VeAethir | unknown | ethereum | n/a | [`0x1b49f5...1b7490`](./contracts/ethereum-1/0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490/) | ⚠️ Unaudited |
+| VestingWallet | operational_periphery | ethereum | n/a | [`0xf9d9f4...6336b6`](./contracts/ethereum-1/0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6/) | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | ethereum | n/a | [`0x6f5c81...0c6b31`](./contracts/ethereum-1/0x6f5c81fe067ae25afd52218f140a73d51f0c6b31/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,8 +94,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0xbe0ed4...c5226b`](./contracts/ethereum-1/0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b/) | AethirToken | token | $257,030,903.70 | Verified native implementation with $257,030,903.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1ecb43...33a13c`](./contracts/ethereum-1/0x1ecb43e02d6573119eaf0e6509a4725b8633a13c/) | AethirWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb91eb8...41bed4`](./contracts/ethereum-1/0xb91eb8907c34147b1ab58dc663a3594bb241bed4/) | SmartWalletChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc96aa6...19e59c`](./contracts/ethereum-1/0xc96aa65f31e41b4ca6924b86d93e25686019e59c/) | StAethir | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1b49f5...1b7490`](./contracts/ethereum-1/0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490/) | VeAethir | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf9d9f4...6336b6`](./contracts/ethereum-1/0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6/) | VestingWallet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -99,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

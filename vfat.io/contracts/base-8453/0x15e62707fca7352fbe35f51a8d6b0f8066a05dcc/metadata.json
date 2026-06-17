@@ -1,0 +1,18 @@
+{
+  "address": "0x15e62707fca7352fbe35f51a8d6b0f8066a05dcc",
+  "chain_id": 8453,
+  "contract_name": "Forwarder",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:53:17.832Z"
+}

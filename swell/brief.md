@@ -5,8 +5,8 @@
 - Project: Swell (`swell`)
 - Website: [https://www.swellnetwork.io/](https://www.swellnetwork.io/)
 - Lifecycle: unknown
-- Generated: 2026-06-13T10:03:34.755Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-06-17T07:00:33.383Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $100,536,716.47
@@ -21,6 +21,14 @@ Coverage assessment and audit matching are based on this incomplete surface.
 ## Project Description
 
 Swell is a non-custodial ETH liquid staking and restaking protocol offering products such as swETH, rswETH, swBTC, and earnETH. The protocol is live on Ethereum and has been associated with Swellchain, with current lifecycle context including the Faro transition and Swellchain sunset/deprecation messaging.
+
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -1,0 +1,18 @@
+{
+  "address": "0x0f1b1a46adeadf3c0d583ac86f40bc9e0b2e4ba2",
+  "chain_id": 1,
+  "contract_name": "EVM2EVMOffRamp",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 18000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:47:51.351Z"
+}

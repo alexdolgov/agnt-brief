@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equilibre",
-  "generated_at": "2026-06-14T05:47:45.150Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
+  "generated_at": "2026-06-17T07:01:00.910Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "equilibre",
@@ -58,7 +58,18 @@
   "topography": {
     "project_purpose": "Equilibre is a decentralized exchange (DEX) on the Kava chain, enabling users to swap tokens and provide liquidity through automated market-making pools.",
     "relationship_narrative": null,
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -74,6 +85,8 @@
       "chain_id": 2222,
       "chain_name": "kava",
       "address": "0xe1da44c0da55b075ae8e2e4b6986adc76ac77d73",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
@@ -88,6 +101,8 @@
           "chain_id": 2222,
           "chain_name": "kava",
           "address": "0xe1da44c0da55b075ae8e2e4b6986adc76ac77d73",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,

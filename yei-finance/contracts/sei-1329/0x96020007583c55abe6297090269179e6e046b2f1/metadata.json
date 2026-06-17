@@ -1,0 +1,17 @@
+{
+  "address": "0x96020007583c55abe6297090269179e6e046b2f1",
+  "chain_id": 1329,
+  "contract_name": "EmissionManager",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T06:45:53.613Z"
+}

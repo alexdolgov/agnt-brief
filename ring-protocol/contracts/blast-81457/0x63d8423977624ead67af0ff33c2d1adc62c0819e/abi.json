@@ -1,9 +1,0 @@
-[
-  {
-    "inputs": [],
-    "name": "propose",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  }
-]

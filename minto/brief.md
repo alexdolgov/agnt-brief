@@ -5,10 +5,10 @@
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T15:54:46.256Z
-- Pipeline run: v2-pipeline-2026-06-11-e34b49-4ec3
+- Generated: 2026-06-17T07:00:47.544Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: bsc, ethereum, heco
-- Contract surface: 9 unique implementations (10 raw deployments)
+- Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $3,761,396.56
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -21,14 +21,22 @@ Minto is a Bitcoin mining hashpower tokenization and staking project centered on
 
 The GnosisSafeProxy serves as a shared governance contract for both families, while the StakingOwn contract likely manages staking for the BTCMT token. The TransparentUpgradeableProxy points to MintoAutofarmV2, indicating a single upgradeable vault implementation used across deployments.
 
+## Contract Surface Quality
+
+- Indexed contracts: 10; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 2 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 4; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/6 (16.7%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 1/3 (33.3%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 9
-- Raw deployments: 10
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -40,25 +48,22 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 1 | 16.7% | 2021-07 |
+| yAudit | Tier 2 | 1 | 33.3% | 2021-07 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BTCMT | unknown | bsc | [`0x410a56...f09567`](./contracts/bsc-56/0x410a56541bd912f9b60943fcb344f1e3d6f09567/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| BTCMT | unknown | bsc | n/a | [`0x410a56...f09567`](./contracts/bsc-56/0x410a56541bd912f9b60943fcb344f1e3d6f09567/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| BTCMTSale | unknown | bsc | [`0x2b775b...741827`](./contracts/bsc-56/0x2b775b778f84b10877a41b78d6724634c7741827/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0x005fe0...e7c1c1`](./contracts/ethereum-1/0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1/) | ⚠️ Unaudited |
-| MintoAutofarmV2 | unknown | bsc | 2 deployments: bsc [`0x572b06...b1e746`](./contracts/bsc-56/0x572b0666e801f3ba80d4a66d7f10460658b1e746/); bsc `0xe5c659...53105a` | ⚠️ Unaudited |
-| ProxyAdmin | governance | bsc | [`0xb64ea1...08976c`](./contracts/bsc-56/0xb64ea148a6b9975ad335e56a688b4a11b508976c/) | ⚠️ Unaudited |
-| StakingOwn | unknown | bsc | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GnosisSafe | governance | ethereum | unit-29081 | [`0x005fe0...e7c1c1`](./contracts/ethereum-1/0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1/) | ⚠️ Unaudited |
+| StakingOwn | unknown | bsc | n/a | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,11 +81,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | heco | `0x410a56...f09567` | ❓ Unverified |
-| UnnamedContract | unknown | heco | `0x78ae30...5ebcfb` | ❓ Unverified |
-| UnnamedContract | unknown | heco | `0xe742fc...5a7e12` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | heco | n/a | `0x410a56...f09567` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | `0x78ae30...5ebcfb` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | `0xe742fc...5a7e12` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,17 +100,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x2b775b...741827`](./contracts/bsc-56/0x2b775b778f84b10877a41b78d6724634c7741827/) | BTCMTSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x572b06...b1e746`](./contracts/bsc-56/0x572b0666e801f3ba80d4a66d7f10460658b1e746/) | MintoAutofarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 3 |
 
 ## Scope Matching Notes

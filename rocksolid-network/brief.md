@@ -5,33 +5,42 @@
 - Project: RockSolid Network (`rocksolid-network`)
 - Website: [https://rocksolid.network/](https://rocksolid.network/)
 - Lifecycle: active (Tier 0, 32.8% below peak)
-- Generated: 2026-06-12T05:36:29.275Z
-- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
+- Generated: 2026-06-17T07:00:53.452Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 2 unique implementations (5 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $19,763,159.08
-- On-chain TVL (included contracts): $24,958,194.47
-- TVL by chain: Ethereum $24,958,194.47
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 RockSolid Network is an actively managed liquid DeFi vault platform that offers single-click deposits into vault strategies and supports institutional, white-label, and tailored vault solutions. Its vault products may use ERC-4626-style tokenized vault standards where verified, but should not be described only as passive yield vaults.
 
-### Architecture
+## Contract Surface Quality
 
-All vaults share the same implementation contract (Vault) and are deployed by a single deployer, indicating a unified infrastructure with no separate product families.
+- Indexed contracts: 5; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 0/1 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 5
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $24,958,194.47
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,12 +55,11 @@ All vaults share the same implementation contract (Vault) and are deployed by a 
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Vault | core_logic | ethereum | 4 deployments: ethereum [`0x7a12d4...37e428`](./contracts/ethereum-1/0x7a12d4b719f5aa479ecd60defed909fb2a37e428/); ethereum `0x936fac...d81bc7`; ethereum `0xba7109...6d86ad`; ethereum `0xe50554...d3dedf` | ⚠️ Unaudited |
-| CombinedRateProvider | unknown | ethereum | [`0x716f0c...df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CombinedRateProvider | unknown | ethereum | n/a | [`0x716f0c...df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

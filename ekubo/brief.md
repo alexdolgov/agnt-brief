@@ -5,10 +5,10 @@
 - Project: Ekubo (`ekubo`)
 - Website: [https://ekubo.org/](https://ekubo.org/)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-06-14T05:32:38.680Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Generated: 2026-06-17T07:00:48.533Z
+- Pipeline run: brief-regen-topo-2026-06-17
 - Chains: ethereum
-- Contract surface: 15 unique implementations (17 raw deployments)
+- Contract surface: 14 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $20,901,566.76
 - On-chain TVL (included contracts): $5,648,264.12
 - TVL by chain: Ethereum $5,648,264.12
@@ -21,49 +21,56 @@ Ekubo is a live decentralized exchange protocol built around concentrated liquid
 
 The EVM Contracts (V2) family extends the original Ekubo DEX to EVM chains, sharing the same concentrated liquidity design but with separate Core instances. Governance contracts are independent but may control parameters or upgrades across families via the StarknetOwnerProxy.
 
+## Contract Surface Quality
+
+- Indexed contracts: 17; live-surface contracts included: 15 (11 live, 4 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 11; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/9 (44.4%)
+- Verified implementations audited: 3/8 (37.5%)
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 6
-- Unique implementations: 15
-- Raw deployments: 17
+- Unique implementations: 14
+- Raw deployments: 15
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $5,648,264.12
 - Latest audit: 2026-02 (fresh)
 - Staleness: 4 fresh, 1 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 22.2% (Code4rena)
+- Tier 1 coverage: 12.5% (Code4rena)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Code4rena | Tier 1 | 2 | 22.2% | 2025-11 |
-| Cairo Security Clan | Tier 2 | 1 | 11.1% | 2025-01 |
-| Riley Holterhus | Tier 2 | 1 | 11.1% | 2026-02 |
+| Cairo Security Clan | Tier 2 | 1 | 12.5% | 2025-01 |
+| Code4rena | Tier 1 | 1 | 12.5% | 2025-11 |
+| Riley Holterhus | Tier 2 | 1 | 12.5% | 2026-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Core | unknown | ethereum | 2 deployments: ethereum [`0x000000...1bd701`](./contracts/ethereum-1/0x00000000000014aa86c5d3c41765bb24e11bd701/); ethereum `0xe0e0e0...57d444` | ✅ Audited |
-| Oracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x514d5d...60ada6`](./contracts/ethereum-1/0x514d5de68852628af2f1236f780866989660ada6/); ethereum `0x51d02a...42527c` | ✅ Audited |
-| Router | adapter | ethereum | [`0x999585...dff931`](./contracts/ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ✅ Audited |
-| StarknetOwnerProxy | unknown | ethereum | [`0x1e0ef4...a6e9cc`](./contracts/ethereum-1/0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc/) | ✅ Audited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Core | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...1bd701`](./contracts/ethereum-1/0x00000000000014aa86c5d3c41765bb24e11bd701/); ethereum `0xe0e0e0...57d444` | ✅ Audited |
+| Router | adapter | ethereum | n/a | [`0x999585...dff931`](./contracts/ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ✅ Audited |
+| StarknetOwnerProxy | unknown | ethereum | n/a | [`0x1e0ef4...a6e9cc`](./contracts/ethereum-1/0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EkuboToken | token | ethereum | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | ⚠️ Unaudited |
-| MEVResistRouter | adapter | ethereum | [`0x0c95ea...44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ⚠️ Unaudited |
-| Positions | unknown | ethereum | [`0xa37cc3...b63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | ⚠️ Unaudited |
-| TokenWrapperFactory | registry | ethereum | [`0x2b8d80...0ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | ⚠️ Unaudited |
-| TokenWrapperPeriphery | token | ethereum | [`0x2992e4...89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EkuboToken | token | ethereum | n/a | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | ⚠️ Unaudited |
+| MEVResistRouter | adapter | ethereum | n/a | [`0x0c95ea...44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ⚠️ Unaudited |
+| Positions | unknown | ethereum | n/a | [`0xa37cc3...b63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | ⚠️ Unaudited |
+| TokenWrapperFactory | registry | ethereum | n/a | [`0x2b8d80...0ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | ⚠️ Unaudited |
+| TokenWrapperPeriphery | token | ethereum | n/a | [`0x2992e4...89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,21 +88,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x208bb0...b7c285` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x553a2e...54c091` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5a9093...8205be` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x91cb8a...9b408c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xae1430...67c18a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd4279c...2b54ec` | ❓ Unverified |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x208bb0...b7c285` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x553a2e...54c091` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5a9093...8205be` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x91cb8a...9b408c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xae1430...67c18a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4279c...2b54ec` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [The Governance Starknet L1 Proxy has been audited by Cairo Security Clan and the report can be found on [GitHub]().](https://github.com/EkuboProtocol/governance/blob/main/l1_proxy/Ekubo_Governance_L1_Proxy.pdf) | Cairo Security Clan | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
-| [Code4rena x Ekubo audit report 2025-11.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Code4rena%20x%20Ekubo%20audit%20report%202025-11.pdf) | Code4rena | Contest | 2025-11 | fresh | Direct | contract_name | 3 | high |
+| [Code4rena x Ekubo audit report 2025-11.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Code4rena%20x%20Ekubo%20audit%20report%202025-11.pdf) | Code4rena | Contest | 2025-11 | fresh | Direct | contract_name | 1 | high |
 | [Ekubo-Auctions-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Auctions-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [Ekubo-Feb-2026-Update-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Feb-2026-Update-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [Ekubo-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2025-11 | fresh | Direct | contract_name | 2 | high |
@@ -116,7 +123,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

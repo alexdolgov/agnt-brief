@@ -1,8 +1,8 @@
 # omnibtc — Contract Index
 
-18 unique implementations across 7 chains · 19 deployments · 0 audited · 9 unaudited · 9 unverified
+19 unique implementations across 7 chains · 19 deployments · 0 audited · 10 unaudited · 9 unverified
 
-## unknown (18)
+## unknown (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -12,7 +12,8 @@
 | [DiamondLoupeFacet](./arbitrum-42161/0xe4d1ebf03742a8238b546980261507fde0113d37/) | arbitrum | [`0xe4d1eb...113d37`](./arbitrum-42161/0xe4d1ebf03742a8238b546980261507fde0113d37/) | ⚠️ Unaudited | Verified |
 | [GenericSwapFacet](./arbitrum-42161/0x6aa49fa53d372329de88160017f9ca7c5d3338be/) | arbitrum | [`0x6aa49f...3338be`](./arbitrum-42161/0x6aa49fa53d372329de88160017f9ca7c5d3338be/) | ⚠️ Unaudited | Verified |
 | [OwnershipFacet](./arbitrum-42161/0xad85421c47e9b830602deb83fcf149c2a1f0e8a9/) | arbitrum | [`0xad8542...f0e8a9`](./arbitrum-42161/0xad85421c47e9b830602deb83fcf149c2a1f0e8a9/) | ⚠️ Unaudited | Verified |
-| [StargateFacet (2 deployments)](./arbitrum-42161/0x2967e7bb9daa5711ac332caf874bd47ef99b3820/) | arbitrum | 2 deployments: arbitrum [`0x2967e7...9b3820`](./arbitrum-42161/0x2967e7bb9daa5711ac332caf874bd47ef99b3820/); arbitrum `0x96568b...1db303` | ⚠️ Unaudited | Verified |
+| [StargateFacet](./arbitrum-42161/0x2967e7bb9daa5711ac332caf874bd47ef99b3820/) | arbitrum | [`0x2967e7...9b3820`](./arbitrum-42161/0x2967e7bb9daa5711ac332caf874bd47ef99b3820/) | ⚠️ Unaudited | Verified |
+| StargateFacet | arbitrum | `0x96568b...1db303` | ⚠️ Unaudited | Verified |
 | [SystemPortal](./arbitrum-42161/0x9ab575ab5b2c58c07345ce2db9b36f0cf54753a5/) | arbitrum | [`0x9ab575...4753a5`](./arbitrum-42161/0x9ab575ab5b2c58c07345ce2db9b36f0cf54753a5/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0xaa8b23...05b6fc` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x233dde...a28975` | ❓ Unverified | Unverified |

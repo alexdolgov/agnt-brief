@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ambire-wallet",
-  "generated_at": "2026-06-12T22:06:45.117Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
+  "generated_at": "2026-06-17T07:00:41.384Z",
+  "pipeline_run_id": "brief-regen-topo-2026-06-17",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ambire-wallet",
@@ -22,36 +22,32 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 14,
-    "unique_implementations": 13,
-    "total_deployments": 14,
-    "audited_contracts": 1,
-    "unaudited_contracts": 4,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 4,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 8,
-    "coverage_pct": 20,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
     "total_audits": 12,
-    "scoreable_audits": 9,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 11408152.79116,
-    "tvl_usd": 5815395.369886712,
+    "tvl_usd": 5815389.7170075,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 5815389.72,
-      "optimism": 5.65
+      "ethereum": 5815389.72
     },
     "asd_usd": 5815389.7170075,
     "website_url": "https://www.ambire.com",
     "chains": [
-      "ethereum",
-      "optimism"
+      "ethereum"
     ],
-    "tier1_coverage_pct": 20,
-    "tier1_auditors": [
-      "Code4rena"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-02",
     "audit_freshness": "aging",
     "staleness_breakdown": {
@@ -64,10 +60,21 @@
   "topography": {
     "project_purpose": "Ambire is a self-custodial Web3 wallet, primarily offered as a browser-extension wallet, that enables users to manage assets, swap, bridge, interact with dApps, and use smart-account features including EIP-7702 support for EOAs. Its WALLET token and related staking contracts are token-related components rather than the entirety of the Ambire Wallet product.",
     "relationship_narrative": "The StakingPool contract interacts with the WALLETToken to manage staking and reward distribution. Both contracts are deployed from the same deployer cluster, indicating shared ownership and infrastructure.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 14,
+    "live_contracts": 3,
+    "inactive_contracts": 11,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 3,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -80,6 +87,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x88800092ff476844f74dc2fc427974bbee2794ae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WALLETToken",
       "role": "token",
       "origin_kind": "native",
@@ -94,6 +103,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x88800092ff476844f74dc2fc427974bbee2794ae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5815389.7170075,
@@ -108,81 +119,11 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x90437220d89774217c291ae4cede826dcd647293",
-      "name": "AmbireAccount",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 5.652879212363628,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AmbireAccount",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x90437220d89774217c291ae4cede826dcd647293",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5.652879212363628,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2301",
-        "audit-2302",
-        "audit-2305",
-        "audit-2307",
-        "audit-2308",
-        "audit-2309",
-        "audit-2310",
-        "audit-2311",
-        "audit-2312"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
-      "name": "adexStakingSpendable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "adexStakingSpendable",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x47cd7e91c3cbaaf266369fe8518345fc4fc12935",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "StakingPool",
       "role": "core_logic",
       "origin_kind": "native",
@@ -197,15 +138,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x47cd7e91c3cbaaf266369fe8518345fc4fc12935",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4d3348aa74ba11a2722ea9adec6bc10e92fe3d58",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -217,167 +151,14 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0604f2b0dc1d8eac3b7b15fa74fcab7d2bceaee7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0604f2b0dc1d8eac3b7b15fa74fcab7d2bceaee7",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e3c4f37994d0a0188d3f82b046fe42d5ff4bf3f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0e3c4f37994d0a0188d3f82b046fe42d5ff4bf3f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1955db3abe37faf6c1e063b7d42e0b2124f6440b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1955db3abe37faf6c1e063b7d42e0b2124f6440b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1bba61ba1f728e11bf2212a60bd4c0e70bb1b2dc",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1bba61ba1f728e11bf2212a60bd4c0e70bb1b2dc",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1f6a778972ed514d59277df44e50b8beb81c8dcc",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1f6a778972ed514d59277df44e50b8beb81c8dcc",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa69b8074ce03a33b13057b1e9d37dcde0024aaff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "native",
@@ -392,6 +173,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa69b8074ce03a33b13057b1e9d37dcde0024aaff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -403,99 +186,6 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xde0ed71c49a5c9482cf8b8de222537adbf7b9159",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xde0ed71c49a5c9482cf8b8de222537adbf7b9159",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf2dd37a4ccc9641b22eb47c7fa6e2e02c14b110b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf2dd37a4ccc9641b22eb47c7fa6e2e02c14b110b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
-      "name": "xWALLETSpendable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "xWALLETSpendable",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -514,16 +204,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbireAccount7702",
-        "Eip712HashBuilder",
-        "IAmbireAccount"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -540,18 +225,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbireAccountFactory",
-        "AmbirePaymaster",
-        "DKIMRecoverySigValidator",
-        "SignatureValidator",
-        "Transaction"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -610,15 +288,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbirePaymaster",
-        "DKIMRecoverySigValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -656,14 +330,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "DKIMRecoverySigValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -680,16 +351,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbireAccountFactory",
-        "Bytes",
-        "SignatureValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -706,15 +372,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbirePaymaster",
-        "DKIMRecoverySigValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -731,17 +393,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbireAccountFactory",
-        "AmbirePaymaster",
-        "DKIMRecoverySigValidator",
-        "SignatureValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -758,16 +414,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbireAccountFactory",
-        "SignatureValidator",
-        "TestTryCatch"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -784,62 +435,15 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmbireAccount",
-        "AmbirePaymaster",
-        "DKIMRecoverySigValidator"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": null
-    },
-    {
-      "auditor": "CuriousApple",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": "2023-10"
-    },
-    {
-      "auditor": "Facu",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": "2023-09"
-    },
-    {
-      "auditor": "Hunter Security",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": "2025-02"
-    },
-    {
-      "auditor": "Pashov Audit Group",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": null
-    },
-    {
-      "auditor": "Shieldify",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 20,
-      "latest_audit": "2024-02"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -854,36 +458,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
-      "name": "adexStakingSpendable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x47cd7e91c3cbaaf266369fe8518345fc4fc12935",
       "name": "StakingPool",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
-      "name": "xWALLETSpendable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -892,14 +476,18 @@
     "match_method_counts": {
       "extraction_exact": 9
     },
-    "extraction_confidence_counts": {
-      "high": 7,
-      "low": 1,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
+      {
+        "audit_id": 2301,
+        "report_name": "Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf"
+      },
+      {
+        "audit_id": 2302,
+        "report_name": "Ambire-Hunter-Security-Assessment-26-01-2024.pdf"
+      },
       {
         "audit_id": 2303,
         "report_name": "Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf"
@@ -909,8 +497,36 @@
         "report_name": "Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf"
       },
       {
+        "audit_id": 2305,
+        "report_name": "CuriousApple-AmbireRewview01.md"
+      },
+      {
         "audit_id": 2306,
         "report_name": "ERC6492-Hunter-Security-Audit-Report-V1.0.pdf"
+      },
+      {
+        "audit_id": 2307,
+        "report_name": "Pashov-Ambire-second-security-review.md"
+      },
+      {
+        "audit_id": 2308,
+        "report_name": "Pashov-Ambire-security-review.md"
+      },
+      {
+        "audit_id": 2309,
+        "report_name": "Pashov-Ambire-third-security-review.md"
+      },
+      {
+        "audit_id": 2310,
+        "report_name": "Shieldify-Ambire-Security-Review.pdf"
+      },
+      {
+        "audit_id": 2311,
+        "report_name": "code4rena - Ambire Wallet - Invitational.pdf"
+      },
+      {
+        "audit_id": 2312,
+        "report_name": "facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-06-17T07:00:43.083Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T18:55:07.064Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",

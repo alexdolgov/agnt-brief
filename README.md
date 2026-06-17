@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T18:51:33.516Z_
+_Generated: 2026-06-17T18:58:28.441Z_
 _Projects: 1409_

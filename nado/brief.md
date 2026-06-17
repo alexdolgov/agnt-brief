@@ -5,8 +5,8 @@
 - Project: Nado (`nado`)
 - Website: [https://app.nado.xyz?join=sP6or8A](https://app.nado.xyz?join=sP6or8A)
 - Lifecycle: active (Tier 0, 13.5% below peak)
-- Generated: 2026-06-17T07:00:43.083Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T18:55:07.064Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: ink
 - Contract surface: 22 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $49,334,317.00

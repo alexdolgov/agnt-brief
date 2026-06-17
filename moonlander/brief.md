@@ -5,8 +5,8 @@
 - Project: Moonlander (`moonlander`)
 - Website: [https://moonlander.trade/](https://moonlander.trade/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:52.166Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T18:53:16.874Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: cronos
 - Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $30,027,993.27

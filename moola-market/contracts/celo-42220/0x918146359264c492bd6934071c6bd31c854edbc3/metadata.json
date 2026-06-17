@@ -1,0 +1,17 @@
+{
+  "address": "0x918146359264c492bd6934071c6bd31c854edbc3",
+  "chain_id": 42220,
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xa2726942a99ca8ce9f212c97d8f1bd6378f501f0",
+  "fetched_at": "2026-06-17T16:09:54.742Z"
+}

@@ -7,8 +7,8 @@
 - Project: Manta Atlantic Stake (`manta-atlantic-stake`)
 - Website: [https://app.manta.network/manta/stake](https://app.manta.network/manta/stake)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-06-17T07:00:43.065Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:06:09.444Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: ethereum, manta
 - Contract surface: 105 unique implementations (132 raw deployments)
 - DeFi Llama TVL: $5,455,710.91
@@ -36,7 +36,7 @@ Total inherited audits: 0.
 - Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 6/8 live.
 - Detected codebases: none
-- Dependencies extracted: 10; unverified dependencies: 0.
+- Dependencies extracted: 9; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -76,16 +76,16 @@ Total inherited audits: 0.
 | FastPriceFeedV2 | operational_periphery | manta | n/a | [`0xb7b6ef...bc0129`](./contracts/manta-169/0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129/) | ⚠️ Unaudited |
 | FastPriceFeedV3 | operational_periphery | manta | n/a | [`0x4a98fe...f0efad`](./contracts/manta-169/0x4a98fe7dc066ede7321db81a16e31e6ddaf0efad/) | ⚠️ Unaudited |
 | GlpManager | governance | manta | n/a | [`0xbba479...7a574b`](./contracts/manta-169/0xbba479d953d012256770e75e2e49af85f17a574b/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-26684 | [`0x3c46c0...3ea01e`](./contracts/ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-32796 | [`0x3c46c0...3ea01e`](./contracts/ethereum-1/0x3c46c05c2eba8edd0b0f0c8b1d2fbf9fc53ea01e/) | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | manta | n/a | [`0x21d113...a7ca47`](./contracts/manta-169/0x21d11343cd7c835069f560e2a42a5674dca7ca47/) | ⚠️ Unaudited |
 | Governable | unknown | manta | n/a | [`0x2043c8...011ece`](./contracts/manta-169/0x2043c8479b771da6e0a742691b2eb9de51011ece/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | unit-26685 | [`0x635ba6...13c310`](./contracts/ethereum-1/0x635ba609680c55c3bdd0b3627b4c5db21b13c310/) | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | unit-26683 | [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/) | ⚠️ Unaudited |
-| L2OutputOracle | operational_periphery | ethereum | unit-26682 | [`0x30c789...a05c1d`](./contracts/ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | unit-32797 | [`0x635ba6...13c310`](./contracts/ethereum-1/0x635ba609680c55c3bdd0b3627b4c5db21b13c310/) | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | ethereum | unit-32795 | [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/) | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | ethereum | unit-32794 | [`0x30c789...a05c1d`](./contracts/ethereum-1/0x30c789674ad3b458886bbc9abf42eee19ea05c1d/) | ⚠️ Unaudited |
 | Manta | unknown | manta | n/a | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited |
 | MintableBaseToken | token | manta | n/a | [`0xbab712...b29b40`](./contracts/manta-169/0xbab712736193d1aefccc171edb6f35507eb29b40/) | ⚠️ Unaudited |
 | Multicall3 | periphery | manta | n/a | [`0x00113b...f6deab`](./contracts/manta-169/0x00113b8516b915106b99c43d628353dc43f6deab/) | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | unit-26687 | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | ⚠️ Unaudited |
+| OptimismPortal | unknown | ethereum | unit-32799 | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | ⚠️ Unaudited |
 | OrderBook | unknown | manta | n/a | [`0x264cc4...b8da83`](./contracts/manta-169/0x264cc454df686f13814d540d892effdaa0b8da83/) | ⚠️ Unaudited |
 | OrderBookReader | unknown | manta | n/a | [`0x3f3f96...0b9a7e`](./contracts/manta-169/0x3f3f9615a63365e5948b0d02dfdf9656b60b9a7e/) | ⚠️ Unaudited |
 | OrderBookV2 | unknown | manta | n/a | [`0xbffea7...9a1d01`](./contracts/manta-169/0xbffea7000aad4c5335733b891d68b898d79a1d01/) | ⚠️ Unaudited |
@@ -117,7 +117,7 @@ Total inherited audits: 0.
 | Seaport | unknown | manta | n/a | [`0x000000...af14dc`](./contracts/manta-169/0x00000000000000adc04c56bf30ac9d3c0aaf14dc/) | ⚠️ Unaudited |
 | ShortsTracker | unknown | manta | n/a | [`0x1017a0...98b49b`](./contracts/manta-169/0x1017a05dbc857c90457bddc8b2d02940d998b49b/) | ⚠️ Unaudited |
 | ShortsTrackerTimelock | governance | manta | n/a | [`0x80a9ff...14ddda`](./contracts/manta-169/0x80a9ff4db9696d7365bb93aeb78f0c805c14ddda/) | ⚠️ Unaudited |
-| SystemConfig | governance | ethereum | unit-26686 | [`0x895e00...351a5d`](./contracts/ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ⚠️ Unaudited |
+| SystemConfig | governance | ethereum | unit-32798 | [`0x895e00...351a5d`](./contracts/ethereum-1/0x895e00269a05848f3c9889efa677d02ff7351a5d/) | ⚠️ Unaudited |
 | Timelock | governance | manta | n/a | 3 deployments: manta [`0x44ed2c...b3bc0e`](./contracts/manta-169/0x44ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e/); manta `0xc6b525...f392be`; manta `0xe8da44...0104e2` | ⚠️ Unaudited |
 | TokenConfigKeeper | operational_periphery | manta | n/a | [`0xd45244...1bbaf6`](./contracts/manta-169/0xd45244ff30150f05906b3f10aa41d2055d1bbaf6/) | ⚠️ Unaudited |
 | TokenManager | governance | manta | n/a | [`0x0dc076...fad850`](./contracts/manta-169/0x0dc0761d71af3332a42fa2cf885e7c427ffad850/) | ⚠️ Unaudited |

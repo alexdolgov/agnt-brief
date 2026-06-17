@@ -1,0 +1,18 @@
+{
+  "address": "0x313bc86d3d6e86ba164b2b451cb0d9cfa7943e5c",
+  "chain_id": 42220,
+  "contract_name": "OwnedWallet",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:09:54.032Z"
+}

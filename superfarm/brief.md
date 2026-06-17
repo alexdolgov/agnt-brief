@@ -1,16 +1,16 @@
 # Agentic Audit Brief: SuperFarm
 
-⚠️ Lifecycle status: DECLINING - TVL changed 52.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 46.2% over 90 days
 
 ## Project Overview
 
 - Project: SuperFarm (`superfarm`)
 - Website: [https://superverse.co/](https://superverse.co/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:36.213Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:10:11.427Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: ethereum
-- Contract surface: 14 unique implementations (21 raw deployments)
+- Contract surface: 17 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $931,016.70
 - On-chain TVL (included contracts): $167,207,429.26
 - TVL by chain: Ethereum $167,207,429.26
@@ -25,20 +25,20 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 
 ## Contract Surface Quality
 
-- Indexed contracts: 77; live-surface contracts included: 21 (21 live, 0 unknown).
+- Indexed contracts: 80; live-surface contracts included: 24 (24 live, 0 unknown).
 - Excluded by liveness: 56 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: none
-- Dependencies extracted: 23; unverified dependencies: 0.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/17 (0.0%)
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 21
+- Unique implementations: 17
+- Raw deployments: 24
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $167,207,429.26
@@ -57,7 +57,7 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -65,6 +65,7 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 | ERC20FixedSupply | token | ethereum | n/a | [`0x9cb7a4...e3da53`](./contracts/ethereum-1/0x9cb7a4ef0cae65b07362bc679a0b874041e3da53/) | ⚠️ Unaudited |
 | Staker | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x8e586d...d5fc9b`](./contracts/ethereum-1/0x8e586d927ace36a3ef7bddf9f899d2e385d5fc9b/); ethereum `0xb3ea98...9edd80`; ethereum `0xf35a92...206207` | ⚠️ Unaudited |
 | InjectiveToken | token | ethereum | n/a | [`0xe28b3b...ceca30`](./contracts/ethereum-1/0xe28b3b32b6c345a34ff64674606124dd5aceca30/) | ⚠️ Unaudited |
+| SuperVerseStaker | core_logic | ethereum | n/a | [`0x8c96ed...d0b887`](./contracts/ethereum-1/0x8c96edc82d111e3c5686f5abe738a82d54d0b887/) | ⚠️ Unaudited |
 | DeltaTimeInventory | unknown | ethereum | n/a | [`0x2af756...ad5576`](./contracts/ethereum-1/0x2af75676692817d85121353f0d6e8e9ae6ad5576/) | ⚠️ Unaudited |
 | F1DTCrateKey | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5694bc...5a524b`](./contracts/ethereum-1/0x5694bce5b6f06dcd69028d40ab856efc295a524b/); ethereum `0x7e439a...3a215b` | ⚠️ Unaudited |
 | GameeVouchers | unknown | ethereum | n/a | [`0xe114bc...022c92`](./contracts/ethereum-1/0xe114bce907a86d81f321c6fd8d8c51d542022c92/) | ⚠️ Unaudited |
@@ -73,8 +74,10 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 | OFTAdapterFixedSupply | adapter | ethereum | n/a | [`0xea614f...63b793`](./contracts/ethereum-1/0xea614f1d42af662199b0aac8e70ddabb7863b793/) | ⚠️ Unaudited |
 | REVV | unknown | ethereum | n/a | [`0x557b93...51a8ca`](./contracts/ethereum-1/0x557b933a7c2c45672b610f8954a3deb39a51a8ca/) | ⚠️ Unaudited |
 | REVVInventory | unknown | ethereum | n/a | [`0xa7a05e...a6f954`](./contracts/ethereum-1/0xa7a05e655cbed5356d2fa851e96f7f68e4a6f954/) | ⚠️ Unaudited |
+| RewardStaker | core_logic | ethereum | n/a | [`0xba48bc...3aaf91`](./contracts/ethereum-1/0xba48bcc66b6665495ec643ece7811db5723aaf91/) | ⚠️ Unaudited |
 | Super1155 | unknown | ethereum | n/a | [`0x6110dd...009af2`](./contracts/ethereum-1/0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2/) | ⚠️ Unaudited |
 | TokenLaunchpadVouchers | token | ethereum | n/a | [`0x87a374...a37c0d`](./contracts/ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x25647e...1d0888`](./contracts/ethereum-1/0x25647e01bd0967c1b9599fa3521939871d1d0888/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,9 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xe53ec7...b40a55`](./contracts/ethereum-1/0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55/) | Token | token | $121,843,315.10 | Verified native implementation with $121,843,315.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9cb7a4...e3da53`](./contracts/ethereum-1/0x9cb7a4ef0cae65b07362bc679a0b874041e3da53/) | ERC20FixedSupply | token | $45,118,759.76 | Verified native implementation with $45,118,759.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8e586d...d5fc9b`](./contracts/ethereum-1/0x8e586d927ace36a3ef7bddf9f899d2e385d5fc9b/) | Staker | core_logic | $242,743.63 | Verified native implementation with $242,743.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8c96ed...d0b887`](./contracts/ethereum-1/0x8c96edc82d111e3c5686f5abe738a82d54d0b887/) | SuperVerseStaker | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2af756...ad5576`](./contracts/ethereum-1/0x2af75676692817d85121353f0d6e8e9ae6ad5576/) | DeltaTimeInventory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5694bc...5a524b`](./contracts/ethereum-1/0x5694bce5b6f06dcd69028d40ab856efc295a524b/) | F1DTCrateKey | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe114bc...022c92`](./contracts/ethereum-1/0xe114bce907a86d81f321c6fd8d8c51d542022c92/) | GameeVouchers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x557b93...51a8ca`](./contracts/ethereum-1/0x557b933a7c2c45672b610f8954a3deb39a51a8ca/) | REVV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa7a05e...a6f954`](./contracts/ethereum-1/0xa7a05e655cbed5356d2fa851e96f7f68e4a6f954/) | REVVInventory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xba48bc...3aaf91`](./contracts/ethereum-1/0xba48bcc66b6665495ec643ece7811db5723aaf91/) | RewardStaker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6110dd...009af2`](./contracts/ethereum-1/0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2/) | Super1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x87a374...a37c0d`](./contracts/ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | TokenLaunchpadVouchers | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -118,10 +125,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
-| upstream | 2 |
-| standard_library | 0 |
-| needs_review | 4 |
+| native | 12 |
+| upstream | 3 |
+| standard_library | 1 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

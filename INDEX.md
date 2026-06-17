@@ -761,7 +761,7 @@
 | [monox](./monox/) | $10.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [monroe-protocol](./monroe-protocol/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [monstro](./monstro/) | $3.5M | 0.0% | $3.5M | transitioning | 0 | 13 | 2026-06-17 |
-| [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 3 | 2 | 2026-06-17 |
+| [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 3 | 3 | 2026-06-17 |
 | [moonbase-alpha](./moonbase-alpha/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mooniswap](./mooniswap/) | $414.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-17 |
@@ -1173,7 +1173,7 @@
 | [sun](./sun/) | $209.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sunny](./sunny/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [superearn](./superearn/) | $295.4 | 38.4% | ? | active | 5 | 165 | 2026-06-17 |
-| [superfarm](./superfarm/) | $167.2M | 0.0% | $167.2M | declining | 0 | 14 | 2026-06-17 |
+| [superfarm](./superfarm/) | $167.2M | 0.0% | $167.2M | declining | 0 | 17 | 2026-06-17 |
 | [superfluid](./superfluid/) | $1.7M | 20.0% | ? | active | 8 | 249 | 2026-06-17 |
 | [superform](./superform/) | $2.0M | 21.5% | $72.4 | active | 3 | 136 | 2026-06-17 |
 | [superhero-dex](./superhero-dex/) | $772.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1214,7 +1214,7 @@
 | [taiko-bridge](./taiko-bridge/) | $12.8M | 0.0% | ? | unknown | 0 | 3 | 2026-06-17 |
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 472 | 2026-06-17 |
 | [tangoswap](./tangoswap/) | $14.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 98 | 2026-06-17 |
+| [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 66 | 2026-06-17 |
 | [tau-labs](./tau-labs/) | $1.7M | 0.0% | $1.7M | declining | 0 | 74 | 2026-06-17 |
 | [tea-rex](./tea-rex/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tealswap](./tealswap/) | $4.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

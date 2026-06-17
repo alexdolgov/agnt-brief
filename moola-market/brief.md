@@ -7,17 +7,17 @@
 - Project: Moola Market (`moola-market`)
 - Website: [https://moola.market](https://moola.market)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:56.127Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:10:54.685Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: celo
-- Contract surface: 2 unique implementations (4 raw deployments)
+- Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,144,256.62
 - On-chain TVL (included contracts): $73,915.00
 - TVL by chain: Celo $73,915.00
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
@@ -26,25 +26,25 @@ Moola Market is a decentralized lending protocol on Celo that enables users to d
 
 ## Contract Surface Quality
 
-- Indexed contracts: 91; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 87 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
-- Detected codebases: aave-v2, uniswap-v2
-- Unverified dependencies: 11/49.
+- Indexed contracts: 101; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 86 inactive, 10 singleton, 0 uninitialized.
+- Deployment units: 0/5 live.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/2 (0.0%)
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 4
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 5
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $73,915.00
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Latest audit: 2019-09 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $73,915.00 represents exposure in a protocol with declining activity.
 
@@ -77,18 +77,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | celo | n/a | `0xd7f771...7b25ed` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here]() and [here](https://blog.openzeppelin.com/aave-protocol-audit/). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here]() and [here](https://blog.openzeppelin.com/aave-protocol-audit/). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) | OpenZeppelin | Audit | 2019-09 | stale | Direct | contract_name | 0 | n/a |
 | [The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) and [here](). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.](https://www.openzeppelin.com/news/aave-protocol-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -107,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -116,7 +118,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Match method counts: extraction_exact=12
 
 Zero-match audit list:
 

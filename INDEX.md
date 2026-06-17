@@ -532,7 +532,7 @@
 | [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [hourglass](./hourglass/) | $139.9K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
-| [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 14 | 2026-06-17 |
+| [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 13 | 2026-06-17 |
 | [hskhodlium](./hskhodlium/) | $391.7K | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [huckleberry](./huckleberry/) | $31.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [humble-defi](./humble-defi/) | $52.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

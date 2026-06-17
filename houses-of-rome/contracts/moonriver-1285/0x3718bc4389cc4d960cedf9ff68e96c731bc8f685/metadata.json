@@ -1,0 +1,17 @@
+{
+  "address": "0x3718bc4389cc4d960cedf9ff68e96c731bc8f685",
+  "chain_id": 1285,
+  "contract_name": "RomeConscription",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000089f52002e544585b42f8c7cf557609ca4c8ce12a0000000000000000000000000000000000000000000000000000000013ab6680",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:36:08.844Z"
+}

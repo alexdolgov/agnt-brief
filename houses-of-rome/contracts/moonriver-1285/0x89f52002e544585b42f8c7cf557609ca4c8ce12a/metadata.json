@@ -1,0 +1,17 @@
+{
+  "address": "0x89f52002e544585b42f8c7cf557609ca4c8ce12a",
+  "chain_id": 1285,
+  "contract_name": "sRome",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:36:11.318Z"
+}

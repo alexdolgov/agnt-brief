@@ -1,0 +1,17 @@
+{
+  "address": "0x6f7d019502e17f1ef24ac67a260c65dd23b759f1",
+  "chain_id": 1285,
+  "contract_name": "RomeStaking",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000004a436073552044d5f2f49b176853ad3ad473d9d600000000000000000000000089f52002e544585b42f8c7cf557609ca4c8ce12a0000000000000000000000000000000000000000000000000000000000000898000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000f29c6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:36:11.144Z"
+}

@@ -748,7 +748,7 @@ Each project directory contains:
 | [horizondex](./horizondex/brief.md) | $60.34K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hotcoin](./hotcoin/brief.md) | $5.60M | scroll | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hourglass](./hourglass/brief.md) | $139.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [houses-of-rome](./houses-of-rome/brief.md) | $0.00 | moonriver | 14 | 3/14 (21%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
+| [houses-of-rome](./houses-of-rome/brief.md) | $0.00 | moonriver | 13 | 13/13 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [hskhodlium](./hskhodlium/brief.md) | $391.74K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [huckleberry](./huckleberry/brief.md) | $31.92K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [humble-defi](./humble-defi/brief.md) | $52.25K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T16:32:28.682Z_
+_Generated: 2026-06-17T16:38:58.745Z_
 _Projects: 1409_

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "canto-lending",
-  "generated_at": "2026-06-17T07:00:40.353Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T16:37:52.510Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "canto-lending",
@@ -78,7 +78,7 @@
     "unknown_contracts": 82,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 1,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },

@@ -7,8 +7,8 @@
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:50.497Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:38:42.808Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: scroll
 - Contract surface: 3 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $763,468.72
@@ -101,9 +101,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 2 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

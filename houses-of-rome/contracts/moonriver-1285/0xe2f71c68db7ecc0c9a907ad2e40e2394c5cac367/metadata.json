@@ -1,0 +1,17 @@
+{
+  "address": "0xe2f71c68db7ecc0c9a907ad2e40e2394c5cac367",
+  "chain_id": 1285,
+  "contract_name": "FRAXBondDepository",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000004a436073552044d5f2f49b176853ad3ad473d9d60000000000000000000000001a93b23281cc1cde4c4741353f3064709a16197d000000000000000000000000fbad41e4dd040bc80c89fcc6e90d152a746139af000000000000000000000000d4a7febd52efda82d6f8ace24908ae0aa5b4f9560000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:36:11.002Z"
+}

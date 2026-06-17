@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "usx.capital",
-  "generated_at": "2026-06-17T07:00:50.497Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T16:38:42.808Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "usx.capital",
@@ -167,8 +167,8 @@
       "deployment_unit_proxy_count": null,
       "name": "MetaMorphoV1_1",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "morpho",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "USX.Capital",
       "tvl_usd": null,
       "is_proxy": false,
@@ -257,9 +257,9 @@
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 2,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

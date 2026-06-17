@@ -7,8 +7,8 @@
 - Project: Canto Lending (`canto-lending`)
 - Website: [https://canto.io/lending](https://canto.io/lending)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:40.353Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:37:52.510Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: canto, ethereum
 - Contract surface: 83 unique implementations (83 raw deployments)
 - DeFi Llama TVL: $3,029,918.05
@@ -29,7 +29,7 @@ The Canto Lending family uses the CantoOFTV2 token (from the Tokens family) as o
 - Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -5,8 +5,8 @@
 - Project: ForgeYields (`forgeyields`)
 - Website: [https://app.forgeyields.com](https://app.forgeyields.com)
 - Lifecycle: active (Tier 0, 16.4% below peak)
-- Generated: 2026-06-17T07:01:00.772Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:03:31.485Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,281,139.36
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
-| upstream | 0 |
+| native | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

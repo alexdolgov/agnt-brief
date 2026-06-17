@@ -1,0 +1,17 @@
+{
+  "address": "0x4b5d9db7910448e2f236509d9ee242673afa28aa",
+  "chain_id": 146,
+  "contract_name": "sWagmi",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000e0ce4d450c705f8a0b6dd9d5123e3df2787d16b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T20:17:01.028Z"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-earn",
-  "generated_at": "2026-06-17T07:00:49.615Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T20:03:03.821Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kava-earn",
@@ -109,7 +109,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Via Hardhat Verification Plugin ​",
       "tvl_usd": null,
@@ -163,10 +163,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

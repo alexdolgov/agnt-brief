@@ -7,8 +7,8 @@
 - Project: Kava Earn (`kava-earn`)
 - Website: [https://app.kava.io/home](https://app.kava.io/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:49.615Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:03:03.821Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,195,362.46
@@ -105,10 +105,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

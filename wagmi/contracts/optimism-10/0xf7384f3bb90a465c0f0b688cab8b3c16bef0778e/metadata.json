@@ -1,0 +1,18 @@
+{
+  "address": "0xf7384f3bb90a465c0f0b688cab8b3c16bef0778e",
+  "chain_id": 10,
+  "contract_name": "GMI",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT, SAL-1.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T20:17:00.000Z"
+}

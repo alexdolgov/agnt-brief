@@ -1,0 +1,1556 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_underlyingPositionManagerAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_flashLoanAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_lightQuoterV3",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_underlyingV3Factory",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_underlyingV3PoolInitCodeHash",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "max",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "min",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "InvalidLiquidityAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "borrowedLiquidity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "restoredLiquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "InvalidRestoredLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidSettingsValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTick",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidTokens",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "NotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ErrLib.ErrorCode",
+        "name": "code",
+        "type": "uint8"
+      }
+    ],
+    "name": "RevertErrorCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expectedOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "receivedOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "SwapSlippageCheckError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "minOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "out",
+        "type": "uint256"
+      }
+    ],
+    "name": "TooLittleReceivedError",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "borrowedAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "borrowingCollateral",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "liquidationBonus",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "dailyRatePrepayment",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "holdTokenEntranceFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "Borrow",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "CollectLoansFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "CollectProtocol",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "EmergencyLoanClosure",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "harvestedAmt",
+        "type": "uint256"
+      }
+    ],
+    "name": "Harvest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "collateralAmt",
+        "type": "uint256"
+      }
+    ],
+    "name": "IncreaseCollateralBalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "liquidator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "Repay",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateHoldTokeEntranceFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateHoldTokenDailyRate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "enum IOwnerSettings.ITEM",
+        "name": "_item",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "values",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "UpdateSettingsByOwner",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "UNDERLYING_V3_FACTORY_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UNDERLYING_V3_POOL_INIT_CODE_HASH",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VAULT_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "internalSwapPoolfee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "saleToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "holdToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minHoldTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxMarginDeposit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDailyRate",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "swapTarget",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxGasForCall",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct IApproveSwapAndPay.SwapParams[]",
+            "name": "externalSwap",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ILiquidityManager.LoanInfo[]",
+            "name": "loans",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ILiquidityBorrowingManager.BorrowParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "borrow",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "borrowingsInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowedAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "liquidationBonus",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "accLoanRatePerSeconds",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dailyRateCollateralBalance",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lifetimeInSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateCollateralAmtForLifetime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "collateralAmt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "checkDailyRateCollateral",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "balance",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "estimatedLifeTime",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "collectLoansFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "collectProtocol",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      }
+    ],
+    "name": "computePoolAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dafaultLiquidationBonusBP",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "flashLoanAggregatorAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      }
+    ],
+    "name": "getBorrowerDebtsInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "borrower",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "saleToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "holdToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowedAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "accLoanRatePerSeconds",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "dailyRateCollateralBalance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ILiquidityBorrowingManager.BorrowingInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ILiquidityManager.LoanInfo[]",
+            "name": "loans",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "int256",
+            "name": "collateralBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "estimatedLifeTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ILiquidityBorrowingManager.BorrowingInfoExt[]",
+        "name": "extinfo",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      }
+    ],
+    "name": "getBorrowingKeysForBorrower",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "borrowingKeys",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowingKeysForTokenId",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "borrowingKeys",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feesOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFeesInfo",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "fees",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      }
+    ],
+    "name": "getHoldTokenInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "latestUpTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "accLoanRatePerSeconds",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentDailyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "entranceFeeBP",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDailyRateAndCollateral.TokenInfo",
+        "name": "holdTokenRateInfo",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLenderCreditsInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "borrower",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "saleToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "holdToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowedAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "accLoanRatePerSeconds",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "dailyRateCollateralBalance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ILiquidityBorrowingManager.BorrowingInfo",
+            "name": "info",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ILiquidityManager.LoanInfo[]",
+            "name": "loans",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "int256",
+            "name": "collateralBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "estimatedLifeTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ILiquidityBorrowingManager.BorrowingInfoExt[]",
+        "name": "extinfo",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowedAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLiquidationBonus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidationBonus",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getLoansInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILiquidityManager.LoanInfo[]",
+        "name": "loans",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPlatformFeesInfo",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "fees",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "harvest",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "harvestedAmt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "borrowingKey",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "increaseCollateralBalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lightQuoterV3Address",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "liquidationBonusForToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "bonusBP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBonusAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "operator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "platformFeesBP",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isEmergency",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "strict",
+                "type": "bool"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint8",
+                    "name": "protocol",
+                    "type": "uint8"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct ILiquidityManager.FlashLoanParams[]",
+                "name": "flashLoanParams",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct ILiquidityManager.FlashLoanRoutes",
+            "name": "routes",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "swapTarget",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxGasForCall",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct IApproveSwapAndPay.SwapParams[]",
+            "name": "externalSwap",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "borrowingKey",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minHoldTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minSaleTokenOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILiquidityBorrowingManager.RepayParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "repay",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "saleTokenOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "holdTokenOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "swapTarget",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isAllowed",
+        "type": "bool"
+      }
+    ],
+    "name": "setSwapCallToWhitelist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "swapTarget",
+        "type": "address"
+      }
+    ],
+    "name": "swapIsWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "IsWhitelisted",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "underlyingPositionManager",
+    "outputs": [
+      {
+        "internalType": "contract INonfungiblePositionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniswapV3SwapCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateHoldTokenDailyRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "saleToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "holdToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateHoldTokenEntranceFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IOwnerSettings.ITEM",
+        "name": "_item",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "values",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "updateSettings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "bodyAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "wagmiLeverageFlashCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1332,7 +1332,7 @@
 | [vnx](./vnx/) | $5.4M | 0.0% | ? | active | 0 | 5 | 2026-06-17 |
 | [volta-club](./volta-club/) | $612.5M | 0.0% | $612.5M | unknown | 0 | 66 | 2026-06-17 |
 | [voltz](./voltz/) | $214.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 226 | 2026-06-17 |
+| [wagmi](./wagmi/) | $1.2M | 7.7% | $1.2M | declining | 12 | 113 | 2026-06-17 |
 | [wan-bridge](./wan-bridge/) | $4.4K | 0.0% | $4.4K | active | 3 | 49 | 2026-06-17 |
 | [wanswap-dex](./wanswap-dex/) | $936.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [warp-protocol](./warp-protocol/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

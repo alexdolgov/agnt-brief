@@ -221,6 +221,7 @@ Each project directory contains:
 | [reflexer](./reflexer/brief.md) | $1.83M | ethereum | 5 | 5/5 (100%) | 40.0% | 20.0% (OpenZeppelin) | 2 | stale | ⚠️ declining | $1.28M |
 | [alphagrowth](./alphagrowth/brief.md) | $7.38M | base, ethereum | 29 | 23/29 (79%) | 17.4% | 13.0% (ChainSecurity, Cyfrin, Spearbit) | 7 | fresh | ✅ active | $1.24M |
 | [suzaku](./suzaku/brief.md) | $1.08M | avalanche | 49 | 21/49 (43%) | 9.5% | 9.5% (ChainSecurity) | 1 | stale | ✅ active | $1.18M |
+| [wagmi](./wagmi/brief.md) | $1.25M | 11 | 113 | 26/113 (23%) | 7.7% | 7.7% (Sherlock) | 12 | stale | ⚠️ declining | $1.15M |
 | [planet](./planet/brief.md) | $1.68M | bsc | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $1.14M |
 | [ocean-point](./ocean-point/brief.md) | $948.06K | ethereum | 10 | 10/10 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.08M |
 | [defil](./defil/brief.md) | $1.80M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.00M |
@@ -1362,7 +1363,6 @@ Each project directory contains:
 | [vmex-finance](./vmex-finance/brief.md) | $3.24K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [vnx](./vnx/brief.md) | $5.44M | 7 | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [voltz](./voltz/brief.md) | $214.19K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [wagmi](./wagmi/brief.md) | $1.25M | 10 | 226 | 0/226 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [wanswap-dex](./wanswap-dex/brief.md) | $936.35K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [warp-protocol](./warp-protocol/brief.md) | $39.25K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [waterfall-defi](./waterfall-defi/brief.md) | $19.02K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T19:08:49.249Z_
+_Generated: 2026-06-17T20:20:01.234Z_
 _Projects: 1409_

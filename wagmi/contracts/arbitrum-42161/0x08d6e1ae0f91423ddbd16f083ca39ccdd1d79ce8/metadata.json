@@ -1,0 +1,17 @@
+{
+  "address": "0x08d6e1ae0f91423ddbd16f083ca39ccdd1d79ce8",
+  "chain_id": 42161,
+  "contract_name": "TickLens",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 700,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T20:17:03.153Z"
+}

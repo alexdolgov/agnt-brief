@@ -4,8 +4,8 @@
 
 - Project: EtherFlip (`etherflip`)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:52.437Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:24:25.371Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,240,843.11

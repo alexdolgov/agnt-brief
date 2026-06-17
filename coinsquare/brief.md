@@ -5,8 +5,8 @@
 - Project: Coinsquare (`coinsquare`)
 - Website: [https://coinsquare.com](https://coinsquare.com)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:45.193Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:24:21.987Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $8,989,665.69
@@ -28,7 +28,7 @@ Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocu
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 2/2.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

@@ -55,7 +55,7 @@ Each project directory contains:
 | [zircuit-staking](./zircuit-staking/brief.md) | $41.48M | base, ethereum | 13 | 12/13 (92%) | 33.3% | 0.0% (-) | 3 | aging | ⚠️ declining | $140.43M |
 | [bio-protocol](./bio-protocol/brief.md) | $4.31M | base, ethereum | 34 | 33/34 (97%) | 9.1% | 0.0% (-) | 2 | fresh | ✅ active | $139.62M |
 | [apechain-bridge](./apechain-bridge/brief.md) | $40.86M | arbitrum, ethereum | 15 | 15/15 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $138.23M |
-| [wavesbridge](./wavesbridge/brief.md) | $353.35K | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $136.63M |
+| [wavesbridge](./wavesbridge/brief.md) | $353.35K | arbitrum, bsc, ethereum | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $136.63M |
 | [bitway](./bitway/brief.md) | $60.78M | bsc | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $136.35M |
 | [bitway-earn](./bitway-earn/brief.md) | $60.03M | bsc | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $136.35M |
 | [velo-finance](./velo-finance/brief.md) | $1.53M | bsc | 10 | 10/10 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $117.63M |
@@ -895,7 +895,7 @@ Each project directory contains:
 | [merchant-moe](./merchant-moe/brief.md) | $21.56M | mantle | 16 | 10/16 (63%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
 | [merkle-trade](./merkle-trade/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [merlinswap](./merlinswap/brief.md) | $6.89M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [meson](./meson/brief.md) | $491.41K | blast, merlin | 15 | 1/15 (7%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [meson](./meson/brief.md) | $491.41K | 9 | 22 | 4/22 (18%) | 20.0% | 20.0% (Trail of Bits) | 3 | stale | ✅ active | - |
 | [metadao](./metadao/brief.md) | $12.02M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [metastable](./metastable/brief.md) | $1.52M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [metastrike](./metastrike/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1015,7 +1015,7 @@ Each project directory contains:
 | [osmosis-dex](./osmosis-dex/brief.md) | $15.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ostium](./ostium/brief.md) | $47.18M | arbitrum | 28 | 28/28 (100%) | 53.6% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [otsea](./otsea/brief.md) | $393.82K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
-| [outcome-finance](./outcome-finance/brief.md) | $1.05M | boba, polygon | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [outcome-finance](./outcome-finance/brief.md) | $1.05M | boba, ethereum | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [overnight-finance](./overnight-finance/brief.md) | $9.99M | 8 | 47 | 29/47 (62%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [oxiswap](./oxiswap/brief.md) | $0.17 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [p2pb2b](./p2pb2b/brief.md) | $4.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T16:21:29.405Z_
+_Generated: 2026-06-17T16:32:28.682Z_
 _Projects: 1409_

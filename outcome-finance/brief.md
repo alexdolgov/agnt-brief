@@ -6,39 +6,38 @@
 
 - Project: Outcome Finance (`outcome-finance`)
 - Lifecycle: declining (Tier 0, 99.4% below peak)
-- Generated: 2026-06-17T07:00:52.559Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: boba, polygon
-- Contract surface: 2 unique implementations (5 raw deployments)
+- Generated: 2026-06-17T16:25:15.502Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Chains: boba, ethereum
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,048,764.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Outcome Finance is listed by DefiLlama as a Synthetics project that helps DAOs generate positive outcomes and uses UMA-related outcome/synthetic infrastructure. The currently recorded contract surface consists primarily of UMA creator/factory contracts, rather than verified trading venues or the deployed collateral-holding outcome contracts.
 
+### Architecture
+
+The LongShortPairCreator and ExpiringMultiPartyCreator contracts are factory contracts that deploy individual synthetic token pairs, sharing the same deployer cluster and likely relying on UMA's oracle and collateral infrastructure. The unnamed contract may serve as a registry or helper for these factories.
+
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 5 (0 live, 5 unknown).
-- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 23; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 19 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 7; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 2
-- Raw deployments: 5
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,11 +56,13 @@ Outcome Finance is listed by DefiLlama as a Synthetics project that helps DAOs g
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LongShortPairCreator | unknown | polygon | n/a | 4 deployments: polygon [`0x3e665d...43911a`](./contracts/polygon-137/0x3e665d15425faee14eef53b9caaa0762b243911a/); polygon `0x4fba85...213424`; polygon `0x5fd7ff...104c9f`; polygon `0x62410e...7a0abe` | ⚠️ Unaudited |
+| ExpiringMultiParty | unknown | ethereum | n/a | [`0x4f1424...af153c`](./contracts/ethereum-1/0x4f1424cef6ace40c0ae4fc64d74b734f1eaf153c/) | ⚠️ Unaudited |
+| OptimisticOracleV2 | unknown | ethereum | n/a | [`0xa0ae66...23ffae`](./contracts/ethereum-1/0xa0ae6609447e57a42c51b50eae921d701823ffae/) | ⚠️ Unaudited |
+| SkinnyOptimisticOracle | unknown | ethereum | n/a | [`0xee3afe...887c24`](./contracts/ethereum-1/0xee3afe347d5c74317041e2618c49534daf887c24/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 3 |
 | standard_library | 0 |
 | needs_review | 1 |
 

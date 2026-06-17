@@ -1,0 +1,18 @@
+{
+  "address": "0x37780b718c19f7f06d41f3c68c3a78ecb2ca191f",
+  "chain_id": 1,
+  "contract_name": "CoveredCallLongShortPairFinancialProductLibrary",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 199,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T16:24:57.593Z"
+}

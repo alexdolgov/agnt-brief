@@ -1,0 +1,18 @@
+{
+  "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+  "chain_id": 56,
+  "contract_name": "ProxyToMeson",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xcabf7861ea9b80776357630c1d9f87fc346194ba",
+  "fetched_at": "2026-06-17T16:31:22.163Z"
+}

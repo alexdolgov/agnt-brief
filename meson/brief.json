@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meson",
-  "generated_at": "2026-06-17T07:00:52.162Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T16:32:13.452Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "meson",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 93.86775318576953
   },
   "summary": {
-    "total_contracts": 15,
-    "total_addresses": 15,
-    "unique_implementations": 15,
-    "total_deployments": 15,
-    "audited_contracts": 0,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
-    "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 14,
-    "coverage_pct": 0,
+    "total_contracts": 22,
+    "total_addresses": 23,
+    "unique_implementations": 22,
+    "total_deployments": 23,
+    "audited_contracts": 1,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 3,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 17,
+    "coverage_pct": 20,
     "total_audits": 4,
-    "scoreable_audits": 0,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 491410.6725499999,
     "tvl_usd": 491410.6725499999,
     "tvl_source": "defillama",
@@ -42,11 +42,20 @@
     "asd_usd": null,
     "website_url": "https://meson.fi/home",
     "chains": [
+      "arbitrum",
+      "base",
       "blast",
-      "merlin"
+      "bsc",
+      "ethereum",
+      "linea",
+      "merlin",
+      "optimism",
+      "polygon"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 20,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
     "latest_audit_date": "2022-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
@@ -60,20 +69,20 @@
     "project_purpose": "Meson is a cross-chain connectivity and swap protocol supporting crypto-to-crypto transfers, CEX-to-chain flows, and partner-supported currency, RWA, and fiat-related flows across multiple networks. Its current protocol surface should not be characterized as centered on the FixSupplyToken contract unless confirmed by official contract documentation, and unsupported claims about atomic-swap mechanics or a specific liquidity-provider network should be removed or explicitly qualified.",
     "relationship_narrative": "The Meson family consists of a single product family with one core token contract (FixSupplyToken) and multiple unnamed supporting contracts that likely handle bridge logic, liquidity management, and cross-chain communication. All contracts are deployed by two main deployer clusters, indicating a unified infrastructure.",
     "product_family_count": 1,
-    "total_contracts_indexed": 129,
-    "live_contracts": 7,
-    "inactive_contracts": 114,
+    "total_contracts_indexed": 139,
+    "live_contracts": 15,
+    "inactive_contracts": 116,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 8,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
+    "deployment_units": 8,
+    "live_deployment_units": 8,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 15,
+    "unique_implementations": 22,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -104,6 +113,192 @@
           "address": "0x01593b8aaadc5238f2f5c8597bc1402eb7a48c5f",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32824",
+      "deployment_unit_proxy_count": 1,
+      "name": "Proxy (impl: 0xa7a9f30f9d2c4a79ff60179e02236b82d0a176b7)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa7a9f30f9d2c4a79ff60179e02236b82d0a176b7",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32824",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32825",
+      "deployment_unit_proxy_count": 1,
+      "name": "Proxy (impl: 0xa7a9f30f9d2c4a79ff60179e02236b82d0a176b7)",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa7a9f30f9d2c4a79ff60179e02236b82d0a176b7",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32825",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32818",
+      "deployment_unit_proxy_count": 1,
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3c774719e0126415b870b4abfff89f8f59c5d906",
+      "impl_name": "ProxyToMeson",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32818",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32821",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32819",
+      "deployment_unit_proxy_count": 1,
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe70e9a845fabd41fb3de258c41f4bfe395cd30c2",
+      "impl_name": "ProxyToMeson",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32819",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32823",
+      "deployment_unit_proxy_count": 1,
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa96e19d0f696690a416c610b4b34aac5be6fafc0",
+      "impl_name": "ProxyToMeson",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32823",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -545,7 +740,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -580,7 +775,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -606,6 +801,84 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32820",
+      "deployment_unit_proxy_count": 1,
+      "name": "UpgradableMeson",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcabf7861ea9b80776357630c1d9f87fc346194ba",
+      "impl_name": "UpgradableMeson",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32820",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3198",
+        "audit-3200",
+        "audit-3201"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "deployment_unit": "unit-32822",
+      "deployment_unit_proxy_count": 1,
+      "name": "UpgradableMeson",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x03650533d2a35847c007f25bc630f468905f6241",
+      "impl_name": "UpgradableMeson",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+          "deployment_unit": "unit-32822",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3198",
+        "audit-3200",
+        "audit-3201"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -622,12 +895,25 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IERC20Minimal",
+        "IMesonPoolsEvents",
+        "IMesonSwapEvents",
+        "LowGasSafeMath",
+        "Meson",
+        "MesonConfig",
+        "MesonHelpers",
+        "MesonPools",
+        "MesonStates",
+        "MesonSwap",
+        "MesonTokens",
+        "UpgradableMeson"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -664,12 +950,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Meson",
+        "MesonHelpers",
+        "MesonPools",
+        "MesonStates",
+        "MesonSwap",
+        "MesonTokens",
+        "UCTUpgradeable",
+        "UpgradableMeson"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -685,16 +980,38 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MesonHelpers",
+        "MesonPools",
+        "MesonSwap",
+        "MesonTokens",
+        "UCTUpgradeable",
+        "UpgradableMeson"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "SSLab at Georgia Institute of Technology",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2022-02"
+    },
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2022-10"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 81457,
@@ -705,34 +1022,56 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+      "name": "ProxyToMeson",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 17,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 5
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 6
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3198,
-        "report_name": "here"
-      },
-      {
         "audit_id": 3199,
-        "report_name": "here"
-      },
-      {
-        "audit_id": 3200,
-        "report_name": "here"
-      },
-      {
-        "audit_id": 3201,
         "report_name": "here"
       }
     ],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wavesbridge",
-  "generated_at": "2026-06-17T07:00:48.966Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T16:26:49.945Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wavesbridge",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 78.89749823899656
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 6,
+    "total_addresses": 7,
+    "unique_implementations": 6,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -44,6 +44,8 @@
     "asd_usd": 136632939.38298398,
     "website_url": "https://wavesbridge.io/",
     "chains": [
+      "arbitrum",
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -61,8 +63,8 @@
     "project_purpose": "WavesBridge is a multi-chain token bridge supporting asset transfers across Waves, Ethereum, and other connected networks. The Ethereum contracts tracked in this brief represent only the Ethereum-side contract surface of the broader multi-chain bridge system; token contracts such as Neiro and RealGames should be treated as external or supported assets unless separately verified as core WavesBridge components.",
     "relationship_narrative": "The Bridge contract serves as the operational core, interacting with token contracts like PepeToken and SimpleToken to manage locked assets. Supporting contracts Neiro and RealGames likely provide auxiliary functions or token instances used within the bridge ecosystem.",
     "product_family_count": 1,
-    "total_contracts_indexed": 5,
-    "live_contracts": 5,
+    "total_contracts_indexed": 7,
+    "live_contracts": 7,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
@@ -74,7 +76,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 6,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -144,6 +146,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3ac7a6635d99f376c3c05442f7eef62d349c3a55",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -161,7 +174,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Neiro",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "WavesBridge",
       "tvl_usd": null,
@@ -224,6 +237,41 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PortalV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PortalV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1a920b0eae5b49c51ebf042a61c3fa58dae04882",
@@ -231,7 +279,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RealGames",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "WavesBridge",
       "tvl_usd": null,
@@ -271,13 +319,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe",
+      "name": "PortalV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 2,
+    "native": 2,
+    "upstream": 4,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

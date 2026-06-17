@@ -7,10 +7,10 @@
 - Project: WavesBridge (`wavesbridge`)
 - Website: [https://wavesbridge.io/](https://wavesbridge.io/)
 - Lifecycle: declining (Tier 0, 78.9% below peak)
-- Generated: 2026-06-17T07:00:48.966Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Generated: 2026-06-17T16:26:49.945Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Chains: arbitrum, bsc, ethereum
+- Contract surface: 6 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $353,348.74
 - On-chain TVL (included contracts): $136,632,939.38
 - TVL by chain: Ethereum $136,632,939.38
@@ -25,7 +25,7 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -33,12 +33,12 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
+- Unique implementations: 6
+- Raw deployments: 7
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $136,632,939.38
@@ -57,14 +57,15 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | SimpleToken | token | ethereum | n/a | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
-| Bridge | operational_periphery | ethereum | n/a | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/); bsc [`0x3ac7a6...9c3a55`](./contracts/bsc-56/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
 | Neiro | unknown | ethereum | n/a | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
 | PepeToken | token | ethereum | n/a | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
+| PortalV2 | unknown | arbitrum | n/a | [`0xac8f44...0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | ⚠️ Unaudited |
 | RealGames | unknown | ethereum | n/a | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -97,15 +98,16 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xac8f44...0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | PortalV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
-| upstream | 2 |
+| native | 2 |
+| upstream | 4 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

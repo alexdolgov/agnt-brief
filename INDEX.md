@@ -725,7 +725,7 @@
 | [merchant-moe](./merchant-moe/) | $21.6M | 50.0% | ? | unknown | 1 | 16 | 2026-06-17 |
 | [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
-| [meson](./meson/) | $491.4K | 0.0% | ? | active | 4 | 15 | 2026-06-17 |
+| [meson](./meson/) | $491.4K | 20.0% | ? | active | 4 | 22 | 2026-06-17 |
 | [meta-pool](./meta-pool/) | $4.0M | 0.0% | $4.0M | active | 3 | 12 | 2026-06-17 |
 | [metadao](./metadao/) | $12.0M | 0.0% | ? | unknown | 10 | 0 | 2026-06-17 |
 | [metastable](./metastable/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -870,7 +870,7 @@
 | [osmosis-dex](./osmosis-dex/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [ostium](./ostium/) | $29.1M | 53.6% | ? | active | 7 | 28 | 2026-06-17 |
 | [otsea](./otsea/) | $393.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [outcome-finance](./outcome-finance/) | $1.0M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
+| [outcome-finance](./outcome-finance/) | $1.0M | 0.0% | ? | declining | 0 | 4 | 2026-06-17 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 3 | 47 | 2026-06-17 |
 | [overtime](./overtime/) | $42.5M | 7.2% | $42.5M | declining | 11 | 75 | 2026-06-17 |
 | [oxiswap](./oxiswap/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1340,7 +1340,7 @@
 | [waterfall-defi](./waterfall-defi/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [waterfall-finance](./waterfall-finance/) | $35.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [waterneuron](./waterneuron/) | $5.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-17 |
+| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 6 | 2026-06-17 |
 | [wefi](./wefi/) | $292.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [weft-finance](./weft-finance/) | $488.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wemix.fi](./wemix.fi/) | $33.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |

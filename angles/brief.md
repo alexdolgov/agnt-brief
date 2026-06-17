@@ -5,8 +5,8 @@
 - Project: Angles (`angles`)
 - Website: [https://angles.fi/](https://angles.fi/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:45.008Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T23:31:53.581Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: sonic
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $672,839.00
@@ -23,11 +23,11 @@ Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, cre
 
 ## Contract Surface Quality
 
-- Indexed contracts: 80; live-surface contracts included: 6 (6 live, 0 unknown).
-- Excluded by liveness: 68 inactive, 6 singleton, 0 uninitialized.
+- Indexed contracts: 75; live-surface contracts included: 6 (6 live, 0 unknown).
+- Excluded by liveness: 63 inactive, 6 singleton, 0 uninitialized.
 - Deployment units: 1/4 live.
 - Detected codebases: none
-- Unverified dependencies: 9/35.
+- Unverified dependencies: 3/7.
 
 ## Audit Coverage Summary
 
@@ -62,7 +62,7 @@ Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, cre
 | Aggregator | unknown | sonic | n/a | [`0x6d06b7...b0ac35`](./contracts/sonic-146/0x6d06b7fac4f6393672fd038083370d38f3b0ac35/) | ⚠️ Unaudited |
 | AnglesSmartRouter | adapter | sonic | n/a | [`0x0af78f...189a00`](./contracts/sonic-146/0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00/) | ⚠️ Unaudited |
 | PoolToken | core_logic | sonic | n/a | [`0xa93c94...d48c4d`](./contracts/sonic-146/0xa93c9411f8fecf5e6acd81ecd99a71c165d48c4d/) | ⚠️ Unaudited |
-| SFC | unknown | sonic | unit-18743 | [`0xfc00fa...000000`](./contracts/sonic-146/0xfc00face00000000000000000000000000000000/) | ⚠️ Unaudited |
+| SFC | unknown | sonic | unit-33487 | [`0xfc00fa...000000`](./contracts/sonic-146/0xfc00face00000000000000000000000000000000/) | ⚠️ Unaudited |
 | Vault | core_logic | sonic | n/a | [`0x15e96c...92e69d`](./contracts/sonic-146/0x15e96cdeca34b9de1b31586c1206206adb92e69d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)

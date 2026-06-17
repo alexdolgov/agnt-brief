@@ -97,7 +97,7 @@
 | [asymmetry](./asymmetry/) | $39.7M | 0.0% | $39.7M | declining | 0 | 84 | 2026-06-17 |
 | [atlantis-loans](./atlantis-loans/) | $42.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atlantis](./atlantis/) | $13.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | active | 2 | 4 | 2026-06-17 |
+| [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | active | 2 | 6 | 2026-06-17 |
 | [atoll](./atoll/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atrium](./atrium/) | $390.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [augmented-finance](./augmented-finance/) | $326.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -503,7 +503,7 @@
 | [halofi](./halofi/) | $22.1K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [hanji-protocol](./hanji-protocol/) | $727.9K | 0.0% | ? | declining | 2 | 374 | 2026-06-17 |
 | [harbor](./harbor/) | $94.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [harmonix-finance](./harmonix-finance/) | $4.3M | 0.0% | ? | active | 4 | 18 | 2026-06-17 |
+| [harmonix-finance](./harmonix-finance/) | $302.2 | 0.0% | $302.2 | active | 4 | 24 | 2026-06-17 |
 | [harvest-finance](./harvest-finance/) | $12.2M | 55.6% | ? | declining | 5 | 23 | 2026-06-17 |
 | [harvest-flow](./harvest-flow/) | $524.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 50.0% | ? | dead | 3 | 6 | 2026-06-17 |
@@ -993,7 +993,7 @@
 | [revoluzion](./revoluzion/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [reya](./reya/) | $37.9M | 0.0% | $37.9M | declining | 0 | 5 | 2026-06-17 |
-| [rezerve](./rezerve/) | $1.3M | 1.4% | $1.3M | active | 3 | 94 | 2026-06-17 |
+| [rezerve](./rezerve/) | $1.3M | 1.4% | $1.3M | active | 3 | 95 | 2026-06-17 |
 | [rhea-finance](./rhea-finance/) | $208.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [rheo](./rheo/) | $33.3K | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [rho](./rho/) | $2.3M | 0.0% | ? | active | 4 | 28 | 2026-06-17 |

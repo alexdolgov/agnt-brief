@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "angles",
-  "generated_at": "2026-06-17T07:00:45.008Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T23:31:53.581Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "angles",
@@ -71,16 +71,16 @@
     "project_purpose": "Angles is primarily a Sonic liquid staking protocol centered on anS, enabling users to participate in Sonic staking while retaining a liquid staking token. Any vault, wanS, or capital-allocation components should be treated as secondary products or wrappers unless explicitly supported by protocol documentation.",
     "relationship_narrative": "Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, creating a flow where staked assets are represented as liquid tokens. Both families share the Sonic chain infrastructure and may use common registries or proxy patterns for upgradeability.",
     "product_family_count": 2,
-    "total_contracts_indexed": 80,
+    "total_contracts_indexed": 75,
     "live_contracts": 6,
-    "inactive_contracts": 68,
+    "inactive_contracts": 63,
     "singleton_contracts": 6,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 4,
     "live_deployment_units": 1,
-    "dependencies_extracted": 35,
-    "unverified_dependencies": 9,
+    "dependencies_extracted": 7,
+    "unverified_dependencies": 3,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -196,7 +196,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 146,
@@ -237,7 +237,7 @@
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0xfc00face00000000000000000000000000000000",
-      "deployment_unit": "unit-18743",
+      "deployment_unit": "unit-33487",
       "deployment_unit_proxy_count": 1,
       "name": "SFC",
       "role": "unknown",
@@ -253,7 +253,7 @@
           "chain_id": 146,
           "chain_name": "sonic",
           "address": "0xfc00face00000000000000000000000000000000",
-          "deployment_unit": "unit-18743",
+          "deployment_unit": "unit-33487",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,

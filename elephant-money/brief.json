@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "elephant-money",
-  "generated_at": "2026-06-17T07:00:35.481Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T23:47:04.934Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "elephant-money",
@@ -79,8 +79,8 @@
     "unknown_contracts": 0,
     "deployment_units": 1,
     "live_deployment_units": 1,
-    "dependencies_extracted": 159,
-    "unverified_dependencies": 28,
+    "dependencies_extracted": 52,
+    "unverified_dependencies": 5,
     "detected_codebases": [
       "uniswap-v2"
     ]
@@ -173,8 +173,8 @@
       "deployment_unit_proxy_count": null,
       "name": "autoBsw",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "biswap",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1063,8 +1063,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Fear",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "dodo",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1140,7 +1140,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xd5d3711939d88322a7dceeb529ace4bac3bac644",
-      "deployment_unit": "unit-21348",
+      "deployment_unit": "unit-33612",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -1156,7 +1156,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xd5d3711939d88322a7dceeb529ace4bac3bac644",
-          "deployment_unit": "unit-21348",
+          "deployment_unit": "unit-33612",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1214,8 +1214,8 @@
       "deployment_unit_proxy_count": null,
       "name": "MysteryBoxKAKA",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "kaka",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2743,9 +2743,9 @@
   ],
   "origin_summary": {
     "native": 18,
-    "upstream": 24,
+    "upstream": 25,
     "standard_library": 2,
-    "needs_review": 5
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {

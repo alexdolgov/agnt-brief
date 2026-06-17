@@ -165,7 +165,7 @@ Each project directory contains:
 | [pleasing-gold](./pleasing-gold/brief.md) | - | arbitrum, ethereum | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.94M |
 | [yala](./yala/brief.md) | $1.83M | ethereum | 20 | 6/20 (30%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $4.62M |
 | [credit-coop](./credit-coop/brief.md) | $4.59M | base, ethereum | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | $4.59M |
-| [atlendis](./atlendis/brief.md) | $10.99M | polygon | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $4.28M |
+| [atlendis](./atlendis/brief.md) | $10.99M | polygon | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $4.28M |
 | [primefi](./primefi/brief.md) | $243.01K | base, hyperliquid | 84 | 50/84 (60%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $4.12M |
 | [meta-pool](./meta-pool/brief.md) | $69.74M | aurora, ethereum | 12 | 2/12 (17%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $3.96M |
 | [stafi](./stafi/brief.md) | $3.16M | ethereum | 15 | 10/15 (67%) | 20.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $3.92M |
@@ -215,7 +215,7 @@ Each project directory contains:
 | [predict-fun](./predict-fun/brief.md) | $16.83M | blast, bsc | 39 | 24/39 (62%) | 8.3% | 8.3% (Cyfrin) | 2 | fresh | ✅ active | $1.45M |
 | [shardingdao](./shardingdao/brief.md) | $6.28M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.38M |
 | [planet](./planet/brief.md) | $1.68M | bsc | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $1.35M |
-| [rezerve](./rezerve/brief.md) | $2.45M | ethereum, sonic | 94 | 73/94 (78%) | 1.4% | 0.0% (-) | 1 | aging | ✅ active | $1.34M |
+| [rezerve](./rezerve/brief.md) | $2.45M | 4 | 95 | 74/95 (78%) | 1.4% | 0.0% (-) | 1 | aging | ✅ active | $1.34M |
 | [reflexer](./reflexer/brief.md) | $1.83M | ethereum | 5 | 5/5 (100%) | 40.0% | 20.0% (OpenZeppelin) | 2 | stale | ⚠️ declining | $1.28M |
 | [alphagrowth](./alphagrowth/brief.md) | $7.38M | base, ethereum | 29 | 23/29 (79%) | 17.4% | 13.0% (ChainSecurity, Cyfrin, Spearbit) | 7 | fresh | ✅ active | $1.24M |
 | [suzaku](./suzaku/brief.md) | $1.08M | avalanche | 49 | 21/49 (43%) | 9.5% | 9.5% (ChainSecurity) | 1 | stale | ✅ active | $1.18M |
@@ -315,6 +315,7 @@ Each project directory contains:
 | [hemi-staking](./hemi-staking/brief.md) | $29.14M | 4 | 65 | 28/65 (43%) | 3.6% | 0.0% (-) | 1 | fresh | ✅ active | $391.21 |
 | [rank-trading](./rank-trading/brief.md) | $1.95M | bsc | 8 | 5/8 (63%) | 40.0% | 0.0% (-) | 1 | aging | ✅ active | $343.39 |
 | [goose](./goose/brief.md) | $12.78M | arbitrum, ethereum, opbnb | 6 | 5/6 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $333.28 |
+| [harmonix-finance](./harmonix-finance/brief.md) | $4.26M | arbitrum, ethereum, hyperliquid | 24 | 9/24 (38%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $302.21 |
 | [multichain](./multichain/brief.md) | $38.28M | ethereum | 7 | 7/7 (100%) | 71.4% | 0.0% (-) | 3 | stale | 💀 dead | $128.81 |
 | [hegic](./hegic/brief.md) | $8.51M | arbitrum, ethereum | 18 | 18/18 (100%) | 33.3% | 0.0% (-) | 2 | stale | ✅ active | $79.12 |
 | [superform](./superform/brief.md) | $25.92M | 5 | 136 | 107/136 (79%) | 21.5% | 0.0% (-) | 2 | fresh | ✅ active | $72.40 |
@@ -725,7 +726,6 @@ Each project directory contains:
 | [halofi](./halofi/brief.md) | $22.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hanji-protocol](./hanji-protocol/brief.md) | $727.85K | base | 374 | 5/374 (1%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | - |
 | [harbor](./harbor/brief.md) | $94.13K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [harmonix-finance](./harmonix-finance/brief.md) | $4.26M | arbitrum, ethereum, hyperliquid | 18 | 3/18 (17%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [harvest-finance](./harvest-finance/brief.md) | $12.16M | 5 | 23 | 18/23 (78%) | 55.6% | 0.0% (-) | 5 | aging | ⚠️ declining | - |
 | [harvest-flow](./harvest-flow/brief.md) | $523.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [hashdao-finance](./hashdao-finance/brief.md) | $1.30M | arbitrum, optimism | 6 | 6/6 (100%) | 50.0% | 0.0% (-) | 3 | stale | 💀 dead | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T23:26:22.210Z_
+_Generated: 2026-06-17T23:47:22.783Z_
 _Projects: 1409_

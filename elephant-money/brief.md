@@ -7,8 +7,8 @@
 - Project: Elephant Money (`elephant-money`)
 - Website: [https://elephant.money](https://elephant.money)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:35.481Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T23:47:04.934Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: bsc
 - Contract surface: 49 unique implementations (115 raw deployments)
 - DeFi Llama TVL: $74,830,740.18
@@ -29,7 +29,7 @@ Vaults and yield strategies interact with treasuries and engines to manage funds
 - Excluded by liveness: 552 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 1/1 live.
 - Detected codebases: uniswap-v2
-- Unverified dependencies: 28/159.
+- Unverified dependencies: 5/52.
 
 ## Audit Coverage Summary
 
@@ -93,7 +93,7 @@ Vaults and yield strategies interact with treasuries and engines to manage funds
 | ERC20V3Factory | registry | bsc | n/a | [`0x5ed22a...e7dc92`](./contracts/bsc-56/0x5ed22a48fee263207f5caae1a1f1a27011e7dc92/) | ⚠️ Unaudited |
 | Fear | unknown | bsc | n/a | [`0x3e6293...48b5e1`](./contracts/bsc-56/0x3e629332c51046a17ec236553cb931cf0548b5e1/) | ⚠️ Unaudited |
 | FuturesEngine | unknown | bsc | n/a | 2 deployments: bsc [`0x6c81fd...e1a1ee`](./contracts/bsc-56/0x6c81fd141d97edbeda047a7694b63637e0e1a1ee/); bsc `0x9ecde1...2cd68e` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | unit-21348 | [`0xd5d371...bac644`](./contracts/bsc-56/0xd5d3711939d88322a7dceeb529ace4bac3bac644/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | unit-33612 | [`0xd5d371...bac644`](./contracts/bsc-56/0xd5d3711939d88322a7dceeb529ace4bac3bac644/) | ⚠️ Unaudited |
 | MasterChef | unknown | bsc | n/a | [`0xdbc1a1...061739`](./contracts/bsc-56/0xdbc1a13490deef9c3c12b44fe77b503c1b061739/) | ⚠️ Unaudited |
 | MysteryBoxKAKA | unknown | bsc | n/a | [`0xdf7e00...20c8d4`](./contracts/bsc-56/0xdf7e00cd0bb91d1502a1a14575e58b5d8f20c8d4/) | ⚠️ Unaudited |
 | MysteryBoxV1 | unknown | bsc | n/a | [`0xc25286...af97b8`](./contracts/bsc-56/0xc25286ef3bae3f6fe2d6d0a6e2acad0301af97b8/) | ⚠️ Unaudited |
@@ -165,9 +165,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 18 |
-| upstream | 24 |
+| upstream | 25 |
 | standard_library | 2 |
-| needs_review | 5 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

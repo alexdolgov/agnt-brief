@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harmonix-finance",
-  "generated_at": "2026-06-17T07:00:42.855Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T23:36:13.371Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "harmonix-finance",
@@ -22,24 +22,26 @@
     "drop_from_peak_pct": 73.53545407495113
   },
   "summary": {
-    "total_contracts": 18,
-    "total_addresses": 18,
-    "unique_implementations": 18,
-    "total_deployments": 18,
+    "total_contracts": 24,
+    "total_addresses": 24,
+    "unique_implementations": 24,
+    "total_deployments": 24,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 15,
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
     "dl_tvl_usd": 4258435.81841,
-    "tvl_usd": 4258435.81841,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 302.213252,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "hyperliquid": 302.21
+    },
+    "asd_usd": 302.213252,
     "website_url": "https://app.harmonix.fi",
     "chains": [
       "arbitrum",
@@ -61,20 +63,20 @@
     "project_purpose": "Harmonix Finance is a yield optimization protocol focused on vault-based strategies, including restaking and delta-neutral or hedged yield products. The observed contract surface includes vaults, factories, HAR/staking contracts, and proxy infrastructure.",
     "relationship_narrative": "All product families share the same upgradeable proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) and are deployed by a common set of deployer clusters. The PoolFactory registries manage vault instances, while HAR token and staking contracts provide incentives across the protocol.",
     "product_family_count": 1,
-    "total_contracts_indexed": 186,
-    "live_contracts": 18,
+    "total_contracts_indexed": 192,
+    "live_contracts": 24,
     "inactive_contracts": 86,
     "singleton_contracts": 82,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 49,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 1,
-    "unverified_dependencies": 1,
+    "deployment_units": 55,
+    "live_deployment_units": 7,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 18,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -83,6 +85,146 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x31aaa50a6096547b300a5f5af6ecc00d2f3d77e1",
+      "deployment_unit": "unit-33507",
+      "deployment_unit_proxy_count": 1,
+      "name": "AssetVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 302.213252,
+      "is_proxy": true,
+      "impl_address": "0x77a1b997cf8c8867e4174460b421e535158e81f5",
+      "impl_name": "AssetVault",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x31aaa50a6096547b300a5f5af6ecc00d2f3d77e1",
+          "deployment_unit": "unit-33507",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 302.213252,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x28257cd6b21519a281a90637462bf7956c7d3808",
+      "deployment_unit": "unit-33506",
+      "deployment_unit_proxy_count": 1,
+      "name": "AccessManager",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x408e485a20442ff2a6f96a0733b4d36e869bf97c",
+      "impl_name": "AccessManager",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x28257cd6b21519a281a90637462bf7956c7d3808",
+          "deployment_unit": "unit-33506",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1368ee9d1212ae5b26ff166049220051a9eebc42",
+      "deployment_unit": "unit-33505",
+      "deployment_unit_proxy_count": 1,
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe4ba90d2a4136f9270036b6f76b5d27fef9268ea",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1368ee9d1212ae5b26ff166049220051a9eebc42",
+          "deployment_unit": "unit-33505",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xfde5b0626fc80e36885e2fa9cd5ad9d7768d725c",
+      "deployment_unit": "unit-33514",
+      "deployment_unit_proxy_count": 1,
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1108fe54384c5c4ade2d25e420303e08c047be55",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xfde5b0626fc80e36885e2fa9cd5ad9d7768d725c",
+          "deployment_unit": "unit-33514",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
@@ -157,7 +299,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xc71ba0e3c1fb9cbcb15fbc677e78c99ac1bc590b",
-      "deployment_unit": "unit-26263",
+      "deployment_unit": "unit-33550",
       "deployment_unit_proxy_count": 1,
       "name": "TransparentUpgradeableProxy",
       "role": "proxy",
@@ -173,7 +315,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xc71ba0e3c1fb9cbcb15fbc677e78c99ac1bc590b",
-          "deployment_unit": "unit-26263",
+          "deployment_unit": "unit-33550",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -189,6 +331,41 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xf12f8753c25f8005311a24bbba1f7209249b00e3",
+      "deployment_unit": "unit-33554",
+      "deployment_unit_proxy_count": 1,
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8899910a8c47e177c574454e8249f5e9dcfdf773",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf12f8753c25f8005311a24bbba1f7209249b00e3",
+          "deployment_unit": "unit-33554",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1bcf1fb3ab9e9e0c4a94842be3cc2a4ebeffbc44",
@@ -196,7 +373,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -231,7 +408,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -266,7 +443,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -301,7 +478,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -712,12 +889,47 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xd1c8dc811d6254e6565b2a6024d57cc08123ebcb",
+      "deployment_unit": "unit-33512",
+      "deployment_unit_proxy_count": 1,
+      "name": "VaultManager",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x48dc377fc48823f4e1eeb47039944900cd525a60",
+      "impl_name": "VaultManager",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xd1c8dc811d6254e6565b2a6024d57cc08123ebcb",
+          "deployment_unit": "unit-33512",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
     {
-      "audit_id": 2547,
-      "audit_key": "audit-2547",
+      "audit_id": 14729,
+      "audit_key": "audit-14729",
       "report_name": "Harmonix Finance - Zenith Audit Report.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Harmonix%20Finance%20-%20Zenith%20Audit%20Report.pdf",
       "auditor": "Zenith",
@@ -737,8 +949,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2548,
-      "audit_key": "audit-2548",
+      "audit_id": 14730,
+      "audit_key": "audit-14730",
       "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "auditor": "Hyperliquid",
@@ -758,8 +970,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2549,
-      "audit_key": "audit-2549",
+      "audit_id": 14731,
+      "audit_key": "audit-14731",
       "report_name": "Verichains Public Report - HarmonixFinance.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf",
       "auditor": "Verichains",
@@ -779,8 +991,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2550,
-      "audit_key": "audit-2550",
+      "audit_id": 14732,
+      "audit_key": "audit-14732",
       "report_name": "Verichains Public Report - Kelp Delta.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20Kelp%20Delta.pdf",
       "auditor": "Verichains",
@@ -814,10 +1026,10 @@
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 5,
     "upstream": 0,
-    "standard_library": 2,
-    "needs_review": 15
+    "standard_library": 8,
+    "needs_review": 11
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -828,19 +1040,19 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2547,
+        "audit_id": 14729,
         "report_name": "Harmonix Finance - Zenith Audit Report.pdf"
       },
       {
-        "audit_id": 2548,
+        "audit_id": 14730,
         "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf"
       },
       {
-        "audit_id": 2549,
+        "audit_id": 14731,
         "report_name": "Verichains Public Report - HarmonixFinance.pdf"
       },
       {
-        "audit_id": 2550,
+        "audit_id": 14732,
         "report_name": "Verichains Public Report - Kelp Delta.pdf"
       }
     ],

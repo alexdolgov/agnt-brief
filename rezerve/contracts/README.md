@@ -86,7 +86,7 @@
 |---|---|---|---|---|
 | [lstRZRSpotAggregator](./sonic-146/0x424229c11707dbebb48d855d0fbaa8432f3f12c0/) | sonic | [`0x424229...3f12c0`](./sonic-146/0x424229c11707dbebb48d855d0fbaa8432f3f12c0/) | ⚠️ Unaudited | Verified |
 | [PermissionedERC20 (10 deployments)](./ethereum-1/0x00eec211868718f67b1d414fb8607afb7e3dea69/) | ethereum | 10 deployments: ethereum [`0x00eec2...3dea69`](./ethereum-1/0x00eec211868718f67b1d414fb8607afb7e3dea69/); ethereum `0x34abce...3c7314`; ethereum `0x3ab51e...6686ce`; ethereum `0x45e5f6...26fb20`; ethereum `0x63e52e...337d10`; ethereum `0x70c52a...67ea14`; ethereum `0x9a7ba7...b2998c`; ethereum `0xa599be...649f16`; ethereum `0xc3a45e...45e1c6`; ethereum `0xda51cc...3df0d0` | ⚠️ Unaudited | Verified |
-| [TokenList (4 deployments)](./sonic-146/0x09639de0f3b1da19ed12d5dfc9b172dc932fe363/) | sonic | 4 deployments: ethereum `0xb68b2b...f67b5c`; sonic [`0x09639d...2fe363`](./sonic-146/0x09639de0f3b1da19ed12d5dfc9b172dc932fe363/); sonic `0x1e3e7b...5ed9c7`; sonic `0xe8cb54...fd9917` | ⚠️ Unaudited | Verified |
+| TokenList (4 deployments) | sonic | 4 deployments: ethereum `0xb68b2b...f67b5c`; sonic `0x09639d...2fe363`; sonic `0x1e3e7b...5ed9c7`; sonic `0xe8cb54...fd9917` | ⚠️ Unaudited | Verified |
 
 ## unknown (43)
 

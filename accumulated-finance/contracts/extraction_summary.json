@@ -3,8 +3,8 @@
   "verified_fetched": 23,
   "fetched_from_sourcify": 12,
   "fetched_from_etherscan": 11,
-  "sourcify_full_match": 4,
-  "sourcify_partial_match": 8,
+  "sourcify_full_match": 3,
+  "sourcify_partial_match": 9,
   "unverified_skipped": 3,
   "fetch_failed": 0,
   "total_source_files": 47,
@@ -15,5 +15,5 @@
     1329,
     42161
   ],
-  "fetched_at": "2026-06-17T07:01:56.377Z"
+  "fetched_at": "2026-06-17T16:20:09.121Z"
 }

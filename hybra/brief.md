@@ -5,8 +5,8 @@
 - Project: Hybra (`hybra`)
 - Website: [https://www.hybra.finance?code=GRYN2U](https://www.hybra.finance?code=GRYN2U)
 - Lifecycle: active (Tier 0, 92.2% below peak)
-- Generated: 2026-06-17T07:00:46.728Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:15:53.324Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: hyperliquid
 - Contract surface: 66 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $1,589,153.00
@@ -23,7 +23,7 @@ The Hybra V4 family relies on shared infrastructure contracts such as GaugeFacto
 
 ## Contract Surface Quality
 
-- Indexed contracts: 92; live-surface contracts included: 72 (72 live, 0 unknown).
+- Indexed contracts: 92; live-surface contracts included: 72 (20 live, 52 unknown).
 - Excluded by liveness: 0 inactive, 20 singleton, 0 uninitialized.
 - Deployment units: 1/11 live.
 - Detected codebases: none
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x5faebfc659fe95a49f536d8e8ba6ab9dbede7d9a) | proxy | hyperliquid | unit-28188 | `0x110e1c...a41525` | ❓ Unverified |
+| Proxy (impl: 0x5faebfc659fe95a49f536d8e8ba6ab9dbede7d9a) | proxy | hyperliquid | unit-32806 | `0x110e1c...a41525` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x020351...31228b` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x067440...802aff` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x088d2c...d3b76d` | ❓ Unverified |

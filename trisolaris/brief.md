@@ -1,21 +1,23 @@
 # Agentic Audit Brief: Trisolaris
 
+⚠️ Lifecycle status: DEAD - TVL changed 19.4% over 90 days
+
 ## Project Overview
 
 - Project: Trisolaris (`trisolaris`)
 - Website: [https://www.trisolaris.io/#/swap](https://www.trisolaris.io/#/swap)
-- Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.702Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-06-17T16:20:52.955Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Chains: aurora
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,229,126.37
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
@@ -24,26 +26,27 @@ Trisolaris is a decentralized exchange in the Aurora/NEAR ecosystem that provide
 
 ## Contract Surface Quality
 
-- Indexed contracts: 158; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 158 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 173; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 171 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: uniswap-v2
-- Unverified dependencies: 6/14.
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 2
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -71,11 +74,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | aurora | n/a | `0x35529b...f6ea4a` | ❓ Unverified |
+| UnnamedContract | unknown | aurora | n/a | `0x3e8795...463763` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

@@ -13,7 +13,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccumulateBridge](./ethereum-1/0xba050938970c8eaeda3e970b571a6fe463db7d0e/) | ethereum | [`0xba0509...db7d0e`](./ethereum-1/0xba050938970c8eaeda3e970b571a6fe463db7d0e/) | ⚠️ Unaudited | Verified |
+| AccumulateBridge | ethereum | `0xba0509...db7d0e` | ⚠️ Unaudited | Verified |
 | [eSEIMinterWithdrawal (2 deployments)](./sei-1329/0x6626bc5f5ce20790ba25594b785a71252e861ced/) | sei | 2 deployments: sei [`0x6626bc...861ced`](./sei-1329/0x6626bc5f5ce20790ba25594b785a71252e861ced/); sei `0xf85434...b116dd` | ⚠️ Unaudited | Verified |
 | [stMANTAMinterWithdrawal (2 deployments)](./manta-169/0x27741d007358eb6c1924bf459cd7e06e60c8c1de/) | manta | 2 deployments: manta [`0x27741d...c8c1de`](./manta-169/0x27741d007358eb6c1924bf459cd7e06e60c8c1de/); manta `0xe2cf4e...4b01a5` | ⚠️ Unaudited | Verified |
 

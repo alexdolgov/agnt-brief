@@ -473,7 +473,7 @@
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 18 | 2026-06-17 |
 | [goat-protocol](./goat-protocol/) | $26.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [gogocoin](./gogocoin/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-17 |
+| [goldfinger](./goldfinger/) | $0.0 | 100.0% | ? | active | 9 | 6 | 2026-06-17 |
 | [goldsand-by-inshallah](./goldsand-by-inshallah/) | $231.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goldstation](./goldstation/) | $1.8M | 0.0% | ? | active | 3 | 5 | 2026-06-17 |
 | [goledo](./goledo/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1185,7 +1185,7 @@
 | [sushi](./sushi/) | $96.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [suzaku](./suzaku/) | $1.2M | 9.5% | $1.2M | active | 2 | 49 | 2026-06-17 |
 | [swaap](./swaap/) | $3.8M | 33.3% | $3.8M | declining | 7 | 74 | 2026-06-17 |
-| [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-17 |
+| [swamp-finance](./swamp-finance/) | $1.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
 | [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [swappi](./swappi/) | $1.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |
 | [swapscanner](./swapscanner/) | $3.1M | 0.0% | ? | active | 1 | 2 | 2026-06-17 |
@@ -1263,7 +1263,7 @@
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $583.1M | 0.0% | $583.1M | transitioning | 0 | 29 | 2026-06-17 |
 | [trick-or-treat-farm](./trick-or-treat-farm/) | $1.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [trisolaris](./trisolaris/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
+| [trisolaris](./trisolaris/) | $1.2M | 0.0% | ? | dead | 0 | 2 | 2026-06-17 |
 | [tristero](./tristero/) | $353.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tropykus-finance](./tropykus-finance/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [troves](./troves/) | $4.1M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |

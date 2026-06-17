@@ -329,7 +329,6 @@ Each project directory contains:
 | [mux-protocol](./mux-protocol/brief.md) | $8.32M | 5 | 921 | 102/921 (11%) | 21.6% | 0.0% (-) | 2 | aging | ✅ active | $0.21 |
 | [deri](./deri/brief.md) | $6.07M | 11 | 191 | 27/191 (14%) | 14.3% | 0.0% (-) | 2 | aging | ✅ active | $0.12 |
 | [deltaprime](./deltaprime/brief.md) | $3.66M | arbitrum, avalanche | 142 | 104/142 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.09 |
-| [swamp-finance](./swamp-finance/brief.md) | $1.07M | bsc | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $0.09 |
 | [kinza-finance](./kinza-finance/brief.md) | $6.76M | 4 | 10 | 7/10 (70%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $0.01 |
 | [sofa.org](./sofa.org/brief.md) | $2.07M | ethereum | 12 | 12/12 (100%) | 58.3% | 50.0% (Code4rena) | 6 | aging | ⚠️ declining | $0.00 |
 | [syncswap-protocol](./syncswap-protocol/brief.md) | $8.24M | linea, scroll, zksync-era | 40 | 15/40 (38%) | 33.3% | 0.0% (-) | 3 | stale | ✅ active | $0.00 |
@@ -703,7 +702,7 @@ Each project directory contains:
 | [glori-finance](./glori-finance/brief.md) | $42.08 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [goat-protocol](./goat-protocol/brief.md) | $26.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [gogocoin](./gogocoin/brief.md) | $2.20K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [goldfinger](./goldfinger/brief.md) | $0.00 | bsc | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [goldfinger](./goldfinger/brief.md) | $0.00 | bsc | 6 | 5/6 (83%) | 100.0% | 0.0% (-) | 6 | fresh | ✅ active | - |
 | [goldsand-by-inshallah](./goldsand-by-inshallah/brief.md) | $231.10K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [goldstation](./goldstation/brief.md) | $1.76M | avalanche, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [goledo](./goledo/brief.md) | $3.50K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1253,6 +1252,7 @@ Each project directory contains:
 | [surf-protocol](./surf-protocol/brief.md) | $6.00K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [surfswap](./surfswap/brief.md) | $117.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [sushi](./sushi/brief.md) | $96.09M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [swamp-finance](./swamp-finance/brief.md) | $1.07M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [swap.io-clmm](./swap.io-clmm/brief.md) | $2.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [swappi](./swappi/brief.md) | $1.61M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [swapscanner](./swapscanner/brief.md) | $3.10M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -1307,7 +1307,7 @@ Each project directory contains:
 | [toxicdeer-finance](./toxicdeer-finance/brief.md) | $23.74K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [tren-finance](./tren-finance/brief.md) | $25.64 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [trick-or-treat-farm](./trick-or-treat-farm/brief.md) | $1.09K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [trisolaris](./trisolaris/brief.md) | $1.23M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [trisolaris](./trisolaris/brief.md) | $1.23M | aurora | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [tristero](./tristero/brief.md) | $353.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tropykus-finance](./tropykus-finance/brief.md) | $12.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [troves](./troves/brief.md) | $4.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T16:11:56.357Z_
+_Generated: 2026-06-17T16:21:29.405Z_
 _Projects: 1409_

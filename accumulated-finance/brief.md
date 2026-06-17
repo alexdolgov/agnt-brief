@@ -5,8 +5,8 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-06-17T07:00:53.588Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T16:21:13.743Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
 - Chains: arbitrum, bsc, ethereum, manta, sei
 - Contract surface: 26 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $1,094,395.00
@@ -23,11 +23,11 @@ The lending and liquid staking families share the same deployer cluster and some
 
 ## Contract Surface Quality
 
-- Indexed contracts: 54; live-surface contracts included: 32 (27 live, 5 unknown).
-- Excluded by liveness: 22 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 53; live-surface contracts included: 32 (22 live, 10 unknown).
+- Excluded by liveness: 21 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
-- Dependencies extracted: 23; unverified dependencies: 0.
+- Dependencies extracted: 12; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -59,9 +59,9 @@ The lending and liquid staking families share the same deployer cluster and some
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | WrappedToken | token | ethereum | n/a | [`0xdf4ef6...c01170`](./contracts/ethereum-1/0xdf4ef6ee483953fe3b84abd08c6a060445c01170/) | ⚠️ Unaudited |
-| AccumulateBridge | operational_periphery | ethereum | n/a | [`0xba0509...db7d0e`](./contracts/ethereum-1/0xba050938970c8eaeda3e970b571a6fe463db7d0e/) | ⚠️ Unaudited |
 | eSEI | unknown | sei | n/a | [`0xcba2ae...49681a`](./contracts/sei-1329/0xcba2aeec821b0b119857a9ab39e09b034249681a/) | ⚠️ Unaudited |
 | eSEIMinterWithdrawal | operational_periphery | sei | n/a | 2 deployments: sei [`0x6626bc...861ced`](./contracts/sei-1329/0x6626bc5f5ce20790ba25594b785a71252e861ced/); sei `0xf85434...b116dd` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-32817 | [`0xd22f2d...93a17e`](./contracts/ethereum-1/0xd22f2de31ba14917ccd7c6b8a52fee6be893a17e/) | ⚠️ Unaudited |
 | Manta | unknown | manta | n/a | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited |
 | stACMEMinter | unknown | ethereum | n/a | 2 deployments: ethereum [`0xdde19c...e9714f`](./contracts/ethereum-1/0xdde19cf8bec23c2103f5ada61c83d5fd79e9714f/); arbitrum `0xe54fb8...84ff5d` | ⚠️ Unaudited |
 | StakedACME | token | ethereum | n/a | 2 deployments: ethereum [`0x7ac168...b3c547`](./contracts/ethereum-1/0x7ac168c81f4f3820fa3f22603ce5864d6ab3c547/); arbitrum [`0x7ac168...b3c547`](./contracts/arbitrum-42161/0x7ac168c81f4f3820fa3f22603ce5864d6ab3c547/) | ⚠️ Unaudited |
@@ -110,7 +110,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [HatsFinance-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md) | HatsFinance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Nethermind-AuditAgent-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | stale | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -118,8 +118,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xdf4ef6...c01170`](./contracts/ethereum-1/0xdf4ef6ee483953fe3b84abd08c6a060445c01170/) | WrappedToken | token | $12,187.76 | Verified native implementation with $12,187.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xba0509...db7d0e`](./contracts/ethereum-1/0xba050938970c8eaeda3e970b571a6fe463db7d0e/) | AccumulateBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0xcba2ae...49681a`](./contracts/sei-1329/0xcba2aeec821b0b119857a9ab39e09b034249681a/) | eSEI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0x6626bc...861ced`](./contracts/sei-1329/0x6626bc5f5ce20790ba25594b785a71252e861ced/) | eSEIMinterWithdrawal | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdde19c...e9714f`](./contracts/ethereum-1/0xdde19cf8bec23c2103f5ada61c83d5fd79e9714f/) | stACMEMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -143,10 +141,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 21 |
+| native | 19 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 5 |
+| standard_library | 3 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -155,12 +153,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Match method counts: extraction_exact=1
 
 Zero-match audit list:
 
-- [3666] HatsFinance-Audit.md
-- [3667] Nethermind-AuditAgent-Audit.md
-- [3668] audit-metatrust-2024-06-29.pdf
+- [14545] HatsFinance-Audit.md
+- [14546] Nethermind-AuditAgent-Audit.md
+- [14547] audit-metatrust-2024-06-29.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

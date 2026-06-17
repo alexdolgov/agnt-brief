@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mvl-staking",
-  "generated_at": "2026-06-17T07:00:40.214Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T23:01:37.401Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "mvl-staking",
@@ -16,23 +16,23 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 983,
+    "days_since_peak": 989,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 1,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
-    "coverage_pct": 100,
+    "coverage_pct": 50,
     "total_audits": 3,
     "scoreable_audits": 1,
     "dl_tvl_usd": 863711.07554,
@@ -61,9 +61,9 @@
     "project_purpose": "MVL Staking/MVL Fi is the staking component of the MVL mobility ecosystem, spanning Ethereum and BNB/BSC deployments. It includes MVL single staking and LP/pool2 staking, with rewards tied to MVL ecosystem businesses and token incentives. The currently listed Ethereum MVLToken is token infrastructure, while the listed UniswapV2Pair should be treated as an external LP/pool2 asset or dependency rather than MVL-owned staking logic; the full staking, LP staking, BNB/BSC and bridge-related contract surface requires separate identification.",
     "relationship_narrative": "The MVL Staking family consists of a single product family where the MVLToken is the core asset staked, and the UniswapV2Pair provides liquidity. The unnamed supporting contracts likely handle staking logic, reward distribution, and access control, all sharing the MVL token as the central asset.",
     "product_family_count": 1,
-    "total_contracts_indexed": 49,
-    "live_contracts": 4,
-    "inactive_contracts": 43,
+    "total_contracts_indexed": 46,
+    "live_contracts": 5,
+    "inactive_contracts": 39,
     "singleton_contracts": 2,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
@@ -71,10 +71,12 @@
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": []
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -118,6 +120,41 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -299,6 +336,14 @@
         {
           "audit_id": 11972,
           "report_url": "https://dataseoul.s3.ap-northeast-2.amazonaws.com/upload/S20210416bccc442510498/59e51efffe348.pdf"
+        },
+        {
+          "audit_id": 14706,
+          "report_url": "https://dataseoul.s3.ap-northeast-2.amazonaws.com/upload/S20210416bccc442510498/59e51efffe348.pdf"
+        },
+        {
+          "audit_id": 14707,
+          "report_url": "https://dataseoul.s3.ap-northeast-2.amazonaws.com/upload/S20210416bccc442510498/59e51efffe348.pdf"
         }
       ]
     }
@@ -308,14 +353,14 @@
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 100,
+      "coverage_pct": 50,
       "latest_audit": "2022-02"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 4,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

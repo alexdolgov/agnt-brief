@@ -15,7 +15,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Gauge](./ethereum-1/0xfaa267c3bb25a82cfdb604136a29895d30fd3fd8/) | ethereum | [`0xfaa267...fd3fd8`](./ethereum-1/0xfaa267c3bb25a82cfdb604136a29895d30fd3fd8/) | ✅ Audited | Verified |
+| Gauge | ethereum | `0xfaa267...fd3fd8` | ✅ Audited | Verified |
 
 ## token (3)
 
@@ -34,10 +34,10 @@
 | [Keep3rV1](./ethereum-1/0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44/) | ethereum | [`0x1ceb5c...185a44`](./ethereum-1/0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44/) | ⚠️ Unaudited | Verified |
 | [LiquidityIncome](./ethereum-1/0x28832484e8124634a248f2bc520f26e8345a56cd/) | ethereum | [`0x288324...5a56cd`](./ethereum-1/0x28832484e8124634a248f2bc520f26e8345a56cd/) | ⚠️ Unaudited | Verified |
 | [MasterChef](./ethereum-1/0xbd17b1ce622d73bd438b9e658aca5996dc394b0d/) | ethereum | [`0xbd17b1...394b0d`](./ethereum-1/0xbd17b1ce622d73bd438b9e658aca5996dc394b0d/) | ✅ Audited | Verified |
-| [PickleJar (4 deployments)](./ethereum-1/0x2385d31f1eb3736be0c3629e6f03c4b3cd997ffd/) | ethereum | 4 deployments: ethereum [`0x2385d3...997ffd`](./ethereum-1/0x2385d31f1eb3736be0c3629e6f03c4b3cd997ffd/); ethereum `0x3a41ab...0e94d8`; ethereum `0x46206e...79258b`; ethereum `0xf79ae8...95d55b` | ⚠️ Unaudited | Verified |
+| PickleJar (4 deployments) | ethereum | 4 deployments: ethereum `0x2385d3...997ffd`; ethereum `0x3a41ab...0e94d8`; ethereum `0x46206e...79258b`; ethereum `0xf79ae8...95d55b` | ⚠️ Unaudited | Verified |
 | [StableYieldCredit (3 deployments)](./ethereum-1/0x11980d4bb4465cb4fc77a57b98a16787b3d834e7/) | ethereum | 3 deployments: ethereum [`0x11980d...d834e7`](./ethereum-1/0x11980d4bb4465cb4fc77a57b98a16787b3d834e7/); ethereum `0x948a9b...4a492e`; ethereum `0xe0839f...660261` | ⚠️ Unaudited | Verified |
 | [UniswapV2Pair](./ethereum-1/0xdc98556ce24f007a5ef6dc1ce96322d65832a819/) | ethereum | [`0xdc9855...32a819`](./ethereum-1/0xdc98556ce24f007a5ef6dc1ce96322d65832a819/) | ⚠️ Unaudited | Verified |
-| [Vyper_contract (2 deployments)](./ethereum-1/0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf/) | ethereum | 2 deployments: ethereum [`0xbbcf16...8b29cf`](./ethereum-1/0xbbcf169ee191a1ba7371f30a1c344bfc498b29cf/); ethereum `0xed4064...ff5c4d` | ⚠️ Unaudited | Verified |
+| Vyper_contract (2 deployments) | ethereum | 2 deployments: ethereum `0xbbcf16...8b29cf`; ethereum `0xed4064...ff5c4d` | ⚠️ Unaudited | Verified |
 | [yDAI (2 deployments)](./ethereum-1/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01/) | ethereum | 2 deployments: ethereum [`0x16de59...f0bd01`](./ethereum-1/0x16de59092dae5ccf4a1e6439d611fd0653f0bd01/); ethereum `0xc2cb10...24ce32` | ⚠️ Unaudited | Verified |
 | [YFI](./ethereum-1/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/) | ethereum | [`0x0bc529...6ad93e`](./ethereum-1/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/) | ⚠️ Unaudited | Verified |
 | [yInsure](./ethereum-1/0x181aea6936b407514ebfc0754a37704eb8d98f91/) | ethereum | [`0x181aea...d98f91`](./ethereum-1/0x181aea6936b407514ebfc0754a37704eb8d98f91/) | ⚠️ Unaudited | Verified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "universe-xyz",
-  "generated_at": "2026-06-17T07:00:42.623Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T23:02:37.857Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "universe-xyz",
@@ -61,15 +61,15 @@
     "project_purpose": "Universe XYZ is an Ethereum NFT/community platform underpinned by the $XYZ token. Staking or yield components should only be described when specifically tied to verified Universe XYZ-owned contracts.",
     "relationship_narrative": "The IlluviumERC20 token is used within the Staking contract for reward distribution, while the UniswapV2Pair provides liquidity for the token. Supporting contracts like BarnBridgeToken and Comp may serve as external reward tokens or governance interfaces.",
     "product_family_count": 1,
-    "total_contracts_indexed": 216,
+    "total_contracts_indexed": 210,
     "live_contracts": 7,
-    "inactive_contracts": 202,
-    "singleton_contracts": 7,
+    "inactive_contracts": 198,
+    "singleton_contracts": 5,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 5,
     "live_deployment_units": 1,
-    "dependencies_extracted": 14,
+    "dependencies_extracted": 3,
     "unverified_dependencies": 0,
     "detected_codebases": [
       "uniswap-v2"
@@ -184,7 +184,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3019"
+        "audit-14704"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -231,7 +231,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xe98477bdc16126bb0877c6e3882e3edd72571cc2",
-      "deployment_unit": "unit-26081",
+      "deployment_unit": "unit-33478",
       "deployment_unit_proxy_count": 1,
       "name": "SushiLPPool",
       "role": "core_logic",
@@ -247,7 +247,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe98477bdc16126bb0877c6e3882e3edd72571cc2",
-          "deployment_unit": "unit-26081",
+          "deployment_unit": "unit-33478",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -335,11 +335,11 @@
   ],
   "audits": [
     {
-      "audit_id": 3017,
-      "audit_key": "audit-3017",
+      "audit_id": 14702,
+      "audit_key": "audit-14702",
       "report_name": "HAECHI-DAO.pdf",
       "report_url": "https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/HAECHI-DAO.pdf",
-      "auditor": "Haechi Labs",
+      "auditor": "Haechi",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2021-01",
@@ -356,8 +356,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3018,
-      "audit_key": "audit-3018",
+      "audit_id": 14703,
+      "audit_key": "audit-14703",
       "report_name": "PerfectAbstractions-Marketplace-Audit.pdf",
       "report_url": "https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/PerfectAbstractions-Marketplace-Audit.pdf",
       "auditor": "Perfect Abstractions",
@@ -377,8 +377,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3019,
-      "audit_key": "audit-3019",
+      "audit_id": 14704,
+      "audit_key": "audit-14704",
       "report_name": "Quantstamp-DAO.pdf",
       "report_url": "https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/Quantstamp-DAO.pdf",
       "auditor": "Quantstamp",
@@ -484,11 +484,11 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3017,
+        "audit_id": 14702,
         "report_name": "HAECHI-DAO.pdf"
       },
       {
-        "audit_id": 3018,
+        "audit_id": 14703,
         "report_name": "PerfectAbstractions-Marketplace-Audit.pdf"
       }
     ],

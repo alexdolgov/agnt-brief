@@ -7,10 +7,10 @@
 - Project: ELFi Protocol (`elfi-protocol`)
 - Website: [https://www.elfi.xyz](https://www.elfi.xyz)
 - Lifecycle: declining (Tier 0, 81.8% below peak)
-- Generated: 2026-06-17T07:00:35.565Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T23:26:03.275Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: arbitrum, base
-- Contract surface: 360 unique implementations (360 raw deployments)
+- Contract surface: 430 unique implementations (430 raw deployments)
 - DeFi Llama TVL: $2,897,797.99
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,8 +25,8 @@ The Diamond proxy serves as the central access point for user accounts, routing 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2470; live-surface contracts included: 360 (359 live, 1 unknown).
-- Excluded by liveness: 2108 inactive, 2 singleton, 0 uninitialized.
+- Indexed contracts: 2473; live-surface contracts included: 430 (334 live, 96 unknown).
+- Excluded by liveness: 2041 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 2/3 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
@@ -36,9 +36,9 @@ The Diamond proxy serves as the central access point for user accounts, routing 
 - Verified implementations audited: 0/2 (0.0%)
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 358
-- Unique implementations: 360
-- Raw deployments: 360
+- Unverified implementations: 428
+- Unique implementations: 430
+- Raw deployments: 430
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -61,8 +61,8 @@ The Diamond proxy serves as the central access point for user accounts, routing 
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FiatTokenV2_2 | token | arbitrum | unit-21351 | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | unit-21350 | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | arbitrum | unit-33483 | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | unit-33482 | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,7 +76,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (358)
+### ❓ Unverified (428)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -164,7 +164,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | n/a | `0x643584...f6d785` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x648608...63449f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x65d125...c80774` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6623e4...f3234b` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x66357e...b223dc` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x694c9c...b51117` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x695948...2b65db` | ❓ Unverified |
@@ -256,29 +255,101 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | n/a | `0xdb690d...00adac` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xdb9cae...b7c62a` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xdcad01...27aadb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe0145a...284461` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe14056...c72564` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe1543b...f330bb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe15a4d...d3f0e8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe17318...982491` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe1a18a...1ae796` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe20814...f77ace` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xe25ebd...81e213` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xe29c5c...b1efb4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe303fe...6e2af6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe3afd8...5f33e4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe3b94a...b48c90` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe3bf08...ab849b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe438f4...35d2e4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe5fd14...7489c3` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xe61e06...6b4ed8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe654f3...3ee086` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe68671...a1a0d5` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xe69a0d...cc5094` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe7495b...b3af2d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe80649...89629f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe8c119...c9853d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe8d8c5...6cec7c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe8f549...f83a6b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe9013b...f16a04` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xea103a...06b994` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xea410d...c8777d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xeb2137...0aa1f4` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xeb96a0...16c622` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xec2b4d...c41572` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xecc817...463c68` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xecf181...30787f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xed2d5e...3f513a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xed7a3e...240046` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xedd2d2...9152ae` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xeebf3a...dfde3c` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xef3ae3...62378e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xefa935...3d2639` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xefc93a...7e6ca3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf0522c...6d8851` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf0a38f...bf1e38` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf0a818...f29933` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf0cac0...0233fa` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf14012...185236` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf17838...ff1779` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf18ea7...10b995` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf1c9ea...c7bf74` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf22f5e...8ac465` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf24e09...d23624` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf29779...97d446` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf2d038...3d1eb7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf346ab...94b191` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf51968...733749` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf5c281...db16a1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf5cc3b...0641a8` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf5f2d1...8ea737` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf65e94...13ad2c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf6ab84...2d57c9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf6d5f5...447d45` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf74817...11a1c8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf76d34...bdf99e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf78272...90aea0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf7e76a...9093ef` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf8040b...1e99b6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf813fd...e8957f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf8400e...4fc6ed` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf8d16c...ed977f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf8d8df...5cc58d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf92f16...d6f40c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf95ce6...b8871c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf9794f...20bfba` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf9bf01...abdc85` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf9e174...f4fc32` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf9eb54...9aa212` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfaf405...58fce9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfb1330...7d4496` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfb2bd4...8cda2d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfb77df...d5d001` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfbafd9...a796e2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfbc6a6...b0fd8c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfbf24c...3c3693` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfcb5fc...31d4bb` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfcc1f9...ab011d` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfcf84a...73c091` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfd078b...b4453e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfd4fa2...e2b205` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfd8a9d...c8495a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfdb581...b436e8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfdba03...b71e82` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfdd0e5...70f3c3` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfddaf5...37b61e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfdef26...9c4726` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfe4b4a...29a343` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xff5fc9...a3c937` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xffcfa9...13f3c9` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x0272b7...ce064a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x0478bb...c24bec` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x055629...05762a` | ❓ Unverified |
@@ -393,7 +464,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0xa96cec...2a31de` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xa9fa9d...73a7ce` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xab8a99...374c81` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xab9352...8a8ca4` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xae4b4b...45ef1c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb1343e...418620` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb176e9...908822` | ❓ Unverified |
@@ -457,10 +527,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 24 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 336 |
+| needs_review | 422 |
 
 ## Scope Matching Notes
 

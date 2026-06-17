@@ -375,7 +375,7 @@
 | [elara](./elara/) | $12.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [electra](./electra/) | $81.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [elephant-money](./elephant-money/) | $1.6M | 8.5% | $1.6M | declining | 2 | 49 | 2026-06-17 |
-| [elfi-protocol](./elfi-protocol/) | $2.9M | 0.0% | ? | declining | 1 | 360 | 2026-06-17 |
+| [elfi-protocol](./elfi-protocol/) | $2.9M | 0.0% | ? | declining | 1 | 430 | 2026-06-17 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 40.0% | $9.0K | dead | 3 | 10 | 2026-06-17 |
 | [elyfi](./elyfi/) | $535.3K | 11.1% | $100.6K | dead | 2 | 11 | 2026-06-17 |
 | [emiswap](./emiswap/) | $33.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -781,7 +781,7 @@
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
 | [multichain](./multichain/) | $12.3M | 71.4% | $128.8 | dead | 15 | 7 | 2026-06-17 |
 | [mux-protocol](./mux-protocol/) | $0.2 | 21.6% | $0.2 | active | 4 | 921 | 2026-06-17 |
-| [mvl-staking](./mvl-staking/) | $38.1M | 100.0% | ? | unknown | 3 | 4 | 2026-06-17 |
+| [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 3 | 5 | 2026-06-17 |
 | [myso](./myso/) | $28.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [mystic-finance](./mystic-finance/) | $5.0M | 0.0% | ? | unknown | 10 | 0 | 2026-06-17 |
 | [mytrade](./mytrade/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -905,7 +905,7 @@
 | [phoenix-defi-hub](./phoenix-defi-hub/) | $1.6M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [phoenix](./phoenix/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [phuture](./phuture/) | $30.2K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
-| [pickle](./pickle/) | $2.9M | 8.7% | $2.9M | declining | 4 | 23 | 2026-06-17 |
+| [pickle](./pickle/) | $2.9M | 6.5% | $2.9M | declining | 4 | 31 | 2026-06-17 |
 | [piggybank](./piggybank/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pika-protocol](./pika-protocol/) | $402.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [piku](./piku/) | $172.1M | 7.7% | $172.1M | active | 3 | 54 | 2026-06-17 |
@@ -989,7 +989,7 @@
 | [resolv](./resolv/) | $50.5M | 3.1% | $50.5M | rugged | 1 | 80 | 2026-06-12 |
 | [resupply](./resupply/) | $3.2M | 2.6% | $3.2M | active | 8 | 39 | 2026-06-17 |
 | [revault](./revault/) | $2.3K | 40.0% | ? | declining | 1 | 66 | 2026-06-17 |
-| [revert](./revert/) | $2.1M | 12.5% | $2.1M | active | 12 | 75 | 2026-06-17 |
+| [revert](./revert/) | $2.1M | 87.5% | ? | active | 13 | 74 | 2026-06-17 |
 | [revoluzion](./revoluzion/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [reya](./reya/) | $37.9M | 0.0% | $37.9M | declining | 0 | 5 | 2026-06-17 |

@@ -6,8 +6,8 @@
 
 - Project: Universe XYZ (`universe-xyz`)
 - Lifecycle: dead (Tier 0, 99.4% below peak)
-- Generated: 2026-06-17T07:00:42.623Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T23:02:37.857Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: ethereum
 - Contract surface: 7 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $1,189,526.59
@@ -24,11 +24,11 @@ The IlluviumERC20 token is used within the Staking contract for reward distribut
 
 ## Contract Surface Quality
 
-- Indexed contracts: 216; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 202 inactive, 7 singleton, 0 uninitialized.
+- Indexed contracts: 210; live-surface contracts included: 7 (7 live, 0 unknown).
+- Excluded by liveness: 198 inactive, 5 singleton, 0 uninitialized.
 - Deployment units: 1/5 live.
 - Detected codebases: uniswap-v2
-- Dependencies extracted: 14; unverified dependencies: 0.
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -67,7 +67,7 @@ The IlluviumERC20 token is used within the Staking contract for reward distribut
 | XYZToken | token | ethereum | n/a | [`0x618679...fa2883`](./contracts/ethereum-1/0x618679df9efcd19694bb1daa8d00718eacfa2883/) | ⚠️ Unaudited |
 | BarnBridgeToken | operational_periphery | ethereum | n/a | [`0x0391d2...37750f`](./contracts/ethereum-1/0x0391d2021f89dc339f60fff84546ea23e337750f/) | ⚠️ Unaudited |
 | Staking | unknown | ethereum | n/a | [`0x2d6157...ba0c09`](./contracts/ethereum-1/0x2d615795a8bdb804541c69798f13331126ba0c09/) | ⚠️ Unaudited |
-| SushiLPPool | core_logic | ethereum | unit-26081 | [`0xe98477...571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
+| SushiLPPool | core_logic | ethereum | unit-33478 | [`0xe98477...571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | ethereum | n/a | [`0xbbbdb1...14d69a`](./contracts/ethereum-1/0xbbbdb106a806173d1eea1640961533ff3114d69a/) | ⚠️ Unaudited |
 | Vesting | operational_periphery | ethereum | n/a | [`0xf38cc3...b13abf`](./contracts/ethereum-1/0xf38cc32a49435e5c272362193580177b31b13abf/) | ⚠️ Unaudited |
 
@@ -93,7 +93,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [HAECHI-DAO.pdf](https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/HAECHI-DAO.pdf) | Haechi Labs | Audit | 2021-01 | stale | Direct | contract_name | 0 | n/a |
+| [HAECHI-DAO.pdf](https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/HAECHI-DAO.pdf) | Haechi | Audit | 2021-01 | stale | Direct | contract_name | 0 | n/a |
 | [PerfectAbstractions-Marketplace-Audit.pdf](https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/PerfectAbstractions-Marketplace-Audit.pdf) | Perfect Abstractions | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 | [Quantstamp-DAO.pdf](https://github.com/UniverseXYZ/xyzDAO-PM/blob/master/audits/Quantstamp-DAO.pdf) | Quantstamp | Audit | 2021-02 | stale | Direct | contract_name | 1 | high |
 
@@ -127,7 +127,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3017] HAECHI-DAO.pdf
-- [3018] PerfectAbstractions-Marketplace-Audit.pdf
+- [14702] HAECHI-DAO.pdf
+- [14703] PerfectAbstractions-Marketplace-Audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

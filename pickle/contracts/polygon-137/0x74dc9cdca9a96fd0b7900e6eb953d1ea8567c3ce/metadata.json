@@ -1,0 +1,17 @@
+{
+  "address": "0x74dc9cdca9a96fd0b7900e6eb953d1ea8567c3ce",
+  "chain_id": 137,
+  "contract_name": "PickleJarDepositFeeInitializable",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000160532d2536175d65c03b97b0630a9802c274dad000000000000000000000000acfe4511ce883c14c4ea40563f176c3c09b4c47c000000000000000000000000acfe4511ce883c14c4ea40563f176c3c09b4c47c00000000000000000000000083074f0ab8edd2c1508d3f657ceb5f27f6092d090000000000000000000000000000000000000000000000000000000000000032",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T23:09:06.940Z"
+}

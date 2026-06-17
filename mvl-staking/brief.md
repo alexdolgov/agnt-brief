@@ -7,10 +7,10 @@
 - Project: MVL Staking (`mvl-staking`)
 - Website: [https://mvlchain.io/](https://mvlchain.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:40.214Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T23:01:37.401Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: ethereum
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $863,711.08
 - On-chain TVL (included contracts): $38,089,085.81
 - TVL by chain: Ethereum $38,089,085.81
@@ -25,20 +25,20 @@ The MVL Staking family consists of a single product family where the MVLToken is
 
 ## Contract Surface Quality
 
-- Indexed contracts: 49; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 43 inactive, 2 singleton, 0 uninitialized.
+- Indexed contracts: 46; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 39 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
-- Detected codebases: none
+- Detected codebases: uniswap-v2
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 1/2 (50.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 4
-- Raw deployments: 4
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The MVL Staking family consists of a single product family where the MVLToken is
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CertiK | Tier 2 | 1 | 100.0% | 2022-02 |
+| CertiK | Tier 2 | 1 | 50.0% | 2022-02 |
 
 ## Contract Surface
 
@@ -61,9 +61,11 @@ The MVL Staking family consists of a single product family where the MVLToken is
 |---|---|---|---|---|---|
 | MVLToken | token | ethereum | n/a | [`0xa849ea...18dc71`](./contracts/ethereum-1/0xa849eaae994fb86afa73382e9bd88c2b6b18dc71/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x3c8ad3...2b5c7a`](./contracts/ethereum-1/0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 4 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

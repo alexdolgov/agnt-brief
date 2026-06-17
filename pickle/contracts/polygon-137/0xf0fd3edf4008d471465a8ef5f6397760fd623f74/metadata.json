@@ -1,0 +1,17 @@
+{
+  "address": "0xf0fd3edf4008d471465a8ef5f6397760fd623f74",
+  "chain_id": 137,
+  "contract_name": "StrategyCurveAm3CRVv2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000acfe4511ce883c14c4ea40563f176c3c09b4c47c000000000000000000000000acfe4511ce883c14c4ea40563f176c3c09b4c47c00000000000000000000000083074f0ab8edd2c1508d3f657ceb5f27f6092d0900000000000000000000000063a991b9c34d2590a411584799b030414c9b0d6f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T23:09:07.082Z"
+}

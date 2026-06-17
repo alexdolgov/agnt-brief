@@ -748,7 +748,7 @@
 | [mirakle-defi](./mirakle-defi/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mito-finance](./mito-finance/) | $435.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mitosis](./mitosis/) | $170.7M | 2.6% | $170.7M | active | 3 | 115 | 2026-06-17 |
-| [mm-finance](./mm-finance/) | $1.8M | 5.0% | $1.8M | declining | 3 | 157 | 2026-06-17 |
+| [mm-finance](./mm-finance/) | $1.8M | 0.0% | $1.8M | declining | 3 | 30 | 2026-06-17 |
 | [moar-market](./moar-market/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobius-exchange](./mobius-exchange/) | $9.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 8 | 2026-06-17 |
@@ -942,7 +942,7 @@
 | [privacy-cash](./privacy-cash/) | $1.8M | 0.0% | ? | active | 10 | 6 | 2026-06-17 |
 | [privacy-pools](./privacy-pools/) | $54.4K | 0.0% | $54.4K | active | 4 | 5 | 2026-06-17 |
 | [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-17 |
-| [proxy](./proxy/) | $735.6 | 40.0% | $735.6 | active | 1 | 5 | 2026-06-17 |
+| [proxy](./proxy/) | $735.6 | 0.0% | $735.6 | active | 1 | 5 | 2026-06-17 |
 | [psyoptions](./psyoptions/) | $462.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pu239](./pu239/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [puddingswap](./puddingswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1023,7 +1023,7 @@
 | [rswap](./rswap/) | $48.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rubic](./rubic/) | $148.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ruby.exchange](./ruby.exchange/) | $151.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [rumpel-labs](./rumpel-labs/) | $1.0B | 3.8% | $1.0B | declining | 4 | 52 | 2026-06-17 |
+| [rumpel-labs](./rumpel-labs/) | $1.0B | 1.9% | $1.0B | declining | 4 | 55 | 2026-06-17 |
 | [rysk-finance](./rysk-finance/) | $47.3M | 0.0% | ? | active | 0 | 68 | 2026-06-17 |
 | [ryze-protocol](./ryze-protocol/) | $328.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ryze.fi](./ryze.fi/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1069,7 +1069,7 @@
 | [shoebill-finance](./shoebill-finance/) | $421.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sicx](./sicx/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-17 |
-| [sierra-protocol](./sierra-protocol/) | $39.6M | 16.7% | $5.3M | active | 1 | 6 | 2026-06-17 |
+| [sierra-protocol](./sierra-protocol/) | $34.5M | 0.0% | ? | active | 1 | 6 | 2026-06-17 |
 | [sigma-money](./sigma-money/) | $55.4K | 26.0% | ? | active | 10 | 187 | 2026-06-17 |
 | [silo-finance](./silo-finance/) | $3.3M | 21.4% | $641.3K | unknown | 10 | 313 | 2026-06-17 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-17 |

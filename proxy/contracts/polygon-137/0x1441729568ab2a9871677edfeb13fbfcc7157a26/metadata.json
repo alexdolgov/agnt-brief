@@ -1,0 +1,18 @@
+{
+  "address": "0x1441729568ab2a9871677edfeb13fbfcc7157a26",
+  "chain_id": 137,
+  "contract_name": "ProxyPolygon",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T21:01:30.056Z"
+}

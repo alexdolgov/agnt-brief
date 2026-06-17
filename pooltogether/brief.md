@@ -7,13 +7,13 @@
 - Project: PoolTogether (`pooltogether`)
 - Website: [https://pooltogether.com/](https://pooltogether.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:36.170Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T21:18:31.269Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: arbitrum, avalanche, base, ethereum, gnosis, optimism, polygon, scroll
-- Contract surface: 67 unique implementations (144 raw deployments)
+- Contract surface: 67 unique implementations (146 raw deployments)
 - DeFi Llama TVL: $8,195,941.00
-- On-chain TVL (included contracts): $26,830,028.83
-- TVL by chain: Ethereum $22,790,497.34 | Polygon $2,819,032.36 | Avalanche $1,053,527.52 | Optimism $123,837.18 | Base $29,919.10 | Gnosis $6,771.59 | Arbitrum $6,443.73
+- On-chain TVL (included contracts): $26,830,029.84
+- TVL by chain: Ethereum $22,790,497.34 | Polygon $2,819,033.36 | Avalanche $1,053,527.52 | Optimism $123,837.18 | Base $29,919.10 | Gnosis $6,771.59 | Arbitrum $6,443.73
 
 ## Project Description
 
@@ -25,11 +25,11 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 
 ## Contract Surface Quality
 
-- Indexed contracts: 483; live-surface contracts included: 144 (110 live, 34 unknown).
+- Indexed contracts: 485; live-surface contracts included: 146 (112 live, 34 unknown).
 - Excluded by liveness: 339 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 5/5 live.
 - Detected codebases: none
-- Unverified dependencies: 17/122.
+- Unverified dependencies: 6/25.
 
 ## Audit Coverage Summary
 
@@ -38,14 +38,14 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 - Verified by bytecode match: 0
 - Unverified implementations: 31
 - Unique implementations: 67
-- Raw deployments: 144
+- Raw deployments: 146
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $26,830,028.83
+- ASD (verified + unaudited TVL): $26,830,029.84
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $26,830,028.83 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $26,830,029.84 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -61,19 +61,19 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AToken | token | ethereum | unit-22101 | [`0xbcca60...96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | ⚠️ Unaudited |
-| AToken | token | polygon | unit-22103 | [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | ⚠️ Unaudited |
-| AToken | token | avalanche | unit-22105 | [`0x46a511...e4a857`](./contracts/avalanche-43114/0x46a51127c3ce23fb7ab1de06226147f446e4a857/) | ⚠️ Unaudited |
+| AToken | token | ethereum | unit-33217 | [`0xbcca60...96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | ⚠️ Unaudited |
+| AToken | token | polygon | unit-33219 | [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | ⚠️ Unaudited |
+| AToken | token | avalanche | unit-33221 | [`0x46a511...e4a857`](./contracts/avalanche-43114/0x46a51127c3ce23fb7ab1de06226147f446e4a857/) | ⚠️ Unaudited |
 | PrizeVault | core_logic | scroll | n/a | 6 deployments: ethereum `0x9ee31e...c75573`; optimism `0xa52e38...3e5e1f`; gnosis `0xb75af2...8b35cf`; base `0x6b5a5c...f7e4dd`; arbitrum `0x97a9c0...1e8c95`; scroll [`0x29499e...b1fa9b`](./contracts/scroll-534352/0x29499e2eb8ff1d076a35c275aeddd613afb1fa9b/) | ⚠️ Unaudited |
 | L2StandardERC20 | token | optimism | n/a | [`0x395ae5...d4e125`](./contracts/optimism-10/0x395ae52bb17aef68c2888d941736a71dc6d4e125/) | ⚠️ Unaudited |
 | PrizePool | core_logic | gnosis | n/a | 5 deployments: ethereum `0x7865d0...354d95`; optimism `0xf35fe1...e29b55`; gnosis [`0x0c08c2...18120f`](./contracts/gnosis-100/0x0c08c2999e1a14569554eddbcda9da5e1918120f/); base `0x45b201...3732cb`; arbitrum `0x52e791...bc5d42` | ⚠️ Unaudited |
 | VaultV2 | core_logic | optimism | n/a | [`0xf0b19f...34397c`](./contracts/optimism-10/0xf0b19f02c63d51b69563a2b675e0160e1c34397c/) | ⚠️ Unaudited |
 | Vault | core_logic | optimism | n/a | 3 deployments: optimism [`0x29cb69...890715`](./contracts/optimism-10/0x29cb69d4780b53c1e5cd4d2b817142d2e9890715/); optimism `0x31515c...64e2d9`; optimism `0xe3b3a4...32f275` | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | unit-22104 | [`0xcf934e...b5b79c`](./contracts/arbitrum-42161/0xcf934e2402a5e072928a39a956964eb8f2b5b79c/) | ⚠️ Unaudited |
-| PermittableToken | token | gnosis | unit-22102 | [`0x216a7d...cdc660`](./contracts/gnosis-100/0x216a7d520992ed198593a16e0b17c784c9cdc660/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | unit-33220 | [`0xcf934e...b5b79c`](./contracts/arbitrum-42161/0xcf934e2402a5e072928a39a956964eb8f2b5b79c/) | ⚠️ Unaudited |
+| PermittableToken | token | gnosis | unit-33218 | [`0x216a7d...cdc660`](./contracts/gnosis-100/0x216a7d520992ed198593a16e0b17c784c9cdc660/) | ⚠️ Unaudited |
 | PrizePoolTwabRewards | core_logic | gnosis | n/a | 5 deployments: ethereum `0x3341da...a11d79`; optimism `0x36be31...ec66c6`; gnosis [`0x0d51a3...a71dd9`](./contracts/gnosis-100/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); base `0xf4c47d...576bbf`; arbitrum [`0x0d51a3...a71dd9`](./contracts/arbitrum-42161/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/) | ⚠️ Unaudited |
 | Pool | core_logic | ethereum | n/a | [`0x0cec1a...e6844e`](./contracts/ethereum-1/0x0cec1a9154ff802e7934fc916ed7ca50bde6844e/) | ⚠️ Unaudited |
-| YieldSourcePrizePool | core_logic | polygon | n/a | 3 deployments: ethereum `0xd89a09...d638be`; polygon [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/); avalanche `0xf830f5...8f95ec` | ⚠️ Unaudited |
+| YieldSourcePrizePool | core_logic | polygon | n/a | 5 deployments: ethereum `0xd89a09...d638be`; polygon [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/); polygon `0x887e17...9c7ef4`; polygon `0xee06ab...efa946`; avalanche `0xf830f5...8f95ec` | ⚠️ Unaudited |
 | AaveV3ERC4626 | unknown | optimism | n/a | 2 deployments: optimism [`0x964356...afe307`](./contracts/optimism-10/0x964356cecf4f4679cab76d969c043fcccaafe307/); optimism `0xdc1056...c6f3c9` | ⚠️ Unaudited |
 | Claimer | operational_periphery | optimism | n/a | 9 deployments: ethereum `0x54aa02...126c7d`; optimism [`0x0b5a1d...bd8438`](./contracts/optimism-10/0x0b5a1dc536d5a67c66d00b337e6b189385bd8438/); optimism `0x220c93...3b8d90`; gnosis `0x0cffb7...b0bbfa`; base `0x5ffeee...5e1e87`; base `0xcdce63...5547ba`; arbitrum `0x1e68e5...23e571`; arbitrum `0xbea383...317c73`; scroll `0xb04d5c...f00285` | ⚠️ Unaudited |
 | DrawManager | governance | gnosis | n/a | 6 deployments: ethereum `0x98305e...c675a7`; optimism `0x7eed74...641857`; gnosis [`0x146efc...d09067`](./contracts/gnosis-100/0x146efc8d651dc015225cc2e74707d87aa4d09067/); base `0x8a2782...af6ab0`; arbitrum `0xc00146...cd37e6`; scroll `0xa75474...69ddf2` | ⚠️ Unaudited |
@@ -170,7 +170,7 @@ Verified + unaudited native implementations ranked by TVL:
 | gnosis | [`0x216a7d...cdc660`](./contracts/gnosis-100/0x216a7d520992ed198593a16e0b17c784c9cdc660/) | PermittableToken | token | $3,953.46 | Verified native implementation with $3,953.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x0d51a3...a71dd9`](./contracts/gnosis-100/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/) | PrizePoolTwabRewards | core_logic | $3,827.40 | Verified native implementation with $3,827.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0cec1a...e6844e`](./contracts/ethereum-1/0x0cec1a9154ff802e7934fc916ed7ca50bde6844e/) | Pool | core_logic | $718.85 | Verified native implementation with $718.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/) | YieldSourcePrizePool | core_logic | $120.00 | Verified native implementation with $120.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/) | YieldSourcePrizePool | core_logic | $121.00 | Verified native implementation with $121.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x0b5a1d...bd8438`](./contracts/optimism-10/0x0b5a1dc536d5a67c66d00b337e6b189385bd8438/) | Claimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x146efc...d09067`](./contracts/gnosis-100/0x146efc8d651dc015225cc2e74707d87aa4d09067/) | DrawManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x4e30c0...a996f4`](./contracts/base-8453/0x4e30c0a8cce76940d87ae62eb12f3ac536a996f4/) | EzDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -196,8 +196,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 52 |
-| upstream | 6 |
-| standard_library | 2 |
+| upstream | 7 |
+| standard_library | 1 |
 | needs_review | 7 |
 
 ## Scope Matching Notes

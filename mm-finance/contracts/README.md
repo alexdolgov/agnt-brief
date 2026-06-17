@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | [MeerkatRouter02 (5 deployments)](./polygon-137/0x315bdf3d88b5a28b9e02b366f9c39a4588aba565/) | polygon | 5 deployments: polygon [`0x315bdf...aba565`](./polygon-137/0x315bdf3d88b5a28b9e02b366f9c39a4588aba565/); polygon `0x51aba4...eb1a17`; polygon `0x5686c0...9c5edc`; arbitrum `0x4f879a...d04139`; arbitrum `0xf0603a...f54980` | ⚠️ Unaudited | Verified |
 | [MeerkatRouter03](./polygon-137/0x7e5e5957de93d00c352df75159fbc37d5935f8bf/) | polygon | [`0x7e5e59...35f8bf`](./polygon-137/0x7e5e5957de93d00c352df75159fbc37d5935f8bf/) | ⚠️ Unaudited | Verified |
-| [Router](./polygon-137/0xa2508cc3185f4a9bb6fb5c5b8515e4ce05bec785/) | polygon | [`0xa2508c...bec785`](./polygon-137/0xa2508cc3185f4a9bb6fb5c5b8515e4ce05bec785/) | ⚠️ Unaudited | Verified |
+| Router | polygon | `0xa2508c...bec785` | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 
@@ -20,8 +20,8 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BatchSender](./polygon-137/0x40d87d548743d3f5242d6eae2199e8c064eba807/) | polygon | [`0x40d87d...eba807`](./polygon-137/0x40d87d548743d3f5242d6eae2199e8c064eba807/) | ⚠️ Unaudited | Verified |
-| [OmniInterfaceMulticall](./arbitrum-42161/0xfa34f4e90bb251e845d2ff8ced49c6454737c85e/) | arbitrum | [`0xfa34f4...37c85e`](./arbitrum-42161/0xfa34f4e90bb251e845d2ff8ced49c6454737c85e/) | ⚠️ Unaudited | Verified |
+| BatchSender | polygon | `0x40d87d...eba807` | ⚠️ Unaudited | Verified |
+| OmniInterfaceMulticall | arbitrum | `0xfa34f4...37c85e` | ⚠️ Unaudited | Verified |
 
 ## registry (2)
 
@@ -37,7 +37,7 @@
 | [LPToken](./polygon-137/0x07a9aaf9c3d4fc53f112dfe0edffd585fe70b5a0/) | polygon | [`0x07a9aa...70b5a0`](./polygon-137/0x07a9aaf9c3d4fc53f112dfe0edffd585fe70b5a0/) | ⚠️ Unaudited | Verified |
 | [MeerkatToken (3 deployments)](./polygon-137/0x22a31bd4cb694433b6de19e0acc2899e553e9481/) | polygon | 3 deployments: polygon [`0x22a31b...3e9481`](./polygon-137/0x22a31bd4cb694433b6de19e0acc2899e553e9481/); arbitrum `0x56b251...2d2326`; arbitrum `0x7d10fb...7f1711` | ⚠️ Unaudited | Verified |
 | [MMOToken](./polygon-137/0x859a50979fdb2a2fd8ba1adcc66977c6f6b1cd5b/) | polygon | [`0x859a50...b1cd5b`](./polygon-137/0x859a50979fdb2a2fd8ba1adcc66977c6f6b1cd5b/) | ⚠️ Unaudited | Verified |
-| [ReferralStorage](./polygon-137/0xe3eb5d1d601885113caa6a55372f8e0b2ccc762f/) | polygon | [`0xe3eb5d...cc762f`](./polygon-137/0xe3eb5d1d601885113caa6a55372f8e0b2ccc762f/) | ⚠️ Unaudited | Verified |
+| ReferralStorage | polygon | `0xe3eb5d...cc762f` | ⚠️ Unaudited | Verified |
 | [xMeerkatToken](./arbitrum-42161/0xb8635f1644422e7ebca07c06b839075a74f57dbb/) | arbitrum | [`0xb8635f...f57dbb`](./arbitrum-42161/0xb8635f1644422e7ebca07c06b839075a74f57dbb/) | ⚠️ Unaudited | Verified |
 
 ## unknown (144)

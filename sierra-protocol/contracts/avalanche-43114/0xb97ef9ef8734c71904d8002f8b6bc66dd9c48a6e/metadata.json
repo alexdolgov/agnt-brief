@@ -1,0 +1,18 @@
+{
+  "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "chain_id": 43114,
+  "contract_name": "FiatTokenProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x30dfe0469803bce76f8f62ac24b18d33d3d6ffe6",
+  "fetched_at": "2026-06-17T20:59:28.564Z"
+}

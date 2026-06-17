@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "proxy",
-  "generated_at": "2026-06-17T07:00:41.856Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T21:03:25.214Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "proxy",
@@ -26,15 +26,15 @@
     "total_addresses": 5,
     "unique_implementations": 5,
     "total_deployments": 5,
-    "audited_contracts": 2,
-    "unaudited_contracts": 3,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 40,
+    "coverage_pct": 0,
     "total_audits": 1,
-    "scoreable_audits": 1,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 16425058.43433,
     "tvl_usd": 735.6405245728749,
     "tvl_source": "on_chain",
@@ -62,14 +62,14 @@
     "project_purpose": "Proxy Finance is a Bitcoin-focused DeFi protocol centered on BTCpx, a BTC wrapper, and related yield mechanisms. Its ecosystem includes PRXY governance/staking, farmProxy/fPRXY rewards, bonding, and programs for other assets; DefiLlama categorizes the protocol as a Bridge, but the description should not imply that active cross-chain transfer infrastructure is its sole or primary function without additional supporting evidence.",
     "relationship_narrative": "The single product family encompasses all core contracts: BTCpx_Proxy manages the wrapped Bitcoin token, ProxyTokenV2 is the native PRXY token, and PRXYStaking handles staking rewards. No separate families or shared infrastructure are evident from the contract surface.",
     "product_family_count": 1,
-    "total_contracts_indexed": 372,
+    "total_contracts_indexed": 381,
     "live_contracts": 5,
-    "inactive_contracts": 358,
-    "singleton_contracts": 9,
+    "inactive_contracts": 363,
+    "singleton_contracts": 13,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 6,
-    "live_deployment_units": 3,
+    "live_deployment_units": 1,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
@@ -120,84 +120,10 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9c32185b81766a051e08de671207b34466dd1021",
-      "deployment_unit": "unit-25490",
-      "deployment_unit_proxy_count": 1,
-      "name": "BTCpx",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Proxy",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6903e891bbc92295521230196cc4a12de0ef0ab3",
-      "impl_name": "BTCpx",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9c32185b81766a051e08de671207b34466dd1021",
-          "deployment_unit": "unit-25490",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-1894"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x9c32185b81766a051e08de671207b34466dd1021",
-      "deployment_unit": "unit-25493",
-      "deployment_unit_proxy_count": 1,
-      "name": "BTCpx",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x284337e373a106d383e806924301942ed7d1d60f",
-      "impl_name": "BTCpx",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x9c32185b81766a051e08de671207b34466dd1021",
-          "deployment_unit": "unit-25493",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-1894"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x256116a8ea8bad13897462117d88082c464b68e1",
-      "deployment_unit": "unit-25492",
+      "deployment_unit": "unit-33128",
       "deployment_unit_proxy_count": 1,
       "name": "fPRXY",
       "role": "unknown",
@@ -213,8 +139,78 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x256116a8ea8bad13897462117d88082c464b68e1",
-          "deployment_unit": "unit-25492",
+          "deployment_unit": "unit-33128",
           "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22acaee85ddb83a3a33b7f0928a0e2c3bfdb6a4f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyCoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyCoin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22acaee85ddb83a3a33b7f0928a0e2c3bfdb6a4f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1441729568ab2a9871677edfeb13fbfcc7157a26",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyPolygon",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyPolygon",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1441729568ab2a9871677edfeb13fbfcc7157a26",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -279,26 +275,15 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BTCpx",
-        "Relay"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 40,
-      "latest_audit": "2021-04"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 137,
@@ -309,6 +294,26 @@
       "origin_kind": "native",
       "tvl_usd": 735.6405245728749,
       "risk_note": "Verified native implementation with $735.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22acaee85ddb83a3a33b7f0928a0e2c3bfdb6a4f",
+      "name": "ProxyCoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1441729568ab2a9871677edfeb13fbfcc7157a26",
+      "name": "ProxyPolygon",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 137,
@@ -331,12 +336,15 @@
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1894,
+        "report_name": "BTC Proxy Smart Contracts Audit Report - QuillAudits.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

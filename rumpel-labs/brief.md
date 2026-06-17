@@ -1,16 +1,16 @@
 # Agentic Audit Brief: Rumpel Labs
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 14.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 22.9% over 90 days
 
 ## Project Overview
 
 - Project: Rumpel Labs (`rumpel-labs`)
 - Website: [https://www.rumpel.xyz](https://www.rumpel.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:43.669Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T21:08:00.407Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: ethereum
-- Contract surface: 52 unique implementations (124 raw deployments)
+- Contract surface: 55 unique implementations (127 raw deployments)
 - DeFi Llama TVL: $1,503,642.68
 - On-chain TVL (included contracts): $1,023,031,020.74
 - TVL by chain: Ethereum $1,023,031,020.74
@@ -25,22 +25,22 @@ All contracts belong to a single product family, sharing infrastructure like pro
 
 ## Contract Surface Quality
 
-- Indexed contracts: 316; live-surface contracts included: 124 (122 live, 2 unknown).
-- Excluded by liveness: 123 inactive, 69 singleton, 0 uninitialized.
-- Deployment units: 15/49 live.
+- Indexed contracts: 325; live-surface contracts included: 127 (125 live, 2 unknown).
+- Excluded by liveness: 127 inactive, 71 singleton, 0 uninitialized.
+- Deployment units: 14/49 live.
 - Detected codebases: none
-- Unverified dependencies: 20/68.
+- Unverified dependencies: 18/55.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/52 (3.8%)
-- Verified + Unaudited implementations: 50
+- Verified implementations audited: 1/54 (1.9%)
+- Verified + Unaudited implementations: 53
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 52
-- Raw deployments: 124
+- Unverified implementations: 1
+- Unique implementations: 55
+- Raw deployments: 127
 - Audits discovered: 4
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,023,031,020.74
 - Latest audit: 2024-07 (aging)
 - Staleness: 0 fresh, 2 aging, 1 stale, 1 unknown
@@ -51,41 +51,39 @@ All contracts belong to a single product family, sharing infrastructure like pro
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Darklinear | Tier 2 | 2 | 3.8% | 2024-07 |
-| unknown | Tier 2 | 1 | 1.9% | 2024-04 |
+| Darklinear | Tier 2 | 1 | 1.9% | 2024-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PointTokenVault | core_logic | ethereum | unit-26909 | [`0xe47f9d...45ba61`](./contracts/ethereum-1/0xe47f9dbbfe98d6930562017ee212c1a1ae45ba61/) | ✅ Audited |
 | RumpelWalletFactory | registry | ethereum | n/a | [`0x5774ab...db2937`](./contracts/ethereum-1/0x5774abcf415f34592514698eb075051e97db2937/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (50)
+### ⚠️ Verified + Unaudited (53)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | OsTokenVaultController | core_logic | ethereum | n/a | [`0x2a261e...000306`](./contracts/ethereum-1/0x2a261e60fb14586b474c208b1b7ac6d0f5000306/) | ⚠️ Unaudited |
 | OsToken | token | ethereum | n/a | [`0xf1c9ac...190e38`](./contracts/ethereum-1/0xf1c9acdc66974dfb6decb12aa385b9cd01190e38/) | ⚠️ Unaudited |
-| EthGenesisVault | core_logic | ethereum | unit-26897 | [`0xac0f90...652885`](./contracts/ethereum-1/0xac0f906e433d58fa868f936e8a43230473652885/) | ⚠️ Unaudited |
+| EthGenesisVault | core_logic | ethereum | unit-33200 | [`0xac0f90...652885`](./contracts/ethereum-1/0xac0f906e433d58fa868f936e8a43230473652885/) | ⚠️ Unaudited |
 | ZtakingPool | core_logic | ethereum | n/a | [`0xf047ab...aeafa6`](./contracts/ethereum-1/0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6/) | ⚠️ Unaudited |
-| swETH | token | ethereum | unit-26911 | [`0xf951e3...7ded78`](./contracts/ethereum-1/0xf951e335afb289353dc249e82926178eac7ded78/) | ⚠️ Unaudited |
-| LendingPool | core_logic | ethereum | unit-26908 | [`0xe1b4d3...8e6c2e`](./contracts/ethereum-1/0xe1b4d34e8754600962cd944b535180bd758e6c2e/) | ⚠️ Unaudited |
-| MultiVault | core_logic | ethereum | unit-26874 (13 proxies) | 13 deployments: ethereum [`0x241835...fab696`](./contracts/ethereum-1/0x24183535a24cf0272841b05047a26e200ffab696/); ethereum `0x375a8e...ebeba0`; ethereum `0x49cd58...8232a9`; ethereum `0x4f3cc6...5dc961`; ethereum `0x7a4eff...327e3a`; ethereum `0x7b31f0...855249`; ethereum `0x82dc32...07163b`; ethereum `0x84631c...a9f93a`; ethereum `0x8c9532...3e9811`; ethereum `0xb908c9...26c72d`; ethereum `0xbeef69...2e6abc`; ethereum `0xcc36e5...82ebad`; ethereum `0xd6e09a...37931b` | ⚠️ Unaudited |
-| MellowSymbioticVault | core_logic | ethereum | unit-26867 (2 proxies) | 2 deployments: ethereum [`0x08f39b...152547`](./contracts/ethereum-1/0x08f39b3d75712148dacdb2669c3eacc7f1152547/); ethereum `0xe4357b...bf125d` | ⚠️ Unaudited |
-| VaultTokenized | core_logic | ethereum | unit-26884 (3 proxies) | 3 deployments: ethereum [`0x65b560...d69d63`](./contracts/ethereum-1/0x65b560d887c010c4993c8f8b36e595c171d69d63/); ethereum `0xb8fd82...ff056c`; ethereum `0xc10a7f...e3a1da` | ⚠️ Unaudited |
-| Vault | core_logic | ethereum | unit-26875 (2 proxies) | 2 deployments: ethereum [`0x2dabce...68adac`](./contracts/ethereum-1/0x2dabcea55a12d73191aece59f508b191fb68adac/); ethereum `0xbe3ca3...9aff4e` | ⚠️ Unaudited |
-| MellowVaultCompat | core_logic | ethereum | unit-26876 (5 proxies) | 5 deployments: ethereum [`0x3a828c...45b4c7`](./contracts/ethereum-1/0x3a828c183b3f382d030136c824844ea30145b4c7/); ethereum `0x64047d...3f877f`; ethereum `0x7f43fd...9ce444`; ethereum `0x82f510...9e0b26`; ethereum `0xc65433...c47bd8` | ⚠️ Unaudited |
+| swETH | token | ethereum | unit-33214 | [`0xf951e3...7ded78`](./contracts/ethereum-1/0xf951e335afb289353dc249e82926178eac7ded78/) | ⚠️ Unaudited |
+| LendingPool | core_logic | ethereum | unit-33211 | [`0xe1b4d3...8e6c2e`](./contracts/ethereum-1/0xe1b4d34e8754600962cd944b535180bd758e6c2e/) | ⚠️ Unaudited |
+| MultiVault | core_logic | ethereum | unit-33177 (13 proxies) | 13 deployments: ethereum [`0x241835...fab696`](./contracts/ethereum-1/0x24183535a24cf0272841b05047a26e200ffab696/); ethereum `0x375a8e...ebeba0`; ethereum `0x49cd58...8232a9`; ethereum `0x4f3cc6...5dc961`; ethereum `0x7a4eff...327e3a`; ethereum `0x7b31f0...855249`; ethereum `0x82dc32...07163b`; ethereum `0x84631c...a9f93a`; ethereum `0x8c9532...3e9811`; ethereum `0xb908c9...26c72d`; ethereum `0xbeef69...2e6abc`; ethereum `0xcc36e5...82ebad`; ethereum `0xd6e09a...37931b` | ⚠️ Unaudited |
+| MellowSymbioticVault | core_logic | ethereum | unit-33170 (2 proxies) | 2 deployments: ethereum [`0x08f39b...152547`](./contracts/ethereum-1/0x08f39b3d75712148dacdb2669c3eacc7f1152547/); ethereum `0xe4357b...bf125d` | ⚠️ Unaudited |
+| VaultTokenized | core_logic | ethereum | unit-33187 (3 proxies) | 3 deployments: ethereum [`0x65b560...d69d63`](./contracts/ethereum-1/0x65b560d887c010c4993c8f8b36e595c171d69d63/); ethereum `0xb8fd82...ff056c`; ethereum `0xc10a7f...e3a1da` | ⚠️ Unaudited |
+| Vault | core_logic | ethereum | unit-33178 (2 proxies) | 2 deployments: ethereum [`0x2dabce...68adac`](./contracts/ethereum-1/0x2dabcea55a12d73191aece59f508b191fb68adac/); ethereum `0xbe3ca3...9aff4e` | ⚠️ Unaudited |
+| MellowVaultCompat | core_logic | ethereum | unit-33179 (5 proxies) | 5 deployments: ethereum [`0x3a828c...45b4c7`](./contracts/ethereum-1/0x3a828c183b3f382d030136c824844ea30145b4c7/); ethereum `0x64047d...3f877f`; ethereum `0x7f43fd...9ce444`; ethereum `0x82f510...9e0b26`; ethereum `0xc65433...c47bd8` | ⚠️ Unaudited |
 | BoringVault | core_logic | ethereum | n/a | [`0x917cee...909d88`](./contracts/ethereum-1/0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88/) | ⚠️ Unaudited |
 | PendleMarketV3 | core_logic | ethereum | n/a | [`0x09fa04...6d4fb9`](./contracts/ethereum-1/0x09fa04aac9c6d1c6131352ee950cd67ecc6d4fb9/) | ⚠️ Unaudited |
-| EVault | core_logic | ethereum | unit-26894 | [`0x9f12d2...1f9899`](./contracts/ethereum-1/0x9f12d29c7cc72bb3d237e2d042a6d890421f9899/) | ⚠️ Unaudited |
-| AaveV3TreasuryConnector | operational_periphery | ethereum | unit-26893 | [`0x91eda2...03c8ca`](./contracts/ethereum-1/0x91eda28735ce089a8b5133476263c3fb8303c8ca/) | ⚠️ Unaudited |
-| AnchorageTokenUSDtb | token | ethereum | unit-26902 | [`0xc13919...18ac1c`](./contracts/ethereum-1/0xc139190f447e929f090edeb554d95abb8b18ac1c/) | ⚠️ Unaudited |
+| EVault | core_logic | ethereum | unit-33197 | [`0x9f12d2...1f9899`](./contracts/ethereum-1/0x9f12d29c7cc72bb3d237e2d042a6d890421f9899/) | ⚠️ Unaudited |
+| AaveV3TreasuryConnector | operational_periphery | ethereum | unit-33196 | [`0x91eda2...03c8ca`](./contracts/ethereum-1/0x91eda28735ce089a8b5133476263c3fb8303c8ca/) | ⚠️ Unaudited |
+| AnchorageTokenUSDtb | token | ethereum | unit-33205 | [`0xc13919...18ac1c`](./contracts/ethereum-1/0xc139190f447e929f090edeb554d95abb8b18ac1c/) | ⚠️ Unaudited |
 | DefaultCollateral | unknown | ethereum | n/a | 14 deployments: ethereum [`0x03bf48...ffa5ac`](./contracts/ethereum-1/0x03bf48b8a1b37fbead1ecabcf15b98b924ffa5ac/); ethereum `0x0c969c...99032c`; ethereum `0x19d0d8...91939a`; ethereum `0x21dbba...1d2c7c`; ethereum `0x422f5a...695f85`; ethereum `0x475d3e...7c304a`; ethereum `0x5198cb...2769d2`; ethereum `0x52cb8a...b8ab2a`; ethereum `0x594380...17bd4d`; ethereum `0x940750...0843fa`; ethereum `0x971e5b...f82618`; ethereum `0x9c0823...64f448`; ethereum `0xb09a50...9bad1c`; ethereum `0xe39b5f...9fcc84` | ⚠️ Unaudited |
 | DepositDataRegistry | registry | ethereum | n/a | [`0x75ab6d...35223e`](./contracts/ethereum-1/0x75ab6ddce07556639333d3df1eaa684f5735223e/) | ⚠️ Unaudited |
-| DVV | unknown | ethereum | unit-26882 | [`0x5e362e...85430b`](./contracts/ethereum-1/0x5e362eb2c0706bd1d134689ec75176018385430b/) | ⚠️ Unaudited |
+| DVV | unknown | ethereum | unit-33185 | [`0x5e362e...85430b`](./contracts/ethereum-1/0x5e362eb2c0706bd1d134689ec75176018385430b/) | ⚠️ Unaudited |
 | EthenaLPStaking | unknown | ethereum | n/a | [`0x8707f2...cfc512`](./contracts/ethereum-1/0x8707f238936c12c309bfc2b9959c35828acfc512/) | ⚠️ Unaudited |
 | ExternalRequestsCoordinator | unknown | ethereum | n/a | 2 deployments: ethereum [`0x36c9b5...76c043`](./contracts/ethereum-1/0x36c9b5e8f039381d1da79b94a206af8bc076c043/); ethereum `0xf47af3...82ba80` | ⚠️ Unaudited |
 | ExternalRequestsManager | governance | ethereum | n/a | [`0x10f4d4...dfc872`](./contracts/ethereum-1/0x10f4d4ead6bcd4de7849898403d88528e3dfc872/) | ⚠️ Unaudited |
@@ -95,10 +93,12 @@ All contracts belong to a single product family, sharing infrastructure like pro
 | FluidVaultPositionsResolver | core_logic | ethereum | n/a | [`0x3e3dae...76801c`](./contracts/ethereum-1/0x3e3dae4f30347782089d398d462546eb5276801c/) | ⚠️ Unaudited |
 | FluidVaultT1 | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x1c6068...644278`](./contracts/ethereum-1/0x1c6068ec051f0ac1688ca1fe76810fa9c8644278/); ethereum `0x2f3780...04dffa`; ethereum `0x399646...8744dd`; ethereum `0xbc3452...a38da5` | ⚠️ Unaudited |
 | FluidVaultT2 | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x43d1ca...1f428d`](./contracts/ethereum-1/0x43d1ca906c72f09d96291b4913d7255e241f428d/); ethereum `0x989a44...90f881` | ⚠️ Unaudited |
-| FluidVaultT2Operate | core_logic | ethereum | unit-26887 | [`0x7503b5...bea6d0`](./contracts/ethereum-1/0x7503b58bb29937e7e2980f70d3fd021b7ebea6d0/) | ⚠️ Unaudited |
+| FluidVaultT2Operate | core_logic | ethereum | unit-33190 | [`0x7503b5...bea6d0`](./contracts/ethereum-1/0x7503b58bb29937e7e2980f70d3fd021b7ebea6d0/) | ⚠️ Unaudited |
 | FluidVaultT3 | core_logic | ethereum | n/a | [`0xe210d8...8d0034`](./contracts/ethereum-1/0xe210d8ded13abe836a10e8aa956dd424658d0034/) | ⚠️ Unaudited |
 | FluidVaultT4 | core_logic | ethereum | n/a | [`0xe3cac7...cb5acc`](./contracts/ethereum-1/0xe3cac7cc6b0eed28e16331f08be7948bbfcb5acc/) | ⚠️ Unaudited |
 | GhoToken | token | ethereum | n/a | [`0x40d16f...ae6c2f`](./contracts/ethereum-1/0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0xd9db27...709552`](./contracts/ethereum-1/0xd9db270c1b5e3bd161e8c8503c55ceabee709552/) | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | registry | ethereum | n/a | [`0xa6b71e...896ab2`](./contracts/ethereum-1/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/) | ⚠️ Unaudited |
 | Groth16Verifier | periphery | ethereum | n/a | [`0x8a526f...005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | ⚠️ Unaudited |
 | Keeper | operational_periphery | ethereum | n/a | [`0x6b5815...b487b5`](./contracts/ethereum-1/0x6b5815467da09daa7dc83db21c9239d98bb487b5/) | ⚠️ Unaudited |
 | Morpho | unknown | ethereum | n/a | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
@@ -113,10 +113,11 @@ All contracts belong to a single product family, sharing infrastructure like pro
 | TestnetERC20 | token | ethereum | n/a | [`0xabb158...3cbea7`](./contracts/ethereum-1/0xabb15848b98d3ef7ad20a69127b003c7613cbea7/) | ⚠️ Unaudited |
 | TheCounter | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa27a69...e55861`](./contracts/ethereum-1/0xa27a69ae180e202fde5d38189a3f24fe24e55861/); ethereum `0xc7ab90...1eafa0` | ⚠️ Unaudited |
 | TreasuryIntermediateEscrow | operational_periphery | ethereum | n/a | [`0x84b883...acfed6`](./contracts/ethereum-1/0x84b883f8833e7eefd17b6a5e4e885b22f4acfed6/) | ⚠️ Unaudited |
+| UniswapV3PointSellingController | governance | ethereum | n/a | [`0x027d52...7ad581`](./contracts/ethereum-1/0x027d523cf78be66840b39576613ccdf9747ad581/) | ⚠️ Unaudited |
 | USDtbMinting | token | ethereum | n/a | [`0xa3ddbf...48416a`](./contracts/ethereum-1/0xa3ddbf92077b850e29c4805df0a2459ae048416a/) | ⚠️ Unaudited |
 | UsrExternalRequestsManager | governance | ethereum | n/a | [`0xac85ef...a95f2e`](./contracts/ethereum-1/0xac85ef29192487e0a109b7f9e40c267a9ea95f2e/) | ⚠️ Unaudited |
 | VaultsRegistry | registry | ethereum | n/a | [`0x3a0008...4fc20e`](./contracts/ethereum-1/0x3a0008a588772446f6e656133c2d5029cc4fc20e/) | ⚠️ Unaudited |
-| WstUSR | unknown | ethereum | unit-26871 | [`0x1202f5...c75055`](./contracts/ethereum-1/0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055/) | ⚠️ Unaudited |
+| WstUSR | unknown | ethereum | unit-33174 | [`0x1202f5...c75055`](./contracts/ethereum-1/0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,19 +131,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x25e426...0888ae` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2024.04.25 FPS Points Tokenization.pdf](https://github.com/sense-finance/point-tokenization-vault/blob/main/audits/2024.04.25%20FPS%20Points%20Tokenization.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | 1 | high |
-| [2024.07.22 Darklinear Rumpel Wallet.pdf](https://github.com/sense-finance/rumpel-wallet/blob/main/audits/2024.07.22%20Darklinear%20Rumpel%20Wallet.pdf) | Darklinear | Audit | 2024-07 | aging | Direct | contract_name | 2 | high |
-| [2024.07.15 FPS Rumpel Wallet.pdf](https://github.com/sense-finance/rumpel-wallet/blob/main/audits/2024.07.15%20FPS%20Rumpel%20Wallet.pdf) | FPS | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [2024.04.25 FPS Points Tokenization.pdf](https://github.com/sense-finance/point-tokenization-vault/blob/main/audits/2024.04.25%20FPS%20Points%20Tokenization.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | 0 | n/a |
+| [2024.07.22 Darklinear Rumpel Wallet.pdf](https://github.com/sense-finance/rumpel-wallet/blob/main/audits/2024.07.22%20Darklinear%20Rumpel%20Wallet.pdf) | Darklinear | Audit | 2024-07 | aging | Direct | contract_name | 1 | high |
+| [2024.07.15 FPS Rumpel Wallet.pdf](https://github.com/sense-finance/rumpel-wallet/blob/main/audits/2024.07.15%20FPS%20Rumpel%20Wallet.pdf) | FPS | Audit | 2024-07 | aging | Direct | contract_name | 0 | n/a |
 | [audits.sherlock.xyz/contests/494](https://audits.sherlock.xyz/contests/494) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -157,8 +160,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x75ab6d...35223e`](./contracts/ethereum-1/0x75ab6ddce07556639333d3df1eaa684f5735223e/) | DepositDataRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x36c9b5...76c043`](./contracts/ethereum-1/0x36c9b5e8f039381d1da79b94a206af8bc076c043/) | ExternalRequestsCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x10f4d4...dfc872`](./contracts/ethereum-1/0x10f4d4ead6bcd4de7849898403d88528e3dfc872/) | ExternalRequestsManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8a526f...005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | Groth16Verifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6b5815...b487b5`](./contracts/ethereum-1/0x6b5815467da09daa7dc83db21c9239d98bb487b5/) | Keeper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbf1762...1649df`](./contracts/ethereum-1/0xbf1762fdbb06e8ee715ae59495b2bf14fb1649df/) | ResolvStakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9f805f...fdad12`](./contracts/ethereum-1/0x9f805fc8679e5f81a0683c3203ad48417efdad12/) | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x256af2...6cc5f8`](./contracts/ethereum-1/0x256af27ce81282a0491a5361172c1db08f6cc5f8/) | RewardSplitterFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x48319f...20ff86`](./contracts/ethereum-1/0x48319f97e5da1233c21c48b80097c0fb7a20ff86/) | SharedMevEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -174,21 +177,22 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 18 |
-| upstream | 16 |
+| upstream | 18 |
 | standard_library | 16 |
-| needs_review | 2 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=4
 
 Zero-match audit list:
 
+- [2953] 2024.04.25 FPS Points Tokenization.pdf
 - [2955] 2024.07.15 FPS Rumpel Wallet.pdf
 - [2956] audits.sherlock.xyz/contests/494
 

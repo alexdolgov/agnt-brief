@@ -1,0 +1,18 @@
+{
+  "address": "0x119237717ef64f6d5f624b6410bc5e334cbda495",
+  "chain_id": 43114,
+  "contract_name": "LYTPool",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 61,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T20:59:28.521Z"
+}

@@ -12,7 +12,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BTCpx](./ethereum-1/0x9c32185b81766a051e08de671207b34466dd1021/) | ethereum | [`0x9c3218...dd1021`](./ethereum-1/0x9c32185b81766a051e08de671207b34466dd1021/) | ✅ Audited | Verified |
+| BTCpx | ethereum | `0x9c3218...dd1021` | ✅ Audited | Verified |
 | BTCpx | polygon | `0x9c3218...dd1021` | ✅ Audited | Verified |
 | [fPRXY](./polygon-137/0x256116a8ea8bad13897462117d88082c464b68e1/) | polygon | [`0x256116...4b68e1`](./polygon-137/0x256116a8ea8bad13897462117d88082c464b68e1/) | ⚠️ Unaudited | Verified |
 | [sPRXY](./polygon-137/0x426ac20aa0ce165cccfb905fb917758731ffc20d/) | polygon | [`0x426ac2...ffc20d`](./polygon-137/0x426ac20aa0ce165cccfb905fb917758731ffc20d/) | ⚠️ Unaudited | Verified |

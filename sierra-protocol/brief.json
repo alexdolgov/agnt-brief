@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sierra-protocol",
-  "generated_at": "2026-06-17T07:00:52.246Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T21:00:08.621Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sierra-protocol",
@@ -23,34 +23,30 @@
   },
   "summary": {
     "total_contracts": 6,
-    "total_addresses": 20,
+    "total_addresses": 19,
     "unique_implementations": 6,
-    "total_deployments": 20,
-    "audited_contracts": 1,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 5,
+    "total_deployments": 19,
+    "audited_contracts": 0,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 16.7,
+    "coverage_pct": 0,
     "total_audits": 1,
-    "scoreable_audits": 1,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 34484947.96566,
-    "tvl_usd": 39617168.327668294,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "avalanche": 39617168.33
-    },
-    "asd_usd": 5328457.7462601075,
+    "tvl_usd": 34484947.96566,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://sierra.money/",
     "chains": [
       "avalanche",
       "ethereum"
     ],
-    "tier1_coverage_pct": 16.7,
-    "tier1_auditors": [
-      "Spearbit"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-08",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
@@ -64,16 +60,16 @@
     "project_purpose": "SIERRA is a Liquid Yield Token protocol designed to grow through intrinsic yield generated from a portfolio of real-world assets and DeFi/CeFi strategies. Its on-chain contracts, including pools and related registry or accounting components where applicable, should be described as implementation infrastructure for the yield-generating SIERRA product rather than as a separate deposit-address management product family.",
     "relationship_narrative": "The Sierra Protocol family relies on shared infrastructure contracts like PoolRegistry and DepositAddressRegistry to manage pool deployments and user deposit addresses. The Blockchain Addresses family appears to be a subset focused on deposit address management, reusing the LYTPool contract and DepositAddressRegistry.",
     "product_family_count": 2,
-    "total_contracts_indexed": 127,
-    "live_contracts": 20,
-    "inactive_contracts": 86,
-    "singleton_contracts": 21,
+    "total_contracts_indexed": 141,
+    "live_contracts": 19,
+    "inactive_contracts": 94,
+    "singleton_contracts": 28,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 12,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 3,
-    "unverified_dependencies": 2,
+    "deployment_units": 13,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -89,76 +85,28 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x6e6080e15f8c0010d333d8caeead29292adb78f7",
-      "deployment_unit": "unit-31480",
+      "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "deployment_unit": "unit-33125",
       "deployment_unit_proxy_count": 1,
-      "name": "LYTPool",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "📂 Blockchain Addresses",
-      "tvl_usd": 34288710.58140819,
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "circle",
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x119237717ef64f6d5f624b6410bc5e334cbda495",
-      "impl_name": "LYTPool",
+      "impl_address": "0x30dfe0469803bce76f8f62ac24b18d33d3d6ffe6",
+      "impl_name": "FiatTokenV2_2",
       "deployments": [
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
-          "address": "0x6e6080e15f8c0010d333d8caeead29292adb78f7",
-          "deployment_unit": "unit-31480",
+          "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "deployment_unit": "unit-33125",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 34288710.58140819,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3990"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x09ca60ca323a6313ae144778c3ebdfccfbb5e5d2",
-      "deployment_unit": "unit-31479",
-      "deployment_unit_proxy_count": 2,
-      "name": "PoolDynamic",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Sierra Protocol",
-      "tvl_usd": 5328457.7462601075,
-      "is_proxy": true,
-      "impl_address": "0x0eba83c7b2122e347eeafdc37edf9ed856f0ac46",
-      "impl_name": "PoolDynamic",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x09ca60ca323a6313ae144778c3ebdfccfbb5e5d2",
-          "deployment_unit": "unit-31479",
-          "deployment_unit_proxy_count": 2,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5328457.74487255,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x4a8094f20906a453a4a74769aa74c4012b0d5df6",
-          "deployment_unit": "unit-31479",
-          "deployment_unit_proxy_count": 2,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0013875580823622191,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -189,6 +137,41 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6bf7788eaa948d9ffba7e9bb386e2d3c9810e0fc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xc472d3a47719de5f9d808ca91d7b70bd2138bcaa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LytPoolOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LytPoolOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc472d3a47719de5f9d808ca91d7b70bd2138bcaa",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -468,33 +451,15 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IERC4626",
-        "ILYTPoolStructures",
-        "IPoolStructures",
-        "LYTPool",
-        "LYTPoolAccessControl",
-        "LYTPoolAccessControlFactory",
-        "LYTPoolController",
-        "LYTPoolRegistry",
-        "LYTPoolServiceConfiguration"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Spearbit",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 16.7,
-      "latest_audit": "2025-08"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -502,6 +467,16 @@
       "address": "0x6bf7788eaa948d9ffba7e9bb386e2d3c9810e0fc",
       "name": "LytPoolOFT",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xc472d3a47719de5f9d808ca91d7b70bd2138bcaa",
+      "name": "LytPoolOFTAdapter",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -538,21 +513,24 @@
     }
   ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 0,
-    "standard_library": 2,
+    "native": 5,
+    "upstream": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3990,
+        "report_name": "The Sierra Protocol was built using [OpenTrade](https://www.opentrade.io/)'s Liquid Yield Token (LYT) protocol, which was audited by Spearbit's Cantina in August 2025 and the report is available here: <>. There were no High Risk or Critical findings."
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

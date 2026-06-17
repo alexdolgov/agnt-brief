@@ -1,0 +1,18 @@
+{
+  "address": "0x28c3498b4956f4ad8d4549aca8f66260975d361a",
+  "chain_id": 1,
+  "contract_name": "RumpelModule",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T21:06:23.481Z"
+}

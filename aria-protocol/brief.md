@@ -7,8 +7,8 @@
 - Project: Aria Protocol (`aria-protocol`)
 - Website: [https://ariaprotocol.xyz](https://ariaprotocol.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:47.763Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T18:51:15.133Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00

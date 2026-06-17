@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "b-lucky",
-  "generated_at": "2026-06-17T07:01:01.709Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T18:51:18.531Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "b-lucky",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 47.71415191079459
   },
   "summary": {
-    "total_contracts": 16,
-    "total_addresses": 16,
-    "unique_implementations": 16,
-    "total_deployments": 16,
+    "total_contracts": 19,
+    "total_addresses": 19,
+    "unique_implementations": 19,
+    "total_deployments": 19,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 15,
+    "contracts_unverified": 17,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1086587.92465,
-    "tvl_usd": 2200551.181550421,
+    "tvl_usd": 2666478.0645899377,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 2200551.18
+      "bsc": 2666478.06
     },
-    "asd_usd": 2200551.181550421,
+    "asd_usd": 2666478.0645899377,
     "website_url": "https://b-lucky.gg/",
     "chains": [
       "bsc"
@@ -61,21 +61,23 @@
     "project_purpose": "B-Lucky is a decentralized on-chain lottery protocol on BSC/BNB Chain.",
     "relationship_narrative": "All game contracts likely share the same token (0x67b4...) for wagering and payouts, and were deployed by two deployer addresses that may represent different game versions or administrative roles.",
     "product_family_count": 1,
-    "total_contracts_indexed": 16,
-    "live_contracts": 16,
+    "total_contracts_indexed": 19,
+    "live_contracts": 18,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": []
+    "detected_codebases": [
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 16,
-    "has_non_token_contracts": false,
+    "unique_implementations": 19,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -108,6 +110,41 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2200551.181550421,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x211cbe6be0250c7ec744fedb8d66fa2984fdde58",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 465926.883039517,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x211cbe6be0250c7ec744fedb8d66fa2984fdde58",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 465926.883039517,
           "is_audited": false
         }
       ],
@@ -243,6 +280,76 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x2e3eaa28c911cb5e753b35f606b0883cae841286",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x523558ab12bdea66e967a8f4089451978473f1be",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x523558ab12bdea66e967a8f4089451978473f1be",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x58956cfcead5a2dac9bf7099321f1594fb7f6572",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x58956cfcead5a2dac9bf7099321f1594fb7f6572",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -681,8 +788,8 @@
     }
   ],
   "origin_summary": {
-    "native": 16,
-    "upstream": 0,
+    "native": 18,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

@@ -7,8 +7,8 @@
 - Project: NeuralAI (`neuralai`)
 - Website: [https://goneural.ai/](https://goneural.ai/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:43.088Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T18:50:17.113Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,205,215.33

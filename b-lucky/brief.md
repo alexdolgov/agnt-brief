@@ -5,13 +5,13 @@
 - Project: B-Lucky (`b-lucky`)
 - Website: [https://b-lucky.gg/](https://b-lucky.gg/)
 - Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-06-17T07:01:01.709Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T18:51:18.531Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: bsc
-- Contract surface: 16 unique implementations (16 raw deployments)
+- Contract surface: 19 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $1,086,587.92
-- On-chain TVL (included contracts): $2,200,551.18
-- TVL by chain: Bsc $2,200,551.18
+- On-chain TVL (included contracts): $2,666,478.06
+- TVL by chain: Bsc $2,666,478.06
 
 ## Project Description
 
@@ -23,23 +23,23 @@ All game contracts likely share the same token (0x67b4...) for wagering and payo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (16 live, 0 unknown).
+- Indexed contracts: 19; live-surface contracts included: 19 (18 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: none
+- Detected codebases: uniswap-v3
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 15
-- Unique implementations: 16
-- Raw deployments: 16
+- Unverified implementations: 17
+- Unique implementations: 19
+- Raw deployments: 19
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,200,551.18
+- ASD (verified + unaudited TVL): $2,666,478.06
 - Latest audit: 2025-09 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -54,11 +54,12 @@ All game contracts likely share the same token (0x67b4...) for wagering and payo
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | Token | token | bsc | n/a | [`0x67b479...704444`](./contracts/bsc-56/0x67b47971426bb2180453b3993ff2ec319e704444/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | bsc | n/a | [`0x211cbe...fdde58`](./contracts/bsc-56/0x211cbe6be0250c7ec744fedb8d66fa2984fdde58/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -72,7 +73,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (15)
+### ❓ Unverified (17)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -82,6 +83,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | n/a | `0x16e315...cc3433` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x18b534...5406c1` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x2e3eaa...841286` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x523558...73f1be` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x58956c...7f6572` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x7424b9...cb203a` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x8ef0d0...157aba` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x98207b...2263cb` | ❓ Unverified |
@@ -112,8 +115,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
-| upstream | 0 |
+| native | 18 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

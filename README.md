@@ -194,11 +194,11 @@ Each project directory contains:
 | [izumi-finance](./izumi-finance/brief.md) | $3.45M | 14 | 45 | 20/45 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.76M |
 | [iaero-protocol](./iaero-protocol/brief.md) | $1.56M | base | 31 | 29/31 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.73M |
 | [singularity-finance](./singularity-finance/brief.md) | $4.72M | base, ethereum | 10 | 10/10 (100%) | 70.0% | 0.0% (-) | 1 | fresh | ❓ unknown | $2.69M |
+| [b-lucky](./b-lucky/brief.md) | $1.09M | bsc | 19 | 2/19 (11%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $2.67M |
 | [plasma-saving-vaults](./plasma-saving-vaults/brief.md) | $43.92M | plasma | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.65M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $16.86M | ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.63M |
 | [rari-capital](./rari-capital/brief.md) | $1.34M | ethereum | 20 | 19/20 (95%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.59M |
 | [loopring](./loopring/brief.md) | $8.55M | base, ethereum | 67 | 20/67 (30%) | 15.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $2.43M |
-| [b-lucky](./b-lucky/brief.md) | $1.09M | bsc | 16 | 1/16 (6%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $2.20M |
 | [revert](./revert/brief.md) | $7.43M | 7 | 75 | 16/75 (21%) | 12.5% | 0.0% (-) | 2 | aging | ✅ active | $2.09M |
 | [iotube](./iotube/brief.md) | $2.75M | bsc, ethereum, polygon | 15 | 13/15 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.02M |
 | [capx-ai](./capx-ai/brief.md) | $2.22M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $1.95M |
@@ -299,6 +299,7 @@ Each project directory contains:
 | [b.protocol](./b.protocol/brief.md) | $1.76M | 4 | 9 | 7/9 (78%) | 14.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $5.09K |
 | [wan-bridge](./wan-bridge/brief.md) | $24.28M | 16 | 49 | 34/49 (69%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $4.40K |
 | [injective-bridge](./injective-bridge/brief.md) | $12.35M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
+| [tender-finance](./tender-finance/brief.md) | $1.16M | arbitrum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.00K |
 | [tranchess](./tranchess/brief.md) | $4.70M | bsc, ethereum, scroll | 100 | 78/100 (78%) | 26.9% | 0.0% (-) | 8 | stale | 💀 dead | $1.94K |
 | [credbull](./credbull/brief.md) | $10.94M | arbitrum, polygon | 11 | 11/11 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.83K |
 | [yuzu-money](./yuzu-money/brief.md) | $48.95M | plasma | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $1.80K |
@@ -1079,7 +1080,7 @@ Each project directory contains:
 | [pump-party](./pump-party/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pumpbase](./pumpbase/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pumpspace](./pumpspace/brief.md) | $3.33M | avalanche | 353 | 5/353 (1%) | 40.0% | 0.0% (-) | 2 | aging | ✅ active | - |
-| [punks-terminal](./punks-terminal/brief.md) | $985.47K | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [punks-terminal](./punks-terminal/brief.md) | $985.47K | ethereum | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [puzzleswaporg](./puzzleswaporg/brief.md) | $1.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pv01](./pv01/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [pyron](./pyron/brief.md) | $2.12M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1277,7 +1278,6 @@ Each project directory contains:
 | [teleswap](./teleswap/brief.md) | $587.13K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [teller](./teller/brief.md) | $1.34M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [templar-protocol](./templar-protocol/brief.md) | $40.97M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [tender-finance](./tender-finance/brief.md) | $1.16M | arbitrum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [tensorplex](./tensorplex/brief.md) | $387.40K | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tg-casino](./tg-casino/brief.md) | $1.20M | ethereum | 3 | 3/3 (100%) | 33.3% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [thaw](./thaw/brief.md) | $7.83K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T16:38:58.745Z_
+_Generated: 2026-06-17T18:51:33.516Z_
 _Projects: 1409_

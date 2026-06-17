@@ -118,7 +118,7 @@
 | [axedao](./axedao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aztec-connect](./aztec-connect/) | $4.3M | 37.5% | ? | active | 12 | 8 | 2026-06-14 |
 | [azuro](./azuro/) | $1.6M | 11.8% | ? | active | 3 | 25 | 2026-06-17 |
-| [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-17 |
+| [b-lucky](./b-lucky/) | $2.7M | 0.0% | $2.7M | active | 1 | 19 | 2026-06-17 |
 | [b.protocol](./b.protocol/) | $5.1K | 14.3% | $5.1K | declining | 4 | 9 | 2026-06-17 |
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 7 | 2026-06-17 |
 | [babyswap](./babyswap/) | $235.0K | 4.3% | $235.0K | active | 1 | 24 | 2026-06-17 |
@@ -954,7 +954,7 @@
 | [pump-party](./pump-party/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pumpbase](./pumpbase/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pumpspace](./pumpspace/) | $3.3M | 40.0% | ? | active | 3 | 353 | 2026-06-17 |
-| [punks-terminal](./punks-terminal/) | $985.5K | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
+| [punks-terminal](./punks-terminal/) | $985.5K | 0.0% | ? | unknown | 0 | 6 | 2026-06-17 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [pv01](./pv01/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pyron](./pyron/) | $2.1M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1223,7 +1223,7 @@
 | [teller](./teller/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 11 | 2026-06-17 |
 | [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [tender-finance](./tender-finance/) | $1.2M | 0.0% | ? | active | 1 | 1 | 2026-06-17 |
+| [tender-finance](./tender-finance/) | $2.0K | 0.0% | $2.0K | declining | 1 | 8 | 2026-06-17 |
 | [tenderize](./tenderize/) | $313.3M | 0.0% | $313.3M | declining | 6 | 13 | 2026-06-17 |
 | [tensorplex](./tensorplex/) | $387.4K | 0.0% | ? | wind_down | 0 | 3 | 2026-06-17 |
 | [tg-casino](./tg-casino/) | $13.4M | 33.3% | ? | active | 8 | 3 | 2026-06-17 |

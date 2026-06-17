@@ -617,7 +617,7 @@
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [keom-protocol](./keom-protocol/) | $115.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [keyring](./keyring/) | $6.2M | 20.5% | ? | active | 16 | 51 | 2026-06-17 |
-| [kiloex](./kiloex/) | $5.7M | 25.0% | ? | active | 10 | 22 | 2026-06-17 |
+| [kiloex](./kiloex/) | $5.7M | 16.7% | ? | declining | 10 | 40 | 2026-06-17 |
 | [kine-finance](./kine-finance/) | $964.6K | 0.0% | ? | declining | 0 | 7 | 2026-06-17 |
 | [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [king-protocol](./king-protocol/) | $1.1M | 50.0% | ? | active | 4 | 13 | 2026-06-17 |
@@ -752,7 +752,7 @@
 | [moar-market](./moar-market/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobius-exchange](./mobius-exchange/) | $9.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 8 | 2026-06-17 |
-| [mode-bridge](./mode-bridge/) | $5.1M | 6.3% | ? | declining | 21 | 68 | 2026-06-17 |
+| [mode-bridge](./mode-bridge/) | $5.1M | 4.3% | ? | declining | 27 | 75 | 2026-06-17 |
 | [mojitoswap](./mojitoswap/) | $629.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mole](./mole/) | $8.6M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [molecular](./molecular/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -911,7 +911,7 @@
 | [piku](./piku/) | $172.1M | 7.7% | $172.1M | active | 3 | 54 | 2026-06-17 |
 | [pionex](./pionex/) | $95.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [pippi](./pippi/) | $75.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [planet](./planet/) | $1.1M | 0.0% | $1.1M | declining | 1 | 6 | 2026-06-17 |
+| [planet](./planet/) | $1.3M | 0.0% | $1.3M | declining | 1 | 8 | 2026-06-17 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 4 | 2026-06-17 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 3 | 2026-06-17 |
 | [pleasing-gold](./pleasing-gold/) | $4.9M | 0.0% | $4.9M | unknown | 0 | 11 | 2026-06-17 |
@@ -1073,7 +1073,7 @@
 | [sigma-money](./sigma-money/) | $55.4K | 26.0% | ? | active | 10 | 187 | 2026-06-17 |
 | [silo-finance](./silo-finance/) | $3.3M | 21.4% | $641.3K | unknown | 10 | 313 | 2026-06-17 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-17 |
-| [singularv](./singularv/) | $1.1B | 10.6% | $1.1B | declining | 7 | 47 | 2026-06-17 |
+| [singularv](./singularv/) | $1.1B | 40.8% | $23.9K | declining | 30 | 49 | 2026-06-17 |
 | [singularx](./singularx/) | $1.4M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [sir](./sir/) | $85.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sirius-finance](./sirius-finance/) | $7.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

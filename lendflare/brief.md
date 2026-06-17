@@ -6,30 +6,29 @@
 
 - Project: LendFlare (`lendflare`)
 - Lifecycle: declining (Tier 0, 97.2% below peak)
-- Generated: 2026-06-17T07:00:43.051Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T22:35:17.460Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: ethereum
 - Contract surface: 3 unique implementations (131 raw deployments)
 - DeFi Llama TVL: $987,553.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
 LendFlare is an Ethereum borrowing platform for Curve LP holders, enabling fixed-rate, fixed-term, high-LTV loans against Curve LP collateral. Lender liquidity is linked to Compound-funded supply, while Curve/Convex reward infrastructure is ancillary to the protocol’s collateral and yield mechanics.
 
+### Architecture
+
+The LendFlare family shares a common proxy infrastructure (LendFlareProxy and TransparentUpgradeableProxy) for upgradeability. Core lending markets interact with Convex booster contracts to maximize yield, while VirtualBalanceWrappers and Vyper contracts serve as supporting adapters and pools.
+
 ## Contract Surface Quality
 
-- Indexed contracts: 380; live-surface contracts included: 131 (100 live, 31 unknown).
-- Excluded by liveness: 225 inactive, 24 singleton, 0 uninitialized.
+- Indexed contracts: 382; live-surface contracts included: 131 (100 live, 31 unknown).
+- Excluded by liveness: 227 inactive, 24 singleton, 0 uninitialized.
 - Deployment units: 1/15 live.
-- Detected codebases: compound-v2
-- Unverified dependencies: 5/25.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -59,7 +58,7 @@ LendFlare is an Ethereum borrowing platform for Curve LP holders, enabling fixed
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ConvexBoosterV2 | proxy | ethereum | unit-26669 | [`0x4c3c78...f2b69f`](./contracts/ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited |
+| ConvexBoosterV2 | core_logic | ethereum | unit-33382 | [`0x4c3c78...f2b69f`](./contracts/ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 

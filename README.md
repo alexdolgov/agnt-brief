@@ -15,7 +15,6 @@ Each project directory contains:
 | [keep3r-network](./keep3r-network/brief.md) | $3.58M | ethereum | 52 | 52/52 (100%) | 1.9% | 0.0% (-) | 1 | stale | ⚠️ declining | $2004.27M |
 | [zyfai](./zyfai/brief.md) | $4.74M | 5 | 77 | 76/77 (99%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1696.25M |
 | [angle](./angle/brief.md) | $2.04M | 8 | 123 | 102/123 (83%) | 2.9% | 0.0% (-) | 2 | stale | ⚠️ declining | $1213.48M |
-| [singularv](./singularv/brief.md) | $1.49M | ethereum | 47 | 47/47 (100%) | 10.6% | 10.6% (ChainSecurity, Spearbit) | 5 | stale | ⚠️ declining | $1083.20M |
 | [rumpel-labs](./rumpel-labs/brief.md) | $1.50M | ethereum | 55 | 54/55 (98%) | 1.9% | 0.0% (-) | 1 | aging | ⚠️ declining | $1023.03M |
 | [bracket-protocol](./bracket-protocol/brief.md) | $3.04M | arbitrum, ethereum | 19 | 18/19 (95%) | 33.3% | 0.0% (-) | 2 | fresh | ✅ active | $619.35M |
 | [volta-club](./volta-club/brief.md) | $286.90K | avalanche, ethereum | 66 | 65/66 (98%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $612.49M |
@@ -216,12 +215,12 @@ Each project directory contains:
 | [hypha](./hypha/brief.md) | $7.38M | avalanche | 23 | 19/23 (83%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.45M |
 | [predict-fun](./predict-fun/brief.md) | $16.83M | blast, bsc | 39 | 24/39 (62%) | 8.3% | 8.3% (Cyfrin) | 2 | fresh | ✅ active | $1.45M |
 | [shardingdao](./shardingdao/brief.md) | $6.28M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.38M |
+| [planet](./planet/brief.md) | $1.68M | bsc | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $1.35M |
 | [rezerve](./rezerve/brief.md) | $2.45M | ethereum, sonic | 94 | 73/94 (78%) | 1.4% | 0.0% (-) | 1 | aging | ✅ active | $1.34M |
 | [reflexer](./reflexer/brief.md) | $1.83M | ethereum | 5 | 5/5 (100%) | 40.0% | 20.0% (OpenZeppelin) | 2 | stale | ⚠️ declining | $1.28M |
 | [alphagrowth](./alphagrowth/brief.md) | $7.38M | base, ethereum | 29 | 23/29 (79%) | 17.4% | 13.0% (ChainSecurity, Cyfrin, Spearbit) | 7 | fresh | ✅ active | $1.24M |
 | [suzaku](./suzaku/brief.md) | $1.08M | avalanche | 49 | 21/49 (43%) | 9.5% | 9.5% (ChainSecurity) | 1 | stale | ✅ active | $1.18M |
 | [wagmi](./wagmi/brief.md) | $1.25M | 11 | 113 | 26/113 (23%) | 7.7% | 7.7% (Sherlock) | 12 | stale | ⚠️ declining | $1.15M |
-| [planet](./planet/brief.md) | $1.68M | bsc | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $1.14M |
 | [ocean-point](./ocean-point/brief.md) | $948.06K | ethereum | 10 | 10/10 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.08M |
 | [defil](./defil/brief.md) | $1.80M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.00M |
 | [flex](./flex/brief.md) | $2.55M | ethereum | 15 | 15/15 (100%) | 33.3% | 0.0% (-) | 3 | fresh | ❓ unknown | $1.00M |
@@ -283,6 +282,7 @@ Each project directory contains:
 | [dinari](./dinari/brief.md) | $10.83M | 4 | 64 | 49/64 (77%) | 24.5% | 10.2% (Sherlock) | 3 | aging | ⚠️ declining | $27.59K |
 | [landx-finance](./landx-finance/brief.md) | $1.77M | ethereum | 9 | 9/9 (100%) | 22.2% | 0.0% (-) | 1 | stale | ✅ active | $27.34K |
 | [neo-tokyo](./neo-tokyo/brief.md) | $882.26K | ethereum | 23 | 23/23 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $26.80K |
+| [singularv](./singularv/brief.md) | $1.49M | ethereum | 49 | 49/49 (100%) | 40.8% | 40.8% (Certora, ChainSecurity, OpenZeppelin, Spearbit) | 21 | fresh | ⚠️ declining | $23.92K |
 | [kuma-protocol](./kuma-protocol/brief.md) | $3.08M | 4 | 9 | 9/9 (100%) | 11.1% | 11.1% (Code4rena) | 1 | stale | ✅ active | $22.13K |
 | [mdex](./mdex/brief.md) | $1.29M | bsc, heco | 6 | 5/6 (83%) | 80.0% | 80.0% (SlowMist) | 3 | stale | ⚠️ declining | $20.17K |
 | [chateau](./chateau/brief.md) | $1.04M | hyperliquid, plasma | 5 | 3/5 (60%) | 33.3% | 0.0% (-) | 1 | fresh | ✅ active | $19.06K |
@@ -813,7 +813,7 @@ Each project directory contains:
 | [keiko-finance](./keiko-finance/brief.md) | $45.40K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keom-protocol](./keom-protocol/brief.md) | $115.46K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 51 | 39/51 (76%) | 20.5% | 15.4% (Certora, ChainSecurity, Cyfrin, Spearbit) | 15 | fresh | ✅ active | - |
-| [kiloex](./kiloex/brief.md) | $2.18M | base, bsc, manta | 22 | 4/22 (18%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | - |
+| [kiloex](./kiloex/brief.md) | $2.18M | 4 | 40 | 18/40 (45%) | 16.7% | 11.1% (SlowMist) | 4 | aging | ⚠️ declining | - |
 | [kine-finance](./kine-finance/brief.md) | $964.57K | 4 | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kinetic](./kinetic/brief.md) | $59.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [king-protocol](./king-protocol/brief.md) | $1.14M | 4 | 13 | 2/13 (15%) | 50.0% | 0.0% (-) | 2 | aging | ✅ active | - |
@@ -917,7 +917,7 @@ Each project directory contains:
 | [mito-finance](./mito-finance/brief.md) | $435.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [moar-market](./moar-market/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mobius-exchange](./mobius-exchange/brief.md) | $9.91K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [mode-bridge](./mode-bridge/brief.md) | $5.07M | ethereum, mode | 68 | 16/68 (24%) | 6.3% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
+| [mode-bridge](./mode-bridge/brief.md) | $5.07M | ethereum, mode | 75 | 23/75 (31%) | 4.3% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
 | [mojitoswap](./mojitoswap/brief.md) | $629.85K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mole](./mole/brief.md) | $8.58M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [molecular](./molecular/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T22:23:43.994Z_
+_Generated: 2026-06-17T22:52:01.419Z_
 _Projects: 1409_

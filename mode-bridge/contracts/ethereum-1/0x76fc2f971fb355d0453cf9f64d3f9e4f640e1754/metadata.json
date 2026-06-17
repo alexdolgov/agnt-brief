@@ -1,0 +1,18 @@
+{
+  "address": "0x76fc2f971fb355d0453cf9f64d3f9e4f640e1754",
+  "chain_id": 1,
+  "contract_name": "DeputyPauseModule",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "cancun",
+  "license": "LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T22:35:55.079Z"
+}

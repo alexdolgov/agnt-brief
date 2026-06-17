@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "planet",
-  "generated_at": "2026-06-17T07:00:50.414Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T22:34:58.295Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "planet",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 12,
-    "unique_implementations": 6,
-    "total_deployments": 12,
+    "total_contracts": 8,
+    "total_addresses": 14,
+    "unique_implementations": 8,
+    "total_deployments": 14,
     "audited_contracts": 0,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1682578,
-    "tvl_usd": 1142855.5718350166,
+    "tvl_usd": 1348686.5525231415,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 1142855.57
+      "bsc": 1348686.55
     },
-    "asd_usd": 1142855.5718350166,
+    "asd_usd": 1348686.5525231415,
     "website_url": "https://app.planet.finance/",
     "chains": [
       "bsc"
@@ -71,22 +71,23 @@
     "project_purpose": "Planet is a BSC DeFi protocol with Compound-style lending/borrowing markets and earning/yield products, including farm and auto-compounding strategy contracts. Liquid-staking-related components should be treated as separate or only included where specifically confirmed by contract-level evidence.",
     "relationship_narrative": "The lending family provides the core money market, while yield farming strategies utilize lending market tokens (GErc20) and interact with the same governance (Unitroller/Gammatroller). Liquid staking operates independently but shares the same discount and eligibility infrastructure for user incentives.",
     "product_family_count": 2,
-    "total_contracts_indexed": 298,
-    "live_contracts": 12,
-    "inactive_contracts": 118,
-    "singleton_contracts": 168,
+    "total_contracts_indexed": 303,
+    "live_contracts": 14,
+    "inactive_contracts": 119,
+    "singleton_contracts": 170,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 69,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 11,
+    "deployment_units": 71,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 7,
     "unverified_dependencies": 0,
     "detected_codebases": [
-      "compound-v2"
+      "compound-v2",
+      "uniswap-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 8,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -99,11 +100,11 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x045e2df638ebec29130dd3be61161cba5f00a9c8",
-      "deployment_unit": "unit-31089",
+      "deployment_unit": "unit-33308",
       "deployment_unit_proxy_count": 5,
       "name": "GErc20Delegate",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 1142453.0348262717,
@@ -115,7 +116,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x045e2df638ebec29130dd3be61161cba5f00a9c8",
-          "deployment_unit": "unit-31089",
+          "deployment_unit": "unit-33308",
           "deployment_unit_proxy_count": 5,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -126,7 +127,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x9c53267a58a54df78dad8db48a118222998c71b4",
-          "deployment_unit": "unit-31089",
+          "deployment_unit": "unit-33308",
           "deployment_unit_proxy_count": 5,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -137,7 +138,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xb56aea60744ed5aea8f1639dd1f574b102618d46",
-          "deployment_unit": "unit-31089",
+          "deployment_unit": "unit-33308",
           "deployment_unit_proxy_count": 5,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -148,7 +149,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xc73009ceecf7a11da93d1472211486bb883beb40",
-          "deployment_unit": "unit-31089",
+          "deployment_unit": "unit-33308",
           "deployment_unit_proxy_count": 5,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -159,7 +160,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xe983cf03314830d9b4d5e87594bb50215438e19a",
-          "deployment_unit": "unit-31089",
+          "deployment_unit": "unit-33308",
           "deployment_unit_proxy_count": 5,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -177,12 +178,47 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xcd221e1504442671671d3330cb8e916a5edc3fc7",
+      "deployment_unit": "unit-33367",
+      "deployment_unit_proxy_count": 1,
+      "name": "GErc20Delegate",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 205830.98068812492,
+      "is_proxy": true,
+      "impl_address": "0x62535b498e8f3655249041ce7d35b58bf0138d0e",
+      "impl_name": "GErc20Delegate",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcd221e1504442671671d3330cb8e916a5edc3fc7",
+          "deployment_unit": "unit-33367",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 205830.98068812492,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xe58aa5826eb6e0568982018c0db833adbff925df",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "GErc20Delegator",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 402.5370087448103,
@@ -217,7 +253,7 @@
       "deployment_unit_proxy_count": null,
       "name": "AQUA",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "PROTOCOL",
       "tvl_usd": null,
@@ -370,6 +406,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PlanetPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PlanetPair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -400,12 +471,32 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x72b7d61e8fc8cf971960dd9cfa59b8c829d91991",
-      "name": "AQUA",
-      "role": "unknown",
+      "address": "0x045e2df638ebec29130dd3be61161cba5f00a9c8",
+      "name": "GErc20Delegate",
+      "role": "token",
       "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 1142453.0348262717,
+      "risk_note": "Verified native implementation with $1,142,453.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcd221e1504442671671d3330cb8e916a5edc3fc7",
+      "name": "GErc20Delegate",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 205830.98068812492,
+      "risk_note": "Verified native implementation with $205,830.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe58aa5826eb6e0568982018c0db833adbff925df",
+      "name": "GErc20Delegator",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 402.5370087448103,
+      "risk_note": "Verified native implementation with $402.54 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 56,
@@ -436,13 +527,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f",
+      "name": "PlanetPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 7,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

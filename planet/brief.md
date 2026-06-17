@@ -7,13 +7,13 @@
 - Project: Planet (`planet`)
 - Website: [https://app.planet.finance/](https://app.planet.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:50.414Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T22:34:58.295Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: bsc
-- Contract surface: 6 unique implementations (12 raw deployments)
+- Contract surface: 8 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $1,682,578.00
-- On-chain TVL (included contracts): $1,142,855.57
-- TVL by chain: Bsc $1,142,855.57
+- On-chain TVL (included contracts): $1,348,686.55
+- TVL by chain: Bsc $1,348,686.55
 
 ## Project Description
 
@@ -25,27 +25,27 @@ The lending family provides the core money market, while yield farming strategie
 
 ## Contract Surface Quality
 
-- Indexed contracts: 298; live-surface contracts included: 12 (12 live, 0 unknown).
-- Excluded by liveness: 118 inactive, 168 singleton, 0 uninitialized.
-- Deployment units: 1/69 live.
-- Detected codebases: compound-v2
-- Dependencies extracted: 11; unverified dependencies: 0.
+- Indexed contracts: 303; live-surface contracts included: 14 (14 live, 0 unknown).
+- Excluded by liveness: 119 inactive, 170 singleton, 0 uninitialized.
+- Deployment units: 2/71 live.
+- Detected codebases: compound-v2, uniswap-v2
+- Dependencies extracted: 7; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 12
+- Unique implementations: 8
+- Raw deployments: 14
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $1,142,855.57
+- ASD (verified + unaudited TVL): $1,348,686.55
 - Latest audit: 2021-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $1,142,855.57 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $1,348,686.55 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -57,16 +57,18 @@ The lending family provides the core money market, while yield farming strategie
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GErc20Delegate | token | bsc | unit-31089 (5 proxies) | 5 deployments: bsc [`0x045e2d...00a9c8`](./contracts/bsc-56/0x045e2df638ebec29130dd3be61161cba5f00a9c8/); bsc `0x9c5326...8c71b4`; bsc `0xb56aea...618d46`; bsc `0xc73009...3beb40`; bsc `0xe983cf...38e19a` | ⚠️ Unaudited |
+| GErc20Delegate | token | bsc | unit-33308 (5 proxies) | 5 deployments: bsc [`0x045e2d...00a9c8`](./contracts/bsc-56/0x045e2df638ebec29130dd3be61161cba5f00a9c8/); bsc `0x9c5326...8c71b4`; bsc `0xb56aea...618d46`; bsc `0xc73009...3beb40`; bsc `0xe983cf...38e19a` | ⚠️ Unaudited |
+| GErc20Delegate | token | bsc | unit-33367 | [`0xcd221e...dc3fc7`](./contracts/bsc-56/0xcd221e1504442671671d3330cb8e916a5edc3fc7/) | ⚠️ Unaudited |
 | GErc20Delegator | token | bsc | n/a | [`0xe58aa5...f925df`](./contracts/bsc-56/0xe58aa5826eb6e0568982018c0db833adbff925df/) | ⚠️ Unaudited |
 | AQUA | unknown | bsc | n/a | [`0x72b7d6...d91991`](./contracts/bsc-56/0x72b7d61e8fc8cf971960dd9cfa59b8c829d91991/) | ⚠️ Unaudited |
 | Gamma | unknown | bsc | n/a | [`0xb3cb6d...607f15`](./contracts/bsc-56/0xb3cb6d2f8f2fde203a022201c81a96c167607f15/) | ⚠️ Unaudited |
 | GBNB | unknown | bsc | n/a | 2 deployments: bsc [`0x190354...ebdb29`](./contracts/bsc-56/0x190354707ad8221be30bf5f097fa51c9b1ebdb29/); bsc `0x246647...62082f` | ⚠️ Unaudited |
 | PlanetFinance | unknown | bsc | n/a | 2 deployments: bsc [`0x0ac58f...00a933`](./contracts/bsc-56/0x0ac58fd25f334975b1b61732cf79564b6200a933/); bsc `0xb87f70...41b53d` | ⚠️ Unaudited |
+| PlanetPair | unknown | bsc | n/a | [`0x7cde1a...719f0f`](./contracts/bsc-56/0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,19 +100,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x72b7d6...d91991`](./contracts/bsc-56/0x72b7d61e8fc8cf971960dd9cfa59b8c829d91991/) | AQUA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x045e2d...00a9c8`](./contracts/bsc-56/0x045e2df638ebec29130dd3be61161cba5f00a9c8/) | GErc20Delegate | token | $1,142,453.03 | Verified native implementation with $1,142,453.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xcd221e...dc3fc7`](./contracts/bsc-56/0xcd221e1504442671671d3330cb8e916a5edc3fc7/) | GErc20Delegate | token | $205,830.98 | Verified native implementation with $205,830.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe58aa5...f925df`](./contracts/bsc-56/0xe58aa5826eb6e0568982018c0db833adbff925df/) | GErc20Delegator | token | $402.54 | Verified native implementation with $402.54 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xb3cb6d...607f15`](./contracts/bsc-56/0xb3cb6d2f8f2fde203a022201c81a96c167607f15/) | Gamma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x190354...ebdb29`](./contracts/bsc-56/0x190354707ad8221be30bf5f097fa51c9b1ebdb29/) | GBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0ac58f...00a933`](./contracts/bsc-56/0x0ac58fd25f334975b1b61732cf79564b6200a933/) | PlanetFinance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7cde1a...719f0f`](./contracts/bsc-56/0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f/) | PlanetPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

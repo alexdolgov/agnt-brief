@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lendflare",
-  "generated_at": "2026-06-17T07:00:43.051Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T22:35:17.460Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lendflare",
@@ -57,26 +57,24 @@
   },
   "topography": {
     "project_purpose": "LendFlare is an Ethereum borrowing platform for Curve LP holders, enabling fixed-rate, fixed-term, high-LTV loans against Curve LP collateral. Lender liquidity is linked to Compound-funded supply, while Curve/Convex reward infrastructure is ancillary to the protocol’s collateral and yield mechanics.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The LendFlare family shares a common proxy infrastructure (LendFlareProxy and TransparentUpgradeableProxy) for upgradeability. Core lending markets interact with Convex booster contracts to maximize yield, while VirtualBalanceWrappers and Vyper contracts serve as supporting adapters and pools.",
     "product_family_count": 1,
-    "total_contracts_indexed": 380,
+    "total_contracts_indexed": 382,
     "live_contracts": 100,
-    "inactive_contracts": 225,
+    "inactive_contracts": 227,
     "singleton_contracts": 24,
     "uninitialized_contracts": 0,
     "unknown_contracts": 31,
     "deployment_units": 15,
     "live_deployment_units": 1,
-    "dependencies_extracted": 25,
-    "unverified_dependencies": 5,
-    "detected_codebases": [
-      "compound-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -87,10 +85,10 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4c3c78cebc9cc87436deed2782998bc002f2b69f",
-      "deployment_unit": "unit-26669",
+      "deployment_unit": "unit-33382",
       "deployment_unit_proxy_count": 1,
       "name": "ConvexBoosterV2",
-      "role": "proxy",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "LendFlare",
@@ -103,7 +101,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4c3c78cebc9cc87436deed2782998bc002f2b69f",
-          "deployment_unit": "unit-26669",
+          "deployment_unit": "unit-33382",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,

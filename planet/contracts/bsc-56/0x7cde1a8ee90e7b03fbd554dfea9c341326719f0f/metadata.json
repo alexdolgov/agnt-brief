@@ -1,0 +1,17 @@
+{
+  "address": "0x7cde1a8ee90e7b03fbd554dfea9c341326719f0f",
+  "chain_id": 56,
+  "contract_name": "PlanetPair",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T22:32:20.605Z"
+}

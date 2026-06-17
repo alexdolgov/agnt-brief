@@ -1,16 +1,16 @@
 # Agentic Audit Brief: Mode Bridge
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 4.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 25.2% over 90 days
 
 ## Project Overview
 
 - Project: Mode Bridge (`mode-bridge`)
 - Website: [https://app.mode.network](https://app.mode.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:41.775Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T22:36:54.008Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: ethereum, mode
-- Contract surface: 68 unique implementations (81 raw deployments)
+- Contract surface: 75 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $5,074,260.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,26 +25,26 @@ The L1/L2 Mainnet Contracts family provides the core bridge logic, while the Tok
 
 ## Contract Surface Quality
 
-- Indexed contracts: 127; live-surface contracts included: 81 (30 live, 51 unknown).
-- Excluded by liveness: 46 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 3/6 live.
+- Indexed contracts: 150; live-surface contracts included: 90 (33 live, 57 unknown).
+- Excluded by liveness: 60 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 5/12 live.
 - Detected codebases: none
-- Unverified dependencies: 25/39.
+- Unverified dependencies: 4/8.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/16 (6.3%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 1/23 (4.3%)
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
 - Unverified implementations: 52
-- Unique implementations: 68
-- Raw deployments: 81
-- Audits discovered: 21
+- Unique implementations: 75
+- Raw deployments: 90
+- Audits discovered: 27
 - Scoreable audits (matched contracts): 1
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/optimism/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025 (aging)
-- Staleness: 0 fresh, 2 aging, 4 stale, 14 unknown
+- Staleness: 0 fresh, 2 aging, 4 stale, 20 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -52,7 +52,7 @@ The L1/L2 Mainnet Contracts family provides the core bridge logic, while the Tok
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Solo Review | Tier 2 | 1 | 6.3% | 2024-05 |
+| Solo Review | Tier 2 | 1 | 4.3% | 2024-05 |
 
 ## Contract Surface
 
@@ -62,23 +62,30 @@ The L1/L2 Mainnet Contracts family provides the core bridge logic, while the Tok
 |---|---|---|---|---|---|
 | GovernanceToken | token | mode | n/a | [`0xdfc7c8...e3167a`](./contracts/mode-34443/0xdfc7c877a950e49d2610114102175a06c2e3167a/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| AnchorStateRegistry | unknown | ethereum | unit-33459 | [`0xeb9d91...1bade8`](./contracts/ethereum-1/0xeb9d917868276cee5457609dbbf470fde41bade8/) | ⚠️ Unaudited |
 | bETH | unknown | mode | n/a | [`0x420000...000006`](./contracts/mode-34443/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
+| DelayedWETH | token | ethereum | unit-33448 | [`0x1c823d...67514a`](./contracts/ethereum-1/0x1c823d585b2b4325a0db845cebe32fc7ad67514a/) | ⚠️ Unaudited |
+| DisputeGameFactory | registry | ethereum | unit-33454 | [`0x6f13ef...1b433e`](./contracts/ethereum-1/0x6f13efadabd9269d6cead22b448d434a1f1b433e/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | mode | n/a | 3 deployments: mode [`0x658408...1ea16b`](./contracts/mode-34443/0x658408aa8ad72c4b553eba82ea74d99c651ea16b/); mode `0x8d254a...721933`; mode `0xa2aa50...5b5729` | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | unit-25381 | [`0x735adb...b0ff21`](./contracts/ethereum-1/0x735adbbe72226bd52e818e7181953f42e3b0ff21/) | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | ethereum | unit-33455 | [`0x735adb...b0ff21`](./contracts/ethereum-1/0x735adbbe72226bd52e818e7181953f42e3b0ff21/) | ⚠️ Unaudited |
 | MintableERC20 | token | mode | n/a | [`0x59889b...90d46c`](./contracts/mode-34443/0x59889b7021243db5b1e065385f918316cd90d46c/) | ⚠️ Unaudited |
+| MIPS64 | unknown | ethereum | n/a | [`0x6463de...edb908`](./contracts/ethereum-1/0x6463dee3828677f6270d83d45408044fc5edb908/) | ⚠️ Unaudited |
 | ModeLock | unknown | mode | n/a | [`0x74b847...b8c6b4`](./contracts/mode-34443/0x74b847b308bd89ef15639e6e4a2544e4b8b8c6b4/) | ⚠️ Unaudited |
 | OptimismMintableERC20 | bridge_template | mode | n/a | 8 deployments: mode [`0x00ea43...f506d7`](./contracts/mode-34443/0x00ea4344e90c741560f08667961a8de39ff506d7/); mode `0x028227...19d4f5`; mode `0x50c572...7db0cb`; mode `0xcdd475...a0a5cf`; mode `0xd98809...56005f`; mode `0xe7798f...5a77ea`; mode `0xf0f161...95e2ed`; mode `0xf41923...107be1` | ⚠️ Unaudited |
-| OptimismPortal2 | unknown | ethereum | unit-25382 | [`0x8b34b1...7d0c07`](./contracts/ethereum-1/0x8b34b14c7c7123459cf3076b8cb929be097d0c07/) | ⚠️ Unaudited |
+| OptimismPortal2 | unknown | ethereum | unit-33456 | [`0x8b34b1...7d0c07`](./contracts/ethereum-1/0x8b34b14c7c7123459cf3076b8cb929be097d0c07/) | ⚠️ Unaudited |
 | OssifiableProxy | proxy | mode | n/a | [`0xb8161f...985fac`](./contracts/mode-34443/0xb8161f28a5a38ce58f155d9a96bdac0104985fac/) | ⚠️ Unaudited |
-| Proxy | proxy | mode | n/a | 2 deployments: mode [`0x420000...000007`](./contracts/mode-34443/0x4200000000000000000000000000000000000007/); mode `0x420000...000010` | ⚠️ Unaudited |
+| PermissionedDisputeGameV2 | unknown | ethereum | n/a | [`0x58bf35...43266a`](./contracts/ethereum-1/0x58bf355c5d4edfc723ef89d99582eccfd143266a/) | ⚠️ Unaudited |
+| PreimageOracle | unknown | ethereum | n/a | [`0x1fb8cd...87add3`](./contracts/ethereum-1/0x1fb8cdfc6831fc866ed9c51af8817da5c287add3/) | ⚠️ Unaudited |
+| Proxy | proxy | mode | n/a | 4 deployments: mode [`0x420000...000007`](./contracts/mode-34443/0x4200000000000000000000000000000000000007/); mode `0x420000...000010`; mode `0x420000...000014`; mode `0x420000...000016` | ⚠️ Unaudited |
 | ProxyAdmin | governance | mode | n/a | [`0x68a9ec...4e2b72`](./contracts/mode-34443/0x68a9ec5b93f04a60c77f486a664f283b2e4e2b72/) | ⚠️ Unaudited |
 | RSETH_OFT | unknown | mode | n/a | [`0x4186bf...56b41f`](./contracts/mode-34443/0x4186bfc76e2e237523cbc30fd220fe055156b41f/) | ⚠️ Unaudited |
 | StoneCross | unknown | mode | n/a | [`0x801375...747bf7`](./contracts/mode-34443/0x80137510979822322193fc997d400d5a6c747bf7/) | ⚠️ Unaudited |
-| SupraOraclePull | operational_periphery | ethereum | unit-25379 | [`0x2fa6db...1e8517`](./contracts/ethereum-1/0x2fa6dbfe4291136cf272e1a3294362b6651e8517/) | ⚠️ Unaudited |
+| SuperchainConfig | governance | ethereum | unit-33457 | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | ⚠️ Unaudited |
+| SupraOraclePull | operational_periphery | ethereum | unit-33450 | [`0x2fa6db...1e8517`](./contracts/ethereum-1/0x2fa6dbfe4291136cf272e1a3294362b6651e8517/) | ⚠️ Unaudited |
 | TokenBridge | operational_periphery | mode | n/a | [`0x8250f4...b1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | mode | n/a | 4 deployments: mode [`0x04c059...6c150a`](./contracts/mode-34443/0x04c0599ae5a44757c0af6f9ec3b93da8976c150a/); mode `0x241609...cceea5`; mode `0x7c1daa...177256`; mode `0xe7903b...2cb3cd` | ⚠️ Unaudited |
 
@@ -178,6 +185,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [VotingEscrowIncreasing_v1_2_0_audit.md](https://github.com/aragon/ve-governance/blob/develop/audits/llm/VotingEscrowIncreasing_v1_2_0_audit.md) | LLM | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Ian-1.md](https://github.com/aragon/ve-governance/blob/develop/audits/post-audit-findings/Ian-1.md) | Ian | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Ian-2.md](https://github.com/aragon/ve-governance/blob/develop/audits/post-audit-findings/Ian-2.md) | Ian | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [AUDIT_2.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [AUDIT_3.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_3.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [AUDIT_4.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_4.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [AUDIT_REPORT.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_REPORT.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [AUDIT_REPORT_4.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_REPORT_4.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Invariant-Review.md](https://github.com/aragon/ve-governance/blob/develop/audits/post-audit-findings/Invariant-Review.md) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -185,28 +198,32 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0xeb9d91...1bade8`](./contracts/ethereum-1/0xeb9d917868276cee5457609dbbf470fde41bade8/) | AnchorStateRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1c823d...67514a`](./contracts/ethereum-1/0x1c823d585b2b4325a0db845cebe32fc7ad67514a/) | DelayedWETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6f13ef...1b433e`](./contracts/ethereum-1/0x6f13efadabd9269d6cead22b448d434a1f1b433e/) | DisputeGameFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x735adb...b0ff21`](./contracts/ethereum-1/0x735adbbe72226bd52e818e7181953f42e3b0ff21/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x59889b...90d46c`](./contracts/mode-34443/0x59889b7021243db5b1e065385f918316cd90d46c/) | MintableERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x74b847...b8c6b4`](./contracts/mode-34443/0x74b847b308bd89ef15639e6e4a2544e4b8b8c6b4/) | ModeLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x00ea43...f506d7`](./contracts/mode-34443/0x00ea4344e90c741560f08667961a8de39ff506d7/) | OptimismMintableERC20 | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8b34b1...7d0c07`](./contracts/ethereum-1/0x8b34b14c7c7123459cf3076b8cb929be097d0c07/) | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x420000...000007`](./contracts/mode-34443/0x4200000000000000000000000000000000000007/) | Proxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | SuperchainConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x8250f4...b1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | TokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 37 |
-| upstream | 7 |
+| native | 48 |
+| upstream | 10 |
 | standard_library | 5 |
-| needs_review | 19 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 25
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
@@ -232,5 +249,11 @@ Zero-match audit list:
 - [2375] VotingEscrowIncreasing_v1_2_0_audit.md
 - [2376] Ian-1.md
 - [2377] Ian-2.md
+- [14648] AUDIT_2.md
+- [14649] AUDIT_3.md
+- [14650] AUDIT_4.md
+- [14651] AUDIT_REPORT.md
+- [14652] AUDIT_REPORT_4.md
+- [14670] Invariant-Review.md
 
 Fork inheritance lineage and inherited audits are included when available.

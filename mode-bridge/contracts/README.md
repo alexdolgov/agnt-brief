@@ -13,7 +13,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ProxyAdmin](./mode-34443/0x68a9ec5b93f04a60c77f486a664f283b2e4e2b72/) | mode | [`0x68a9ec...4e2b72`](./mode-34443/0x68a9ec5b93f04a60c77f486a664f283b2e4e2b72/) | ⚠️ Unaudited | Verified |
+| ProxyAdmin | mode | `0x68a9ec...4e2b72` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (2)
 

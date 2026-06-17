@@ -7,8 +7,8 @@
 - Project: Pay Protocol (`pay-protocol`)
 - Website: [https://payprotocol.network](https://payprotocol.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:49.686Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:24:07.830Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: ethereum
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $277,351.60

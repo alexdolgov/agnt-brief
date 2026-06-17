@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "depth",
-  "generated_at": "2026-06-17T07:00:52.431Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T20:23:25.746Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "depth",
@@ -22,26 +22,29 @@
     "drop_from_peak_pct": 99.68492082325504
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1158345.40458,
-    "tvl_usd": 1158345.40458,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 342709.1543717104,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 342709.15
+    },
+    "asd_usd": 342709.1543717104,
     "website_url": null,
     "chains": [
+      "bsc",
       "heco"
     ],
     "tier1_coverage_pct": 0,
@@ -57,30 +60,135 @@
   },
   "topography": {
     "project_purpose": "Depth is a stablecoin-focused asset management and stablecoin swap protocol. Current DefiLlama data attributes its TVL to Binance, with Heco TVL at zero; the listed Heco address is not sufficient to represent the full current contract surface and should not be described as the sole core protocol contract without further verification.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one contract, so there are no inter-family relationships or shared infrastructure.",
     "product_family_count": 1,
-    "total_contracts_indexed": 1,
-    "live_contracts": 0,
-    "inactive_contracts": 0,
+    "total_contracts_indexed": 10,
+    "live_contracts": 3,
+    "inactive_contracts": 6,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 0,
+    "dependencies_extracted": 5,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "dCowVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 336621.28346500173,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "dCowVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 336621.28346500173,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2e128eb2ee787428307a7b246d02c1801788e1a6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "dDepVenusVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 5329.980451119042,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "dDepVenusVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2e128eb2ee787428307a7b246d02c1801788e1a6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5329.980451119042,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x024f05c70f203fb77f27b00422534cc33e1fb69d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "dDepAlphaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 757.8904555896112,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "dDepAlphaVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x024f05c70f203fb77f27b00422534cc33e1fb69d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 757.8904555896112,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 128,
       "chain_name": "heco",
@@ -89,7 +197,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Depth",
       "tvl_usd": null,
@@ -119,12 +227,43 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0",
+      "name": "dCowVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 336621.28346500173,
+      "risk_note": "Verified native implementation with $336,621.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2e128eb2ee787428307a7b246d02c1801788e1a6",
+      "name": "dDepVenusVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 5329.980451119042,
+      "risk_note": "Verified native implementation with $5,329.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x024f05c70f203fb77f27b00422534cc33e1fb69d",
+      "name": "dDepAlphaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 757.8904555896112,
+      "risk_note": "Verified native implementation with $757.89 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 1,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

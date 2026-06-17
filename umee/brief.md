@@ -4,8 +4,8 @@
 
 - Project: Umee (`umee`)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.417Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:27:51.689Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $105,416.02
@@ -23,8 +23,8 @@ Umee is a decentralized lending protocol and blockchain with activity across Ume
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 2; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

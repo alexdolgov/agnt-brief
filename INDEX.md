@@ -328,7 +328,7 @@
 | [deltatrade](./deltatrade/) | $92.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [demeter](./demeter/) | $281.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [denet-file-token](./denet-file-token/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-17 |
+| [depth](./depth/) | $342.7K | 0.0% | $342.7K | declining | 0 | 4 | 2026-06-17 |
 | [deri](./deri/) | $0.1 | 14.3% | $0.1 | active | 8 | 191 | 2026-06-17 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [desyn-protocol](./desyn-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 12 | 2026-06-17 |

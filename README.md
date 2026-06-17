@@ -247,6 +247,7 @@ Each project directory contains:
 | [equalizer](./equalizer/brief.md) | $861.05K | base, fantom, sonic | 176 | 49/176 (28%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
 | [dforce](./dforce/brief.md) | $12.55M | 8 | 39 | 33/39 (85%) | 75.8% | 75.8% (Trail of Bits) | 1 | stale | ⚠️ declining | $366.93K |
 | [vesper](./vesper/brief.md) | $41.88M | ethereum | 13 | 13/13 (100%) | 61.5% | 0.0% (-) | 19 | stale | ✅ active | $351.12K |
+| [depth](./depth/brief.md) | $1.16M | bsc, heco | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $342.71K |
 | [dtrinity](./dtrinity/brief.md) | $2.30M | ethereum, fraxtal, sonic | 99 | 72/99 (73%) | 15.1% | 0.0% (-) | 1 | unknown | ✅ active | $313.87K |
 | [bmx](./bmx/brief.md) | $2.76M | base, mode, sonic | 61 | 60/61 (98%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $305.69K |
 | [easedefi.org](./easedefi.org/brief.md) | $3.61M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $296.26K |
@@ -587,7 +588,6 @@ Each project directory contains:
 | [deltatrade](./deltatrade/brief.md) | $92.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [demeter](./demeter/brief.md) | $281.27K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [denet-file-token](./denet-file-token/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [depth](./depth/brief.md) | $1.16M | heco | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [derivadex](./derivadex/brief.md) | $1.62M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [desyn-protocol](./desyn-protocol/brief.md) | $1.40M | ethereum, mode | 12 | 3/12 (25%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [dev-protocol](./dev-protocol/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-17T20:20:01.234Z_
+_Generated: 2026-06-17T20:28:08.010Z_
 _Projects: 1409_

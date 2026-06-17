@@ -7,8 +7,8 @@
 - Project: Kava Liquid (`kava-liquid`)
 - Website: [https://app.kava.io/mint](https://app.kava.io/mint)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:52.145Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:24:48.559Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,173,872.24
@@ -98,10 +98,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

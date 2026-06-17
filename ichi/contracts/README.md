@@ -45,7 +45,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AegisVaultFactory](./celo-42220/0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd/) | celo | [`0xbeff79...34f6dd`](./celo-42220/0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd/) | ⚠️ Unaudited | Verified |
-| [ICHIVaultFactory (4 deployments)](./base-8453/0x2b52c416f723f16e883e53f3f16435b51300280a/) | base | 4 deployments: base [`0x2b52c4...00280a`](./base-8453/0x2b52c416f723f16e883e53f3f16435b51300280a/); celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited | Verified |
+| ICHIVaultFactory (4 deployments) | base | 4 deployments: base `0x2b52c4...00280a`; celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited | Verified |
 | [MultiFeeDistributionFactory (3 deployments)](./celo-42220/0x772960d9a88004cdb2cc0fca020e04bfea3790b3/) | celo | 3 deployments: celo [`0x772960...3790b3`](./celo-42220/0x772960d9a88004cdb2cc0fca020e04bfea3790b3/); celo `0xb005d5...0002fc`; celo `0xe734a1...e73017` | ⚠️ Unaudited | Verified |
 
 ## token (2)

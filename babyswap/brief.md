@@ -4,8 +4,8 @@
 
 - Project: BabySwap (`babyswap`)
 - Lifecycle: active (Tier 0, 99.6% below peak)
-- Generated: 2026-06-17T07:00:49.064Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:35:23.492Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: bsc
 - Contract surface: 24 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $1,280,987.19
@@ -26,7 +26,7 @@ The BabySmartRouter proxy delegates to the BabyNormalRouter implementation to ha
 - Excluded by liveness: 165 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
 - Detected codebases: uniswap-v2
-- Unverified dependencies: 11/56.
+- Unverified dependencies: 4/29.
 
 ## Audit Coverage Summary
 
@@ -126,6 +126,7 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x103aa3...4975e7`](./contracts/bsc-56/0x103aa302b5f0acd1a4512033f103126faf4975e7/) | BabyERC721 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x86407b...f889da`](./contracts/bsc-56/0x86407bea2078ea5f5eb5a52b2caa963bc1f889da/) | BabyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xcb5946...0842bb`](./contracts/bsc-56/0xcb59468d06b812f457c1763738217fb0430842bb/) | BabyFarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x000c86...c28d43`](./contracts/bsc-56/0x000c86bb08f24261453a289fa3af839e23c28d43/) | BabyProxyOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x325e34...6b38bd`](./contracts/bsc-56/0x325e343f1de602396e256b67efd1f61c3a6b38bd/) | BabyRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x8c2710...76fa7c`](./contracts/bsc-56/0x8c27103eee75eed8801b808ff23eb02c9876fa7c/) | BabySBTs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x6bef42...3d41d3`](./contracts/bsc-56/0x6bef4238761aee8ea773405d60ba93cd183d41d3/) | BabySwapFeeV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -142,8 +143,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 23 |
-| upstream | 1 |
+| native | 24 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 

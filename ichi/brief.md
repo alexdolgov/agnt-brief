@@ -5,10 +5,10 @@
 - Project: ICHI (`ichi`)
 - Website: [https://www.ichi.org](https://www.ichi.org)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-06-17T07:00:42.924Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:53:40.116Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: arbitrum, base, blast, bsc, celo, ethereum, fantom, kava, linea, mode, polygon, polygon-zkevm, sonic
-- Contract surface: 125 unique implementations (169 raw deployments)
+- Contract surface: 126 unique implementations (170 raw deployments)
 - DeFi Llama TVL: $10,695,458.24
 - On-chain TVL (included contracts): $35,943,712.62
 - TVL by chain: Ethereum $35,943,712.62
@@ -23,38 +23,48 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1073; live-surface contracts included: 169 (157 live, 12 unknown).
-- Excluded by liveness: 882 inactive, 22 singleton, 0 uninitialized.
+- Indexed contracts: 1076; live-surface contracts included: 170 (158 live, 12 unknown).
+- Excluded by liveness: 884 inactive, 22 singleton, 0 uninitialized.
 - Deployment units: 9/44 live.
 - Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 5/36.
+- Unverified dependencies: 1/5.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/39 (0.0%)
-- Verified + Unaudited implementations: 38
+- Verified implementations audited: 5/40 (12.5%)
+- Verified + Unaudited implementations: 34
 - Verified by bytecode match: 1
 - Unverified implementations: 86
-- Unique implementations: 125
-- Raw deployments: 169
+- Unique implementations: 126
+- Raw deployments: 170
 - Audits discovered: 9
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $35,943,712.62
-- Latest audit: 2021-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 8 unknown
+- Latest audit: 2021-11 (stale)
+- Staleness: 0 fresh, 0 aging, 4 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Bramah | Tier 2 | 3 | 7.5% | 2020-10 |
+| CertiK | Tier 2 | 1 | 2.5% | 2021-11 |
+| Quantstamp | Tier 2 | 1 | 2.5% | 2021-05 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (5)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Arbitrary | unknown | ethereum | n/a | [`0x6287d5...f4554c`](./contracts/ethereum-1/0x6287d56e246eee33bead2d7dd3a99db693f4554c/) | ✅ Audited |
+| IchiStake | unknown | ethereum | n/a | [`0x70605a...ab467e`](./contracts/ethereum-1/0x70605a6457b0a8fbf1eee896911895296eab467e/) | ✅ Audited |
+| IchiV2 | unknown | ethereum | n/a | [`0x111111...6bc4d6`](./contracts/ethereum-1/0x111111517e4929d3dcbdfa7cce55d30d4b6bc4d6/) | ✅ Audited |
+| oneETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6fcbbb...eeb6e1`](./contracts/ethereum-1/0x6fcbbb527fb2954bed2b224a5bb7c23c5aeeb6e1/); ethereum `0xec0d77...085868` | ✅ Audited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x9cd028...28d069`](./contracts/ethereum-1/0x9cd028b1287803250b1e226f0180eb725428d069/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (38)
+### ⚠️ Verified + Unaudited (34)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -63,12 +73,10 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 | AegisVaultERC20 | core_logic | celo | n/a | [`0xf92ac7...dd3cdb`](./contracts/celo-42220/0xf92ac78dac667bae6b55c53b4da93c5c6ddd3cdb/) | ⚠️ Unaudited |
 | AegisVaultFactory | registry | celo | n/a | [`0xbeff79...34f6dd`](./contracts/celo-42220/0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd/) | ⚠️ Unaudited |
 | Ally | unknown | ethereum | n/a | [`0x1aa1e6...6952ef`](./contracts/ethereum-1/0x1aa1e61369874bae3444a8ef6528d6b13d6952ef/) | ⚠️ Unaudited |
-| Arbitrary | unknown | ethereum | n/a | [`0x6287d5...f4554c`](./contracts/ethereum-1/0x6287d56e246eee33bead2d7dd3a99db693f4554c/) | ⚠️ Unaudited |
 | EtherToken | token | ethereum | n/a | 2 deployments: ethereum [`0xc08294...2ce315`](./contracts/ethereum-1/0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315/); ethereum `0xd76b5c...b746ae` | ⚠️ Unaudited |
 | ETHVaultWithSlippage | core_logic | ethereum | n/a | 5 deployments: ethereum [`0x980d4a...8efb1d`](./contracts/ethereum-1/0x980d4a48077cde0b51c2ae19d44cc2dd0c8efb1d/); ethereum `0xeaf2de...913755`; arbitrum `0xb24a00...e00216`; arbitrum `0xb443de...723083`; arbitrum `0xd44939...58758f` | ⚠️ Unaudited |
 | Ichi | unknown | ethereum | n/a | [`0x903bef...67a881`](./contracts/ethereum-1/0x903bef1736cddf2a537176cf3c64579c3867a881/) | ⚠️ Unaudited |
-| IchiStake | unknown | ethereum | n/a | [`0x70605a...ab467e`](./contracts/ethereum-1/0x70605a6457b0a8fbf1eee896911895296eab467e/) | ⚠️ Unaudited |
-| IchiV2 | unknown | ethereum | n/a | [`0x111111...6bc4d6`](./contracts/ethereum-1/0x111111517e4929d3dcbdfa7cce55d30d4b6bc4d6/) | ⚠️ Unaudited |
+| ICHIVault | core_logic | ethereum | n/a | [`0x460d84...14323d`](./contracts/ethereum-1/0x460d84b04f53d8e4021a514b08180d775714323d/) | ⚠️ Unaudited |
 | ICHIVaultDeployer | core_logic | celo | n/a | 2 deployments: celo [`0x544113...2756e1`](./contracts/celo-42220/0x544113cc95cc2d076065c6028ab718d8682756e1/); celo `0xb78144...c8eb68` | ⚠️ Unaudited |
 | ICHIVaultDepositGuard | core_logic | celo | n/a | 19 deployments: ethereum `0xe6e32d...0ef70a`; bsc `0x454130...c606c2`; bsc `0xd9272a...a66ee1`; bsc `0xe79140...5e914b`; polygon `0x64e445...483041`; polygon `0xa5ce10...eb05a4`; polygon `0xdb8e25...b590b6`; base `0xbf38e4...599819`; base `0xe2381b...a31f26`; arbitrum `0x932e19...b95c5e`; arbitrum `0xfb5263...686d12`; celo [`0x238394...4fbed8`](./contracts/celo-42220/0x238394541de407fd494e455ef17c9d991f4fbed8/); celo `0x62fd18...4774c2`; celo `0xa19595...4d5a14`; linea `0x57c9d9...a079df`; linea `0x60f508...8c505d`; linea `0x92bce3...effe5b`; blast `0x8346a8...5955f1`; blast `0xd44939...58758f` | ⚠️ Unaudited |
 | ICHIVaultDepositGuardExtendedForMFD | core_logic | celo | n/a | 3 deployments: celo [`0x141db8...1d9f25`](./contracts/celo-42220/0x141db85183ddb07dee22c33846aebde2101d9f25/); celo `0xb066a0...9029c3`; celo `0xdb771e...d6fccc` | ⚠️ Unaudited |
@@ -77,19 +85,17 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 | Mooniswap | unknown | ethereum | n/a | [`0x1dce26...d9f3a5`](./contracts/ethereum-1/0x1dce26f543e591c27717e25294aebbf59ad9f3a5/) | ⚠️ Unaudited |
 | MultiFeeDistributionFactory | registry | celo | n/a | 3 deployments: celo [`0x772960...3790b3`](./contracts/celo-42220/0x772960d9a88004cdb2cc0fca020e04bfea3790b3/); celo `0xb005d5...0002fc`; celo `0xe734a1...e73017` | ⚠️ Unaudited |
 | oneBTC | unknown | ethereum | n/a | [`0xc88f47...777c37`](./contracts/ethereum-1/0xc88f47067db2e25851317a2fdae73a22c0777c37/) | ⚠️ Unaudited |
-| oneETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6fcbbb...eeb6e1`](./contracts/ethereum-1/0x6fcbbb527fb2954bed2b224a5bb7c23c5aeeb6e1/); ethereum `0xec0d77...085868` | ⚠️ Unaudited |
 | OneInch | unknown | ethereum | n/a | [`0x111111...20c302`](./contracts/ethereum-1/0x111111111117dc0aa78b770fa6a738034120c302/) | ⚠️ Unaudited |
 | oneLINK | unknown | ethereum | n/a | [`0x18cc17...e2a2cf`](./contracts/ethereum-1/0x18cc17a1eed37c02a77b0b96b7890c7730e2a2cf/) | ⚠️ Unaudited |
 | oneVBTC | unknown | ethereum | n/a | [`0x7bd198...edbc4c`](./contracts/ethereum-1/0x7bd198b9107496fd5cc3d7655af52f43a8edbc4c/) | ⚠️ Unaudited |
 | oneWING | unknown | ethereum | n/a | [`0x8f041a...0e1618`](./contracts/ethereum-1/0x8f041a3940a5e6fb580075c3774e15fcfa0e1618/) | ⚠️ Unaudited |
 | QuoterV1 | periphery | celo | n/a | [`0xe1962f...0f8f85`](./contracts/celo-42220/0xe1962f415feb5915962d5d3a075311e6be0f8f85/) | ⚠️ Unaudited |
-| RebalancerFactory | adapter | ethereum | unit-26320 | [`0x40af9b...d52f10`](./contracts/ethereum-1/0x40af9be27b203da639a237447613879184d52f10/) | ⚠️ Unaudited |
-| RebalancerFactory | adapter | bsc | unit-26325 | [`0xcf60db...f9388f`](./contracts/bsc-56/0xcf60dbf617618a17eda28dd8dfe89905dcf9388f/) | ⚠️ Unaudited |
-| RebalancerFactory | adapter | base | unit-26338 | [`0xf8b3f6...ff765e`](./contracts/base-8453/0xf8b3f6727e44abb211c0049fc849fbb091ff765e/) | ⚠️ Unaudited |
-| RebalancerFactory | adapter | celo | unit-26343 | [`0x101eb1...bfc879`](./contracts/celo-42220/0x101eb16bdba37979a771c86e1caafbadbabfc879/) | ⚠️ Unaudited |
-| RebalancerFactory | adapter | linea | unit-26357 | [`0xbb7a3d...ee2e73`](./contracts/linea-59144/0xbb7a3d439abf42cf39837f9102f987bab3ee2e73/) | ⚠️ Unaudited |
+| RebalancerFactory | adapter | ethereum | unit-33071 | [`0x40af9b...d52f10`](./contracts/ethereum-1/0x40af9be27b203da639a237447613879184d52f10/) | ⚠️ Unaudited |
+| RebalancerFactory | adapter | bsc | unit-33076 | [`0xcf60db...f9388f`](./contracts/bsc-56/0xcf60dbf617618a17eda28dd8dfe89905dcf9388f/) | ⚠️ Unaudited |
+| RebalancerFactory | adapter | base | unit-33089 | [`0xf8b3f6...ff765e`](./contracts/base-8453/0xf8b3f6727e44abb211c0049fc849fbb091ff765e/) | ⚠️ Unaudited |
+| RebalancerFactory | adapter | celo | unit-33094 | [`0x101eb1...bfc879`](./contracts/celo-42220/0x101eb16bdba37979a771c86e1caafbadbabfc879/) | ⚠️ Unaudited |
+| RebalancerFactory | adapter | linea | unit-33108 | [`0xbb7a3d...ee2e73`](./contracts/linea-59144/0xbb7a3d439abf42cf39837f9102f987bab3ee2e73/) | ⚠️ Unaudited |
 | SymbolLib | unknown | celo | n/a | [`0xbed3ce...9de85e`](./contracts/celo-42220/0xbed3cea309c8e413f785e1b547d06f37c49de85e/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x9cd028...28d069`](./contracts/ethereum-1/0x9cd028b1287803250b1e226f0180eb725428d069/) | ⚠️ Unaudited |
 | UV3Math | unknown | celo | n/a | 4 deployments: celo [`0x3b5fbc...4e0d3b`](./contracts/celo-42220/0x3b5fbce2bd4587036dc1d7df44296f19094e0d3b/); celo `0xafec07...dadf69`; celo `0xf6b5ab...045fa6`; celo `0xfa0263...1b97c5` | ⚠️ Unaudited |
 | VaultLocker | core_logic | celo | n/a | 7 deployments: sonic `0x6613f6...344a4e`; sonic `0x765c21...9eef75`; sonic `0xccd6d4...a6cfa2`; celo [`0x0de3ba...31658c`](./contracts/celo-42220/0x0de3ba021a151030f344f8d05595672bbe31658c/); celo `0x2a8d03...d0e337`; celo `0x7f2eaf...ad8a65`; celo `0xd2c08d...5837b3` | ⚠️ Unaudited |
 | VaultSlippageCheckV2 | core_logic | celo | n/a | [`0x69bf65...d44e2a`](./contracts/celo-42220/0x69bf658252d8fd535a28a5cb477abe42a2d44e2a/) | ⚠️ Unaudited |
@@ -109,7 +115,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RebalancerFactory | adapter | celo | unit-26344 | 4 deployments: celo [`0x16eb8e...b96483`](./contracts/celo-42220/0x16eb8e3b7d23b9eddc82ba0e034860e722b96483/); celo `0x215d61...e3a50c`; celo `0x83ee90...edc23f`; celo `0xe04ba7...cbbef3` | ⚠️ Unaudited (bytecode match) |
+| RebalancerFactory | adapter | celo | unit-33095 | 4 deployments: celo [`0x16eb8e...b96483`](./contracts/celo-42220/0x16eb8e3b7d23b9eddc82ba0e034860e722b96483/); celo `0x215d61...e3a50c`; celo `0x83ee90...edc23f`; celo `0xe04ba7...cbbef3` | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (86)
 
@@ -209,13 +215,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [CertiK Audit Report for ICHI - FarmV2.pdf](https://github.com/ichifarm/ichi-farming/blob/main/audits/CertiK%20Audit%20Report%20for%20ICHI%20-%20FarmV2.pdf) | CertiK | Audit | 2021-04 | stale | Direct | contract_name | 0 | n/a |
-| [Audit Report (also discovered via alternate URL)](https://github.com/ichifarm/ichi-oneToken/blob/master/audits/quantstamp/audit.pdf) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit Report](https://skynet.certik.com/projects/ichi) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report (also discovered via alternate URL)](https://github.com/ichifarm/ichi-oneToken/blob/master/audits/quantstamp/audit.pdf) | Quantstamp | Audit | 2021-05 | stale | Direct | contract_name | 1 | high |
+| [Audit Report](https://skynet.certik.com/projects/ichi) | CertiK | Audit | 2021-11 | stale | Direct | contract_name | 1 | high |
 | [Audit Report](https://de.fi/audit-database/defiyield/ichi) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Audit Report](https://github.com/ichifarm/audit) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Audit Report](https://drive.google.com/file/d/1DA8qnvezkfBpIlLQaSENi9MAq3ps7M0o/view?usp=sharing) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Audit Report](https://drive.google.com/file/d/1YyK49Hbo2DqFVzDMYwQLLl-56_uCHIPR/view?usp=drive_link) | FYEO: Quality Assessment | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Ichi_Farm_Audit_Bramah.pdf](https://github.com/ichifarm/audit/blob/main/Ichi_Farm_Audit_Bramah.pdf) | Bramah | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Ichi_Farm_Audit_Bramah.pdf](https://github.com/ichifarm/audit/blob/main/Ichi_Farm_Audit_Bramah.pdf) | Bramah | Audit | 2020-10 | stale | Direct | contract_name | 4 | high |
 | [quantstamp](https://github.com/ichifarm/ichi-oneToken/blob/master/audits/quantstamp) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -228,11 +234,9 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0xf92ac7...dd3cdb`](./contracts/celo-42220/0xf92ac78dac667bae6b55c53b4da93c5c6ddd3cdb/) | AegisVaultERC20 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xbeff79...34f6dd`](./contracts/celo-42220/0xbeff7973ff3dfca2aa86e1da41abc8321334f6dd/) | AegisVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1aa1e6...6952ef`](./contracts/ethereum-1/0x1aa1e61369874bae3444a8ef6528d6b13d6952ef/) | Ally | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6287d5...f4554c`](./contracts/ethereum-1/0x6287d56e246eee33bead2d7dd3a99db693f4554c/) | Arbitrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x980d4a...8efb1d`](./contracts/ethereum-1/0x980d4a48077cde0b51c2ae19d44cc2dd0c8efb1d/) | ETHVaultWithSlippage | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x903bef...67a881`](./contracts/ethereum-1/0x903bef1736cddf2a537176cf3c64579c3867a881/) | Ichi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x70605a...ab467e`](./contracts/ethereum-1/0x70605a6457b0a8fbf1eee896911895296eab467e/) | IchiStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x111111...6bc4d6`](./contracts/ethereum-1/0x111111517e4929d3dcbdfa7cce55d30d4b6bc4d6/) | IchiV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x460d84...14323d`](./contracts/ethereum-1/0x460d84b04f53d8e4021a514b08180d775714323d/) | ICHIVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x544113...2756e1`](./contracts/celo-42220/0x544113cc95cc2d076065c6028ab718d8682756e1/) | ICHIVaultDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x238394...4fbed8`](./contracts/celo-42220/0x238394541de407fd494e455ef17c9d991f4fbed8/) | ICHIVaultDepositGuard | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x141db8...1d9f25`](./contracts/celo-42220/0x141db85183ddb07dee22c33846aebde2101d9f25/) | ICHIVaultDepositGuardExtendedForMFD | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -240,7 +244,6 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0x7ba715...90bb56`](./contracts/celo-42220/0x7ba715350fa7d3120712b4ab1e3fc89f9090bb56/) | ICHIVaultMigrationGuard | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x772960...3790b3`](./contracts/celo-42220/0x772960d9a88004cdb2cc0fca020e04bfea3790b3/) | MultiFeeDistributionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc88f47...777c37`](./contracts/ethereum-1/0xc88f47067db2e25851317a2fdae73a22c0777c37/) | oneBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fcbbb...eeb6e1`](./contracts/ethereum-1/0x6fcbbb527fb2954bed2b224a5bb7c23c5aeeb6e1/) | oneETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x18cc17...e2a2cf`](./contracts/ethereum-1/0x18cc17a1eed37c02a77b0b96b7890c7730e2a2cf/) | oneLINK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7bd198...edbc4c`](./contracts/ethereum-1/0x7bd198b9107496fd5cc3d7655af52f43a8edbc4c/) | oneVBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8f041a...0e1618`](./contracts/ethereum-1/0x8f041a3940a5e6fb580075c3774e15fcfa0e1618/) | oneWING | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -256,30 +259,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 47 |
-| upstream | 6 |
-| standard_library | 5 |
-| needs_review | 67 |
+| native | 63 |
+| upstream | 5 |
+| standard_library | 6 |
+| needs_review | 52 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: high=3
+- Match method counts: extraction_exact=66
 
 Zero-match audit list:
 
 - [6948] CertiK Audit Report for ICHI - FarmV2.pdf
-- [11799] Audit Report
-- [11801] Audit Report
 - [11802] Audit Report
 - [11803] Audit Report
 - [11804] Audit Report
 - [11805] Audit Report
-- [11806] Ichi_Farm_Audit_Bramah.pdf
 - [11807] quantstamp
 
 Fork inheritance lineage and inherited audits are included when available.

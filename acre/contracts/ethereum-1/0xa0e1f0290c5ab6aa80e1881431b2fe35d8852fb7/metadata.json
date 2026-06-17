@@ -1,0 +1,18 @@
+{
+  "address": "0xa0e1f0290c5ab6aa80e1881431b2fe35d8852fb7",
+  "chain_id": 1,
+  "contract_name": "AcreMultiAssetVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T20:42:46.156Z"
+}

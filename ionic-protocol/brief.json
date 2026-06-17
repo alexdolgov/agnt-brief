@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ionic-protocol",
-  "generated_at": "2026-06-17T07:00:36.484Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T20:38:20.346Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ionic-protocol",
@@ -70,19 +70,18 @@
     "project_purpose": "Ionic Protocol is a lending protocol that enables users to supply and borrow digital assets across multiple chains. It provides money markets where lenders earn interest and borrowers can take out overcollateralized loans.",
     "relationship_narrative": "The Ionic Protocol family uses the ERC1967Proxy as the main entry point for lending operations, while the IonicSdk.supportedAssets family provides the token contracts that can be supplied or borrowed. The IonicSdk.chainDeployment contract likely serves as a configuration hub linking the protocol to its supported assets on the chain.",
     "product_family_count": 3,
-    "total_contracts_indexed": 518,
+    "total_contracts_indexed": 513,
     "live_contracts": 10,
-    "inactive_contracts": 506,
+    "inactive_contracts": 501,
     "singleton_contracts": 2,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 3,
     "live_deployment_units": 0,
-    "dependencies_extracted": 21,
-    "unverified_dependencies": 1,
+    "dependencies_extracted": 10,
+    "unverified_dependencies": 2,
     "detected_codebases": [
-      "compound-v2",
-      "uniswap-v2"
+      "compound-v2"
     ]
   },
   "surface_sufficiency": {
@@ -279,7 +278,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 34443,
@@ -394,8 +393,8 @@
       "deployment_unit_proxy_count": null,
       "name": "xERC20Hyperlane",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "hyperlane",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -419,7 +418,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -480,9 +479,9 @@
   ],
   "origin_summary": {
     "native": 3,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 2,
-    "needs_review": 4
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {

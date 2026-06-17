@@ -66,7 +66,7 @@
 | PendleMidasSY | ethereum | `0xe2ad97...fe48ba` | ⚠️ Unaudited | Verified |
 | PendleMidasSY | ethereum | `0xf526ed...3c0e9d` | ⚠️ Unaudited | Verified |
 | [stBTC](./ethereum-1/0x4271d490e30cc14d87666bd1577dbebc2c0e64e2/) | ethereum | [`0x4271d4...0e64e2`](./ethereum-1/0x4271d490e30cc14d87666bd1577dbebc2c0e64e2/) | ✅ Audited | Verified |
-| [tBTC](./ethereum-1/0x6b6b870c7f449266a9f40f94eca5a6ff9b0857e4/) | ethereum | [`0x6b6b87...0857e4`](./ethereum-1/0x6b6b870c7f449266a9f40f94eca5a6ff9b0857e4/) | ⚠️ Unaudited | Verified |
+| tBTC | ethereum | `0x6b6b87...0857e4` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x002006...71e516` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x06591a...d172d8` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x157fd9...7750db` | ❓ Unverified | Unverified |

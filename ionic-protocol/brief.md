@@ -7,8 +7,8 @@
 - Project: Ionic Protocol (`ionic-protocol`)
 - Website: [https://app.ionic.money/](https://app.ionic.money/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:36.484Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T20:38:20.346Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
 - Chains: bsc, mode
 - Contract surface: 9 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $2,042,238.81
@@ -25,11 +25,11 @@ The Ionic Protocol family uses the ERC1967Proxy as the main entry point for lend
 
 ## Contract Surface Quality
 
-- Indexed contracts: 518; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 506 inactive, 2 singleton, 0 uninitialized.
+- Indexed contracts: 513; live-surface contracts included: 10 (10 live, 0 unknown).
+- Excluded by liveness: 501 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/3 live.
-- Detected codebases: compound-v2, uniswap-v2
-- Unverified dependencies: 1/21.
+- Detected codebases: compound-v2
+- Unverified dependencies: 2/10.
 
 ## Audit Coverage Summary
 
@@ -111,9 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 3 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 2 |
-| needs_review | 4 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

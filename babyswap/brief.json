@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "babyswap",
-  "generated_at": "2026-06-17T07:00:49.064Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T20:35:23.492Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "babyswap",
@@ -69,8 +69,8 @@
     "unknown_contracts": 0,
     "deployment_units": 1,
     "live_deployment_units": 0,
-    "dependencies_extracted": 56,
-    "unverified_dependencies": 11,
+    "dependencies_extracted": 29,
+    "unverified_dependencies": 4,
     "detected_codebases": [
       "uniswap-v2"
     ]
@@ -465,8 +465,8 @@
       "deployment_unit_proxy_count": null,
       "name": "BabyProxyOFT",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1100,6 +1100,16 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x000c86bb08f24261453a289fa3af839e23c28d43",
+      "name": "BabyProxyOFT",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x325e343f1de602396e256b67efd1f61c3a6b38bd",
       "name": "BabyRouter",
       "role": "adapter",
@@ -1209,8 +1219,8 @@
     }
   ],
   "origin_summary": {
-    "native": 23,
-    "upstream": 1,
+    "native": 24,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

@@ -19,7 +19,7 @@
 | [access-protocol](./access-protocol/) | $879.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 26 | 2026-06-17 |
 | [acet](./acet/) | $12.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [acre](./acre/) | $3.4M | 2.2% | ? | active | 4 | 59 | 2026-06-17 |
+| [acre](./acre/) | $3.4M | 2.4% | ? | active | 6 | 54 | 2026-06-17 |
 | [across](./across/) | $27.7M | 13.4% | $9.1M | active | 11 | 104 | 2026-06-17 |
 | [acryptos](./acryptos/) | $5.0M | 47.1% | $85.7K | active | 7 | 19 | 2026-06-17 |
 | [aegis-markets](./aegis-markets/) | $24.2M | 0.0% | $24.2M | active | 2 | 16 | 2026-06-17 |
@@ -553,7 +553,7 @@
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 31 | 2026-06-17 |
 | [ibtc-finance](./ibtc-finance/) | $254.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ibtc-network](./ibtc-network/) | $158.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [ichi](./ichi/) | $35.9M | 0.0% | $35.9M | active | 9 | 125 | 2026-06-17 |
+| [ichi](./ichi/) | $35.9M | 12.5% | $35.9M | active | 9 | 126 | 2026-06-17 |
 | [ifpool](./ifpool/) | $80.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 6 | 2026-06-17 |
 | [immutable-zkevm](./immutable-zkevm/) | $25.1M | 33.3% | ? | active | 4 | 3 | 2026-06-17 |
@@ -623,7 +623,7 @@
 | [king-protocol](./king-protocol/) | $1.1M | 50.0% | ? | active | 4 | 13 | 2026-06-17 |
 | [kingdefi](./kingdefi/) | $35.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kintsu](./kintsu/) | $2.2M | 0.0% | ? | declining | 5 | 4 | 2026-06-17 |
-| [kinza-finance](./kinza-finance/) | $0.0 | 0.0% | $0.0 | declining | 2 | 10 | 2026-06-17 |
+| [kinza-finance](./kinza-finance/) | $0.0 | 0.0% | $0.0 | declining | 2 | 13 | 2026-06-17 |
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [klaystation](./klaystation/) | $1.5M | 0.0% | ? | declining | 0 | 1 | 2026-06-17 |
 | [klayswap](./klayswap/) | $3.9M | 0.0% | ? | declining | 4 | 22 | 2026-06-17 |

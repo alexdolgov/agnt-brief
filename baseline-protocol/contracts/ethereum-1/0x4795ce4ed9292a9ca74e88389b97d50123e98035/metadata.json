@@ -1,0 +1,17 @@
+{
+  "address": "0x4795ce4ed9292a9ca74e88389b97d50123e98035",
+  "chain_id": 1,
+  "contract_name": "BaselineClankerExtension",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "0000000000000000000000006c8599779b03b00aaae63c6378830919abb75473000000000000000000000000c81fd894c0ace037d133af4886550ac8133568e8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-17T22:18:28.835Z"
+}

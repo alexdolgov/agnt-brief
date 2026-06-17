@@ -22,7 +22,7 @@
 | [ProxyAdmin (3 deployments)](./ethereum-1/0x43ca789d45234c2251de20da39fdfb272c89d12f/) | ethereum | 3 deployments: ethereum [`0x43ca78...89d12f`](./ethereum-1/0x43ca789d45234c2251de20da39fdfb272c89d12f/); ethereum `0xa70ddf...703e1c`; ethereum `0xb4899f...fad0b5` | ⚠️ Unaudited | Verified |
 | [SuperchainConfig (2 deployments)](./ethereum-1/0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc/) | ethereum | 2 deployments: ethereum [`0x097f99...9d53cc`](./ethereum-1/0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc/); ethereum `0xe92520...965c46` | ⚠️ Unaudited | Verified |
 | [SystemConfig](./ethereum-1/0x340f923e5c7cbb2171146f64169ec9d5a9ffe647/) | ethereum | [`0x340f92...ffe647`](./ethereum-1/0x340f923e5c7cbb2171146f64169ec9d5a9ffe647/) | ⚠️ Unaudited | Verified |
-| [TimelockController](./ethereum-1/0x0b144e07a0826182b6b59788c34b32bfa86fb711/) | ethereum | [`0x0b144e...6fb711`](./ethereum-1/0x0b144e07a0826182b6b59788c34b32bfa86fb711/) | ⚠️ Unaudited | Verified |
+| TimelockController | ethereum | `0x0b144e...6fb711` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (5)
 
@@ -39,7 +39,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Multicall3](./ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ethereum | [`0xca11bd...76ca11`](./ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited | Verified |
-| [RiscZeroVerifierEmergencyStop](./ethereum-1/0x08aed6c108e500540a9544bef7a8b8a05e056e87/) | ethereum | [`0x08aed6...056e87`](./ethereum-1/0x08aed6c108e500540a9544bef7a8b8a05e056e87/) | ⚠️ Unaudited | Verified |
+| RiscZeroVerifierEmergencyStop | ethereum | `0x08aed6...056e87` | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
 
@@ -67,8 +67,8 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [FusionLock](./ethereum-1/0x61dc14b28d4dbcd6cf887e9b72018b9da1ce6ff7/) | ethereum | [`0x61dc14...ce6ff7`](./ethereum-1/0x61dc14b28d4dbcd6cf887e9b72018b9da1ce6ff7/) | ⚠️ Unaudited | Verified |
-| [KailuaGame (4 deployments)](./ethereum-1/0x4be239c86364ed73fc244a5f50c8ccb101a492ef/) | ethereum | 4 deployments: ethereum [`0x4be239...a492ef`](./ethereum-1/0x4be239c86364ed73fc244a5f50c8ccb101a492ef/); ethereum `0xd37b0b...9e742b`; ethereum `0xe34577...9ca82a`; ethereum `0xe43415...7a053b` | ⚠️ Unaudited | Verified |
+| FusionLock | ethereum | `0x61dc14...ce6ff7` | ⚠️ Unaudited | Verified |
+| KailuaGame (4 deployments) | ethereum | 4 deployments: ethereum `0x4be239...a492ef`; ethereum `0xd37b0b...9e742b`; ethereum `0xe34577...9ca82a`; ethereum `0xe43415...7a053b` | ⚠️ Unaudited | Verified |
 | [L1CrossDomainMessenger](./ethereum-1/0x5d5a095665886119693f0b41d8dfee78da033e8b/) | ethereum | [`0x5d5a09...033e8b`](./ethereum-1/0x5d5a095665886119693f0b41d8dfee78da033e8b/) | ⚠️ Unaudited | Verified |
 | [MIPS64 (2 deployments)](./ethereum-1/0x17c64e93846935dfbd281a5540a14d4cd67195f7/) | ethereum | 2 deployments: ethereum [`0x17c64e...7195f7`](./ethereum-1/0x17c64e93846935dfbd281a5540a14d4cd67195f7/); ethereum `0xf027f4...d15dc1` | ⚠️ Unaudited | Verified |
 | [OPSuccinctDisputeGame](./ethereum-1/0x2c2da5effabda3a9ffe8e3d526c5b1f3b42fea6d/) | ethereum | [`0x2c2da5...2fea6d`](./ethereum-1/0x2c2da5effabda3a9ffe8e3d526c5b1f3b42fea6d/) | ⚠️ Unaudited | Verified |

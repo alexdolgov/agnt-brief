@@ -131,7 +131,7 @@
 | [bancor](./bancor/) | $43.2M | 15.4% | $43.2M | declining | 4 | 13 | 2026-06-17 |
 | [baptswap](./baptswap/) | $5.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [based-finance](./based-finance/) | $189.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [baseline-protocol](./baseline-protocol/) | $106.2M | 0.0% | ? | active | 8 | 28 | 2026-06-17 |
+| [baseline-protocol](./baseline-protocol/) | $836.7K | 0.0% | $836.7K | active | 9 | 38 | 2026-06-17 |
 | [basemax](./basemax/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [basisos](./basisos/) | $24.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bass-exchange](./bass-exchange/) | $248.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -178,7 +178,7 @@
 | [blur](./blur/) | $68.5M | 0.0% | $68.5M | active | 0 | 2 | 2026-06-17 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | declining | 0 | 61 | 2026-06-17 |
 | [bnpl-pay](./bnpl-pay/) | $23.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [bob-bridge](./bob-bridge/) | $202.9K | 0.0% | $202.9K | active | 9 | 28 | 2026-06-17 |
+| [bob-bridge](./bob-bridge/) | $202.9K | 0.0% | $202.9K | active | 9 | 26 | 2026-06-17 |
 | [boba-bridge](./boba-bridge/) | $2.8M | 0.0% | ? | declining | 0 | 7 | 2026-06-17 |
 | [bondappetit](./bondappetit/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bondlink-finance](./bondlink-finance/) | $152.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -400,7 +400,7 @@
 | [ethichub](./ethichub/) | $18.5M | 0.0% | $18.5M | active | 2 | 19 | 2026-06-17 |
 | [ethos](./ethos/) | $1.4M | 22.2% | ? | active | 2 | 14 | 2026-06-17 |
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [eventum-bridge](./eventum-bridge/) | $1.6M | 0.0% | $1.6M | active | 2 | 16 | 2026-06-17 |
+| [eventum-bridge](./eventum-bridge/) | $1.6M | 0.0% | $1.6M | active | 2 | 21 | 2026-06-17 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 39 | 2026-06-17 |
 | [eversol](./eversol/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [everything](./everything/) | $710.2K | 0.0% | ? | active | 0 | 7 | 2026-06-17 |
@@ -410,7 +410,7 @@
 | [exmo](./exmo/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [exponent](./exponent/) | $64.0M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [exsat-staking-btc](./exsat-staking-btc/) | $137.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [extra-finance](./extra-finance/) | $100.0 | 11.1% | ? | active | 3 | 14 | 2026-06-17 |
+| [extra-finance](./extra-finance/) | $100.0 | 22.2% | ? | active | 5 | 14 | 2026-06-17 |
 | [ezmanager](./ezmanager/) | $312.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [fairfi](./fairfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [farm-hero](./farm-hero/) | $5.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -518,7 +518,7 @@
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [hemi-staking](./hemi-staking/) | $391.2 | 3.6% | $391.2 | active | 5 | 65 | 2026-06-17 |
-| [hemi](./hemi/) | $16.1K | 4.2% | $16.1K | unknown | 5 | 31 | 2026-06-17 |
+| [hemi](./hemi/) | $16.1K | 4.8% | $16.1K | declining | 6 | 22 | 2026-06-17 |
 | [hemibtc](./hemibtc/) | $13.3K | 0.0% | $13.3K | active | 5 | 30 | 2026-06-17 |
 | [henjin-dex](./henjin-dex/) | $1.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hera-finance](./hera-finance/) | $6.2M | 27.3% | ? | active | 3 | 37 | 2026-06-17 |

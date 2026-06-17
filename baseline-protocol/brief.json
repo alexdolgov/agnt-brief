@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "baseline-protocol",
-  "generated_at": "2026-06-17T07:00:35.660Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T22:19:15.075Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-9ddf",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "baseline-protocol",
@@ -32,24 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 28,
-    "total_addresses": 28,
-    "unique_implementations": 28,
-    "total_deployments": 28,
+    "total_contracts": 38,
+    "total_addresses": 38,
+    "unique_implementations": 38,
+    "total_deployments": 38,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 26,
+    "contracts_unverified": 33,
     "coverage_pct": 0,
-    "total_audits": 8,
+    "total_audits": 9,
     "scoreable_audits": 0,
     "dl_tvl_usd": 106155696.92056,
-    "tvl_usd": 106155696.92056,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 836656.4402354399,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 22.15,
+      "blast": 836634.29
+    },
+    "asd_usd": 836656.4402354399,
     "website_url": "https://www.baseline.markets/",
     "chains": [
       "base",
@@ -63,7 +66,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 6,
-      "stale": 2,
+      "stale": 3,
       "unknown": 0
     }
   },
@@ -71,23 +74,23 @@
     "project_purpose": "Baseline Protocol is an asset issuance and token-owned-liquidity protocol centered on Baseline/Mercury markets. It uses its own market-maker and AMM mechanics, floor-price backing, bTokens, staking rewards, borrowing, and no-liquidation leverage to support protocol-issued assets and liquidity. External venues such as Uniswap V3 or Thruster may be dependencies or liquidity venues, but they should not be treated as Baseline-owned core contracts or as the primary protocol model.",
     "relationship_narrative": "Baseline Legacy and Baseline Mercury are separate product lines deployed on different chains, sharing no direct contract dependencies but both relying on the Operational family for governance. The Operational multisigs likely control upgrades and parameters across both families, ensuring consistent management.",
     "product_family_count": 3,
-    "total_contracts_indexed": 112,
-    "live_contracts": 27,
-    "inactive_contracts": 82,
+    "total_contracts_indexed": 123,
+    "live_contracts": 36,
+    "inactive_contracts": 83,
     "singleton_contracts": 2,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 2,
     "deployment_units": 3,
     "live_deployment_units": 1,
-    "dependencies_extracted": 11,
-    "unverified_dependencies": 4,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 0,
     "detected_codebases": [
       "uniswap-v3"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 28,
-    "has_non_token_contracts": false,
+    "unique_implementations": 38,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -96,10 +99,115 @@
   },
   "contracts": [
     {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x1d16788b97edb7d9a6ae66d5c5c16469037faa00",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ThrusterPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "thruster",
+      "product_line": null,
+      "tvl_usd": 836634.2884975901,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ThrusterPool",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x1d16788b97edb7d9a6ae66d5c5c16469037faa00",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 836634.2884975901,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 22.151737849787164,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 22.151737849787164,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4795ce4ed9292a9ca74e88389b97d50123e98035",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BaselineClankerExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BaselineClankerExtension",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4795ce4ed9292a9ca74e88389b97d50123e98035",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x8044f710c58b6ea6a178cc540f9f1cd758f7d1b2",
-      "deployment_unit": "unit-19513",
+      "deployment_unit": "unit-33249",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -115,7 +223,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8044f710c58b6ea6a178cc540f9f1cd758f7d1b2",
-          "deployment_unit": "unit-19513",
+          "deployment_unit": "unit-33249",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -134,7 +242,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xff0034bbf2a92d0e27717387f3f829f37241ee5a",
-      "deployment_unit": "unit-19515",
+      "deployment_unit": "unit-33251",
       "deployment_unit_proxy_count": 1,
       "name": "Safe",
       "role": "unknown",
@@ -150,7 +258,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xff0034bbf2a92d0e27717387f3f829f37241ee5a",
-          "deployment_unit": "unit-19515",
+          "deployment_unit": "unit-33251",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -290,6 +398,111 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x30dba569a6f7bcf5218e244b8545b3065d36b615",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x312a20416a946ad188ce69659a9f45fb14eed1b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x312a20416a946ad188ce69659a9f45fb14eed1b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4488f733ebf9566ea862a0cd5e8efce26301bba0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4488f733ebf9566ea862a0cd5e8efce26301bba0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x52b8a6d3141538f544cca0aca51dae471f3542bc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x52b8a6d3141538f544cca0aca51dae471f3542bc",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -483,6 +696,76 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x7e0353b6014d0b04de0c495f7720e2110fd53cd4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7e0353b6014d0b04de0c495f7720e2110fd53cd4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x91d947028107300dfbcc16fb4a6ef65e516b6fbb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x91d947028107300dfbcc16fb4a6ef65e516b6fbb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xa6f49dfca6668e1d520c8594452c6945eee596f1",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -570,6 +853,41 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb2a9f3886134e5f6a19a1a87bd62343fe2685c64",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb2f8e94d0fd1fb4fa917c0d075f4a3f40b266d4d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb2f8e94d0fd1fb4fa917c0d075f4a3f40b266d4d",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -899,6 +1217,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc81fd894c0ace037d133af4886550ac8133568e8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc81fd894c0ace037d133af4886550ac8133568e8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -1244,15 +1597,47 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14627,
+      "audit_key": "audit-14627",
+      "report_name": "| Baseline V1 | [audit\\_trust\\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |",
+      "report_url": "https://trustsec.xyz/",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4795ce4ed9292a9ca74e88389b97d50123e98035",
+      "name": "BaselineClankerExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 0,
+    "native": 5,
+    "upstream": 2,
     "standard_library": 2,
-    "needs_review": 22
+    "needs_review": 29
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -1293,6 +1678,10 @@
       {
         "audit_id": 4661,
         "report_name": "audit_trust_security.pdf"
+      },
+      {
+        "audit_id": 14627,
+        "report_name": "| Baseline V1 | [audit\\_trust\\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |"
       }
     ],
     "inherited_remapped_matches": []

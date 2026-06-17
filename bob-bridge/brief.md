@@ -5,10 +5,10 @@
 - Project: BOB Bridge (`bob-bridge`)
 - Website: [https://www.gobob.xyz](https://www.gobob.xyz)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:35.677Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T22:22:03.110Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
 - Chains: ethereum
-- Contract surface: 28 unique implementations (56 raw deployments)
+- Contract surface: 26 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $2,692,052.74
 - On-chain TVL (included contracts): $202,895.03
 - TVL by chain: Ethereum $202,895.03
@@ -23,19 +23,19 @@ The BOB Bridge family relies on the Ethereum (L1) family's OP Stack contracts fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 107; live-surface contracts included: 56 (44 live, 12 unknown).
-- Excluded by liveness: 29 inactive, 22 singleton, 0 uninitialized.
-- Deployment units: 5/20 live.
+- Indexed contracts: 103; live-surface contracts included: 56 (44 live, 12 unknown).
+- Excluded by liveness: 23 inactive, 24 singleton, 0 uninitialized.
+- Deployment units: 6/22 live.
 - Detected codebases: none
-- Unverified dependencies: 64/83.
+- Unverified dependencies: 114/139.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/28 (0.0%)
-- Verified + Unaudited implementations: 28
+- Verified implementations audited: 0/26 (0.0%)
+- Verified + Unaudited implementations: 26
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 28
+- Unique implementations: 26
 - Raw deployments: 56
 - Audits discovered: 9
 - Scoreable audits (matched contracts): 0
@@ -54,22 +54,22 @@ The BOB Bridge family relies on the Ethereum (L1) family's OP Stack contracts fo
 
 - None
 
-### ⚠️ Verified + Unaudited (28)
+### ⚠️ Verified + Unaudited (26)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | SideToken | token | ethereum | n/a | 2 deployments: ethereum [`0xbdab72...b8f7a5`](./contracts/ethereum-1/0xbdab72602e9ad40fc6a6852caf43258113b8f7a5/); ethereum `0xbdbb63...323dd1` | ⚠️ Unaudited |
 | AnchorStateRegistry | registry | ethereum | n/a | [`0xd0216b...535431`](./contracts/ethereum-1/0xd0216bdcc195abdf77746b6a6347ce85e2535431/) | ⚠️ Unaudited |
 | DisputeGameFactory | registry | ethereum | n/a | [`0x4bba75...74e4a0`](./contracts/ethereum-1/0x4bba758f006ef09402ef31724203f316ab74e4a0/) | ⚠️ Unaudited |
-| DisputeGameFactory | registry | ethereum | unit-19829 | [`0x96123d...9b1079`](./contracts/ethereum-1/0x96123dbfc3253185b594c6a7472ee5a21e9b1079/) | ⚠️ Unaudited |
-| FusionLock | unknown | ethereum | n/a | [`0x61dc14...ce6ff7`](./contracts/ethereum-1/0x61dc14b28d4dbcd6cf887e9b72018b9da1ce6ff7/) | ⚠️ Unaudited |
-| KailuaGame | unknown | ethereum | n/a | 4 deployments: ethereum [`0x4be239...a492ef`](./contracts/ethereum-1/0x4be239c86364ed73fc244a5f50c8ccb101a492ef/); ethereum `0xd37b0b...9e742b`; ethereum `0xe34577...9ca82a`; ethereum `0xe43415...7a053b` | ⚠️ Unaudited |
-| KailuaTreasury | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x993703...02ae53`](./contracts/ethereum-1/0x9937033cc967eed9d753e31c77d2f146d002ae53/); ethereum `0x9b3e16...e9263c`; ethereum `0xe99af5...5fb895` | ⚠️ Unaudited |
+| DisputeGameFactory | registry | ethereum | unit-33293 | [`0x96123d...9b1079`](./contracts/ethereum-1/0x96123dbfc3253185b594c6a7472ee5a21e9b1079/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-33297 | [`0xc91482...dc764e`](./contracts/ethereum-1/0xc91482a96e9c2a104d9298d1980eccf8c4dc764e/) | ⚠️ Unaudited |
+| KailuaGame | unknown | ethereum | n/a | 5 deployments: ethereum [`0x296e7a...479444`](./contracts/ethereum-1/0x296e7ad6d441b0627768bc0650179a4206479444/); ethereum `0x4be239...a492ef`; ethereum `0xd37b0b...9e742b`; ethereum `0xe34577...9ca82a`; ethereum `0xe43415...7a053b` | ⚠️ Unaudited |
+| KailuaTreasury | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x993703...02ae53`](./contracts/ethereum-1/0x9937033cc967eed9d753e31c77d2f146d002ae53/); ethereum `0x9b3e16...e9263c`; ethereum `0xc7eacd...52b336`; ethereum `0xe99af5...5fb895` | ⚠️ Unaudited |
 | L1CrossDomainMessenger | unknown | ethereum | n/a | [`0x5d5a09...033e8b`](./contracts/ethereum-1/0x5d5a095665886119693f0b41d8dfee78da033e8b/) | ⚠️ Unaudited |
 | L1ERC721Bridge | operational_periphery | ethereum | n/a | [`0x7ae1d3...c98013`](./contracts/ethereum-1/0x7ae1d3bd877a4c5ca257404ce26be93a02c98013/) | ⚠️ Unaudited |
 | L1StandardBridge | operational_periphery | ethereum | n/a | [`0x0b09ba...7d2a7a`](./contracts/ethereum-1/0x0b09ba359a106c9ea3b181cbc5f394570c7d2a7a/) | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | unit-19822 | [`0x3f6ce1...4ac1f7`](./contracts/ethereum-1/0x3f6ce1b36e5120bbc59d0cfe8a5ac8b6464ac1f7/) | ⚠️ Unaudited |
-| L2OutputOracle | operational_periphery | ethereum | unit-19833 | [`0xdda53e...db11c1`](./contracts/ethereum-1/0xdda53e23f8a32640b04d7256e651c1db98db11c1/) | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | ethereum | unit-33285 | [`0x3f6ce1...4ac1f7`](./contracts/ethereum-1/0x3f6ce1b36e5120bbc59d0cfe8a5ac8b6464ac1f7/) | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | ethereum | unit-33298 | [`0xdda53e...db11c1`](./contracts/ethereum-1/0xdda53e23f8a32640b04d7256e651c1db98db11c1/) | ⚠️ Unaudited |
 | MIPS64 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x17c64e...7195f7`](./contracts/ethereum-1/0x17c64e93846935dfbd281a5540a14d4cd67195f7/); ethereum `0xf027f4...d15dc1` | ⚠️ Unaudited |
 | Multicall3 | periphery | ethereum | n/a | [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
 | OPContractsManager | governance | ethereum | n/a | [`0xdfe652...96ee3c`](./contracts/ethereum-1/0xdfe652fb94eb26c0f343d1c0273bfee78596ee3c/) | ⚠️ Unaudited |
@@ -80,12 +80,10 @@ The BOB Bridge family relies on the Ethereum (L1) family's OP Stack contracts fo
 | PreimageOracle | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x1fb8cd...87add3`](./contracts/ethereum-1/0x1fb8cdfc6831fc866ed9c51af8817da5c287add3/); ethereum `0xee74fd...79fa7a` | ⚠️ Unaudited |
 | Proxy | proxy | ethereum | n/a | 2 deployments: ethereum [`0x11c03c...5f8acf`](./contracts/ethereum-1/0x11c03c11ba32fede01fb870ed35ecb0f3d5f8acf/); ethereum `0xb9d8f5...17aad4` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x43ca78...89d12f`](./contracts/ethereum-1/0x43ca789d45234c2251de20da39fdfb272c89d12f/); ethereum `0xa70ddf...703e1c`; ethereum `0xb4899f...fad0b5` | ⚠️ Unaudited |
-| RiscZeroVerifierEmergencyStop | periphery | ethereum | n/a | [`0x08aed6...056e87`](./contracts/ethereum-1/0x08aed6c108e500540a9544bef7a8b8a05e056e87/) | ⚠️ Unaudited |
 | RiscZeroVerifierRouter | adapter | ethereum | n/a | [`0x8eab2d...93d319`](./contracts/ethereum-1/0x8eab2d97dfce405a1692a21b3ff3a172d593d319/) | ⚠️ Unaudited |
-| SuperchainConfig | governance | ethereum | unit-19818 (2 proxies) | 2 deployments: ethereum [`0x097f99...9d53cc`](./contracts/ethereum-1/0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc/); ethereum `0xe92520...965c46` | ⚠️ Unaudited |
+| SuperchainConfig | governance | ethereum | unit-33281 (2 proxies) | 2 deployments: ethereum [`0x097f99...9d53cc`](./contracts/ethereum-1/0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc/); ethereum `0xe92520...965c46` | ⚠️ Unaudited |
 | SystemConfig | governance | ethereum | n/a | [`0x340f92...ffe647`](./contracts/ethereum-1/0x340f923e5c7cbb2171146f64169ec9d5a9ffe647/) | ⚠️ Unaudited |
-| TetherToken | token | ethereum | unit-19827 | [`0x687496...782f38`](./contracts/ethereum-1/0x68749665ff8d2d112fa859aa293f07a622782f38/) | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | n/a | [`0x0b144e...6fb711`](./contracts/ethereum-1/0x0b144e07a0826182b6b59788c34b32bfa86fb711/) | ⚠️ Unaudited |
+| TetherToken | token | ethereum | unit-33290 | [`0x687496...782f38`](./contracts/ethereum-1/0x68749665ff8d2d112fa859aa293f07a622782f38/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,21 +126,22 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xbdab72...b8f7a5`](./contracts/ethereum-1/0xbdab72602e9ad40fc6a6852caf43258113b8f7a5/) | SideToken | token | $202,895.03 | Verified native implementation with $202,895.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd0216b...535431`](./contracts/ethereum-1/0xd0216bdcc195abdf77746b6a6347ce85e2535431/) | AnchorStateRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4bba75...74e4a0`](./contracts/ethereum-1/0x4bba758f006ef09402ef31724203f316ab74e4a0/) | DisputeGameFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x61dc14...ce6ff7`](./contracts/ethereum-1/0x61dc14b28d4dbcd6cf887e9b72018b9da1ce6ff7/) | FusionLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4be239...a492ef`](./contracts/ethereum-1/0x4be239c86364ed73fc244a5f50c8ccb101a492ef/) | KailuaGame | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x96123d...9b1079`](./contracts/ethereum-1/0x96123dbfc3253185b594c6a7472ee5a21e9b1079/) | DisputeGameFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x993703...02ae53`](./contracts/ethereum-1/0x9937033cc967eed9d753e31c77d2f146d002ae53/) | KailuaTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3f6ce1...4ac1f7`](./contracts/ethereum-1/0x3f6ce1b36e5120bbc59d0cfe8a5ac8b6464ac1f7/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5b172b...415514`](./contracts/ethereum-1/0x5b172bbfa0140285a02374ec1f5b9f25ef415514/) | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x11c03c...5f8acf`](./contracts/ethereum-1/0x11c03c11ba32fede01fb870ed35ecb0f3d5f8acf/) | Proxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x097f99...9d53cc`](./contracts/ethereum-1/0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc/) | SuperchainConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x340f92...ffe647`](./contracts/ethereum-1/0x340f923e5c7cbb2171146f64169ec9d5a9ffe647/) | SystemConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
-| upstream | 10 |
+| native | 10 |
+| upstream | 11 |
 | standard_library | 4 |
-| needs_review | 5 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

@@ -7,8 +7,8 @@
 - Project: MerlinSwap (`merlinswap`)
 - Website: [https://merlinswap.org](https://merlinswap.org)
 - Lifecycle: declining (Tier 0, 94.8% below peak)
-- Generated: 2026-06-17T07:00:58.315Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T19:00:08.252Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: merlin
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $6,894,830.37

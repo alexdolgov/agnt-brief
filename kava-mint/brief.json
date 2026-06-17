@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-mint",
-  "generated_at": "2026-06-17T07:00:50.100Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-17T19:03:08.388Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-mint",

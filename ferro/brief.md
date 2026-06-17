@@ -7,8 +7,8 @@
 - Project: Ferro (`ferro`)
 - Website: [https://ferroprotocol.com](https://ferroprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:01:00.757Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T19:05:33.839Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: cronos
 - Contract surface: 21 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $4,922,586.46

@@ -7,8 +7,8 @@
 - Project: Wrapped BNB (`wrapped-bnb`)
 - Website: [https://www.kava.io](https://www.kava.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:48.997Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T19:07:14.567Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,514,258.28

@@ -5,8 +5,8 @@
 - Project: Swapscanner (`swapscanner`)
 - Website: [https://swapscanner.io/](https://swapscanner.io/)
 - Lifecycle: active (Tier 0, 82.4% below peak)
-- Generated: 2026-06-17T07:01:00.869Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T19:07:07.147Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,101,384.00

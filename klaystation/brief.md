@@ -7,8 +7,8 @@
 - Project: KLAYstation (`klaystation`)
 - Website: [https://klaystation.io](https://klaystation.io)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:58.300Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-17T19:05:01.857Z
+- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
 - Chains: klaytn
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,454,169.64

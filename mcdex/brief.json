@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mcdex",
-  "generated_at": "2026-06-17T07:00:38.575Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T02:28:49.471Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "mcdex",
@@ -32,27 +32,24 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 72,
-    "total_addresses": 99,
-    "unique_implementations": 72,
-    "total_deployments": 99,
-    "audited_contracts": 1,
-    "unaudited_contracts": 32,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 32,
+    "total_contracts": 70,
+    "total_addresses": 94,
+    "unique_implementations": 70,
+    "total_deployments": 94,
+    "audited_contracts": 5,
+    "unaudited_contracts": 25,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 39,
-    "coverage_pct": 3,
+    "contracts_unverified": 40,
+    "coverage_pct": 16.7,
     "total_audits": 4,
-    "scoreable_audits": 1,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 943029.1549600001,
-    "tvl_usd": 268197.9429034642,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "avalanche": 4590.31,
-      "bsc": 263607.64
-    },
-    "asd_usd": 268197.9429034642,
+    "tvl_usd": 943029.1549600001,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://mux.network/",
     "chains": [
       "arbitrum",
@@ -64,33 +61,33 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025",
+    "latest_audit_date": "2025-02",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "MCDEX was a decentralized perpetual exchange protocol. For the mcdex project key, the legacy MCDEX DefiLlama slug should be treated as ceased/dead, with remaining TVL representing user deposits rather than an active broad MUX/MUX3 protocol surface. MUX/MUX3 successor or rebrand contracts and audits should be scoped separately unless the project is explicitly renamed/rescoped as MUX/MUX3.",
     "relationship_narrative": "The MCDEX family serves as the core perpetual trading engine, while chain-specific families (Arbitrum, Avalanche, BNB Chain, Optimism, Fantom) deploy its infrastructure with shared governance and reward contracts. Cross-chain token bridges (MintSwapCanonicalToken) and adapters (e.g., GmxAdapter) connect liquidity across deployments, and multi-sig addresses provide unified governance.",
     "product_family_count": 7,
-    "total_contracts_indexed": 2597,
-    "live_contracts": 75,
-    "inactive_contracts": 2003,
-    "singleton_contracts": 495,
+    "total_contracts_indexed": 2584,
+    "live_contracts": 70,
+    "inactive_contracts": 1990,
+    "singleton_contracts": 500,
     "uninitialized_contracts": 0,
     "unknown_contracts": 24,
-    "deployment_units": 225,
-    "live_deployment_units": 8,
-    "dependencies_extracted": 9,
-    "unverified_dependencies": 3,
+    "deployment_units": 226,
+    "live_deployment_units": 6,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 72,
+    "unique_implementations": 70,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -99,140 +96,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MintSwapCanonicalToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Optimism",
-      "tvl_usd": 268197.9429034642,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MintSwapCanonicalToken",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x724a32dfff9769a0a0e1f0515c0012d1fb14c3bd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3878.97671641445,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x81421a49c2bb3f2f77a666f0686b4db47a26360c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb2d09c5723c2d8fcfc89ae50a6d8919dcb2c9aad",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 259728.6607914702,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf234437596b9c90231181a2e80c668c4e5408108",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x746ba48fc973596d0077573bda6185ca3bb9c3dc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbc7b0223dd16cbc679c0d04ba3f4530d76dfba87",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4590.305395579529,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xde53842f87c95362b2912db5dbba404e7d5ff842",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -258,14 +121,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11957"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -293,7 +158,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -304,14 +169,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11957"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -458,6 +325,17 @@
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
+          "address": "0xd342b250b3171b3f6e2859c1402c53042691ca22",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
           "address": "0xfe2afaf34b3016dda8cf2df75ded256ddffeb115",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
@@ -478,7 +356,7 @@
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5",
-      "deployment_unit": "unit-24239",
+      "deployment_unit": "unit-34152",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -494,7 +372,7 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5",
-          "deployment_unit": "unit-24239",
+          "deployment_unit": "unit-34152",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -513,7 +391,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xf67d9ec4f3362589e56ab0dbee448eb7a4964204",
-      "deployment_unit": "unit-24257",
+      "deployment_unit": "unit-34170",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -529,7 +407,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xf67d9ec4f3362589e56ab0dbee448eb7a4964204",
-          "deployment_unit": "unit-24257",
+          "deployment_unit": "unit-34170",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -548,7 +426,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6",
-      "deployment_unit": "unit-24261",
+      "deployment_unit": "unit-34175",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -564,7 +442,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6",
-          "deployment_unit": "unit-24261",
+          "deployment_unit": "unit-34175",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -583,7 +461,7 @@
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0x8564c77261094abeee6d60a26d40f8dbaf23fc94",
-      "deployment_unit": "unit-24452",
+      "deployment_unit": "unit-34366",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -599,7 +477,7 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x8564c77261094abeee6d60a26d40f8dbaf23fc94",
-          "deployment_unit": "unit-24452",
+          "deployment_unit": "unit-34366",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -709,14 +587,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11957"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -899,25 +779,91 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x0d71d18126e03646eb09fec929e2ae87b7cae69d",
-      "deployment_unit": "unit-24232",
-      "deployment_unit_proxy_count": 1,
-      "name": "MessageBus",
-      "role": "operational_periphery",
+      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MintSwapCanonicalToken",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "Optimism",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xf8bfeac18a838ace22110e499922623d54ea26da",
-      "impl_name": "MessageBus",
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MintSwapCanonicalToken",
       "deployments": [
         {
           "chain_id": 10,
           "chain_name": "optimism",
-          "address": "0x0d71d18126e03646eb09fec929e2ae87b7cae69d",
-          "deployment_unit": "unit-24232",
-          "deployment_unit_proxy_count": 1,
+          "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x81421a49c2bb3f2f77a666f0686b4db47a26360c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf234437596b9c90231181a2e80c668c4e5408108",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x746ba48fc973596d0077573bda6185ca3bb9c3dc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xde53842f87c95362b2912db5dbba404e7d5ff842",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -929,13 +875,13 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x6fded16b69ca396e437af47bdad1d0352e4d2705",
-      "deployment_unit": "unit-24332",
+      "deployment_unit": "unit-34246",
       "deployment_unit_proxy_count": 2,
       "name": "Mux3Rebalancer",
       "role": "adapter",
@@ -951,7 +897,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x6fded16b69ca396e437af47bdad1d0352e4d2705",
-          "deployment_unit": "unit-24332",
+          "deployment_unit": "unit-34246",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -962,7 +908,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xe27ca8f191497eb284529f6e3698be242b757029",
-          "deployment_unit": "unit-24332",
+          "deployment_unit": "unit-34246",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -985,7 +931,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MuxLpOracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1372,7 +1318,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1383,7 +1329,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1394,7 +1340,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1405,7 +1351,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1416,7 +1362,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1427,14 +1373,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11957"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2355,7 +2303,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2770,6 +2718,41 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
+      "address": "0xd4ce144a8b8601f6b44e61a59651bc1d933d8dec",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd4ce144a8b8601f6b44e61a59651bc1d933d8dec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
       "address": "0xe2ab53b525c8aed74675915fdbe8169ef599cf3d",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -2835,87 +2818,6 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x39d653884b611e0a8dbdb9720ad5d75642fd544b",
-      "deployment_unit": "unit-24235",
-      "deployment_unit_proxy_count": 1,
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Optimism",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x68e13c91fc1b8dca877d88d5d48e7b4bc9d6afc3",
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x39d653884b611e0a8dbdb9720ad5d75642fd544b",
-          "deployment_unit": "unit-24235",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x29a28cc3fdc128693ef6a596ef45c43ff63b7062",
-      "deployment_unit": "unit-24445",
-      "deployment_unit_proxy_count": 2,
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Avalanche",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x7a1ae37f17269dd604ea291e87a3064ac97f27c5",
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x29a28cc3fdc128693ef6a596ef45c43ff63b7062",
-          "deployment_unit": "unit-24445",
-          "deployment_unit_proxy_count": 2,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbc4d2a889786fe3ed840b76eaab923a487e1207b",
-          "deployment_unit": "unit-24445",
-          "deployment_unit_proxy_count": 2,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     }
   ],
@@ -2997,13 +2899,13 @@
       "report_url": "https://skynet.certik.com/projects/mux-protocol",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -3019,50 +2921,61 @@
       "auditor": "Guardian",
       "audit_type": "audit",
       "freshness": "aging",
-      "date": "2025",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChainlinkStreamProvider",
+        "CollateralManager",
+        "CollateralPool",
+        "CollateralPoolAumReader",
+        "CollateralPoolComputed",
+        "Delegator",
+        "FacetClose",
+        "FacetManagement",
+        "FacetPositionAccount",
+        "FacetReader",
+        "LibCodec",
+        "LibExpBorrowingRate",
+        "LibOrderBook",
+        "Market",
+        "Mux3FeeDistributor",
+        "MuxPriceProvider",
+        "OrderBook",
+        "OrderBookGetter",
+        "PositionAccount",
+        "PricingManager",
+        "SusdsOracleL1",
+        "SusdsOracleL2",
+        "Swapper"
+      ],
+      "matched_contracts": 10,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "Guardian",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 13.3,
+      "latest_audit": "2025-02"
+    },
+    {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3,
+      "coverage_pct": 3.3,
       "latest_audit": "2022-06"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-      "name": "MintSwapCanonicalToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 268197.9429034642,
-      "risk_note": "Verified native implementation with $268,197.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2f9ac5322e6fac446e0b9861cf7f8a0662f7b909",
-      "name": "CollateralPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -3106,16 +3019,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef",
-      "name": "LibOrderBook",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x0035f6ca0417cd36eb62764bcbbe163e7d296059",
       "name": "LibOrderBook2",
       "role": "unknown",
@@ -3136,8 +3039,18 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x0d71d18126e03646eb09fec929e2ae87b7cae69d",
-      "name": "MessageBus",
+      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
+      "name": "MintSwapCanonicalToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf",
+      "name": "MuxLpOracle",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -3182,30 +3095,20 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x36b74e1d00aff68e472dbdcf2e35f085878e424a",
-      "name": "Swapper",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 16,
+    "native": 15,
     "upstream": 0,
-    "standard_library": 6,
+    "standard_library": 5,
     "needs_review": 50
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 198
+      "extraction_exact": 445
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -3213,10 +3116,6 @@
       {
         "audit_id": 11956,
         "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 11957,
-        "report_name": "* MUX V3 Trading Protocol contracts have been audited by [Guardian](https://guardianaudits.com/). Please check [here]()"
       }
     ],
     "inherited_remapped_matches": []

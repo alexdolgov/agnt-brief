@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "king-protocol",
-  "generated_at": "2026-06-17T07:00:38.438Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T01:58:25.708Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "king-protocol",
@@ -22,28 +22,30 @@
     "drop_from_peak_pct": 93.97074235990284
   },
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 16,
-    "unique_implementations": 13,
-    "total_deployments": 16,
-    "audited_contracts": 1,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 15,
+    "total_addresses": 15,
+    "unique_implementations": 15,
+    "total_deployments": 15,
+    "audited_contracts": 0,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 11,
-    "coverage_pct": 50,
-    "total_audits": 4,
-    "scoreable_audits": 2,
+    "contracts_unverified": 12,
+    "coverage_pct": 0,
+    "total_audits": 5,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 1142997.99071,
-    "tvl_usd": 1142997.99071,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 3674.4232177731606,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 3674.42
+    },
+    "asd_usd": 3674.4232177731606,
     "website_url": "https://kingprotocol.org/",
     "chains": [
+      "arbitrum",
       "base",
-      "ethereum",
       "mantle",
       "swellchain"
     ],
@@ -53,30 +55,33 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 4,
+      "aging": 3,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
     "project_purpose": "King Protocol is a rewards and vault-share protocol focused on consolidating DeFi and restaking rewards into a liquid token. Its observed deployments include cross-chain token components such as KingOFTL2/LayerZero OFT-related contracts, but these should be treated as cross-chain deployment infrastructure rather than the sole or primary product definition unless further supported by current documentation.",
     "relationship_narrative": "The LRTSquaredCore contract manages the core restaking logic and interacts with the PriceProvider for asset pricing and the Swapper1InchV6 for trade execution. KingOFTL2 tokens are the liquid restaking tokens that are minted to users and can be bridged across chains via LayerZero.",
     "product_family_count": 1,
-    "total_contracts_indexed": 32,
-    "live_contracts": 15,
+    "total_contracts_indexed": 35,
+    "live_contracts": 11,
     "inactive_contracts": 2,
-    "singleton_contracts": 14,
+    "singleton_contracts": 18,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 4,
     "deployment_units": 9,
-    "live_deployment_units": 1,
+    "live_deployment_units": 0,
     "dependencies_extracted": 2,
     "unverified_dependencies": 1,
-    "detected_codebases": []
+    "detected_codebases": [
+      "uniswap-v2",
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
-    "has_non_token_contracts": false,
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -85,96 +90,60 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8f08b70456eb22f6109f57b8fafe862ed28e6040",
-      "deployment_unit": "unit-24222",
-      "deployment_unit_proxy_count": 1,
-      "name": "LRTSquaredCore",
-      "role": "unknown",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Deployment ​",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x1cb489ef513e1cc35c4657c91853a2e6ff1957de",
-      "impl_name": "LRTSquaredCore",
+      "product_line": null,
+      "tvl_usd": 3674.4232177731606,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8f08b70456eb22f6109f57b8fafe862ed28e6040",
-          "deployment_unit": "unit-24222",
-          "deployment_unit_proxy_count": 1,
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
+          "tvl_usd": 3674.4232177731606,
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3124",
-        "audit-3125"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
+      "address": "0x3253c8105e8e70ae6abaf2fd21c703d8729e0886",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "UniswapV3Plugin",
+      "name": "CurveTwocryptoOptimized",
       "role": "unknown",
       "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
+      "origin_provider": "Curve",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "UniswapV3Plugin",
+      "impl_name": "CurveTwocryptoOptimized",
       "deployments": [
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x84acc48d3c96728f9572a4f1b8819317de983af0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x8bd78cc193c01573d4e464e2c3d1514dade4a459",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa12772103af37270b4a6e68865463ff6ee675ef7",
+          "address": "0x3253c8105e8e70ae6abaf2fd21c703d8729e0886",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -188,7 +157,42 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x93e6e571d04848de3ba31525fca36f1e4f7bc942",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RamsesBeaconProxy",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "ramses",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesBeaconProxy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x93e6e571d04848de3ba31525fca36f1e4f7bc942",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1923,
@@ -259,6 +263,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xe63ba626494f88d5a269b435213f2e8803cce318",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe63ba626494f88d5a269b435213f2e8803cce318",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -590,6 +629,89 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3126,
+      "audit_key": "audit-3126",
+      "report_name": "NM_0314_EtherFi_LRT_2.pdf",
+      "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf",
+      "auditor": "NM",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 3126,
+          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
+        },
+        {
+          "audit_id": 14855,
+          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 3127,
+      "audit_key": "audit-3127",
+      "report_name": "NM_0390_LRT_Square_Strategies_DRAFT.pdf",
+      "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf",
+      "auditor": "NM",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 3127,
+          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
+        },
+        {
+          "audit_id": 14856,
+          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 3128,
+      "audit_key": "audit-3128",
+      "report_name": "Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf",
+      "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf",
+      "auditor": "Ether_Fi",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -599,11 +721,11 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3123,
-      "audit_key": "audit-3123",
+      "audit_id": 14854,
+      "audit_key": "audit-14854",
       "report_name": "Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf",
       "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf",
-      "auditor": "Ether_Fi",
+      "auditor": "Ether Fi",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025-03",
@@ -617,124 +739,33 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 3123,
-          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
-        },
-        {
-          "audit_id": 3128,
-          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 3124,
-      "audit_key": "audit-3124",
-      "report_name": "NM_0314_EtherFi_LRT_2.pdf",
-      "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf",
-      "auditor": "NM",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
-      "extracted_names": [
-        "BucketLimiter",
-        "IAggregatorV3",
-        "IOneInch",
-        "IPriceProvider",
-        "ISwapper",
-        "LrtSquare",
-        "PriceProvider",
-        "Swapper1InchV6",
-        "UUPSProxy"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 3124,
-          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
-        },
-        {
-          "audit_id": 3126,
-          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 3125,
-      "audit_key": "audit-3125",
-      "report_name": "NM_0390_LRT_Square_Strategies_DRAFT.pdf",
-      "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf",
-      "auditor": "NM",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
-      "extracted_names": [
-        "BaseStrategy",
-        "BoringVaultPriceProvider",
-        "EEigenStrategy",
-        "LRTSquaredAdmin",
-        "LRTSquaredCore",
-        "LRTSquaredInitializer",
-        "LRTSquaredStorage",
-        "PriceProvider",
-        "SEthFiStrategy"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 3125,
-          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
-        },
-        {
-          "audit_id": 3127,
-          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
+  "auditor_coverage": [],
+  "coverage_gaps": [
     {
-      "auditor": "NM",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 50,
-      "latest_audit": "2024-11"
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 3674.4232177731606,
+      "risk_note": "Verified native implementation with $3,674.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
-  "coverage_gaps": [],
   "origin_summary": {
-    "native": 11,
-    "upstream": 1,
+    "native": 12,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 5
+      "extraction_exact": 22
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -743,7 +774,19 @@
         "report_name": "NM_0452_King_Cross_Chain_FINAL.pdf"
       },
       {
-        "audit_id": 3123,
+        "audit_id": 3126,
+        "report_name": "NM_0314_EtherFi_LRT_2.pdf"
+      },
+      {
+        "audit_id": 3127,
+        "report_name": "NM_0390_LRT_Square_Strategies_DRAFT.pdf"
+      },
+      {
+        "audit_id": 3128,
+        "report_name": "Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
+      },
+      {
+        "audit_id": 14854,
         "report_name": "Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
       }
     ],

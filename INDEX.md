@@ -34,7 +34,7 @@
 | [aitech](./aitech/) | $3.5M | 0.0% | ? | active | 1 | 2 | 2026-06-17 |
 | [akropolis](./akropolis/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
-| [alchemix](./alchemix/) | $339.3M | 16.1% | $337.3M | active | 6 | 98 | 2026-06-17 |
+| [alchemix](./alchemix/) | $339.4M | 15.9% | $337.4M | active | 6 | 99 | 2026-06-18 |
 | [algoblocks](./algoblocks/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [algodex](./algodex/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [algofi](./algofi/) | $651.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -620,7 +620,7 @@
 | [kiloex](./kiloex/) | $5.7M | 16.7% | ? | declining | 10 | 40 | 2026-06-17 |
 | [kine-finance](./kine-finance/) | $964.6K | 0.0% | ? | declining | 0 | 7 | 2026-06-17 |
 | [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [king-protocol](./king-protocol/) | $1.1M | 50.0% | ? | active | 4 | 13 | 2026-06-17 |
+| [king-protocol](./king-protocol/) | $3.7K | 0.0% | $3.7K | active | 5 | 15 | 2026-06-18 |
 | [kingdefi](./kingdefi/) | $35.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kintsu](./kintsu/) | $2.2M | 0.0% | ? | declining | 5 | 4 | 2026-06-17 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 0.0% | $0.0 | declining | 2 | 13 | 2026-06-17 |
@@ -716,7 +716,7 @@
 | [matstake](./matstake/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 50.0% | $26.8M | declining | 7 | 23 | 2026-06-17 |
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
-| [mcdex](./mcdex/) | $268.2K | 3.0% | $268.2K | dead | 4 | 72 | 2026-06-17 |
+| [mcdex](./mcdex/) | $943.0K | 16.7% | ? | dead | 4 | 70 | 2026-06-18 |
 | [mdex](./mdex/) | $235.5K | 80.0% | $20.2K | declining | 3 | 6 | 2026-06-17 |
 | [meeds-finance](./meeds-finance/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 4 | 2026-06-17 |
 | [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
@@ -806,7 +806,7 @@
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 36 | 2026-06-17 |
 | [nest-credit](./nest-credit/) | $4.3M | 60.0% | $693.4 | active | 16 | 19 | 2026-06-17 |
 | [nest](./nest/) | $69.4M | 35.6% | $69.4M | active | 10 | 49 | 2026-06-18 |
-| [netswap](./netswap/) | $1.2M | 20.8% | ? | declining | 2 | 48 | 2026-06-17 |
+| [netswap](./netswap/) | $1.2M | 21.7% | ? | declining | 2 | 47 | 2026-06-18 |
 | [netweave-finance](./netweave-finance/) | $12.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-17 |
 | [neutra-finance](./neutra-finance/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1224,7 +1224,7 @@
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 11 | 2026-06-17 |
 | [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [tender-finance](./tender-finance/) | $2.0K | 0.0% | $2.0K | declining | 1 | 8 | 2026-06-17 |
-| [tenderize](./tenderize/) | $313.3M | 0.0% | $313.3M | declining | 6 | 13 | 2026-06-17 |
+| [tenderize](./tenderize/) | $313.3M | 13.3% | $313.3M | declining | 7 | 16 | 2026-06-18 |
 | [tensorplex](./tensorplex/) | $387.4K | 0.0% | ? | wind_down | 0 | 3 | 2026-06-17 |
 | [tg-casino](./tg-casino/) | $13.4M | 33.3% | ? | active | 8 | 3 | 2026-06-17 |
 | [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

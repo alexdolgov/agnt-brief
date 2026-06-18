@@ -19,7 +19,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CommunityTreasury](./metis-1088/0x2dc348972df99dff6716007d19368eaaa6e75ed7/) | metis | [`0x2dc348...e75ed7`](./metis-1088/0x2dc348972df99dff6716007d19368eaaa6e75ed7/) | ⚠️ Unaudited | Verified |
-| [LPOracle](./metis-1088/0xdf4b248464ce2cda6f1a68aa2bff4b610f496076/) | metis | [`0xdf4b24...496076`](./metis-1088/0xdf4b248464ce2cda6f1a68aa2bff4b610f496076/) | ⚠️ Unaudited | Verified |
+| LPOracle | metis | `0xdf4b24...496076` | ⚠️ Unaudited | Verified |
 
 ## periphery (3)
 
@@ -48,7 +48,7 @@
 |---|---|---|---|---|
 | [BasicModel](./metis-1088/0x846b62d627f07fe5e2804a32cd5a0cec408b98f7/) | metis | [`0x846b62...8b98f7`](./metis-1088/0x846b62d627f07fe5e2804a32cd5a0cec408b98f7/) | ⚠️ Unaudited | Verified |
 | [BoostedNETTFarm](./metis-1088/0x0ecdc3d1747dc0ba37c9f7a0711501657136f553/) | metis | [`0x0ecdc3...36f553`](./metis-1088/0x0ecdc3d1747dc0ba37c9f7a0711501657136f553/) | ⚠️ Unaudited | Verified |
-| [Bricked](./metis-1088/0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b/) | metis | [`0x1b3da6...14df3b`](./metis-1088/0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b/) | ⚠️ Unaudited | Verified |
+| Bricked | metis | `0x1b3da6...14df3b` | ⚠️ Unaudited | Verified |
 | [Mining (2 deployments)](./metis-1088/0x3751a5b7b1f16d997776261555b0b9fbc702262a/) | metis | 2 deployments: metis [`0x3751a5...02262a`](./metis-1088/0x3751a5b7b1f16d997776261555b0b9fbc702262a/); metis `0x7077f3...980271` | ⚠️ Unaudited | Verified |
 | [NETT (2 deployments)](./metis-1088/0x8196b259d309efe84d22e34ea76dc8547c99b7d2/) | metis | 2 deployments: metis [`0x8196b2...99b7d2`](./metis-1088/0x8196b259d309efe84d22e34ea76dc8547c99b7d2/); metis `0x90fe08...1ab278` | ✅ Audited | Verified |
 | [NETTFarm](./metis-1088/0x9d1dbb49b2744a1555edbf1708d64dc71b0cb052/) | metis | [`0x9d1dbb...0cb052`](./metis-1088/0x9d1dbb49b2744a1555edbf1708d64dc71b0cb052/) | ✅ Audited | Verified |

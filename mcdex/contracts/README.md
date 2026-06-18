@@ -35,7 +35,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MessageBus](./optimism-10/0x0d71d18126e03646eb09fec929e2ae87b7cae69d/) | optimism | [`0x0d71d1...cae69d`](./optimism-10/0x0d71d18126e03646eb09fec929e2ae87b7cae69d/) | ⚠️ Unaudited | Verified |
+| MessageBus | optimism | `0x0d71d1...cae69d` | ⚠️ Unaudited | Verified |
 | [MuxLpOracle (4 deployments)](./arbitrum-42161/0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf/) | arbitrum | 4 deployments: arbitrum [`0x1dc6de...3cb1cf`](./arbitrum-42161/0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf/); arbitrum `0x324691...635349`; arbitrum `0x8a71e5...72dbf2`; arbitrum `0xa2288d...58dd58` | ⚠️ Unaudited | Verified |
 
 ## token (1)

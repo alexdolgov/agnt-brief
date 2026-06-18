@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tenderize",
-  "generated_at": "2026-06-17T07:00:40.660Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T02:01:49.614Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "tenderize",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 16,
-    "unique_implementations": 13,
-    "total_deployments": 16,
-    "audited_contracts": 0,
-    "unaudited_contracts": 12,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 12,
+    "total_contracts": 16,
+    "total_addresses": 19,
+    "unique_implementations": 16,
+    "total_deployments": 19,
+    "audited_contracts": 2,
+    "unaudited_contracts": 13,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 0,
-    "total_audits": 6,
-    "scoreable_audits": 0,
+    "coverage_pct": 13.3,
+    "total_audits": 7,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 782035,
     "tvl_usd": 313346192.6906993,
     "tvl_source": "on_chain",
@@ -66,27 +66,27 @@
       "fresh": 0,
       "aging": 0,
       "stale": 6,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
     "project_purpose": "Tenderize is a liquid staking ecosystem that issues liquid staking tokens for validator-specific and multi-validator staking positions, allowing users to earn staking rewards while retaining liquidity. Its products include TenderSwap for instant unstaking and swaps between LSTs and underlying assets, and may also include current homepage-advertised components such as BeefyBank collateralized stablecoin borrowing/lending and the WAGYU governance/value-accrual token where those deployments are verified in scope.",
     "relationship_narrative": "Tenderize V1 and V2 are different generations of the liquid staking protocol, with V2 introducing a registry-based architecture. TenderSwap provides liquidity pools for tokens from both versions, and lpETH and tLPT are specific LST implementations that may integrate with either version's infrastructure.",
     "product_family_count": 5,
-    "total_contracts_indexed": 86,
-    "live_contracts": 16,
-    "inactive_contracts": 56,
+    "total_contracts_indexed": 91,
+    "live_contracts": 18,
+    "inactive_contracts": 58,
     "singleton_contracts": 14,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 26,
-    "live_deployment_units": 9,
-    "dependencies_extracted": 6,
+    "unknown_contracts": 1,
+    "deployment_units": 29,
+    "live_deployment_units": 10,
+    "dependencies_extracted": 3,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 16,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -134,7 +134,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x18aaa7115705e8be94bffebde57af9bfc265b998",
-      "deployment_unit": "unit-24841",
+      "deployment_unit": "unit-34017",
       "deployment_unit_proxy_count": 1,
       "name": "AudiusToken",
       "role": "token",
@@ -150,7 +150,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x18aaa7115705e8be94bffebde57af9bfc265b998",
-          "deployment_unit": "unit-24841",
+          "deployment_unit": "unit-34017",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -226,7 +226,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x44617f9dced9787c3b06a05b35b4c779a2aa1334",
-      "deployment_unit": "unit-24842",
+      "deployment_unit": "unit-34018",
       "deployment_unit_proxy_count": 1,
       "name": "ClaimsManager",
       "role": "governance",
@@ -242,7 +242,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x44617f9dced9787c3b06a05b35b4c779a2aa1334",
-          "deployment_unit": "unit-24842",
+          "deployment_unit": "unit-34018",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -261,7 +261,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4d7968ebfd390d5e7926cb3587c39eff2f9fb225",
-      "deployment_unit": "unit-24843",
+      "deployment_unit": "unit-34019",
       "deployment_unit_proxy_count": 1,
       "name": "DelegateManagerV2",
       "role": "governance",
@@ -277,7 +277,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4d7968ebfd390d5e7926cb3587c39eff2f9fb225",
-          "deployment_unit": "unit-24843",
+          "deployment_unit": "unit-34019",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -296,7 +296,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf3a75e087a92770b4150fff14c6d36fb07796252",
-      "deployment_unit": "unit-24862",
+      "deployment_unit": "unit-34040",
       "deployment_unit_proxy_count": 1,
       "name": "ERC1967Proxy",
       "role": "proxy",
@@ -312,7 +312,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf3a75e087a92770b4150fff14c6d36fb07796252",
-          "deployment_unit": "unit-24862",
+          "deployment_unit": "unit-34040",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -366,7 +366,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4deca517d6817b6510798b7328f2314d3003abac",
-      "deployment_unit": "unit-24844",
+      "deployment_unit": "unit-34020",
       "deployment_unit_proxy_count": 1,
       "name": "Governance",
       "role": "unknown",
@@ -382,7 +382,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4deca517d6817b6510798b7328f2314d3003abac",
-          "deployment_unit": "unit-24844",
+          "deployment_unit": "unit-34020",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -400,8 +400,43 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xe66f3ab2f5621fe12ebf37754e1af6d05b329a07",
+      "deployment_unit": "unit-34038",
+      "deployment_unit_proxy_count": 1,
+      "name": "Graph",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x43d68af92d057edfc52eaa07cd0bdfd81179540b",
+      "impl_name": "Graph",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe66f3ab2f5621fe12ebf37754e1af6d05b329a07",
+          "deployment_unit": "unit-34038",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xadca0dd4729c8ba3acf3e99f3a9f471ef37b6825",
-      "deployment_unit": "unit-24856",
+      "deployment_unit": "unit-34032",
       "deployment_unit_proxy_count": 1,
       "name": "L1GNS",
       "role": "unknown",
@@ -417,7 +452,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xadca0dd4729c8ba3acf3e99f3a9f471ef37b6825",
-          "deployment_unit": "unit-24856",
+          "deployment_unit": "unit-34032",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -436,7 +471,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf55041e37e12cd407ad00ce2910b8269b01263b9",
-      "deployment_unit": "unit-24863",
+      "deployment_unit": "unit-34041",
       "deployment_unit_proxy_count": 1,
       "name": "L1Staking",
       "role": "unknown",
@@ -452,7 +487,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf55041e37e12cd407ad00ce2910b8269b01263b9",
-          "deployment_unit": "unit-24863",
+          "deployment_unit": "unit-34041",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -471,7 +506,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x388b0faf9de300ffc21e3dc849202544901792cb",
-      "deployment_unit": "unit-24864",
+      "deployment_unit": "unit-34042",
       "deployment_unit_proxy_count": 1,
       "name": "Proxy (impl: 0x54d6e288065addc74c11d9dfbefb805a73cf58c7)",
       "role": "proxy",
@@ -487,7 +522,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x388b0faf9de300ffc21e3dc849202544901792cb",
-          "deployment_unit": "unit-24864",
+          "deployment_unit": "unit-34042",
           "deployment_unit_proxy_count": 1,
           "source_verified": false,
           "verified_by_bytecode": false,
@@ -503,10 +538,47 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x43c3dbee4d6e884dc2b81e9432ecee29dd8e008d",
+      "deployment_unit": "unit-34043",
+      "deployment_unit_proxy_count": 1,
+      "name": "Renderer",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe88d90f5742dd7e214f978178f63cc961f3d10f0",
+      "impl_name": "Renderer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x43c3dbee4d6e884dc2b81e9432ecee29dd8e008d",
+          "deployment_unit": "unit-34043",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14867"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xd17a9bc90c582249e211a4f4b16721e7f65156c8",
-      "deployment_unit": "unit-24859",
+      "deployment_unit": "unit-34035",
       "deployment_unit_proxy_count": 1,
       "name": "ServiceProviderFactory",
       "role": "registry",
@@ -522,7 +594,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd17a9bc90c582249e211a4f4b16721e7f65156c8",
-          "deployment_unit": "unit-24859",
+          "deployment_unit": "unit-34035",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -536,6 +608,44 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4a3c14d7450c30f712e89659af21f90df56bc9ba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Tenderizer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Tenderizer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4a3c14d7450c30f712e89659af21f90df56bc9ba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14866",
+        "audit-14867"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -586,8 +696,29 @@
   ],
   "audits": [
     {
-      "audit_id": 3214,
-      "audit_key": "audit-3214",
+      "audit_id": 14862,
+      "audit_key": "audit-14862",
+      "report_name": "DL audit link",
+      "report_url": "https://hacken.io/audits",
+      "auditor": "Hacken",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14863,
+      "audit_key": "audit-14863",
       "report_name": "Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf",
       "report_url": "https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf",
       "auditor": "Halborn",
@@ -607,8 +738,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3215,
-      "audit_key": "audit-3215",
+      "audit_id": 14864,
+      "audit_key": "audit-14864",
       "report_name": "Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf",
       "report_url": "https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf",
       "auditor": "Halborn",
@@ -628,8 +759,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3216,
-      "audit_key": "audit-3216",
+      "audit_id": 14865,
+      "audit_key": "audit-14865",
       "report_name": "Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf",
       "report_url": "https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf",
       "auditor": "Halborn",
@@ -649,8 +780,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3217,
-      "audit_key": "audit-3217",
+      "audit_id": 14866,
+      "audit_key": "audit-14866",
       "report_name": "Halborn_Tenderize_v2_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf",
       "report_url": "https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_v2_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf",
       "auditor": "Halborn",
@@ -662,16 +793,28 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "Adapter",
+        "Factory",
+        "ITenderizer",
+        "Registry",
+        "RegistryStorage",
+        "Roles",
+        "TToken",
+        "TTokenStorage",
+        "Tenderizer",
+        "TenderizerBase",
+        "Unlocks"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3218,
-      "audit_key": "audit-3218",
+      "audit_id": 14867,
+      "audit_key": "audit-14867",
       "report_name": "Trust_Audits_Tenderize_V4.pdf",
       "report_url": "https://github.com/Tenderize/staking/blob/main/audits/Trust_Audits_Tenderize_V4.pdf",
       "auditor": "Trust Audits",
@@ -683,16 +826,31 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "Adapter",
+        "Base64",
+        "Factory",
+        "GraphAdapter",
+        "ITenderizer",
+        "Registry",
+        "RegistryStorage",
+        "Renderer",
+        "Roles",
+        "TToken",
+        "TTokenStorage",
+        "Tenderizer",
+        "TenderizerBase",
+        "Unlocks"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3219,
-      "audit_key": "audit-3219",
+      "audit_id": 14868,
+      "audit_key": "audit-14868",
       "report_name": "halborn-tenderswap-audit.pdf",
       "report_url": "https://github.com/Tenderize/tenderswap/blob/main/audits/halborn-tenderswap-audit.pdf",
       "auditor": "Halborn",
@@ -712,7 +870,22 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Trust Audits",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 13.3,
+      "latest_audit": "2024-02"
+    },
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 6.7,
+      "latest_audit": "2024-03"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -736,41 +909,39 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 3,
     "upstream": 9,
-    "standard_library": 1,
+    "standard_library": 3,
     "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 14
+      "extraction_exact": 17
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3214,
+        "audit_id": 14862,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 14863,
         "report_name": "Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf"
       },
       {
-        "audit_id": 3215,
+        "audit_id": 14864,
         "report_name": "Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf"
       },
       {
-        "audit_id": 3216,
+        "audit_id": 14865,
         "report_name": "Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf"
       },
       {
-        "audit_id": 3217,
-        "report_name": "Halborn_Tenderize_v2_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf"
-      },
-      {
-        "audit_id": 3218,
-        "report_name": "Trust_Audits_Tenderize_V4.pdf"
-      },
-      {
-        "audit_id": 3219,
+        "audit_id": 14868,
         "report_name": "halborn-tenderswap-audit.pdf"
       }
     ],

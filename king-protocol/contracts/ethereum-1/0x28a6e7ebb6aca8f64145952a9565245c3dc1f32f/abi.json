@@ -1,0 +1,550 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GovernorCannotBeAddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyGovernor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyPendingGovernor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OraclePriceTooOld",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceOracleFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenOracleNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousGovernor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "GovernorshipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousGovernor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "PendingGovernorshipTransfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "priceFunctionCalldata",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bool",
+            "name": "isChainlinkType",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "oraclePriceDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxStaleness",
+            "type": "uint24"
+          },
+          {
+            "internalType": "enum PriceProvider.ReturnType",
+            "name": "dataType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseTokenEth",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PriceProvider.Config[]",
+        "name": "configs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "TokenConfigSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ETH_USD_ORACLE_SELECTOR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimGovernance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getEthUsdPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getPriceInEth",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "__governor",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "__tokens",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "priceFunctionCalldata",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bool",
+            "name": "isChainlinkType",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "oraclePriceDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxStaleness",
+            "type": "uint24"
+          },
+          {
+            "internalType": "enum PriceProvider.ReturnType",
+            "name": "dataType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseTokenEth",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PriceProvider.Config[]",
+        "name": "__configs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isGovernor",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokens",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "priceFunctionCalldata",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bool",
+            "name": "isChainlinkType",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "oraclePriceDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxStaleness",
+            "type": "uint24"
+          },
+          {
+            "internalType": "enum PriceProvider.ReturnType",
+            "name": "dataType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseTokenEth",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PriceProvider.Config[]",
+        "name": "_configs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "setTokenConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "tokenConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "priceFunctionCalldata",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bool",
+        "name": "isChainlinkType",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint8",
+        "name": "oraclePriceDecimals",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint24",
+        "name": "maxStaleness",
+        "type": "uint24"
+      },
+      {
+        "internalType": "enum PriceProvider.ReturnType",
+        "name": "dataType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bool",
+        "name": "isBaseTokenEth",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "transferGovernance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

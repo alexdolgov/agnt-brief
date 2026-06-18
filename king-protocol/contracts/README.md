@@ -6,8 +6,8 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [LRTSquaredCore](./ethereum-1/0x8f08b70456eb22f6109f57b8fafe862ed28e6040/) | ethereum | [`0x8f08b7...8e6040`](./ethereum-1/0x8f08b70456eb22f6109f57b8fafe862ed28e6040/) | ✅ Audited | Verified |
-| [UniswapV3Plugin (4 deployments)](./base-8453/0x409994fd2fdcfccddea418b7f203b4db51200ec2/) | base | 4 deployments: base [`0x409994...200ec2`](./base-8453/0x409994fd2fdcfccddea418b7f203b4db51200ec2/); base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited | Verified |
+| LRTSquaredCore | ethereum | `0x8f08b7...8e6040` | ✅ Audited | Verified |
+| UniswapV3Plugin (4 deployments) | base | 4 deployments: base `0x409994...200ec2`; base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited | Verified |
 | UnnamedContract | swellchain | `0xc2606a...cee6f8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x63f237...077c6a` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0e9315...6aca5a` | ❓ Unverified | Unverified |

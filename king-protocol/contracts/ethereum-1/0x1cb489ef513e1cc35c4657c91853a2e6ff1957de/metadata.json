@@ -1,0 +1,18 @@
+{
+  "address": "0x1cb489ef513e1cc35c4657c91853a2e6ff1957de",
+  "chain_id": 1,
+  "contract_name": "LRTSquaredCore",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T01:58:11.952Z"
+}

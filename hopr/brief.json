@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hopr",
-  "generated_at": "2026-06-17T07:00:40.447Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T03:32:34.392Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hopr",
@@ -34,7 +34,7 @@
     "contracts_unverified": 1,
     "coverage_pct": 7.7,
     "total_audits": 2,
-    "scoreable_audits": 1,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 1397729.70518,
     "tvl_usd": 1397729.70518,
     "tvl_source": "defillama",
@@ -69,8 +69,8 @@
     "unknown_contracts": 0,
     "deployment_units": 3,
     "live_deployment_units": 0,
-    "dependencies_extracted": 43,
-    "unverified_dependencies": 6,
+    "dependencies_extracted": 30,
+    "unverified_dependencies": 2,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -91,7 +91,7 @@
       "deployment_unit_proxy_count": null,
       "name": "HoprAnnouncements",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -192,7 +192,7 @@
       "deployment_unit_proxy_count": null,
       "name": "HoprAnnouncementsProxy",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -358,7 +358,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3185"
+        "audit-3185",
+        "audit-11795"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1405,12 +1406,14 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "HoprChannels"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
       "repo_reference_count": 0
     }
   ],
@@ -1427,8 +1430,8 @@
     {
       "chain_id": 100,
       "chain_name": "gnosis",
-      "address": "0x060dbc55867f0ffc20e69f9273113aeb90f4d049",
-      "name": "HoprAnnouncementsProxy",
+      "address": "0x0347a131861881604ea841b678210ba60b8e6d82",
+      "name": "HoprAnnouncements",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1513,19 +1516,15 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 21
+      "extraction_exact": 42
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 1,
+      "low": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 11795,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

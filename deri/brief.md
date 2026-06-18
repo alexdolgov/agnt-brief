@@ -5,10 +5,10 @@
 - Project: Deri (`deri`)
 - Website: [https://deri.io/#/index](https://deri.io/#/index)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-06-17T07:00:42.781Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T03:51:05.660Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, manta, polygon-zkevm, scroll, sonic, zksync-era
-- Contract surface: 191 unique implementations (262 raw deployments)
+- Contract surface: 197 unique implementations (268 raw deployments)
 - DeFi Llama TVL: $6,074,241.00
 - On-chain TVL (included contracts): $0.12
 - TVL by chain: Base $0.12
@@ -23,20 +23,20 @@ The Deri families share a common architecture of pools and gateways, with later 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1904; live-surface contracts included: 262 (172 live, 90 unknown).
-- Excluded by liveness: 1460 inactive, 182 singleton, 0 uninitialized.
+- Indexed contracts: 1912; live-surface contracts included: 268 (178 live, 90 unknown).
+- Excluded by liveness: 1462 inactive, 182 singleton, 0 uninitialized.
 - Deployment units: 4/98 live.
-- Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 1/37.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 4/28 (14.3%)
 - Verified + Unaudited implementations: 23
 - Verified by bytecode match: 1
-- Unverified implementations: 163
-- Unique implementations: 191
-- Raw deployments: 262
+- Unverified implementations: 169
+- Unique implementations: 197
+- Raw deployments: 268
 - Audits discovered: 8
 - Scoreable audits (matched contracts): 2
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/deriprotocol/information))
@@ -58,8 +58,8 @@ The Deri families share a common architecture of pools and gateways, with later 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | Gateway | unknown | blast | n/a | 6 deployments: manta `0x28a41c...c8550f`; manta `0x3eb231...3fb4e8`; manta `0x48e33d...ce9fa6`; manta `0xa10d5e...04f39e`; manta `0xc8fa78...154ae9`; blast [`0x050542...db1055`](./contracts/blast-81457/0x050542be6b6312b6252ab40a78984c058bdb1055/) | ✅ Audited |
-| GatewayImplementation | unknown | arbitrum | unit-26197 | [`0x7c4a64...a7ef81`](./contracts/arbitrum-42161/0x7c4a640461427c310a710d367c2ba8c535a7ef81/) | ✅ Audited |
-| GatewayImplementation | unknown | linea | unit-26216 | [`0xe840bb...b88866`](./contracts/linea-59144/0xe840bb03fe58540841e6ebee94264d5317b88866/) | ✅ Audited |
+| GatewayImplementation | unknown | arbitrum | unit-34557 | [`0x7c4a64...a7ef81`](./contracts/arbitrum-42161/0x7c4a640461427c310a710d367c2ba8c535a7ef81/) | ✅ Audited |
+| GatewayImplementation | unknown | linea | unit-34576 | [`0xe840bb...b88866`](./contracts/linea-59144/0xe840bb03fe58540841e6ebee94264d5317b88866/) | ✅ Audited |
 | Swapper | adapter | manta | n/a | [`0xbca443...7664f2`](./contracts/manta-169/0xbca4439e99091afb297ecb4c5672357e467664f2/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (23)
@@ -87,8 +87,8 @@ The Deri families share a common architecture of pools and gateways, with later 
 | SwitchOracle | operational_periphery | scroll | n/a | [`0x7b56af...be771d`](./contracts/scroll-534352/0x7b56af65da221a40b48bedccb67410d6c0be771d/) | ⚠️ Unaudited |
 | SwitchOracleImplementation | operational_periphery | manta | n/a | [`0x97b58e...eeb10b`](./contracts/manta-169/0x97b58e52adfefd3252cc16668b5ad58e9ceeb10b/) | ⚠️ Unaudited |
 | TradeReward | unknown | bsc | n/a | [`0x0da143...43c892`](./contracts/bsc-56/0x0da14380ac829caced1e00f4f4b57ffcf643c892/) | ⚠️ Unaudited |
-| VoteImplementationArbitrum | unknown | arbitrum | unit-26202 | [`0x9fe787...298be0`](./contracts/arbitrum-42161/0x9fe7870ddec43ea86f75eee6dfce4e0337298be0/) | ⚠️ Unaudited |
-| VoteImplementationLinea | unknown | linea | unit-26215 | [`0xdf64be...b932aa`](./contracts/linea-59144/0xdf64be0f92b40255457283f1ff0ce0b456b932aa/) | ⚠️ Unaudited |
+| VoteImplementationArbitrum | unknown | arbitrum | unit-34562 | [`0x9fe787...298be0`](./contracts/arbitrum-42161/0x9fe7870ddec43ea86f75eee6dfce4e0337298be0/) | ⚠️ Unaudited |
+| VoteImplementationLinea | unknown | linea | unit-34575 | [`0xdf64be...b932aa`](./contracts/linea-59144/0xdf64be0f92b40255457283f1ff0ce0b456b932aa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,7 +104,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|---|
 | Vault | unknown | sonic | n/a | 30 deployments: bsc `0x1f0949...72426f`; bsc `0x4a99b1...847f79`; bsc `0x4d58e7...d8673f`; bsc `0x6712de...2dd968`; bsc `0x673a37...ca320a`; bsc `0x772983...55021f`; bsc `0x7bf1fb...b151ea`; bsc `0x932c19...37fae4`; bsc `0x966d80...6cfc04`; bsc `0xcf6f8a...9cfafc`; bsc `0xd68dad...80eae3`; bsc `0xe354e7...91dcc6`; bsc `0xeacb62...d323e2`; sonic [`0x050542...db1055`](./contracts/sonic-146/0x050542be6b6312b6252ab40a78984c058bdb1055/); sonic `0x60444e...9bc536`; sonic `0x87664d...4ecd02`; sonic `0xb7f664...a569a3`; base `0x1b012c...a79d00`; base `0x27ca2a...f46c1a`; base `0x2ae67d...3ad276`; base `0x513930...c7ac76`; base `0x6350ea...a37d0d`; base `0x7b8bcf...f44683`; base `0x93e6e4...ecf56a`; base `0xcf82aa...f4770d`; arbitrum `0xc8eef1...4ac141`; blast `0x1e2192...924b90`; blast `0x4bcfc0...7666aa`; blast `0x662720...87d216`; blast `0x87bda7...7b605f` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (163)
+### ❓ Unverified (169)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -123,11 +123,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | n/a | `0x64bda3...52588e` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x68f0f9...bc27b8` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x6d9e56...c32cb0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x792c32...3cff8b` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x881119...fc5c09` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x8952d9...76ff78` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x8df644...4daffc` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x8f3d8b...c5f95a` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x9081ef...b91fbc` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x969cc2...e101e6` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x9f23e5...9651ce` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xa32000...a3d136` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xb1c965...9d2ab9` | ❓ Unverified |
@@ -151,6 +153,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | sonic | n/a | `0x1f0949...72426f` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0x2156d0...a43ea0` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0x222776...b1d368` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x380b00...ceca9b` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0x5c7df5...95ee45` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0x673a37...ca320a` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0x7988de...2f2f93` | ❓ Unverified |
@@ -166,6 +169,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | sonic | n/a | `0xc98cab...d77dc2` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0xd6fe18...2f1812` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0xdc6393...a6bef5` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xdca9a7...73cc7e` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | n/a | `0xfb2d9e...98a196` | ❓ Unverified |
 | UnnamedContract | unknown | manta | n/a | `0x011945...2afe8b` | ❓ Unverified |
 | UnnamedContract | unknown | manta | n/a | `0x050542...db1055` | ❓ Unverified |
@@ -220,6 +224,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | zksync-era | n/a | `0x34fd72...1962d0` | ❓ Unverified |
 | UnnamedContract | unknown | polygon-zkevm | n/a | `0xc7e484...85ee98` | ❓ Unverified |
 | UnnamedContract | unknown | polygon-zkevm | n/a | `0xd4e08c...1f6032` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x095bd1...71c090` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x0ba55f...0db1a8` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x352634...4af3d8` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x3cbadc...70ff21` | ❓ Unverified |
@@ -233,6 +238,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | n/a | `0x8551cf...a8c753` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xab43c2...d45ab9` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xb1401b...2c6ffb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbcca5b...6e8ff1` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xc38bcd...b704be` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xc66c2f...db250b` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xcaa6ce...bcfcb2` | ❓ Unverified |
@@ -293,38 +299,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x050542...db1055`](./contracts/sonic-146/0x050542be6b6312b6252ab40a78984c058bdb1055/) | Vault | unknown | $0.12 | Verified native implementation with $0.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa487bf...65d3b9`](./contracts/ethereum-1/0xa487bf43cf3b10dffc97a9a744cbb7036965d3b9/) | Deri | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x109f2f...ed3b63`](./contracts/arbitrum-42161/0x109f2f2b8e2490ba9cd8b5ab1d1dc7fb4aed3b63/) | DToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x99ba8c...e327fe`](./contracts/manta-169/0x99ba8cf147c511b20449cfd2c8152a58c8e327fe/) | GatewayHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x55ba66...69523d`](./contracts/manta-169/0x55ba66ff82751c7979386e23074704b92469523d/) | GatewayImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xcba16d...1d59e3`](./contracts/base-8453/0xcba16db40aa648ddc594362b13d93bfcb71d59e3/) | LiqClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x76e18d...93a31f`](./contracts/manta-169/0x76e18dc70559cfc5857b7cd8c985e341e093a31f/) | LiqClaimImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xc246d0...5b1602`](./contracts/bsc-56/0xc246d0ad04a9029a82862be2fbd16ab1445b1602/) | LTokenLite | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xb22c5a...90d2f6`](./contracts/manta-169/0xb22c5a9e69b3e46978cecaa70c54f0063b90d2f6/) | Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3eb231...3fb4e8`](./contracts/base-8453/0x3eb23183397eaa587d6d6be243b5ee67973fb4e8/) | Orderbook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x12d895...eaf8cd`](./contracts/bsc-56/0x12d895ea4f79b1920bfbe26b14013c60f1eaf8cd/) | OrderbookImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1a9b1b...7e4819`](./contracts/bsc-56/0x1a9b1b83c4592b9f315e933df042f53d3e7e4819/) | PerpetualPoolLite | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xcbca58...0fe408`](./contracts/manta-169/0xcbca586bf9706706398164bb5eb8e48f220fe408/) | ProtocolFeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x05e0e6...861750`](./contracts/manta-169/0x05e0e67cb54aef4475253d36d76ac46c98861750/) | ProtocolFeeManagerImplementationManta | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x1131e7...f2f5ea`](./contracts/manta-169/0x1131e79bcf6a6be85b8dc732bfcc412308f2f5ea/) | Rebate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x42dd51...3b1862`](./contracts/manta-169/0x42dd5168eda433d9c7523ad11ea15264343b1862/) | RebateImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x2ae67d...3ad276`](./contracts/manta-169/0x2ae67d0107d75b2a38890d83822d7673213ad276/) | RewardVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x7e98e9...c7de77`](./contracts/manta-169/0x7e98e92d545531e7966dc00d18239b3c00c7de77/) | RewardVaultImplementation | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x49644e...8b44fc`](./contracts/manta-169/0x49644ea1bec8075b43f212eb4cdaa272648b44fc/) | SwapperImplementation | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | [`0x7b56af...be771d`](./contracts/scroll-534352/0x7b56af65da221a40b48bedccb67410d6c0be771d/) | SwitchOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x97b58e...eeb10b`](./contracts/manta-169/0x97b58e52adfefd3252cc16668b5ad58e9ceeb10b/) | SwitchOracleImplementation | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0da143...43c892`](./contracts/bsc-56/0x0da14380ac829caced1e00f4f4b57ffcf643c892/) | TradeReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9fe787...298be0`](./contracts/arbitrum-42161/0x9fe7870ddec43ea86f75eee6dfce4e0337298be0/) | VoteImplementationArbitrum | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 98 |
+| native | 41 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 93 |
+| needs_review | 156 |
 
 ## Scope Matching Notes
 

@@ -144,7 +144,7 @@
 | [belief-market](./belief-market/) | $35.2 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [bella-protocol](./bella-protocol/) | $150.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [belt-finance](./belt-finance/) | $1.7K | 42.9% | $1.7K | declining | 6 | 164 | 2026-06-17 |
-| [bend](./bend/) | $15.5M | 21.7% | $896.8K | active | 2 | 69 | 2026-06-17 |
+| [bend](./bend/) | $15.5M | 20.8% | $896.8K | active | 2 | 71 | 2026-06-18 |
 | [benddao](./benddao/) | $5.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 3 | 11 | 2026-06-17 |
 | [bido-finance](./bido-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -329,7 +329,7 @@
 | [demeter](./demeter/) | $281.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [denet-file-token](./denet-file-token/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [depth](./depth/) | $342.7K | 0.0% | $342.7K | declining | 0 | 4 | 2026-06-17 |
-| [deri](./deri/) | $0.1 | 14.3% | $0.1 | active | 8 | 191 | 2026-06-17 |
+| [deri](./deri/) | $0.1 | 14.3% | $0.1 | active | 8 | 197 | 2026-06-18 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [desyn-protocol](./desyn-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 12 | 2026-06-17 |
 | [dev-protocol](./dev-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -528,7 +528,7 @@
 | [honeyfarm](./honeyfarm/) | $1.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hop-protocol](./hop-protocol/) | $54.8M | 9.7% | $54.8M | declining | 4 | 297 | 2026-06-17 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 4 | 2026-06-17 |
-| [hopr](./hopr/) | $1.4M | 7.7% | ? | active | 2 | 14 | 2026-06-17 |
+| [hopr](./hopr/) | $1.4M | 7.7% | ? | active | 2 | 14 | 2026-06-18 |
 | [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [hourglass](./hourglass/) | $139.9K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -827,7 +827,7 @@
 | [nonkyc](./nonkyc/) | $5.4M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
 | [noon](./noon/) | $34.1M | 0.0% | ? | active | 5 | 23 | 2026-06-18 |
 | [nostra](./nostra/) | $5.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [notional](./notional/) | $17.4 | 41.2% | ? | declining | 6 | 17 | 2026-06-17 |
+| [notional](./notional/) | $17.4 | 38.9% | ? | declining | 7 | 18 | 2026-06-18 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-06-17 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [numisme](./numisme/) | $309.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -1175,7 +1175,7 @@
 | [superearn](./superearn/) | $295.4 | 38.4% | ? | active | 5 | 165 | 2026-06-17 |
 | [superfarm](./superfarm/) | $167.2M | 0.0% | $167.2M | declining | 0 | 17 | 2026-06-17 |
 | [superfluid](./superfluid/) | $1.7M | 20.0% | ? | active | 8 | 249 | 2026-06-17 |
-| [superform](./superform/) | $2.0M | 21.5% | $72.4 | active | 3 | 136 | 2026-06-17 |
+| [superform](./superform/) | $3.0M | 54.4% | $72.4 | active | 14 | 93 | 2026-06-18 |
 | [superhero-dex](./superhero-dex/) | $772.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [supernova](./supernova/) | $1.3M | 44.1% | ? | declining | 1 | 34 | 2026-06-17 |
 | [supswap](./supswap/) | $19.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

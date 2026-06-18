@@ -5,8 +5,8 @@
 - Project: HOPR (`hopr`)
 - Website: [https://hoprnet.org](https://hoprnet.org)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:40.447Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T03:32:34.392Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
 - Chains: gnosis
 - Contract surface: 14 unique implementations (86 raw deployments)
 - DeFi Llama TVL: $1,397,729.71
@@ -27,7 +27,7 @@ The HOPR family consists of two core contracts that work together: HoprNodeStake
 - Excluded by liveness: 161 inactive, 6 singleton, 0 uninitialized.
 - Deployment units: 0/3 live.
 - Detected codebases: none
-- Unverified dependencies: 6/43.
+- Unverified dependencies: 2/30.
 
 ## Audit Coverage Summary
 
@@ -38,7 +38,7 @@ The HOPR family consists of two core contracts that work together: HoprNodeStake
 - Unique implementations: 14
 - Raw deployments: 86
 - Audits discovered: 2
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
@@ -100,7 +100,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [download report](https://reports.chainsecurity.com/HOPRNet/ChainSecurity_HOPRNet_PaymentChannel_Audit.pdf) | ChainSecurity | Audit | 2021-09 | stale | Direct | contract_name | 9 | high |
-| [DL audit link](https://www.chainsecurity.com/security-audit/hopr-payment-channels) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://www.chainsecurity.com/security-audit/hopr-payment-channels) | ChainSecurity | Audit | n/a | unknown | Direct | contract_name | 9 | low |
 
 ## Coverage Gaps
 
@@ -108,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | [`0x060dbc...f4d049`](./contracts/gnosis-100/0x060dbc55867f0ffc20e69f9273113aeb90f4d049/) | HoprAnnouncementsProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x0347a1...8e6d82`](./contracts/gnosis-100/0x0347a131861881604ea841b678210ba60b8e6d82/) | HoprAnnouncements | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x306c54...9d6db9`](./contracts/gnosis-100/0x306c54123f0197bec232fe754f0b7cb9059d6db9/) | HoprDummyProxyForNetworkRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x15a315...0ce38d`](./contracts/gnosis-100/0x15a315e1320cff0de84671c0139042ee320ce38d/) | HoprNetworkRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x0e4e1a...ccbc76`](./contracts/gnosis-100/0x0e4e1a2d851663462523bf38ca56259aceccbc76/) | HoprNodeSafeRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -130,13 +130,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=21
-
-Zero-match audit list:
-
-- [11795] DL audit link
+- Extraction confidence breakdown: high=1, low=1
+- Match method counts: extraction_exact=42
 
 Fork inheritance lineage and inherited audits are included when available.

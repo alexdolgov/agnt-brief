@@ -1,50 +1,52 @@
 {
   "schema_version": "2.0",
   "project_key": "frankencoin",
-  "generated_at": "2026-06-17T07:00:38.375Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:46:49.319Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "frankencoin",
     "tier": 0,
     "peak_tvl": 76481994,
     "peak_date": "2026-05-11T00:00:00.000Z",
-    "tvl_30d_ago": 73648363,
-    "tvl_90d_ago": 35811524,
-    "tvl_current": 69464335,
+    "tvl_30d_ago": 70228163,
+    "tvl_90d_ago": 41153045,
+    "tvl_current": 69039598,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 27888559,
-    "change_30d_pct": -5.681087575564986,
-    "change_90d_pct": 93.97201582373317,
-    "days_since_peak": 16,
+    "tvl_180d_ago": 30786235,
+    "change_30d_pct": -1.6924335611626349,
+    "change_90d_pct": 67.76303673276182,
+    "days_since_peak": 38,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 9.175570134847687
+    "drop_from_peak_pct": 9.730912611927979
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
-    "audited_contracts": 2,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 16,
+    "total_addresses": 19,
+    "unique_implementations": 16,
+    "total_deployments": 19,
+    "audited_contracts": 8,
+    "unaudited_contracts": 8,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 66.7,
-    "total_audits": 5,
-    "scoreable_audits": 5,
+    "coverage_pct": 50,
+    "total_audits": 11,
+    "scoreable_audits": 9,
     "dl_tvl_usd": 62111432.68245,
-    "tvl_usd": 62111432.68245,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 1109832.5735200425,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 1109832.57
+    },
+    "asd_usd": 1109832.5735200425,
     "website_url": "https://frankencoin.com",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 50,
     "tier1_auditors": [
       "ChainSecurity",
       "Code4rena"
@@ -54,30 +56,32 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 2,
-      "stale": 3,
-      "unknown": 0
+      "stale": 4,
+      "unknown": 5
     }
   },
   "topography": {
     "project_purpose": "Frankencoin is an over-collateralized, oracle-free decentralized stablecoin protocol for ZCHF, a stablecoin tracking the Swiss franc. Its evidenced CDP core centers on Frankencoin, MintingHub, PositionFactory, and Position-style collateralized borrowing/minting components, with related savings and bridge functionality where in scope. FolioProxy/Folio should not be described as the main entry point unless separately documented.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The FolioProxy acts as the main entry point, delegating to the Folio implementation which manages vaults and interacts with the Frankencoin token contract. TetherToken is used as a collateral type within the system.",
     "product_family_count": 1,
-    "total_contracts_indexed": 13,
-    "live_contracts": 3,
-    "inactive_contracts": 10,
+    "total_contracts_indexed": 33,
+    "live_contracts": 19,
+    "inactive_contracts": 14,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 1,
     "live_deployment_units": 1,
-    "dependencies_extracted": 3,
+    "dependencies_extracted": 22,
     "unverified_dependencies": 0,
-    "detected_codebases": []
+    "detected_codebases": [
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -87,8 +91,187 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x8e4318e2cb1ae291254b187001a59a1f8ac78cef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 1109828.2993749066,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8e4318e2cb1ae291254b187001a59a1f8ac78cef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1109828.2993749066,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe5f130253ff137f9917c0107659a4c5262abf6b0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SavingsVaultZCHF_2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 4.274145135927278,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SavingsVaultZCHF_2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe5f130253ff137f9917c0107659a4c5262abf6b0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4.274145135927278,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2527ec458c863073a303cf0a362bf78add5dfef8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CCIPAdmin",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CCIPAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2527ec458c863073a303cf0a362bf78add5dfef8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x55cd2820735db56ca0965be224d71994265f8bee",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CloneHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CloneHelper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x55cd2820735db56ca0965be224d71994265f8bee",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ba26788dfde592fec8bcb0eaff472a42be341b2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Equity",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Equity",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ba26788dfde592fec8bcb0eaff472a42be341b2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15622",
+        "audit-15623",
+        "audit-15633"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94",
-      "deployment_unit": "unit-24172",
+      "deployment_unit": "unit-39097",
       "deployment_unit_proxy_count": 1,
       "name": "Folio",
       "role": "unknown",
@@ -104,7 +287,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94",
-          "deployment_unit": "unit-24172",
+          "deployment_unit": "unit-39097",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -117,6 +300,43 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5052d3cc819f53116641e89b96ff4cd1ee80b182",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FPSWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FPSWrapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5052d3cc819f53116641e89b96ff4cd1ee80b182",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15624"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -148,15 +368,88 @@
         }
       ],
       "audits_covering": [
-        "audit-4642",
-        "audit-4643",
-        "audit-4644",
-        "audit-4648"
+        "audit-4648",
+        "audit-15622",
+        "audit-15623",
+        "audit-15624",
+        "audit-15630",
+        "audit-15631",
+        "audit-15633"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfd23272dfcb13dc3fabd8db851fcd4827af876eb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GovernanceSender",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GovernanceSender",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfd23272dfcb13dc3fabd8db851fcd4827af876eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d433780a16d425c5db1f725a6d104233a8ef28d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LeadrateSender",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LeadrateSender",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4d433780a16d425c5db1f725a6d104233a8ef28d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -185,113 +478,251 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde12b620a8a714476a97efd14e6f7180ca653557",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-4642",
-        "audit-4643",
-        "audit-4644",
         "audit-4648",
-        "audit-4649"
+        "audit-15622",
+        "audit-15623",
+        "audit-15624",
+        "audit-15625",
+        "audit-15631",
+        "audit-15633"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x44bfc2a260f091f8365ba8b240cd9491903467b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Position",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Position",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x44bfc2a260f091f8365ba8b240cd9491903467b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15622",
+        "audit-15624",
+        "audit-15625",
+        "audit-15633"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xad0107d3da540fd54b1931735b65110c909ea6b6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PositionRoller",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PositionRoller",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xad0107d3da540fd54b1931735b65110c909ea6b6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15624",
+        "audit-15625",
+        "audit-15631"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27d9ad987bde08a0d083ef7e0e4043c857a17b38",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Savings",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Savings",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x27d9ad987bde08a0d083ef7e0e4043c857a17b38",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3bf301b0e2003e75a3e86ab82bd1eff6a9dfb2ae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15624",
+        "audit-15625",
+        "audit-15631"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3b71ba73299f925a837836160c3e1fec74340403",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StablecoinBridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StablecoinBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3b71ba73299f925a837836160c3e1fec74340403",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3e445ff4dddf0ff8ae7458c9746ed80bd664f6c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15622",
+        "audit-15623",
+        "audit-15626",
+        "audit-15633"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf98c221661f51578f5e5236b189a493e2a8a1916",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TransferReference",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransferReference",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf98c221661f51578f5e5236b189a493e2a8a1916",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
-    {
-      "audit_id": 4642,
-      "audit_key": "audit-4642",
-      "report_name": "ChainSecurity-audit.pdf",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/ChainSecurity-audit.pdf",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ERC20",
-        "ERC20PermitLight",
-        "Equity",
-        "Frankencoin",
-        "MathUtil",
-        "MintingHub",
-        "Ownable",
-        "Position",
-        "PositionFactory",
-        "StablecoinBridge"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4643,
-      "audit_key": "audit-4643",
-      "report_name": "blockbite-audit.pdf",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/blockbite-audit.pdf",
-      "auditor": "Blockbite",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ERC20PermitLight",
-        "Equity",
-        "Frankencoin",
-        "MintingHub",
-        "Position",
-        "StablecoinBridge"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4644,
-      "audit_key": "audit-4644",
-      "report_name": "ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FPSWrapper",
-        "Frankencoin",
-        "Leadrate",
-        "MintingHub",
-        "Position",
-        "PositionFactory",
-        "PositionRoller",
-        "Savings"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 4648,
       "audit_key": "audit-4648",
@@ -322,11 +753,100 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 4649,
-      "audit_key": "audit-4649",
-      "report_name": "- [Decurity Audit]()",
-      "report_url": "https://github.com/Decurity/audits/blob/master/Frankencoin/frankencoin-audit-report-2024-1.1.pdf",
-      "auditor": "yAudit",
+      "audit_id": 15622,
+      "audit_key": "audit-15622",
+      "report_name": "ChainSecurity-audit.pdf",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/ChainSecurity-audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ERC20",
+        "ERC20PermitLight",
+        "Equity",
+        "Frankencoin",
+        "MathUtil",
+        "MintingHub",
+        "Ownable",
+        "Position",
+        "PositionFactory",
+        "StablecoinBridge"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15623,
+      "audit_key": "audit-15623",
+      "report_name": "blockbite-audit.pdf",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/blockbite-audit.pdf",
+      "auditor": "Blockbite",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ERC20PermitLight",
+        "Equity",
+        "Frankencoin",
+        "MintingHub",
+        "StablecoinBridge"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15624,
+      "audit_key": "audit-15624",
+      "report_name": "ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FPSWrapper",
+        "Frankencoin",
+        "Leadrate",
+        "MintingHub",
+        "Position",
+        "PositionFactory",
+        "PositionRoller",
+        "Savings"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15625,
+      "audit_key": "audit-15625",
+      "report_name": "frankencoin-audit-report-2024-1.1.pdf",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/frankencoin-audit-report-2024-1.1.pdf",
+      "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2024-09",
@@ -343,7 +863,159 @@
         "PositionRoller",
         "Savings"
       ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 4649,
+          "report_url": "https://github.com/Decurity/audits/blob/master/Frankencoin/frankencoin-audit-report-2024-1.1.pdf"
+        },
+        {
+          "audit_id": 15625,
+          "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/frankencoin-audit-report-2024-1.1.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 15626,
+      "audit_key": "audit-15626",
+      "report_name": "blockbite-audit.md",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/blockbite-audit.md",
+      "auditor": "Blockbite",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StablecoinBridge"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15627,
+      "audit_key": "audit-15627",
+      "report_name": "code4rena-audit.md",
+      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/code4rena-audit.md",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15630,
+      "audit_key": "audit-15630",
+      "report_name": "ChainSecurity",
+      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-smart-contracts",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Frankencoin"
+      ],
       "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15631,
+      "audit_key": "audit-15631",
+      "report_name": "- [ChainSecurity Audit 2]()",
+      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-v2024",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Frankencoin",
+        "MintingHub",
+        "PositionRoller",
+        "Savings"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15632,
+      "audit_key": "audit-15632",
+      "report_name": "- [ChainSecurity Audit 3]()",
+      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-ccip-bridge",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15633,
+      "audit_key": "audit-15633",
+      "report_name": "BlockBite",
+      "report_url": "https://frankencoin.com/AuditReport-Frankencoin.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ERC20PermitLight",
+        "Equity",
+        "Frankencoin",
+        "MintingHub",
+        "Position",
+        "StablecoinBridge"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -352,35 +1024,55 @@
   ],
   "auditor_coverage": [
     {
-      "auditor": "Blockbite",
-      "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
-      "latest_audit": "2023-02"
-    },
-    {
       "auditor": "ChainSecurity",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "contracts_covered": 8,
+      "coverage_pct": 50,
       "latest_audit": "2024-11"
     },
     {
       "auditor": "Code4rena",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "contracts_covered": 5,
+      "coverage_pct": 31.3,
       "latest_audit": "2023-04"
     },
     {
-      "auditor": "yAudit",
+      "auditor": "Blockbite",
       "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 33.3,
+      "contracts_covered": 4,
+      "coverage_pct": 25,
+      "latest_audit": "2023-02"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 25,
       "latest_audit": "2024-09"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe5f130253ff137f9917c0107659a4c5262abf6b0",
+      "name": "SavingsVaultZCHF_2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 4.274145135927278,
+      "risk_note": "Verified native implementation with $4.27 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x55cd2820735db56ca0965be224d71994265f8bee",
+      "name": "CloneHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -390,24 +1082,64 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfd23272dfcb13dc3fabd8db851fcd4827af876eb",
+      "name": "GovernanceSender",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d433780a16d425c5db1f725a6d104233a8ef28d",
+      "name": "LeadrateSender",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf98c221661f51578f5e5236b189a493e2a8a1916",
+      "name": "TransferReference",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
-    "upstream": 0,
+    "native": 14,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 48
+      "extraction_exact": 109
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 6,
+      "low": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 15627,
+        "report_name": "code4rena-audit.md"
+      },
+      {
+        "audit_id": 15632,
+        "report_name": "- [ChainSecurity Audit 3]()"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

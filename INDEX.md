@@ -438,7 +438,7 @@
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 1 | 2026-06-17 |
 | [foxify](./foxify/) | $3.5M | 0.0% | ? | active | 0 | 3 | 2026-06-17 |
 | [fractal-protocol](./fractal-protocol/) | $10.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [frankencoin](./frankencoin/) | $62.1M | 66.7% | ? | active | 5 | 3 | 2026-06-17 |
+| [frankencoin](./frankencoin/) | $1.1M | 50.0% | $1.1M | active | 11 | 16 | 2026-06-18 |
 | [freebie-life-finance](./freebie-life-finance/) | $32.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [fringe-finance](./fringe-finance/) | $45.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -459,7 +459,7 @@
 | [gearbox](./gearbox/) | $3.5M | 68.6% | ? | declining | 38 | 53 | 2026-06-18 |
 | [geist-finance](./geist-finance/) | $153.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gemkeeper](./gemkeeper/) | $20.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [generic.money](./generic.money/) | $3.7M | 88.9% | ? | declining | 1 | 9 | 2026-06-17 |
+| [generic.money](./generic.money/) | $3.7M | 77.8% | ? | declining | 1 | 9 | 2026-06-18 |
 | [get-protocol](./get-protocol/) | $122.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 3 | 2026-06-17 |
 | [geyser](./geyser/) | $93.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -564,7 +564,7 @@
 | [infinite-trading-protocol](./infinite-trading-protocol/) | $429.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [infinityname](./infinityname/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [influpia](./influpia/) | $3.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 8 | 2026-06-17 |
+| [infrared-finance](./infrared-finance/) | $2.9M | 66.7% | $2.0M | active | 27 | 12 | 2026-06-18 |
 | [infusion](./infusion/) | $72.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [init-capital](./init-capital/) | $66.2M | 0.0% | $66.2M | declining | 7 | 9 | 2026-06-18 |
 | [initiadex](./initiadex/) | $2.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
@@ -697,7 +697,7 @@
 | [maha.xyz](./maha.xyz/) | $2.6 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [maia-dao-ecosystem](./maia-dao-ecosystem/) | $189.4K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [mainstreet](./mainstreet/) | $77.7M | 0.0% | $77.7M | active | 1 | 10 | 2026-06-17 |
-| [makina](./makina/) | $12.9M | 92.7% | $12.9M | active | 4 | 44 | 2026-06-17 |
+| [makina](./makina/) | $12.9M | 90.7% | $12.9M | active | 8 | 46 | 2026-06-18 |
 | [mama](./mama/) | $49.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [manarium](./manarium/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [manga-fi](./manga-fi/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -828,7 +828,7 @@
 | [noon](./noon/) | $34.1M | 0.0% | ? | active | 5 | 23 | 2026-06-18 |
 | [nostra](./nostra/) | $5.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [notional](./notional/) | $17.4 | 38.9% | ? | declining | 7 | 18 | 2026-06-18 |
-| [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-06-17 |
+| [nucleus](./nucleus/) | $996.4K | 57.1% | ? | active | 11 | 7 | 2026-06-18 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [numisme](./numisme/) | $309.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nx-finance](./nx-finance/) | $1.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

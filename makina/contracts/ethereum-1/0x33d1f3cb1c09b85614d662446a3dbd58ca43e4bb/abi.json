@@ -1,0 +1,763 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hubCoreFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hubPeripheryFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ConflictingPeripheryParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DeploymentAlreadyExecuted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DeploymentAlreadyScheduled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DeploymentNotReady",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DeploymentNotScheduled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDelay",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "payloadHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "DeploymentCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "payloadHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "DeploymentExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "payloadHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timepoint",
+        "type": "uint256"
+      }
+    ],
+    "name": "DeploymentScheduled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "payloadHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelDeployment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "depositorImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "redeemerImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "feeManagerImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "bytes",
+                "name": "depositorInitData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "redeemerInitData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "feeManagerInitData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct IHubStrategyDeploymentZap.PeripheryParams",
+            "name": "pParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "initialDepositor",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRedeemer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialFeeManager",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialCaliberStaleThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxFixedFeeAccrualRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPerfFeeAccrualRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialFeeMintCooldown",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShareLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxSharePriceChangeRate",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMachine.MachineInitParams",
+            "name": "mParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialPositionStaleThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "initialAllowedInstrRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialTimelockDuration",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPositionIncreaseLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPositionDecreaseLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxSwapLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialCooldownDuration",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address[]",
+                "name": "initialBaseTokens",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct ICaliber.CaliberInitParams",
+            "name": "cParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "initialMechanic",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialSecurityCouncil",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRiskManager",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRiskManagerTimelock",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialAuthority",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "initialRestrictedAccountingMode",
+                "type": "bool"
+              },
+              {
+                "internalType": "address[]",
+                "name": "initialAccountingAgents",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct IMakinaGovernable.MakinaGovernableInitParams",
+            "name": "mgParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "bridgeId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "bytes",
+                "name": "initData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxBridgeLossBps",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IBridgeAdapterFactory.BridgeAdapterInitParams[]",
+            "name": "baParams",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "accountingToken",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "tokenName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "tokenSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "setupAMFunctionRoles",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IHubStrategyDeploymentZap.CreateMachineZapParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createMachine",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "depositorImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "redeemerImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "feeManagerImplemId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "bytes",
+                "name": "depositorInitData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "redeemerInitData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "feeManagerInitData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct IHubStrategyDeploymentZap.PeripheryParams",
+            "name": "pParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "initialDepositor",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRedeemer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialFeeManager",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialCaliberStaleThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxFixedFeeAccrualRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPerfFeeAccrualRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialFeeMintCooldown",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShareLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxSharePriceChangeRate",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMachine.MachineInitParams",
+            "name": "mParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialPositionStaleThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "initialAllowedInstrRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialTimelockDuration",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPositionIncreaseLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxPositionDecreaseLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxSwapLossBps",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialCooldownDuration",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address[]",
+                "name": "initialBaseTokens",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct ICaliber.CaliberInitParams",
+            "name": "cParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "initialMechanic",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialSecurityCouncil",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRiskManager",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialRiskManagerTimelock",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialAuthority",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "initialRestrictedAccountingMode",
+                "type": "bool"
+              },
+              {
+                "internalType": "address[]",
+                "name": "initialAccountingAgents",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct IMakinaGovernable.MakinaGovernableInitParams",
+            "name": "mgParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "bridgeId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "bytes",
+                "name": "initData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialMaxBridgeLossBps",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IBridgeAdapterFactory.BridgeAdapterInitParams[]",
+            "name": "baParams",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "preDepositVault",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "setupAMFunctionRoles",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IHubStrategyDeploymentZap.CreateMachineFromPreDepositZapParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createMachineFromPreDeposit",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hubCoreFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hubPeripheryFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "delay",
+        "type": "uint256"
+      }
+    ],
+    "name": "scheduleDeployment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "payloadHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "scheduledDeploymentTimepoint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

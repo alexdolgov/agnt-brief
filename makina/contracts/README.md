@@ -24,7 +24,7 @@
 | [AcrossV3BridgeConfig](./ethereum-1/0xdde7fd6f25c9a58c5ec3e278d31e8584f236da86/) | ethereum | [`0xdde7fd...36da86`](./ethereum-1/0xdde7fd6f25c9a58c5ec3e278d31e8584f236da86/) | ✅ Audited | Verified |
 | [LayerZeroV2BridgeAdapter](./ethereum-1/0x1108204c18fcb5e0b2b38cbd3b783b2a56b42467/) | ethereum | [`0x110820...b42467`](./ethereum-1/0x1108204c18fcb5e0b2b38cbd3b783b2a56b42467/) | ✅ Audited | Verified |
 | [LayerZeroV2BridgeConfig](./ethereum-1/0x1b064336d9c4999c942ecc36e36d48a411343771/) | ethereum | [`0x1b0643...343771`](./ethereum-1/0x1b064336d9c4999c942ecc36e36d48a411343771/) | ⚠️ Unaudited | Verified |
-| [MachineShareOracle](./ethereum-1/0x9434feba9edc5d0cedc128f417307f8d9afe8bc0/) | ethereum | [`0x9434fe...fe8bc0`](./ethereum-1/0x9434feba9edc5d0cedc128f417307f8d9afe8bc0/) | ✅ Audited | Verified |
+| MachineShareOracle | ethereum | `0x9434fe...fe8bc0` | ✅ Audited | Verified |
 | MachineShareOracle | ethereum | `0x9cce24...d96b9f` | ✅ Audited | Verified |
 | [MachineShareOracleFactory](./ethereum-1/0x4c5ea6dc9309147a582fcc330968076158cf5fb6/) | ethereum | [`0x4c5ea6...cf5fb6`](./ethereum-1/0x4c5ea6dc9309147a582fcc330968076158cf5fb6/) | ✅ Audited | Verified |
 | MachineShareOracleFactory | ethereum | `0x58de63...69daf5` | ✅ Audited | Verified |
@@ -59,7 +59,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AsyncRedeemer](./ethereum-1/0x1f20cdfa19b860f0dd78fefbb052be5aa5003dd9/) | ethereum | [`0x1f20cd...003dd9`](./ethereum-1/0x1f20cdfa19b860f0dd78fefbb052be5aa5003dd9/) | ✅ Audited | Verified |
+| AsyncRedeemer | ethereum | `0x1f20cd...003dd9` | ✅ Audited | Verified |
 | AsyncRedeemer | ethereum | `0xdea728...65d971` | ✅ Audited | Verified |
 | [Caliber](./ethereum-1/0x3f5a881db86d6f495823028a1e892e7b2cd7e162/) | ethereum | [`0x3f5a88...d7e162`](./ethereum-1/0x3f5a881db86d6f495823028a1e892e7b2cd7e162/) | ✅ Audited | Verified |
 | [CaliberMailbox](./base-8453/0x2f7101c2effa4a2d48a95958f594e3306717a0a0/) | base | [`0x2f7101...17a0a0`](./base-8453/0x2f7101c2effa4a2d48a95958f594e3306717a0a0/) | ✅ Audited | Verified |
@@ -67,9 +67,9 @@
 | DirectDepositor | ethereum | `0x4c4ff8...60e288` | ✅ Audited | Verified |
 | [FlashloanAggregator](./ethereum-1/0x820d35e62ad73a5dc7b81d54ce993080d2064065/) | ethereum | [`0x820d35...064065`](./ethereum-1/0x820d35e62ad73a5dc7b81d54ce993080d2064065/) | ✅ Audited | Verified |
 | [KeyValueStore (3 deployments)](./ethereum-1/0x7cb36b14244c7a68c4fe291c88f75bc915aac262/) | ethereum | 3 deployments: ethereum [`0x7cb36b...aac262`](./ethereum-1/0x7cb36b14244c7a68c4fe291c88f75bc915aac262/); ethereum `0xa81fc3...c92e91`; ethereum `0xf5b4df...e77437` | ✅ Audited | Verified |
-| [Machine](./ethereum-1/0x5c680ec39bafe8524f3c2fa9d5f6d65f09bd7333/) | ethereum | [`0x5c680e...bd7333`](./ethereum-1/0x5c680ec39bafe8524f3c2fa9d5f6d65f09bd7333/) | ✅ Audited | Verified |
+| Machine | ethereum | `0x5c680e...bd7333` | ✅ Audited | Verified |
 | [MachineShare (4 deployments)](./ethereum-1/0x1e33e98af620f1d563fcd3cfd3c75ace841204ef/) | ethereum | 4 deployments: ethereum [`0x1e33e9...1204ef`](./ethereum-1/0x1e33e98af620f1d563fcd3cfd3c75ace841204ef/); ethereum `0x871ab8...deb7ed`; ethereum `0x972966...231bdf`; ethereum `0xac499a...494b06` | ✅ Audited | Verified |
-| [SecurityModule](./ethereum-1/0x49ee9b4865cbbf9ec8b142cdd4a5a65971f92542/) | ethereum | [`0x49ee9b...f92542`](./ethereum-1/0x49ee9b4865cbbf9ec8b142cdd4a5a65971f92542/) | ✅ Audited | Verified |
+| SecurityModule | ethereum | `0x49ee9b...f92542` | ✅ Audited | Verified |
 | SecurityModule | ethereum | `0xae3d2b...bf8186` | ✅ Audited | Verified |
 | [SwapModule](./ethereum-1/0x923c98b22f9c367a109e93f7dfbaca28b20c17c3/) | ethereum | [`0x923c98...0c17c3`](./ethereum-1/0x923c98b22f9c367a109e93f7dfbaca28b20c17c3/) | ✅ Audited | Verified |
 | UnnamedContract | ink | `0x110820...b42467` | ❓ Unverified | Unverified |

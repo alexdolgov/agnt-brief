@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "generic.money",
-  "generated_at": "2026-06-17T07:00:35.994Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:41:57.784Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "generic.money",
@@ -26,13 +26,13 @@
     "total_addresses": 15,
     "unique_implementations": 9,
     "total_deployments": 15,
-    "audited_contracts": 8,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 8,
-    "contracts_verified_unaudited": 1,
+    "audited_contracts": 7,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 88.9,
+    "coverage_pct": 77.8,
     "total_audits": 1,
     "scoreable_audits": 1,
     "dl_tvl_usd": 1146891.77944,
@@ -46,7 +46,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 88.9,
+    "tier1_coverage_pct": 77.8,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -63,16 +63,16 @@
     "project_purpose": "Generic.Money provides GUSD, a fully collateralized stablecoin-as-a-service/onchain dollar backed by stablecoin collateral. The protocol includes vault-based yield routing, shared liquidity and accounting, cross-chain messaging, and marketed privacy features including confidential payments and an FHE-powered Privacy Pool, with sGUSD/staking usage and live deployments or usage on networks including StatusL2 and Citrea that should be evaluated for scope.",
     "relationship_narrative": "The Core Protocol Contracts issue GenericUSD, which is used by the Mainnet GUSD vaults for payments and yield. The Bridging Infrastructure enables cross-chain movement of GenericUSD, while Periphery Contracts facilitate deposits and swaps, all governed by the DAO.",
     "product_family_count": 6,
-    "total_contracts_indexed": 25,
+    "total_contracts_indexed": 27,
     "live_contracts": 15,
     "inactive_contracts": 0,
-    "singleton_contracts": 10,
+    "singleton_contracts": 12,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 7,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 4,
-    "unverified_dependencies": 0,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 7,
+    "unverified_dependencies": 1,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -169,6 +169,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AggregationRouterV6",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "1inch",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AggregationRouterV6",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x1e4b88b37bae84b2975a09e5811cc0312c086b28",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -206,45 +241,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3a64d23313e1beaaba25ec13149bd8d514c973ae",
-      "deployment_unit": "unit-21668",
-      "deployment_unit_proxy_count": 1,
-      "name": "Controller",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Core Protocol Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x706810ad8c911b15603873156976008ed53a3f06",
-      "impl_name": "Controller",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3a64d23313e1beaaba25ec13149bd8d514c973ae",
-          "deployment_unit": "unit-21668",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2683"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17",
-      "deployment_unit": "unit-21667",
+      "deployment_unit": "unit-39062",
       "deployment_unit_proxy_count": 1,
       "name": "DAO",
       "role": "unknown",
@@ -260,7 +258,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17",
-          "deployment_unit": "unit-21667",
+          "deployment_unit": "unit-39062",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -538,7 +536,7 @@
         "YieldManager",
         "tryGetAssetDecimals"
       ],
-      "matched_contracts": 14,
+      "matched_contracts": 13,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -549,16 +547,16 @@
     {
       "auditor": "Spearbit",
       "tier": 1,
-      "contracts_covered": 8,
-      "coverage_pct": 88.9,
+      "contracts_covered": 7,
+      "coverage_pct": 77.8,
       "latest_audit": "2026-01"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 4,
-    "upstream": 3,
-    "standard_library": 2,
+    "upstream": 4,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

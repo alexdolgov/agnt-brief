@@ -1,0 +1,17 @@
+{
+  "address": "0xfd0fa49f8aa1d61da390e10ead23c650b0f9c2b5",
+  "chain_id": 80094,
+  "contract_name": "IROFTAdapter",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "000000000000000000000000a1b644aec990ad6023811ced36e6a2d6d128c7c90000000000000000000000006f475642a6e85809b1c36fa62763669b1b48dd5b000000000000000000000000182a31a27a0d39d735b31e80534cfe1fcd92c38f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:50:06.637Z"
+}

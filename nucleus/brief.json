@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nucleus",
-  "generated_at": "2026-06-17T07:00:50.267Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:45:38.248Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nucleus",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 68.77208013536041
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 34,
-    "unique_implementations": 6,
-    "total_deployments": 34,
-    "audited_contracts": 3,
+    "total_contracts": 7,
+    "total_addresses": 36,
+    "unique_implementations": 7,
+    "total_deployments": 36,
+    "audited_contracts": 4,
     "unaudited_contracts": 3,
-    "contracts_verified_audited": 3,
+    "contracts_verified_audited": 4,
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 50,
+    "coverage_pct": 57.1,
     "total_audits": 11,
-    "scoreable_audits": 5,
+    "scoreable_audits": 6,
     "dl_tvl_usd": 28653388.35981,
     "tvl_usd": 996372.2752875027,
     "tvl_source": "on_chain",
@@ -46,37 +46,37 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 33.3,
+    "tier1_coverage_pct": 28.6,
     "tier1_auditors": [
       "Spearbit"
     ],
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 4,
+      "fresh": 5,
       "aging": 2,
       "stale": 1,
-      "unknown": 4
+      "unknown": 3
     }
   },
   "topography": {
     "project_purpose": "Nucleus is a yield aggregator that deploys user deposits into various yield-generating strategies through BoringVaults. It uses Teller contracts to manage asset flows and supports cross-chain operations via LayerZero.",
     "relationship_narrative": "The Nucleus family uses BoringVaults as the primary yield-bearing contracts, with Tellers managing asset deposits and withdrawals. The Step families appear to be auxiliary contracts for asset inspection and withdrawal, sharing the BoringVault infrastructure.",
     "product_family_count": 3,
-    "total_contracts_indexed": 38,
-    "live_contracts": 34,
-    "inactive_contracts": 4,
+    "total_contracts_indexed": 42,
+    "live_contracts": 36,
+    "inactive_contracts": 6,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 2,
     "live_deployment_units": 2,
-    "dependencies_extracted": 0,
-    "unverified_dependencies": 0,
+    "dependencies_extracted": 24,
+    "unverified_dependencies": 2,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 7,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -357,8 +357,56 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x6035832f65b0cf20064681505b73a6de307a04cb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AccountantWithRateProviders",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountantWithRateProviders",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6035832f65b0cf20064681505b73a6de307a04cb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8c1902a5996978f2628558dd93d309f7e3926dfd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3947"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x35fa164735182de50811e8e2e824cfb9b6118ac2",
-      "deployment_unit": "unit-31065",
+      "deployment_unit": "unit-39067",
       "deployment_unit_proxy_count": 1,
       "name": "EETH",
       "role": "unknown",
@@ -374,7 +422,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x35fa164735182de50811e8e2e824cfb9b6118ac2",
-          "deployment_unit": "unit-31065",
+          "deployment_unit": "unit-39067",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -397,8 +445,8 @@
       "deployment_unit_proxy_count": null,
       "name": "MultiChainLayerZeroTellerWithMultiAssetSupport",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Multichain",
       "product_line": "Nucleus",
       "tvl_usd": null,
       "is_proxy": false,
@@ -536,7 +584,8 @@
         "audit-3941",
         "audit-3943",
         "audit-3944",
-        "audit-3945"
+        "audit-3945",
+        "audit-3947"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -548,7 +597,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-      "deployment_unit": "unit-31066",
+      "deployment_unit": "unit-39068",
       "deployment_unit_proxy_count": 1,
       "name": "WeETH",
       "role": "unknown",
@@ -564,7 +613,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-          "deployment_unit": "unit-31066",
+          "deployment_unit": "unit-39068",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -588,7 +637,7 @@
       "name": "WETH9",
       "role": "token",
       "origin_kind": "upstream",
-      "origin_provider": "weth",
+      "origin_provider": "wrapped-ether",
       "product_line": "Step 3: Withdraw from the vault",
       "tvl_usd": null,
       "is_proxy": false,
@@ -882,18 +931,23 @@
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf",
       "auditor": "Zenith",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2026-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccountantWithRateProviders",
+        "CrossChainTellerBase",
+        "TellerWithMultiAssetSupport",
+        "WithdrawQueue"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -902,30 +956,37 @@
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 50,
+      "coverage_pct": 42.9,
       "latest_audit": "2026-03"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 33.3,
+      "coverage_pct": 28.6,
       "latest_audit": "2024-04"
+    },
+    {
+      "auditor": "Zenith",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 28.6,
+      "latest_audit": "2026-01"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 3,
-    "upstream": 1,
+    "upstream": 2,
     "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 83
+      "extraction_exact": 91
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 6
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -949,10 +1010,6 @@
       {
         "audit_id": 3946,
         "report_name": "zenith-one-to-one-queue.pdf"
-      },
-      {
-        "audit_id": 3947,
-        "report_name": "zenith-withdraw-queue.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -5,13 +5,13 @@
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:36.023Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:50:53.524Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: berachain, bsc
-- Contract surface: 8 unique implementations (22 raw deployments)
+- Contract surface: 12 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $30,216,782.27
-- On-chain TVL (included contracts): $861,893.53
-- TVL by chain: Berachain $861,893.53
+- On-chain TVL (included contracts): $2,910,887.15
+- TVL by chain: Berachain $2,910,887.15
 
 ## Project Description
 
@@ -23,33 +23,33 @@ The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with su
 
 ## Contract Surface Quality
 
-- Indexed contracts: 121; live-surface contracts included: 22 (22 live, 0 unknown).
+- Indexed contracts: 129; live-surface contracts included: 30 (30 live, 0 unknown).
 - Excluded by liveness: 95 inactive, 4 singleton, 0 uninitialized.
-- Deployment units: 5/7 live.
+- Deployment units: 6/8 live.
 - Detected codebases: none
-- Unverified dependencies: 5/8.
+- Unverified dependencies: 3/10.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 8/8 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 8/12 (66.7%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 22
+- Unique implementations: 12
+- Raw deployments: 30
 - Audits discovered: 27
 - Scoreable audits (matched contracts): 10
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $2,048,993.62
 - Latest audit: 2026-04 (fresh)
 - Staleness: 15 fresh, 11 aging, 1 stale, 0 unknown
-- Tier 1 coverage: 50.0% (Spearbit)
+- Tier 1 coverage: 33.3% (Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 8 | 100.0% | 2026-04 |
-| Spearbit | Tier 1 | 4 | 50.0% | 2026-03 |
+| unknown | Tier 2 | 8 | 66.7% | 2026-04 |
+| Spearbit | Tier 1 | 4 | 33.3% | 2026-03 |
 
 ## Contract Surface
 
@@ -58,17 +58,22 @@ The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with su
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | WrappedVault | core_logic | berachain | n/a | 15 deployments: berachain [`0x021f62...eccb0d`](./contracts/berachain-80094/0x021f62d74f97f63575f8c608ab7cc3c591eccb0d/); berachain `0x104e92...738d71`; berachain `0x1109bf...80f954`; berachain `0x4fce30...f64444`; berachain `0x57684b...da7ece`; berachain `0x58b34e...2871fd`; berachain `0x7e3129...54e39a`; berachain `0x81ba24...6f490a`; berachain `0x920598...9b139a`; berachain `0xa3a376...80f26f`; berachain `0xb38b0d...26c9b9`; berachain `0xcc824b...851a75`; berachain `0xd10759...f166f4`; berachain `0xde7472...687958`; berachain `0xfe7a78...c5f575` | ✅ Audited |
-| BribeCollectorV1_4 | operational_periphery | berachain | unit-21703 | [`0x8d4417...21298c`](./contracts/berachain-80094/0x8d44170e120b80a7e898bfba8cb26b01ad21298c/) | ✅ Audited |
-| InfraredBERADepositorV2 | unknown | berachain | unit-21700 | [`0x04cddc...cab7d7`](./contracts/berachain-80094/0x04cddc538ea65908106416986adaecefd4cab7d7/) | ✅ Audited |
-| InfraredBERAV2_1 | unknown | berachain | unit-21704 | [`0x9b6761...cd3fe5`](./contracts/berachain-80094/0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5/) | ✅ Audited |
-| InfraredBERAWithdrawor | operational_periphery | berachain | unit-21702 | [`0x8c0e12...2818e1`](./contracts/berachain-80094/0x8c0e122960dc2e97dc0059c07d6901dce72818e1/) | ✅ Audited |
+| BribeCollectorV1_4 | operational_periphery | berachain | unit-39101 | [`0x8d4417...21298c`](./contracts/berachain-80094/0x8d44170e120b80a7e898bfba8cb26b01ad21298c/) | ✅ Audited |
+| InfraredBERADepositorV2 | unknown | berachain | unit-39098 | [`0x04cddc...cab7d7`](./contracts/berachain-80094/0x04cddc538ea65908106416986adaecefd4cab7d7/) | ✅ Audited |
+| InfraredBERAV2_1 | unknown | berachain | unit-39102 | [`0x9b6761...cd3fe5`](./contracts/berachain-80094/0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5/) | ✅ Audited |
+| InfraredBERAWithdrawor | operational_periphery | berachain | unit-39100 | [`0x8c0e12...2818e1`](./contracts/berachain-80094/0x8c0e122960dc2e97dc0059c07d6901dce72818e1/) | ✅ Audited |
 | InfraredBGT | unknown | berachain | n/a | [`0xac03ca...bb2e6b`](./contracts/berachain-80094/0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b/) | ✅ Audited |
-| InfraredV1_10 | unknown | berachain | unit-21705 | [`0xb71b3d...2fc126`](./contracts/berachain-80094/0xb71b3daea39012fb0f2b14d2a9c86da9292fc126/) | ✅ Audited |
+| InfraredV1_10 | unknown | berachain | unit-39104 | [`0xb71b3d...2fc126`](./contracts/berachain-80094/0xb71b3daea39012fb0f2b14d2a9c86da9292fc126/) | ✅ Audited |
 | IROFT | unknown | bsc | n/a | [`0xace9de...bdcb39`](./contracts/bsc-56/0xace9de5af92eb82a97a5973b00eff85024bdcb39/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (4)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| InfraredVault | core_logic | berachain | n/a | 5 deployments: berachain [`0x12e9b8...38314c`](./contracts/berachain-80094/0x12e9b82f3280cc32e81b865f85734d52c538314c/); berachain `0x41c411...5588ce`; berachain `0x665309...189694`; berachain `0x75f3be...168301`; berachain `0xf4c0ed...c5fe47` | ⚠️ Unaudited |
+| StakedIR | token | berachain | unit-39103 | [`0xb5e9cf...512756`](./contracts/berachain-80094/0xb5e9cfd2751363f38a696626c18db4aff7512756/) | ⚠️ Unaudited |
+| WrappedRewardToken | token | berachain | n/a | [`0x4f3c10...670c1b`](./contracts/berachain-80094/0x4f3c10d2bc480638048fa67a7d00237a33670c1b/) | ⚠️ Unaudited |
+| IROFTAdapter | adapter | berachain | n/a | [`0xfd0fa4...f9c2b5`](./contracts/berachain-80094/0xfd0fa49f8aa1d61da390e10ead23c650b0f9c2b5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,7 +106,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Infrared OFT Adapter Security Review.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20OFT%20Adapter%20Security%20Review.pdf) | unknown | Audit | 2025-11 | fresh | Direct | contract_name | 1 | high |
 | [Infrared Operations & Future Vaults Security Review.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Operations%20%26%20Future%20Vaults%20Security%20Review.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 | [Infrared Smart Contract Security Assessment.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Smart%20Contract%20Security%20Assessment.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| [Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 0 | n/a |
 | [Infraredv1.5.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Infraredv1.5.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [Zenith Audit Report - Infrared Finance.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/Zenith%20Audit%20Report%20-%20Infrared%20Finance.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 0 | n/a |
 | [baseline-ethskills.md](https://github.com/infrared-dao/contracts/blob/master/audits/baseline-ethskills.md) | unknown | Audit | 2026-04 | fresh | Direct | contract_name | 20 | high |
@@ -124,15 +129,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| berachain | [`0x12e9b8...38314c`](./contracts/berachain-80094/0x12e9b82f3280cc32e81b865f85734d52c538314c/) | InfraredVault | core_logic | $1,738,161.60 | Verified native implementation with $1,738,161.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x4f3c10...670c1b`](./contracts/berachain-80094/0x4f3c10d2bc480638048fa67a7d00237a33670c1b/) | WrappedRewardToken | token | $92,228.12 | Verified native implementation with $92,228.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xfd0fa4...f9c2b5`](./contracts/berachain-80094/0xfd0fa49f8aa1d61da390e10ead23c650b0f9c2b5/) | IROFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 5 |
+| standard_library | 6 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -142,7 +151,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 17
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=8, medium=2
-- Match method counts: extraction_exact=241
+- Match method counts: extraction_exact=242
 
 Zero-match audit list:
 

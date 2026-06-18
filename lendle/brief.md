@@ -7,10 +7,10 @@
 - Project: Lendle (`lendle`)
 - Website: [https://www.lendle.xyz/](https://www.lendle.xyz/)
 - Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-17T07:00:40.587Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:58:01.289Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: mantle
-- Contract surface: 10 unique implementations (29 raw deployments)
+- Contract surface: 11 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $541,718.00
 - On-chain TVL (included contracts): $60,666.54
 - TVL by chain: Mantle $60,666.54
@@ -25,25 +25,25 @@ The Lendle lending markets and Lendle Yield vaults share the LendleToken for inc
 
 ## Contract Surface Quality
 
-- Indexed contracts: 181; live-surface contracts included: 29 (29 live, 0 unknown).
-- Excluded by liveness: 128 inactive, 24 singleton, 0 uninitialized.
+- Indexed contracts: 185; live-surface contracts included: 32 (32 live, 0 unknown).
+- Excluded by liveness: 129 inactive, 24 singleton, 0 uninitialized.
 - Deployment units: 0/10 live.
 - Detected codebases: aave-v2
-- Unverified dependencies: 6/31.
+- Unverified dependencies: 1/12.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 3/9 (33.3%)
 - Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 10
-- Raw deployments: 29
-- Audits discovered: 9
+- Unverified implementations: 2
+- Unique implementations: 11
+- Raw deployments: 32
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $5,556.44
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 0 aging, 1 stale, 7 unknown
+- Staleness: 1 fresh, 0 aging, 1 stale, 8 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $5,556.44 represents exposure in a protocol with declining activity.
 
@@ -71,7 +71,7 @@ The Lendle lending markets and Lendle Yield vaults share the LendleToken for inc
 | ATokenV2 | token | mantle | n/a | 11 deployments: mantle [`0x1bd5e3...04698d`](./contracts/mantle-5000/0x1bd5e38ffa87f81e7adc9b61439a52a37b04698d/); mantle `0x248ba0...ce4436`; mantle `0x37d051...173bec`; mantle `0x38113c...504b43`; mantle `0x4d7b93...0f22cf`; mantle `0x612271...0c8c8c`; mantle `0x665f9a...6e8d47`; mantle `0x892e01...6162d6`; mantle `0x990a4e...ad6e1e`; mantle `0xc430c4...fc2f7a`; mantle `0xf8d3af...1184e2` | ⚠️ Unaudited |
 | DefaultReserveInterestRateStrategy | operational_periphery | mantle | n/a | [`0xb92ead...eb0f13`](./contracts/mantle-5000/0xb92ead4d4ea7290187690ce980e1e6ab43eb0f13/) | ⚠️ Unaudited |
 | InitializableImmutableAdminUpgradeabilityProxy | unknown | mantle | n/a | [`0xc90c10...ddee12`](./contracts/mantle-5000/0xc90c10c7e3b2f14870cc870a046bd099ccddee12/) | ⚠️ Unaudited |
-| MerkleERC20Distributor | operational_periphery | mantle | n/a | [`0x938034...67078f`](./contracts/mantle-5000/0x93803455aa62e5b95cdb174cd52b16382967078f/) | ⚠️ Unaudited |
+| MerkleERC20Distributor | operational_periphery | mantle | n/a | 3 deployments: mantle [`0x48222d...5827b8`](./contracts/mantle-5000/0x48222df288e1c3a61c02a54b604a1288575827b8/); mantle `0x938034...67078f`; mantle `0xce848c...191383` | ⚠️ Unaudited |
 | ProtocolRevenueDistribution | unknown | mantle | n/a | 2 deployments: mantle [`0xb1946b...d97704`](./contracts/mantle-5000/0xb1946b21bfb1a6c92a57b8fdeb332a17d1d97704/); mantle `0xb442f5...fa7fa1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -86,13 +86,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | UnnamedContract | unknown | mantle | n/a | `0x4c57be...79aa6b` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xae5f62...597287` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -107,6 +108,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1xassyT4bMz6I7eSJmmuUi1-esZJKjKLf/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1ahPwg-QK4zQGp6dHADmwwvfVFcIacSKJ/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1mlOeteL6Oi9HM0FBakaKnwsivIlGcvMH/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \](https://sourcehat.com/audits/GeistProtocol) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -117,23 +119,23 @@ Verified + unaudited native implementations ranked by TVL:
 | mantle | [`0x3ad7d1...34cb52`](./contracts/mantle-5000/0x3ad7d10085c7243a19c6589056a58eb94334cb52/) | VaultV7 | core_logic | $5,556.44 | Verified native implementation with $5,556.44 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0x1bd5e3...04698d`](./contracts/mantle-5000/0x1bd5e38ffa87f81e7adc9b61439a52a37b04698d/) | ATokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0xb92ead...eb0f13`](./contracts/mantle-5000/0xb92ead4d4ea7290187690ce980e1e6ab43eb0f13/) | DefaultReserveInterestRateStrategy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x938034...67078f`](./contracts/mantle-5000/0x93803455aa62e5b95cdb174cd52b16382967078f/) | MerkleERC20Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0x48222d...5827b8`](./contracts/mantle-5000/0x48222df288e1c3a61c02a54b604a1288575827b8/) | MerkleERC20Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0xb1946b...d97704`](./contracts/mantle-5000/0xb1946b21bfb1a6c92a57b8fdeb332a17d1d97704/) | ProtocolRevenueDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 9 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 1 |
+| standard_library | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=51
@@ -148,5 +150,6 @@ Zero-match audit list:
 - [3148] {% embed url="<>" %}
 - [3149] {% embed url="<>" %}
 - [3150] {% embed url="<>" %}
+- [15216] The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \
 
 Fork inheritance lineage and inherited audits are included when available.

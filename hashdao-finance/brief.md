@@ -7,10 +7,10 @@
 - Project: HashDAO Finance (`hashdao-finance`)
 - Website: [https://www.hashdao.finance](https://www.hashdao.finance)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:38.398Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:52:15.139Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: arbitrum, optimism
-- Contract surface: 6 unique implementations (9 raw deployments)
+- Contract surface: 7 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $1,295,570.87
 - On-chain TVL (included contracts): $2,759,621.22
 - TVL by chain: Arbitrum $2,759,621.22
@@ -25,20 +25,20 @@ All contracts are deployed under a single product family and share a common upgr
 
 ## Contract Surface Quality
 
-- Indexed contracts: 122; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 73 inactive, 40 singleton, 0 uninitialized.
-- Deployment units: 2/23 live.
-- Detected codebases: none
-- Unverified dependencies: 4/5.
+- Indexed contracts: 127; live-surface contracts included: 10 (10 live, 0 unknown).
+- Excluded by liveness: 77 inactive, 40 singleton, 0 uninitialized.
+- Deployment units: 3/26 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/6 (50.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 3/7 (42.9%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 9
+- Unique implementations: 7
+- Raw deployments: 10
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -51,8 +51,8 @@ All contracts are deployed under a single product family and share a common upgr
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 50.0% | 2023-04 |
-| SolidProof | Tier 2 | 1 | 16.7% | n/a |
+| unknown | Tier 2 | 3 | 42.9% | 2023-04 |
+| SolidProof | Tier 2 | 1 | 14.3% | n/a |
 
 ## Contract Surface
 
@@ -61,13 +61,14 @@ All contracts are deployed under a single product family and share a common upgr
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | Token | token | arbitrum | n/a | [`0x2e8025...61b93f`](./contracts/arbitrum-42161/0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f/) | ✅ Audited |
-| AdminUpgradeabilityProxy | proxy | optimism | unit-24197 (2 proxies) | 2 deployments: optimism [`0x5556af...771bce`](./contracts/optimism-10/0x5556af10c1966ebf0b131295a2af13deec771bce/); optimism `0x584a4f...07fca8` | ✅ Audited |
-| AdminUpgradeabilityProxy | proxy | arbitrum | unit-24206 (2 proxies) | 2 deployments: arbitrum [`0x019622...e3a61f`](./contracts/arbitrum-42161/0x019622fb05dd0c80751798949e795ff5d5e3a61f/); arbitrum `0xcd7a1b...32dbc4` | ✅ Audited |
+| AdminUpgradeabilityProxy | proxy | optimism | unit-36339 (2 proxies) | 2 deployments: optimism [`0x5556af...771bce`](./contracts/optimism-10/0x5556af10c1966ebf0b131295a2af13deec771bce/); optimism `0x584a4f...07fca8` | ✅ Audited |
+| AdminUpgradeabilityProxy | proxy | arbitrum | unit-36350 (2 proxies) | 2 deployments: arbitrum [`0x019622...e3a61f`](./contracts/arbitrum-42161/0x019622fb05dd0c80751798949e795ff5d5e3a61f/); arbitrum `0xcd7a1b...32dbc4` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| GnosisSafeL2 | governance | arbitrum | unit-36360 | [`0xaa1919...e4ff03`](./contracts/arbitrum-42161/0xaa1919fd3b6f6e11e2c7f22147c48af2b0e4ff03/) | ⚠️ Unaudited |
 | LPToken | token | arbitrum | n/a | 2 deployments: arbitrum [`0x7d5332...cf021f`](./contracts/arbitrum-42161/0x7d5332df67aec9cb1df73ba8115e6a9211cf021f/); arbitrum `0x947af1...e551cd` | ⚠️ Unaudited |
 | ProxyAdmin | governance | optimism | n/a | [`0xa01729...750f11`](./contracts/optimism-10/0xa0172947b886eedc8d8b2177d6213083fd750f11/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | arbitrum | n/a | [`0x8dc6ef...190703`](./contracts/arbitrum-42161/0x8dc6efd57a13b7ba3ff7824c9708db24d3190703/) | ⚠️ Unaudited |
@@ -113,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 1 |
 | standard_library | 2 |
-| needs_review | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

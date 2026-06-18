@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lendle",
-  "generated_at": "2026-06-17T07:00:40.587Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:58:01.289Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lendle",
@@ -32,18 +32,18 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 29,
-    "unique_implementations": 10,
-    "total_deployments": 29,
+    "total_contracts": 11,
+    "total_addresses": 32,
+    "unique_implementations": 11,
+    "total_deployments": 32,
     "audited_contracts": 3,
     "unaudited_contracts": 6,
     "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 2,
     "coverage_pct": 33.3,
-    "total_audits": 9,
+    "total_audits": 10,
     "scoreable_audits": 1,
     "dl_tvl_usd": 541718,
     "tvl_usd": 60666.53962814716,
@@ -64,29 +64,29 @@
       "fresh": 1,
       "aging": 0,
       "stale": 1,
-      "unknown": 7
+      "unknown": 8
     }
   },
   "topography": {
     "project_purpose": "Lendle is a Mantle-based decentralized lending and borrowing money market. The protocol is currently sunsetting/shutting down, so current risk and coverage should be assessed in that context. Yield vaults, staking, and incentive programs should be treated as secondary or historical components unless confirmed active in the current contract surface.",
     "relationship_narrative": "The Lendle lending markets and Lendle Yield vaults share the LendleToken for incentives and governance. The lending family provides core infrastructure like oracles and token contracts that may be utilized by yield strategies.",
     "product_family_count": 3,
-    "total_contracts_indexed": 181,
-    "live_contracts": 29,
-    "inactive_contracts": 128,
+    "total_contracts_indexed": 185,
+    "live_contracts": 32,
+    "inactive_contracts": 129,
     "singleton_contracts": 24,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 10,
     "live_deployment_units": 0,
-    "dependencies_extracted": 31,
-    "unverified_dependencies": 6,
+    "dependencies_extracted": 12,
+    "unverified_dependencies": 1,
     "detected_codebases": [
       "aave-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -443,8 +443,8 @@
       "deployment_unit_proxy_count": null,
       "name": "InitializableImmutableAdminUpgradeabilityProxy",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Lendle",
       "tvl_usd": null,
       "is_proxy": false,
@@ -473,7 +473,7 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
-      "address": "0x93803455aa62e5b95cdb174cd52b16382967078f",
+      "address": "0x48222df288e1c3a61c02a54b604a1288575827b8",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "MerkleERC20Distributor",
@@ -489,7 +489,29 @@
         {
           "chain_id": 5000,
           "chain_name": "mantle",
+          "address": "0x48222df288e1c3a61c02a54b604a1288575827b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
           "address": "0x93803455aa62e5b95cdb174cd52b16382967078f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xce848c40762c9a65c2b71c90a4d5bc5580191383",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -622,6 +644,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xae5f62e4fd9dd8645a81313ebf91ebc674597287",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xae5f62e4fd9dd8645a81313ebf91ebc674597287",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 5000,
@@ -870,6 +927,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15216,
+      "audit_key": "audit-15216",
+      "report_name": "The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \\",
+      "report_url": "https://sourcehat.com/audits/GeistProtocol",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -915,7 +993,7 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
-      "address": "0x93803455aa62e5b95cdb174cd52b16382967078f",
+      "address": "0x48222df288e1c3a61c02a54b604a1288575827b8",
       "name": "MerkleERC20Distributor",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -934,10 +1012,10 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 9,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 1
+    "standard_library": 0,
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -980,6 +1058,10 @@
       {
         "audit_id": 3150,
         "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 15216,
+        "report_name": "The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \\"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "multichain",
-  "generated_at": "2026-06-17T07:00:32.608Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:55:16.715Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "multichain",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 7,
-    "total_addresses": 7,
+    "total_addresses": 8,
     "unique_implementations": 7,
-    "total_deployments": 7,
+    "total_deployments": 8,
     "audited_contracts": 5,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 5,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 71.4,
-    "total_audits": 15,
+    "total_audits": 16,
     "scoreable_audits": 3,
     "dl_tvl_usd": 38276586.67096999,
     "tvl_usd": 12341714.92234077,
@@ -41,7 +41,7 @@
     "tvl_by_chain": {
       "ethereum": 12341714.92
     },
-    "asd_usd": 128.8074840448914,
+    "asd_usd": null,
     "website_url": "https://multichain.org/",
     "chains": [
       "ethereum"
@@ -53,7 +53,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
+      "stale": 3,
       "unknown": 0
     }
   },
@@ -62,14 +62,14 @@
     "relationship_narrative": "The Mainnet family provides generic cross-chain messaging infrastructure, while the Multichain family focuses on token bridging and swaps. Both families share the underlying Message contract as a common implementation for message transmission, and the AnyCallProxy in the Multichain family likely relies on the Mainnet family's message passing capabilities.",
     "product_family_count": 2,
     "total_contracts_indexed": 22,
-    "live_contracts": 7,
-    "inactive_contracts": 11,
+    "live_contracts": 8,
+    "inactive_contracts": 10,
     "singleton_contracts": 4,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 2,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -183,14 +183,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 128.8074840448914,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15194"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -213,6 +215,52 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x37414a8662bc1d25be3ee51fb27c2686e2490a89",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AnyswapV4Router",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Anyswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AnyswapV4Router",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x765277eebeca2e31912c9946eae1021199b39c61",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -302,43 +350,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ve",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-4570"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -377,14 +388,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "VEReward",
-        "ve"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -531,8 +539,8 @@
       "report_url": "https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20%E8%B7%A8%E9%93%BE%E6%A1%A5%E7%99%BD%E7%9B%92%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf",
       "auditor": "SlowMist",
       "audit_type": "bug_bounty",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2020-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -670,14 +678,37 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15194,
+      "audit_key": "audit-15194",
+      "report_name": "PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AnyswapV5ERC20"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "PeckShield",
       "tier": 2,
-      "contracts_covered": 4,
-      "coverage_pct": 57.1,
+      "contracts_covered": 5,
+      "coverage_pct": 71.4,
       "latest_audit": "2022-03"
     },
     {
@@ -686,13 +717,6 @@
       "contracts_covered": 2,
       "coverage_pct": 28.6,
       "latest_audit": "2022-03"
-    },
-    {
-      "auditor": "BlockSec",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 14.3,
-      "latest_audit": "2022-08"
     }
   ],
   "coverage_gaps": [
@@ -708,21 +732,26 @@
     }
   ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 3,
+    "native": 3,
+    "upstream": 4,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 8
+      "extraction_exact": 9
     },
     "extraction_confidence_counts": {
       "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 4570,
+        "report_name": "Read [veMULTI proposal](https://medium.com/multichainorg/vemulti-proposal-stake-multi-get-multichain-fees-rewards-d8d13b9e20cb) and [code audit]()"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": {

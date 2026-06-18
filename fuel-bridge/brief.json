@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fuel-bridge",
-  "generated_at": "2026-06-17T07:00:41.654Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:54:32.279Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "fuel-bridge",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 1,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
     "unaudited_contracts": 1,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 50,
-    "total_audits": 5,
-    "scoreable_audits": 2,
+    "coverage_pct": 0,
+    "total_audits": 12,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 9336546.72502,
     "tvl_usd": 9336546.72502,
     "tvl_source": "defillama",
@@ -60,29 +60,29 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 3,
-      "stale": 1,
-      "unknown": 0
+      "aging": 5,
+      "stale": 3,
+      "unknown": 3
     }
   },
   "topography": {
     "project_purpose": "Fuel Bridge is an Ethereum-Fuel Ignition bridge for asset transfers and cross-chain messaging. Staking, reward distribution, sequencing, and Icon Link-related contracts should be treated as a separate related surface unless independently documented as part of Fuel Bridge.",
     "relationship_narrative": null,
     "product_family_count": 2,
-    "total_contracts_indexed": 44,
-    "live_contracts": 2,
+    "total_contracts_indexed": 45,
+    "live_contracts": 1,
     "inactive_contracts": 18,
-    "singleton_contracts": 24,
+    "singleton_contracts": 26,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 14,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 2,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -94,46 +94,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xf3d20db1d16a4d0ad2f280a5e594ff3c7790f130",
-      "deployment_unit": "unit-25305",
-      "deployment_unit_proxy_count": 1,
-      "name": "FuelChainState",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Icon Link Ethereum Mainnet",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x621850dbb9160b54002b4a25b9fc9b2f26315f7e",
-      "impl_name": "FuelChainState",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf3d20db1d16a4d0ad2f280a5e594ff3c7790f130",
-          "deployment_unit": "unit-25305",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2056",
-        "audit-2058"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e",
-      "deployment_unit": "unit-25298",
+      "deployment_unit": "unit-36370",
       "deployment_unit_proxy_count": 1,
       "name": "Rig",
       "role": "unknown",
@@ -149,7 +111,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e",
-          "deployment_unit": "unit-25298",
+          "deployment_unit": "unit-36370",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -180,22 +142,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CryptographyLib",
-        "FuelChainState",
-        "FuelERC20Gateway",
-        "FuelERC20GatewayV4",
-        "FuelERC721Gateway",
-        "FuelMessagePortal",
-        "FuelMessagePortalV2",
-        "FuelMessagePortalV3",
-        "MessageReceiver",
-        "bridge-fungible-token"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -233,16 +184,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "FuelChainState",
-        "FuelERC20GatewayV4",
-        "FuelMessagePortalV3",
-        "proxy"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -286,37 +232,182 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
+    },
     {
+      "audit_id": 15177,
+      "audit_key": "audit-15177",
+      "report_name": "AuditsIcon Link",
+      "report_url": "https://github.com/FuelLabs/audits",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15178,
+      "audit_key": "audit-15178",
+      "report_name": "ChainSecurity_Fuel_Sway_Optimizations_audit.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Optimizations_audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15179,
+      "audit_key": "audit-15179",
+      "report_name": "ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15183,
+      "audit_key": "audit-15183",
+      "report_name": "fuel-rollup-audit-may-2024.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-rollup-audit-may-2024.pdf",
       "auditor": "Unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 50,
-      "latest_audit": "2025-11"
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15184,
+      "audit_key": "audit-15184",
+      "report_name": "fuel-sway-standard-audit-july24(Public) (3).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-sway-standard-audit-july24(Public)%20(3).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15185,
+      "audit_key": "audit-15185",
+      "report_name": "fuel_core_audit_report.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel_core_audit_report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15187,
+      "audit_key": "audit-15187",
+      "report_name": "fuel_vm_audit_report.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel_vm_audit_report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
+  "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 2,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 23
+      "extraction_exact": 38
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
+        "audit_id": 2056,
+        "report_name": "Fuel-Bridge-apr24(Public) (including Diffs).pdf"
+      },
+      {
         "audit_id": 2057,
         "report_name": "fuel-audit-september-2024(Connectors Predicates)(Public).pdf"
+      },
+      {
+        "audit_id": 2058,
+        "report_name": "fuel-audit-september-2024(Diffs on the Bridge and State Contracts)(Public).pdf"
       },
       {
         "audit_id": 2059,
@@ -325,6 +416,34 @@
       {
         "audit_id": 2062,
         "report_name": "fuel_fast_bridge_audit_final.pdf"
+      },
+      {
+        "audit_id": 15177,
+        "report_name": "AuditsIcon Link"
+      },
+      {
+        "audit_id": 15178,
+        "report_name": "ChainSecurity_Fuel_Sway_Optimizations_audit.pdf"
+      },
+      {
+        "audit_id": 15179,
+        "report_name": "ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf"
+      },
+      {
+        "audit_id": 15183,
+        "report_name": "fuel-rollup-audit-may-2024.pdf"
+      },
+      {
+        "audit_id": 15184,
+        "report_name": "fuel-sway-standard-audit-july24(Public) (3).pdf"
+      },
+      {
+        "audit_id": 15185,
+        "report_name": "fuel_core_audit_report.pdf"
+      },
+      {
+        "audit_id": 15187,
+        "report_name": "fuel_vm_audit_report.pdf"
       }
     ],
     "inherited_remapped_matches": []

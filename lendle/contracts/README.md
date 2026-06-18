@@ -13,7 +13,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DefaultReserveInterestRateStrategy](./mantle-5000/0xb92ead4d4ea7290187690ce980e1e6ab43eb0f13/) | mantle | [`0xb92ead...eb0f13`](./mantle-5000/0xb92ead4d4ea7290187690ce980e1e6ab43eb0f13/) | ⚠️ Unaudited | Verified |
-| [MerkleERC20Distributor](./mantle-5000/0x93803455aa62e5b95cdb174cd52b16382967078f/) | mantle | [`0x938034...67078f`](./mantle-5000/0x93803455aa62e5b95cdb174cd52b16382967078f/) | ⚠️ Unaudited | Verified |
+| MerkleERC20Distributor | mantle | `0x938034...67078f` | ⚠️ Unaudited | Verified |
 | [TokenVesting](./mantle-5000/0xa7f784dc0ec287342b0b84e63961effa541f7e6f/) | mantle | [`0xa7f784...1f7e6f`](./mantle-5000/0xa7f784dc0ec287342b0b84e63961effa541f7e6f/) | ✅ Audited | Verified |
 
 ## token (3)

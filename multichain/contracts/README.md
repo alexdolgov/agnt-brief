@@ -22,4 +22,4 @@
 |---|---|---|---|---|
 | [AnyCallProxy](./ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ethereum | [`0x37414a...490a89`](./ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ⚠️ Unaudited | Verified |
 | [MultiDao](./ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ethereum | [`0x172280...90d558`](./ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited | Verified |
-| [ve](./ethereum-1/0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba/) | ethereum | [`0xbba411...48ceba`](./ethereum-1/0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba/) | ✅ Audited | Verified |
+| ve | ethereum | `0xbba411...48ceba` | ✅ Audited | Verified |

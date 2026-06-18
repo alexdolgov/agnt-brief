@@ -7,10 +7,10 @@
 - Project: Multichain (`multichain`)
 - Website: [https://multichain.org/](https://multichain.org/)
 - Lifecycle: dead (Tier 0, 99.6% below peak)
-- Generated: 2026-06-17T07:00:32.608Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:55:16.715Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: ethereum
-- Contract surface: 7 unique implementations (7 raw deployments)
+- Contract surface: 7 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $38,276,586.67
 - On-chain TVL (included contracts): $12,341,714.92
 - TVL by chain: Ethereum $12,341,714.92
@@ -25,11 +25,11 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 11 inactive, 4 singleton, 0 uninitialized.
+- Indexed contracts: 22; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 10 inactive, 4 singleton, 0 uninitialized.
 - Deployment units: 0/2 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -38,23 +38,22 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 7
-- Raw deployments: 7
-- Audits discovered: 15
+- Raw deployments: 8
+- Audits discovered: 16
 - Scoreable audits (matched contracts): 3
 - Active bug bounty: BlockSec ([program](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf))
-- ASD (verified + unaudited TVL): $128.81
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-04 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $128.81 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 4 | 57.1% | 2022-03 |
+| PeckShield | Tier 2 | 5 | 71.4% | 2022-03 |
 | Dedaub | Tier 2 | 2 | 28.6% | 2022-03 |
-| BlockSec | Tier 2 | 1 | 14.3% | 2022-08 |
 
 ## Contract Surface
 
@@ -64,16 +63,16 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 |---|---|---|---|---|---|
 | MultichainToken | token | ethereum | n/a | [`0x65ef70...492df4`](./contracts/ethereum-1/0x65ef703f5594d2573eb71aaf55bc0cb548492df4/) | ✅ Audited |
 | AnyswapV6ERC20 | token | ethereum | n/a | [`0x0615db...6748b1`](./contracts/ethereum-1/0x0615dbba33fe61a31c7ed131bda6655ed76748b1/) | ✅ Audited |
+| AnyswapV5ERC20 | token | ethereum | n/a | [`0x9fb9a3...8764e3`](./contracts/ethereum-1/0x9fb9a33956351cf4fa040f65a13b835a3c8764e3/) | ✅ Audited |
 | AnyswapV6Router | adapter | ethereum | n/a | [`0xba8da9...910705`](./contracts/ethereum-1/0xba8da9dcf11b50b03fd5284f164ef5cdef910705/) | ✅ Audited |
 | MultiDao | unknown | ethereum | n/a | [`0x172280...90d558`](./contracts/ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited |
-| ve | unknown | ethereum | n/a | [`0xbba411...48ceba`](./contracts/ethereum-1/0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnyswapV5ERC20 | token | ethereum | n/a | [`0x9fb9a3...8764e3`](./contracts/ethereum-1/0x9fb9a33956351cf4fa040f65a13b835a3c8764e3/) | ⚠️ Unaudited |
 | AnyCallProxy | unknown | ethereum | n/a | [`0x37414a...490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ⚠️ Unaudited |
+| AnyswapV4Router | adapter | ethereum | n/a | 2 deployments: ethereum [`0x6b7a87...e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/); ethereum `0x765277...b39c61` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,7 +97,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [blocksec_audit_multichain_routerv7_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf) | BlockSec | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Read [veMULTI proposal](https://medium.com/multichainorg/vemulti-proposal-stake-multi-get-multichain-fees-rewards-d8d13b9e20cb) and [code audit]()](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_v1.0-signed.pdf) | BlockSec | Audit | 2022-04 | stale | Direct | contract_name | 1 | high |
+| [Read [veMULTI proposal](https://medium.com/multichainorg/vemulti-proposal-stake-multi-get-multichain-fees-rewards-d8d13b9e20cb) and [code audit]()](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_v1.0-signed.pdf) | BlockSec | Audit | 2022-04 | stale | Direct | contract_name | 0 | n/a |
 | [CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf) | CertiK | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf) | CertiK | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [Coinspect - Security Assessment - Multichain Stellar - V230330.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Coinspect/Coinspect%20-%20Security%20Assessment%20-%20Multichain%20Stellar%20-%20V230330.pdf) | Coinspect | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
@@ -112,6 +111,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [AnySwap Threshold-DSA Final Report Edited.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/AnySwap%20Threshold-DSA%20Final%20Report%20Edited.pdf) | Trail of Bits | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final%20Report.pdf) | Trail of Bits | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Verichain/Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf) | Verichains | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| [PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -125,8 +125,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
-| upstream | 3 |
+| native | 3 |
+| upstream | 4 |
 | standard_library | 0 |
 | needs_review | 0 |
 
@@ -134,9 +134,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=8
+- Match method counts: extraction_exact=9
+
+Zero-match audit list:
+
+- [4570] Read [veMULTI proposal](https://medium.com/multichainorg/vemulti-proposal-stake-multi-get-multichain-fees-rewards-d8d13b9e20cb) and [code audit]()
 
 Fork inheritance lineage and inherited audits are included when available.

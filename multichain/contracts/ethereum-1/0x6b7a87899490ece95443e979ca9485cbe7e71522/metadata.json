@@ -1,0 +1,18 @@
+{
+  "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522",
+  "chain_id": 1,
+  "contract_name": "AnyswapV4Router",
+  "compiler_version": "v0.8.1+commit.df193b15",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T09:55:03.310Z"
+}

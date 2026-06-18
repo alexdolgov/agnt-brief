@@ -443,7 +443,7 @@
 | [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [fringe-finance](./fringe-finance/) | $45.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [froggy-protocol](./froggy-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [fuel-bridge](./fuel-bridge/) | $9.3M | 50.0% | ? | declining | 5 | 2 | 2026-06-17 |
+| [fuel-bridge](./fuel-bridge/) | $9.3M | 0.0% | ? | declining | 12 | 1 | 2026-06-18 |
 | [fuji-finance](./fuji-finance/) | $144.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [fulcrom](./fulcrom/) | $10.9M | 0.0% | ? | active | 0 | 56 | 2026-06-17 |
 | [full-sail](./full-sail/) | $481.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
@@ -506,7 +506,7 @@
 | [harmonix-finance](./harmonix-finance/) | $302.2 | 0.0% | $302.2 | active | 4 | 24 | 2026-06-17 |
 | [harvest-finance](./harvest-finance/) | $12.2M | 55.6% | ? | declining | 5 | 23 | 2026-06-17 |
 | [harvest-flow](./harvest-flow/) | $524.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [hashdao-finance](./hashdao-finance/) | $2.8M | 50.0% | ? | dead | 3 | 6 | 2026-06-17 |
+| [hashdao-finance](./hashdao-finance/) | $2.8M | 42.9% | ? | dead | 3 | 7 | 2026-06-18 |
 | [hashkey-global](./hashkey-global/) | $13.4M | 0.0% | ? | active | 0 | 2 | 2026-06-17 |
 | [hashking](./hashking/) | $335.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 20 | 2026-06-17 |
@@ -656,7 +656,7 @@
 | [ledgity-yield](./ledgity-yield/) | $8.2K | 0.0% | $8.2K | active | 0 | 61 | 2026-06-17 |
 | [legacy-canary-protocol](./legacy-canary-protocol/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lendflare](./lendflare/) | $987.6K | 33.3% | ? | declining | 1 | 3 | 2026-06-17 |
-| [lendle](./lendle/) | $60.7K | 33.3% | $5.6K | declining | 9 | 10 | 2026-06-17 |
+| [lendle](./lendle/) | $60.7K | 33.3% | $5.6K | declining | 10 | 11 | 2026-06-18 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 66.7% | $12.6M | active | 5 | 25 | 2026-06-17 |
 | [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-17 |
 | [levvy-finance](./levvy-finance/) | $46.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -779,7 +779,7 @@
 | [mr.-lightspeed-creator-coin](./mr.-lightspeed-creator-coin/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mu-digital](./mu-digital/) | $21.6M | 85.7% | ? | active | 2 | 7 | 2026-06-17 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
-| [multichain](./multichain/) | $12.3M | 71.4% | $128.8 | dead | 15 | 7 | 2026-06-17 |
+| [multichain](./multichain/) | $12.3M | 71.4% | ? | dead | 16 | 7 | 2026-06-18 |
 | [mux-protocol](./mux-protocol/) | $0.2 | 24.3% | $0.2 | active | 4 | 161 | 2026-06-18 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 3 | 5 | 2026-06-17 |
 | [myso](./myso/) | $28.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -1071,7 +1071,7 @@
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-17 |
 | [sierra-protocol](./sierra-protocol/) | $34.5M | 0.0% | ? | active | 1 | 6 | 2026-06-17 |
 | [sigma-money](./sigma-money/) | $55.4K | 26.0% | ? | active | 10 | 187 | 2026-06-17 |
-| [silo-finance](./silo-finance/) | $3.3M | 21.4% | $641.3K | unknown | 10 | 313 | 2026-06-17 |
+| [silo-finance](./silo-finance/) | $3.3M | 33.8% | $641.3K | declining | 18 | 87 | 2026-06-18 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-17 |
 | [singularv](./singularv/) | $1.1B | 40.8% | $23.9K | declining | 30 | 49 | 2026-06-17 |
 | [singularx](./singularx/) | $1.4M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |

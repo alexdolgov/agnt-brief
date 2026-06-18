@@ -69,7 +69,7 @@
 | [ShipmentPlanner](./arbitrum-42161/0x555555987d98079b9f43cdcdbd52dbb24ffeeef5/) | arbitrum | [`0x555555...feeef5`](./arbitrum-42161/0x555555987d98079b9f43cdcdbd52dbb24ffeeef5/) | ⚠️ Unaudited | Verified |
 | [UnwrapAndSendETH](./arbitrum-42161/0xd6fc4a63d7e93267c3007ea176081052369a4749/) | arbitrum | [`0xd6fc4a...9a4749`](./arbitrum-42161/0xd6fc4a63d7e93267c3007ea176081052369a4749/) | ⚠️ Unaudited | Verified |
 | [Vyper_contract (2 deployments)](./ethereum-1/0x3a70dfa7d2262988064a2d051dd47521e43c9bdd/) | ethereum | 2 deployments: ethereum [`0x3a70df...3c9bdd`](./ethereum-1/0x3a70dfa7d2262988064a2d051dd47521e43c9bdd/); ethereum `0x6c3f90...e6e490` | ⚠️ Unaudited | Verified |
-| [Well](./ethereum-1/0xbea0e11282e2bb5893bece110cf199501e872bad/) | ethereum | [`0xbea0e1...872bad`](./ethereum-1/0xbea0e11282e2bb5893bece110cf199501e872bad/) | ✅ Audited | Verified |
+| Well | ethereum | `0xbea0e1...872bad` | ✅ Audited | Verified |
 | WellUpgradeable | arbitrum | `0xbea00a...8736ce` | ❓ Unverified | Unverified |
 | WellUpgradeable | arbitrum | `0xbea00b...48d74f` | ❓ Unverified | Unverified |
 | WellUpgradeable | arbitrum | `0xbea00d...e1b09c` | ❓ Unverified | Unverified |

@@ -4,11 +4,11 @@
 
 - Project: Bio Protocol (`bio-protocol`)
 - Website: [https://www.bio.xyz/](https://www.bio.xyz/)
-- Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-17T07:00:51.051Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: active (Tier 0, 77.2% below peak)
+- Generated: 2026-06-18T05:51:24.168Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: base, ethereum
-- Contract surface: 34 unique implementations (88 raw deployments)
+- Contract surface: 33 unique implementations (89 raw deployments)
 - DeFi Llama TVL: $4,307,036.04
 - On-chain TVL (included contracts): $143,807,019.12
 - TVL by chain: Ethereum $133,719,926.37 | Base $10,087,092.75
@@ -23,20 +23,20 @@ The Bio Protocol family provides the staking and governance layer for the BIO to
 
 ## Contract Surface Quality
 
-- Indexed contracts: 155; live-surface contracts included: 88 (88 live, 0 unknown).
-- Excluded by liveness: 38 inactive, 29 singleton, 0 uninitialized.
+- Indexed contracts: 155; live-surface contracts included: 89 (89 live, 0 unknown).
+- Excluded by liveness: 37 inactive, 29 singleton, 0 uninitialized.
 - Deployment units: 6/20 live.
 - Detected codebases: none
-- Dependencies extracted: 7; unverified dependencies: 0.
+- Dependencies extracted: 6; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/33 (9.1%)
-- Verified + Unaudited implementations: 30
+- Verified implementations audited: 3/32 (9.4%)
+- Verified + Unaudited implementations: 29
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 34
-- Raw deployments: 88
+- Unique implementations: 33
+- Raw deployments: 89
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $139,622,135.90
@@ -48,8 +48,8 @@ The Bio Protocol family provides the staking and governance layer for the BIO to
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| FYEO | Tier 2 | 2 | 6.1% | 2025-07 |
-| Pashov Audit Group | Tier 2 | 1 | 3.0% | 2025-02 |
+| FYEO | Tier 2 | 2 | 6.3% | 2025-07 |
+| Pashov Audit Group | Tier 2 | 1 | 3.1% | 2025-02 |
 
 ## Contract Surface
 
@@ -59,9 +59,9 @@ The Bio Protocol family provides the staking and governance layer for the BIO to
 |---|---|---|---|---|---|
 | AgentToken | token | base | n/a | 10 deployments: base [`0x036994...401127`](./contracts/base-8453/0x03699469849a6cf876a65b4fd01fbd663c401127/); base `0x492ae2...9d6d43`; base `0x54f16b...f48a0a`; base `0x5d4d25...b2dcd3`; base `0x7db6df...ec21ec`; base `0x896a0b...294250`; base `0x9d56c2...27581d`; base `0xd9bf91...298411`; base `0xe183b1...bce582`; base `0xe8f802...8a69fa` | ✅ Audited |
 | TokenVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4f55ed...fd6517`](./contracts/ethereum-1/0x4f55edffd4e9325577d4c8dde6f15782cefd6517/); ethereum `0x7c36c6...733aab` | ✅ Audited |
-| VeBIO | unknown | base | unit-19740 | [`0xe1b48c...49a3bd`](./contracts/base-8453/0xe1b48c0279cd95d984f1290293116c45d049a3bd/) | ✅ Audited |
+| VeBIO | unknown | base | unit-35311 | [`0xe1b48c...49a3bd`](./contracts/base-8453/0xe1b48c0279cd95d984f1290293116c45d049a3bd/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (30)
+### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -84,16 +84,15 @@ The Bio Protocol family provides the staking and governance layer for the BIO to
 | LockedToken | token | ethereum | n/a | 2 deployments: ethereum [`0xb1729b...a8f3b8`](./contracts/ethereum-1/0xb1729b20dad1fa670f96e4cf4bffe21ac6a8f3b8/); ethereum `0xc8cd72...582b5b` | ⚠️ Unaudited |
 | LockingCrowdSale | unknown | ethereum | n/a | [`0xfbfd26...66db26`](./contracts/ethereum-1/0xfbfd266bf3b49db8746155aa318d4533cc66db26/) | ⚠️ Unaudited |
 | MockUsdc | unknown | ethereum | n/a | [`0x42d018...618e8b`](./contracts/ethereum-1/0x42d01846f7b3669a5b0167c938168afe22618e8b/) | ⚠️ Unaudited |
-| OptimismMintableERC20 | bridge_template | base | n/a | 11 deployments: base [`0x1f4446...ad1c36`](./contracts/base-8453/0x1f4446faaaed23090f324f051c3f8c5ce5ad1c36/); base `0x1fbaf8...ee6773`; base `0x321725...30a58c`; base `0x3568c7...4e9a79`; base `0x3a38dd...08f0b3`; base `0x490a4b...071937`; base `0x58d75a...40b8a3`; base `0x85d0e1...e59a97`; base `0x937573...bdaa21`; base `0xe18c07...d04e28`; base `0xfbad5b...8bf4d8` | ⚠️ Unaudited |
-| StakedToken | token | ethereum | n/a | 20 deployments: ethereum [`0x0bb564...126cca`](./contracts/ethereum-1/0x0bb56479c5d9d253e22380ecfe9a2885aa126cca/); ethereum `0x335015...002588`; ethereum `0x450ee6...0ef313`; ethereum `0x67cdf8...dfcecc`; ethereum `0x75edde...5e92ba`; ethereum `0x88835d...469ad7`; ethereum `0xa41cea...74de48`; ethereum `0xb840c4...690687`; ethereum `0xb90f10...830f69`; ethereum `0xd12e41...121e79`; base `0x6c85e4...7ca9f8`; base `0x852c11...342e53`; base `0x85ecbc...a66797`; base `0x9dff3a...9c6a7f`; base `0xafb64a...9e07d0`; base `0xcbd956...3845db`; base `0xe01b67...6dc29b`; base `0xe1ea71...ebe13f`; base `0xec6375...f72f9a`; base `0xee8ea7...f3b4a1` | ⚠️ Unaudited |
-| Staking | unknown | ethereum | n/a | [`0x711f2a...17a66d`](./contracts/ethereum-1/0x711f2ac9e39615e07b4fe4548154d698b517a66d/) | ⚠️ Unaudited |
+| OptimismMintableERC20 | bridge_template | base | n/a | 10 deployments: base [`0x1f4446...ad1c36`](./contracts/base-8453/0x1f4446faaaed23090f324f051c3f8c5ce5ad1c36/); base `0x321725...30a58c`; base `0x3568c7...4e9a79`; base `0x3a38dd...08f0b3`; base `0x490a4b...071937`; base `0x58d75a...40b8a3`; base `0x85d0e1...e59a97`; base `0x937573...bdaa21`; base `0xe18c07...d04e28`; base `0xfbad5b...8bf4d8` | ⚠️ Unaudited |
+| StakedToken | token | ethereum | n/a | 23 deployments: ethereum [`0x023c3e...fb98be`](./contracts/ethereum-1/0x023c3e7cc97b5d00bc88b47e068d324faffb98be/); ethereum `0x0bb564...126cca`; ethereum `0x335015...002588`; ethereum `0x357d6e...d0ae7c`; ethereum `0x450ee6...0ef313`; ethereum `0x67cdf8...dfcecc`; ethereum `0x75edde...5e92ba`; ethereum `0x88835d...469ad7`; ethereum `0xa41cea...74de48`; ethereum `0xb840c4...690687`; ethereum `0xb90f10...830f69`; ethereum `0xd12e41...121e79`; ethereum `0xe41ba1...c52352`; base `0x6c85e4...7ca9f8`; base `0x852c11...342e53`; base `0x85ecbc...a66797`; base `0x9dff3a...9c6a7f`; base `0xafb64a...9e07d0`; base `0xcbd956...3845db`; base `0xe01b67...6dc29b`; base `0xe1ea71...ebe13f`; base `0xec6375...f72f9a`; base `0xee8ea7...f3b4a1` | ⚠️ Unaudited |
 | TokenVestingMerklePurchasable | operational_periphery | ethereum | n/a | [`0x2141b4...aaa9b3`](./contracts/ethereum-1/0x2141b47a1c7de6df073d23ff94f04d9fd2aaa9b3/) | ⚠️ Unaudited |
 | VITA | unknown | ethereum | n/a | [`0x81f8f0...6fa321`](./contracts/ethereum-1/0x81f8f0bb1cb2a06649e51913a151f0e7ef6fa321/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | unit-19721 | [`0x107abd...191b5e`](./contracts/ethereum-1/0x107abd279d67c1dbb196a5c1a4d74abcba191b5e/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | unit-19722 | [`0x164359...dd6867`](./contracts/ethereum-1/0x164359844eb77995ecd74c70c4e023b7abdd6867/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | unit-19725 | [`0x548f84...a88e31`](./contracts/ethereum-1/0x548f8474ffdab0203eae82131b680a99c4a88e31/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | unit-19727 | [`0x676cd8...c8a3e1`](./contracts/ethereum-1/0x676cd89c6b6f02d6975547fd7da1d5a8dbc8a3e1/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | base | unit-19739 | [`0xcb75cc...dd483f`](./contracts/base-8453/0xcb75cc365abd9713b9a9b9613d90e9c359dd483f/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | unit-35292 | [`0x107abd...191b5e`](./contracts/ethereum-1/0x107abd279d67c1dbb196a5c1a4d74abcba191b5e/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | unit-35293 | [`0x164359...dd6867`](./contracts/ethereum-1/0x164359844eb77995ecd74c70c4e023b7abdd6867/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | unit-35296 | [`0x548f84...a88e31`](./contracts/ethereum-1/0x548f8474ffdab0203eae82131b680a99c4a88e31/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | unit-35298 | [`0x676cd8...c8a3e1`](./contracts/ethereum-1/0x676cd89c6b6f02d6975547fd7da1d5a8dbc8a3e1/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | base | unit-35310 | [`0xcb75cc...dd483f`](./contracts/base-8453/0xcb75cc365abd9713b9a9b9613d90e9c359dd483f/) | ⚠️ Unaudited |
 | WrappedIPToken | token | ethereum | n/a | [`0x0ca5f5...f1352f`](./contracts/ethereum-1/0x0ca5f50a8a59a59ef8c8d610f5ebf99e41f1352f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -145,13 +144,11 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xa1ed7a...a60691`](./contracts/ethereum-1/0xa1ed7ae99abeab2883a4a9486dbbb1c020a60691/) | AccessResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf0a8d2...5bc6c2`](./contracts/ethereum-1/0xf0a8d23f38e9cbbe01c4ed37f23bd519b65bc6c2/) | CrowdSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc85f5d...8f976f`](./contracts/ethereum-1/0xc85f5dd5880d5162faf5fdb24d40845b7c8f976f/) | DAOToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x41e916...7c6fd3`](./contracts/ethereum-1/0x41e9163856b37fa79dc676d3805de88e917c6fd3/) | ERC20Mock | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x122a15...13d722`](./contracts/ethereum-1/0x122a151d6cf3213d2d00920887cac1986c13d722/) | FairAuctionVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb1729b...a8f3b8`](./contracts/ethereum-1/0xb1729b20dad1fa670f96e4cf4bffe21ac6a8f3b8/) | LockedToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfbfd26...66db26`](./contracts/ethereum-1/0xfbfd266bf3b49db8746155aa318d4533cc66db26/) | LockingCrowdSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x42d018...618e8b`](./contracts/ethereum-1/0x42d01846f7b3669a5b0167c938168afe22618e8b/) | MockUsdc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0bb564...126cca`](./contracts/ethereum-1/0x0bb56479c5d9d253e22380ecfe9a2885aa126cca/) | StakedToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x711f2a...17a66d`](./contracts/ethereum-1/0x711f2ac9e39615e07b4fe4548154d698b517a66d/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x023c3e...fb98be`](./contracts/ethereum-1/0x023c3e7cc97b5d00bc88b47e068d324faffb98be/) | StakedToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2141b4...aaa9b3`](./contracts/ethereum-1/0x2141b47a1c7de6df073d23ff94f04d9fd2aaa9b3/) | TokenVestingMerklePurchasable | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0ca5f5...f1352f`](./contracts/ethereum-1/0x0ca5f50a8a59a59ef8c8d610f5ebf99e41f1352f/) | WrappedIPToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -159,9 +156,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 24 |
+| native | 22 |
 | upstream | 1 |
-| standard_library | 6 |
+| standard_library | 7 |
 | needs_review | 3 |
 
 ## Scope Matching Notes

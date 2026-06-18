@@ -7,13 +7,13 @@
 - Project: Blackhole (`blackhole`)
 - Website: [https://blackhole.xyz/](https://blackhole.xyz/)
 - Lifecycle: declining (Tier 0, 89.8% below peak)
-- Generated: 2026-06-17T07:00:41.497Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T05:49:39.807Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: avalanche
-- Contract surface: 56 unique implementations (70 raw deployments)
+- Contract surface: 59 unique implementations (76 raw deployments)
 - DeFi Llama TVL: $10,594,230.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $204,018.13
+- TVL by chain: Avalanche $204,018.13
 
 ## Project Description
 
@@ -25,34 +25,34 @@ The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 144; live-surface contracts included: 70 (70 live, 0 unknown).
-- Excluded by liveness: 5 inactive, 69 singleton, 0 uninitialized.
+- Indexed contracts: 152; live-surface contracts included: 76 (74 live, 2 unknown).
+- Excluded by liveness: 5 inactive, 71 singleton, 0 uninitialized.
 - Deployment units: 0/33 live.
 - Detected codebases: uniswap-v2
-- Unverified dependencies: 5/39.
+- Unverified dependencies: 5/37.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 10/36 (27.8%)
-- Verified + Unaudited implementations: 26
+- Verified implementations audited: 10/39 (25.6%)
+- Verified + Unaudited implementations: 29
 - Verified by bytecode match: 0
 - Unverified implementations: 20
-- Unique implementations: 56
-- Raw deployments: 70
+- Unique implementations: 59
+- Raw deployments: 76
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $204,018.13
 - Latest audit: 2025-07 (fresh)
 - Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 27.8% (Code4rena)
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Tier 1 coverage: 25.6% (Code4rena)
+- Note: This protocol is classified as [declining]. ASD of $204,018.13 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Code4rena | Tier 1 | 10 | 27.8% | 2025-07 |
-| PeckShield | Tier 2 | 4 | 11.1% | 2025-05 |
+| Code4rena | Tier 1 | 10 | 25.6% | 2025-07 |
+| PeckShield | Tier 2 | 4 | 10.3% | 2025-05 |
 
 ## Contract Surface
 
@@ -71,10 +71,11 @@ The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, 
 | RouterV2 | adapter | avalanche | n/a | 2 deployments: avalanche [`0x04e1de...212fec`](./contracts/avalanche-43114/0x04e1dee021cd12bba022a72806441b43d8212fec/); avalanche `0x9eed16...f3c111` | ✅ Audited |
 | VotingEscrow | operational_periphery | avalanche | n/a | [`0xeac562...9ad763`](./contracts/avalanche-43114/0xeac562811cc6abdbb2c9ee88719eca4ee79ad763/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (26)
+### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| AlgebraPool | core_logic | avalanche | n/a | 2 deployments: avalanche [`0x64b9b4...6d0696`](./contracts/avalanche-43114/0x64b9b45dbf624d63d15c04c576faf5c8366d0696/); avalanche `0x930487...7ca365` | ⚠️ Unaudited |
 | AlgebraCustomPoolEntryPoint | core_logic | avalanche | n/a | [`0x580be5...294bfc`](./contracts/avalanche-43114/0x580be59a0461eae3414352c0abd88e485a294bfc/) | ⚠️ Unaudited |
 | AlgebraEternalFarming | unknown | avalanche | n/a | 3 deployments: avalanche [`0x01a8a0...77271a`](./contracts/avalanche-43114/0x01a8a00a6fc8106b94f84aabaef689fd0d77271a/); avalanche `0x9c70be...248f5c`; avalanche `0xb6180a...c40fe5` | ⚠️ Unaudited |
 | AlgebraFactory | registry | avalanche | n/a | [`0x512eb7...5e9e5f`](./contracts/avalanche-43114/0x512eb749541b7cf294be882d636218c84a5e9e5f/) | ⚠️ Unaudited |
@@ -89,16 +90,18 @@ The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, 
 | GaugeOwner | operational_periphery | avalanche | n/a | 2 deployments: avalanche [`0x6c6630...c66de5`](./contracts/avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/); avalanche `0xdd3589...f3f946` | ⚠️ Unaudited |
 | GSCORE | unknown | avalanche | n/a | [`0xd9c5a9...bcc6f1`](./contracts/avalanche-43114/0xd9c5a9b5fe4006cd0fce1f4020beb9020cbcc6f1/) | ⚠️ Unaudited |
 | NFTDescriptor | token | avalanche | n/a | 2 deployments: avalanche [`0x469412...519e13`](./contracts/avalanche-43114/0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13/); avalanche `0xf91d96...ec3485` | ⚠️ Unaudited |
-| NonfungiblePositionManager | operational_periphery | avalanche | n/a | 3 deployments: avalanche [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | avalanche | n/a | 3 deployments: avalanche [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited |
+| Pair | unknown | avalanche | n/a | 2 deployments: avalanche [`0x14e4a5...abd573`](./contracts/avalanche-43114/0x14e4a5bed2e5e688ee1a5ca3a4914250d1abd573/); avalanche `0xc26e54...a29b7a` | ⚠️ Unaudited |
 | PairBootstrapper | unknown | avalanche | n/a | 2 deployments: avalanche [`0xa053ca...e09a22`](./contracts/avalanche-43114/0xa053ca9c51524d67e5e435c62031ad2031e09a22/); avalanche `0xa589c8...b2bd8d` | ⚠️ Unaudited |
 | PluginV3Deployer | unknown | avalanche | n/a | 2 deployments: avalanche [`0xecbbc0...7863d3`](./contracts/avalanche-43114/0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3/); avalanche `0xefc098...bde662` | ⚠️ Unaudited |
-| ProxyAdmin | governance | avalanche | n/a | [`0xd76306...c74bed`](./contracts/avalanche-43114/0xd763061cc3015642ca104496107bc69944c74bed/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | avalanche | n/a | 2 deployments: avalanche [`0x775ebc...ac4327`](./contracts/avalanche-43114/0x775ebcce9310a097f39847e23cc88b38bbac4327/); avalanche `0xd76306...c74bed` | ⚠️ Unaudited |
 | Quoter | periphery | avalanche | n/a | [`0x7a88c4...48d214`](./contracts/avalanche-43114/0x7a88c46740fdfe446dd6ad97cc0a94716848d214/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | avalanche | n/a | [`0x3e182b...9eb689`](./contracts/avalanche-43114/0x3e182bcf14be6142b9217847ec1112e3c39eb689/) | ⚠️ Unaudited |
 | RouterHelperZap | adapter | avalanche | n/a | [`0xd68b9c...9636e1`](./contracts/avalanche-43114/0xd68b9cf89ffc4432977bdb3f9e2c02148d9636e1/) | ⚠️ Unaudited |
 | SecurityRegistry | registry | avalanche | n/a | 2 deployments: avalanche [`0x275e24...d82cb5`](./contracts/avalanche-43114/0x275e246c0f2a76a5ba4b3e13198ef92381d82cb5/); avalanche `0xd2fe84...537b02` | ⚠️ Unaudited |
 | SwapRouter | adapter | avalanche | n/a | [`0xabfc48...19709d`](./contracts/avalanche-43114/0xabfc48e8bed7b26762745f3139555f320119709d/) | ⚠️ Unaudited |
 | TickLens | periphery | avalanche | n/a | [`0xe66aae...4a822e`](./contracts/avalanche-43114/0xe66aae9cb5ab27ec6662c0ec9b9b28764d4a822e/) | ⚠️ Unaudited |
+| TimelockController | governance | avalanche | n/a | [`0xb5bb4c...64e750`](./contracts/avalanche-43114/0xb5bb4c84da2d5de0af12c301818012802e64e750/) | ⚠️ Unaudited |
 | veNFTAPI | token | avalanche | n/a | [`0xb3629c...b35de9`](./contracts/avalanche-43114/0xb3629c89ed9cb172a3fba66dfdf8c06a85b35de9/) | ⚠️ Unaudited |
 | VotingEscrowSplitHelper | operational_periphery | avalanche | n/a | [`0x1d67c7...500e6f`](./contracts/avalanche-43114/0x1d67c7729135583f2ee11fd34c7921a8ae500e6f/) | ⚠️ Unaudited |
 
@@ -156,25 +159,22 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | avalanche | [`0x580be5...294bfc`](./contracts/avalanche-43114/0x580be59a0461eae3414352c0abd88e485a294bfc/) | AlgebraCustomPoolEntryPoint | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x01a8a0...77271a`](./contracts/avalanche-43114/0x01a8a00a6fc8106b94f84aabaef689fd0d77271a/) | AlgebraEternalFarming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x512eb7...5e9e5f`](./contracts/avalanche-43114/0x512eb749541b7cf294be882d636218c84a5e9e5f/) | AlgebraFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x9df945...5be48e`](./contracts/avalanche-43114/0x9df9457d5c55b4c880dc86c67ae323b00b5be48e/) | AlgebraInterfaceMulticall | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x9b2441...8dba1e`](./contracts/avalanche-43114/0x9b2441037e286d5bf9456a3be7b5273fe28dba1e/) | AlgebraPoolDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xdc0b5d...d079b3`](./contracts/avalanche-43114/0xdc0b5db6f5f957ad0ac5e0af8a2c084077d079b3/) | AlgebraVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x5af551...1176ff`](./contracts/avalanche-43114/0x5af551ba1bf743978b42d4e133bff8b6231176ff/) | BasePluginV3Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x3935f7...e32d43`](./contracts/avalanche-43114/0x3935f7e11e33e676b6108f6e86ab8578d8e32d43/) | BlackholePairAPIV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x8c2207...b8888b`](./contracts/avalanche-43114/0x8c2207c82b54d37b0d3ceb80a50a3392aeb8888b/) | BridgeFeeWrapper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xa47ad2...b3a449`](./contracts/avalanche-43114/0xa47ad2c95fae476a73b85a355a5855adb4b3a449/) | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x233433...3adc02`](./contracts/avalanche-43114/0x2334338da0bb192dcfc33356f5d1cc6bc03adc02/) | FeeDiscountRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x6c6630...c66de5`](./contracts/avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/) | GaugeOwner | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x469412...519e13`](./contracts/avalanche-43114/0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | NonfungiblePositionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x14e4a5...abd573`](./contracts/avalanche-43114/0x14e4a5bed2e5e688ee1a5ca3a4914250d1abd573/) | Pair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xa053ca...e09a22`](./contracts/avalanche-43114/0xa053ca9c51524d67e5e435c62031ad2031e09a22/) | PairBootstrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xecbbc0...7863d3`](./contracts/avalanche-43114/0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3/) | PluginV3Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x7a88c4...48d214`](./contracts/avalanche-43114/0x7a88c46740fdfe446dd6ad97cc0a94716848d214/) | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x3e182b...9eb689`](./contracts/avalanche-43114/0x3e182bcf14be6142b9217847ec1112e3c39eb689/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xd68b9c...9636e1`](./contracts/avalanche-43114/0xd68b9cf89ffc4432977bdb3f9e2c02148d9636e1/) | RouterHelperZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x275e24...d82cb5`](./contracts/avalanche-43114/0x275e246c0f2a76a5ba4b3e13198ef92381d82cb5/) | SecurityRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xabfc48...19709d`](./contracts/avalanche-43114/0xabfc48e8bed7b26762745f3139555f320119709d/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xe66aae...4a822e`](./contracts/avalanche-43114/0xe66aae9cb5ab27ec6662c0ec9b9b28764d4a822e/) | TickLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xb3629c...b35de9`](./contracts/avalanche-43114/0xb3629c89ed9cb172a3fba66dfdf8c06a85b35de9/) | veNFTAPI | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x1d67c7...500e6f`](./contracts/avalanche-43114/0x1d67c7729135583f2ee11fd34c7921a8ae500e6f/) | VotingEscrowSplitHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -183,10 +183,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 47 |
-| upstream | 1 |
-| standard_library | 1 |
-| needs_review | 7 |
+| native | 45 |
+| upstream | 4 |
+| standard_library | 2 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

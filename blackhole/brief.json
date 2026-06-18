@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "blackhole",
-  "generated_at": "2026-06-17T07:00:41.497Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T05:49:39.807Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-94c2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "blackhole",
@@ -22,29 +22,31 @@
     "drop_from_peak_pct": 89.81431537495051
   },
   "summary": {
-    "total_contracts": 56,
-    "total_addresses": 70,
-    "unique_implementations": 56,
-    "total_deployments": 70,
+    "total_contracts": 59,
+    "total_addresses": 76,
+    "unique_implementations": 59,
+    "total_deployments": 76,
     "audited_contracts": 10,
-    "unaudited_contracts": 26,
+    "unaudited_contracts": 29,
     "contracts_verified_audited": 10,
-    "contracts_verified_unaudited": 26,
+    "contracts_verified_unaudited": 29,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 20,
-    "coverage_pct": 27.8,
+    "coverage_pct": 25.6,
     "total_audits": 3,
     "scoreable_audits": 3,
     "dl_tvl_usd": 10594230,
-    "tvl_usd": 10594230,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 204018.1268299664,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 204018.13
+    },
+    "asd_usd": 204018.1268299664,
     "website_url": "https://blackhole.xyz/",
     "chains": [
       "avalanche"
     ],
-    "tier1_coverage_pct": 27.8,
+    "tier1_coverage_pct": 25.6,
     "tier1_auditors": [
       "Code4rena"
     ],
@@ -61,22 +63,22 @@
     "project_purpose": "Blackhole is an Avalanche decentralized exchange protocol with both AMM and concentrated-liquidity AMM (CLMM) components. It supports token swaps, liquidity pool creation and management, LP position infrastructure, and gauge-based incentive mechanisms for liquidity providers.",
     "relationship_narrative": "The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, PairFactory, GaugeFactoryCL) to deploy pool and gauge instances, while the RouterV2 facilitates user swaps. Supporting infrastructure includes multiple CustomPoolDeployer proxies for pool creation and TransparentUpgradeableProxy instances for upgradeability across core components.",
     "product_family_count": 1,
-    "total_contracts_indexed": 144,
-    "live_contracts": 70,
+    "total_contracts_indexed": 152,
+    "live_contracts": 74,
     "inactive_contracts": 5,
-    "singleton_contracts": 69,
+    "singleton_contracts": 71,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 33,
     "live_deployment_units": 0,
-    "dependencies_extracted": 39,
+    "dependencies_extracted": 37,
     "unverified_dependencies": 5,
     "detected_codebases": [
       "uniswap-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 56,
+    "unique_implementations": 59,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,6 +87,52 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x64b9b45dbf624d63d15c04c576faf5c8366d0696",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AlgebraPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": 204018.1268299664,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraPool",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x64b9b45dbf624d63d15c04c576faf5c8366d0696",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 58766.601326942306,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x930487d060fcd5fa7ff5167a8f5b6407bc7ca365",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 145251.5255030241,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -128,8 +176,8 @@
       "deployment_unit_proxy_count": null,
       "name": "AlgebraEternalFarming",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -220,8 +268,8 @@
       "deployment_unit_proxy_count": null,
       "name": "AlgebraInterfaceMulticall",
       "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -255,8 +303,8 @@
       "deployment_unit_proxy_count": null,
       "name": "AlgebraPoolDeployer",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -290,7 +338,7 @@
       "deployment_unit_proxy_count": null,
       "name": "AlgebraVaultFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -325,7 +373,7 @@
       "deployment_unit_proxy_count": null,
       "name": "BasePluginV3Factory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -858,7 +906,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -907,6 +955,52 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x14e4a5bed2e5e688ee1a5ca3a4914250d1abd573",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pair",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x14e4a5bed2e5e688ee1a5ca3a4914250d1abd573",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc26e546b632348e76ebbd2811f4458a32ea29b7a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 43114,
@@ -1077,7 +1171,7 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xd763061cc3015642ca104496107bc69944c74bed",
+      "address": "0x775ebcce9310a097f39847e23cc88b38bbac4327",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "ProxyAdmin",
@@ -1090,6 +1184,17 @@
       "impl_address": null,
       "impl_name": "ProxyAdmin",
       "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x775ebcce9310a097f39847e23cc88b38bbac4327",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
@@ -1107,7 +1212,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 43114,
@@ -1356,8 +1461,8 @@
       "deployment_unit_proxy_count": null,
       "name": "SwapRouter",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1417,6 +1522,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xb5bb4c84da2d5de0af12c301818012802e64e750",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimelockController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xb5bb4c84da2d5de0af12c301818012802e64e750",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
     },
     {
       "chain_id": 43114,
@@ -1566,7 +1706,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1601,7 +1741,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1741,7 +1881,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1811,7 +1951,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1846,7 +1986,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1951,7 +2091,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1986,7 +2126,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2361,14 +2501,14 @@
       "auditor": "Code4rena",
       "tier": 1,
       "contracts_covered": 10,
-      "coverage_pct": 27.8,
+      "coverage_pct": 25.6,
       "latest_audit": "2025-07"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 11.1,
+      "coverage_pct": 10.3,
       "latest_audit": "2025-05"
     }
   ],
@@ -2386,48 +2526,18 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x01a8a00a6fc8106b94f84aabaef689fd0d77271a",
+      "name": "AlgebraEternalFarming",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x512eb749541b7cf294be882d636218c84a5e9e5f",
       "name": "AlgebraFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x9df9457d5c55b4c880dc86c67ae323b00b5be48e",
-      "name": "AlgebraInterfaceMulticall",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x9b2441037e286d5bf9456a3be7b5273fe28dba1e",
-      "name": "AlgebraPoolDeployer",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0xdc0b5db6f5f957ad0ac5e0af8a2c084077d079b3",
-      "name": "AlgebraVaultFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x5af551ba1bf743978b42d4e133bff8b6231176ff",
-      "name": "BasePluginV3Factory",
       "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2498,7 +2608,17 @@
       "chain_name": "avalanche",
       "address": "0x3fed017ec0f5517cdf2e8a9a4156c64d74252146",
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x14e4a5bed2e5e688ee1a5ca3a4914250d1abd573",
+      "name": "Pair",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2566,16 +2686,6 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xabfc48e8bed7b26762745f3139555f320119709d",
-      "name": "SwapRouter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
       "address": "0xe66aae9cb5ab27ec6662c0ec9b9b28764d4a822e",
       "name": "TickLens",
       "role": "periphery",
@@ -2605,10 +2715,10 @@
     }
   ],
   "origin_summary": {
-    "native": 47,
-    "upstream": 1,
-    "standard_library": 1,
-    "needs_review": 7
+    "native": 45,
+    "upstream": 4,
+    "standard_library": 2,
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {

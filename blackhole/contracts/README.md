@@ -22,7 +22,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ProxyAdmin](./avalanche-43114/0xd763061cc3015642ca104496107bc69944c74bed/) | avalanche | [`0xd76306...c74bed`](./avalanche-43114/0xd763061cc3015642ca104496107bc69944c74bed/) | ⚠️ Unaudited | Verified |
+| ProxyAdmin | avalanche | `0xd76306...c74bed` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (8)
 

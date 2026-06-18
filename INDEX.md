@@ -138,12 +138,12 @@
 | [bayswap](./bayswap/) | $10.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [beam-dex](./beam-dex/) | $846.8 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
-| [beanstalk](./beanstalk/) | $142.5M | 8.8% | $142.5M | declining | 7 | 39 | 2026-06-17 |
+| [beanstalk](./beanstalk/) | $142.5M | 7.7% | $142.5M | declining | 9 | 44 | 2026-06-18 |
 | [becoswap](./becoswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bedrock](./bedrock/) | $306.6M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [belief-market](./belief-market/) | $35.2 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [bella-protocol](./bella-protocol/) | $150.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [belt-finance](./belt-finance/) | $1.7K | 42.9% | $1.7K | declining | 6 | 164 | 2026-06-17 |
+| [belt-finance](./belt-finance/) | $1.7K | 50.0% | $1.7K | declining | 7 | 843 | 2026-06-18 |
 | [bend](./bend/) | $15.5M | 20.8% | $896.8K | active | 2 | 71 | 2026-06-18 |
 | [benddao](./benddao/) | $5.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 3 | 11 | 2026-06-17 |
@@ -156,7 +156,7 @@
 | [binance-staked-sol](./binance-staked-sol/) | $725.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 7 | 2026-06-17 |
 | [binlayer](./binlayer/) | $386.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bio-protocol](./bio-protocol/) | $143.8M | 9.1% | $139.6M | active | 6 | 34 | 2026-06-17 |
+| [bio-protocol](./bio-protocol/) | $143.8M | 9.4% | $139.6M | active | 6 | 33 | 2026-06-18 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 24 | 2026-06-17 |
 | [bitchill](./bitchill/) | $19.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bitlo](./bitlo/) | $13.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -168,7 +168,7 @@
 | [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 7 | 2026-06-17 |
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-17 |
 | [bitzy](./bitzy/) | $49.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [blackhole](./blackhole/) | $10.6M | 27.8% | ? | declining | 3 | 56 | 2026-06-17 |
+| [blackhole](./blackhole/) | $204.0K | 25.6% | $204.0K | declining | 3 | 59 | 2026-06-18 |
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
 | [blasterswap](./blasterswap/) | $302.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [blend-money](./blend-money/) | $8.6K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
@@ -213,7 +213,7 @@
 | [buffer-finance](./buffer-finance/) | $178.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bulbaswap](./bulbaswap/) | $8.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [bundie](./bundie/) | $54.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bunny](./bunny/) | $563.1K | 43.8% | $80.7K | declining | 1 | 16 | 2026-06-17 |
+| [bunny](./bunny/) | $68.3M | 38.9% | $67.8M | declining | 1 | 18 | 2026-06-18 |
 | [bunnypark](./bunnypark/) | $0.5 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [burve-protocol](./burve-protocol/) | $10.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [burve](./burve/) | $41.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

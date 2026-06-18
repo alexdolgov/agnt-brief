@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tg-casino",
-  "generated_at": "2026-06-17T07:00:49.896Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T03:58:52.395Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tg-casino",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 4,
-    "unique_implementations": 3,
-    "total_deployments": 4,
-    "audited_contracts": 1,
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
+    "audited_contracts": 2,
     "unaudited_contracts": 2,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 33.3,
+    "coverage_pct": 50,
     "total_audits": 8,
-    "scoreable_audits": 1,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 1196930.07638,
     "tvl_usd": 13353575.518038843,
     "tvl_source": "on_chain",
@@ -48,21 +48,21 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023-09",
+    "latest_audit_date": "2024-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 7
+      "stale": 8,
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "TG.Casino is a Telegram casino-associated project centered on the TGC token on Ethereum. The verified on-chain scope supports TGC token contracts and staking/profit-share related contracts, including staking and multi-staking components. Current evidence does not support describing the listed on-chain contracts as facilitating casino games or token-holder governance.",
     "relationship_narrative": "The TGC token is the central asset used across staking contracts. StakingManagerV5 and MultiStakingManagerV2 both interact with TGCToken, and are accessed via upgradeable proxies that share the same deployer cluster.",
     "product_family_count": 1,
-    "total_contracts_indexed": 20,
-    "live_contracts": 4,
+    "total_contracts_indexed": 21,
+    "live_contracts": 5,
     "inactive_contracts": 10,
     "singleton_contracts": 6,
     "uninitialized_contracts": 0,
@@ -76,8 +76,8 @@
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
-    "has_non_token_contracts": true,
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -158,15 +158,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11257",
+        "audit-11258"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -175,7 +178,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "StakingManagerV2",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -202,6 +205,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x85aa97537837514a9229fcaeb66eeef7242122bf",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x85aa97537837514a9229fcaeb66eeef7242122bf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -235,13 +273,13 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_PRESALE_12_11_23.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -256,13 +294,13 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_PreSaleV1_01_12_2024.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -277,18 +315,20 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_STAKING%20MANAGER_12_11_23.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakingManagerV1"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -298,18 +338,20 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_StakingManager_01_12_2024.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakingManagerV1"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -319,8 +361,8 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_TOKEN_12_11_23.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -340,8 +382,8 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_TOKEN_12_28_23.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -361,8 +403,8 @@
       "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/TGB_Token_01_12_2024.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -381,27 +423,24 @@
       "auditor": "Coinsult",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 33.3,
+      "coverage_pct": 25,
       "latest_audit": "2023-09"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2024-01"
     }
   ],
   "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8",
-      "name": "StakingManagerV1",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42",
       "name": "StakingManagerV2",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -409,16 +448,16 @@
   ],
   "origin_summary": {
     "native": 3,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2
+      "extraction_exact": 6
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -430,14 +469,6 @@
       {
         "audit_id": 11256,
         "report_name": "TGB_PreSaleV1_01_12_2024.pdf"
-      },
-      {
-        "audit_id": 11257,
-        "report_name": "TGB_STAKING MANAGER_12_11_23.pdf"
-      },
-      {
-        "audit_id": 11258,
-        "report_name": "TGB_StakingManager_01_12_2024.pdf"
       },
       {
         "audit_id": 11259,

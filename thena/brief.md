@@ -7,10 +7,10 @@
 - Project: THENA (`thena`)
 - Website: [https://www.thena.fi](https://www.thena.fi)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:46.409Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: bsc
-- Contract surface: 26 unique implementations (35 raw deployments)
+- Generated: 2026-06-18T04:10:18.670Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
+- Chains: bsc, opbnb
+- Contract surface: 29 unique implementations (38 raw deployments)
 - DeFi Llama TVL: $3,324,627.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,34 +25,34 @@ The THENA governance family controls upgrades across all product lines via proxy
 
 ## Contract Surface Quality
 
-- Indexed contracts: 457; live-surface contracts included: 35 (35 live, 0 unknown).
-- Excluded by liveness: 254 inactive, 168 singleton, 0 uninitialized.
-- Deployment units: 4/80 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 4/42.
+- Indexed contracts: 470; live-surface contracts included: 38 (38 live, 0 unknown).
+- Excluded by liveness: 264 inactive, 168 singleton, 0 uninitialized.
+- Deployment units: 6/82 live.
+- Detected codebases: none
+- Dependencies extracted: 24; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/26 (11.5%)
-- Verified + Unaudited implementations: 23
+- Verified implementations audited: 3/29 (10.3%)
+- Verified + Unaudited implementations: 26
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 26
-- Raw deployments: 35
+- Unique implementations: 29
+- Raw deployments: 38
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
 - Staleness: 1 fresh, 0 aging, 2 stale, 0 unknown
-- Tier 1 coverage: 3.8% (OpenZeppelin)
+- Tier 1 coverage: 3.4% (OpenZeppelin)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 2 | 7.7% | 2023-03 |
-| OpenZeppelin | Tier 1 | 1 | 3.8% | 2023-06 |
+| PeckShield | Tier 2 | 2 | 6.9% | 2023-03 |
+| OpenZeppelin | Tier 1 | 1 | 3.4% | 2023-06 |
 
 ## Contract Surface
 
@@ -61,10 +61,10 @@ The THENA governance family controls upgrades across all product lines via proxy
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | RewardsDistributor | operational_periphery | bsc | n/a | [`0xa6e0e7...18727d`](./contracts/bsc-56/0xa6e0e731cb1e99aede0f9c9128d04f948e18727d/) | ✅ Audited |
-| VoterV3 | unknown | bsc | unit-27698 | [`0x3a1d09...2c4fcb`](./contracts/bsc-56/0x3a1d0952809f4948d15ebce8d345962a282c4fcb/) | ✅ Audited |
+| VoterV3 | unknown | bsc | unit-34626 | [`0x3a1d09...2c4fcb`](./contracts/bsc-56/0x3a1d0952809f4948d15ebce8d345962a282c4fcb/) | ✅ Audited |
 | VotingEscrow | operational_periphery | bsc | n/a | [`0xfbbf37...1c070d`](./contracts/bsc-56/0xfbbf371c9b0b994eebfcc977cef603f7f31c070d/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (26)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -76,16 +76,19 @@ The THENA governance family controls upgrades across all product lines via proxy
 | GaugeIchiFeeDistribution | operational_periphery | bsc | n/a | 4 deployments: bsc [`0x42e1bf...26ba58`](./contracts/bsc-56/0x42e1bf58f7b6ad93c23f3d1a22e22329e726ba58/); bsc `0x6f8024...1481b5`; bsc `0x9d2c09...5e3b4b`; bsc `0xb4dee5...61f455` | ⚠️ Unaudited |
 | GaugeSimple | operational_periphery | bsc | n/a | 5 deployments: bsc [`0x2f92bc...121bb2`](./contracts/bsc-56/0x2f92bcc2da319262ba4ddc46d883b23f7e121bb2/); bsc `0xa95186...a9b8d6`; bsc `0xba4456...33e871`; bsc `0xcf2071...64541a`; bsc `0xe6519b...bc3b0c` | ⚠️ Unaudited |
 | GlobalFactory | registry | bsc | n/a | [`0x247009...947d9c`](./contracts/bsc-56/0x247009c6f39bc08d5d39ac38c9d5a0d316947d9c/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | unit-27727 | [`0x7d70ee...caa184`](./contracts/bsc-56/0x7d70ee3774325c51e021af1f7987c214d2caa184/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | unit-34655 | [`0x7d70ee...caa184`](./contracts/bsc-56/0x7d70ee3774325c51e021af1f7987c214d2caa184/) | ⚠️ Unaudited |
 | IncentiveMaker | unknown | bsc | n/a | [`0x2814a4...72bbf4`](./contracts/bsc-56/0x2814a4cf03911afc4b0432dbad6cf1d79b72bbf4/) | ⚠️ Unaudited |
-| IncentiveMaker | unknown | bsc | unit-27728 | [`0x80ad2f...ef0701`](./contracts/bsc-56/0x80ad2f2ed4f00b152d7ca5e74920c944bfef0701/) | ⚠️ Unaudited |
+| IncentiveMaker | unknown | bsc | unit-34656 | [`0x80ad2f...ef0701`](./contracts/bsc-56/0x80ad2f2ed4f00b152d7ca5e74920c944bfef0701/) | ⚠️ Unaudited |
 | MasterChef | unknown | bsc | n/a | 2 deployments: bsc [`0x11746f...a92f7c`](./contracts/bsc-56/0x11746fd90091228a97974435d6be5e10bda92f7c/); bsc `0xe58e64...5adfbb` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | bsc | unit-27716 | [`0x643b68...21d02e`](./contracts/bsc-56/0x643b68bf3f855b8475c0a700b6d1020bfc21d02e/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | bsc | unit-34644 | [`0x643b68...21d02e`](./contracts/bsc-56/0x643b68bf3f855b8475c0a700b6d1020bfc21d02e/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | bsc | unit-34665 | [`0xa51adb...6b77ab`](./contracts/bsc-56/0xa51adb08cbe6ae398046a23bec013979816b77ab/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | bsc | n/a | [`0xc06cb2...e04575`](./contracts/bsc-56/0xc06cb27ebb868fa197a24f399680ab674de04575/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | bsc | n/a | [`0x71af3b...c3916d`](./contracts/bsc-56/0x71af3b059b1daa81ee65529bca82779edfc3916d/) | ⚠️ Unaudited |
 | Router | adapter | bsc | n/a | 2 deployments: bsc [`0x20a304...ca8431`](./contracts/bsc-56/0x20a304a7d126758dfe6b243d0fc515f83bca8431/); bsc `0x9b2378...187d0d` | ⚠️ Unaudited |
 | RouterV2 | adapter | bsc | n/a | [`0xd4ae6e...78d109`](./contracts/bsc-56/0xd4ae6eca985340dd434d38f470accce4dc78d109/) | ⚠️ Unaudited |
 | Royalties | unknown | bsc | n/a | [`0xbb2caf...913882`](./contracts/bsc-56/0xbb2caf56bf29379e329dfed453cbe60e4d913882/) | ⚠️ Unaudited |
+| SwapRouter | adapter | bsc | unit-34624 | [`0x327dd3...a4efa0`](./contracts/bsc-56/0x327dd3208f0bcf590a66110acb6e5e6941a4efa0/) | ⚠️ Unaudited |
+| SwapRouter | adapter | opbnb | n/a | [`0x935693...4f0122`](./contracts/opbnb-204/0x9356934eb3fbae6274eae6efc905b292f04f0122/) | ⚠️ Unaudited |
 | Thena | unknown | bsc | n/a | [`0xf4c8e3...863a11`](./contracts/bsc-56/0xf4c8e32eadec4bfe97e0f595add0f4450a863a11/) | ⚠️ Unaudited |
 | ThenianFeeConverter | unknown | bsc | n/a | [`0x6c1c0a...f2eccc`](./contracts/bsc-56/0x6c1c0af31e3c59bc3de10c5cdb0d4af6a0f2eccc/) | ⚠️ Unaudited |
 | TradingCompetitionManager | governance | bsc | n/a | [`0x8d03fe...f639ec`](./contracts/bsc-56/0x8d03febf03cd8e6f2388e587a6a1263360f639ec/) | ⚠️ Unaudited |
@@ -131,6 +134,8 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x2f92bc...121bb2`](./contracts/bsc-56/0x2f92bcc2da319262ba4ddc46d883b23f7e121bb2/) | GaugeSimple | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x247009...947d9c`](./contracts/bsc-56/0x247009c6f39bc08d5d39ac38c9d5a0d316947d9c/) | GlobalFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2814a4...72bbf4`](./contracts/bsc-56/0x2814a4cf03911afc4b0432dbad6cf1d79b72bbf4/) | IncentiveMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x11746f...a92f7c`](./contracts/bsc-56/0x11746fd90091228a97974435d6be5e10bda92f7c/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x643b68...21d02e`](./contracts/bsc-56/0x643b68bf3f855b8475c0a700b6d1020bfc21d02e/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x20a304...ca8431`](./contracts/bsc-56/0x20a304a7d126758dfe6b243d0fc515f83bca8431/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xd4ae6e...78d109`](./contracts/bsc-56/0xd4ae6eca985340dd434d38f470accce4dc78d109/) | RouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xbb2caf...913882`](./contracts/bsc-56/0xbb2caf56bf29379e329dfed453cbe60e4d913882/) | Royalties | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -144,10 +149,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
-| upstream | 3 |
+| native | 19 |
+| upstream | 5 |
 | standard_library | 4 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

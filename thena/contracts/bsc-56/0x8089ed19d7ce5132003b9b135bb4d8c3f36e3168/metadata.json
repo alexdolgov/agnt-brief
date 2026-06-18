@@ -1,0 +1,17 @@
+{
+  "address": "0x8089ed19d7ce5132003b9b135bb4d8c3f36e3168",
+  "chain_id": 56,
+  "contract_name": "UniswapInterfaceMulticall",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T04:05:16.195Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x5c59d0ec51729e40c413903be6a4612f4e2452da",
+  "chain_id": 42161,
+  "contract_name": "EtherRouterCreate3",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x4e7f1e1e263678590007e89b7e129686ba7758d4",
+  "fetched_at": "2026-06-18T03:59:25.596Z"
+}

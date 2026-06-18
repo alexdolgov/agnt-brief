@@ -5,9 +5,9 @@
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:47.544Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: bsc, ethereum, heco
+- Generated: 2026-06-18T03:56:50.505Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
+- Chains: bsc, heco
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $3,761,396.56
 - On-chain TVL (included contracts): n/a
@@ -23,11 +23,11 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 6 (3 live, 3 unknown).
-- Excluded by liveness: 2 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 1/2 live.
+- Indexed contracts: 12; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 2 inactive, 4 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
 - Detected codebases: none
-- Dependencies extracted: 4; unverified dependencies: 0.
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -62,7 +62,7 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | unit-29081 | [`0x005fe0...e7c1c1`](./contracts/ethereum-1/0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1/) | ⚠️ Unaudited |
+| Staking | unknown | bsc | n/a | [`0xe742fc...5a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | ⚠️ Unaudited |
 | StakingOwn | unknown | bsc | n/a | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -100,16 +100,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| bsc | [`0xe742fc...5a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 3 |
+| standard_library | 0 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

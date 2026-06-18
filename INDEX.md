@@ -743,7 +743,7 @@
 | [minerswap](./minerswap/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [minimax](./minimax/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mint-club](./mint-club/) | $598.0K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
-| [minto](./minto/) | $3.8M | 33.3% | ? | active | 2 | 6 | 2026-06-17 |
+| [minto](./minto/) | $3.8M | 33.3% | ? | active | 2 | 6 | 2026-06-18 |
 | [minu](./minu/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mirakle-defi](./mirakle-defi/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mito-finance](./mito-finance/) | $435.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -953,7 +953,7 @@
 | [pulsechain](./pulsechain/) | $475.4K | 0.0% | $475.4K | active | 0 | 3 | 2026-06-17 |
 | [pump-party](./pump-party/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pumpbase](./pumpbase/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [pumpspace](./pumpspace/) | $3.3M | 40.0% | ? | active | 3 | 353 | 2026-06-17 |
+| [pumpspace](./pumpspace/) | $3.3M | 40.0% | ? | active | 3 | 365 | 2026-06-18 |
 | [punks-terminal](./punks-terminal/) | $985.5K | 0.0% | ? | unknown | 0 | 6 | 2026-06-17 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [pv01](./pv01/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1059,7 +1059,7 @@
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 12 | 2026-06-17 |
 | [shadow-exchange](./shadow-exchange/) | $3.8M | 23.8% | ? | declining | 3 | 21 | 2026-06-17 |
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 14 | 2026-06-17 |
-| [shapeshift](./shapeshift/) | $746.2K | 14.3% | $746.2K | active | 3 | 14 | 2026-06-17 |
+| [shapeshift](./shapeshift/) | $353.7K | 14.3% | $353.7K | active | 3 | 14 | 2026-06-18 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 1 | 2026-06-17 |
 | [sherpa](./sherpa/) | $606.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [shield-protocol](./shield-protocol/) | $37.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1226,7 +1226,7 @@
 | [tender-finance](./tender-finance/) | $2.0K | 0.0% | $2.0K | declining | 1 | 8 | 2026-06-17 |
 | [tenderize](./tenderize/) | $313.3M | 13.3% | $313.3M | declining | 7 | 16 | 2026-06-18 |
 | [tensorplex](./tensorplex/) | $387.4K | 0.0% | ? | wind_down | 0 | 3 | 2026-06-17 |
-| [tg-casino](./tg-casino/) | $13.4M | 33.3% | ? | active | 8 | 3 | 2026-06-17 |
+| [tg-casino](./tg-casino/) | $13.4M | 50.0% | ? | active | 8 | 4 | 2026-06-18 |
 | [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 40 | 2026-06-17 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 8 | 2026-06-17 |
@@ -1235,7 +1235,7 @@
 | [the-tokenized-bitcoin](./the-tokenized-bitcoin/) | $106.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 118 | 2026-06-17 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [thena](./thena/) | $3.3M | 11.5% | ? | declining | 3 | 26 | 2026-06-17 |
+| [thena](./thena/) | $3.3M | 10.3% | ? | declining | 3 | 29 | 2026-06-18 |
 | [thesauros](./thesauros/) | $50.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [thoreum-finance](./thoreum-finance/) | $45.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [thorswap](./thorswap/) | $15.5M | 23.1% | $15.5M | unknown | 2 | 14 | 2026-06-17 |

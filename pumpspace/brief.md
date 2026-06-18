@@ -5,10 +5,10 @@
 - Project: PumpSpace (`pumpspace`)
 - Website: [https://pumpspace.io/](https://pumpspace.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:35.740Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T04:14:48.449Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
 - Chains: avalanche
-- Contract surface: 353 unique implementations (420 raw deployments)
+- Contract surface: 365 unique implementations (432 raw deployments)
 - DeFi Llama TVL: $3,329,801.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,7 +23,7 @@ PumpSpace V3 appears to be an evolution of the original PumpSpace, sharing the s
 
 ## Contract Surface Quality
 
-- Indexed contracts: 786; live-surface contracts included: 420 (420 live, 0 unknown).
+- Indexed contracts: 798; live-surface contracts included: 432 (430 live, 2 unknown).
 - Excluded by liveness: 201 inactive, 165 singleton, 0 uninitialized.
 - Deployment units: 0/68 live.
 - Detected codebases: uniswap-v2
@@ -34,9 +34,9 @@ PumpSpace V3 appears to be an evolution of the original PumpSpace, sharing the s
 - Verified implementations audited: 2/5 (40.0%)
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 348
-- Unique implementations: 353
-- Raw deployments: 420
+- Unverified implementations: 360
+- Unique implementations: 365
+- Raw deployments: 432
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -79,7 +79,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (348)
+### ❓ Unverified (360)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -98,6 +98,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x07df97...ca336e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x084283...c5e84a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x08c4b5...20e447` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x093859...313f1a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x09d116...5c558e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x0a31f5...95d4d4` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x0a5a62...83331e` | ❓ Unverified |
@@ -115,6 +116,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x11f41a...cecfda` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x13e732...a0d3ee` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x160116...bd60f2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x162c79...cb6c01` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x16b926...901886` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x172dad...fc9655` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x18d773...4cd439` | ❓ Unverified |
@@ -147,6 +149,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x29ab40...b10eaf` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x29dc03...404e35` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x2a7bc0...bb5da6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2d2120...d12338` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x2d3651...3bbd23` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x2d8f40...52ef9d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x2e0e4c...c0dc16` | ❓ Unverified |
@@ -172,12 +175,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x485d3c...7e6a3b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x488eb2...583a1f` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4a06cb...8c06d9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4a321a...56cd63` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4a3a3c...dce09b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4b5d52...fac955` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4baa3b...61001a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4c0197...54b342` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4c09af...2b19ea` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4cc75f...5f47cd` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4cdef4...12ac07` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4cedac...a86c3b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4dd3cf...fde825` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x4e4603...c95351` | ❓ Unverified |
@@ -188,10 +193,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x516320...cd9be0` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x539ed1...72b31d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x53c4c1...c6f872` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5413b3...b9a40e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x554b6f...ab2863` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x559e0a...7ba135` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x55e7a8...fe817d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x56067c...30acb2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x563ffb...6d287d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x56dc8b...7ee086` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x574316...4eafc5` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x580e92...16e301` | ❓ Unverified |
@@ -292,6 +299,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0x9ac77f...d36c25` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x9bc773...dcd68d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x9de382...57e7d8` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9df6e4...d1e7e0` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x9e2380...82122c` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa0b8b1...189310` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa0c3b1...9435f9` | ❓ Unverified |
@@ -336,9 +344,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0xb935fc...3c298e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xbb2637...8a8ca3` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xbb5362...33551b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbb62b2...da8495` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xbd57a6...ad7566` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xc05291...59a134` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xc071dc...326e57` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc114b5...4171c3` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xc218a4...78c744` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xc28aa1...20545f` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xc2ed33...296020` | ❓ Unverified |
@@ -383,6 +393,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0xe070cd...695711` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe1301b...a4f9ef` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe212b8...e0a3b8` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xe38dc5...0bf95f` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe579ab...e7f1b5` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe6295c...f91f32` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe6f764...c7d5be` | ❓ Unverified |
@@ -398,6 +409,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | n/a | `0xe99c03...87e1ba` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xe9eb6b...11517e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xeb8dde...19f050` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xecc7d1...37f68f` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xee2321...4c5848` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xee9f75...c1ecd8` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xef0e8c...a91ba6` | ❓ Unverified |
@@ -455,10 +467,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 28 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 348 |
+| needs_review | 335 |
 
 ## Scope Matching Notes
 

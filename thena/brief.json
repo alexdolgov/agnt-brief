@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thena",
-  "generated_at": "2026-06-17T07:00:46.409Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T04:10:18.670Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "thena",
@@ -32,17 +32,17 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 26,
-    "total_addresses": 35,
-    "unique_implementations": 26,
-    "total_deployments": 35,
+    "total_contracts": 29,
+    "total_addresses": 38,
+    "unique_implementations": 29,
+    "total_deployments": 38,
     "audited_contracts": 3,
-    "unaudited_contracts": 23,
+    "unaudited_contracts": 26,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 23,
+    "contracts_verified_unaudited": 26,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 11.5,
+    "coverage_pct": 10.3,
     "total_audits": 3,
     "scoreable_audits": 2,
     "dl_tvl_usd": 3324627,
@@ -52,9 +52,10 @@
     "asd_usd": null,
     "website_url": "https://www.thena.fi",
     "chains": [
-      "bsc"
+      "bsc",
+      "opbnb"
     ],
-    "tier1_coverage_pct": 3.8,
+    "tier1_coverage_pct": 3.4,
     "tier1_auditors": [
       "OpenZeppelin"
     ],
@@ -71,22 +72,20 @@
     "project_purpose": "THENA is a decentralized exchange and liquidity layer on BSC that combines spot trading, concentrated liquidity, and derivatives. It uses a ve(3,3) tokenomics model where users lock THE tokens to vote on gauge emissions and earn trading fees and bribes.",
     "relationship_narrative": "The THENA governance family controls upgrades across all product lines via proxy contracts. THENA INTEGRAL provides the base liquidity and token, while THENA PERPS extends the protocol with derivatives, reusing some PancakeSwap infrastructure and staking contracts.",
     "product_family_count": 3,
-    "total_contracts_indexed": 457,
-    "live_contracts": 35,
-    "inactive_contracts": 254,
+    "total_contracts_indexed": 470,
+    "live_contracts": 38,
+    "inactive_contracts": 264,
     "singleton_contracts": 168,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 80,
-    "live_deployment_units": 4,
-    "dependencies_extracted": 42,
-    "unverified_dependencies": 4,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "deployment_units": 82,
+    "live_deployment_units": 6,
+    "dependencies_extracted": 24,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 26,
+    "unique_implementations": 29,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -456,7 +455,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x7d70ee3774325c51e021af1f7987c214d2caa184",
-      "deployment_unit": "unit-27727",
+      "deployment_unit": "unit-34655",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -472,7 +471,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x7d70ee3774325c51e021af1f7987c214d2caa184",
-          "deployment_unit": "unit-27727",
+          "deployment_unit": "unit-34655",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -526,7 +525,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x80ad2f2ed4f00b152d7ca5e74920c944bfef0701",
-      "deployment_unit": "unit-27728",
+      "deployment_unit": "unit-34656",
       "deployment_unit_proxy_count": 1,
       "name": "IncentiveMaker",
       "role": "unknown",
@@ -542,7 +541,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x80ad2f2ed4f00b152d7ca5e74920c944bfef0701",
-          "deployment_unit": "unit-27728",
+          "deployment_unit": "unit-34656",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -565,7 +564,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MasterChef",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -607,11 +606,11 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x643b68bf3f855b8475c0a700b6d1020bfc21d02e",
-      "deployment_unit": "unit-27716",
+      "deployment_unit": "unit-34644",
       "deployment_unit_proxy_count": 1,
       "name": "NonfungiblePositionManager",
       "role": "governance",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -623,7 +622,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x643b68bf3f855b8475c0a700b6d1020bfc21d02e",
-          "deployment_unit": "unit-27716",
+          "deployment_unit": "unit-34644",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -637,6 +636,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa51adb08cbe6ae398046a23bec013979816b77ab",
+      "deployment_unit": "unit-34665",
+      "deployment_unit_proxy_count": 1,
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa51adb08cbe6ae398046a23bec013979816b77ab",
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa51adb08cbe6ae398046a23bec013979816b77ab",
+          "deployment_unit": "unit-34665",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -864,6 +898,76 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x327dd3208f0bcf590a66110acb6e5e6941a4efa0",
+      "deployment_unit": "unit-34624",
+      "deployment_unit_proxy_count": 1,
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x327dd3208f0bcf590a66110acb6e5e6941a4efa0",
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x327dd3208f0bcf590a66110acb6e5e6941a4efa0",
+          "deployment_unit": "unit-34624",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 204,
+      "chain_name": "opbnb",
+      "address": "0x9356934eb3fbae6274eae6efc905b292f04f0122",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 204,
+          "chain_name": "opbnb",
+          "address": "0x9356934eb3fbae6274eae6efc905b292f04f0122",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xf4c8e32eadec4bfe97e0f595add0f4450a863a11",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -1005,7 +1109,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x3a1d0952809f4948d15ebce8d345962a282c4fcb",
-      "deployment_unit": "unit-27698",
+      "deployment_unit": "unit-34626",
       "deployment_unit_proxy_count": 1,
       "name": "VoterV3",
       "role": "unknown",
@@ -1021,7 +1125,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x3a1d0952809f4948d15ebce8d345962a282c4fcb",
-          "deployment_unit": "unit-27698",
+          "deployment_unit": "unit-34626",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1210,14 +1314,14 @@
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 7.7,
+      "coverage_pct": 6.9,
       "latest_audit": "2023-03"
     },
     {
       "auditor": "OpenZeppelin",
       "tier": 1,
       "contracts_covered": 1,
-      "coverage_pct": 3.8,
+      "coverage_pct": 3.4,
       "latest_audit": "2023-06"
     }
   ],
@@ -1288,6 +1392,26 @@
       "address": "0x2814a4cf03911afc4b0432dbad6cf1d79b72bbf4",
       "name": "IncentiveMaker",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x11746fd90091228a97974435d6be5e10bda92f7c",
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x643b68bf3f855b8475c0a700b6d1020bfc21d02e",
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1374,10 +1498,10 @@
     }
   ],
   "origin_summary": {
-    "native": 17,
-    "upstream": 3,
+    "native": 19,
+    "upstream": 5,
     "standard_library": 4,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

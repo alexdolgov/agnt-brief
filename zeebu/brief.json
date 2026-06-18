@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zeebu",
-  "generated_at": "2026-06-17T07:00:41.349Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:57:25.023Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "zeebu",
@@ -16,20 +16,20 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 538,
+    "days_since_peak": 545,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 2,
-    "unique_implementations": 1,
-    "total_deployments": 2,
+    "total_contracts": 2,
+    "total_addresses": 4,
+    "unique_implementations": 2,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -58,24 +58,26 @@
   },
   "topography": {
     "project_purpose": "Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers that uses the ZBU token as a loyalty and settlement token. The reviewed contract surface includes ZBU token deployments, voting-escrow/token-locking related contracts, Lens periphery contracts, and Launchpad contracts on Ethereum and Base; staking and voting-escrow functionality should be described as associated contract functionality rather than the core project purpose. DefiLlama also currently lists Binance/BSC staking activity for Zeebu, so any Ethereum/Base-only review should explicitly state that Binance/BSC staking is excluded from the covered contract surface.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The ZeebuToken is deployed behind multiple TransparentUpgradeableProxy instances, and the Voting Escrow contracts interact with the token to enable locking and governance functionality.",
     "product_family_count": 1,
-    "total_contracts_indexed": 16,
-    "live_contracts": 2,
+    "total_contracts_indexed": 18,
+    "live_contracts": 4,
     "inactive_contracts": 7,
     "singleton_contracts": 7,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 3,
     "live_deployment_units": 0,
-    "dependencies_extracted": 0,
-    "unverified_dependencies": 0,
-    "detected_codebases": []
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "balancer-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -83,16 +85,16 @@
   },
   "contracts": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x45dd22ace398002b34cb37b363b2f02c7dd47842",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Voting Escrow",
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Zeebu",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -112,7 +114,53 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
+          "address": "0x45dd22ace398002b34cb37b363b2f02c7dd47842",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
           "address": "0xcf08d1ec5d8e566d95299399307f75f98d6aea03",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc3889f9764d68bdf2e16f237206746344172a147",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WeightedPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "balancer",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WeightedPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc3889f9764d68bdf2e16f237206746344172a147",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -197,9 +245,9 @@
   "auditor_coverage": [],
   "coverage_gaps": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x45dd22ace398002b34cb37b363b2f02c7dd47842",
       "name": "Voting Escrow",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -209,7 +257,7 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

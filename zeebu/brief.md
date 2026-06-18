@@ -7,39 +7,38 @@
 - Project: Zeebu (`zeebu`)
 - Website: [https://www.zeebu.com/](https://www.zeebu.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:41.349Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:57:25.023Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: base, ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
+- Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $4,563,991.34
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers that uses the ZBU token as a loyalty and settlement token. The reviewed contract surface includes ZBU token deployments, voting-escrow/token-locking related contracts, Lens periphery contracts, and Launchpad contracts on Ethereum and Base; staking and voting-escrow functionality should be described as associated contract functionality rather than the core project purpose. DefiLlama also currently lists Binance/BSC staking activity for Zeebu, so any Ethereum/Base-only review should explicitly state that Binance/BSC staking is excluded from the covered contract surface.
 
+### Architecture
+
+The ZeebuToken is deployed behind multiple TransparentUpgradeableProxy instances, and the Voting Escrow contracts interact with the token to enable locking and governance functionality.
+
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 2 (2 live, 0 unknown).
+- Indexed contracts: 18; live-surface contracts included: 4 (4 live, 0 unknown).
 - Excluded by liveness: 7 inactive, 7 singleton, 0 uninitialized.
 - Deployment units: 0/3 live.
-- Detected codebases: none
-- Dependencies extracted: 0; unverified dependencies: 0.
+- Detected codebases: balancer-v2
+- Unverified dependencies: 1/1.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
+- Unique implementations: 2
+- Raw deployments: 4
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -58,11 +57,12 @@ Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Voting Escrow | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x8e76cd...ecfb35`](./contracts/ethereum-1/0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35/); base `0xcf08d1...6aea03` | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | base | n/a | 3 deployments: ethereum `0x8e76cd...ecfb35`; base [`0x45dd22...d47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/); base `0xcf08d1...6aea03` | ⚠️ Unaudited |
+| WeightedPool | core_logic | base | n/a | [`0xc3889f...72a147`](./contracts/base-8453/0xc3889f9764d68bdf2e16f237206746344172a147/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,14 +96,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8e76cd...ecfb35`](./contracts/ethereum-1/0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x45dd22...d47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

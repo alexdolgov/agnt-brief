@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yamato-protocol",
-  "generated_at": "2026-06-17T07:00:47.035Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:57:13.256Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yamato-protocol",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 65.03770925692135
   },
   "summary": {
-    "total_contracts": 22,
-    "total_addresses": 22,
-    "unique_implementations": 22,
-    "total_deployments": 22,
+    "total_contracts": 23,
+    "total_addresses": 23,
+    "unique_implementations": 23,
+    "total_deployments": 23,
     "audited_contracts": 2,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 15,
-    "coverage_pct": 28.6,
+    "coverage_pct": 25,
     "total_audits": 3,
     "scoreable_audits": 1,
     "dl_tvl_usd": 1121902.71804,
@@ -59,20 +59,20 @@
     "project_purpose": "Yamato Protocol is a collateralized debt position (CDP) system on Ethereum that allows users to deposit collateral and mint a stablecoin (CJPY). It includes mechanisms for borrowing, repaying, depositing, withdrawing, and redeeming, along with fee distribution, price feeds, and governance via YMT and veYMT tokens.",
     "relationship_narrative": "The ETH mainnet family provides the token layer (CJPY, YMT, veYMT) used across the protocol. The Real Time TX family (YamatoV4) orchestrates CDP interactions and relies on price feeds, fee pools, and registries, while the Yamato Protocol family (PoolV2) supplies liquidity infrastructure that supports stablecoin operations.",
     "product_family_count": 3,
-    "total_contracts_indexed": 98,
-    "live_contracts": 22,
+    "total_contracts_indexed": 99,
+    "live_contracts": 23,
     "inactive_contracts": 31,
     "singleton_contracts": 45,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 24,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
+    "dependencies_extracted": 2,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 22,
+    "unique_implementations": 23,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -101,6 +101,41 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1cfa5641c01406ab8ac350ded7d735ec41298372",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x592878b920101946fb5915ab97961bc546f211cc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CurveTwocryptoOptimized",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Curve",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CurveTwocryptoOptimized",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x592878b920101946fb5915ab97961bc546f211cc",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -579,7 +614,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -614,7 +649,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -649,7 +684,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -941,7 +976,7 @@
       "auditor": "BlockApex",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 25,
       "latest_audit": "2024-08"
     }
   ],
@@ -998,10 +1033,10 @@
     }
   ],
   "origin_summary": {
-    "native": 10,
-    "upstream": 0,
+    "native": 7,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 12
+    "needs_review": 15
   },
   "scope_matching_notes": {
     "match_method_counts": {

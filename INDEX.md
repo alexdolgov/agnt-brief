@@ -273,7 +273,7 @@
 | [colend-protocol](./colend-protocol/) | $2.9M | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
 | [collection.xyz](./collection.xyz/) | $652.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [commodo](./commodo/) | $5.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [concentrator](./concentrator/) | $21.0M | 16.5% | $19.3M | active | 33 | 131 | 2026-06-17 |
+| [concentrator](./concentrator/) | $21.0M | 15.6% | $19.3M | active | 34 | 138 | 2026-06-18 |
 | [concrete](./concrete/) | $789.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [conic-finance](./conic-finance/) | $52.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -1057,7 +1057,7 @@
 | [sentiment](./sentiment/) | $1.2M | 100.0% | ? | dead | 8 | 2 | 2026-06-18 |
 | [serum](./serum/) | $14.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 12 | 2026-06-17 |
-| [shadow-exchange](./shadow-exchange/) | $3.8M | 23.8% | ? | declining | 3 | 21 | 2026-06-17 |
+| [shadow-exchange](./shadow-exchange/) | $606.3K | 20.8% | $606.3K | declining | 4 | 24 | 2026-06-18 |
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 14 | 2026-06-17 |
 | [shapeshift](./shapeshift/) | $353.7K | 14.3% | $353.7K | active | 3 | 14 | 2026-06-18 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 1 | 2026-06-17 |
@@ -1088,7 +1088,7 @@
 | [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 6 | 2026-06-17 |
 | [snuggle](./snuggle/) | $1.0M | 52.2% | ? | active | 3 | 23 | 2026-06-18 |
-| [sofa.org](./sofa.org/) | $0.0 | 58.3% | $0.0 | declining | 8 | 12 | 2026-06-17 |
+| [sofa.org](./sofa.org/) | $0.0 | 78.9% | $0.0 | declining | 11 | 19 | 2026-06-18 |
 | [solace](./solace/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [solana-farm](./solana-farm/) | $249.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [solayer](./solayer/) | $9.6M | 0.0% | ? | unknown | 5 | 0 | 2026-06-17 |
@@ -1374,7 +1374,7 @@
 | [y2k-finance](./y2k-finance/) | $30.0K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [yaka-finance](./yaka-finance/) | $10.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 20 | 2026-06-17 |
-| [yamato-protocol](./yamato-protocol/) | $1.1M | 28.6% | ? | active | 3 | 22 | 2026-06-17 |
+| [yamato-protocol](./yamato-protocol/) | $1.1M | 25.0% | ? | active | 3 | 23 | 2026-06-18 |
 | [ybtc.b](./ybtc.b/) | $69.3M | 0.0% | ? | active | 10 | 1 | 2026-06-17 |
 | [yei-finance](./yei-finance/) | $18.3M | 0.0% | ? | declining | 1 | 14 | 2026-06-17 |
 | [yield-protocol](./yield-protocol/) | $203.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1388,7 +1388,7 @@
 | [youves](./youves/) | $35.5M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [yupana](./yupana/) | $24.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yuzu-money](./yuzu-money/) | $1.8K | 0.0% | $1.8K | active | 6 | 4 | 2026-06-17 |
-| [zeebu](./zeebu/) | $4.6M | 0.0% | ? | unknown | 3 | 1 | 2026-06-17 |
+| [zeebu](./zeebu/) | $4.6M | 0.0% | ? | unknown | 3 | 2 | 2026-06-18 |
 | [zenlink](./zenlink/) | $3.9M | 0.0% | ? | declining | 1 | 7 | 2026-06-17 |
 | [zero-g-finance](./zero-g-finance/) | $1.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 71.4% | ? | active | 5 | 11 | 2026-06-17 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sofa.org",
-  "generated_at": "2026-06-17T07:00:49.839Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T13:02:59.883Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "sofa.org",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 20,
-    "unique_implementations": 12,
-    "total_deployments": 20,
-    "audited_contracts": 7,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 5,
+    "total_contracts": 19,
+    "total_addresses": 33,
+    "unique_implementations": 19,
+    "total_deployments": 33,
+    "audited_contracts": 15,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 15,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 58.3,
-    "total_audits": 8,
-    "scoreable_audits": 6,
+    "coverage_pct": 78.9,
+    "total_audits": 11,
+    "scoreable_audits": 9,
     "dl_tvl_usd": 2069854.60702,
     "tvl_usd": 0.0046,
     "tvl_source": "on_chain",
@@ -54,9 +54,13 @@
     "asd_usd": 0.0046,
     "website_url": "https://www.sofa.org",
     "chains": [
-      "ethereum"
+      "arbitrum",
+      "bsc",
+      "ethereum",
+      "polygon",
+      "sei"
     ],
-    "tier1_coverage_pct": 50,
+    "tier1_coverage_pct": 31.6,
     "tier1_auditors": [
       "Code4rena"
     ],
@@ -64,8 +68,8 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 4,
-      "stale": 4,
+      "aging": 6,
+      "stale": 5,
       "unknown": 0
     }
   },
@@ -73,22 +77,20 @@
     "project_purpose": "SOFA.org is a decentralized options protocol that offers structured yield products through vaults. Users can deposit assets into various vault types (e.g., SmartTrend, DNT, Dual) to earn returns based on options strategies, with support for multiple collateral types and leverage.",
     "relationship_narrative": "All vaults share a common architecture using TransparentUpgradeableProxy for upgradeability and are deployed by the same deployer cluster. The RCH and StRCH tokens serve as collateral or reward tokens across multiple vault types, creating a unified ecosystem.",
     "product_family_count": 1,
-    "total_contracts_indexed": 122,
-    "live_contracts": 20,
-    "inactive_contracts": 18,
-    "singleton_contracts": 84,
+    "total_contracts_indexed": 138,
+    "live_contracts": 33,
+    "inactive_contracts": 23,
+    "singleton_contracts": 82,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 23,
-    "live_deployment_units": 4,
-    "dependencies_extracted": 10,
+    "deployment_units": 35,
+    "live_deployment_units": 13,
+    "dependencies_extracted": 3,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "aave-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 19,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -101,7 +103,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x7df81fdd4b995b31624f3d6662d547ac313b32ad",
-      "deployment_unit": "unit-30386",
+      "deployment_unit": "unit-37241",
       "deployment_unit_proxy_count": 1,
       "name": "AAVEDualVault",
       "role": "core_logic",
@@ -117,7 +119,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x7df81fdd4b995b31624f3d6662d547ac313b32ad",
-          "deployment_unit": "unit-30386",
+          "deployment_unit": "unit-37241",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -136,7 +138,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x00aeca021d0f06c7dee54d58ee6af47b5645ab19",
-      "deployment_unit": "unit-30367",
+      "deployment_unit": "unit-37222",
       "deployment_unit_proxy_count": 2,
       "name": "AAVEDNTVault",
       "role": "core_logic",
@@ -152,7 +154,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x00aeca021d0f06c7dee54d58ee6af47b5645ab19",
-          "deployment_unit": "unit-30367",
+          "deployment_unit": "unit-37222",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -163,7 +165,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x989897f1d976ee0b59bf0a3172c170d8f3cb84e3",
-          "deployment_unit": "unit-30367",
+          "deployment_unit": "unit-37222",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -173,9 +175,10 @@
       ],
       "audits_covering": [
         "audit-2824",
-        "audit-2825",
         "audit-2826",
-        "audit-2833"
+        "audit-2833",
+        "audit-15342",
+        "audit-15345"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -187,7 +190,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x21f759bcb31739032a00b37e3560a216ae52efdc",
-      "deployment_unit": "unit-30376",
+      "deployment_unit": "unit-37231",
       "deployment_unit_proxy_count": 4,
       "name": "AAVESmartTrendVault",
       "role": "core_logic",
@@ -203,7 +206,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x21f759bcb31739032a00b37e3560a216ae52efdc",
-          "deployment_unit": "unit-30376",
+          "deployment_unit": "unit-37231",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -214,7 +217,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3191a0008415deb5c5161c4b394ec46c8c703f8c",
-          "deployment_unit": "unit-30376",
+          "deployment_unit": "unit-37231",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -225,7 +228,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc9aa266e2e50ec2474cd881566845480f8dae931",
-          "deployment_unit": "unit-30376",
+          "deployment_unit": "unit-37231",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -236,7 +239,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe483d580664cd72b0a8cae0d65effa6587bd2263",
-          "deployment_unit": "unit-30376",
+          "deployment_unit": "unit-37231",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -246,9 +249,10 @@
       ],
       "audits_covering": [
         "audit-2824",
-        "audit-2825",
         "audit-2826",
-        "audit-2833"
+        "audit-2833",
+        "audit-15342",
+        "audit-15345"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -260,7 +264,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x62104e40fa81a19f2b7e17c78c3ffbf4aca4f212",
-      "deployment_unit": "unit-30385",
+      "deployment_unit": "unit-37240",
       "deployment_unit_proxy_count": 4,
       "name": "AAVESmartTrendVault",
       "role": "core_logic",
@@ -276,7 +280,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x62104e40fa81a19f2b7e17c78c3ffbf4aca4f212",
-          "deployment_unit": "unit-30385",
+          "deployment_unit": "unit-37240",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -287,7 +291,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9377f17abde96887943e5fcc92db034c76820529",
-          "deployment_unit": "unit-30385",
+          "deployment_unit": "unit-37240",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -298,7 +302,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x99c59d82b10c56950f6c031946656e6d0ad509ca",
-          "deployment_unit": "unit-30385",
+          "deployment_unit": "unit-37240",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -309,7 +313,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf6c70b5f034070001e833c9ebc6a3a0176b683a6",
-          "deployment_unit": "unit-30385",
+          "deployment_unit": "unit-37240",
           "deployment_unit_proxy_count": 4,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -319,9 +323,10 @@
       ],
       "audits_covering": [
         "audit-2824",
-        "audit-2825",
         "audit-2826",
-        "audit-2833"
+        "audit-2833",
+        "audit-15342",
+        "audit-15345"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -330,44 +335,195 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9093321dee6123272ec54690ce28437e2b59a14d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "AutomatorBurner",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+      "deployment_unit": "unit-37246",
+      "deployment_unit_proxy_count": 2,
+      "name": "AAVESmartTrendVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AutomatorBurner",
+      "is_proxy": true,
+      "impl_address": "0x57b96d4af698605563a4653d882635da59bf11af",
+      "impl_name": "AAVESmartTrendVault",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9093321dee6123272ec54690ce28437e2b59a14d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+          "deployment_unit": "unit-37246",
+          "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x89c82d1b7616b0a465311ff077db6bc21d43ea22",
+          "deployment_unit": "unit-37246",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x438b597bdc946db1bd62c2bb32ccec7742be720b",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x46706780749bc41e7ab99d13bc1b2a74df40a7da",
+      "deployment_unit": "unit-37247",
+      "deployment_unit_proxy_count": 2,
+      "name": "AAVESmartTrendVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xec722a53efee08ebff8d2c61622991a33705fa79",
+      "impl_name": "AAVESmartTrendVault",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x46706780749bc41e7ab99d13bc1b2a74df40a7da",
+          "deployment_unit": "unit-37247",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4fd90c6b2a81d65a10e366dc5051d4d1a2a1c021",
+          "deployment_unit": "unit-37247",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x634b69cc4168cfc1c366078fdeb874affbb478b5",
+      "deployment_unit": "unit-37249",
+      "deployment_unit_proxy_count": 2,
+      "name": "AAVESmartTrendVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf60953e77e2e79e68b412c60846dd0337f081d8e",
+      "impl_name": "AAVESmartTrendVault",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x634b69cc4168cfc1c366078fdeb874affbb478b5",
+          "deployment_unit": "unit-37249",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x64bb275066e7275fb0803c3e617ae3ab2a882ff3",
+          "deployment_unit": "unit-37249",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4c241483b4a85e44c59bcecfe17a4e7d0a073cdb",
+      "deployment_unit": "unit-37252",
+      "deployment_unit_proxy_count": 1,
+      "name": "Automator",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0338c2d1908549f4fcbca9da84039de1bac5c6c1",
+      "impl_name": "Automator",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4c241483b4a85e44c59bcecfe17a4e7d0a073cdb",
+          "deployment_unit": "unit-37252",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2827",
+        "audit-2831",
+        "audit-15343"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1893b75a9711e1c84be86a81edc7f2929d6e5aff",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AutomatorFactory",
@@ -381,9 +537,9 @@
       "impl_name": "AutomatorFactory",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x438b597bdc946db1bd62c2bb32ccec7742be720b",
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1893b75a9711e1c84be86a81edc7f2929d6e5aff",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -393,60 +549,62 @@
         }
       ],
       "audits_covering": [
-        "audit-2828",
-        "audit-2832"
+        "audit-15344"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "CrvUSDAutomator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x7ecd1b5255543f4c2d7d8e475afcd01699dbe2b0",
+      "deployment_unit": "unit-37253",
+      "deployment_unit_proxy_count": 2,
+      "name": "DNTVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CrvUSDAutomator",
+      "is_proxy": true,
+      "impl_address": "0x4140ab4afc36b93270a9659bd8387660cc6509b5",
+      "impl_name": "DNTVault",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7ecd1b5255543f4c2d7d8e475afcd01699dbe2b0",
+          "deployment_unit": "unit-37253",
+          "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x31d22b4afec06e67a37af38a62a6ec9546c1bf8a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdfeb3460771148799b2d4344c369e2b2d6c26c42",
+          "deployment_unit": "unit-37253",
+          "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -474,18 +632,117 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4bd6be959897631fbe5a8aae01707219850e032f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
       "audits_covering": [
         "audit-2824",
         "audit-2826",
-        "audit-2833"
+        "audit-2833",
+        "audit-15345"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbefb3aad1dfb1660444f0d76a91261ef755b2b86",
+      "deployment_unit": "unit-37256",
+      "deployment_unit_proxy_count": 1,
+      "name": "LeverageDNTVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3fe4fd33935bf189e39abb8b58fcdfd80daeede3",
+      "impl_name": "LeverageDNTVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbefb3aad1dfb1660444f0d76a91261ef755b2b86",
+          "deployment_unit": "unit-37256",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8e882a56604f2b5735ea979bd6fa06c064d2f3f9",
+      "deployment_unit": "unit-37254",
+      "deployment_unit_proxy_count": 2,
+      "name": "LeverageSmartTrendVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0243cb49228c95dcb6cb13770417ab9528c51583",
+      "impl_name": "LeverageSmartTrendVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8e882a56604f2b5735ea979bd6fa06c064d2f3f9",
+          "deployment_unit": "unit-37254",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa76ee91c6e51d248782d7c81826df91522a6ef96",
+          "deployment_unit": "unit-37254",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -516,15 +773,16 @@
         }
       ],
       "audits_covering": [
-        "audit-2825",
         "audit-2826",
-        "audit-2833"
+        "audit-2833",
+        "audit-15342",
+        "audit-15345"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -555,7 +813,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2825"
+        "audit-15342"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -596,7 +854,91 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x00aeca021d0f06c7dee54d58ee6af47b5645ab19",
+      "deployment_unit": "unit-37251",
+      "deployment_unit_proxy_count": 2,
+      "name": "SmartTrendVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4f1b513f846821559d59e8324eaef201cb5b0479",
+      "impl_name": "SmartTrendVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x00aeca021d0f06c7dee54d58ee6af47b5645ab19",
+          "deployment_unit": "unit-37251",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6e72c8726c71a4cbc6e31ff7d47b399fa983c7b8",
+          "deployment_unit": "unit-37251",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15342",
+        "audit-15345"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+      "deployment_unit": "unit-37250",
+      "deployment_unit_proxy_count": 1,
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4fd90c6b2a81d65a10e366dc5051d4d1a2a1c021",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+          "deployment_unit": "unit-37250",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -631,7 +973,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -671,49 +1013,6 @@
         {
           "audit_id": 2829,
           "report_url": "https://raw.githubusercontent.com/peckshield/publications/65be3a3b651bba87c4a9c024ca4306adbadba040/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2825,
-      "audit_key": "audit-2825",
-      "report_name": "review.pdf",
-      "report_url": "https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AAVEDNTVault",
-        "AAVESmartTrendVault",
-        "DNTVault",
-        "HlOracle",
-        "LeverageDNTVault",
-        "LeverageSmartTrendVault",
-        "MerkleAirdrop",
-        "RCH",
-        "SignatureBitMap",
-        "SmartTrendVault",
-        "SpotOracle"
-      ],
-      "matched_contracts": 12,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2825,
-          "report_url": "https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf"
-        },
-        {
-          "audit_id": 2830,
-          "report_url": "https://raw.githubusercontent.com/sigp/public-audits/359bf76d2ad37e43fce7eb25427694e1db00090c/reports/sofa/review.pdf"
         }
       ]
     },
@@ -762,12 +1061,14 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Automator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -784,15 +1085,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AAVEAutomatorBase",
-        "AutomatorFactory",
-        "RCHAutomatorBase"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -808,12 +1105,14 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Automator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -830,15 +1129,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AAVEAutomatorBase",
-        "AutomatorFactory",
-        "RCHAutomatorBase"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -872,59 +1167,159 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15342,
+      "audit_key": "audit-15342",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/sigp/public-audits/48f7de362df66942a77e1dd5954b580f28ed367f/reports/sofa/review.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AAVEDNTVault",
+        "AAVESmartTrendVault",
+        "DNTVault",
+        "HlOracle",
+        "LeverageDNTVault",
+        "LeverageSmartTrendVault",
+        "MerkleAirdrop",
+        "RCH",
+        "SignatureBitMap",
+        "SmartTrendVault",
+        "SpotOracle"
+      ],
+      "matched_contracts": 25,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2825,
+          "report_url": "https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf"
+        },
+        {
+          "audit_id": 2830,
+          "report_url": "https://raw.githubusercontent.com/sigp/public-audits/359bf76d2ad37e43fce7eb25427694e1db00090c/reports/sofa/review.pdf"
+        },
+        {
+          "audit_id": 15342,
+          "report_url": "https://raw.githubusercontent.com/sigp/public-audits/48f7de362df66942a77e1dd5954b580f28ed367f/reports/sofa/review.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 15343,
+      "audit_key": "audit-15343",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/zenith-security/reports/84cd8bcd63d6a9e9f4385fa3f7aa87dca4c8c2fa/reports/Audit%20Report%20-%20Sofa%20Automator(Oct%202024).pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Automator"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15344,
+      "audit_key": "audit-15344",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/zenith-security/reports/84cd8bcd63d6a9e9f4385fa3f7aa87dca4c8c2fa/reports/Zenith%20Audit%20Report%20-%20Sofa%20Automator%202.0.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AAVEAutomatorBase",
+        "AutomatorFactory",
+        "RCHAutomatorBase"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15345,
+      "audit_key": "audit-15345",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/zenith-security/reports/84cd8bcd63d6a9e9f4385fa3f7aa87dca4c8c2fa/reports/Audit%20Report%20-%20Sofa%20(May%202024).pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AAVEDNTVault",
+        "AAVESmartTrendVault",
+        "DNTVault",
+        "FeeCollector",
+        "HlOracle",
+        "LeverageDNTVault",
+        "LeverageSmartTrendVault",
+        "MerkleAirdrop",
+        "SmartTrendVault",
+        "SpotOracle"
+      ],
+      "matched_contracts": 26,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 15,
+      "coverage_pct": 78.9,
+      "latest_audit": "2025-01"
+    },
+    {
       "auditor": "Code4rena",
       "tier": 1,
       "contracts_covered": 6,
-      "coverage_pct": 50,
+      "coverage_pct": 31.6,
       "latest_audit": "2025-01"
-    },
-    {
-      "auditor": "yAudit",
-      "tier": 2,
-      "contracts_covered": 6,
-      "coverage_pct": 50,
-      "latest_audit": "2025-01"
-    },
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 5,
-      "coverage_pct": 41.7,
-      "latest_audit": "2024-06"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 33.3,
+      "coverage_pct": 21.1,
       "latest_audit": "2024-04"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9093321dee6123272ec54690ce28437e2b59a14d",
-      "name": "AutomatorBurner",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c",
-      "name": "CrvUSDAutomator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -947,27 +1342,27 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 6,
     "upstream": 0,
-    "standard_library": 4,
+    "standard_library": 13,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 250
+      "extraction_exact": 380
     },
     "extraction_confidence_counts": {
-      "high": 6
+      "high": 9
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2827,
-        "report_name": "Automator audited by Code4rena(Zenith)"
+        "audit_id": 2828,
+        "report_name": "Automator2.0 audited by Code4rena(Zenith)"
       },
       {
-        "audit_id": 2831,
+        "audit_id": 2832,
         "report_name": "Rendered PDF capture"
       }
     ],

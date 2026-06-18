@@ -5,10 +5,10 @@
 - Project: Yamato Protocol (`yamato-protocol`)
 - Website: [https://app.yamato.fi/#/](https://app.yamato.fi/#/)
 - Lifecycle: active (Tier 0, 65% below peak)
-- Generated: 2026-06-17T07:00:47.035Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:57:13.256Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: ethereum
-- Contract surface: 22 unique implementations (22 raw deployments)
+- Contract surface: 23 unique implementations (23 raw deployments)
 - DeFi Llama TVL: $1,121,902.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,20 +23,20 @@ The ETH mainnet family provides the token layer (CJPY, YMT, veYMT) used across t
 
 ## Contract Surface Quality
 
-- Indexed contracts: 98; live-surface contracts included: 22 (22 live, 0 unknown).
+- Indexed contracts: 99; live-surface contracts included: 23 (23 live, 0 unknown).
 - Excluded by liveness: 31 inactive, 45 singleton, 0 uninitialized.
 - Deployment units: 0/24 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/7 (28.6%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 2/8 (25.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 15
-- Unique implementations: 22
-- Raw deployments: 22
+- Unique implementations: 23
+- Raw deployments: 23
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -48,7 +48,7 @@ The ETH mainnet family provides the token layer (CJPY, YMT, veYMT) used across t
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| BlockApex | Tier 2 | 2 | 28.6% | 2024-08 |
+| BlockApex | Tier 2 | 2 | 25.0% | 2024-08 |
 
 ## Contract Surface
 
@@ -59,11 +59,12 @@ The ETH mainnet family provides the token layer (CJPY, YMT, veYMT) used across t
 | veYMT | unknown | ethereum | n/a | [`0x9e3ce7...b66a0c`](./contracts/ethereum-1/0x9e3ce75131bd03ef6ea79e5ed68e889cc9b66a0c/) | ✅ Audited |
 | YMT | unknown | ethereum | n/a | [`0x0f4fc7...4c9c09`](./contracts/ethereum-1/0x0f4fc7d24f28c4373097733aae53f0025d4c9c09/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | CJPY | unknown | ethereum | n/a | [`0x1cfa56...298372`](./contracts/ethereum-1/0x1cfa5641c01406ab8ac350ded7d735ec41298372/) | ⚠️ Unaudited |
+| CurveTwocryptoOptimized | unknown | ethereum | n/a | [`0x592878...f211cc`](./contracts/ethereum-1/0x592878b920101946fb5915ab97961bc546f211cc/) | ⚠️ Unaudited |
 | DistributorReceiver | operational_periphery | ethereum | n/a | [`0x3d0955...40c6a5`](./contracts/ethereum-1/0x3d095553fe2a3b138b31f9d47a26e2adf340c6a5/) | ⚠️ Unaudited |
 | VotingEscrow | operational_periphery | ethereum | n/a | [`0x168c2f...c7d113`](./contracts/ethereum-1/0x168c2f7d4924bd6e4282f7edbb0cfdcca1c7d113/) | ⚠️ Unaudited |
 | YmtVesting | operational_periphery | ethereum | n/a | [`0x5ed64b...2c925f`](./contracts/ethereum-1/0x5ed64bf0764202be868b5df2deda467ae12c925f/) | ⚠️ Unaudited |
@@ -127,10 +128,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 0 |
+| native | 7 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 12 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

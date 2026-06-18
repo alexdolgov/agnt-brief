@@ -21,15 +21,15 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AutomatorFactory](./ethereum-1/0x438b597bdc946db1bd62c2bb32ccec7742be720b/) | ethereum | [`0x438b59...be720b`](./ethereum-1/0x438b597bdc946db1bd62c2bb32ccec7742be720b/) | ✅ Audited | Verified |
+| AutomatorFactory | ethereum | `0x438b59...be720b` | ✅ Audited | Verified |
 | [RCHAutomatorFactory](./ethereum-1/0x3079993b5be4d18d504a6e58939ac6637d47dc1a/) | ethereum | [`0x307999...47dc1a`](./ethereum-1/0x3079993b5be4d18d504a6e58939ac6637d47dc1a/) | ⚠️ Unaudited | Verified |
 
 ## unknown (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AutomatorBurner](./ethereum-1/0x9093321dee6123272ec54690ce28437e2b59a14d/) | ethereum | [`0x909332...59a14d`](./ethereum-1/0x9093321dee6123272ec54690ce28437e2b59a14d/) | ⚠️ Unaudited | Verified |
-| [CrvUSDAutomator (2 deployments)](./ethereum-1/0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c/) | ethereum | 2 deployments: ethereum [`0x267adc...10cf8c`](./ethereum-1/0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c/); ethereum `0x31d22b...c1bf8a` | ⚠️ Unaudited | Verified |
+| AutomatorBurner | ethereum | `0x909332...59a14d` | ⚠️ Unaudited | Verified |
+| CrvUSDAutomator (2 deployments) | ethereum | 2 deployments: ethereum `0x267adc...10cf8c`; ethereum `0x31d22b...c1bf8a` | ⚠️ Unaudited | Verified |
 | [FeeCollector](./ethereum-1/0x4140ab4afc36b93270a9659bd8387660cc6509b5/) | ethereum | [`0x4140ab...6509b5`](./ethereum-1/0x4140ab4afc36b93270a9659bd8387660cc6509b5/) | ✅ Audited | Verified |
 | [RCH](./ethereum-1/0x57b96d4af698605563a4653d882635da59bf11af/) | ethereum | [`0x57b96d...bf11af`](./ethereum-1/0x57b96d4af698605563a4653d882635da59bf11af/) | ✅ Audited | Verified |
 | [ZenRCH](./ethereum-1/0x893b33977395642039de1b04a0cc788b4af0ba08/) | ethereum | [`0x893b33...f0ba08`](./ethereum-1/0x893b33977395642039de1b04a0cc788b4af0ba08/) | ⚠️ Unaudited | Verified |

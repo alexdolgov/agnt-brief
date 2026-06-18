@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gearbox",
-  "generated_at": "2026-06-17T07:00:35.988Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T07:22:26.262Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-94c2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gearbox",
@@ -32,18 +32,18 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 52,
-    "total_addresses": 562,
-    "unique_implementations": 52,
-    "total_deployments": 562,
+    "total_contracts": 53,
+    "total_addresses": 564,
+    "unique_implementations": 53,
+    "total_deployments": 564,
     "audited_contracts": 35,
-    "unaudited_contracts": 15,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 35,
-    "contracts_verified_unaudited": 15,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 70,
-    "total_audits": 37,
+    "coverage_pct": 68.6,
+    "total_audits": 38,
     "scoreable_audits": 29,
     "dl_tvl_usd": 29451084.415490005,
     "tvl_usd": 3458425.782370241,
@@ -59,7 +59,7 @@
       "optimism",
       "sonic"
     ],
-    "tier1_coverage_pct": 70,
+    "tier1_coverage_pct": 68.6,
     "tier1_auditors": [
       "ChainSecurity",
       "ConsenSys Diligence",
@@ -71,30 +71,29 @@
       "fresh": 1,
       "aging": 10,
       "stale": 25,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
     "project_purpose": "Gearbox is an on-chain credit and lending protocol built around smart contract credit accounts. Its current positioning emphasizes a tokenisation lending stack and compliant credit infrastructure for tokenized and RWA assets, including segregated accounts, margin, prime brokerage-style credit, and portfolio loans, while retaining DeFi lending and composability as part of the underlying architecture.",
     "relationship_narrative": "Lending Pools supply liquidity to Credit Managers, which use Price Feeds for collateral valuation and risk assessment. Core Contracts provide shared registry, access control, and staking infrastructure used across all families.",
     "product_family_count": 29,
-    "total_contracts_indexed": 1703,
-    "live_contracts": 314,
-    "inactive_contracts": 1141,
+    "total_contracts_indexed": 2090,
+    "live_contracts": 316,
+    "inactive_contracts": 1526,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 248,
-    "deployment_units": 1,
-    "live_deployment_units": 0,
-    "dependencies_extracted": 191,
-    "unverified_dependencies": 33,
+    "deployment_units": 2,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 109,
+    "unverified_dependencies": 24,
     "detected_codebases": [
-      "curve-stableswap",
-      "uniswap-v3"
+      "curve-stableswap"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 52,
+    "unique_implementations": 53,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -6212,6 +6211,52 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x7b065fcb0760df0cea8cfd144e08554f3cea73d1",
+      "deployment_unit": "unit-35860",
+      "deployment_unit_proxy_count": 2,
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7b065fcb0760df0cea8cfd144e08554f3cea73d1",
+          "deployment_unit": "unit-35860",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa7d5ddc1b8557914f158076b228aa91ef613f1d5",
+          "deployment_unit": "unit-35860",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x29b97f37b3e0c704bcfd785f5b7bba2a0b7df2c7",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -9212,7 +9257,7 @@
       "audit_key": "audit-10124",
       "report_name": "2024 May - Pessimistic_Gearbox_Security_Scan.pdf",
       "report_url": "https://github.com/Gearbox-protocol/security/blob/main/reports/2024%20May%20-%20Pessimistic_Gearbox_Security_Scan.pdf",
-      "auditor": "unknown",
+      "auditor": "Pessimistic",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2024-05",
@@ -9425,6 +9470,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15033,
+      "audit_key": "audit-15033",
+      "report_name": "All the source code and audit reports of the contracts can be found in [Bytecode Repository](). Use search, click on the target contract and then **View Source** or **View Report**. All the Adapters can be found by searching for the ADAPTER domain in Bytecode Repository.",
+      "report_url": "https://permissionless.gearbox.foundation/bytecode",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -9432,49 +9498,56 @@
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 34,
-      "coverage_pct": 68,
+      "coverage_pct": 66.7,
       "latest_audit": "2025-07"
     },
     {
       "auditor": "ABDK",
       "tier": 2,
       "contracts_covered": 22,
-      "coverage_pct": 44,
+      "coverage_pct": 43.1,
       "latest_audit": "2023-12"
     },
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 15,
-      "coverage_pct": 30,
+      "contracts_covered": 12,
+      "coverage_pct": 23.5,
       "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "Pessimistic",
+      "tier": 2,
+      "contracts_covered": 9,
+      "coverage_pct": 17.6,
+      "latest_audit": "2024-05"
     },
     {
       "auditor": "SavantChat",
       "tier": 2,
       "contracts_covered": 9,
-      "coverage_pct": 18,
+      "coverage_pct": 17.6,
       "latest_audit": "2025-03"
     },
     {
       "auditor": "Consensys Diligence",
       "tier": 1,
       "contracts_covered": 5,
-      "coverage_pct": 10,
+      "coverage_pct": 9.8,
       "latest_audit": "2022-08"
     },
     {
       "auditor": "Sigma Prime",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 10,
+      "coverage_pct": 9.8,
       "latest_audit": "2022-08"
     },
     {
       "auditor": "MixBytes",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 8,
+      "coverage_pct": 7.8,
       "latest_audit": "2024-04"
     },
     {
@@ -9548,7 +9621,7 @@
     "native": 31,
     "upstream": 19,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -9588,6 +9661,10 @@
       {
         "audit_id": 10118,
         "report_name": "2025-07-chainsecurity-account-migration.pdf"
+      },
+      {
+        "audit_id": 15033,
+        "report_name": "All the source code and audit reports of the contracts can be found in [Bytecode Repository](). Use search, click on the target contract and then **View Source** or **View Report**. All the Adapters can be found by searching for the ADAPTER domain in Bytecode Repository."
       }
     ],
     "inherited_remapped_matches": []

@@ -5,10 +5,10 @@
 - Project: Aura (`aura`)
 - Website: [https://aura.finance](https://aura.finance)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:57.477Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T07:26:51.171Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: arbitrum, avalanche, base, ethereum, fraxtal, gnosis, optimism, polygon, polygon-zkevm
-- Contract surface: 280 unique implementations (522 raw deployments)
+- Contract surface: 281 unique implementations (525 raw deployments)
 - DeFi Llama TVL: $11,797,611.62
 - On-chain TVL (included contracts): $106,962,422.85
 - TVL by chain: Ethereum $106,876,288.79 | Base $78,139.50 | Optimism $5,255.49 | Arbitrum $2,739.07 | Gnosis $0.00
@@ -23,36 +23,39 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1210; live-surface contracts included: 522 (301 live, 221 unknown).
-- Excluded by liveness: 688 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1219; live-surface contracts included: 525 (304 live, 221 unknown).
+- Excluded by liveness: 694 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/7 live.
 - Detected codebases: balancer-v2
-- Unverified dependencies: 25/278.
+- Unverified dependencies: 20/193.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 25/107 (23.4%)
-- Verified + Unaudited implementations: 80
+- Verified implementations audited: 25/108 (23.1%)
+- Verified + Unaudited implementations: 81
 - Verified by bytecode match: 7
 - Unverified implementations: 173
-- Unique implementations: 280
-- Raw deployments: 522
-- Audits discovered: 18
+- Unique implementations: 281
+- Raw deployments: 525
+- Audits discovered: 20
 - Scoreable audits (matched contracts): 15
 - ASD (verified + unaudited TVL): $68,245,265.15
 - Latest audit: 2023-12 (stale)
-- Staleness: 0 fresh, 0 aging, 12 stale, 6 unknown
-- Tier 1 coverage: 11.2% (Code4rena)
+- Staleness: 0 fresh, 0 aging, 12 stale, 8 unknown
+- Tier 1 coverage: 11.1% (Code4rena)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 21 | 19.6% | 2023-12 |
-| Code4rena | Tier 1 | 12 | 11.2% | 2022-07 |
-| unknown | Tier 2 | 12 | 11.2% | 2023-12 |
-| Zellic | Tier 2 | 12 | 11.2% | 2023-06 |
+| Halborn | Tier 2 | 21 | 19.4% | 2023-12 |
+| Code4rena | Tier 1 | 12 | 11.1% | 2022-07 |
+| Zellic | Tier 2 | 12 | 11.1% | 2023-06 |
+| Hephyrius | Tier 2 | 11 | 10.2% | n/a |
 | PeckShield | Tier 2 | 7 | 6.5% | 2022-04 |
+| Facu Spagnuolo | Tier 2 | 3 | 2.8% | 2023-03 |
+| FacuSpagnuolo | Tier 2 | 2 | 1.9% | 2023-12 |
+| unknown | Tier 2 | 2 | 1.9% | 2022-12 |
 
 ## Contract Surface
 
@@ -81,7 +84,7 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | RewardPoolDepositWrapper | core_logic | gnosis | n/a | 6 deployments: ethereum `0xb188b1...9fec59`; optimism `0x51b6e0...749fe1`; gnosis [`0x0fec3d...0b7f76`](./contracts/gnosis-100/0x0fec3d212bcc29ef3e505b555d7a7343df0b7f76/); polygon `0xce66e8...e41146`; base `0xa9952c...58008e`; arbitrum `0x6b02fe...6916be` | ✅ Audited |
 | VirtualBalanceRewardPool | core_logic | ethereum | n/a | [`0xac1692...fd0147`](./contracts/ethereum-1/0xac16927429c5c7af63dd75bc9d8a58c63ffd0147/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (80)
+### ⚠️ Verified + Unaudited (81)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -93,6 +96,7 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | cvxFxsToken | token | ethereum | n/a | [`0xfeef77...4bdf74`](./contracts/ethereum-1/0xfeef77d3f69374f66429c91d732a244f074bdf74/) | ⚠️ Unaudited |
 | BalancerGovernanceToken | token | ethereum | n/a | [`0xba1000...424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
 | ArbitrumBridgeSender | operational_periphery | arbitrum | n/a | [`0xde386a...8455bf`](./contracts/arbitrum-42161/0xde386aedec27521daf1f8a49c03ada7c158455bf/) | ⚠️ Unaudited |
+| ArbitrumRootGaugeFactory | operational_periphery | ethereum | n/a | [`0x1c9932...5e50e7`](./contracts/ethereum-1/0x1c99324edc771c82a0dccb780cc7dda0045e50e7/) | ⚠️ Unaudited |
 | AuraBalRedemption | unknown | ethereum | n/a | [`0x2aa497...0a1f9c`](./contracts/ethereum-1/0x2aa497d6c6cc0cce9a49ea70b0701092a10a1f9c/) | ⚠️ Unaudited |
 | AuraClaimZapV3 | adapter | ethereum | n/a | [`0x5b2364...1ad7f4`](./contracts/ethereum-1/0x5b2364fd757e262253423373e4d57c5c011ad7f4/) | ⚠️ Unaudited |
 | AuraDistributor | operational_periphery | ethereum | n/a | [`0x96d15d...dba9a4`](./contracts/ethereum-1/0x96d15d08538a17a03b0210fd1626d5f42bdba9a4/) | ⚠️ Unaudited |
@@ -123,9 +127,9 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | FeeDepositV2 | unknown | ethereum | n/a | [`0x7a527d...a0d769`](./contracts/ethereum-1/0x7a527d8bb09f7d70c148ab5de919e9bf68a0d769/) | ⚠️ Unaudited |
 | FixedPriceLBPoolFactory | operational_periphery | arbitrum | n/a | 2 deployments: gnosis `0xd9e91f...e6479e`; arbitrum [`0x7f246e...b26e0d`](./contracts/arbitrum-42161/0x7f246e7bab4cdc8c7ab41eada8290009a5b26e0d/) | ⚠️ Unaudited |
 | GaugeVoterModule | operational_periphery | ethereum | n/a | [`0x2b5ac8...381621`](./contracts/ethereum-1/0x2b5ac82c5e934407514768ce3e399d9c18381621/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-19053 | [`0xb370eb...93bf46`](./contracts/ethereum-1/0xb370ebd7ded0c87b4509ff6f13f07b7f1693bf46/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | gnosis | unit-19055 (2 proxies) | 2 deployments: gnosis [`0x57acb7...7ad478`](./contracts/gnosis-100/0x57acb721fcf3d900b480a90a55191cf8f37ad478/); gnosis `0xd86ceb...66d68b` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | base | unit-19057 (2 proxies) | 2 deployments: base [`0x57acb7...7ad478`](./contracts/base-8453/0x57acb721fcf3d900b480a90a55191cf8f37ad478/); base `0xd86ceb...66d68b` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-35862 | [`0xb370eb...93bf46`](./contracts/ethereum-1/0xb370ebd7ded0c87b4509ff6f13f07b7f1693bf46/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | gnosis | unit-35864 (2 proxies) | 2 deployments: gnosis [`0x57acb7...7ad478`](./contracts/gnosis-100/0x57acb721fcf3d900b480a90a55191cf8f37ad478/); gnosis `0xd86ceb...66d68b` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | base | unit-35866 (2 proxies) | 2 deployments: base [`0x57acb7...7ad478`](./contracts/base-8453/0x57acb721fcf3d900b480a90a55191cf8f37ad478/); base `0xd86ceb...66d68b` | ⚠️ Unaudited |
 | Gyro2CLPPoolFactory | registry | gnosis | n/a | 4 deployments: optimism `0x99364f...c52c58`; gnosis [`0x1c58cc...2dfaf9`](./contracts/gnosis-100/0x1c58cc548a23956469c7c528bb3a846c842dfaf9/); arbitrum `0x64b7df...0f5bcf`; avalanche `0x312600...70d431` | ⚠️ Unaudited |
 | GyroECLPPoolFactory | registry | gnosis | n/a | 7 deployments: optimism `0x22625e...86b017`; optimism `0x53eff5...c479ef`; gnosis [`0x1c53af...f7fcc1`](./contracts/gnosis-100/0x1c53af9d683a4424d03f61d70d9f6bc53af7fcc1/); base `0x5f6848...f082e3`; arbitrum `0xe31715...928479`; avalanche `0x268e2e...d9af42`; avalanche `0x86a0e9...8fd12c` | ⚠️ Unaudited |
 | Harvester | operational_periphery | ethereum | n/a | [`0x6d6bca...86e1e7`](./contracts/ethereum-1/0x6d6bcac2266468a44da9fa482ca54aaed586e1e7/) | ⚠️ Unaudited |
@@ -133,9 +137,9 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | L1PoolManagerProxy | core_logic | ethereum | n/a | [`0x54f2de...27a14d`](./contracts/ethereum-1/0x54f2dec216dffb9174edb0d53910bada5227a14d/) | ⚠️ Unaudited |
 | LBPMigrationRouter | operational_periphery | arbitrum | n/a | 4 deployments: gnosis `0xcb3fe6...01c9e7`; gnosis `0xf9309a...9a2c33`; arbitrum [`0x99364f...c52c58`](./contracts/arbitrum-42161/0x99364f84d1c68d87aead0ce92eb47409a0c52c58/); arbitrum `0xfc2986...a95832` | ⚠️ Unaudited |
 | LBPoolFactory | registry | gnosis | n/a | 8 deployments: gnosis [`0x2faa14...1e4e91`](./contracts/gnosis-100/0x2faa140f90f76eeeebc191f4ef4b2634be1e4e91/); gnosis `0x53eff5...c479ef`; gnosis `0x89aa28...00ae66`; gnosis `0xa59f16...0b908c`; gnosis `0xa9aeeb...ad1103`; gnosis `0xc19f5f...7a4820`; arbitrum `0x8d217c...1c4818`; arbitrum `0xf9309a...9a2c33` | ⚠️ Unaudited |
-| LiquidityGaugeFactory | operational_periphery | ethereum | n/a | [`0xf1665e...cc5b65`](./contracts/ethereum-1/0xf1665e19bc105be4edd3739f88315cc699cc5b65/) | ⚠️ Unaudited |
+| LiquidityGaugeFactory | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4e7bbd...5412ec`](./contracts/ethereum-1/0x4e7bbd911cf1efa442bc1b2e9ea01ffe785412ec/); ethereum `0xf1665e...cc5b65` | ⚠️ Unaudited |
 | MerkleOrchard | operational_periphery | arbitrum | n/a | [`0x9805dc...764102`](./contracts/arbitrum-42161/0x9805dcfd25e6de36bad8fe9d3fe2c9b44b764102/) | ⚠️ Unaudited |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | registry | gnosis | n/a | [`0x85a80a...853062`](./contracts/gnosis-100/0x85a80afee867adf27b50bdb7b76da70f1e853062/) | ⚠️ Unaudited |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x0f3e0c...57c54e`](./contracts/ethereum-1/0x0f3e0c4218b7b0108a3643cfe9d3ec0d4f57c54e/); gnosis `0x85a80a...853062` | ⚠️ Unaudited |
 | NullVotingEscrow | operational_periphery | polygon | n/a | [`0x311334...358615`](./contracts/polygon-137/0x311334883921fb1b813826e585df1c2be4358615/) | ⚠️ Unaudited |
 | OptimismBridgeSender | operational_periphery | optimism | n/a | 2 deployments: optimism [`0x7e702e...50f265`](./contracts/optimism-10/0x7e702e51142eb7658ce4ce734c9bdec74250f265/); base `0xc83da6...782549` | ⚠️ Unaudited |
 | PolygonBridgeSender | operational_periphery | polygon | n/a | [`0x25e7c5...f4f669`](./contracts/polygon-137/0x25e7c574c4016e09f608971f97c3b09a6cf4f669/) | ⚠️ Unaudited |
@@ -371,24 +375,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [facu_spagnuolo_aurabal_vault_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/auraBalVault/facu_spagnuolo_aurabal_vault_audit_report.pdf) | unknown | Audit | 2023-03 | stale | Direct | contract_name | 4 | medium |
+| [facu_spagnuolo_aurabal_vault_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/auraBalVault/facu_spagnuolo_aurabal_vault_audit_report.pdf) | Facu Spagnuolo | Audit | 2023-03 | stale | Direct | contract_name | 4 | medium |
 | [halborn_aurabal_vault_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/auraBalVault/halborn_aurabal_vault_audit_report.pdf) | Halborn | Audit | 2023-03 | stale | Direct | contract_name | 4 | high |
 | [halborn_sidechain_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/halborn_sidechain_audit_report.pdf) | Halborn | Audit | 2023-06 | stale | Direct | contract_name | 24 | high |
-| [hephyrius-internal-report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/hephyrius-internal-report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 29 | high |
+| [hephyrius-internal-report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/hephyrius-internal-report.pdf) | Hephyrius | Audit | n/a | unknown | Direct | contract_name | 29 | high |
 | [zellic_sidechain_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/zellic_sidechain_audit_report.pdf) | Zellic | Audit | 2023-06 | stale | Direct | contract_name | 39 | high |
-| [facu_spagnuolo_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/facu_spagnuolo_aura_upgrade_01_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | medium |
-| [hephyrius_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/hephyrius_aura_upgrade_01_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | medium |
+| [facu_spagnuolo_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/facu_spagnuolo_aura_upgrade_01_audit_report.pdf) | Facu Spagnuolo | Audit | n/a | unknown | Direct | contract_name | 4 | medium |
+| [hephyrius_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/hephyrius_aura_upgrade_01_audit_report.pdf) | Hephyrius | Audit | n/a | unknown | Direct | contract_name | 8 | medium |
 | [Code4rena-Audit-Report-AuraFinance-v1.0.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/Code4rena-Audit-Report-AuraFinance-v1.0.pdf) | Code4rena | Contest | 2022-07 | stale | Direct | contract_name | 29 | high |
 | [Halborn-Audit-Report-AuraFinance-v1.0.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/Halborn-Audit-Report-AuraFinance-v1.0.pdf) | Halborn | Audit | 2022-06 | stale | Direct | contract_name | 40 | high |
 | [PeckShield-Audit-Report-AuraFinance-v1.0.pdf (also discovered via alternate URL)](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/PeckShield-Audit-Report-AuraFinance-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 14 | high |
-| [Aura_Finance_Migration_Review_Hephyrius.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/migration/Aura_Finance_Migration_Review_Hephyrius.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | medium |
-| [FacuSpagnuolo-Aura-Booster-migration-report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/migration/FacuSpagnuolo-Aura-Booster-migration-report.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 6 | medium |
+| [Aura_Finance_Migration_Review_Hephyrius.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/migration/Aura_Finance_Migration_Review_Hephyrius.pdf) | Hephyrius | Audit | n/a | unknown | Direct | contract_name | 6 | medium |
+| [FacuSpagnuolo-Aura-Booster-migration-report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/migration/FacuSpagnuolo-Aura-Booster-migration-report.pdf) | FacuSpagnuolo | Audit | 2023-12 | stale | Direct | contract_name | 6 | medium |
 | [Halborn-Aura_Finance___Smart_Contract_Audit.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/migration/Halborn-Aura_Finance___Smart_Contract_Audit.pdf) | Halborn | Audit | 2023-12 | stale | Direct | contract_name | 7 | high |
 | [001-BaseRewardPool-Donate.md](https://github.com/aurafinance/aura-contracts/blob/main/security/disclosures/001-BaseRewardPool-Donate.md) | unknown | Audit | 2022-11 | stale | Direct | contract_name | 6 | medium |
 | [002-Booster-EIP1271.md](https://github.com/aurafinance/aura-contracts/blob/main/security/disclosures/002-Booster-EIP1271.md) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 3 | medium |
 | [003-Assorted-Governance-griefing.md](https://github.com/aurafinance/aura-contracts/blob/main/security/disclosures/003-Assorted-Governance-griefing.md) | unknown | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
 | [README.md](https://github.com/aurafinance/aura-docs/blob/main/aura/security/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [risks.md](https://github.com/aurafinance/aura-docs/blob/main/aura/security/risks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audited by Halborn](https://2520301408-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fr4kLuYPt1EhIEVbkxHD8%2Fuploads%2FdpPicVneOrKaZPH8PMdj%2Fhalborn_aurabal_vault_audit_report.pdf) | Halborn | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Competition on Code4rena](https://2520301408-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fr4kLuYPt1EhIEVbkxHD8%2Fuploads%2FDuQMD5ULdRtqravKUwxQ%2FCode4rena-Audit-Report-AuraFinance-v1.0.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -397,10 +403,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x616e8b...d4608d`](./contracts/ethereum-1/0x616e8bfa43f920657b3497dbf40d6b1a02d4608d/) | cvxCrvToken | token | $45,080,276.64 | Verified native implementation with $45,080,276.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcf50b8...139332`](./contracts/ethereum-1/0xcf50b810e57ac33b91dcf525c6ddd9881b139332/) | cvxRewardPool | core_logic | $11,391,303.28 | Verified native implementation with $11,391,303.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa28473...427df6`](./contracts/ethereum-1/0xa2847348b58ced0ca58d23c7e9106a49f1427df6/) | cvxFpisToken | token | $2,129,509.33 | Verified native implementation with $2,129,509.33 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc0c293...903dbf`](./contracts/ethereum-1/0xc0c293ce456ff0ed870add98a0828dd4d2903dbf/) | AuraToken | token | $1,109,611.19 | Verified native implementation with $1,109,611.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfeef77...4bdf74`](./contracts/ethereum-1/0xfeef77d3f69374f66429c91d732a244f074bdf74/) | cvxFxsToken | token | $1,093,078.88 | Verified native implementation with $1,093,078.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2aa497...0a1f9c`](./contracts/ethereum-1/0x2aa497d6c6cc0cce9a49ea70b0701092a10a1f9c/) | AuraBalRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5b2364...1ad7f4`](./contracts/ethereum-1/0x5b2364fd757e262253423373e4d57c5c011ad7f4/) | AuraClaimZapV3 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x96d15d...dba9a4`](./contracts/ethereum-1/0x96d15d08538a17a03b0210fd1626d5f42bdba9a4/) | AuraDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -409,11 +412,8 @@ Verified + unaudited native implementations ranked by TVL:
 | fraxtal | [`0xbd2e14...4b029e`](./contracts/fraxtal-252/0xbd2e14d04777e551a8fe3822cac0df51984b029e/) | AuraViewHelpersLite | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x26f470...f6763d`](./contracts/ethereum-1/0x26f470e4b777ea4cd09f550d3e904d707df6763d/) | BoosterHelper | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x22625e...86b017`](./contracts/polygon-137/0x22625eedd92c81a219a83e1dc48f88d54786b017/) | ChildChainGaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0xca85e2...627451`](./contracts/gnosis-100/0xca85e2ce206b48ee28a87b0a06f9519abe627451/) | ChildStashRewardDistro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3f29cb...cf2516`](./contracts/ethereum-1/0x3f29cb4111cbda8081642da1f75b3c12decf2516/) | ClaimZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x449f2f...d1ddc6`](./contracts/ethereum-1/0x449f2fd99174e1785cf2a1c79e665fec3dd1ddc6/) | CvxDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfa87db...6bc483`](./contracts/ethereum-1/0xfa87db3eaa93b7293021e38416650d2e666bc483/) | cvxFpisStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x49b4d1...37e31a`](./contracts/ethereum-1/0x49b4d1df40442f0c31b1bbaea3ede7c38e37e31a/) | cvxFxsStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd18140...94af50`](./contracts/ethereum-1/0xd18140b4b819b895a3dba5442f959fa44994af50/) | CvxLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd43024...1410e9`](./contracts/ethereum-1/0xd430246142084ec68f7ab090cbd9252a1d1410e9/) | FeeBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7a527d...a0d769`](./contracts/ethereum-1/0x7a527d8bb09f7d70c148ab5de919e9bf68a0d769/) | FeeDepositV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2b5ac8...381621`](./contracts/ethereum-1/0x2b5ac82c5e934407514768ce3e399d9c18381621/) | GaugeVoterModule | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -421,33 +421,35 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x1972b5...bc14f7`](./contracts/ethereum-1/0x1972b5d65a690de0bc36278ac93d47fd98bc14f7/) | InterestRateCalculatorV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x37aa9a...3e31dd`](./contracts/optimism-10/0x37aa9ad9744d0686df1c7053225e700ce13e31dd/) | KeeperMulticall3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x54f2de...27a14d`](./contracts/ethereum-1/0x54f2dec216dffb9174edb0d53910bada5227a14d/) | L1PoolManagerProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf1665e...cc5b65`](./contracts/ethereum-1/0xf1665e19bc105be4edd3739f88315cc699cc5b65/) | LiquidityGaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x7e702e...50f265`](./contracts/optimism-10/0x7e702e51142eb7658ce4ce734c9bdec74250f265/) | OptimismBridgeSender | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x311334...358615`](./contracts/polygon-137/0x311334883921fb1b813826e585df1c2be4358615/) | NullVotingEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x25e7c5...f4f669`](./contracts/polygon-137/0x25e7c574c4016e09f608971f97c3b09a6cf4f669/) | PolygonBridgeSender | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd0521c...8bd687`](./contracts/ethereum-1/0xd0521c061958324d06b8915ffdac3db22c8bd687/) | PoolFeeManagerProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc44d36...e88bc8`](./contracts/ethereum-1/0xc44d3604a332b71e2e6a87a714614a505ee88bc8/) | RAuraRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x4ea38a...5328e8`](./contracts/gnosis-100/0x4ea38a5739d467f7f84c06155ee2ad745e5328e8/) | SidechainClaimZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | [`0x1ba3db...67ad0f`](./contracts/fraxtal-252/0x1ba3dbd572b1b7aa3445fa51492bfc644c67ad0f/) | SidechainView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | [`0xb82434...3e8bd3`](./contracts/fraxtal-252/0xb82434c7506b27c226564d6ef6ac9ddcb03e8bd3/) | StashRewardDistro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04dd97...bd207f`](./contracts/ethereum-1/0x04dd97255ddee29c941d85f5b5cde6ace8bd207f/) | TreasuryLend | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xeb8121...6de6b3`](./contracts/ethereum-1/0xeb8121b44a290ee16981d87b92fc16b2366de6b3/) | TreasuryManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa25b17...e74316`](./contracts/ethereum-1/0xa25b17d7deee59f9e326e45cc3c0c1b158e74316/) | TreasurySwap | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x03cbcc...dff36f`](./contracts/optimism-10/0x03cbccbe8d2073a1dc186ae6bcd95390fcdff36f/) | UnbalancedAddViaSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf37c41...64b503`](./contracts/ethereum-1/0xf37c41ef2281893b5971769370d6cdd35864b503/) | Utilities | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x05589c...9079c2`](./contracts/polygon-137/0x05589cbbe1cc0357986df6de4031b953819079c2/) | VirtualRewardFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x575ccd...318e2c`](./contracts/ethereum-1/0x575ccd8e2d300e2377b43478339e364000318e2c/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9d53f0...6150dc`](./contracts/ethereum-1/0x9d53f0d2ecebc84e9114259f6084d01fb46150dc/) | WindDownCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 57 |
-| upstream | 9 |
-| standard_library | 1 |
-| needs_review | 213 |
+| native | 55 |
+| upstream | 20 |
+| standard_library | 3 |
+| needs_review | 203 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=8, medium=7
 - Match method counts: extraction_exact=691
@@ -457,5 +459,7 @@ Zero-match audit list:
 - [5974] 003-Assorted-Governance-griefing.md
 - [5976] README.md
 - [5977] risks.md
+- [15042] Audited by Halborn
+- [15043] Audit Competition on Code4rena
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -6,7 +6,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MaverickV2RewardRouter](./scroll-534352/0xd837fcba68a6a5aa63f791ea51f258d30546d2c1/) | scroll | [`0xd837fc...46d2c1`](./scroll-534352/0xd837fcba68a6a5aa63f791ea51f258d30546d2c1/) | ⚠️ Unaudited | Verified |
+| MaverickV2RewardRouter | scroll | `0xd837fc...46d2c1` | ⚠️ Unaudited | Verified |
 | [MaverickV2Router](./scroll-534352/0x15d5ff975c1181faf938cd33bd0633435bdfa18d/) | scroll | [`0x15d5ff...dfa18d`](./scroll-534352/0x15d5ff975c1181faf938cd33bd0633435bdfa18d/) | ⚠️ Unaudited | Verified |
 | [Router](./ethereum-1/0xbbf1ee38152e9d8e3470dc47947eaa65dca94913/) | ethereum | [`0xbbf1ee...a94913`](./ethereum-1/0xbbf1ee38152e9d8e3470dc47947eaa65dca94913/) | ✅ Audited | Verified |
 | Router | ethereum | `0xc3b7af...071cc0` | ✅ Audited | Verified |
@@ -29,7 +29,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MaverickV2RewardFactory (2 deployments)](./ethereum-1/0x37232785acd3eaddfd784db3f9ecc1f8bcbd7ec7/) | ethereum | 2 deployments: ethereum [`0x372327...bd7ec7`](./ethereum-1/0x37232785acd3eaddfd784db3f9ecc1f8bcbd7ec7/); bsc `0x7573b6...97c565` | ⚠️ Unaudited | Verified |
+| MaverickV2RewardFactory (2 deployments) | ethereum | 2 deployments: ethereum `0x372327...bd7ec7`; bsc `0x7573b6...97c565` | ⚠️ Unaudited | Verified |
 
 ## token (1)
 

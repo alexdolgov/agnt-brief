@@ -102,7 +102,7 @@
 | [atrium](./atrium/) | $390.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [augmented-finance](./augmented-finance/) | $326.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [augur](./augur/) | $1.3M | 100.0% | ? | active | 7 | 4 | 2026-06-17 |
-| [aura](./aura/) | $107.0M | 23.4% | $68.2M | active | 18 | 280 | 2026-06-17 |
+| [aura](./aura/) | $107.0M | 23.1% | $68.2M | active | 20 | 281 | 2026-06-18 |
 | [aurigami](./aurigami/) | $819.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [auro-finance](./auro-finance/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aurora-plus](./aurora-plus/) | $1.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-17 |
@@ -456,7 +456,7 @@
 | [gale](./gale/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gamma](./gamma/) | $3.1M | 30.3% | ? | active | 8 | 403 | 2026-06-17 |
 | [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-17 |
-| [gearbox](./gearbox/) | $3.5M | 70.0% | ? | declining | 37 | 52 | 2026-06-17 |
+| [gearbox](./gearbox/) | $3.5M | 68.6% | ? | declining | 38 | 53 | 2026-06-18 |
 | [geist-finance](./geist-finance/) | $153.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gemkeeper](./gemkeeper/) | $20.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [generic.money](./generic.money/) | $3.7M | 88.9% | ? | declining | 1 | 9 | 2026-06-17 |
@@ -714,7 +714,7 @@
 | [marginly](./marginly/) | $0.0 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [match-finance](./match-finance/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [matstake](./matstake/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [maverick-protocol](./maverick-protocol/) | $26.8M | 50.0% | $26.8M | declining | 7 | 23 | 2026-06-17 |
+| [maverick-protocol](./maverick-protocol/) | $26.8M | 37.5% | $26.8M | declining | 7 | 31 | 2026-06-18 |
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [mcdex](./mcdex/) | $943.0K | 16.7% | ? | dead | 4 | 70 | 2026-06-18 |
 | [mdex](./mdex/) | $235.5K | 80.0% | $20.2K | declining | 3 | 6 | 2026-06-17 |
@@ -999,7 +999,7 @@
 | [rho](./rho/) | $2.3M | 0.0% | ? | active | 4 | 28 | 2026-06-17 |
 | [ribbon-finance](./ribbon-finance/) | $174.5M | 31.6% | $148.2M | declining | 14 | 23 | 2026-06-17 |
 | [rifts-finance](./rifts-finance/) | $18.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [ring-protocol](./ring-protocol/) | $83.5M | 22.7% | $83.5M | active | 8 | 66 | 2026-06-17 |
+| [ring-protocol](./ring-protocol/) | $83.5M | 37.2% | $83.5M | active | 10 | 65 | 2026-06-18 |
 | [ringfi](./ringfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rip.xyz](./rip.xyz/) | $0.0 | 0.0% | $0.0 | active | 1 | 5 | 2026-06-17 |
 | [risex](./risex/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -1399,7 +1399,7 @@
 | [zircon-gamma](./zircon-gamma/) | $2.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 9 | 2026-06-17 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 33.3% | $140.4M | declining | 8 | 13 | 2026-06-17 |
-| [zircuit](./zircuit/) | $144.2M | 36.4% | $144.2M | declining | 10 | 12 | 2026-06-17 |
+| [zircuit](./zircuit/) | $176.1M | 30.0% | $144.2M | declining | 10 | 22 | 2026-06-18 |
 | [zivoe](./zivoe/) | $13.9M | 38.9% | ? | declining | 6 | 18 | 2026-06-17 |
 | [zklink-nova](./zklink-nova/) | $10.4M | 14.9% | ? | declining | 7 | 132 | 2026-06-17 |
 | [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-18 |

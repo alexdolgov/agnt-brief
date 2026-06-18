@@ -1,0 +1,18 @@
+{
+  "address": "0x20504f37a95ef80e3fc7476c4801fb39aae6bad0",
+  "chain_id": 56,
+  "contract_name": "SwapV2Router",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T06:59:05.083Z"
+}

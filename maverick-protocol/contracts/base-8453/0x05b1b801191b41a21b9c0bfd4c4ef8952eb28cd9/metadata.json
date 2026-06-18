@@ -1,0 +1,18 @@
+{
+  "address": "0x05b1b801191b41a21b9c0bfd4c4ef8952eb28cd9",
+  "chain_id": 8453,
+  "contract_name": "MaverickV2VotingEscrowWSync",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 5500,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T06:58:21.643Z"
+}

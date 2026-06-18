@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | [SwapRouter](./ethereum-1/0xe592427a0aece92de3edee1f18e0157c05861564/) | ethereum | [`0xe59242...861564`](./ethereum-1/0xe592427a0aece92de3edee1f18e0157c05861564/) | ⚠️ Unaudited | Verified |
 | [SwapRouter02](./ethereum-1/0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45/) | ethereum | [`0x68b346...65fc45`](./ethereum-1/0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45/) | ⚠️ Unaudited | Verified |
-| [SwapV2Router (4 deployments)](./base-8453/0x224749cdd5791480ecebe452e5ffaefef94cd254/) | base | 4 deployments: ethereum `0x39d1d8...6d3519`; base [`0x224749...4cd254`](./base-8453/0x224749cdd5791480ecebe452e5ffaefef94cd254/); arbitrum `0xd69ed5...baa46a`; blast `0x7001f7...1696ff` | ⚠️ Unaudited | Verified |
+| SwapV2Router (4 deployments) | base | 4 deployments: ethereum `0x39d1d8...6d3519`; base `0x224749...4cd254`; arbitrum `0xd69ed5...baa46a`; blast `0x7001f7...1696ff` | ⚠️ Unaudited | Verified |
 | [UniversalRouter (16 deployments)](./polygon-137/0x1095692a6237d83c6a72f3f5efedb9a670c49223/) | polygon | 16 deployments: ethereum `0x66a989...dba8af`; ethereum `0xeff87a...a15a24`; optimism `0x851116...8b3507`; bsc `0x1906c1...4eae07`; unichain `0xef740b...c8eaf3`; polygon [`0x109569...c49223`](./polygon-137/0x1095692a6237d83c6a72f3f5efedb9a670c49223/); base `0x6ff569...299b43`; base `0x9a8c67...1f1e07`; arbitrum `0x4b2ab3...1d6804`; arbitrum `0xa51afa...e381a3`; arbitrum `0xdb671f...6db8e5`; arbitrum `0xf29309...1749b8`; celo `0xcb695b...a0233a`; avalanche `0x94b753...aa73b7`; blast `0xc9dd68...a3f201`; blast `0xeabbcb...025be3` | ✅ Audited | Verified |
 
 ## core_logic (1)

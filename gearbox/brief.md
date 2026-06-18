@@ -7,10 +7,10 @@
 - Project: Gearbox (`gearbox`)
 - Website: [https://gearbox.finance/](https://gearbox.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:35.988Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T07:22:26.262Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: arbitrum, ethereum, optimism, sonic
-- Contract surface: 52 unique implementations (562 raw deployments)
+- Contract surface: 53 unique implementations (564 raw deployments)
 - DeFi Llama TVL: $29,451,084.42
 - On-chain TVL (included contracts): $3,458,425.78
 - TVL by chain: Ethereum $3,458,425.78
@@ -25,40 +25,41 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1703; live-surface contracts included: 562 (314 live, 248 unknown).
-- Excluded by liveness: 1141 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
-- Detected codebases: curve-stableswap, uniswap-v3
-- Unverified dependencies: 33/191.
+- Indexed contracts: 2090; live-surface contracts included: 564 (316 live, 248 unknown).
+- Excluded by liveness: 1526 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: curve-stableswap
+- Unverified dependencies: 24/109.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 35/50 (70.0%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 35/51 (68.6%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 52
-- Raw deployments: 562
-- Audits discovered: 37
+- Unique implementations: 53
+- Raw deployments: 564
+- Audits discovered: 38
 - Scoreable audits (matched contracts): 29
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/gearbox/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 10 aging, 25 stale, 0 unknown
-- Tier 1 coverage: 70.0% (ChainSecurity, ConsenSys Diligence, MixBytes)
+- Staleness: 1 fresh, 10 aging, 25 stale, 1 unknown
+- Tier 1 coverage: 68.6% (ChainSecurity, ConsenSys Diligence, MixBytes)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 34 | 68.0% | 2025-07 |
-| ABDK | Tier 2 | 22 | 44.0% | 2023-12 |
-| unknown | Tier 2 | 15 | 30.0% | 2025-02 |
-| SavantChat | Tier 2 | 9 | 18.0% | 2025-03 |
-| Consensys Diligence | Tier 1 | 5 | 10.0% | 2022-08 |
-| Sigma Prime | Tier 2 | 5 | 10.0% | 2022-08 |
-| MixBytes | Tier 1 | 4 | 8.0% | 2024-04 |
+| ChainSecurity | Tier 1 | 34 | 66.7% | 2025-07 |
+| ABDK | Tier 2 | 22 | 43.1% | 2023-12 |
+| unknown | Tier 2 | 12 | 23.5% | 2025-02 |
+| Pessimistic | Tier 2 | 9 | 17.6% | 2024-05 |
+| SavantChat | Tier 2 | 9 | 17.6% | 2025-03 |
+| Consensys Diligence | Tier 1 | 5 | 9.8% | 2022-08 |
+| Sigma Prime | Tier 2 | 5 | 9.8% | 2022-08 |
+| MixBytes | Tier 1 | 4 | 7.8% | 2024-04 |
 | Decurity | Tier 2 | 1 | 2.0% | 2025-02 |
 | PeckShield | Tier 2 | 1 | 2.0% | 2021-08 |
 
@@ -104,7 +105,7 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 | YearnV2Adapter | adapter | ethereum | n/a | 13 deployments: ethereum [`0x0afb33...e9caba`](./contracts/ethereum-1/0x0afb33767cab3f7a855f59abac8e789978e9caba/); ethereum `0x215ecb...164ce2`; ethereum `0x520337...0db708`; ethereum `0x765bac...f4392a`; ethereum `0x79404c...624bda`; ethereum `0x79eb63...0dbc1c`; ethereum `0x7fa1c0...5b9207`; ethereum `0x8c8045...6b66fe`; ethereum `0xa6257e...82ee39`; ethereum `0xd389a0...d9aaf6`; ethereum `0xdfcd89...032765`; ethereum `0xf9d496...480327`; ethereum `0xfa5eab...ec6ba1` | ✅ Audited |
 | ZeroPriceFeed | operational_periphery | ethereum | n/a | [`0xe279b2...52a516`](./contracts/ethereum-1/0xe279b205e942f2f61380a1fc099b3ae2a152a516/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -122,6 +123,7 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 | DualAggregator | unknown | ethereum | n/a | 9 deployments: ethereum [`0x1eeb87...19a5df`](./contracts/ethereum-1/0x1eeb875dd64f6313ff315679791ae1a27c19a5df/); ethereum `0x205325...3ac9bf`; ethereum `0x320e22...fbb292`; ethereum `0x4f51ad...faec54`; ethereum `0x757eb2...9906ba`; ethereum `0x7d0619...e7593b`; ethereum `0x89301a...8f3bf0`; ethereum `0x9f6b06...6972d9`; ethereum `0xff2f37...a5a0df` | ⚠️ Unaudited |
 | EACAggregatorProxy | unknown | ethereum | n/a | 50 deployments: ethereum [`0x014f60...25e0a5`](./contracts/ethereum-1/0x014f606c37cfd6fc42ec11d10086df500125e0a5/); ethereum `0x023dfc...9cf3de`; ethereum `0x0ba15e...7ce03a`; ethereum `0x0e7fde...ee4c45`; ethereum `0x14e5fc...ad1aa1`; ethereum `0x16cae6...c8116a`; ethereum `0x171e3e...037997`; ethereum `0x19e2d7...895962`; ethereum `0x1e9cb0...24f6d1`; ethereum `0x2098c2...4eea85`; ethereum `0x26563f...d0bda3`; ethereum `0x2b94a8...d0cef3`; ethereum `0x2f1494...98a85f`; ethereum `0x35e8b2...e3bcc0`; ethereum `0x37be05...728caa`; ethereum `0x3889b7...a2e56b`; ethereum `0x450ce8...bfee96`; ethereum `0x46ce85...970e4a`; ethereum `0x474cfe...f72fc1`; ethereum `0x4be207...31496f`; ethereum `0x5608c6...31ccdb`; ethereum `0x5b7948...a3aa6a`; ethereum `0x5ed77a...43c1c4`; ethereum `0x5f4ec3...5b8419`; ethereum `0x64c4c1...007098`; ethereum `0x7d63d6...b40f6d`; ethereum `0x83beff...ffa2a6`; ethereum `0x84e045...020850`; ethereum `0x89904b...be0bd5`; ethereum `0x8fffff...6818f6`; ethereum `0x9d401a...c9509b`; ethereum `0x9fbb7d...532589`; ethereum `0xa5265f...54b816`; ethereum `0xadcc91...081491`; ethereum `0xb06a26...2684c3`; ethereum `0xb325f0...a7b5f1`; ethereum `0xb51db7...dea526`; ethereum `0xb87046...b715d6`; ethereum `0xb8ab40...b0f8cc`; ethereum `0xbf2b97...e8c289`; ethereum `0xbfc7d9...23602c`; ethereum `0xc557dc...59edc7`; ethereum `0xc90e34...e34ed0`; ethereum `0xd16cc3...41c1a5`; ethereum `0xd95044...049e52`; ethereum `0xde49c7...444aa0`; ethereum `0xe108e7...ca575a`; ethereum `0xe33592...6c3a32`; ethereum `0xe5181a...34659e`; ethereum `0xf34d74...1fb093` | ⚠️ Unaudited |
 | GearGaugeDistributor | operational_periphery | ethereum | n/a | [`0x10fb34...cb1272`](./contracts/ethereum-1/0x10fb341b5601033d50423b4da336db719fcb1272/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-35860 (2 proxies) | 2 deployments: ethereum [`0x7b065f...ea73d1`](./contracts/ethereum-1/0x7b065fcb0760df0cea8cfd144e08554f3cea73d1/); ethereum `0xa7d5dd...13f1d5` | ⚠️ Unaudited |
 | WstETHV1Adapter | adapter | ethereum | n/a | [`0xac285b...93e331`](./contracts/ethereum-1/0xac285bde32b4830de7bb480b79e0c1f62393e331/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -180,12 +182,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2025-03-chainsecurity-v3.1-upgrade.pdf](https://github.com/Gearbox-protocol/security/blob/main/audits/2025-03-chainsecurity-v3.1-upgrade.pdf) | ChainSecurity | Audit | 2025-03 | aging | Direct | contract_name | 138 | high |
 | [2025-04-chainsecurity-permissionless.pdf](https://github.com/Gearbox-protocol/security/blob/main/audits/2025-04-chainsecurity-permissionless.pdf) | ChainSecurity | Audit | 2025-04 | aging | Direct | contract_name | 2 | high |
 | [2025-07-chainsecurity-account-migration.pdf](https://github.com/Gearbox-protocol/security/blob/main/audits/2025-07-chainsecurity-account-migration.pdf) | ChainSecurity | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [2024 May - Pessimistic_Gearbox_Security_Scan.pdf](https://github.com/Gearbox-protocol/security/blob/main/reports/2024%20May%20-%20Pessimistic_Gearbox_Security_Scan.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 88 | high |
+| [2024 May - Pessimistic_Gearbox_Security_Scan.pdf](https://github.com/Gearbox-protocol/security/blob/main/reports/2024%20May%20-%20Pessimistic_Gearbox_Security_Scan.pdf) | Pessimistic | Audit | 2024-05 | stale | Direct | contract_name | 88 | high |
 | [ChainSecurity_Gearbox_audit.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/ChainSecurity_Gearbox_audit.pdf) | ChainSecurity | Audit | 2021-12 | stale | Direct | contract_name | 8 | high |
 | [ConsensysDiligence _Fuzzing_report.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/ConsensysDiligence%20_Fuzzing_report.pdf) | Consensys Diligence | Audit | 2021-12 | stale | Direct | contract_name | 2 | high |
 | [MixBytes_security_audit_report.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/MixBytes_security_audit_report.pdf) | MixBytes | Audit | 2021-12 | stale | Direct | contract_name | 8 | high |
 | [Peckshield-03.05.2021.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-03.05.2021.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 2 | medium |
 | [Peckshield-10.08.2021.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-10.08.2021.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 2 | high |
+| [All the source code and audit reports of the contracts can be found in [Bytecode Repository](). Use search, click on the target contract and then **View Source** or **View Report**. All the Adapters can be found by searching for the ADAPTER domain in Bytecode Repository.](https://permissionless.gearbox.foundation/bytecode) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -206,13 +209,13 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 31 |
 | upstream | 19 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=27, medium=2
 - Match method counts: extraction_exact=1375
@@ -226,5 +229,6 @@ Zero-match audit list:
 - [10112] 2024-10-decurity-sky-pyth.pdf
 - [10115] 2025-02-decurity-balancer-v3.pdf
 - [10118] 2025-07-chainsecurity-account-migration.pdf
+- [15033] All the source code and audit reports of the contracts can be found in [Bytecode Repository](). Use search, click on the target contract and then **View Source** or **View Report**. All the Adapters can be found by searching for the ADAPTER domain in Bytecode Repository.
 
 Fork inheritance lineage and inherited audits are included when available.

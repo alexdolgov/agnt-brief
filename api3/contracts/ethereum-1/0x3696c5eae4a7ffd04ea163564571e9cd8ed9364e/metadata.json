@@ -1,0 +1,17 @@
+{
+  "address": "0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e",
+  "chain_id": 1,
+  "contract_name": "RegistryList",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T04:44:20.139Z"
+}

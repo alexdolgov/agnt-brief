@@ -9,7 +9,7 @@
 | [DoubleSupplyStakingRouter (3 deployments)](./bsc-56/0x99b674ba03e896d952983908dba8d7b560fb10d5/) | bsc | 3 deployments: bsc [`0x99b674...fb10d5`](./bsc-56/0x99b674ba03e896d952983908dba8d7b560fb10d5/); bsc `0xd35181...91fe16`; bsc `0xdd7b0f...cd9994` | ⚠️ Unaudited | Verified |
 | [NomiswapRouter](./bsc-56/0xd654953d746f0b114d1f85332dc43446ac79413d/) | bsc | [`0xd65495...79413d`](./bsc-56/0xd654953d746f0b114d1f85332dc43446ac79413d/) | ✅ Audited | Verified |
 | [NomiswapRouter03 (3 deployments)](./bsc-56/0x4ec3432d9443f05022e2ff4e54fc7514be2359e0/) | bsc | 3 deployments: bsc [`0x4ec343...2359e0`](./bsc-56/0x4ec3432d9443f05022e2ff4e54fc7514be2359e0/); bsc `0x9d15d0...fa6136`; bsc `0xa63a2e...fe1c68` | ⚠️ Unaudited | Verified |
-| [NomiswapRouter04 (2 deployments)](./bsc-56/0xbf4c0d66db59ae8276e0cb7e1ed36fc4ac8c1d68/) | bsc | 2 deployments: bsc [`0xbf4c0d...8c1d68`](./bsc-56/0xbf4c0d66db59ae8276e0cb7e1ed36fc4ac8c1d68/); bsc `0xd486d0...836dc8` | ⚠️ Unaudited | Verified |
+| NomiswapRouter04 (2 deployments) | bsc | 2 deployments: bsc `0xbf4c0d...8c1d68`; bsc `0xd486d0...836dc8` | ⚠️ Unaudited | Verified |
 | [NomiswapStableSwapOnlyRouter](./bsc-56/0xf6f2d19087af5ac4e329687b6de9a7cc79d39357/) | bsc | [`0xf6f2d1...d39357`](./bsc-56/0xf6f2d19087af5ac4e329687b6de9a7cc79d39357/) | ⚠️ Unaudited | Verified |
 | [StakingRouter](./bsc-56/0xc2f8f34907c73e3bf509e8f82eb44cb0a7e00cdc/) | bsc | [`0xc2f8f3...e00cdc`](./bsc-56/0xc2f8f34907c73e3bf509e8f82eb44cb0a7e00cdc/) | ✅ Audited | Verified |
 

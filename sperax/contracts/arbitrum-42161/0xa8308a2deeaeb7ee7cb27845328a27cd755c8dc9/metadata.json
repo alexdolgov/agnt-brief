@@ -1,0 +1,18 @@
+{
+  "address": "0xa8308a2deeaeb7ee7cb27845328a27cd755c8dc9",
+  "chain_id": 42161,
+  "contract_name": "SPABuyback",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T04:45:59.844Z"
+}

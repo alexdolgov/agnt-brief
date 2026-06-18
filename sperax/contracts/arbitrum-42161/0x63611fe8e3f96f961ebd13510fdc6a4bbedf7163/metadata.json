@@ -1,0 +1,18 @@
+{
+  "address": "0x63611fe8e3f96f961ebd13510fdc6a4bbedf7163",
+  "chain_id": 42161,
+  "contract_name": "CompoundStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T04:45:59.253Z"
+}

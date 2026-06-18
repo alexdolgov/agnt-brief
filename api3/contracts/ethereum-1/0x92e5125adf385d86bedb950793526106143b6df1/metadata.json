@@ -1,0 +1,18 @@
+{
+  "address": "0x92e5125adf385d86bedb950793526106143b6df1",
+  "chain_id": 1,
+  "contract_name": "AccessControlRegistry",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T04:44:21.639Z"
+}

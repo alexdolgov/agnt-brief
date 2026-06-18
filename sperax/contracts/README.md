@@ -6,7 +6,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CompoundStrategy](./arbitrum-42161/0xbceb48625771e35420076f79ec6921e783a82442/) | arbitrum | [`0xbceb48...a82442`](./arbitrum-42161/0xbceb48625771e35420076f79ec6921e783a82442/) | ✅ Audited | Verified |
+| CompoundStrategy | arbitrum | `0xbceb48...a82442` | ✅ Audited | Verified |
 | [StargateStrategy](./arbitrum-42161/0xb9c9100720d8c6e35eb8dd0f9c1abef320daa136/) | arbitrum | [`0xb9c910...daa136`](./arbitrum-42161/0xb9c9100720d8c6e35eb8dd0f9c1abef320daa136/) | ✅ Audited | Verified |
 | [USDTswapStrategy](./arbitrum-42161/0xe45af3389384e29a9d698a89f1d97e61b30095c8/) | arbitrum | [`0xe45af3...0095c8`](./arbitrum-42161/0xe45af3389384e29a9d698a89f1d97e61b30095c8/) | ⚠️ Unaudited | Verified |
 | [VaultCore](./arbitrum-42161/0x6bbc476ee35cba9e9c3a59fc5b10d7a0bc6f74ca/) | arbitrum | [`0x6bbc47...6f74ca`](./arbitrum-42161/0x6bbc476ee35cba9e9c3a59fc5b10d7a0bc6f74ca/) | ✅ Audited | Verified |
@@ -45,7 +45,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | FarmRegistry | arbitrum | `0x45bc6b...e222e0` | ❓ Unverified | Unverified |
-| [RewarderFactory](./arbitrum-42161/0x926477baf60c25857419cc9bf52e914881e1bdd3/) | arbitrum | [`0x926477...e1bdd3`](./arbitrum-42161/0x926477baf60c25857419cc9bf52e914881e1bdd3/) | ✅ Audited | Verified |
+| RewarderFactory | arbitrum | `0x926477...e1bdd3` | ✅ Audited | Verified |
 
 ## token (3)
 
@@ -163,7 +163,7 @@
 | UnnamedContract | arbitrum | `0xf30db0...162bf2` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xf403a6...527e7f` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xfc074b...d791a0` | ❓ Unverified | Unverified |
-| [USDs](./arbitrum-42161/0xd74f5255d557944cf7dd0e45ff521520002d5748/) | arbitrum | [`0xd74f52...2d5748`](./arbitrum-42161/0xd74f5255d557944cf7dd0e45ff521520002d5748/) | ✅ Audited | Verified |
+| USDs | arbitrum | `0xd74f52...2d5748` | ✅ Audited | Verified |
 | [USDsL2 (2 deployments)](./arbitrum-42161/0x2d715a14d0577964f9dd7956c9a369b26afa55dc/) | arbitrum | 2 deployments: arbitrum [`0x2d715a...fa55dc`](./arbitrum-42161/0x2d715a14d0577964f9dd7956c9a369b26afa55dc/); arbitrum `0xa78d7b...232f8c` | ✅ Audited | Verified |
 | [veSPA](./arbitrum-42161/0x2e2071180682ce6c247b1ef93d382d509f5f6a17/) | arbitrum | [`0x2e2071...5f6a17`](./arbitrum-42161/0x2e2071180682ce6c247b1ef93d382d509f5f6a17/) | ⚠️ Unaudited | Verified |
 | [veSPA_v1](./arbitrum-42161/0xd16f5343fddd2dcf6a8791e302a204c13069d165/) | arbitrum | [`0xd16f53...69d165`](./arbitrum-42161/0xd16f5343fddd2dcf6a8791e302a204c13069d165/) | ✅ Audited | Verified |

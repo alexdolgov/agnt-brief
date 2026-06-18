@@ -70,7 +70,7 @@
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | unknown | 0 | 15 | 2026-06-17 |
 | [aperocket](./aperocket/) | $36.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [apex-protocol](./apex-protocol/) | $35.2M | 0.0% | ? | active | 1 | 46 | 2026-06-17 |
-| [api3](./api3/) | $55.2M | 40.0% | $55.2M | active | 6 | 6 | 2026-06-17 |
+| [api3](./api3/) | $72.2M | 15.8% | $72.2M | unknown | 6 | 20 | 2026-06-18 |
 | [apollodao](./apollodao/) | $6.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aptin-finance](./aptin-finance/) | $14.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aqua-protocol](./aqua-protocol/) | $112.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -263,7 +263,7 @@
 | [clarity](./clarity/) | $308.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 7 | 9 | 2026-06-17 |
-| [clever](./clever/) | $1.7M | 25.0% | $10.6K | active | 3 | 16 | 2026-06-17 |
+| [clever](./clever/) | $1.7M | 19.0% | $10.6K | active | 3 | 22 | 2026-06-18 |
 | [clober](./clober/) | $516.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [coin8](./coin8/) | $45.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -823,7 +823,7 @@
 | [nodedao](./nodedao/) | $25.1M | 0.0% | ? | active | 5 | 4 | 2026-06-17 |
 | [nodeops](./nodeops/) | ? | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [nolus-protocol](./nolus-protocol/) | $509.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [nomiswap](./nomiswap/) | $1.4M | 16.7% | ? | declining | 1 | 46 | 2026-06-17 |
+| [nomiswap](./nomiswap/) | $1.4M | 28.6% | ? | declining | 1 | 7 | 2026-06-18 |
 | [nonkyc](./nonkyc/) | $5.4M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
 | [noon](./noon/) | $34.1M | 0.0% | ? | active | 5 | 23 | 2026-06-18 |
 | [nostra](./nostra/) | $5.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -1113,7 +1113,7 @@
 | [spartan](./spartan/) | $6.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [spectra](./spectra/) | $286.5 | 12.3% | ? | active | 7 | 90 | 2026-06-17 |
 | [spectrum-protocol](./spectrum-protocol/) | $8.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [sperax](./sperax/) | $13.2M | 48.6% | $1.6M | declining | 9 | 133 | 2026-06-17 |
+| [sperax](./sperax/) | $13.2M | 33.3% | $1.6M | declining | 9 | 10 | 2026-06-18 |
 | [sphere](./sphere/) | $229.1M | 0.0% | $229.1M | active | 0 | 11 | 2026-06-17 |
 | [spherium](./spherium/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [spice-protocol](./spice-protocol/) | $1.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1258,7 +1258,7 @@
 | [tower-dex](./tower-dex/) | $5.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [townsquare](./townsquare/) | $2.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |
 | [toxicdeer-finance](./toxicdeer-finance/) | $23.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [tranchess](./tranchess/) | $1.9K | 26.9% | $1.9K | dead | 9 | 100 | 2026-06-17 |
+| [tranchess](./tranchess/) | $1.9K | 18.4% | $1.9K | dead | 9 | 40 | 2026-06-18 |
 | [treehouse-protocol](./treehouse-protocol/) | $1.8M | 36.8% | $1.8M | declining | 20 | 20 | 2026-06-17 |
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $583.1M | 0.0% | $583.1M | transitioning | 0 | 29 | 2026-06-17 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "velodrome",
-  "generated_at": "2026-06-17T07:00:41.297Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T15:01:34.498Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "velodrome",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 80,
-    "total_audits": 6,
+    "total_audits": 8,
     "scoreable_audits": 3,
     "dl_tvl_usd": 33863451,
     "tvl_usd": 33863451,
@@ -55,7 +55,7 @@
       "fresh": 0,
       "aging": 1,
       "stale": 3,
-      "unknown": 2
+      "unknown": 3
     }
   },
   "topography": {
@@ -70,8 +70,8 @@
     "unknown_contracts": 0,
     "deployment_units": 5,
     "live_deployment_units": 3,
-    "dependencies_extracted": 43,
-    "unverified_dependencies": 6,
+    "dependencies_extracted": 17,
+    "unverified_dependencies": 1,
     "detected_codebases": [
       "uniswap-v2",
       "uniswap-v3"
@@ -128,7 +128,7 @@
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x838352f4e3992187a33a04826273db3992ee2b3f",
-      "deployment_unit": "unit-24875",
+      "deployment_unit": "unit-37763",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -144,7 +144,7 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x838352f4e3992187a33a04826273db3992ee2b3f",
-          "deployment_unit": "unit-24875",
+          "deployment_unit": "unit-37763",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -205,7 +205,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MixedRouteQuoterV1",
       "role": "periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -236,10 +236,10 @@
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
-      "deployment_unit": "unit-24874",
+      "deployment_unit": "unit-37762",
       "deployment_unit_proxy_count": 1,
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -252,7 +252,7 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
-          "deployment_unit": "unit-24874",
+          "deployment_unit": "unit-37762",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -273,10 +273,10 @@
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0xbb5dfe1380333cee4c2eebd7202c80de2256adf4",
-      "deployment_unit": "unit-24876",
+      "deployment_unit": "unit-37764",
       "deployment_unit_proxy_count": 1,
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -289,7 +289,7 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0xbb5dfe1380333cee4c2eebd7202c80de2256adf4",
-          "deployment_unit": "unit-24876",
+          "deployment_unit": "unit-37764",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -858,6 +858,48 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15416,
+      "audit_key": "audit-15416",
+      "report_name": "Active Bug Bounty Program",
+      "report_url": "https://immunefi.com/bug-bounty/velodromefinance/information",
+      "auditor": "Immunefi",
+      "audit_type": "bug_bounty",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15421,
+      "audit_key": "audit-15421",
+      "report_name": "ChainSecurity Extended Audit",
+      "report_url": "https://www.chainsecurity.com/security-audit/superchain-diff",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -880,16 +922,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0xff79ec912ba114fd7989b9a2b90c65f0c1b44722",
-      "name": "MixedRouteQuoterV1",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0x89d8218ed5ff1e46d8dcd33fb0bbee3be1621466",
       "name": "QuoterV2",
       "role": "periphery",
@@ -899,10 +931,10 @@
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 12,
     "upstream": 1,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -926,9 +958,17 @@
       {
         "audit_id": 3923,
         "report_name": "ChainSecurity Slipstream Audit"
+      },
+      {
+        "audit_id": 15421,
+        "report_name": "ChainSecurity Extended Audit"
       }
     ],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": {
+    "platform": "Immunefi",
+    "url": "https://immunefi.com/bug-bounty/velodromefinance/information",
+    "tier": 1
+  }
 }

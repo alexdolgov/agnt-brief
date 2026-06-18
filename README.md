@@ -31,7 +31,7 @@ Each project directory contains:
 | [inverse-finance](./inverse-finance/brief.md) | $34.42M | 5 | 64 | 64/64 (100%) | 12.5% | 7.8% (Code4rena, Sherlock) | 5 | fresh | ✅ active | $286.87M |
 | [mantra-dao](./mantra-dao/brief.md) | $1.60M | bsc, ethereum, polygon | 149 | 53/149 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $279.01M |
 | [dyorswap](./dyorswap/brief.md) | $1.68M | 7 | 47 | 5/47 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $270.03M |
-| [debridge](./debridge/brief.md) | $2.78M | 11 | 60 | 47/60 (78%) | 48.9% | 0.0% (-) | 13 | aging | ⚠️ declining | $263.88M |
+| [debridge](./debridge/brief.md) | $2.78M | 11 | 61 | 48/61 (79%) | 47.9% | 0.0% (-) | 13 | aging | ⚠️ declining | $263.88M |
 | [btcst](./btcst/brief.md) | $909.72K | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $263.69M |
 | [aethir](./aethir/brief.md) | $6.79M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $257.03M |
 | [symbiosis](./symbiosis/brief.md) | $8.54M | 7 | 48 | 38/48 (79%) | 47.4% | 34.2% (SlowMist) | 8 | fresh | ✅ active | $236.15M |
@@ -560,7 +560,7 @@ Each project directory contains:
 | [crown-finance](./crown-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cryptex-finance](./cryptex-finance/brief.md) | $631.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [csigma-finance](./csigma-finance/brief.md) | $12.66M | arbitrum, base, ethereum | 42 | 31/42 (74%) | 46.9% | 0.0% (-) | 2 | aging | ✅ active | - |
+| [csigma-finance](./csigma-finance/brief.md) | $12.66M | arbitrum, base, ethereum | 26 | 15/26 (58%) | 26.7% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [cvi-finance](./cvi-finance/brief.md) | $131.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cyberperp](./cyberperp/brief.md) | $26.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cyborgswap](./cyborgswap/brief.md) | $28.42K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T14:52:27.999Z_
+_Generated: 2026-06-18T15:09:35.317Z_
 _Projects: 1409_

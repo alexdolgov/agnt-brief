@@ -5,8 +5,8 @@
 - Project: Velodrome (`velodrome`)
 - Website: [https://velodrome.finance](https://velodrome.finance)
 - Lifecycle: active (Tier 0, 88.5% below peak)
-- Generated: 2026-06-17T07:00:41.297Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T15:01:34.498Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
 - Chains: optimism
 - Contract surface: 15 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $33,863,451.00
@@ -27,7 +27,7 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 - Excluded by liveness: 100 inactive, 4 singleton, 0 uninitialized.
 - Deployment units: 3/5 live.
 - Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 6/43.
+- Unverified dependencies: 1/17.
 
 ## Audit Coverage Summary
 
@@ -37,11 +37,12 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 - Unverified implementations: 0
 - Unique implementations: 15
 - Raw deployments: 16
-- Audits discovered: 6
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 3
+- Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/velodromefinance/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 2 unknown
+- Staleness: 0 fresh, 1 aging, 3 stale, 3 unknown
 - Tier 1 coverage: 80.0% (Sherlock, Spearbit)
 
 ### Auditor Coverage
@@ -59,8 +60,8 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 |---|---|---|---|---|---|
 | CLFactory | registry | optimism | n/a | [`0xcc0bdd...1cd12f`](./contracts/optimism-10/0xcc0bddb707055e04e497ab22a59c2af4391cd12f/) | ✅ Audited |
 | Minter | operational_periphery | optimism | n/a | [`0x6dc9e1...d10982`](./contracts/optimism-10/0x6dc9e1c04ee59ed3531d73a72256c0da46d10982/) | ✅ Audited |
-| NonfungiblePositionManager | operational_periphery | optimism | unit-24874 | [`0x416b43...dc6f29`](./contracts/optimism-10/0x416b433906b1b72fa758e166e239c43d68dc6f29/) | ✅ Audited |
-| NonfungiblePositionManager | operational_periphery | optimism | unit-24876 | [`0xbb5dfe...56adf4`](./contracts/optimism-10/0xbb5dfe1380333cee4c2eebd7202c80de2256adf4/) | ✅ Audited |
+| NonfungiblePositionManager | governance | optimism | unit-37762 | [`0x416b43...dc6f29`](./contracts/optimism-10/0x416b433906b1b72fa758e166e239c43d68dc6f29/) | ✅ Audited |
+| NonfungiblePositionManager | governance | optimism | unit-37764 | [`0xbb5dfe...56adf4`](./contracts/optimism-10/0xbb5dfe1380333cee4c2eebd7202c80de2256adf4/) | ✅ Audited |
 | RewardsDistributor | operational_periphery | optimism | n/a | [`0x9d4736...1ea99b`](./contracts/optimism-10/0x9d4736ec60715e71afe72973f7885dcbc21ea99b/) | ✅ Audited |
 | Router | adapter | optimism | n/a | [`0xa062ae...8b2858`](./contracts/optimism-10/0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858/) | ✅ Audited |
 | SinkManager | governance | optimism | n/a | [`0x5aee5f...abcdae`](./contracts/optimism-10/0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae/) | ✅ Audited |
@@ -74,7 +75,7 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeL2 | governance | optimism | unit-24875 | [`0x838352...ee2b3f`](./contracts/optimism-10/0x838352f4e3992187a33a04826273db3992ee2b3f/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | optimism | unit-37763 | [`0x838352...ee2b3f`](./contracts/optimism-10/0x838352f4e3992187a33a04826273db3992ee2b3f/) | ⚠️ Unaudited |
 | MixedRouteQuoterV1 | periphery | optimism | n/a | [`0xff79ec...b44722`](./contracts/optimism-10/0xff79ec912ba114fd7989b9a2b90c65f0c1b44722/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | optimism | n/a | [`0x89d821...621466`](./contracts/optimism-10/0x89d8218ed5ff1e46d8dcd33fb0bbee3be1621466/) | ⚠️ Unaudited |
 
@@ -106,6 +107,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [ChainSecurity Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-interoperability) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ChainSecurity Slipstream Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-slipstream) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Sherlock Audit](https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.11.13%20-%20Final%20-%20Velodrome.pdf) | Sherlock | Contest | 2024-10 | aging | Direct | contract_name | 1 | high |
+| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/velodromefinance/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| [ChainSecurity Extended Audit](https://www.chainsecurity.com/security-audit/superchain-diff) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,23 +116,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0xff79ec...b44722`](./contracts/optimism-10/0xff79ec912ba114fd7989b9a2b90c65f0c1b44722/) | MixedRouteQuoterV1 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x89d821...621466`](./contracts/optimism-10/0x89d8218ed5ff1e46d8dcd33fb0bbee3be1621466/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 12 |
 | upstream | 1 |
 | standard_library | 1 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2, medium=1
 - Match method counts: extraction_exact=55
@@ -139,5 +141,6 @@ Zero-match audit list:
 - [3918] Audit
 - [3921] ChainSecurity Audit
 - [3923] ChainSecurity Slipstream Audit
+- [15421] ChainSecurity Extended Audit
 
 Fork inheritance lineage and inherited audits are included when available.

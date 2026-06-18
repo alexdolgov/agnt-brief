@@ -293,7 +293,7 @@
 | [crown-finance](./crown-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cryptex-finance](./cryptex-finance/) | $631.4K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
-| [csigma-finance](./csigma-finance/) | $12.7M | 46.9% | ? | active | 3 | 42 | 2026-06-17 |
+| [csigma-finance](./csigma-finance/) | $12.7M | 26.7% | ? | active | 3 | 26 | 2026-06-18 |
 | [cvi-finance](./cvi-finance/) | $131.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [cyberperp](./cyberperp/) | $27.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cyborgswap](./cyborgswap/) | $28.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -308,7 +308,7 @@
 | [darkcrypto](./darkcrypto/) | $19.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [darkness](./darkness/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ddex](./ddex/) | $526.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [debridge](./debridge/) | $263.9M | 48.9% | $263.9M | declining | 32 | 60 | 2026-06-17 |
+| [debridge](./debridge/) | $263.9M | 47.9% | $263.9M | declining | 34 | 61 | 2026-06-18 |
 | [decentralized-euro](./decentralized-euro/) | $181.0M | 29.7% | $181.0M | active | 3 | 38 | 2026-06-18 |
 | [decibel](./decibel/) | $41.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-17 |
 | [deepbook](./deepbook/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -398,7 +398,7 @@
 | [etherflip](./etherflip/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [etherfuse](./etherfuse/) | $16.2K | 0.0% | $16.2K | active | 0 | 10 | 2026-06-17 |
 | [ethichub](./ethichub/) | $18.5M | 0.0% | $18.5M | active | 2 | 19 | 2026-06-17 |
-| [ethos](./ethos/) | $1.4M | 22.2% | ? | active | 2 | 14 | 2026-06-17 |
+| [ethos](./ethos/) | $1.4M | 22.2% | ? | active | 2 | 14 | 2026-06-18 |
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 0.0% | $1.6M | active | 2 | 21 | 2026-06-17 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 39 | 2026-06-17 |
@@ -558,7 +558,7 @@
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 6 | 2026-06-17 |
 | [immutable-zkevm](./immutable-zkevm/) | $25.1M | 0.0% | ? | active | 5 | 2 | 2026-06-18 |
 | [impermax-finance](./impermax-finance/) | $735.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
-| [inception](./inception/) | $62.5K | 66.7% | ? | declining | 9 | 12 | 2026-06-17 |
+| [inception](./inception/) | $62.5K | 66.7% | ? | declining | 11 | 12 | 2026-06-18 |
 | [index-coop](./index-coop/) | $19.6M | 12.5% | $19.6M | active | 7 | 41 | 2026-06-18 |
 | [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 110 | 2026-06-17 |
 | [infinite-trading-protocol](./infinite-trading-protocol/) | $429.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1313,7 +1313,7 @@
 | [vaulty-finance](./vaulty-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $828.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 10 | 2026-06-17 |
-| [velodrome](./velodrome/) | $33.9M | 80.0% | ? | active | 6 | 15 | 2026-06-17 |
+| [velodrome](./velodrome/) | $33.9M | 80.0% | ? | active | 8 | 15 | 2026-06-18 |
 | [velora](./velora/) | $248.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 62.5% | $95.2M | declining | 14 | 17 | 2026-06-18 |
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 44 | 2026-06-17 |

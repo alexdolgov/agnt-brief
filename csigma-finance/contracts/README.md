@@ -34,7 +34,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CsigmaPDNInvestmentNFT](./arbitrum-42161/0xad3f5b5a59f5b0d46b0bb629e22bd12f2e6f4e4b/) | arbitrum | [`0xad3f5b...6f4e4b`](./arbitrum-42161/0xad3f5b5a59f5b0d46b0bb629e22bd12f2e6f4e4b/) | ⚠️ Unaudited | Verified |
+| CsigmaPDNInvestmentNFT | arbitrum | `0xad3f5b...6f4e4b` | ⚠️ Unaudited | Verified |
 | [CsigmaPermissionedWithdrawalManager (3 deployments)](./ethereum-1/0x25f7e3b56bf360250f94307fb22aa9b8049dacb9/) | ethereum | 3 deployments: ethereum [`0x25f7e3...9dacb9`](./ethereum-1/0x25f7e3b56bf360250f94307fb22aa9b8049dacb9/); base `0x4c158b...9192dc`; arbitrum `0x5acb48...8153d1` | ⚠️ Unaudited | Verified |
 | [CsigmaV2WithdrawalManager (10 deployments)](./ethereum-1/0x2db11a6263c068d530ee8b82a25e715d463fc725/) | ethereum | 10 deployments: ethereum [`0x2db11a...3fc725`](./ethereum-1/0x2db11a6263c068d530ee8b82a25e715d463fc725/); ethereum `0x67db53...c45949`; base `0x6d7261...9345b2`; base `0x920296...56655e`; base `0xd055b4...031f38`; base `0xf1e475...5ff767`; arbitrum `0x4313b8...279c19`; arbitrum `0x71c492...e53110`; arbitrum `0xd2a0ab...5b0463`; arbitrum `0xdb2da1...efa661` | ⚠️ Unaudited | Verified |
 | [CsigmaV3WithdrawalManager (4 deployments)](./ethereum-1/0x5076d83e5e6c750f783f8cd9990ea0508d29a73f/) | ethereum | 4 deployments: ethereum [`0x5076d8...29a73f`](./ethereum-1/0x5076d83e5e6c750f783f8cd9990ea0508d29a73f/); ethereum `0x9264fe...fe73d4`; ethereum `0x9d6812...1a0c2e`; ethereum `0xa3a8cb...966906` | ⚠️ Unaudited | Verified |
@@ -50,9 +50,9 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CsigmaPDN](./arbitrum-42161/0x53162ec0adae49f21515bb8ca91534dd3872c8db/) | arbitrum | [`0x53162e...72c8db`](./arbitrum-42161/0x53162ec0adae49f21515bb8ca91534dd3872c8db/) | ⚠️ Unaudited | Verified |
-| [CsigmaPDNv1_1 (3 deployments)](./arbitrum-42161/0x2a4eb45a52ebcae4ab62959088ca1c7c0a6e817d/) | arbitrum | 3 deployments: arbitrum [`0x2a4eb4...6e817d`](./arbitrum-42161/0x2a4eb45a52ebcae4ab62959088ca1c7c0a6e817d/); arbitrum `0x447683...8172cc`; arbitrum `0x85e700...534e17` | ⚠️ Unaudited | Verified |
-| CsigmaPDNv1_1 | arbitrum | `0x67a1fc...5b1395` | ⚠️ Unaudited | Verified |
+| CsigmaPDN | arbitrum | `0x53162e...72c8db` | ⚠️ Unaudited | Verified |
+| CsigmaPDNv1_1 (3 deployments) | arbitrum | 3 deployments: arbitrum `0x2a4eb4...6e817d`; arbitrum `0x447683...8172cc`; arbitrum `0x85e700...534e17` | ⚠️ Unaudited | Verified |
+| [CsigmaPDNv1_1](./arbitrum-42161/0x67a1fc35961dd0e293bb4481b48491adf95b1395/) | arbitrum | [`0x67a1fc...5b1395`](./arbitrum-42161/0x67a1fc35961dd0e293bb4481b48491adf95b1395/) | ⚠️ Unaudited | Verified |
 | [Diamond](./ethereum-1/0x2cbf4af96019f29ddc61438d20b11c77f3620235/) | ethereum | [`0x2cbf4a...620235`](./ethereum-1/0x2cbf4af96019f29ddc61438d20b11c77f3620235/) | ⚠️ Unaudited | Verified |
 | [DiamondCutFacet (3 deployments)](./ethereum-1/0x3f62228db89af0f05e6baa2e27a276635cc80ebd/) | ethereum | 3 deployments: ethereum [`0x3f6222...c80ebd`](./ethereum-1/0x3f62228db89af0f05e6baa2e27a276635cc80ebd/); base `0xbe08d0...4cd8c8`; arbitrum `0xbe08d0...4cd8c8` | ✅ Audited | Verified |
 | [DiamondInit (3 deployments)](./ethereum-1/0x7fa7015f2859160db9311a924e8ce08b86314a8d/) | ethereum | 3 deployments: ethereum [`0x7fa701...314a8d`](./ethereum-1/0x7fa7015f2859160db9311a924e8ce08b86314a8d/); base `0x8a03b6...c3eac2`; arbitrum `0x8a03b6...c3eac2` | ⚠️ Unaudited | Verified |

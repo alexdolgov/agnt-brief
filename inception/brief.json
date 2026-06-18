@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "inception",
-  "generated_at": "2026-06-17T07:00:40.470Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T15:06:25.796Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "inception",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 66.7,
-    "total_audits": 9,
+    "total_audits": 11,
     "scoreable_audits": 2,
     "dl_tvl_usd": 4625094,
     "tvl_usd": 62530.42219611196,
@@ -74,7 +74,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 3,
-      "stale": 6,
+      "stale": 8,
       "unknown": 0
     }
   },
@@ -82,16 +82,16 @@
     "project_purpose": "Inception is a liquid restaking protocol for Ethereum-based assets that allows users to deposit into Inception-controlled vault and restaking contracts and receive liquid restaking tokens representing their positions. External third-party vault systems such as Amphor should be treated as integrations or out-of-scope infrastructure unless separate ownership evidence is provided.",
     "relationship_narrative": "The Inception family issues LRTs that are used across the protocol, while InceptionLRT and Amphor provide vault strategies that may utilize these tokens. The Ethereum family supplies rate providers and a bridge that connect the multi-chain deployments, enabling cross-chain restaking and yield aggregation.",
     "product_family_count": 11,
-    "total_contracts_indexed": 290,
+    "total_contracts_indexed": 265,
     "live_contracts": 16,
-    "inactive_contracts": 130,
-    "singleton_contracts": 140,
+    "inactive_contracts": 116,
+    "singleton_contracts": 129,
     "uninitialized_contracts": 0,
     "unknown_contracts": 4,
     "deployment_units": 59,
     "live_deployment_units": 4,
-    "dependencies_extracted": 27,
-    "unverified_dependencies": 4,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -112,8 +112,8 @@
       "deployment_unit_proxy_count": null,
       "name": "XERC20",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "xerc20",
       "product_line": "Inception",
       "tvl_usd": 62530.42219611196,
       "is_proxy": false,
@@ -226,8 +226,8 @@
       "deployment_unit_proxy_count": null,
       "name": "AmphorVaultWithPermit",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "amphor",
       "product_line": "Amphor",
       "tvl_usd": null,
       "is_proxy": false,
@@ -257,7 +257,7 @@
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-      "deployment_unit": "unit-24655",
+      "deployment_unit": "unit-37810",
       "deployment_unit_proxy_count": 1,
       "name": "InceptionBridge",
       "role": "operational_periphery",
@@ -273,7 +273,7 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-          "deployment_unit": "unit-24655",
+          "deployment_unit": "unit-37810",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -295,7 +295,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-      "deployment_unit": "unit-24657",
+      "deployment_unit": "unit-37812",
       "deployment_unit_proxy_count": 1,
       "name": "InceptionBridge",
       "role": "operational_periphery",
@@ -311,7 +311,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-          "deployment_unit": "unit-24657",
+          "deployment_unit": "unit-37812",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -333,7 +333,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-      "deployment_unit": "unit-24663",
+      "deployment_unit": "unit-37818",
       "deployment_unit_proxy_count": 1,
       "name": "InceptionBridge",
       "role": "operational_periphery",
@@ -349,7 +349,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xc00cd5599f7e128fc5ed5563147a45b12e83b3ac",
-          "deployment_unit": "unit-24663",
+          "deployment_unit": "unit-37818",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -413,8 +413,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Silo",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "silo-finance",
       "product_line": "Amphor",
       "tvl_usd": null,
       "is_proxy": false,
@@ -494,7 +494,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Inception",
       "tvl_usd": null,
@@ -595,7 +595,7 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xb2b446386633c6746b0a2735fb57edbb066c5878",
-      "deployment_unit": "unit-24656",
+      "deployment_unit": "unit-37811",
       "deployment_unit_proxy_count": 1,
       "name": "XERC20",
       "role": "token",
@@ -611,7 +611,7 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xb2b446386633c6746b0a2735fb57edbb066c5878",
-          "deployment_unit": "unit-24656",
+          "deployment_unit": "unit-37811",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -827,6 +827,48 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15428,
+      "audit_key": "audit-15428",
+      "report_name": "Salus_final_report.pdf",
+      "report_url": "https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Salus_final_report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15429,
+      "audit_key": "audit-15429",
+      "report_name": "Bailsec_final_report.pdf",
+      "report_url": "https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Bailsec_final_report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -845,27 +887,16 @@
       "latest_audit": "2025-03"
     }
   ],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x920f17e741029d904936c58a545dffc72f82c079",
-      "name": "AmphorVaultWithPermit",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 5,
-    "upstream": 0,
-    "standard_library": 5,
-    "needs_review": 2
+    "native": 4,
+    "upstream": 2,
+    "standard_library": 6,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 209
+      "extraction_exact": 211
     },
     "extraction_confidence_counts": {
       "high": 2
@@ -900,6 +931,14 @@
       {
         "audit_id": 2408,
         "report_name": "VAR_GenesisLRT_231221-V1.pdf"
+      },
+      {
+        "audit_id": 15428,
+        "report_name": "Salus_final_report.pdf"
+      },
+      {
+        "audit_id": 15429,
+        "report_name": "Bailsec_final_report.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meta-pool",
-  "generated_at": "2026-06-17T07:00:35.701Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T11:30:26.908Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "meta-pool",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 55.188962671609985
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 12,
-    "unique_implementations": 12,
-    "total_deployments": 12,
-    "audited_contracts": 0,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "total_contracts": 17,
+    "total_addresses": 19,
+    "unique_implementations": 17,
+    "total_deployments": 19,
+    "audited_contracts": 3,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 10,
-    "coverage_pct": 0,
-    "total_audits": 3,
-    "scoreable_audits": 0,
+    "contracts_unverified": 11,
+    "coverage_pct": 50,
+    "total_audits": 6,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 69744030,
     "tvl_usd": 3963969.9385770895,
     "tvl_source": "on_chain",
@@ -55,28 +55,28 @@
       "fresh": 0,
       "aging": 0,
       "stale": 3,
-      "unknown": 0
+      "unknown": 3
     }
   },
   "topography": {
     "project_purpose": "Meta Pool is a multi-chain liquid staking DAO and product suite with validator infrastructure, governance, and incubator activity. The protocol has major activity on NEAR and Ethereum, with additional products on Solana, Story, Aurora, and other supported networks. Any analysis limited to Ethereum and Aurora contracts should be presented as partial EVM coverage, not as protocol-wide coverage.",
     "relationship_narrative": "The Meta Pool family provides shared governance (MpDaoToken, VotingPowerV1) and proxy infrastructure (ProxyAdmin, GnosisSafeProxy) used across all product lines. Meta Pool ETH and Meta Pool Near are chain-specific extensions that rely on the core liquid staking logic and token standards from the main family.",
     "product_family_count": 3,
-    "total_contracts_indexed": 65,
-    "live_contracts": 10,
-    "inactive_contracts": 43,
+    "total_contracts_indexed": 57,
+    "live_contracts": 0,
+    "inactive_contracts": 28,
     "singleton_contracts": 10,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 2,
+    "unknown_contracts": 19,
     "deployment_units": 6,
-    "live_deployment_units": 1,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
-    "has_non_token_contracts": false,
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -123,7 +123,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x24d9664ba8384d94499d6698ab285b69e879d971",
-      "deployment_unit": "unit-21486",
+      "deployment_unit": "unit-36401",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafe",
       "role": "governance",
@@ -139,7 +139,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x24d9664ba8384d94499d6698ab285b69e879d971",
-          "deployment_unit": "unit-21486",
+          "deployment_unit": "unit-36401",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -153,6 +153,137 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xaba64e88f55c769d46c17beb4c70fde62d37513c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LiquidUnstakePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidUnstakePool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaba64e88f55c769d46c17beb4c70fde62d37513c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcadd976ae3a04352b4ab28865af07ad2c366d675",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4896"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x806f870ee04a2cc8bf2ad053baa5ed9999a1f182",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Meta Pool",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x806f870ee04a2cc8bf2ad053baa5ed9999a1f182",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3747484567119592ff6841df399cf679955a111a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Staking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Staking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3747484567119592ff6841df399cf679955a111a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb112841c67d94d9536d356631224340e2ef27b39",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4896"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -402,6 +533,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xfbb18ed0db241eb750e472e139b74a39cc551a02",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Meta Pool",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfbb18ed0db241eb750e472e139b74a39cc551a02",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xfe394b5407599e30264b80ac7401c02915ee2106",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -503,6 +669,43 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe3355fbbf8b85ebce83c5e9e846818b82b833cd9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Withdrawal",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Withdrawal",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe3355fbbf8b85ebce83c5e9e846818b82b833cd9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4896"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -562,6 +765,78 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
+      "extracted_names": [
+        "AuroraStaking",
+        "Depositor",
+        "LiquidUnstakePool",
+        "LiquidityPool",
+        "StakedAuroraVault",
+        "Staking",
+        "StakingManager",
+        "Withdrawal"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15257,
+      "audit_key": "audit-15257",
+      "report_name": "DL audit link",
+      "report_url": "https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FUMkSZziqO0AyoCGzxE7D%2Ftpyrced_blocksec_metapool_restaking_v1.0-signed.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15258,
+      "audit_key": "audit-15258",
+      "report_name": "DL audit link",
+      "report_url": "https://370551154-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MkhZe3MGAhTcvTLTzJF-887967055%2Fuploads%2FBnkI1s1NHp6rjw4vBsZo%2FBlocksec_Audit_2.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15259,
+      "audit_key": "audit-15259",
+      "report_name": "DL audit link",
+      "report_url": "https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FOaz0PbKGiCBzBI2hKZcv%2FNM_0434_METAPOOL_FINAL.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -570,7 +845,15 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 50,
+      "latest_audit": "2024-06"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -584,16 +867,18 @@
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 4,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 10
+    "standard_library": 2,
+    "needs_review": 11
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 19
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -606,8 +891,16 @@
         "report_name": "2024-06 Blocksec Audit.pdf"
       },
       {
-        "audit_id": 4896,
-        "report_name": "MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf"
+        "audit_id": 15257,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15258,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15259,
+        "report_name": "DL audit link"
       }
     ],
     "inherited_remapped_matches": []

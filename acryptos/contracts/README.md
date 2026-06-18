@@ -17,13 +17,13 @@
 | [StrategyACryptoSMdxV3 (2 deployments)](./bsc-56/0x24a87b844fa46008442186f1362a8123b0ada317/) | bsc | 2 deployments: bsc [`0x24a87b...ada317`](./bsc-56/0x24a87b844fa46008442186f1362a8123b0ada317/); bsc `0xe8b2e9...7d2a96` | ⚠️ Unaudited | Verified |
 | [StrategyACryptoSVenusLeverageBnb](./bsc-56/0x3b5b3640096a5381e7378a013069c4ef925d78ec/) | bsc | [`0x3b5b36...5d78ec`](./bsc-56/0x3b5b3640096a5381e7378a013069c4ef925d78ec/) | ✅ Audited | Verified |
 | [StrategyACryptoSVenusVaiV2](./bsc-56/0x20d1d365834852f1fea2dfacd5121935f88a6f78/) | bsc | [`0x20d1d3...8a6f78`](./bsc-56/0x20d1d365834852f1fea2dfacd5121935f88a6f78/) | ⚠️ Unaudited | Verified |
-| [Vault](./bsc-56/0xa82f327bbbf0667356d2935c6532d164b06ceced/) | bsc | [`0xa82f32...6ceced`](./bsc-56/0xa82f327bbbf0667356d2935c6532d164b06ceced/) | ⚠️ Unaudited | Verified |
+| Vault | bsc | `0xa82f32...6ceced` | ⚠️ Unaudited | Verified |
 
 ## registry (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [WeightedPoolFactory](./bsc-56/0xb7238020c331e8cdfd26db299cfd2076df812e6f/) | bsc | [`0xb72380...812e6f`](./bsc-56/0xb7238020c331e8cdfd26db299cfd2076df812e6f/) | ⚠️ Unaudited | Verified |
+| WeightedPoolFactory | bsc | `0xb72380...812e6f` | ⚠️ Unaudited | Verified |
 
 ## unknown (6)
 

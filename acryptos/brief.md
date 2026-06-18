@@ -5,43 +5,50 @@
 - Project: ACryptoS (`acryptos`)
 - Website: [https://www.acryptos.com/](https://www.acryptos.com/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:47.458Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: bsc
-- Contract surface: 19 unique implementations (116 raw deployments)
+- Generated: 2026-06-18T11:49:15.326Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Chains: arbitrum, base, bsc
+- Contract surface: 19 unique implementations (120 raw deployments)
 - DeFi Llama TVL: $10,552,177.58
-- On-chain TVL (included contracts): $5,026,578.83
-- TVL by chain: Bsc $5,026,578.83
+- On-chain TVL (included contracts): $5,436,812.44
+- TVL by chain: Bsc $5,436,812.44
+
+## Project Description
+
+ACryptoS is a multi-chain yield optimization protocol that offers automated vaults and farming strategies. Users deposit assets into vaults which execute complex yield farming strategies, including leveraged positions on external protocols like Venus, to maximize returns. The protocol also features governance tokens (ACS, ACSI) and a MasterChef-style farm for reward distribution.
+
+### Architecture
+
+Vaults and farming contracts share governance infrastructure (Controller, Timelock) and proxy patterns (AdminUpgradeabilityProxy, ERC1967Proxy). Vault strategies often deposit into external protocols and may stake receipt tokens in MasterChef farms to earn ACS/ACSI rewards, creating a yield compounding loop.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 676; live-surface contracts included: 116 (116 live, 0 unknown).
-- Excluded by liveness: 438 inactive, 122 singleton, 0 uninitialized.
-- Deployment units: 0/46 live.
-- Detected codebases: aave-v2, balancer-v2, compound-v2
-- Unverified dependencies: 3/12.
+- Indexed contracts: 678; live-surface contracts included: 120 (120 live, 0 unknown).
+- Excluded by liveness: 436 inactive, 122 singleton, 0 uninitialized.
+- Deployment units: 2/49 live.
+- Detected codebases: balancer-v2
+- Unverified dependencies: 1/7.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 8/17 (47.1%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 8/15 (53.3%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
-- Unverified implementations: 2
+- Unverified implementations: 4
 - Unique implementations: 19
-- Raw deployments: 116
-- Audits discovered: 7
+- Raw deployments: 120
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $85,692.62
 - Latest audit: 2021-11 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 6 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hacken | Tier 2 | 7 | 41.2% | 2021-11 |
-| unknown | Tier 2 | 4 | 23.5% | 2021-01 |
+| Hacken | Tier 2 | 8 | 53.3% | 2021-11 |
 
 ## Contract Surface
 
@@ -58,7 +65,7 @@
 | MasterChef | unknown | bsc | n/a | [`0xeae142...9d0bed`](./contracts/bsc-56/0xeae1425d8ed46554bf56968960e2e567b49d0bed/) | ✅ Audited |
 | StrategyACryptoSVenusLeverageBnb | core_logic | bsc | n/a | [`0x3b5b36...5d78ec`](./contracts/bsc-56/0x3b5b3640096a5381e7378a013069c4ef925d78ec/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -68,9 +75,7 @@
 | StrategyACryptoSAtlantisLeverageBnbV5 | core_logic | bsc | n/a | [`0xb918b4...aee9fa`](./contracts/bsc-56/0xb918b4609462c13272fbf9ba48cb71cf35aee9fa/) | ⚠️ Unaudited |
 | StrategyACryptoSDsg | core_logic | bsc | n/a | [`0x02bd61...51e6f9`](./contracts/bsc-56/0x02bd617fbce209d974d545fa06236aec3651e6f9/) | ⚠️ Unaudited |
 | StrategyACryptoSVenusVaiV2 | core_logic | bsc | n/a | [`0x20d1d3...8a6f78`](./contracts/bsc-56/0x20d1d365834852f1fea2dfacd5121935f88a6f78/) | ⚠️ Unaudited |
-| Vault | core_logic | bsc | n/a | [`0xa82f32...6ceced`](./contracts/bsc-56/0xa82f327bbbf0667356d2935c6532d164b06ceced/) | ⚠️ Unaudited |
 | Vyper_contract | unknown | bsc | n/a | 9 deployments: bsc [`0x191409...8a191e`](./contracts/bsc-56/0x191409d5a4effe25b0f4240557ba2192d18a191e/); bsc `0x38b28b...809ac7`; bsc `0x391987...a4f958`; bsc `0x494403...f02b28`; bsc `0x83d69e...71f29b`; bsc `0x9e31f4...606b98`; bsc `0xb3f0c9...59b0ac`; bsc `0xd3debe...23301b`; bsc `0xeb7dc7...1ea5ad` | ⚠️ Unaudited |
-| WeightedPoolFactory | registry | bsc | n/a | [`0xb72380...812e6f`](./contracts/bsc-56/0xb7238020c331e8cdfd26db299cfd2076df812e6f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,12 +89,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| Proxy (impl: 0x3e499ebd1aa75415d6ba26f3ffa08ae649b6db0a) | proxy | arbitrum | unit-36705 (5 proxies) | 5 deployments: arbitrum `0x05aa42...7004ed`; arbitrum `0x4405bc...7fb938`; arbitrum `0x5fddfe...38328e`; arbitrum `0x8aa74a...adfc84`; arbitrum `0xdfafee...82873b` | ❓ Unverified |
+| Proxy (impl: 0xc80ed325f6471d39f03b3acd1ed38dfd3a0972d7) | proxy | base | unit-36704 | `0x07667a...8bc6da` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x3aa07f...fbf9a0` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x844cb6...fe68bc` | ❓ Unverified |
 
@@ -98,33 +105,41 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [README.md](https://github.com/acryptos/docs.acryptos.com/blob/master/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [20210128-defiyield.info.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210128-defiyield.info.pdf) | unknown | Audit | 2021-01 | stale | Direct | contract_name | 4 | high |
+| [20210128-defiyield.info.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210128-defiyield.info.pdf) | Hacken | Audit | 2021-01 | stale | Direct | contract_name | 4 | high |
 | [20210218-Hacken-ACryptoSFarmV2.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210218-Hacken-ACryptoSFarmV2.pdf) | Hacken | Audit | 2021-02 | stale | Direct | n/a | 0 | n/a |
 | [20210324-Certik-StrategyACryptoSCakeTokenTokenV2.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210324-Certik-StrategyACryptoSCakeTokenTokenV2.pdf) | CertiK | Audit | 2021-03 | stale | Direct | contract_name | 0 | n/a |
 | [20210331-Hacken-Complete.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210331-Hacken-Complete.pdf) | Hacken | Audit | 2021-03 | stale | Direct | contract_name | 94 | high |
 | [20211105-Hacken-AcsiFinance-BalancerV2.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20211105-Hacken-AcsiFinance-BalancerV2.pdf) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20211116-Hacken-Review.pdf](https://github.com/acryptos/acryptos-protocol/blob/main/audits/20211116-Hacken-Review.pdf) | Hacken | Audit | 2021-11 | stale | Direct | contract_name | 93 | high |
+| [**1**](https://skynet.certik.com/projects/acryptos) | CertiK | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | [`0x8045db...1bdf51`](./contracts/bsc-56/0x8045db83f60fe9fc8eb67593140eeeb4a71bdf51/) | StrategyACryptoS0V6_ACSI | core_logic | $85,692.51 | Verified native implementation with $85,692.51 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2aa23d...9354c5`](./contracts/bsc-56/0x2aa23d513e9a9e6bd22862debb66161ab49354c5/) | StrategyACryptoSBsw | core_logic | $0.11 | Verified native implementation with $0.11 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x24a87b...ada317`](./contracts/bsc-56/0x24a87b844fa46008442186f1362a8123b0ada317/) | StrategyACryptoSMdxV3 | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb918b4...aee9fa`](./contracts/bsc-56/0xb918b4609462c13272fbf9ba48cb71cf35aee9fa/) | StrategyACryptoSAtlantisLeverageBnbV5 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x02bd61...51e6f9`](./contracts/bsc-56/0x02bd617fbce209d974d545fa06236aec3651e6f9/) | StrategyACryptoSDsg | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x20d1d3...8a6f78`](./contracts/bsc-56/0x20d1d365834852f1fea2dfacd5121935f88a6f78/) | StrategyACryptoSVenusVaiV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 14 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 19 |
+| standard_library | 1 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=402
@@ -135,5 +150,6 @@ Zero-match audit list:
 - [9666] 20210218-Hacken-ACryptoSFarmV2.pdf
 - [9667] 20210324-Certik-StrategyACryptoSCakeTokenTokenV2.pdf
 - [9669] 20211105-Hacken-AcsiFinance-BalancerV2.pdf
+- [15288] **1**
 
 Fork inheritance lineage and inherited audits are included when available.

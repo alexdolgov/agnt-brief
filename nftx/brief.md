@@ -7,8 +7,8 @@
 - Project: NFTX (`nftx`)
 - Website: [https://nftx.io](https://nftx.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:43.595Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T11:34:44.014Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: arbitrum, ethereum
 - Contract surface: 51 unique implementations (73 raw deployments)
 - DeFi Llama TVL: $1,239,151.27
@@ -29,7 +29,7 @@ Vaults mint ERC-20 tokens that are used across staking and marketplace families;
 - Excluded by liveness: 292 inactive, 66 singleton, 0 uninitialized.
 - Deployment units: 5/44 live.
 - Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 9/120.
+- Unverified dependencies: 4/66.
 
 ## Audit Coverage Summary
 
@@ -65,7 +65,7 @@ Vaults mint ERC-20 tokens that are used across staking and marketplace families;
 | NFTXVaultUpgradeable | core_logic | ethereum | n/a | [`0x36b799...7d321c`](./contracts/ethereum-1/0x36b799160cdc2d9809d108224d1967cc9b7d321c/) | ✅ Audited |
 | TimelockRewardDistributionTokenImpl | governance | ethereum | n/a | [`0xfda2d4...a55ec0`](./contracts/ethereum-1/0xfda2d4ea96ae4c6c21b34ec4e607576163a55ec0/) | ✅ Audited |
 | XStore | unknown | ethereum | n/a | [`0xbe5473...92e7b7`](./contracts/ethereum-1/0xbe54738723cea167a76ad5421b50caa49692e7b7/) | ✅ Audited |
-| XTokenUpgradeable | token | ethereum | unit-26724 | [`0x08765c...dd76fb`](./contracts/ethereum-1/0x08765c76c758da951dc73d3a8863b34752dd76fb/) | ✅ Audited |
+| XTokenUpgradeable | token | ethereum | unit-36457 | [`0x08765c...dd76fb`](./contracts/ethereum-1/0x08765c76c758da951dc73d3a8863b34752dd76fb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (44)
 
@@ -73,10 +73,10 @@ Vaults mint ERC-20 tokens that are used across staking and marketplace families;
 |---|---|---|---|---|---|
 | MiniMeToken | token | ethereum | n/a | [`0x87d73e...47f776`](./contracts/ethereum-1/0x87d73e916d7057945c9bcd8cdd94e42a6f47f776/) | ⚠️ Unaudited |
 | XToken | token | ethereum | n/a | 13 deployments: ethereum [`0x0fe629...a48a3f`](./contracts/ethereum-1/0x0fe629d1e84e171f8ff0c1ded2cc2221caa48a3f/); ethereum `0x1aa177...1df428`; ethereum `0x49706a...2ded4d`; ethereum `0x4acc9c...333f58`; ethereum `0x59a82f...fe1769`; ethereum `0x69bbe2...786385`; ethereum `0x8712a5...cdf7b6`; ethereum `0x9cea2e...a61ea5`; ethereum `0xab9c92...4403c8`; ethereum `0xaba49d...70536e`; ethereum `0xb5a093...1ae32d`; ethereum `0xc4bf60...354849`; ethereum `0xf18ade...4a3a74` | ⚠️ Unaudited |
-| TransformERC20Feature | token | ethereum | unit-26746 | [`0xdef1c0...b25eff`](./contracts/ethereum-1/0xdef1c0ded9bec7f1a1670819833240f027b25eff/) | ⚠️ Unaudited |
-| CErc20Delegate | token | ethereum | unit-26725 (5 proxies) | 5 deployments: ethereum [`0x1ba12a...435357`](./contracts/ethereum-1/0x1ba12ae1fcfadd08fa37db849ef4b6e11e435357/); ethereum `0x4333b4...fc4671`; ethereum `0x59304d...e134ca`; ethereum `0xd55c20...024232`; ethereum `0xf13206...581c6a` | ⚠️ Unaudited |
+| TransformERC20Feature | token | ethereum | unit-36479 | [`0xdef1c0...b25eff`](./contracts/ethereum-1/0xdef1c0ded9bec7f1a1670819833240f027b25eff/) | ⚠️ Unaudited |
+| CErc20Delegate | token | ethereum | unit-36458 (5 proxies) | 5 deployments: ethereum [`0x1ba12a...435357`](./contracts/ethereum-1/0x1ba12ae1fcfadd08fa37db849ef4b6e11e435357/); ethereum `0x4333b4...fc4671`; ethereum `0x59304d...e134ca`; ethereum `0xd55c20...024232`; ethereum `0xf13206...581c6a` | ⚠️ Unaudited |
 | NFTStaker | core_logic | ethereum | n/a | [`0xc5802b...3339af`](./contracts/ethereum-1/0xc5802bcf619301bdc6b1b9eda4b6fd26e63339af/) | ⚠️ Unaudited |
-| aeWETH | token | arbitrum | unit-26760 | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | ⚠️ Unaudited |
+| aeWETH | token | arbitrum | unit-36493 | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | ⚠️ Unaudited |
 | Autoglyphs | unknown | ethereum | n/a | [`0xd4e407...197782`](./contracts/ethereum-1/0xd4e4078ca3495de5b1d4db434bebc5a986197782/) | ⚠️ Unaudited |
 | BeaconProxy | registry | ethereum | n/a | [`0x03b1a9...e0af59`](./contracts/ethereum-1/0x03b1a9e8bc6cbe4beaeeac277a042a584fe0af59/) | ⚠️ Unaudited |
 | Blockmon | unknown | ethereum | n/a | [`0xaf4882...b33e15`](./contracts/ethereum-1/0xaf488234796ca27dba8ecf17f803ea1f4ab33e15/) | ⚠️ Unaudited |
@@ -108,7 +108,7 @@ Vaults mint ERC-20 tokens that are used across staking and marketplace families;
 | Salt | unknown | ethereum | n/a | [`0xc17030...342d93`](./contracts/ethereum-1/0xc17030798a6d6e1a76382cf8f439182eb0342d93/) | ⚠️ Unaudited |
 | SiringClockAuction | unknown | ethereum | n/a | [`0xc7af99...f27f26`](./contracts/ethereum-1/0xc7af99fe5513eb6710e6d5f44f9989da40f27f26/) | ⚠️ Unaudited |
 | SwapRouter | adapter | ethereum | n/a | [`0x1703f8...4277a3`](./contracts/ethereum-1/0x1703f8111b0e7a10e1d14f9073f53680d64277a3/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | arbitrum | unit-26753 | [`0x33b381...5b6702`](./contracts/arbitrum-42161/0x33b381e2e0c4adc1dbd388888e9a29079e5b6702/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | arbitrum | unit-36486 | [`0x33b381...5b6702`](./contracts/arbitrum-42161/0x33b381e2e0c4adc1dbd388888e9a29079e5b6702/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | ethereum | n/a | [`0x0463a0...99d332`](./contracts/ethereum-1/0x0463a06fbc8bf28b3f120cd1bfc59483f099d332/) | ⚠️ Unaudited |
 | UniversalRouter | adapter | ethereum | n/a | [`0x250d62...0cc90f`](./contracts/ethereum-1/0x250d62a67254a46c0de472d2c9215e1d890cc90f/) | ⚠️ Unaudited |
 | WETH9 | token | ethereum | n/a | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |

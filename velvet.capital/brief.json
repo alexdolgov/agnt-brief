@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "velvet.capital",
-  "generated_at": "2026-06-17T07:00:33.453Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T11:33:36.138Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "velvet.capital",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
     "coverage_pct": 62.5,
-    "total_audits": 13,
+    "total_audits": 14,
     "scoreable_audits": 4,
     "dl_tvl_usd": 6838670,
     "tvl_usd": 95216575.46552895,
@@ -64,7 +64,7 @@
     "latest_audit_date": "2025-07",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 1,
+      "fresh": 2,
       "aging": 2,
       "stale": 9,
       "unknown": 1
@@ -82,8 +82,8 @@
     "unknown_contracts": 0,
     "deployment_units": 49,
     "live_deployment_units": 0,
-    "dependencies_extracted": 8,
-    "unverified_dependencies": 5,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 1,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -138,7 +138,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "VaultProxy",
-      "role": "proxy",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Velvet V3",
@@ -1229,6 +1229,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15252,
+      "audit_key": "audit-15252",
+      "report_name": "report-cantinacode-velvet-0807 (2).pdf",
+      "report_url": "https://github.com/Velvet-Capital/audits/blob/main/report-cantinacode-velvet-0807%20(2).pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1256,7 +1277,7 @@
       "chain_name": "base",
       "address": "0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92",
       "name": "VaultProxy",
-      "role": "proxy",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": 6.0965136195178635,
       "risk_note": "Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
@@ -1270,7 +1291,7 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 375
+      "extraction_exact": 377
     },
     "extraction_confidence_counts": {
       "high": 3,
@@ -1314,6 +1335,10 @@
       {
         "audit_id": 3084,
         "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15252,
+        "report_name": "report-cantinacode-velvet-0807 (2).pdf"
       }
     ],
     "inherited_remapped_matches": []

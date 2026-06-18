@@ -7,8 +7,8 @@
 - Project: Velvet.Capital (`velvet.capital`)
 - Website: [https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b](https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:33.453Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T11:33:36.138Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: base, bsc, ethereum
 - Contract surface: 17 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $6,838,670.00
@@ -29,7 +29,7 @@ Both families share infrastructure such as ProtocolConfig and TokenRegistry cont
 - Excluded by liveness: 467 inactive, 129 singleton, 0 uninitialized.
 - Deployment units: 0/49 live.
 - Detected codebases: none
-- Unverified dependencies: 5/8.
+- Unverified dependencies: 1/3.
 
 ## Audit Coverage Summary
 
@@ -39,11 +39,11 @@ Both families share infrastructure such as ProtocolConfig and TokenRegistry cont
 - Unverified implementations: 9
 - Unique implementations: 17
 - Raw deployments: 28
-- Audits discovered: 13
+- Audits discovered: 14
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $95,216,575.47
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 2 aging, 9 stale, 1 unknown
+- Staleness: 2 fresh, 2 aging, 9 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $95,216,575.47 represents exposure in a protocol with declining activity.
 
@@ -70,7 +70,7 @@ Both families share infrastructure such as ProtocolConfig and TokenRegistry cont
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | VelvetToken | token | bsc | n/a | [`0x8b1943...8c1488`](./contracts/bsc-56/0x8b194370825e37b33373e74a41009161808c1488/) | ⚠️ Unaudited |
-| VaultProxy | proxy | base | n/a | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited |
+| VaultProxy | core_logic | base | n/a | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | base | n/a | [`0x8367ca...d148fa`](./contracts/base-8453/0x8367ca4b7cfe34610ecfb112b2881b2084d148fa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -118,6 +118,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [report.md](https://github.com/Velvet-Capital/audits/blob/main/report.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 7 | medium |
 | [PeckShield-Audit-Report-Velvet-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Velvet-v1.0.pdf) | PeckShield | Audit | 2022-08 | stale | Direct | contract_name | 0 | n/a |
 | [DL audit link](https://shellboxes.com/audit/reports/Velvet_Capital_Security_Audit_Report.pdf) | unknown | Audit | 2022-09 | stale | Direct | contract_name | 0 | n/a |
+| [report-cantinacode-velvet-0807 (2).pdf](https://github.com/Velvet-Capital/audits/blob/main/report-cantinacode-velvet-0807%20(2).pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -126,7 +127,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x8b1943...8c1488`](./contracts/bsc-56/0x8b194370825e37b33373e74a41009161808c1488/) | VelvetToken | token | $95,216,569.37 | Verified native implementation with $95,216,569.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | VaultProxy | proxy | $6.10 | Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | VaultProxy | core_logic | $6.10 | Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -141,10 +142,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3, medium=1
-- Match method counts: extraction_exact=375
+- Match method counts: extraction_exact=377
 
 Zero-match audit list:
 
@@ -157,5 +158,6 @@ Zero-match audit list:
 - [3081] report-cantinacode-velvet-0807-1.pdf
 - [3083] PeckShield-Audit-Report-Velvet-v1.0.pdf
 - [3084] DL audit link
+- [15252] report-cantinacode-velvet-0807 (2).pdf
 
 Fork inheritance lineage and inherited audits are included when available.

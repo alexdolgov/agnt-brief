@@ -40,7 +40,7 @@
 | [BeHYPETimelock](./hyperliquid-999/0xa24af73eadd17997eeedbed36672e996544d2de4/) | hyperliquid | [`0xa24af7...4d2de4`](./hyperliquid-999/0xa24af73eadd17997eeedbed36672e996544d2de4/) | ✅ Audited | Verified |
 | [MidasTimelockController](./hyperliquid-999/0x76613bddb3d89393b4bd70d6894b1c85f6c37d5f/) | hyperliquid | [`0x76613b...c37d5f`](./hyperliquid-999/0x76613bddb3d89393b4bd70d6894b1c85f6c37d5f/) | ⚠️ Unaudited | Verified |
 | [MultiRolesAuthority (40 deployments)](./hyperliquid-999/0x060690ec182a5a61f5cdfa0aefae058e04342312/) | hyperliquid | 40 deployments: hyperliquid [`0x060690...342312`](./hyperliquid-999/0x060690ec182a5a61f5cdfa0aefae058e04342312/); hyperliquid `0x164b7e...dccab0`; hyperliquid `0x16cc58...52bff9`; hyperliquid `0x1c9b0b...7d16b1`; hyperliquid `0x20790f...a0d156`; hyperliquid `0x2193fa...a903c9`; hyperliquid `0x22630f...f8630e`; hyperliquid `0x2cb0ec...c0fcdf`; hyperliquid `0x2e685e...9e9e09`; hyperliquid `0x304505...d56b10`; hyperliquid `0x342fb4...8c6fc1`; hyperliquid `0x36fad7...b28a5f`; hyperliquid `0x40f5b5...6cfc45`; hyperliquid `0x421d2d...f87c60`; hyperliquid `0x49943e...0d096c`; hyperliquid `0x4fe4ba...2ed10e`; hyperliquid `0x549baf...0713d9`; hyperliquid `0x54fff0...c35734`; hyperliquid `0x5a4015...1dadf1`; hyperliquid `0x614775...773160`; hyperliquid `0x621810...c0d6ba`; hyperliquid `0x6278d7...05099a`; hyperliquid `0x763ab4...bfa215`; hyperliquid `0x786108...42d523`; hyperliquid `0x79285f...7ae5b6`; hyperliquid `0x7b12a8...ff9fa2`; hyperliquid `0x829995...27c4eb`; hyperliquid `0x85717d...f8bad0`; hyperliquid `0x9cd4c8...665411`; hyperliquid `0xa105c5...9fef5e`; hyperliquid `0xa2321f...558280`; hyperliquid `0xa43bfa...b83597`; hyperliquid `0xa9d525...ba3275`; hyperliquid `0xb68a5b...3301b9`; hyperliquid `0xb7fc0b...5cb46f`; hyperliquid `0xd9b07f...b91a2a`; hyperliquid `0xe062f4...a265dc`; hyperliquid `0xf05dd2...fe00d2`; hyperliquid `0xf420df...7a9b47`; hyperliquid `0xf81795...c251cf` | ⚠️ Unaudited | Verified |
-| [MultiSigWalletWithDailyLimit](./hyperliquid-999/0x3e3a26f7b66e5b45f4c31d8718faf01dfa8cb005/) | hyperliquid | [`0x3e3a26...8cb005`](./hyperliquid-999/0x3e3a26f7b66e5b45f4c31d8718faf01dfa8cb005/) | ⚠️ Unaudited | Verified |
+| MultiSigWalletWithDailyLimit | hyperliquid | `0x3e3a26...8cb005` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (9)
 
@@ -145,4 +145,4 @@
 | UnnamedContract | hyperliquid | `0xefd734...8a16d2` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xf2530f...212da4` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xf8db00...dff888` | ❓ Unverified | Unverified |
-| [Wrapper](./ethereum-1/0x9d03bb2092270648d7480049d0e58d2fcf0e5123/) | ethereum | [`0x9d03bb...0e5123`](./ethereum-1/0x9d03bb2092270648d7480049d0e58d2fcf0e5123/) | ⚠️ Unaudited | Verified |
+| Wrapper | ethereum | `0x9d03bb...0e5123` | ⚠️ Unaudited | Verified |

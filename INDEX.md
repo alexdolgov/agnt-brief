@@ -21,7 +21,7 @@
 | [acet](./acet/) | $12.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [acre](./acre/) | $3.4M | 2.4% | ? | active | 6 | 54 | 2026-06-17 |
 | [across](./across/) | $27.7M | 13.4% | $9.1M | active | 11 | 104 | 2026-06-17 |
-| [acryptos](./acryptos/) | $5.0M | 47.1% | $85.7K | active | 7 | 19 | 2026-06-17 |
+| [acryptos](./acryptos/) | $5.4M | 53.3% | $85.7K | active | 8 | 19 | 2026-06-18 |
 | [aegis-markets](./aegis-markets/) | $24.2M | 0.0% | $24.2M | active | 2 | 16 | 2026-06-17 |
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
 | [aera](./aera/) | $132.6M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
@@ -540,7 +540,7 @@
 | [hurricaneswap](./hurricaneswap/) | $11.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hybra](./hybra/) | $1.6M | 0.0% | ? | active | 0 | 66 | 2026-06-17 |
 | [hyper-finance](./hyper-finance/) | $34.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [hyperbeat](./hyperbeat/) | $8.6M | 26.4% | $8.6M | active | 14 | 105 | 2026-06-17 |
+| [hyperbeat](./hyperbeat/) | $8.6M | 26.9% | $8.6M | active | 14 | 103 | 2026-06-18 |
 | [hyperbloom](./hyperbloom/) | $92.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.2M | 0.0% | ? | unknown | 8 | 0 | 2026-06-17 |
 | [hyperion](./hyperion/) | $11.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-17 |
@@ -726,7 +726,7 @@
 | [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
 | [meson](./meson/) | $491.4K | 20.0% | ? | active | 4 | 22 | 2026-06-17 |
-| [meta-pool](./meta-pool/) | $4.0M | 0.0% | $4.0M | active | 3 | 12 | 2026-06-17 |
+| [meta-pool](./meta-pool/) | $4.0M | 50.0% | $4.0M | active | 6 | 17 | 2026-06-18 |
 | [metadao](./metadao/) | $12.0M | 0.0% | ? | unknown | 10 | 0 | 2026-06-17 |
 | [metastable](./metastable/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [metastrike](./metastrike/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -816,7 +816,7 @@
 | [nexus-protocol](./nexus-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nf3-ape](./nf3-ape/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nftfi](./nftfi/) | $10.1K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
-| [nftx](./nftx/) | $6.1M | 12.0% | $6.1M | declining | 5 | 51 | 2026-06-17 |
+| [nftx](./nftx/) | $6.1M | 12.0% | $6.1M | declining | 5 | 51 | 2026-06-18 |
 | [nimbora](./nimbora/) | $338.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nirvana](./nirvana/) | $2.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nlx-protocol](./nlx-protocol/) | $760.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1315,7 +1315,7 @@
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 10 | 2026-06-17 |
 | [velodrome](./velodrome/) | $33.9M | 80.0% | ? | active | 6 | 15 | 2026-06-17 |
 | [velora](./velora/) | $248.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [velvet.capital](./velvet.capital/) | $95.2M | 62.5% | $95.2M | declining | 13 | 17 | 2026-06-17 |
+| [velvet.capital](./velvet.capital/) | $95.2M | 62.5% | $95.2M | declining | 14 | 17 | 2026-06-18 |
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 44 | 2026-06-17 |
 | [venombridge](./venombridge/) | $860.4K | 0.0% | ? | declining | 1 | 2 | 2026-06-14 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-17 |

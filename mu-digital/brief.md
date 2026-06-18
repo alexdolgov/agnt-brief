@@ -5,8 +5,8 @@
 - Project: Mu Digital (`mu-digital`)
 - Website: [https://mudigital.net](https://mudigital.net)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:41.781Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:34:41.742Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: ethereum
 - Contract surface: 7 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $21,576,768.10
@@ -27,7 +27,7 @@ The Protocol Contracts family relies on shared proxy infrastructure (ERC1967Prox
 - Excluded by liveness: 0 inactive, 28 singleton, 0 uninitialized.
 - Deployment units: 2/16 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -58,10 +58,10 @@ The Protocol Contracts family relies on shared proxy infrastructure (ERC1967Prox
 |---|---|---|---|---|---|
 | AccessManager | governance | ethereum | n/a | 4 deployments: ethereum [`0x4122ee...fc9184`](./contracts/ethereum-1/0x4122ee38cc344784ae1a7f11afa2cfa89cfc9184/); ethereum `0x43e117...4b426f`; ethereum `0x549b90...ba7fb6`; ethereum `0xc0f4f4...fc8f08` | ✅ Audited |
 | MuBOND | unknown | ethereum | n/a | [`0x8169e1...7c98ba`](./contracts/ethereum-1/0x8169e15aa5dfd4766b9fd5e247c7614e127c98ba/) | ✅ Audited |
-| MuBONDPriceFeed | operational_periphery | ethereum | unit-25395 | [`0xca5b9e...45a7a1`](./contracts/ethereum-1/0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1/) | ✅ Audited |
+| MuBONDPriceFeed | operational_periphery | ethereum | unit-39044 | [`0xca5b9e...45a7a1`](./contracts/ethereum-1/0xca5b9e561e3d94c8b3a90278d6e1752e8445a7a1/) | ✅ Audited |
 | MuBONDPriceFeed | operational_periphery | ethereum | n/a | [`0xdefb60...92ed70`](./contracts/ethereum-1/0xdefb60c6c3d46cf324c8fad8edb989c47192ed70/) | ✅ Audited |
 | PriceFeed | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x5588f4...88ed32`](./contracts/ethereum-1/0x5588f4090dfd88e0753a8ba2a08d639d7888ed32/); ethereum `0xd37453...3327bf` | ✅ Audited |
-| PriceFeed | operational_periphery | ethereum | unit-25396 | [`0xe200c4...cbc0a4`](./contracts/ethereum-1/0xe200c42374258c4c192f35e4beb5e489b0cbc0a4/) | ✅ Audited |
+| PriceFeed | operational_periphery | ethereum | unit-39045 | [`0xe200c4...cbc0a4`](./contracts/ethereum-1/0xe200c42374258c4c192f35e4beb5e489b0cbc0a4/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 

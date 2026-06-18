@@ -64,7 +64,7 @@
 | [ankr](./ankr/) | $162.3 | 0.0% | $32.8 | active | 14 | 17 | 2026-06-17 |
 | [antarctic](./antarctic/) | $10.0M | 0.0% | ? | active | 0 | 7 | 2026-06-17 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-17 |
-| [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 2 | 2026-06-17 |
+| [anvil](./anvil/) | $673.0K | 16.7% | ? | declining | 4 | 6 | 2026-06-18 |
 | [anzen-finance](./anzen-finance/) | $0.0 | 26.1% | $0.0 | declining | 6 | 26 | 2026-06-18 |
 | [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | unknown | 0 | 15 | 2026-06-17 |
@@ -108,7 +108,7 @@
 | [aurora-plus](./aurora-plus/) | $1.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-17 |
 | [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 11 | 2026-06-17 |
 | [autofinance](./autofinance/) | $155.4M | 0.0% | $155.4M | transitioning | 8 | 280 | 2026-06-17 |
-| [avalaunch](./avalaunch/) | $31.3M | 100.0% | ? | active | 13 | 7 | 2026-06-17 |
+| [avalaunch](./avalaunch/) | $31.3M | 57.1% | ? | active | 13 | 11 | 2026-06-18 |
 | [avalon-labs](./avalon-labs/) | $550.8M | 0.0% | ? | unknown | 19 | 0 | 2026-06-13 |
 | [avantis](./avantis/) | $151.5M | 80.0% | $150.9M | declining | 5 | 21 | 2026-06-18 |
 | [avely-finance](./avely-finance/) | $45.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
@@ -351,7 +351,7 @@
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 79 | 2026-06-17 |
 | [dogeclaw](./dogeclaw/) | $11.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
-| [domination-finance](./domination-finance/) | $1.3M | 60.0% | ? | active | 1 | 17 | 2026-06-17 |
+| [domination-finance](./domination-finance/) | $1.3M | 60.0% | ? | active | 1 | 17 | 2026-06-18 |
 | [dooar](./dooar/) | $4.5M | 0.0% | ? | active | 0 | 6 | 2026-06-17 |
 | [dot-dot-finance](./dot-dot-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [doubler](./doubler/) | $107.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -777,7 +777,7 @@
 | [movegpt](./movegpt/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [moveposition](./moveposition/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mr.-lightspeed-creator-coin](./mr.-lightspeed-creator-coin/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [mu-digital](./mu-digital/) | $21.6M | 85.7% | ? | active | 2 | 7 | 2026-06-17 |
+| [mu-digital](./mu-digital/) | $21.6M | 85.7% | ? | active | 2 | 7 | 2026-06-18 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
 | [multichain](./multichain/) | $12.3M | 71.4% | ? | dead | 16 | 7 | 2026-06-18 |
 | [mux-protocol](./mux-protocol/) | $0.2 | 24.3% | $0.2 | active | 4 | 161 | 2026-06-18 |
@@ -1100,7 +1100,7 @@
 | [sonic-gateway](./sonic-gateway/) | $45.4M | 0.0% | ? | declining | 2 | 3 | 2026-06-17 |
 | [sonic-market](./sonic-market/) | $3.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [sophon-bridge](./sophon-bridge/) | $39.1M | 0.0% | $39.1M | active | 8 | 10 | 2026-06-17 |
-| [sophon-farm](./sophon-farm/) | $5.5M | 0.0% | ? | unknown | 9 | 0 | 2026-06-17 |
+| [sophon-farm](./sophon-farm/) | $5.5M | 0.0% | ? | unknown | 9 | 0 | 2026-06-18 |
 | [sorare-bridge](./sorare-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 8 | 2026-06-17 |
 | [sorta-finance](./sorta-finance/) | $107.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sosovalue](./sosovalue/) | $89.1M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

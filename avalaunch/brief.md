@@ -5,10 +5,10 @@
 - Project: Avalaunch (`avalaunch`)
 - Website: [https://avalaunch.app](https://avalaunch.app)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:49.058Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:35:55.929Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: avalanche
-- Contract surface: 7 unique implementations (64 raw deployments)
+- Contract surface: 11 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $5,761,977.47
 - On-chain TVL (included contracts): $31,336,841.96
 - TVL by chain: Avalanche $31,336,841.96
@@ -23,20 +23,20 @@ The XavaToken is the central asset, used across AllocationStaking for launchpad 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 142; live-surface contracts included: 64 (64 live, 0 unknown).
-- Excluded by liveness: 66 inactive, 12 singleton, 0 uninitialized.
+- Indexed contracts: 151; live-surface contracts included: 71 (71 live, 0 unknown).
+- Excluded by liveness: 68 inactive, 12 singleton, 0 uninitialized.
 - Deployment units: 0/6 live.
-- Detected codebases: none
-- Dependencies extracted: 5; unverified dependencies: 0.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 14; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/4 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 4/7 (57.1%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 7
-- Raw deployments: 64
+- Unverified implementations: 4
+- Unique implementations: 11
+- Raw deployments: 71
 - Audits discovered: 13
 - Scoreable audits (matched contracts): 12
 - ASD (verified + unaudited TVL): n/a
@@ -48,11 +48,11 @@ The XavaToken is the central asset, used across AllocationStaking for launchpad 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CoinFabrik | Tier 2 | 4 | 100.0% | 2022-03 |
-| Paladin | Tier 2 | 3 | 75.0% | 2023-01 |
-| unknown | Tier 2 | 3 | 75.0% | 2022-01 |
-| CertiK | Tier 2 | 2 | 50.0% | 2021-05 |
-| HashEx | Tier 2 | 1 | 25.0% | 2021-09 |
+| CoinFabrik | Tier 2 | 4 | 57.1% | 2022-03 |
+| Paladin | Tier 2 | 3 | 42.9% | 2023-01 |
+| unknown | Tier 2 | 3 | 42.9% | 2022-01 |
+| CertiK | Tier 2 | 2 | 28.6% | 2021-05 |
+| HashEx | Tier 2 | 1 | 14.3% | 2021-09 |
 
 ## Contract Surface
 
@@ -65,9 +65,13 @@ The XavaToken is the central asset, used across AllocationStaking for launchpad 
 | FarmingXava | unknown | avalanche | n/a | 2 deployments: avalanche [`0x6e125b...3cc1ea`](./contracts/avalanche-43114/0x6e125b68f0f1963b09add1b755049e66f53cc1ea/); avalanche `0xe82aae...034a68` | ✅ Audited |
 | SalesFactory | registry | avalanche | n/a | [`0x2d37e5...5b0e2f`](./contracts/avalanche-43114/0x2d37e5d424cd24d374253e58e54ba8ee395b0e2f/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (3)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AvalaunchSale | unknown | avalanche | n/a | 2 deployments: avalanche [`0x16bc59...38665a`](./contracts/avalanche-43114/0x16bc59978851012ada4843e49df2a314ea38665a/); avalanche `0x6168bb...1871ff` | ⚠️ Unaudited |
+| AvalaunchSaleV2 | unknown | avalanche | n/a | 3 deployments: avalanche [`0x60d57f...35ec42`](./contracts/avalanche-43114/0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42/); avalanche `0xc354d8...cf35aa`; avalanche `0xeef28e...e8548b` | ⚠️ Unaudited |
+| PangolinPair | unknown | avalanche | n/a | [`0x42152b...5e8b25`](./contracts/avalanche-43114/0x42152bdd72de8d6767fe3b4e17a221d6985e8b25/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,13 +85,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | UnnamedContract | unknown | avalanche | n/a | `0x4f579b...d54332` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8498a1...06a967` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xb53e0f...e10d6a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xf73be8...8284ae` | ❓ Unverified |
 
@@ -113,14 +118,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| avalanche | [`0x16bc59...38665a`](./contracts/avalanche-43114/0x16bc59978851012ada4843e49df2a314ea38665a/) | AvalaunchSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x60d57f...35ec42`](./contracts/avalanche-43114/0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42/) | AvalaunchSaleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
-| upstream | 0 |
+| native | 9 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 1 |
 

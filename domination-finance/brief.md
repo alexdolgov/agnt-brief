@@ -5,8 +5,8 @@
 - Project: Domination Finance (`domination-finance`)
 - Website: [https://domination.finance](https://domination.finance)
 - Lifecycle: active (Tier 0, 54.9% below peak)
-- Generated: 2026-06-17T07:00:46.713Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:32:13.205Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: base, boba, polygon
 - Contract surface: 17 unique implementations (37 raw deployments)
 - DeFi Llama TVL: $1,285,125.19
@@ -23,7 +23,7 @@ The 'Contract Addresses' family provides the core trading engine and vaults, whi
 
 ## Contract Surface Quality
 
-- Indexed contracts: 112; live-surface contracts included: 37 (28 live, 9 unknown).
+- Indexed contracts: 112; live-surface contracts included: 37 (31 live, 6 unknown).
 - Excluded by liveness: 3 inactive, 72 singleton, 0 uninitialized.
 - Deployment units: 0/36 live.
 - Detected codebases: none

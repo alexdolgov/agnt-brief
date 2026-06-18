@@ -388,7 +388,7 @@ Each project directory contains:
 | [amy-finance](./amy-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [animal-farm](./animal-farm/brief.md) | $66.92K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [antarctic](./antarctic/brief.md) | $9.96M | arbitrum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [anvil](./anvil/brief.md) | $11.20M | ethereum | 2 | 2/2 (100%) | 100.0% | 100.0% (OpenZeppelin, Trail of Bits) | 3 | fresh | ⚠️ declining | - |
+| [anvil](./anvil/brief.md) | $11.20M | ethereum | 6 | 6/6 (100%) | 16.7% | 16.7% (OpenZeppelin) | 1 | fresh | ⚠️ declining | - |
 | [ao-bridge](./ao-bridge/brief.md) | $43.01M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aperocket](./aperocket/brief.md) | $36.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [apex-protocol](./apex-protocol/brief.md) | $35.17M | 4 | 46 | 32/46 (70%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -421,7 +421,7 @@ Each project directory contains:
 | [auro-finance](./auro-finance/brief.md) | $5.41K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aurora-plus](./aurora-plus/brief.md) | $1.68M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [autofarm](./autofarm/brief.md) | $5.60M | 9 | 11 | 3/11 (27%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [avalaunch](./avalaunch/brief.md) | $5.76M | avalanche | 7 | 4/7 (57%) | 100.0% | 0.0% (-) | 12 | stale | ✅ active | - |
+| [avalaunch](./avalaunch/brief.md) | $5.76M | avalanche | 11 | 7/11 (64%) | 57.1% | 0.0% (-) | 12 | stale | ✅ active | - |
 | [avalon-labs](./avalon-labs/brief.md) | $550.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [avely-finance](./avely-finance/brief.md) | $45.01K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [avnu](./avnu/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T20:27:43.408Z_
+_Generated: 2026-06-18T20:36:15.970Z_
 _Projects: 1409_

@@ -5,8 +5,8 @@
 - Project: Sophon Farm (`sophon-farm`)
 - Website: [https://farm.sophon.xyz/](https://farm.sophon.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:35.617Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:35:01.858Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $5,527,504.53

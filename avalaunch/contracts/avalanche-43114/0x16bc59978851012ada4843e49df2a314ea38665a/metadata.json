@@ -1,0 +1,17 @@
+{
+  "address": "0x16bc59978851012ada4843e49df2a314ea38665a",
+  "chain_id": 43114,
+  "contract_name": "AvalaunchSale",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:34:44.772Z"
+}

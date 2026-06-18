@@ -1,40 +1,50 @@
 {
   "schema_version": "2.0",
   "project_key": "anvil",
-  "generated_at": "2026-06-17T07:00:49.007Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:35:59.893Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "anvil",
-    "tier": 0,
+    "tier": 1,
     "peak_tvl": 109737361,
     "peak_date": "2025-07-22T00:00:00.000Z",
-    "tvl_30d_ago": 20334154,
-    "tvl_90d_ago": 38708165,
-    "tvl_current": 18337145,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 57358414,
-    "change_30d_pct": -9.820959357345282,
-    "change_90d_pct": -52.62719118821572,
-    "days_since_peak": 304,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 83.28997086051669
+    "tvl_30d_ago": 18413778,
+    "tvl_90d_ago": 32837009,
+    "tvl_current": 11391560,
+    "tier0_reason": "sustained_90d_and_30d_decline",
+    "tvl_180d_ago": 47999064,
+    "change_30d_pct": -38.135672103790974,
+    "change_90d_pct": -65.30877705700905,
+    "governance_raw": {
+      "evidence": "TVL dropped 89.6% from peak and 65.3% in 90 days, but the protocol still shows active products, vaults, and recent LOC creation, indicating ongoing operations.",
+      "confidence": 0.85,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 331,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 89.6192510042227,
+    "governance_evidence": "TVL dropped 89.6% from peak and 65.3% in 90 days, but the protocol still shows active products, vaults, and recent LOC creation, indicating ongoing operations.",
+    "governance_confidence": 0.85,
+    "governance_text_chars": 1817,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 2,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 16.7,
     "total_audits": 4,
-    "scoreable_audits": 3,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 11196966.18727,
     "tvl_usd": 672999.9497697239,
     "tvl_source": "on_chain",
@@ -46,10 +56,9 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 100,
+    "tier1_coverage_pct": 16.7,
     "tier1_auditors": [
-      "OpenZeppelin",
-      "Trail of Bits"
+      "OpenZeppelin"
     ],
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
@@ -64,20 +73,20 @@
     "project_purpose": "Anvil is a collateral-management protocol for fully backed credit and letter-of-credit guarantees. It enables users to deposit collateral into vaults and issue letters of credit or credit guarantees backed by that collateral, rather than operating primarily as an overcollateralized lending market.",
     "relationship_narrative": "The CollateralVault holds user deposits and interacts with TimeBasedCollateralPool for time-locked collateral management, while the LetterOfCredit contract issues credit instruments backed by the vault's collateral.",
     "product_family_count": 1,
-    "total_contracts_indexed": 7,
-    "live_contracts": 2,
-    "inactive_contracts": 3,
-    "singleton_contracts": 2,
+    "total_contracts_indexed": 22,
+    "live_contracts": 5,
+    "inactive_contracts": 7,
+    "singleton_contracts": 9,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 2,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 1,
+    "unknown_contracts": 1,
+    "deployment_units": 3,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 3,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 6,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -126,40 +135,177 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808",
-      "deployment_unit": "unit-18768",
-      "deployment_unit_proxy_count": 1,
-      "name": "LetterOfCredit",
+      "address": "0xefd194d4ff955e8958d132319f31d2ab9f7e29ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Claim",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x24573b112456d3a96c97fb460b436e8ca870e27e",
-      "impl_name": "LetterOfCredit",
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Claim",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808",
-          "deployment_unit": "unit-18768",
-          "deployment_unit_proxy_count": 1,
+          "address": "0xefd194d4ff955e8958d132319f31d2ab9f7e29ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1949",
-        "audit-1950"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9ae1caa5ce6fa330fce98315159bcd433b1342b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PassThroughLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PassThroughLiquidator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9ae1caa5ce6fa330fce98315159bcd433b1342b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Permit2PassThroughLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Permit2PassThroughLiquidator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x12225bb169b38ef8849dd4f5cc466ae5996e341d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x12225bb169b38ef8849dd4f5cc466ae5996e341d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Reward",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Reward",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -176,7 +322,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -235,16 +381,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Collateral",
-        "LetterOfCredit",
-        "Pricing",
-        "PythPriceOracle"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -261,21 +402,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Collateral",
-        "ICollateral",
-        "ICollateralDepositTarget",
-        "ILiquidatable",
-        "ILiquidator",
-        "IPriceOracle",
-        "LetterOfCredit",
-        "Pricing",
-        "PythPriceOracle"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -283,31 +414,65 @@
     {
       "auditor": "OpenZeppelin",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 100,
-      "latest_audit": "2025-10"
-    },
-    {
-      "auditor": "Trail of Bits",
-      "tier": 1,
       "contracts_covered": 1,
-      "coverage_pct": 50,
-      "latest_audit": "2023-12"
+      "coverage_pct": 16.7,
+      "latest_audit": "2025-10"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xefd194d4ff955e8958d132319f31d2ab9f7e29ac",
+      "name": "Claim",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9ae1caa5ce6fa330fce98315159bcd433b1342b8",
+      "name": "PassThroughLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c",
+      "name": "Permit2PassThroughLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+      "name": "Reward",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 1,
+    "native": 5,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 10
+      "extraction_exact": 13
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -315,6 +480,14 @@
       {
         "audit_id": 1947,
         "report_name": "<>\\"
+      },
+      {
+        "audit_id": 1949,
+        "report_name": "<>"
+      },
+      {
+        "audit_id": 1950,
+        "report_name": "[](< https://blog.openzeppelin.com/anvil-audit>)"
       }
     ],
     "inherited_remapped_matches": []

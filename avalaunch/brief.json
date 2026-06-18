@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "avalaunch",
-  "generated_at": "2026-06-17T07:00:49.058Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:35:55.929Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "avalaunch",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 7,
-    "total_addresses": 64,
-    "unique_implementations": 7,
-    "total_deployments": 64,
+    "total_contracts": 11,
+    "total_addresses": 71,
+    "unique_implementations": 11,
+    "total_deployments": 71,
     "audited_contracts": 4,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
-    "coverage_pct": 100,
+    "contracts_unverified": 4,
+    "coverage_pct": 57.1,
     "total_audits": 13,
     "scoreable_audits": 12,
     "dl_tvl_usd": 5761977.4688800005,
@@ -61,20 +61,22 @@
     "project_purpose": "Avalaunch is an Avalanche-based launchpad and fundraising platform for token pools and sales. Its infrastructure includes XAVA allocation staking, airdrops, and related sale participation and reward mechanisms. XAVA is evidenced as being used for staking/allocation access and farming or reward-related usage; token-swap DEX functionality, liquidity provision, and governance usage should not be claimed unless separately supported by verified project-owned contracts or documentation.",
     "relationship_narrative": "The XavaToken is the central asset, used across AllocationStaking for launchpad access and FarmingXava for liquidity mining rewards. Proxies like TransparentUpgradeableProxy enable upgradeability for staking contracts, while PangolinPair facilitates XAVA liquidity on the Pangolin DEX.",
     "product_family_count": 1,
-    "total_contracts_indexed": 142,
-    "live_contracts": 64,
-    "inactive_contracts": 66,
+    "total_contracts_indexed": 151,
+    "live_contracts": 71,
+    "inactive_contracts": 68,
     "singleton_contracts": 12,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 6,
     "live_deployment_units": 0,
-    "dependencies_extracted": 5,
+    "dependencies_extracted": 14,
     "unverified_dependencies": 0,
-    "detected_codebases": []
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 7,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -783,6 +785,109 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x16bc59978851012ada4843e49df2a314ea38665a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AvalaunchSale",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AvalaunchSale",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x16bc59978851012ada4843e49df2a314ea38665a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x6168bbf5ef2001981c8b300723d7f300f01871ff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AvalaunchSaleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AvalaunchSaleV2",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc354d85c24a724fda55084075fdf25c9e9cf35aa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xeef28e34ed3d0f64a01ecbfa3f7757014be8548b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x6e125b68f0f1963b09add1b755049e66f53cc1ea",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -827,6 +932,41 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x42152bdd72de8d6767fe3b4e17a221d6985e8b25",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PangolinPair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "pangolin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PangolinPair",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x42152bdd72de8d6767fe3b4e17a221d6985e8b25",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -908,6 +1048,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x8498a16b04e754f873198434063c8684d506a967",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8498a16b04e754f873198434063c8684d506a967",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 43114,
@@ -1371,42 +1546,63 @@
       "auditor": "CoinFabrik",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 100,
+      "coverage_pct": 57.1,
       "latest_audit": "2022-03"
     },
     {
       "auditor": "Paladin",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 75,
+      "coverage_pct": 42.9,
       "latest_audit": "2023-01"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 75,
+      "coverage_pct": 42.9,
       "latest_audit": "2022-01"
     },
     {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 50,
+      "coverage_pct": 28.6,
       "latest_audit": "2021-05"
     },
     {
       "auditor": "HashEx",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 25,
+      "coverage_pct": 14.3,
       "latest_audit": "2021-09"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x16bc59978851012ada4843e49df2a314ea38665a",
+      "name": "AvalaunchSale",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42",
+      "name": "AvalaunchSaleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 6,
-    "upstream": 0,
+    "native": 9,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 1
   },

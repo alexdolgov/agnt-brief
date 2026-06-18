@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nodedao",
-  "generated_at": "2026-06-17T07:00:43.607Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T14:21:37.262Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nodedao",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 64.19197668083922
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 7,
     "scoreable_audits": 0,
     "dl_tvl_usd": 25126572.20299,
     "tvl_usd": 25126572.20299,
@@ -51,7 +51,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 4,
+      "stale": 6,
       "unknown": 0
     }
   },
@@ -59,20 +59,20 @@
     "project_purpose": "NodeDAO is a DAO-operated staking protocol spanning ETH liquid staking, rnETH restaking, BTC staking products including oBTC/oyBTC, and DeFi/L2 strategy integrations for earning and optimizing staking-related yields.",
     "relationship_narrative": "The NodeDAOView contract serves as a read-only aggregation point for the protocol, while the ERC1967Proxy enables upgradeability. Other contracts like RestakingPool, ELVault, and DefiStrategy likely interact with the view contract to provide data to users.",
     "product_family_count": 1,
-    "total_contracts_indexed": 36,
-    "live_contracts": 4,
-    "inactive_contracts": 5,
-    "singleton_contracts": 27,
+    "total_contracts_indexed": 53,
+    "live_contracts": 5,
+    "inactive_contracts": 20,
+    "singleton_contracts": 28,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 15,
-    "live_deployment_units": 0,
-    "dependencies_extracted": 5,
-    "unverified_dependencies": 1,
+    "deployment_units": 28,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -115,6 +115,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x718b7885fec8511dc8f2a378d3045c90e82d6a1d",
+      "deployment_unit": "unit-37388",
+      "deployment_unit_proxy_count": 1,
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x718b7885fec8511dc8f2a378d3045c90e82d6a1d",
+          "deployment_unit": "unit-37388",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -327,6 +362,48 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15360,
+      "audit_key": "audit-15360",
+      "report_name": "DL audit link",
+      "report_url": "https://www.nodedao.com/paf/MetaTrust.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15361,
+      "audit_key": "audit-15361",
+      "report_name": "DL audit link",
+      "report_url": "https://www.nodedao.com/paf/BEOSIN.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -365,12 +442,12 @@
   "origin_summary": {
     "native": 3,
     "upstream": 1,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 22
+      "extraction_exact": 27
     },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
@@ -395,6 +472,14 @@
       {
         "audit_id": 3980,
         "report_name": "MetaScan_Report_NodeDAO_20230301.pdf"
+      },
+      {
+        "audit_id": 15360,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15361,
+        "report_name": "DL audit link"
       }
     ],
     "inherited_remapped_matches": []

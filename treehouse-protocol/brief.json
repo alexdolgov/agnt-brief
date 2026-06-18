@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "treehouse-protocol",
-  "generated_at": "2026-06-17T07:00:32.799Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T14:24:30.102Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "treehouse-protocol",
@@ -22,31 +22,34 @@
     "drop_from_peak_pct": 86.1189622335601
   },
   "summary": {
-    "total_contracts": 20,
-    "total_addresses": 22,
-    "unique_implementations": 20,
-    "total_deployments": 22,
-    "audited_contracts": 7,
-    "unaudited_contracts": 12,
-    "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 12,
+    "total_contracts": 25,
+    "total_addresses": 32,
+    "unique_implementations": 25,
+    "total_deployments": 32,
+    "audited_contracts": 8,
+    "unaudited_contracts": 16,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 36.8,
+    "coverage_pct": 33.3,
     "total_audits": 20,
-    "scoreable_audits": 10,
+    "scoreable_audits": 11,
     "dl_tvl_usd": 65970028.03566,
-    "tvl_usd": 1798114.2263752294,
+    "tvl_usd": 7659936.731274742,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 1798114.23
+      "ethereum": 7659936.73
     },
     "asd_usd": 1798114.2263752294,
     "website_url": "https://www.treehouse.finance/",
     "chains": [
-      "ethereum"
+      "arbitrum",
+      "avalanche",
+      "ethereum",
+      "mantle"
     ],
-    "tier1_coverage_pct": 5.3,
+    "tier1_coverage_pct": 8.3,
     "tier1_auditors": [
       "Trail of Bits"
     ],
@@ -63,24 +66,23 @@
     "project_purpose": "Treehouse Protocol is a DeFi fixed-income protocol focused on tAssets, including tETH, and decentralized offered rates (DOR). It provides tokenized yield and fixed-income products rather than operating as a native lending, borrowing, or stablecoin-minting platform.",
     "relationship_narrative": "The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid token issuance, while the LendingPoolv3 proxy enables borrowing. Supporting contracts like WithdrawalQueueERC721 manage unstaking, and CurveStableSwapNG pools facilitate stablecoin swaps, all sharing the same staking and lending infrastructure.",
     "product_family_count": 1,
-    "total_contracts_indexed": 92,
-    "live_contracts": 22,
+    "total_contracts_indexed": 102,
+    "live_contracts": 32,
     "inactive_contracts": 59,
     "singleton_contracts": 11,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 10,
-    "live_deployment_units": 5,
-    "dependencies_extracted": 109,
+    "deployment_units": 11,
+    "live_deployment_units": 6,
+    "dependencies_extracted": 37,
     "unverified_dependencies": 8,
     "detected_codebases": [
-      "aave-v2",
       "balancer-v2",
       "curve-stableswap"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 20,
+    "unique_implementations": 25,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -90,10 +92,62 @@
   },
   "contracts": [
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x3fc60aac1d843e4e181c7ab727a4027cb1ac99ed",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 5861822.504899512,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5861822.504899512,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x3fc60aac1d843e4e181c7ab727a4027cb1ac99ed",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-11319",
+        "audit-11321",
+        "audit-11322",
+        "audit-11323",
+        "audit-11335"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x5fde59415625401278c4d41c6befce3790eb357f",
-      "deployment_unit": "unit-20547",
+      "deployment_unit": "unit-37412",
       "deployment_unit_proxy_count": 1,
       "name": "LendingPoolv3",
       "role": "core_logic",
@@ -109,7 +163,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x5fde59415625401278c4d41c6befce3790eb357f",
-          "deployment_unit": "unit-20547",
+          "deployment_unit": "unit-37412",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -128,7 +182,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x852ded011285fe67063a08005c71a85690503cee",
-      "deployment_unit": "unit-20550",
+      "deployment_unit": "unit-37415",
       "deployment_unit_proxy_count": 1,
       "name": "AccountingOracle",
       "role": "operational_periphery",
@@ -144,7 +198,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x852ded011285fe67063a08005c71a85690503cee",
-          "deployment_unit": "unit-20550",
+          "deployment_unit": "unit-37415",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -179,6 +233,17 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1d13531bf6344c102280ce4c458781fbf14dad14",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x65c2d90b33f7bf693a7ef54662435f2cf3251c21",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -274,6 +339,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1c069c2f77b26a54e9f175fa2eade21c34a94e1",
+      "deployment_unit": "unit-37417",
+      "deployment_unit_proxy_count": 1,
+      "name": "ESRV2",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Lido",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa4821308aebbad157b3afc8f962b34256e9c853d",
+      "impl_name": "ESRV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa1c069c2f77b26a54e9f175fa2eade21c34a94e1",
+          "deployment_unit": "unit-37417",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -431,6 +531,41 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x950d8545bb4e58b61230d47314549cae5bcedcc6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NavRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NavRegistry",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x950d8545bb4e58b61230d47314549cae5bcedcc6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xdd317b85f7bd56361e2e3216610803e433acaea7",
@@ -472,7 +607,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xad744e7b3ae782b2c6dd6c316332d60ac33d8db2",
-      "deployment_unit": "unit-20552",
+      "deployment_unit": "unit-37418",
       "deployment_unit_proxy_count": 1,
       "name": "Proxy (impl: 0x62c9e5e52351e02635f48072fa20c03bb650f787)",
       "role": "proxy",
@@ -488,7 +623,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xad744e7b3ae782b2c6dd6c316332d60ac33d8db2",
-          "deployment_unit": "unit-20552",
+          "deployment_unit": "unit-37418",
           "deployment_unit_proxy_count": 1,
           "source_verified": false,
           "verified_by_bytecode": false,
@@ -567,6 +702,52 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5e4acca7a9989007cd74ae4ed1b096c000779dcc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x832f8e068e92d56b94205ea605e5cdaa7cded1f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StablePool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "balancer",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StablePool",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x832f8e068e92d56b94205ea605e5cdaa7cded1f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -580,7 +761,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xfddf38947afb03c621c71b06c9c70bce73f12999",
-      "deployment_unit": "unit-20554",
+      "deployment_unit": "unit-37420",
       "deployment_unit_proxy_count": 1,
       "name": "StakingRouter",
       "role": "adapter",
@@ -596,8 +777,54 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xfddf38947afb03c621c71b06c9c70bce73f12999",
-          "deployment_unit": "unit-20554",
+          "deployment_unit": "unit-37420",
           "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x568bf0d3d0ef982b8f4978bea05d287dd47a15bb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Strategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Strategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x98273a098e2bb7663be83b48ee2c0ac3ecc02455",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x568bf0d3d0ef982b8f4978bea05d287dd47a15bb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -687,9 +914,9 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xefa3fa8e85d2b3cfdb250cdea156c2c6c90628f5",
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x5f4d2e6c118b5e3c74f0b61de40f627ca9873d6e",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "TreehouseRouter",
@@ -712,6 +939,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x5f4d2e6c118b5e3c74f0b61de40f627ca9873d6e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -731,7 +969,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e",
-      "deployment_unit": "unit-20545",
+      "deployment_unit": "unit-37410",
       "deployment_unit_proxy_count": 1,
       "name": "ValidatorsExitBusOracle",
       "role": "operational_periphery",
@@ -747,7 +985,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e",
-          "deployment_unit": "unit-20545",
+          "deployment_unit": "unit-37410",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -805,8 +1043,8 @@
       "deployment_unit_proxy_count": null,
       "name": "WeETHExchangeRateProvider",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "etherfi",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -910,7 +1148,7 @@
         "iETH",
         "tETH"
       ],
-      "matched_contracts": 1,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -973,7 +1211,7 @@
         "VaultPull",
         "tETH"
       ],
-      "matched_contracts": 1,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1005,7 +1243,7 @@
         "iETH",
         "tETH"
       ],
-      "matched_contracts": 1,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1040,7 +1278,7 @@
         "Vault",
         "WstETHRateProvider"
       ],
-      "matched_contracts": 1,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1318,11 +1556,26 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "FUNDS_RECEIVER",
+        "INavErc20",
+        "INavRegistry",
+        "IRescuable",
+        "ITreehouseAccounting",
+        "IVault",
+        "NAV_REGISTRY",
+        "NavLens",
+        "RATE_PROVIDER_REGISTRY",
+        "STRATEGY_STORAGE",
+        "TREEHOUSE_ACCOUNTING",
+        "VAULT",
+        "VaultRescuer",
+        "wstETH"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1362,22 +1615,22 @@
     {
       "auditor": "WatchPug",
       "tier": 2,
-      "contracts_covered": 7,
-      "coverage_pct": 36.8,
+      "contracts_covered": 8,
+      "coverage_pct": 33.3,
       "latest_audit": "2026-05"
     },
     {
       "auditor": "Sigma Prime",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 10.5,
+      "contracts_covered": 3,
+      "coverage_pct": 12.5,
       "latest_audit": "2025-03"
     },
     {
       "auditor": "Trail of Bits",
       "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 5.3,
+      "contracts_covered": 2,
+      "coverage_pct": 8.3,
       "latest_audit": "2024-10"
     }
   ],
@@ -1413,11 +1666,31 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x950d8545bb4e58b61230d47314549cae5bcedcc6",
+      "name": "NavRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x5e4acca7a9989007cd74ae4ed1b096c000779dcc",
       "name": "SimpleStakingERC20",
       "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x568bf0d3d0ef982b8f4978bea05d287dd47a15bb",
+      "name": "Strategy",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1431,21 +1704,11 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x30ed8ce7668658271da0ddb350070ffea75595e4",
-      "name": "WeETHExchangeRateProvider",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 2,
+    "native": 16,
+    "upstream": 5,
     "standard_library": 4,
     "needs_review": 0
   },
@@ -1454,7 +1717,7 @@
       "extraction_exact": 93
     },
     "extraction_confidence_counts": {
-      "high": 10
+      "high": 11
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1494,10 +1757,6 @@
       {
         "audit_id": 11334,
         "report_name": "WatchPug tETH Feb Audit Report vF2.pdf"
-      },
-      {
-        "audit_id": 11335,
-        "report_name": "WatchPug tETH Timelock May Audit Report vF2.pdf"
       }
     ],
     "inherited_remapped_matches": []

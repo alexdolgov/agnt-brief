@@ -7,10 +7,10 @@
 - Project: StandX (`standx`)
 - Website: [https://standx.com/referral?code=defillama](https://standx.com/referral?code=defillama)
 - Lifecycle: declining (Tier 0, 54.7% below peak)
-- Generated: 2026-06-17T07:00:36.199Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T14:20:32.597Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
 - Chains: bsc
-- Contract surface: 14 unique implementations (15 raw deployments)
+- Contract surface: 13 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $43,185,923.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,20 +25,20 @@ The BSC family provides the core stablecoin (StandDUSD) and settlement logic, wh
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 15 (15 live, 0 unknown).
-- Excluded by liveness: 3 inactive, 8 singleton, 0 uninitialized.
-- Deployment units: 1/5 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 0; unverified dependencies: 0.
+- Indexed contracts: 29; live-surface contracts included: 14 (14 live, 0 unknown).
+- Excluded by liveness: 4 inactive, 11 singleton, 0 uninitialized.
+- Deployment units: 0/6 live.
+- Detected codebases: uniswap-v2, uniswap-v3
+- Unverified dependencies: 1/1.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/7 (57.1%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 4/6 (66.7%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 14
-- Raw deployments: 15
+- Unique implementations: 13
+- Raw deployments: 14
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -51,8 +51,8 @@ The BSC family provides the core stablecoin (StandDUSD) and settlement logic, wh
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 3 | 42.9% | 2025-11 |
-| RigSec | Tier 2 | 2 | 28.6% | 2025-05 |
+| WatchPug | Tier 2 | 3 | 50.0% | 2025-11 |
+| RigSec | Tier 2 | 2 | 33.3% | 2025-05 |
 
 ## Contract Surface
 
@@ -65,13 +65,12 @@ The BSC family provides the core stablecoin (StandDUSD) and settlement logic, wh
 | Settler | unknown | bsc | n/a | [`0xdf09eb...90caa1`](./contracts/bsc-56/0xdf09ebf9a24080deedb0a9a85db0b3aa9a90caa1/) | ✅ Audited |
 | StandDUSD | unknown | bsc | n/a | [`0x57f4df...d9e22d`](./contracts/bsc-56/0x57f4dff6f9404c1c89d5d0457e26c87ffbd9e22d/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | ERC1967Proxy | proxy | bsc | n/a | [`0x84603c...30766f`](./contracts/bsc-56/0x84603ca30da1ae131f624a4edf2d8ac8a030766f/) | ⚠️ Unaudited |
 | PancakePair | unknown | bsc | n/a | [`0x2ad9c1...30b9c5`](./contracts/bsc-56/0x2ad9c1ad5b06f953b69d39d6685d725cd330b9c5/) | ⚠️ Unaudited |
-| SafeL2 | unknown | bsc | unit-22115 | [`0x11b660...39e433`](./contracts/bsc-56/0x11b660397382ae3a83c4ad80e2f791189b39e433/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,7 +121,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 11 |
 | upstream | 1 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

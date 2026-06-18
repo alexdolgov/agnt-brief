@@ -5,10 +5,10 @@
 - Project: NodeDAO (`nodedao`)
 - Website: [https://www.nodedao.com](https://www.nodedao.com)
 - Lifecycle: active (Tier 0, 64.2% below peak)
-- Generated: 2026-06-17T07:00:43.607Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T14:21:37.262Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
 - Chains: ethereum
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $25,126,572.20
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,25 +23,25 @@ The NodeDAOView contract serves as a read-only aggregation point for the protoco
 
 ## Contract Surface Quality
 
-- Indexed contracts: 36; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 5 inactive, 27 singleton, 0 uninitialized.
-- Deployment units: 0/15 live.
+- Indexed contracts: 53; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 20 inactive, 28 singleton, 0 uninitialized.
+- Deployment units: 1/28 live.
 - Detected codebases: none
-- Unverified dependencies: 1/5.
+- Dependencies extracted: 2; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 4
-- Audits discovered: 5
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 4 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -54,11 +54,12 @@ The NodeDAOView contract serves as a read-only aggregation point for the protoco
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | CumulativeMerkleDrop | operational_periphery | ethereum | n/a | [`0x1349a8...7b6610`](./contracts/ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-37388 | [`0x718b78...2d6a1d`](./contracts/ethereum-1/0x718b7885fec8511dc8f2a378d3045c90e82d6a1d/) | ⚠️ Unaudited |
 | LsdETH | unknown | ethereum | n/a | [`0x9dc7e1...b97c5b`](./contracts/ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ⚠️ Unaudited |
 | NethOFTAdapter | adapter | ethereum | n/a | [`0x3343f9...3283ce`](./contracts/ethereum-1/0x3343f9de5612b6f8a433abc3eaae245cfa3283ce/) | ⚠️ Unaudited |
 | RNethOFTAdapter | adapter | ethereum | n/a | [`0xcea368...8ded56`](./contracts/ethereum-1/0xcea3681131dd151ee72a5c8dbba555cb8b8ded56/) | ⚠️ Unaudited |
@@ -90,6 +91,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Beosin_NodeDAO-Protocol_202302161759.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302161759.pdf) | Beosin | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
 | [Beosin_Validator-NFT_202210251808.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_Validator-NFT_202210251808.pdf) | Beosin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [MetaScan_Report_NodeDAO_20230301.pdf](https://github.com/NodeDAO/audits/blob/main/MetaScan_Report_NodeDAO_20230301.pdf) | MetaScan | Audit | 2023-03 | stale | Direct | contract_name | 0 | n/a |
+| [DL audit link](https://www.nodedao.com/paf/MetaTrust.pdf) | unknown | Audit | 2023-05 | stale | Direct | contract_name | 0 | n/a |
+| [DL audit link](https://www.nodedao.com/paf/BEOSIN.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -107,17 +110,17 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 3 |
 | upstream | 1 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=22
+- Match method counts: extraction_exact=27
 
 Zero-match audit list:
 
@@ -126,5 +129,7 @@ Zero-match audit list:
 - [3978] Beosin_NodeDAO-Protocol_202302161759.pdf
 - [3979] Beosin_Validator-NFT_202210251808.pdf
 - [3980] MetaScan_Report_NodeDAO_20230301.pdf
+- [15360] DL audit link
+- [15361] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

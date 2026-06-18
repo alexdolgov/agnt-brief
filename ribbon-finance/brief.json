@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ribbon-finance",
-  "generated_at": "2026-06-17T07:00:41.924Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T14:36:08.357Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ribbon-finance",
@@ -32,27 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 23,
-    "total_addresses": 45,
-    "unique_implementations": 23,
-    "total_deployments": 45,
+    "total_contracts": 24,
+    "total_addresses": 46,
+    "unique_implementations": 24,
+    "total_deployments": 46,
     "audited_contracts": 6,
-    "unaudited_contracts": 13,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 13,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
-    "coverage_pct": 31.6,
-    "total_audits": 14,
+    "coverage_pct": 30,
+    "total_audits": 15,
     "scoreable_audits": 4,
     "dl_tvl_usd": 4052288,
-    "tvl_usd": 174468933.54042062,
+    "tvl_usd": 174469231.72155434,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "avalanche": 5.48,
+      "avalanche": 303.66,
       "ethereum": 174468928.06
     },
-    "asd_usd": 148224979.51230633,
+    "asd_usd": 148225277.69344005,
     "website_url": "https://www.ribbon.finance/",
     "chains": [
       "avalanche",
@@ -65,7 +65,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 14,
+      "stale": 15,
       "unknown": 0
     }
   },
@@ -73,22 +73,20 @@
     "project_purpose": "Ribbon Finance is a DeFi protocol historically focused on crypto structured products, especially Theta Vaults that automate options strategies such as covered calls and put selling. Related Earn/Lend-style products should be treated as historical or specific on-chain modules rather than the protocol's current primary product focus.",
     "relationship_narrative": "Theta Vaults and Ribbon Earn share the RibbonFactory for deployment and management, while Ribbon Lend uses its own PoolFactory and PoolMaster infrastructure. The RBN token is used across Liquidity Gauges for rewards and may be involved in governance via the Ribbon DAO.",
     "product_family_count": 7,
-    "total_contracts_indexed": 598,
-    "live_contracts": 45,
-    "inactive_contracts": 429,
+    "total_contracts_indexed": 600,
+    "live_contracts": 46,
+    "inactive_contracts": 430,
     "singleton_contracts": 124,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 52,
+    "deployment_units": 53,
     "live_deployment_units": 5,
-    "dependencies_extracted": 69,
+    "dependencies_extracted": 12,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "compound-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 23,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -178,7 +176,7 @@
       "name": "MiniMeToken",
       "role": "token",
       "origin_kind": "upstream",
-      "origin_provider": "minime",
+      "origin_provider": "aragon",
       "product_line": "Ribbon",
       "tvl_usd": 8700732.601157248,
       "is_proxy": false,
@@ -243,7 +241,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624",
-      "deployment_unit": "unit-25540",
+      "deployment_unit": "unit-37461",
       "deployment_unit_proxy_count": 1,
       "name": "RibbonThetaYearnVault",
       "role": "core_logic",
@@ -259,7 +257,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624",
-          "deployment_unit": "unit-25540",
+          "deployment_unit": "unit-37461",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -281,7 +279,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x8fe74471f198e426e96be65f40eed1f8ba96e54f",
-      "deployment_unit": "unit-25533",
+      "deployment_unit": "unit-37454",
       "deployment_unit_proxy_count": 1,
       "name": "RibbonThetaVaultYearn",
       "role": "core_logic",
@@ -297,7 +295,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8fe74471f198e426e96be65f40eed1f8ba96e54f",
-          "deployment_unit": "unit-25533",
+          "deployment_unit": "unit-37454",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -353,8 +351,43 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0xf08d6a9c2c5a2dc9b8645c5ac0b529d4046d19aa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RibbonVaultPauser",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 298.181133726802,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RibbonVaultPauser",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xf08d6a9c2c5a2dc9b8645c5ac0b529d4046d19aa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 298.181133726802,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x98d03125c62dae2328d9d3cb32b7b969e6a87787",
-      "deployment_unit": "unit-25549",
+      "deployment_unit": "unit-37471",
       "deployment_unit_proxy_count": 1,
       "name": "RibbonThetaVaultWithSwap",
       "role": "core_logic",
@@ -370,7 +403,7 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x98d03125c62dae2328d9d3cb32b7b969e6a87787",
-          "deployment_unit": "unit-25549",
+          "deployment_unit": "unit-37471",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -391,7 +424,7 @@
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0x6bf686d99a4ce17798c45d09c21181fac29a9fb3",
-      "deployment_unit": "unit-25548",
+      "deployment_unit": "unit-37470",
       "deployment_unit_proxy_count": 1,
       "name": "RibbonThetaVaultWithSwap",
       "role": "core_logic",
@@ -407,7 +440,7 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x6bf686d99a4ce17798c45d09c21181fac29a9fb3",
-          "deployment_unit": "unit-25548",
+          "deployment_unit": "unit-37470",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -689,7 +722,7 @@
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0x9dd6be071b4292cc88b8190ab718329adea3e3a3",
-      "deployment_unit": "unit-25551",
+      "deployment_unit": "unit-37473",
       "deployment_unit_proxy_count": 1,
       "name": "RibbonThetaVaultWithSwap",
       "role": "core_logic",
@@ -705,7 +738,7 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x9dd6be071b4292cc88b8190ab718329adea3e3a3",
-          "deployment_unit": "unit-25551",
+          "deployment_unit": "unit-37473",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1221,7 +1254,17 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2531,
+          "report_url": "https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf"
+        },
+        {
+          "audit_id": 15373,
+          "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 2535,
@@ -1275,7 +1318,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2535,
+          "report_url": "https://github.com/ribbon-finance/audit/blob/master/reports/Quantstamp%20Theta%20Vault.pdf"
+        },
+        {
+          "audit_id": 15374,
+          "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/Quantstamp%20Theta%20Vault.pdf"
+        }
+      ]
     },
     {
       "audit_id": 2536,
@@ -1502,6 +1555,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15372,
+      "audit_key": "audit-15372",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1509,25 +1583,35 @@
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 26.3,
-      "latest_audit": "2021-05"
+      "coverage_pct": 25,
+      "latest_audit": "2021-07"
     },
     {
       "auditor": "Unknown",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 10.5,
+      "coverage_pct": 10,
       "latest_audit": "2023-07"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 5.3,
+      "coverage_pct": 5,
       "latest_audit": "2022-03"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xf08d6a9c2c5a2dc9b8645c5ac0b529d4046d19aa",
+      "name": "RibbonVaultPauser",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 298.181133726802,
+      "risk_note": "Verified native implementation with $298.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -1600,14 +1684,14 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 9,
     "upstream": 4,
     "standard_library": 1,
     "needs_review": 10
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 583
+      "extraction_exact": 806
     },
     "extraction_confidence_counts": {
       "high": 4
@@ -1654,6 +1738,10 @@
       {
         "audit_id": 2544,
         "report_name": "ribbon-finance-04-2021.pdf"
+      },
+      {
+        "audit_id": 15372,
+        "report_name": "Rendered PDF capture"
       }
     ],
     "inherited_remapped_matches": []

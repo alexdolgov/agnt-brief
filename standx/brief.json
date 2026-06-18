@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "standx",
-  "generated_at": "2026-06-17T07:00:36.199Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T14:20:32.597Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "standx",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 54.73525041166236
   },
   "summary": {
-    "total_contracts": 14,
-    "total_addresses": 15,
-    "unique_implementations": 14,
-    "total_deployments": 15,
+    "total_contracts": 13,
+    "total_addresses": 14,
+    "unique_implementations": 13,
+    "total_deployments": 14,
     "audited_contracts": 4,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
-    "coverage_pct": 57.1,
+    "coverage_pct": 66.7,
     "total_audits": 6,
     "scoreable_audits": 5,
     "dl_tvl_usd": 43185923,
@@ -59,22 +59,23 @@
     "project_purpose": "StandX is a multi-chain Perps DEX on BNB/BSC and Solana powered by yield-bearing DUSD, with a DefiLlama-tracked canonical bridge component. Solana/SVM audit coverage should be tracked separately from BSC/EVM contract coverage unless an audit explicitly covers the same EVM code or a verified equivalence mapping exists.",
     "relationship_narrative": "The BSC family provides the core stablecoin (StandDUSD) and settlement logic, which is used by both the Pools family for liquidity and the StandX Bridge family for cross-chain transfers. The bridge relies on the same StandDUSD token contract and uses a Safe multisig for governance, while pools facilitate trading of the stablecoin.",
     "product_family_count": 3,
-    "total_contracts_indexed": 26,
-    "live_contracts": 15,
-    "inactive_contracts": 3,
-    "singleton_contracts": 8,
+    "total_contracts_indexed": 29,
+    "live_contracts": 14,
+    "inactive_contracts": 4,
+    "singleton_contracts": 11,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 5,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 0,
-    "unverified_dependencies": 0,
+    "deployment_units": 6,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 1,
     "detected_codebases": [
-      "uniswap-v2"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 14,
+    "unique_implementations": 13,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -227,41 +228,6 @@
           "address": "0x2ad9c1ad5b06f953b69d39d6685d725cd330b9c5",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x11b660397382ae3a83c4ad80e2f791189b39e433",
-      "deployment_unit": "unit-22115",
-      "deployment_unit_proxy_count": 1,
-      "name": "SafeL2",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "StandX Bridge",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
-      "impl_name": "SafeL2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x11b660397382ae3a83c4ad80e2f791189b39e433",
-          "deployment_unit": "unit-22115",
-          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -766,14 +732,14 @@
       "auditor": "WatchPug",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 42.9,
+      "coverage_pct": 50,
       "latest_audit": "2025-11"
     },
     {
       "auditor": "RigSec",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 33.3,
       "latest_audit": "2025-05"
     }
   ],
@@ -781,7 +747,7 @@
   "origin_summary": {
     "native": 11,
     "upstream": 1,
-    "standard_library": 2,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

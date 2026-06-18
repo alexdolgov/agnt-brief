@@ -820,7 +820,7 @@
 | [nimbora](./nimbora/) | $338.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nirvana](./nirvana/) | $2.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nlx-protocol](./nlx-protocol/) | $760.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [nodedao](./nodedao/) | $25.1M | 0.0% | ? | active | 5 | 4 | 2026-06-17 |
+| [nodedao](./nodedao/) | $25.1M | 0.0% | ? | active | 7 | 5 | 2026-06-18 |
 | [nodeops](./nodeops/) | ? | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [nolus-protocol](./nolus-protocol/) | $509.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nomiswap](./nomiswap/) | $1.4M | 28.6% | ? | declining | 1 | 7 | 2026-06-18 |
@@ -997,7 +997,7 @@
 | [rhea-finance](./rhea-finance/) | $208.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [rheo](./rheo/) | $33.3K | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [rho](./rho/) | $2.3M | 0.0% | ? | active | 4 | 28 | 2026-06-17 |
-| [ribbon-finance](./ribbon-finance/) | $174.5M | 31.6% | $148.2M | declining | 14 | 23 | 2026-06-17 |
+| [ribbon-finance](./ribbon-finance/) | $174.5M | 30.0% | $148.2M | declining | 15 | 24 | 2026-06-18 |
 | [rifts-finance](./rifts-finance/) | $18.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ring-protocol](./ring-protocol/) | $83.5M | 37.2% | $83.5M | active | 10 | 65 | 2026-06-18 |
 | [ringfi](./ringfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1141,7 +1141,7 @@
 | [stakehound](./stakehound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 86 | 2026-06-17 |
 | [stakingverse](./stakingverse/) | $3.3M | 0.0% | ? | active | 18 | 2 | 2026-06-17 |
-| [standx](./standx/) | $43.2M | 57.1% | ? | declining | 6 | 14 | 2026-06-17 |
+| [standx](./standx/) | $43.2M | 66.7% | ? | declining | 6 | 13 | 2026-06-18 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 60.0% | $5.2M | active | 17 | 72 | 2026-06-17 |
 | [stargate](./stargate/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [starkdefi](./starkdefi/) | $87.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1259,7 +1259,7 @@
 | [townsquare](./townsquare/) | $2.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |
 | [toxicdeer-finance](./toxicdeer-finance/) | $23.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tranchess](./tranchess/) | $1.9K | 18.4% | $1.9K | dead | 9 | 40 | 2026-06-18 |
-| [treehouse-protocol](./treehouse-protocol/) | $1.8M | 36.8% | $1.8M | declining | 20 | 20 | 2026-06-17 |
+| [treehouse-protocol](./treehouse-protocol/) | $7.7M | 33.3% | $1.8M | declining | 20 | 25 | 2026-06-18 |
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $583.1M | 0.0% | $583.1M | transitioning | 0 | 29 | 2026-06-17 |
 | [trick-or-treat-farm](./trick-or-treat-farm/) | $1.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1353,7 +1353,7 @@
 | [wise-lending](./wise-lending/) | $36.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wisteria-swap](./wisteria-swap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [witswap](./witswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [wombat-exchange](./wombat-exchange/) | $817.6K | 31.9% | $47.8K | declining | 11 | 58 | 2026-06-17 |
+| [wombat-exchange](./wombat-exchange/) | $817.6K | 28.6% | $47.8K | declining | 14 | 34 | 2026-06-18 |
 | [woo-x](./woo-x/) | $5.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [woofi](./woofi/) | $9.2M | 29.6% | $8.7M | declining | 9 | 47 | 2026-06-18 |
 | [worldes](./worldes/) | $567.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

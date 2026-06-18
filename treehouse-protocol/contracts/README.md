@@ -7,7 +7,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [StakingRouter](./ethereum-1/0xfddf38947afb03c621c71b06c9c70bce73f12999/) | ethereum | [`0xfddf38...f12999`](./ethereum-1/0xfddf38947afb03c621c71b06c9c70bce73f12999/) | ⚠️ Unaudited | Verified |
-| [TreehouseRouter](./ethereum-1/0xefa3fa8e85d2b3cfdb250cdea156c2c6c90628f5/) | ethereum | [`0xefa3fa...0628f5`](./ethereum-1/0xefa3fa8e85d2b3cfdb250cdea156c2c6c90628f5/) | ✅ Audited | Verified |
+| TreehouseRouter | ethereum | `0xefa3fa...0628f5` | ✅ Audited | Verified |
 
 ## core_logic (2)
 

@@ -1,0 +1,17 @@
+{
+  "address": "0xf08d6a9c2c5a2dc9b8645c5ac0b529d4046d19aa",
+  "chain_id": 43114,
+  "contract_name": "RibbonVaultPauser",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000422f7bb366608723c8fe61ac6d923023dccbc3d7000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c7000000000000000000000000ae7ab96520de3a18e5e111b5eaab095312d7fe8400000000000000000000000053773e034d9784153471813dacaff53dbbb78e8c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T14:32:44.153Z"
+}

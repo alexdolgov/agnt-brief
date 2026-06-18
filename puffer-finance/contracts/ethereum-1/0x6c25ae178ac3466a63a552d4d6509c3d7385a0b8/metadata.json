@@ -1,0 +1,18 @@
+{
+  "address": "0x6c25ae178ac3466a63a552d4d6509c3d7385a0b8",
+  "chain_id": 1,
+  "contract_name": "AeraVaultV2",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T14:45:48.471Z"
+}

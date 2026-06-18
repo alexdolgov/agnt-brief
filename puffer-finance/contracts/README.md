@@ -20,7 +20,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccountantWithRateProviders (2 deployments)](./ethereum-1/0xa9fb7e2922216debe3fd5e1bbe7591ee446dc21c/) | ethereum | 2 deployments: ethereum [`0xa9fb7e...6dc21c`](./ethereum-1/0xa9fb7e2922216debe3fd5e1bbe7591ee446dc21c/); ethereum `0xe0bdb7...b7e3be` | ⚠️ Unaudited | Verified |
+| AccountantWithRateProviders (2 deployments) | ethereum | 2 deployments: ethereum `0xa9fb7e...6dc21c`; ethereum `0xe0bdb7...b7e3be` | ⚠️ Unaudited | Verified |
 | [GaugeRegistry](./ethereum-1/0x27ef0bc5eaa61dc6e7d08f17eb00de7d94398a25/) | ethereum | [`0x27ef0b...398a25`](./ethereum-1/0x27ef0bc5eaa61dc6e7d08f17eb00de7d94398a25/) | ⚠️ Unaudited | Verified |
 | [NonRestakingWithdrawalCredentialsFactory](./ethereum-1/0xa766b79c25a8ab4354bf2351c6716baced48ea36/) | ethereum | [`0xa766b7...48ea36`](./ethereum-1/0xa766b79c25a8ab4354bf2351c6716baced48ea36/) | ⚠️ Unaudited | Verified |
 

@@ -7,8 +7,8 @@
 - Project: 3Jane (`3jane`)
 - Website: [https://www.3jane.xyz/](https://www.3jane.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:35.647Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T14:43:53.668Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
 - Chains: ethereum
 - Contract surface: 17 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $46,360,631.00
@@ -29,7 +29,7 @@ The lending and options families rely on the core infrastructure family for stab
 - Excluded by liveness: 9 inactive, 13 singleton, 0 uninitialized.
 - Deployment units: 7/15 live.
 - Detected codebases: none
-- Dependencies extracted: 17; unverified dependencies: 0.
+- Dependencies extracted: 13; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -60,27 +60,27 @@ The lending and options families rely on the core infrastructure family for stab
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdaptiveCurveIrm | unknown | ethereum | unit-17742 | [`0x1d434d...f9c7df`](./contracts/ethereum-1/0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df/) | ✅ Audited |
+| AdaptiveCurveIrm | unknown | ethereum | unit-37572 | [`0x1d434d...f9c7df`](./contracts/ethereum-1/0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df/) | ✅ Audited |
 | CreditLine | unknown | ethereum | n/a | [`0x26389b...20c6a9`](./contracts/ethereum-1/0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9/) | ✅ Audited |
 | Helper | periphery | ethereum | n/a | 2 deployments: ethereum [`0x2a66f9...f3f682`](./contracts/ethereum-1/0x2a66f992bf227d2e50ef19edd21503c3c4f3f682/); ethereum `0x82736f...444505` | ✅ Audited |
 | InsuranceFund | unknown | ethereum | n/a | [`0x4507b5...d29935`](./contracts/ethereum-1/0x4507b5b23340d248457d955a211c8b0634d29935/) | ✅ Audited |
 | Jane | unknown | ethereum | n/a | 2 deployments: ethereum [`0x333333...0e3404`](./contracts/ethereum-1/0x333333330522f64ee8d0b3039c460b41670e3404/); ethereum `0xff031e...fd72fc` | ✅ Audited |
 | MarkdownController | governance | ethereum | n/a | [`0xf0eae7...726214`](./contracts/ethereum-1/0xf0eae71092f3c9411a9eab8f81e7d91d29726214/) | ✅ Audited |
 | MarkdownManager | governance | ethereum | n/a | [`0xfd1726...118b5d`](./contracts/ethereum-1/0xfd172699e44008d1f48fd945a0421a03d8118b5d/) | ✅ Audited |
-| MorphoCredit | unknown | ethereum | unit-17751 | [`0xde6e08...b0ecbc`](./contracts/ethereum-1/0xde6e08ac208088cc62812ba30608d852c6b0ecbc/) | ✅ Audited |
+| MorphoCredit | unknown | ethereum | unit-37581 | [`0xde6e08...b0ecbc`](./contracts/ethereum-1/0xde6e08ac208088cc62812ba30608d852c6b0ecbc/) | ✅ Audited |
 | ProtocolConfig | governance | ethereum | n/a | [`0xaa11ab...a9bf1e`](./contracts/ethereum-1/0xaa11ab352fd05094a2400609fb6100e755a9bf1e/) | ✅ Audited |
 | RewardsDistributor | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0xac6985...f064e8`](./contracts/ethereum-1/0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8/); ethereum `0xc95f8f...2f555c` | ✅ Audited |
-| sUSD3 | unknown | ethereum | unit-17753 | [`0xf68955...6164a7`](./contracts/ethereum-1/0xf689555121e529ff0463e191f9bd9d1e496164a7/) | ✅ Audited |
-| TokenizedStrategy | core_logic | ethereum | unit-17740 (7 proxies) | 7 deployments: ethereum [`0x05367c...36a06e`](./contracts/ethereum-1/0x05367c7a76afeb7bdf7c06b479d7551d6536a06e/); ethereum `0x492a3d...3d9f91`; ethereum `0x49ef4a...0df852`; ethereum `0x4f6694...bc0645`; ethereum `0x83872d...45f35a`; ethereum `0xbd35e3...247c2e`; ethereum `0xf733c7...3304de` | ✅ Audited |
-| USD3 | unknown | ethereum | unit-17741 | [`0x056b26...d55ecc`](./contracts/ethereum-1/0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc/) | ✅ Audited |
+| sUSD3 | unknown | ethereum | unit-37583 | [`0xf68955...6164a7`](./contracts/ethereum-1/0xf689555121e529ff0463e191f9bd9d1e496164a7/) | ✅ Audited |
+| TokenizedStrategy | core_logic | ethereum | unit-37570 (7 proxies) | 7 deployments: ethereum [`0x05367c...36a06e`](./contracts/ethereum-1/0x05367c7a76afeb7bdf7c06b479d7551d6536a06e/); ethereum `0x492a3d...3d9f91`; ethereum `0x49ef4a...0df852`; ethereum `0x4f6694...bc0645`; ethereum `0x83872d...45f35a`; ethereum `0xbd35e3...247c2e`; ethereum `0xf733c7...3304de` | ✅ Audited |
+| USD3 | unknown | ethereum | unit-37571 | [`0x056b26...d55ecc`](./contracts/ethereum-1/0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StataTokenV2 | token | ethereum | unit-17750 | [`0xd4fa2d...8cd23e`](./contracts/ethereum-1/0xd4fa2d31b7968e448877f69a96de69f5de8cd23e/) | ⚠️ Unaudited |
+| StataTokenV2 | token | ethereum | unit-37580 | [`0xd4fa2d...8cd23e`](./contracts/ethereum-1/0xd4fa2d31b7968e448877f69a96de69f5de8cd23e/) | ⚠️ Unaudited |
 | EmergencyController | governance | ethereum | n/a | 2 deployments: ethereum [`0x792a14...2ea12c`](./contracts/ethereum-1/0x792a1450a3d2023e2de6bb29208031dea52ea12c/); ethereum `0x84b31b...d2e051` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | ethereum | unit-17743 | [`0x333333...6fb5ef`](./contracts/ethereum-1/0x33333333bd7045f1a601a1e289d7ab21036fb5ef/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | ethereum | unit-37573 | [`0x333333...6fb5ef`](./contracts/ethereum-1/0x33333333bd7045f1a601a1e289d7ab21036fb5ef/) | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | n/a | [`0x1dccd4...08f8c2`](./contracts/ethereum-1/0x1dccd4628d48a50c1a7adea3848bcc869f08f8c2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)

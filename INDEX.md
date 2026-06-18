@@ -7,7 +7,7 @@
 | [1sec](./1sec/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [21.co](./21.co/) | $2.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [3f-mutual](./3f-mutual/) | $3.2M | 0.0% | ? | active | 0 | 9 | 2026-06-17 |
-| [3jane](./3jane/) | $76.6M | 76.5% | $76.6M | declining | 4 | 17 | 2026-06-17 |
+| [3jane](./3jane/) | $76.6M | 76.5% | $76.6M | declining | 4 | 17 | 2026-06-18 |
 | [3xcalibur](./3xcalibur/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [40-acres](./40-acres/) | $8.7M | 0.0% | $8.7M | active | 4 | 195 | 2026-06-17 |
 | [a51-finance](./a51-finance/) | $13.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
@@ -343,7 +343,7 @@
 | [dforce](./dforce/) | $2.7M | 75.8% | $366.9K | declining | 4 | 39 | 2026-06-17 |
 | [dfs-network](./dfs-network/) | $96.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [dfx-finance](./dfx-finance/) | $111.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [dinari](./dinari/) | $27.6K | 24.5% | $27.6K | declining | 4 | 64 | 2026-06-17 |
+| [dinari](./dinari/) | $27.6K | 16.7% | $27.6K | declining | 4 | 42 | 2026-06-18 |
 | [dipcoin](./dipcoin/) | $4.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [ditto](./ditto/) | $33.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [djed-stablecoin](./djed-stablecoin/) | $5.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -946,7 +946,7 @@
 | [psyoptions](./psyoptions/) | $462.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pu239](./pu239/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [puddingswap](./puddingswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [puffer-finance](./puffer-finance/) | $97.6K | 10.0% | $97.6K | declining | 4 | 10 | 2026-06-17 |
+| [puffer-finance](./puffer-finance/) | $104.7K | 4.8% | $104.7K | declining | 4 | 21 | 2026-06-18 |
 | [pulsar-swap](./pulsar-swap/) | $11.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pulse-rate](./pulse-rate/) | $23.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $475.4K | 0.0% | $475.4K | active | 0 | 3 | 2026-06-17 |
@@ -1400,7 +1400,7 @@
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 9 | 2026-06-17 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 33.3% | $140.4M | declining | 11 | 13 | 2026-06-18 |
 | [zircuit](./zircuit/) | $176.1M | 30.0% | $144.2M | declining | 10 | 22 | 2026-06-18 |
-| [zivoe](./zivoe/) | $13.9M | 38.9% | ? | declining | 6 | 18 | 2026-06-17 |
+| [zivoe](./zivoe/) | $13.9M | 58.8% | ? | declining | 7 | 17 | 2026-06-18 |
 | [zklink-nova](./zklink-nova/) | $10.4M | 17.8% | ? | declining | 11 | 62 | 2026-06-18 |
 | [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-18 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 46 | 2026-06-17 |
@@ -1408,6 +1408,6 @@
 | [zoomex](./zoomex/) | $24.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [zootopia-finance](./zootopia-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zoro-protocol](./zoro-protocol/) | $11.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [zoth](./zoth/) | $2.2M | 50.0% | ? | active | 5 | 11 | 2026-06-17 |
+| [zoth](./zoth/) | $2.2M | 33.3% | ? | active | 5 | 14 | 2026-06-18 |
 | [zyberswap](./zyberswap/) | $65.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zyfai](./zyfai/) | $1.7B | 0.0% | $1.7B | active | 0 | 77 | 2026-06-17 |

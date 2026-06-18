@@ -40,11 +40,11 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FrxUSD](./ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | ethereum | [`0xcacd6f...586e29`](./ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | ⚠️ Unaudited | Verified |
-| [OCC_Cycle (3 deployments)](./ethereum-1/0x09c977130743feec9a8cbe260b187814ebddb69c/) | ethereum | 3 deployments: ethereum [`0x09c977...ddb69c`](./ethereum-1/0x09c977130743feec9a8cbe260b187814ebddb69c/); ethereum `0x161c42...ccc17f`; ethereum `0xb63c6a...986573` | ⚠️ Unaudited | Verified |
+| OCC_Cycle (3 deployments) | ethereum | 3 deployments: ethereum `0x09c977...ddb69c`; ethereum [`0x161c42...ccc17f`](./ethereum-1/0x161c42fb3ca3bae7755124b56d48a88bceccc17f/); ethereum `0xb63c6a...986573` | ⚠️ Unaudited | Verified |
 | [OCC_Variable](./ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | ethereum | [`0x26ac86...26f29e`](./ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | ⚠️ Unaudited | Verified |
 | [OCR_Cycle](./ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | ethereum | [`0x12e46e...78ad6f`](./ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | ⚠️ Unaudited | Verified |
-| [OCR_Instant (5 deployments)](./ethereum-1/0x18e71004880fd5b3e5c867a8ee114578b6fa47eb/) | ethereum | 5 deployments: ethereum [`0x18e710...fa47eb`](./ethereum-1/0x18e71004880fd5b3e5c867a8ee114578b6fa47eb/); ethereum `0x7720e6...2a89ec`; ethereum `0x90784f...20f737`; ethereum `0xa12d63...2c89ae`; ethereum `0xc25cd3...2be0d1` | ⚠️ Unaudited | Verified |
-| [OCT_Convert](./ethereum-1/0x8c5fa1638fc6527930d13aa0883f7ddc69951a85/) | ethereum | [`0x8c5fa1...951a85`](./ethereum-1/0x8c5fa1638fc6527930d13aa0883f7ddc69951a85/) | ✅ Audited | Verified |
+| OCR_Instant (5 deployments) | ethereum | 5 deployments: ethereum `0x18e710...fa47eb`; ethereum [`0x7720e6...2a89ec`](./ethereum-1/0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec/); ethereum `0x90784f...20f737`; ethereum `0xa12d63...2c89ae`; ethereum `0xc25cd3...2be0d1` | ⚠️ Unaudited | Verified |
+| OCT_Convert | ethereum | `0x8c5fa1...951a85` | ✅ Audited | Verified |
 | [OCT_DAO](./ethereum-1/0xd702332915fddf588793d54d63872a97ad78d108/) | ethereum | [`0xd70233...78d108`](./ethereum-1/0xd702332915fddf588793d54d63872a97ad78d108/) | ⚠️ Unaudited | Verified |
 | [Safe (2 deployments)](./ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/) | ethereum | 2 deployments: ethereum [`0x50c72f...eb0fd5`](./ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/); ethereum `0xc8d624...d5f026` | ⚠️ Unaudited | Verified |
 | [ZivoeRewards (3 deployments)](./ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/) | ethereum | 3 deployments: ethereum [`0x0d45c2...9ded5d`](./ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/); ethereum `0xb397aa...6b2dce`; ethereum `0xcacdb1...78aa7c` | ✅ Audited | Verified |

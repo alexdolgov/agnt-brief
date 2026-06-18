@@ -5,10 +5,10 @@
 - Project: Zoth (`zoth`)
 - Website: [https://zoth.io](https://zoth.io)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-06-17T07:00:47.394Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T14:49:16.266Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
 - Chains: avalanche, base, ethereum, manta, metis
-- Contract surface: 11 unique implementations (16 raw deployments)
+- Contract surface: 14 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $2,198,027.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,20 +23,20 @@ The ZeUSD CDP & Vaults family relies on shared registries, access managers, and 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 149; live-surface contracts included: 16 (14 live, 2 unknown).
-- Excluded by liveness: 71 inactive, 62 singleton, 0 uninitialized.
+- Indexed contracts: 158; live-surface contracts included: 20 (18 live, 2 unknown).
+- Excluded by liveness: 72 inactive, 66 singleton, 0 uninitialized.
 - Deployment units: 1/35 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/6 (50.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 3/9 (33.3%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 5
-- Unique implementations: 11
-- Raw deployments: 16
+- Unique implementations: 14
+- Raw deployments: 20
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -48,10 +48,10 @@ The ZeUSD CDP & Vaults family relies on shared registries, access managers, and 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Claude | Tier 2 | 2 | 33.3% | 2026-03 |
-| ENTERSOFT | Tier 2 | 2 | 33.3% | 2026-02 |
-| EVM Bench | Tier 2 | 2 | 33.3% | 2026-03 |
-| unknown | Tier 2 | 1 | 16.7% | 2025-01 |
+| Claude | Tier 2 | 2 | 22.2% | 2026-03 |
+| ENTERSOFT | Tier 2 | 2 | 22.2% | 2026-02 |
+| EVM Bench | Tier 2 | 2 | 22.2% | 2026-03 |
+| unknown | Tier 2 | 1 | 11.1% | 2025-01 |
 
 ## Contract Surface
 
@@ -63,13 +63,16 @@ The ZeUSD CDP & Vaults family relies on shared registries, access managers, and 
 | PriceOracle | operational_periphery | base | n/a | [`0x2756bf...6715eb`](./contracts/base-8453/0x2756bf902563b6e767a6e9ec20abfab3706715eb/) | ✅ Audited |
 | ZeUSD_OFT | unknown | manta | n/a | [`0x7dc974...8ea761`](./contracts/manta-169/0x7dc9748da8e762e569f9269f48f69a1a9f8ea761/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | AccessManager | governance | ethereum | n/a | 5 deployments: ethereum [`0x062b76...99c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/); ethereum `0x600b26...420430`; ethereum `0x7e43e3...5c8d58`; ethereum `0x80099b...43ee02`; ethereum `0xc1ce24...a2be5f` | ⚠️ Unaudited |
 | ProxyAdmin | governance | base | n/a | [`0x5a9916...b79b84`](./contracts/base-8453/0x5a9916c8b89f4cc97b782d5138ea54a17eb79b84/) | ⚠️ Unaudited |
+| RedemptionVault | core_logic | base | n/a | [`0xbaa2de...81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | ⚠️ Unaudited |
+| UpgradeTimelock | governance | base | n/a | [`0xff0820...fd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | ⚠️ Unaudited |
 | ZeUSDRouterV2 | adapter | ethereum | n/a | 2 deployments: ethereum [`0x8154db...498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/); ethereum `0xf1fd73...681f5c` | ⚠️ Unaudited |
+| zOPAL | unknown | base | n/a | 2 deployments: base [`0x83ca3d...1203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/); base `0xe60320...52a1d8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,7 +92,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x6f4d7192e66feacf6e3f65cfeae3f69c49ef9b03) | proxy | avalanche | unit-29055 | `0x7dc974...8ea761` | ❓ Unverified |
+| Proxy (impl: 0x6f4d7192e66feacf6e3f65cfeae3f69c49ef9b03) | proxy | avalanche | unit-37650 | `0x7dc974...8ea761` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x2d3d1a...e27a77` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x15925a...65683e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x973bd2...7b2f04` | ❓ Unverified |
@@ -111,17 +114,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x062b76...99c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/) | AccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xbaa2de...81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | RedemptionVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xff0820...fd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | UpgradeTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8154db...498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/) | ZeUSDRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x83ca3d...1203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/) | zOPAL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 12 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 4 |
+| standard_library | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

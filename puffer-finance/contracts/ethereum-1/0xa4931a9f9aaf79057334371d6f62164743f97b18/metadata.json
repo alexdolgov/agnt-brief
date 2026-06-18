@@ -1,0 +1,17 @@
+{
+  "address": "0xa4931a9f9aaf79057334371d6f62164743f97b18",
+  "chain_id": 1,
+  "contract_name": "pufETHAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "000000000000000000000000d9a442856c234a39a81a089c06451ebaa4306a720000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000001bfaec64abfddcc8c5da134880d1e71f3e03689e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T14:45:49.350Z"
+}

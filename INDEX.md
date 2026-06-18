@@ -3,7 +3,7 @@
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
 | [0vix](./0vix/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [1inch](./1inch/) | $16.1M | 40.9% | $16.1M | active | 149 | 33 | 2026-06-17 |
+| [1inch](./1inch/) | $16.1M | 52.2% | $16.1M | active | 150 | 32 | 2026-06-18 |
 | [1sec](./1sec/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [21.co](./21.co/) | $2.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [3f-mutual](./3f-mutual/) | $3.2M | 0.0% | ? | active | 0 | 9 | 2026-06-17 |
@@ -259,7 +259,7 @@
 | [chromatic-protocol](./chromatic-protocol/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [citadelswap](./citadelswap/) | $3.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [citrea-bridge](./citrea-bridge/) | $4.8M | 50.0% | ? | active | 10 | 3 | 2026-06-17 |
+| [citrea-bridge](./citrea-bridge/) | $4.8M | 0.0% | ? | active | 11 | 2 | 2026-06-18 |
 | [clarity](./clarity/) | $308.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 7 | 9 | 2026-06-17 |
@@ -868,7 +868,7 @@
 | [orcus-finance](./orcus-finance/) | $362.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
 | [osmosis-dex](./osmosis-dex/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [ostium](./ostium/) | $29.1M | 53.6% | ? | active | 7 | 28 | 2026-06-17 |
+| [ostium](./ostium/) | $29.1M | 100.0% | ? | active | 7 | 12 | 2026-06-18 |
 | [otsea](./otsea/) | $393.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [outcome-finance](./outcome-finance/) | $1.0M | 0.0% | ? | declining | 0 | 4 | 2026-06-17 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 3 | 47 | 2026-06-17 |
@@ -1136,7 +1136,7 @@
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [stader](./stader/) | $229.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [stafi](./stafi/) | $3.9M | 30.0% | $3.9M | declining | 9 | 15 | 2026-06-18 |
-| [stake.link](./stake.link/) | $10.7M | 55.0% | $35.9K | active | 20 | 23 | 2026-06-17 |
+| [stake.link](./stake.link/) | $10.7M | 52.4% | $35.9K | active | 20 | 25 | 2026-06-18 |
 | [stake.ly](./stake.ly/) | $16.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakehound](./stakehound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 86 | 2026-06-17 |
@@ -1177,7 +1177,7 @@
 | [superfluid](./superfluid/) | $1.7M | 23.0% | ? | active | 8 | 101 | 2026-06-18 |
 | [superform](./superform/) | $3.0M | 54.4% | $72.4 | active | 14 | 93 | 2026-06-18 |
 | [superhero-dex](./superhero-dex/) | $772.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [supernova](./supernova/) | $1.3M | 44.1% | ? | declining | 1 | 34 | 2026-06-17 |
+| [supernova](./supernova/) | $4.7 | 34.1% | $4.7 | declining | 1 | 41 | 2026-06-18 |
 | [supswap](./supswap/) | $19.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [surf-lending](./surf-lending/) | $4.5M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [surf-protocol](./surf-protocol/) | $6.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

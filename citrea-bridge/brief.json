@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "citrea-bridge",
-  "generated_at": "2026-06-17T07:00:35.687Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T17:53:32.099Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "citrea-bridge",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 0.06135784748034696
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
-    "audited_contracts": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
     "unaudited_contracts": 1,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 50,
-    "total_audits": 10,
-    "scoreable_audits": 1,
+    "coverage_pct": 0,
+    "total_audits": 11,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 4766416.54825,
     "tvl_usd": 4766416.54825,
     "tvl_source": "defillama",
@@ -50,7 +50,7 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 9,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
       "unknown": 1
     }
@@ -59,20 +59,20 @@
     "project_purpose": "Citrea Bridge is a bridge for moving BTC and other supported tokens to and from Citrea. Its listed Ethereum contract surface includes LayerZero OFT-style adapter and proxy contracts for bridged assets such as WBTC and stablecoins where applicable, while generic deployment infrastructure should be treated separately from scoreable Citrea Bridge contracts.",
     "relationship_narrative": "The Bridges family uses proxy contracts pointing to SourceOFTAdapter implementations from the Assets family, while Utility Contracts support deployment and infrastructure. WBTCOFTAdapter likely integrates with the SourceOFTAdapter to handle WBTC-specific bridging logic.",
     "product_family_count": 3,
-    "total_contracts_indexed": 5,
-    "live_contracts": 3,
+    "total_contracts_indexed": 6,
+    "live_contracts": 2,
     "inactive_contracts": 0,
-    "singleton_contracts": 2,
+    "singleton_contracts": 4,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 2,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 2,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -84,50 +84,13 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdaa289cc487cf95ba99db62f791c7e2d2a4b868e",
-      "deployment_unit": "unit-20317",
-      "deployment_unit_proxy_count": 1,
-      "name": "SourceOFTAdapter",
-      "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Bridges",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xbc9bdd439a71418c6a5d4f6c37bae75c8215ec03",
-      "impl_name": "SourceOFTAdapter",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdaa289cc487cf95ba99db62f791c7e2d2a4b868e",
-          "deployment_unit": "unit-20317",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2508"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x4e59b44847b379578588920ca78fbf26c0b4956c",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "create2deployer",
+      "origin_provider": "openzeppelin",
       "product_line": "Utility Contracts",
       "tvl_usd": null,
       "is_proxy": false,
@@ -288,47 +251,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ConfigSetup",
-        "DestinationOUSDC",
-        "DestinationOUSDCForTakeover",
-        "DestinationOUSDT",
-        "SourceOFTAdapter",
-        "SourceOFTAdapterForTakeover",
-        "USDCAndBridgeAssignRoles",
-        "USDCBridgeDeploy",
-        "USDCDestBridgePause",
-        "USDCDestBridgePrepareTakeover",
-        "USDCDestBridgeSetBlockedMsgLib",
-        "USDCDestBridgeSetLzConfig",
-        "USDCDestBridgeSetPeer",
-        "USDCDestBridgeUnpause",
-        "USDCProxyAdminTransfer",
-        "USDCRemoveBridgeAsMinter",
-        "USDCRolesHolder",
-        "USDCRolesHolderSetCircle",
-        "USDCSetBridgeAsMinter",
-        "USDCSrcBridgePause",
-        "USDCSrcBridgePrepareTakeover",
-        "USDCSrcBridgeSetBlockedMsgLib",
-        "USDCSrcBridgeSetCircle",
-        "USDCSrcBridgeSetLzConfig",
-        "USDCSrcBridgeSetPeer",
-        "USDCSrcBridgeUnpause",
-        "USDCTransferOwner",
-        "USDTAndBridgeAssignRoles",
-        "USDTBridgeDeploy",
-        "USDTDeploy",
-        "USDTDestBridgeSetLzConfig",
-        "USDTDestBridgeSetPeer",
-        "USDTSetBridgeAsMinter",
-        "USDTSrcBridgeSetLzConfig",
-        "USDTSrcBridgeSetPeer"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -435,17 +362,30 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
+    },
     {
+      "audit_id": 15503,
+      "audit_key": "audit-15503",
+      "report_name": "| [OtterSec](https://osec.io) | WBTC.e Bridge | Sept 2024 | [view]() |",
+      "report_url": "https://github.com/LayerZero-Labs/Audits/blob/d98efc2e0c4e6d7137a30529d1e55a9df7a4fbfd/audits/LZ_WBTC-OFT-Conversion_OtterSec_23-Sept-24.pdf",
       "auditor": "Guardian",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 50,
-      "latest_audit": "2026-02"
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -461,16 +401,14 @@
   "origin_summary": {
     "native": 1,
     "upstream": 0,
-    "standard_library": 2,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 3
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -491,6 +429,10 @@
         "report_name": "| [Cantina Competition](https://cantina.xyz/competitions/ce181972-2b40-4047-8ee9-89ec43527686) | Clementine | Oct 2025 | [view]() |"
       },
       {
+        "audit_id": 2508,
+        "report_name": "| [Guardian](https://guardianaudits.com) | USDT.e & USDC.e Bridge | Oct 2025 | [view]() |"
+      },
+      {
         "audit_id": 2510,
         "report_name": "BitVM - Zellic Audit Report.pdf"
       },
@@ -509,6 +451,10 @@
       {
         "audit_id": 2514,
         "report_name": "cantina_eip6780_fix_feb2026.pdf"
+      },
+      {
+        "audit_id": 15503,
+        "report_name": "| [OtterSec](https://osec.io) | WBTC.e Bridge | Sept 2024 | [view]() |"
       }
     ],
     "inherited_remapped_matches": []

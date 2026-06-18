@@ -5,10 +5,10 @@
 - Project: stake.link (`stake.link`)
 - Website: [https://stake.link](https://stake.link)
 - Lifecycle: active (Tier 0, 53.8% below peak)
-- Generated: 2026-06-17T07:00:35.799Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T17:54:02.225Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
 - Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 23 unique implementations (60 raw deployments)
+- Contract surface: 25 unique implementations (67 raw deployments)
 - DeFi Llama TVL: $67,100,095.00
 - On-chain TVL (included contracts): $10,737,474.81
 - TVL by chain: Ethereum $10,701,569.85 | Arbitrum $35,904.96
@@ -23,35 +23,35 @@ All staking families share common infrastructure such as StakingPool, PriorityPo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 184; live-surface contracts included: 60 (60 live, 0 unknown).
-- Excluded by liveness: 74 inactive, 50 singleton, 0 uninitialized.
+- Indexed contracts: 197; live-surface contracts included: 67 (67 live, 0 unknown).
+- Excluded by liveness: 74 inactive, 56 singleton, 0 uninitialized.
 - Deployment units: 2/28 live.
 - Detected codebases: none
-- Unverified dependencies: 1/17.
+- Dependencies extracted: 12; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 11/20 (55.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 11/21 (52.4%)
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 23
-- Raw deployments: 60
+- Unverified implementations: 4
+- Unique implementations: 25
+- Raw deployments: 67
 - Audits discovered: 20
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): $35,904.96
 - Latest audit: 2026-03 (fresh)
 - Staleness: 5 fresh, 7 aging, 8 stale, 0 unknown
-- Tier 1 coverage: 35.0% (Cyfrin)
+- Tier 1 coverage: 33.3% (Cyfrin)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 7 | 35.0% | 2026-03 |
-| Sigma Prime | Tier 2 | 5 | 25.0% | 2023-01 |
-| unknown | Tier 2 | 4 | 20.0% | 2025-02 |
-| Zellic | Tier 2 | 1 | 5.0% | 2025-07 |
+| Cyfrin | Tier 1 | 7 | 33.3% | 2026-03 |
+| Sigma Prime | Tier 2 | 5 | 23.8% | 2023-01 |
+| unknown | Tier 2 | 4 | 19.0% | 2025-02 |
+| Zellic | Tier 2 | 1 | 4.8% | 2025-07 |
 
 ## Contract Surface
 
@@ -66,22 +66,23 @@ All staking families share common infrastructure such as StakingPool, PriorityPo
 | PriorityPool | core_logic | ethereum | n/a | [`0x855039...de1bc3`](./contracts/ethereum-1/0x855039b459cea56707a61e641110097623de1bc3/) | ✅ Audited |
 | RebaseController | governance | ethereum | n/a | 3 deployments: ethereum [`0x1711e9...bdbec4`](./contracts/ethereum-1/0x1711e93eec78ba83d38c26f0ff284eb478bdbec4/); ethereum `0x5537f6...5ddb90`; ethereum `0xda669f...5b1c1f` | ✅ Audited |
 | RewardsPoolWSD | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x4a18ae...490342`](./contracts/ethereum-1/0x4a18aea755bd2ec7c0b7dd6f065bbb3725490342/); ethereum `0x77f555...6b5a56`; ethereum `0x8753c0...f8cc72`; ethereum `0xd6dbdd...802c59` | ✅ Audited |
-| SDLPool | core_logic | ethereum | unit-21561 | [`0x0b2ef9...48ca4d`](./contracts/ethereum-1/0x0b2ef910ad0b34bf575eb09d37fd7da6c148ca4d/) | ✅ Audited |
+| SDLPool | core_logic | ethereum | unit-38593 | [`0x0b2ef9...48ca4d`](./contracts/ethereum-1/0x0b2ef910ad0b34bf575eb09d37fd7da6c148ca4d/) | ✅ Audited |
 | SDLVesting | operational_periphery | ethereum | n/a | 19 deployments: ethereum [`0x02a0f6...ba3aba`](./contracts/ethereum-1/0x02a0f6242c43a3cb59e58d5fa7acd9e79bba3aba/); ethereum `0x03c1c1...b1ff94`; ethereum `0x08c1d7...26a8b9`; ethereum `0x378971...5f59df`; ethereum `0x4ccb44...119c86`; ethereum `0x506c02...5ee9c7`; ethereum `0x5eb140...c341e5`; ethereum `0x6185a7...2fcb3d`; ethereum `0x8aaf17...c9f7d5`; ethereum `0x8b5194...61024f`; ethereum `0x8b5256...becfe3`; ethereum `0xb03697...cfd1d4`; ethereum `0xb57b3d...864b02`; ethereum `0xe05edf...0252a6`; ethereum `0xe22ee6...93081a`; ethereum `0xe6476f...7e51e0`; ethereum `0xf12cea...14ea43`; ethereum `0xf509c9...2e3032`; ethereum `0xf7a813...9dc8f2` | ✅ Audited |
 | StakingAllowance | operational_periphery | ethereum | n/a | [`0xa95c5e...a28c23`](./contracts/ethereum-1/0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23/) | ✅ Audited |
 | StakingPool | core_logic | ethereum | n/a | [`0x9a9e3e...f3d314`](./contracts/ethereum-1/0x9a9e3e2b9c3a4a232c752875220be43f06f3d314/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | BurnMintERC677 | token | arbitrum | n/a | 2 deployments: arbitrum [`0x3106e2...4972fb`](./contracts/arbitrum-42161/0x3106e2e148525b3db36795b04691d444c24972fb/); arbitrum `0xdfea35...d0eec0` | ⚠️ Unaudited |
-| BurnMintERC20 | token | polygon | n/a | [`0x1d0347...b4b2ae`](./contracts/polygon-137/0x1d0347c535c88cf6bb72df75aed34363edb4b2ae/) | ⚠️ Unaudited |
+| BurnMintERC20 | token | polygon | n/a | 5 deployments: polygon [`0x0f6c1f...fb6e84`](./contracts/polygon-137/0x0f6c1f639c76b8461476da030e654f25ddfb6e84/); polygon `0x1d0347...b4b2ae`; polygon `0x282d99...a52c54`; polygon `0x593722...aba494`; polygon `0xba754d...d8f553` | ⚠️ Unaudited |
+| BurnMintTokenPool | core_logic | polygon | n/a | [`0xb4d2c0...2376db`](./contracts/polygon-137/0xb4d2c033ea68674e56f6071b0d826d03152376db/) | ⚠️ Unaudited |
 | EspressoRewardsConsumer | operational_periphery | ethereum | n/a | [`0xe69d92...6e33f9`](./contracts/ethereum-1/0xe69d92f6910b45da1d6ddfb380efaa6af56e33f9/) | ⚠️ Unaudited |
 | FactoryBurnMintERC20 | registry | polygon | n/a | 3 deployments: polygon [`0xc271a1...c20a9c`](./contracts/polygon-137/0xc271a17db5ce6f53745a3f466077ec816bc20a9c/); base `0xe5b64a...ce26e6`; base `0xf2f790...771297` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-21578 | [`0xb351ec...22493d`](./contracts/ethereum-1/0xb351ec0feaf4b99fdfd36b484d9ec90d0422493d/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-38610 | [`0xb351ec...22493d`](./contracts/ethereum-1/0xb351ec0feaf4b99fdfd36b484d9ec90d0422493d/) | ⚠️ Unaudited |
 | GovernanceTimelock | governance | ethereum | n/a | [`0xb72d8f...78349f`](./contracts/ethereum-1/0xb72d8f5213b3e52faf13aa074b03c4788e78349f/) | ⚠️ Unaudited |
-| LockReleaseTokenPool | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x20c0d7...37d461`](./contracts/ethereum-1/0x20c0d719c2ef30ff5ac6e822261ee655f037d461/); ethereum `0x28d314...f31b05`; ethereum `0x4a36c0...c5f68e`; ethereum `0x553636...e3a1bc` | ⚠️ Unaudited |
+| LockReleaseTokenPool | core_logic | ethereum | n/a | 5 deployments: ethereum [`0x20c0d7...37d461`](./contracts/ethereum-1/0x20c0d719c2ef30ff5ac6e822261ee655f037d461/); ethereum `0x28d314...f31b05`; ethereum `0x4a36c0...c5f68e`; ethereum `0x553636...e3a1bc`; polygon `0x48c5ca...4b4122` | ⚠️ Unaudited |
 | LPOG2 | token | ethereum | n/a | [`0x226ef9...a6ccd8`](./contracts/ethereum-1/0x226ef92ca9c42ab3a786e434f19c8148efa6ccd8/) | ⚠️ Unaudited |
 | Vesting | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x7287d9...9a0997`](./contracts/ethereum-1/0x7287d90ed89d586d0d4b09f683c7f06a3e9a0997/); ethereum `0x8d0422...b3e8d9`; ethereum `0x8dbc80...5aefad`; ethereum `0xcc8f8f...4171cb`; ethereum `0xd9d1b5...ea2c6b` | ⚠️ Unaudited |
 
@@ -97,7 +98,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -106,6 +107,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | n/a | `0x452401...5945d8` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x4d577e...f33ce7` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xb3cae0...f432dd` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9c3b66...2950a8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -150,7 +152,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 15 |
 | upstream | 4 |
 | standard_library | 3 |
-| needs_review | 1 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

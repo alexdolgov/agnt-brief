@@ -48,7 +48,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AlgebraFactory (2 deployments)](./ethereum-1/0x01f99ca678f82de3c9da01dbd2998e75ce3ade8c/) | ethereum | 2 deployments: ethereum [`0x01f99c...3ade8c`](./ethereum-1/0x01f99ca678f82de3c9da01dbd2998e75ce3ade8c/); ethereum `0x44b7fb...e89c55` | ⚠️ Unaudited | Verified |
-| [AlgebraVaultFactory (2 deployments)](./ethereum-1/0x789a0e0a6aedf3e6c090d305ac59cfaf75a43e62/) | ethereum | 2 deployments: ethereum [`0x789a0e...a43e62`](./ethereum-1/0x789a0e0a6aedf3e6c090d305ac59cfaf75a43e62/); ethereum `0xafc049...03038d` | ✅ Audited | Verified |
+| AlgebraVaultFactory (2 deployments) | ethereum | 2 deployments: ethereum `0x789a0e...a43e62`; ethereum `0xafc049...03038d` | ✅ Audited | Verified |
 | [BasePluginV3Factory](./ethereum-1/0xdbfd67d12cadb8925c1417ff3638693f2bf99b97/) | ethereum | [`0xdbfd67...f99b97`](./ethereum-1/0xdbfd67d12cadb8925c1417ff3638693f2bf99b97/) | ✅ Audited | Verified |
 | [FeeDiscountRegistry](./ethereum-1/0x31eda5529b8f219243e8248eff368bc36a3f5975/) | ethereum | [`0x31eda5...3f5975`](./ethereum-1/0x31eda5529b8f219243e8248eff368bc36a3f5975/) | ⚠️ Unaudited | Verified |
 | [PairGenerator](./ethereum-1/0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8/) | ethereum | [`0x42a7a5...69bbb8`](./ethereum-1/0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8/) | ✅ Audited | Verified |

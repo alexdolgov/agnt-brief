@@ -47,7 +47,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BurnMintERC20](./polygon-137/0x1d0347c535c88cf6bb72df75aed34363edb4b2ae/) | polygon | [`0x1d0347...b4b2ae`](./polygon-137/0x1d0347c535c88cf6bb72df75aed34363edb4b2ae/) | ⚠️ Unaudited | Verified |
+| BurnMintERC20 | polygon | `0x1d0347...b4b2ae` | ⚠️ Unaudited | Verified |
 | [BurnMintERC677 (2 deployments)](./arbitrum-42161/0x3106e2e148525b3db36795b04691d444c24972fb/) | arbitrum | 2 deployments: arbitrum [`0x3106e2...4972fb`](./arbitrum-42161/0x3106e2e148525b3db36795b04691d444c24972fb/); arbitrum `0xdfea35...d0eec0` | ⚠️ Unaudited | Verified |
 | [LPOG2](./ethereum-1/0x226ef92ca9c42ab3a786e434f19c8148efa6ccd8/) | ethereum | [`0x226ef9...a6ccd8`](./ethereum-1/0x226ef92ca9c42ab3a786e434f19c8148efa6ccd8/) | ⚠️ Unaudited | Verified |
 | [WrappedSDToken (3 deployments)](./ethereum-1/0x2091d83592d79b4de5fd2ce3d98679c32a9555e6/) | ethereum | 3 deployments: ethereum [`0x2091d8...9555e6`](./ethereum-1/0x2091d83592d79b4de5fd2ce3d98679c32a9555e6/); ethereum `0x43ff5f...f30a48`; ethereum `0x911d86...c803da` | ✅ Audited | Verified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "1inch",
-  "generated_at": "2026-06-17T07:00:37.579Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T18:11:50.954Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "1inch",
@@ -32,35 +32,38 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 33,
+    "total_contracts": 32,
     "total_addresses": 133,
-    "unique_implementations": 33,
+    "unique_implementations": 32,
     "total_deployments": 133,
-    "audited_contracts": 9,
-    "unaudited_contracts": 13,
-    "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 13,
+    "audited_contracts": 12,
+    "unaudited_contracts": 11,
+    "contracts_verified_audited": 12,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 11,
-    "coverage_pct": 40.9,
-    "total_audits": 149,
-    "scoreable_audits": 42,
+    "contracts_unverified": 9,
+    "coverage_pct": 52.2,
+    "total_audits": 150,
+    "scoreable_audits": 58,
     "dl_tvl_usd": 2411905.9976999997,
-    "tvl_usd": 16076308.714370122,
+    "tvl_usd": 16060699.910387367,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 16076308.71
+      "ethereum": 16060699.91
     },
-    "asd_usd": 16076308.714370122,
+    "asd_usd": 16060699.910387367,
     "website_url": "https://1inch.com",
     "chains": [
-      "ethereum"
+      "bsc",
+      "ethereum",
+      "zksync-era"
     ],
-    "tier1_coverage_pct": 18.2,
+    "tier1_coverage_pct": 26.1,
     "tier1_auditors": [
       "ChainSecurity",
       "MixBytes",
-      "OpenZeppelin"
+      "OpenZeppelin",
+      "Sherlock"
     ],
     "latest_audit_date": "2025-09",
     "audit_freshness": "fresh",
@@ -68,27 +71,27 @@
       "fresh": 13,
       "aging": 21,
       "stale": 109,
-      "unknown": 6
+      "unknown": 7
     }
   },
   "topography": {
     "project_purpose": "1inch is an active DeFi ecosystem centered on DEX aggregation and best-execution swaps across many liquidity sources. Its current product lines include the 1inch Aggregation Protocol/router, Limit Order Protocol, Fusion intent-based swaps, Fusion+/cross-chain swap infrastructure, wallet, portfolio, card, and developer/API products across 13+ supported chains. The 1INCH governance and utility token is 0x111111111117dc0aa78b770fa6a738034120c302 on Ethereum. MoverToken is not the 1inch governance token, and MooniswapFactory should not be described as the current core liquidity infrastructure for 1inch.",
     "relationship_narrative": "The single product family encompasses all contracts, with the MooniswapFactory serving as the core liquidity infrastructure and MoverToken as the governance token. Supporting contracts include proxy and external tokens that interact with the core aggregation and governance functions.",
     "product_family_count": 1,
-    "total_contracts_indexed": 809,
-    "live_contracts": 126,
-    "inactive_contracts": 639,
-    "singleton_contracts": 37,
+    "total_contracts_indexed": 822,
+    "live_contracts": 132,
+    "inactive_contracts": 650,
+    "singleton_contracts": 39,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 7,
+    "unknown_contracts": 1,
     "deployment_units": 19,
     "live_deployment_units": 0,
-    "dependencies_extracted": 58,
-    "unverified_dependencies": 19,
+    "dependencies_extracted": 26,
+    "unverified_dependencies": 3,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 33,
+    "unique_implementations": 32,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -170,72 +173,55 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3fa729b4548becbad4eab6ef18413470e6d5324c",
-      "deployment_unit": "unit-17729",
-      "deployment_unit_proxy_count": 1,
-      "name": "MoverToken",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "1inch",
-      "tvl_usd": 15209.986859755618,
-      "is_proxy": true,
-      "impl_address": "0xb05e8de2036ba9eaa4439b3c2243494a162203a5",
-      "impl_name": "MoverToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3fa729b4548becbad4eab6ef18413470e6d5324c",
-          "deployment_unit": "unit-17729",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 15209.986859755618,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xfa9ba210f70987477f4d65639ebd194dc1184e61",
-      "deployment_unit": "unit-17739",
-      "deployment_unit_proxy_count": 1,
-      "name": "HolyValorYearnUSDCVaultV2",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AggregationRouterV6",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 398.817123,
-      "is_proxy": true,
-      "impl_address": "0x6c89f23a44d85ae63af37e25596422d36160656d",
-      "impl_name": "HolyValorYearnUSDCVaultV2",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AggregationRouterV6",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xfa9ba210f70987477f4d65639ebd194dc1184e61",
-          "deployment_unit": "unit-17739",
-          "deployment_unit_proxy_count": 1,
+          "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 398.817123,
-          "is_audited": false
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8171",
+        "audit-8172",
+        "audit-8176",
+        "audit-8178",
+        "audit-8180",
+        "audit-8182"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -340,6 +326,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa7bcb4eac8964306f9e3764f67db6a7af6ddf99a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EscrowFactory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EscrowFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa7bcb4eac8964306f9e3764f67db6a7af6ddf99a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa7bcb4eac8964306f9e3764f67db6a7af6ddf99a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-8203",
+        "audit-8204",
+        "audit-8205",
+        "audit-8206",
+        "audit-8207",
+        "audit-8210",
+        "audit-8212",
+        "audit-8213",
+        "audit-8218",
+        "audit-8219"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -753,10 +796,10 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x00834e2763b108b01218638dc2cec27ce6d43753",
+      "address": "0xaccfac2339e16dc80c50d2fa81b5c2b049b4f947",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "MoverUBTStakeNode",
+      "name": "PowerPod",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
@@ -764,61 +807,29 @@
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "MoverUBTStakeNode",
+      "impl_name": "PowerPod",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x00834e2763b108b01218638dc2cec27ce6d43753",
+          "address": "0xaccfac2339e16dc80c50d2fa81b5c2b049b4f947",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x541d78076352a884c8358a2ac3f36408b99a18db",
-      "deployment_unit": "unit-17731",
-      "deployment_unit_proxy_count": 1,
-      "name": "MoverValorYearnUSDCv2VaultV2",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x2dd97bed16800c7ed1230786d09cd5f46a133ed9",
-      "impl_name": "MoverValorYearnUSDCv2VaultV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x541d78076352a884c8358a2ac3f36408b99a18db",
-          "deployment_unit": "unit-17731",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
+      "audits_covering": [
+        "audit-8248",
+        "audit-8249"
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -854,6 +865,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2ad5004c60e16e54d5007c80ce329adde5b51ef5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Settlement",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Settlement",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2ad5004c60e16e54d5007c80ce329adde5b51ef5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1575,17 +1621,6 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xb0fde6fcbb716e6ae2fa08de78a17825b5a99992",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0xb93217c3caed2e1ca7fe73dd334e5f9666fb5faf",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
@@ -2032,47 +2067,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x18acf236eb40c0d4824fb8f2582ebbecd325ef6a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "1inch",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x18acf236eb40c0d4824fb8f2582ebbecd325ef6a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x220bda5c8994804ac96ebe4df184d25e5c2196d4",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2102,47 +2102,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x30dcf96a8a0c742aa1f534fac79e99d320c97901",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "1inch",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x30dcf96a8a0c742aa1f534fac79e99d320c97901",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3451b6b219478037a1ac572706627fc2bda1e812",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2168,41 +2133,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x58730ae0faa10d73b0cddb5e7b87c3594f7a20cb",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "1inch",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x58730ae0faa10d73b0cddb5e7b87c3594f7a20cb",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2378,6 +2308,76 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 324,
+      "chain_name": "zksync-era",
+      "address": "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 324,
+          "chain_name": "zksync-era",
+          "address": "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf55684bc536487394b423e70567413fab8e45e26",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WhitelistRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WhitelistRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf55684bc536487394b423e70567413fab8e45e26",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2711,12 +2711,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "ClipperRouter",
+        "GenericRouter",
+        "OrderMixin",
+        "TakerTraitsLib",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2732,12 +2739,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "ClipperRouter",
+        "GenericRouter",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2816,12 +2828,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "AmountCalculator",
+        "BitInvalidatorLib",
+        "ClipperRouter",
+        "ConstraintsLib",
+        "Errors",
+        "ExtensionLib",
+        "GenericRouter",
+        "LimitsLib",
+        "OffsetsLib",
+        "OrderLib",
+        "OrderMixin",
+        "PredicateHelper",
+        "ProtocolLib",
+        "RemainingInvalidatorLib",
+        "RouterErrors",
+        "SafeERC20",
+        "SeriesEpochManager",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2879,12 +2911,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "AmountCalculator",
+        "BitInvalidatorLib",
+        "ClipperRouter",
+        "ConstraintsLib",
+        "Errors",
+        "ExtensionLib",
+        "GenericRouter",
+        "LimitsLib",
+        "OffsetsLib",
+        "OrderLib",
+        "OrderMixin",
+        "PredicateHelper",
+        "ProtocolLib",
+        "RemainingInvalidatorLib",
+        "RouterErrors",
+        "SafeERC20",
+        "SeriesEpochManager",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2935,12 +2987,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "ClipperRouter",
+        "GenericRouter",
+        "ProtocolLib",
+        "RouterErrors",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2977,12 +3036,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregationRouterV6",
+        "AmountCalculator",
+        "BitInvalidatorLib",
+        "ClipperRouter",
+        "ConstraintsLib",
+        "Errors",
+        "ExtensionLib",
+        "GenericRouter",
+        "LimitsLib",
+        "OffsetsLib",
+        "OrderLib",
+        "OrderMixin",
+        "PredicateHelper",
+        "ProtocolLib",
+        "RemainingInvalidatorLib",
+        "RouterErrors",
+        "SafeERC20",
+        "SeriesEpochManager",
+        "UnoswapRouter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3441,12 +3520,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "EscrowDst",
+        "EscrowFactory",
+        "TimelocksLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3462,12 +3545,24 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Clones",
+        "Escrow",
+        "EscrowDst",
+        "EscrowFactory",
+        "EscrowSrc",
+        "IEscrow",
+        "IEscrowDst",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "ImmutablesLib",
+        "TimelocksLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3483,12 +3578,18 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Escrow",
+        "EscrowDst",
+        "EscrowFactory",
+        "EscrowSrc",
+        "TimelocksLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3504,12 +3605,23 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Clones",
+        "Escrow",
+        "EscrowDst",
+        "EscrowFactory",
+        "EscrowSrc",
+        "IEscrow",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "ImmutablesLib",
+        "TimelocksLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3525,12 +3637,23 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Clones",
+        "Escrow",
+        "EscrowDst",
+        "EscrowFactory",
+        "EscrowSrc",
+        "IEscrow",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "ImmutablesLib",
+        "TimelocksLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3588,12 +3711,35 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseEscrow",
+        "BaseEscrowFactory",
+        "Escrow",
+        "EscrowDst",
+        "EscrowDstZkSync",
+        "EscrowFactory",
+        "EscrowFactoryZkSync",
+        "EscrowSrc",
+        "EscrowSrcZkSync",
+        "EscrowZkSync",
+        "IBaseEscrow",
+        "IEscrow",
+        "IEscrowDst",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "IMerkleStorageInvalidator",
+        "ImmutablesLib",
+        "MerkleStorageInvalidator",
+        "MinimalProxyZkSync",
+        "ProxyHashLib",
+        "TimelocksLib",
+        "ZkSyncLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3630,12 +3776,36 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseEscrow",
+        "BaseEscrowFactory",
+        "Escrow",
+        "EscrowDst",
+        "EscrowDstZkSync",
+        "EscrowFactory",
+        "EscrowFactoryZkSync",
+        "EscrowSrc",
+        "EscrowSrcZkSync",
+        "EscrowZkSync",
+        "IBaseEscrow",
+        "IEscrow",
+        "IEscrowDst",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "IMerkleStorageInvalidator",
+        "IResolverMock",
+        "ImmutablesLib",
+        "MerkleStorageInvalidator",
+        "MinimalProxyZkSync",
+        "ProxyHashLib",
+        "TimelocksLib",
+        "ZkSyncLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3651,12 +3821,35 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseEscrow",
+        "BaseEscrowFactory",
+        "Escrow",
+        "EscrowDst",
+        "EscrowDstZkSync",
+        "EscrowFactory",
+        "EscrowFactoryZkSync",
+        "EscrowSrc",
+        "EscrowSrcZkSync",
+        "EscrowZkSync",
+        "IBaseEscrow",
+        "IEscrow",
+        "IEscrowDst",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "IMerkleStorageInvalidator",
+        "ImmutablesLib",
+        "MerkleStorageInvalidator",
+        "MinimalProxyZkSync",
+        "ProxyHashLib",
+        "TimelocksLib",
+        "ZkSyncLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3756,12 +3949,26 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseEscrow",
+        "BaseEscrowFactory",
+        "Escrow",
+        "EscrowDst",
+        "EscrowDstZkSync",
+        "EscrowFactory",
+        "EscrowFactoryZkSync",
+        "EscrowSrc",
+        "EscrowSrcZkSync",
+        "EscrowZkSync",
+        "IBaseEscrow",
+        "IEscrowFactory",
+        "ImmutablesLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -3777,12 +3984,37 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseEscrow",
+        "BaseEscrowFactory",
+        "Escrow",
+        "EscrowDst",
+        "EscrowDstZkSync",
+        "EscrowFactory",
+        "EscrowFactoryContext",
+        "EscrowFactoryZkSync",
+        "EscrowSrc",
+        "EscrowSrcZkSync",
+        "EscrowZkSync",
+        "IBaseEscrow",
+        "IEscrow",
+        "IEscrowDst",
+        "IEscrowFactory",
+        "IEscrowSrc",
+        "IMerkleStorageInvalidator",
+        "IResolverExample",
+        "ImmutablesLib",
+        "MerkleStorageInvalidator",
+        "MinimalProxyZkSync",
+        "ProxyHashLib",
+        "TimelocksLib",
+        "ZkSyncLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -4477,7 +4709,7 @@
         "St1inch",
         "VotingPowerCalculator"
       ],
-      "matched_contracts": 1,
+      "matched_contracts": 2,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -4521,7 +4753,7 @@
         "WhitelistHelper",
         "WhitelistRegistry"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 3,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -5909,7 +6141,7 @@
       "extracted_names": [
         "StepVesting"
       ],
-      "matched_contracts": 90,
+      "matched_contracts": 89,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -5932,7 +6164,7 @@
       "extracted_names": [
         "StepVesting"
       ],
-      "matched_contracts": 90,
+      "matched_contracts": 89,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -5955,7 +6187,7 @@
       "extracted_names": [
         "StepVesting"
       ],
-      "matched_contracts": 90,
+      "matched_contracts": 89,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -5978,7 +6210,7 @@
       "extracted_names": [
         "StepVesting"
       ],
-      "matched_contracts": 90,
+      "matched_contracts": 89,
       "scope_note": null,
       "extraction_confidence": "medium",
       "scope_section_found": false,
@@ -6088,71 +6320,99 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15510,
+      "audit_key": "audit-15510",
+      "report_name": "DL audit link",
+      "report_url": "https://help.1inch.com/en/articles/4585088-how-secure-is-1inch",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 9,
-      "coverage_pct": 40.9,
+      "contracts_covered": 12,
+      "coverage_pct": 52.2,
       "latest_audit": "2025-09"
+    },
+    {
+      "auditor": "Decurity",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 17.4,
+      "latest_audit": "2025-08"
     },
     {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 13.6,
+      "coverage_pct": 13,
       "latest_audit": "2021-11"
     },
     {
       "auditor": "MixBytes",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 13.6,
+      "coverage_pct": 13,
       "latest_audit": "2022-11"
+    },
+    {
+      "auditor": "OpenZeppelin",
+      "tier": 1,
+      "contracts_covered": 3,
+      "coverage_pct": 13,
+      "latest_audit": "2025-08"
     },
     {
       "auditor": "ABDK",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 9.1,
+      "coverage_pct": 8.7,
       "latest_audit": "2023-02"
-    },
-    {
-      "auditor": "Decurity",
-      "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 9.1,
-      "latest_audit": "2025-08"
     },
     {
       "auditor": "Ackee Blockchain",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.5,
+      "coverage_pct": 4.3,
       "latest_audit": "2021-08"
     },
     {
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 1,
-      "coverage_pct": 4.5,
+      "coverage_pct": 4.3,
       "latest_audit": "2023-01"
-    },
-    {
-      "auditor": "OpenZeppelin",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 4.5,
-      "latest_audit": "2025-08"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.5,
+      "coverage_pct": 4.3,
       "latest_audit": "2023-12"
+    },
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 4.3,
+      "latest_audit": "2025-08"
     }
   ],
   "coverage_gaps": [
@@ -6199,8 +6459,18 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x00834e2763b108b01218638dc2cec27ce6d43753",
-      "name": "MoverUBTStakeNode",
+      "address": "0x303389f541ff2d620e42832f180a08e767b28e10",
+      "name": "SeriesNonceManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2ad5004c60e16e54d5007c80ce329adde5b51ef5",
+      "name": "Settlement",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -6209,26 +6479,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x303389f541ff2d620e42832f180a08e767b28e10",
-      "name": "SeriesNonceManager",
-      "role": "governance",
+      "address": "0xf55684bc536487394b423e70567413fab8e45e26",
+      "name": "WhitelistRegistry",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 20,
+    "native": 24,
     "upstream": 3,
-    "standard_library": 4,
-    "needs_review": 6
+    "standard_library": 1,
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2019
+      "extraction_exact": 2051
     },
     "extraction_confidence_counts": {
-      "high": 40,
+      "high": 56,
       "medium": 2
     },
     "audits_with_repo_references": [],
@@ -6267,14 +6537,6 @@
         "report_name": "1inch Aggregation Router V6.1_Decurity.pdf"
       },
       {
-        "audit_id": 8171,
-        "report_name": "1inch Aggregation Router V6.1_Hexens.pdf"
-      },
-      {
-        "audit_id": 8172,
-        "report_name": "1inch Aggregation Router V6.1_OpenZeppelin.pdf"
-      },
-      {
         "audit_id": 8173,
         "report_name": "1inch Aggregation Router V6.1_PeckShield.pdf"
       },
@@ -6287,24 +6549,8 @@
         "report_name": "1inch Aggregation Router V6.2_Hexens.pdf"
       },
       {
-        "audit_id": 8176,
-        "report_name": "1inch Aggregation Router V6.2_Pessimistic.pdf"
-      },
-      {
-        "audit_id": 8178,
-        "report_name": "1inch Aggregation Router V6_Decurity.pdf"
-      },
-      {
-        "audit_id": 8180,
-        "report_name": "1inch Aggregation Router V6_OpenZeppelin.pdf"
-      },
-      {
         "audit_id": 8181,
         "report_name": "1inch Aggregation Router V6_PeckShield.pdf"
-      },
-      {
-        "audit_id": 8182,
-        "report_name": "1inch Aggregation Router V6_Pessimistic.pdf"
       },
       {
         "audit_id": 8185,
@@ -6379,26 +6625,6 @@
         "report_name": "1inch Aggregation Router v4 Audit_Pessimistic.pdf"
       },
       {
-        "audit_id": 8203,
-        "report_name": "1inch-cross-chain-swap-v1-AstraSec.pdf"
-      },
-      {
-        "audit_id": 8204,
-        "report_name": "1inch-cross-chain-swap-v1-Consensys.pdf"
-      },
-      {
-        "audit_id": 8205,
-        "report_name": "1inch-cross-chain-swap-v1-Decurity.pdf"
-      },
-      {
-        "audit_id": 8206,
-        "report_name": "1inch-cross-chain-swap-v1-Igor Gulamov.pdf"
-      },
-      {
-        "audit_id": 8207,
-        "report_name": "1inch-cross-chain-swap-v1-Open Zeppelin.pdf"
-      },
-      {
         "audit_id": 8208,
         "report_name": "1inch-cross-chain-swap-v1-Pessimistic.pdf"
       },
@@ -6407,20 +6633,8 @@
         "report_name": "1inch-cross-chain-v2-Astrasec.pdf"
       },
       {
-        "audit_id": 8210,
-        "report_name": "1inch-cross-chain-v2-Consensys.pdf"
-      },
-      {
         "audit_id": 8211,
         "report_name": "1inch-cross-chain-v2-Decurity.pdf"
-      },
-      {
-        "audit_id": 8212,
-        "report_name": "1inch-cross-chain-v2-Igor Gulamov.pdf"
-      },
-      {
-        "audit_id": 8213,
-        "report_name": "1inch-cross-chain-v2-Open Zeppelin.pdf"
       },
       {
         "audit_id": 8214,
@@ -6437,14 +6651,6 @@
       {
         "audit_id": 8217,
         "report_name": "1inch Crosschain Fee v1.1_Hexens.pdf"
-      },
-      {
-        "audit_id": 8218,
-        "report_name": "1inch Crosschain Fee v1.1_Open Zeppelin.pdf"
-      },
-      {
-        "audit_id": 8219,
-        "report_name": "1inch Crosschain Fee v1.1_Sherlock.pdf"
       },
       {
         "audit_id": 8220,
@@ -6661,6 +6867,10 @@
       {
         "audit_id": 8595,
         "report_name": "swapvm-dev-preview.pdf"
+      },
+      {
+        "audit_id": 15510,
+        "report_name": "DL audit link"
       }
     ],
     "inherited_remapped_matches": []

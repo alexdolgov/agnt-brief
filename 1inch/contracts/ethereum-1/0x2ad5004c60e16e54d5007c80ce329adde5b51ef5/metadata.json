@@ -1,0 +1,18 @@
+{
+  "address": "0x2ad5004c60e16e54d5007c80ce329adde5b51ef5",
+  "chain_id": 1,
+  "contract_name": "Settlement",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T18:07:10.230Z"
+}

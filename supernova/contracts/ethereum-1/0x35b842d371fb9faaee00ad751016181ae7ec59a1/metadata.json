@@ -1,0 +1,18 @@
+{
+  "address": "0x35b842d371fb9faaee00ad751016181ae7ec59a1",
+  "chain_id": 1,
+  "contract_name": "PairFees",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T17:50:04.161Z"
+}

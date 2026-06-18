@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "etherex",
-  "generated_at": "2026-06-17T07:00:36.820Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T17:41:16.073Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "etherex",
@@ -32,54 +32,58 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 51,
-    "total_addresses": 112,
-    "unique_implementations": 51,
-    "total_deployments": 112,
-    "audited_contracts": 18,
+    "total_contracts": 59,
+    "total_addresses": 121,
+    "unique_implementations": 59,
+    "total_deployments": 121,
+    "audited_contracts": 22,
     "unaudited_contracts": 27,
-    "contracts_verified_audited": 17,
+    "contracts_verified_audited": 21,
     "contracts_verified_unaudited": 26,
     "contracts_verified_by_bytecode": 2,
-    "contracts_unverified": 6,
-    "coverage_pct": 40,
+    "contracts_unverified": 10,
+    "coverage_pct": 44.9,
     "total_audits": 4,
-    "scoreable_audits": 1,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 1355190,
-    "tvl_usd": 1355190,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 169604.24284900632,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "linea": 169604.24
+    },
     "asd_usd": null,
     "website_url": "https://etherex.finance/",
     "chains": [
       "linea"
     ],
-    "tier1_coverage_pct": 40,
+    "tier1_coverage_pct": 44.9,
     "tier1_auditors": [
+      "Code4rena",
+      "ConsenSys Diligence",
       "Spearbit"
     ],
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 2,
+      "aging": 3,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "Etherex is a concentrated-liquidity decentralized exchange on Linea with x(3,3)/metaDEX tokenomics. It enables token swaps, liquidity provision, gauges, voting, and fee distribution, and its deployed surface also includes classic AMM, gauge, and governance components.",
     "relationship_narrative": "The Core and Concentrated Liquidity families share the Access Control infrastructure for upgrades and governance. Both families use separate but parallel factory and gauge systems, with the Voter contract in Core directing emissions across both pool types.",
     "product_family_count": 3,
-    "total_contracts_indexed": 130,
-    "live_contracts": 110,
-    "inactive_contracts": 14,
+    "total_contracts_indexed": 140,
+    "live_contracts": 117,
+    "inactive_contracts": 15,
     "singleton_contracts": 4,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 2,
+    "unknown_contracts": 4,
     "deployment_units": 11,
     "live_deployment_units": 9,
-    "dependencies_extracted": 26,
+    "dependencies_extracted": 21,
     "unverified_dependencies": 0,
     "detected_codebases": [
       "uniswap-v2",
@@ -87,7 +91,7 @@
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 51,
+    "unique_implementations": 59,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -96,6 +100,44 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x90e8a5b881d211f418d77ba8978788b62544914b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RamsesV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 169604.24284900632,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesV3Pool",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x90e8a5b881d211f418d77ba8978788b62544914b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 169604.24284900632,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11903",
+        "audit-11904"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 59144,
       "chain_name": "linea",
@@ -412,7 +454,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0x683035188e3670fda1def2a7aa5742dea28ed5f3",
-      "deployment_unit": "unit-23300",
+      "deployment_unit": "unit-38530",
       "deployment_unit_proxy_count": 1,
       "name": "AccessHub",
       "role": "unknown",
@@ -428,7 +470,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x683035188e3670fda1def2a7aa5742dea28ed5f3",
-          "deployment_unit": "unit-23300",
+          "deployment_unit": "unit-38530",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -691,7 +733,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11904"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -936,7 +979,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11904"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -948,7 +992,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0x499aed38bdafd972e1cd2926d2b9088547dd8fcb",
-      "deployment_unit": "unit-23298",
+      "deployment_unit": "unit-38528",
       "deployment_unit_proxy_count": 1,
       "name": "GaugeV3",
       "role": "operational_periphery",
@@ -964,7 +1008,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x499aed38bdafd972e1cd2926d2b9088547dd8fcb",
-          "deployment_unit": "unit-23298",
+          "deployment_unit": "unit-38528",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -984,7 +1028,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11904"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1042,7 +1087,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0x90fc1f74cde75122a17db99c11597bf593b4940d",
-      "deployment_unit": "unit-23301",
+      "deployment_unit": "unit-38531",
       "deployment_unit_proxy_count": 1,
       "name": "MevModule",
       "role": "unknown",
@@ -1058,7 +1103,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x90fc1f74cde75122a17db99c11597bf593b4940d",
-          "deployment_unit": "unit-23301",
+          "deployment_unit": "unit-38531",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1228,7 +1273,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58",
-      "deployment_unit": "unit-23303",
+      "deployment_unit": "unit-38533",
       "deployment_unit_proxy_count": 1,
       "name": "NonfungiblePositionManager",
       "role": "governance",
@@ -1244,7 +1289,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58",
-          "deployment_unit": "unit-23303",
+          "deployment_unit": "unit-38533",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1253,7 +1298,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11904"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1321,6 +1367,44 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11903",
+        "audit-11904"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8418e91cf8cbf7dd37b6492e23bec75d0f4d81d8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pair",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8418e91cf8cbf7dd37b6492e23bec75d0f4d81d8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -1329,7 +1413,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -1373,7 +1457,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Position",
-      "role": "operational_periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1391,14 +1475,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11903"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1426,14 +1512,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11903"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1555,8 +1643,54 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x020079c6cb277ec22306a45e7d4eaefd24d3200e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RamsesTreasuryHelper",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesTreasuryHelper",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x020079c6cb277ec22306a45e7d4eaefd24d3200e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0efaaec1b2e11ee89c0a29ebdcde846c8631693b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x15325a2ec4bf164d47cf48d5d6a9edda385636a5",
-      "deployment_unit": "unit-23297",
+      "deployment_unit": "unit-38527",
       "deployment_unit_proxy_count": 1,
       "name": "RamsesTreasuryHelper",
       "role": "operational_periphery",
@@ -1572,7 +1706,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x15325a2ec4bf164d47cf48d5d6a9edda385636a5",
-          "deployment_unit": "unit-23297",
+          "deployment_unit": "unit-38527",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1618,7 +1752,9 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11903",
+        "audit-11904"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1655,7 +1791,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2724"
+        "audit-2724",
+        "audit-11903"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1666,8 +1803,43 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x4e710feb1b2e784233893af659442e4739272bfb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RamsesV3PositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesV3PositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4e710feb1b2e784233893af659442e4739272bfb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
-      "deployment_unit": "unit-23304",
+      "deployment_unit": "unit-38534",
       "deployment_unit_proxy_count": 1,
       "name": "RamsesV3PositionManager",
       "role": "governance",
@@ -1683,7 +1855,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
-          "deployment_unit": "unit-23304",
+          "deployment_unit": "unit-38534",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1820,7 +1992,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7",
-      "deployment_unit": "unit-23305",
+      "deployment_unit": "unit-38535",
       "deployment_unit_proxy_count": 1,
       "name": "SafeL2",
       "role": "unknown",
@@ -1836,7 +2008,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7",
-          "deployment_unit": "unit-23305",
+          "deployment_unit": "unit-38535",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1995,7 +2167,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0xf2643190116ed2a9c3cfbd3c489a60d4a51bb458",
-      "deployment_unit": "unit-23307",
+      "deployment_unit": "unit-38537",
       "deployment_unit_proxy_count": 1,
       "name": "TransparentUpgradeableProxy",
       "role": "proxy",
@@ -2011,7 +2183,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xf2643190116ed2a9c3cfbd3c489a60d4a51bb458",
-          "deployment_unit": "unit-23307",
+          "deployment_unit": "unit-38537",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -2099,6 +2271,76 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x09666eaf650dc52cece84b1bcd2dd78997d239c7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x09666eaf650dc52cece84b1bcd2dd78997d239c7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0ed01d983d65a1d624d1942ec268656987750acc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0ed01d983d65a1d624d1942ec268656987750acc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x35e755fac2e275629ff17647dcfad50f6bad5a69",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -2130,6 +2372,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x4f919b2f681add2c0080cfbb1f3dd1ebc5af1415",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4f919b2f681add2c0080cfbb1f3dd1ebc5af1415",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -2270,6 +2547,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc0cd56e070e25913d631876218609f2191da1c2a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc0cd56e070e25913d631876218609f2191da1c2a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -2507,7 +2819,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0x942117ec0458a8aa08669e94b52001bd43f889c1",
-      "deployment_unit": "unit-23302",
+      "deployment_unit": "unit-38532",
       "deployment_unit_proxy_count": 1,
       "name": "Voter",
       "role": "unknown",
@@ -2523,7 +2835,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x942117ec0458a8aa08669e94b52001bd43f889c1",
-          "deployment_unit": "unit-23302",
+          "deployment_unit": "unit-38532",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -2663,18 +2975,36 @@
       "report_url": "https://diligence.security/audits/2024/08/ramses-v3",
       "auditor": "Consensys Diligence",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IERC20Minimal",
+        "IRamsesV3Factory",
+        "IRamsesV3Pool",
+        "IRamsesV3PoolActions",
+        "IRamsesV3PoolDeployer",
+        "IRamsesV3PoolDerivedState",
+        "IRamsesV3PoolImmutables",
+        "IRamsesV3PoolOwnerActions",
+        "IRamsesV3PoolState",
+        "Oracle",
+        "PoolStorage",
+        "Position",
+        "ProtocolActions",
+        "RamsesV3Factory",
+        "RamsesV3Pool",
+        "RamsesV3PoolDeployer",
+        "Tick"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2690,12 +3020,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FeeCollector",
+        "GaugeV3",
+        "NonfungiblePositionManager",
+        "Oracle",
+        "RamsesV3Factory",
+        "RamsesV3Pool"
+      ],
+      "matched_contracts": 12,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -2704,8 +3041,22 @@
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 18,
-      "coverage_pct": 40,
+      "coverage_pct": 36.7,
       "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 7,
+      "coverage_pct": 14.3,
+      "latest_audit": "2024-10"
+    },
+    {
+      "auditor": "Consensys Diligence",
+      "tier": 1,
+      "contracts_covered": 6,
+      "coverage_pct": 12.2,
+      "latest_audit": "2024-08"
     }
   ],
   "coverage_gaps": [
@@ -2802,9 +3153,9 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x389df9430143880ddb13bdd5fd30daf2d57e7d55",
-      "name": "Oracle",
-      "role": "operational_periphery",
+      "address": "0x8418e91cf8cbf7dd37b6492e23bec75d0f4d81d8",
+      "name": "Pair",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2815,26 +3166,6 @@
       "address": "0xc0b920f6f1d6122b8187c031554dc8194f644592",
       "name": "PairFactory",
       "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x2832e19221631e7082926e2bb354497613bf9d6f",
-      "name": "Position",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x34413f3cddafef7db46f92296a7cea444b3140fd",
-      "name": "ProtocolActions",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2855,6 +3186,26 @@
       "address": "0xe660c95e17884b6c81b01445efc24556f8aba037",
       "name": "QuoterV2",
       "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x020079c6cb277ec22306a45e7d4eaefd24d3200e",
+      "name": "RamsesTreasuryHelper",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x4e710feb1b2e784233893af659442e4739272bfb",
+      "name": "RamsesV3PositionManager",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2921,16 +3272,17 @@
     }
   ],
   "origin_summary": {
-    "native": 42,
+    "native": 48,
     "upstream": 1,
     "standard_library": 8,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 72
+      "extraction_exact": 90
     },
     "extraction_confidence_counts": {
+      "high": 2,
       "medium": 1
     },
     "audits_with_repo_references": [],
@@ -2939,14 +3291,6 @@
       {
         "audit_id": 2725,
         "report_name": "cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c"
-      },
-      {
-        "audit_id": 11903,
-        "report_name": "diligence.consensys.io/audits/2024/08/ramses-v3"
-      },
-      {
-        "audit_id": 11904,
-        "report_name": "Report"
       }
     ],
     "inherited_remapped_matches": []

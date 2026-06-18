@@ -18,7 +18,7 @@
 | [AlgebraPool (2 deployments)](./arbitrum-42161/0x44cc8b40b1483e62e59ef937441ba6aa8e584a77/) | arbitrum | 2 deployments: arbitrum [`0x44cc8b...584a77`](./arbitrum-42161/0x44cc8b40b1483e62e59ef937441ba6aa8e584a77/); arbitrum `0xcf7145...7bd6d5` | ⚠️ Unaudited | Verified |
 | [CLPool (3 deployments)](./base-8453/0x2787d72d17db123351ebe903237e761ebcf529d6/) | base | 3 deployments: base [`0x2787d7...f529d6`](./base-8453/0x2787d72d17db123351ebe903237e761ebcf529d6/); base `0xb0a65b...17309e`; base `0xd53398...98c37e` | ⚠️ Unaudited | Verified |
 | [PodVaultUtility (5 deployments)](./arbitrum-42161/0x06386d5225d642fcbaa11c608fd50c4318440fc9/) | arbitrum | 5 deployments: ethereum `0x7f782f...0afeef`; ethereum `0xebebc4...159910`; sonic `0x08bafc...1de253`; base `0xaee454...757a5e`; arbitrum [`0x06386d...440fc9`](./arbitrum-42161/0x06386d5225d642fcbaa11c608fd50c4318440fc9/) | ⚠️ Unaudited | Verified |
-| [StakingVault](./ethereum-1/0xdab17556ae10062f5939e56d44063c12eb7b1ecc/) | ethereum | [`0xdab175...7b1ecc`](./ethereum-1/0xdab17556ae10062f5939e56d44063c12eb7b1ecc/) | ⚠️ Unaudited | Verified |
+| StakingVault | ethereum | `0xdab175...7b1ecc` | ⚠️ Unaudited | Verified |
 | [UniswapV3Pool (4 deployments)](./arbitrum-42161/0x23d17764f41aea93fdbb5beffa83571f0bf3f8b2/) | arbitrum | 4 deployments: ethereum `0x526800...c56b36`; ethereum `0xae7505...d79160`; base `0x5abdb2...f5a72b`; arbitrum [`0x23d177...f3f8b2`](./arbitrum-42161/0x23d17764f41aea93fdbb5beffa83571f0bf3f8b2/) | ⚠️ Unaudited | Verified |
 
 ## governance (2)

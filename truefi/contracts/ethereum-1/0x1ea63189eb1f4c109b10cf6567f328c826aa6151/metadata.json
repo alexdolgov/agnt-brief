@@ -1,0 +1,18 @@
+{
+  "address": "0x1ea63189eb1f4c109b10cf6567f328c826aa6151",
+  "chain_id": 1,
+  "contract_name": "OwnedUpgradeabilityProxy",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0x94cf8d6f6776a4bafcc52aad4835ae05343858ee",
+  "fetched_at": "2026-06-18T17:39:40.998Z"
+}

@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | [NonfungiblePositionManager](./linea-59144/0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58/) | linea | [`0xa04a9f...bb2f58`](./linea-59144/0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58/) | ✅ Audited | Verified |
 | [ProxyAdmin (2 deployments)](./linea-59144/0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3/) | linea | 2 deployments: linea [`0x3950d9...542dc3`](./linea-59144/0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3/); linea `0xdc78e9...3d384e` | ⚠️ Unaudited | Verified |
-| [RamsesV3PositionManager](./linea-59144/0xb56542bf1822c3fea210d920c8ab0fcaabcd1798/) | linea | [`0xb56542...cd1798`](./linea-59144/0xb56542bf1822c3fea210d920c8ab0fcaabcd1798/) | ✅ Audited | Verified |
+| RamsesV3PositionManager | linea | `0xb56542...cd1798` | ✅ Audited | Verified |
 | [TimeLock](./linea-59144/0xf9a15373c36f50e0dea03e80a568f03392d89944/) | linea | [`0xf9a153...d89944`](./linea-59144/0xf9a15373c36f50e0dea03e80a568f03392d89944/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (10)
@@ -38,7 +38,7 @@
 | [Minter (4 deployments)](./linea-59144/0x0b6d3b42861ee8abfcaac818033694e758ecc3eb/) | linea | 4 deployments: linea [`0x0b6d3b...ecc3eb`](./linea-59144/0x0b6d3b42861ee8abfcaac818033694e758ecc3eb/); linea `0x462e26...d2a966`; linea `0x76da79...da9f8f`; linea `0xf83962...0b6255` | ✅ Audited | Verified |
 | [Oracle](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | linea | [`0x389df9...7e7d55`](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | ⚠️ Unaudited | Verified |
 | [Position](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | linea | [`0x2832e1...bf9d6f`](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | ⚠️ Unaudited | Verified |
-| [RamsesTreasuryHelper](./linea-59144/0x15325a2ec4bf164d47cf48d5d6a9edda385636a5/) | linea | [`0x15325a...5636a5`](./linea-59144/0x15325a2ec4bf164d47cf48d5d6a9edda385636a5/) | ✅ Audited | Verified |
+| RamsesTreasuryHelper | linea | `0x15325a...5636a5` | ✅ Audited | Verified |
 
 ## periphery (5)
 

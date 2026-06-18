@@ -1,0 +1,18 @@
+{
+  "address": "0x8262f360bd5e08a7f4128a1ddbb7d2a17f479239",
+  "chain_id": 1,
+  "contract_name": "ProxyWrapper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xbfe06c4a361fde1ab992cd5af1277d68cf467666",
+  "fetched_at": "2026-06-18T17:39:42.026Z"
+}

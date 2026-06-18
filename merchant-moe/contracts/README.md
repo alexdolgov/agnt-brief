@@ -34,11 +34,11 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [JoeStaking](./mantle-5000/0x7fb0fc8514d817c655276a2895307176f253d303/) | mantle | [`0x7fb0fc...53d303`](./mantle-5000/0x7fb0fc8514d817c655276a2895307176f253d303/) | ✅ Audited | Verified |
+| JoeStaking | mantle | `0x7fb0fc...53d303` | ✅ Audited | Verified |
 | [MasterChef](./mantle-5000/0xa756f7d419e1a5cbd656a438443011a7de1955b5/) | mantle | [`0xa756f7...1955b5`](./mantle-5000/0xa756f7d419e1a5cbd656a438443011a7de1955b5/) | ✅ Audited | Verified |
 | [Moe](./mantle-5000/0x4515a45337f461a11ff0fe8abf3c606ae5dc00c9/) | mantle | [`0x4515a4...dc00c9`](./mantle-5000/0x4515a45337f461a11ff0fe8abf3c606ae5dc00c9/) | ✅ Audited | Verified |
 | UnnamedContract | mantle | `0x031839...b89eef` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x0980d1...658aa6` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x28104d...f33f95` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x7097f0...e61476` | ❓ Unverified | Unverified |
-| [VeMoe (2 deployments)](./mantle-5000/0x55160b0f39848a7b844f3a562210489df301dee7/) | mantle | 2 deployments: mantle [`0x55160b...01dee7`](./mantle-5000/0x55160b0f39848a7b844f3a562210489df301dee7/); mantle `0x79f316...b69d44` | ✅ Audited (bytecode match) | Verified |
+| [VeMoe (2 deployments)](./mantle-5000/0x55160b0f39848a7b844f3a562210489df301dee7/) | mantle | 2 deployments: mantle [`0x55160b...01dee7`](./mantle-5000/0x55160b0f39848a7b844f3a562210489df301dee7/); mantle [`0x79f316...b69d44`](./mantle-5000/0x79f316c45e9b62638a8304ffffa9806439b69d44/) | ✅ Audited (bytecode match) | Verified |

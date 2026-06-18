@@ -6,7 +6,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [DepositController](./arbitrum-42161/0xb4c8bfd082a47c008ce95dd13314105f6c0fe372/) | arbitrum | [`0xb4c8bf...0fe372`](./arbitrum-42161/0xb4c8bfd082a47c008ce95dd13314105f6c0fe372/) | ⚠️ Unaudited | Verified |
+| DepositController | arbitrum | `0xb4c8bf...0fe372` | ⚠️ Unaudited | Verified |
 | [GnosisSafe](./ethereum-1/0xdc0175978ae72383bbfdbe56fed69d3acd5d476a/) | ethereum | [`0xdc0175...5d476a`](./ethereum-1/0xdc0175978ae72383bbfdbe56fed69d3acd5d476a/) | ⚠️ Unaudited | Verified |
 | [OpenTransferController](./arbitrum-42161/0xa1259068ea5252a307ced730d758c2e8d7ae177f/) | arbitrum | [`0xa12590...ae177f`](./arbitrum-42161/0xa1259068ea5252a307ced730d758c2e8d7ae177f/) | ⚠️ Unaudited | Verified |
 
@@ -26,4 +26,4 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AutomatedLineOfCredit (2 deployments)](./arbitrum-42161/0x45277f7d263c83f8223460621f31774c52a46d97/) | arbitrum | 2 deployments: arbitrum [`0x45277f...a46d97`](./arbitrum-42161/0x45277f7d263c83f8223460621f31774c52a46d97/); arbitrum `0x8626a4...e95d98` | ✅ Audited | Verified |
+| AutomatedLineOfCredit (2 deployments) | arbitrum | 2 deployments: arbitrum `0x45277f...a46d97`; arbitrum `0x8626a4...e95d98` | ✅ Audited | Verified |

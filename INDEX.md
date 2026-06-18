@@ -394,7 +394,7 @@
 | [eth-strategy](./eth-strategy/) | $30.4M | 0.0% | $30.4M | active | 1 | 40 | 2026-06-17 |
 | [ethereal-dex](./ethereal-dex/) | $26.2M | 0.0% | ? | unknown | 3 | 0 | 2026-06-17 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-06-17 |
-| [etherex](./etherex/) | $1.4M | 40.0% | ? | declining | 4 | 51 | 2026-06-17 |
+| [etherex](./etherex/) | $169.6K | 44.9% | ? | declining | 4 | 59 | 2026-06-18 |
 | [etherflip](./etherflip/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [etherfuse](./etherfuse/) | $16.2K | 0.0% | $16.2K | active | 0 | 10 | 2026-06-17 |
 | [ethichub](./ethichub/) | $18.5M | 0.0% | $18.5M | active | 2 | 19 | 2026-06-17 |
@@ -722,7 +722,7 @@
 | [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [mendi-finance](./mendi-finance/) | $1.7M | 0.0% | ? | sunsetting | 6 | 4 | 2026-06-18 |
 | [mento](./mento/) | $866.4K | 69.7% | $65.0K | declining | 23 | 48 | 2026-06-17 |
-| [merchant-moe](./merchant-moe/) | $21.6M | 50.0% | ? | unknown | 1 | 16 | 2026-06-17 |
+| [merchant-moe](./merchant-moe/) | $21.6M | 45.5% | ? | declining | 1 | 14 | 2026-06-18 |
 | [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
 | [meson](./meson/) | $491.4K | 20.0% | ? | active | 4 | 22 | 2026-06-17 |
@@ -894,7 +894,7 @@
 | [paxe-protocol](./paxe-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pay-protocol](./pay-protocol/) | $277.4K | 0.0% | ? | declining | 0 | 8 | 2026-06-17 |
 | [pbg](./pbg/) | $12.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [peapods-finance](./peapods-finance/) | $891.9K | 56.8% | $891.9K | declining | 4 | 94 | 2026-06-17 |
+| [peapods-finance](./peapods-finance/) | $781.6K | 42.9% | $781.6K | declining | 4 | 72 | 2026-06-18 |
 | [pegasusdollar](./pegasusdollar/) | $14.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pell-network](./pell-network/) | $238.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pembrock-finance](./pembrock-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1267,7 +1267,7 @@
 | [tristero](./tristero/) | $353.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tropykus-finance](./tropykus-finance/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [troves](./troves/) | $4.1M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |
-| [truefi](./truefi/) | $15.4M | 16.7% | ? | declining | 24 | 6 | 2026-06-17 |
+| [truefi](./truefi/) | $5.0M | 50.0% | ? | declining | 27 | 3 | 2026-06-18 |
 | [trueo](./trueo/) | $25.5M | 0.0% | $25.5M | declining | 0 | 28 | 2026-06-17 |
 | [trufin-protocol](./trufin-protocol/) | ? | 50.0% | ? | declining | 12 | 2 | 2026-06-17 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 10 | 2026-06-17 |
@@ -1383,7 +1383,7 @@
 | [yieldly](./yieldly/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yieldnest](./yieldnest/) | $19.2M | 47.1% | $295.1K | active | 13 | 18 | 2026-06-18 |
 | [yieldseeker](./yieldseeker/) | $93.9M | 0.0% | $93.9M | active | 1 | 114 | 2026-06-17 |
-| [yo-protocol](./yo-protocol/) | $40.9M | 44.4% | ? | declining | 7 | 18 | 2026-06-17 |
+| [yo-protocol](./yo-protocol/) | $41.5M | 40.0% | $542.0K | declining | 7 | 20 | 2026-06-18 |
 | [yoshi-exchange](./yoshi-exchange/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [youves](./youves/) | $35.5M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [yupana](./yupana/) | $24.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

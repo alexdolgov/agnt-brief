@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stafi",
-  "generated_at": "2026-06-17T07:00:50.465Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T06:26:02.696Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-94c2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "stafi",
@@ -36,15 +36,15 @@
     "total_addresses": 16,
     "unique_implementations": 15,
     "total_deployments": 16,
-    "audited_contracts": 2,
-    "unaudited_contracts": 8,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 8,
+    "audited_contracts": 3,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
-    "coverage_pct": 20,
+    "coverage_pct": 30,
     "total_audits": 9,
-    "scoreable_audits": 1,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 3164267.5898200003,
     "tvl_usd": 3923672.09555422,
     "tvl_source": "on_chain",
@@ -63,23 +63,23 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 9,
-      "unknown": 0
+      "stale": 8,
+      "unknown": 1
     }
   },
   "topography": {
     "project_purpose": "StaFi is a cross-chain liquid staking and staking-derivatives protocol. It provides rToken liquid staking products and StaFi 2.0 infrastructure, including LSaaS and AI-positioned liquid staking services, designed to let users stake assets while retaining liquidity through derivative tokens. The listed contract coverage should be treated as Ethereum-only unless non-Ethereum deployments are separately included and verified.",
     "relationship_narrative": "The RETHToken is the core liquid staking token, while StafiWithdrawProxy and TransparentUpgradeableProxy serve as supporting infrastructure for withdrawals and stake management, respectively. These contracts share a common deployer cluster, indicating a unified deployment.",
     "product_family_count": 1,
-    "total_contracts_indexed": 58,
+    "total_contracts_indexed": 64,
     "live_contracts": 16,
-    "inactive_contracts": 40,
-    "singleton_contracts": 2,
+    "inactive_contracts": 44,
+    "singleton_contracts": 4,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 2,
+    "deployment_units": 3,
     "live_deployment_units": 1,
-    "dependencies_extracted": 5,
+    "dependencies_extracted": 1,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -171,8 +171,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Multisig",
       "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -273,7 +273,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2646"
+        "audit-14990"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -306,14 +306,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14989"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -380,7 +382,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2646"
+        "audit-14990"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -392,7 +394,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3aee3e96c9e340cbe0fffc5224db9e97949f3899",
-      "deployment_unit": "unit-31204",
+      "deployment_unit": "unit-35520",
       "deployment_unit_proxy_count": 1,
       "name": "StakeManager",
       "role": "governance",
@@ -408,7 +410,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3aee3e96c9e340cbe0fffc5224db9e97949f3899",
-          "deployment_unit": "unit-31204",
+          "deployment_unit": "unit-35520",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -636,8 +638,8 @@
   ],
   "audits": [
     {
-      "audit_id": 2641,
-      "audit_key": "audit-2641",
+      "audit_id": 14985,
+      "audit_key": "audit-14985",
       "report_name": "REP-Stafi-21_01_2021.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/REP-Stafi-21_01_2021.pdf",
       "auditor": "REP",
@@ -657,8 +659,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2642,
-      "audit_key": "audit-2642",
+      "audit_id": 14986,
+      "audit_key": "audit-14986",
       "report_name": "REP-StafiBridgeSolidity-13_11_2020.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/REP-StafiBridgeSolidity-13_11_2020.pdf",
       "auditor": "REP",
@@ -678,14 +680,14 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2643,
-      "audit_key": "audit-2643",
+      "audit_id": 14987,
+      "audit_key": "audit-14987",
       "report_name": "REP-Stafi_Token_Relay-19_04_2021.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/REP-Stafi_Token_Relay-19_04_2021.pdf",
       "auditor": "REP",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-04",
+      "freshness": "unknown",
+      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -699,8 +701,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2644,
-      "audit_key": "audit-2644",
+      "audit_id": 14988,
+      "audit_key": "audit-14988",
       "report_name": "PeckShield-Audit-Report-Stafi-rDEX-v1.0.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/rdex/PeckShield-Audit-Report-Stafi-rDEX-v1.0.pdf",
       "auditor": "PeckShield",
@@ -720,8 +722,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2645,
-      "audit_key": "audit-2645",
+      "audit_id": 14989,
+      "audit_key": "audit-14989",
       "report_name": "PeckShield-Audit-Report-StaFi-Eth2-Staking-v1.0.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/PeckShield-Audit-Report-StaFi-Eth2-Staking-v1.0.pdf",
       "auditor": "PeckShield",
@@ -733,16 +735,32 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "AddressQueueStorage",
+        "IAddressQueueStorage",
+        "IStafiNetworkSettings",
+        "IStafiNodeManager",
+        "IStafiStakingPool",
+        "IStafiStakingPoolManager",
+        "IStafiStorage",
+        "StafiBase",
+        "StafiNetworkBalances",
+        "StafiNetworkSettings",
+        "StafiNetworkWithdrawal",
+        "StafiNodeManager",
+        "StafiStakingPoolManager",
+        "StafiStorage",
+        "StafiUpgrade"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2646,
-      "audit_key": "audit-2646",
+      "audit_id": 14990,
+      "audit_key": "audit-14990",
       "report_name": "PeckShield-Audit-Report-Stafi-Eth2Staking-v1.0.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/v2/PeckShield-Audit-Report-Stafi-Eth2Staking-v1.0.pdf",
       "auditor": "PeckShield",
@@ -756,6 +774,7 @@
       "scope_format": "contract_name",
       "extracted_names": [
         "AddressQueueStorage",
+        "EthDeposit",
         "StafiBase",
         "StafiEther",
         "StafiLightNode",
@@ -772,8 +791,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2647,
-      "audit_key": "audit-2647",
+      "audit_id": 14991,
+      "audit_key": "audit-14991",
       "report_name": "PeckShield-Audit-Report-StafiWithdraw-v1.0.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/withdraw/PeckShield-Audit-Report-StafiWithdraw-v1.0.pdf",
       "auditor": "PeckShield",
@@ -793,8 +812,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2648,
-      "audit_key": "audit-2648",
+      "audit_id": 14992,
+      "audit_key": "audit-14992",
       "report_name": "blocksec_stafi_v1.0-signed.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/withdraw/blocksec_stafi_v1.0-signed.pdf",
       "auditor": "BlockSec",
@@ -814,8 +833,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2649,
-      "audit_key": "audit-2649",
+      "audit_id": 14993,
+      "audit_key": "audit-14993",
       "report_name": "peckshield-audit-report-stafi-node-v1.0.pdf",
       "report_url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/rfis/peckshield-audit-report-stafi-node-v1.0.pdf",
       "auditor": "PeckShield",
@@ -839,8 +858,8 @@
     {
       "auditor": "PeckShield",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 20,
+      "contracts_covered": 3,
+      "coverage_pct": 30,
       "latest_audit": "2023-03"
     }
   ],
@@ -878,16 +897,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xd8575c32bbc1ea9d33856a6de74be258712307a8",
-      "name": "StafiNodeManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x588e859cb38fecf2d56925c0512471ab47aa9ff1",
       "name": "StafiSuperNode",
       "role": "unknown",
@@ -909,49 +918,45 @@
   "origin_summary": {
     "native": 13,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 1
+    "standard_library": 2,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 12
+      "extraction_exact": 15
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2641,
+        "audit_id": 14985,
         "report_name": "REP-Stafi-21_01_2021.pdf"
       },
       {
-        "audit_id": 2642,
+        "audit_id": 14986,
         "report_name": "REP-StafiBridgeSolidity-13_11_2020.pdf"
       },
       {
-        "audit_id": 2643,
+        "audit_id": 14987,
         "report_name": "REP-Stafi_Token_Relay-19_04_2021.pdf"
       },
       {
-        "audit_id": 2644,
+        "audit_id": 14988,
         "report_name": "PeckShield-Audit-Report-Stafi-rDEX-v1.0.pdf"
       },
       {
-        "audit_id": 2645,
-        "report_name": "PeckShield-Audit-Report-StaFi-Eth2-Staking-v1.0.pdf"
-      },
-      {
-        "audit_id": 2647,
+        "audit_id": 14991,
         "report_name": "PeckShield-Audit-Report-StafiWithdraw-v1.0.pdf"
       },
       {
-        "audit_id": 2648,
+        "audit_id": 14992,
         "report_name": "blocksec_stafi_v1.0-signed.pdf"
       },
       {
-        "audit_id": 2649,
+        "audit_id": 14993,
         "report_name": "peckshield-audit-report-stafi-node-v1.0.pdf"
       }
     ],

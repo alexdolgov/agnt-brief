@@ -229,7 +229,7 @@
 | [canopy](./canopy/) | $853.5K | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 83 | 2026-06-17 |
 | [capx-ai](./capx-ai/) | $1.9M | 0.0% | $1.9M | active | 4 | 2 | 2026-06-17 |
-| [carbon-defi](./carbon-defi/) | $2.3M | 0.0% | ? | active | 4 | 24 | 2026-06-17 |
+| [carbon-defi](./carbon-defi/) | $2.3M | 0.0% | ? | active | 4 | 28 | 2026-06-18 |
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [carrot](./carrot/) | $288.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [catsluck](./catsluck/) | $3.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -569,7 +569,7 @@
 | [init-capital](./init-capital/) | $66.2M | 0.0% | $66.2M | declining | 7 | 9 | 2026-06-17 |
 | [initiadex](./initiadex/) | $2.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 1 | 2026-06-17 |
-| [ink-bridge](./ink-bridge/) | $36.4M | 44.0% | ? | active | 17 | 68 | 2026-06-17 |
+| [ink-bridge](./ink-bridge/) | $36.4M | 40.7% | ? | active | 17 | 70 | 2026-06-18 |
 | [ink-protocol](./ink-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [intentx](./intentx/) | $5.7M | 0.0% | ? | active | 2 | 12 | 2026-06-17 |
 | [interest-labs](./interest-labs/) | $2.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -780,7 +780,7 @@
 | [mu-digital](./mu-digital/) | $21.6M | 85.7% | ? | active | 2 | 7 | 2026-06-17 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
 | [multichain](./multichain/) | $12.3M | 71.4% | $128.8 | dead | 15 | 7 | 2026-06-17 |
-| [mux-protocol](./mux-protocol/) | $0.2 | 21.6% | $0.2 | active | 4 | 921 | 2026-06-17 |
+| [mux-protocol](./mux-protocol/) | $0.2 | 24.3% | $0.2 | active | 4 | 161 | 2026-06-18 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 3 | 5 | 2026-06-17 |
 | [myso](./myso/) | $28.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [mystic-finance](./mystic-finance/) | $5.0M | 0.0% | ? | unknown | 10 | 0 | 2026-06-17 |
@@ -1135,7 +1135,7 @@
 | [stablecomp](./stablecomp/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [stader](./stader/) | $229.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [stafi](./stafi/) | $3.9M | 20.0% | $3.9M | declining | 9 | 15 | 2026-06-17 |
+| [stafi](./stafi/) | $3.9M | 30.0% | $3.9M | declining | 9 | 15 | 2026-06-18 |
 | [stake.link](./stake.link/) | $10.7M | 55.0% | $35.9K | active | 20 | 23 | 2026-06-17 |
 | [stake.ly](./stake.ly/) | $16.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakehound](./stakehound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1355,7 +1355,7 @@
 | [witswap](./witswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 31.9% | $47.8K | declining | 11 | 58 | 2026-06-17 |
 | [woo-x](./woo-x/) | $5.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [woofi](./woofi/) | $9.0M | 25.9% | $8.9M | declining | 6 | 47 | 2026-06-17 |
+| [woofi](./woofi/) | $9.2M | 29.6% | $8.7M | declining | 9 | 47 | 2026-06-18 |
 | [worldes](./worldes/) | $567.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wowswap](./wowswap/) | $34.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-17 |

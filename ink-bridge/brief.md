@@ -5,10 +5,10 @@
 - Project: Ink Bridge (`ink-bridge`)
 - Website: [https://inkonchain.com/bridge](https://inkonchain.com/bridge)
 - Lifecycle: active (Tier 0, 60.5% below peak)
-- Generated: 2026-06-17T07:00:50.097Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T06:25:46.063Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: ethereum, ink, optimism
-- Contract surface: 68 unique implementations (70 raw deployments)
+- Contract surface: 70 unique implementations (75 raw deployments)
 - DeFi Llama TVL: $36,388,459.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,33 +23,34 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 
 ## Contract Surface Quality
 
-- Indexed contracts: 70; live-surface contracts included: 70 (18 live, 52 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 5/10 live.
+- Indexed contracts: 77; live-surface contracts included: 75 (23 live, 52 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 7/12 live.
 - Detected codebases: none
-- Unverified dependencies: 8/9.
+- Unverified dependencies: 9/10.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 11/25 (44.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 11/27 (40.7%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 43
-- Unique implementations: 68
-- Raw deployments: 70
+- Unique implementations: 70
+- Raw deployments: 75
 - Audits discovered: 17
-- Scoreable audits (matched contracts): 5
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
 - Staleness: 0 fresh, 6 aging, 11 stale, 0 unknown
-- Tier 1 coverage: 44.0% (Spearbit, Trail of Bits)
+- Tier 1 coverage: 40.7% (Sherlock, Spearbit, Trail of Bits)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 11 | 44.0% | 2025-03 |
-| Trail of Bits | Tier 1 | 1 | 4.0% | 2023-01 |
+| Spearbit | Tier 1 | 11 | 40.7% | 2025-03 |
+| Sherlock | Tier 1 | 4 | 14.8% | 2024-05 |
+| Trail of Bits | Tier 1 | 1 | 3.7% | 2023-01 |
 
 ## Contract Surface
 
@@ -57,19 +58,19 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnchorStateRegistry | registry | ethereum | unit-30611 | [`0xde7444...5e2509`](./contracts/ethereum-1/0xde744491bcf6b2dd2f32146364ea1487d75e2509/) | ✅ Audited |
-| DelayedWETH | token | ethereum | unit-30603 | [`0x14773a...920d38`](./contracts/ethereum-1/0x14773a8040ff22e3dcbb0c83ec8e33be7d920d38/) | ✅ Audited |
-| DisputeGameFactory | registry | ethereum | unit-30602 | [`0x10d7b3...5b12cd`](./contracts/ethereum-1/0x10d7b35078d3baabb96dd45a9143b94be65b12cd/) | ✅ Audited |
-| ETHLockbox | unknown | ethereum | unit-30610 | [`0xbd4abb...325a14`](./contracts/ethereum-1/0xbd4abb321138e8eddc399ce64e66451294325a14/) | ✅ Audited |
-| L1CrossDomainMessenger | unknown | ethereum | unit-30607 | [`0x69d3cf...6c171f`](./contracts/ethereum-1/0x69d3cf86b2bf1a9e99875b7e2d9b6a84426c171f/) | ✅ Audited |
-| L1ERC721Bridge | operational_periphery | ethereum | unit-30606 | [`0x661235...21e0be`](./contracts/ethereum-1/0x661235a238b11191211fa95d4dd9e423d521e0be/) | ✅ Audited |
-| L1StandardBridge | bridge_template | ethereum | unit-30608 | [`0x88ff1e...7663f0`](./contracts/ethereum-1/0x88ff1e5b602916615391f55854588efcbb7663f0/) | ✅ Audited |
-| OptimismMintableERC20Factory | registry | ethereum | unit-30609 | [`0xa8b389...d34d29`](./contracts/ethereum-1/0xa8b389a82e088b164cd03230e900980cced34d29/) | ✅ Audited |
-| OptimismPortal2 | unknown | ethereum | unit-30604 | [`0x5d66c1...5d3e4f`](./contracts/ethereum-1/0x5d66c1782664115999c47c9fa5cd031f495d3e4f/) | ✅ Audited |
+| AnchorStateRegistry | registry | ethereum | unit-35517 | [`0xde7444...5e2509`](./contracts/ethereum-1/0xde744491bcf6b2dd2f32146364ea1487d75e2509/) | ✅ Audited |
+| DelayedWETH | token | ethereum | unit-35507 | [`0x14773a...920d38`](./contracts/ethereum-1/0x14773a8040ff22e3dcbb0c83ec8e33be7d920d38/) | ✅ Audited |
+| DisputeGameFactory | registry | ethereum | unit-35506 | [`0x10d7b3...5b12cd`](./contracts/ethereum-1/0x10d7b35078d3baabb96dd45a9143b94be65b12cd/) | ✅ Audited |
+| ETHLockbox | unknown | ethereum | unit-35516 | [`0xbd4abb...325a14`](./contracts/ethereum-1/0xbd4abb321138e8eddc399ce64e66451294325a14/) | ✅ Audited |
+| L1CrossDomainMessenger | unknown | ethereum | unit-35512 | [`0x69d3cf...6c171f`](./contracts/ethereum-1/0x69d3cf86b2bf1a9e99875b7e2d9b6a84426c171f/) | ✅ Audited |
+| L1ERC721Bridge | operational_periphery | ethereum | unit-35511 | [`0x661235...21e0be`](./contracts/ethereum-1/0x661235a238b11191211fa95d4dd9e423d521e0be/) | ✅ Audited |
+| L1StandardBridge | bridge_template | ethereum | unit-35513 | [`0x88ff1e...7663f0`](./contracts/ethereum-1/0x88ff1e5b602916615391f55854588efcbb7663f0/) | ✅ Audited |
+| OptimismMintableERC20Factory | registry | ethereum | unit-35515 | [`0xa8b389...d34d29`](./contracts/ethereum-1/0xa8b389a82e088b164cd03230e900980cced34d29/) | ✅ Audited |
+| OptimismPortal2 | unknown | ethereum | unit-35509 | [`0x5d66c1...5d3e4f`](./contracts/ethereum-1/0x5d66c1782664115999c47c9fa5cd031f495d3e4f/) | ✅ Audited |
 | Proxy | proxy | optimism | n/a | [`0x420000...000028`](./contracts/optimism-10/0x4200000000000000000000000000000000000028/) | ✅ Audited |
-| SystemConfig | governance | ethereum | unit-30605 | [`0x62c0a1...6e8364`](./contracts/ethereum-1/0x62c0a111929fa32cec2f76adba54c16afb6e8364/) | ✅ Audited |
+| SystemConfig | governance | ethereum | unit-35510 | [`0x62c0a1...6e8364`](./contracts/ethereum-1/0x62c0a111929fa32cec2f76adba54c16afb6e8364/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -79,6 +80,7 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 | EntryPoint | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/); ethereum `0x5ff137...6d2789` | ⚠️ Unaudited |
 | ERC5564Announcer | unknown | ethereum | n/a | [`0x55649e...d45564`](./contracts/ethereum-1/0x55649e01b5df198d18d95b5cc5051630cfd45564/) | ⚠️ Unaudited |
 | ERC6538Registry | registry | ethereum | n/a | [`0x6538e6...5d6538`](./contracts/ethereum-1/0x6538e6bf4b0ebd30a8ea093027ac2422ce5d6538/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-35508 (4 proxies) | 4 deployments: ethereum [`0x5a0aae...7c3d2a`](./contracts/ethereum-1/0x5a0aae59d09fccbddb6c6cceb07b7279367c3d2a/); ethereum `0x847b5c...5b9d92`; ethereum `0xbea2bc...fa9bbb`; ethereum `0xc2819d...e3bd03` | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | n/a | [`0x69f4d1...6e2938`](./contracts/ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | ethereum | n/a | [`0xfb1bff...7191ea`](./contracts/ethereum-1/0xfb1bffc9d739b8d520daf37df666da4c687191ea/) | ⚠️ Unaudited |
 | Multicall3 | periphery | ethereum | n/a | [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
@@ -87,6 +89,7 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 | Permit2 | unknown | ethereum | n/a | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | n/a | [`0xd56045...241f79`](./contracts/ethereum-1/0xd56045e68956fce2576e680c95a4750cf8241f79/) | ⚠️ Unaudited |
 | SenderCreator | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/); ethereum `0xefc2c1...7a167c` | ⚠️ Unaudited |
+| SuperchainConfig | governance | ethereum | unit-35514 | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -163,11 +166,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2022_11-Invariant_Testing-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_11-Invariant_Testing-TrailOfBits.pdf) | Trail of Bits | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 | [2023_01-Bedrock_Updates-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_01-Bedrock_Updates-TrailOfBits.pdf) | Trail of Bits | Audit | 2023-01 | stale | Direct | contract_name | 1 | high |
 | [2024_02-MCP_L1-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf) | Spearbit | Audit | 2024-02 | stale | Direct | contract_name | 11 | medium |
-| [2024_05-FaultProofs-Sherlock.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05-FaultProofs-Sherlock.pdf) | Sherlock | Contest | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| [2024_05-FaultProofs-Sherlock.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05-FaultProofs-Sherlock.pdf) | Sherlock | Contest | 2024-05 | stale | Direct | contract_name | 4 | high |
 | [2024_05_SafeLivenessExtensions-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05_SafeLivenessExtensions-Cantina.pdf) | Spearbit | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [2024_08_Fault-Proofs-MIPS_Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-MIPS_Cantina.pdf) | Spearbit | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
 | [2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf) | Spearbit | Audit | 2024-08 | aging | Direct | contract_name | 2 | medium |
-| [2024_12-DPM-MiloTruck.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-MiloTruck.pdf) | MiloTruck | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
+| [2024_12-DPM-MiloTruck.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-MiloTruck.pdf) | MiloTruck | Audit | 2024-12 | aging | Direct | contract_name | 0 | n/a |
 | [2025_01-MT-Cannon-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Spearbit.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [2025_02-Upgrade13-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 6 | high |
 | [2025_03-Interop-Contracts-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_03-Interop-Contracts-Spearbit.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 2 | medium |
@@ -184,19 +187,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 38 |
-| upstream | 1 |
-| standard_library | 29 |
-| needs_review | 0 |
+| native | 4 |
+| upstream | 35 |
+| standard_library | 19 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2, medium=3
-- Match method counts: extraction_exact=22
+- Extraction confidence breakdown: high=3, medium=3
+- Match method counts: extraction_exact=27
 
 Zero-match audit list:
 
@@ -207,7 +210,6 @@ Zero-match audit list:
 - [5537] 2022_08-Bedrock_GoLang-SigmaPrime.pdf
 - [5539] 2022_10-Drippie-Spearbit.pdf
 - [5540] 2022_11-Invariant_Testing-TrailOfBits.pdf
-- [5545] 2024_05-FaultProofs-Sherlock.pdf
 - [5546] 2024_05_SafeLivenessExtensions-Cantina.pdf
 - [5547] 2024_08_Fault-Proofs-MIPS_Cantina.pdf
 - [5550] 2024_12-DPM-MiloTruck.pdf

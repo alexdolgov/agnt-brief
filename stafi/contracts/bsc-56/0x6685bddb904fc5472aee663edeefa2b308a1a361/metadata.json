@@ -1,0 +1,18 @@
+{
+  "address": "0x6685bddb904fc5472aee663edeefa2b308a1a361",
+  "chain_id": 56,
+  "contract_name": "StakePortalRate",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T06:24:58.148Z"
+}

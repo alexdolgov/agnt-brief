@@ -1,0 +1,18 @@
+{
+  "address": "0x3dbb00c9be5a327e25caf4f650844c5dba81e34b",
+  "chain_id": 56,
+  "contract_name": "RTokenRateProvider",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T06:24:58.249Z"
+}

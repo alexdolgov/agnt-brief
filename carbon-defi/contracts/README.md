@@ -31,7 +31,7 @@
 | [LiquidityProtection](./ethereum-1/0x85cbbb1ede2b3e389235ae56ec54bec8159001e5/) | ethereum | [`0x85cbbb...9001e5`](./ethereum-1/0x85cbbb1ede2b3e389235ae56ec54bec8159001e5/) | ⚠️ Unaudited | Verified |
 | [StakingRewardsClaim](./ethereum-1/0x6248e4118818c9075a142ef8a12e09d49888af58/) | ethereum | [`0x6248e4...88af58`](./ethereum-1/0x6248e4118818c9075a142ef8a12e09d49888af58/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x4e0178...faca13` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0xc537e8...ea45e1` | ❓ Unverified | Unverified |
+| [UnnamedContract](./ethereum-1/0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1/) | ethereum | [`0xc537e8...ea45e1`](./ethereum-1/0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1/) | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfe19cb...b54d4d` | ❓ Unverified | Unverified |
 | UnnamedContract | sei | `0x253f62...1fdd10` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x17e078...f32376` | ❓ Unverified | Unverified |

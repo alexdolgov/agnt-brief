@@ -13,9 +13,9 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AddressManager](./ethereum-1/0x9b7c9bbd6d540a8a4dedd935819fc4408ba71153/) | ethereum | [`0x9b7c9b...a71153`](./ethereum-1/0x9b7c9bbd6d540a8a4dedd935819fc4408ba71153/) | ⚠️ Unaudited | Verified |
-| [GnosisSafe](./ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ethereum | [`0x69f4d1...6e2938`](./ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ⚠️ Unaudited | Verified |
+| GnosisSafe | ethereum | `0x69f4d1...6e2938` | ⚠️ Unaudited | Verified |
 | [GnosisSafeL2](./ethereum-1/0xfb1bffc9d739b8d520daf37df666da4c687191ea/) | ethereum | [`0xfb1bff...7191ea`](./ethereum-1/0xfb1bffc9d739b8d520daf37df666da4c687191ea/) | ⚠️ Unaudited | Verified |
-| [ProxyAdmin](./ethereum-1/0xd56045e68956fce2576e680c95a4750cf8241f79/) | ethereum | [`0xd56045...241f79`](./ethereum-1/0xd56045e68956fce2576e680c95a4750cf8241f79/) | ⚠️ Unaudited | Verified |
+| ProxyAdmin | ethereum | `0xd56045...241f79` | ⚠️ Unaudited | Verified |
 | [SystemConfig](./ethereum-1/0x62c0a111929fa32cec2f76adba54c16afb6e8364/) | ethereum | [`0x62c0a1...6e8364`](./ethereum-1/0x62c0a111929fa32cec2f76adba54c16afb6e8364/) | ✅ Audited | Verified |
 
 ## operational_periphery (1)

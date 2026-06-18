@@ -5,7 +5,7 @@
 - Project: CLever (`clever`)
 - Website: [https://clever.aladdin.club/](https://clever.aladdin.club/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-18T04:44:03.740Z
+- Generated: 2026-06-18T15:21:07.932Z
 - Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
 - Chains: ethereum
 - Contract surface: 22 unique implementations (37 raw deployments)

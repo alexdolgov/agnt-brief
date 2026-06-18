@@ -7,8 +7,8 @@
 - Project: Angle (`angle`)
 - Website: [https://app.angle.money](https://app.angle.money)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:47.759Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T15:21:08.012Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: arbitrum, avalanche, base, celo, ethereum, gnosis, optimism, polygon
 - Contract surface: 123 unique implementations (244 raw deployments)
 - DeFi Llama TVL: $2,044,033.69

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "synapse",
-  "generated_at": "2026-06-17T07:00:48.956Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T15:21:07.898Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "synapse",

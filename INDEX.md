@@ -57,7 +57,7 @@
 | [amped-finance](./amped-finance/) | $370.4 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ampleswap](./ampleswap/) | $16.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [amy-finance](./amy-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [angle](./angle/) | $1.2B | 2.9% | $1.2B | declining | 3 | 123 | 2026-06-17 |
+| [angle](./angle/) | $1.2B | 2.9% | $1.2B | declining | 3 | 123 | 2026-06-18 |
 | [angles](./angles/) | $7.5 | 0.0% | $7.5 | active | 1 | 6 | 2026-06-17 |
 | [angstrom](./angstrom/) | $182.7M | 7.7% | $182.7M | declining | 3 | 13 | 2026-06-17 |
 | [animal-farm](./animal-farm/) | $66.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -490,7 +490,7 @@
 | [gravity-finance](./gravity-finance/) | $90.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gravity](./gravity/) | $8.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gridex](./gridex/) | $54.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 12 | 2026-06-17 |
+| [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 12 | 2026-06-18 |
 | [growihf](./growihf/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 10 | 2026-06-17 |
 | [gudchain](./gudchain/) | $75.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -612,7 +612,7 @@
 | [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-17 |
 | [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [keep-network](./keep-network/) | $24.7M | 6.4% | $24.7M | declining | 18 | 187 | 2026-06-18 |
-| [keep3r-network](./keep3r-network/) | $2.0B | 1.9% | $2.0B | declining | 1 | 52 | 2026-06-17 |
+| [keep3r-network](./keep3r-network/) | $2.0B | 1.9% | $2.0B | declining | 1 | 52 | 2026-06-18 |
 | [keeta-bridge](./keeta-bridge/) | $1.3M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [keom-protocol](./keom-protocol/) | $115.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1201,7 +1201,7 @@
 | [symbiosis](./symbiosis/) | $236.1M | 47.4% | $236.1M | active | 15 | 48 | 2026-06-18 |
 | [symmetry-trade](./symmetry-trade/) | $7.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [symmio](./symmio/) | $1.0 | 0.0% | $1.0 | active | 0 | 166 | 2026-06-17 |
-| [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 236 | 2026-06-17 |
+| [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 236 | 2026-06-18 |
 | [synatra](./synatra/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 33.3% | $0.0 | active | 9 | 40 | 2026-06-17 |
 | [syncyield](./syncyield/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

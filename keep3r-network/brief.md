@@ -7,8 +7,8 @@
 - Project: Keep3r Network (`keep3r-network`)
 - Website: [https://keep3r.network](https://keep3r.network)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:50.145Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T15:21:07.961Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: ethereum
 - Contract surface: 52 unique implementations (193 raw deployments)
 - DeFi Llama TVL: $3,579,669.18

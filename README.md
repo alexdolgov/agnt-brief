@@ -28,7 +28,7 @@ Each project directory contains:
 | [zerolend](./zerolend/brief.md) | $13.19M | 7 | 206 | 162/206 (79%) | 17.9% | 0.0% (-) | 3 | stale | ⚠️ declining | $331.62M |
 | [nerona](./nerona/brief.md) | $5.39M | ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $326.95M |
 | [tenderize](./tenderize/brief.md) | $782.03K | arbitrum, ethereum | 16 | 15/16 (94%) | 13.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $313.35M |
-| [inverse-finance](./inverse-finance/brief.md) | $34.42M | 5 | 62 | 62/62 (100%) | 12.9% | 8.1% (Code4rena, Sherlock) | 5 | fresh | ✅ active | $286.87M |
+| [inverse-finance](./inverse-finance/brief.md) | $34.42M | 5 | 64 | 64/64 (100%) | 12.5% | 7.8% (Code4rena, Sherlock) | 5 | fresh | ✅ active | $286.87M |
 | [mantra-dao](./mantra-dao/brief.md) | $1.60M | bsc, ethereum, polygon | 149 | 53/149 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $279.01M |
 | [dyorswap](./dyorswap/brief.md) | $1.68M | 7 | 47 | 5/47 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $270.03M |
 | [debridge](./debridge/brief.md) | $2.78M | 11 | 60 | 47/60 (78%) | 48.9% | 0.0% (-) | 13 | aging | ⚠️ declining | $263.88M |
@@ -1176,7 +1176,7 @@ Each project directory contains:
 | [smartcredit](./smartcredit/brief.md) | $769.26K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [smilee-finance](./smilee-finance/brief.md) | $1.12M | arbitrum, berachain | 191 | 28/191 (15%) | 17.9% | 17.9% (Spearbit) | 2 | aging | ✅ active | - |
 | [smoothy](./smoothy/brief.md) | $478.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
-| [snuggle](./snuggle/brief.md) | $1.00M | arbitrum, base | 87 | 53/87 (61%) | 22.6% | 0.0% (-) | 1 | fresh | ✅ active | - |
+| [snuggle](./snuggle/brief.md) | $1.00M | arbitrum, base | 23 | 23/23 (100%) | 52.2% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [solace](./solace/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [solana-farm](./solana-farm/brief.md) | $249.73 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [solayer](./solayer/brief.md) | $9.59M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -1412,7 +1412,7 @@ Each project directory contains:
 | [zharta](./zharta/brief.md) | $2.75 | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [zircon-gamma](./zircon-gamma/brief.md) | $2.55 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zivoe](./zivoe/brief.md) | $13.86M | ethereum | 18 | 18/18 (100%) | 38.9% | 22.2% (Sherlock) | 2 | aging | ⚠️ declining | - |
-| [zklink-nova](./zklink-nova/brief.md) | $10.42M | 10 | 132 | 47/132 (36%) | 14.9% | 8.5% (OpenZeppelin) | 7 | aging | ⚠️ declining | - |
+| [zklink-nova](./zklink-nova/brief.md) | $10.42M | 10 | 62 | 45/62 (73%) | 17.8% | 8.9% (OpenZeppelin) | 10 | aging | ⚠️ declining | - |
 | [zkswap-finance](./zkswap-finance/brief.md) | $991.69K | sonic, zksync-era | 52 | 11/52 (21%) | 18.2% | 0.0% (-) | 5 | stale | ✅ active | - |
 | [zoodao](./zoodao/brief.md) | $9.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoomex](./zoomex/brief.md) | $24.65M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 11 | 6/11 (55%) | 50.0% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T07:52:57.632Z_
+_Generated: 2026-06-18T09:11:24.083Z_
 _Projects: 1409_

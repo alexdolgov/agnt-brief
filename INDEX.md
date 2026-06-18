@@ -406,7 +406,7 @@
 | [everything](./everything/) | $710.2K | 0.0% | ? | active | 0 | 7 | 2026-06-17 |
 | [evolve](./evolve/) | $554.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [evoq-finance](./evoq-finance/) | $268.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [exactly](./exactly/) | $4.4M | 57.9% | ? | active | 32 | 20 | 2026-06-17 |
+| [exactly](./exactly/) | $4.4M | 57.9% | ? | active | 33 | 20 | 2026-06-18 |
 | [exmo](./exmo/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [exponent](./exponent/) | $64.0M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [exsat-staking-btc](./exsat-staking-btc/) | $137.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -566,7 +566,7 @@
 | [influpia](./influpia/) | $3.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 8 | 2026-06-17 |
 | [infusion](./infusion/) | $72.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [init-capital](./init-capital/) | $66.2M | 0.0% | $66.2M | declining | 7 | 9 | 2026-06-17 |
+| [init-capital](./init-capital/) | $66.2M | 0.0% | $66.2M | declining | 7 | 9 | 2026-06-18 |
 | [initiadex](./initiadex/) | $2.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 1 | 2026-06-17 |
 | [ink-bridge](./ink-bridge/) | $36.4M | 40.7% | ? | active | 17 | 70 | 2026-06-18 |
@@ -578,7 +578,7 @@
 | [intuition](./intuition/) | $0.0 | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [invar-finance](./invar-finance/) | $262.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [invariant](./invariant/) | $238.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [inverse-finance](./inverse-finance/) | $286.9M | 12.9% | $286.9M | active | 7 | 62 | 2026-06-17 |
+| [inverse-finance](./inverse-finance/) | $286.9M | 12.5% | $286.9M | active | 7 | 64 | 2026-06-18 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 9 | 2026-06-17 |
 | [iotabee](./iotabee/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [iotube](./iotube/) | $2.0M | 0.0% | $2.0M | declining | 0 | 15 | 2026-06-17 |
@@ -1087,7 +1087,7 @@
 | [smilee-finance](./smilee-finance/) | $1.1M | 17.9% | ? | active | 3 | 191 | 2026-06-17 |
 | [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 6 | 2026-06-17 |
-| [snuggle](./snuggle/) | $1.0M | 22.6% | ? | active | 3 | 87 | 2026-06-17 |
+| [snuggle](./snuggle/) | $1.0M | 52.2% | ? | active | 3 | 23 | 2026-06-18 |
 | [sofa.org](./sofa.org/) | $0.0 | 58.3% | $0.0 | declining | 8 | 12 | 2026-06-17 |
 | [solace](./solace/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [solana-farm](./solana-farm/) | $249.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1401,7 +1401,7 @@
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 33.3% | $140.4M | declining | 11 | 13 | 2026-06-18 |
 | [zircuit](./zircuit/) | $176.1M | 30.0% | $144.2M | declining | 10 | 22 | 2026-06-18 |
 | [zivoe](./zivoe/) | $13.9M | 38.9% | ? | declining | 6 | 18 | 2026-06-17 |
-| [zklink-nova](./zklink-nova/) | $10.4M | 14.9% | ? | declining | 7 | 132 | 2026-06-17 |
+| [zklink-nova](./zklink-nova/) | $10.4M | 17.8% | ? | declining | 11 | 62 | 2026-06-18 |
 | [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-18 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 46 | 2026-06-17 |
 | [zoodao](./zoodao/) | $9.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

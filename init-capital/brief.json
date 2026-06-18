@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "init-capital",
-  "generated_at": "2026-06-17T07:00:42.955Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T08:56:41.249Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "init-capital",
@@ -72,16 +72,16 @@
     "project_purpose": "INIT Capital is a decentralized lending and money-market protocol with native pool, hook, oracle, configuration, risk, position, and periphery contracts. External assets such as USDC, USDT, WBTC, METH, cmETH, FBTC, and similar token contracts should be treated as underlying assets, not INIT-owned protocol/product contracts.",
     "relationship_narrative": "Lending Pools rely on Core Contracts for governance (Config, RiskManager), position tracking (PosManager), and price feeds (InitOracle). Hooks like MoneyMarketHook and MarginTradingHook extend pool behavior, while tokens from the INIT Capital family serve as the assets within these pools.",
     "product_family_count": 8,
-    "total_contracts_indexed": 164,
+    "total_contracts_indexed": 165,
     "live_contracts": 9,
-    "inactive_contracts": 62,
+    "inactive_contracts": 63,
     "singleton_contracts": 93,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 39,
     "live_deployment_units": 3,
-    "dependencies_extracted": 29,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 20,
+    "unverified_dependencies": 1,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -98,7 +98,7 @@
       "chain_id": 5000,
       "chain_name": "mantle",
       "address": "0xcda86a272531e8640cd7f1a92c01839911b90bb0",
-      "deployment_unit": "unit-26386",
+      "deployment_unit": "unit-36024",
       "deployment_unit_proxy_count": 1,
       "name": "METHL2",
       "role": "token",
@@ -114,7 +114,7 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0xcda86a272531e8640cd7f1a92c01839911b90bb0",
-          "deployment_unit": "unit-26386",
+          "deployment_unit": "unit-36024",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -138,7 +138,7 @@
       "name": "BVM_ETH",
       "role": "unknown",
       "origin_kind": "upstream",
-      "origin_provider": "bvm",
+      "origin_provider": "blvm",
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": false,
@@ -168,7 +168,7 @@
       "chain_id": 5000,
       "chain_name": "mantle",
       "address": "0xe6829d9a7ee3040e1276fa75293bde931859e8fa",
-      "deployment_unit": "unit-26389",
+      "deployment_unit": "unit-36027",
       "deployment_unit_proxy_count": 1,
       "name": "L2cmETH",
       "role": "unknown",
@@ -184,7 +184,7 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0xe6829d9a7ee3040e1276fa75293bde931859e8fa",
-          "deployment_unit": "unit-26389",
+          "deployment_unit": "unit-36027",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -343,12 +343,12 @@
       "chain_id": 5000,
       "chain_name": "mantle",
       "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
-      "deployment_unit": "unit-26379",
+      "deployment_unit": "unit-36017",
       "deployment_unit_proxy_count": 1,
       "name": "USDYW",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": true,
@@ -359,7 +359,7 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
-          "deployment_unit": "unit-26379",
+          "deployment_unit": "unit-36017",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -383,7 +383,7 @@
       "name": "WMANTLE",
       "role": "unknown",
       "origin_kind": "upstream",
-      "origin_provider": null,
+      "origin_provider": "mantle",
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": false,
@@ -412,8 +412,8 @@
   ],
   "audits": [
     {
-      "audit_id": 3587,
-      "audit_key": "audit-3587",
+      "audit_id": 15096,
+      "audit_key": "audit-15096",
       "report_name": "Code4rena_Audit_Report_1.md",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Code4rena_Audit_Report_1.md",
       "auditor": "Code4rena",
@@ -433,8 +433,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3588,
-      "audit_key": "audit-3588",
+      "audit_id": 15097,
+      "audit_key": "audit-15097",
       "report_name": "Code4rena_Audit_Report_2.md",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Code4rena_Audit_Report_2.md",
       "auditor": "Code4rena",
@@ -454,8 +454,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3589,
-      "audit_key": "audit-3589",
+      "audit_id": 15098,
+      "audit_key": "audit-15098",
       "report_name": "PeckShield_Audit_Report_v1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/PeckShield_Audit_Report_v1.pdf",
       "auditor": "PeckShield",
@@ -475,8 +475,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3590,
-      "audit_key": "audit-3590",
+      "audit_id": 15099,
+      "audit_key": "audit-15099",
       "report_name": "Sparkware_Security_Audit_Report_1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_1.pdf",
       "auditor": "Sparkware",
@@ -496,8 +496,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3591,
-      "audit_key": "audit-3591",
+      "audit_id": 15100,
+      "audit_key": "audit-15100",
       "report_name": "Sparkware_Security_Audit_Report_2.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_2.pdf",
       "auditor": "Sparkware",
@@ -517,8 +517,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3592,
-      "audit_key": "audit-3592",
+      "audit_id": 15101,
+      "audit_key": "audit-15101",
       "report_name": "Sparkware_Security_Audit_Report_3.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_3.pdf",
       "auditor": "Sparkware",
@@ -538,14 +538,14 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3593,
-      "audit_key": "audit-3593",
+      "audit_id": 15102,
+      "audit_key": "audit-15102",
       "report_name": "Trust_Security_Audit_Report_v1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Trust_Security_Audit_Report_v1.pdf",
-      "auditor": "Trust Security",
+      "auditor": "Trust",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023-12",
+      "date": "2023-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -560,47 +560,58 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
+      "name": "USDYW",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 2,
-    "standard_library": 3,
+    "standard_library": 2,
     "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 72
+      "extraction_exact": 73
     },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3587,
+        "audit_id": 15096,
         "report_name": "Code4rena_Audit_Report_1.md"
       },
       {
-        "audit_id": 3588,
+        "audit_id": 15097,
         "report_name": "Code4rena_Audit_Report_2.md"
       },
       {
-        "audit_id": 3589,
+        "audit_id": 15098,
         "report_name": "PeckShield_Audit_Report_v1.pdf"
       },
       {
-        "audit_id": 3590,
+        "audit_id": 15099,
         "report_name": "Sparkware_Security_Audit_Report_1.pdf"
       },
       {
-        "audit_id": 3591,
+        "audit_id": 15100,
         "report_name": "Sparkware_Security_Audit_Report_2.pdf"
       },
       {
-        "audit_id": 3592,
+        "audit_id": 15101,
         "report_name": "Sparkware_Security_Audit_Report_3.pdf"
       },
       {
-        "audit_id": 3593,
+        "audit_id": 15102,
         "report_name": "Trust_Security_Audit_Report_v1.pdf"
       }
     ],

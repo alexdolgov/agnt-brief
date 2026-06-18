@@ -7,8 +7,8 @@
 - Project: INIT Capital (`init-capital`)
 - Website: [https://app.init.capital](https://app.init.capital)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:42.955Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T08:56:41.249Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: blast, mantle
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $2,446,519.78
@@ -25,11 +25,11 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 
 ## Contract Surface Quality
 
-- Indexed contracts: 164; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 62 inactive, 93 singleton, 0 uninitialized.
+- Indexed contracts: 165; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 63 inactive, 93 singleton, 0 uninitialized.
 - Deployment units: 3/39 live.
 - Detected codebases: none
-- Unverified dependencies: 2/29.
+- Unverified dependencies: 1/20.
 
 ## Audit Coverage Summary
 
@@ -61,11 +61,11 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| METHL2 | token | mantle | unit-26386 | [`0xcda86a...b90bb0`](./contracts/mantle-5000/0xcda86a272531e8640cd7f1a92c01839911b90bb0/) | ⚠️ Unaudited |
+| METHL2 | token | mantle | unit-36024 | [`0xcda86a...b90bb0`](./contracts/mantle-5000/0xcda86a272531e8640cd7f1a92c01839911b90bb0/) | ⚠️ Unaudited |
 | BVM_ETH | unknown | mantle | n/a | [`0xdeadde...ad1111`](./contracts/mantle-5000/0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111/) | ⚠️ Unaudited |
-| L2cmETH | unknown | mantle | unit-26389 | [`0xe6829d...59e8fa`](./contracts/mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited |
+| L2cmETH | unknown | mantle | unit-36027 | [`0xe6829d...59e8fa`](./contracts/mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited |
 | USDeOFT | unknown | mantle | n/a | [`0x5d3a1f...52ef34`](./contracts/mantle-5000/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
-| USDYW | unknown | mantle | unit-26379 | [`0x5be265...57c5a6`](./contracts/mantle-5000/0x5be26527e817998a7206475496fde1e68957c5a6/) | ⚠️ Unaudited |
+| USDYW | unknown | mantle | unit-36017 | [`0x5be265...57c5a6`](./contracts/mantle-5000/0x5be26527e817998a7206475496fde1e68957c5a6/) | ⚠️ Unaudited |
 | WMANTLE | unknown | mantle | n/a | [`0x78c1b0...7f4cb8`](./contracts/mantle-5000/0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -100,21 +100,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Sparkware_Security_Audit_Report_1.pdf](https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_1.pdf) | Sparkware | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Sparkware_Security_Audit_Report_2.pdf](https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_2.pdf) | Sparkware | Audit | n/a | unknown | Direct | contract_name | 0 | n/a |
 | [Sparkware_Security_Audit_Report_3.pdf](https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_3.pdf) | Sparkware | Audit | n/a | unknown | Direct | contract_name | 0 | n/a |
-| [Trust_Security_Audit_Report_v1.pdf](https://github.com/init-capital/init-core-public/blob/master/audits/Trust_Security_Audit_Report_v1.pdf) | Trust Security | Audit | 2023-12 | stale | Direct | contract_name | 0 | n/a |
+| [Trust_Security_Audit_Report_v1.pdf](https://github.com/init-capital/init-core-public/blob/master/audits/Trust_Security_Audit_Report_v1.pdf) | Trust | Audit | 2023-11 | stale | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| mantle | [`0x5be265...57c5a6`](./contracts/mantle-5000/0x5be26527e817998a7206475496fde1e68957c5a6/) | USDYW | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 2 |
-| standard_library | 3 |
+| standard_library | 2 |
 | needs_review | 4 |
 
 ## Scope Matching Notes
@@ -124,16 +126,16 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=72
+- Match method counts: extraction_exact=73
 
 Zero-match audit list:
 
-- [3587] Code4rena_Audit_Report_1.md
-- [3588] Code4rena_Audit_Report_2.md
-- [3589] PeckShield_Audit_Report_v1.pdf
-- [3590] Sparkware_Security_Audit_Report_1.pdf
-- [3591] Sparkware_Security_Audit_Report_2.pdf
-- [3592] Sparkware_Security_Audit_Report_3.pdf
-- [3593] Trust_Security_Audit_Report_v1.pdf
+- [15096] Code4rena_Audit_Report_1.md
+- [15097] Code4rena_Audit_Report_2.md
+- [15098] PeckShield_Audit_Report_v1.pdf
+- [15099] Sparkware_Security_Audit_Report_1.pdf
+- [15100] Sparkware_Security_Audit_Report_2.pdf
+- [15101] Sparkware_Security_Audit_Report_3.pdf
+- [15102] Trust_Security_Audit_Report_v1.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

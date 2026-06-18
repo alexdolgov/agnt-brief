@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ellipsis-finance",
-  "generated_at": "2026-06-17T07:00:48.547Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T00:44:55.974Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ellipsis-finance",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 34,
-    "unique_implementations": 10,
-    "total_deployments": 34,
+    "total_contracts": 15,
+    "total_addresses": 41,
+    "unique_implementations": 15,
+    "total_deployments": 41,
     "audited_contracts": 4,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 11,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 40,
+    "coverage_pct": 26.7,
     "total_audits": 3,
     "scoreable_audits": 2,
     "dl_tvl_usd": 1095739.93543,
-    "tvl_usd": 59039.41279261302,
+    "tvl_usd": 347922.37818172376,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 59039.41
+      "bsc": 347922.38
     },
-    "asd_usd": 8967.408517927595,
+    "asd_usd": 297850.37390703836,
     "website_url": "https://ellipsis.finance/",
     "chains": [
       "bsc"
@@ -71,20 +71,22 @@
     "project_purpose": "Ellipsis Finance is a historical Curve-like decentralized exchange on BNB Chain/BSC for low-slippage stablecoin and pegged-asset swaps, with related locking, fee distribution, and incentive/voting mechanisms. This description should be sourced to DefiLlama and historical documentation; the current homepage is disabled or unavailable.",
     "relationship_narrative": "All contracts belong to a single product family sharing the Ellipsis ecosystem. The Vyper_contracts serve as the core AMM pools, while EllipsisToken2 is the governance token. TokenLocker locks tokens for voting power, MultiFeeDistribution distributes fees, FeeDistributor handles fee allocation, IncentiveVoting manages gauge weights, and EllipsisLpStaking allows staking LP tokens for rewards.",
     "product_family_count": 1,
-    "total_contracts_indexed": 130,
-    "live_contracts": 34,
-    "inactive_contracts": 96,
+    "total_contracts_indexed": 142,
+    "live_contracts": 41,
+    "inactive_contracts": 101,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 20,
-    "unverified_dependencies": 0,
-    "detected_codebases": []
+    "dependencies_extracted": 19,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "curve-stableswap"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 15,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,6 +95,41 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeStableSwapTwoPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": 288882.9653891108,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeStableSwapTwoPool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 288882.9653891108,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -201,6 +238,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe6e2905f54baf7625f4943b74c50338362741cd4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CurveStableSwapNG",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "Curve",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CurveStableSwapNG",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe6e2905f54baf7625f4943b74c50338362741cd4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -384,6 +456,52 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x169f653a54acd441ab34b73da9946e2c451787ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeStableSwap",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeStableSwap",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x169f653a54acd441ab34b73da9946e2c451787ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc2f5b9a3d9138ab2b74d581fc11346219ebf43fe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x052e566a25ace8934dcc52c41a27b04a7c7eccbe",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -489,6 +607,87 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xf1e7f81671aeb2f559b147b6a91c4d25be882c48",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ValasMetapoolRewardsToken",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ValasMetapoolRewardsToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf6be0f52be5e68df4ed3ea7ccd569c16024c250d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5b5bd8913d766d005859ce002533d4838b0ebbb5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ValasRewardsToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ValasRewardsToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5b5bd8913d766d005859ce002533d4838b0ebbb5",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -795,14 +994,14 @@
       "auditor": "Hacken",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 20,
+      "coverage_pct": 13.3,
       "latest_audit": "2021-04"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 20,
+      "coverage_pct": 13.3,
       "latest_audit": "2022-03"
     }
   ],
@@ -860,6 +1059,26 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac",
+      "name": "ValasMetapoolRewardsToken",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5b5bd8913d766d005859ce002533d4838b0ebbb5",
+      "name": "ValasRewardsToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x0bc3a8239b0a63e945ea1bd6722ba747b9557e56",
       "name": "Vyper_contract",
       "role": "unknown",
@@ -869,10 +1088,10 @@
     }
   ],
   "origin_summary": {
-    "native": 10,
-    "upstream": 0,
+    "native": 12,
+    "upstream": 2,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

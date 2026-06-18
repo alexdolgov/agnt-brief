@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "chainflip",
-  "generated_at": "2026-06-17T07:00:35.440Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T00:46:43.403Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "chainflip",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 47.29060896592994
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 23,
-    "unique_implementations": 10,
-    "total_deployments": 23,
+    "total_contracts": 11,
+    "total_addresses": 24,
+    "unique_implementations": 11,
+    "total_deployments": 24,
     "audited_contracts": 3,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 30,
-    "total_audits": 3,
-    "scoreable_audits": 1,
+    "coverage_pct": 27.3,
+    "total_audits": 4,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 36385421,
     "tvl_usd": 3706589.2915753387,
     "tvl_source": "on_chain",
@@ -48,7 +48,7 @@
       "arbitrum",
       "ethereum"
     ],
-    "tier1_coverage_pct": 30,
+    "tier1_coverage_pct": 27.3,
     "tier1_auditors": [
       "Trail of Bits"
     ],
@@ -57,7 +57,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
+      "stale": 4,
       "unknown": 0
     }
   },
@@ -65,20 +65,20 @@
     "project_purpose": "Chainflip is a cross-chain native-swap DEX/AMM network that enables swaps and liquidity/yield products across native assets such as Bitcoin, Solana, Ethereum and other chains. Public protocol tracking also separates Chainflip AMM and Chainflip Lending as related product lines; Ethereum and Arbitrum contracts should be treated as deployments and dependencies within the broader Chainflip ecosystem, not as the protocol's two product families. External token contracts and oracle/feed dependencies should be separated from Chainflip-owned code when assessing contract surface and audit coverage.",
     "relationship_narrative": "Both families share the same governance pattern via KeyManager contracts and use AddressChecker for access control. The Ethereum Vault likely interacts with Arbitrum through the StateChainGateway and token proxies to enable cross-chain swaps and liquidity.",
     "product_family_count": 2,
-    "total_contracts_indexed": 114,
-    "live_contracts": 23,
-    "inactive_contracts": 91,
+    "total_contracts_indexed": 116,
+    "live_contracts": 24,
+    "inactive_contracts": 92,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 2,
     "live_deployment_units": 2,
-    "dependencies_extracted": 8,
-    "unverified_dependencies": 6,
+    "dependencies_extracted": 7,
+    "unverified_dependencies": 5,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -127,7 +127,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3973"
+        "audit-3973",
+        "audit-14744"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -138,8 +139,43 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EACAggregatorProxy",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EACAggregatorProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "deployment_unit": "unit-20301",
+      "deployment_unit": "unit-33625",
       "deployment_unit_proxy_count": 1,
       "name": "FiatTokenV2_2",
       "role": "token",
@@ -155,7 +191,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "deployment_unit": "unit-20301",
+          "deployment_unit": "unit-33625",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -174,7 +210,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
-      "deployment_unit": "unit-20302",
+      "deployment_unit": "unit-33626",
       "deployment_unit_proxy_count": 1,
       "name": "FiatTokenV2_2",
       "role": "token",
@@ -190,7 +226,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
-          "deployment_unit": "unit-20302",
+          "deployment_unit": "unit-33626",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -234,7 +270,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3973"
+        "audit-3973",
+        "audit-14744"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -282,7 +319,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3973"
+        "audit-3973",
+        "audit-14744"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -668,6 +706,45 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14744,
+      "audit_key": "audit-14744",
+      "report_name": "2023-04-chainflip-securityreview.pdf",
+      "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2023-04-chainflip-securityreview.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Deposit",
+        "FLIP",
+        "GovernanceCommunityGuarded",
+        "KeyManager",
+        "StakeManager",
+        "TokenVesting",
+        "Vault",
+        "cf-broadcast",
+        "cf-governance",
+        "cf-ingress-egress",
+        "cf-lp",
+        "cf-staking",
+        "cf-threshold-signature",
+        "cf-tokenholder-governance",
+        "cf-validator",
+        "cf-vaults",
+        "cf-witnesser"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -675,7 +752,7 @@
       "auditor": "Trail of Bits",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 30,
+      "coverage_pct": 27.3,
       "latest_audit": "2023-04"
     }
   ],
@@ -723,16 +800,16 @@
   ],
   "origin_summary": {
     "native": 7,
-    "upstream": 3,
+    "upstream": 4,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 5
+      "extraction_exact": 10
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

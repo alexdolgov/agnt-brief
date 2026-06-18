@@ -7,13 +7,13 @@
 - Project: Ellipsis Finance (`ellipsis-finance`)
 - Website: [https://ellipsis.finance/](https://ellipsis.finance/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:48.547Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T00:44:55.974Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
 - Chains: bsc
-- Contract surface: 10 unique implementations (34 raw deployments)
+- Contract surface: 15 unique implementations (41 raw deployments)
 - DeFi Llama TVL: $1,095,739.94
-- On-chain TVL (included contracts): $59,039.41
-- TVL by chain: Bsc $59,039.41
+- On-chain TVL (included contracts): $347,922.38
+- TVL by chain: Bsc $347,922.38
 
 ## Project Description
 
@@ -25,34 +25,34 @@ All contracts belong to a single product family sharing the Ellipsis ecosystem. 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 130; live-surface contracts included: 34 (34 live, 0 unknown).
-- Excluded by liveness: 96 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 142; live-surface contracts included: 41 (41 live, 0 unknown).
+- Excluded by liveness: 101 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: none
-- Dependencies extracted: 20; unverified dependencies: 0.
+- Detected codebases: curve-stableswap
+- Unverified dependencies: 1/19.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/10 (40.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 4/15 (26.7%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 34
+- Unique implementations: 15
+- Raw deployments: 41
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 2
-- ASD (verified + unaudited TVL): $8,967.41
+- ASD (verified + unaudited TVL): $297,850.37
 - Latest audit: 2022-03 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $8,967.41 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of $297,850.37 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hacken | Tier 2 | 2 | 20.0% | 2021-04 |
-| PeckShield | Tier 2 | 2 | 20.0% | 2022-03 |
+| Hacken | Tier 2 | 2 | 13.3% | 2021-04 |
+| PeckShield | Tier 2 | 2 | 13.3% | 2022-03 |
 
 ## Contract Surface
 
@@ -65,15 +65,20 @@ All contracts belong to a single product family sharing the Ellipsis ecosystem. 
 | IncentiveVoting | unknown | bsc | n/a | [`0x4695e5...9bb06a`](./contracts/bsc-56/0x4695e50a38e33ea09d1f623ba8a8db24219bb06a/) | ✅ Audited |
 | MerkleDistributor | operational_periphery | bsc | n/a | [`0xa7bd1f...52b9ff`](./contracts/bsc-56/0xa7bd1fb19d0af2739431dd1d318a8a04cd52b9ff/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| PancakeStableSwapTwoPool | core_logic | bsc | n/a | [`0x852594...f0e4fc`](./contracts/bsc-56/0x85259443fad3dc9ecfafe62f043a020992f0e4fc/) | ⚠️ Unaudited |
 | TokenLocker | token | bsc | n/a | [`0x22a93f...a49aae`](./contracts/bsc-56/0x22a93f53a0a3e6847d05dd504283e8e296a49aae/) | ⚠️ Unaudited |
+| CurveStableSwapNG | operational_periphery | bsc | n/a | [`0xe6e290...741cd4`](./contracts/bsc-56/0xe6e2905f54baf7625f4943b74c50338362741cd4/) | ⚠️ Unaudited |
 | EllipsisLpStaking | unknown | bsc | n/a | [`0x5b74c9...8dfdbe`](./contracts/bsc-56/0x5b74c99aa2356b4eaa7b85dc486843edff8dfdbe/) | ⚠️ Unaudited |
 | FeeDistributor | operational_periphery | bsc | n/a | [`0x3670c1...17ee1b`](./contracts/bsc-56/0x3670c10c6a4994ec8926edcf54bf53092217ee1b/) | ⚠️ Unaudited |
 | MultiFeeDistribution | unknown | bsc | n/a | [`0x4076cc...a6bb5c`](./contracts/bsc-56/0x4076cc26efee47825917d0fec3a79d0bb9a6bb5c/) | ⚠️ Unaudited |
+| PancakeStableSwap | unknown | bsc | n/a | 2 deployments: bsc [`0x169f65...1787ef`](./contracts/bsc-56/0x169f653a54acd441ab34b73da9946e2c451787ef/); bsc `0xc2f5b9...bf43fe` | ⚠️ Unaudited |
 | RewardsToken | token | bsc | n/a | 9 deployments: bsc [`0x052e56...7eccbe`](./contracts/bsc-56/0x052e566a25ace8934dcc52c41a27b04a7c7eccbe/); bsc `0x143d70...1ded79`; bsc `0x151f16...72beba`; bsc `0x2a435e...be5640`; bsc `0x373410...52dace`; bsc `0x578104...117b3a`; bsc `0x833915...8d0d27`; bsc `0xa2520f...17eaf8`; bsc `0xf1e7f8...882c48` | ⚠️ Unaudited |
+| ValasMetapoolRewardsToken | core_logic | bsc | n/a | 2 deployments: bsc [`0x8087a9...a792ac`](./contracts/bsc-56/0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac/); bsc `0xf6be0f...4c250d` | ⚠️ Unaudited |
+| ValasRewardsToken | token | bsc | n/a | [`0x5b5bd8...0ebbb5`](./contracts/bsc-56/0x5b5bd8913d766d005859ce002533d4838b0ebbb5/) | ⚠️ Unaudited |
 | Vyper_contract | unknown | bsc | n/a | 17 deployments: bsc [`0x0bc3a8...557e56`](./contracts/bsc-56/0x0bc3a8239b0a63e945ea1bd6722ba747b9557e56/); bsc `0x160cae...5d4e76`; bsc `0x19ec9e...0a806d`; bsc `0x245e8b...cfabf5`; bsc `0x2477fb...b00bf9`; bsc `0x2f8e25...9b41be`; bsc `0x41871a...54a5c4`; bsc `0x556ea0...104b63`; bsc `0x8d7408...8d1e52`; bsc `0xa7f552...0c6d9f`; bsc `0xab4990...64b6cd`; bsc `0xaf4de8...aaf452`; bsc `0xb4c0a7...ada122`; bsc `0xc377e2...52c874`; bsc `0xc6a752...771a49`; bsc `0xedbb3f...c8ffdc`; bsc `0xfd4afe...d766da` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -113,16 +118,18 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x3670c1...17ee1b`](./contracts/bsc-56/0x3670c10c6a4994ec8926edcf54bf53092217ee1b/) | FeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4076cc...a6bb5c`](./contracts/bsc-56/0x4076cc26efee47825917d0fec3a79d0bb9a6bb5c/) | MultiFeeDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x052e56...7eccbe`](./contracts/bsc-56/0x052e566a25ace8934dcc52c41a27b04a7c7eccbe/) | RewardsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8087a9...a792ac`](./contracts/bsc-56/0x8087a94ffe6bcf08dc4b4ebb3d28b4ed75a792ac/) | ValasMetapoolRewardsToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5b5bd8...0ebbb5`](./contracts/bsc-56/0x5b5bd8913d766d005859ce002533d4838b0ebbb5/) | ValasRewardsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0bc3a8...557e56`](./contracts/bsc-56/0x0bc3a8239b0a63e945ea1bd6722ba747b9557e56/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 0 |
+| native | 12 |
+| upstream | 2 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

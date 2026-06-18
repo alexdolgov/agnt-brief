@@ -5,10 +5,10 @@
 - Project: Chainflip (`chainflip`)
 - Website: [https://chainflip.io/](https://chainflip.io/)
 - Lifecycle: active (Tier 0, 47.3% below peak)
-- Generated: 2026-06-17T07:00:35.440Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T00:46:43.403Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
 - Chains: arbitrum, ethereum
-- Contract surface: 10 unique implementations (23 raw deployments)
+- Contract surface: 11 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $36,385,421.00
 - On-chain TVL (included contracts): $3,706,589.29
 - TVL by chain: Ethereum $3,695,722.55 | Arbitrum $10,866.74
@@ -23,32 +23,32 @@ Both families share the same governance pattern via KeyManager contracts and use
 
 ## Contract Surface Quality
 
-- Indexed contracts: 114; live-surface contracts included: 23 (23 live, 0 unknown).
-- Excluded by liveness: 91 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 116; live-surface contracts included: 24 (24 live, 0 unknown).
+- Excluded by liveness: 92 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 2/2 live.
 - Detected codebases: none
-- Unverified dependencies: 6/8.
+- Unverified dependencies: 5/7.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/10 (30.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 3/11 (27.3%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 23
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 1
+- Unique implementations: 11
+- Raw deployments: 24
+- Audits discovered: 4
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-12 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
-- Tier 1 coverage: 30.0% (Trail of Bits)
+- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
+- Tier 1 coverage: 27.3% (Trail of Bits)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trail of Bits | Tier 1 | 3 | 30.0% | 2023-04 |
+| Trail of Bits | Tier 1 | 3 | 27.3% | 2023-04 |
 
 ## Contract Surface
 
@@ -60,12 +60,13 @@ Both families share the same governance pattern via KeyManager contracts and use
 | FLIP | unknown | ethereum | n/a | [`0x826180...22678a`](./contracts/ethereum-1/0x826180541412d574cf1336d22c0c0a287822678a/) | ✅ Audited |
 | KeyManager | governance | arbitrum | n/a | 2 deployments: ethereum `0xcd351d...bf08be`; arbitrum [`0xbfe612...000275`](./contracts/arbitrum-42161/0xbfe612c77c2807ac5a6a41f84436287578000275/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FiatTokenV2_2 | token | ethereum | unit-20301 | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | arbitrum | unit-20302 | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | ethereum | n/a | [`0x5f4ec3...5b8419`](./contracts/ethereum-1/0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | unit-33625 | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | arbitrum | unit-33626 | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
 | ScUtils | unknown | ethereum | n/a | [`0x13ad79...301380`](./contracts/ethereum-1/0x13ad793e7b75eaacee34b69792552f086b301380/) | ⚠️ Unaudited |
 | StateChainGateway | unknown | ethereum | n/a | [`0x6995ab...621dbd`](./contracts/ethereum-1/0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd/) | ⚠️ Unaudited |
 | TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
@@ -97,6 +98,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [audited by the best in web3.](https://github.com/chainflip-io/chainflip-backend/blob/main/audits/2023-04-TrailOfBits-securityreview.pdf) | Trail of Bits | Audit | 2023-04 | stale | Direct | contract_name | 5 | high |
 | [Chainflip_Backend_-_Zellic_Audit_Report.pdf](https://github.com/chainflip-io/chainflip-backend/blob/main/audits/Chainflip_Backend_-_Zellic_Audit_Report.pdf) | Zellic | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
 | [Multisig-Kudelski-Q1-2022.pdf](https://github.com/chainflip-io/chainflip-backend/blob/main/audits/Multisig-Kudelski-Q1-2022.pdf) | Kudelski Security | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
+| [2023-04-chainflip-securityreview.pdf](https://github.com/trailofbits/publications/blob/master/reviews/2023-04-chainflip-securityreview.pdf) | Trail of Bits | Audit | 2023-04 | stale | Direct | contract_name | 5 | high |
 
 ## Coverage Gaps
 
@@ -114,7 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 7 |
-| upstream | 3 |
+| upstream | 4 |
 | standard_library | 0 |
 | needs_review | 0 |
 
@@ -124,8 +126,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=5
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=10
 
 Zero-match audit list:
 

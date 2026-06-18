@@ -83,7 +83,7 @@
 | [EVM2EVMOnRamp (2 deployments)](./ethereum-1/0x8469b5abd81987f9347c0babd47b9eb11da7d0df/) | ethereum | 2 deployments: ethereum [`0x8469b5...a7d0df`](./ethereum-1/0x8469b5abd81987f9347c0babd47b9eb11da7d0df/); ethereum `0xffbd6b...2aa389` | ⚠️ Unaudited | Verified |
 | [FinalizableCommittee](./ethereum-1/0x4e0e46fc2b9a9809dce23ce2d9a1d6eede7de611/) | ethereum | [`0x4e0e46...7de611`](./ethereum-1/0x4e0e46fc2b9a9809dce23ce2d9a1d6eede7de611/) | ⚠️ Unaudited | Verified |
 | [FriStatementContract](./ethereum-1/0x30efaaa99f8efe310d9fdc83072e2a04c093d400/) | ethereum | [`0x30efaa...93d400`](./ethereum-1/0x30efaaa99f8efe310d9fdc83072e2a04c093d400/) | ⚠️ Unaudited | Verified |
-| [GrantStaking](./ethereum-1/0x1293a54e160d1cd7075487898d65266081a15458/) | ethereum | [`0x1293a5...a15458`](./ethereum-1/0x1293a54e160d1cd7075487898d65266081a15458/) | ⚠️ Unaudited | Verified |
+| GrantStaking | ethereum | `0x1293a5...a15458` | ⚠️ Unaudited | Verified |
 | [L1BTCDepositorWormholeV2Arbitrum](./ethereum-1/0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a/) | ethereum | [`0x75a6e4...2c619a`](./ethereum-1/0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a/) | ⚠️ Unaudited | Verified |
 | [L1BTCDepositorWormholeV2Base](./ethereum-1/0x186d048097c7406c64efb0537886e3cae100a1fe/) | ethereum | [`0x186d04...00a1fe`](./ethereum-1/0x186d048097c7406c64efb0537886e3cae100a1fe/) | ⚠️ Unaudited | Verified |
 | [L1BTCRedeemerWormhole](./ethereum-1/0x5aab7eabd63b2222b07442f04ca874366193b3f8/) | ethereum | [`0x5aab7e...93b3f8`](./ethereum-1/0x5aab7eabd63b2222b07442f04ca874366193b3f8/) | ⚠️ Unaudited | Verified |

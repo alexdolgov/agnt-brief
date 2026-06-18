@@ -242,7 +242,7 @@
 | [cgo-finance](./cgo-finance/) | $1.0M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
 | [chadfinance](./chadfinance/) | $78.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chain-fusion](./chain-fusion/) | $18.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
-| [chainflip](./chainflip/) | $3.7M | 30.0% | ? | active | 3 | 10 | 2026-06-17 |
+| [chainflip](./chainflip/) | $3.7M | 27.3% | ? | active | 4 | 11 | 2026-06-18 |
 | [chainge-finance](./chainge-finance/) | $12.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [chaingpt](./chaingpt/) | $3.8M | 0.0% | ? | active | 0 | 33 | 2026-06-17 |
 | [champion-finance](./champion-finance/) | $23.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -376,7 +376,7 @@
 | [electra](./electra/) | $81.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [elephant-money](./elephant-money/) | $1.6M | 8.5% | $1.6M | declining | 2 | 49 | 2026-06-17 |
 | [elfi-protocol](./elfi-protocol/) | $2.9M | 0.0% | ? | declining | 1 | 430 | 2026-06-17 |
-| [ellipsis-finance](./ellipsis-finance/) | $59.0K | 40.0% | $9.0K | dead | 3 | 10 | 2026-06-17 |
+| [ellipsis-finance](./ellipsis-finance/) | $347.9K | 26.7% | $297.9K | dead | 3 | 15 | 2026-06-18 |
 | [elyfi](./elyfi/) | $535.3K | 11.1% | $100.6K | dead | 2 | 11 | 2026-06-17 |
 | [emiswap](./emiswap/) | $33.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [empmoney](./empmoney/) | $182.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -611,7 +611,7 @@
 | [kava-liquid](./kava-liquid/) | $1.2M | 0.0% | ? | declining | 1 | 1 | 2026-06-17 |
 | [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-17 |
 | [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [keep-network](./keep-network/) | $24.7M | 6.8% | $24.7M | declining | 18 | 127 | 2026-06-17 |
+| [keep-network](./keep-network/) | $24.7M | 6.4% | $24.7M | declining | 18 | 187 | 2026-06-18 |
 | [keep3r-network](./keep3r-network/) | $2.0B | 1.9% | $2.0B | declining | 1 | 52 | 2026-06-17 |
 | [keeta-bridge](./keeta-bridge/) | $1.3M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -638,7 +638,7 @@
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 16 | 2026-06-17 |
 | [kryptodex](./kryptodex/) | $669.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kuma-protocol](./kuma-protocol/) | $22.1K | 11.1% | $22.1K | active | 3 | 9 | 2026-06-17 |
-| [kyberswap](./kyberswap/) | $22.4M | 6.7% | $22.4M | declining | 6 | 96 | 2026-06-17 |
+| [kyberswap](./kyberswap/) | $224.4M | 10.6% | $224.4M | declining | 16 | 297 | 2026-06-18 |
 | [kyex](./kyex/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kyrios-finance](./kyrios-finance/) | $197.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [l2x.pro](./l2x.pro/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1369,7 +1369,7 @@
 | [xpanse](./xpanse/) | $240.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xrgb](./xrgb/) | $304.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xswap-protocol](./xswap-protocol/) | $664.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 1 | 6 | 2026-06-17 |
+| [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 1 | 12 | 2026-06-18 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 28 | 2026-06-17 |
 | [y2k-finance](./y2k-finance/) | $30.0K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [yaka-finance](./yaka-finance/) | $10.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

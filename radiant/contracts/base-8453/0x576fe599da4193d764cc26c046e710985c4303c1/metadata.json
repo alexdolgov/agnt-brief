@@ -1,0 +1,18 @@
+{
+  "address": "0x576fe599da4193d764cc26c046e710985c4303c1",
+  "chain_id": 8453,
+  "contract_name": "PullTokenWrapper",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T15:33:40.510Z"
+}

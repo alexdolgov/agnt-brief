@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lockon",
-  "generated_at": "2026-06-17T07:00:40.600Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T15:20:02.903Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lockon",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 90,
-    "total_audits": 7,
+    "total_audits": 8,
     "scoreable_audits": 4,
     "dl_tvl_usd": 907843.72711,
     "tvl_usd": 907843.72711,
@@ -53,7 +53,7 @@
       "fresh": 1,
       "aging": 2,
       "stale": 2,
-      "unknown": 2
+      "unknown": 3
     }
   },
   "topography": {
@@ -68,8 +68,8 @@
     "unknown_contracts": 0,
     "deployment_units": 5,
     "live_deployment_units": 5,
-    "dependencies_extracted": 22,
-    "unverified_dependencies": 5,
+    "dependencies_extracted": 21,
+    "unverified_dependencies": 4,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -86,7 +86,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99",
-      "deployment_unit": "unit-24740",
+      "deployment_unit": "unit-37980",
       "deployment_unit_proxy_count": 1,
       "name": "Airdrop",
       "role": "operational_periphery",
@@ -102,7 +102,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99",
-          "deployment_unit": "unit-24740",
+          "deployment_unit": "unit-37980",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -176,8 +176,8 @@
       "deployment_unit_proxy_count": null,
       "name": "ExchangeIssuanceZeroEx",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "set-protocol",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -242,7 +242,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d",
-      "deployment_unit": "unit-24738",
+      "deployment_unit": "unit-37978",
       "deployment_unit_proxy_count": 1,
       "name": "IndexStaking",
       "role": "unknown",
@@ -258,7 +258,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d",
-          "deployment_unit": "unit-24738",
+          "deployment_unit": "unit-37978",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -280,7 +280,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x555962ce3093b15fac8d37c2a49935c96991f2a0",
-      "deployment_unit": "unit-24737",
+      "deployment_unit": "unit-37977",
       "deployment_unit_proxy_count": 1,
       "name": "LockonVesting",
       "role": "operational_periphery",
@@ -296,7 +296,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x555962ce3093b15fac8d37c2a49935c96991f2a0",
-          "deployment_unit": "unit-24737",
+          "deployment_unit": "unit-37977",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -318,7 +318,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a",
-      "deployment_unit": "unit-24736",
+      "deployment_unit": "unit-37976",
       "deployment_unit_proxy_count": 1,
       "name": "LockStaking",
       "role": "unknown",
@@ -334,7 +334,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a",
-          "deployment_unit": "unit-24736",
+          "deployment_unit": "unit-37976",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -356,7 +356,7 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74",
-      "deployment_unit": "unit-24739",
+      "deployment_unit": "unit-37979",
       "deployment_unit_proxy_count": 1,
       "name": "LockToken",
       "role": "token",
@@ -372,7 +372,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74",
-          "deployment_unit": "unit-24739",
+          "deployment_unit": "unit-37979",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -398,8 +398,8 @@
       "deployment_unit_proxy_count": null,
       "name": "PositionUnitAdjusterModule",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "set-protocol",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -853,6 +853,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15448,
+      "audit_key": "audit-15448",
+      "report_name": "bunzz-audit",
+      "report_url": "https://github.com/lockon-finance/lock-contracts/blob/main/audits/bunzz-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -891,8 +912,8 @@
     }
   ],
   "origin_summary": {
-    "native": 6,
-    "upstream": 2,
+    "native": 8,
+    "upstream": 0,
     "standard_library": 5,
     "needs_review": 0
   },
@@ -918,6 +939,10 @@
       {
         "audit_id": 3233,
         "report_name": "final_report_LOCKON_Oct_25_2024.pdf"
+      },
+      {
+        "audit_id": 15448,
+        "report_name": "bunzz-audit"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kuma-protocol",
-  "generated_at": "2026-06-17T07:00:36.493Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T15:21:59.507Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kuma-protocol",
@@ -26,15 +26,15 @@
     "total_addresses": 14,
     "unique_implementations": 9,
     "total_deployments": 14,
-    "audited_contracts": 1,
-    "unaudited_contracts": 8,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 8,
+    "audited_contracts": 2,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 11.1,
+    "coverage_pct": 22.2,
     "total_audits": 3,
-    "scoreable_audits": 1,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 3075023.6385999997,
     "tvl_usd": 22134.05151199704,
     "tvl_source": "on_chain",
@@ -50,7 +50,7 @@
       "mantle",
       "polygon"
     ],
-    "tier1_coverage_pct": 11.1,
+    "tier1_coverage_pct": 22.2,
     "tier1_auditors": [
       "Code4rena"
     ],
@@ -75,7 +75,7 @@
     "unknown_contracts": 2,
     "deployment_units": 50,
     "live_deployment_units": 2,
-    "dependencies_extracted": 115,
+    "dependencies_extracted": 14,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -174,7 +174,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf",
-      "deployment_unit": "unit-22355",
+      "deployment_unit": "unit-37983",
       "deployment_unit_proxy_count": 2,
       "name": "GnosisSafe",
       "role": "governance",
@@ -190,7 +190,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf",
-          "deployment_unit": "unit-22355",
+          "deployment_unit": "unit-37983",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -201,7 +201,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb5502747aabdca21e832951b4caaf739da33f450",
-          "deployment_unit": "unit-22355",
+          "deployment_unit": "unit-37983",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -220,7 +220,7 @@
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0x1151d63eb6154843d4b4898cf4c63af556642997",
-      "deployment_unit": "unit-22383",
+      "deployment_unit": "unit-38011",
       "deployment_unit_proxy_count": 2,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -236,7 +236,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x1151d63eb6154843d4b4898cf4c63af556642997",
-          "deployment_unit": "unit-22383",
+          "deployment_unit": "unit-38011",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -247,7 +247,7 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x7cf34ac2ceff942c697d9c070228454864025432",
-          "deployment_unit": "unit-22383",
+          "deployment_unit": "unit-38011",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -322,7 +322,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -333,14 +333,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11948"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -383,7 +385,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2758"
+        "audit-2758",
+        "audit-11948"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -399,7 +402,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PaUSD",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -530,12 +533,35 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessController",
+        "Blacklist",
+        "IBlacklist",
+        "IKBCToken",
+        "IKIBToken",
+        "IKUMAAddressProvider",
+        "IKUMABondToken",
+        "IKUMAFeeCollector",
+        "IKUMASwap",
+        "IKYCToken",
+        "IMCAGRateFeed",
+        "KBCToken",
+        "KIBToken",
+        "KUMAAccessController",
+        "KUMAAddressProvider",
+        "KUMABondToken",
+        "KUMAFeeCollector",
+        "KUMASwap",
+        "KYCToken",
+        "MCAGAggregator",
+        "MCAGAggregatorInterface",
+        "MCAGRateFeed"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -543,8 +569,8 @@
     {
       "auditor": "Code4rena",
       "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 11.1,
+      "contracts_covered": 2,
+      "coverage_pct": 22.2,
       "latest_audit": "2023-02"
     }
   ],
@@ -570,26 +596,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5fad6f80312aee6f19784a7fc359f90d441163de",
-      "name": "KUMAAccessController",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x8054d4d130c3a84852f379424bcac75673a7486b",
-      "name": "PaUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x76d8b79fb9afd4da89913458c90b6c09676628e2",
@@ -601,17 +607,17 @@
     }
   ],
   "origin_summary": {
-    "native": 6,
+    "native": 5,
     "upstream": 0,
     "standard_library": 3,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 98
+      "extraction_exact": 216
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -619,10 +625,6 @@
       {
         "audit_id": 2759,
         "report_name": "KUMA Audit report #3"
-      },
-      {
-        "audit_id": 11948,
-        "report_name": "Public Github Repo: <>"
       }
     ],
     "inherited_remapped_matches": []

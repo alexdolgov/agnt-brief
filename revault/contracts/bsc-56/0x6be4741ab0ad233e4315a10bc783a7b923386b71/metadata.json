@@ -1,0 +1,18 @@
+{
+  "address": "0x6be4741ab0ad233e4315a10bc783a7b923386b71",
+  "chain_id": 56,
+  "contract_name": "BeefyVenusVaultBNB",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T15:16:09.318Z"
+}

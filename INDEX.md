@@ -41,7 +41,7 @@
 | [alien-base](./alien-base/) | $3.1M | 0.0% | $3.1M | declining | 0 | 26 | 2026-06-17 |
 | [alium-swap](./alium-swap/) | $15.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 110 | 2026-06-17 |
-| [alpaca-finance](./alpaca-finance/) | $11.4M | 35.3% | $11.2M | declining | 19 | 17 | 2026-06-17 |
+| [alpaca-finance](./alpaca-finance/) | $11.4M | 31.6% | $11.2M | declining | 19 | 19 | 2026-06-18 |
 | [alphafi](./alphafi/) | $193.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [alphagrowth](./alphagrowth/) | $1.2M | 17.4% | $1.2M | active | 16 | 29 | 2026-06-17 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 5 | 2026-06-17 |
@@ -637,7 +637,7 @@
 | [kongswap](./kongswap/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 16 | 2026-06-17 |
 | [kryptodex](./kryptodex/) | $669.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [kuma-protocol](./kuma-protocol/) | $22.1K | 11.1% | $22.1K | active | 3 | 9 | 2026-06-17 |
+| [kuma-protocol](./kuma-protocol/) | $22.1K | 22.2% | $22.1K | active | 3 | 9 | 2026-06-18 |
 | [kyberswap](./kyberswap/) | $224.4M | 10.6% | $224.4M | declining | 16 | 297 | 2026-06-18 |
 | [kyex](./kyex/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kyrios-finance](./kyrios-finance/) | $197.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -676,7 +676,7 @@
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 58 | 2026-06-17 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 13 | 2026-06-17 |
 | [lns](./lns/) | $11.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [lockon](./lockon/) | $907.8K | 90.0% | ? | active | 7 | 13 | 2026-06-17 |
+| [lockon](./lockon/) | $907.8K | 90.0% | ? | active | 8 | 13 | 2026-06-18 |
 | [locus-finance](./locus-finance/) | $43.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [looksrare](./looksrare/) | $27.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [looping-collective](./looping-collective/) | $204.1K | 50.0% | ? | active | 13 | 10 | 2026-06-17 |
@@ -967,7 +967,7 @@
 | [quipuswap](./quipuswap/) | $454.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [quoll](./quoll/) | $18.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [raccoon-finance](./raccoon-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [radiant](./radiant/) | $460.1K | 32.7% | $460.1K | dead | 94 | 360 | 2026-06-17 |
+| [radiant](./radiant/) | $462.8K | 21.3% | $41.9K | dead | 94 | 60 | 2026-06-18 |
 | [raft](./raft/) | $13.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rage-protocol](./rage-protocol/) | $232.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rage-trade-v1](./rage-trade-v1/) | $6.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -988,7 +988,7 @@
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 106 | 2026-06-17 |
 | [resolv](./resolv/) | $50.5M | 3.1% | $50.5M | rugged | 1 | 80 | 2026-06-12 |
 | [resupply](./resupply/) | $3.2M | 2.6% | $3.2M | active | 8 | 39 | 2026-06-17 |
-| [revault](./revault/) | $2.3K | 40.0% | ? | declining | 1 | 66 | 2026-06-17 |
+| [revault](./revault/) | $996.9K | 20.0% | $994.6K | declining | 1 | 10 | 2026-06-18 |
 | [revert](./revert/) | $2.1M | 87.5% | ? | active | 13 | 74 | 2026-06-17 |
 | [revoluzion](./revoluzion/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |

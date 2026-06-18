@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bima-cdp",
-  "generated_at": "2026-06-17T07:00:45.167Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:29:26.473Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bima-cdp",
@@ -27,12 +27,12 @@
     "unique_implementations": 19,
     "total_deployments": 26,
     "audited_contracts": 6,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 10,
     "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 4,
-    "coverage_pct": 40,
+    "contracts_unverified": 3,
+    "coverage_pct": 37.5,
     "total_audits": 3,
     "scoreable_audits": 3,
     "dl_tvl_usd": 6514963.39291,
@@ -46,7 +46,7 @@
       "ethereum",
       "sonic"
     ],
-    "tier1_coverage_pct": 40,
+    "tier1_coverage_pct": 37.5,
     "tier1_auditors": [
       "Cyfrin",
       "Spearbit"
@@ -64,15 +64,15 @@
     "project_purpose": "BIMA CDP is a decentralized Bitcoin-backed stablecoin and borrowing protocol positioned for universal yield. Users deposit collateral to mint the protocol stablecoin/debt token, with liquidation mechanisms, stability pools, and governance features used to maintain peg stability and manage risk across supported deployments and accounting chains.",
     "relationship_narrative": "The CDP family relies on Price Oracles for collateral valuation and Cross-Chain Assets as collateral types. BIMA Token & Governance controls protocol parameters and incentives, while Stability Mechanisms and Yield & Strategies support peg stability and capital efficiency.",
     "product_family_count": 8,
-    "total_contracts_indexed": 109,
+    "total_contracts_indexed": 110,
     "live_contracts": 21,
-    "inactive_contracts": 79,
+    "inactive_contracts": 80,
     "singleton_contracts": 4,
     "uninitialized_contracts": 0,
     "unknown_contracts": 5,
     "deployment_units": 7,
     "live_deployment_units": 2,
-    "dependencies_extracted": 45,
+    "dependencies_extracted": 26,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -86,6 +86,41 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ca67a794051e036eefb5aa4b34fe2bd836069f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Bfbtc",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Bfbtc",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ca67a794051e036eefb5aa4b34fe2bd836069f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -485,7 +520,7 @@
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0xecac9c5f704e954931349da37f60e39f515c11c1",
-      "deployment_unit": "unit-19665",
+      "deployment_unit": "unit-37121",
       "deployment_unit_proxy_count": 1,
       "name": "LBTC",
       "role": "unknown",
@@ -501,7 +536,7 @@
           "chain_id": 146,
           "chain_name": "sonic",
           "address": "0xecac9c5f704e954931349da37f60e39f515c11c1",
-          "deployment_unit": "unit-19665",
+          "deployment_unit": "unit-37121",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -559,7 +594,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xecac9c5f704e954931349da37f60e39f515c11c1",
-      "deployment_unit": "unit-19663",
+      "deployment_unit": "unit-37119",
       "deployment_unit_proxy_count": 1,
       "name": "ProxyMock",
       "role": "unknown",
@@ -575,7 +610,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xecac9c5f704e954931349da37f60e39f515c11c1",
-          "deployment_unit": "unit-19663",
+          "deployment_unit": "unit-37119",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -812,41 +847,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x6bede1c6009a78c222d9bdb7974bb67847fdb68c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Ethereum Mainnet Addresses:",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6bede1c6009a78c222d9bdb7974bb67847fdb68c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -999,25 +999,35 @@
       "auditor": "Cyfrin",
       "tier": 1,
       "contracts_covered": 5,
-      "coverage_pct": 33.3,
+      "coverage_pct": 31.3,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "Unknown",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 33.3,
+      "coverage_pct": 31.3,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 26.7,
+      "coverage_pct": 25,
       "latest_audit": "2025-06"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ca67a794051e036eefb5aa4b34fe2bd836069f0",
+      "name": "Bfbtc",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",

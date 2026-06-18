@@ -5,10 +5,10 @@
 - Project: Gondi (`gondi`)
 - Website: [https://www.gondi.xyz](https://www.gondi.xyz)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:41.708Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:30:50.048Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: ethereum, hyperliquid
-- Contract surface: 25 unique implementations (57 raw deployments)
+- Contract surface: 26 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $752,461.00
 - On-chain TVL (included contracts): $35.59
 - TVL by chain: Ethereum $35.59
@@ -23,20 +23,20 @@ The Gondi family shares governance contracts like AddressManager and AddressMeth
 
 ## Contract Surface Quality
 
-- Indexed contracts: 84; live-surface contracts included: 57 (57 live, 0 unknown).
-- Excluded by liveness: 27 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 87; live-surface contracts included: 58 (58 live, 0 unknown).
+- Excluded by liveness: 29 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: aave-v2, uniswap-v3
-- Unverified dependencies: 1/4.
+- Unverified dependencies: 2/5.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/14 (21.4%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 3/15 (20.0%)
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
 - Unverified implementations: 11
-- Unique implementations: 25
-- Raw deployments: 57
+- Unique implementations: 26
+- Raw deployments: 58
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $35.59
@@ -48,7 +48,7 @@ The Gondi family shares governance contracts like AddressManager and AddressMeth
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 21.4% | 2026-02 |
+| unknown | Tier 2 | 3 | 20.0% | 2026-02 |
 
 ## Contract Surface
 
@@ -60,7 +60,7 @@ The Gondi family shares governance contracts like AddressManager and AddressMeth
 | MultiSourceLoan | unknown | ethereum | n/a | 4 deployments: ethereum [`0x478f6f...ccae16`](./contracts/ethereum-1/0x478f6f994c6fb3cf3e444a489b3ad9edb8ccae16/); ethereum `0xf41b38...c08a56`; ethereum `0xf65b99...a7d9a8`; hyperliquid `0x6ad675...927fd9` | ✅ Audited |
 | PurchaseBundler | unknown | ethereum | n/a | 12 deployments: ethereum [`0x1cef7e...50df96`](./contracts/ethereum-1/0x1cef7ea779acf977a9b99050bc87d9763c50df96/); ethereum `0x1fba53...0fcd62`; ethereum `0x3b59bf...ecdf5f`; ethereum `0x500007...77c333`; ethereum `0x53ceda...489140`; ethereum `0x6fee50...cc28fd`; ethereum `0xc10472...c90814`; ethereum `0xcea7ee...2d260a`; ethereum `0xe02d85...855a59`; ethereum `0xf46a58...506feb`; ethereum `0xfd31a0...1aca61`; hyperliquid `0xfaaff6...264157` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -69,6 +69,7 @@ The Gondi family shares governance contracts like AddressManager and AddressMeth
 | AddressMethodManager | governance | ethereum | n/a | 2 deployments: ethereum [`0x443f16...cdbf51`](./contracts/ethereum-1/0x443f1640255f0c3f7337ddcf4e3872c887cdbf51/); ethereum `0x4ecc15...3f8f09` | ⚠️ Unaudited |
 | AuctionLoanLiquidator | operational_periphery | ethereum | n/a | [`0x97d346...2ca47d`](./contracts/ethereum-1/0x97d34635b605c2f1630d6b4c6c5d222b8a2ca47d/) | ⚠️ Unaudited |
 | AuctionWithBuyoutLoanLiquidator | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x2995ae...f440f0`](./contracts/ethereum-1/0x2995ae7233fa89b314b5a707465b57a582f440f0/); ethereum `0xb3d88d...90ada2`; hyperliquid `0xb166ec...f4c6ad` | ⚠️ Unaudited |
+| DelegateRegistry | registry | ethereum | unit-37122 | [`0x000000...bed493`](./contracts/ethereum-1/0x00000000000000447e69651d841bd8d104bed493/) | ⚠️ Unaudited |
 | LiquidationDistributor | operational_periphery | hyperliquid | n/a | 3 deployments: ethereum `0x6e9122...b198be`; ethereum `0xedfbee...2f51c5`; hyperliquid [`0x47a297...ce0a0c`](./contracts/hyperliquid-999/0x47a297bcadbe7c98991e3e7e3b7cc0109ace0a0c/) | ⚠️ Unaudited |
 | LoanManagerRegistry | registry | ethereum | n/a | 2 deployments: ethereum [`0x1e0940...b7c9f5`](./contracts/ethereum-1/0x1e09403be51029fe676e684743b6aad2dab7c9f5/); hyperliquid `0x97ba36...5866d7` | ⚠️ Unaudited |
 | OldERC721Wrapper | token | ethereum | n/a | [`0xc0ec4e...fc5497`](./contracts/ethereum-1/0xc0ec4e4ba06dfb2dfaf21a69fc78310d80fc5497/) | ⚠️ Unaudited |
@@ -111,7 +112,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://2893171050-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FW2WSJrV6PSLWo4p8vIGq%2Fuploads%2FaRsUvzn1bAxcW38gJGOA%2FGondi%20-%20Zenith%20Audit%20Report%20(5).pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 16 | high |
-| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf) | unknown | Audit | 2025-08 | fresh | Direct | contract_name|n/a | 6 | high |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf) | unknown | Audit | 2025-08 | fresh | Direct | contract_name | 6 | high |
 
 ## Coverage Gaps
 
@@ -122,17 +123,16 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x443f16...cdbf51`](./contracts/ethereum-1/0x443f1640255f0c3f7337ddcf4e3872c887cdbf51/) | AddressMethodManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x47a297...ce0a0c`](./contracts/hyperliquid-999/0x47a297bcadbe7c98991e3e7e3b7cc0109ace0a0c/) | LiquidationDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1e0940...b7c9f5`](./contracts/ethereum-1/0x1e09403be51029fe676e684743b6aad2dab7c9f5/) | LoanManagerRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdcd85f...32f5b8`](./contracts/ethereum-1/0xdcd85fee491de4b1fc11cbc0ba0e78537732f5b8/) | PositionMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x039bc1...4f2b0a`](./contracts/ethereum-1/0x039bc1010f0295246d8004224600d65d804f2b0a/) | RangeValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 14 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 
@@ -141,6 +141,6 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=34
+- Match method counts: extraction_exact=40
 
 Fork inheritance lineage and inherited audits are included when available.

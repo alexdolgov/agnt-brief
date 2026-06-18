@@ -5,10 +5,10 @@
 - Project: CHATEAU (`chateau`)
 - Website: [https://www.chateau.capital](https://www.chateau.capital)
 - Lifecycle: active (Tier 0, 17.1% below peak)
-- Generated: 2026-06-17T07:00:56.215Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:24:12.434Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: hyperliquid, plasma
-- Contract surface: 5 unique implementations (6 raw deployments)
+- Contract surface: 6 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $1,036,483.43
 - On-chain TVL (included contracts): $19,062.45
 - TVL by chain: Plasma $19,062.45
@@ -23,7 +23,7 @@ The two chUSD instances likely represent the same stablecoin across different ch
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (5 live, 1 unknown).
+- Indexed contracts: 7; live-surface contracts included: 7 (6 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -31,12 +31,12 @@ The two chUSD instances likely represent the same stablecoin across different ch
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/3 (33.3%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 1/4 (25.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 5
-- Raw deployments: 6
+- Unique implementations: 6
+- Raw deployments: 7
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $19,062.45
@@ -48,7 +48,7 @@ The two chUSD instances likely represent the same stablecoin across different ch
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 33.3% | 2025-08 |
+| unknown | Tier 2 | 1 | 25.0% | 2025-08 |
 
 ## Contract Surface
 
@@ -56,13 +56,14 @@ The two chUSD instances likely represent the same stablecoin across different ch
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| chUSD | token | plasma | n/a | 2 deployments: hyperliquid `0x222222...abea02`; plasma [`0x222222...f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
+| chUSD | unknown | plasma | n/a | 2 deployments: hyperliquid `0x222222...abea02`; plasma [`0x222222...f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | StakedchUSDV2 | token | plasma | n/a | [`0x888888...ce874d`](./contracts/plasma-9745/0x888888bab58a7bd3068110749bc7b63b62ce874d/) | ⚠️ Unaudited |
+| EndpointV2 | operational_periphery | plasma | n/a | [`0x6f4756...48dd5b`](./contracts/plasma-9745/0x6f475642a6e85809b1c36fa62763669b1b48dd5b/) | ⚠️ Unaudited |
 | StakedchUSDOFT | token | hyperliquid | n/a | [`0x888888...b93aa8`](./contracts/hyperliquid-999/0x888888facb316879129e1eee2451260e44b93aa8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -106,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 5 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

@@ -5,8 +5,8 @@
 - Project: BIMA CDP (`bima-cdp`)
 - Website: [https://bima.money/](https://bima.money/)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-06-17T07:00:45.167Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:29:26.473Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: bsc, ethereum, sonic
 - Contract surface: 19 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $6,514,963.39
@@ -23,18 +23,18 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 109; live-surface contracts included: 26 (21 live, 5 unknown).
-- Excluded by liveness: 79 inactive, 4 singleton, 0 uninitialized.
+- Indexed contracts: 110; live-surface contracts included: 26 (21 live, 5 unknown).
+- Excluded by liveness: 80 inactive, 4 singleton, 0 uninitialized.
 - Deployment units: 2/7 live.
 - Detected codebases: none
-- Dependencies extracted: 45; unverified dependencies: 0.
+- Dependencies extracted: 26; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/15 (40.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 6/16 (37.5%)
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 4
+- Unverified implementations: 3
 - Unique implementations: 19
 - Raw deployments: 26
 - Audits discovered: 3
@@ -42,15 +42,15 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-06 (aging)
 - Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 40.0% (Cyfrin, Spearbit)
+- Tier 1 coverage: 37.5% (Cyfrin, Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 5 | 33.3% | 2024-09 |
-| Unknown | Tier 2 | 5 | 33.3% | 2024-09 |
-| Spearbit | Tier 1 | 4 | 26.7% | 2025-06 |
+| Cyfrin | Tier 1 | 5 | 31.3% | 2024-09 |
+| Unknown | Tier 2 | 5 | 31.3% | 2024-09 |
+| Spearbit | Tier 1 | 4 | 25.0% | 2025-06 |
 
 ## Contract Surface
 
@@ -65,18 +65,19 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 | PriceFeed | operational_periphery | ethereum | n/a | [`0x4b248f...9cbff2`](./contracts/ethereum-1/0x4b248f3646755f5b71a66bae8c55c568809cbff2/) | ✅ Audited |
 | TroveManager | governance | ethereum | n/a | 4 deployments: ethereum [`0x5066dc...d36b97`](./contracts/ethereum-1/0x5066dc39248e6696c0f2606a744a4482a3d36b97/); ethereum `0xa20c3d...800ff2`; bsc `0xa20c3d...800ff2`; sonic `0xa20c3d...800ff2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| Bfbtc | unknown | ethereum | n/a | [`0x4ca67a...6069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | ⚠️ Unaudited |
 | BimaPSM | unknown | ethereum | n/a | 2 deployments: ethereum [`0x97bb31...6009e9`](./contracts/ethereum-1/0x97bb3167a88fe34b1ec6d7f02560c4f0aa6009e9/); ethereum `0xea811c...a888fe` | ⚠️ Unaudited |
 | BimaWrappedCollateral | unknown | ethereum | n/a | 3 deployments: ethereum [`0x59063f...2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/); ethereum `0x856db2...232ce0`; ethereum `0xdc0cca...655197` | ⚠️ Unaudited |
 | BimaWrappedCollateralFactory | registry | ethereum | n/a | [`0x76de9b...129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | ⚠️ Unaudited |
 | BitFiStablecoinManager | governance | ethereum | n/a | [`0xb69865...d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ⚠️ Unaudited |
 | BitFiStablecoinZap | adapter | ethereum | n/a | [`0x140b55...4b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ⚠️ Unaudited |
 | EnzoBTC | unknown | ethereum | n/a | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited |
-| LBTC | unknown | sonic | unit-19665 | [`0xecac9c...5c11c1`](./contracts/sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
-| ProxyMock | unknown | ethereum | unit-19663 | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| LBTC | unknown | sonic | unit-37121 | [`0xecac9c...5c11c1`](./contracts/sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| ProxyMock | unknown | ethereum | unit-37119 | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
 | StakedBitFiStablecoin | token | ethereum | n/a | 2 deployments: ethereum [`0x688745...a871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/); ethereum `0xd32224...951734` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -91,7 +92,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -100,7 +101,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | n/a | `0x3bbd33...458a92` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x536394...c78395` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x5f339e...a7ff47` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x6bede1...fdb68c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,6 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x4ca67a...6069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | Bfbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x97bb31...6009e9`](./contracts/ethereum-1/0x97bb3167a88fe34b1ec6d7f02560c4f0aa6009e9/) | BimaPSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x59063f...2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/) | BimaWrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x76de9b...129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | BimaWrappedCollateralFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

@@ -5,8 +5,8 @@
 - Project: YieldNest (`yieldnest`)
 - Website: [https://yieldnest.finance/](https://yieldnest.finance/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T07:00:32.615Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T12:29:22.893Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
 - Chains: arbitrum, base, berachain, bsc, ethereum, ink, optimism
 - Contract surface: 18 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $20,168,862.08
@@ -23,11 +23,11 @@ The ynETH family feeds rewards into ynETHx vaults, which issue L2YnERC20Upgradea
 
 ## Contract Surface Quality
 
-- Indexed contracts: 72; live-surface contracts included: 24 (23 live, 1 unknown).
-- Excluded by liveness: 32 inactive, 16 singleton, 0 uninitialized.
+- Indexed contracts: 70; live-surface contracts included: 24 (23 live, 1 unknown).
+- Excluded by liveness: 30 inactive, 16 singleton, 0 uninitialized.
 - Deployment units: 18/28 live.
 - Detected codebases: none
-- Unverified dependencies: 5/53.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
@@ -57,26 +57,26 @@ The ynETH family feeds rewards into ynETHx vaults, which issue L2YnERC20Upgradea
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vault | core_logic | ethereum | unit-20350 (2 proxies) | 2 deployments: ethereum [`0x3db228...ddcb4b`](./contracts/ethereum-1/0x3db228fe836d99ccb25ec4dfdc80ed6d2cddcb4b/); ethereum `0x657d9a...c96dcb` | ✅ Audited |
-| Vault | core_logic | ethereum | unit-20345 | [`0x01ba69...4c15d8`](./contracts/ethereum-1/0x01ba69727e2860b37bc1a2bd56999c1afb4c15d8/) | ✅ Audited |
-| Vault | core_logic | bsc | unit-20366 | [`0x32c830...0a2c5f`](./contracts/bsc-56/0x32c830f5c34122c6afb8ae87aba541b7900a2c5f/) | ✅ Audited |
-| KernelStrategy | core_logic | bsc | unit-20368 | [`0x78839c...606a56`](./contracts/bsc-56/0x78839ce14a8213779128ee4da6d75e1326606a56/) | ✅ Audited |
-| RewardsDistributor | operational_periphery | ethereum | unit-20351 | [`0x40d5ff...652351`](./contracts/ethereum-1/0x40d5ff3e218f54f4982661a0464a298cf6652351/) | ✅ Audited |
-| RewardsReceiver | unknown | ethereum | unit-20347 | [`0x1d6b2a...95c12b`](./contracts/ethereum-1/0x1d6b2a11ffea5f9a8ed85a02581910b3d695c12b/) | ✅ Audited |
-| ynEigen | unknown | ethereum | unit-20349 | [`0x35ec69...42630c`](./contracts/ethereum-1/0x35ec69a77b79c255e5d47d5a3bdbefefe342630c/) | ✅ Audited |
-| ynETH | unknown | ethereum | unit-20346 | [`0x09db87...373a48`](./contracts/ethereum-1/0x09db87a538bd693e9d08544577d5ccfaa6373a48/) | ✅ Audited |
+| Vault | core_logic | ethereum | unit-37092 (2 proxies) | 2 deployments: ethereum [`0x3db228...ddcb4b`](./contracts/ethereum-1/0x3db228fe836d99ccb25ec4dfdc80ed6d2cddcb4b/); ethereum `0x657d9a...c96dcb` | ✅ Audited |
+| Vault | core_logic | ethereum | unit-37087 | [`0x01ba69...4c15d8`](./contracts/ethereum-1/0x01ba69727e2860b37bc1a2bd56999c1afb4c15d8/) | ✅ Audited |
+| Vault | core_logic | bsc | unit-37108 | [`0x32c830...0a2c5f`](./contracts/bsc-56/0x32c830f5c34122c6afb8ae87aba541b7900a2c5f/) | ✅ Audited |
+| KernelStrategy | core_logic | bsc | unit-37110 | [`0x78839c...606a56`](./contracts/bsc-56/0x78839ce14a8213779128ee4da6d75e1326606a56/) | ✅ Audited |
+| RewardsDistributor | operational_periphery | ethereum | unit-37093 | [`0x40d5ff...652351`](./contracts/ethereum-1/0x40d5ff3e218f54f4982661a0464a298cf6652351/) | ✅ Audited |
+| RewardsReceiver | unknown | ethereum | unit-37089 | [`0x1d6b2a...95c12b`](./contracts/ethereum-1/0x1d6b2a11ffea5f9a8ed85a02581910b3d695c12b/) | ✅ Audited |
+| ynEigen | unknown | ethereum | unit-37091 | [`0x35ec69...42630c`](./contracts/ethereum-1/0x35ec69a77b79c255e5d47d5a3bdbefefe342630c/) | ✅ Audited |
+| ynETH | unknown | ethereum | unit-37088 | [`0x09db87...373a48`](./contracts/ethereum-1/0x09db87a538bd693e9d08544577d5ccfaa6373a48/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC4626WrapperStrategy | core_logic | ethereum | unit-20361 | [`0xd1573d...cff141`](./contracts/ethereum-1/0xd1573de52fff44dd92d275e20fdab0296ccff141/) | ⚠️ Unaudited |
-| SingleVault | core_logic | bsc | unit-20365 | [`0x304b58...74b509`](./contracts/bsc-56/0x304b5845b9114182ecb4495be4c91a273b74b509/) | ⚠️ Unaudited |
-| L2YnERC20Upgradeable | token | optimism | unit-20364 | [`0xe231db...635a61`](./contracts/optimism-10/0xe231db5f348d709239ef1741ea30961b3b635a61/) | ⚠️ Unaudited |
-| L2YnERC20Upgradeable | token | bsc | unit-20369 | [`0xdb8e54...af0511`](./contracts/bsc-56/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited |
-| L2YnERC20Upgradeable | token | optimism | unit-20363 | [`0xdb8e54...af0511`](./contracts/optimism-10/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-20358 (4 proxies) | 4 deployments: ethereum [`0x8e20ea...c4de2e`](./contracts/ethereum-1/0x8e20eaf121154b69b7b880fa6c617c0175c4de2e/); ethereum `0xa08f39...6141c3`; ethereum `0xdf51b7...0028ef`; ethereum `0xfcad67...5d6975` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | unit-20367 | [`0x721688...85d436`](./contracts/bsc-56/0x721688652dea9cabec70bd99411eaeab9485d436/) | ⚠️ Unaudited |
+| ERC4626WrapperStrategy | core_logic | ethereum | unit-37103 | [`0xd1573d...cff141`](./contracts/ethereum-1/0xd1573de52fff44dd92d275e20fdab0296ccff141/) | ⚠️ Unaudited |
+| SingleVault | core_logic | bsc | unit-37107 | [`0x304b58...74b509`](./contracts/bsc-56/0x304b5845b9114182ecb4495be4c91a273b74b509/) | ⚠️ Unaudited |
+| L2YnERC20Upgradeable | token | optimism | unit-37106 | [`0xe231db...635a61`](./contracts/optimism-10/0xe231db5f348d709239ef1741ea30961b3b635a61/) | ⚠️ Unaudited |
+| L2YnERC20Upgradeable | token | bsc | unit-37111 | [`0xdb8e54...af0511`](./contracts/bsc-56/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited |
+| L2YnERC20Upgradeable | token | optimism | unit-37105 | [`0xdb8e54...af0511`](./contracts/optimism-10/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-37100 (4 proxies) | 4 deployments: ethereum [`0x8e20ea...c4de2e`](./contracts/ethereum-1/0x8e20eaf121154b69b7b880fa6c617c0175c4de2e/); ethereum `0xa08f39...6141c3`; ethereum `0xdf51b7...0028ef`; ethereum `0xfcad67...5d6975` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | unit-37109 | [`0x721688...85d436`](./contracts/bsc-56/0x721688652dea9cabec70bd99411eaeab9485d436/) | ⚠️ Unaudited |
 | SafeProxy | unknown | bsc | n/a | [`0x7b4b43...86fcaf`](./contracts/bsc-56/0x7b4b43f00cf80aabda8f72d61b129f1e7f86fcaf/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -91,7 +91,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| L2YnERC20Upgradeable | token | base | unit-20370 | 3 deployments: base [`0xdb8e54...af0511`](./contracts/base-8453/0xdb8e54f39aff243b25a41e4747957ed517af0511/); arbitrum [`0xdb8e54...af0511`](./contracts/arbitrum-42161/0xdb8e54f39aff243b25a41e4747957ed517af0511/); berachain [`0xdb8e54...af0511`](./contracts/berachain-80094/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited (bytecode match) |
+| L2YnERC20Upgradeable | token | base | unit-37112 | 3 deployments: base [`0xdb8e54...af0511`](./contracts/base-8453/0xdb8e54f39aff243b25a41e4747957ed517af0511/); arbitrum [`0xdb8e54...af0511`](./contracts/arbitrum-42161/0xdb8e54f39aff243b25a41e4747957ed517af0511/); berachain [`0xdb8e54...af0511`](./contracts/berachain-80094/0xdb8e54f39aff243b25a41e4747957ed517af0511/) | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (1)
 

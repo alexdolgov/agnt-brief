@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "chateau",
-  "generated_at": "2026-06-17T07:00:56.215Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:24:12.434Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "chateau",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 17.109806988837118
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 6,
-    "unique_implementations": 5,
-    "total_deployments": 6,
+    "total_contracts": 6,
+    "total_addresses": 7,
+    "unique_implementations": 6,
+    "total_deployments": 7,
     "audited_contracts": 1,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 33.3,
+    "coverage_pct": 25,
     "total_audits": 1,
     "scoreable_audits": 1,
     "dl_tvl_usd": 1036483.43006,
@@ -62,8 +62,8 @@
     "project_purpose": "CHATEAU is an RWA/institutional-asset DeFi protocol centered on chUSD, an overcollateralized synthetic dollar/stable-value asset. Its staked chUSD products, including StakedchUSDOFT and StakedchUSDV2 where applicable, represent vault-style exposure to off-chain institutional/private credit strategies rather than a simple stablecoin backed directly by real-world assets.",
     "relationship_narrative": "The two chUSD instances likely represent the same stablecoin across different chains or pools, while StakedchUSDOFT and StakedchUSDV2 are staking derivatives that depend on chUSD as the underlying asset. The unnamed contracts likely provide infrastructure such as staking logic or access control shared between the staking tokens.",
     "product_family_count": 2,
-    "total_contracts_indexed": 6,
-    "live_contracts": 5,
+    "total_contracts_indexed": 7,
+    "live_contracts": 6,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
@@ -75,8 +75,8 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
-    "has_non_token_contracts": false,
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -126,7 +126,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "chUSD",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Smart Contracts",
@@ -165,6 +165,41 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EndpointV2",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EndpointV2",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -307,7 +342,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 33.3,
+      "coverage_pct": 25,
       "latest_audit": "2025-08"
     }
   ],
@@ -335,7 +370,7 @@
   ],
   "origin_summary": {
     "native": 5,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

@@ -151,7 +151,7 @@
 | [bifi](./bifi/) | $140.0K | 0.0% | $140.0K | active | 7 | 15 | 2026-06-18 |
 | [bifrost-liquid-staking](./bifrost-liquid-staking/) | $16.7M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [bigone](./bigone/) | $28.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [bima-cdp](./bima-cdp/) | $6.5M | 40.0% | ? | active | 3 | 19 | 2026-06-17 |
+| [bima-cdp](./bima-cdp/) | $6.5M | 37.5% | ? | active | 3 | 19 | 2026-06-18 |
 | [binance-staked-eth](./binance-staked-eth/) | $6.1B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [binance-staked-sol](./binance-staked-sol/) | $725.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 7 | 2026-06-17 |
@@ -248,7 +248,7 @@
 | [champion-finance](./champion-finance/) | $23.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [charm-finance](./charm-finance/) | $14.2K | 60.0% | $0.0 | declining | 6 | 7 | 2026-06-17 |
 | [chat3](./chat3/) | $6.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-17 |
+| [chateau](./chateau/) | $19.1K | 25.0% | $19.1K | active | 1 | 6 | 2026-06-18 |
 | [chedda-finance](./chedda-finance/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cherrylend](./cherrylend/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
@@ -454,7 +454,7 @@
 | [gains-network](./gains-network/) | $53.8M | 0.0% | $53.8M | active | 1 | 26 | 2026-06-17 |
 | [galaxy-curation](./galaxy-curation/) | $69.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [gale](./gale/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [gamma](./gamma/) | $3.1M | 30.3% | ? | active | 8 | 403 | 2026-06-17 |
+| [gamma](./gamma/) | $3.1M | 34.1% | ? | active | 10 | 400 | 2026-06-18 |
 | [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-17 |
 | [gearbox](./gearbox/) | $3.5M | 68.6% | ? | declining | 38 | 53 | 2026-06-18 |
 | [geist-finance](./geist-finance/) | $153.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -478,7 +478,7 @@
 | [goldstation](./goldstation/) | $1.8M | 0.0% | ? | active | 3 | 5 | 2026-06-17 |
 | [goledo](./goledo/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gomble-games](./gomble-games/) | $14.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [gondi](./gondi/) | $35.6 | 21.4% | $35.6 | active | 2 | 25 | 2026-06-17 |
+| [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 26 | 2026-06-18 |
 | [goodentry](./goodentry/) | $70.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goose-finance](./goose-finance/) | $249.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goose](./goose/) | $333.3 | 0.0% | $333.3 | active | 0 | 6 | 2026-06-17 |
@@ -1381,7 +1381,7 @@
 | [yield-yak](./yield-yak/) | $772.2K | 0.0% | $772.2K | declining | 3 | 15 | 2026-06-17 |
 | [yieldfi](./yieldfi/) | $30.9M | 65.6% | $3.4M | active | 6 | 37 | 2026-06-17 |
 | [yieldly](./yieldly/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [yieldnest](./yieldnest/) | $19.2M | 47.1% | $295.1K | active | 13 | 18 | 2026-06-17 |
+| [yieldnest](./yieldnest/) | $19.2M | 47.1% | $295.1K | active | 13 | 18 | 2026-06-18 |
 | [yieldseeker](./yieldseeker/) | $93.9M | 0.0% | $93.9M | active | 1 | 114 | 2026-06-17 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 44.4% | ? | declining | 7 | 18 | 2026-06-17 |
 | [yoshi-exchange](./yoshi-exchange/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

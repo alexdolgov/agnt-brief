@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gamma",
-  "generated_at": "2026-06-17T07:00:48.714Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:50:57.605Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gamma",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 403,
-    "total_addresses": 1835,
-    "unique_implementations": 403,
-    "total_deployments": 1835,
-    "audited_contracts": 27,
-    "unaudited_contracts": 62,
-    "contracts_verified_audited": 26,
-    "contracts_verified_unaudited": 56,
+    "total_contracts": 400,
+    "total_addresses": 1822,
+    "unique_implementations": 400,
+    "total_deployments": 1822,
+    "audited_contracts": 30,
+    "unaudited_contracts": 58,
+    "contracts_verified_audited": 29,
+    "contracts_verified_unaudited": 52,
     "contracts_verified_by_bytecode": 7,
-    "contracts_unverified": 314,
-    "coverage_pct": 30.3,
-    "total_audits": 8,
-    "scoreable_audits": 8,
+    "contracts_unverified": 312,
+    "coverage_pct": 34.1,
+    "total_audits": 10,
+    "scoreable_audits": 10,
     "dl_tvl_usd": 3060016.44017,
     "tvl_usd": 3060016.44017,
     "tvl_source": "defillama",
@@ -73,16 +73,18 @@
       "sonic",
       "unichain"
     ],
-    "tier1_coverage_pct": 2.2,
+    "tier1_coverage_pct": 5.7,
     "tier1_auditors": [
-      "ConsenSys Diligence"
+      "ConsenSys Diligence",
+      "Immunefi",
+      "OpenZeppelin"
     ],
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 3,
-      "stale": 3,
+      "stale": 4,
       "unknown": 0
     }
   },
@@ -90,22 +92,22 @@
     "project_purpose": "Gamma is an active concentrated-liquidity and market-making protocol offering V1 pooled vaults and V2 vaults for automated liquidity management, tools for creating Uniswap V4 LP vaults, limit order book functionality, Perp Vaults, Merkl incentives, and related liquidity infrastructure. It also includes the GAMMA governance token and xGAMMA staking derivative for fee distribution.",
     "relationship_narrative": "The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's MultiFeeDistribution contracts to distribute protocol fees to stakers. The Gamma family relies on HypeRegistry contracts to track and manage Hypervisor vaults and other components across multiple chains.",
     "product_family_count": 2,
-    "total_contracts_indexed": 2560,
-    "live_contracts": 1500,
-    "inactive_contracts": 518,
+    "total_contracts_indexed": 2570,
+    "live_contracts": 1735,
+    "inactive_contracts": 541,
     "singleton_contracts": 207,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 335,
+    "unknown_contracts": 87,
     "deployment_units": 72,
     "live_deployment_units": 0,
-    "dependencies_extracted": 154,
-    "unverified_dependencies": 51,
+    "dependencies_extracted": 146,
+    "unverified_dependencies": 52,
     "detected_codebases": [
       "uniswap-v3"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 403,
+    "unique_implementations": 400,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -156,17 +158,6 @@
           "chain_id": 100,
           "chain_name": "gnosis",
           "address": "0x6e9d701fb6478ed5972a37886c2ba6c82a4cbb4c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xdab18d04d81be218d2bebc1b1746fd86763769a9",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -1539,7 +1530,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 169,
@@ -1550,7 +1541,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 169,
@@ -1561,7 +1552,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1088,
@@ -1572,14 +1563,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15324"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1607,7 +1600,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 169,
@@ -1618,7 +1611,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 169,
@@ -1629,7 +1622,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1088,
@@ -1640,14 +1633,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15324"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4822,50 +4817,6 @@
           "is_audited": false
         },
         {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x0ac4c7b794f3d7e7bf1093a4f179ba792cf15055",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x7b9c2f68f16c3618bb45616fb98d83f94fd7062e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x97686103b3e7238ca6c2c439146b30adbd84a593",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xcac19d43c9558753d7535978a370055614ce832e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 169,
           "chain_name": "manta",
           "address": "0x670003267ddff9c2c740ec9a1645569cccdc6bf7",
@@ -4946,72 +4897,6 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x6809f4881707459ad0287c6467365e3c910e9373",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x0f867f14b39a5892a39841a03ba573426de4b1d0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x166cd995f9301590e381c488ffd4f18c3ca38a27",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x34ffbd9db6b9bd8b095a0d156de69a2ad2944666",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x37595fcaf29e4fbac0f7c1863e3df2fe6e2247e9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x66cd859053c458688044d816117d5bdf42a56813",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa216c2b6554a0293f69a1555dd22f4b7e60fe907",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -5201,17 +5086,6 @@
           "chain_id": 100,
           "chain_name": "gnosis",
           "address": "0xf66da0f517c6f5431c77f4d0525ebc4b3bb40578",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x9ca70521bf8a7f7345dfe893d117c4414cae9151",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -6076,6 +5950,28 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8a9570ec97534277ade6e46d100939fbce4968f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc0766ff871c6c8e72c110100d0120829dc017d38",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 80094,
@@ -10665,41 +10561,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xaec731f69fa39ad84c7749e913e3bc227427adfd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Registry",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Gamma",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Registry",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xaec731f69fa39ad84c7749e913e3bc227427adfd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 130,
@@ -17709,29 +17570,7 @@
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0x60f1916414daf4f35b01645aa53a5c941778e75a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x71fdd8bdb98a9bf1589c94922d56b887b20356be",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xbcde215f021cb2e2e83ead3f5ecc000625b3cfa1",
+          "address": "0xa42d55074869491d60ac05490376b74cf19b00e6",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -17872,9 +17711,31 @@
           "is_audited": true
         },
         {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x82fceb07a4d01051519663f6c1c919af21c27845",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x53bcc093d2cb6de857e296a9e723f58c4f2876a0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfc13ebe7feb9595d70195e9168aa7f3ace153621",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -17896,7 +17757,9 @@
       ],
       "audits_covering": [
         "audit-8017",
-        "audit-8019"
+        "audit-8019",
+        "audit-15321",
+        "audit-15324"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -22703,41 +22566,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x67eee4e3939ac9a7249f8b8f136eabf2c5d8ec8e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x67eee4e3939ac9a7249f8b8f136eabf2c5d8ec8e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0x7183782ff8a1ee0d995d17d2a4110337212a59ef",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -23630,41 +23458,6 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xdf3631a476e7bdd5412c75d34fdf3b8b720407ba",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xe96349bcd1756afb65ce322cb99852e07abadbd9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xe96349bcd1756afb65ce322cb99852e07abadbd9",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -30027,14 +29820,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15321"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     }
   ],
@@ -30044,7 +29839,7 @@
       "audit_key": "audit-8017",
       "report_name": "AE_Gamma_audit_09_03_22.pdf",
       "report_url": "https://github.com/GammaStrategies/hypervisor/blob/master/audits/AE_Gamma_audit_09_03_22.pdf",
-      "auditor": "unknown",
+      "auditor": "Arbitrary Execution",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2022-03",
@@ -30065,7 +29860,7 @@
         "UniProxy",
         "admin"
       ],
-      "matched_contracts": 142,
+      "matched_contracts": 137,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -30076,7 +29871,7 @@
       "audit_key": "audit-8018",
       "report_name": "Bailsec - Gamma - Vaults - Final Report.pdf",
       "report_url": "https://github.com/GammaStrategies/hypervisor/blob/master/audits/Bailsec%20-%20Gamma%20-%20Vaults%20-%20Final%20Report.pdf",
-      "auditor": "unknown",
+      "auditor": "Bailsec",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025-02",
@@ -30118,7 +29913,7 @@
         "Hypervisor",
         "UniProxy"
       ],
-      "matched_contracts": 123,
+      "matched_contracts": 119,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -30162,7 +29957,7 @@
       "audit_key": "audit-8021",
       "report_name": "REP-Hypervisor-2021-07-07.pdf",
       "report_url": "https://github.com/GammaStrategies/hypervisor/blob/master/audits/REP-Hypervisor-2021-07-07.pdf",
-      "auditor": "unknown",
+      "auditor": "REP",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2021-07",
@@ -30175,7 +29970,7 @@
         "Hypervisor.sol",
         "HypervisorFactory.sol"
       ],
-      "matched_contracts": 104,
+      "matched_contracts": 103,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -30278,22 +30073,106 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15321,
+      "audit_key": "audit-15321",
+      "report_name": "Active Bug Bounty Program",
+      "report_url": "https://immunefi.com/bug-bounty/gamma/information",
+      "auditor": "Immunefi",
+      "audit_type": "bug_bounty",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "UniProxy",
+        "xGamma"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15324,
+      "audit_key": "audit-15324",
+      "report_name": "Gamma Security Review (Jan 2024).pdf",
+      "report_url": "https://github.com/GammaStrategies/hypervisor/blob/master/Gamma%20Security%20Review%20(Jan%202024).pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Clearing.sol",
+        "ClearingV2.sol",
+        "Uniproxy.sol"
+      ],
+      "matched_contracts": 27,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 27,
-      "coverage_pct": 30.3,
+      "contracts_covered": 24,
+      "coverage_pct": 27.3,
       "latest_audit": "2026-03"
+    },
+    {
+      "auditor": "Bailsec",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 4.5,
+      "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "Arbitrary Execution",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 3.4,
+      "latest_audit": "2022-03"
+    },
+    {
+      "auditor": "OpenZeppelin",
+      "tier": 1,
+      "contracts_covered": 3,
+      "coverage_pct": 3.4,
+      "latest_audit": "2024-01"
     },
     {
       "auditor": "Consensys Diligence",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 2.2,
+      "coverage_pct": 2.3,
       "latest_audit": "2022-02"
+    },
+    {
+      "auditor": "Immunefi",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 2.3,
+      "latest_audit": null
+    },
+    {
+      "auditor": "REP",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 1.1,
+      "latest_audit": "2021-07"
     }
   ],
   "coverage_gaps": [
@@ -30393,16 +30272,6 @@
       "address": "0x0ab9cff1202930cfa30436bea1ac0357387330c3",
       "name": "RebalanceSwapLogic",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xaec731f69fa39ad84c7749e913e3bc227427adfd",
-      "name": "Registry",
-      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -30619,23 +30488,27 @@
     }
   ],
   "origin_summary": {
-    "native": 78,
+    "native": 77,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 325
+    "needs_review": 323
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1600
+      "extraction_exact": 1762
     },
     "extraction_confidence_counts": {
-      "high": 7,
-      "medium": 1
+      "high": 8,
+      "medium": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": {
+    "platform": "Immunefi",
+    "url": "https://immunefi.com/bug-bounty/gamma/information",
+    "tier": 1
+  }
 }

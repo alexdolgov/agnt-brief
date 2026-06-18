@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gondi",
-  "generated_at": "2026-06-17T07:00:41.708Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T12:30:50.048Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a45b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gondi",
@@ -32,17 +32,17 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 25,
-    "total_addresses": 57,
-    "unique_implementations": 25,
-    "total_deployments": 57,
+    "total_contracts": 26,
+    "total_addresses": 58,
+    "unique_implementations": 26,
+    "total_deployments": 58,
     "audited_contracts": 3,
-    "unaudited_contracts": 11,
+    "unaudited_contracts": 12,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 11,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
-    "coverage_pct": 21.4,
+    "coverage_pct": 20,
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 752461,
@@ -72,23 +72,23 @@
     "project_purpose": "Gondi is an NFT liquidity marketplace and lending protocol that enables users to borrow, lend, refinance loans, and sell or repay collateralized NFTs.",
     "relationship_narrative": "The Gondi family shares governance contracts like AddressManager and AddressMethodManager across its components. Core loan logic in MultiSourceLoan and UserVault relies on validators (RangeValidator, MultiAddressValidator) and liquidators (AuctionLoanLiquidator, AuctionWithBuyoutLoanLiquidator) for risk management, while PurchaseBundler and UniswapV3TwapQuoter support peripheral operations.",
     "product_family_count": 1,
-    "total_contracts_indexed": 84,
-    "live_contracts": 57,
-    "inactive_contracts": 27,
+    "total_contracts_indexed": 87,
+    "live_contracts": 58,
+    "inactive_contracts": 29,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
-    "dependencies_extracted": 4,
-    "unverified_dependencies": 1,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 5,
+    "unverified_dependencies": 2,
     "detected_codebases": [
       "aave-v2",
       "uniswap-v3"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 25,
+    "unique_implementations": 26,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -152,7 +152,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 999,
@@ -286,7 +286,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -427,6 +427,41 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000000000447e69651d841bd8d104bed493",
+      "deployment_unit": "unit-37122",
+      "deployment_unit_proxy_count": 1,
+      "name": "DelegateRegistry",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x00000000000000447e69651d841bd8d104bed493",
+      "impl_name": "DelegateRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000000000447e69651d841bd8d104bed493",
+          "deployment_unit": "unit-37122",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x47a297bcadbe7c98991e3e7e3b7cc0109ace0a0c",
@@ -481,7 +516,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -691,7 +726,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PositionMigrator",
       "role": "periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Gondi",
       "tvl_usd": null,
@@ -1372,7 +1407,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "scope_format": "contract_name",
       "extracted_names": [
         "Hash",
         "IMultiSourceLoan",
@@ -1401,7 +1436,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 21.4,
+      "coverage_pct": 20,
       "latest_audit": "2026-02"
     }
   ],
@@ -1439,16 +1474,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdcd85fee491de4b1fc11cbc0ba0e78537732f5b8",
-      "name": "PositionMigrator",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x039bc1010f0295246d8004224600d65d804f2b0a",
       "name": "RangeValidator",
       "role": "unknown",
@@ -1458,14 +1483,14 @@
     }
   ],
   "origin_summary": {
-    "native": 15,
+    "native": 14,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 9
+    "needs_review": 11
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 34
+      "extraction_exact": 40
     },
     "extraction_confidence_counts": {
       "high": 2

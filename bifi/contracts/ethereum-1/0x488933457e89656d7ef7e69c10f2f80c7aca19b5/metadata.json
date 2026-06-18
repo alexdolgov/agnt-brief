@@ -1,0 +1,18 @@
+{
+  "address": "0x488933457e89656d7ef7e69c10f2f80c7aca19b5",
+  "chain_id": 1,
+  "contract_name": "BFCModel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSD-3-Clause",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T09:20:43.331Z"
+}

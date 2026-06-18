@@ -1,40 +1,40 @@
 {
   "schema_version": "2.0",
   "project_key": "immutable-zkevm",
-  "generated_at": "2026-06-17T07:00:42.934Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:19:41.307Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "immutable-zkevm",
     "tier": 0,
     "peak_tvl": 65106460,
     "peak_date": "2025-07-04T00:00:00.000Z",
-    "tvl_30d_ago": 29869086,
-    "tvl_90d_ago": 14880774,
-    "tvl_current": 29240547,
+    "tvl_30d_ago": 28834068,
+    "tvl_90d_ago": 27903603,
+    "tvl_current": 26177844,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 25907004,
-    "change_30d_pct": -2.1043128001975018,
-    "change_90d_pct": 96.49883131079069,
-    "days_since_peak": 322,
+    "tvl_180d_ago": 20748042,
+    "change_30d_pct": -9.212102850003683,
+    "change_90d_pct": -6.184717435952626,
+    "days_since_peak": 349,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 55.08810185655925
+    "drop_from_peak_pct": 59.79224795819032
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
-    "audited_contracts": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
     "unaudited_contracts": 2,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 33.3,
-    "total_audits": 4,
-    "scoreable_audits": 1,
+    "coverage_pct": 0,
+    "total_audits": 5,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 25111259.22883,
     "tvl_usd": 25111259.22883,
     "tvl_source": "defillama",
@@ -52,29 +52,29 @@
       "fresh": 0,
       "aging": 1,
       "stale": 1,
-      "unknown": 2
+      "unknown": 3
     }
   },
   "topography": {
     "project_purpose": "Immutable zkEVM is Immutable's EVM-compatible gaming chain and Layer 2 infrastructure for Ethereum, designed to support blockchain games and related products in the Immutable ecosystem such as Passport and Immutable Chain. It should not be described as a Doodles-related bridge or NFT-collection project unless independently evidenced.",
-    "relationship_narrative": "The RootERC20BridgeFlowRate and RootAxelarBridgeAdaptor contracts handle token bridging, while GnosisSafe manages governance. Doodles represents an NFT collection deployed on the chain, leveraging the bridge for cross-chain functionality.",
+    "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 9,
-    "live_contracts": 3,
+    "total_contracts_indexed": 12,
+    "live_contracts": 2,
     "inactive_contracts": 6,
-    "singleton_contracts": 0,
+    "singleton_contracts": 4,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 4,
+    "deployment_units": 6,
     "live_deployment_units": 2,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -84,59 +84,24 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x466cfcd0525189b573e794f554b8a751279213ac",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Dooplicator",
+      "address": "0x2d5d7d31f671f86c782533cc367f14109a082712",
+      "deployment_unit": "unit-36232",
+      "deployment_unit_proxy_count": 1,
+      "name": "AxelarGasService",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Dooplicator",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x466cfcd0525189b573e794f554b8a751279213ac",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
-      "deployment_unit": "unit-26362",
-      "deployment_unit_proxy_count": 1,
-      "name": "RootAxelarBridgeAdaptor",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "upstream",
+      "origin_provider": "Axelar",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0xe2e91c1ae2873720c3b975a8034e887a35323345",
-      "impl_name": "RootAxelarBridgeAdaptor",
+      "impl_address": "0xcb5c784dcf8ff342625dbc53b356ed0cbb0ebb9b",
+      "impl_name": "AxelarGasService",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
-          "deployment_unit": "unit-26362",
+          "address": "0x2d5d7d31f671f86c782533cc367f14109a082712",
+          "deployment_unit": "unit-36232",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -149,43 +114,41 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
-      "deployment_unit": "unit-26365",
+      "address": "0x4f4495243837681061c4743b74b3eedf548d56a5",
+      "deployment_unit": "unit-36233",
       "deployment_unit_proxy_count": 1,
-      "name": "RootERC20BridgeFlowRate",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Immutable zkEVM",
+      "name": "AxelarGateway",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Axelar",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x177eafe0f1f3359375b1728dae0530a75c83e154",
-      "impl_name": "RootERC20BridgeFlowRate",
+      "impl_address": "0x99b5fa03a5ea4315725c43346e55a6a6fbd94098",
+      "impl_name": "AxelarGateway",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
-          "deployment_unit": "unit-26365",
+          "address": "0x4f4495243837681061c4743b74b3eedf548d56a5",
+          "deployment_unit": "unit-36233",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1814"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -204,19 +167,11 @@
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ChildERC20",
-        "ChildERC20Bridge",
-        "FlowRateDetection",
-        "FlowRateWithdrawalQueue",
-        "RootERC20Bridge",
-        "RootERC20BridgeFlowRate",
-        "WIMX"
-      ],
-      "matched_contracts": 1,
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -281,45 +236,49 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
+    },
     {
-      "auditor": "Perimeter",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 33.3,
-      "latest_audit": "2024-09"
+      "audit_id": 15117,
+      "audit_key": "audit-15117",
+      "report_name": "202309_audit_background.md",
+      "report_url": "https://github.com/immutable/wallet-contracts/blob/main/audits/202309_audit_background.md",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x466cfcd0525189b573e794f554b8a751279213ac",
-      "name": "Dooplicator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
-    "standard_library": 2,
+    "native": 0,
+    "upstream": 2,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
+      {
+        "audit_id": 1814,
+        "report_name": "Perimeter-Fuzzing-2024-09-10.pdf"
+      },
       {
         "audit_id": 1815,
         "report_name": "202309_Halborn_Final.pdf"
@@ -331,6 +290,10 @@
       {
         "audit_id": 1818,
         "report_name": "sequence_quantstamp_audit_feb_2021.pdf"
+      },
+      {
+        "audit_id": 15117,
+        "report_name": "202309_audit_background.md"
       }
     ],
     "inherited_remapped_matches": []

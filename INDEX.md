@@ -148,7 +148,7 @@
 | [benddao](./benddao/) | $5.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 3 | 11 | 2026-06-17 |
 | [bido-finance](./bido-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bifi](./bifi/) | $7.0M | 0.0% | ? | active | 7 | 14 | 2026-06-17 |
+| [bifi](./bifi/) | $140.0K | 0.0% | $140.0K | active | 7 | 15 | 2026-06-18 |
 | [bifrost-liquid-staking](./bifrost-liquid-staking/) | $16.7M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [bigone](./bigone/) | $28.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [bima-cdp](./bima-cdp/) | $6.5M | 40.0% | ? | active | 3 | 19 | 2026-06-17 |
@@ -556,7 +556,7 @@
 | [ichi](./ichi/) | $35.9M | 12.5% | $35.9M | active | 9 | 126 | 2026-06-17 |
 | [ifpool](./ifpool/) | $80.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 6 | 2026-06-17 |
-| [immutable-zkevm](./immutable-zkevm/) | $25.1M | 33.3% | ? | active | 4 | 3 | 2026-06-17 |
+| [immutable-zkevm](./immutable-zkevm/) | $25.1M | 0.0% | ? | active | 5 | 2 | 2026-06-18 |
 | [impermax-finance](./impermax-finance/) | $735.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [inception](./inception/) | $62.5K | 66.7% | ? | declining | 9 | 12 | 2026-06-17 |
 | [index-coop](./index-coop/) | $19.6M | 12.5% | $19.6M | active | 7 | 41 | 2026-06-18 |
@@ -701,7 +701,7 @@
 | [mama](./mama/) | $49.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [manarium](./manarium/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [manga-fi](./manga-fi/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [mangrove](./mangrove/) | $4.3M | 26.3% | ? | active | 6 | 44 | 2026-06-17 |
+| [mangrove](./mangrove/) | $4.3M | 28.6% | ? | active | 8 | 26 | 2026-06-18 |
 | [mansory](./mansory/) | $170.0K | 0.0% | $170.0K | active | 0 | 1 | 2026-06-17 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.5M | 0.0% | ? | sunsetting | 0 | 105 | 2026-06-17 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-17 |
@@ -1054,7 +1054,7 @@
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 25 | 2026-06-17 |
 | [segment-finance](./segment-finance/) | $524.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [seneca](./seneca/) | $11.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [sentiment](./sentiment/) | $1.2M | 72.4% | ? | dead | 8 | 252 | 2026-06-17 |
+| [sentiment](./sentiment/) | $1.2M | 100.0% | ? | dead | 8 | 2 | 2026-06-18 |
 | [serum](./serum/) | $14.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 12 | 2026-06-17 |
 | [shadow-exchange](./shadow-exchange/) | $3.8M | 23.8% | ? | declining | 3 | 21 | 2026-06-17 |
@@ -1276,7 +1276,7 @@
 | [turboflow](./turboflow/) | $1.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [turtle-club](./turtle-club/) | $41.9M | 0.0% | $41.9M | declining | 3 | 183 | 2026-06-17 |
 | [twin-finance](./twin-finance/) | $6.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 60 | 2026-06-17 |
+| [twyne](./twyne/) | $985.7K | 12.5% | ? | active | 8 | 63 | 2026-06-18 |
 | [txflow](./txflow/) | $4.1M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [tymio](./tymio/) | $209.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [u235](./u235/) | $4.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

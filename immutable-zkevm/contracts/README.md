@@ -7,10 +7,10 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [RootAxelarBridgeAdaptor](./ethereum-1/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932/) | ethereum | [`0x4f49b5...4e8932`](./ethereum-1/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932/) | ⚠️ Unaudited | Verified |
-| [RootERC20BridgeFlowRate](./ethereum-1/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6/) | ethereum | [`0xba5e35...d13eb6`](./ethereum-1/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6/) | ✅ Audited | Verified |
+| RootERC20BridgeFlowRate | ethereum | `0xba5e35...d13eb6` | ✅ Audited | Verified |
 
 ## unknown (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Dooplicator](./ethereum-1/0x466cfcd0525189b573e794f554b8a751279213ac/) | ethereum | [`0x466cfc...9213ac`](./ethereum-1/0x466cfcd0525189b573e794f554b8a751279213ac/) | ⚠️ Unaudited | Verified |
+| Dooplicator | ethereum | `0x466cfc...9213ac` | ⚠️ Unaudited | Verified |

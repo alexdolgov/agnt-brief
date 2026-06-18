@@ -22,7 +22,7 @@
 | [EulerEarnVaultLens](./ethereum-1/0x91bb674fcc7ca44ecf97d8330738f8c806318017/) | ethereum | [`0x91bb67...318017`](./ethereum-1/0x91bb674fcc7ca44ecf97d8330738f8c806318017/) | ⚠️ Unaudited | Verified |
 | [Vault](./ethereum-1/0x002c3eb2cb56fb252a5d1a88f27df27f0941bf00/) | ethereum | [`0x002c3e...41bf00`](./ethereum-1/0x002c3eb2cb56fb252a5d1a88f27df27f0941bf00/) | ⚠️ Unaudited | Verified |
 | [VaultLens (2 deployments)](./ethereum-1/0x1ebbf0a23a72806878eb1318fc45e7cdbced680e/) | ethereum | 2 deployments: ethereum [`0x1ebbf0...ed680e`](./ethereum-1/0x1ebbf0a23a72806878eb1318fc45e7cdbced680e/); ethereum `0x3f42b4...0eaa4d` | ⚠️ Unaudited | Verified |
-| [VaultManager (2 deployments)](./ethereum-1/0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c/) | ethereum | 2 deployments: ethereum [`0x7521da...032e9c`](./ethereum-1/0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c/); ethereum `0xa25ba3...7c0a06` | ✅ Audited | Verified |
+| VaultManager (2 deployments) | ethereum | 2 deployments: ethereum `0x7521da...032e9c`; ethereum `0xa25ba3...7c0a06` | ✅ Audited | Verified |
 
 ## governance (4)
 
@@ -31,7 +31,7 @@
 | [FeeFlowController](./ethereum-1/0x675ef95c9ebd651015b97ee7c1327d2eb20449c9/) | ethereum | [`0x675ef9...0449c9`](./ethereum-1/0x675ef95c9ebd651015b97ee7c1327d2eb20449c9/) | ⚠️ Unaudited | Verified |
 | [ProtocolConfig](./ethereum-1/0xff06f28cf0c44cf1e8f03e6835bb2f3a2a752c5c/) | ethereum | [`0xff06f2...752c5c`](./ethereum-1/0xff06f28cf0c44cf1e8f03e6835bb2f3a2a752c5c/) | ⚠️ Unaudited | Verified |
 | [RiskManager](./ethereum-1/0x230ae761f2d507e4135fb356a25f64cd9ed42421/) | ethereum | [`0x230ae7...d42421`](./ethereum-1/0x230ae761f2d507e4135fb356a25f64cd9ed42421/) | ⚠️ Unaudited | Verified |
-| [TimelockController](./ethereum-1/0xe04157a3ba20976c582fcf6351beeac063a85ead/) | ethereum | [`0xe04157...a85ead`](./ethereum-1/0xe04157a3ba20976c582fcf6351beeac063a85ead/) | ⚠️ Unaudited | Verified |
+| TimelockController | ethereum | `0xe04157...a85ead` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (4)
 

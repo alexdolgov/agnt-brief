@@ -4,14 +4,14 @@
 
 - Project: BiFi (`bifi`)
 - Website: [https://bifi.finance/](https://bifi.finance/)
-- Lifecycle: active (Tier 0, 84.2% below peak)
-- Generated: 2026-06-17T07:00:41.478Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: avalanche, ethereum, klaytn
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Lifecycle: active (Tier 0, 85.3% below peak)
+- Generated: 2026-06-18T09:23:03.978Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Chains: avalanche, bsc, ethereum, klaytn
+- Contract surface: 15 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $6,959,644.75
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $140,010.68
+- TVL by chain: Bsc $140,010.68
 
 ## Project Description
 
@@ -23,23 +23,23 @@ All handler proxies (e.g., UsdtHandlerProxy, DaiHandlerProxy) delegate to shared
 
 ## Contract Surface Quality
 
-- Indexed contracts: 238; live-surface contracts included: 14 (6 live, 8 unknown).
-- Excluded by liveness: 206 inactive, 18 singleton, 0 uninitialized.
-- Deployment units: 0/7 live.
+- Indexed contracts: 247; live-surface contracts included: 19 (11 live, 8 unknown).
+- Excluded by liveness: 210 inactive, 18 singleton, 0 uninitialized.
+- Deployment units: 3/10 live.
 - Detected codebases: none
-- Unverified dependencies: 1/5.
+- Unverified dependencies: 1/3.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 14
-- Raw deployments: 14
+- Unique implementations: 15
+- Raw deployments: 19
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $140,010.68
 - Latest audit: 2021-08 (stale)
 - Staleness: 0 fresh, 0 aging, 7 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -54,16 +54,17 @@ All handler proxies (e.g., UsdtHandlerProxy, DaiHandlerProxy) delegate to shared
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CoinHandlerDataStorage | unknown | ethereum | n/a | [`0xbb0aee...17db03`](./contracts/ethereum-1/0xbb0aee2fe7e9d73a5dc3354136231a617717db03/) | ⚠️ Unaudited |
+| tokenHandler | token | bsc | unit-36244 (2 proxies) | 2 deployments: bsc [`0x26d0e4...24c40b`](./contracts/bsc-56/0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b/); bsc `0xba9de5...34c9f0` | ⚠️ Unaudited |
+| TokenHandler | token | bsc | unit-36245 (4 proxies) | 4 deployments: bsc [`0x2a2959...57e6b8`](./contracts/bsc-56/0x2a29598cbc17ba112c8fd0e07fbf5402ef57e6b8/); bsc `0x829ed2...2e8c1e`; bsc `0xb67c54...666d9b`; bsc `0xf86d82...34c3eb` | ⚠️ Unaudited |
+| BFCModel | unknown | ethereum | n/a | [`0x488933...ca19b5`](./contracts/ethereum-1/0x488933457e89656d7ef7e69c10f2f80c7aca19b5/) | ⚠️ Unaudited |
+| CoinHandler | unknown | bsc | unit-36243 | [`0x170b6a...563c18`](./contracts/bsc-56/0x170b6aa872166ec2f8515c2b855c34b6c7563c18/) | ⚠️ Unaudited |
 | etherLiquidationManager | governance | ethereum | n/a | [`0xfd514b...73285d`](./contracts/ethereum-1/0xfd514b33a361b82fe5d89070db6917cd4f73285d/) | ⚠️ Unaudited |
 | Manager | governance | avalanche | n/a | [`0x74326d...a347fd`](./contracts/avalanche-43114/0x74326d2bfbf22312158850ac3b4f7ae8a0a347fd/) | ⚠️ Unaudited |
-| MarketHandlerDataStorage | unknown | ethereum | n/a | [`0x2ed04c...77bb1f`](./contracts/ethereum-1/0x2ed04ce9a032b9a101975172f59a8d33e877bb1f/) | ⚠️ Unaudited |
 | ReqTokenProxy | token | avalanche | n/a | [`0xe89323...837943`](./contracts/avalanche-43114/0xe893233515b7d02dd4e3d888162d4c87dc837943/) | ⚠️ Unaudited |
-| UsdtHandlerDataStorage | token | ethereum | n/a | [`0xfdc7d0...6a1c42`](./contracts/ethereum-1/0xfdc7d058bede981ea865fb64d06382a2206a1c42/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,18 +111,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xbb0aee...17db03`](./contracts/ethereum-1/0xbb0aee2fe7e9d73a5dc3354136231a617717db03/) | CoinHandlerDataStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x26d0e4...24c40b`](./contracts/bsc-56/0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b/) | tokenHandler | token | $74,125.81 | Verified native implementation with $74,125.81 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2a2959...57e6b8`](./contracts/bsc-56/0x2a29598cbc17ba112c8fd0e07fbf5402ef57e6b8/) | TokenHandler | token | $65,884.87 | Verified native implementation with $65,884.87 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x488933...ca19b5`](./contracts/ethereum-1/0x488933457e89656d7ef7e69c10f2f80c7aca19b5/) | BFCModel | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x170b6a...563c18`](./contracts/bsc-56/0x170b6aa872166ec2f8515c2b855c34b6c7563c18/) | CoinHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfd514b...73285d`](./contracts/ethereum-1/0xfd514b33a361b82fe5d89070db6917cd4f73285d/) | etherLiquidationManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x74326d...a347fd`](./contracts/avalanche-43114/0x74326d2bfbf22312158850ac3b4f7ae8a0a347fd/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2ed04c...77bb1f`](./contracts/ethereum-1/0x2ed04ce9a032b9a101975172f59a8d33e877bb1f/) | MarketHandlerDataStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xe89323...837943`](./contracts/avalanche-43114/0xe893233515b7d02dd4e3d888162d4c87dc837943/) | ReqTokenProxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfdc7d0...6a1c42`](./contracts/ethereum-1/0xfdc7d058bede981ea865fb64d06382a2206a1c42/) | UsdtHandlerDataStorage | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 15 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

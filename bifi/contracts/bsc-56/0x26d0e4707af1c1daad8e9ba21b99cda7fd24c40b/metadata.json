@@ -1,0 +1,17 @@
+{
+  "address": "0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b",
+  "chain_id": 56,
+  "contract_name": "ReqTokenProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "BSD-3-Clause",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xbb9ce7c152f9d6fbbebd90e9b06d021f64e6052b",
+  "fetched_at": "2026-06-18T09:20:43.872Z"
+}

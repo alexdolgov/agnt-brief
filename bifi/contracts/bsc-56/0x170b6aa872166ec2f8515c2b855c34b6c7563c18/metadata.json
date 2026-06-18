@@ -1,0 +1,18 @@
+{
+  "address": "0x170b6aa872166ec2f8515c2b855c34b6c7563c18",
+  "chain_id": 56,
+  "contract_name": "CoinHandlerProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0x5553bcd4cc9af1a395da99fe8dd0ed3ad4bfdcf1",
+  "fetched_at": "2026-06-18T09:20:43.329Z"
+}

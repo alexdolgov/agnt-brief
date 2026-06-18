@@ -5,10 +5,10 @@
 - Project: Twyne (`twyne`)
 - Website: [https://twyne.xyz/](https://twyne.xyz/)
 - Lifecycle: active (Tier 0, 78% below peak)
-- Generated: 2026-06-17T07:00:44.899Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:24:09.259Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: ethereum
-- Contract surface: 60 unique implementations (88 raw deployments)
+- Contract surface: 63 unique implementations (95 raw deployments)
 - DeFi Llama TVL: $4,064,011.88
 - On-chain TVL (included contracts): $985,716.39
 - TVL by chain: Ethereum $985,716.39
@@ -23,56 +23,60 @@ The GenericFactory deploys EVault instances, while the CollateralVaultFactory cr
 
 ## Contract Surface Quality
 
-- Indexed contracts: 102; live-surface contracts included: 88 (88 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 14 singleton, 0 uninitialized.
+- Indexed contracts: 112; live-surface contracts included: 95 (95 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 17 singleton, 0 uninitialized.
 - Deployment units: 4/11 live.
 - Detected codebases: aave-v2
-- Unverified dependencies: 2/33.
+- Unverified dependencies: 2/45.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/53 (3.8%)
-- Verified + Unaudited implementations: 51
+- Verified implementations audited: 7/56 (12.5%)
+- Verified + Unaudited implementations: 49
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 60
-- Raw deployments: 88
-- Audits discovered: 6
-- Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $985,716.39
+- Unique implementations: 63
+- Raw deployments: 95
+- Audits discovered: 8
+- Scoreable audits (matched contracts): 2
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-12 (fresh)
-- Staleness: 2 fresh, 3 aging, 0 stale, 1 unknown
+- Staleness: 3 fresh, 3 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Enigma Ventures | Tier 2 | 2 | 3.8% | 2025-04 |
+| yAudit | Tier 2 | 7 | 12.5% | 2025-12 |
+| Enigma Ventures | Tier 2 | 2 | 3.6% | 2025-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| AaveV3ATokenWrapper | token | ethereum | unit-36252 (2 proxies) | 2 deployments: ethereum [`0x223d40...8139ef`](./contracts/ethereum-1/0x223d402b82d6b5c4f0b9bc0348960098228139ef/); ethereum `0xfaba8f...3e1881` | ✅ Audited |
+| AaveV3ATokenWrapper | token | ethereum | unit-36250 | [`0x106ac7...fe8def`](./contracts/ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/) | ✅ Audited |
+| AaveV3ATokenWrapper | token | ethereum | unit-36251 | [`0x10e67b...ac5cb1`](./contracts/ethereum-1/0x10e67b758f43529d2634aaf7bd6f59a1a9ac5cb1/) | ✅ Audited |
+| AaveV3CollateralVault | core_logic | ethereum | unit-36248 | [`0x07acb5...73d085`](./contracts/ethereum-1/0x07acb5854090216585c28f5a230f1bb57e73d085/) | ✅ Audited |
+| CollateralVaultFactory | registry | ethereum | n/a | 3 deployments: ethereum [`0x42ccba...7a4c05`](./contracts/ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/); ethereum `0x434cc8...831b66`; ethereum `0x92432b...01521f` | ✅ Audited |
 | EulerCollateralVault | core_logic | ethereum | n/a | 12 deployments: ethereum [`0x04f48f...675ae2`](./contracts/ethereum-1/0x04f48fc36185aea0d2f2567dbe02ee626d675ae2/); ethereum `0x0df4a4...775a97`; ethereum `0x1d22ed...a8f6c4`; ethereum `0x2a2027...23a531`; ethereum `0x2f6b56...4ae796`; ethereum `0x3bee82...253c7c`; ethereum `0x4fce64...242098`; ethereum `0x597c15...a3f754`; ethereum `0x9a0374...f8e0c2`; ethereum `0xba4fed...300194`; ethereum `0xea5f4c...1a4e38`; ethereum `0xf46910...5ef5b0` | ✅ Audited |
-| VaultManager | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7521da...032e9c`](./contracts/ethereum-1/0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c/); ethereum `0xa25ba3...7c0a06` | ✅ Audited |
+| VaultManager | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x44134f...ee1a40`](./contracts/ethereum-1/0x44134feb6b76a5382b107423fc4a78b23fee1a40/); ethereum `0x7521da...032e9c`; ethereum `0xa25ba3...7c0a06` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (51)
+### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveV3ATokenWrapper | token | ethereum | unit-27178 (2 proxies) | 2 deployments: ethereum [`0x223d40...8139ef`](./contracts/ethereum-1/0x223d402b82d6b5c4f0b9bc0348960098228139ef/); ethereum `0xfaba8f...3e1881` | ⚠️ Unaudited |
-| AaveV3ATokenWrapper | token | ethereum | unit-27176 | [`0x106ac7...fe8def`](./contracts/ethereum-1/0x106ac75d7cc134af2f98ac4715f9b4289ffe8def/) | ⚠️ Unaudited |
-| AaveV3ATokenWrapper | token | ethereum | unit-27177 | [`0x10e67b...ac5cb1`](./contracts/ethereum-1/0x10e67b758f43529d2634aaf7bd6f59a1a9ac5cb1/) | ⚠️ Unaudited |
-| AaveV3CollateralVault | core_logic | ethereum | unit-27174 | [`0x07acb5...73d085`](./contracts/ethereum-1/0x07acb5854090216585c28f5a230f1bb57e73d085/) | ⚠️ Unaudited |
+| AaveV3DeleverageOperator | unknown | ethereum | n/a | [`0x229fe1...605e91`](./contracts/ethereum-1/0x229fe10bc00bbe99ac99703647d4f74f31605e91/) | ⚠️ Unaudited |
+| AaveV3LeverageOperator | unknown | ethereum | n/a | [`0x451949...093a4c`](./contracts/ethereum-1/0x451949bde57abe2f5dbd4758cd50c6dcfc093a4c/) | ⚠️ Unaudited |
+| AaveV3TeleportOperator | unknown | ethereum | n/a | [`0x868a21...62bd78`](./contracts/ethereum-1/0x868a21426852a775395d4b90de23b3e3e662bd78/) | ⚠️ Unaudited |
 | AccountLens | periphery | ethereum | n/a | [`0x03fccb...aee47f`](./contracts/ethereum-1/0x03fccb0bf0770d6131f07de1d96b728604aee47f/) | ⚠️ Unaudited |
 | BalanceForwarder | unknown | ethereum | n/a | [`0x4c962c...82c1a9`](./contracts/ethereum-1/0x4c962ccafed516c4ade82650aa3fba9e0982c1a9/) | ⚠️ Unaudited |
 | Borrowing | core_logic | ethereum | n/a | [`0xf52bf1...0eb317`](./contracts/ethereum-1/0xf52bf182c5c5b053c827ccecb4016f985a0eb317/) | ⚠️ Unaudited |
 | BridgeHookTarget | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x04bd0f...d850c8`](./contracts/ethereum-1/0x04bd0f950e6ea6656243fc115df3006cdfd850c8/); ethereum `0x461865...dd405a`; ethereum `0xd0f204...140d06`; ethereum `0xfff8ea...02148b` | ⚠️ Unaudited |
 | CapRiskStewardFactory | registry | ethereum | n/a | [`0xd9d5bb...88456e`](./contracts/ethereum-1/0xd9d5bb195b1fb27dad5a36fdbb5abbae9e88456e/) | ⚠️ Unaudited |
-| CollateralVaultFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x42ccba...7a4c05`](./contracts/ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/); ethereum `0x434cc8...831b66` | ⚠️ Unaudited |
 | CrossAdapter | adapter | ethereum | n/a | 4 deployments: ethereum [`0x04edc5...c1ae34`](./contracts/ethereum-1/0x04edc51c6a821af4d7981e6fb6e9e5668bc1ae34/); ethereum `0x1367b1...938419`; ethereum `0x2b93e9...0d3c06`; ethereum `0x8d29a2...3fe51e` | ⚠️ Unaudited |
 | EdgeFactory | registry | ethereum | n/a | [`0x39eaf0...c4ec96`](./contracts/ethereum-1/0x39eaf0b106993fc241c4774921a0033e20c4ec96/) | ⚠️ Unaudited |
 | EdgeFactoryPerspective | registry | ethereum | n/a | [`0xa9d1d1...167c89`](./contracts/ethereum-1/0xa9d1d1d13738a3c9d31ea32e118354221f167c89/) | ⚠️ Unaudited |
@@ -84,7 +88,7 @@ The GenericFactory deploys EVault instances, while the CollateralVaultFactory cr
 | EulerFixedCyclicalBinaryIRMFactory | registry | ethereum | n/a | [`0xff1445...181ca4`](./contracts/ethereum-1/0xff144562f9996adff0f2fec080bd464b3e181ca4/) | ⚠️ Unaudited |
 | EulerKinkIRMFactory | registry | ethereum | n/a | [`0x427739...fb8694`](./contracts/ethereum-1/0x42773937c5b97521a87f001afdbce53976fb8694/) | ⚠️ Unaudited |
 | EulerKinkyIRMFactory | registry | ethereum | n/a | [`0x9ae433...9593cb`](./contracts/ethereum-1/0x9ae43357a0fb4127a13cd55ccfe3d835c89593cb/) | ⚠️ Unaudited |
-| EulerRouter | adapter | ethereum | n/a | [`0x5d7a67...ffa185`](./contracts/ethereum-1/0x5d7a67418ee94259fd3a6091e2cc0baeedffa185/) | ⚠️ Unaudited |
+| EulerRouter | adapter | ethereum | n/a | 2 deployments: ethereum [`0x5d7a67...ffa185`](./contracts/ethereum-1/0x5d7a67418ee94259fd3a6091e2cc0baeedffa185/); ethereum `0xb001f0...af8648` | ⚠️ Unaudited |
 | EulerRouterFactory | adapter | ethereum | n/a | [`0x928b7d...61cad9`](./contracts/ethereum-1/0x928b7d2ccea72268a051a2807f7fd9585861cad9/) | ⚠️ Unaudited |
 | EulerUngovernedPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4ff123...055ae5`](./contracts/ethereum-1/0x4ff123522a8d60087774f4a72765e4b592055ae5/); ethereum `0x65fc60...299dad` | ⚠️ Unaudited |
 | EulerWrapper | unknown | ethereum | n/a | [`0xa680fe...5f452f`](./contracts/ethereum-1/0xa680feda11fbbb18a759a60756b2e7b51a5f452f/) | ⚠️ Unaudited |
@@ -108,7 +112,7 @@ The GenericFactory deploys EVault instances, while the CollateralVaultFactory cr
 | Swapper | adapter | ethereum | n/a | [`0x544410...685e65`](./contracts/ethereum-1/0x544410023cbccb2b141f13a7cee9d594e6685e65/) | ⚠️ Unaudited |
 | SwapVerifier | periphery | ethereum | n/a | [`0x8ddacd...c2b807`](./contracts/ethereum-1/0x8ddacdea0bb99c378ff52e0c1c45952386c2b807/) | ⚠️ Unaudited |
 | TermsOfUseSigner | unknown | ethereum | n/a | [`0x3020f1...e7144a`](./contracts/ethereum-1/0x3020f1ef3d456c43c071e605e551b0416ee7144a/) | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | n/a | [`0xe04157...a85ead`](./contracts/ethereum-1/0xe04157a3ba20976c582fcf6351beeac063a85ead/) | ⚠️ Unaudited |
+| TimelockController | governance | ethereum | n/a | 2 deployments: ethereum [`0x9eba7c...622f91`](./contracts/ethereum-1/0x9eba7c5827b2a7cfa8a4dc69b23f22e46f622f91/); ethereum `0xe04157...a85ead` | ⚠️ Unaudited |
 | Token | token | ethereum | n/a | [`0xcdb998...cd6b62`](./contracts/ethereum-1/0xcdb9980eea4f7b4569862c49d9f7025157cd6b62/) | ⚠️ Unaudited |
 | TrackingRewardStreams | unknown | ethereum | n/a | [`0x90534e...ecd6bb`](./contracts/ethereum-1/0x90534ead5021a0c0698afd91091811c1dbecd6bb/) | ⚠️ Unaudited |
 | UtilsLens | periphery | ethereum | n/a | 2 deployments: ethereum [`0x2312d5...6c9f51`](./contracts/ethereum-1/0x2312d5264989256a0dade8763147a2a8b16c9f51/); ethereum `0x8ff75e...105c83` | ⚠️ Unaudited |
@@ -151,6 +155,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [DL audit link](https://reports.yaudit.dev/2025-11-Twyne-AAVE) | yAudit | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 | [↑ Back to Top](https://reports.yaudit.dev/2025-12-Twyne-AAVE-Operators) | yAudit | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
 | [DL audit link](https://487956288-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3KnzajNTqFNdyZr2k3l3%2Fuploads%2F1BUrZGcTaMl5rFRH00ph%2FTwyne%20-%20Aave%20integration.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2025-11-Twyne-AAVE.pdf](https://reports.yaudit.dev/pdf/2025-11-Twyne-AAVE.pdf) | yAudit | Audit | 2025-11 | fresh | Direct | contract_name | 23 | high |
+| [SecEureka](https://seceureka.com/) | SecEureka | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -163,22 +169,15 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xf52bf1...0eb317`](./contracts/ethereum-1/0xf52bf182c5c5b053c827ccecb4016f985a0eb317/) | Borrowing | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04bd0f...d850c8`](./contracts/ethereum-1/0x04bd0f950e6ea6656243fc115df3006cdfd850c8/) | BridgeHookTarget | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd9d5bb...88456e`](./contracts/ethereum-1/0xd9d5bb195b1fb27dad5a36fdbb5abbae9e88456e/) | CapRiskStewardFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x42ccba...7a4c05`](./contracts/ethereum-1/0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05/) | CollateralVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04edc5...c1ae34`](./contracts/ethereum-1/0x04edc51c6a821af4d7981e6fb6e9e5668bc1ae34/) | CrossAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x39eaf0...c4ec96`](./contracts/ethereum-1/0x39eaf0b106993fc241c4774921a0033e20c4ec96/) | EdgeFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa9d1d1...167c89`](./contracts/ethereum-1/0xa9d1d1d13738a3c9d31ea32e118354221f167c89/) | EdgeFactoryPerspective | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5b1e75...c8af86`](./contracts/ethereum-1/0x5b1e75004bff7a59cf7a52b2dc484baa16c8af86/) | EscrowedCollateralPerspective | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xef39d6...de702a`](./contracts/ethereum-1/0xef39d6493884c4c84d38a4bff879ce16cede702a/) | EthereumVaultConnector | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9d96fa...a724a1`](./contracts/ethereum-1/0x9d96fa373368fc235a32434863dd4d34eda724a1/) | EulerEarnFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x725739...576a54`](./contracts/ethereum-1/0x7257395d794677bc6f7e8e4cd150a71dce576a54/) | EulerEarnFactoryPerspective | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x91bb67...318017`](./contracts/ethereum-1/0x91bb674fcc7ca44ecf97d8330738f8c806318017/) | EulerEarnVaultLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xff1445...181ca4`](./contracts/ethereum-1/0xff144562f9996adff0f2fec080bd464b3e181ca4/) | EulerFixedCyclicalBinaryIRMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x427739...fb8694`](./contracts/ethereum-1/0x42773937c5b97521a87f001afdbce53976fb8694/) | EulerKinkIRMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9ae433...9593cb`](./contracts/ethereum-1/0x9ae43357a0fb4127a13cd55ccfe3d835c89593cb/) | EulerKinkyIRMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5d7a67...ffa185`](./contracts/ethereum-1/0x5d7a67418ee94259fd3a6091e2cc0baeedffa185/) | EulerRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x928b7d...61cad9`](./contracts/ethereum-1/0x928b7d2ccea72268a051a2807f7fd9585861cad9/) | EulerRouterFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4ff123...055ae5`](./contracts/ethereum-1/0x4ff123522a8d60087774f4a72765e4b592055ae5/) | EulerUngovernedPerspective | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa680fe...5f452f`](./contracts/ethereum-1/0xa680feda11fbbb18a759a60756b2e7b51a5f452f/) | EulerWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9775dc...3f1427`](./contracts/ethereum-1/0x9775dc2bc7e8164f7f81caccf25603f1423f1427/) | EVKFactoryPerspective | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf98a5f...65faea`](./contracts/ethereum-1/0xf98a5fb86cdd03932b813cbc3840f150a965faea/) | FactoryGovernor | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x675ef9...0449c9`](./contracts/ethereum-1/0x675ef95c9ebd651015b97ee7c1327d2eb20449c9/) | FeeFlowController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -209,19 +208,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 55 |
-| upstream | 0 |
+| native | 42 |
+| upstream | 8 |
 | standard_library | 5 |
-| needs_review | 0 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=24
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=59
 
 Zero-match audit list:
 
@@ -230,5 +229,6 @@ Zero-match audit list:
 - [2818] DL audit link
 - [2820] ↑ Back to Top
 - [2821] DL audit link
+- [15127] SecEureka
 
 Fork inheritance lineage and inherited audits are included when available.

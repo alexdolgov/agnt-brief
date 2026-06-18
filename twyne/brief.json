@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "twyne",
-  "generated_at": "2026-06-17T07:00:44.899Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:24:09.259Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "twyne",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 77.97083182094372
   },
   "summary": {
-    "total_contracts": 60,
-    "total_addresses": 88,
-    "unique_implementations": 60,
-    "total_deployments": 88,
-    "audited_contracts": 2,
-    "unaudited_contracts": 51,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 51,
+    "total_contracts": 63,
+    "total_addresses": 95,
+    "unique_implementations": 63,
+    "total_deployments": 95,
+    "audited_contracts": 7,
+    "unaudited_contracts": 49,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 49,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
-    "coverage_pct": 3.8,
-    "total_audits": 6,
-    "scoreable_audits": 1,
+    "coverage_pct": 12.5,
+    "total_audits": 8,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 4064011.87761,
     "tvl_usd": 985716.3919902483,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 985716.39
     },
-    "asd_usd": 985716.3919902483,
+    "asd_usd": null,
     "website_url": "https://twyne.xyz/",
     "chains": [
       "ethereum"
@@ -51,32 +51,32 @@
     "latest_audit_date": "2025-12",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
+      "fresh": 3,
       "aging": 3,
       "stale": 0,
-      "unknown": 1
+      "unknown": 2
     }
   },
   "topography": {
     "project_purpose": "Twyne is a universal credit delegation layer built on top of existing lending markets such as Aave and Euler. Creditors delegate unused borrowing capacity to earn yield, while borrowers use delegated credit to increase leverage or improve liquidation buffers on their existing lending-market positions. Twyne includes Twyne-specific vault and borrowing logic while also depending on inherited or external Euler EVC/EVK infrastructure for parts of its deployed stack.",
     "relationship_narrative": "The GenericFactory deploys EVault instances, while the CollateralVaultFactory creates collateral vaults for Aave and Euler. These vaults use wrappers like AaveV3ATokenWrapper to interact with external protocols, and the VaultManager oversees vault operations.",
     "product_family_count": 1,
-    "total_contracts_indexed": 102,
-    "live_contracts": 88,
+    "total_contracts_indexed": 112,
+    "live_contracts": 95,
     "inactive_contracts": 0,
-    "singleton_contracts": 14,
+    "singleton_contracts": 17,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 11,
     "live_deployment_units": 4,
-    "dependencies_extracted": 33,
+    "dependencies_extracted": 45,
     "unverified_dependencies": 2,
     "detected_codebases": [
       "aave-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 60,
+    "unique_implementations": 63,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,7 +89,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x223d402b82d6b5c4f0b9bc0348960098228139ef",
-      "deployment_unit": "unit-27178",
+      "deployment_unit": "unit-36252",
       "deployment_unit_proxy_count": 2,
       "name": "AaveV3ATokenWrapper",
       "role": "token",
@@ -105,37 +105,39 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x223d402b82d6b5c4f0b9bc0348960098228139ef",
-          "deployment_unit": "unit-27178",
+          "deployment_unit": "unit-36252",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2242.3323195260923,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xfaba8f777996c0c28fe9e6554d84cb30ca3e1881",
-          "deployment_unit": "unit-27178",
+          "deployment_unit": "unit-36252",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 832303.9405864547,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15124"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x106ac75d7cc134af2f98ac4715f9b4289ffe8def",
-      "deployment_unit": "unit-27176",
+      "deployment_unit": "unit-36250",
       "deployment_unit_proxy_count": 1,
       "name": "AaveV3ATokenWrapper",
       "role": "token",
@@ -151,26 +153,28 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x106ac75d7cc134af2f98ac4715f9b4289ffe8def",
-          "deployment_unit": "unit-27176",
+          "deployment_unit": "unit-36250",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 151170.11908426747,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15124"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x10e67b758f43529d2634aaf7bd6f59a1a9ac5cb1",
-      "deployment_unit": "unit-27177",
+      "deployment_unit": "unit-36251",
       "deployment_unit_proxy_count": 1,
       "name": "AaveV3ATokenWrapper",
       "role": "token",
@@ -186,26 +190,28 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x10e67b758f43529d2634aaf7bd6f59a1a9ac5cb1",
-          "deployment_unit": "unit-27177",
+          "deployment_unit": "unit-36251",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15124"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x07acb5854090216585c28f5a230f1bb57e73d085",
-      "deployment_unit": "unit-27174",
+      "deployment_unit": "unit-36248",
       "deployment_unit_proxy_count": 1,
       "name": "AaveV3CollateralVault",
       "role": "core_logic",
@@ -221,8 +227,45 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x07acb5854090216585c28f5a230f1bb57e73d085",
-          "deployment_unit": "unit-27174",
+          "deployment_unit": "unit-36248",
           "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15124"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x229fe10bc00bbe99ac99703647d4f74f31605e91",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AaveV3DeleverageOperator",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AaveV3DeleverageOperator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x229fe10bc00bbe99ac99703647d4f74f31605e91",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -234,7 +277,77 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x451949bde57abe2f5dbd4758cd50c6dcfc093a4c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AaveV3LeverageOperator",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AaveV3LeverageOperator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x451949bde57abe2f5dbd4758cd50c6dcfc093a4c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x868a21426852a775395d4b90de23b3e3e662bd78",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AaveV3TeleportOperator",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AaveV3TeleportOperator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x868a21426852a775395d4b90de23b3e3e662bd78",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -469,7 +582,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -480,14 +593,27 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92432bfd3bf81ec55b093f6118063a9d3d01521f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-15124"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -671,8 +797,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EthereumVaultConnector",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -848,7 +974,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2817"
+        "audit-2817",
+        "audit-15124"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -864,8 +991,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerEarnFactory",
       "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -969,8 +1096,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerFixedCyclicalBinaryIRMFactory",
       "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1004,7 +1131,7 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerKinkIRMFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1039,8 +1166,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerKinkyIRMFactory",
       "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1086,6 +1213,17 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x5d7a67418ee94259fd3a6091e2cc0baeedffa185",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb001f039d76ba48e577a17c04b6940db37af8648",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -1190,8 +1328,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerWrapper",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1975,7 +2113,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xe04157a3ba20976c582fcf6351beeac063a85ead",
+      "address": "0x9eba7c5827b2a7cfa8a4dc69b23f22e46f622f91",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "TimelockController",
@@ -1988,6 +2126,17 @@
       "impl_address": null,
       "impl_name": "TimelockController",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9eba7c5827b2a7cfa8a4dc69b23f22e46f622f91",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2085,7 +2234,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2120,7 +2269,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2155,7 +2304,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2190,7 +2339,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2225,7 +2374,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2260,7 +2409,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2295,7 +2444,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2452,7 +2601,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x7521dab4aa9fd9aabf8eaf1a2d9396c2f8032e9c",
+      "address": "0x44134feb6b76a5382b107423fc4a78b23fee1a40",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "VaultManager",
@@ -2465,6 +2614,17 @@
       "impl_address": null,
       "impl_name": "VaultManager",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x44134feb6b76a5382b107423fc4a78b23fee1a40",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2489,7 +2649,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2817"
+        "audit-2817",
+        "audit-15124"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2629,14 +2790,73 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15124,
+      "audit_key": "audit-15124",
+      "report_name": "2025-11-Twyne-AAVE.pdf",
+      "report_url": "https://reports.yaudit.dev/pdf/2025-11-Twyne-AAVE.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveV3ATokenWrapper",
+        "AaveV3ATokenWrapperOracle",
+        "AaveV3CollateralVault",
+        "AaveV3Wrapper",
+        "CollateralVaultBase",
+        "CollateralVaultFactory",
+        "CustomERC4626StataTokenUpgradeable",
+        "EulerCollateralVault",
+        "VaultManager"
+      ],
+      "matched_contracts": 23,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15127,
+      "audit_key": "audit-15127",
+      "report_name": "SecEureka",
+      "report_url": "https://seceureka.com/",
+      "auditor": "SecEureka",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 12.5,
+      "latest_audit": "2025-12"
+    },
+    {
       "auditor": "Enigma Ventures",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 3.8,
+      "coverage_pct": 3.6,
       "latest_audit": "2025-04"
     }
   ],
@@ -2694,16 +2914,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05",
-      "name": "CollateralVaultFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x04edc51c6a821af4d7981e6fb6e9e5668bc1ae34",
       "name": "CrossAdapter",
       "role": "adapter",
@@ -2744,26 +2954,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xef39d6493884c4c84d38a4bff879ce16cede702a",
-      "name": "EthereumVaultConnector",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9d96fa373368fc235a32434863dd4d34eda724a1",
-      "name": "EulerEarnFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x7257395d794677bc6f7e8e4cd150a71dce576a54",
       "name": "EulerEarnFactoryPerspective",
       "role": "registry",
@@ -2777,36 +2967,6 @@
       "address": "0x91bb674fcc7ca44ecf97d8330738f8c806318017",
       "name": "EulerEarnVaultLens",
       "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xff144562f9996adff0f2fec080bd464b3e181ca4",
-      "name": "EulerFixedCyclicalBinaryIRMFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x42773937c5b97521a87f001afdbce53976fb8694",
-      "name": "EulerKinkIRMFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9ae43357a0fb4127a13cd55ccfe3d835c89593cb",
-      "name": "EulerKinkyIRMFactory",
-      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2836,16 +2996,6 @@
       "chain_name": "ethereum",
       "address": "0x4ff123522a8d60087774f4a72765e4b592055ae5",
       "name": "EulerUngovernedPerspective",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa680feda11fbbb18a759a60756b2e7b51a5f452f",
-      "name": "EulerWrapper",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -3103,17 +3253,17 @@
     }
   ],
   "origin_summary": {
-    "native": 55,
-    "upstream": 0,
+    "native": 42,
+    "upstream": 8,
     "standard_library": 5,
-    "needs_review": 0
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 24
+      "extraction_exact": 59
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -3137,6 +3287,10 @@
       {
         "audit_id": 2821,
         "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15127,
+        "report_name": "SecEureka"
       }
     ],
     "inherited_remapped_matches": []

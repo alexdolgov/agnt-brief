@@ -26,7 +26,7 @@
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-17 |
 | [aera](./aera/) | $132.6M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 5 | 2026-06-17 |
-| [aevo](./aevo/) | $75.8M | 26.7% | $26.1M | active | 13 | 21 | 2026-06-17 |
+| [aevo](./aevo/) | $78.0M | 40.0% | $2.2M | active | 17 | 21 | 2026-06-18 |
 | [aftermath-finance](./aftermath-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [agile-finance](./agile-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-17 |
@@ -117,7 +117,7 @@
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | ? | active | 0 | 2 | 2026-06-17 |
 | [axedao](./axedao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aztec-connect](./aztec-connect/) | $4.3M | 37.5% | ? | active | 12 | 8 | 2026-06-14 |
-| [azuro](./azuro/) | $1.6M | 11.8% | ? | active | 3 | 25 | 2026-06-17 |
+| [azuro](./azuro/) | $9.8M | 9.1% | $9.8M | active | 3 | 129 | 2026-06-18 |
 | [b-lucky](./b-lucky/) | $2.7M | 0.0% | $2.7M | active | 1 | 19 | 2026-06-17 |
 | [b.protocol](./b.protocol/) | $53.7M | 6.7% | $53.7M | declining | 5 | 17 | 2026-06-18 |
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 7 | 2026-06-17 |
@@ -1046,7 +1046,7 @@
 | [scroll-bridge](./scroll-bridge/) | $34.1M | 0.0% | ? | declining | 0 | 3 | 2026-06-17 |
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 18 | 2026-06-17 |
 | [sdai](./sdai/) | $70.7M | 0.0% | ? | active | 0 | 13 | 2026-06-17 |
-| [seamless-protocol](./seamless-protocol/) | $29.4K | 21.1% | $29.4K | dead | 5 | 19 | 2026-06-17 |
+| [seamless-protocol](./seamless-protocol/) | $29.4K | 21.7% | $29.4K | declining | 5 | 23 | 2026-06-18 |
 | [sector-finance](./sector-finance/) | $55.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [seeder-finance](./seeder-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1081,7 +1081,7 @@
 | [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [skcs](./skcs/) | $25.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [slender](./slender/) | $124.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 21.1% | $20.1M | declining | 6 | 19 | 2026-06-17 |
+| [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 20.0% | $20.1M | declining | 6 | 20 | 2026-06-18 |
 | [smartcoin](./smartcoin/) | $949.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smartcredit](./smartcredit/) | $769.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 17.9% | ? | active | 3 | 191 | 2026-06-17 |
@@ -1184,7 +1184,7 @@
 | [surfswap](./surfswap/) | $117.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sushi](./sushi/) | $96.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [suzaku](./suzaku/) | $1.2M | 9.5% | $1.2M | active | 2 | 49 | 2026-06-17 |
-| [swaap](./swaap/) | $3.8M | 33.3% | $3.8M | declining | 7 | 74 | 2026-06-17 |
+| [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 43 | 2026-06-18 |
 | [swamp-finance](./swamp-finance/) | $1.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-17 |
 | [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [swappi](./swappi/) | $1.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |

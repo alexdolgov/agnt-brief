@@ -19,7 +19,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Authorizer (6 deployments)](./bsc-56/0xca19ed3182e6e591207e959de633a14825cc123c/) | bsc | 6 deployments: bsc [`0xca19ed...cc123c`](./bsc-56/0xca19ed3182e6e591207e959de633a14825cc123c/); polygon `0xca19ed...cc123c`; base `0xd315a9...c76293`; mode `0xca19ed...cc123c`; arbitrum `0xca19ed...cc123c`; linea `0xca19ed...cc123c` | ⚠️ Unaudited | Verified |
+| Authorizer (6 deployments) | bsc | 6 deployments: bsc `0xca19ed...cc123c`; polygon `0xca19ed...cc123c`; base `0xd315a9...c76293`; mode `0xca19ed...cc123c`; arbitrum `0xca19ed...cc123c`; linea `0xca19ed...cc123c` | ⚠️ Unaudited | Verified |
 | ConstantPriceOracle (3 deployments) | bsc | 3 deployments: bsc `0x11683b...27b703`; base `0x943c89...d19d88`; arbitrum [`0x5dd640...efdbd3`](./arbitrum-42161/0x5dd64004dd320606aa77146c43e04f785fefdbd3/) | ⚠️ Unaudited (bytecode match) | Verified |
 | [ProxyJoinViaAggregator (4 deployments)](./arbitrum-42161/0x53675f3072b97ef652651d863b1cef5203438ad3/) | arbitrum | 4 deployments: ethereum `0x9574c8...e88067`; polygon `0x9574c8...e88067`; mode `0xbc0cb9...599c1d`; arbitrum [`0x53675f...438ad3`](./arbitrum-42161/0x53675f3072b97ef652651d863b1cef5203438ad3/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x207063...073ebc` | ❓ Unverified | Unverified |

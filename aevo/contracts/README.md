@@ -48,7 +48,7 @@
 |---|---|---|---|---|
 | [AevoStaking](./ethereum-1/0x38913051e01d4f6910cb66bb9ac3cb77d746ad81/) | ethereum | [`0x389130...46ad81`](./ethereum-1/0x38913051e01d4f6910cb66bb9ac3cb77d746ad81/) | ⚠️ Unaudited | Verified |
 | [ArbitrumL2Switchboard](./arbitrum-42161/0xdff78a949e47c1e90f3dd6dd7fe2fa72b42a75f7/) | arbitrum | [`0xdff78a...2a75f7`](./arbitrum-42161/0xdff78a949e47c1e90f3dd6dd7fe2fa72b42a75f7/) | ⚠️ Unaudited | Verified |
-| [GasMovr (2 deployments)](./optimism-10/0x5800249621da520adfdca16da20d8a5fc0f814d8/) | optimism | 2 deployments: optimism [`0x580024...f814d8`](./optimism-10/0x5800249621da520adfdca16da20d8a5fc0f814d8/); arbitrum `0xc0e02a...681a00` | ⚠️ Unaudited | Verified |
+| GasMovr (2 deployments) | optimism | 2 deployments: optimism `0x580024...f814d8`; arbitrum `0xc0e02a...681a00` | ⚠️ Unaudited | Verified |
 | [OptimismPortal2](./ethereum-1/0x787a0acab02437c60aafb1a29167a3609801e320/) | ethereum | [`0x787a0a...01e320`](./ethereum-1/0x787a0acab02437c60aafb1a29167a3609801e320/) | ✅ Audited | Verified |
 | [Socket](./arbitrum-42161/0x37cc674582049b579571e2ffd890a4d99355f6ba/) | arbitrum | [`0x37cc67...55f6ba`](./arbitrum-42161/0x37cc674582049b579571e2ffd890a4d99355f6ba/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | base | `0x38d1ff...f83ab9` | ❓ Unverified | Unverified |

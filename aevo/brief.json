@@ -1,49 +1,49 @@
 {
   "schema_version": "2.0",
   "project_key": "aevo",
-  "generated_at": "2026-06-17T07:00:34.808Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T04:35:37.227Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aevo",
     "tier": 0,
     "peak_tvl": 100182637,
     "peak_date": "2024-03-13T00:00:00.000Z",
-    "tvl_30d_ago": 20637227,
-    "tvl_90d_ago": 22397035,
-    "tvl_current": 16193014,
+    "tvl_30d_ago": 16192258,
+    "tvl_90d_ago": 21644631,
+    "tvl_current": 15723473,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 28653533,
-    "change_30d_pct": -21.53493296361958,
-    "change_90d_pct": -27.70018888660932,
-    "days_since_peak": 800,
+    "tvl_180d_ago": 27033602,
+    "change_30d_pct": -2.8951181484385935,
+    "change_90d_pct": -27.356243680014686,
+    "days_since_peak": 827,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 83.83650651958781
+    "drop_from_peak_pct": 84.3051915273502
   },
   "summary": {
     "total_contracts": 21,
     "total_addresses": 44,
     "unique_implementations": 21,
     "total_deployments": 44,
-    "audited_contracts": 4,
-    "unaudited_contracts": 11,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 10,
+    "audited_contracts": 6,
+    "unaudited_contracts": 9,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 6,
-    "coverage_pct": 26.7,
-    "total_audits": 13,
-    "scoreable_audits": 3,
+    "coverage_pct": 40,
+    "total_audits": 17,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 18890733,
-    "tvl_usd": 75772807.2621293,
+    "tvl_usd": 77986880.02826113,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 23636704.02,
-      "ethereum": 51994611.04,
+      "ethereum": 54208683.81,
       "optimism": 141492.19
     },
-    "asd_usd": 26144406.336821422,
+    "asd_usd": 2214072.766131825,
     "website_url": "https://app.aevo.xyz/r/defillama",
     "chains": [
       "arbitrum",
@@ -53,12 +53,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023-10",
+    "latest_audit_date": "2024-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 12,
+      "stale": 16,
       "unknown": 1
     }
   },
@@ -66,16 +66,16 @@
     "project_purpose": "Aevo is a decentralized crypto derivatives exchange focused on options and perpetual futures trading. Current protocol characterization should be tied to verified Aevo deployments and DefiLlama's Aevo Perps derivatives tracking, while legacy Ribbon/Aevo Options components and inherited Ribbon Finance contracts or audits should be labeled separately unless current production use and bytecode/version equivalence are verified.",
     "relationship_narrative": "The Deposit contracts family provides the bridging infrastructure that feeds into both Aevo Options and Aevo Perps vaults. Aevo Options and Aevo Perps share the same deposit and withdrawal pathways but operate separate vaults for their respective derivative products.",
     "product_family_count": 5,
-    "total_contracts_indexed": 631,
+    "total_contracts_indexed": 600,
     "live_contracts": 44,
-    "inactive_contracts": 551,
-    "singleton_contracts": 36,
+    "inactive_contracts": 518,
+    "singleton_contracts": 38,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 27,
-    "live_deployment_units": 3,
-    "dependencies_extracted": 83,
-    "unverified_dependencies": 24,
+    "deployment_units": 29,
+    "live_deployment_units": 4,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 1,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -113,14 +113,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 26144406.336821422,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14931",
+        "audit-14932"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -131,7 +134,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RibbonToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Aevo Perps",
       "tvl_usd": 25850204.70809773,
@@ -332,6 +335,87 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x25751853eab4d0eb3652b5eb6ecb102a2789644b",
+      "deployment_unit": "unit-35150",
+      "deployment_unit_proxy_count": 2,
+      "name": "RibbonThetaVaultWithSwap",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 1891486.852208825,
+      "is_proxy": true,
+      "impl_address": "0xeaf743e9fe7449ae3ce02bc01712666530d2666e",
+      "impl_name": "RibbonThetaVaultWithSwap",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x25751853eab4d0eb3652b5eb6ecb102a2789644b",
+          "deployment_unit": "unit-35150",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 701272.4648428415,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x65a833afdc250d9d38f8cd9bc2b1e3132db13b2f",
+          "deployment_unit": "unit-35150",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1190214.3873659836,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624",
+      "deployment_unit": "unit-35169",
+      "deployment_unit_proxy_count": 1,
+      "name": "RibbonThetaYearnVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 322585.913923,
+      "is_proxy": true,
+      "impl_address": "0x9a056f0040e1e84245bd7a79ed580ff1b1c44e95",
+      "impl_name": "RibbonThetaYearnVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624",
+          "deployment_unit": "unit-35169",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 322585.913923,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x38913051e01d4f6910cb66bb9ac3cb77d746ad81",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -354,14 +438,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14932"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -384,52 +470,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xdff78a949e47c1e90f3dd6dd7fe2fa72b42a75f7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x5800249621da520adfdca16da20d8a5fc0f814d8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "GasMovr",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GasMovr",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x5800249621da520adfdca16da20d8a5fc0f814d8",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc0e02aa55d10e38855e13b64a8e1387a04681a00",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -518,43 +558,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4082c9647c098a6493fb499eae63b5ce3259c574",
-      "deployment_unit": "unit-18267",
-      "deployment_unit_proxy_count": 1,
-      "name": "L1StandardBridge",
-      "role": "bridge_template",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Deposit contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x61525eaacddb97d9184afc205827e6a4fd0bf62a",
-      "impl_name": "L1StandardBridge",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4082c9647c098a6493fb499eae63b5ce3259c574",
-          "deployment_unit": "unit-18267",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x909e51211e959339efb14b36f5a50955a8ae3770",
-      "deployment_unit": "unit-18276",
+      "deployment_unit": "unit-35164",
       "deployment_unit_proxy_count": 1,
       "name": "L2OutputOracle",
       "role": "operational_periphery",
@@ -570,7 +575,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x909e51211e959339efb14b36f5a50955a8ae3770",
-          "deployment_unit": "unit-18276",
+          "deployment_unit": "unit-35164",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -665,7 +670,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MultiSigWrapper",
       "role": "governance",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -806,7 +811,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x787a0acab02437c60aafb1a29167a3609801e320",
-      "deployment_unit": "unit-18273",
+      "deployment_unit": "unit-35161",
       "deployment_unit_proxy_count": 1,
       "name": "OptimismPortal2",
       "role": "unknown",
@@ -822,7 +827,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x787a0acab02437c60aafb1a29167a3609801e320",
-          "deployment_unit": "unit-18273",
+          "deployment_unit": "unit-35161",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1411,6 +1416,96 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14929,
+      "audit_key": "audit-14929",
+      "report_name": "VAR-Ribbon230918.pdf",
+      "report_url": "https://github.com/aevoxyz/audit/blob/main/VAR-Ribbon230918.pdf",
+      "auditor": "Ribbon",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14930,
+      "audit_key": "audit-14930",
+      "report_name": "VAR_Ribbon.pdf",
+      "report_url": "https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon.pdf",
+      "auditor": "Ribbon",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14931,
+      "audit_key": "audit-14931",
+      "report_name": "VAR_Ribbon_230604.pdf",
+      "report_url": "https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon_230604.pdf",
+      "auditor": "Ribbon",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AevoToken",
+        "Migrator"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14932,
+      "audit_key": "audit-14932",
+      "report_name": "VAR_Ribbon_240116_aevo_governance_2-V1.pdf",
+      "report_url": "https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon_240116_aevo_governance_2-V1.pdf",
+      "auditor": "Ribbon",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AevoStaking",
+        "AevoToken"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1420,6 +1515,13 @@
       "contracts_covered": 2,
       "coverage_pct": 13.3,
       "latest_audit": "2021-05"
+    },
+    {
+      "auditor": "Ribbon",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 13.3,
+      "latest_audit": "2024-01"
     },
     {
       "auditor": "PeckShield",
@@ -1440,22 +1542,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xb528edbef013aff855ac3c50b381f253af13b997",
-      "name": "AevoToken",
-      "role": "token",
+      "address": "0x25751853eab4d0eb3652b5eb6ecb102a2789644b",
+      "name": "RibbonThetaVaultWithSwap",
+      "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 26144406.336821422,
-      "risk_note": "Verified native implementation with $26,144,406.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x38913051e01d4f6910cb66bb9ac3cb77d746ad81",
-      "name": "AevoStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 1891486.852208825,
+      "risk_note": "Verified native implementation with $1,891,486.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 42161,
@@ -1490,16 +1582,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4082c9647c098a6493fb499eae63b5ce3259c574",
-      "name": "L1StandardBridge",
-      "role": "bridge_template",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x778046fec7de9905edee161de4b4b4d8a6f21591",
       "name": "MerkleDistributorAdjustable",
       "role": "operational_periphery",
@@ -1518,6 +1600,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0c98cb76b36a5b5f723cb11b3a031350583b6540",
+      "name": "MultiSigWrapper",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x37cc674582049b579571e2ffd890a4d99355f6ba",
@@ -1531,15 +1623,15 @@
   "origin_summary": {
     "native": 11,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 10
+    "standard_library": 1,
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 75
+      "extraction_exact": 87
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 5
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1583,6 +1675,14 @@
       {
         "audit_id": 1907,
         "report_name": "RibbonThetaYearn-18june.pdf"
+      },
+      {
+        "audit_id": 14929,
+        "report_name": "VAR-Ribbon230918.pdf"
+      },
+      {
+        "audit_id": 14930,
+        "report_name": "VAR_Ribbon.pdf"
       }
     ],
     "inherited_remapped_matches": []

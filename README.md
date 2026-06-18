@@ -107,6 +107,7 @@ Each project directory contains:
 | [nexus-mutual](./nexus-mutual/brief.md) | $78.35M | ethereum | 23 | 23/23 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $34.82M |
 | [backedfi](./backedfi/brief.md) | $7.77M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $31.19M |
 | [eth-strategy](./eth-strategy/brief.md) | $3.88M | ethereum | 40 | 33/40 (83%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $30.39M |
+| [vesper](./vesper/brief.md) | $41.88M | ethereum | 16 | 16/16 (100%) | 43.8% | 0.0% (-) | 19 | stale | ✅ active | $27.82M |
 | [pooltogether](./pooltogether/brief.md) | $8.20M | 8 | 67 | 36/67 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $26.83M |
 | [maverick-protocol](./maverick-protocol/brief.md) | $1.77M | 6 | 31 | 15/31 (48%) | 37.5% | 25.0% (Code4rena) | 4 | stale | ⚠️ declining | $26.76M |
 | [synapse](./synapse/brief.md) | $11.75M | 19 | 236 | 106/236 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $25.57M |
@@ -179,7 +180,7 @@ Each project directory contains:
 | [llama-airforce](./llama-airforce/brief.md) | $1.33M | ethereum | 58 | 37/58 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.48M |
 | [monstro](./monstro/brief.md) | $2.01M | base | 13 | 13/13 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $3.46M |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/brief.md) | $817.65K | base, ethereum, polygon | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.43M |
-| [yieldfi](./yieldfi/brief.md) | $10.77M | 9 | 37 | 29/37 (78%) | 65.6% | 65.6% (Cyfrin, Sherlock) | 3 | fresh | ✅ active | $3.41M |
+| [yieldfi](./yieldfi/brief.md) | $10.77M | 9 | 51 | 43/51 (84%) | 45.7% | 45.7% (Cyfrin, Sherlock) | 3 | fresh | ✅ active | $3.41M |
 | [lair-finance](./lair-finance/brief.md) | $4.17M | berachain | 61 | 16/61 (26%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.41M |
 | [beradrome](./beradrome/brief.md) | $6.88M | berachain | 11 | 11/11 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
 | [steer-protocol](./steer-protocol/brief.md) | $17.07M | arbitrum, base | 5 | 3/5 (60%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
@@ -253,7 +254,6 @@ Each project directory contains:
 | [dforce](./dforce/brief.md) | $12.55M | 8 | 39 | 33/39 (85%) | 75.8% | 75.8% (Trail of Bits) | 1 | stale | ⚠️ declining | $366.93K |
 | [shapeshift](./shapeshift/brief.md) | $1.24M | 4 | 14 | 14/14 (100%) | 14.3% | 0.0% (-) | 1 | stale | ✅ active | $353.69K |
 | [squadswap](./squadswap/brief.md) | $1.36M | base, blast, bsc | 96 | 30/96 (31%) | 60.0% | 0.0% (-) | 5 | aging | ✅ active | $353.33K |
-| [vesper](./vesper/brief.md) | $41.88M | ethereum | 13 | 13/13 (100%) | 61.5% | 0.0% (-) | 19 | stale | ✅ active | $351.12K |
 | [depth](./depth/brief.md) | $1.16M | bsc, heco | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $342.71K |
 | [dtrinity](./dtrinity/brief.md) | $2.30M | ethereum, fraxtal, sonic | 99 | 72/99 (73%) | 15.1% | 0.0% (-) | 1 | unknown | ✅ active | $313.87K |
 | [bmx](./bmx/brief.md) | $2.76M | base, mode, sonic | 61 | 60/61 (98%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $305.69K |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T20:14:42.223Z_
+_Generated: 2026-06-18T20:27:43.408Z_
 _Projects: 1409_

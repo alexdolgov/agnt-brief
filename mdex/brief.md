@@ -7,8 +7,8 @@
 - Project: MDEX (`mdex`)
 - Website: [https://mdex.com/](https://mdex.com/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:41.762Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T20:19:17.436Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: bsc, heco
 - Contract surface: 6 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $1,286,861.99
@@ -29,7 +29,7 @@ The MDEX family consists of the MdxToken and an unnamed supporting contract, lik
 - Excluded by liveness: 16 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: uniswap-v2
-- Unverified dependencies: 2/10.
+- Unverified dependencies: 1/4.
 
 ## Audit Coverage Summary
 

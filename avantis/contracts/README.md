@@ -30,7 +30,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [PairStorage (17 deployments)](./base-8453/0x433cf9e346b8d15b4f9269c4c75144398262db49/) | base | 17 deployments: base [`0x433cf9...62db49`](./base-8453/0x433cf9e346b8d15b4f9269c4c75144398262db49/); base `0x4dadd0...0f8a04`; base `0x65b3cc...a5bc39`; base `0x68e0dc...3fd08f`; base `0x6b0181...e7ef54`; base `0x6f839d...80f830`; base `0x8311b4...6a1700`; base `0x8b4027...daf4cc`; base `0x9894a0...351cec`; base `0xb3048b...50db66`; base `0xceab88...eb0968`; base `0xd910d2...98b195`; base `0xe4f1b2...0d08b0`; base `0xe7f661...b8ea15`; base `0xe83794...e45934`; base `0xe87d97...f6ee77`; base `0xf76370...426aa1` | ✅ Audited | Verified |
+| PairStorage (17 deployments) | base | 17 deployments: base `0x433cf9...62db49`; base `0x4dadd0...0f8a04`; base `0x65b3cc...a5bc39`; base `0x68e0dc...3fd08f`; base `0x6b0181...e7ef54`; base `0x6f839d...80f830`; base `0x8311b4...6a1700`; base `0x8b4027...daf4cc`; base `0x9894a0...351cec`; base `0xb3048b...50db66`; base `0xceab88...eb0968`; base `0xd910d2...98b195`; base `0xe4f1b2...0d08b0`; base `0xe7f661...b8ea15`; base `0xe83794...e45934`; base `0xe87d97...f6ee77`; base `0xf76370...426aa1` | ✅ Audited | Verified |
 
 ## token (2)
 

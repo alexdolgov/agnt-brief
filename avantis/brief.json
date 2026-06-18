@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "avantis",
-  "generated_at": "2026-06-17T07:00:58.226Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:25:41.540Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "avantis",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 21,
-    "total_addresses": 100,
+    "total_addresses": 106,
     "unique_implementations": 21,
-    "total_deployments": 100,
+    "total_deployments": 106,
     "audited_contracts": 16,
     "unaudited_contracts": 4,
     "contracts_verified_audited": 16,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 80,
-    "total_audits": 3,
+    "total_audits": 5,
     "scoreable_audits": 3,
     "dl_tvl_usd": 36220299.23231,
     "tvl_usd": 151488610.99461198,
@@ -54,15 +54,15 @@
       "fresh": 0,
       "aging": 1,
       "stale": 2,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
     "project_purpose": "Avantis is a derivatives protocol on Base that enables leveraged trading and liquidity provisioning. Users can trade synthetic assets and provide liquidity through tranche-based vaults, with risk managed by a VaultManager.",
     "relationship_narrative": "The Avantis family shares infrastructure through proxy-upgraded contracts for trading, storage, and pricing. Tranche and VaultManager handle liquidity and risk, while Trading and TradingStorage manage order execution and state, all relying on PriceAggregator for oracle data.",
     "product_family_count": 1,
-    "total_contracts_indexed": 240,
-    "live_contracts": 100,
+    "total_contracts_indexed": 246,
+    "live_contracts": 106,
     "inactive_contracts": 108,
     "singleton_contracts": 32,
     "uninitialized_contracts": 0,
@@ -122,7 +122,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd",
-      "deployment_unit": "unit-19147",
+      "deployment_unit": "unit-38973",
       "deployment_unit_proxy_count": 1,
       "name": "VaultManager",
       "role": "core_logic",
@@ -138,7 +138,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd",
-          "deployment_unit": "unit-19147",
+          "deployment_unit": "unit-38973",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -198,7 +198,29 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
+          "address": "0x79ec9dfaf0264531cec88c28733bde64289ad1ab",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
           "address": "0x7a829c5c97a2bf8befb4b01d96a282e4763848d8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x98ae9ae88cd3bdf5d5599bd1b04b6f003ab79040",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -234,13 +256,13 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0xa7cfc43872f4d7b0e6141ee8c36f1f7fee5d099e",
-      "deployment_unit": "unit-19144",
+      "deployment_unit": "unit-38970",
       "deployment_unit_proxy_count": 1,
       "name": "Multicall",
       "role": "periphery",
@@ -256,7 +278,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xa7cfc43872f4d7b0e6141ee8c36f1f7fee5d099e",
-          "deployment_unit": "unit-19144",
+          "deployment_unit": "unit-38970",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -269,7 +291,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -308,6 +330,28 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd344d6c1b5cb22557997ceee1e406d40a2e90f8a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd4d8eef0ae77e12abf34696efe3b498c6f075093",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -369,7 +413,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x81f22d0cc22977c91befe648c9fddf1f2bd977e5",
-      "deployment_unit": "unit-19138",
+      "deployment_unit": "unit-38964",
       "deployment_unit_proxy_count": 1,
       "name": "PairInfos",
       "role": "periphery",
@@ -385,7 +429,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x81f22d0cc22977c91befe648c9fddf1f2bd977e5",
-          "deployment_unit": "unit-19138",
+          "deployment_unit": "unit-38964",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -402,12 +446,12 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x433cf9e346b8d15b4f9269c4c75144398262db49",
+      "address": "0x3a93922fd64bac36ba63ebc52fe982bb7ce6d64d",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "PairStorage",
@@ -420,6 +464,17 @@
       "impl_address": null,
       "impl_name": "PairStorage",
       "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3a93922fd64bac36ba63ebc52fe982bb7ce6d64d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -485,6 +540,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7affc49628e9cb236156ca67ecfbc8ff91e29f50",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -750,7 +816,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x1a110bba13a1f16cca4b79758bd39290f29de82d",
-      "deployment_unit": "unit-19126",
+      "deployment_unit": "unit-38952",
       "deployment_unit_proxy_count": 1,
       "name": "Referral",
       "role": "unknown",
@@ -766,7 +832,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x1a110bba13a1f16cca4b79758bd39290f29de82d",
-          "deployment_unit": "unit-19126",
+          "deployment_unit": "unit-38952",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -783,7 +849,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -890,7 +956,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -1078,7 +1144,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x44914408af82bc9983bbb330e3578e1105e11d4e",
-      "deployment_unit": "unit-19130",
+      "deployment_unit": "unit-38956",
       "deployment_unit_proxy_count": 1,
       "name": "Trading",
       "role": "unknown",
@@ -1094,7 +1160,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x44914408af82bc9983bbb330e3578e1105e11d4e",
-          "deployment_unit": "unit-19130",
+          "deployment_unit": "unit-38956",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1111,13 +1177,13 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x5ff292d70ba9cd9e7ccb313782811b3d7120535f",
-      "deployment_unit": "unit-19133",
+      "deployment_unit": "unit-38959",
       "deployment_unit_proxy_count": 1,
       "name": "Trading",
       "role": "unknown",
@@ -1133,7 +1199,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x5ff292d70ba9cd9e7ccb313782811b3d7120535f",
-          "deployment_unit": "unit-19133",
+          "deployment_unit": "unit-38959",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1150,7 +1216,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -1421,7 +1487,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x8a311d7048c35985aa31c131b9a13e03a5f7422d",
-      "deployment_unit": "unit-19140",
+      "deployment_unit": "unit-38966",
       "deployment_unit_proxy_count": 1,
       "name": "TradingStorage",
       "role": "unknown",
@@ -1437,7 +1503,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x8a311d7048c35985aa31c131b9a13e03a5f7422d",
-          "deployment_unit": "unit-19140",
+          "deployment_unit": "unit-38966",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1454,7 +1520,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -1594,7 +1660,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 8453,
@@ -1848,6 +1914,48 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15577,
+      "audit_key": "audit-15577",
+      "report_name": "DL audit link",
+      "report_url": "https://586275454-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F76vAZHPcNKY10NzuKsC4%2Fuploads%2FQugrQyVYa7gCMa8FUQdy%2FAvantis_-_Zellic_Audit_Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15578,
+      "audit_key": "audit-15578",
+      "report_name": "DL audit link",
+      "report_url": "https://586275454-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F76vAZHPcNKY10NzuKsC4%2Fuploads%2Fap10BwpWhzNMappneMgr%2FAvantis%20audit%20report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1903,7 +2011,16 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 15577,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 15578,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

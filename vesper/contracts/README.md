@@ -7,7 +7,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [PoolRewards](./ethereum-1/0x479a8666ad530af3054209db74f3c74ecd295f8d/) | ethereum | [`0x479a86...295f8d`](./ethereum-1/0x479a8666ad530af3054209db74f3c74ecd295f8d/) | ✅ Audited | Verified |
-| [VPool (4 deployments)](./ethereum-1/0x0538c8bac84e95a9df8ac10aad17dbe81b9e36ee/) | ethereum | 4 deployments: ethereum [`0x0538c8...9e36ee`](./ethereum-1/0x0538c8bac84e95a9df8ac10aad17dbe81b9e36ee/); ethereum `0xb4edce...fd5f7d`; ethereum `0xba680a...f26e47`; ethereum `0xff43c3...42c257` | ✅ Audited | Verified |
+| VPool (4 deployments) | ethereum | 4 deployments: ethereum `0x0538c8...9e36ee`; ethereum `0xb4edce...fd5f7d`; ethereum `0xba680a...f26e47`; ethereum `0xff43c3...42c257` | ✅ Audited | Verified |
 
 ## operational_periphery (2)
 

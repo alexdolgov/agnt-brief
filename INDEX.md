@@ -110,7 +110,7 @@
 | [autofinance](./autofinance/) | $155.4M | 0.0% | $155.4M | transitioning | 8 | 280 | 2026-06-17 |
 | [avalaunch](./avalaunch/) | $31.3M | 100.0% | ? | active | 13 | 7 | 2026-06-17 |
 | [avalon-labs](./avalon-labs/) | $550.8M | 0.0% | ? | unknown | 19 | 0 | 2026-06-13 |
-| [avantis](./avantis/) | $151.5M | 80.0% | $150.9M | declining | 3 | 21 | 2026-06-17 |
+| [avantis](./avantis/) | $151.5M | 80.0% | $150.9M | declining | 5 | 21 | 2026-06-18 |
 | [avely-finance](./avely-finance/) | $45.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [avnu](./avnu/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [avon-megavault](./avon-megavault/) | $36.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -717,7 +717,7 @@
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 37.5% | $26.8M | declining | 7 | 31 | 2026-06-18 |
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [mcdex](./mcdex/) | $943.0K | 16.7% | ? | dead | 4 | 70 | 2026-06-18 |
-| [mdex](./mdex/) | $235.5K | 80.0% | $20.2K | declining | 3 | 6 | 2026-06-17 |
+| [mdex](./mdex/) | $235.5K | 80.0% | $20.2K | declining | 3 | 6 | 2026-06-18 |
 | [meeds-finance](./meeds-finance/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 4 | 2026-06-17 |
 | [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [mendi-finance](./mendi-finance/) | $1.7M | 0.0% | ? | sunsetting | 6 | 4 | 2026-06-18 |
@@ -1323,7 +1323,7 @@
 | [verocket](./verocket/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [verse](./verse/) | $468.3K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [verus-market](./verus-market/) | $6.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [vesper](./vesper/) | $693.4K | 61.5% | $351.1K | active | 30 | 13 | 2026-06-17 |
+| [vesper](./vesper/) | $27.8M | 43.8% | $27.8M | active | 30 | 16 | 2026-06-18 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 3 | 2026-06-17 |
 | [vfat.io](./vfat.io/) | $0.0 | 11.4% | ? | active | 10 | 398 | 2026-06-18 |
 | [vii-finance](./vii-finance/) | $12.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1379,7 +1379,7 @@
 | [yei-finance](./yei-finance/) | $18.3M | 0.0% | ? | declining | 1 | 14 | 2026-06-17 |
 | [yield-protocol](./yield-protocol/) | $203.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yield-yak](./yield-yak/) | $772.2K | 0.0% | $772.2K | declining | 3 | 15 | 2026-06-17 |
-| [yieldfi](./yieldfi/) | $30.9M | 65.6% | $3.4M | active | 6 | 37 | 2026-06-17 |
+| [yieldfi](./yieldfi/) | $30.9M | 45.7% | $3.4M | active | 7 | 51 | 2026-06-18 |
 | [yieldly](./yieldly/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yieldnest](./yieldnest/) | $19.2M | 47.1% | $295.1K | active | 13 | 18 | 2026-06-18 |
 | [yieldseeker](./yieldseeker/) | $93.9M | 0.0% | $93.9M | active | 1 | 114 | 2026-06-17 |

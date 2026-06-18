@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mdex",
-  "generated_at": "2026-06-17T07:00:41.762Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T20:19:17.436Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "mdex",
@@ -82,8 +82,8 @@
     "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 10,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 4,
+    "unverified_dependencies": 1,
     "detected_codebases": [
       "uniswap-v2"
     ]
@@ -306,7 +306,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 128,

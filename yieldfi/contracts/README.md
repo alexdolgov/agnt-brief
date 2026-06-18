@@ -31,7 +31,7 @@
 |---|---|---|---|---|
 | Proxy (impl: 0x0ca01ee564363e115c1990fac21314ddfa210f4a) | linea | `0xde3fdb...6383d6` | ❓ Unverified | Unverified |
 | Proxy (impl: 0x6c6e88a438092fda33ad2304c54180b41c35fa64) | linea | `0x168bc4...7569e7` | ❓ Unverified | Unverified |
-| [TransparentUpgradeableProxy](./sonic-146/0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de/) | sonic | [`0xf4f447...ee55de`](./sonic-146/0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de/) | ⚠️ Unaudited | Verified |
+| TransparentUpgradeableProxy | sonic | `0xf4f447...ee55de` | ⚠️ Unaudited | Verified |
 | vyTokenL2 (2 deployments) | plasma | 2 deployments: plasma `0xf4f447...ee55de`; arbitrum `0xf4f447...ee55de` | ⚠️ Unaudited (bytecode match) | Verified |
 
 ## token (22)

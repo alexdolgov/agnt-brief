@@ -48,7 +48,7 @@
 | [alphasec](./alphasec/) | $496.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [alphax](./alphax/) | $933.7K | 0.0% | $933.7K | active | 1 | 1 | 2026-06-17 |
 | [alphbanx](./alphbanx/) | $391.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [altitude.fi](./altitude.fi/) | $7.6M | 40.0% | ? | declining | 7 | 8 | 2026-06-17 |
+| [altitude.fi](./altitude.fi/) | $669.9 | 33.3% | $669.9 | declining | 7 | 25 | 2026-06-18 |
 | [altitude](./altitude/) | $33.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ambient](./ambient/) | $1.8M | 33.3% | ? | declining | 3 | 10 | 2026-06-17 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | active | 12 | 3 | 2026-06-17 |
@@ -88,7 +88,7 @@
 | [aria-protocol](./aria-protocol/) | $0.0 | 0.0% | ? | dead | 1 | 1 | 2026-06-17 |
 | [arkis](./arkis/) | $76.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 7 | 2026-06-17 |
-| [arrakis-finance](./arrakis-finance/) | $0.7 | 4.2% | $0.7 | active | 8 | 52 | 2026-06-17 |
+| [arrakis-finance](./arrakis-finance/) | $3.1K | 12.0% | $3.1K | active | 8 | 87 | 2026-06-18 |
 | [artura-finance](./artura-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aspida](./aspida/) | $1.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
@@ -301,7 +301,7 @@
 | [cyclo](./cyclo/) | $183.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cyclone](./cyclone/) | $11.9M | 0.0% | $11.9M | active | 3 | 32 | 2026-06-17 |
 | [cytonic-airdrop-campaign](./cytonic-airdrop-campaign/) | $175.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [d2-finance](./d2-finance/) | $14.9M | 50.8% | $11.5M | active | 2 | 152 | 2026-06-17 |
+| [d2-finance](./d2-finance/) | $14.8M | 46.7% | $11.5M | active | 2 | 151 | 2026-06-18 |
 | [dackieswap](./dackieswap/) | $52.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dango](./dango/) | $3.2M | 0.0% | ? | active | 2 | 1 | 2026-06-17 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 3 | 2026-06-17 |
@@ -388,7 +388,7 @@
 | [enzo-finance](./enzo-finance/) | $22.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 176 | 2026-06-17 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
-| [equilibria](./equilibria/) | $12.6M | 20.7% | $11.1M | declining | 6 | 74 | 2026-06-17 |
+| [equilibria](./equilibria/) | $12.6M | 19.6% | $11.1M | declining | 6 | 68 | 2026-06-18 |
 | [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [eralend](./eralend/) | $73.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eth-strategy](./eth-strategy/) | $30.4M | 0.0% | $30.4M | active | 1 | 40 | 2026-06-17 |
@@ -1325,7 +1325,7 @@
 | [verus-market](./verus-market/) | $6.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [vesper](./vesper/) | $693.4K | 61.5% | $351.1K | active | 30 | 13 | 2026-06-17 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 3 | 2026-06-17 |
-| [vfat.io](./vfat.io/) | $0.0 | 13.0% | ? | active | 10 | 355 | 2026-06-17 |
+| [vfat.io](./vfat.io/) | $0.0 | 11.4% | ? | active | 10 | 398 | 2026-06-18 |
 | [vii-finance](./vii-finance/) | $12.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [virtuals-protocol](./virtuals-protocol/) | $27.3M | 0.0% | ? | unknown | 0 | 46 | 2026-06-17 |
 | [vmex-finance](./vmex-finance/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

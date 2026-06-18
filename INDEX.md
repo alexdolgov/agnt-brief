@@ -65,7 +65,7 @@
 | [antarctic](./antarctic/) | $10.0M | 0.0% | ? | active | 0 | 7 | 2026-06-17 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-17 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 2 | 2026-06-17 |
-| [anzen-finance](./anzen-finance/) | $0.0 | 27.3% | $0.0 | declining | 5 | 25 | 2026-06-17 |
+| [anzen-finance](./anzen-finance/) | $0.0 | 26.1% | $0.0 | declining | 6 | 26 | 2026-06-18 |
 | [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 1 | 2026-06-17 |
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | unknown | 0 | 15 | 2026-06-17 |
 | [aperocket](./aperocket/) | $36.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -128,7 +128,7 @@
 | [bakeryswap](./bakeryswap/) | $606.6K | 0.0% | $606.6K | declining | 1 | 12 | 2026-06-17 |
 | [baksdao](./baksdao/) | $181.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ball-exchange](./ball-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bancor](./bancor/) | $43.2M | 15.4% | $43.2M | declining | 4 | 13 | 2026-06-17 |
+| [bancor](./bancor/) | $43.8M | 25.0% | $2.2M | declining | 11 | 96 | 2026-06-18 |
 | [baptswap](./baptswap/) | $5.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [based-finance](./based-finance/) | $189.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [baseline-protocol](./baseline-protocol/) | $836.7K | 0.0% | $836.7K | active | 9 | 38 | 2026-06-17 |
@@ -496,7 +496,7 @@
 | [gudchain](./gudchain/) | $75.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gumball-protocol](./gumball-protocol/) | $248.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [guru-network-dao](./guru-network-dao/) | $1.9M | 0.0% | ? | active | 0 | 55 | 2026-06-17 |
-| [gyroscope-protocol](./gyroscope-protocol/) | $406.9K | 9.4% | ? | declining | 10 | 100 | 2026-06-17 |
+| [gyroscope-protocol](./gyroscope-protocol/) | $406.9K | 11.8% | ? | declining | 10 | 55 | 2026-06-18 |
 | [h2-finance](./h2-finance/) | $2.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [hakka-finance](./hakka-finance/) | $5.4K | 38.5% | $5.4K | active | 8 | 13 | 2026-06-17 |
 | [hakutora](./hakutora/) | $27.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
@@ -526,7 +526,7 @@
 | [hodltree](./hodltree/) | $1.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [honeyfarm](./honeyfarm/) | $1.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [hop-protocol](./hop-protocol/) | $54.8M | 9.7% | $54.8M | declining | 4 | 297 | 2026-06-17 |
+| [hop-protocol](./hop-protocol/) | $54.8M | 20.0% | $54.8M | declining | 4 | 64 | 2026-06-18 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 4 | 2026-06-17 |
 | [hopr](./hopr/) | $1.4M | 7.7% | ? | active | 2 | 14 | 2026-06-18 |
 | [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
@@ -1398,7 +1398,7 @@
 | [zharta](./zharta/) | $2.7 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [zircon-gamma](./zircon-gamma/) | $2.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 9 | 2026-06-17 |
-| [zircuit-staking](./zircuit-staking/) | $178.4M | 33.3% | $140.4M | declining | 8 | 13 | 2026-06-17 |
+| [zircuit-staking](./zircuit-staking/) | $178.4M | 33.3% | $140.4M | declining | 11 | 13 | 2026-06-18 |
 | [zircuit](./zircuit/) | $176.1M | 30.0% | $144.2M | declining | 10 | 22 | 2026-06-18 |
 | [zivoe](./zivoe/) | $13.9M | 38.9% | ? | declining | 6 | 18 | 2026-06-17 |
 | [zklink-nova](./zklink-nova/) | $10.4M | 14.9% | ? | declining | 7 | 132 | 2026-06-17 |

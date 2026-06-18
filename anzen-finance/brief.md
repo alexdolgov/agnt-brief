@@ -7,10 +7,10 @@
 - Project: Anzen Finance (`anzen-finance`)
 - Website: [https://anzen.finance/](https://anzen.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:49.014Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T07:41:36.122Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
 - Chains: arbitrum, base, blast, ethereum, manta
-- Contract surface: 25 unique implementations (38 raw deployments)
+- Contract surface: 26 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $7,906,246.00
 - On-chain TVL (included contracts): $0.00
 - TVL by chain: Base $0.00
@@ -25,25 +25,25 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 
 ## Contract Surface Quality
 
-- Indexed contracts: 121; live-surface contracts included: 38 (26 live, 12 unknown).
-- Excluded by liveness: 67 inactive, 16 singleton, 0 uninitialized.
+- Indexed contracts: 163; live-surface contracts included: 72 (59 live, 13 unknown).
+- Excluded by liveness: 75 inactive, 16 singleton, 0 uninitialized.
 - Deployment units: 0/12 live.
 - Detected codebases: none
-- Unverified dependencies: 5/38.
+- Unverified dependencies: 4/24.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/22 (27.3%)
-- Verified + Unaudited implementations: 16
+- Verified implementations audited: 6/23 (26.1%)
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 25
-- Raw deployments: 38
-- Audits discovered: 5
+- Unique implementations: 26
+- Raw deployments: 72
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 1 unknown
+- Staleness: 0 fresh, 1 aging, 4 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $0.00 represents exposure in a protocol with declining activity.
 
@@ -51,9 +51,9 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zellic | Tier 2 | 6 | 27.3% | 2024-12 |
-| Halborn | Tier 2 | 4 | 18.2% | 2024-05 |
-| PeckShield | Tier 2 | 2 | 9.1% | 2024-04 |
+| Zellic | Tier 2 | 6 | 26.1% | 2024-12 |
+| Halborn | Tier 2 | 4 | 17.4% | 2024-05 |
+| PeckShield | Tier 2 | 2 | 8.7% | 2024-04 |
 
 ## Contract Surface
 
@@ -68,11 +68,12 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 | Vault | core_logic | manta | n/a | [`0x5a1b8c...6ea129`](./contracts/manta-169/0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129/) | ✅ Audited |
 | VotingEscrowAnzenMainchain | operational_periphery | base | n/a | [`0xa90ed3...d11ba2`](./contracts/base-8453/0xa90ed3ec34e78fd26d59f43ed67a7cbff4d11ba2/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | USDzVault | core_logic | base | n/a | [`0xa87c98...1f6f4d`](./contracts/base-8453/0xa87c9808c0ebe20a1427b5c769623c77201f6f4d/) | ⚠️ Unaudited |
+| AccessControlledOffchainAggregator | governance | base | n/a | 34 deployments: base [`0x00be87...bd552a`](./contracts/base-8453/0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a/); base `0x04d3d7...ee3bdd`; base `0x05acfe...ce42f2`; base `0x19e682...514dc8`; base `0x233a45...b4e3d2`; base `0x29a0bf...4796c0`; base `0x43f92e...baa261`; base `0x4a61db...46f850`; base `0x4d1d92...0aad68`; base `0x52d743...355a00`; base `0x55012e...cc998d`; base `0x63a3b4...323b3c`; base `0x6f9829...d6bc04`; base `0x74f70d...496a01`; base `0x801b6e...d1da99`; base `0x834ce4...4b8920`; base `0x84eff9...5d7ca6`; base `0x851a36...781805`; base `0x852ae0...976ca8`; base `0x8eda55...ba8c19`; base `0xa1923f...c39f4d`; base `0xa24aaf...f494d2`; base `0xa9bdec...35e7f1`; base `0xae4602...564a3d`; base `0xb76eec...ee9e3d`; base `0xbf477e...7e88e3`; base `0xc18cc9...56d4b9`; base `0xc2b36e...bc057b`; base `0xc73b76...c27826`; base `0xc95cd3...88c482`; base `0xcad16d...dc216c`; base `0xd27766...61828a`; base `0xec509c...db500f`; base `0xf2d85e...dbdfdd` | ⚠️ Unaudited |
 | AnzenGenericOFTAdapter | adapter | base | n/a | [`0xdfdc54...877c88`](./contracts/base-8453/0xdfdc54f14a4783fe8e8ef7de7159744725877c88/) | ⚠️ Unaudited |
 | AnzenLayerZeroAdapter | adapter | manta | n/a | 6 deployments: manta [`0x04d5dd...7f1938`](./contracts/manta-169/0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938/); manta `0xe31ee1...cbf0cf`; base `0x547213...a27fd7`; arbitrum `0xdd2161...30d58e`; blast [`0x04d5dd...7f1938`](./contracts/blast-81457/0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938/); blast `0x5a1b8c...6ea129` | ⚠️ Unaudited |
 | ChildsUSDzV2 | unknown | arbitrum | n/a | 4 deployments: manta `0x8f08a3...a91758`; base `0xe31ee1...cbf0cf`; arbitrum [`0x1b2c29...5c879d`](./contracts/arbitrum-42161/0x1b2c29e3897b8f9170c98440a483e90e715c879d/); blast `0x73d23f...f2a7e4` | ⚠️ Unaudited |
@@ -84,8 +85,8 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 | RewardDistributor | operational_periphery | ethereum | n/a | [`0x663de5...452170`](./contracts/ethereum-1/0x663de54432a1d74912c99e7929d2d58a75452170/) | ⚠️ Unaudited |
 | SafeProxy | unknown | blast | n/a | [`0x08fccc...32b354`](./contracts/blast-81457/0x08fccc6213cb3843f8d270c4eefc7a09eb32b354/) | ⚠️ Unaudited |
 | sUSDzOFTAdapter | adapter | ethereum | n/a | [`0x0c0dff...daf1b7`](./contracts/ethereum-1/0x0c0dfff29e449b0a84f78cc7cdbbe0e31fdaf1b7/) | ⚠️ Unaudited |
-| TokenManager | governance | ethereum | unit-18771 | [`0xf6f0a0...e40a5c`](./contracts/ethereum-1/0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c/) | ⚠️ Unaudited |
-| TokenManager | governance | base | unit-18780 | [`0xf6f0a0...e40a5c`](./contracts/base-8453/0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c/) | ⚠️ Unaudited |
+| TokenManager | governance | ethereum | unit-35886 | [`0xf6f0a0...e40a5c`](./contracts/ethereum-1/0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c/) | ⚠️ Unaudited |
+| TokenManager | governance | base | unit-35895 | [`0xf6f0a0...e40a5c`](./contracts/base-8453/0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c/) | ⚠️ Unaudited |
 | UsdzMarket | unknown | base | n/a | [`0x8e7884...efeea5`](./contracts/base-8453/0x8e788484cab6359e65fece14a4d6e510e2efeea5/) | ⚠️ Unaudited |
 | wPCT | unknown | ethereum | n/a | [`0x414ac1...f3b750`](./contracts/ethereum-1/0x414ac1853329b3704df0caf7749cd296c7f3b750/) | ⚠️ Unaudited |
 
@@ -107,7 +108,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TokenManager | governance | blast | unit-18781 | `0xf6f0a0...e40a5c` | ❓ Unverified |
+| TokenManager | governance | blast | unit-35896 | `0xf6f0a0...e40a5c` | ❓ Unverified |
 | UnnamedContract | unknown | manta | n/a | `0x08fccc...32b354` | ❓ Unverified |
 | UnnamedContract | unknown | manta | n/a | `0x20b15e...71eb3b` | ❓ Unverified |
 
@@ -120,6 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Anzen - Zellic Audit Report.pdf](https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-05 | stale | Direct | contract_name | 4 | high |
 | [{% embed url="<>" %}](https://github.com/Zellic/publications/blob/master/Anzen%20and%20protocol-v2%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-12 | aging | Direct | contract_name | 2 | high |
 | [<>\](https://drive.google.com/drive/folders/1xjQkrQJJeMZQldfdnCGaaj5FiGHaGRmm?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Gudchain staking contract has been audited by Halborn. [See the audit report here]().](https://cdn.gudchain.com/documents/Gudchain%20-%20Smart%20Contract%20Audit%20Report.pdf) | Halborn | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -145,15 +147,15 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 19 |
-| upstream | 2 |
-| standard_library | 4 |
-| needs_review | 0 |
+| upstream | 3 |
+| standard_library | 3 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4
 - Match method counts: extraction_exact=35
@@ -161,5 +163,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2166] <>\
+- [15066] Gudchain staking contract has been audited by Halborn. [See the audit report here]().
 
 Fork inheritance lineage and inherited audits are included when available.

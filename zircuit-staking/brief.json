@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zircuit-staking",
-  "generated_at": "2026-06-17T07:00:40.289Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T07:37:29.259Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-94c2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zircuit-staking",
@@ -43,8 +43,8 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 33.3,
-    "total_audits": 8,
-    "scoreable_audits": 3,
+    "total_audits": 11,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 41475058.79105,
     "tvl_usd": 178402442.05493143,
     "tvl_source": "on_chain",
@@ -60,13 +60,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-09",
+    "latest_audit_date": "2025-05",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 6,
-      "stale": 2,
-      "unknown": 0
+      "aging": 7,
+      "stale": 3,
+      "unknown": 1
     }
   },
   "topography": {
@@ -81,8 +81,8 @@
     "unknown_contracts": 1,
     "deployment_units": 16,
     "live_deployment_units": 10,
-    "dependencies_extracted": 14,
-    "unverified_dependencies": 13,
+    "dependencies_extracted": 7,
+    "unverified_dependencies": 6,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -99,7 +99,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x48ab4e39ac59f4e88974804b04a991b3a402717f",
-      "deployment_unit": "unit-24504",
+      "deployment_unit": "unit-35874",
       "deployment_unit_proxy_count": 1,
       "name": "ERC20RevocableComplianceTokenBasicPackageUpgradable",
       "role": "token",
@@ -115,7 +115,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x48ab4e39ac59f4e88974804b04a991b3a402717f",
-          "deployment_unit": "unit-24504",
+          "deployment_unit": "unit-35874",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -160,7 +160,8 @@
       ],
       "audits_covering": [
         "audit-4705",
-        "audit-4706"
+        "audit-4706",
+        "audit-15050"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -172,7 +173,7 @@
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x1a48cec817bcb5436efe99bab6dde228cc37e1cc",
-      "deployment_unit": "unit-24514",
+      "deployment_unit": "unit-35884",
       "deployment_unit_proxy_count": 2,
       "name": "TokenizedStrategy",
       "role": "core_logic",
@@ -188,7 +189,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x1a48cec817bcb5436efe99bab6dde228cc37e1cc",
-          "deployment_unit": "unit-24514",
+          "deployment_unit": "unit-35884",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -199,7 +200,7 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xe83ef4375d806c02387069f1b753b2ab76ab1dc5",
-          "deployment_unit": "unit-24514",
+          "deployment_unit": "unit-35884",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -218,7 +219,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x7d43eb137185aea81a020563099e940bb380f35e",
-      "deployment_unit": "unit-24508",
+      "deployment_unit": "unit-35878",
       "deployment_unit_proxy_count": 1,
       "name": "CrisisControlRegistry",
       "role": "registry",
@@ -234,7 +235,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x7d43eb137185aea81a020563099e940bb380f35e",
-          "deployment_unit": "unit-24508",
+          "deployment_unit": "unit-35878",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -253,7 +254,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x2c0b27f7c8f083b539557a0ba787041bf22db276",
-      "deployment_unit": "unit-24501",
+      "deployment_unit": "unit-35871",
       "deployment_unit_proxy_count": 2,
       "name": "GnosisSafe",
       "role": "governance",
@@ -269,7 +270,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x2c0b27f7c8f083b539557a0ba787041bf22db276",
-          "deployment_unit": "unit-24501",
+          "deployment_unit": "unit-35871",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -280,7 +281,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc463eac02572cc964d43d2414023e2c6b62baf38",
-          "deployment_unit": "unit-24501",
+          "deployment_unit": "unit-35871",
           "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -299,7 +300,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x2a721cbe81a128be0f01040e3353c3805a5ea091",
-      "deployment_unit": "unit-24500",
+      "deployment_unit": "unit-35870",
       "deployment_unit_proxy_count": 1,
       "name": "L1CrossDomainMessenger",
       "role": "unknown",
@@ -315,7 +316,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x2a721cbe81a128be0f01040e3353c3805a5ea091",
-          "deployment_unit": "unit-24500",
+          "deployment_unit": "unit-35870",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -334,7 +335,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8",
-      "deployment_unit": "unit-24503",
+      "deployment_unit": "unit-35873",
       "deployment_unit_proxy_count": 1,
       "name": "L1StandardBridge",
       "role": "operational_periphery",
@@ -350,7 +351,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8",
-          "deployment_unit": "unit-24503",
+          "deployment_unit": "unit-35873",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -371,7 +372,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x92ef6af472b39f1b363da45e35530c24619245a4",
-      "deployment_unit": "unit-24509",
+      "deployment_unit": "unit-35879",
       "deployment_unit_proxy_count": 1,
       "name": "L2OutputOracle",
       "role": "operational_periphery",
@@ -387,7 +388,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x92ef6af472b39f1b363da45e35530c24619245a4",
-          "deployment_unit": "unit-24509",
+          "deployment_unit": "unit-35879",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -408,7 +409,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1",
-      "deployment_unit": "unit-24499",
+      "deployment_unit": "unit-35869",
       "deployment_unit_proxy_count": 1,
       "name": "OptimismPortal",
       "role": "unknown",
@@ -424,7 +425,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1",
-          "deployment_unit": "unit-24499",
+          "deployment_unit": "unit-35869",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -445,7 +446,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6c89104690452ad7e209f0ab72287c2561d5cf0e",
-      "deployment_unit": "unit-24506",
+      "deployment_unit": "unit-35876",
       "deployment_unit_proxy_count": 1,
       "name": "ResolverRegistry",
       "role": "registry",
@@ -461,7 +462,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6c89104690452ad7e209f0ab72287c2561d5cf0e",
-          "deployment_unit": "unit-24506",
+          "deployment_unit": "unit-35876",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -480,7 +481,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "deployment_unit": "unit-24511",
+      "deployment_unit": "unit-35881",
       "deployment_unit_proxy_count": 1,
       "name": "RSETH",
       "role": "token",
@@ -496,7 +497,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-          "deployment_unit": "unit-24511",
+          "deployment_unit": "unit-35881",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -554,8 +555,8 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "Mainnets",
       "tvl_usd": null,
       "is_proxy": false,
@@ -764,6 +765,81 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15050,
+      "audit_key": "audit-15050",
+      "report_name": "DL audit link",
+      "report_url": "https://dubiw3zgo51jg.cloudfront.net/zircuit_audit_final.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ZtakingPool"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15051,
+      "audit_key": "audit-15051",
+      "report_name": "index.html",
+      "report_url": "https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 15051,
+          "report_url": "https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html"
+        },
+        {
+          "audit_id": 15052,
+          "report_url": "https://certificate.quantstamp.com/full/zircuit-lido-new-proposal/a8c75e25-29ae-4628-ab06-4c3a35123652/index.html"
+        }
+      ]
+    },
+    {
+      "audit_id": 15061,
+      "audit_key": "audit-15061",
+      "report_name": "ZRC_OFT_final_report_Quantstamp.pdf",
+      "report_url": "https://github.com/zircuit-labs/audit-report/blob/main/ZRC_OFT_final_report_Quantstamp.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -780,6 +856,13 @@
       "contracts_covered": 1,
       "coverage_pct": 8.3,
       "latest_audit": "2024-02"
+    },
+    {
+      "auditor": "Unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 8.3,
+      "latest_audit": "2024-09"
     }
   ],
   "coverage_gaps": [
@@ -807,15 +890,15 @@
   "origin_summary": {
     "native": 3,
     "upstream": 0,
-    "standard_library": 2,
-    "needs_review": 8
+    "standard_library": 3,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 7
+      "extraction_exact": 9
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 4
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -839,6 +922,14 @@
       {
         "audit_id": 4703,
         "report_name": "Zircuit-ZRC-Token-audit-report-2024-1.1.pdf"
+      },
+      {
+        "audit_id": 15051,
+        "report_name": "index.html"
+      },
+      {
+        "audit_id": 15061,
+        "report_name": "ZRC_OFT_final_report_Quantstamp.pdf"
       }
     ],
     "inherited_remapped_matches": []

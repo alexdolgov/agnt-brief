@@ -1,0 +1,18 @@
+{
+  "address": "0x8d93b853849b9884e2bb413444ec23eb5366ee91",
+  "chain_id": 1,
+  "contract_name": "GyroECLPPool",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-or-later, LicenseRef-Gyro-1.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T07:41:32.131Z"
+}

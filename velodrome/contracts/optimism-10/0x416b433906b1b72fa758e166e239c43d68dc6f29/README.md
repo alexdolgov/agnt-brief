@@ -4,7 +4,7 @@
 |---|---|
 | Chain | optimism (10) |
 | Address | `0x416b433906b1b72fa758e166e239c43d68dc6f29` |
-| Role | operational_periphery |
+| Role | governance |
 | Origin | native |
 | Audited | Yes |
 | Audits | [Audit](https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review-Nov23.pdf) |

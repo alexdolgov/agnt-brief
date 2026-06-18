@@ -1348,7 +1348,7 @@ Each project directory contains:
 | [vaultka](./vaultka/brief.md) | $5.89K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [vaulty-finance](./vaulty-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [vedelegate](./vedelegate/brief.md) | $828.87K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [velodrome](./velodrome/brief.md) | $33.86M | optimism | 15 | 15/15 (100%) | 80.0% | 80.0% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
+| [velodrome](./velodrome/brief.md) | $33.86M | celo, optimism | 16 | 16/16 (100%) | 75.0% | 75.0% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
 | [velora](./velora/brief.md) | $248.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 44 | 5/44 (11%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [venombridge](./venombridge/brief.md) | $860.40K | 4 | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T21:16:30.812Z_
+_Generated: 2026-06-18T21:27:57.429Z_
 _Projects: 1409_

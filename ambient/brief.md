@@ -7,10 +7,10 @@
 - Project: Ambient (`ambient`)
 - Website: [https://ambient.finance/](https://ambient.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:46.669Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T17:09:25.278Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
 - Chains: blast, canto, scroll, swellchain
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Contract surface: 17 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $1,790,446.90
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,7 +25,7 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 52; live-surface contracts included: 10 (3 live, 7 unknown).
+- Indexed contracts: 59; live-surface contracts included: 17 (10 live, 7 unknown).
 - Excluded by liveness: 38 inactive, 4 singleton, 0 uninitialized.
 - Deployment units: 1/4 live.
 - Detected codebases: none
@@ -33,12 +33,12 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/3 (33.3%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 1/10 (10.0%)
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 10
-- Raw deployments: 10
+- Unique implementations: 17
+- Raw deployments: 17
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 1 | 33.3% | 2023-05 |
+| Quantstamp | Tier 2 | 1 | 10.0% | 2023-05 |
 
 ## Contract Surface
 
@@ -59,14 +59,21 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CrocSwapDex | proxy | scroll | n/a | [`0xaaaaaa...a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
+| CrocSwapDex | unknown | scroll | n/a | [`0xaaaaaa...a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| ColdPath | unknown | blast | n/a | [`0x852c3a...0e9915`](./contracts/blast-81457/0x852c3a00162efdbce7e5bee4dfe065116d0e9915/) | ⚠️ Unaudited |
 | CrocSwapRouter | adapter | scroll | n/a | [`0xfb5f26...5fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | blast | unit-18560 | [`0xc73c8c...1e36ed`](./contracts/blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | blast | unit-38362 | [`0xc73c8c...1e36ed`](./contracts/blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | ⚠️ Unaudited |
+| HotProxy | unknown | blast | n/a | [`0x6050cf...d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | ⚠️ Unaudited |
+| KnockoutFlagPath | unknown | blast | n/a | [`0xd54874...1dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | ⚠️ Unaudited |
+| KnockoutLiqPath | unknown | blast | n/a | [`0x6e2625...03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | ⚠️ Unaudited |
+| LongPath | unknown | blast | n/a | [`0x07ec4a...65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/) | ⚠️ Unaudited |
+| MicroPaths | unknown | blast | n/a | [`0x8296b2...1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/) | ⚠️ Unaudited |
+| WarmPath | unknown | blast | n/a | [`0x99f213...796ca5`](./contracts/blast-81457/0x99f213608941b6116e8f1fab1908ddb33d796ca5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,13 +115,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| blast | [`0x852c3a...0e9915`](./contracts/blast-81457/0x852c3a00162efdbce7e5bee4dfe065116d0e9915/) | ColdPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | [`0xfb5f26...5fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6050cf...d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xd54874...1dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | KnockoutFlagPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6e2625...03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | KnockoutLiqPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x07ec4a...65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/) | LongPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x8296b2...1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/) | MicroPaths | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x99f213...796ca5`](./contracts/blast-81457/0x99f213608941b6116e8f1fab1908ddb33d796ca5/) | WarmPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 13 |
 | upstream | 0 |
 | standard_library | 2 |
 | needs_review | 2 |

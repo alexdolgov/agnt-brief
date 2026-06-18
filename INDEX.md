@@ -50,7 +50,7 @@
 | [alphbanx](./alphbanx/) | $391.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [altitude.fi](./altitude.fi/) | $669.9 | 33.3% | $669.9 | declining | 7 | 25 | 2026-06-18 |
 | [altitude](./altitude/) | $33.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [ambient](./ambient/) | $1.8M | 33.3% | ? | declining | 3 | 10 | 2026-06-17 |
+| [ambient](./ambient/) | $1.8M | 10.0% | ? | declining | 3 | 17 | 2026-06-18 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | active | 12 | 3 | 2026-06-17 |
 | [amet-finance](./amet-finance/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [amnis-finance](./amnis-finance/) | $4.8M | 0.0% | ? | unknown | 3 | 0 | 2026-06-17 |
@@ -1122,7 +1122,7 @@
 | [spiraldao](./spiraldao/) | $6.4M | 50.0% | ? | dead | 3 | 11 | 2026-06-18 |
 | [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [splash-protocol](./splash-protocol/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
-| [splashing-stake](./splashing-stake/) | $4.3M | 66.7% | ? | active | 1 | 7 | 2026-06-17 |
+| [splashing-stake](./splashing-stake/) | $4.3M | 75.0% | ? | active | 1 | 5 | 2026-06-18 |
 | [spookyswap](./spookyswap/) | $842.7 | 0.0% | $842.7 | declining | 1 | 90 | 2026-06-17 |
 | [sport.fun](./sport.fun/) | $3.5M | 0.0% | ? | active | 0 | 5 | 2026-06-17 |
 | [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1142,7 +1142,7 @@
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 86 | 2026-06-17 |
 | [stakingverse](./stakingverse/) | $3.3M | 0.0% | ? | active | 18 | 2 | 2026-06-17 |
 | [standx](./standx/) | $43.2M | 66.7% | ? | declining | 6 | 13 | 2026-06-18 |
-| [stargate-finance](./stargate-finance/) | $203.9M | 60.0% | $5.2M | active | 17 | 72 | 2026-06-17 |
+| [stargate-finance](./stargate-finance/) | $224.9M | 58.3% | $7.7M | active | 17 | 73 | 2026-06-18 |
 | [stargate](./stargate/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [starkdefi](./starkdefi/) | $87.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 2 | 2 | 2026-06-17 |
@@ -1174,7 +1174,7 @@
 | [sunny](./sunny/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [superearn](./superearn/) | $295.4 | 38.4% | ? | active | 5 | 165 | 2026-06-17 |
 | [superfarm](./superfarm/) | $167.2M | 0.0% | $167.2M | declining | 0 | 17 | 2026-06-17 |
-| [superfluid](./superfluid/) | $1.7M | 20.0% | ? | active | 8 | 249 | 2026-06-17 |
+| [superfluid](./superfluid/) | $1.7M | 23.0% | ? | active | 8 | 101 | 2026-06-18 |
 | [superform](./superform/) | $3.0M | 54.4% | $72.4 | active | 14 | 93 | 2026-06-18 |
 | [superhero-dex](./superhero-dex/) | $772.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [supernova](./supernova/) | $1.3M | 44.1% | ? | declining | 1 | 34 | 2026-06-17 |

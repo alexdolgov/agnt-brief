@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ambient",
-  "generated_at": "2026-06-17T07:00:46.669Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T17:09:25.278Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ambient",
@@ -32,17 +32,17 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 10,
-    "unique_implementations": 10,
-    "total_deployments": 10,
+    "total_contracts": 17,
+    "total_addresses": 17,
+    "unique_implementations": 17,
+    "total_deployments": 17,
     "audited_contracts": 1,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
-    "coverage_pct": 33.3,
+    "coverage_pct": 10,
     "total_audits": 3,
     "scoreable_audits": 2,
     "dl_tvl_usd": 1790446.89859,
@@ -72,8 +72,8 @@
     "project_purpose": "Ambient is a decentralized exchange protocol that enables single-contract, multi-chain concentrated and ambient liquidity pools. It supports efficient token swaps, liquidity provision, and on-chain governance across multiple EVM chains.",
     "relationship_narrative": "All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the same core contract logic (WarmPath/HotProxy) and are governed by the Governance Contracts family. Router contracts on each chain provide user-facing swap interfaces that interact with the respective CrocSwapDex proxy.",
     "product_family_count": 7,
-    "total_contracts_indexed": 52,
-    "live_contracts": 3,
+    "total_contracts_indexed": 59,
+    "live_contracts": 10,
     "inactive_contracts": 38,
     "singleton_contracts": 4,
     "uninitialized_contracts": 0,
@@ -85,7 +85,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -95,13 +95,48 @@
   },
   "contracts": [
     {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x852c3a00162efdbce7e5bee4dfe065116d0e9915",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ColdPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ColdPath",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x852c3a00162efdbce7e5bee4dfe065116d0e9915",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 534352,
       "chain_name": "scroll",
       "address": "0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "CrocSwapDex",
-      "role": "proxy",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Scroll",
@@ -171,7 +206,7 @@
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed",
-      "deployment_unit": "unit-18560",
+      "deployment_unit": "unit-38362",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafeL2",
       "role": "governance",
@@ -187,7 +222,7 @@
           "chain_id": 81457,
           "chain_name": "blast",
           "address": "0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed",
-          "deployment_unit": "unit-18560",
+          "deployment_unit": "unit-38362",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -201,6 +236,181 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x6050cf4b9125c81dbccb5d662131d4de04d5bb86",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HotProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HotProxy",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x6050cf4b9125c81dbccb5d662131d4de04d5bb86",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KnockoutFlagPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KnockoutFlagPath",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x6e26253238becf5e7099cbe2e74cbf378d03132f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KnockoutLiqPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KnockoutLiqPath",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x6e26253238becf5e7099cbe2e74cbf378d03132f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LongPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LongPath",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x8296b24386b85471af51ee4bfe6166df1f1d1534",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MicroPaths",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MicroPaths",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x8296b24386b85471af51ee4bfe6166df1f1d1534",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1923,
@@ -446,6 +656,41 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x99f213608941b6116e8f1fab1908ddb33d796ca5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WarmPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WarmPath",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x99f213608941b6116e8f1fab1908ddb33d796ca5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -631,11 +876,21 @@
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 33.3,
+      "coverage_pct": 10,
       "latest_audit": "2023-05"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x852c3a00162efdbce7e5bee4dfe065116d0e9915",
+      "name": "ColdPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 534352,
       "chain_name": "scroll",
@@ -645,10 +900,70 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x6050cf4b9125c81dbccb5d662131d4de04d5bb86",
+      "name": "HotProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1",
+      "name": "KnockoutFlagPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x6e26253238becf5e7099cbe2e74cbf378d03132f",
+      "name": "KnockoutLiqPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd",
+      "name": "LongPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x8296b24386b85471af51ee4bfe6166df1f1d1534",
+      "name": "MicroPaths",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x99f213608941b6116e8f1fab1908ddb33d796ca5",
+      "name": "WarmPath",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 6,
+    "native": 13,
     "upstream": 0,
     "standard_library": 2,
     "needs_review": 2

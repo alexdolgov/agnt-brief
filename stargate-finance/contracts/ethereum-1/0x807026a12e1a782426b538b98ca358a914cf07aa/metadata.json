@@ -1,0 +1,17 @@
+{
+  "address": "0x807026a12e1a782426b538b98ca358a914cf07aa",
+  "chain_id": 1,
+  "contract_name": "CreditMessagingMintableBurnable",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "paris",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T17:14:14.694Z"
+}

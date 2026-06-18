@@ -5,10 +5,10 @@
 - Project: Strata (`strata`)
 - Website: [https://strata.money](https://strata.money)
 - Lifecycle: active (Tier 0, 70.3% below peak)
-- Generated: 2026-06-17T07:00:48.837Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T19:59:21.748Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: ethereum
-- Contract surface: 25 unique implementations (50 raw deployments)
+- Contract surface: 25 unique implementations (51 raw deployments)
 - DeFi Llama TVL: $89,941,930.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,11 +23,11 @@ Strata Markets and Strata Vaults share governance and access control infrastruct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 227; live-surface contracts included: 50 (50 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 177 singleton, 0 uninitialized.
+- Indexed contracts: 225; live-surface contracts included: 51 (51 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 174 singleton, 0 uninitialized.
 - Deployment units: 2/87 live.
 - Detected codebases: none
-- Unverified dependencies: 1/34.
+- Unverified dependencies: 1/29.
 
 ## Audit Coverage Summary
 
@@ -36,12 +36,12 @@ Strata Markets and Strata Vaults share governance and access control infrastruct
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 25
-- Raw deployments: 50
-- Audits discovered: 7
+- Raw deployments: 51
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 3 fresh, 0 aging, 0 stale, 4 unknown
+- Staleness: 3 fresh, 0 aging, 1 stale, 4 unknown
 - Tier 1 coverage: 33.3% (Cyfrin)
 
 ### Auditor Coverage
@@ -73,12 +73,12 @@ Strata Markets and Strata Vaults share governance and access control infrastruct
 |---|---|---|---|---|---|
 | AaveAprPairProvider | unknown | ethereum | n/a | [`0x1c1377...f0af73`](./contracts/ethereum-1/0x1c137776e04803f807616c382abba12d9bf0af73/) | ⚠️ Unaudited |
 | AaveOracleAprPairProvider | operational_periphery | ethereum | n/a | [`0x991e78...b929aa`](./contracts/ethereum-1/0x991e78df32a08b5327f73a58f08aff0c1bb929aa/) | ⚠️ Unaudited |
-| CDOLens | periphery | ethereum | n/a | 3 deployments: ethereum [`0x02d622...ab5b62`](./contracts/ethereum-1/0x02d622c6f8b1814fdcaebed36457f8da90ab5b62/); ethereum `0x16f62b...16fff0`; ethereum `0xa7c547...2da3a4` | ⚠️ Unaudited |
+| CDOLens | periphery | ethereum | n/a | 4 deployments: ethereum [`0x02d622...ab5b62`](./contracts/ethereum-1/0x02d622c6f8b1814fdcaebed36457f8da90ab5b62/); ethereum `0x16f62b...16fff0`; ethereum `0xa7c547...2da3a4`; ethereum `0xc9d29a...b06611` | ⚠️ Unaudited |
 | ConstantOracleAprPairProvider | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x8b7258...018bf0`](./contracts/ethereum-1/0x8b7258e8cc89894b56f757bc886b430d0c018bf0/); ethereum `0xd7bac4...b9eadc` | ⚠️ Unaudited |
 | EulerIntegration | unknown | ethereum | n/a | [`0xf25129...876682`](./contracts/ethereum-1/0xf251290866cfca9ad4d0cbbde3742a0d12876682/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-29537 | [`0xa27ca9...b68b50`](./contracts/ethereum-1/0xa27ca9292268ee0f0258b749f1d5740c9bb68b50/) | ⚠️ Unaudited |
-| pUSDeLens | periphery | ethereum | n/a | [`0xd23de7...1b3006`](./contracts/ethereum-1/0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | unit-29512 | [`0x4be374...694ef4`](./contracts/ethereum-1/0x4be3749a0f6557b8fd98f3967e859dbd7c694ef4/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | unit-38808 | [`0xa27ca9...b68b50`](./contracts/ethereum-1/0xa27ca9292268ee0f0258b749f1d5740c9bb68b50/) | ⚠️ Unaudited |
+| PendleIntegration | unknown | ethereum | n/a | [`0x8b7597...4d78fc`](./contracts/ethereum-1/0x8b75970a492bfd326ef7425671117e7ec14d78fc/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | unit-38783 | [`0x4be374...694ef4`](./contracts/ethereum-1/0x4be3749a0f6557b8fd98f3967e859dbd7c694ef4/) | ⚠️ Unaudited |
 | SaturnAprPairProvider | unknown | ethereum | n/a | [`0x4bcc15...854be8`](./contracts/ethereum-1/0x4bcc15f6c0c63e511a1b55a7625f311a93854be8/) | ⚠️ Unaudited |
 | SaturnStrategy | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x36f593...8c1939`](./contracts/ethereum-1/0x36f5930e314b2f611a786476d939f47b318c1939/); ethereum `0x9686e3...9dc286` | ⚠️ Unaudited |
 | sNUSDAprPairProvider | unknown | ethereum | n/a | [`0x12db79...2f9eab`](./contracts/ethereum-1/0x12db794342437aaa93970c106f2b5d5dfe2f9eab/) | ⚠️ Unaudited |
@@ -118,6 +118,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Strata_Tranches_report.pdf](https://github.com/GuardianAudits/Audits/blob/main/Strata/Strata_Tranches_report.pdf) | Guardian | Audit | 2025-10 | fresh | Direct | contract_name | 27 | high |
 | [www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b](https://www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b) | Cyfrin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [www.papermark.com/view/cmgm9op9b0003l404g395i6a5](https://www.papermark.com/view/cmgm9op9b0003l404g395i6a5) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2023-03-07-linkpool_liquid_sd_index_pool.pdf](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-03-07-linkpool_liquid_sd_index_pool.pdf) | Cyfrin | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -127,30 +128,27 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x02d622...ab5b62`](./contracts/ethereum-1/0x02d622c6f8b1814fdcaebed36457f8da90ab5b62/) | CDOLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8b7258...018bf0`](./contracts/ethereum-1/0x8b7258e8cc89894b56f757bc886b430d0c018bf0/) | ConstantOracleAprPairProvider | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf25129...876682`](./contracts/ethereum-1/0xf251290866cfca9ad4d0cbbde3742a0d12876682/) | EulerIntegration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd23de7...1b3006`](./contracts/ethereum-1/0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006/) | pUSDeLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4bcc15...854be8`](./contracts/ethereum-1/0x4bcc15f6c0c63e511a1b55a7625f311a93854be8/) | SaturnAprPairProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x36f593...8c1939`](./contracts/ethereum-1/0x36f5930e314b2f611a786476d939f47b318c1939/) | SaturnStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x12db79...2f9eab`](./contracts/ethereum-1/0x12db794342437aaa93970c106f2b5d5dfe2f9eab/) | sNUSDAprPairProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbebbeb...3d6303`](./contracts/ethereum-1/0xbebbeb5ec0fa689def85423d6c161b30bf3d6303/) | sNUSDSwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa621c5...b80277`](./contracts/ethereum-1/0xa621c54ff2a24c9b084dcc2fb7399a55bdb80277/) | sUSDeAprPairProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7940b9...1a4a7b`](./contracts/ethereum-1/0x7940b983ccdd5818cf55129b84df5231751a4a7b/) | TermmaxIntegration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x60f130...0b4f1f`](./contracts/ethereum-1/0x60f130c9d1533505c3931183693d3d91060b4f1f/) | TrancheDepositor | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
-| upstream | 2 |
+| native | 17 |
+| upstream | 4 |
 | standard_library | 2 |
-| needs_review | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=332
@@ -161,5 +159,6 @@ Zero-match audit list:
 - [4596] index.html
 - [4602] www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b
 - [4603] www.papermark.com/view/cmgm9op9b0003l404g395i6a5
+- [15559] 2023-03-07-linkpool_liquid_sd_index_pool.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

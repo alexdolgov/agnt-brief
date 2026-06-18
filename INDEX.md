@@ -77,8 +77,8 @@
 | [aquabank](./aquabank/) | $850.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [arbitrum-exchange](./arbitrum-exchange/) | $11.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $14.7M | 0.0% | ? | active | 0 | 11 | 2026-06-17 |
-| [arcade.xyz](./arcade.xyz/) | $232.4K | 83.3% | ? | declining | 10 | 12 | 2026-06-17 |
-| [arcadia-finance](./arcadia-finance/) | $6.2M | 51.7% | ? | active | 13 | 61 | 2026-06-17 |
+| [arcade.xyz](./arcade.xyz/) | $232.4K | 83.3% | ? | declining | 10 | 12 | 2026-06-18 |
+| [arcadia-finance](./arcadia-finance/) | $8.3M | 27.7% | $2.1M | active | 13 | 154 | 2026-06-18 |
 | [arch](./arch/) | $479.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [arche-protocol](./arche-protocol/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [arche](./arche/) | $2.3K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
@@ -101,7 +101,7 @@
 | [atoll](./atoll/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atrium](./atrium/) | $390.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [augmented-finance](./augmented-finance/) | $326.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [augur](./augur/) | $1.3M | 100.0% | ? | active | 7 | 4 | 2026-06-17 |
+| [augur](./augur/) | $1.3M | 36.4% | ? | active | 7 | 12 | 2026-06-18 |
 | [aura](./aura/) | $107.0M | 23.1% | $68.2M | active | 20 | 281 | 2026-06-18 |
 | [aurigami](./aurigami/) | $819.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [auro-finance](./auro-finance/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -426,7 +426,7 @@
 | [flashstake](./flashstake/) | $36.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flaunch](./flaunch/) | $21.2M | 0.0% | $21.2M | active | 0 | 40 | 2026-06-17 |
 | [flex](./flex/) | $2.6M | 33.3% | $1.0M | unknown | 4 | 15 | 2026-06-17 |
-| [flexa](./flexa/) | $892.8K | 100.0% | ? | declining | 2 | 2 | 2026-06-17 |
+| [flexa](./flexa/) | $550.9K | 33.3% | $550.9K | declining | 2 | 6 | 2026-06-18 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-17 |
 | [flock.io](./flock.io/) | $5.7M | 0.0% | ? | unknown | 0 | 4 | 2026-06-17 |
 | [fluxion-network](./fluxion-network/) | $2.4M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
@@ -1155,7 +1155,7 @@
 | [stfil](./stfil/) | $4.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 32 | 2026-06-17 |
-| [strata](./strata/) | $89.9M | 37.5% | ? | active | 7 | 25 | 2026-06-17 |
+| [strata](./strata/) | $89.9M | 37.5% | ? | active | 8 | 25 | 2026-06-18 |
 | [stratis-liquid-staking](./stratis-liquid-staking/) | $413.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [stream-finance](./stream-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

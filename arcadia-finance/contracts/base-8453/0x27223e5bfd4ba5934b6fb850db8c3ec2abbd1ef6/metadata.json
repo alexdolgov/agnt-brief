@@ -1,0 +1,18 @@
+{
+  "address": "0x27223e5bfd4ba5934b6fb850db8c3ec2abbd1ef6",
+  "chain_id": 8453,
+  "contract_name": "SwapDeployer",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:09:10.147Z"
+}

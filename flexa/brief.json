@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flexa",
-  "generated_at": "2026-06-17T07:00:37.496Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T19:54:09.571Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "flexa",
@@ -32,29 +32,31 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
     "audited_contracts": 2,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 33.3,
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 892845.83493,
-    "tvl_usd": 892845.83493,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 550890.9985446511,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 550891
+    },
+    "asd_usd": 550890.9985446511,
     "website_url": "https://amp.xyz/",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 100,
+    "tier1_coverage_pct": 33.3,
     "tier1_auditors": [
       "ConsenSys Diligence",
       "Trail of Bits"
@@ -70,24 +72,24 @@
   },
   "topography": {
     "project_purpose": "Flexa is a payments-focused protocol built around Amp (AMP) as its core collateral token. The Flexa/Amp system uses collateralization to support payment settlement and merchant payment acceptance; AMP should be treated as the protocol's collateral token rather than as an unrelated upstream governance or staking component. Claims that Flexa is a collateralized stablecoin borrowing protocol, synthetic asset minting system, vault product, BAC/ARCx pool, or yield-staking protocol should be removed unless separately verified from Flexa documentation.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The AMP token contract is separate from the Flexa family but likely interacts via governance or staking. Within Flexa, bVaults serve as collateralized debt positions that mint synthetic assets, while the BAC pools provide liquidity for those synthetics; staking contracts like ArcProxy and MasterChef distribute rewards, and the FlexaCollateralManager oversees collateral operations.",
     "product_family_count": 2,
-    "total_contracts_indexed": 2,
-    "live_contracts": 2,
-    "inactive_contracts": 0,
-    "singleton_contracts": 0,
+    "total_contracts_indexed": 24,
+    "live_contracts": 6,
+    "inactive_contracts": 3,
+    "singleton_contracts": 15,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "deployment_units": 2,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 3,
     "unverified_dependencies": 1,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -97,12 +99,47 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x5d2725fde4d7aa3388da4519ac0449cc031d675f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CollateralVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 550890.9985446511,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CollateralVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5d2725fde4d7aa3388da4519ac0449cc031d675f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 550890.9985446511,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Amp",
       "role": "unknown",
-      "origin_kind": "upstream",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "AMP token contract",
       "tvl_usd": null,
@@ -130,6 +167,76 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9",
+      "deployment_unit": "unit-38743",
+      "deployment_unit_proxy_count": 1,
+      "name": "AnvilGovernorDelegate",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x123641b8a2063217a96ef88bf608931a43b49f49",
+      "impl_name": "AnvilGovernorDelegate",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9",
+          "deployment_unit": "unit-38743",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a57e687b9126435a9b19e4a802113e266adebde",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Flexacoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Flexacoin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4a57e687b9126435a9b19e4a802113e266adebde",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -168,6 +275,41 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Reward",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Reward",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -250,21 +392,62 @@
       "auditor": "Consensys Diligence",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 100,
+      "coverage_pct": 33.3,
       "latest_audit": "2020-06"
     },
     {
       "auditor": "Trail of Bits",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 100,
+      "coverage_pct": 33.3,
       "latest_audit": "2020-08"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d2725fde4d7aa3388da4519ac0449cc031d675f",
+      "name": "CollateralVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 550890.9985446511,
+      "risk_note": "Verified native implementation with $550,891.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9",
+      "name": "AnvilGovernorDelegate",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a57e687b9126435a9b19e4a802113e266adebde",
+      "name": "Flexacoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da",
+      "name": "Reward",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 1,
+    "native": 6,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

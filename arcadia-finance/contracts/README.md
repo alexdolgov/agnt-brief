@@ -10,13 +10,13 @@
 | [CompounderSlipstream (5 deployments)](./base-8453/0x35e59448c7145482e56212510cc689612ab4f61f/) | base | 5 deployments: optimism `0x467837...3cfcf7`; unichain `0x467837...3cfcf7`; base [`0x35e594...b4f61f`](./base-8453/0x35e59448c7145482e56212510cc689612ab4f61f/); base `0x467837...3cfcf7`; base `0xd42a3a...8ddcd9` | ✅ Audited | Verified |
 | [CompounderUniswapV3 (3 deployments)](./optimism-10/0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3/) | optimism | 3 deployments: optimism [`0x02e1fa...8a2dc3`](./optimism-10/0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3/); unichain `0x02e1fa...8a2dc3`; base `0x02e1fa...8a2dc3` | ✅ Audited | Verified |
 | [CompounderUniswapV4 (3 deployments)](./optimism-10/0xaa95c9c402b195d8690ecaea2341a76e3266b189/) | optimism | 3 deployments: optimism [`0xaa95c9...66b189`](./optimism-10/0xaa95c9c402b195d8690ecaea2341a76e3266b189/); unichain `0xaa95c9...66b189`; base `0xaa95c9...66b189` | ✅ Audited | Verified |
-| [CowSwapper](./base-8453/0xc928013a219ec9f18de7b2dee6a50ba626811854/) | base | [`0xc92801...811854`](./base-8453/0xc928013a219ec9f18de7b2dee6a50ba626811854/) | ✅ Audited | Verified |
+| CowSwapper | base | `0xc92801...811854` | ✅ Audited | Verified |
 | [DefaultUniswapV4AM (2 deployments)](./optimism-10/0xb808971ea73341b0d7286b3d67f08de321f80465/) | optimism | 2 deployments: optimism [`0xb80897...f80465`](./optimism-10/0xb808971ea73341b0d7286b3d67f08de321f80465/); unichain `0xb80897...f80465` | ✅ Audited | Verified |
 | [ERC20PrimaryAM (2 deployments)](./optimism-10/0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7/) | optimism | 2 deployments: optimism [`0xfbecea...60eed7`](./optimism-10/0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7/); unichain `0xfbecea...60eed7` | ⚠️ Unaudited | Verified |
 | [RebalancerSlipstream (5 deployments)](./base-8453/0x37c6258aee125d520b6f03fc2cb490955050d557/) | base | 5 deployments: optimism `0x580245...e2b79f`; unichain `0x580245...e2b79f`; base [`0x37c625...50d557`](./base-8453/0x37c6258aee125d520b6f03fc2cb490955050d557/); base `0x580245...e2b79f`; base `0x953ff3...38d9ea` | ✅ Audited | Verified |
 | [RebalancerUniswapV3 (3 deployments)](./optimism-10/0xba1d0c99c261f94b9c8b52465890cca27dd993bd/) | optimism | 3 deployments: optimism [`0xba1d0c...d993bd`](./optimism-10/0xba1d0c99c261f94b9c8b52465890cca27dd993bd/); unichain `0xba1d0c...d993bd`; base `0xba1d0c...d993bd` | ✅ Audited | Verified |
 | [RebalancerUniswapV4 (3 deployments)](./optimism-10/0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0/) | optimism | 3 deployments: optimism [`0x01edaf...6a5ac0`](./optimism-10/0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0/); unichain `0x01edaf...6a5ac0`; base `0x01edaf...6a5ac0` | ✅ Audited | Verified |
-| [RouterTrampoline](./unichain-130/0x354dbba1348985cc952c467b8ddaf5dd07590667/) | unichain | [`0x354dbb...590667`](./unichain-130/0x354dbba1348985cc952c467b8ddaf5dd07590667/) | ⚠️ Unaudited | Verified |
+| RouterTrampoline | unichain | `0x354dbb...590667` | ⚠️ Unaudited | Verified |
 | [SlipstreamAM (4 deployments)](./base-8453/0x3ade1f1fdc666b1bfad376345ea878d1c11eb73b/) | base | 4 deployments: optimism `0xd3a705...633f44`; unichain `0xd3a705...633f44`; base [`0x3ade1f...1eb73b`](./base-8453/0x3ade1f1fdc666b1bfad376345ea878d1c11eb73b/); base `0xcaf416...527189` | ⚠️ Unaudited | Verified |
 | [StakedAerodromeAM (2 deployments)](./optimism-10/0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27/) | optimism | 2 deployments: optimism [`0x9f4236...d44c27`](./optimism-10/0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27/); unichain `0x9f4236...d44c27` | ✅ Audited | Verified |
 | [StakedSlipstreamAM (5 deployments)](./optimism-10/0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1/) | optimism | 5 deployments: optimism [`0x1dc7a0...d67bf1`](./optimism-10/0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1/); unichain `0x1dc7a0...d67bf1`; base `0x1dc7a0...d67bf1`; base `0xbed6c3...0fdd4c`; base `0xe0f20b...d8ca7b` | ✅ Audited | Verified |
@@ -42,7 +42,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccountsGuard](./unichain-130/0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b/) | unichain | [`0x2529ae...d6240b`](./unichain-130/0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b/) | ✅ Audited | Verified |
+| AccountsGuard | unichain | `0x2529ae...d6240b` | ✅ Audited | Verified |
 | NonfungiblePositionManager | optimism | `0x416b43...dc6f29` | ⚠️ Unaudited | Verified |
 | NonfungiblePositionManager | optimism | `0xc36442...11fe88` | ⚠️ Unaudited | Verified |
 | NonfungiblePositionManager | unichain | `0x943e6e...3c46e9` | ⚠️ Unaudited | Verified |
@@ -64,7 +64,7 @@
 | [LiquidatorL1](./unichain-130/0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af/) | unichain | [`0xa4b0b9...e1a7af`](./unichain-130/0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af/) | ✅ Audited | Verified |
 | [LiquidatorL2](./optimism-10/0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af/) | optimism | [`0xa4b0b9...e1a7af`](./optimism-10/0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af/) | ⚠️ Unaudited | Verified |
 | [MerklOperator (3 deployments)](./optimism-10/0x969f0251360b9cf11c68f6ce9587924c1b8b42c6/) | optimism | 3 deployments: optimism [`0x969f02...8b42c6`](./optimism-10/0x969f0251360b9cf11c68f6ce9587924c1b8b42c6/); unichain `0x969f02...8b42c6`; base `0x969f02...8b42c6` | ✅ Audited | Verified |
-| [YieldClaimerSlipstream (5 deployments)](./optimism-10/0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba/) | optimism | 5 deployments: optimism [`0x5a8278...4f18ba`](./optimism-10/0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba/); unichain `0x5a8278...4f18ba`; base `0x5a8278...4f18ba`; base `0x8c1fbf...291980`; base `0xc8bf4b...22871c` | ✅ Audited | Verified |
+| YieldClaimerSlipstream (5 deployments) | optimism | 5 deployments: optimism `0x5a8278...4f18ba`; unichain `0x5a8278...4f18ba`; base `0x5a8278...4f18ba`; base `0x8c1fbf...291980`; base `0xc8bf4b...22871c` | ✅ Audited | Verified |
 | [YieldClaimerUniswapV3 (3 deployments)](./optimism-10/0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16/) | optimism | 3 deployments: optimism [`0x75ed28...afaa16`](./optimism-10/0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16/); unichain `0x75ed28...afaa16`; base `0x75ed28...afaa16` | ✅ Audited | Verified |
 | [YieldClaimerUniswapV4 (3 deployments)](./optimism-10/0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4/) | optimism | 3 deployments: optimism [`0xd8aa21...d5d8d4`](./optimism-10/0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4/); unichain `0xd8aa21...d5d8d4`; base `0xd8aa21...d5d8d4` | ✅ Audited | Verified |
 
@@ -82,7 +82,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Aero](./base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | base | [`0x940181...d98631`](./base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | ⚠️ Unaudited | Verified |
-| [FiatTokenV2_1](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | base | [`0xcbb7c0...ed33bf`](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited | Verified |
+| FiatTokenV2_1 | base | `0xcbb7c0...ed33bf` | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2](./optimism-10/0x0b2c639c533813f4aa9d7837caf62653d097ff85/) | optimism | [`0x0b2c63...97ff85`](./optimism-10/0x0b2c639c533813f4aa9d7837caf62653d097ff85/) | ⚠️ Unaudited | Verified |
 | FiatTokenV2_2 | base | `0x833589...a02913` | ⚠️ Unaudited | Verified |
 | [Velo](./optimism-10/0x9560e827af36c94d2ac33a39bce1fe78631088db/) | optimism | [`0x9560e8...1088db`](./optimism-10/0x9560e827af36c94d2ac33a39bce1fe78631088db/) | ⚠️ Unaudited | Verified |

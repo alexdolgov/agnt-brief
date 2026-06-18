@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "strata",
-  "generated_at": "2026-06-17T07:00:48.837Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T19:59:21.748Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4ae8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "strata",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 25,
-    "total_addresses": 50,
+    "total_addresses": 51,
     "unique_implementations": 25,
-    "total_deployments": 50,
+    "total_deployments": 51,
     "audited_contracts": 9,
     "unaudited_contracts": 15,
     "contracts_verified_audited": 9,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 37.5,
-    "total_audits": 7,
+    "total_audits": 8,
     "scoreable_audits": 3,
     "dl_tvl_usd": 89941930,
     "tvl_usd": 89941930,
@@ -53,7 +53,7 @@
     "staleness_breakdown": {
       "fresh": 3,
       "aging": 0,
-      "stale": 0,
+      "stale": 1,
       "unknown": 4
     }
   },
@@ -61,15 +61,15 @@
     "project_purpose": "Strata is a generalized DeFi risk-tranching and structured yield protocol on Ethereum. It splits yield-generating strategies into tokenized senior and junior tranche positions, allowing participants to choose different risk and return profiles. Vault or pUSDe-related components should be treated as ancillary to the core tranche-based structured-yield design unless separately sourced.",
     "relationship_narrative": "Strata Markets and Strata Vaults share governance and access control infrastructure (AccessControlManager, TwoStepConfigManager) and rely on common oracle/APR feed contracts. The vaults may feed into or complement the tranche strategies, but the contract surface shows them as distinct product lines with no direct on-chain dependency.",
     "product_family_count": 4,
-    "total_contracts_indexed": 227,
-    "live_contracts": 50,
+    "total_contracts_indexed": 225,
+    "live_contracts": 51,
     "inactive_contracts": 0,
-    "singleton_contracts": 177,
+    "singleton_contracts": 174,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 87,
     "live_deployment_units": 2,
-    "dependencies_extracted": 34,
+    "dependencies_extracted": 29,
     "unverified_dependencies": 1,
     "detected_codebases": []
   },
@@ -413,6 +413,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9d29a300db9896c7c253cc729e012fbc7b06611",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -525,8 +536,8 @@
       "deployment_unit_proxy_count": null,
       "name": "EulerIntegration",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "euler-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -556,7 +567,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa27ca9292268ee0f0258b749f1d5740c9bb68b50",
-      "deployment_unit": "unit-29537",
+      "deployment_unit": "unit-38808",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafe",
       "role": "governance",
@@ -572,7 +583,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa27ca9292268ee0f0258b749f1d5740c9bb68b50",
-          "deployment_unit": "unit-29537",
+          "deployment_unit": "unit-38808",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -590,23 +601,23 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006",
+      "address": "0x8b75970a492bfd326ef7425671117e7ec14d78fc",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "pUSDeLens",
-      "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "name": "PendleIntegration",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Pendle",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "pUSDeLens",
+      "impl_name": "PendleIntegration",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006",
+          "address": "0x8b75970a492bfd326ef7425671117e7ec14d78fc",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -626,7 +637,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4be3749a0f6557b8fd98f3967e859dbd7c694ef4",
-      "deployment_unit": "unit-29512",
+      "deployment_unit": "unit-38783",
       "deployment_unit_proxy_count": 1,
       "name": "Safe",
       "role": "unknown",
@@ -642,7 +653,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4be3749a0f6557b8fd98f3967e859dbd7c694ef4",
-          "deployment_unit": "unit-29512",
+          "deployment_unit": "unit-38783",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -736,7 +747,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -951,7 +962,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1012,7 +1023,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1022,7 +1033,7 @@
       "deployment_unit_proxy_count": null,
       "name": "TermmaxIntegration",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1467,6 +1478,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15559,
+      "audit_key": "audit-15559",
+      "report_name": "2023-03-07-linkpool_liquid_sd_index_pool.pdf",
+      "report_url": "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-03-07-linkpool_liquid_sd_index_pool.pdf",
+      "auditor": "Cyfrin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1502,26 +1534,6 @@
       "address": "0x8b7258e8cc89894b56f757bc886b430d0c018bf0",
       "name": "ConstantOracleAprPairProvider",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf251290866cfca9ad4d0cbbde3742a0d12876682",
-      "name": "EulerIntegration",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006",
-      "name": "pUSDeLens",
-      "role": "periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1579,16 +1591,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x7940b983ccdd5818cf55129b84df5231751a4a7b",
-      "name": "TermmaxIntegration",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x60f130c9d1533505c3931183693d3d91060b4f1f",
       "name": "TrancheDepositor",
       "role": "core_logic",
@@ -1598,10 +1600,10 @@
     }
   ],
   "origin_summary": {
-    "native": 20,
-    "upstream": 2,
+    "native": 17,
+    "upstream": 4,
     "standard_library": 2,
-    "needs_review": 1
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -1628,6 +1630,10 @@
       {
         "audit_id": 4603,
         "report_name": "www.papermark.com/view/cmgm9op9b0003l404g395i6a5"
+      },
+      {
+        "audit_id": 15559,
+        "report_name": "2023-03-07-linkpool_liquid_sd_index_pool.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -36,7 +36,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CDOLens (3 deployments)](./ethereum-1/0x02d622c6f8b1814fdcaebed36457f8da90ab5b62/) | ethereum | 3 deployments: ethereum [`0x02d622...ab5b62`](./ethereum-1/0x02d622c6f8b1814fdcaebed36457f8da90ab5b62/); ethereum `0x16f62b...16fff0`; ethereum `0xa7c547...2da3a4` | ⚠️ Unaudited | Verified |
-| [pUSDeLens](./ethereum-1/0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006/) | ethereum | [`0xd23de7...1b3006`](./ethereum-1/0xd23de70dcb3fa5bec90b06bd973c400f1b1b3006/) | ⚠️ Unaudited | Verified |
+| pUSDeLens | ethereum | `0xd23de7...1b3006` | ⚠️ Unaudited | Verified |
 
 ## token (1)
 

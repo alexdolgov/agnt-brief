@@ -1,0 +1,17 @@
+{
+  "address": "0x20640b89a607ed9c9098eed77852eb7753fd921d",
+  "chain_id": 8453,
+  "contract_name": "TrancheStaker",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:09:10.121Z"
+}

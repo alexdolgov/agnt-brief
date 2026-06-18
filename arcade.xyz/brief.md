@@ -7,8 +7,8 @@
 - Project: Arcade.xyz (`arcade.xyz`)
 - Website: [https://www.arcade.xyz](https://www.arcade.xyz)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:33.471Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T19:56:49.541Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
 - Chains: ethereum
 - Contract surface: 12 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $4,792,976.26
@@ -28,8 +28,8 @@ The VaultFactory creates vaults that hold NFT collateral, while LoanCore manages
 - Indexed contracts: 147; live-surface contracts included: 13 (13 live, 0 unknown).
 - Excluded by liveness: 119 inactive, 15 singleton, 0 uninitialized.
 - Deployment units: 0/9 live.
-- Detected codebases: aave-v2
-- Dependencies extracted: 62; unverified dependencies: 0.
+- Detected codebases: none
+- Dependencies extracted: 13; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 

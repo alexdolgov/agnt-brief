@@ -1,0 +1,17 @@
+{
+  "address": "0x0f56a2d3ad80817de76d0498c98dd1223bc1f681",
+  "chain_id": 8453,
+  "contract_name": "DefaultOrderHook",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "000000000000000000000000ffc742e68d41389be9ef1afd518f036064da2bb6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:09:09.054Z"
+}

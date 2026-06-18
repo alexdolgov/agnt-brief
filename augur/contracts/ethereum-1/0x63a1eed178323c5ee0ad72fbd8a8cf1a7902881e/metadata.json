@@ -1,0 +1,18 @@
+{
+  "address": "0x63a1eed178323c5ee0ad72fbd8a8cf1a7902881e",
+  "chain_id": 1,
+  "contract_name": "AugurTrading",
+  "compiler_version": "v0.5.15+commit.6a57276f",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T19:54:46.778Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4bcc584979817219585b6a62a5bb6c15c1fa0f38",
+  "chain_id": 8453,
+  "contract_name": "BunniHubController",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T20:09:11.683Z"
+}

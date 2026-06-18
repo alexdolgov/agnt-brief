@@ -1,0 +1,928 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "AMMId",
+            "name": "ammId",
+            "type": "uint24"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "oracleImpliedRateWindow",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint64",
+            "name": "feeRate",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupplyCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "MarketAcc",
+            "name": "seeder",
+            "type": "bytes26"
+          },
+          {
+            "internalType": "address",
+            "name": "permissionController",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct AMMCreateParams",
+        "name": "createParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalFloatAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normFixedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalLp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "latestFTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "seedTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAbsRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAbsRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cutOffTimestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AMMState",
+        "name": "initialState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AMMCutOffReached",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMInsufficientCashIn",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMInsufficientLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMInvalidRateRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMNegativeCash",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMSignMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMTotalSupplyCapExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AMMWithdrawOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "account",
+        "type": "bytes26"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "BOROS20NotEnoughBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFeeRates",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidObservationWindow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MarketMatured",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MathInvalidExponent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MathOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "minAbsRate",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "maxAbsRate",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "cutOffTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "AMMConfigUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "MarketAcc",
+        "name": "from",
+        "type": "bytes26"
+      },
+      {
+        "indexed": false,
+        "internalType": "MarketAcc",
+        "name": "to",
+        "type": "bytes26"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "BOROS20Transfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "MarketAcc",
+        "name": "payer",
+        "type": "bytes26"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "netLpBurned",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "netCashOut",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "netSizeOut",
+        "type": "int256"
+      }
+    ],
+    "name": "Burn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFeeRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeeRateUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "newWindow",
+        "type": "uint32"
+      }
+    ],
+    "name": "ImpliedRateObservationWindowUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "MarketAcc",
+        "name": "receiver",
+        "type": "bytes26"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "netLpMinted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "netCashIn",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "netSizeIn",
+        "type": "int256"
+      }
+    ],
+    "name": "Mint",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "sizeOut",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "costOut",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "Swap",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTotalSupplyCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "TotalSupplyCapUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ACCOUNT_ONE",
+    "outputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "",
+        "type": "bytes26"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "AMM_ID",
+    "outputs": [
+      {
+        "internalType": "AMMId",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MARKET",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MATURITY",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROUTER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SEED_TIME",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SELF_ACC",
+    "outputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "",
+        "type": "bytes26"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_storage",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "minAbsRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "maxAbsRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "cutOffTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "oracleImpliedRateWindow",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "feeRate",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalSupplyCap",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "totalFloatAmount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "normFixedAmount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "lastTradedTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int128",
+        "name": "prevOracleImpliedRate",
+        "type": "int128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "account",
+        "type": "bytes26"
+      }
+    ],
+    "name": "balanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "payer",
+        "type": "bytes26"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalCash",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalSize",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpToBurn",
+        "type": "uint256"
+      }
+    ],
+    "name": "burnByBorosRouter",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "netCashOut",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "netSizeOut",
+        "type": "int256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMatured",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "targetRate",
+        "type": "int256"
+      }
+    ],
+    "name": "calcSwapSize",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feeRate",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "impliedRate",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "MarketAcc",
+        "name": "receiver",
+        "type": "bytes26"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalCash",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalSize",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "maxCashIn",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "exactSizeIn",
+        "type": "int256"
+      }
+    ],
+    "name": "mintByBorosRouter",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "netCashIn",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "netLpOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracleImpliedRate",
+    "outputs": [
+      {
+        "internalType": "int128",
+        "name": "",
+        "type": "int128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "readState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalFloatAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normFixedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalLp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "latestFTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "seedTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAbsRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAbsRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cutOffTimestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AMMState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "minAbsRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "maxAbsRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "cutOffTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "setAMMConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newFeeRate",
+        "type": "uint64"
+      }
+    ],
+    "name": "setAMMFeeRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "newWindow",
+        "type": "uint32"
+      }
+    ],
+    "name": "setAMMImpliedRateObservationWindow",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newTotalSupplyCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "setAMMTotalSupplyCap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "sizeOut",
+        "type": "int256"
+      }
+    ],
+    "name": "swapByBorosRouter",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "costOut",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "sizeOut",
+        "type": "int256"
+      }
+    ],
+    "name": "swapView",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "costOut",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "symbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalSupplyCap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

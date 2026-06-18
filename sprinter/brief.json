@@ -1,40 +1,40 @@
 {
   "schema_version": "2.0",
   "project_key": "sprinter",
-  "generated_at": "2026-06-17T07:00:49.846Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-18T21:15:07.756Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5cc8",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "sprinter",
     "tier": 0,
     "peak_tvl": 2723235,
     "peak_date": "2026-04-08T00:00:00.000Z",
-    "tvl_30d_ago": 1683206,
-    "tvl_90d_ago": 1335989,
-    "tvl_current": 1096906,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1342910,
-    "change_30d_pct": -34.832337812484035,
-    "change_90d_pct": -17.895581475595982,
-    "days_since_peak": 47,
+    "tvl_30d_ago": 1139001,
+    "tvl_90d_ago": 1132805,
+    "tvl_current": 680928,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 1474860,
+    "change_30d_pct": -40.21708497183058,
+    "change_90d_pct": -39.8900958240827,
+    "days_since_peak": 71,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 59.720479503237875
+    "drop_from_peak_pct": 74.99562101691555
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
-    "audited_contracts": 4,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 16,
+    "total_addresses": 24,
+    "unique_implementations": 16,
+    "total_deployments": 24,
+    "audited_contracts": 11,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 11,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 68.8,
     "total_audits": 6,
-    "scoreable_audits": 3,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 923972.99357,
     "tvl_usd": 923972.99357,
     "tvl_source": "defillama",
@@ -42,9 +42,12 @@
     "asd_usd": null,
     "website_url": "https://sprinter.tech/",
     "chains": [
-      "base"
+      "arbitrum",
+      "base",
+      "ethereum",
+      "optimism"
     ],
-    "tier1_coverage_pct": 50,
+    "tier1_coverage_pct": 37.5,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -61,14 +64,14 @@
     "project_purpose": "Sprinter is credit and liquidity infrastructure with Sprinter Solve/Credit and Stash/yield components. The currently matched DefiLlama-tracked contract surface covers the Base Stash/ERC-4626 vault subset, including yield-oriented vault infrastructure and integrations such as Aave strategies, rather than the full Sprinter project surface.",
     "relationship_narrative": "The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, while SprinterLiquidityMining distributes incentives to depositors. The TransparentUpgradeableProxy points to a LiquidityHub implementation, likely managing shared logic or access control across the system.",
     "product_family_count": 1,
-    "total_contracts_indexed": 4,
-    "live_contracts": 0,
+    "total_contracts_indexed": 26,
+    "live_contracts": 17,
     "inactive_contracts": 0,
-    "singleton_contracts": 0,
+    "singleton_contracts": 2,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
-    "deployment_units": 1,
-    "live_deployment_units": 0,
+    "unknown_contracts": 7,
+    "deployment_units": 8,
+    "live_deployment_units": 4,
     "dependencies_extracted": 2,
     "unverified_dependencies": 0,
     "detected_codebases": [
@@ -76,7 +79,7 @@
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 16,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -88,25 +91,25 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0xa593a9bbbc65be342ff610a01e96da2eb8539ff2",
-      "deployment_unit": "unit-30390",
-      "deployment_unit_proxy_count": 1,
-      "name": "LiquidityHub",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Sprinter",
+      "address": "0x7c472eba1945e970a23c903fc8812d469a29b6bb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CensoredTransferFromMulticall",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6bd380415cd045525f284b7c0e8a02030159998b",
-      "impl_name": "LiquidityHub",
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CensoredTransferFromMulticall",
       "deployments": [
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0xa593a9bbbc65be342ff610a01e96da2eb8539ff2",
-          "deployment_unit": "unit-30390",
-          "deployment_unit_proxy_count": 1,
+          "address": "0x7c472eba1945e970a23c903fc8812d469a29b6bb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -114,8 +117,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3206",
-        "audit-3208"
+        "audit-15651"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -126,19 +128,76 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0xb58bb9643884abbbad64fa7ebc874c5481e5c032",
+      "address": "0x83b8d2eada788943c3e80892f37f9c102271c1d6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GnosisSafeProxy",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GnosisSafeProxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x83b8d2eada788943c3e80892f37f9c102271c1d6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0e16326e6921395eda2575740374e754b22810eb",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "LiquidityPool",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Sprinter",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "LiquidityPool",
       "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0e16326e6921395eda2575740374e754b22810eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0e16326e6921395eda2575740374e754b22810eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -149,10 +208,21 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0e16326e6921395eda2575740374e754b22810eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-3207"
+        "audit-15650"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -161,21 +231,43 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7c255279c098fdf6c3116d2becd9978002c09f4b",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "LiquidityPoolAave",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Sprinter",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "LiquidityPoolAave",
       "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -186,15 +278,450 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-3207"
+        "audit-15650"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x52d0ee7a870824fc683ea19c714c7bd110257788",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LiquidityPoolAaveLongTerm",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidityPoolAaveLongTerm",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x52d0ee7a870824fc683ea19c714c7bd110257788",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa8d2c9c9453e61e3ca961512403d388dee0a3672",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LiquidityPoolStablecoin",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidityPoolStablecoin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa8d2c9c9453e61e3ca961512403d388dee0a3672",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xffdb380c79d9bf412a61d63060388d761d16286d",
+      "deployment_unit": "unit-39124",
+      "deployment_unit_proxy_count": 1,
+      "name": "Processor",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x944771b2b015661458ca33dd6c04535194366042",
+      "impl_name": "Processor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xffdb380c79d9bf412a61d63060388d761d16286d",
+          "deployment_unit": "unit-39124",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15648"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2b5d04ef6b3279bcda4b219b02faf627da1664cb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2b5d04ef6b3279bcda4b219b02faf627da1664cb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x818e818ac77112034abf79506d53ba197cac5077",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x998c7392b6dd28031fed052e5ff2bf38f291d47b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+      "deployment_unit": "unit-39126",
+      "deployment_unit_proxy_count": 1,
+      "name": "Rebalancer",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x66c0913a7a2a18b4c1baa9985199736e548b4918",
+      "impl_name": "Rebalancer",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+          "deployment_unit": "unit-39126",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15649",
+        "audit-15650"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+      "deployment_unit": "unit-39129",
+      "deployment_unit_proxy_count": 1,
+      "name": "Rebalancer",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x66c0913a7a2a18b4c1baa9985199736e548b4918",
+      "impl_name": "Rebalancer",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+          "deployment_unit": "unit-39129",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15649",
+        "audit-15650"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+      "deployment_unit": "unit-39131",
+      "deployment_unit_proxy_count": 1,
+      "name": "Rebalancer",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x66c0913a7a2a18b4c1baa9985199736e548b4918",
+      "impl_name": "Rebalancer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa85cf46c150db2600b1d03e437bedd5513869888",
+          "deployment_unit": "unit-39131",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15649",
+        "audit-15650"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+      "deployment_unit": "unit-39125",
+      "deployment_unit_proxy_count": 1,
+      "name": "Repayer",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x97611394ffc80228d8422ddd19cdf759a3d099ab",
+      "impl_name": "Repayer",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+          "deployment_unit": "unit-39125",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15651"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+      "deployment_unit": "unit-39127",
+      "deployment_unit_proxy_count": 1,
+      "name": "Repayer",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x97611394ffc80228d8422ddd19cdf759a3d099ab",
+      "impl_name": "Repayer",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+          "deployment_unit": "unit-39127",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15651"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+      "deployment_unit": "unit-39130",
+      "deployment_unit_proxy_count": 1,
+      "name": "Repayer",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x97611394ffc80228d8422ddd19cdf759a3d099ab",
+      "impl_name": "Repayer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x36364acc7b9c67692ca215af09a41cbd10439511",
+          "deployment_unit": "unit-39130",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15651"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4ea9e682ba79bc403523c9e8d98a05eaf3810636",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4ea9e682ba79bc403523c9e8d98a05eaf3810636",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -226,8 +753,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3206",
-        "audit-3208"
+        "audit-15649",
+        "audit-15651"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -237,108 +764,6 @@
     }
   ],
   "audits": [
-    {
-      "audit_id": 3205,
-      "audit_key": "audit-3205",
-      "report_name": "Sprinter remote collateral security review Cantina - final.pdf",
-      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3206,
-      "audit_key": "audit-3206",
-      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
-      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
-      "auditor": "Sygma Labs",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "LiquidityHub",
-        "LiquidityMining",
-        "ManagedToken",
-        "Rebalancer.sol",
-        "SprinterLiquidityMining"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3207,
-      "audit_key": "audit-3207",
-      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
-      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
-      "auditor": "Sygma Labs",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "LiquidityPool",
-        "LiquidityPoolAave",
-        "Rebalancer"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3208,
-      "audit_key": "audit-3208",
-      "report_name": "cantina_sprinter_may2025.pdf",
-      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CCTPAdapter",
-        "CensoredTransferFromMulticall",
-        "LiquidityHub",
-        "LiquidityMining",
-        "ManagedToken",
-        "Repayer",
-        "SprinterLiquidityMining"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 3209,
       "audit_key": "audit-3209",
@@ -380,46 +805,184 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15648,
+      "audit_key": "audit-15648",
+      "report_name": "Sprinter remote collateral security review Cantina - final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChainlinkOracle",
+        "CreditHub",
+        "CreditHubBase",
+        "CreditHubController",
+        "ERC7201Helper",
+        "EndOfMonthTimestamps",
+        "Escrow",
+        "EscrowController",
+        "EscrowHelper",
+        "EscrowLocal",
+        "EscrowVault",
+        "ExclusiveOperator",
+        "Liquidator",
+        "Operator",
+        "Preprocessor",
+        "PreprocessorBase",
+        "PreprocessorLocal",
+        "Processor",
+        "StashCreditHub"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15649,
+      "audit_key": "audit-15649",
+      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
+      "auditor": "Sygma Labs",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LiquidityHub",
+        "LiquidityMining",
+        "ManagedToken",
+        "Rebalancer",
+        "SprinterLiquidityMining"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15650,
+      "audit_key": "audit-15650",
+      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
+      "auditor": "Sygma Labs",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LiquidityPool",
+        "LiquidityPoolAave",
+        "Rebalancer"
+      ],
+      "matched_contracts": 11,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15651,
+      "audit_key": "audit-15651",
+      "report_name": "cantina_sprinter_may2025.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CCTPAdapter",
+        "CensoredTransferFromMulticall",
+        "LiquidityHub",
+        "ManagedToken",
+        "Repayer",
+        "SprinterLiquidityMining"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
-      "auditor": "Sygma Labs",
-      "tier": 2,
-      "contracts_covered": 4,
-      "coverage_pct": 100,
-      "latest_audit": "2025-03"
-    },
-    {
       "auditor": "Spearbit",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 50,
+      "contracts_covered": 6,
+      "coverage_pct": 37.5,
       "latest_audit": "2026-03"
+    },
+    {
+      "auditor": "Sygma Labs",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 37.5,
+      "latest_audit": "2025-03"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x52d0ee7a870824fc683ea19c714c7bd110257788",
+      "name": "LiquidityPoolAaveLongTerm",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa8d2c9c9453e61e3ca961512403d388dee0a3672",
+      "name": "LiquidityPoolStablecoin",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 3,
+    "native": 6,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 10,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "extraction_exact": 25
     },
     "extraction_confidence_counts": {
-      "high": 2,
+      "high": 3,
       "medium": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 3205,
-        "report_name": "Sprinter remote collateral security review Cantina - final.pdf"
-      },
       {
         "audit_id": 3209,
         "report_name": "* **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work."

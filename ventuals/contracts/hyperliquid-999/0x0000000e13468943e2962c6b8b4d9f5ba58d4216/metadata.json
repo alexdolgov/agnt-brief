@@ -1,0 +1,18 @@
+{
+  "address": "0x0000000e13468943e2962c6b8b4d9f5ba58d4216",
+  "chain_id": 999,
+  "contract_name": "VHYPE",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "prague",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T21:10:00.990Z"
+}

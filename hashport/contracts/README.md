@@ -7,7 +7,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Router (3 deployments)](./base-8453/0x0f3414b61b902513e04e76ca4d1a7b003d09f54b/) | base | 3 deployments: optimism `0x6da4e9...7c0c3e`; moonbeam `0x617d29...6d2f6b`; base [`0x0f3414...09f54b`](./base-8453/0x0f3414b61b902513e04e76ca4d1a7b003d09f54b/) | ✅ Audited | Verified |
-| [RouterFacet](./base-8453/0xd9cde0457e04f0fc9a5a9fd314fd185d00ef42e8/) | base | [`0xd9cde0...ef42e8`](./base-8453/0xd9cde0457e04f0fc9a5a9fd314fd185d00ef42e8/) | ✅ Audited | Verified |
+| RouterFacet | base | `0xd9cde0...ef42e8` | ✅ Audited | Verified |
 
 ## token (4)
 

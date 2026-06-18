@@ -188,7 +188,7 @@
 | [bonzo-finance](./bonzo-finance/) | $21.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-17 |
 | [bookusd](./bookusd/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
-| [boros](./boros/) | $9.7M | 100.0% | ? | active | 5 | 2 | 2026-06-17 |
+| [boros](./boros/) | $9.7M | 28.6% | ? | active | 5 | 21 | 2026-06-18 |
 | [botto](./botto/) | $2.9M | 0.0% | ? | active | 3 | 4 | 2026-06-17 |
 | [bounce.tech](./bounce.tech/) | $474.0K | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
 | [bouncebit-pre-launch-farm](./bouncebit-pre-launch-farm/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -509,7 +509,7 @@
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 42.9% | ? | dead | 3 | 7 | 2026-06-18 |
 | [hashkey-global](./hashkey-global/) | $13.4M | 0.0% | ? | active | 0 | 2 | 2026-06-17 |
 | [hashking](./hashking/) | $335.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 20 | 2026-06-17 |
+| [hashport](./hashport/) | $152.6K | 75.0% | ? | sunsetting | 3 | 6 | 2026-06-18 |
 | [hastra](./hastra/) | $402.8M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hbarsuite](./hbarsuite/) | $3.8M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hectagon](./hectagon/) | $0.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1126,7 +1126,7 @@
 | [spookyswap](./spookyswap/) | $842.7 | 0.0% | $842.7 | declining | 1 | 90 | 2026-06-17 |
 | [sport.fun](./sport.fun/) | $3.5M | 0.0% | ? | active | 0 | 5 | 2026-06-17 |
 | [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [sprinter](./sprinter/) | $924.0K | 100.0% | ? | active | 6 | 4 | 2026-06-17 |
+| [sprinter](./sprinter/) | $924.0K | 68.8% | ? | unknown | 6 | 16 | 2026-06-18 |
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.4M | 60.0% | $353.3K | active | 5 | 96 | 2026-06-18 |
 | [ssap](./ssap/) | $1.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1318,7 +1318,7 @@
 | [velvet.capital](./velvet.capital/) | $95.2M | 62.5% | $95.2M | declining | 14 | 17 | 2026-06-18 |
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 44 | 2026-06-17 |
 | [venombridge](./venombridge/) | $860.4K | 0.0% | ? | declining | 1 | 2 | 2026-06-14 |
-| [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-17 |
+| [ventuals](./ventuals/) | $28.4M | 0.0% | ? | unknown | 2 | 0 | 2026-06-18 |
 | [verio](./verio/) | $4.4M | 0.0% | ? | unknown | 11 | 0 | 2026-06-17 |
 | [verocket](./verocket/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [verse](./verse/) | $468.3K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "boros",
-  "generated_at": "2026-06-17T07:01:01.899Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T21:13:54.479Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5cc8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "boros",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 16.915174637355328
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 2,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 21,
+    "total_addresses": 23,
+    "unique_implementations": 21,
+    "total_deployments": 23,
+    "audited_contracts": 6,
+    "unaudited_contracts": 15,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 28.6,
     "total_audits": 5,
-    "scoreable_audits": 3,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 9749792.92181,
     "tvl_usd": 9749792.92181,
     "tvl_source": "defillama",
@@ -44,7 +44,7 @@
     "chains": [
       "arbitrum"
     ],
-    "tier1_coverage_pct": 100,
+    "tier1_coverage_pct": 9.5,
     "tier1_auditors": [
       "ChainSecurity"
     ],
@@ -61,20 +61,20 @@
     "project_purpose": "Boros is Pendle's Arbitrum-based interest-rate and funding-rate derivatives platform for leveraged funding-rate or yield exposure, enabling users to speculate on rate shifts or hedge perpetuals funding-rate exposure through its market hub, router, and AMM components.",
     "relationship_narrative": "The MarketHubEntry serves as the main entry point for user interactions, while the Router handles trade execution and liquidity aggregation. Both contracts are upgradeable proxies, indicating a shared upgrade management pattern.",
     "product_family_count": 1,
-    "total_contracts_indexed": 2,
-    "live_contracts": 2,
+    "total_contracts_indexed": 30,
+    "live_contracts": 22,
     "inactive_contracts": 0,
-    "singleton_contracts": 0,
+    "singleton_contracts": 7,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 2,
-    "live_deployment_units": 2,
+    "unknown_contracts": 1,
+    "deployment_units": 14,
+    "live_deployment_units": 9,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -86,8 +86,362 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
+      "address": "0x353c6ba99500f9f5a7937af7bf26c8e40817518b",
+      "deployment_unit": "unit-39115",
+      "deployment_unit_proxy_count": 1,
+      "name": "AdminModule",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x42950719322274543b00b576c82bd6894c81735a",
+      "impl_name": "AdminModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x353c6ba99500f9f5a7937af7bf26c8e40817518b",
+          "deployment_unit": "unit-39115",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3205e972714b52512c837ae6f5fcfdeb07f0f23c",
+      "deployment_unit": "unit-39114",
+      "deployment_unit_proxy_count": 1,
+      "name": "AMMFactory",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc3cb4ae3e7e4dc570d1dc187721546212f399439",
+      "impl_name": "AMMFactory",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3205e972714b52512c837ae6f5fcfdeb07f0f23c",
+          "deployment_unit": "unit-39114",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8c8436f76618be610a2e9b630b7687f13714e2d3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AMMModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AMMModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8c8436f76618be610a2e9b630b7687f13714e2d3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2068"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9c2aba7dc0fdaa6101db31d57cac470931122bf8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AuthModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AuthModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9c2aba7dc0fdaa6101db31d57cac470931122bf8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2068"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xfe4bfbab3f0d7f703ad6fdba56c4ef3559c42688",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConditionalModule",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConditionalModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfe4bfbab3f0d7f703ad6fdba56c4ef3559c42688",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xdeb0fac888c33e3e7394c095fe3c4e3de760e12c",
+      "deployment_unit": "unit-39123",
+      "deployment_unit_proxy_count": 1,
+      "name": "DepositBoxFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2fde10f911b4bca9e7dd5302845a3c023cf04f24",
+      "impl_name": "DepositBoxFactory",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdeb0fac888c33e3e7394c095fe3c4e3de760e12c",
+          "deployment_unit": "unit-39123",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x17a22bdb5c28fff7f10e7be3c35cd82d6a882cd3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DepositModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DepositModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x17a22bdb5c28fff7f10e7be3c35cd82d6a882cd3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x40808080804111c374c8f1dc78b13fb57df93197",
+      "deployment_unit": "unit-39116",
+      "deployment_unit_proxy_count": 1,
+      "name": "Explorer",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf7039df90ceee375cde60586be448381cd0da611",
+      "impl_name": "Explorer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x40808080804111c374c8f1dc78b13fb57df93197",
+          "deployment_unit": "unit-39116",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3011dfd5736aeb5629d5db178a61b0094e2144b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FIndexOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FIndexOracle",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3011dfd5736aeb5629d5db178a61b0094e2144b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3080808080ee6a795c1a6ff388195aa5f11ecee0",
+      "deployment_unit": "unit-39113",
+      "deployment_unit_proxy_count": 1,
+      "name": "MarketFactory",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6bfc1a9c63e1b90071a9f54e3c7babe6faf788b0",
+      "impl_name": "MarketFactory",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3080808080ee6a795c1a6ff388195aa5f11ecee0",
+          "deployment_unit": "unit-39113",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
       "address": "0x1080808080f145b14228443212e62447c112adad",
-      "deployment_unit": "unit-19872",
+      "deployment_unit": "unit-39110",
       "deployment_unit_proxy_count": 1,
       "name": "MarketHubEntry",
       "role": "unknown",
@@ -103,7 +457,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x1080808080f145b14228443212e62447c112adad",
-          "deployment_unit": "unit-19872",
+          "deployment_unit": "unit-39110",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -124,8 +478,277 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
+      "address": "0x1d24ba5e778d715708d87b2c718e81f1f16e52c1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MarketOrderAndOtc",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MarketOrderAndOtc",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1d24ba5e778d715708d87b2c718e81f1f16e52c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xda1ccbc1a234080216938d003ec6946ac4a73a7d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MarketRiskManagement",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MarketRiskManagement",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xda1ccbc1a234080216938d003ec6946ac4a73a7d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x66bbfda304b462acc436a645ae8ece2087ba5b31",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MiscModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MiscModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x66bbfda304b462acc436a645ae8ece2087ba5b31",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2068"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd0808080803c59dbf8825290bca8979786c2d65b",
+      "deployment_unit": "unit-39119",
+      "deployment_unit_proxy_count": 3,
+      "name": "MultiTokenMerkleDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf4dbf57f61a578178210306a59bacc40dcfbd116",
+      "impl_name": "MultiTokenMerkleDistributor",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd0808080803c59dbf8825290bca8979786c2d65b",
+          "deployment_unit": "unit-39119",
+          "deployment_unit_proxy_count": 3,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd180808080402fe41711db560b8db5c41e21df71",
+          "deployment_unit": "unit-39119",
+          "deployment_unit_proxy_count": 3,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd2808080809a71248620a7ddc25b721d3dbe1058",
+          "deployment_unit": "unit-39119",
+          "deployment_unit_proxy_count": 3,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc364c86d3a4ff22f071dc0b2274c5fe680b5f9a8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OTCModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OTCModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc364c86d3a4ff22f071dc0b2274c5fe680b5f9a8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2080808080262c1706598c9dbdd3a0cd3601e5ea",
+      "deployment_unit": "unit-39112",
+      "deployment_unit_proxy_count": 1,
+      "name": "PendleAccessController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe6c43d22f65bfb4eef66e66a53d18c4fa306458e",
+      "impl_name": "PendleAccessController",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2080808080262c1706598c9dbdd3a0cd3601e5ea",
+          "deployment_unit": "unit-39112",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb57c34fbcb272510303675397055942b019ee45a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PositiveAMM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PositiveAMM",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb57c34fbcb272510303675397055942b019ee45a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
       "address": "0x8080808080dab95efed788a9214e400ba552def6",
-      "deployment_unit": "unit-19873",
+      "deployment_unit": "unit-39118",
       "deployment_unit_proxy_count": 1,
       "name": "Router",
       "role": "adapter",
@@ -141,7 +764,7 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x8080808080dab95efed788a9214e400ba552def6",
-          "deployment_unit": "unit-19873",
+          "deployment_unit": "unit-39118",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -152,6 +775,78 @@
       "audits_covering": [
         "audit-2065",
         "audit-2067"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd8d82d566f251e0280f3b5c91c58c8a7bb7a1780",
+      "deployment_unit": "unit-39121",
+      "deployment_unit_proxy_count": 1,
+      "name": "SwapExecutor",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb2633d396738d3fd815a6b3afe0d88f844fef35d",
+      "impl_name": "SwapExecutor",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd8d82d566f251e0280f3b5c91c58c8a7bb7a1780",
+          "deployment_unit": "unit-39121",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x21bfd0f5502d8843d099f89d7424aceefaf6ad3f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TradeModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TradeModule",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x21bfd0f5502d8843d099f89d7424aceefaf6ad3f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2068"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -362,44 +1057,123 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AMMModule",
+        "AuthModule",
+        "MarketHub",
+        "MiscModule",
+        "PositiveAMMMath",
+        "TradeModule",
+        "TradeStorage"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 28.6,
+      "latest_audit": "2025-07"
+    },
+    {
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 100,
+      "coverage_pct": 9.5,
       "latest_audit": "2025-08"
-    },
-    {
-      "auditor": "WatchPug",
-      "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 100,
-      "latest_audit": "2025-07"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xdeb0fac888c33e3e7394c095fe3c4e3de760e12c",
+      "name": "DepositBoxFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x17a22bdb5c28fff7f10e7be3c35cd82d6a882cd3",
+      "name": "DepositModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3011dfd5736aeb5629d5db178a61b0094e2144b9",
+      "name": "FIndexOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1d24ba5e778d715708d87b2c718e81f1f16e52c1",
+      "name": "MarketOrderAndOtc",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xda1ccbc1a234080216938d003ec6946ac4a73a7d",
+      "name": "MarketRiskManagement",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc364c86d3a4ff22f071dc0b2274c5fe680b5f9a8",
+      "name": "OTCModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb57c34fbcb272510303675397055942b019ee45a",
+      "name": "PositiveAMM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 2,
+    "native": 13,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 7,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 4
+      "extraction_exact": 8
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 4
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -407,10 +1181,6 @@
       {
         "audit_id": 2066,
         "report_name": "Pendle-Spearbit-Security-Review-August-2025.pdf"
-      },
-      {
-        "audit_id": 2068,
-        "report_name": "Pendle___Boros___Router_&_AMM_Audit_Report_by_WatchPug_rev2.pdf"
       }
     ],
     "inherited_remapped_matches": []

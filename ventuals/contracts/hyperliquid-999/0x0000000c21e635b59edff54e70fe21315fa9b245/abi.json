@@ -1,0 +1,1669 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccountBalanceLessThanReservedHypeForWithdraws",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "readyAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "BatchNotReady",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BatchProcessingPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMinimumDepositAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMinimumWithdrawAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "batch",
+        "type": "uint256"
+      }
+    ],
+    "name": "CannotSlashBatchOutsideSlashWindow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HasMoreWithdrawCapacity",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "batch",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidBatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MinimumStakeBalanceTooLarge",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NothingToFinalize",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NothingToReset",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "contractAddress",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawCancelled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawClaimed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawNotProcessed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawProcessed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawUnclaimable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "slashedExchangeRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "ApplySlash",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Withdraw",
+        "name": "withdraw",
+        "type": "tuple"
+      }
+    ],
+    "name": "CancelWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Withdraw",
+        "name": "withdraw",
+        "type": "tuple"
+      }
+    ],
+    "name": "ClaimWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "depositor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "deposited",
+        "type": "uint256"
+      }
+    ],
+    "name": "Deposit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "purpose",
+        "type": "string"
+      }
+    ],
+    "name": "EmergencyStakingDeposit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "purpose",
+        "type": "string"
+      }
+    ],
+    "name": "EmergencyStakingWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "batchId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "vhypeProcessed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slashedExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "slashed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "finalizedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Batch",
+        "name": "batch",
+        "type": "tuple"
+      }
+    ],
+    "name": "FinalizeBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "vhypeProcessed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slashedExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "slashed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "finalizedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Batch",
+        "name": "batch",
+        "type": "tuple"
+      }
+    ],
+    "name": "FinalizeResetBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "batchId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "vhypeProcessed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slashedExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "slashed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "finalizedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Batch",
+        "name": "batch",
+        "type": "tuple"
+      }
+    ],
+    "name": "ProcessBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Withdraw",
+        "name": "withdraw",
+        "type": "tuple"
+      }
+    ],
+    "name": "ProcessWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Withdraw",
+        "name": "withdraw",
+        "type": "tuple"
+      }
+    ],
+    "name": "QueueWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "vhypeProcessed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slashedExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "slashed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "finalizedAt",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStakingVaultManager.Batch",
+        "name": "batch",
+        "type": "tuple"
+      }
+    ],
+    "name": "ResetBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "hypeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "HYPETovHYPE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "slashedExchangeRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "applySlash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "withdrawIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      }
+    ],
+    "name": "batchClaimWithdraws",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimWindowBuffer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      }
+    ],
+    "name": "claimWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentBatchIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "purpose",
+        "type": "string"
+      }
+    ],
+    "name": "emergencyStakingDeposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "purpose",
+        "type": "string"
+      }
+    ],
+    "name": "emergencyStakingWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "exchangeRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizeBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizeResetBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getAccountWithdraws",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IStakingVaultManager.Withdraw[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBatch",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "vhypeProcessed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slashedExchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "slashed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "finalizedAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IStakingVaultManager.Batch",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBatchesLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWithdraw",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vhypeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "queuedAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "batchIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cancelledAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IStakingVaultManager.Withdraw",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWithdrawAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWithdrawClaimableAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWithdrawQueueLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_roleRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_vHYPE",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakingVault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_validator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minimumStakeBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minimumDepositAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minimumWithdrawAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maximumWithdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isBatchProcessingPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lastFinalizedBatchTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lastProcessedWithdrawId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maximumWithdrawAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minimumDepositAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minimumStakeBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minimumWithdrawAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextWithdrawId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "numWithdrawals",
+        "type": "uint256"
+      }
+    ],
+    "name": "processBatch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "vhypeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "queueWithdraw",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "numWithdrawals",
+        "type": "uint256"
+      }
+    ],
+    "name": "resetBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "roleRegistry",
+    "outputs": [
+      {
+        "internalType": "contract RoleRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_isBatchProcessingPaused",
+        "type": "bool"
+      }
+    ],
+    "name": "setBatchProcessingPaused",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_claimWindowBuffer",
+        "type": "uint256"
+      }
+    ],
+    "name": "setClaimWindowBuffer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maximumWithdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaximumWithdrawAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minimumDepositAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinimumDepositAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minimumStakeBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinimumStakeBalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minimumWithdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinimumWithdrawAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "spotAccountBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingAccountBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingVault",
+    "outputs": [
+      {
+        "internalType": "contract IStakingVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newValidator",
+        "type": "address"
+      }
+    ],
+    "name": "switchValidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalHypeClaimed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalHypeProcessed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vHYPE",
+    "outputs": [
+      {
+        "internalType": "contract VHYPE",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "vHYPEAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "vHYPEtoHYPE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "validator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "windDown",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -478,7 +478,7 @@ Each project directory contains:
 | [bonzo-finance](./bonzo-finance/brief.md) | $21.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [bookusd](./bookusd/brief.md) | $39.22K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [boringdao](./boringdao/brief.md) | $275.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
-| [boros](./boros/brief.md) | $9.75M | arbitrum | 2 | 2/2 (100%) | 100.0% | 100.0% (ChainSecurity) | 3 | fresh | ✅ active | - |
+| [boros](./boros/brief.md) | $9.75M | arbitrum | 21 | 21/21 (100%) | 28.6% | 9.5% (ChainSecurity) | 4 | fresh | ✅ active | - |
 | [botto](./botto/brief.md) | $2.92M | base, ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [bounce.tech](./bounce.tech/brief.md) | $473.97K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [bouncebit-pre-launch-farm](./bouncebit-pre-launch-farm/brief.md) | $0.12 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -736,7 +736,7 @@ Each project directory contains:
 | [hashdao-finance](./hashdao-finance/brief.md) | $1.30M | arbitrum, optimism | 7 | 7/7 (100%) | 42.9% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [hashkey-global](./hashkey-global/brief.md) | $13.43M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hashking](./hashking/brief.md) | $335.22K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [hashport](./hashport/brief.md) | $998.03K | 9 | 20 | 13/20 (65%) | 100.0% | 0.0% (-) | 3 | stale | 💀 dead | - |
+| [hashport](./hashport/brief.md) | $998.03K | 10 | 6 | 4/6 (67%) | 75.0% | 0.0% (-) | 3 | stale | ❓ unknown | - |
 | [hastra](./hastra/brief.md) | $402.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hbarsuite](./hbarsuite/brief.md) | $3.84M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hectagon](./hectagon/brief.md) | $0.49 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1212,7 +1212,7 @@ Each project directory contains:
 | [splashing-stake](./splashing-stake/brief.md) | $4.31M | sei | 5 | 4/5 (80%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [sport.fun](./sport.fun/brief.md) | $3.54M | base | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [springx](./springx/brief.md) | $23.49K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [sprinter](./sprinter/brief.md) | $923.97K | base | 4 | 4/4 (100%) | 100.0% | 50.0% (Spearbit) | 3 | fresh | ✅ active | - |
+| [sprinter](./sprinter/brief.md) | $923.97K | 4 | 16 | 16/16 (100%) | 68.8% | 37.5% (Spearbit) | 4 | fresh | ❓ unknown | - |
 | [ssap](./ssap/brief.md) | $1.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [stablecoin-for-impact](./stablecoin-for-impact/brief.md) | $20.17K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [stablecomp](./stablecomp/brief.md) | $1.11K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1352,7 +1352,7 @@ Each project directory contains:
 | [velora](./velora/brief.md) | $248.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 44 | 5/44 (11%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [venombridge](./venombridge/brief.md) | $860.40K | 4 | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
-| [ventuals](./ventuals/brief.md) | $28.43M | hyperliquid | 4 | 4/4 (100%) | 100.0% | 0.0% (-) | 2 | fresh | ✅ active | - |
+| [ventuals](./ventuals/brief.md) | $28.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verio](./verio/brief.md) | $4.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verocket](./verocket/brief.md) | $19.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [verse](./verse/brief.md) | $468.32K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T20:51:10.287Z_
+_Generated: 2026-06-18T21:16:30.812Z_
 _Projects: 1409_

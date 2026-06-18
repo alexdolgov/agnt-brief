@@ -1,0 +1,17 @@
+{
+  "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+  "chain_id": 10,
+  "contract_name": "LiquidityPoolAave",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T21:14:38.927Z"
+}

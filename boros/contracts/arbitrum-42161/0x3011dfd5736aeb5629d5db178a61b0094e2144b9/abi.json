@@ -1,0 +1,276 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "maturity",
+            "type": "uint32"
+          },
+          {
+            "internalType": "address",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "settleFeeRate",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint32",
+            "name": "updatePeriod",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "maxUpdateDelay",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct FIndexOracle.FIndexOracleParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "permissionController_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "keeper_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FIndexInvalidTime",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FIndexNotDueForUpdate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FIndexUpdatedAtMaturity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newSettleFeeRate",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "newUpdatePeriod",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "newMaxUpdateDelay",
+        "type": "uint32"
+      }
+    ],
+    "name": "ConfigUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newKeeper",
+        "type": "address"
+      }
+    ],
+    "name": "KeeperUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getConfig",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "settleFeeRate",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "updatePeriod",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "maxUpdateDelay",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLatestFIndex",
+    "outputs": [
+      {
+        "internalType": "FIndex",
+        "name": "",
+        "type": "bytes26"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isDueForUpdateNow",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "keeper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "latestAnnualizedRate",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "rate",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "market",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maturity",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextFIndexUpdateTime",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "timestamp",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newSettleFeeRate",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "newUpdatePeriod",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "newMaxUpdateDelay",
+        "type": "uint32"
+      }
+    ],
+    "name": "setConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newKeeper",
+        "type": "address"
+      }
+    ],
+    "name": "setKeeper",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int112",
+        "name": "floatingIndexDelta",
+        "type": "int112"
+      },
+      {
+        "internalType": "uint32",
+        "name": "desiredTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "updateFloatingIndex",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

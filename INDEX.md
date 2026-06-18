@@ -657,7 +657,7 @@
 | [legacy-canary-protocol](./legacy-canary-protocol/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lendflare](./lendflare/) | $987.6K | 33.3% | ? | declining | 1 | 3 | 2026-06-17 |
 | [lendle](./lendle/) | $60.7K | 33.3% | $5.6K | declining | 10 | 11 | 2026-06-18 |
-| [lets-get-hai](./lets-get-hai/) | $13.5M | 66.7% | $12.6M | active | 5 | 25 | 2026-06-17 |
+| [lets-get-hai](./lets-get-hai/) | $13.5M | 69.6% | $12.6M | active | 5 | 24 | 2026-06-18 |
 | [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-17 |
 | [levvy-finance](./levvy-finance/) | $46.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [libero-financial](./libero-financial/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -984,7 +984,7 @@
 | [renec-lend](./renec-lend/) | $5.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 2 | 2026-06-17 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-17 |
-| [reserve-protocol](./reserve-protocol/) | $7.8M | 58.9% | $49.1K | declining | 27 | 234 | 2026-06-17 |
+| [reserve-protocol](./reserve-protocol/) | $7.8M | 60.0% | $49.1K | declining | 27 | 217 | 2026-06-18 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 106 | 2026-06-17 |
 | [resolv](./resolv/) | $50.5M | 3.1% | $50.5M | rugged | 1 | 80 | 2026-06-12 |
 | [resupply](./resupply/) | $3.2M | 2.6% | $3.2M | active | 8 | 39 | 2026-06-17 |
@@ -1128,7 +1128,7 @@
 | [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sprinter](./sprinter/) | $924.0K | 100.0% | ? | active | 6 | 4 | 2026-06-17 |
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
-| [squadswap](./squadswap/) | $13.0M | 64.3% | ? | active | 5 | 84 | 2026-06-17 |
+| [squadswap](./squadswap/) | $13.4M | 60.0% | $353.3K | active | 5 | 96 | 2026-06-18 |
 | [ssap](./ssap/) | $1.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stable-jack](./stable-jack/) | $76.8M | 0.0% | $76.8M | active | 1 | 28 | 2026-06-17 |
 | [stablecoin-for-impact](./stablecoin-for-impact/) | $20.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1245,7 +1245,7 @@
 | [tinyman](./tinyman/) | $5.9M | 0.0% | ? | unknown | 18 | 0 | 2026-06-17 |
 | [tizi](./tizi/) | $122.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tokenlabs](./tokenlabs/) | $249.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
-| [tokenlon](./tokenlon/) | $32.0M | 50.0% | ? | declining | 6 | 10 | 2026-06-17 |
+| [tokenlon](./tokenlon/) | $32.0M | 41.7% | ? | declining | 9 | 12 | 2026-06-18 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 2 | 2026-06-17 |
 | [tokenworks](./tokenworks/) | $163.6M | 0.0% | $163.6M | active | 0 | 70 | 2026-06-17 |
 | [tonco](./tonco/) | $8.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1336,7 +1336,7 @@
 | [wan-bridge](./wan-bridge/) | $4.4K | 0.0% | $4.4K | active | 3 | 49 | 2026-06-17 |
 | [wanswap-dex](./wanswap-dex/) | $936.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
 | [warp-protocol](./warp-protocol/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [wasabi](./wasabi/) | $6.1M | 43.1% | $5.5M | declining | 8 | 62 | 2026-06-17 |
+| [wasabi](./wasabi/) | $6.1M | 40.8% | $5.5M | declining | 8 | 60 | 2026-06-18 |
 | [waterfall-defi](./waterfall-defi/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [waterfall-finance](./waterfall-finance/) | $35.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [waterneuron](./waterneuron/) | $5.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

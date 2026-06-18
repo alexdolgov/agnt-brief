@@ -102,4 +102,4 @@
 | UnnamedContract | base | `0x88c38a...6f4358` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xe98f47...5a211e` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xf60304...d0d1da` | ❓ Unverified | Unverified |
-| [WasabiOption](./ethereum-1/0xfc68f2130e094c95b6c4f5494158cbeb172e18a0/) | ethereum | [`0xfc68f2...2e18a0`](./ethereum-1/0xfc68f2130e094c95b6c4f5494158cbeb172e18a0/) | ✅ Audited | Verified |
+| WasabiOption | ethereum | `0xfc68f2...2e18a0` | ✅ Audited | Verified |

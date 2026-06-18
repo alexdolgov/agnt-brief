@@ -1,0 +1,18 @@
+{
+  "address": "0x0485c25a5e8d7d0c5676d0e6d3bfc4aa597ba0b0",
+  "chain_id": 1,
+  "contract_name": "PermanentStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T18:21:17.340Z"
+}

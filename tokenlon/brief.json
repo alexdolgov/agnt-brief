@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tokenlon",
-  "generated_at": "2026-06-17T07:00:42.610Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T18:22:13.023Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "tokenlon",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 14,
-    "unique_implementations": 10,
-    "total_deployments": 14,
+    "total_contracts": 12,
+    "total_addresses": 16,
+    "unique_implementations": 12,
+    "total_deployments": 16,
     "audited_contracts": 5,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 50,
-    "total_audits": 6,
-    "scoreable_audits": 5,
+    "coverage_pct": 41.7,
+    "total_audits": 9,
+    "scoreable_audits": 6,
     "dl_tvl_usd": 32018224,
     "tvl_usd": 32018224,
     "tvl_source": "defillama",
@@ -52,16 +52,17 @@
     "asd_usd": null,
     "website_url": "https://tokenlon.im",
     "chains": [
+      "arbitrum",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023-07",
+    "latest_audit_date": "2023-08",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 6,
+      "stale": 9,
       "unknown": 0
     }
   },
@@ -69,22 +70,22 @@
     "project_purpose": "Tokenlon is a decentralized exchange and payment settlement protocol for trustless token-to-token swaps. It provides quote-based routing and execution, including RFQ/market-maker liquidity and integrations with external AMM or swap sources to seek best-price trades. It should not be described as a Tokenlon-native AMM family based on upstream UniswapV2Pair contracts.",
     "relationship_narrative": "The Tokenlon AMM family relies on the LON token as the core asset, with LONStaking and xLON managing staking and governance power. Multiple StakingRewards contracts distribute incentives to liquidity providers, while UniswapV2Pair contracts facilitate token swaps. Governance is managed via a GnosisSafeProxy, and a TransparentUpgradeableProxy provides permanent storage for protocol parameters.",
     "product_family_count": 1,
-    "total_contracts_indexed": 34,
-    "live_contracts": 14,
-    "inactive_contracts": 18,
-    "singleton_contracts": 2,
+    "total_contracts_indexed": 52,
+    "live_contracts": 16,
+    "inactive_contracts": 30,
+    "singleton_contracts": 6,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 4,
-    "live_deployment_units": 2,
+    "deployment_units": 7,
+    "live_deployment_units": 3,
     "dependencies_extracted": 47,
-    "unverified_dependencies": 10,
+    "unverified_dependencies": 3,
     "detected_codebases": [
       "uniswap-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 12,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -126,7 +127,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -161,18 +162,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3557bd3d422300198719710cc3f00194e1c20a46",
-      "deployment_unit": "unit-26074",
+      "deployment_unit": "unit-38641",
       "deployment_unit_proxy_count": 1,
       "name": "GnosisSafe",
       "role": "governance",
-      "origin_kind": "upstream",
-      "origin_provider": "Gnosis Safe",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
       "product_line": "Tokenlon AMM",
       "tvl_usd": null,
       "is_proxy": true,
@@ -183,7 +184,42 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3557bd3d422300198719710cc3f00194e1c20a46",
-          "deployment_unit": "unit-26074",
+          "deployment_unit": "unit-38641",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbf03bcb67333610b7f90df58c7e435691b0af355",
+      "deployment_unit": "unit-38646",
+      "deployment_unit_proxy_count": 1,
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbf03bcb67333610b7f90df58c7e435691b0af355",
+          "deployment_unit": "unit-38646",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -239,6 +275,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0000000006a0403952389b70d8ee4e45479023db",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MerkleRedeem",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MerkleRedeem",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000006a0403952389b70d8ee4e45479023db",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x292a6921efc261070a0d5c96911c102cbf1045e4",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -269,7 +340,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -308,7 +379,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -345,7 +416,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -416,7 +487,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -468,7 +539,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x03f34be1bf910116595db1b11e9d1b2ca5d59659",
-      "deployment_unit": "unit-26073",
+      "deployment_unit": "unit-38640",
       "deployment_unit_proxy_count": 1,
       "name": "UserProxy",
       "role": "unknown",
@@ -484,7 +555,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x03f34be1bf910116595db1b11e9d1b2ca5d59659",
-          "deployment_unit": "unit-26073",
+          "deployment_unit": "unit-38640",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -496,13 +567,14 @@
         "audit-5893",
         "audit-5894",
         "audit-5896",
-        "audit-5897"
+        "audit-5897",
+        "audit-15516"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -521,6 +593,7 @@
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
       "extracted_names": [
+        "ILimitOrder",
         "LimitOrder",
         "LimitOrderLibEIP712",
         "TransparentUpgradeableProxyImpl",
@@ -530,7 +603,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5893,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-Tokenlon-LimitOrder-v1.0.pdf"
+        },
+        {
+          "audit_id": 15511,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/PeckShield-Audit-Report-Tokenlon-LimitOrder-v1.0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 5894,
@@ -554,7 +637,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5894,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-TokenlonV5.3-v1.0.pdf"
+        },
+        {
+          "audit_id": 15512,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/PeckShield-Audit-Report-TokenlonV5.3-v1.0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 5895,
@@ -579,7 +672,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5895,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf"
+        },
+        {
+          "audit_id": 15513,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 5896,
@@ -612,7 +715,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5896,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-TokenlonV5-v1.0.pdf"
+        },
+        {
+          "audit_id": 15514,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/PeckShield-Audit-TokenlonV5-v1.0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 5897,
@@ -647,7 +760,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5897,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-TokenlonV5-v1.0rc.pdf"
+        },
+        {
+          "audit_id": 15515,
+          "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/PeckShield-Audit-TokenlonV5-v1.0rc.pdf"
+        }
+      ]
     },
     {
       "audit_id": 5899,
@@ -669,6 +792,84 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15516,
+      "audit_key": "audit-15516",
+      "report_name": "Tokenlon-v5.3.1-Smart-Contract-Audit-Report-Decurity.pdf",
+      "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/Tokenlon-v5.3.1-Smart-Contract-Audit-Report-Decurity.pdf",
+      "auditor": "Decurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AllowanceTarget",
+        "LibBytes",
+        "LibUniswapV3",
+        "LimitOrder",
+        "Multicall",
+        "PermanentStorage",
+        "Proxy",
+        "ProxyPermanentStorage",
+        "Spender",
+        "Tokenlon",
+        "TransparentUpgradeableProxy",
+        "UniswapV3PathLib",
+        "UpgradeableProxy",
+        "UserProxy"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15517,
+      "audit_key": "audit-15517",
+      "report_name": "Tokenlon-v5.3.2-Smart-Contract-Audit-Report-Decurity.pdf",
+      "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/Tokenlon-v5.3.2-Smart-Contract-Audit-Report-Decurity.pdf",
+      "auditor": "Decurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15518,
+      "audit_key": "audit-15518",
+      "report_name": "Tokenlon-v5.3.3-Smart-Contract-Audit-Report-Decurity.pdf",
+      "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/v5/audits/Tokenlon-v5.3.3-Smart-Contract-Audit-Report-Decurity.pdf",
+      "auditor": "Decurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -676,8 +877,15 @@
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 50,
+      "coverage_pct": 41.7,
       "latest_audit": "2022-07"
+    },
+    {
+      "auditor": "Decurity",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 8.3,
+      "latest_audit": "2023-08"
     }
   ],
   "coverage_gaps": [
@@ -704,6 +912,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0000000006a0403952389b70d8ee4e45479023db",
+      "name": "MerkleRedeem",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x292a6921efc261070a0d5c96911c102cbf1045e4",
       "name": "MiningTreasury",
       "role": "operational_periphery",
@@ -713,17 +931,17 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
-    "upstream": 2,
-    "standard_library": 0,
+    "native": 9,
+    "upstream": 1,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 50
+      "extraction_exact": 145
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 6
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -731,6 +949,14 @@
       {
         "audit_id": 5899,
         "report_name": "Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf"
+      },
+      {
+        "audit_id": 15517,
+        "report_name": "Tokenlon-v5.3.2-Smart-Contract-Audit-Report-Decurity.pdf"
+      },
+      {
+        "audit_id": 15518,
+        "report_name": "Tokenlon-v5.3.3-Smart-Contract-Audit-Report-Decurity.pdf"
       }
     ],
     "inherited_remapped_matches": []

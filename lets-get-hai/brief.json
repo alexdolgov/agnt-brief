@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lets-get-hai",
-  "generated_at": "2026-06-17T07:00:36.053Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T18:20:07.802Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lets-get-hai",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 79.21688100765165
   },
   "summary": {
-    "total_contracts": 25,
-    "total_addresses": 37,
-    "unique_implementations": 25,
-    "total_deployments": 37,
+    "total_contracts": 24,
+    "total_addresses": 33,
+    "unique_implementations": 24,
+    "total_deployments": 33,
     "audited_contracts": 16,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 16,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 66.7,
+    "coverage_pct": 69.6,
     "total_audits": 5,
     "scoreable_audits": 4,
     "dl_tvl_usd": 985111.58517,
@@ -61,23 +61,22 @@
     "project_purpose": "Lets Get HAI is a collateralized debt position protocol on Optimism centered on the HAI/SystemCoin stablecoin. Its in-scope protocol surface is the CDP system, including SAFEEngine, CoinJoin and collateral join components, OracleRelayer, TaxCollector, AccountingEngine, LiquidationEngine, auction and settlement-related contracts, and the system coin. External assets, third-party liquidity pools, oracle feeds, bridges, and integrations such as WETH, OP, Uniswap or Balancer pools, Pyth feeds, and other upstream infrastructure should be treated as dependencies rather than native product families or project-owned TVL.",
     "relationship_narrative": "The Lets Get HAI family relies on the CONTRACTS family for governance and token distribution, while the EXTERNAL CONTRACTS family provides liquidity pools for the system coin. The ProtocolToken and SystemCoin are central assets that flow between these families, with the CollateralJoinFactory bridging collateral into the CDP system.",
     "product_family_count": 3,
-    "total_contracts_indexed": 68,
-    "live_contracts": 37,
-    "inactive_contracts": 30,
+    "total_contracts_indexed": 63,
+    "live_contracts": 33,
+    "inactive_contracts": 29,
     "singleton_contracts": 1,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 1,
     "live_deployment_units": 0,
-    "dependencies_extracted": 56,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 25,
+    "unverified_dependencies": 1,
     "detected_codebases": [
-      "uniswap-v2",
-      "uniswap-v3"
+      "uniswap-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 25,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -94,8 +93,8 @@
       "deployment_unit_proxy_count": null,
       "name": "ProxyERC20",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "EXTERNAL CONTRACTS",
       "tvl_usd": 12598978.982897421,
       "is_proxy": false,
@@ -167,7 +166,7 @@
       "name": "Pool",
       "role": "core_logic",
       "origin_kind": "upstream",
-      "origin_provider": "Balancer",
+      "origin_provider": "balancer",
       "product_line": "EXTERNAL CONTRACTS",
       "tvl_usd": 4303.0062432916175,
       "is_proxy": false,
@@ -212,8 +211,8 @@
       "deployment_unit_proxy_count": null,
       "name": "GovernanceToken",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "CONTRACTS",
       "tvl_usd": 293.04313387654537,
       "is_proxy": false,
@@ -246,7 +245,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AccountingEngine",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -321,7 +320,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "CoinJoin",
-      "role": "operational_periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -432,7 +431,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "LiquidationEngine",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -655,74 +654,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x629b03d018efd7871e5a72c929d88e29d03c0958",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "PythAggregatorV3",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pyth-network",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PythAggregatorV3",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x629b03d018efd7871e5a72c929d88e29d03c0958",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xcabaac238ab70888bcc13ff93fe31d8614a25224",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xdaa95c72330a7ef1390874677323b2a13e0d94d7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xefa456c58b306674ca0eafb642735df4e79ecb75",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0xfed2eb6325432f0bf7110dce2ccc5ff811ac3d4d",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -764,7 +695,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "SAFEEngine",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -920,7 +851,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "SystemCoin",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "EXTERNAL CONTRACTS",
@@ -958,7 +889,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "TaxCollector",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1032,7 +963,7 @@
       "name": "WETH9",
       "role": "token",
       "origin_kind": "upstream",
-      "origin_provider": "optimism",
+      "origin_provider": "weth",
       "product_line": "CONTRACTS",
       "tvl_usd": null,
       "is_proxy": false,
@@ -1093,7 +1024,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 10,
@@ -1130,7 +1061,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -1415,42 +1346,32 @@
       "auditor": "Solidified",
       "tier": 2,
       "contracts_covered": 11,
-      "coverage_pct": 45.8,
+      "coverage_pct": 47.8,
       "latest_audit": "2023-11"
     },
     {
       "auditor": "dMakers",
       "tier": 2,
       "contracts_covered": 7,
-      "coverage_pct": 29.2,
+      "coverage_pct": 30.4,
       "latest_audit": null
     },
     {
       "auditor": "Ackee Blockchain",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 16.7,
+      "coverage_pct": 17.4,
       "latest_audit": "2025-04"
     },
     {
       "auditor": "Electisec",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.2,
+      "coverage_pct": 4.3,
       "latest_audit": "2025-08"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000042",
-      "name": "GovernanceToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 293.04313387654537,
-      "risk_note": "Verified native implementation with $293.04 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 10,
       "chain_name": "optimism",
@@ -1463,10 +1384,10 @@
     }
   ],
   "origin_summary": {
-    "native": 19,
+    "native": 18,
     "upstream": 3,
-    "standard_library": 1,
-    "needs_review": 2
+    "standard_library": 2,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

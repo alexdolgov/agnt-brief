@@ -1,0 +1,18 @@
+{
+  "address": "0x0000000006a0403952389b70d8ee4e45479023db",
+  "chain_id": 1,
+  "contract_name": "MerkleRedeem",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T18:21:17.204Z"
+}

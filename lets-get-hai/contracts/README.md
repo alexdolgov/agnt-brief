@@ -54,5 +54,5 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AccountingJob](./optimism-10/0xc256c3aa404ab74ce050bcf8a05256b6a1729ef0/) | optimism | [`0xc256c3...729ef0`](./optimism-10/0xc256c3aa404ab74ce050bcf8a05256b6a1729ef0/) | ✅ Audited | Verified |
-| [PythAggregatorV3 (4 deployments)](./optimism-10/0x629b03d018efd7871e5a72c929d88e29d03c0958/) | optimism | 4 deployments: optimism [`0x629b03...3c0958`](./optimism-10/0x629b03d018efd7871e5a72c929d88e29d03c0958/); optimism `0xcabaac...a25224`; optimism `0xdaa95c...0d94d7`; optimism `0xefa456...9ecb75` | ⚠️ Unaudited | Verified |
+| PythAggregatorV3 (4 deployments) | optimism | 4 deployments: optimism `0x629b03...3c0958`; optimism `0xcabaac...a25224`; optimism `0xdaa95c...0d94d7`; optimism `0xefa456...9ecb75` | ⚠️ Unaudited | Verified |
 | UnnamedContract | optimism | `0x6c797b...a0c200` | ❓ Unverified | Unverified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "index-coop",
-  "generated_at": "2026-06-17T07:00:38.429Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T01:49:47.729Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "index-coop",
@@ -32,27 +32,28 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 39,
-    "total_addresses": 127,
-    "unique_implementations": 39,
-    "total_deployments": 127,
+    "total_contracts": 41,
+    "total_addresses": 131,
+    "unique_implementations": 41,
+    "total_deployments": 131,
     "audited_contracts": 3,
-    "unaudited_contracts": 19,
+    "unaudited_contracts": 21,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 19,
+    "contracts_verified_unaudited": 21,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 17,
-    "coverage_pct": 13.6,
-    "total_audits": 5,
+    "coverage_pct": 12.5,
+    "total_audits": 7,
     "scoreable_audits": 2,
     "dl_tvl_usd": 9028967.63713,
-    "tvl_usd": 19435053.145872466,
+    "tvl_usd": 19583143.607768767,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
+      "base": 148090.46,
       "ethereum": 19098462.31,
       "polygon": 336590.84
     },
-    "asd_usd": 19435053.145872466,
+    "asd_usd": 19583143.607768767,
     "website_url": "https://www.indexcoop.com/",
     "chains": [
       "arbitrum",
@@ -68,29 +69,29 @@
       "fresh": 0,
       "aging": 2,
       "stale": 3,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
     "project_purpose": "Index Coop is an active decentralized asset management protocol focused on automated DeFi structured products, including leverage and yield strategies such as Smart Loops, alongside tokenized products built on SetToken infrastructure. Legacy index products remain part of the historical product set but should be distinguished from the current product focus on automated leverage and yield offerings.",
     "relationship_narrative": "The Bankless GMI and Web3 DATA families are standalone SetTokens that likely rely on the shared infrastructure of the Index Coop family, such as the Controller, IntegrationRegistry, and issuance modules, for their management and lifecycle operations. The Index Coop family itself contains a diverse set of SetTokens and supporting contracts that provide governance, leverage strategies, and exchange issuance capabilities, forming the backbone for all product families.",
     "product_family_count": 3,
-    "total_contracts_indexed": 600,
-    "live_contracts": 127,
-    "inactive_contracts": 471,
+    "total_contracts_indexed": 603,
+    "live_contracts": 131,
+    "inactive_contracts": 470,
     "singleton_contracts": 2,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 2,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 468,
-    "unverified_dependencies": 36,
+    "deployment_units": 4,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 154,
+    "unverified_dependencies": 7,
     "detected_codebases": [
       "aave-v2"
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 39,
+    "unique_implementations": 41,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -110,7 +111,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Index Coop",
-      "tvl_usd": 19435053.145872466,
+      "tvl_usd": 19583143.607768767,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SetToken",
@@ -479,6 +480,17 @@
           "is_audited": false
         },
         {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc8df827157adaf693fcb0c6f305610c28de739fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 148090.461896301,
+          "is_audited": false
+        },
+        {
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x26d7d3728c6bb762a5043a1d0cef660988bca43c",
@@ -581,6 +593,41 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xfc01f273126b3d515e6ce6cab9e53d5c6990d6cb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x251bd1d42df1f153d86a5ba2305faade4d5f51dc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AaveLeverageModule",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AaveLeverageModule",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x251bd1d42df1f153d86a5ba2305faade4d5f51dc",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -1086,7 +1133,7 @@
       "deployment_unit_proxy_count": null,
       "name": "FeeSplitExtension",
       "role": "adapter",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1305,6 +1352,52 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x19fa8783f2b57f3ec6c9542926a06698e30ef7b4",
+      "deployment_unit": "unit-34007",
+      "deployment_unit_proxy_count": 2,
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x19fa8783f2b57f3ec6c9542926a06698e30ef7b4",
+          "deployment_unit": "unit-34007",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x40fb5267fd724a040b46ddce59f25e1229e61d32",
+          "deployment_unit": "unit-34007",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x9da195dbd9446c649b6cb6196d6cc460f277d907",
@@ -1465,7 +1558,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SignedSnapshotStakingPool",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1548,7 +1641,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SupplyCapIssuanceHook",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1886,7 +1979,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1921,7 +2014,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2407,7 +2500,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf63b34710400cad3e044cffdcab00a0f32e33ecf",
-      "deployment_unit": "unit-24220",
+      "deployment_unit": "unit-34006",
       "deployment_unit_proxy_count": 1,
       "name": "VariableDebtToken",
       "role": "token",
@@ -2423,7 +2516,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf63b34710400cad3e044cffdcab00a0f32e33ecf",
-          "deployment_unit": "unit-24220",
+          "deployment_unit": "unit-34006",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -2554,6 +2647,48 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14847,
+      "audit_key": "audit-14847",
+      "report_name": "Active Bug Bounty Program",
+      "report_url": "https://immunefi.com/bug-bounty/indexcoop/information",
+      "auditor": "Immunefi",
+      "audit_type": "bug_bounty",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14852,
+      "audit_key": "audit-14852",
+      "report_name": "blog.openzeppelin.com/set-protocol-audit",
+      "report_url": "https://www.openzeppelin.com/news/set-protocol-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2561,14 +2696,14 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 9.1,
+      "coverage_pct": 8.3,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "iosiro",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.5,
+      "coverage_pct": 4.2,
       "latest_audit": "2021-09"
     }
   ],
@@ -2580,8 +2715,8 @@
       "name": "SetToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 19435053.145872466,
-      "risk_note": "Verified native implementation with $19,435,053.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 19583143.607768767,
+      "risk_note": "Verified native implementation with $19,583,143.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2646,6 +2781,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x1b7d68134ef476b7795b22a4d76f82c220c54e74",
+      "name": "FeeSplitExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xcb1eea349f25288627f008c5e2a69b684bdddf49",
       "name": "FlashMintHyETHV3",
       "role": "unknown",
@@ -2696,6 +2841,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0110959c718f70fd2dc01e86566e694391c0e5c6",
+      "name": "SupplyCapIssuanceHook",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x90f765f63e7dc5ae97d6c576bf693fb6af41c129",
       "name": "TradeModule",
       "role": "unknown",
@@ -2705,10 +2860,10 @@
     }
   ],
   "origin_summary": {
-    "native": 28,
-    "upstream": 4,
-    "standard_library": 0,
-    "needs_review": 7
+    "native": 31,
+    "upstream": 5,
+    "standard_library": 1,
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -2731,9 +2886,17 @@
       {
         "audit_id": 3581,
         "report_name": "code4rena.com/reports/2022-06-notional-coop"
+      },
+      {
+        "audit_id": 14852,
+        "report_name": "blog.openzeppelin.com/set-protocol-audit"
       }
     ],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": {
+    "platform": "Immunefi",
+    "url": "https://immunefi.com/bug-bounty/indexcoop/information",
+    "tier": 1
+  }
 }

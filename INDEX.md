@@ -119,7 +119,7 @@
 | [aztec-connect](./aztec-connect/) | $4.3M | 37.5% | ? | active | 12 | 8 | 2026-06-14 |
 | [azuro](./azuro/) | $1.6M | 11.8% | ? | active | 3 | 25 | 2026-06-17 |
 | [b-lucky](./b-lucky/) | $2.7M | 0.0% | $2.7M | active | 1 | 19 | 2026-06-17 |
-| [b.protocol](./b.protocol/) | $5.1K | 14.3% | $5.1K | declining | 4 | 9 | 2026-06-17 |
+| [b.protocol](./b.protocol/) | $53.7M | 6.7% | $53.7M | declining | 5 | 17 | 2026-06-18 |
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 7 | 2026-06-17 |
 | [babyswap](./babyswap/) | $235.0K | 4.3% | $235.0K | active | 1 | 24 | 2026-06-17 |
 | [backbone-labs](./backbone-labs/) | $232.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
@@ -559,7 +559,7 @@
 | [immutable-zkevm](./immutable-zkevm/) | $25.1M | 33.3% | ? | active | 4 | 3 | 2026-06-17 |
 | [impermax-finance](./impermax-finance/) | $735.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [inception](./inception/) | $62.5K | 66.7% | ? | declining | 9 | 12 | 2026-06-17 |
-| [index-coop](./index-coop/) | $19.4M | 13.6% | $19.4M | active | 5 | 39 | 2026-06-17 |
+| [index-coop](./index-coop/) | $19.6M | 12.5% | $19.6M | active | 7 | 41 | 2026-06-18 |
 | [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 110 | 2026-06-17 |
 | [infinite-trading-protocol](./infinite-trading-protocol/) | $429.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [infinityname](./infinityname/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -805,7 +805,7 @@
 | [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 3 | 2026-06-17 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 36 | 2026-06-17 |
 | [nest-credit](./nest-credit/) | $4.3M | 60.0% | $693.4 | active | 16 | 19 | 2026-06-17 |
-| [nest](./nest/) | $69.4M | 36.4% | $69.4M | active | 10 | 48 | 2026-06-17 |
+| [nest](./nest/) | $69.4M | 35.6% | $69.4M | active | 10 | 49 | 2026-06-18 |
 | [netswap](./netswap/) | $1.2M | 20.8% | ? | declining | 2 | 48 | 2026-06-17 |
 | [netweave-finance](./netweave-finance/) | $12.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-17 |
@@ -825,7 +825,7 @@
 | [nolus-protocol](./nolus-protocol/) | $509.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nomiswap](./nomiswap/) | $1.4M | 16.7% | ? | declining | 1 | 46 | 2026-06-17 |
 | [nonkyc](./nonkyc/) | $5.4M | 0.0% | ? | active | 0 | 4 | 2026-06-17 |
-| [noon](./noon/) | $34.1M | 0.0% | ? | active | 5 | 21 | 2026-06-17 |
+| [noon](./noon/) | $34.1M | 0.0% | ? | active | 5 | 23 | 2026-06-18 |
 | [nostra](./nostra/) | $5.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [notional](./notional/) | $17.4 | 41.2% | ? | declining | 6 | 17 | 2026-06-17 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-06-17 |
@@ -1402,7 +1402,7 @@
 | [zircuit](./zircuit/) | $144.2M | 36.4% | $144.2M | declining | 10 | 12 | 2026-06-17 |
 | [zivoe](./zivoe/) | $13.9M | 38.9% | ? | declining | 6 | 18 | 2026-06-17 |
 | [zklink-nova](./zklink-nova/) | $10.4M | 14.9% | ? | declining | 7 | 132 | 2026-06-17 |
-| [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-17 |
+| [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-18 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 46 | 2026-06-17 |
 | [zoodao](./zoodao/) | $9.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zoomex](./zoomex/) | $24.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |

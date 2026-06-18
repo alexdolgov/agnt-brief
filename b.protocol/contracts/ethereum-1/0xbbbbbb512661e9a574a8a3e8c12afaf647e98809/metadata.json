@@ -1,0 +1,18 @@
+{
+  "address": "0xbbbbbb512661e9a574a8a3e8c12afaf647e98809",
+  "chain_id": 1,
+  "contract_name": "GovernorBravoDelegator",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xa8a9f82b9c751114d892f3a415fba3b1c6db18a1",
+  "fetched_at": "2026-06-18T01:39:01.927Z"
+}

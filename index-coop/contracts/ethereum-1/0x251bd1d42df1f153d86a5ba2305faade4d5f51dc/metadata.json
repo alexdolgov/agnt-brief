@@ -1,0 +1,18 @@
+{
+  "address": "0x251bd1d42df1f153d86a5ba2305faade4d5f51dc",
+  "chain_id": 1,
+  "contract_name": "AaveLeverageModule",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache License, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T01:43:19.636Z"
+}

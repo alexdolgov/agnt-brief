@@ -1,0 +1,18 @@
+{
+  "address": "0xdf9eb223bafbe5c5271415c75aecd68c21fe3d7f",
+  "chain_id": 1,
+  "contract_name": "ActivePool",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T01:39:00.955Z"
+}

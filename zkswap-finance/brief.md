@@ -5,8 +5,8 @@
 - Project: zkSwap Finance (`zkswap-finance`)
 - Website: [https://zkswap.finance](https://zkswap.finance)
 - Lifecycle: active (Tier 0, 92.4% below peak)
-- Generated: 2026-06-17T07:00:37.462Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T01:38:34.133Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
 - Chains: sonic, zksync-era
 - Contract surface: 52 unique implementations (73 raw deployments)
 - DeFi Llama TVL: $991,689.00
@@ -23,11 +23,11 @@ The AMM families (V2, V3, StableSwap) form the core trading infrastructure, whil
 
 ## Contract Surface Quality
 
-- Indexed contracts: 131; live-surface contracts included: 73 (70 live, 3 unknown).
-- Excluded by liveness: 57 inactive, 1 singleton, 0 uninitialized.
+- Indexed contracts: 129; live-surface contracts included: 73 (70 live, 3 unknown).
+- Excluded by liveness: 55 inactive, 1 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
 - Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 2/10.
+- Unverified dependencies: 1/2.
 
 ## Audit Coverage Summary
 
@@ -69,7 +69,7 @@ The AMM families (V2, V3, StableSwap) form the core trading infrastructure, whil
 | AggregatorSmartV2 | unknown | sonic | n/a | [`0x7f2038...2aac65`](./contracts/sonic-146/0x7f2038b9a6d80b34dc5ec66208bccfd9332aac65/) | ⚠️ Unaudited |
 | BulkSender | unknown | sonic | n/a | [`0xaf02a2...d5533e`](./contracts/sonic-146/0xaf02a22ea072d8a7fc573935aea7152345d5533e/) | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | sonic | n/a | 2 deployments: sonic [`0x4780ea...7c2262`](./contracts/sonic-146/0x4780ea7fc1fc4c51732ab31d797d4e24757c2262/); sonic `0x825e62...ff1e13` | ⚠️ Unaudited |
-| NonfungiblePositionManager | operational_periphery | sonic | n/a | 2 deployments: sonic [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | sonic | n/a | 2 deployments: sonic [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited |
 | UniversalRouter | adapter | sonic | n/a | [`0x957dbe...8f18ec`](./contracts/sonic-146/0x957dbef5673822b3db074f6cee6dcd0fa68f18ec/) | ⚠️ Unaudited |
 | ZFOFT | unknown | sonic | n/a | 2 deployments: sonic [`0xb62690...197cbf`](./contracts/sonic-146/0xb6269059eef1b6b7d478752ed037bd0dd8197cbf/); sonic `0xd25b7a...ac3891` | ⚠️ Unaudited |
 | ZFRewardDistributor | operational_periphery | sonic | n/a | 6 deployments: sonic [`0x66349d...2344fe`](./contracts/sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/); sonic `0x78caac...dbc5d5`; sonic `0x807fa0...3e795f`; sonic `0xb2d779...b74de5`; sonic `0xda85e0...d23e8d`; sonic `0xfcc8d3...5d3164` | ⚠️ Unaudited |
@@ -140,13 +140,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [skynet.certik.com/projects/zkswap-finance](https://skynet.certik.com/projects/zkswap-finance) | CertiK | Audit | 2023-12 | stale | Direct | contract_name | 2 | high |
-| [Farm.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/Farm.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
-| [GovernanceStaking.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf) | unknown | Audit | 2024-01 | stale | Direct | contract_name | 5 | high |
-| [audit.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/audit.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 | [ZKSWAP FINANCE AUDIT REPORT.pdf](https://github.com/Vital-block/Smart-Contract-Audit/blob/main/ZKSWAP%20FINANCE%20AUDIT%20REPORT.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | 2 | high |
 | [**For more details:** [**Certik Audit Report**]()\](https://github.com/ZkSwapFinance/Audit-Reports/blob/main/0_%5BCertik%5D_zkSwap_Finance_Audit_Report.pdf) | CertiK | Audit | 2023-12 | stale | Direct | contract_name | 2 | high |
 | [Bailsec Audit Report](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20zkSwap%20Final%20Report%20Github%20(%2BResolution).pdf) | Bailsec | Audit | 2024-04 | stale | Direct | contract_name | 5 | high |
 | [SmartContract_Audit_Solidproof_ZkSwapFinance.pdf](https://github.com/solidproof/projects/blob/main/2024/Zkswap%20Finance/SmartContract_Audit_Solidproof_ZkSwapFinance.pdf) | Solidproof | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [Farm.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/Farm.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
+| [GovernanceStaking.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf) | unknown | Audit | 2024-01 | stale | Direct | contract_name | 5 | high |
+| [audit.pdf](https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/audit.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -157,7 +157,7 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x0edd6e...f6f5b3`](./contracts/sonic-146/0x0edd6eced51b0f0ee830d891ba230ac39ff6f5b3/) | AggregatorSmart | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x7f2038...2aac65`](./contracts/sonic-146/0x7f2038b9a6d80b34dc5ec66208bccfd9332aac65/) | AggregatorSmartV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xaf02a2...d5533e`](./contracts/sonic-146/0xaf02a22ea072d8a7fc573935aea7152345d5533e/) | BulkSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | NonfungiblePositionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xb62690...197cbf`](./contracts/sonic-146/0xb6269059eef1b6b7d478752ed037bd0dd8197cbf/) | ZFOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x66349d...2344fe`](./contracts/sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/) | ZFRewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x3e5239...0cb362`](./contracts/sonic-146/0x3e5239b8b19f2610769a7bcb5e9c876bf90cb362/) | ZFSwap2EarnRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -182,8 +182,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3153] Farm.pdf
-- [3155] audit.pdf
 - [3159] SmartContract_Audit_Solidproof_ZkSwapFinance.pdf
+- [14821] Farm.pdf
+- [14823] audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

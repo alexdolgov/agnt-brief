@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zkswap-finance",
-  "generated_at": "2026-06-17T07:00:37.462Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T01:38:34.133Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zkswap-finance",
@@ -60,16 +60,16 @@
     "project_purpose": "zkSwap Finance is a decentralized exchange (DEX) protocol on zkSync Era and Sonic, offering token swaps, liquidity provision, and yield farming. It includes multiple AMM versions (V2, V3, StableSwap), an aggregator, staking, and a swap-to-earn mechanism.",
     "relationship_narrative": "The AMM families (V2, V3, StableSwap) form the core trading infrastructure, while the Aggregator routes trades across them. Farming and Staking contracts distribute rewards to liquidity providers and stakers, often interacting with the AMMs and the ZF token vesting contracts.",
     "product_family_count": 10,
-    "total_contracts_indexed": 131,
+    "total_contracts_indexed": 129,
     "live_contracts": 70,
-    "inactive_contracts": 57,
+    "inactive_contracts": 55,
     "singleton_contracts": 1,
     "uninitialized_contracts": 0,
     "unknown_contracts": 3,
     "deployment_units": 1,
     "live_deployment_units": 0,
-    "dependencies_extracted": 10,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 1,
     "detected_codebases": [
       "uniswap-v2",
       "uniswap-v3"
@@ -221,7 +221,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 146,
@@ -276,7 +276,7 @@
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "V3 AMM Contracts",
@@ -1538,7 +1538,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 324,
@@ -1608,7 +1608,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 324,
@@ -1783,7 +1783,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 146,
@@ -1858,8 +1858,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3154",
-        "audit-3158"
+        "audit-3158",
+        "audit-14822"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2171,73 +2171,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3153,
-      "audit_key": "audit-3153",
-      "report_name": "Farm.pdf",
-      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/Farm.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3154,
-      "audit_key": "audit-3154",
-      "report_name": "GovernanceStaking.pdf",
-      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "IZFToken",
-        "ZFGovernanceStaking",
-        "ZFToken"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3155,
-      "audit_key": "audit-3155",
-      "report_name": "audit.pdf",
-      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3156,
       "audit_key": "audit-3156",
       "report_name": "ZKSWAP FINANCE AUDIT REPORT.pdf",
@@ -2337,6 +2270,73 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14821,
+      "audit_key": "audit-14821",
+      "report_name": "Farm.pdf",
+      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/Farm.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14822,
+      "audit_key": "audit-14822",
+      "report_name": "GovernanceStaking.pdf",
+      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IZFToken",
+        "ZFGovernanceStaking",
+        "ZFToken"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14823,
+      "audit_key": "audit-14823",
+      "report_name": "audit.pdf",
+      "report_url": "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2398,7 +2398,7 @@
       "chain_name": "sonic",
       "address": "0x2e11640ee1368f2cd90c36607760a274a30094f5",
       "name": "NonfungiblePositionManager",
-      "role": "operational_periphery",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2451,16 +2451,16 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3153,
+        "audit_id": 3159,
+        "report_name": "SmartContract_Audit_Solidproof_ZkSwapFinance.pdf"
+      },
+      {
+        "audit_id": 14821,
         "report_name": "Farm.pdf"
       },
       {
-        "audit_id": 3155,
+        "audit_id": 14823,
         "report_name": "audit.pdf"
-      },
-      {
-        "audit_id": 3159,
-        "report_name": "SmartContract_Audit_Solidproof_ZkSwapFinance.pdf"
       }
     ],
     "inherited_remapped_matches": []

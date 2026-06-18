@@ -1,0 +1,17 @@
+{
+  "address": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+  "chain_id": 999,
+  "contract_name": "RelayApprovalProxyV3",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "000000000000000000000000f3d63166f0ca56c3c1a3508fce03ff0cf3fb691e000000000000000000000000b92fe925dc43a0ecde6c8b1a2709c170ec4fff4f000000000000000000000000000000000022d473030f116ddee9f6b43ac78ba3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T09:34:20.372Z"
+}

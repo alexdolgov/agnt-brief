@@ -7,10 +7,10 @@
 - Project: SpiralDao (`spiraldao`)
 - Website: [https://spiral.farm](https://spiral.farm)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:50.462Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:36:58.904Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: ethereum, zksync-era
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $6,422,529.38
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,20 +25,20 @@ The Main family provides foundational staking and reward infrastructure, while t
 
 ## Contract Surface Quality
 
-- Indexed contracts: 80; live-surface contracts included: 12 (10 live, 2 unknown).
+- Indexed contracts: 79; live-surface contracts included: 11 (9 live, 2 unknown).
 - Excluded by liveness: 62 inactive, 6 singleton, 0 uninitialized.
 - Deployment units: 0/4 live.
-- Detected codebases: balancer-v2
-- Dependencies extracted: 16; unverified dependencies: 0.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/7 (42.9%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 3/6 (50.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 5
-- Unique implementations: 12
-- Raw deployments: 12
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The Main family provides foundational staking and reward infrastructure, while t
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 42.9% | 2023-01 |
+| unknown | Tier 2 | 3 | 50.0% | 2023-01 |
 
 ## Contract Surface
 
@@ -63,13 +63,12 @@ The Main family provides foundational staking and reward infrastructure, while t
 | Spiral | unknown | ethereum | n/a | [`0x85b6ac...4b9180`](./contracts/ethereum-1/0x85b6acaba696b9e4247175274f8263f99b4b9180/) | ✅ Audited |
 | SpiralStaking | token | ethereum | n/a | [`0x6701e7...4b4943`](./contracts/ethereum-1/0x6701e792b7cd344bae763f27099eeb314a4b4943/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | LockerToken | token | ethereum | n/a | [`0xc54ff2...3bf7d9`](./contracts/ethereum-1/0xc54ff26fd5564ff46b14d9825a2259a0d53bf7d9/) | ⚠️ Unaudited |
 | LockerTokenWrapper | token | ethereum | n/a | [`0xea0c89...9dae4d`](./contracts/ethereum-1/0xea0c89f6c7c4a929a426fe9bffaf11f3da9dae4d/) | ⚠️ Unaudited |
-| Redemption | unknown | ethereum | n/a | [`0x0885ab...c14b42`](./contracts/ethereum-1/0x0885ab00fbb9a130dee612847ef40c01abc14b42/) | ⚠️ Unaudited |
 | SpiralRouterV2 | adapter | ethereum | n/a | [`0x2280df...83e22b`](./contracts/ethereum-1/0x2280dfeeafdd9ebaf5868ded8f1267749883e22b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -112,14 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0xc54ff2...3bf7d9`](./contracts/ethereum-1/0xc54ff26fd5564ff46b14d9825a2259a0d53bf7d9/) | LockerToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xea0c89...9dae4d`](./contracts/ethereum-1/0xea0c89f6c7c4a929a426fe9bffaf11f3da9dae4d/) | LockerTokenWrapper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0885ab...c14b42`](./contracts/ethereum-1/0x0885ab00fbb9a130dee612847ef40c01abc14b42/) | Redemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2280df...83e22b`](./contracts/ethereum-1/0x2280dfeeafdd9ebaf5868ded8f1267749883e22b/) | SpiralRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
+| native | 10 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 1 |

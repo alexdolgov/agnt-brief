@@ -21,7 +21,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Coil](./ethereum-1/0x823e1b82ce1dc147bbdb25a203f046afab1ce918/) | ethereum | [`0x823e1b...1ce918`](./ethereum-1/0x823e1b82ce1dc147bbdb25a203f046afab1ce918/) | ✅ Audited | Verified |
-| [Redemption](./ethereum-1/0x0885ab00fbb9a130dee612847ef40c01abc14b42/) | ethereum | [`0x0885ab...c14b42`](./ethereum-1/0x0885ab00fbb9a130dee612847ef40c01abc14b42/) | ⚠️ Unaudited | Verified |
+| Redemption | ethereum | `0x0885ab...c14b42` | ⚠️ Unaudited | Verified |
 | [Spiral](./ethereum-1/0x85b6acaba696b9e4247175274f8263f99b4b9180/) | ethereum | [`0x85b6ac...4b9180`](./ethereum-1/0x85b6acaba696b9e4247175274f8263f99b4b9180/) | ✅ Audited | Verified |
 | UnnamedContract | ethereum | `0x7fc5f1...9ed55c` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xce0e97...55e8cb` | ❓ Unverified | Unverified |

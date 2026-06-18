@@ -193,7 +193,7 @@
 | [bounce.tech](./bounce.tech/) | $474.0K | 0.0% | ? | unknown | 7 | 0 | 2026-06-17 |
 | [bouncebit-pre-launch-farm](./bouncebit-pre-launch-farm/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 5 | 2026-06-17 |
-| [bracket-protocol](./bracket-protocol/) | $619.3M | 33.3% | $619.3M | active | 5 | 19 | 2026-06-17 |
+| [bracket-protocol](./bracket-protocol/) | $619.3M | 33.3% | $619.3M | active | 5 | 19 | 2026-06-18 |
 | [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/) | $22.4K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [brasa-finance](./brasa-finance/) | $1.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [brickken](./brickken/) | $42.2M | 0.0% | ? | active | 2 | 3 | 2026-06-17 |
@@ -309,7 +309,7 @@
 | [darkness](./darkness/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ddex](./ddex/) | $526.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [debridge](./debridge/) | $263.9M | 48.9% | $263.9M | declining | 32 | 60 | 2026-06-17 |
-| [decentralized-euro](./decentralized-euro/) | $171.2M | 37.9% | $171.2M | active | 3 | 30 | 2026-06-17 |
+| [decentralized-euro](./decentralized-euro/) | $181.0M | 29.7% | $181.0M | active | 3 | 38 | 2026-06-18 |
 | [decibel](./decibel/) | $41.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-17 |
 | [deepbook](./deepbook/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 19 | 2026-06-17 |
@@ -885,7 +885,7 @@
 | [palmy-finance](./palmy-finance/) | $15.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pandora](./pandora/) | $8.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [pangolin](./pangolin/) | $3.1M | 45.5% | ? | declining | 12 | 19 | 2026-06-17 |
+| [pangolin](./pangolin/) | $579.0K | 38.5% | $579.0K | declining | 13 | 21 | 2026-06-18 |
 | [paradex](./paradex/) | $27.3M | 0.0% | ? | unknown | 5 | 0 | 2026-06-17 |
 | [paragonsdao](./paragonsdao/) | $6.5M | 25.0% | ? | active | 8 | 4 | 2026-06-17 |
 | [parallel-protocol](./parallel-protocol/) | $606.7K | 34.6% | ? | active | 5 | 34 | 2026-06-18 |
@@ -1001,7 +1001,7 @@
 | [rifts-finance](./rifts-finance/) | $18.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ring-protocol](./ring-protocol/) | $83.5M | 37.2% | $83.5M | active | 10 | 65 | 2026-06-18 |
 | [ringfi](./ringfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [rip.xyz](./rip.xyz/) | $0.0 | 0.0% | $0.0 | active | 1 | 5 | 2026-06-17 |
+| [rip.xyz](./rip.xyz/) | $626.5K | 0.0% | $626.5K | active | 1 | 8 | 2026-06-18 |
 | [risex](./risex/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [rivera-money](./rivera-money/) | $766.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [robiniaswap](./robiniaswap/) | $19.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1119,7 +1119,7 @@
 | [spice-protocol](./spice-protocol/) | $1.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [spiko](./spiko/) | $1.2B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [spinup](./spinup/) | $406.3K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
-| [spiraldao](./spiraldao/) | $6.4M | 42.9% | ? | dead | 3 | 12 | 2026-06-17 |
+| [spiraldao](./spiraldao/) | $6.4M | 50.0% | ? | dead | 3 | 11 | 2026-06-18 |
 | [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [splash-protocol](./splash-protocol/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [splashing-stake](./splashing-stake/) | $4.3M | 66.7% | ? | active | 1 | 7 | 2026-06-17 |

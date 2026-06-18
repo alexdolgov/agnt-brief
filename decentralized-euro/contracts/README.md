@@ -33,10 +33,10 @@
 | [HadronToken](./ethereum-1/0x50753cfaf86c094925bf976f218d043f8791e408/) | ethereum | [`0x50753c...91e408`](./ethereum-1/0x50753cfaf86c094925bf976f218d043f8791e408/) | ⚠️ Unaudited | Verified |
 | [TetherToken](./ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | ethereum | [`0xc581b7...ede491`](./ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | ⚠️ Unaudited | Verified |
 | TetherToken | ethereum | `0xdac17f...831ec7` | ⚠️ Unaudited | Verified |
-| [UChildERC20](./polygon-137/0xc2ff25dd99e467d2589b2c26edd270f220f14e47/) | polygon | [`0xc2ff25...f14e47`](./polygon-137/0xc2ff25dd99e467d2589b2c26edd270f220f14e47/) | ⚠️ Unaudited | Verified |
-| [UChildERC20Proxy](./polygon-137/0x9d74de101e2a54ad42198f37bdcce0a0160acacb/) | polygon | [`0x9d74de...0acacb`](./polygon-137/0x9d74de101e2a54ad42198f37bdcce0a0160acacb/) | ⚠️ Unaudited | Verified |
+| UChildERC20 | polygon | `0xc2ff25...f14e47` | ⚠️ Unaudited | Verified |
+| UChildERC20Proxy | polygon | `0x9d74de...0acacb` | ⚠️ Unaudited | Verified |
 | [UChildUSDT0](./polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | polygon | [`0xc2132d...b58e8f`](./polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | ⚠️ Unaudited | Verified |
-| [VNXCToken](./ethereum-1/0x6ba75d640bebfe5da1197bb5a2aff3327789b5d3/) | ethereum | [`0x6ba75d...89b5d3`](./ethereum-1/0x6ba75d640bebfe5da1197bb5a2aff3327789b5d3/) | ⚠️ Unaudited | Verified |
+| VNXCToken | ethereum | `0x6ba75d...89b5d3` | ⚠️ Unaudited | Verified |
 
 ## unknown (14)
 

@@ -4,14 +4,14 @@
 
 - Project: Rip.xyz (`rip.xyz`)
 - Website: [https://www.rip.xyz/](https://www.rip.xyz/)
-- Lifecycle: active (Tier 0, 45.5% below peak)
-- Generated: 2026-06-17T07:00:36.910Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: active (Tier 0, 32.9% below peak)
+- Generated: 2026-06-18T09:34:27.184Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: hyperliquid
-- Contract surface: 5 unique implementations (6 raw deployments)
+- Contract surface: 8 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $879,290.64
-- On-chain TVL (included contracts): $0.00
-- TVL by chain: Hyperliquid $0.00
+- On-chain TVL (included contracts): $626,482.87
+- TVL by chain: Hyperliquid $626,482.87
 
 ## Project Description
 
@@ -23,7 +23,7 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 6 (6 live, 0 unknown).
+- Indexed contracts: 11; live-surface contracts included: 9 (8 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
 - Detected codebases: none
@@ -31,15 +31,15 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 5
-- Raw deployments: 6
+- Unique implementations: 8
+- Raw deployments: 9
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $0.00
+- ASD (verified + unaudited TVL): $626,482.87
 - Latest audit: 2026-01 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -54,11 +54,14 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UniswapV3Pool | core_logic | hyperliquid | n/a | [`0x1f6b7b...e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
 | Nft | token | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/); hyperliquid `0x9125e2...bac685` | ⚠️ Unaudited |
+| RelayApprovalProxyV3 | unknown | hyperliquid | n/a | [`0xccc88a...c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | ⚠️ Unaudited |
+| Seaport | unknown | hyperliquid | n/a | [`0x000000...3eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 0 |
+| upstream | 3 |
 | standard_library | 0 |
 | needs_review | 4 |
 

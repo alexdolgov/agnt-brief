@@ -5,8 +5,8 @@
 - Project: Bracket Protocol (`bracket-protocol`)
 - Website: [https://www.bracket.fi/](https://www.bracket.fi/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-17T07:00:33.532Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:40:46.176Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: arbitrum, ethereum
 - Contract surface: 19 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $3,040,356.00
@@ -27,7 +27,7 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 - Excluded by liveness: 90 inactive, 32 singleton, 0 uninitialized.
 - Deployment units: 4/18 live.
 - Detected codebases: none
-- Unverified dependencies: 7/31.
+- Unverified dependencies: 7/30.
 
 ## Audit Coverage Summary
 
@@ -68,14 +68,14 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | OsTokenVaultController | core_logic | ethereum | n/a | [`0x2a261e...000306`](./contracts/ethereum-1/0x2a261e60fb14586b474c208b1b7ac6d0f5000306/) | ⚠️ Unaudited |
-| EthGenesisVault | core_logic | ethereum | unit-19898 | [`0xac0f90...652885`](./contracts/ethereum-1/0xac0f906e433d58fa868f936e8a43230473652885/) | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | unit-19903 | [`0xec70dc...a5ffa8`](./contracts/arbitrum-42161/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8/) | ⚠️ Unaudited |
-| AETH_R21 | unknown | ethereum | unit-19899 | [`0xe95a20...c2c3cb`](./contracts/ethereum-1/0xe95a203b1a91a908f9b9ce46459d101078c2c3cb/) | ⚠️ Unaudited |
+| EthGenesisVault | core_logic | ethereum | unit-36309 | [`0xac0f90...652885`](./contracts/ethereum-1/0xac0f906e433d58fa868f936e8a43230473652885/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | unit-36314 | [`0xec70dc...a5ffa8`](./contracts/arbitrum-42161/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8/) | ⚠️ Unaudited |
+| AETH_R21 | unknown | ethereum | unit-36310 | [`0xe95a20...c2c3cb`](./contracts/ethereum-1/0xe95a203b1a91a908f9b9ce46459d101078c2c3cb/) | ⚠️ Unaudited |
 | BracketVaultLens | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x0072e8...fa7085`](./contracts/ethereum-1/0x0072e80b04c17bfd6c6d0a21a17ae118defa7085/); ethereum `0xcdc3a8...29082c` | ⚠️ Unaudited |
 | DepositDataRegistry | registry | ethereum | n/a | [`0x75ab6d...35223e`](./contracts/ethereum-1/0x75ab6ddce07556639333d3df1eaa684f5735223e/) | ⚠️ Unaudited |
 | Keeper | operational_periphery | ethereum | n/a | [`0x6b5815...b487b5`](./contracts/ethereum-1/0x6b5815467da09daa7dc83db21c9239d98bb487b5/) | ⚠️ Unaudited |
 | RewardSplitterFactory | operational_periphery | ethereum | n/a | [`0x256af2...6cc5f8`](./contracts/ethereum-1/0x256af27ce81282a0491a5361172c1db08f6cc5f8/) | ⚠️ Unaudited |
-| RSETH | token | ethereum | unit-19897 | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
+| RSETH | token | ethereum | unit-36308 | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
 | SharedMevEscrow | operational_periphery | ethereum | n/a | [`0x48319f...20ff86`](./contracts/ethereum-1/0x48319f97e5da1233c21c48b80097c0fb7a20ff86/) | ⚠️ Unaudited |
 | VaultFactoryV2 | registry | ethereum | n/a | [`0x01323e...59c256`](./contracts/ethereum-1/0x01323e0054651adf2c10ce90351439840559c256/) | ⚠️ Unaudited |
 | VaultsRegistry | registry | ethereum | n/a | [`0x3a0008...4fc20e`](./contracts/ethereum-1/0x3a0008a588772446f6e656133c2d5029cc4fc20e/) | ⚠️ Unaudited |
@@ -131,8 +131,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 14 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 1 |
+| standard_library | 3 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

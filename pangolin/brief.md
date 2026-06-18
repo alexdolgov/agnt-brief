@@ -7,13 +7,13 @@
 - Project: Pangolin (`pangolin`)
 - Website: [https://pangolin.exchange](https://pangolin.exchange)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-17T07:00:43.617Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-18T09:44:17.417Z
+- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
 - Chains: avalanche
-- Contract surface: 19 unique implementations (22 raw deployments)
+- Contract surface: 21 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $3,062,801.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $579,035.42
+- TVL by chain: Avalanche $579,035.42
 
 ## Project Description
 
@@ -25,33 +25,33 @@ The DEX Core generates fees that are collected by the FeeCollector and directed 
 
 ## Contract Surface Quality
 
-- Indexed contracts: 205; live-surface contracts included: 22 (22 live, 0 unknown).
-- Excluded by liveness: 181 inactive, 2 singleton, 0 uninitialized.
+- Indexed contracts: 211; live-surface contracts included: 27 (24 live, 3 unknown).
+- Excluded by liveness: 182 inactive, 2 singleton, 0 uninitialized.
 - Deployment units: 0/1 live.
 - Detected codebases: uniswap-v2, uniswap-v3
-- Dependencies extracted: 12; unverified dependencies: 0.
+- Dependencies extracted: 5; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 5/11 (45.5%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 5/13 (38.5%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 19
-- Raw deployments: 22
-- Audits discovered: 12
-- Scoreable audits (matched contracts): 4
-- ASD (verified + unaudited TVL): n/a
+- Unique implementations: 21
+- Raw deployments: 27
+- Audits discovered: 13
+- Scoreable audits (matched contracts): 5
+- ASD (verified + unaudited TVL): $579,035.42
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 1 aging, 11 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 12 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $579,035.42 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 5 | 45.5% | 2022-04 |
+| Halborn | Tier 2 | 5 | 38.5% | 2022-04 |
 
 ## Contract Surface
 
@@ -65,12 +65,14 @@ The DEX Core generates fees that are collected by the FeeCollector and directed 
 | Png | unknown | avalanche | n/a | [`0x60781c...aca982`](./contracts/avalanche-43114/0x60781c2586d68229fde47564546784ab3faca982/) | ✅ Audited |
 | StakingRewards | unknown | avalanche | n/a | [`0x88afda...a0135b`](./contracts/avalanche-43114/0x88afdae1a9f58da3e68584421937e5f564a0135b/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| PangolinV3Pool | core_logic | avalanche | n/a | 3 deployments: avalanche [`0x11476e...0c3e20`](./contracts/avalanche-43114/0x11476e10eb79ddffa6f2585be526d2bd840c3e20/); avalanche `0x115040...b2f456`; avalanche `0xfc2bb1...b2e722` | ⚠️ Unaudited |
 | ForwarderLogic | unknown | avalanche | n/a | [`0xca3fc8...cb3642`](./contracts/avalanche-43114/0xca3fc8e01ffb90a7fb35deebf5b77d6fe8cb3642/) | ⚠️ Unaudited |
 | PangolinFactory | registry | avalanche | n/a | [`0xefa94d...e9fd88`](./contracts/avalanche-43114/0xefa94de7a4656d787667c749f7e1223d71e9fd88/) | ⚠️ Unaudited |
+| PangolinPair | unknown | avalanche | n/a | 2 deployments: avalanche [`0x0e0100...3a9665`](./contracts/avalanche-43114/0x0e0100ab771e9288e0aa97e11557e6654c3a9665/); avalanche `0xbd918e...1970d9` | ⚠️ Unaudited |
 | PangolinRouter | adapter | avalanche | n/a | [`0xe54ca8...c89106`](./contracts/avalanche-43114/0xe54ca86531e17ef3616d22ca28b0d458b6c89106/) | ⚠️ Unaudited |
 | PangolinV3Rewarder | unknown | avalanche | n/a | 3 deployments: avalanche [`0x4e8b94...bd0427`](./contracts/avalanche-43114/0x4e8b940c5ce75945f75d892524c88985b2bd0427/); avalanche `0x4fdf9a...7ba14a`; avalanche `0xba19af...ac2f1c` | ⚠️ Unaudited |
 | Router | adapter | avalanche | n/a | [`0x757121...a6baa2`](./contracts/avalanche-43114/0x757121c9a8259c4d6b6956c283355b2902a6baa2/) | ⚠️ Unaudited |
@@ -119,6 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Pangolin_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021-10 | stale | Direct | contract_name | 4 | high |
 | [Pangolin_Staking_Positions_Audit_Report_by_WatchPug-1.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Staking_Positions_Audit_Report_by_WatchPug-1.pdf) | WatchPug | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
 | [Pangolin_Staking_Positions_Audit_Report_by_WatchPug-2.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Staking_Positions_Audit_Report_by_WatchPug-2.pdf) | WatchPug | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
+| [Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf) | Halborn | Audit | 2021-12 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -126,8 +129,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| avalanche | [`0x11476e...0c3e20`](./contracts/avalanche-43114/0x11476e10eb79ddffa6f2585be526d2bd840c3e20/) | PangolinV3Pool | core_logic | $579,035.42 | Verified native implementation with $579,035.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xca3fc8...cb3642`](./contracts/avalanche-43114/0xca3fc8e01ffb90a7fb35deebf5b77d6fe8cb3642/) | ForwarderLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xefa94d...e9fd88`](./contracts/avalanche-43114/0xefa94de7a4656d787667c749f7e1223d71e9fd88/) | PangolinFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x0e0100...3a9665`](./contracts/avalanche-43114/0x0e0100ab771e9288e0aa97e11557e6654c3a9665/) | PangolinPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xe54ca8...c89106`](./contracts/avalanche-43114/0xe54ca86531e17ef3616d22ca28b0d458b6c89106/) | PangolinRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x4e8b94...bd0427`](./contracts/avalanche-43114/0x4e8b940c5ce75945f75d892524c88985b2bd0427/) | PangolinV3Rewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x757121...a6baa2`](./contracts/avalanche-43114/0x757121c9a8259c4d6b6956c283355b2902a6baa2/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -137,10 +142,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 17 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -148,8 +153,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=54
+- Extraction confidence breakdown: high=5
+- Match method counts: extraction_exact=55
 
 Zero-match audit list:
 

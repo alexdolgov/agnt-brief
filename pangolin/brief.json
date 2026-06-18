@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pangolin",
-  "generated_at": "2026-06-17T07:00:43.617Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T09:44:17.417Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pangolin",
@@ -32,24 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 19,
-    "total_addresses": 22,
-    "unique_implementations": 19,
-    "total_deployments": 22,
+    "total_contracts": 21,
+    "total_addresses": 27,
+    "unique_implementations": 21,
+    "total_deployments": 27,
     "audited_contracts": 5,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
-    "coverage_pct": 45.5,
-    "total_audits": 12,
-    "scoreable_audits": 4,
+    "coverage_pct": 38.5,
+    "total_audits": 13,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 3062801,
-    "tvl_usd": 3062801,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 579035.4161412617,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 579035.42
+    },
+    "asd_usd": 579035.4161412617,
     "website_url": "https://pangolin.exchange",
     "chains": [
       "avalanche"
@@ -61,7 +63,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 11,
+      "stale": 12,
       "unknown": 0
     }
   },
@@ -69,15 +71,15 @@
     "project_purpose": "Pangolin is a multichain decentralized exchange (DEX) that enables users to swap tokens, provide liquidity, and earn rewards through an automated market maker (AMM) model, with PNG as its governance token and staking/yield farming features. The contract and audit coverage in this brief should be treated as Avalanche-only unless non-Avalanche deployments are explicitly added to scope.",
     "relationship_narrative": "The DEX Core generates fees that are collected by the FeeCollector and directed to the CommunityTreasury. Governance contracts control treasury spending and protocol parameters, while Staking and Rewards distribute PNG tokens to incentivize liquidity provision.",
     "product_family_count": 4,
-    "total_contracts_indexed": 205,
-    "live_contracts": 22,
-    "inactive_contracts": 181,
+    "total_contracts_indexed": 211,
+    "live_contracts": 24,
+    "inactive_contracts": 182,
     "singleton_contracts": 2,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 3,
     "deployment_units": 1,
     "live_deployment_units": 0,
-    "dependencies_extracted": 12,
+    "dependencies_extracted": 5,
     "unverified_dependencies": 0,
     "detected_codebases": [
       "uniswap-v2",
@@ -85,7 +87,7 @@
     ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 19,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -94,6 +96,63 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x11476e10eb79ddffa6f2585be526d2bd840c3e20",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PangolinV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 579035.4161412617,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PangolinV3Pool",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x11476e10eb79ddffa6f2585be526d2bd840c3e20",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 15355.14961250846,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x1150403b19315615aad1638d9dd86cd866b2f456",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 521129.5810990932,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xfc2bb1598def8283ee36718f9adc0a721fb2e722",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 42550.68542965997,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -124,7 +183,8 @@
       ],
       "audits_covering": [
         "audit-2695",
-        "audit-2696"
+        "audit-2696",
+        "audit-15165"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -261,6 +321,52 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0xefa94de7a4656d787667c749f7e1223d71e9fd88",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PangolinPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PangolinPair",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xbd918ed441767fe7924e99f6a0e0b568ac1970d9",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -567,7 +673,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -602,7 +708,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1081,6 +1187,29 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15165,
+      "audit_key": "audit-15165",
+      "report_name": "Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf",
+      "report_url": "https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FeeCollector"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1088,11 +1217,21 @@
       "auditor": "Halborn",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 45.5,
+      "coverage_pct": 38.5,
       "latest_audit": "2022-04"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x11476e10eb79ddffa6f2585be526d2bd840c3e20",
+      "name": "PangolinV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 579035.4161412617,
+      "risk_note": "Verified native implementation with $579,035.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -1109,6 +1248,16 @@
       "address": "0xefa94de7a4656d787667c749f7e1223d71e9fd88",
       "name": "PangolinFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+      "name": "PangolinPair",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1155,17 +1304,17 @@
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 17,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 6
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 54
+      "extraction_exact": 55
     },
     "extraction_confidence_counts": {
-      "high": 4
+      "high": 5
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

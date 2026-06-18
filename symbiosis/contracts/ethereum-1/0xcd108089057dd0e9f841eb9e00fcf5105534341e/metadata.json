@@ -1,0 +1,18 @@
+{
+  "address": "0xcd108089057dd0e9f841eb9e00fcf5105534341e",
+  "chain_id": 1,
+  "contract_name": "WithdrawUnlocker",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": null,
+  "runs": 2000,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 93,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-18T01:13:44.927Z"
+}

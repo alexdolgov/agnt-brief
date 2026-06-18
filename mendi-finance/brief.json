@@ -1,49 +1,49 @@
 {
   "schema_version": "2.0",
   "project_key": "mendi-finance",
-  "generated_at": "2026-06-17T07:00:48.760Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-18T01:12:59.884Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
+  "lifecycle_status": "sunsetting",
   "lifecycle_signal": {
     "slug": "mendi-finance",
     "tier": 1,
     "peak_tvl": 110813745,
     "peak_date": "2024-07-02T00:00:00.000Z",
-    "tvl_30d_ago": 1586655,
-    "tvl_90d_ago": 2099086,
-    "tvl_current": 1383310,
+    "tvl_30d_ago": 1419171,
+    "tvl_90d_ago": 2102944,
+    "tvl_current": 1145414,
     "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 3584155,
-    "change_30d_pct": -12.815955579505312,
-    "change_90d_pct": -34.09941279204378,
+    "tvl_180d_ago": 3950284,
+    "change_30d_pct": -19.289923483498463,
+    "change_90d_pct": -45.53283396990124,
     "governance_raw": {
-      "evidence": "The homepage explicitly states 'Malda has been sunset' and the codebase has been open-sourced.",
-      "confidence": 1,
+      "evidence": "The homepage explicitly states 'Malda has been sunset' and the codebase has been open-sourced, indicating the team has announced the end of life.",
+      "confidence": 0.95,
       "lifecycle_status": "sunsetting"
     },
-    "days_since_peak": 691,
+    "days_since_peak": 716,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.75168012776754,
-    "governance_evidence": "The homepage explicitly states 'Malda has been sunset' and the codebase has been open-sourced.",
-    "governance_confidence": 1,
+    "drop_from_peak_pct": 98.96636107731942,
+    "governance_evidence": "The homepage explicitly states 'Malda has been sunset' and the codebase has been open-sourced, indicating the team has announced the end of life.",
+    "governance_confidence": 0.95,
     "governance_text_chars": 898,
     "governance_classification": "sunsetting",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 6,
-    "unique_implementations": 3,
-    "total_deployments": 6,
+    "total_contracts": 4,
+    "total_addresses": 7,
+    "unique_implementations": 4,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 4,
+    "total_audits": 6,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1655936.5898100003,
     "tvl_usd": 1655936.5898100003,
@@ -60,7 +60,7 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 2,
+      "aging": 4,
       "stale": 0,
       "unknown": 1
     }
@@ -69,22 +69,20 @@
     "project_purpose": "Mendi Finance began as a Compound-style decentralized lending protocol on Linea, with cToken-style markets, a Comptroller for risk management, and reward distribution mechanisms. The project later rebranded/evolved into Malda, a unified cross-chain lending protocol positioning itself around zkProof-based cross-chain functionality. The current brief should distinguish the legacy Linea-only Mendi deployment from the broader Malda cross-chain lending system, and note that Malda has since been sunset and open-sourced.",
     "relationship_narrative": "The Comptroller manages all lending markets and coordinates reward distribution. Reward-related contracts (RewardManagerV2, RewardDistributor, StakedDistributor, OwnedDistributor, RewardHolder) work together to distribute incentives to users, while LPDepositor contracts facilitate liquidity provision.",
     "product_family_count": 1,
-    "total_contracts_indexed": 122,
-    "live_contracts": 6,
+    "total_contracts_indexed": 123,
+    "live_contracts": 7,
     "inactive_contracts": 72,
     "singleton_contracts": 44,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 22,
-    "live_deployment_units": 0,
-    "dependencies_extracted": 18,
-    "unverified_dependencies": 4,
-    "detected_codebases": [
-      "compound-v2"
-    ]
+    "deployment_units": 23,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 4,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,6 +91,41 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee",
+      "deployment_unit": "unit-33732",
+      "deployment_unit_proxy_count": 1,
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee",
+          "deployment_unit": "unit-33732",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 59144,
       "chain_name": "linea",
@@ -326,6 +359,48 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14778,
+      "audit_key": "audit-14778",
+      "report_name": "* [malda-lending report]()",
+      "report_url": "https://veridise.com/audits-archive/company/malda/malda-lending-2025-05-20",
+      "auditor": "Veridise",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14779,
+      "audit_key": "audit-14779",
+      "report_name": "* [malda-zk-coprocessor report]()",
+      "report_url": "https://veridise.com/audits-archive/company/malda/malda-zk-coprocessor-2025-05-20",
+      "auditor": "Veridise",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -364,7 +439,7 @@
   "origin_summary": {
     "native": 3,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
@@ -389,6 +464,14 @@
       },
       {
         "audit_id": 2933,
+        "report_name": "* [malda-zk-coprocessor report]()"
+      },
+      {
+        "audit_id": 14778,
+        "report_name": "* [malda-lending report]()"
+      },
+      {
+        "audit_id": 14779,
         "report_name": "* [malda-zk-coprocessor report]()"
       }
     ],

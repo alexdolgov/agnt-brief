@@ -95,7 +95,7 @@
 | [FeeBoxStETH](./ethereum-1/0x294fe934f47d95a54a436a148963da3fef4e8313/) | ethereum | [`0x294fe9...4e8313`](./ethereum-1/0x294fe934f47d95a54a436a148963da3fef4e8313/) | ⚠️ Unaudited | Verified |
 | [GHOEth](./ethereum-1/0x83291cf2731b8e3af3f3439cce871c6a1c4e281f/) | ethereum | [`0x83291c...4e281f`](./ethereum-1/0x83291cf2731b8e3af3f3439cce871c6a1c4e281f/) | ⚠️ Unaudited | Verified |
 | [GMPBasculeV1](./ethereum-1/0xc3ecfe771564e3f28cfb7a9b203f4d10279338ed/) | ethereum | [`0xc3ecfe...9338ed`](./ethereum-1/0xc3ecfe771564e3f28cfb7a9b203f4d10279338ed/) | ⚠️ Unaudited | Verified |
-| [LBTC](./berachain-80094/0xecac9c5f704e954931349da37f60e39f515c11c1/) | berachain | [`0xecac9c...5c11c1`](./berachain-80094/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ✅ Audited | Verified |
+| LBTC | berachain | `0xecac9c...5c11c1` | ✅ Audited | Verified |
 | [Mailbox](./ethereum-1/0x052359563d104867a42c48cb7e688b1af22f0080/) | ethereum | [`0x052359...2f0080`](./ethereum-1/0x052359563d104867a42c48cb7e688b1af22f0080/) | ⚠️ Unaudited | Verified |
 | [NativeLBTC (2 deployments)](./ethereum-1/0x6b89d757668a830f17d693a88d46073501df635d/) | ethereum | 2 deployments: ethereum [`0x6b89d7...df635d`](./ethereum-1/0x6b89d757668a830f17d693a88d46073501df635d/); ethereum `0x6be197...3af7b3` | ⚠️ Unaudited | Verified |
 | [PositionManagementAAVEV3](./ethereum-1/0x4509c4fb07f681385f21cf03c28a6f2aa1f203a4/) | ethereum | [`0x4509c4...f203a4`](./ethereum-1/0x4509c4fb07f681385f21cf03c28a6f2aa1f203a4/) | ⚠️ Unaudited | Verified |

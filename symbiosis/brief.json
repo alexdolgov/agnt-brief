@@ -1,40 +1,40 @@
 {
   "schema_version": "2.0",
   "project_key": "symbiosis",
-  "generated_at": "2026-06-17T07:00:37.501Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-18T01:14:20.080Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "symbiosis",
     "tier": 0,
     "peak_tvl": 37783821,
     "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 9237021,
-    "tvl_90d_ago": 8488636,
-    "tvl_current": 8897682,
+    "tvl_30d_ago": 9131868,
+    "tvl_90d_ago": 9270003,
+    "tvl_current": 8878291,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 9581921,
-    "change_30d_pct": -3.673684405394337,
-    "change_90d_pct": 4.818748265327905,
-    "days_since_peak": 228,
+    "tvl_180d_ago": 9229843,
+    "change_30d_pct": -2.7768360208448044,
+    "change_90d_pct": -4.225586550511364,
+    "days_since_peak": 254,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 76.4510794183574
+    "drop_from_peak_pct": 76.50240032631956
   },
   "summary": {
-    "total_contracts": 27,
-    "total_addresses": 28,
-    "unique_implementations": 27,
-    "total_deployments": 28,
-    "audited_contracts": 3,
-    "unaudited_contracts": 15,
-    "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 15,
+    "total_contracts": 48,
+    "total_addresses": 58,
+    "unique_implementations": 48,
+    "total_deployments": 58,
+    "audited_contracts": 18,
+    "unaudited_contracts": 20,
+    "contracts_verified_audited": 18,
+    "contracts_verified_unaudited": 20,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 9,
-    "coverage_pct": 16.7,
+    "contracts_unverified": 10,
+    "coverage_pct": 47.4,
     "total_audits": 15,
-    "scoreable_audits": 5,
+    "scoreable_audits": 8,
     "dl_tvl_usd": 8537200.982350001,
     "tvl_usd": 236145411.90014604,
     "tvl_source": "on_chain",
@@ -44,10 +44,15 @@
     "asd_usd": 236145411.90014604,
     "website_url": "https://symbiosis.finance",
     "chains": [
+      "arbitrum",
+      "avalanche",
+      "base",
       "cronos",
-      "ethereum"
+      "ethereum",
+      "optimism",
+      "polygon"
     ],
-    "tier1_coverage_pct": 11.1,
+    "tier1_coverage_pct": 34.2,
     "tier1_auditors": [
       "SlowMist"
     ],
@@ -64,20 +69,20 @@
     "project_purpose": "Symbiosis is an active cross-chain bridge and liquidity protocol that enables users to swap and transfer assets across multiple blockchains. The currently analyzed contract inventory should be treated as a limited discovered subset, not the full live protocol surface; staking, pools, relayers, depository, TON/non-EVM integrations, and supported EVM-chain deployments may be out of scope unless separately inventoried.",
     "relationship_narrative": "The Symbiosis family relies on Portal contracts as the main entry points for cross-chain operations, with MetaRouter handling routing logic and WOFTAdapterFactory managing token adapters. Supporting proxy contracts provide upgradeability and access control, while verifier contracts ensure transaction integrity.",
     "product_family_count": 1,
-    "total_contracts_indexed": 77,
-    "live_contracts": 21,
-    "inactive_contracts": 35,
+    "total_contracts_indexed": 109,
+    "live_contracts": 43,
+    "inactive_contracts": 37,
     "singleton_contracts": 14,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 7,
-    "deployment_units": 11,
-    "live_deployment_units": 4,
-    "dependencies_extracted": 20,
-    "unverified_dependencies": 0,
+    "unknown_contracts": 15,
+    "deployment_units": 27,
+    "live_deployment_units": 18,
+    "dependencies_extracted": 9,
+    "unverified_dependencies": 3,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 27,
+    "unique_implementations": 48,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -94,7 +99,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SimpleToken",
       "role": "token",
-      "origin_kind": "upstream",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Symbiosis",
       "tvl_usd": 137831994.8192269,
@@ -125,7 +130,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
-      "deployment_unit": "unit-23704",
+      "deployment_unit": "unit-33746",
       "deployment_unit_proxy_count": 1,
       "name": "PufferVaultV5",
       "role": "core_logic",
@@ -141,7 +146,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
-          "deployment_unit": "unit-23704",
+          "deployment_unit": "unit-33746",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -164,7 +169,7 @@
       "deployment_unit_proxy_count": null,
       "name": "GravityTokenG",
       "role": "token",
-      "origin_kind": "upstream",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Symbiosis",
       "tvl_usd": 41161787.441016614,
@@ -194,13 +199,450 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BranchedUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BranchedUnlocker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x85700ed7c30625ed28613d75e85c58ef0056263f",
+      "deployment_unit": "unit-33758",
+      "deployment_unit_proxy_count": 1,
+      "name": "Bridge",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8617f8a259582dd1baab87a8c3eb51b9cb6f645d",
+      "impl_name": "Bridge",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x85700ed7c30625ed28613d75e85c58ef0056263f",
+          "deployment_unit": "unit-33758",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2096",
+        "audit-14790"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+      "deployment_unit": "unit-33735",
+      "deployment_unit_proxy_count": 1,
+      "name": "BridgeV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x20c54cc697329333fe00ded49c7dca8c83dce65b",
+      "impl_name": "BridgeV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+          "deployment_unit": "unit-33735",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+      "deployment_unit": "unit-33749",
+      "deployment_unit_proxy_count": 1,
+      "name": "BridgeV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365",
+      "impl_name": "BridgeV2",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+          "deployment_unit": "unit-33749",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8097f0b9f06c27af9579f75762f971d745bb222f",
+      "deployment_unit": "unit-33751",
+      "deployment_unit_proxy_count": 1,
+      "name": "BridgeV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x88139ad1199e8c78a0804d4bebf4fbad89ef9d89",
+      "impl_name": "BridgeV2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8097f0b9f06c27af9579f75762f971d745bb222f",
+          "deployment_unit": "unit-33751",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+      "deployment_unit": "unit-33756",
+      "deployment_unit_proxy_count": 1,
+      "name": "BridgeV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xff9b21c3bfa4bce9b20b55fed56d102ced48b0f6",
+      "impl_name": "BridgeV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5523985926aa12ba58dc5ad00ddca99678d7227e",
+          "deployment_unit": "unit-33756",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x292fc50e4eb66c3f6514b9e402dbc25961824d62",
+      "deployment_unit": "unit-33759",
+      "deployment_unit_proxy_count": 1,
+      "name": "BridgeV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365",
+      "impl_name": "BridgeV2",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x292fc50e4eb66c3f6514b9e402dbc25961824d62",
+          "deployment_unit": "unit-33759",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BtcRefundUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BtcRefundUnlocker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x84b10469db07446d5fc7156aefdd6b7117108a73",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Depository",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Depository",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x84deb7fc54a1f734aef6ddc0c0f74182bdf941a8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x84b10469db07446d5fc7156aefdd6b7117108a73",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe7eb022e21e85200e7b0daebf3757764e83f5c4e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14785"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4ac560a3a8fadd1662cf9439bb1114abaa3be547",
+      "deployment_unit": "unit-33755",
+      "deployment_unit_proxy_count": 1,
+      "name": "DepositoryDst",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7cb8467104fd2797a53d6be5b3e635463d202019",
+      "impl_name": "DepositoryDst",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4ac560a3a8fadd1662cf9439bb1114abaa3be547",
+          "deployment_unit": "unit-33755",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x695eeaece7ce4502850b1f6b4f14b97dba02e840",
+      "deployment_unit": "unit-33757",
+      "deployment_unit_proxy_count": 1,
+      "name": "DepositorySrc",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd42ede8afc30d40587550fa4c17da3575b3bc7b",
+      "impl_name": "DepositorySrc",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x695eeaece7ce4502850b1f6b4f14b97dba02e840",
+          "deployment_unit": "unit-33757",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xf1815bd50389c46847f0bda824ec8da914045d14",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "ERC20Mock",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -265,12 +707,12 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "deployment_unit": "unit-23701",
+      "deployment_unit": "unit-33741",
       "deployment_unit_proxy_count": 1,
       "name": "FiatTokenV2_2",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "circle",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": "Symbiosis",
       "tvl_usd": null,
       "is_proxy": true,
@@ -281,7 +723,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "deployment_unit": "unit-23701",
+          "deployment_unit": "unit-33741",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -297,39 +739,156 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xe05de631122d95ef347f6fca85d1bb149fcc6df2",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0f91052dc5b4bae53d0fea5dae561a117268f5d2",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "needs_review",
+      "name": "MetaRouter",
+      "role": "adapter",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "MasterChef",
+      "impl_name": "MetaRouter",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xe05de631122d95ef347f6fca85d1bb149fcc6df2",
+          "address": "0xf621fb08bbe51af70e7e0f4ea63496894166ff7f",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0f91052dc5b4bae53d0fea5dae561a117268f5d2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa260e3732593e4ecf9ddc144fd6c4c5fe7077978",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf7e96217347667064dee8f20db747b1c7df45dde",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14786"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x200a0fe876421dc49a26508e3efd0a1008fd12b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MetaRouterGateway",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaRouterGateway",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfcef2fe72413b65d3f393d278a714cad87512bcd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x200a0fe876421dc49a26508e3efd0a1008fd12b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xab83653fd41511d638b69229afbf998eb9b0f30c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x80dddda846e779ccee463bdc0bcc2ae296fedaf9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x4cfa66497fa84d739a0f785fbcee9196f1c64e4a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -339,8 +898,8 @@
       "deployment_unit_proxy_count": null,
       "name": "OFTMock",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -370,7 +929,7 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xb8f275fbf7a959f4bce59999a2ef122a099e81a8",
-      "deployment_unit": "unit-23703",
+      "deployment_unit": "unit-33743",
       "deployment_unit_proxy_count": 1,
       "name": "Portal",
       "role": "unknown",
@@ -386,7 +945,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb8f275fbf7a959f4bce59999a2ef122a099e81a8",
-          "deployment_unit": "unit-23703",
+          "deployment_unit": "unit-33743",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -396,10 +955,170 @@
       ],
       "audits_covering": [
         "audit-2099",
-        "audit-3437",
-        "audit-3438",
-        "audit-3439",
-        "audit-3441"
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x292fc50e4eb66c3f6514b9e402dbc25961824d62",
+      "deployment_unit": "unit-33748",
+      "deployment_unit_proxy_count": 1,
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7b4e28e7273aa8cb64c56ff191ebf43b64f409f9",
+      "impl_name": "Portal",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x292fc50e4eb66c3f6514b9e402dbc25961824d62",
+          "deployment_unit": "unit-33748",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xb8f275fbf7a959f4bce59999a2ef122a099e81a8",
+      "deployment_unit": "unit-33750",
+      "deployment_unit_proxy_count": 1,
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x35d39bb2cbc51ce6c03f0306d0d8d56948b1f990",
+      "impl_name": "Portal",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xb8f275fbf7a959f4bce59999a2ef122a099e81a8",
+          "deployment_unit": "unit-33750",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9",
+      "deployment_unit": "unit-33752",
+      "deployment_unit_proxy_count": 1,
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2e04409f950a236690be6e119f34f7fc209d27c1",
+      "impl_name": "Portal",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9",
+          "deployment_unit": "unit-33752",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xe75c7e85fe6add07077467064ad15847e6ba9877",
+      "deployment_unit": "unit-33760",
+      "deployment_unit_proxy_count": 1,
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8dc3151dccd58fcb6a0bec0df20c06fba133f027",
+      "impl_name": "Portal",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe75c7e85fe6add07077467064ad15847e6ba9877",
+          "deployment_unit": "unit-33760",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -533,7 +1252,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SyntERC20",
       "role": "token",
-      "origin_kind": "upstream",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Symbiosis",
       "tvl_usd": null,
@@ -554,10 +1273,91 @@
         }
       ],
       "audits_covering": [
-        "audit-3437",
-        "audit-3438",
-        "audit-3439",
-        "audit-3441"
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428",
+      "deployment_unit": "unit-33744",
+      "deployment_unit_proxy_count": 1,
+      "name": "SyntFabric",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x71e761c2b3cd3d56ab33a145b3524ca5bdbc5238",
+      "impl_name": "SyntFabric",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428",
+          "deployment_unit": "unit-33744",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd7c3df25683871d18bc838e4f619126442dd38b3",
+      "deployment_unit": "unit-33745",
+      "deployment_unit_proxy_count": 1,
+      "name": "Synthesis",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x14078ebe3b6dd51c089188c1962ddc94a647be35",
+      "impl_name": "Synthesis",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd7c3df25683871d18bc838e4f619126442dd38b3",
+          "deployment_unit": "unit-33745",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2096",
+        "audit-14782",
+        "audit-14783",
+        "audit-14784",
+        "audit-14786"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -585,6 +1385,41 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xec148f80d699b0eaf65dd5438cde4b380ded8a3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimedUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimedUnlocker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xec148f80d699b0eaf65dd5438cde4b380ded8a3b",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -713,8 +1548,8 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "Symbiosis",
       "tvl_usd": null,
       "is_proxy": false,
@@ -916,6 +1751,41 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x6f0f6393e45fe0e7215906b6f9cfeff53ea139cf",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x6f0f6393e45fe0e7215906b6f9cfeff53ea139cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x67480c30ff8cc128cf0250e25616857302df647f",
@@ -959,7 +1829,7 @@
       "name": "WBTC",
       "role": "token",
       "origin_kind": "upstream",
-      "origin_provider": "bitgo",
+      "origin_provider": "wbtc",
       "product_line": "Symbiosis",
       "tvl_usd": null,
       "is_proxy": false,
@@ -994,7 +1864,7 @@
       "name": "WETH9",
       "role": "token",
       "origin_kind": "upstream",
-      "origin_provider": null,
+      "origin_provider": "weth",
       "product_line": "Symbiosis",
       "tvl_usd": null,
       "is_proxy": false,
@@ -1005,6 +1875,41 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcd108089057dd0e9f841eb9e00fcf5105534341e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WithdrawUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WithdrawUnlocker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcd108089057dd0e9f841eb9e00fcf5105534341e",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -1133,12 +2038,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "Synthesis"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1190,8 +2098,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3437,
-      "audit_key": "audit-3437",
+      "audit_id": 14782,
+      "audit_key": "audit-14782",
       "report_name": "Symbiosis Protocol Audit - Omniscia.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Omniscia.pdf",
       "auditor": "Omniscia",
@@ -1215,15 +2123,15 @@
         "Timelock",
         "Wrapper"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 13,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3438,
-      "audit_key": "audit-3438",
+      "audit_id": 14783,
+      "audit_key": "audit-14783",
       "report_name": "Symbiosis Protocol Audit - SlowMist.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20SlowMist.pdf",
       "auditor": "SlowMist",
@@ -1251,15 +2159,15 @@
         "Timelock",
         "Wrapper"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 13,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3439,
-      "audit_key": "audit-3439",
+      "audit_id": 14784,
+      "audit_key": "audit-14784",
       "report_name": "Symbiosis Protocol Audit - Zokyo.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf",
       "auditor": "Zokyo",
@@ -1289,7 +2197,7 @@
         "metarouter",
         "portal"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 18,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -1304,14 +2212,14 @@
           "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol%20Terra/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf"
         },
         {
-          "audit_id": 3439,
+          "audit_id": 14784,
           "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf"
         }
       ]
     },
     {
-      "audit_id": 3440,
-      "audit_key": "audit-3440",
+      "audit_id": 14785,
+      "audit_key": "audit-14785",
       "report_name": "Symbiosis Depository Audit - Decurity.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/depository/Symbiosis%20Depository%20Audit%20-%20Decurity.pdf",
       "auditor": "yAudit",
@@ -1322,17 +2230,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "DepositUnlockers",
+        "Depository",
+        "Router"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3441,
-      "audit_key": "audit-3441",
+      "audit_id": 14786,
+      "audit_key": "audit-14786",
       "report_name": "Symbiosis Protocol MRv3 Audit - Zokyo.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/metarouter-v3/Symbiosis%20Protocol%20MRv3%20Audit%20-%20Zokyo.pdf",
       "auditor": "Zokyo",
@@ -1347,27 +2259,33 @@
       "extracted_names": [
         "AdminableUpgradeable",
         "BridgeV2",
+        "BridgeV2Solana",
         "MetaRouteStructs",
+        "MetaRouteStructsSolana",
         "MetaRouter",
         "MetaRouterGateway",
+        "MetaRouterV2",
+        "MetaRouterV2Solana",
         "MulticallRouter",
         "Portal",
         "RelayRecipientUpgradeable",
         "SyntERC20",
         "SyntFabric",
+        "SyntFabricSolana",
         "Synthesis",
+        "SynthesisSolana",
         "Timelock",
         "Wrapper"
       ],
-      "matched_contracts": 2,
+      "matched_contracts": 22,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3442,
-      "audit_key": "audit-3442",
+      "audit_id": 14787,
+      "audit_key": "audit-14787",
       "report_name": "Symbiosis Onchain Swap Audit - Decurity.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/onchain-swap/Symbiosis%20Onchain%20Swap%20Audit%20-%20Decurity.pdf",
       "auditor": "Decurity",
@@ -1387,8 +2305,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3443,
-      "audit_key": "audit-3443",
+      "audit_id": 14788,
+      "audit_key": "audit-14788",
       "report_name": "Symbiosis Pool Audit - Zokyo.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/pool/Symbiosis%20Pool%20Audit%20-%20Zokyo.pdf",
       "auditor": "Zokyo",
@@ -1408,8 +2326,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3444,
-      "audit_key": "audit-3444",
+      "audit_id": 14789,
+      "audit_key": "audit-14789",
       "report_name": "Symbiosis TON Bridge - Zokyo.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20-%20Zokyo.pdf",
       "auditor": "Zokyo",
@@ -1429,8 +2347,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3445,
-      "audit_key": "audit-3445",
+      "audit_id": 14790,
+      "audit_key": "audit-14790",
       "report_name": "Symbiosis TON Bridge v2 - Zokyo.pdf",
       "report_url": "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20v2%20-%20Zokyo.pdf",
       "auditor": "Zokyo",
@@ -1441,52 +2359,116 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "bridge",
+        "external_id",
+        "jetton-minter",
+        "jetton-utils",
+        "jetton-wallet",
+        "op-codes",
+        "params",
+        "stdlib",
+        "utils"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
-      "auditor": "HashCloak",
+      "auditor": "Zokyo",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 11.1,
-      "latest_audit": "2022-04"
+      "contracts_covered": 16,
+      "coverage_pct": 42.1,
+      "latest_audit": "2024-10"
     },
     {
       "auditor": "Omniscia",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 11.1,
+      "contracts_covered": 13,
+      "coverage_pct": 34.2,
       "latest_audit": "2022-03"
     },
     {
       "auditor": "SlowMist",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 11.1,
+      "contracts_covered": 13,
+      "coverage_pct": 34.2,
       "latest_audit": "2022-02"
     },
     {
-      "auditor": "Zokyo",
+      "auditor": "Decurity",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 11.1,
-      "latest_audit": "2024-10"
+      "coverage_pct": 5.3,
+      "latest_audit": "2025-07"
+    },
+    {
+      "auditor": "HashCloak",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 5.3,
+      "latest_audit": "2022-04"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 2.6,
+      "latest_audit": "2025-10"
     }
   ],
   "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1",
+      "name": "BranchedUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0",
+      "name": "BtcRefundUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
       "name": "FflonkVerifier",
       "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84",
+      "name": "OFTMock",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1504,9 +2486,29 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xec148f80d699b0eaf65dd5438cde4b380ded8a3b",
+      "name": "TimedUnlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x67480c30ff8cc128cf0250e25616857302df647f",
       "name": "USDCOFTAdapter",
       "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcd108089057dd0e9f841eb9e00fcf5105534341e",
+      "name": "WithdrawUnlocker",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1523,17 +2525,17 @@
     }
   ],
   "origin_summary": {
-    "native": 5,
-    "upstream": 7,
-    "standard_library": 4,
+    "native": 15,
+    "upstream": 3,
+    "standard_library": 19,
     "needs_review": 11
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 21
+      "extraction_exact": 95
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 8
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1547,32 +2549,20 @@
         "report_name": "Symbiosis Relayers Network 2022 - Decurity.pdf"
       },
       {
-        "audit_id": 2096,
-        "report_name": "Symbiosis Relayers Network 2024 - Decurity.pdf"
-      },
-      {
         "audit_id": 2097,
         "report_name": "Symbiosis Frontend App - Decurity.pdf"
       },
       {
-        "audit_id": 3440,
-        "report_name": "Symbiosis Depository Audit - Decurity.pdf"
-      },
-      {
-        "audit_id": 3442,
+        "audit_id": 14787,
         "report_name": "Symbiosis Onchain Swap Audit - Decurity.pdf"
       },
       {
-        "audit_id": 3443,
+        "audit_id": 14788,
         "report_name": "Symbiosis Pool Audit - Zokyo.pdf"
       },
       {
-        "audit_id": 3444,
+        "audit_id": 14789,
         "report_name": "Symbiosis TON Bridge - Zokyo.pdf"
-      },
-      {
-        "audit_id": 3445,
-        "report_name": "Symbiosis TON Bridge v2 - Zokyo.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -224,7 +224,7 @@
 | [c14](./c14/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cache.gold](./cache.gold/) | $525.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [caddy-finance](./caddy-finance/) | $173.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [camelot](./camelot/) | $6.4M | 12.5% | $391.9K | active | 1 | 30 | 2026-06-17 |
+| [camelot](./camelot/) | $6.4M | 11.1% | $391.9K | active | 1 | 33 | 2026-06-18 |
 | [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/) | $886.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [canopy](./canopy/) | $853.5K | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 83 | 2026-06-17 |
@@ -720,7 +720,7 @@
 | [mdex](./mdex/) | $235.5K | 80.0% | $20.2K | declining | 3 | 6 | 2026-06-17 |
 | [meeds-finance](./meeds-finance/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 4 | 2026-06-17 |
 | [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-17 |
-| [mendi-finance](./mendi-finance/) | $1.7M | 0.0% | ? | dead | 4 | 3 | 2026-06-17 |
+| [mendi-finance](./mendi-finance/) | $1.7M | 0.0% | ? | sunsetting | 6 | 4 | 2026-06-18 |
 | [mento](./mento/) | $866.4K | 69.7% | $65.0K | declining | 23 | 48 | 2026-06-17 |
 | [merchant-moe](./merchant-moe/) | $21.6M | 50.0% | ? | unknown | 1 | 16 | 2026-06-17 |
 | [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -888,7 +888,7 @@
 | [pangolin](./pangolin/) | $3.1M | 45.5% | ? | declining | 12 | 19 | 2026-06-17 |
 | [paradex](./paradex/) | $27.3M | 0.0% | ? | unknown | 5 | 0 | 2026-06-17 |
 | [paragonsdao](./paragonsdao/) | $6.5M | 25.0% | ? | active | 8 | 4 | 2026-06-17 |
-| [parallel-protocol](./parallel-protocol/) | $606.7K | 4.2% | ? | active | 5 | 35 | 2026-06-17 |
+| [parallel-protocol](./parallel-protocol/) | $606.7K | 34.6% | ? | active | 5 | 34 | 2026-06-18 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 27 | 2026-06-17 |
 | [paryonusd](./paryonusd/) | $412.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [paxe-protocol](./paxe-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1035,7 +1035,7 @@
 | [salvor](./salvor/) | $660.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sanctum](./sanctum/) | $1.2B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sashimiswap](./sashimiswap/) | $67.8K | 0.0% | $67.8K | dead | 1 | 28 | 2026-06-17 |
-| [satlayer](./satlayer/) | $66.9M | 6.1% | $64.7M | active | 12 | 90 | 2026-06-17 |
+| [satlayer](./satlayer/) | $66.9M | 7.5% | $64.7M | active | 12 | 91 | 2026-06-18 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 15 | 2026-06-17 |
 | [satoshi-perps](./satoshi-perps/) | $4.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [saucerswap](./saucerswap/) | $28.9M | 0.0% | ? | unknown | 8 | 0 | 2026-06-17 |
@@ -1198,7 +1198,7 @@
 | [swirl](./swirl/) | $4.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [switcheo-finance](./switcheo-finance/) | $69.8M | 0.0% | $69.8M | active | 0 | 18 | 2026-06-17 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 17 | 2026-06-17 |
-| [symbiosis](./symbiosis/) | $236.1M | 16.7% | $236.1M | active | 15 | 27 | 2026-06-17 |
+| [symbiosis](./symbiosis/) | $236.1M | 47.4% | $236.1M | active | 15 | 48 | 2026-06-18 |
 | [symmetry-trade](./symmetry-trade/) | $7.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [symmio](./symmio/) | $1.0 | 0.0% | $1.0 | active | 0 | 166 | 2026-06-17 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 236 | 2026-06-17 |

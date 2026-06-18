@@ -50,9 +50,9 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MasterChef](./ethereum-1/0xe05de631122d95ef347f6fca85d1bb149fcc6df2/) | ethereum | [`0xe05de6...cc6df2`](./ethereum-1/0xe05de631122d95ef347f6fca85d1bb149fcc6df2/) | ⚠️ Unaudited | Verified |
+| MasterChef | ethereum | `0xe05de6...cc6df2` | ⚠️ Unaudited | Verified |
 | [OFTMock](./ethereum-1/0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84/) | ethereum | [`0xbc7f24...c14b84`](./ethereum-1/0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84/) | ⚠️ Unaudited | Verified |
-| [Portal](./ethereum-1/0xb8f275fbf7a959f4bce59999a2ef122a099e81a8/) | ethereum | [`0xb8f275...9e81a8`](./ethereum-1/0xb8f275fbf7a959f4bce59999a2ef122a099e81a8/) | ✅ Audited | Verified |
+| Portal | ethereum | `0xb8f275...9e81a8` | ✅ Audited | Verified |
 | [Symbiosis](./ethereum-1/0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9/) | ethereum | [`0xd38bb4...c76dd9`](./ethereum-1/0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9/) | ✅ Audited | Verified |
 | UnnamedContract | ethereum | `0x7916ac...fb8675` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xa1438c...05b024` | ❓ Unverified | Unverified |

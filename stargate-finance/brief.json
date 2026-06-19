@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stargate-finance",
-  "generated_at": "2026-06-18T17:24:28.550Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
+  "generated_at": "2026-06-19T06:14:44.578Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stargate-finance",

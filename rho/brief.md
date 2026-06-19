@@ -5,8 +5,8 @@
 - Project: Rho (`rho`)
 - Website: [https://www.rho.trading/](https://www.rho.trading/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:43.651Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:37.330Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, ethereum
 - Contract surface: 28 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,307,119.00

@@ -7,8 +7,8 @@
 - Project: YO Protocol (`yo-protocol`)
 - Website: [https://app.yo.xyz](https://app.yo.xyz)
 - Lifecycle: declining (Tier 0, 51.7% below peak)
-- Generated: 2026-06-18T17:40:14.372Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:15:21.118Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, ethereum
 - Contract surface: 20 unique implementations (38 raw deployments)
 - DeFi Llama TVL: $34,886,510.55

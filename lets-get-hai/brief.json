@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lets-get-hai",
-  "generated_at": "2026-06-18T18:20:07.802Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
+  "generated_at": "2026-06-19T06:14:26.367Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lets-get-hai",

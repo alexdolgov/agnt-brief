@@ -7,8 +7,8 @@
 - Project: SpiralDao (`spiraldao`)
 - Website: [https://spiral.farm](https://spiral.farm)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-18T09:36:58.904Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Generated: 2026-06-19T06:14:42.031Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum, zksync-era
 - Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $6,422,529.38

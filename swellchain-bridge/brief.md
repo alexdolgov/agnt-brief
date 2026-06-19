@@ -7,8 +7,8 @@
 - Project: Swellchain Bridge (`swellchain-bridge`)
 - Website: [https://superbridge.swellnetwork.io](https://superbridge.swellnetwork.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:37.490Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:46.599Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 21 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $612,381.07

@@ -5,8 +5,8 @@
 - Project: ACryptoS (`acryptos`)
 - Website: [https://www.acryptos.com/](https://www.acryptos.com/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-18T11:49:15.326Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Generated: 2026-06-19T06:13:13.462Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, bsc
 - Contract surface: 19 unique implementations (120 raw deployments)
 - DeFi Llama TVL: $10,552,177.58

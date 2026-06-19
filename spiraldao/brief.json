@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "spiraldao",
-  "generated_at": "2026-06-18T09:36:58.904Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
+  "generated_at": "2026-06-19T06:14:42.031Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "spiraldao",

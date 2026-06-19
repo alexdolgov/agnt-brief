@@ -5,8 +5,8 @@
 - Project: Seer (`seer`)
 - Website: [https://seer.pm/](https://seer.pm/)
 - Lifecycle: active (Tier 0, 23.2% below peak)
-- Generated: 2026-06-17T07:00:52.239Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:37.355Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum, gnosis
 - Contract surface: 25 unique implementations (77 raw deployments)
 - DeFi Llama TVL: $828,646.84

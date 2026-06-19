@@ -5,8 +5,8 @@
 - Project: Mangrove (`mangrove`)
 - Website: [https://www.mangrove.exchange](https://www.mangrove.exchange)
 - Lifecycle: active (Tier 0, 47.5% below peak)
-- Generated: 2026-06-18T09:29:57.483Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Generated: 2026-06-19T06:14:28.747Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, blast, sei
 - Contract surface: 26 unique implementations (46 raw deployments)
 - DeFi Llama TVL: $4,258,566.81

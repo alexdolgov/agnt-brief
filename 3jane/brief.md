@@ -7,8 +7,8 @@
 - Project: 3Jane (`3jane`)
 - Website: [https://www.3jane.xyz/](https://www.3jane.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T14:43:53.668Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
+- Generated: 2026-06-19T06:13:13.450Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 17 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $46,360,631.00

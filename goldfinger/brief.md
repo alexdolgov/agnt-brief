@@ -5,8 +5,8 @@
 - Project: GoldFinger (`goldfinger`)
 - Website: [https://goldfinger.finance/en](https://goldfinger.finance/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T16:19:49.823Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Generated: 2026-06-19T06:13:51.622Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: bsc
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $0.00

@@ -5,8 +5,8 @@
 - Project: BitU Protocol (`bitu-protocol`)
 - Website: [https://www.bitu.io](https://www.bitu.io)
 - Lifecycle: active (Tier 0, 34% below peak)
-- Generated: 2026-06-17T07:00:32.590Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:13:20.547Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: bsc
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $19,547,798.50

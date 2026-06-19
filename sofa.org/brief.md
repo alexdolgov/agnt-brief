@@ -7,8 +7,8 @@
 - Project: SOFA.org (`sofa.org`)
 - Website: [https://www.sofa.org](https://www.sofa.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T13:02:59.883Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Generated: 2026-06-19T06:14:39.137Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, bsc, ethereum, polygon, sei
 - Contract surface: 19 unique implementations (33 raw deployments)
 - DeFi Llama TVL: $2,069,854.61

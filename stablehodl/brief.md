@@ -5,8 +5,8 @@
 - Project: StableHodl (`stablehodl`)
 - Website: [https://stablehodl.com/](https://stablehodl.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:36.922Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:42.092Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $6,960,502.12

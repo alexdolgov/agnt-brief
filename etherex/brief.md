@@ -7,8 +7,8 @@
 - Project: Etherex (`etherex`)
 - Website: [https://etherex.finance/](https://etherex.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T17:41:16.073Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:13:48.768Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: linea
 - Contract surface: 59 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $1,355,190.00

@@ -7,8 +7,8 @@
 - Project: Blackhole (`blackhole`)
 - Website: [https://blackhole.xyz/](https://blackhole.xyz/)
 - Lifecycle: declining (Tier 0, 89.8% below peak)
-- Generated: 2026-06-18T05:49:39.807Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
+- Generated: 2026-06-19T06:13:20.548Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: avalanche
 - Contract surface: 59 unique implementations (76 raw deployments)
 - DeFi Llama TVL: $10,594,230.00

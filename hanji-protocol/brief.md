@@ -7,8 +7,8 @@
 - Project: Hanji Protocol (`hanji-protocol`)
 - Website: [https://hanji.io](https://hanji.io)
 - Lifecycle: declining (Tier 0, 41.2% below peak)
-- Generated: 2026-06-17T07:00:32.645Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:13:53.726Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: base
 - Contract surface: 374 unique implementations (374 raw deployments)
 - DeFi Llama TVL: $727,850.56

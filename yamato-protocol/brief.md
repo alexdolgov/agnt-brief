@@ -5,8 +5,8 @@
 - Project: Yamato Protocol (`yamato-protocol`)
 - Website: [https://app.yamato.fi/#/](https://app.yamato.fi/#/)
 - Lifecycle: active (Tier 0, 65% below peak)
-- Generated: 2026-06-18T12:57:13.256Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Generated: 2026-06-19T06:14:53.823Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 23 unique implementations (23 raw deployments)
 - DeFi Llama TVL: $1,121,902.72

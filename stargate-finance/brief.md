@@ -5,8 +5,8 @@
 - Project: Stargate Finance (`stargate-finance`)
 - Website: [https://stargate.finance/](https://stargate.finance/)
 - Lifecycle: active (Tier 0, 97.8% below peak)
-- Generated: 2026-06-18T17:24:28.550Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:14:44.578Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, aurora, avalanche, base, bsc, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, optimism, plasma, polygon, scroll, sei, sonic, swellchain, unichain
 - Contract surface: 73 unique implementations (259 raw deployments)
 - DeFi Llama TVL: $84,168,885.00

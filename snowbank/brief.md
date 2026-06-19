@@ -6,8 +6,8 @@
 
 - Project: Snowbank (`snowbank`)
 - Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-17T07:00:50.432Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:39.491Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: avalanche
 - Contract surface: 6 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $4,100,767.03

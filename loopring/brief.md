@@ -7,8 +7,8 @@
 - Project: Loopring (`loopring`)
 - Website: [https://loopring.org/#/](https://loopring.org/#/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:57.583Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:28.446Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: base, ethereum
 - Contract surface: 67 unique implementations (93 raw deployments)
 - DeFi Llama TVL: $8,551,737.62

@@ -7,8 +7,8 @@
 - Project: Mode Bridge (`mode-bridge`)
 - Website: [https://app.mode.network](https://app.mode.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T22:36:54.008Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
+- Generated: 2026-06-19T06:14:30.353Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum, mode
 - Contract surface: 75 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $5,074,260.03

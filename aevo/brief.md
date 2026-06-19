@@ -5,8 +5,8 @@
 - Project: Aevo (`aevo`)
 - Website: [https://app.aevo.xyz/r/defillama](https://app.aevo.xyz/r/defillama)
 - Lifecycle: active (Tier 0, 84.3% below peak)
-- Generated: 2026-06-18T04:35:37.227Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
+- Generated: 2026-06-19T06:13:15.815Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 21 unique implementations (44 raw deployments)
 - DeFi Llama TVL: $18,890,733.00

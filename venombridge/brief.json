@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "venombridge",
-  "generated_at": "2026-06-14T04:22:49.044Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
+  "generated_at": "2026-06-19T06:14:50.896Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "venombridge",
@@ -32,14 +32,14 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
+    "total_contracts": 4,
     "total_addresses": 5,
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -71,10 +71,21 @@
   "topography": {
     "project_purpose": "VenomBridge is a cross-chain bridge protocol enabling asset transfers between Ethereum and the Venom network. It uses a proxy-based upgradeable contract architecture to manage token locking and minting across chains.",
     "relationship_narrative": "The TransparentUpgradeableProxy delegates to the Diamond implementation, which likely contains the core bridge logic and interacts with the MultiVaultToken for token management.",
-    "product_family_count": 1
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 5,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 4,
+    "live_deployment_units": 4,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -87,6 +98,8 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4ab740157721105ae503fbad756a578171512525",
+      "deployment_unit": "unit-39255",
+      "deployment_unit_proxy_count": 1,
       "name": "Diamond",
       "role": "unknown",
       "origin_kind": "standard_library",
@@ -101,24 +114,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4ab740157721105ae503fbad756a578171512525",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x4ab740157721105ae503fbad756a578171512525",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "deployment_unit": "unit-39255",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -128,6 +125,8 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "deployment_unit": "unit-39258",
+          "deployment_unit_proxy_count": 1,
           "source_verified": false,
           "verified_by_bytecode": true,
           "tvl_usd": null,
@@ -142,9 +141,81 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4ab740157721105ae503fbad756a578171512525",
+      "deployment_unit": "unit-39256",
+      "deployment_unit_proxy_count": 1,
+      "name": "Diamond",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0bc8c8212c0c74773671c4badb18999c2b07f3c6",
+      "impl_name": "Diamond",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "deployment_unit": "unit-39256",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4ab740157721105ae503fbad756a578171512525",
+      "deployment_unit": "unit-39257",
+      "deployment_unit_proxy_count": 1,
+      "name": "Diamond",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0bc8c8212c0c74773671c4badb18999c2b07f3c6",
+      "impl_name": "Diamond",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "deployment_unit": "unit-39257",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x46f84dc6564cdd93922f7bfb88b03d35308d87c9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "MultiVaultToken",
       "role": "core_logic",
       "origin_kind": "native",
@@ -159,6 +230,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x46f84dc6564cdd93922f7bfb88b03d35308d87c9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -212,7 +285,7 @@
   "origin_summary": {
     "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 3,
     "needs_review": 0
   },
   "scope_matching_notes": {

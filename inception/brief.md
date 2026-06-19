@@ -7,8 +7,8 @@
 - Project: Inception (`inception`)
 - Website: [https://www.inceptionlrt.com/](https://www.inceptionlrt.com/)
 - Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-18T15:06:25.796Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
+- Generated: 2026-06-19T06:14:22.493Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, mode, optimism
 - Contract surface: 12 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $4,625,094.00

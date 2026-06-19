@@ -5,8 +5,8 @@
 - Project: Coinsquare (`coinsquare`)
 - Website: [https://coinsquare.com](https://coinsquare.com)
 - Lifecycle: unknown
-- Generated: 2026-06-17T16:24:21.987Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Generated: 2026-06-19T06:13:48.400Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $8,989,665.69

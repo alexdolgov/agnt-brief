@@ -7,10 +7,10 @@
 - Project: VenomBridge (`venombridge`)
 - Website: [https://venombridge.com](https://venombridge.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-14T04:22:49.044Z
-- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Generated: 2026-06-19T06:14:50.896Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: avalanche, bsc, ethereum, polygon
-- Contract surface: 2 unique implementations (5 raw deployments)
+- Contract surface: 4 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $860,403.09
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,13 +23,21 @@ VenomBridge is a cross-chain bridge protocol enabling asset transfers between Et
 
 The TransparentUpgradeableProxy delegates to the Diamond implementation, which likely contains the core bridge logic and interacts with the MultiVaultToken for token management.
 
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 4/4 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 1
 - Unverified implementations: 0
-- Unique implementations: 2
+- Unique implementations: 4
 - Raw deployments: 5
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
@@ -49,11 +57,13 @@ The TransparentUpgradeableProxy delegates to the Diamond implementation, which l
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| MultiVaultToken | core_logic | ethereum | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | ⚠️ Unaudited |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Diamond | unknown | bsc | unit-39256 | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | polygon | unit-39257 | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| MultiVaultToken | core_logic | ethereum | n/a | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,9 +75,9 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Diamond | unknown | ethereum | 4 deployments: ethereum [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/); bsc [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/); polygon [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/); avalanche [`0x4ab740...512525`](./contracts/avalanche-43114/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited (bytecode match) |
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Diamond | unknown | ethereum | unit-39255 | 2 deployments: ethereum [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/); avalanche [`0x4ab740...512525`](./contracts/avalanche-43114/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (0)
 
@@ -95,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 3 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

@@ -5,8 +5,8 @@
 - Project: IntentX (`intentx`)
 - Website: [https://intentx.io](https://intentx.io)
 - Lifecycle: active (Tier 0, 10.2% below peak)
-- Generated: 2026-06-17T07:00:45.316Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:24.198Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, mantle
 - Contract surface: 12 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $5,673,214.30

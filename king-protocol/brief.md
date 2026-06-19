@@ -5,8 +5,8 @@
 - Project: King Protocol (`king-protocol`)
 - Website: [https://kingprotocol.org/](https://kingprotocol.org/)
 - Lifecycle: active (Tier 0, 94% below peak)
-- Generated: 2026-06-18T01:58:25.708Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Generated: 2026-06-19T06:14:24.610Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base, mantle, swellchain
 - Contract surface: 15 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $1,142,997.99

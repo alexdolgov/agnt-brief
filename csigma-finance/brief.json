@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "csigma-finance",
-  "generated_at": "2026-06-18T14:58:30.177Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
+  "generated_at": "2026-06-19T06:13:49.146Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "csigma-finance",

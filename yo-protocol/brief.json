@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yo-protocol",
-  "generated_at": "2026-06-18T17:40:14.372Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
+  "generated_at": "2026-06-19T06:15:21.118Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "yo-protocol",

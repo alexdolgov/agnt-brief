@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "standx",
-  "generated_at": "2026-06-18T14:20:32.597Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
+  "generated_at": "2026-06-19T06:14:44.525Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "standx",

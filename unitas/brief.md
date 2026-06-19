@@ -5,8 +5,8 @@
 - Project: Unitas (`unitas`)
 - Website: [https://app.unitas.so](https://app.unitas.so)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-06-17T07:00:48.962Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:48.743Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: bsc
 - Contract surface: 12 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $59,863,077.28

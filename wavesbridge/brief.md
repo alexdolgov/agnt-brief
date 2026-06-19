@@ -7,8 +7,8 @@
 - Project: WavesBridge (`wavesbridge`)
 - Website: [https://wavesbridge.io/](https://wavesbridge.io/)
 - Lifecycle: declining (Tier 0, 78.9% below peak)
-- Generated: 2026-06-17T16:26:49.945Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Generated: 2026-06-19T06:14:53.756Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, bsc, ethereum
 - Contract surface: 6 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $353,348.74

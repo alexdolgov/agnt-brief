@@ -5,8 +5,8 @@
 - Project: zkSwap Finance (`zkswap-finance`)
 - Website: [https://zkswap.finance](https://zkswap.finance)
 - Lifecycle: active (Tier 0, 92.4% below peak)
-- Generated: 2026-06-18T01:38:34.133Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Generated: 2026-06-19T06:15:21.168Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: sonic, zksync-era
 - Contract surface: 52 unique implementations (73 raw deployments)
 - DeFi Llama TVL: $991,689.00

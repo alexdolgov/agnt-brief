@@ -5,8 +5,8 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-06-17T16:21:13.743Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Generated: 2026-06-19T06:13:13.448Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, bsc, ethereum, manta, sei
 - Contract surface: 26 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $1,094,395.00

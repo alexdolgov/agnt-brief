@@ -5,8 +5,8 @@
 - Project: Rank Trading (`rank-trading`)
 - Website: [https://rank.trading/](https://rank.trading/)
 - Lifecycle: active (Tier 0, 69.1% below peak)
-- Generated: 2026-06-17T07:00:45.536Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:34.860Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: bsc
 - Contract surface: 8 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $1,951,466.64

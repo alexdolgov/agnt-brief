@@ -91,7 +91,6 @@ Each project directory contains:
 | [republic-note](./republic-note/brief.md) | $14.22M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
 | [lisk-bridge](./lisk-bridge/brief.md) | $30.24M | ethereum | 40 | 38/40 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $50.91M |
 | [flying-tulip](./flying-tulip/brief.md) | $6.99M | 5 | 51 | 48/51 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $50.76M |
-| [resolv](./resolv/brief.md) | $22.38M | 7 | 80 | 65/80 (81%) | 3.1% | 3.1% (Sherlock) | 1 | aging | ❓ unknown | $50.49M |
 | [stakestone](./stakestone/brief.md) | $18.34M | 8 | 86 | 51/86 (59%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $49.72M |
 | [overtime](./overtime/brief.md) | $2.07M | 5 | 75 | 69/75 (92%) | 7.2% | 0.0% (-) | 3 | aging | ⚠️ declining | $42.53M |
 | [turtle-club](./turtle-club/brief.md) | $857.95K | 4 | 183 | 155/183 (85%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $41.93M |
@@ -144,7 +143,7 @@ Each project directory contains:
 | [synthetix](./synthetix/brief.md) | $32.47M | 4 | 19 | 19/19 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $11.44M |
 | [alpaca-finance](./alpaca-finance/brief.md) | $41.66M | bsc | 19 | 19/19 (100%) | 31.6% | 10.5% (SlowMist) | 4 | stale | ⚠️ declining | $11.23M |
 | [equilibria](./equilibria/brief.md) | $12.92M | 10 | 68 | 51/68 (75%) | 19.6% | 0.0% (-) | 3 | aging | ⚠️ declining | $11.05M |
-| [kleros](./kleros/brief.md) | $5.81M | 4 | 358 | 84/358 (23%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $10.69M |
+| [kleros](./kleros/brief.md) | $5.81M | 4 | 23 | 22/23 (96%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $10.69M |
 | [azuro](./azuro/brief.md) | $1.64M | 6 | 129 | 43/129 (33%) | 9.1% | 0.0% (-) | 3 | aging | ✅ active | $9.78M |
 | [polkastarter](./polkastarter/brief.md) | $2.73M | bsc, ethereum | 2 | 2/2 (100%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | $9.61M |
 | [kaito](./kaito/brief.md) | $15.83M | base | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $9.48M |
@@ -213,7 +212,7 @@ Each project directory contains:
 | [tau-labs](./tau-labs/brief.md) | $4.08M | ethereum, plasma | 74 | 74/74 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $1.73M |
 | [eventum-bridge](./eventum-bridge/brief.md) | $2.82M | arbitrum, ethereum | 21 | 17/21 (81%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $1.64M |
 | [sperax](./sperax/brief.md) | $1.87M | arbitrum, ethereum | 10 | 9/10 (90%) | 33.3% | 11.1% (SlowMist) | 5 | stale | ⚠️ declining | $1.63M |
-| [sqd.ai](./sqd.ai/brief.md) | $23.18M | 4 | 28 | 25/28 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.58M |
+| [sqd.ai](./sqd.ai/brief.md) | $23.18M | 4 | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.58M |
 | [elephant-money](./elephant-money/brief.md) | $74.83M | bsc | 49 | 47/49 (96%) | 8.5% | 0.0% (-) | 1 | stale | ⚠️ declining | $1.57M |
 | [templar-dao](./templar-dao/brief.md) | $2.18M | bsc, moonriver | 11 | 10/11 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.55M |
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.52M | base, ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.51M |
@@ -324,7 +323,7 @@ Each project directory contains:
 | [proxy](./proxy/brief.md) | $16.43M | ethereum, polygon | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $735.64 |
 | [nest-credit](./nest-credit/brief.md) | $51.94M | 4 | 19 | 9/19 (47%) | 60.0% | 20.0% (Spearbit) | 3 | fresh | ✅ active | $693.42 |
 | [altitude.fi](./altitude.fi/brief.md) | $7.61M | ethereum | 25 | 15/25 (60%) | 33.3% | 0.0% (-) | 6 | aging | ⚠️ declining | $669.92 |
-| [blast-l2](./blast-l2/brief.md) | $52.15M | blast, ethereum | 295 | 89/295 (30%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $568.85 |
+| [blast-l2](./blast-l2/brief.md) | $52.15M | blast, ethereum | 31 | 27/31 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $568.85 |
 | [nerve](./nerve/brief.md) | $1.47M | bsc, ethereum | 36 | 20/36 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $508.66 |
 | [badger-dao](./badger-dao/brief.md) | $7.77M | 4 | 27 | 25/27 (93%) | 20.0% | 4.0% (Code4rena) | 2 | stale | ❓ unknown | $396.94 |
 | [hemi-staking](./hemi-staking/brief.md) | $29.14M | 4 | 65 | 28/65 (43%) | 3.6% | 0.0% (-) | 1 | fresh | ✅ active | $391.21 |
@@ -431,7 +430,7 @@ Each project directory contains:
 | [avon-megavault](./avon-megavault/brief.md) | $36.60K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [axc-gift](./axc-gift/brief.md) | $5.29M | bsc | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [axedao](./axedao/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [aztec-connect](./aztec-connect/brief.md) | $4.31M | ethereum | 8 | 8/8 (100%) | 37.5% | 0.0% (-) | 2 | stale | ✅ active | - |
+| [aztec-connect](./aztec-connect/brief.md) | $4.31M | ethereum | 1 | 1/1 (100%) | 100.0% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [backbone-labs](./backbone-labs/brief.md) | $232.54K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [baksdao](./baksdao/brief.md) | $181.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ball-exchange](./ball-exchange/brief.md) | $0.04 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1103,6 +1102,7 @@ Each project directory contains:
 | [reddex](./reddex/brief.md) | $4.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [rehold](./rehold/brief.md) | $11.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [renec-lend](./renec-lend/brief.md) | $5.09K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [resolv](./resolv/brief.md) | $22.38M | bsc, ethereum, plasma | 38 | 29/38 (76%) | 3.4% | 3.4% (Sherlock) | 1 | aging | ❓ unknown | - |
 | [revert](./revert/brief.md) | $7.43M | 7 | 74 | 15/74 (20%) | 87.5% | 25.0% (Spearbit) | 11 | fresh | ✅ active | - |
 | [revoluzion](./revoluzion/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [rex-staking](./rex-staking/brief.md) | $1.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1351,7 +1351,7 @@ Each project directory contains:
 | [velodrome](./velodrome/brief.md) | $33.86M | celo, optimism | 16 | 16/16 (100%) | 75.0% | 75.0% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
 | [velora](./velora/brief.md) | $248.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 44 | 5/44 (11%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
-| [venombridge](./venombridge/brief.md) | $860.40K | 4 | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
+| [venombridge](./venombridge/brief.md) | $860.40K | 4 | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [ventuals](./ventuals/brief.md) | $28.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verio](./verio/brief.md) | $4.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verocket](./verocket/brief.md) | $19.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-19T06:16:58.249Z_
+_Generated: 2026-06-19T07:02:44.389Z_
 _Projects: 1409_

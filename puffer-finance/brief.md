@@ -7,8 +7,8 @@
 - Project: Puffer Finance (`puffer-finance`)
 - Website: [https://puffer.fi](https://puffer.fi)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T14:46:45.243Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
+- Generated: 2026-06-19T06:14:34.886Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 21 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $46,525,430.47

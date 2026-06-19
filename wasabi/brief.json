@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wasabi",
-  "generated_at": "2026-06-18T18:24:04.288Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
+  "generated_at": "2026-06-19T06:14:53.827Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wasabi",

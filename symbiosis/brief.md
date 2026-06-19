@@ -5,8 +5,8 @@
 - Project: Symbiosis (`symbiosis`)
 - Website: [https://symbiosis.finance](https://symbiosis.finance)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-06-18T01:14:20.080Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Generated: 2026-06-19T06:14:46.543Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, avalanche, base, cronos, ethereum, optimism, polygon
 - Contract surface: 48 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $8,537,200.98

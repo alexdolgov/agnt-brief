@@ -5,8 +5,8 @@
 - Project: Looping Collective (`looping-collective`)
 - Website: [https://www.loopingcollective.org/](https://www.loopingcollective.org/)
 - Lifecycle: active (Tier 0, 74% below peak)
-- Generated: 2026-06-17T07:00:36.863Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:26.396Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum, hyperliquid
 - Contract surface: 10 unique implementations (37 raw deployments)
 - DeFi Llama TVL: $11,937,641.00

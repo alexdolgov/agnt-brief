@@ -5,8 +5,8 @@
 - Project: BOB Bridge (`bob-bridge`)
 - Website: [https://www.gobob.xyz](https://www.gobob.xyz)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-17T22:22:03.110Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
+- Generated: 2026-06-19T06:13:20.494Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 26 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $2,692,052.74

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bscswap",
-  "generated_at": "2026-06-17T16:05:06.639Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
+  "generated_at": "2026-06-19T06:13:48.665Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bscswap",

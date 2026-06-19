@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "snuggle",
-  "generated_at": "2026-06-18T08:53:31.667Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
+  "generated_at": "2026-06-19T06:14:39.041Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "snuggle",

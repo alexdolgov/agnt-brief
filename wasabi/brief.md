@@ -7,8 +7,8 @@
 - Project: Wasabi (`wasabi`)
 - Website: [https://app.wasabi.xyz/p/LKHR9](https://app.wasabi.xyz/p/LKHR9)
 - Lifecycle: declining (Tier 1, rugged)
-- Generated: 2026-06-18T18:24:04.288Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:14:53.827Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: base, berachain, blast, ethereum
 - Contract surface: 60 unique implementations (277 raw deployments)
 - DeFi Llama TVL: $1,043,637.00

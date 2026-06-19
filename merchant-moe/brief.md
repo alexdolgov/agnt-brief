@@ -7,8 +7,8 @@
 - Project: Merchant Moe (`merchant-moe`)
 - Website: [https://merchantmoe.com/](https://merchantmoe.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T17:36:36.637Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:14:28.391Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: mantle
 - Contract surface: 14 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $21,558,728.00

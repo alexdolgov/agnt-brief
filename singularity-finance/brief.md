@@ -7,8 +7,8 @@
 - Project: Singularity Finance (`singularity-finance`)
 - Website: [https://singularityfinance.ai/](https://singularityfinance.ai/)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-17T07:00:49.810Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:39.500Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: base, ethereum
 - Contract surface: 10 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $4,721,299.87

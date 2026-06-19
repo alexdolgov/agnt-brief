@@ -7,8 +7,8 @@
 - Project: Stout (`stout`)
 - Website: [https://stout.fi/](https://stout.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:49.863Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:44.557Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: sonic
 - Contract surface: 32 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $2,083,643.75

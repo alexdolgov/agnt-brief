@@ -7,8 +7,8 @@
 - Project: Supernova (`supernova`)
 - Website: [https://supernova.xyz/](https://supernova.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T17:51:08.260Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Generated: 2026-06-19T06:14:46.589Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 41 unique implementations (57 raw deployments)
 - DeFi Llama TVL: $1,348,460.00

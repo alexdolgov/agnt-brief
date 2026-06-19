@@ -5,8 +5,8 @@
 - Project: Snuggle (`snuggle`)
 - Website: [https://snuggle.fi/](https://snuggle.fi/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-18T08:53:31.667Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Generated: 2026-06-19T06:14:39.041Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, base
 - Contract surface: 23 unique implementations (57 raw deployments)
 - DeFi Llama TVL: $1,001,156.36

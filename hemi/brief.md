@@ -7,8 +7,8 @@
 - Project: Hemi (`hemi`)
 - Website: [https://hemi.xyz/](https://hemi.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T22:19:46.309Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-9ddf
+- Generated: 2026-06-19T06:13:53.302Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: bsc, ethereum, optimism
 - Contract surface: 22 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $566,209.89

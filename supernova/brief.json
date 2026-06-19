@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "supernova",
-  "generated_at": "2026-06-18T17:51:08.260Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-748f",
+  "generated_at": "2026-06-19T06:14:46.589Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "supernova",

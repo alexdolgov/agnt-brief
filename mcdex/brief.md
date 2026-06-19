@@ -7,8 +7,8 @@
 - Project: MCDEX (`mcdex`)
 - Website: [https://mux.network/](https://mux.network/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-18T02:28:49.471Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Generated: 2026-06-19T06:14:28.583Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: arbitrum, avalanche, bsc, ethereum, fantom, optimism
 - Contract surface: 70 unique implementations (94 raw deployments)
 - DeFi Llama TVL: $943,029.15

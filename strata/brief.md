@@ -5,8 +5,8 @@
 - Project: Strata (`strata`)
 - Website: [https://strata.money](https://strata.money)
 - Lifecycle: active (Tier 0, 70.3% below peak)
-- Generated: 2026-06-18T19:59:21.748Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-4ae8
+- Generated: 2026-06-19T06:14:46.625Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 25 unique implementations (51 raw deployments)
 - DeFi Llama TVL: $89,941,930.00

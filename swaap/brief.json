@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swaap",
-  "generated_at": "2026-06-18T04:26:58.085Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
+  "generated_at": "2026-06-19T06:14:46.596Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "swaap",

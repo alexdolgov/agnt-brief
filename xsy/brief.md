@@ -5,8 +5,8 @@
 - Project: XSY (`xsy`)
 - Website: [https://xsy.fi](https://xsy.fi)
 - Lifecycle: active (Tier 0, 44.8% below peak)
-- Generated: 2026-06-18T00:41:02.694Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Generated: 2026-06-19T06:14:53.726Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: avalanche, base
 - Contract surface: 12 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $20,970,676.88

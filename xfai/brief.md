@@ -4,8 +4,8 @@
 
 - Project: Xfai (`xfai`)
 - Lifecycle: active (Tier 0, 66.3% below peak)
-- Generated: 2026-06-17T07:00:37.441Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:14:54.241Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: linea
 - Contract surface: 6 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $835,471.25

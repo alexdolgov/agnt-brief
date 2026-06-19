@@ -5,8 +5,8 @@
 - Project: NodeDAO (`nodedao`)
 - Website: [https://www.nodedao.com](https://www.nodedao.com)
 - Lifecycle: active (Tier 0, 64.2% below peak)
-- Generated: 2026-06-18T14:21:37.262Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-4e21
+- Generated: 2026-06-19T06:14:30.331Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $25,126,572.20

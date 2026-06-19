@@ -5,8 +5,8 @@
 - Project: BEND (`bend`)
 - Website: [https://bend.berachain.com](https://bend.berachain.com)
 - Lifecycle: active (Tier 0, 63.6% below peak)
-- Generated: 2026-06-18T03:30:43.212Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
+- Generated: 2026-06-19T06:13:18.257Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
 - Chains: berachain, ethereum
 - Contract surface: 71 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $12,906,104.10

@@ -7,8 +7,8 @@
 - Project: TruStake (`trufin-protocol`)
 - Website: [https://app.truyields.com](https://app.truyields.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:41.290Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-06-19T06:16:40.460Z
+- Pipeline run: v2-pipeline-2026-06-19-32b207-fda2
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - On-chain TVL (included contracts): n/a
@@ -39,11 +39,11 @@ TruYields is an institutional onchain yield platform with product lines includin
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 12
+- Audits discovered: 13
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-02 (fresh)
-- Staleness: 2 fresh, 3 aging, 7 stale, 0 unknown
+- Latest audit: 2026-05 (fresh)
+- Staleness: 3 fresh, 3 aging, 7 stale, 0 unknown
 - Tier 1 coverage: 50.0% (OpenZeppelin)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -61,7 +61,7 @@ TruYields is an institutional onchain yield platform with product lines includin
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TruStakeMATICv2 | proxy | ethereum | unit-24869 | [`0xa43a7c...8987ed`](./contracts/ethereum-1/0xa43a7c62d56df036c187e1966c03e2799d8987ed/) | ✅ Audited |
+| TruStakeMATICv2 | unknown | ethereum | unit-39400 | [`0xa43a7c...8987ed`](./contracts/ethereum-1/0xa43a7c62d56df036c187e1966c03e2799d8987ed/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
@@ -103,6 +103,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Download PDF](https://truyields.com/audits/TruMATIC-Nethermind-Jun23.pdf) | Nethermind | Audit | 2023-06 | stale | Direct | contract_name | 1 | high |
 | [Download PDF](https://truyields.com/audits/TruMATIC-ZokyoAudit-May23.pdf) | Zokyo | Audit | 2023-05 | stale | Direct | contract_name | 1 | high |
 | [Download PDF](https://truyields.com/audits/Trufin-audit-report-20230309.pdf) | yAudit | Audit | 2023-03 | stale | Direct | contract_name | 0 | n/a |
+| [View audit](https://www.halborn.com/audits/truyields/smart-contract-assessment-954e48) | Halborn | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,7 +126,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4
 - Match method counts: extraction_exact=59
@@ -140,5 +141,6 @@ Zero-match audit list:
 - [2216] TruFin Audit Report OtterSec-May24.pdf
 - [2217] Download PDF
 - [2222] Download PDF
+- [15576] View audit
 
 Fork inheritance lineage and inherited audits are included when available.

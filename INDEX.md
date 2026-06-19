@@ -1269,7 +1269,7 @@
 | [troves](./troves/) | $4.1M | 0.0% | ? | unknown | 2 | 0 | 2026-06-17 |
 | [truefi](./truefi/) | $5.0M | 50.0% | ? | declining | 27 | 3 | 2026-06-18 |
 | [trueo](./trueo/) | $25.5M | 0.0% | $25.5M | declining | 0 | 28 | 2026-06-17 |
-| [trufin-protocol](./trufin-protocol/) | ? | 50.0% | ? | declining | 12 | 2 | 2026-06-17 |
+| [trufin-protocol](./trufin-protocol/) | ? | 50.0% | ? | declining | 13 | 2 | 2026-06-19 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 10 | 2026-06-17 |
 | [tulipa-capital](./tulipa-capital/) | $40.8M | 0.0% | $40.8M | active | 0 | 6 | 2026-06-17 |
 | [tulpea](./tulpea/) | $17.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

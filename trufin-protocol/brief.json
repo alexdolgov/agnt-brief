@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trufin-protocol",
-  "generated_at": "2026-06-17T07:00:41.290Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-06-19T06:16:40.460Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-fda2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "trufin-protocol",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 50,
-    "total_audits": 12,
+    "total_audits": 13,
     "scoreable_audits": 4,
     "dl_tvl_usd": null,
     "tvl_usd": null,
@@ -58,10 +58,10 @@
     "tier1_auditors": [
       "OpenZeppelin"
     ],
-    "latest_audit_date": "2026-02",
+    "latest_audit_date": "2026-05",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
+      "fresh": 3,
       "aging": 3,
       "stale": 7,
       "unknown": 0
@@ -132,10 +132,10 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa43a7c62d56df036c187e1966c03e2799d8987ed",
-      "deployment_unit": "unit-24869",
+      "deployment_unit": "unit-39400",
       "deployment_unit_proxy_count": 1,
       "name": "TruStakeMATICv2",
-      "role": "proxy",
+      "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "TruStake",
@@ -148,7 +148,7 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa43a7c62d56df036c187e1966c03e2799d8987ed",
-          "deployment_unit": "unit-24869",
+          "deployment_unit": "unit-39400",
           "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -454,6 +454,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15576,
+      "audit_key": "audit-15576",
+      "report_name": "View audit",
+      "report_url": "https://www.halborn.com/audits/truyields/smart-contract-assessment-954e48",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -538,6 +559,10 @@
       {
         "audit_id": 2222,
         "report_name": "Download PDF"
+      },
+      {
+        "audit_id": 15576,
+        "report_name": "View audit"
       }
     ],
     "inherited_remapped_matches": []

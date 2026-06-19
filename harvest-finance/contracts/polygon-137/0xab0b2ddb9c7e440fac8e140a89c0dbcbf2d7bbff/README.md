@@ -11,6 +11,6 @@
 | Deployments | 1 (polygon [`0xab0b2ddb9c7e440fac8e140a89c0dbcbf2d7bbff`](../0xab0b2ddb9c7e440fac8e140a89c0dbcbf2d7bbff/)) |
 | Proxy | Yes → `0xe6018f...9610d8` |
 | Source | Etherscan |
-| TVL | n/a |
+| TVL | $7,909.25 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

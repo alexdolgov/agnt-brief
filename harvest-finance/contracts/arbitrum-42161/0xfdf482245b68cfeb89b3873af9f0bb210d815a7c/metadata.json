@@ -1,0 +1,17 @@
+{
+  "address": "0xfdf482245b68cfeb89b3873af9f0bb210d815a7c",
+  "chain_id": 42161,
+  "contract_name": "StrategyProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x0209b0a6124c6b27e0d5c1244000f06de94404a6",
+  "fetched_at": "2026-06-19T06:07:37.376Z"
+}

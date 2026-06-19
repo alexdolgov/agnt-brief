@@ -1,0 +1,18 @@
+{
+  "address": "0xd251865319c905c1913f59bb5bb1af2322f1c5bd",
+  "chain_id": 8453,
+  "contract_name": "StrategyProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0x04719b7ab1b8c124bd60758e4817619f60d95543",
+  "fetched_at": "2026-06-19T06:07:35.361Z"
+}

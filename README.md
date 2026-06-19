@@ -195,6 +195,7 @@ Each project directory contains:
 | [iaero-protocol](./iaero-protocol/brief.md) | $1.56M | base | 31 | 29/31 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.73M |
 | [singularity-finance](./singularity-finance/brief.md) | $4.72M | base, ethereum | 10 | 10/10 (100%) | 70.0% | 0.0% (-) | 1 | fresh | ❓ unknown | $2.69M |
 | [b-lucky](./b-lucky/brief.md) | $1.09M | bsc | 19 | 2/19 (11%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $2.67M |
+| [harvest-finance](./harvest-finance/brief.md) | $12.16M | 5 | 32 | 27/32 (84%) | 48.1% | 0.0% (-) | 6 | aging | ⚠️ declining | $2.65M |
 | [plasma-saving-vaults](./plasma-saving-vaults/brief.md) | $43.92M | plasma | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.65M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $16.86M | ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.63M |
 | [rari-capital](./rari-capital/brief.md) | $1.34M | ethereum | 20 | 19/20 (95%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.59M |
@@ -731,7 +732,6 @@ Each project directory contains:
 | [halofi](./halofi/brief.md) | $22.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hanji-protocol](./hanji-protocol/brief.md) | $727.85K | base | 374 | 5/374 (1%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | - |
 | [harbor](./harbor/brief.md) | $94.13K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [harvest-finance](./harvest-finance/brief.md) | $12.16M | 5 | 23 | 18/23 (78%) | 55.6% | 0.0% (-) | 5 | aging | ⚠️ declining | - |
 | [harvest-flow](./harvest-flow/brief.md) | $523.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [hashdao-finance](./hashdao-finance/brief.md) | $1.30M | arbitrum, optimism | 7 | 7/7 (100%) | 42.9% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [hashkey-global](./hashkey-global/brief.md) | $13.43M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-18T21:27:57.429Z_
+_Generated: 2026-06-19T06:16:19.382Z_
 _Projects: 1409_

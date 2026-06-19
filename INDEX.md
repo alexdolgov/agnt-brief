@@ -504,7 +504,7 @@
 | [hanji-protocol](./hanji-protocol/) | $727.9K | 0.0% | ? | declining | 2 | 374 | 2026-06-17 |
 | [harbor](./harbor/) | $94.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [harmonix-finance](./harmonix-finance/) | $302.2 | 0.0% | $302.2 | active | 4 | 24 | 2026-06-17 |
-| [harvest-finance](./harvest-finance/) | $12.2M | 55.6% | ? | declining | 5 | 23 | 2026-06-17 |
+| [harvest-finance](./harvest-finance/) | $1.0B | 48.1% | $2.6M | declining | 8 | 32 | 2026-06-19 |
 | [harvest-flow](./harvest-flow/) | $524.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 42.9% | ? | dead | 3 | 7 | 2026-06-18 |
 | [hashkey-global](./hashkey-global/) | $13.4M | 0.0% | ? | active | 0 | 2 | 2026-06-17 |

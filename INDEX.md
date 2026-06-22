@@ -369,6 +369,7 @@
 | [earnium](./earnium/) | $31.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [earnmos](./earnmos/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [easedefi.org](./easedefi.org/) | $296.3K | 0.0% | $296.3K | active | 1 | 1 | 2026-06-17 |
+| [eclipse-bridge](./eclipse-bridge/) | $5.0M | 0.0% | ? | unknown | 8 | 8 | 2026-06-19 |
 | [eclipsefi](./eclipsefi/) | $15.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [egas-swap](./egas-swap/) | $14.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [ekubo](./ekubo/) | $5.6M | 37.5% | $5.6M | active | 5 | 14 | 2026-06-17 |
@@ -487,6 +488,7 @@
 | [grape-finance](./grape-finance/) | $0.0 | 40.0% | ? | unknown | 1 | 15 | 2026-06-19 |
 | [gravis-finance](./gravis-finance/) | $13.4M | 0.0% | $13.4M | unknown | 1 | 1 | 2026-06-20 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 29 | 2026-06-19 |
+| [gravity-by-galxe](./gravity-by-galxe/) | $62.1M | 0.0% | $62.1M | unknown | 0 | 47 | 2026-06-19 |
 | [gravity-finance](./gravity-finance/) | $96.9K | 100.0% | ? | dead | 2 | 2 | 2026-06-21 |
 | [gravity](./gravity/) | $8.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gridex](./gridex/) | $54.1K | 0.0% | ? | dead | 1 | 2 | 2026-06-21 |
@@ -884,7 +886,7 @@
 | [palmswap](./palmswap/) | $24.4M | 0.0% | $24.4M | dead | 1 | 1 | 2026-06-19 |
 | [palmy-finance](./palmy-finance/) | $15.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pandora](./pandora/) | $8.9K | 0.0% | ? | declining | 1 | 5 | 2026-06-19 |
-| [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | dead | 2 | 200 | 2026-06-22 |
 | [pangolin](./pangolin/) | $579.0K | 38.5% | $579.0K | declining | 13 | 21 | 2026-06-18 |
 | [paradex](./paradex/) | $27.3M | 0.0% | ? | unknown | 5 | 0 | 2026-06-17 |
 | [paragonsdao](./paragonsdao/) | $6.5M | 25.0% | ? | active | 8 | 4 | 2026-06-17 |
@@ -1404,7 +1406,7 @@
 | [zklink-nova](./zklink-nova/) | $10.4M | 17.8% | ? | declining | 11 | 62 | 2026-06-18 |
 | [zkswap-finance](./zkswap-finance/) | $991.7K | 18.2% | ? | active | 8 | 52 | 2026-06-19 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 46 | 2026-06-17 |
-| [zoodao](./zoodao/) | $9.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [zoodao](./zoodao/) | $9.0K | 0.0% | ? | declining | 1 | 26 | 2026-06-22 |
 | [zoomex](./zoomex/) | $24.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-17 |
 | [zootopia-finance](./zootopia-finance/) | $0.0 | 100.0% | ? | dead | 1 | 1 | 2026-06-19 |
 | [zoro-protocol](./zoro-protocol/) | $11.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

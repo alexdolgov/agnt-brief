@@ -1,0 +1,17 @@
+{
+  "address": "0x028b17855d3d8a1a73bf889ac0e48ebe44927b1d",
+  "chain_id": 1284,
+  "contract_name": "Comptroller",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T13:30:43.799Z"
+}

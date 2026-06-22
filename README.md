@@ -96,6 +96,7 @@ Each project directory contains:
 | [jones-dao](./jones-dao/brief.md) | $1.32M | 4 | 49 | 46/49 (94%) | 13.0% | 0.0% (-) | 4 | stale | ✅ active | $67.28M |
 | [init-capital](./init-capital/brief.md) | $2.45M | blast, mantle | 9 | 6/9 (67%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $66.15M |
 | [satlayer](./satlayer/brief.md) | $219.19K | 4 | 91 | 67/91 (74%) | 7.5% | 0.0% (-) | 6 | fresh | ✅ active | $64.67M |
+| [gravity-by-galxe](./gravity-by-galxe/brief.md) | $16.66M | ethereum | 47 | 25/47 (53%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $62.11M |
 | [sushi](./sushi/brief.md) | $96.09M | 20 | 66 | 45/66 (68%) | 2.2% | 0.0% (-) | 1 | stale | ❓ unknown | $61.29M |
 | [deeplock](./deeplock/brief.md) | $1.96M | bsc | 19 | 15/19 (79%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
 | [hop-protocol](./hop-protocol/brief.md) | $3.12M | 6 | 64 | 45/64 (70%) | 20.0% | 20.0% (Trail of Bits) | 4 | stale | ⚠️ declining | $54.78M |
@@ -710,6 +711,7 @@ Each project directory contains:
 | [dyson-finance](./dyson-finance/brief.md) | $80.63K | blast, polygon-zkevm | 5 | 3/5 (60%) | 100.0% | 0.0% (-) | 2 | stale | ❓ unknown | - |
 | [earnium](./earnium/brief.md) | $31.77K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [earnmos](./earnmos/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [eclipse-bridge](./eclipse-bridge/brief.md) | $4.96M | ethereum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [eclipsefi](./eclipsefi/brief.md) | $15.30K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [egas-swap](./egas-swap/brief.md) | $14.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [elara](./elara/brief.md) | $12.23K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1066,7 +1068,7 @@ Each project directory contains:
 | [palladium-protocol](./palladium-protocol/brief.md) | $1.50K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [palmy-finance](./palmy-finance/brief.md) | $14.97K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pandora](./pandora/brief.md) | $8.94K | bsc | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
-| [pangea-swap](./pangea-swap/brief.md) | $6.40K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [pangea-swap](./pangea-swap/brief.md) | $6.40K | chain-1001, chain-31337, klaytn | 200 | 0/200 (0%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
 | [paradex](./paradex/brief.md) | $27.28M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [paragonsdao](./paragonsdao/brief.md) | $6.50M | base, ethereum | 4 | 4/4 (100%) | 25.0% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [parallel-protocol](./parallel-protocol/brief.md) | $3.90M | 19 | 34 | 26/34 (76%) | 34.6% | 0.0% (-) | 5 | aging | ✅ active | - |
@@ -1414,12 +1416,12 @@ Each project directory contains:
 | [zivoe](./zivoe/brief.md) | $13.86M | ethereum | 17 | 17/17 (100%) | 58.8% | 23.5% (Sherlock) | 5 | aging | ⚠️ declining | - |
 | [zklink-nova](./zklink-nova/brief.md) | $10.42M | 10 | 62 | 45/62 (73%) | 17.8% | 8.9% (OpenZeppelin) | 10 | aging | ⚠️ declining | - |
 | [zkswap-finance](./zkswap-finance/brief.md) | $991.69K | sonic, zksync-era | 52 | 11/52 (21%) | 18.2% | 0.0% (-) | 5 | stale | ✅ active | - |
-| [zoodao](./zoodao/brief.md) | $9.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [zoodao](./zoodao/brief.md) | $9.03K | moonbeam | 26 | 11/26 (42%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $24.65M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zootopia-finance](./zootopia-finance/brief.md) | $0.00 | bsc | 1 | 1/1 (100%) | 100.0% | 0.0% (-) | 1 | stale | 💀 dead | - |
 | [zoro-protocol](./zoro-protocol/brief.md) | $11.76K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | arbitrum | 9 | 8/9 (89%) | 37.5% | 0.0% (-) | 1 | stale | 💀 dead | - |
 
-_Generated: 2026-06-22T11:34:01.913Z_
-_Projects: 1409_
+_Generated: 2026-06-22T13:36:21.427Z_
+_Projects: 1411_

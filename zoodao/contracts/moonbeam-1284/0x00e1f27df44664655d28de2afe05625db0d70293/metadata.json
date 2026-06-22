@@ -1,0 +1,17 @@
+{
+  "address": "0x00e1f27df44664655d28de2afe05625db0d70293",
+  "chain_id": 1284,
+  "contract_name": "ReflectedNFT",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T13:30:43.859Z"
+}

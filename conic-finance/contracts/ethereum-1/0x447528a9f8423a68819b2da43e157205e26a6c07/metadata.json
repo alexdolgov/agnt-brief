@@ -1,0 +1,18 @@
+{
+  "address": "0x447528a9f8423a68819b2da43e157205e26a6c07",
+  "chain_id": 1,
+  "contract_name": "BondingHelper",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:57:38.990Z"
+}

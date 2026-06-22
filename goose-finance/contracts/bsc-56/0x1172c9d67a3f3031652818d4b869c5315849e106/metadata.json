@@ -1,0 +1,18 @@
+{
+  "address": "0x1172c9d67a3f3031652818d4b869c5315849e106",
+  "chain_id": 56,
+  "contract_name": "HouseChefV4",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:06:32.694Z"
+}

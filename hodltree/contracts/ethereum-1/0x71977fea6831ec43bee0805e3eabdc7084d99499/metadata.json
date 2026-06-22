@@ -1,0 +1,18 @@
+{
+  "address": "0x71977fea6831ec43bee0805e3eabdc7084d99499",
+  "chain_id": 1,
+  "contract_name": "ExchangeSuperUSDC",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:01:44.900Z"
+}

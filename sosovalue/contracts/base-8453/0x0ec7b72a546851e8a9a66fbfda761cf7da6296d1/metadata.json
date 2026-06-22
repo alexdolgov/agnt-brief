@@ -1,0 +1,17 @@
+{
+  "address": "0x0ec7b72a546851e8a9a66fbfda761cf7da6296d1",
+  "chain_id": 8453,
+  "contract_name": "FourSevenAirdrop",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000d463d3d8333b7ad6a14d00e1700c80af5a37f7510000000000000000000000009e6a46f294bb67c20f1d1e7afb0bbef614403b55000000000000000000000000f6a36f454a4d9cd1264e65cbbf744f1d9db9677900000000000000000000000000000000000000000000000000000000677e68c0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:25:52.982Z"
+}

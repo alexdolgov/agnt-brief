@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "altitude",
-  "generated_at": "2026-06-13T12:13:37.230Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T01:59:19.497Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "altitude",
+    "tier": 0,
+    "peak_tvl": 422404,
+    "peak_date": "2023-09-04T00:00:00.000Z",
+    "tvl_30d_ago": 40053,
+    "tvl_90d_ago": 39223,
+    "tvl_current": 33891,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 52575,
+    "change_30d_pct": -15.384615384615385,
+    "change_90d_pct": -13.594064706932157,
+    "days_since_peak": 1020,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 91.97663847880229
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,33 +41,164 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "arbitrum",
+      "mantle"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2023-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Altitude is a cross-chain bridge protocol enabling asset transfers between Mantle and Arbitrum One. It facilitates liquidity movement across chains, likely through farming or staking mechanisms.",
+    "relationship_narrative": "The Altitude family consists of a core farming contract (AltitudeFarms) and three supporting unnamed contracts that likely handle bridging logic and infrastructure. These contracts share a common deployer cluster, indicating a unified development effort.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 12,
+    "live_contracts": 4,
+    "inactive_contracts": 8,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa912cb42ef8a9e5898cae13f678d372b1a18db82",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AltitudeFarms",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AltitudeFarms",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa912cb42ef8a9e5898cae13f678d372b1a18db82",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x7a619e22c3e4753bcd4c9e867946398a12672184",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MerkleDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MerkleDistributor",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7a619e22c3e4753bcd4c9e867946398a12672184",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xcc0bda6ff7aef71e5b909baaf184560bba943af6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xf80e51afb613d764fa61751affd3313c190a86bb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Altitude",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf80e51afb613d764fa61751affd3313c190a86bb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12651,
@@ -60,8 +207,8 @@
       "report_url": "https://github.com/ContractWolf/smart-contract-audits/blob/main/ContractWolf_Audit_AltitudeDEFI_Bridge.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -76,11 +223,22 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa912cb42ef8a9e5898cae13f678d372b1a18db82",
+      "name": "AltitudeFarms",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

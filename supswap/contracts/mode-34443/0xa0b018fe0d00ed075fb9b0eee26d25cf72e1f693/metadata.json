@@ -1,0 +1,17 @@
+{
+  "address": "0xa0b018fe0d00ed075fb9b0eee26d25cf72e1f693",
+  "chain_id": 34443,
+  "contract_name": "SupV3Factory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000dd0b32bc487ae1487b0f4e5c8c44fc9d30a25dd7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:33.532Z"
+}

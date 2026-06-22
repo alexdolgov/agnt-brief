@@ -1,0 +1,17 @@
+{
+  "address": "0x00969acae49bd657454efc17e0e2445a31b0b7dd",
+  "chain_id": 43114,
+  "contract_name": "Unmasker",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:31.486Z"
+}

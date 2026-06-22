@@ -1,0 +1,18 @@
+{
+  "address": "0x16d7f55f4f8ac39eb4a30ab58458ef7e5b6de13a",
+  "chain_id": 42161,
+  "contract_name": "RangeProtocolFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:11:37.700Z"
+}

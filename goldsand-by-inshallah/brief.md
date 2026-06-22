@@ -4,32 +4,39 @@
 
 - Project: Goldsand by InshAllah (`goldsand-by-inshallah`)
 - Website: [https://goldsand.fi/](https://goldsand.fi/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T13:09:32.310Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: active (Tier 0, 91.3% below peak)
+- Generated: 2026-06-21T10:14:09.255Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $231,104.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Goldsand by InshAllah is a liquid staking protocol on Ethereum that allows users to stake assets and receive a liquid derivative token, while earning staking rewards. It provides a withdrawal mechanism through a dedicated vault to manage user redemptions.
+
+### Architecture
+
+The Goldsand contract serves as the main liquid staking token, while the WithdrawalVault handles user redemptions, likely interacting with the Goldsand contract to burn or transfer tokens upon withdrawal.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 2/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 2
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -63,11 +70,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Goldsand | unknown | ethereum | unit-42278 | `0x665942...6fd36f` | ❓ Unverified |
+| WithdrawalVault | operational_periphery | ethereum | unit-42277 | `0x22b35d...f35c13` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -85,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

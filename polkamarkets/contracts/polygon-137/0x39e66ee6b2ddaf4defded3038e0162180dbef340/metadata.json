@@ -1,0 +1,17 @@
+{
+  "address": "0x39e66ee6b2ddaf4defded3038e0162180dbef340",
+  "chain_id": 137,
+  "contract_name": "PredictionMarketV2",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000001192f125c3a269834a3b59775ceb37889c9dcc4d0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000001f021be85d6b4d1867c43ef98d30ccc5a44791de000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:28.154Z"
+}

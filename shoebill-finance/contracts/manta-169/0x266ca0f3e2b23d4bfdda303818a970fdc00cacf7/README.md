@@ -1,0 +1,16 @@
+# ProxyAdmin
+
+| Field | Value |
+|---|---|
+| Chain | manta (169) |
+| Address | `0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7` |
+| Role | governance |
+| Origin | standard_library |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (manta [`0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7`](../0x266ca0f3e2b23d4bfdda303818a970fdc00cacf7/)) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

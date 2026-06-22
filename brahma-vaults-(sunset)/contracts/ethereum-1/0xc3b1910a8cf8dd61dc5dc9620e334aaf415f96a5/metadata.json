@@ -1,0 +1,18 @@
+{
+  "address": "0xc3b1910a8cf8dd61dc5dc9620e334aaf415f96a5",
+  "chain_id": 1,
+  "contract_name": "PolicyValidator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:35:21.249Z"
+}

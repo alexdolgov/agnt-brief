@@ -1,0 +1,250 @@
+[
+  {
+    "inputs": [],
+    "name": "AmountIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FutureValueIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "MissingAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      }
+    ],
+    "name": "NotEnoughDeposit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooManyActiveOrders",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "ccy",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "enum ProtocolTypes.Side",
+            "name": "side",
+            "type": "ProtocolTypes.Side"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "additionalDepositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "ignoreBorrowedAmount",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.GetOrderEstimationParams",
+        "name": "input",
+        "type": "tuple"
+      }
+    ],
+    "name": "getOrderEstimation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmountInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderFeeInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "placedAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "coverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isInsufficientDepositAmount",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "ccy",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "enum ProtocolTypes.Side",
+            "name": "side",
+            "type": "ProtocolTypes.Side"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountInFV",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "additionalDepositAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "ignoreBorrowedAmount",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.GetOrderEstimationFromFVParams",
+        "name": "input",
+        "type": "tuple"
+      }
+    ],
+    "name": "getOrderEstimationFromFV",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmountInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderFeeInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "coverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isInsufficientDepositAmount",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getWithdrawableZCTokenAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0xf684014771c01e50b8b526968b3a1e33acda63f6",
+  "chain_id": 1,
+  "contract_name": "VaultRouter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 48,
+  "constructor_arguments": "00000000000000000000000019a524d03aa94ecee41a80341537bcfcb47d3172000000000000000000000000ec3582fcdc34078a4b7a8c75a5a3ae46f48525ab000000000000000000000000d9531ac47928c3386346f82d9a2478960bf2ca7b000000000000000000000000b3c086db30c1be6e40d8775607c3662ab160bda5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:20:02.499Z"
+}

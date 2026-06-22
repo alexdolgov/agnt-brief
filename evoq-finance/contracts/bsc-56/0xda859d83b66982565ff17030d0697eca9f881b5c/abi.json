@@ -1,0 +1,554 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_lens",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "comptroller",
+    "outputs": [
+      {
+        "internalType": "contract IComptroller",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "evoq",
+    "outputs": [
+      {
+        "internalType": "contract IEvoq",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_poolToken",
+        "type": "address"
+      }
+    ],
+    "name": "getMarketDetail",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlying",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableLiquidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.MarketDetailData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketSummary",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBorrow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pBorrow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBorrow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "matchingEfficiency",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.MarketSummary",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketsData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlying",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableLiquidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.MarketsData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_poolToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserMarketDetail",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlying",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBorrowRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.UserMarketData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserMarketsData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlying",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowOnPool",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowInP2P",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "p2pBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBorrowRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.UserMarketData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserSummary",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "collateralUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebtUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupplyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBorrowRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IDataLens.UserSummary",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lens",
+    "outputs": [
+      {
+        "internalType": "contract ILens",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardsManager",
+    "outputs": [
+      {
+        "internalType": "contract IRewardsManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,599 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_dsfLpContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dsfHelperContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pool0Oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_rewardManager",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "DSFHelperContractUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "DSFLPContractUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOracle",
+        "type": "address"
+      }
+    ],
+    "name": "Pool0OracleUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newRewardManager",
+        "type": "address"
+      }
+    ],
+    "name": "RewardManagerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFloorWhole",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newCapWhole",
+        "type": "uint256"
+      }
+    ],
+    "name": "TestAmountBoundsUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "CAP_TEST_AMOUNT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FLOOR_TEST_AMOUNT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ONE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dsfHelperContract",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dsfLpContract",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCVXCRVUserShareAggregated",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn_cvx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_crv",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cvxEarningsUSDT",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "crvEarningsUSDT",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getPendingDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "pending",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getPendingWithdrawals",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "tokenAmounts",
+            "type": "uint256[3]"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "estimatedWithdrawals",
+            "type": "uint256[3]"
+          }
+        ],
+        "internalType": "struct PendingWithdrawalView",
+        "name": "out",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getRoundTripEfficiencyForDepositPool",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "roundTripEff1e18",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountTokenUnits",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "tokenIndex",
+        "type": "uint128"
+      }
+    ],
+    "name": "getRoundTripEfficiencyForDepositPoolByAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "roundTripEff1e18",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "amountsTokenUnits",
+        "type": "uint256[3]"
+      }
+    ],
+    "name": "getRoundTripEfficiencyForDepositPoolByAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "roundTripEff1e18",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserData",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpShareRatio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "userBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "withdrawalAmounts",
+        "type": "uint256[3]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_cvx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_crv",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cvxEarningsUSDT",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "crvEarningsUSDT",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "roundTripEfficiency",
+        "type": "uint256[3]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ethBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "balances",
+        "type": "uint256[3]"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "allowances",
+        "type": "uint256[3]"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "pendingDeposits",
+        "type": "uint256[3]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "tokenAmounts",
+            "type": "uint256[3]"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "estimatedWithdrawals",
+            "type": "uint256[3]"
+          }
+        ],
+        "internalType": "struct PendingWithdrawalView",
+        "name": "pendingWithdrawal",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserPending",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "pendingDeposits",
+        "type": "uint256[3]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "tokenAmounts",
+            "type": "uint256[3]"
+          },
+          {
+            "internalType": "uint256[3]",
+            "name": "estimatedWithdrawals",
+            "type": "uint256[3]"
+          }
+        ],
+        "internalType": "struct PendingWithdrawalView",
+        "name": "pendingWithdrawal",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getWithdrawalAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "out",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWithdrawalAmountsByLp",
+    "outputs": [
+      {
+        "internalType": "uint256[3]",
+        "name": "out",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pool0Oracle",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setDsfLpContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setHelperContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOracle",
+        "type": "address"
+      }
+    ],
+    "name": "setPool0Oracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newRewardManager",
+        "type": "address"
+      }
+    ],
+    "name": "setRewardManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newFloorWhole",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newCapWhole",
+        "type": "uint256"
+      }
+    ],
+    "name": "setTestAmountBounds",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

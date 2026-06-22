@@ -1,0 +1,18 @@
+{
+  "address": "0x04299f69b567c6c8dc49162138e0ba32cd15ffa4",
+  "chain_id": 56,
+  "contract_name": "MultiRewarderPerSec",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:16.011Z"
+}

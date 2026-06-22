@@ -1,0 +1,18 @@
+{
+  "address": "0x56ab71990783442f68fb25e0b466196c7ca6bd33",
+  "chain_id": 1,
+  "contract_name": "yDAIv2Proxy",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:28.184Z"
+}

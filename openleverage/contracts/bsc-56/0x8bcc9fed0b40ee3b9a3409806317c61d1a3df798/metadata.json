@@ -1,0 +1,17 @@
+{
+  "address": "0x8bcc9fed0b40ee3b9a3409806317c61d1a3df798",
+  "chain_id": 56,
+  "contract_name": "LimitOrderHelper",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:32.413Z"
+}

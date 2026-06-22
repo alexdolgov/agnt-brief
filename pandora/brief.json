@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "pandora",
-  "generated_at": "2026-06-13T14:09:56.132Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T21:47:08.540Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "pandora",
+    "tier": 0,
+    "peak_tvl": 4630145,
+    "peak_date": "2022-08-11T00:00:00.000Z",
+    "tvl_30d_ago": 9427,
+    "tvl_90d_ago": 9525,
+    "tvl_current": 8895,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 10533,
+    "change_30d_pct": -5.64336480322478,
+    "change_90d_pct": -6.6141732283464565,
+    "days_since_peak": 1408,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.80788938575358
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,10 +41,12 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "bsc"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +56,209 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Pandora is a decentralized exchange (DEX) protocol on BSC, likely a Uniswap V2 fork, enabling users to swap tokens and provide liquidity. It appears to use an NFT-based assembly pattern for liquidity positions.",
+    "relationship_narrative": "The PandoAssembly proxy uses NFTLib as its implementation, indicating that liquidity positions are managed as NFTs. The single unnamed contract at 0xb72ba371c900aa68bb9fa473e93cfbe212030fcb likely serves as the factory or router, tying the system together.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 87,
+    "live_contracts": 5,
+    "inactive_contracts": 80,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 22,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x72e3d54293e2912fc66cf4a93625ac8305e3120d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x72e3d54293e2912fc66cf4a93625ac8305e3120d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb72ba371c900aa68bb9fa473e93cfbe212030fcb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Pandora",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb72ba371c900aa68bb9fa473e93cfbe212030fcb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xc2426f2018f13fdc5b260bd0a88be753ee7fafc5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc2426f2018f13fdc5b260bd0a88be753ee7fafc5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcb10afce094d08f8567195669c96e894dbca9806",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcb10afce094d08f8567195669c96e894dbca9806",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd721214da2c92f927745bf7f23e8926a3fed315a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd721214da2c92f927745bf7f23e8926a3fed315a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13652,
@@ -61,12 +268,12 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -78,13 +285,15 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

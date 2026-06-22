@@ -1,0 +1,17 @@
+{
+  "address": "0x5c72d7be838415a663dda5f1213c0d72b4b61932",
+  "chain_id": 42161,
+  "contract_name": "mortgagetickets",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:38:17.960Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x3deccefd66b34b64b8830b036843c9568504e217",
+  "chain_id": 1284,
+  "contract_name": "EarnBLP",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:20:32.691Z"
+}

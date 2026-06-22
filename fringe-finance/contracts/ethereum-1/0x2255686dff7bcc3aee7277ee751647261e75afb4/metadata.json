@@ -1,0 +1,18 @@
+{
+  "address": "0x2255686dff7bcc3aee7277ee751647261e75afb4",
+  "chain_id": 1,
+  "contract_name": "EventsHubProxy",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x4028a3c7ae9a0555293225135e54a6fa2879c215",
+  "fetched_at": "2026-06-21T06:22:15.003Z"
+}

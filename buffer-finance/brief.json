@@ -1,33 +1,53 @@
 {
   "schema_version": "2.0",
   "project_key": "buffer-finance",
-  "generated_at": "2026-06-13T12:36:38.570Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T13:11:39.990Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "buffer-finance",
+    "tier": 0,
+    "peak_tvl": 3539507,
+    "peak_date": "2023-07-16T00:00:00.000Z",
+    "tvl_30d_ago": 177,
+    "tvl_90d_ago": 62096,
+    "tvl_current": 178,
+    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
+    "tvl_180d_ago": 78161,
+    "change_30d_pct": 0.5649717514124294,
+    "change_90d_pct": -99.713347075496,
+    "days_since_peak": 1069,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.99497105105316
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 3,
+    "total_addresses": 5,
+    "unique_implementations": 3,
+    "total_deployments": 5,
+    "audited_contracts": 2,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 66.7,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 178.17267,
     "tvl_usd": 178.17267,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "chains": [
+      "arbitrum"
+    ],
+    "tier1_coverage_pct": 66.7,
+    "tier1_auditors": [
+      "Sherlock"
+    ],
     "latest_audit_date": "2022-12",
     "audit_freshness": "stale",
     "staleness_breakdown": {
@@ -38,20 +58,163 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Buffer Finance is a decentralized options trading platform that allows users to trade binary options on various assets. It provides liquidity pools where users can deposit funds to earn fees from options trading.",
+    "relationship_narrative": "The BufferBinaryPool contract serves as the core liquidity pool for options trading, while BFR is the protocol's native token likely used for governance or incentives. Both contracts are part of the single product family with no additional supporting contracts identified.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 193,
+    "live_contracts": 5,
+    "inactive_contracts": 188,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 4,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1a5b0aaf478bf1fda7b934c76e7692d722982a6d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BFR",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Buffer Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BFR",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1a5b0aaf478bf1fda7b934c76e7692d722982a6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6ec7b10bf7331794adaaf235cb47a2a292cd9c7e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BufferBinaryPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BufferBinaryPool",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6ec7b10bf7331794adaaf235cb47a2a292cd9c7e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xae0628c88ec6c418b3f5c005f804e905f8123833",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfd9f8841c471fcc55f5c09b8ad868bdc9edebde1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12862"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xfea57b9548cd72d8705e4bb0fa83aa35966d9c29",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ReferralStorage",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ReferralStorage",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfea57b9548cd72d8705e4bb0fa83aa35966d9c29",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12862"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 12862,
@@ -66,34 +229,58 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BufferBinaryOptions",
+        "BufferBinaryPool",
+        "BufferRouter",
+        "OptionsConfig",
+        "ReferralStorage"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
+      "latest_audit": "2022-12"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1a5b0aaf478bf1fda7b934c76e7692d722982a6d",
+      "name": "BFR",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 155
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 12862,
-        "report_name": "2022.12.08 - Final - Buffer Finance Audit Report.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

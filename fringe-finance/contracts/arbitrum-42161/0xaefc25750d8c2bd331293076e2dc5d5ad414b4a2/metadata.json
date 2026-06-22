@@ -1,0 +1,18 @@
+{
+  "address": "0xaefc25750d8c2bd331293076e2dc5d5ad414b4a2",
+  "chain_id": 42161,
+  "contract_name": "L2TestSpell",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:21.372Z"
+}

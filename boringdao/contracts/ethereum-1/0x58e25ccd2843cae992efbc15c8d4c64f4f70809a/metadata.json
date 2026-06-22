@@ -1,0 +1,18 @@
+{
+  "address": "0x58e25ccd2843cae992efbc15c8d4c64f4f70809a",
+  "chain_id": 1,
+  "contract_name": "BoringDAOV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:22:55.647Z"
+}

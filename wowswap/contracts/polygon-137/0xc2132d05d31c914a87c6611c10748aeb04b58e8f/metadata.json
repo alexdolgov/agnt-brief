@@ -1,0 +1,18 @@
+{
+  "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+  "chain_id": 137,
+  "contract_name": "UChildERC20Proxy",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x90040487a6c9f949c4f07cadcfb0f3b8eeab4229",
+  "fetched_at": "2026-06-20T02:26:31.041Z"
+}

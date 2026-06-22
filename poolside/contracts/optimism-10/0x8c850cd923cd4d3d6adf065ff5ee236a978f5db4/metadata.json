@@ -1,0 +1,18 @@
+{
+  "address": "0x8c850cd923cd4d3d6adf065ff5ee236a978f5db4",
+  "chain_id": 10,
+  "contract_name": "UnbuttonToken",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:42:17.701Z"
+}

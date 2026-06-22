@@ -1,0 +1,18 @@
+{
+  "address": "0xc3151a58d519b94e915f66b044de3e55f77c2dd9",
+  "chain_id": 1,
+  "contract_name": "ICHIVault",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1 AND Unlicense AND MIT AND GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:05:03.897Z"
+}

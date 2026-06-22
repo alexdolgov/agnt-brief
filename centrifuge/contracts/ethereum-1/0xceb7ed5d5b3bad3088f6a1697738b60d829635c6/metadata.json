@@ -1,0 +1,17 @@
+{
+  "address": "0xceb7ed5d5b3bad3088f6a1697738b60d829635c6",
+  "chain_id": 1,
+  "contract_name": "ProtocolGuardian",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "000000000000000000000000b3c086db30c1be6e40d8775607c3662ab160bda50000000000000000000000007ed48c31f2fdc40d37407cbabf0870b2b688368f00000000000000000000000019a524d03aa94ecee41a80341537bcfcb47d3172000000000000000000000000f837a22883e004f705e0d7e1dee08e295df30b27",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:20:00.086Z"
+}

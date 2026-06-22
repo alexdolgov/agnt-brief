@@ -1,0 +1,17 @@
+{
+  "address": "0x62df6e203916617ed20e87babb2105e6df37fcc5",
+  "chain_id": 43114,
+  "contract_name": "Orbs",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:42.689Z"
+}

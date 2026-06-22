@@ -1,57 +1,236 @@
 {
   "schema_version": "2.0",
   "project_key": "luckychip",
-  "generated_at": "2026-06-13T10:44:15.968Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T17:47:51.693Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "luckychip",
+    "tier": 0,
+    "peak_tvl": 256740,
+    "peak_date": "2023-04-17T00:00:00.000Z",
+    "tvl_30d_ago": 579,
+    "tvl_90d_ago": 562,
+    "tvl_current": 517,
+    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
+    "tvl_180d_ago": 764,
+    "change_30d_pct": -10.708117443868739,
+    "change_90d_pct": -8.007117437722421,
+    "days_since_peak": 1159,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.79862896315338
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 2,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 4,
-    "scoreable_audits": 0,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 532.06736,
-    "tvl_usd": 532.06736,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 192206.29713872628,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 192206.3
+    },
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "bsc"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-02",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
-      "unknown": 1
+      "stale": 4,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "LuckyChip is a gambling and gaming protocol on BSC that allows users to play dice games and earn yield through staking. It features a native token (LCToken) used for betting and rewards, with a MasterChef contract for staking incentives.",
+    "relationship_narrative": "All contracts are part of a single product family deployed by the same address. LCToken serves as the core utility and reward token, used in Dice and LuckyGameBNB for betting, and in MasterChef for staking rewards.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 55,
+    "live_contracts": 4,
+    "inactive_contracts": 51,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 51,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6012c3a742f92103d238f1c8306cf8fbcdeca8b3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LCToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LuckyChip",
+      "tvl_usd": 192206.29713872628,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LCToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6012c3a742f92103d238f1c8306cf8fbcdeca8b3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 192206.29713872628,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13439"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb48859f5f9154be1d9b239b43471ef665b30d436",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DiceToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DiceToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb48859f5f9154be1d9b239b43471ef665b30d436",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x45218ede6f026f0994c55b6fa3554a8ea989f819",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LuckyGameBNB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LuckyChip",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LuckyGameBNB",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x45218ede6f026f0994c55b6fa3554a8ea989f819",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LuckyChip",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13436",
+        "audit-13437"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13436,
@@ -60,18 +239,20 @@
       "report_url": "https://skynet.certik.com/projects/luckychip",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MasterChef"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -82,17 +263,20 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Dice",
+        "MasterChef"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -103,12 +287,12 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -124,49 +308,79 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LCToken"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 50,
+      "latest_audit": "2022-02"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2021-10"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb48859f5f9154be1d9b239b43471ef665b30d436",
+      "name": "DiceToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x45218ede6f026f0994c55b6fa3554a8ea989f819",
+      "name": "LuckyGameBNB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 4,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 10
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 13436,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 13437,
-        "report_name": "PeckShield-Audit-Report-LuckyChip-v1.0.pdf"
-      },
-      {
         "audit_id": 13438,
         "report_name": "PeckShield-Audit-Report-LuckyChipStaking-v1.0.pdf"
-      },
-      {
-        "audit_id": 13439,
-        "report_name": "PeckShield-Audit-Report-ERC20-LuckyChip-v1.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

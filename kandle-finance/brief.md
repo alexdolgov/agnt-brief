@@ -1,51 +1,67 @@
 # Agentic Audit Brief: Kandle Finance
 
+⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Kandle Finance (`kandle-finance`)
 - Website: [https://app.kandle.fi/](https://app.kandle.fi/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:41:33.954Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-06-19T11:23:14.490Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: arbitrum
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $0.07
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- On-chain TVL (included contracts): $0.07
+- TVL by chain: Arbitrum $0.07
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Kandle Finance is a yield protocol on Arbitrum One that offers fixed and variable yield vaults. Users can deposit assets to earn predictable fixed returns or optimized variable yields through automated strategies.
+
+### Architecture
+
+Both vaults are deployed by the same deployer and likely share common infrastructure such as access control and fee mechanisms, though no explicit supporting contracts are present in the inventory.
+
+## Contract Surface Quality
+
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Verified implementations audited: 2/2 (100.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 2
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
+- Latest audit: 2025-12 (fresh)
+- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| CertiK | Tier 2 | 2 | 100.0% | 2025-12 |
+| unknown | Tier 2 | 2 | 100.0% | 2025-12 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| KandleYieldVault | core_logic | arbitrum | n/a | [`0x9a7f9c...9d3ecd`](./contracts/arbitrum-42161/0x9a7f9c48100cbacb431f19b8407f73bec39d3ecd/) | ✅ Audited |
+| KandleFixedVault | core_logic | arbitrum | n/a | [`0xb9b6b1...bab594`](./contracts/arbitrum-42161/0xb9b6b1783ca230cc7effecbaa371502a9cbab594/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -73,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://wiki.kandle.fi/audits/kandlefi-verichain-audit.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [DL audit link](https://wiki.kandle.fi/audits/kandlefi-certik-audit.pdf) | CertiK | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [DL audit link](https://wiki.kandle.fi/audits/kandlefi-verichain-audit.pdf) | unknown | Audit | 2025-12 | fresh | Direct | contract_name | 2 | high |
+| [DL audit link](https://wiki.kandle.fi/audits/kandlefi-certik-audit.pdf) | CertiK | Audit | 2025-12 | fresh | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -86,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -95,14 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [13327] DL audit link
-- [13328] DL audit link
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=4
 
 Fork inheritance lineage and inherited audits are included when available.

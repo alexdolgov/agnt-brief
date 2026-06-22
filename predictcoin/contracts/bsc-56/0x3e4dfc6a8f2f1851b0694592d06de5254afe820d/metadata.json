@@ -1,0 +1,17 @@
+{
+  "address": "0x3e4dfc6a8f2f1851b0694592d06de5254afe820d",
+  "chain_id": 56,
+  "contract_name": "PancakePair",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:35:58.489Z"
+}

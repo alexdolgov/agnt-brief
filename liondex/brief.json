@@ -1,34 +1,64 @@
 {
   "schema_version": "2.0",
   "project_key": "liondex",
-  "generated_at": "2026-06-13T13:36:35.956Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T11:26:37.159Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "liondex",
+    "tier": 1,
+    "peak_tvl": 2468175,
+    "peak_date": "2023-07-03T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "governance_raw": {
+      "evidence": "The domain has expired and the homepage shows a generic parking page, indicating no ongoing activity.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1082,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "The domain has expired and the homepage shows a generic parking page, indicating no ongoing activity.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 321,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0.38205,
-    "tvl_usd": 0.38205,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 10071860,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 10071860
+    },
+    "asd_usd": 10071860,
     "website_url": "https://liondex.com",
-    "chains": [],
+    "chains": [
+      "arbitrum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023",
+    "latest_audit_date": "2023-06",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +68,137 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "LionDEX is a decentralized derivatives trading platform on Arbitrum One, offering leveraged trading, yield farming, and token vesting. It uses a native LION token for governance and rewards, with infrastructure for referrals, blind boxes, and flexible liquidity pools.",
+    "relationship_narrative": "The LION token is central, distributed via HoldMining and vested through esLionTokenVester. Referral and FlexiblePools contracts support user acquisition and liquidity, while proxies enable upgradeability across the system.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 72,
+    "live_contracts": 3,
+    "inactive_contracts": 43,
+    "singleton_contracts": 26,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 13,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8ebb85d53e6955e557b7c53acde1d42fd68561ec",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LionDexToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LionDEX",
+      "tvl_usd": 10071860,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LionDexToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8ebb85d53e6955e557b7c53acde1d42fd68561ec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 10071860,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9eb55af68de2d3eb8d0fb223140ab3d8d40669b6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LionDEXRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LionDEXRouter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9eb55af68de2d3eb8d0fb223140ab3d8d40669b6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x03229fb11e3d7e8aca8c758dbd0ea737950d6cd0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LPToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LPToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x03229fb11e3d7e8aca8c758dbd0ea737950d6cd0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13375,
@@ -61,12 +208,12 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023",
+      "date": "2023-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -76,15 +223,48 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8ebb85d53e6955e557b7c53acde1d42fd68561ec",
+      "name": "LionDexToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 10071860,
+      "risk_note": "Verified native implementation with $10,071,860.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9eb55af68de2d3eb8d0fb223140ab3d8d40669b6",
+      "name": "LionDEXRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x03229fb11e3d7e8aca8c758dbd0ea737950d6cd0",
+      "name": "LPToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 5
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

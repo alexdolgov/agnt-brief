@@ -1,0 +1,17 @@
+{
+  "address": "0x1207d2053303094eb8c7da171001f18f0a31c896",
+  "chain_id": 1285,
+  "contract_name": "ZirconPylonRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "0000000000000000000000006b6071ccc534fcee7b699aab87929faf8806d5bd00000000000000000000000065815a6e55fa08fcde76ad772bd64a4f264a69240000000000000000000000002d4ddeb8b183413e9d88a98fa3dd844e34d41c5400000000000000000000000098878b06940ae243284ca214f92bb71a2b032b8a",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:47:25.864Z"
+}

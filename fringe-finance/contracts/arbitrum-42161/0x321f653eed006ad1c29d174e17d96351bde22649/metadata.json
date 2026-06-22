@@ -1,0 +1,18 @@
+{
+  "address": "0x321f653eed006ad1c29d174e17d96351bde22649",
+  "chain_id": 42161,
+  "contract_name": "GlpManager",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:11.405Z"
+}

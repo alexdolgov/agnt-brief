@@ -1,0 +1,18 @@
+{
+  "address": "0x105e8157e47bb591e6d5e4d14b277d60a4b36df9",
+  "chain_id": 56,
+  "contract_name": "HyperVault",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, BUSL-1.1, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:46:35.385Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x034182a6f2bd97391f5b4b6daa1e621b71bd51ce",
+  "chain_id": 56,
+  "contract_name": "FlatMarketConfig",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:40.400Z"
+}

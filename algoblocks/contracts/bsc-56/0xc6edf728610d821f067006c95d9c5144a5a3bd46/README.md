@@ -1,0 +1,16 @@
+# ProxyAdmin
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0xc6edf728610d821f067006c95d9c5144a5a3bd46` |
+| Role | governance |
+| Origin | standard_library |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (bsc [`0xc6edf728610d821f067006c95d9c5144a5a3bd46`](../0xc6edf728610d821f067006c95d9c5144a5a3bd46/)) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

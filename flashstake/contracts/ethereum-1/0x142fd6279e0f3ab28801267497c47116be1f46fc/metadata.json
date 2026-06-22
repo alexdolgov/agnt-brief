@@ -1,0 +1,18 @@
+{
+  "address": "0x142fd6279e0f3ab28801267497c47116be1f46fc",
+  "chain_id": 1,
+  "contract_name": "FTokenAccumulatorV2",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:43:30.219Z"
+}

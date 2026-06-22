@@ -1,0 +1,18 @@
+{
+  "address": "0x5c2c3dc3e3301c13105e8729caa54c5d9358a046",
+  "chain_id": 10,
+  "contract_name": "GeyserRegistry",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:42:17.321Z"
+}

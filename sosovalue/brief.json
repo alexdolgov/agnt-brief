@@ -1,57 +1,234 @@
 {
   "schema_version": "2.0",
   "project_key": "sosovalue",
-  "generated_at": "2026-06-13T11:11:21.298Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T17:26:03.874Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "sosovalue",
+    "tier": 0,
+    "peak_tvl": 215771061,
+    "peak_date": "2025-10-07T00:00:00.000Z",
+    "tvl_30d_ago": 102625569.85955,
+    "tvl_90d_ago": 98162005.05166,
+    "tvl_current": 88091636.63793,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 125697967,
+    "change_30d_pct": -14.162097459249834,
+    "change_90d_pct": -10.258926973252262,
+    "days_since_peak": 257,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 59.17356283569
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 1,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 25,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 89060071.02636,
     "tvl_usd": 89060071.02636,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://ssi.sosovalue.com/share/MAG7.ssi/0TC050BY?tid=ssi-invite-share-0TC050BY",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": "2024",
-    "audit_freshness": "stale",
+    "chains": [
+      "base",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 25,
+    "tier1_auditors": [
+      "SlowMist"
+    ],
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 1,
-      "unknown": 2
+      "aging": 3,
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "SoSoValue is a DeFi protocol offering cross-chain token bridging, spot and perpetual trading, basis trading, and index products. It enables users to move assets between chains, trade derivatives, and access structured yield strategies through a unified ecosystem.",
+    "relationship_narrative": "The SoDEX Bridge family provides the cross-chain infrastructure that likely supports asset movement for the broader SoSoValue ecosystem, including the Basis product. The USSI token in the Basis family may rely on bridged assets or shared token standards from the Bridge family.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 50,
+    "live_contracts": 4,
+    "inactive_contracts": 21,
+    "singleton_contracts": 25,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 15,
+    "live_deployment_units": 3,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x84663e30973d552ac357fd04f3ac6ebbd495ab15",
+      "deployment_unit": "unit-43347",
+      "deployment_unit_proxy_count": 1,
+      "name": "AssetRebalancer",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb2d1c898511b0fd9dcba7ac9576952197f321477",
+      "impl_name": "AssetRebalancer",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x84663e30973d552ac357fd04f3ac6ebbd495ab15",
+          "deployment_unit": "unit-43347",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13865",
+        "audit-13866",
+        "audit-13867"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcc7322a2f9f82251da51584b1a89915dbc02185b",
+      "deployment_unit": "unit-43338",
+      "deployment_unit_proxy_count": 1,
+      "name": "SoDexTokenBridge",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "SoDEX Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd847f7844a5559ab4835eb8d2db4286845b6b83",
+      "impl_name": "SoDexTokenBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcc7322a2f9f82251da51584b1a89915dbc02185b",
+          "deployment_unit": "unit-43338",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x40fb04bbf5124ea4b25fc18a839524a725cabf9c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SoSoValueEpoch2Airdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SoSoValueEpoch2Airdrop",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x40fb04bbf5124ea4b25fc18a839524a725cabf9c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "deployment_unit": "unit-43336",
+      "deployment_unit_proxy_count": 1,
+      "name": "TetherToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "SoDEX Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4c0d2c74a8d26f1e4f5653021c521f5471f9e566",
+      "impl_name": "TetherToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+          "deployment_unit": "unit-43336",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13865,
@@ -60,18 +237,30 @@
       "report_url": "https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_sosovaluelabs_ssi_v1.0-signed.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024",
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssetController",
+        "AssetFactory",
+        "AssetFeeManager",
+        "AssetIssuer",
+        "AssetLocking",
+        "AssetRebalancer",
+        "AssetToken",
+        "StakeFactory",
+        "StakeToken",
+        "Swap",
+        "USSI"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,18 +270,26 @@
       "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SSI%20Protocol%20-%20SlowMist%20Audit%20Report.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssetController",
+        "AssetFactory",
+        "AssetFeeManager",
+        "AssetIssuer",
+        "AssetRebalancer",
+        "AssetToken",
+        "Swap"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -102,48 +299,75 @@
       "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SSI%20Protocol%20Phase2%20-%20SlowMist%20Audit%20Report.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssetFactory",
+        "AssetFeeManager",
+        "AssetIssuer",
+        "AssetLocking",
+        "AssetRebalancer",
+        "StakeFactory",
+        "StakeToken",
+        "Swap",
+        "USSI"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "SlowMist",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2024-12"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2024-12"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x40fb04bbf5124ea4b25fc18a839524a725cabf9c",
+      "name": "SoSoValueEpoch2Airdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 3,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 74
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13865,
-        "report_name": "blocksec_sosovaluelabs_ssi_v1.0-signed.pdf"
-      },
-      {
-        "audit_id": 13866,
-        "report_name": "SSI Protocol - SlowMist Audit Report.pdf"
-      },
-      {
-        "audit_id": 13867,
-        "report_name": "SSI Protocol Phase2 - SlowMist Audit Report.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

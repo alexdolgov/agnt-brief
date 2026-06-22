@@ -1,0 +1,17 @@
+{
+  "address": "0x05ae1dc5b4a140eb4218073af432a7c32c2806fa",
+  "chain_id": 137,
+  "contract_name": "SubVesting",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:04:19.778Z"
+}

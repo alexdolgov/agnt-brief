@@ -1,0 +1,17 @@
+{
+  "address": "0x0310983446288e08f1dd973148f194a685ea551f",
+  "chain_id": 43114,
+  "contract_name": "MultiPath",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000213400000000000000000000000000000000000000000000000000000000000001f4000000000000000000000000bfcd68fd74b4b458961495f3392bf96f46a29e67",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:57.089Z"
+}

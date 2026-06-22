@@ -1,0 +1,18 @@
+{
+  "address": "0x1e35ebf875f8a2185edf22da02e7dbca0f5558ab",
+  "chain_id": 42161,
+  "contract_name": "SimpleRewarder",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:04:05.193Z"
+}

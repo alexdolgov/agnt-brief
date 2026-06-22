@@ -1,0 +1,17 @@
+{
+  "address": "0xa4a7bb3831958463b3fe3e27a6a160f764341953",
+  "chain_id": 1,
+  "contract_name": "Hub",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "00000000000000000000000019a524d03aa94ecee41a80341537bcfcb47d31720000000000000000000000003f0c8d8d2637881c3f6d8531f51a47c2094c918d000000000000000000000000050206c38f06e4710c4a37d39f75ddc5c16a739600000000000000000000000019f46d8130e610c6c0f0116ea40fb781defade9300000000000000000000000035c837f0a54b715a23d193e1476bfc9bc30073be000000000000000000000000affc269c8fe18ee9c7ddb22301ac2c2507d69bef000000000000000000000000b3c086db30c1be6e40d8775607c3662ab160bda5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:58.087Z"
+}

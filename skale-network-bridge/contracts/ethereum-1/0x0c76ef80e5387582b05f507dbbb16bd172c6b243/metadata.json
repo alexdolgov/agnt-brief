@@ -1,0 +1,18 @@
+{
+  "address": "0x0c76ef80e5387582b05f507dbbb16bd172c6b243",
+  "chain_id": 1,
+  "contract_name": "ContractManager",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:45:24.537Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x715e12c483fe6b490594e60c13cb2cb2d337cae2",
+  "chain_id": 1,
+  "contract_name": "L1RestakingSweeperCron",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:47.721Z"
+}

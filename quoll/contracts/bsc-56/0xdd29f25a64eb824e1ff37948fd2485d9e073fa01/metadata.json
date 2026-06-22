@@ -1,0 +1,18 @@
+{
+  "address": "0xdd29f25a64eb824e1ff37948fd2485d9e073fa01",
+  "chain_id": 56,
+  "contract_name": "GovernedPriceFeed",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:31.330Z"
+}

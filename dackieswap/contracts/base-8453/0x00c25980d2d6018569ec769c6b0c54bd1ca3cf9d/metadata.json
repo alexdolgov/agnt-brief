@@ -1,0 +1,17 @@
+{
+  "address": "0x00c25980d2d6018569ec769c6b0c54bd1ca3cf9d",
+  "chain_id": 8453,
+  "contract_name": "MasterChefV3Receiver",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000003905f0c724a284095353befafd932204ee6b94ad0000000000000000000000003df41177096d1e18c1d4447fa16ecc12175fcbee00000000000000000000000073326b4d0225c429bed050c11c4422d91470aaf40000000000000000000000000000000000000000000000000000000000000001",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:04.264Z"
+}

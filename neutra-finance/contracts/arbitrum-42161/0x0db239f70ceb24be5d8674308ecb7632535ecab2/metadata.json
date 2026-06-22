@@ -1,0 +1,18 @@
+{
+  "address": "0x0db239f70ceb24be5d8674308ecb7632535ecab2",
+  "chain_id": 42161,
+  "contract_name": "RepayCallbackTarget",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:28:48.661Z"
+}

@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "magik-finance",
-  "generated_at": "2026-06-13T13:41:23.100Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T19:24:37.367Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "magik-finance",
+    "tier": 1,
+    "peak_tvl": 3832627,
+    "peak_date": "2022-08-13T00:00:00.000Z",
+    "tvl_30d_ago": 2878,
+    "tvl_90d_ago": 2577,
+    "tvl_current": 2043,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 8569,
+    "change_30d_pct": -29.01320361362057,
+    "change_90d_pct": -20.721769499417928,
+    "governance_raw": {
+      "evidence": "The domain magik.finance is for sale, indicating the project is no longer operational.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1406,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.94669452571304,
+    "governance_evidence": "The domain magik.finance is for sale, indicating the project is no longer operational.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 708,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,7 +51,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://magik.finance/",
-    "chains": [],
+    "chains": [
+      "fantom"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2022-07",
@@ -38,12 +66,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +90,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x87a5c9b60a3aaf1064006fe64285018e50e0d020",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Magik Farm",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x87a5c9b60a3aaf1064006fe64285018e50e0d020",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13440,
@@ -81,7 +156,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

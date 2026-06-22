@@ -1,0 +1,18 @@
+{
+  "address": "0x08bd1b3f08a0d55337e8be26e1a0c6fc435f01f0",
+  "chain_id": 56,
+  "contract_name": "BaseRewardPoolV1WithLockqWom",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 86,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:17.837Z"
+}

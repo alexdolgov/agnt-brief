@@ -1,0 +1,18 @@
+{
+  "address": "0x6ef2c2782c5980845383b5ea4c231f618bd0488c",
+  "chain_id": 137,
+  "contract_name": "circulating",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:04:14.817Z"
+}

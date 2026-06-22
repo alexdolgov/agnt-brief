@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "geist-finance",
-  "generated_at": "2026-06-13T11:35:43.466Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T10:02:54.554Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "geist-finance",
+    "tier": 0,
+    "peak_tvl": 3751097309,
+    "peak_date": "2021-10-10T00:00:00.000Z",
+    "tvl_30d_ago": 116983,
+    "tvl_90d_ago": 116983,
+    "tvl_current": 116983,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 116983,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 1715,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.99688136589474
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
@@ -25,25 +41,38 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "fantom"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021",
+    "latest_audit_date": "2021-11",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +80,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xd8321aa83fb0a4ecd6348d4577431310a6e0814d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Geist Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xd8321aa83fb0a4ecd6348d4577431310a6e0814d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13173,
@@ -61,7 +126,7 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -81,8 +146,8 @@
       "report_url": "https://sourcehat.com/audits/GeistProtocol",
       "auditor": "SourceHat",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -99,7 +164,7 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

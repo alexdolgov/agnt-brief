@@ -1,0 +1,17 @@
+{
+  "address": "0x0a90276552b5292b47fa51101894d5bb038f0d8d",
+  "chain_id": 43114,
+  "contract_name": "GenesisRewardPool",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000000fb3e4e84fb78c93e466a2117be7bc8bc063e4300000000000000000000000000000000000000000000000000000000062bc4cd0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:01.600Z"
+}

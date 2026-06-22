@@ -1,0 +1,18 @@
+{
+  "address": "0x1d6493e6fff1f6e4c62e4caa5551cb00f7f4344e",
+  "chain_id": 56,
+  "contract_name": "QValidator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 77,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:12:53.974Z"
+}

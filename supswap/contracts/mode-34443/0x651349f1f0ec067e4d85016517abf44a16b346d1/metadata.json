@@ -1,0 +1,18 @@
+{
+  "address": "0x651349f1f0ec067e4d85016517abf44a16b346d1",
+  "chain_id": 34443,
+  "contract_name": "PositionManager",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:32.290Z"
+}

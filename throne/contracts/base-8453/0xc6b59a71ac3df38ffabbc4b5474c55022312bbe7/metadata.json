@@ -1,0 +1,18 @@
+{
+  "address": "0xc6b59a71ac3df38ffabbc4b5474c55022312bbe7",
+  "chain_id": 8453,
+  "contract_name": "NftPositionLockerFactory",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:27.730Z"
+}

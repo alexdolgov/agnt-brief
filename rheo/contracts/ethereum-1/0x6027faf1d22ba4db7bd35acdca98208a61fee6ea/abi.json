@@ -1,0 +1,1102 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "INVALID_MARKET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "addedAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddedToCollection",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "previousParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "newParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "CopyLimitOrdersParamsSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract ISizeFactory",
+        "name": "previousFactory",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract ISizeFactory",
+        "name": "newFactory",
+        "type": "address"
+      }
+    ],
+    "name": "FactorySet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "RemovedFromCollection",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "previousDelay",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDelay",
+        "type": "uint256"
+      }
+    ],
+    "name": "TimelockDelaySet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BOT_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RATE_PROVIDER_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "addToCollection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "onBehalfOf",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "copyLimitOrdersOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "onBehalfOf",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "copyLimitOrdersOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "contract ISizeFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      }
+    ],
+    "name": "getCollection",
+    "outputs": [
+      {
+        "internalType": "contract ISize[]",
+        "name": "markets",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "addedAt",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRoleMember",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleMemberCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISizeFactory",
+        "name": "_factory",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "multicall",
+    "outputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "results",
+        "type": "bytes[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "removeFromCollection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "setCopyLimitOrdersParams",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newTimelockDelay",
+        "type": "uint256"
+      }
+    ],
+    "name": "setTimelockDelay",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "timelockDelay",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      }
+    ],
+    "name": "userToCollectionToCopyLimitOrdersParams",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "copyAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "offsetAPR",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct CopyLimitOrder",
+        "name": "copyLoanOffer",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "offsetAPR",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct CopyLimitOrder",
+        "name": "copyBorrowOffer",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

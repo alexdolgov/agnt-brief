@@ -1,0 +1,18 @@
+{
+  "address": "0x4a35e7448dad9cac6b3e529050b5a6ee56a0edf0",
+  "chain_id": 999,
+  "contract_name": "Vault",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, BSD, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:55:22.041Z"
+}

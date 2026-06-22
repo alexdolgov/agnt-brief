@@ -1,0 +1,18 @@
+{
+  "address": "0x62f635223e5e7a365fd5cb5b2ff3cc0061a40a61",
+  "chain_id": 42161,
+  "contract_name": "MockLocus",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T05:25:07.306Z"
+}

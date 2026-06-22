@@ -1,0 +1,18 @@
+{
+  "address": "0x12c1c1aeca59d19230e7e86f8455c4ae97d7b23d",
+  "chain_id": 1,
+  "contract_name": "P2PLendingSecuritize",
+  "compiler_version": "v0.4.3+commit.bff19ea2",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:50:51.978Z"
+}

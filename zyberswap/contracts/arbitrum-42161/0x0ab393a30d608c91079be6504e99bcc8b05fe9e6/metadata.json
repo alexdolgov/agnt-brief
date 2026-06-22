@@ -1,0 +1,18 @@
+{
+  "address": "0x0ab393a30d608c91079be6504e99bcc8b05fe9e6",
+  "chain_id": 42161,
+  "contract_name": "V3Fees",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:27:01.668Z"
+}

@@ -1,19 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "roseonx",
-  "generated_at": "2026-06-13T14:22:17.135Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T08:27:13.662Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "roseonx",
+    "tier": 0,
+    "peak_tvl": 94307,
+    "peak_date": "2023-11-09T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 953,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 100
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,10 +41,12 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "arbitrum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023",
+    "latest_audit_date": "2023-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +56,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 22,
+    "live_contracts": 2,
+    "inactive_contracts": 18,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +80,78 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xdc8184ba488e949815d4aafb35b3c56ad03b4179",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ROSX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "RoseonX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ROSX",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdc8184ba488e949815d4aafb35b3c56ad03b4179",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a",
+      "deployment_unit": "unit-39404",
+      "deployment_unit_proxy_count": 1,
+      "name": "StakingDualTokenV2",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "RoseonX",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x19b85abee8822f3b86cb3b1147859caab046ddd3",
+      "impl_name": "StakingDualTokenV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a",
+          "deployment_unit": "unit-39404",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13786,
@@ -61,7 +161,7 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023",
+      "date": "2023-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -76,11 +176,22 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xdc8184ba488e949815d4aafb35b3c56ad03b4179",
+      "name": "ROSX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

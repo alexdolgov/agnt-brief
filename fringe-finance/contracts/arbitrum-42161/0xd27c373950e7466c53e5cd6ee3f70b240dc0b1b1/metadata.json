@@ -1,0 +1,18 @@
+{
+  "address": "0xd27c373950e7466c53e5cd6ee3f70b240dc0b1b1",
+  "chain_id": 42161,
+  "contract_name": "YieldBooster",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:23.132Z"
+}

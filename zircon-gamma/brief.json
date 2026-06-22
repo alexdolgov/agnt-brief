@@ -1,19 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "zircon-gamma",
-  "generated_at": "2026-06-13T15:14:10.123Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T11:48:45.248Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "zircon-gamma",
+    "tier": 0,
+    "peak_tvl": 1464298,
+    "peak_date": "2022-11-08T00:00:00.000Z",
+    "tvl_30d_ago": 2,
+    "tvl_90d_ago": 2,
+    "tvl_current": 2,
+    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
+    "tvl_180d_ago": 2,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 1319,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.99986341578013
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,25 +41,40 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "moonriver"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2022-08",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 232,
+    "live_contracts": 1,
+    "inactive_contracts": 231,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +82,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x4545e94974adacb82fc56bcf136b07943e152055",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ZirconGammaToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Zircon Gamma",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ZirconGammaToken",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x4545e94974adacb82fc56bcf136b07943e152055",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14174,
@@ -60,13 +127,13 @@
       "report_url": "https://github.com/Zircon-Finance/zircon-protocol-2/blob/master/audit/chaintroopers/Zircon_Protocol2_SecAssessment_report_v1.1.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -76,15 +143,28 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x4545e94974adacb82fc56bcf136b07943e152055",
+      "name": "ZirconGammaToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 21
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

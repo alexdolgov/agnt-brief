@@ -1,0 +1,18 @@
+{
+  "address": "0x05f4b793466ae770fb9b8460f8d2503073bcd9ad",
+  "chain_id": 56,
+  "contract_name": "MultiStrategyTokenAlpacaFarm",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:13:29.541Z"
+}

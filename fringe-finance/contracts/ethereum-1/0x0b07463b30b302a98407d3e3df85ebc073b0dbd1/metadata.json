@@ -1,0 +1,18 @@
+{
+  "address": "0x0b07463b30b302a98407d3e3df85ebc073b0dbd1",
+  "chain_id": 1,
+  "contract_name": "SubdomainRegistrar",
+  "compiler_version": "v0.4.21-nightly.2018.3.6+commit.a9e02acc",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:04.085Z"
+}

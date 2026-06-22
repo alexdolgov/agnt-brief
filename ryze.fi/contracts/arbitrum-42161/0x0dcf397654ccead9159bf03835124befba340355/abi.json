@@ -1,0 +1,175 @@
+[
+  {
+    "inputs": [],
+    "name": "ReentrancyGuard__ReentrantCall",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "prevTvl",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalDepositedAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "watermark",
+        "type": "uint256"
+      }
+    ],
+    "name": "VaultChangedFromMarket",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isRefund",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "creditUsed",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "creditTokenIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "creditTokenAmounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "claimBettingRewards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "endTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "position",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bool",
+        "name": "creditUsed",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "creditTokenIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "creditTokenAmounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "feeWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "onPlaceBet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "wonAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "loseAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "wonCreditAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "loseCreditAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "onRoundExecuted",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pluginMetadata",
+    "outputs": [
+      {
+        "internalType": "bytes4[]",
+        "name": "selectors",
+        "type": "bytes4[]"
+      },
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

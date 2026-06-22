@@ -1,0 +1,17 @@
+{
+  "address": "0x0d5433fee91fb2db9dd6a74267dd900ec2130675",
+  "chain_id": 59144,
+  "contract_name": "FactoryStable",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000007226c7ca07056c655865216e04512e9b287829590000000000000000000000009fd93712400902bff6040efa72b28bf80152f056000000000000000000000000c3a05fd24095b7951ecd0d14a28c565dc5778bc4000000000000000000000000e589c99cf4751f5ef696216f5d5936c9f396c19b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:32.257Z"
+}

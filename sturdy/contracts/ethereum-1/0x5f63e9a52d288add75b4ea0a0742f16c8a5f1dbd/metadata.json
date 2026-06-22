@@ -1,0 +1,18 @@
+{
+  "address": "0x5f63e9a52d288add75b4ea0a0742f16c8a5f1dbd",
+  "chain_id": 1,
+  "contract_name": "PendlePTLeverage",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1660,
+  "evm_version": "paris",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:17:33.040Z"
+}

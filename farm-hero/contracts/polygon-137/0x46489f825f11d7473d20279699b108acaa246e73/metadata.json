@@ -1,0 +1,17 @@
+{
+  "address": "0x46489f825f11d7473d20279699b108acaa246e73",
+  "chain_id": 137,
+  "contract_name": "UniswapV2Pair",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:51:53.078Z"
+}

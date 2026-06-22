@@ -1,0 +1,18 @@
+{
+  "address": "0xae794c750991b19485e17788d1a19b83ba68bd62",
+  "chain_id": 42161,
+  "contract_name": "Milli",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:14:41.683Z"
+}

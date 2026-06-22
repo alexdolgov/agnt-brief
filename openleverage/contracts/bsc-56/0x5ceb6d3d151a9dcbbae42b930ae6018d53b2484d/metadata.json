@@ -1,0 +1,18 @@
+{
+  "address": "0x5ceb6d3d151a9dcbbae42b930ae6018d53b2484d",
+  "chain_id": 56,
+  "contract_name": "OPBorrowing",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:32.237Z"
+}

@@ -1,0 +1,648 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPythWithGetters",
+        "name": "_pyth",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidUpdateData",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUpdateDataSource",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidWormholeVaa",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "PriceFeedNotFound",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracleProvider",
+        "type": "address"
+      }
+    ],
+    "name": "AddOracleProviderEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "checkThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetCheckThresholdEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "confMultiplier",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetConfMultiplierEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "staleThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetStaleThresholdEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "ugpAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ugpDiscount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetUGPDiscountEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "contract IOracleProvider",
+        "name": "oracleProvider",
+        "type": "address"
+      }
+    ],
+    "name": "addOracleProviderPerPriceId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cachedPricePerPriceId",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "ask",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bid",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "publishTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOracleProvider.PricePackage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "checkThreshold",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "confMultiplierPerPriceId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getLatestPrice",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "ask",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bid",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "publishTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOracleProvider.PricePackage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ugpAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getUGPDiscount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "updateDataSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUpdateFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "oracleProvidersPerPriceId",
+    "outputs": [
+      {
+        "internalType": "contract IOracleProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "updateData",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "parsePriceFeed",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "ask",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bid",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "publishTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOracleProvider.PricePackage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "updateData",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "priceIds",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "parsePriceFeedUpdates",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "publishTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int32",
+            "name": "expo",
+            "type": "int32"
+          },
+          {
+            "internalType": "int64",
+            "name": "price",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "conf",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int64",
+            "name": "emaPrice",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "emaConf",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IPythParser.PythInternalPriceInfo[]",
+        "name": "priceFeeds",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_checkThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "setCheckThreshold",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "confMultiplier",
+        "type": "uint256"
+      }
+    ],
+    "name": "setConfMultiplier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "staleThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "setStaleThreshold",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ugpAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ugpDiscount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setUGPDiscount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "staleThresholdPerPriceId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "priceId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "priceData",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "updateFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateLatestPrice",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "ask",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bid",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "publishTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOracleProvider.PricePackage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "priceData",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "priceIds",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "updateFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePriceFeeds",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x77369bbebd14e91a6688bf400d560c89f38a2f32",
+  "chain_id": 56,
+  "contract_name": "PancakeV3AutoManager",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "prague",
+  "license": "GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:54:29.772Z"
+}

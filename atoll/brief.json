@@ -1,57 +1,239 @@
 {
   "schema_version": "2.0",
   "project_key": "atoll",
-  "generated_at": "2026-06-13T12:25:01.552Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T09:01:04.375Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "atoll",
+    "tier": 1,
+    "peak_tvl": 877198,
+    "peak_date": "2025-03-03T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "governance_raw": {
+      "evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 473,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 1003,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0,
-    "tvl_usd": 0,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 19722.399999999998,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "sonic": 19722.4
+    },
+    "asd_usd": 19722.399999999998,
     "website_url": "https://atoll.money/",
-    "chains": [],
+    "chains": [
+      "sonic"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024",
-    "audit_freshness": "stale",
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 1,
+      "aging": 1,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Atoll is a yield protocol on Sonic that issues a yield-bearing token (AtToken) backed by stablecoins, using automated market operations to manage reserves and maintain its peg.",
+    "relationship_narrative": "The Atoll family uses GovToken for governance, while PsmAMO and RebalanceAMO manage AtToken's reserves and peg. GnosisSafeProxy likely controls administrative functions across the protocol.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 9,
+    "live_contracts": 4,
+    "inactive_contracts": 5,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x284d81e48fbc782aa9186a03a226690aea5cbe0e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AtToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Atoll",
+      "tvl_usd": 19722.399999999998,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AtToken",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x284d81e48fbc782aa9186a03a226690aea5cbe0e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 19722.399999999998,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x66bb478787705a2c7e0a6ff21d4370230277a667",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GnosisSafeProxy",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Atoll",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GnosisSafeProxy",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x66bb478787705a2c7e0a6ff21d4370230277a667",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xd1da314f7db27dbe3c61ac172be13d86e67688b7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GovToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Sonic mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GovToken",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xd1da314f7db27dbe3c61ac172be13d86e67688b7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vesting",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 12698,
@@ -60,8 +242,8 @@
       "report_url": "https://github.com/Marvin051499/atoll-smart-contracts/blob/main/PeckShield-Audit-Report-Atoll-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024",
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -76,11 +258,42 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x284d81e48fbc782aa9186a03a226690aea5cbe0e",
+      "name": "AtToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 19722.399999999998,
+      "risk_note": "Verified native implementation with $19,722.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xd1da314f7db27dbe3c61ac172be13d86e67688b7",
+      "name": "GovToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70",
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

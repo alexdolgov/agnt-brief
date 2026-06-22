@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "emiswap",
-  "generated_at": "2026-06-13T12:57:29.607Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T02:02:32.683Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "emiswap",
+    "tier": 0,
+    "peak_tvl": 845234,
+    "peak_date": "2021-10-09T00:00:00.000Z",
+    "tvl_30d_ago": 33547,
+    "tvl_90d_ago": 33547,
+    "tvl_current": 33547,
+    "tier0_reason": "long_term_collapse_from_peak",
+    "tvl_180d_ago": 33005,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 1715,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 96.03103992503851
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,7 +41,11 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "aurora",
+      "ethereum",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -38,20 +58,185 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "EmiSwap is a decentralized exchange (DEX) protocol that enables users to swap tokens, provide liquidity, and earn rewards across multiple chains including Ethereum, Polygon, Avalanche, and Aurora.",
+    "relationship_narrative": "The EmiFactory registries deploy and track liquidity pools, while the EmiVault manages user deposits and rewards. Proxy contracts provide upgradeability for the factory and token implementations, and the ESW token likely serves as the governance or reward token across the system.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 62,
+    "live_contracts": 3,
+    "inactive_contracts": 49,
+    "singleton_contracts": 8,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 2,
+    "deployment_units": 5,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EmiRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EmiRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x38680777a6a402e98fa4609725664f6766c2c46a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5a75a093747b72a0e14056352751edf03518031d",
+      "deployment_unit": "unit-40933",
+      "deployment_unit_proxy_count": 1,
+      "name": "ESW",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6030ee6cc813b2ab95d9e822699eb600e7702d92",
+      "impl_name": "ESW",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5a75a093747b72a0e14056352751edf03518031d",
+          "deployment_unit": "unit-40933",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1313161554,
+      "chain_name": "aurora",
+      "address": "0x5a75a093747b72a0e14056352751edf03518031d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "EmiSwap",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1313161554,
+          "chain_name": "aurora",
+          "address": "0x5a75a093747b72a0e14056352751edf03518031d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1313161554,
+      "chain_name": "aurora",
+      "address": "0xe094e3e16e813a40e2d6cc4b89bfeae0142044e1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "EmiSwap",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1313161554,
+          "chain_name": "aurora",
+          "address": "0xe094e3e16e813a40e2d6cc4b89bfeae0142044e1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13078,
@@ -76,11 +261,22 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01",
+      "name": "EmiRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

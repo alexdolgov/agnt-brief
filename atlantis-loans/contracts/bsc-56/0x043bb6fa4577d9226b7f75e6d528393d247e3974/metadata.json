@@ -1,0 +1,18 @@
+{
+  "address": "0x043bb6fa4577d9226b7f75e6d528393d247e3974",
+  "chain_id": 56,
+  "contract_name": "CommunityVaultProxy",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xdcb2face257ca25d7957fe4f747817b92c01bbbb",
+  "fetched_at": "2026-06-21T05:18:52.060Z"
+}

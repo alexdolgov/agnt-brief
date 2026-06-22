@@ -1,57 +1,570 @@
 {
   "schema_version": "2.0",
   "project_key": "looksrare",
-  "generated_at": "2026-06-13T11:04:50.685Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T01:18:51.154Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "looksrare",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2022-01-11T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 1621,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 13,
+    "total_addresses": 14,
+    "unique_implementations": 13,
+    "total_deployments": 14,
+    "audited_contracts": 4,
+    "unaudited_contracts": 9,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 30.8,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 27887.10104,
-    "tvl_usd": 27887.10104,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 224981.83402100217,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 224981.83
+    },
+    "asd_usd": 0.6258820720881652,
     "website_url": "https://looksrare.org/",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 23.1,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
+    "latest_audit_date": "2022-03",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 1
+      "stale": 3,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "LooksRare is an NFT marketplace protocol that enables users to trade NFTs, earn rewards through staking and trading, and participate in raffles and other incentive programs. It includes its own native token (LOOKS) and integrates with Uniswap for liquidity.",
+    "relationship_narrative": "The NFT Marketplace family relies on the Token and Governance family for fee collection and protocol parameters, while the Staking and Rewards family uses the LOOKS token and distributes rewards to marketplace users. Raffles and YOLO are standalone games that may use NFTs from the marketplace.",
+    "product_family_count": 27,
+    "total_contracts_indexed": 57,
+    "live_contracts": 13,
+    "inactive_contracts": 43,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 65,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2",
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 13,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf4d2888d29d722226fafa5d9b24f9164c092421e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LooksRareToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LooksRareToken ​",
+      "tvl_usd": 224981.2081389301,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LooksRareToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf4d2888d29d722226fafa5d9b24f9164c092421e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 224981.2081389301,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13396",
+        "audit-13397"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2a70e7f51f6cd40c3e9956aa964137668cbfadc5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakingPoolForUniswapV2Tokens",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LooksRare",
+      "tvl_usd": 0.6258820720881652,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakingPoolForUniswapV2Tokens",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2a70e7f51f6cd40c3e9956aa964137668cbfadc5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.6258820720881652,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3ab16af1315dc6c95f83cbf522fecf98d00fd9ba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AggregatorFeeSharingWithUniswapV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "AggregatorFeeSharingWithUniswapV3 ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AggregatorFeeSharingWithUniswapV3",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3ab16af1315dc6c95f83cbf522fecf98d00fd9ba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13398"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbcd7254a1d759efa08ec7c3291b2e85c5dcc12ce",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FeeSharingSystem",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "FeeSharingSystem ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeSharingSystem",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbcd7254a1d759efa08ec7c3291b2e85c5dcc12ce",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13396",
+        "audit-13397"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x59728544b08ab483533076417fbbb2fd0b17ce3a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LooksRareExchange",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LooksRare",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LooksRareExchange",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x59728544b08ab483533076417fbbb2fd0b17ce3a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13396"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000e655fae4d56241588680f86e3b2377",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LooksRareProtocol",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LooksRare",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LooksRareProtocol",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000000e655fae4d56241588680f86e3b2377",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000adead599c11a0c9a7475b67852c1d0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RaffleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Raffle V2 ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RaffleV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000000adead599c11a0c9a7475b67852c1d0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5c073cecafc56ee9f4335230a09933965c8ed472",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SeasonRewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SeasonRewardsDistributor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5c073cecafc56ee9f4335230a09933965c8ed472",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000e58692bf5fa347312da78ca8bfc8d2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StrategyCollectionOffer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "StrategyCollectionOffer ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StrategyCollectionOffer",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000000e58692bf5fa347312da78ca8bfc8d2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000000ea4af05656c17b90f4d64add29e1d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TransferManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LooksRare",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransferManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000000ea4af05656c17b90f4d64add29e1d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000000060c4ca14cfc4325359062ace33fe3d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdc00ba87cc2d99468f7f34bc04cbf72e111a32f7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "UniswapV3Pool ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdc00ba87cc2d99468f7f34bc04cbf72e111a32f7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe7bac7d798d66d353b9e50ebfc6859950fe13ce4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WrappedLooksRareToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WrappedLooksRareToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe7bac7d798d66d353b9e50ebfc6859950fe13ce4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000007767d79f9f4aa1ff0d71b8e2e4a231",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Yolo",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "YOLO V2 ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Yolo",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000007767d79f9f4aa1ff0d71b8e2e4a231",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13396,
@@ -60,18 +573,33 @@
       "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/LooksRare.pdf",
       "auditor": "Trail of Bits",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CurrencyManager",
+        "ExecutionManager",
+        "FeeSharingSystem",
+        "LooksRareExchange",
+        "LooksRareToken",
+        "OrderTypes",
+        "RoyaltyFeeManager",
+        "RoyaltyFeeRegistry",
+        "RoyaltyFeeSetter",
+        "SignatureChecker",
+        "StrategyDutchAuction",
+        "StrategyPrivateSale",
+        "TokenDistributor",
+        "TransferSelectorNFT"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -82,17 +610,21 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FeeSharingSystem",
+        "LooksRareToken",
+        "TokenDistributor"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -103,47 +635,136 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AggregatorFeeSharingWithUniswapV3"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 23.1,
+      "latest_audit": "2022-03"
+    },
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 3,
+      "coverage_pct": 23.1,
+      "latest_audit": "2022-03"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2a70e7f51f6cd40c3e9956aa964137668cbfadc5",
+      "name": "StakingPoolForUniswapV2Tokens",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.6258820720881652,
+      "risk_note": "Verified native implementation with $0.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000e655fae4d56241588680f86e3b2377",
+      "name": "LooksRareProtocol",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000adead599c11a0c9a7475b67852c1d0",
+      "name": "RaffleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5c073cecafc56ee9f4335230a09933965c8ed472",
+      "name": "SeasonRewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000000e58692bf5fa347312da78ca8bfc8d2",
+      "name": "StrategyCollectionOffer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000000ea4af05656c17b90f4d64add29e1d",
+      "name": "TransferManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe7bac7d798d66d353b9e50ebfc6859950fe13ce4",
+      "name": "WrappedLooksRareToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000007767d79f9f4aa1ff0d71b8e2e4a231",
+      "name": "Yolo",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 12,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 16
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13396,
-        "report_name": "LooksRare.pdf"
-      },
-      {
-        "audit_id": 13397,
-        "report_name": "PeckShield-Audit-Report-LooksRare-v1.0.pdf"
-      },
-      {
-        "audit_id": 13398,
-        "report_name": "PeckShield-Audit-Report-LooksRare-AggregatorFeeSharing-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

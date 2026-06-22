@@ -1,0 +1,18 @@
+{
+  "address": "0x3fab259f2392f733c60c19492b5678e5d2d2ee31",
+  "chain_id": 1,
+  "contract_name": "EpochManager",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:24.587Z"
+}

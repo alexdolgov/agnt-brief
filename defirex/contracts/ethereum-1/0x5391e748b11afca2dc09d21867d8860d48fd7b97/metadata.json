@@ -1,0 +1,18 @@
+{
+  "address": "0x5391e748b11afca2dc09d21867d8860d48fd7b97",
+  "chain_id": 1,
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.5.3+commit.10d17f24",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xffc6614bf147a4e628c8f9b2b88a3c639fcf6eb0",
+  "fetched_at": "2026-06-19T19:48:38.819Z"
+}

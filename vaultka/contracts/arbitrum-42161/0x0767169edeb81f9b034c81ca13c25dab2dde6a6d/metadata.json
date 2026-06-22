@@ -1,0 +1,18 @@
+{
+  "address": "0x0767169edeb81f9b034c81ca13c25dab2dde6a6d",
+  "chain_id": 42161,
+  "contract_name": "VodkaV1",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:14.049Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2cddd57474f8ba6a512e983ff36354c7afd79586",
+  "chain_id": 1,
+  "contract_name": "BoostViewVoodoo",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:23:00.429Z"
+}

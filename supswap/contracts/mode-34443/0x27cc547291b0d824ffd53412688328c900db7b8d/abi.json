@@ -1,0 +1,304 @@
+[
+  {
+    "inputs": [],
+    "name": "ICurve__InvalidInput",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MathOverflowedMulDiv",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "checkCompatability",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "x2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "evaluateDx",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "y1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "y2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "evaluateDy",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "fPrimeX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "fX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "y",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      }
+    ],
+    "name": "fY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "xTotal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "xMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "getK",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "yMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "getQ",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

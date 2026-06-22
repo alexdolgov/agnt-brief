@@ -1,34 +1,54 @@
 {
   "schema_version": "2.0",
   "project_key": "whiteheart",
-  "generated_at": "2026-06-13T15:04:08.594Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T20:58:53.387Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "whiteheart",
+    "tier": 0,
+    "peak_tvl": 4431653,
+    "peak_date": "2021-07-30T00:00:00.000Z",
+    "tvl_30d_ago": 7071,
+    "tvl_90d_ago": 6988,
+    "tvl_current": 6395,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 8422,
+    "change_30d_pct": -9.560175364163484,
+    "change_90d_pct": -8.485975958786492,
+    "days_since_peak": 1785,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.85569718567767
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 16.7,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 6314.20702,
-    "tvl_usd": 6314.20702,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 89108.31565567735,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 89108.32
+    },
+    "asd_usd": 89042.25595707484,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021",
+    "latest_audit_date": "2021-03",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +58,246 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Whiteheart is a DeFi options protocol that provides hedged exposure to ETH and USDC through tokenized vaults. It allows users to deposit assets into pools that automatically manage option strategies to generate yield or protect against downside risk.",
+    "relationship_narrative": "The WhiteUSDCPool serves as the core logic contract managing the options strategy, while WHERC20v2 and WHETHv2 are tokenized representations of the hedged positions, likely minted upon deposit into the pool.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 97,
+    "live_contracts": 6,
+    "inactive_contracts": 91,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 47,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x60e46a4dd91d10506d8efa2caa266e7191fe7ea8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC20PresetFixedSupply",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 89042.25595707484,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20PresetFixedSupply",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x60e46a4dd91d10506d8efa2caa266e7191fe7ea8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 89042.25595707484,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf19c3fafb0171484d2301af1838cb5c6ea739dc4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WHERC20v2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Whiteheart",
+      "tvl_usd": 66.05969860250799,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WHERC20v2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf19c3fafb0171484d2301af1838cb5c6ea739dc4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 66.05969860250799,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14131"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc9ac1f2571748c4d02774b8d0fe5981ee4b897a2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HegicStaking",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "hegic",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStaking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9ac1f2571748c4d02774b8d0fe5981ee4b897a2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbc89428adb14384453c04d08d8f530455e55f0d1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HLTPs",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "hegic",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HLTPs",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbc89428adb14384453c04d08d8f530455e55f0d1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ba4b447d0df64da64024e5ec47da94458c1e97f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OptionsManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OptionsManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ba4b447d0df64da64024e5ec47da94458c1e97f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc0425f0c7f84956d21ad767abd1892344783be29",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WhiteStakingUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WhiteStakingUSDC",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc0425f0c7f84956d21ad767abd1892344783be29",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 14131,
@@ -61,39 +307,72 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "WHAssetv2",
+        "WHERC20v2",
+        "WhiteStaking",
+        "WhiteUSDCPool"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
+      "latest_audit": "2021-03"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ba4b447d0df64da64024e5ec47da94458c1e97f",
+      "name": "OptionsManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc0425f0c7f84956d21ad767abd1892344783be29",
+      "name": "WhiteStakingUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
+    "native": 3,
+    "upstream": 2,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 14131,
-        "report_name": "PeckShield-Audit-Report-Whiteheart-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

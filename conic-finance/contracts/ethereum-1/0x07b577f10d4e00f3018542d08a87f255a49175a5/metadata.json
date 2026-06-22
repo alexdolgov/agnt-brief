@@ -1,0 +1,18 @@
+{
+  "address": "0x07b577f10d4e00f3018542d08a87f255a49175a5",
+  "chain_id": 1,
+  "contract_name": "ConicPool",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": "0x635228edaead8a76b6ae1779bd7682043321943d",
+  "fetched_at": "2026-06-21T06:57:36.954Z"
+}

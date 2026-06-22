@@ -1,31 +1,66 @@
 {
   "schema_version": "2.0",
   "project_key": "maha.xyz",
-  "generated_at": "2026-06-13T11:46:35.434Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T11:58:38.040Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "maha.xyz",
+    "tier": 1,
+    "peak_tvl": 179660,
+    "peak_date": "2025-02-03T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "governance_raw": {
+      "evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 501,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 1082,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 10,
+    "total_addresses": 16,
+    "unique_implementations": 10,
+    "total_deployments": 16,
+    "audited_contracts": 1,
+    "unaudited_contracts": 9,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 10,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 2.61654,
-    "tvl_usd": 2.61654,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 2337890.4011554625,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 0,
+      "ethereum": 2337890.4
+    },
+    "asd_usd": 60741.648,
     "website_url": "https://maha.xyz/",
-    "chains": [],
+    "chains": [
+      "arbitrum",
+      "base",
+      "bsc",
+      "ethereum",
+      "linea"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2024-08",
@@ -38,20 +73,453 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "MAHA.xyz is a decentralized CDP (Collateralized Debt Position) protocol that enables users to mint the stablecoin ZAI against collateral. It also provides cross-chain token transfers via LayerZero, staking rewards, and governance through the MAHA token.",
+    "relationship_narrative": "The Core Protocol manages ZAI minting and stability, while Direct Deposit Modules invest collateral into external protocols for yield. Cross-Chain Addresses enable MAHA and ZAI to move across chains, and Staking Pools incentivize liquidity provision, all governed by the MAHA token and timelock controllers.",
+    "product_family_count": 7,
+    "total_contracts_indexed": 412,
+    "live_contracts": 14,
+    "inactive_contracts": 214,
+    "singleton_contracts": 182,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 2,
+    "deployment_units": 89,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 58,
+    "unverified_dependencies": 3,
+    "detected_codebases": [
+      "uniswap-v2",
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x69000dfd5025e82f48eb28325a2b88a241182ced",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ZaiStablecoin",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core Protocol Addresses",
+      "tvl_usd": 2277148.7531554624,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ZaiStablecoin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x69000dfd5025e82f48eb28325a2b88a241182ced",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2277148.7531554624,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13444"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x745407c86df8db893011912d3ab28e68b62e49b0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MahaToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "MAHA",
+      "tvl_usd": 60741.648,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MahaToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x745407c86df8db893011912d3ab28e68b62e49b0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 60741.648,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xebf0d2fac88448874947550fa9b2a75f22ff571f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CLPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "MAHA.xyz",
+      "tvl_usd": 3.681312e-20,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CLPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xebf0d2fac88448874947550fa9b2a75f22ff571f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3.681312e-20,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x554bba833518793056cf105e66abea330672c0de",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LayerZeroCustomOFT",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "LayerZero",
+      "product_line": "Core Protocol Addresses",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LayerZeroCustomOFT",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6a661312938d22a2a0e27f585073e4406903990a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x554bba833518793056cf105e66abea330672c0de",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6a661312938d22a2a0e27f585073e4406903990a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3a7b708e71ff72506afa674ea14881e39ce9fde2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LayerZeroCustomOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "LayerZero",
+      "product_line": "Cross-Chain Addresses &lt;a href=\"#layer-2-addresses\" id=\"layer-2-addresses\"&gt;&lt;/a&gt;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LayerZeroCustomOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3a7b708e71ff72506afa674ea14881e39ce9fde2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x557177aa5f5303ded2fa56b413631bab22a73872",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5f4250ed435124199adc5cc102d2aa59defae7e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockerToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockerToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5f4250ed435124199adc5cc102d2aa59defae7e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdb1a47924a31d86470be7fe2b38fef3f5a54f6e4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x93edc603d7a2ea03518ac55219cad320010a58e4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "MAHA.xyz",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x93edc603d7a2ea03518ac55219cad320010a58e4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x69000c978701fc4427d4baf749f10a5cec582863",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Governance/Security Addresses &lt;a href=\"#layer-2-addresses\" id=\"layer-2-addresses\"&gt;&lt;/a&gt;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x69000c978701fc4427d4baf749f10a5cec582863",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x44263a0b9ff2a90f72ded1cf4865da3457ea3b01",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Swapper",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc2c07e200cfa6ea037579a81cc68c891fdabe371",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x44263a0b9ff2a90f72ded1cf4865da3457ea3b01",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a27e060c0406f8ab7b64e3bee036a37e5a62853",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ZaiOFTWithRestaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ZaiOFTWithRestaking",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0a27e060c0406f8ab7b64e3bee036a37e5a62853",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x69000dfd5025e82f48eb28325a2b88a241182ced",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13444,
@@ -66,12 +534,28 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Constants",
+        "DDBase",
+        "DDEventsLib",
+        "DDHub",
+        "DDMetaMorpho",
+        "DDOperatorPlan",
+        "IDDHub",
+        "IDDPlan",
+        "IDDPool",
+        "IPegStabilityModule",
+        "IZaiStablecoin",
+        "PSMEventsLib",
+        "PegStabilityModule",
+        "ZAIEventsLib",
+        "ZaiStablecoin"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -96,24 +580,73 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 10,
+      "latest_audit": "2024-08"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x745407c86df8db893011912d3ab28e68b62e49b0",
+      "name": "MahaToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 60741.648,
+      "risk_note": "Verified native implementation with $60,741.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5f4250ed435124199adc5cc102d2aa59defae7e6",
+      "name": "LockerToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x44263a0b9ff2a90f72ded1cf4865da3457ea3b01",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a27e060c0406f8ab7b64e3bee036a37e5a62853",
+      "name": "ZaiOFTWithRestaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
+    "native": 5,
+    "upstream": 4,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 14
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13444,
-        "report_name": "2024-08-halborn-core.pdf"
-      },
       {
         "audit_id": 13445,
         "report_name": "Halborn MAHA Audit Reports"

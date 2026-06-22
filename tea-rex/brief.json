@@ -1,57 +1,499 @@
 {
   "schema_version": "2.0",
   "project_key": "tea-rex",
-  "generated_at": "2026-06-13T14:47:03.560Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T21:51:08.718Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "sunsetting",
+  "lifecycle_signal": {
+    "slug": "tea-rex",
+    "tier": 1,
+    "peak_tvl": 11173018,
+    "peak_date": "2025-12-22T00:00:00.000Z",
+    "tvl_30d_ago": 8564,
+    "tvl_90d_ago": 206205,
+    "tvl_current": 10105,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 11173018,
+    "change_30d_pct": 17.993928070994862,
+    "change_90d_pct": -95.09953686865012,
+    "governance_raw": {
+      "evidence": "The homepage explicitly states 'Tea-REX jungle closed — plz withdraw assets & close positions', indicating the team has announced the end of the protocol.",
+      "confidence": 0.95,
+      "lifecycle_status": "sunsetting"
+    },
+    "days_since_peak": 179,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.90955890342251,
+    "governance_evidence": "The homepage explicitly states 'Tea-REX jungle closed — plz withdraw assets & close positions', indicating the team has announced the end of the protocol.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 807,
+    "governance_classification": "sunsetting",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 9,
+    "total_addresses": 16,
+    "unique_implementations": 9,
+    "total_deployments": 16,
+    "audited_contracts": 5,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 55.6,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 9530.67313,
     "tvl_usd": 9530.67313,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://alpha.trex.trade",
-    "chains": [],
+    "chains": [
+      "sei"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-02",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Tea-REX is a decentralized derivatives protocol on Sei that enables users to trade perpetual contracts and provide liquidity through pools. It uses a modular architecture with upgradeable contracts for trading, routing, and liquidity management.",
+    "relationship_narrative": "The protocol uses a single product family where Pool contracts hold liquidity and are managed via UpgradeableBeacon proxies. Router and TradingCore contracts handle trade execution and routing, while TeaVaultV3Pair and StakeVault manage vault strategies and staking. MarketNFT likely represents positions or access tokens.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 96,
+    "live_contracts": 16,
+    "inactive_contracts": 15,
+    "singleton_contracts": 65,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 23,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xde3693d33e594404aa1df704b6ad9dbbf7fe062f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SEINativeOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SEINativeOracle",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xde3693d33e594404aa1df704b6ad9dbbf7fe062f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13995"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x031edb936896978d1fc6f1b3ea9cfc9682e5d5ea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SwapRelayer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRelayer",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x031edb936896978d1fc6f1b3ea9cfc9682e5d5ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x25f6f17e4e56b2f7316c09d13e5fe9f7b3d1948a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2e39efbc57d2543e582c50ddfd1031b3fb3e074b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x5e06595316bd5aafebbc6636817b716d911401c7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x650895b184d5ecdd79d393bb87746ce225156b6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc525cf8b7f5c902db0f4df51a07117aac8dcc3d0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xedf7732991b3de8f46fb97dcd4c5cdb28e6ad859",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TeaREX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Tea-REX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TeaREX",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xedf7732991b3de8f46fb97dcd4c5cdb28e6ad859",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xcaf51fe06c62cf4bd855afba6a579c24d02326fa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TeaVaultV2Deployer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TeaVaultV2Deployer",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xcaf51fe06c62cf4bd855afba6a579c24d02326fa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x7917fe88e1ba136135d951b91f0c27c1fa529491",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TradingCore",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TradingCore",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7917fe88e1ba136135d951b91f0c27c1fa529491",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13995"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x99c2901d2883f8d295a989544f118e31ec21823e",
+      "deployment_unit": "unit-40417",
+      "deployment_unit_proxy_count": 1,
+      "name": "TradingCore",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xef73dd5598d9091ca8b3bb503fac06399e11ee76",
+      "impl_name": "TradingCore",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x99c2901d2883f8d295a989544f118e31ec21823e",
+          "deployment_unit": "unit-40417",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13995"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xe33793230ad4587ec74306d52d28e80e36c27b9d",
+      "deployment_unit": "unit-40425",
+      "deployment_unit_proxy_count": 1,
+      "name": "TradingCore",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa6693f366973a9c5fd5d834f95669174b32be91a",
+      "impl_name": "TradingCore",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe33793230ad4587ec74306d52d28e80e36c27b9d",
+          "deployment_unit": "unit-40425",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13995"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x4831603ee903070e65927d78cebc1d82f861c2c2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VariableInterestRateModel",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VariableInterestRateModel",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4831603ee903070e65927d78cebc1d82f861c2c2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x72cabdcb680dfdbe8f86f0feca7eceb07efaf3a7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8aa64e0bfd9803d88c9b04fc1a0d4521bfceea4f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13995"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x52504590d7f82ce82eab61f7d84353bc757b5ee9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VaultUtils",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultUtils",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x52504590d7f82ce82eab61f7d84353bc757b5ee9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13995,
@@ -60,40 +502,98 @@
       "report_url": "https://github.com/TeahouseFinance/Tea-REX/blob/master/audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChainlinkOracle",
+        "FeeConfig",
+        "MarketNFT",
+        "Pool",
+        "Router",
+        "SEINativeOracle",
+        "TradingCore",
+        "UniswapV3TwapOracle",
+        "VariableInterestRateModel"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 55.6,
+      "latest_audit": "2025-02"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x031edb936896978d1fc6f1b3ea9cfc9682e5d5ea",
+      "name": "SwapRelayer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xedf7732991b3de8f46fb97dcd4c5cdb28e6ad859",
+      "name": "TeaREX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xcaf51fe06c62cf4bd855afba6a579c24d02326fa",
+      "name": "TeaVaultV2Deployer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x52504590d7f82ce82eab61f7d84353bc757b5ee9",
+      "name": "VaultUtils",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 7,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 70
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13995,
-        "report_name": "audit.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

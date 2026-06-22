@@ -1,0 +1,17 @@
+{
+  "address": "0x1cefebe5f947e421906b60b47ff35c99a23dfad6",
+  "chain_id": 137,
+  "contract_name": "PlayboyPartyPeople",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:56.674Z"
+}

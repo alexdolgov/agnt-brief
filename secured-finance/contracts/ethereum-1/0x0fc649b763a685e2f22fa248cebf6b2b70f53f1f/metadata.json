@@ -1,0 +1,18 @@
+{
+  "address": "0x0fc649b763a685e2f22fa248cebf6b2b70f53f1f",
+  "chain_id": 1,
+  "contract_name": "AddressResolver",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:06:38.247Z"
+}

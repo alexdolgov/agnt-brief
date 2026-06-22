@@ -1,0 +1,18 @@
+{
+  "address": "0x017f5f86df6aa8d5b3c01e47e410d66f356a94a6",
+  "chain_id": 1,
+  "contract_name": "CNCMintingRebalancingRewardsHandler",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:57:36.613Z"
+}

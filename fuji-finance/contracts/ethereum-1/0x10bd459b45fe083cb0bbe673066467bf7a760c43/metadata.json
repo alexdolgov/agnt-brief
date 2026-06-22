@@ -1,0 +1,18 @@
+{
+  "address": "0x10bd459b45fe083cb0bbe673066467bf7a760c43",
+  "chain_id": 1,
+  "contract_name": "ProviderAave",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:41:47.263Z"
+}

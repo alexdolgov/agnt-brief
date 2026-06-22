@@ -1,0 +1,87 @@
+[
+  {
+    "inputs": [],
+    "name": "AlreadyExistsError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BookAlreadyOpened",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BookNotOpened",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "maxCancelableUnit",
+        "type": "uint64"
+      }
+    ],
+    "name": "CancelFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "DirtyUint64Error",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "PackedUint256Error",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "QueueReplaceFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "SegmentedSegmentTreeError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroUnit",
+    "type": "error"
+  }
+]

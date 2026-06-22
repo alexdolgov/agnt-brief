@@ -1,0 +1,18 @@
+{
+  "address": "0x1284e9a4fbbdb8fa9979619fe826e84df1d8632e",
+  "chain_id": 137,
+  "contract_name": "TypedStructuredDataValidator",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:43.668Z"
+}

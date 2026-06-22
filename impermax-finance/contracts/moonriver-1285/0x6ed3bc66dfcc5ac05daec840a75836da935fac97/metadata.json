@@ -1,0 +1,17 @@
+{
+  "address": "0x6ed3bc66dfcc5ac05daec840a75836da935fac97",
+  "chain_id": 1285,
+  "contract_name": "SolarPair",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:31.671Z"
+}

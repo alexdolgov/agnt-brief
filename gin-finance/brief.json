@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "gin-finance",
-  "generated_at": "2026-06-13T13:08:06.841Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-22T10:37:43.443Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-22-727228-695b",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "gin-finance",
+    "tier": 1,
+    "peak_tvl": 1136881,
+    "peak_date": "2022-06-07T00:00:00.000Z",
+    "tvl_30d_ago": 8492,
+    "tvl_90d_ago": 8420,
+    "tvl_current": 8338,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 8872,
+    "change_30d_pct": -1.8134715025906734,
+    "change_90d_pct": -0.9738717339667459,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.27% from peak over 4 years ago, homepage shows no results for pools/farms, and no recent activity or communications.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1476,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.26658990694716,
+    "governance_evidence": "TVL dropped 99.27% from peak over 4 years ago, homepage shows no results for pools/farms, and no recent activity or communications.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 426,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,10 +51,12 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.gin.finance",
-    "chains": [],
+    "chains": [
+      "boba"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-05",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +66,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +90,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 288,
+      "chain_name": "boba",
+      "address": "0xe48703f5adfe59d271d951c2e602f654b86736e7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Gin Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 288,
+          "chain_name": "boba",
+          "address": "0xe48703f5adfe59d271d951c2e602f654b86736e7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13182,
@@ -61,7 +136,7 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -78,7 +153,7 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

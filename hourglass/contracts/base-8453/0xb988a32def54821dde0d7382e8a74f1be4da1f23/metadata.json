@@ -1,0 +1,17 @@
+{
+  "address": "0xb988a32def54821dde0d7382e8a74f1be4da1f23",
+  "chain_id": 8453,
+  "contract_name": "CowSwapper",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "000000000000000000000000b4d72b1c91e640e4ed7d7397f3244de4d8acc50b000000000000000000000000da14fdd72345c4d2511357214c5b89a919768e590000000000000000000000009da8b48441583a2b93e2ef8213aad0ec0b392c6900000000000000000000000060bf78233f48ec42ee3f101b9a05ec7878728006",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:53:37.333Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x002ae66c699cbf3dcb01d684f969b46c2e66fdaf",
+  "chain_id": 8453,
+  "contract_name": "LockerToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:45.759Z"
+}

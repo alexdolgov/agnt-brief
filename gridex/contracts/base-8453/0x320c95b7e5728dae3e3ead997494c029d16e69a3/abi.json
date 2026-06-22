@@ -1,0 +1,677 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_gridexGridFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_uniswapV3PoolFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_uniswapV2PoolFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_weth9",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "gridFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "path",
+        "type": "bytes"
+      }
+    ],
+    "name": "gridexSwapCallback",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "path",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteExactInput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amountInList",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint160[]",
+        "name": "priceAfterList",
+        "type": "uint160[]"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "initializedBoundariesCrossedList",
+        "type": "uint32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gasEstimate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "resolution",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceLimit",
+            "type": "uint160"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactInputSingleParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "quoteExactInputSingle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToPay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceAfter",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint32",
+            "name": "initializedBoundariesCrossed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasEstimate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "resolution",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceLimit",
+            "type": "uint160"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactInputSingleParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "quoteExactInputSingleWithAmountIn",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToPay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceAfter",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint32",
+            "name": "initializedBoundariesCrossed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasEstimate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "path",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteExactOutput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amountOutList",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint160[]",
+        "name": "priceAfterList",
+        "type": "uint160[]"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "initializedBoundariesCrossedList",
+        "type": "uint32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gasEstimate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "resolution",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceLimit",
+            "type": "uint160"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactOutputSingleParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "quoteExactOutputSingle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToPay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceAfter",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint32",
+            "name": "initializedBoundariesCrossed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasEstimate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "refundNativeToken",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountMinimum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      }
+    ],
+    "name": "sweepToken",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "path",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniswapV3SwapCallback",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountMinimum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      }
+    ],
+    "name": "unwrapWETH9",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IUniswapRouteQuoter.V2GetPairAmountInParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "v2GetPairAmountIn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IUniswapRouteQuoter.V2GetPairAmountOutParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "v2GetPairAmountOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "resolution",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceLimit",
+            "type": "uint160"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactInputSingleParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "v3QuoteExactInputSingle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToPay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceAfter",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint32",
+            "name": "initializedBoundariesCrossed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasEstimate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "resolution",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceLimit",
+            "type": "uint160"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactOutputSingleParameters",
+        "name": "parameters",
+        "type": "tuple"
+      }
+    ],
+    "name": "v3QuoteExactOutputSingle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToPay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint160",
+            "name": "priceAfter",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint32",
+            "name": "initializedBoundariesCrossed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gasEstimate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRouteQuoterParameters.QuoteExactResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weth9",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

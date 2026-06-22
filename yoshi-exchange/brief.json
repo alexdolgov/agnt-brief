@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "yoshi-exchange",
-  "generated_at": "2026-06-13T15:12:33.974Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T20:55:54.998Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "yoshi-exchange",
+    "tier": 1,
+    "peak_tvl": 90700826,
+    "peak_date": "2022-01-17T00:00:00.000Z",
+    "tvl_30d_ago": 7538,
+    "tvl_90d_ago": 22527,
+    "tvl_current": 6172,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 36702,
+    "change_30d_pct": -18.121517643937384,
+    "change_90d_pct": -72.60176676876637,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.99% from peak over 4 years, and the homepage returns a 403 Forbidden error, indicating the project is no longer operational.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1614,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.99319521081318,
+    "governance_evidence": "TVL dropped 99.99% from peak over 4 years, and the homepage returns a 403 Forbidden error, indicating the project is no longer operational.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 245,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,10 +51,12 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://yoshi.exchange",
-    "chains": [],
+    "chains": [
+      "fantom"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-10",
+    "latest_audit_date": "2021-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +66,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +90,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x3dc57b391262e3aae37a08d91241f9ba9d58b570",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Yoshi Exchange",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x3dc57b391262e3aae37a08d91241f9ba9d58b570",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14170,
@@ -61,7 +136,7 @@
       "auditor": "Hacken",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022-10",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -81,7 +156,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,0 +1,18 @@
+{
+  "address": "0x18fb8d5227e71dd8d8bad69f9f32026f3e3de9af",
+  "chain_id": 8453,
+  "contract_name": "SmartStakingDackieUSD",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:04.515Z"
+}

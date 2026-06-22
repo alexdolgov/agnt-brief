@@ -1,57 +1,310 @@
 {
   "schema_version": "2.0",
   "project_key": "kogefarm",
-  "generated_at": "2026-06-13T10:42:48.732Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T09:46:14.251Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "kogefarm",
+    "tier": 1,
+    "peak_tvl": 24772181,
+    "peak_date": "2021-10-03T00:00:00.000Z",
+    "tvl_30d_ago": 149157,
+    "tvl_90d_ago": 146623,
+    "tvl_current": 135255,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 177941,
+    "change_30d_pct": -9.320380538627084,
+    "change_90d_pct": -7.7532174351909315,
+    "governance_raw": {
+      "evidence": "TVL has dropped 99.45% from its peak over 4 years ago, with current TVL at $135k and many vaults showing $0 staked, indicating no meaningful activity.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1722,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.45400447380874,
+    "governance_evidence": "TVL has dropped 99.45% from its peak over 4 years ago, with current TVL at $135k and many vaults showing $0 staked, indicating no meaningful activity.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 1572,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 4,
+    "total_addresses": 10,
+    "unique_implementations": 4,
+    "total_deployments": 10,
+    "audited_contracts": 1,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 25,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 138224.56238999998,
-    "tvl_usd": 138224.56238999998,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 312.94126990969403,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "polygon": 312.94
+    },
     "asd_usd": null,
     "website_url": "https://kogefarm.io",
-    "chains": [],
+    "chains": [
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021-06",
+    "latest_audit_date": "2021-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Kogefarm is a yield farming protocol on Polygon that allows users to deposit liquidity into vaults to earn rewards. It uses a MasterChef contract to distribute its native Koge token as incentives.",
+    "relationship_narrative": "The vault contracts (vaultBase/VaultBase) hold user deposits and interact with MasterChef to distribute Koge rewards. The Koge token is the reward asset, and UniswapV2Pair likely serves as the LP token for one or more vaults.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 235,
+    "live_contracts": 10,
+    "inactive_contracts": 225,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 22,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x2d03892d0fae4479ae2b0d945f67675f006f7271",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "vaultBase",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 312.94126990969403,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "vaultBase",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x2d03892d0fae4479ae2b0d945f67675f006f7271",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x510d776fea6469531f8be69e669e553c0de69621",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x55c08f4f053170009010cf7435064d5e0e6905e3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.1415442268451642,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x58201c1331bf7f36ed326af0789a33851019875b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x58fe96934a595df1c03bdda09f0fdba38063770b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7a9be7cdf26c8311625ed97c174869fca9b791ec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x992ae1912ce6b608e0c0d2bf66259ab1ae62a657",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 312.7997256828489,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13354",
+        "audit-13357"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x13748d548d95d78a3c83fe3f32604b4796cffa23",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Koge",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Kogefarm",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Koge",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x13748d548d95d78a3c83fe3f32604b4796cffa23",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x6275518a63e891b1bc54feebbb5333776e32fabd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Kogefarm",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x6275518a63e891b1bc54feebbb5333776e32fabd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x3885503aef5e929fcb7035fbdca87239651c8154",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Kogefarm",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x3885503aef5e929fcb7035fbdca87239651c8154",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13354,
@@ -66,12 +319,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StrategyBase",
+        "StrategyFarmTwoAssets",
+        "StrategyIronBase",
+        "StrategySingle",
+        "strategyBase",
+        "strategySingleAssets",
+        "strategyTwoAssets",
+        "vaultBase"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
@@ -95,44 +357,82 @@
       "report_url": "https://paladinsec.co/projects/kogefarm",
       "auditor": "Paladin",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BIStrategyDependency",
+        "BaseStrategyMasterChef",
+        "StrategyFarmTwoAssets",
+        "StrategyTwoAssets",
+        "strategyBase",
+        "vaultBase"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Paladin",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2021-10"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2021-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x13748d548d95d78a3c83fe3f32604b4796cffa23",
+      "name": "Koge",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x6275518a63e891b1bc54feebbb5333776e32fabd",
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 2,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 251
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13354,
-        "report_name": "Kogefarm.pdf"
-      },
-      {
-        "audit_id": 13357,
-        "report_name": "Paladin"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

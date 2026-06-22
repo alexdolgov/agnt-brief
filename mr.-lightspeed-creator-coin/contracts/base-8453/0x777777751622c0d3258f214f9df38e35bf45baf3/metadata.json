@@ -1,0 +1,18 @@
+{
+  "address": "0x777777751622c0d3258f214f9df38e35bf45baf3",
+  "chain_id": 8453,
+  "contract_name": "ZoraFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xbbae128a65239c3328faa0c70b8d5f9c961a8038",
+  "fetched_at": "2026-06-19T09:25:52.488Z"
+}

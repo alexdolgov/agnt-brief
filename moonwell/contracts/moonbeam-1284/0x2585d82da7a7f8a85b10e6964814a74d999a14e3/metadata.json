@@ -1,0 +1,17 @@
+{
+  "address": "0x2585d82da7a7f8a85b10e6964814a74d999a14e3",
+  "chain_id": 1284,
+  "contract_name": "xWELL",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:00:01.549Z"
+}

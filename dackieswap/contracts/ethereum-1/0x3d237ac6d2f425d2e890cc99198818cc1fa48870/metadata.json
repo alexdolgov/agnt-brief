@@ -1,0 +1,17 @@
+{
+  "address": "0x3d237ac6d2f425d2e890cc99198818cc1fa48870",
+  "chain_id": 1,
+  "contract_name": "DackieFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000e1581c10ee235f0debb655ea365100bcbd84bad2",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:02.671Z"
+}

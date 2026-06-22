@@ -1,0 +1,17 @@
+{
+  "address": "0x4e59195943175009b0fb77c7bb9a39ec7c006fa6",
+  "chain_id": 43114,
+  "contract_name": "TrancheIDService",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000008f1ca3288764f0bc18eefeca6d821d8bc93c99bf",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:14.121Z"
+}

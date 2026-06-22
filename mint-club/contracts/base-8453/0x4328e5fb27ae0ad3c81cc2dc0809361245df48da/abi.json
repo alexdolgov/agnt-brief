@@ -1,0 +1,182 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "bond_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "MCV2_BondPeriphery__ExceedMaxSupply",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MCV2_BondPeriphery__InvalidCurrentSupply",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "MCV2_BondPeriphery__InvalidParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MCV2_BondPeriphery__InvalidTokenAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MCV2_BondPeriphery__NoLiquidityAvailable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MCV2_BondPeriphery__SlippageLimitExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BOND",
+    "outputs": [
+      {
+        "internalType": "contract IMCV2_Bond",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserveAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "useCeilDivision",
+        "type": "bool"
+      }
+    ],
+    "name": "getTokensForReserve",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensToMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "reserveAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserveAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minTokensToMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      }
+    ],
+    "name": "mintWithReserveAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensMinted",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sellToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "buyToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBuyAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      }
+    ],
+    "name": "swap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "buyAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "goldsand-by-inshallah",
-  "generated_at": "2026-06-13T13:09:32.310Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T10:14:09.255Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "goldsand-by-inshallah",
+    "tier": 0,
+    "peak_tvl": 2761726,
+    "peak_date": "2025-08-23T00:00:00.000Z",
+    "tvl_30d_ago": 296168,
+    "tvl_90d_ago": 285888,
+    "tvl_current": 240738,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 613329,
+    "change_30d_pct": -18.7157289106183,
+    "change_90d_pct": -15.792897918065815,
+    "days_since_peak": 302,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 91.28305994150035
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,7 +41,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://goldsand.fi/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -38,20 +56,102 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Goldsand by InshAllah is a liquid staking protocol on Ethereum that allows users to stake assets and receive a liquid derivative token, while earning staking rewards. It provides a withdrawal mechanism through a dedicated vault to manage user redemptions.",
+    "relationship_narrative": "The Goldsand contract serves as the main liquid staking token, while the WithdrawalVault handles user redemptions, likely interacting with the Goldsand contract to burn or transfer tokens upon withdrawal.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6659423929e1a00119fc3f79c8e4f443cc6fd36f",
+      "deployment_unit": "unit-42278",
+      "deployment_unit_proxy_count": 1,
+      "name": "Goldsand",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Goldsand by InshAllah",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf68b3b27804443985100b5bf3a88906f31285ca2",
+      "impl_name": "Goldsand",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6659423929e1a00119fc3f79c8e4f443cc6fd36f",
+          "deployment_unit": "unit-42278",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22b35d437b3999f5c357c176adeec1b8b0f35c13",
+      "deployment_unit": "unit-42277",
+      "deployment_unit_proxy_count": 1,
+      "name": "WithdrawalVault",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Goldsand by InshAllah",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x605aac3941cca001dc12e48156430d3807d5582d",
+      "impl_name": "WithdrawalVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22b35d437b3999f5c357c176adeec1b8b0f35c13",
+          "deployment_unit": "unit-42277",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13186,
@@ -78,7 +178,7 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

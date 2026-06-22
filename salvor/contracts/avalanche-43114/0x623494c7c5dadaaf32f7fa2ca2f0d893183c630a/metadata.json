@@ -1,0 +1,17 @@
+{
+  "address": "0x623494c7c5dadaaf32f7fa2ca2f0d893183c630a",
+  "chain_id": 43114,
+  "contract_name": "SalvorGovernanceToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:42.433Z"
+}

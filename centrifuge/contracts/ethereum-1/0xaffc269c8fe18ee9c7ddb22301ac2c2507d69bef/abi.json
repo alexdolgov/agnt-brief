@@ -1,0 +1,711 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IHubRegistry",
+        "name": "hubRegistry_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "deployer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyUsedSalt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotSetFuturePrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidMetadataName",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidMetadataSymbol",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSalt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NegativeIssuance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ShareClassNotFound",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AddShareClass",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "Deny",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "Rely",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      }
+    ],
+    "name": "RemoteIssueShares",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      }
+    ],
+    "name": "RemoteRevokeShares",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      }
+    ],
+    "name": "UpdateMetadata",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": false,
+        "internalType": "D18",
+        "name": "price",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "computedAt",
+        "type": "uint64"
+      }
+    ],
+    "name": "UpdatePricePoolPerShare",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "addShareClass",
+    "outputs": [
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "deny",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      }
+    ],
+    "name": "exists",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hubRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IHubRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      }
+    ],
+    "name": "issuance",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      }
+    ],
+    "name": "issuancePerNetwork",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "issuances",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "revocations",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "",
+        "type": "bytes16"
+      }
+    ],
+    "name": "metadata",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      }
+    ],
+    "name": "previewNextShareClassId",
+    "outputs": [
+      {
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "previewShareClassId",
+    "outputs": [
+      {
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "",
+        "type": "bytes16"
+      }
+    ],
+    "name": "pricePoolPerShare",
+    "outputs": [
+      {
+        "internalType": "D18",
+        "name": "price",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint64",
+        "name": "computedAt",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "rely",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "salts",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "name": "shareClassCount",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "",
+        "type": "bytes16"
+      }
+    ],
+    "name": "shareClassIds",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "",
+        "type": "bytes16"
+      }
+    ],
+    "name": "totalIssuance",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      }
+    ],
+    "name": "updateMetadata",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "D18",
+        "name": "pricePoolPerShare_",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint64",
+        "name": "computedAt",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateSharePrice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId_",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bool",
+        "name": "isIssuance",
+        "type": "bool"
+      }
+    ],
+    "name": "updateShares",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "wards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x1d52fa5f2e7eff38b5f8118551081a75c240ae66",
+  "chain_id": 137,
+  "contract_name": "StakingPoolUSDCAccurate",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:09.188Z"
+}

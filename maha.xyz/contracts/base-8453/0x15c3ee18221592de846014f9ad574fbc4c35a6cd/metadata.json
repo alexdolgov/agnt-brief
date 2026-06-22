@@ -1,0 +1,18 @@
+{
+  "address": "0x15c3ee18221592de846014f9ad574fbc4c35a6cd",
+  "chain_id": 8453,
+  "contract_name": "AerodromeLPOracle",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:44.511Z"
+}

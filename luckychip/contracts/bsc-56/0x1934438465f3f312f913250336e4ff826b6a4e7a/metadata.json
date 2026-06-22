@@ -1,0 +1,18 @@
+{
+  "address": "0x1934438465f3f312f913250336e4ff826b6a4e7a",
+  "chain_id": 56,
+  "contract_name": "LuckyFlipBNB",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:46:32.525Z"
+}

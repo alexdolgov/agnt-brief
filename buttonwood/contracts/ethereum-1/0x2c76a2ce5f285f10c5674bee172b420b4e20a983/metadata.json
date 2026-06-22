@@ -1,0 +1,18 @@
+{
+  "address": "0x2c76a2ce5f285f10c5674bee172b420b4e20a983",
+  "chain_id": 1,
+  "contract_name": "ButtonTokenWamplRouter",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:09:28.812Z"
+}

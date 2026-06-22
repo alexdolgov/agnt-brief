@@ -1,0 +1,18 @@
+{
+  "address": "0x5f602133653237f362eb69826ba8237f4f7ab0c3",
+  "chain_id": 1,
+  "contract_name": "Kohenoor",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:14:02.590Z"
+}

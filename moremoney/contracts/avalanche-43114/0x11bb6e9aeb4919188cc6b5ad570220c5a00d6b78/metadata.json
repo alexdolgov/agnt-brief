@@ -1,0 +1,18 @@
+{
+  "address": "0x11bb6e9aeb4919188cc6b5ad570220c5a00d6b78",
+  "chain_id": 43114,
+  "contract_name": "mAvaxRedistributor",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:05.188Z"
+}

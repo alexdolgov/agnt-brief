@@ -1,0 +1,18 @@
+{
+  "address": "0x18b8a143eb78effe25f2882da55897ba8954b295",
+  "chain_id": 137,
+  "contract_name": "Configuration",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:18.622Z"
+}

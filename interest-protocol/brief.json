@@ -1,31 +1,49 @@
 {
   "schema_version": "2.0",
   "project_key": "interest-protocol",
-  "generated_at": "2026-06-13T11:02:27.608Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T16:20:02.299Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "interest-protocol",
+    "tier": 0,
+    "peak_tvl": 12981772,
+    "peak_date": "2022-07-06T00:00:00.000Z",
+    "tvl_30d_ago": 4846,
+    "tvl_90d_ago": 62214,
+    "tvl_current": 1304993,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 78777,
+    "change_30d_pct": 26829.281881964504,
+    "change_90d_pct": 1997.5873597582538,
+    "days_since_peak": 1446,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 89.94749715216074
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 1264963.50878,
     "tvl_usd": 1264963.50878,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://interestprotocol.io/#/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2022-11",
@@ -38,12 +56,25 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 125,
+    "live_contracts": 2,
+    "inactive_contracts": 71,
+    "singleton_contracts": 52,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 26,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 22,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +82,80 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AnchoredViewRelay",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AnchoredViewRelay",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfbd3060fe1ed10c34e236cee837d82f019cf1d1d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SlowRoll",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SlowRoll",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfbd3060fe1ed10c34e236cee837d82f019cf1d1d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13291"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13289,
@@ -66,7 +170,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name|n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -97,36 +201,57 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CappedFeeOnTransferToken",
+        "CappedGovToken",
+        "GovernorDelegate",
+        "SlowRoll",
+        "ThreeLines0_100",
+        "TokenDelegate",
+        "UFragments",
+        "USDI",
+        "Vault",
+        "VaultController",
+        "VotingVault",
+        "VotingVaultController"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Sigma Prime",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2022-11"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 57
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 13289,
         "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 13291,
-        "report_name": "Sigma_Prime_-_Interest_Protocol_Smart_Contract_Security_Assessment_Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

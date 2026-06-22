@@ -1,0 +1,17 @@
+{
+  "address": "0x1a3e33e38d2e70d43f65772f63c5b3f52073b37e",
+  "chain_id": 146,
+  "contract_name": "ImpermaxConfigManager",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000007226c7ca07056c655865216e04512e9b28782959000000000000000000000000323f07a4be1bd856c500861e5bbd3d0e638e9cfe",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:29.664Z"
+}

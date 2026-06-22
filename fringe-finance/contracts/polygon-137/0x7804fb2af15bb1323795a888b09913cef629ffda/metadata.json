@@ -1,0 +1,17 @@
+{
+  "address": "0x7804fb2af15bb1323795a888b09913cef629ffda",
+  "chain_id": 137,
+  "contract_name": "AuthValidator",
+  "compiler_version": "v0.6.5+commit.f956cc89",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0000000000000000000000007a9fe22691c811ea339d9b73150e6911a5343dca000000000000000000000000061872dfd0cac4ec7a7c87eee9b950bb1fad2906",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:04.455Z"
+}

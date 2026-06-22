@@ -1,0 +1,18 @@
+{
+  "address": "0x0d0fdbb10b9eaf18a1034e9942f95af0147cc310",
+  "chain_id": 42161,
+  "contract_name": "Aggregator_stETH_NVDA_arbitrum",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 700,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:04:21.276Z"
+}

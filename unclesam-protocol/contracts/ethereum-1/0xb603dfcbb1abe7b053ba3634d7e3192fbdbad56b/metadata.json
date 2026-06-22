@@ -1,0 +1,18 @@
+{
+  "address": "0xb603dfcbb1abe7b053ba3634d7e3192fbdbad56b",
+  "chain_id": 1,
+  "contract_name": "MarvelDoge",
+  "compiler_version": "v0.5.0+commit.1d4f565a",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:14:04.567Z"
+}

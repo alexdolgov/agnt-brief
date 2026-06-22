@@ -1,0 +1,18 @@
+{
+  "address": "0x1523df5bdee2322e4962f5e941ac23a3fd632263",
+  "chain_id": 42161,
+  "contract_name": "ARXPool",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:30:38.310Z"
+}

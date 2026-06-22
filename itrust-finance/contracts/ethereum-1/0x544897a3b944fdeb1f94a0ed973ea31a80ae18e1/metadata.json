@@ -1,0 +1,18 @@
+{
+  "address": "0x544897a3b944fdeb1f94a0ed973ea31a80ae18e1",
+  "chain_id": 1,
+  "contract_name": "IdleTokenWrapper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:22:33.385Z"
+}

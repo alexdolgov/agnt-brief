@@ -1,0 +1,17 @@
+{
+  "address": "0x0b631ec29b406b0c8bc6fd028919b55700145945",
+  "chain_id": 8453,
+  "contract_name": "BufferVaultMock",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 450,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf0000000000000000000000003cf384351a85d60d6e5b67119ef950a94cb1728e00000000000000000000000066e424337c0f888dccbcf2e0730a00a526d716f6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:54:29.907Z"
+}

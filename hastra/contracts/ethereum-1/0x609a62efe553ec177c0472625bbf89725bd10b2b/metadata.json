@@ -1,0 +1,18 @@
+{
+  "address": "0x609a62efe553ec177c0472625bbf89725bd10b2b",
+  "chain_id": 1,
+  "contract_name": "StakingVault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:50:05.434Z"
+}

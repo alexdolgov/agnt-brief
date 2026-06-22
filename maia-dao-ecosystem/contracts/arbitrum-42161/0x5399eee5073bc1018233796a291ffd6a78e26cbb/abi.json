@@ -1,0 +1,1561 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_localChainId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyAddedBridgeAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyAddedBridgeAgentFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyAddedChain",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyAddedEcosystemToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BridgeAgentNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBranchPort",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCoreBrancBridgeAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCoreBranchRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCoreRootBridgeAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCoreRootRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidGlobalAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLocalAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRecipientAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRootBridgeAgentFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUnderlyingAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUserAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewOwnerIsZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoHandoverRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RenounceOwnershipNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SetUpCoreEnded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SetUpEnded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnableToMint",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnrecognizedBridgeAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnrecognizedBridgeAgentFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnrecognizedCoreRootBridgeAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnrecognizedCoreRootRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnrecognizedLocalBranchPort",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bridgeAgentFactory",
+        "type": "address"
+      }
+    ],
+    "name": "BridgeAgentFactoryToggled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bridgeAgent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "manager",
+        "type": "address"
+      }
+    ],
+    "name": "BridgeAgentManagerSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bridgeAgent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "rootBridgeAgent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "BridgeAgentSynced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "BridgeAgentToggled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreBranchRouter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "dstChainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "CoreBranchSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreBranchRouter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "dstChainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "CoreBranchSynced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreRootRouter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "coreRootBridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "CoreRootSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "ecoTokenGlobalAddress",
+        "type": "address"
+      }
+    ],
+    "name": "EcosystemTokenAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "GlobalTokenAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "underlyingAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "LocalTokenAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewChainAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "VirtualAccountCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_manager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_bridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "addBridgeAgent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_ecoTokenGlobalAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addEcosystemToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_coreBranchBridgeAgentAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_chainId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_wrappedGasTokenName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_wrappedGasTokenSymbol",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_wrappedGasTokenDecimals",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_newLocalBranchWrappedNativeTokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_newUnderlyingBranchWrappedNativeTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addNewChain",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeAgentFactories",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeAgents",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_deposit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_dstChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeToBranch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeToLocalBranchFromRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_deposit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeToRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeToRootFromLocalBranch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "burnFromLocalBranch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "completeOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "coreRootBridgeAgentAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "coreRootRouterAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "fetchVirtualAccount",
+    "outputs": [
+      {
+        "internalType": "contract VirtualAccount",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBalanceOfBranch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "bridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "getBridgeAgentManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "bridgeAgentManager",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getGlobalTokenFromLocal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_dstChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLocalToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLocalTokenFromGlobal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "underlyingAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLocalTokenFromUnderlying",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "globalAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTotalSupplyBranches",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalSupplyBranches",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUnderlyingTokenFromGlobal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUnderlyingTokenFromLocal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "underlyingAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserAccount",
+    "outputs": [
+      {
+        "internalType": "contract VirtualAccount",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_bridgeAgentFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreRootRouter",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_coreRootBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreLocalBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_localBranchPortAddress",
+        "type": "address"
+      }
+    ],
+    "name": "initializeCore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "bridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "isBridgeAgent",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isActive",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "bridgeAgentFactory",
+        "type": "address"
+      }
+    ],
+    "name": "isBridgeAgentFactory",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isActive",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isChainId",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isActive",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "isGlobalAddress",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isGlobalToken",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isGlobalToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isLocalToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_dstChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isLocalToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract VirtualAccount",
+        "name": "acount",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "name": "isRouterApproved",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "allowed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_underlyingToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isUnderlyingToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "localBranchPortAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "localChainId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mintToLocalBranch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "result",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "ownershipHandoverExpiresAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "requestOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_underlyingAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "setAddresses",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newManager",
+        "type": "address"
+      }
+    ],
+    "name": "setBridgeAgentManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_refundee",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreBranchRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "gasLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "remoteBranchExecutionGas",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct GasParams",
+        "name": "_gParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "setCoreBranchRouter",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_coreRootRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreRootBridgeAgent",
+        "type": "address"
+      }
+    ],
+    "name": "setCoreRootRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_globalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_localAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_srcChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "setLocalAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "sweep",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_rootBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_branchChainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "syncBranchBridgeAgentWithRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_coreBranchRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_coreBranchBridgeAgent",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "syncNewCoreBranchRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_bridgeAgentFactory",
+        "type": "address"
+      }
+    ],
+    "name": "toggleBridgeAgentFactory",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract VirtualAccount",
+        "name": "_userAccount",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      }
+    ],
+    "name": "toggleVirtualAccountApproved",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

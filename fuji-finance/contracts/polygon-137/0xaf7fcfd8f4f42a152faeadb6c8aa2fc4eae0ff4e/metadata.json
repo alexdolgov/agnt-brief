@@ -1,0 +1,17 @@
+{
+  "address": "0xaf7fcfd8f4f42a152faeadb6c8aa2fc4eae0ff4e",
+  "chain_id": 137,
+  "contract_name": "ProviderAaveV3MATIC",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:41:49.165Z"
+}

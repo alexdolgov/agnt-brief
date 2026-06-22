@@ -1,0 +1,18 @@
+{
+  "address": "0x02034092732008923bc30ea7f700aea5d45a54f9",
+  "chain_id": 56,
+  "contract_name": "IAOUpgradeProxy",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0xd0e80870f4b35276c0efbd8246eab06bea9e53ff",
+  "fetched_at": "2026-06-20T02:51:42.351Z"
+}

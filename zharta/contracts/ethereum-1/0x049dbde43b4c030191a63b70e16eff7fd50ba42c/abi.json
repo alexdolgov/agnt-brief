@@ -1,0 +1,2301 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "vaults",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "NftsDeposited",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "total_rewards",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "withdrawals",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "NftsWithdrawn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "vaults",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "DelegatedToWallet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "renter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "vaults",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RenterDelegatedToWallet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "token_ids",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "ListingsRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "renter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "start",
+            "type": "uint256"
+          },
+          {
+            "name": "min_expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "protocol_fee",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "rentals",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RentalStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "renter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "start",
+            "type": "uint256"
+          },
+          {
+            "name": "min_expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "protocol_fee",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "rentals",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RentalClosed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "renter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "start",
+            "type": "uint256"
+          },
+          {
+            "name": "min_expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "expiration",
+            "type": "uint256"
+          },
+          {
+            "name": "amount_settled",
+            "type": "uint256"
+          },
+          {
+            "name": "extension_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "protocol_fee",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "rentals",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RentalExtended",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "protocol_fee_amount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "active_rental_amount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "rewards",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RewardsClaimed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "new_owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "tokens",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "TokenOwnershipChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "new_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "fee_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "ProtocolFeeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "ProtocolWalletChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_value",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_value",
+        "type": "address"
+      }
+    ],
+    "name": "StakingAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "admin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "proposed_admin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_admin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_admin",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "tokens",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "StakingDeposit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "tokens",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "StakingWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "tokens",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "StakingClaim",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "nft_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "tokens",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "StakingCompound",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "fee_wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeesClaimed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_value",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "new_value",
+        "type": "bool"
+      }
+    ],
+    "name": "PauseStateSet",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_vault_impl_addr",
+        "type": "address"
+      },
+      {
+        "name": "_payment_token_addr",
+        "type": "address"
+      },
+      {
+        "name": "_nft_contract_addr",
+        "type": "address"
+      },
+      {
+        "name": "_delegation_registry_addr",
+        "type": "address"
+      },
+      {
+        "name": "_renting_erc721",
+        "type": "address"
+      },
+      {
+        "name": "_staking_addr",
+        "type": "address"
+      },
+      {
+        "name": "_max_protocol_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_protocol_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_protocol_wallet",
+        "type": "address"
+      },
+      {
+        "name": "_protocol_admin",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "delegate_to_wallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "renter_delegate_to_wallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "token_ids",
+        "type": "uint256[]"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "mint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "revoke_listing",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "price",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_duration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "max_duration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "timestamp",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "listing",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "name": "v",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "r",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "s",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "owner_signature",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "name": "v",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "r",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "s",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "admin_signature",
+                "type": "tuple"
+              }
+            ],
+            "name": "signed_listing",
+            "type": "tuple"
+          },
+          {
+            "name": "duration",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "name": "signature_timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "start_rentals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "close_rentals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "price",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_duration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "max_duration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "timestamp",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "listing",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "name": "v",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "r",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "s",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "owner_signature",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "name": "v",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "r",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "s",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "admin_signature",
+                "type": "tuple"
+              }
+            ],
+            "name": "signed_listing",
+            "type": "tuple"
+          },
+          {
+            "name": "duration",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "signature_timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "extend_rentals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "stake_deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "stake_withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "stake_claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "nft_owner",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "name": "id",
+                    "type": "bytes32"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "name": "renter",
+                    "type": "address"
+                  },
+                  {
+                    "name": "delegate",
+                    "type": "address"
+                  },
+                  {
+                    "name": "token_id",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "start",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "min_expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "expiration",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "name": "protocol_fee",
+                    "type": "uint256"
+                  }
+                ],
+                "name": "active_rental",
+                "type": "tuple"
+              }
+            ],
+            "name": "token_context",
+            "type": "tuple"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      },
+      {
+        "name": "pool_claim_method_id",
+        "type": "bytes4"
+      },
+      {
+        "name": "pool_deposit_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "stake_compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "nft_owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "claimable_rewards",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "token_id",
+            "type": "uint256"
+          },
+          {
+            "name": "nft_owner",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "name": "id",
+                "type": "bytes32"
+              },
+              {
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "name": "renter",
+                "type": "address"
+              },
+              {
+                "name": "delegate",
+                "type": "address"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "name": "min_expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "name": "protocol_fee",
+                "type": "uint256"
+              }
+            ],
+            "name": "active_rental",
+            "type": "tuple"
+          }
+        ],
+        "name": "token_contexts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "claim_token_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim_fees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "protocol_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "set_protocol_fee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "new_protocol_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "change_protocol_wallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "paused",
+        "type": "bool"
+      }
+    ],
+    "name": "set_paused",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "staking_addr",
+        "type": "address"
+      }
+    ],
+    "name": "set_staking_addr",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "propose_admin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "token_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenid_to_vault",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vault_impl_addr",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "payment_token",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nft_contract_addr",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "delegation_registry_addr",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "staking_addr",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renting_erc721",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "max_protocol_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_wallet",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_admin",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proposed_admin",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      }
+    ],
+    "name": "rental_states",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      }
+    ],
+    "name": "listing_revocations",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "name": "unclaimed_rewards",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_fees_amount",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

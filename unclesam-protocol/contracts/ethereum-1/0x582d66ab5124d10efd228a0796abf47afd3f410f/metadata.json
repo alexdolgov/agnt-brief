@@ -1,0 +1,18 @@
+{
+  "address": "0x582d66ab5124d10efd228a0796abf47afd3f410f",
+  "chain_id": 1,
+  "contract_name": "MaximusSniperNFT",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:14:02.515Z"
+}

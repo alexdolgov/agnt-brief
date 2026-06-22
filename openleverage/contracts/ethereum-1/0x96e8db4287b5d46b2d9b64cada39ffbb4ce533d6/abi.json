@@ -1,0 +1,201 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IOPBorrowing",
+        "name": "opBorrowing",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16[]",
+        "name": "markets",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "pairs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "token0s",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "token1s",
+        "type": "address[]"
+      }
+    ],
+    "name": "getLiqs",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "token0Liq",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Liq",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0TwaLiq",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1TwaLiq",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BatchQueryHelper.LiqVars[]",
+        "name": "results",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract DexAggregatorInterface",
+        "name": "dexAgg",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "token0s",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "token1s",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "dexDatas",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "getPrices",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "decimal",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct BatchQueryHelper.PriceVars[]",
+        "name": "results",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool[]",
+        "name": "pairs",
+        "type": "address[]"
+      }
+    ],
+    "name": "getV3Pools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "token0",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token1",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BatchQueryHelper.V3PoolVars[]",
+        "name": "results",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool[]",
+        "name": "pairs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "int24[]",
+        "name": "minTickets",
+        "type": "int24[]"
+      },
+      {
+        "internalType": "int24[]",
+        "name": "maxTickets",
+        "type": "int24[]"
+      }
+    ],
+    "name": "getV3Tickets",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int128[]",
+            "name": "liquidityNets",
+            "type": "int128[]"
+          },
+          {
+            "internalType": "int24[]",
+            "name": "ticks",
+            "type": "int24[]"
+          }
+        ],
+        "internalType": "struct BatchQueryHelper.TickVars[]",
+        "name": "results",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

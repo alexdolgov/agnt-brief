@@ -1,0 +1,17 @@
+{
+  "address": "0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6",
+  "chain_id": 1285,
+  "contract_name": "HuckleberryFarm",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000009a92b5ebf1f6f6f7d93696fcd44e5cf75035a756000000000000000000000000b87a39c5d3f5c53395ba11b5058655a4a8ac82a500000000000000000000000000000000000000000000000008cd1dc18de05852000000000000000000000000000000000000000000000000000000006156dc200000000000000000000000000000000000000000000000000000000068dbaa20",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T10:36:31.172Z"
+}

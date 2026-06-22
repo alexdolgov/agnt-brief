@@ -1,0 +1,18 @@
+{
+  "address": "0xb9b2d7a712402acb37a97f0ea6356ff271e065e2",
+  "chain_id": 1,
+  "contract_name": "ZeroLiquidStaking",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:23:51.880Z"
+}

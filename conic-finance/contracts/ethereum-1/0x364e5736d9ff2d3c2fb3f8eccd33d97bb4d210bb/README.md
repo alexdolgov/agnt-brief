@@ -1,0 +1,16 @@
+# ConicLpTokenOracle
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x364e5736d9ff2d3c2fb3f8eccd33d97bb4d210bb` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x364e5736d9ff2d3c2fb3f8eccd33d97bb4d210bb`](../0x364e5736d9ff2d3c2fb3f8eccd33d97bb4d210bb/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

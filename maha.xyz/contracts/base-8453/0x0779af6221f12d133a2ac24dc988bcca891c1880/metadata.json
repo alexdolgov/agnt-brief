@@ -1,0 +1,17 @@
+{
+  "address": "0x0779af6221f12d133a2ac24dc988bcca891c1880",
+  "chain_id": 8453,
+  "contract_name": "OmnichainStakingToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:46.790Z"
+}

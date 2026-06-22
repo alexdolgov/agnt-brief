@@ -1,0 +1,17 @@
+{
+  "address": "0x00000000d12897ddadc2044614a9677b191a2d95",
+  "chain_id": 1,
+  "contract_name": "K1MeeValidator",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:20:36.324Z"
+}

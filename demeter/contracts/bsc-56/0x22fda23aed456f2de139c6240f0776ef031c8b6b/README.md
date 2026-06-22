@@ -1,0 +1,16 @@
+# DUSD
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x22fda23aed456f2de139c6240f0776ef031c8b6b` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (bsc [`0x22fda23aed456f2de139c6240f0776ef031c8b6b`](../0x22fda23aed456f2de139c6240f0776ef031c8b6b/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

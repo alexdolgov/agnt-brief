@@ -4,37 +4,45 @@
 
 - Project: SUN (`sun`)
 - Website: [https://sun.io](https://sun.io)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:13:53.681Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: active (Tier 0, 88.2% below peak)
+- Generated: 2026-06-21T17:53:23.443Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: arbitrum, bsc, ethereum
+- Contract surface: 2 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $209,286,370.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 3 (2 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 6 singleton, 0 uninitialized.
+- Deployment units: 0/4 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 3
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Latest audit: 2025-08 (fresh)
+- Staleness: 1 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -47,9 +55,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Safe | unknown | ethereum | unit-43372 | [`0xa9c99a...ebeb1e`](./contracts/ethereum-1/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xa9c99a...ebeb1e`](./contracts/bsc-56/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/); arbitrum [`0xa9c99a...ebeb1e`](./contracts/arbitrum-42161/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,9 +84,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://sun.io/docs/audit-report-sun_en.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DL audit link](https://sunswap.com/docs/audit-report_en.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sunperp Dex - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sunperp%20Dex%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://sun.io/docs/audit-report-sun_en.pdf) | unknown | Audit | 2020-09 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://sunswap.com/docs/audit-report_en.pdf) | unknown | Audit | 2020-08 | stale | Direct | n/a | 0 | n/a |
+| [Sunperp Dex - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sunperp%20Dex%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2025-08 | fresh | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -89,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 2 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -99,7 +110,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Match method counts: extraction_exact=6
 
 Zero-match audit list:
 

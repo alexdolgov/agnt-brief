@@ -1,0 +1,17 @@
+{
+  "address": "0x31166bd16ed20c0ac78930f5e4b7bbb4ad7e27ec",
+  "chain_id": 43114,
+  "contract_name": "KOVIN",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:37.938Z"
+}

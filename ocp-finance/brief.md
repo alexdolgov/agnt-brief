@@ -1,40 +1,50 @@
 # Agentic Audit Brief: OCP Finance
 
+⚠️ Lifecycle status: DEAD - TVL dropped 9.4% over 90 days
+
 ## Project Overview
 
 - Project: OCP Finance (`ocp-finance`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:01:36.968Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T22:16:22.576Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: bsc
+- Contract surface: 15 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $10,226.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+OCP Finance is a lending protocol on BSC that enables users to supply and borrow assets through interest rate markets. It appears to be a Compound fork, providing algorithmic money markets for decentralized lending and borrowing.
+
+### Architecture
+
+The protocol consists of a single product family with one core contract, likely a Compound-like money market, with no additional supporting contracts identified.
+
+## Contract Surface Quality
+
+- Indexed contracts: 407; live-surface contracts included: 15 (15 live, 0 unknown).
+- Excluded by liveness: 392 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: compound-v2
+- Unverified dependencies: 2/5.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 15
+- Unique implementations: 15
+- Raw deployments: 15
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-08 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -62,11 +72,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x0abbab...05cb31` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x14da51...13c42e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1af197...fe58df` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3a6766...d94709` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3c7026...289fbd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5801d0...943276` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5b54f0...43811b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x606f53...137852` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7759ee...e5b319` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8b1357...aa6fc3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9e9644...acf995` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9f7f20...bba7f9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa169d0...fd17b8` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xde4f1c...72c798` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe4f570...396047` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -84,10 +110,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 

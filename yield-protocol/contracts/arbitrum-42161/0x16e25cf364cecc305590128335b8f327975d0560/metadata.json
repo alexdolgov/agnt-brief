@@ -1,0 +1,18 @@
+{
+  "address": "0x16e25cf364cecc305590128335b8f327975d0560",
+  "chain_id": 42161,
+  "contract_name": "Ladle",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "berlin",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": "0x16e25cf364cecc305590128335b8f327975d0560",
+  "fetched_at": "2026-06-21T10:34:28.511Z"
+}

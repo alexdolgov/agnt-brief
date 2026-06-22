@@ -1,0 +1,18 @@
+{
+  "address": "0x098f2a29ba9ce38eeb10e02b83945d7c6d0910ed",
+  "chain_id": 56,
+  "contract_name": "ATLVaultProxy",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x4e8e03c1c8bf4f554ce886d1776ab0123bc66bd2",
+  "fetched_at": "2026-06-21T05:18:52.680Z"
+}

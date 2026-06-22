@@ -1,0 +1,45 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "allocations",
+    "outputs": [
+      {
+        "internalType": "uint56",
+        "name": "",
+        "type": "uint56"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "contributor",
+        "type": "address"
+      }
+    ],
+    "name": "getAllocation",
+    "outputs": [
+      {
+        "internalType": "uint56",
+        "name": "",
+        "type": "uint56"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

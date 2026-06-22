@@ -1,0 +1,18 @@
+{
+  "address": "0x08ceb3f4a7ed3500ca0982bcd0fc7816688084c3",
+  "chain_id": 56,
+  "contract_name": "VBep20Delegator",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xb25b57599ba969c4829699f7e4fc4076d14745e1",
+  "fetched_at": "2026-06-19T17:50:50.646Z"
+}

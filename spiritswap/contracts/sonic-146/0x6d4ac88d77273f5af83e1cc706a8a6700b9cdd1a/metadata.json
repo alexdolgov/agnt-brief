@@ -1,0 +1,17 @@
+{
+  "address": "0x6d4ac88d77273f5af83e1cc706a8a6700b9cdd1a",
+  "chain_id": 146,
+  "contract_name": "QuoterV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "000000000000000000000000b860200bd68dc39ceafd6ebb82883f189f4cda76000000000000000000000000db78663ad25d2c684087adf5993530019141e33900000000000000000000000098af00a67f5cc0b362da34283d7d32817f6c9a29",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:09:23.359Z"
+}

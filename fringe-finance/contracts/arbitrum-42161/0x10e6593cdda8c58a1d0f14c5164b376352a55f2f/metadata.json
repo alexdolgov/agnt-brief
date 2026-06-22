@@ -1,0 +1,18 @@
+{
+  "address": "0x10e6593cdda8c58a1d0f14c5164b376352a55f2f",
+  "chain_id": 42161,
+  "contract_name": "L2GovernanceRelay",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x3d4357c3944f7a5b6a0b5b67b36588ba45d3f49d",
+  "fetched_at": "2026-06-21T06:22:04.472Z"
+}

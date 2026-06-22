@@ -1,0 +1,18 @@
+{
+  "address": "0x1f06811a16c8d2d042e6d0bd7c0e7178a939d9cf",
+  "chain_id": 137,
+  "contract_name": "ERC20MultiRewardModuleFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "BSD-4-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:18.529Z"
+}

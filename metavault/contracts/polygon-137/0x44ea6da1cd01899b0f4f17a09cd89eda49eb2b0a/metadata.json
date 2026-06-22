@@ -1,0 +1,18 @@
+{
+  "address": "0x44ea6da1cd01899b0f4f17a09cd89eda49eb2b0a",
+  "chain_id": 137,
+  "contract_name": "FastPriceFeed",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:45.096Z"
+}

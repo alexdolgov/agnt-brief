@@ -1,0 +1,18 @@
+{
+  "address": "0x4ad387bcb03b92a6e22a72391cc37493fc388b05",
+  "chain_id": 8453,
+  "contract_name": "DackiePool",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:05.723Z"
+}

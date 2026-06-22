@@ -1,0 +1,17 @@
+{
+  "address": "0x0a21d2995f7acac4b46fc4c2c5b93fcbd69083db",
+  "chain_id": 5000,
+  "contract_name": "DolomiteERC4626WithPayable",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 48,
+  "constructor_arguments": "00000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:48:27.374Z"
+}

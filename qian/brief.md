@@ -1,40 +1,51 @@
 # Agentic Audit Brief: QIAN
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 18.5% over 90 days
+
 ## Project Overview
 
 - Project: QIAN (`qian`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:16:14.558Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: declining (Tier 0, 99.9% below peak)
+- Generated: 2026-06-19T19:41:27.504Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: ethereum
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,751.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 134; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 131 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 3
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -62,11 +73,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x59d4cc...145dd1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e60fc...c27aa9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x65d9bc...3f2604` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -87,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

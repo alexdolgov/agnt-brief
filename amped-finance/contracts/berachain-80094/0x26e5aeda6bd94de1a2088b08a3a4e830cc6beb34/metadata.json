@@ -1,0 +1,17 @@
+{
+  "address": "0x26e5aeda6bd94de1a2088b08a3a4e830cc6beb34",
+  "chain_id": 80094,
+  "contract_name": "ShortsTracker",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000c3727b7e7f3ff97a111c92d3ee05529da7bd2f48",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:46:05.390Z"
+}

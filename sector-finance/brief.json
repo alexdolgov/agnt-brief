@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "sector-finance",
-  "generated_at": "2026-06-13T12:00:55.495Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:02:23.233Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "sector-finance",
+    "tier": 1,
+    "peak_tvl": 3658852,
+    "peak_date": "2023-04-19T00:00:00.000Z",
+    "tvl_30d_ago": 65300,
+    "tvl_90d_ago": 63591,
+    "tvl_current": 57384,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 82893,
+    "change_30d_pct": -12.12251148545176,
+    "change_90d_pct": -9.760815209699485,
+    "governance_raw": {
+      "evidence": "TVL has dropped 98.4% from its peak, but the protocol's homepage still promotes active products and partnerships, indicating ongoing operations.",
+      "confidence": 0.8,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 1159,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 98.43163921361126,
+    "governance_evidence": "TVL has dropped 98.4% from its peak, but the protocol's homepage still promotes active products and partnerships, indicating ongoing operations.",
+    "governance_confidence": 0.8,
+    "governance_text_chars": 1080,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
@@ -25,7 +51,10 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://sector.finance",
-    "chains": [],
+    "chains": [
+      "moonriver",
+      "optimism"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -38,20 +67,186 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Sector Finance is a yield optimization protocol that deploys user deposits into structured vaults to generate returns. It uses factory contracts to create and manage these vaults across multiple chains.",
+    "relationship_narrative": "The SectorFactory contracts act as registries that deploy and manage vault instances (SCYWEpochVaultU, SCYVaultU) via beacon proxies (SectorBeacon, UpgradeableBeacon). The sectGrail contract likely serves as a shared reward or governance token across the vault ecosystem.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 180,
+    "live_contracts": 1,
+    "inactive_contracts": 165,
+    "singleton_contracts": 10,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 4,
+    "deployment_units": 5,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 5,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "compound-v2",
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SectorBeacon",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SectorBeacon",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x4b076884091b24db4d80df0bc4f546b5be8a45df",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x4b076884091b24db4d80df0bc4f546b5be8a45df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x94ea9337db519602ee42aa2238aa1927c96a6989",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDCmovrSOLARwell",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "USDCmovrSOLARwell",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x94ea9337db519602ee42aa2238aa1927c96a6989",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VaultUpgradable",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultUpgradable",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x97b4d169014c15e7a5890123992fa543086e6b51",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13805,
@@ -97,12 +292,43 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2",
+      "name": "SectorBeacon",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x94ea9337db519602ee42aa2238aa1927c96a6989",
+      "name": "USDCmovrSOLARwell",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6",
+      "name": "VaultUpgradable",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

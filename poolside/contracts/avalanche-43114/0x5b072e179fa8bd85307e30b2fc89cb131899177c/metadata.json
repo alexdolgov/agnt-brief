@@ -1,0 +1,17 @@
+{
+  "address": "0x5b072e179fa8bd85307e30b2fc89cb131899177c",
+  "chain_id": 43114,
+  "contract_name": "SavaxOracle",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0000000000000000000000002b2c81e08f1af8835a78bb2a90ae924ace0ea4be",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:42:17.404Z"
+}

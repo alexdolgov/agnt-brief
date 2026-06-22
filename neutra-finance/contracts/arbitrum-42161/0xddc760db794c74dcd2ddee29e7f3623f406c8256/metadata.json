@@ -1,0 +1,18 @@
+{
+  "address": "0xddc760db794c74dcd2ddee29e7f3623f406c8256",
+  "chain_id": 42161,
+  "contract_name": "KeeperProxyHysteria",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:28:52.104Z"
+}

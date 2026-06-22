@@ -1,0 +1,17 @@
+{
+  "address": "0xf171b89995609d08ca24ede09a7d07742ab7d6fc",
+  "chain_id": 42161,
+  "contract_name": "BinaryVaultLiquidityFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:59:29.775Z"
+}

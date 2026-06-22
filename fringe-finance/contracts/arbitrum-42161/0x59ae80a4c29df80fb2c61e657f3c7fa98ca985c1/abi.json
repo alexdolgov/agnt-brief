@@ -1,0 +1,331 @@
+[
+  {
+    "inputs": [],
+    "name": "AboveMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BlockOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BorrowingWrongExponent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BorrowingZeroGroup",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollateralIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongOrder",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "minP",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "maxP",
+        "type": "uint32"
+      }
+    ],
+    "name": "BorrowingFeePerBlockCapUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "groupIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "currentBlock",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "accFeeLong",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "accFeeShort",
+        "type": "uint64"
+      }
+    ],
+    "name": "BorrowingGroupAccFeesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "groupIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "long",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "increase",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint72",
+        "name": "delta",
+        "type": "uint72"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint72",
+        "name": "newOiLong",
+        "type": "uint72"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint72",
+        "name": "newOiShort",
+        "type": "uint72"
+      }
+    ],
+    "name": "BorrowingGroupOiUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "groupIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "feePerBlock",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint72",
+        "name": "maxOi",
+        "type": "uint72"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint48",
+        "name": "feeExponent",
+        "type": "uint48"
+      }
+    ],
+    "name": "BorrowingGroupUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "currentBlock",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "accFeeLong",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "accFeeShort",
+        "type": "uint64"
+      }
+    ],
+    "name": "BorrowingPairAccFeesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "minP",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "maxP",
+        "type": "uint32"
+      }
+    ],
+    "name": "BorrowingPairFeePerBlockCapUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "prevGroupIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "newGroupIndex",
+        "type": "uint16"
+      }
+    ],
+    "name": "BorrowingPairGroupUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "groupIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "feePerBlock",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint48",
+        "name": "feeExponent",
+        "type": "uint48"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint72",
+        "name": "maxOi",
+        "type": "uint72"
+      }
+    ],
+    "name": "BorrowingPairParamsUpdated",
+    "type": "event"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x87b46e49681e08e3addf8a90f6a1fb5183079033",
+  "chain_id": 1,
+  "contract_name": "ExchangeHUSDC",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:01:45.069Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xf2a9706b18534cc777a4c31d84a3c346fb1b1620",
+  "chain_id": 1284,
+  "contract_name": "ComptrollerRewardViewer",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "0000000000000000000000008e00d5e02e65a19337cdba98bba9f84d4186a180",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:03:41.995Z"
+}

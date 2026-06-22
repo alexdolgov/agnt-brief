@@ -1,0 +1,18 @@
+{
+  "address": "0x1c813cdd6daece2cb83c52f0798504e42816e9c5",
+  "chain_id": 137,
+  "contract_name": "MerkleDistributor",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:27.573Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xa9bb713fbe36730798b62911e73e0076794c96ae",
+  "chain_id": 42161,
+  "contract_name": "GNSTradingStateCopy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 77,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:21.296Z"
+}

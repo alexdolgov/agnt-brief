@@ -1,0 +1,18 @@
+{
+  "address": "0x10ff5d1d9ad9e872b31cb52422d702f294e7edb8",
+  "chain_id": 137,
+  "contract_name": "RewardRouterV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:08.970Z"
+}

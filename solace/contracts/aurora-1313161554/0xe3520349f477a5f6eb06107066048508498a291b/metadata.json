@@ -1,0 +1,18 @@
+{
+  "address": "0xe3520349f477a5f6eb06107066048508498a291b",
+  "chain_id": 1313161554,
+  "contract_name": "EvmErc20",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:29:23.700Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4f4b9553217e15379dd66ccab1986ee1e73a5e5d",
+  "chain_id": 56,
+  "contract_name": "NFTRouter",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:46:13.931Z"
+}

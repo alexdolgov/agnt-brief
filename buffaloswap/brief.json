@@ -1,49 +1,82 @@
 {
   "schema_version": "2.0",
   "project_key": "buffaloswap",
-  "generated_at": "2026-06-13T12:36:40.833Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:59:51.050Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "buffaloswap",
+    "tier": 0,
+    "peak_tvl": 22135,
+    "peak_date": "2022-03-25T00:00:00.000Z",
+    "tvl_30d_ago": 11922,
+    "tvl_90d_ago": 11168,
+    "tvl_current": 10225,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 13826,
+    "change_30d_pct": -14.234188894480793,
+    "change_90d_pct": -8.443767908309455,
+    "days_since_peak": 1547,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 53.80618929297493
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 14253.28315,
-    "tvl_usd": 14253.28315,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 9168.286612288002,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 9168.29
+    },
+    "asd_usd": 9168.286612288002,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "bsc"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-08",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 2,
+    "total_contracts_indexed": 6,
+    "live_contracts": 1,
+    "inactive_contracts": 5,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +84,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BuffaloToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Buffaloswap",
+      "tvl_usd": 9168.286612288002,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BuffaloToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9168.286612288002,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12861,
@@ -60,8 +129,8 @@
       "report_url": "https://github.com/solidproof/smart-contract-audits/blob/main/SmartContract_Audit_Solidproof_BuffaloToken.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -76,9 +145,20 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5",
+      "name": "BuffaloToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 9168.286612288002,
+      "risk_note": "Verified native implementation with $9,168.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

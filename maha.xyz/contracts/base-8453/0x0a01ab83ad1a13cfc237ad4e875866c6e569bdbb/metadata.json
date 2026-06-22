@@ -1,0 +1,17 @@
+{
+  "address": "0x0a01ab83ad1a13cfc237ad4e875866c6e569bdbb",
+  "chain_id": 8453,
+  "contract_name": "PoolUIHelper",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "000000000000000000000000554bba833518793056cf105e66abea330672c0de00000000000000000000000069000dfd5025e82f48eb28325a2b88a241182ced000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:44.473Z"
+}

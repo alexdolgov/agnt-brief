@@ -1,0 +1,17 @@
+{
+  "address": "0x2935a23f015ce177d6cc6bacce189a2e0039a227",
+  "chain_id": 169,
+  "contract_name": "CLTTwapQuoter",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000004ef03f0ea9e744f22b768e17628ce39a2f48abe5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:02.253Z"
+}

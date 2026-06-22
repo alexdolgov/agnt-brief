@@ -1,0 +1,17 @@
+{
+  "address": "0x2448e71769817ecc0e8d7fb628cd56eeffd99dda",
+  "chain_id": 43114,
+  "contract_name": "VeMoreWhitelistStaking",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "000000000000000000000000d9d90f882cddd6063959a9d837b05cb748718a050000000000000000000000007aea97ba3d91117ea53be2599c6c6c60e1c7ccbc0000000000000000000000009e1ee00d45252aa58623f7d771fb414aa38f0878",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:08.246Z"
+}

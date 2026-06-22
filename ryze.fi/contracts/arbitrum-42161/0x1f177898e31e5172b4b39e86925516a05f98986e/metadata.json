@@ -1,0 +1,18 @@
+{
+  "address": "0x1f177898e31e5172b4b39e86925516a05f98986e",
+  "chain_id": 42161,
+  "contract_name": "BinaryMarketManager",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:59:27.629Z"
+}

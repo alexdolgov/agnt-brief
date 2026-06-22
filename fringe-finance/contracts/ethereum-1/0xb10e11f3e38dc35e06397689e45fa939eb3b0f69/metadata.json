@@ -1,0 +1,18 @@
+{
+  "address": "0xb10e11f3e38dc35e06397689e45fa939eb3b0f69",
+  "chain_id": 1,
+  "contract_name": "iCollateralVaultFactory",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:37.842Z"
+}

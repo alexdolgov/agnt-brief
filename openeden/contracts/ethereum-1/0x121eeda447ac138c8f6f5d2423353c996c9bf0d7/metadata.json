@@ -1,0 +1,18 @@
+{
+  "address": "0x121eeda447ac138c8f6f5d2423353c996c9bf0d7",
+  "chain_id": 1,
+  "contract_name": "DoubleAggregatorProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x2f718b9a8d72294aa9ff3f596a37ce47b1f295fe",
+  "fetched_at": "2026-06-21T18:33:29.088Z"
+}

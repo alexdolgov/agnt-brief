@@ -1,0 +1,17 @@
+{
+  "address": "0x58c5ca4ba713a9bbd2a95accbc9f545718c822c5",
+  "chain_id": 130,
+  "contract_name": "ImpermaxV3UniV3Router01",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000050e7116c4a9624a2d562ee0ab5209f3834c15e140000000000000000000000001f984000000000000000000000000000000000030000000000000000000000004200000000000000000000000000000000000006",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:30.130Z"
+}

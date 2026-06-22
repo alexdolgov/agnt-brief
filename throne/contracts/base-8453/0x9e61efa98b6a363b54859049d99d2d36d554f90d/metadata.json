@@ -1,0 +1,18 @@
+{
+  "address": "0x9e61efa98b6a363b54859049d99d2d36d554f90d",
+  "chain_id": 8453,
+  "contract_name": "ThroneToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:27.779Z"
+}

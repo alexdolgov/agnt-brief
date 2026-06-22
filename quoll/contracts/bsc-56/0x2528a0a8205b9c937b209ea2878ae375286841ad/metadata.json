@@ -1,0 +1,18 @@
+{
+  "address": "0x2528a0a8205b9c937b209ea2878ae375286841ad",
+  "chain_id": 56,
+  "contract_name": "MerkleTreeTHENFTTest",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:22.343Z"
+}

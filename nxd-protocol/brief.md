@@ -1,41 +1,52 @@
 # Agentic Audit Brief: NXD Protocol
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: NXD Protocol (`nxd-protocol`)
 - Website: [https://dxn-hyperstructure.com/](https://dxn-hyperstructure.com/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T13:59:11.652Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-06-19T09:06:33.058Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2024 (stale)
+- Latest audit: 2024-04 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -47,9 +58,11 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x98134c...2c13ac`](./contracts/ethereum-1/0x98134cde70ff7280bb4b9f4eba2154009f2c13ac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [NXDFinal.pdf](https://github.com/TheArcadiaGroup/publications/blob/main/audits/NXDFinal.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [NXDFinal.pdf](https://github.com/TheArcadiaGroup/publications/blob/main/audits/NXDFinal.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -86,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

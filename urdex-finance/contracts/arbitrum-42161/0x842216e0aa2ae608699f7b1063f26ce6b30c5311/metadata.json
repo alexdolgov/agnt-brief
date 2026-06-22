@@ -1,0 +1,18 @@
+{
+  "address": "0x842216e0aa2ae608699f7b1063f26ce6b30c5311",
+  "chain_id": 42161,
+  "contract_name": "UrdToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:39:22.054Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0567d6523b472d80a700f5ea96c560632545ae75",
+  "chain_id": 42161,
+  "contract_name": "MarginlyFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:08:06.490Z"
+}

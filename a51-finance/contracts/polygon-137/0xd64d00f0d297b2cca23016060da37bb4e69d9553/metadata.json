@@ -1,0 +1,18 @@
+{
+  "address": "0xd64d00f0d297b2cca23016060da37bb4e69d9553",
+  "chain_id": 137,
+  "contract_name": "StakingRewardsFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:03.432Z"
+}

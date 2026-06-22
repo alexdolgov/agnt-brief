@@ -1,0 +1,18 @@
+{
+  "address": "0xcad2b9c980322f460db51cc8e45539f677c73f86",
+  "chain_id": 1,
+  "contract_name": "AladdinOFTAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:58:12.198Z"
+}

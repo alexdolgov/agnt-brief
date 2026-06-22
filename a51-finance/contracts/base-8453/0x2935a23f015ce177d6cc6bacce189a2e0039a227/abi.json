@@ -1,0 +1,306 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "publicStrategyFeeRegistry_",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "privateStrategyFeeRegistry_",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "LPAutomationFeeLimitExceed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ManagementFeeLimitExceed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PerformanceFeeLimitExceed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "StrategyFeeLimitExceed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "newRegistry",
+        "type": "tuple"
+      }
+    ],
+    "name": "PrivateFeeRegistryUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "newRegistry",
+        "type": "tuple"
+      }
+    ],
+    "name": "PublicFeeRegistryUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isPrivate",
+        "type": "bool"
+      }
+    ],
+    "name": "getGovernanceFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpAutomationFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strategyCreationFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protcolFeeOnManagement",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protcolFeeOnPerformance",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "newPrivateStrategyFeeRegistry",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPrivateFeeRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "lpAutomationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyCreationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnManagement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protcolFeeOnPerformance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGovernanceFeeHandler.ProtocolFeeRegistry",
+        "name": "newPublicStrategyFeeRegistry",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPublicFeeRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

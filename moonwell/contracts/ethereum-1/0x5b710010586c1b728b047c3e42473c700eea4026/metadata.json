@@ -1,0 +1,18 @@
+{
+  "address": "0x5b710010586c1b728b047c3e42473c700eea4026",
+  "chain_id": 1,
+  "contract_name": "SafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "LGPL-3.0-only",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+  "fetched_at": "2026-06-21T18:00:01.548Z"
+}

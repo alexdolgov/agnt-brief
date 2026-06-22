@@ -1,0 +1,18 @@
+{
+  "address": "0x5f19431bc8a3eb21222771c6c867a63a119deda7",
+  "chain_id": 1,
+  "contract_name": "P2PLendingNfts",
+  "compiler_version": "v0.3.10+commit.91361694",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:50:52.797Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x07304976b2abf90003d7d590fbcd5edae149b7e2",
+  "chain_id": 43114,
+  "contract_name": "superQiErc20V2",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:21.731Z"
+}

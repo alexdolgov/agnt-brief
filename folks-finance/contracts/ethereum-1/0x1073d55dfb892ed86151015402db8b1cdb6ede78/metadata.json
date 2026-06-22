@@ -1,0 +1,18 @@
+{
+  "address": "0x1073d55dfb892ed86151015402db8b1cdb6ede78",
+  "chain_id": 1,
+  "contract_name": "MultiSign",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:40:35.460Z"
+}

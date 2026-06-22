@@ -1,0 +1,609 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "_strategyName",
+            "type": "string"
+          },
+          {
+            "internalType": "contract IYtToken",
+            "name": "ytToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ISyContract",
+            "name": "syToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "ptToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPtPriceOracle",
+            "name": "ptOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolUnderlyingToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolArbToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolPendleToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "extraDex",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieStaking",
+            "name": "penpieStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieMaster",
+            "name": "penpieMaster",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IMarket",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPendleRouter",
+            "name": "pendleRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pendleStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeUnderlyingToWant",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeArbToWeth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feePendleToWeth",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct PendleGeneralInfo",
+        "name": "_pendleGeneralInfo",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_dataFeed",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ARB",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PENDLE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "YtToWantRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WantToLpYtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PtToSyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToPtRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "LpToSyPtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToAssetRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OffChainData",
+        "name": "_offChainData",
+        "type": "tuple"
+      }
+    ],
+    "name": "addLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpExpected",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ytExpected",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "netTokenIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenMintSy",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pendleSwap",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IPendleRouter.SwapType",
+                "name": "swapType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "extRouter",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extCalldata",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "needScale",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IPendleRouter.SwapData",
+            "name": "swapData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IPendleRouter.TokenInput",
+        "name": "inputData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "assetAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "assetToWantRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpBalanceStaked",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ytBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimatedTotalAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getChainlinkDataFeedLatestAnswer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "YtToWantRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WantToLpYtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PtToSyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToPtRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "LpToSyPtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToAssetRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OffChainData",
+        "name": "_offChainData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_stakedAmountInWant",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpStaked",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ytBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLpAndYtAmountToLiquidate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "yt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRewardsInWantToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "lpToWant",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendleGeneralInfo",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_strategyName",
+        "type": "string"
+      },
+      {
+        "internalType": "contract IYtToken",
+        "name": "ytToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyContract",
+        "name": "syToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "ptToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPtPriceOracle",
+        "name": "ptOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "underlyingAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolUnderlyingToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolArbToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolPendleToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "extraDex",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPenpieStaking",
+        "name": "penpieStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPenpieMaster",
+        "name": "penpieMaster",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMarket",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPendleRouter",
+        "name": "pendleRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pendleStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "slippage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feeUnderlyingToWant",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feeArbToWeth",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feePendleToWeth",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenFrom",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "smthToSmth",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ytAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ytToWant",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

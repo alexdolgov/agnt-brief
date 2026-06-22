@@ -1,0 +1,344 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidBurnAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidManagingFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidMintAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPerformanceFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTicksSpacing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidityAlreadyAdded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxFeeBPSExceedLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MintNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MintNotStarted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowedToUpdateTicks",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyPoolAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SlippageExceedThreshold",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TicksOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroMintAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroOtherFeeRecipientAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroUnderlyingBalance",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "burnAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0Out",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1Out",
+        "type": "uint256"
+      }
+    ],
+    "name": "Burned",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feesEarned0",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feesEarned1",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeesEarned",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "managingFee",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "performanceFee",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "otherFee",
+        "type": "uint16"
+      }
+    ],
+    "name": "FeesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "inThePosition",
+        "type": "bool"
+      }
+    ],
+    "name": "InThePositionStatusSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "liquidityMinted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "tickLower",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "tickUpper",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0In",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1In",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidityAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "liquidityRemoved",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "tickLower",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "tickUpper",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0Out",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1Out",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidityRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "MintStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "mintAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0In",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1In",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "referral",
+        "type": "string"
+      }
+    ],
+    "name": "Minted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "otherFeeRecipient",
+        "type": "address"
+      }
+    ],
+    "name": "OtherFeeRecipientSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "zeroForOne",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "amount0",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "amount1",
+        "type": "int256"
+      }
+    ],
+    "name": "Swapped",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "lowerTick",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "upperTick",
+        "type": "int24"
+      }
+    ],
+    "name": "TicksSet",
+    "type": "event"
+  }
+]

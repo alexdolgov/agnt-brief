@@ -1,0 +1,18 @@
+{
+  "address": "0x518f85c650f92a4828c3eb8149549a2fe6376559",
+  "chain_id": 8453,
+  "contract_name": "ThroneV3LmPoolMod",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:26.899Z"
+}

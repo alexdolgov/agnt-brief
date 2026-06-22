@@ -1,0 +1,18 @@
+{
+  "address": "0xb53bb034a6e7f8946818231f2514ee04b51466fe",
+  "chain_id": 42161,
+  "contract_name": "sectGrail",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:01:16.920Z"
+}

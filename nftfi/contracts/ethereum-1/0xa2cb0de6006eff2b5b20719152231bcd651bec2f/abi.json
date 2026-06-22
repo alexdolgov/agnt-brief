@@ -1,0 +1,179 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "bundleId",
+        "type": "uint256"
+      }
+    ],
+    "name": "BundleBurned",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newBundleId",
+        "type": "uint256"
+      }
+    ],
+    "name": "BundleMigrated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newImmutableId",
+        "type": "uint256"
+      }
+    ],
+    "name": "ImmutableMigrated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_bundleContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_bundleId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "name": "decomposeAndBurnBundle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_immutableContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_immutableId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "name": "decomposeAndBurnImmutable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_oldBundleContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_newBundleContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_oldBundleId",
+        "type": "uint256"
+      }
+    ],
+    "name": "migrateBundle",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_oldImmutableContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_newImmutableContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_oldImmutableId",
+        "type": "uint256"
+      }
+    ],
+    "name": "migrateImmutable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

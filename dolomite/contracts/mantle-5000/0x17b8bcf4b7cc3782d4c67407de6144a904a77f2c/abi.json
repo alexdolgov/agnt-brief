@@ -1,0 +1,203 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_expiryProxy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dolomiteMargin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_liquidatorAssetRegistry",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "DOLOMITE_MARGIN",
+    "outputs": [
+      {
+        "internalType": "contract IDolomiteMargin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "EXPIRY",
+    "outputs": [
+      {
+        "internalType": "contract IExpiry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "LIQUIDATOR_ASSET_REGISTRY",
+    "outputs": [
+      {
+        "internalType": "contract ILiquidatorAssetRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "contract IDolomiteMargin",
+        "name": "_dolomiteMargin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isIsolationModeMarket",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "number",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Account.Info",
+        "name": "_solidAccount",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "number",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Account.Info",
+        "name": "_liquidAccount",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_marketIdsPath",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_inputAmountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minOutputAmountWei",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum IGenericTraderProxyBase.TraderType",
+            "name": "traderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "makerAccountIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "trader",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "tradeData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IGenericTraderProxyBase.TraderParam[]",
+        "name": "_tradersPath",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "number",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Account.Info[]",
+        "name": "_makerAccounts",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_expiry",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidate",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

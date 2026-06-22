@@ -1,0 +1,18 @@
+{
+  "address": "0x2707ccc10d6c1ce49f72867ab5b85de11e64979f",
+  "chain_id": 43114,
+  "contract_name": "WinePress",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T10:02:22.177Z"
+}

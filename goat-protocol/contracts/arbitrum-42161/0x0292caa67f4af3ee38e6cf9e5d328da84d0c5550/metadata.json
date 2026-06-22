@@ -1,0 +1,18 @@
+{
+  "address": "0x0292caa67f4af3ee38e6cf9e5d328da84d0c5550",
+  "chain_id": 42161,
+  "contract_name": "StrategySiloBorrowableDeposit",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:23:26.484Z"
+}

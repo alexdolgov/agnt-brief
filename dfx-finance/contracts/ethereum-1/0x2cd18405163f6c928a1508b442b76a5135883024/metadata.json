@@ -1,0 +1,18 @@
+{
+  "address": "0x2cd18405163f6c928a1508b442b76a5135883024",
+  "chain_id": 1,
+  "contract_name": "AssimilatorV2",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "london",
+  "license": "BSD-4-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:14:24.655Z"
+}

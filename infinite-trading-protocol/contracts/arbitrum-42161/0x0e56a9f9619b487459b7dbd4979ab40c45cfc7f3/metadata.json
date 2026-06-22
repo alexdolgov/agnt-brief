@@ -1,0 +1,18 @@
+{
+  "address": "0x0e56a9f9619b487459b7dbd4979ab40c45cfc7f3",
+  "chain_id": 42161,
+  "contract_name": "PoolLimitOrderManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:35.433Z"
+}

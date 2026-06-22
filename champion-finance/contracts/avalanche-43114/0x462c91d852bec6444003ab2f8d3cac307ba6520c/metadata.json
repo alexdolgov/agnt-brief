@@ -1,0 +1,17 @@
+{
+  "address": "0x462c91d852bec6444003ab2f8d3cac307ba6520c",
+  "chain_id": 43114,
+  "contract_name": "EVICTreasuryV2",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:07.041Z"
+}

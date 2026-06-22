@@ -1,0 +1,18 @@
+{
+  "address": "0x024902c0e96fc28e641d60e36a84dad1fce6519e",
+  "chain_id": 1,
+  "contract_name": "SatellitePoolFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:22:50.469Z"
+}

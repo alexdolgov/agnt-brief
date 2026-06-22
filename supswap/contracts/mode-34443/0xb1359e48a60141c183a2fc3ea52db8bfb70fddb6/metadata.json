@@ -1,0 +1,17 @@
+{
+  "address": "0xb1359e48a60141c183a2fc3ea52db8bfb70fddb6",
+  "chain_id": 34443,
+  "contract_name": "BatchSender",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:33.388Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x04427241a1d5bff7d9bd2446dfe55a07d6ef49b1",
+  "chain_id": 42161,
+  "contract_name": "MyOVaultComposer",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Unknown",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:52.763Z"
+}

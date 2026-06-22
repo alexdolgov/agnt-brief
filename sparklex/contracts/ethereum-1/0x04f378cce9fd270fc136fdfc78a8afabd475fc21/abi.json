@@ -1,0 +1,687 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lpFarmingStrategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "nonfungiblePositionMgr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FAILED_TO_CREATE_USER_VAULT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_ADDRESS_TO_SET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_BPS_TO_SET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_HELPER_CALLER",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LP_POSITION_ZERO_LIQUIDITY",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SINGLE_TOKEN_ZAPIN_ONLY",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WRONG_LP_POSITION_COUNT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WRONG_LP_POSITION_INDEX",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WRONG_TWAP_OBSERVE_INTERVAL",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_lpFarmingStrategy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_nonfungiblePositionMgr",
+        "type": "address"
+      }
+    ],
+    "name": "LPFarmingHelperCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "FULL_SLIPPAGE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SLIPPAGE_TOLERANCE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_nftPositionMgr",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_strategy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_userVault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingMgr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_currentSqrtPX96",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionParams",
+        "name": "_zapInParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_posTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "addLiquidityV3",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "posTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "residue0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "residue1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionOutput",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_userVault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingMgr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_currentSqrtPX96",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionParams",
+        "name": "_zapInParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftPositionId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "closeV3Position",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_userVault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingMgr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_currentSqrtPX96",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionParams",
+        "name": "_zapInParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "collectFeeV3",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_farmingMgr",
+        "type": "address"
+      }
+    ],
+    "name": "createSparkleXFarmingVault",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_twapInterval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTwapPriceInSqrtX96",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "",
+        "type": "uint160"
+      },
+      {
+        "internalType": "int24",
+        "name": "",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_userVault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingMgr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_currentSqrtPX96",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionParams",
+        "name": "_zapInParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "openV3PositionWithAmounts",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "posTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "residue0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "residue1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionOutput",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_userVault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingMgr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_farmingStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "_tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_currentSqrtPX96",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPFarmingHelper.ZapInPositionParams",
+        "name": "_zapInParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_liquidityRatio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftPositionId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "removeLiquidityV3",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_slippage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setSlippage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

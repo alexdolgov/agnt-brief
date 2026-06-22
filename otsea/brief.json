@@ -1,57 +1,246 @@
 {
   "schema_version": "2.0",
   "project_key": "otsea",
-  "generated_at": "2026-06-13T11:06:14.816Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T12:05:58.769Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "otsea",
+    "tier": 0,
+    "peak_tvl": 1171328,
+    "peak_date": "2025-08-23T00:00:00.000Z",
+    "tvl_30d_ago": 490349,
+    "tvl_90d_ago": 507949,
+    "tvl_current": 411112,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 702182,
+    "change_30d_pct": -16.159306942606186,
+    "change_90d_pct": -19.064315511990376,
+    "days_since_peak": 302,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 64.90205988416567
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
+    "audited_contracts": 2,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 66.7,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 393820.89742999995,
-    "tvl_usd": 393820.89742999995,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 4104,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 4104
+    },
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "base",
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2018-12",
+    "latest_audit_date": "2024-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 1
+      "stale": 3,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "OTSea is a decentralized exchange protocol enabling trustless token swaps across multiple chains. It provides liquidity pools and trading mechanisms for users to exchange assets without intermediaries.",
+    "relationship_narrative": "The OTSea family consists of core exchange contracts deployed on multiple chains, sharing a common architecture. Supporting unnamed contracts likely provide infrastructure such as access control or registry functions, enabling consistent operation across deployments.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 33,
+    "live_contracts": 5,
+    "inactive_contracts": 28,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 9,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5da151b95657e788076d04d56234bd93e409cb09",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OTSeaERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 4104,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OTSeaERC20",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5da151b95657e788076d04d56234bd93e409cb09",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4104,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13644"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6e8b67b315b44519f8c2befdbbe11097c45353b4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OTSea",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "OTSea",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OTSea",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6e8b67b315b44519f8c2befdbbe11097c45353b4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa836af59d35b3da3c9fb5cfd6f84d9e3bd8c5fd5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13642",
+        "audit-13644"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1c3c442c0ece529e6a8d7815b33c014e641885b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OTSeaStable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OTSeaStable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1c3c442c0ece529e6a8d7815b33c014e641885b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x92cd502123129cdfd0d0af1e0e055f5500b77a0c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92cd502123129cdfd0d0af1e0e055f5500b77a0c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13642,
@@ -61,17 +250,23 @@
       "auditor": "Dedaub",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2018-12",
+      "date": "2023-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FeeSplitter",
+        "ListHelper",
+        "OTSea",
+        "TransferHelper",
+        "WhitelistHelper"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -102,46 +297,74 @@
       "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OTSea-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "OTSea",
+        "OTSeaERC20",
+        "OTSeaMigration",
+        "OTSeaRevenueDistributor",
+        "OTSeaStaking"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
+      "latest_audit": "2024-01"
+    },
+    {
+      "auditor": "Dedaub",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2023-12"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1c3c442c0ece529e6a8d7815b33c014e641885b8",
+      "name": "OTSeaStable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 14
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 13642,
-        "report_name": "dedaub.com/audits/otsea/otsea-dec-18-2023"
-      },
-      {
         "audit_id": 13643,
         "report_name": "OTSea"
-      },
-      {
-        "audit_id": 13644,
-        "report_name": "PeckShield-Audit-Report-OTSea-v1.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

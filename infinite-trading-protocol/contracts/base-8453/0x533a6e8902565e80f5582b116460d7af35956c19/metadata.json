@@ -1,0 +1,18 @@
+{
+  "address": "0x533a6e8902565e80f5582b116460d7af35956c19",
+  "chain_id": 8453,
+  "contract_name": "AcrossContractGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:37.030Z"
+}

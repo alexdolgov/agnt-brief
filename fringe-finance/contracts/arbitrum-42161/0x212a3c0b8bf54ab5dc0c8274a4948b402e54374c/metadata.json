@@ -1,0 +1,18 @@
+{
+  "address": "0x212a3c0b8bf54ab5dc0c8274a4948b402e54374c",
+  "chain_id": 42161,
+  "contract_name": "GNSMulticall",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:08.124Z"
+}

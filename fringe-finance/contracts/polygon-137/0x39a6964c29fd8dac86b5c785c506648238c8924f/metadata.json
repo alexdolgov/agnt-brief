@@ -1,0 +1,18 @@
+{
+  "address": "0x39a6964c29fd8dac86b5c785c506648238c8924f",
+  "chain_id": 137,
+  "contract_name": "HellsKitchen",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:59.188Z"
+}

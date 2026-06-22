@@ -1,0 +1,18 @@
+{
+  "address": "0x320894c69c90e5c94e9258a5b7f1e0f802511f70",
+  "chain_id": 56,
+  "contract_name": "MerkleDistributorManagerMining",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:48:21.029Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x346a79030671cf252de8d4d05d43f60812fa8057",
+  "chain_id": 137,
+  "contract_name": "AaveV3ERC4626Reinvest",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:59.857Z"
+}

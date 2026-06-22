@@ -1,0 +1,17 @@
+{
+  "address": "0xc1397f94587c6fe5946a20f3d74dbb02bb175e14",
+  "chain_id": 43114,
+  "contract_name": "CurveLPTOracle",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "0000000000000000000000009e1ee00d45252aa58623f7d771fb414aa38f0878",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:23.144Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xb31a1ba8179c3f0650976c26954c587d36e621f2",
+  "chain_id": 43114,
+  "contract_name": "Counter",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T10:02:25.026Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x66bf2b53f90b40e6ed973d74ab9cd5fca6889263",
+  "chain_id": 146,
+  "contract_name": "PsmAMO",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "shanghai",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:00:55.793Z"
+}

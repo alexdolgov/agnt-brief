@@ -1,34 +1,64 @@
 {
   "schema_version": "2.0",
   "project_key": "valas-finance",
-  "generated_at": "2026-06-13T15:01:14.777Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T00:32:37.593Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "valas-finance",
+    "tier": 1,
+    "peak_tvl": 306871327,
+    "peak_date": "2022-04-19T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 365524,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 572883,
+    "change_30d_pct": null,
+    "change_90d_pct": -100,
+    "governance_raw": {
+      "evidence": "TVL dropped 100% from peak over 4 years ago with no activity or communications.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1523,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "TVL dropped 100% from peak over 4 years ago with no activity or communications.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 75,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 3,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 60,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 22074.6782,
-    "tvl_usd": 22074.6782,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 193685.15097289285,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 193685.15
+    },
     "asd_usd": null,
     "website_url": "https://valasfinance.com/",
-    "chains": [],
+    "chains": [
+      "bsc"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-06",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +68,226 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Valas Finance is a decentralized lending protocol on BSC that enables users to deposit assets to earn interest and borrow against them. It uses a pool-based model with variable interest rates, collateralized loans, and governance via the VALAS token.",
+    "relationship_narrative": "The Deployment Addresses family provides the core logic and configuration for the lending pools, while the valTokens family represents the tokenized positions. The LendingPool interacts with AToken proxies to mint/burn tokens on deposit/withdraw, and relies on oracles and the configurator for asset parameters.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 46,
+    "live_contracts": 6,
+    "inactive_contracts": 25,
+    "singleton_contracts": 15,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 4,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 27,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "aave-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ValasToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployment Addresses",
+      "tvl_usd": 193685.15097289285,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ValasToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 193685.15097289285,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14093"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb7c1d99069a4eb582fc04e7e1124794000e7ecbf",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ChefIncentivesController",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ChefIncentivesController",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb7c1d99069a4eb582fc04e7e1124794000e7ecbf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14093"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x45db28f16c21d441006069a269c0442e4cc304a7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "IncentiveEarner",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "IncentiveEarner",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x45db28f16c21d441006069a269c0442e4cc304a7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa6e85ecb91f300c8eb1c92f87a26248133dd09d2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x685d3b02b9b0f044a3c01dbb95408fc2eb15a3b3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MultiFeeDistribution",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployment Addresses",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiFeeDistribution",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x685d3b02b9b0f044a3c01dbb95408fc2eb15a3b3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14093"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x3025d9f822d399fd7fb6275b5164bbde6dc28a29",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WETHGateway",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Deployment Addresses",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETHGateway",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3025d9f822d399fd7fb6275b5164bbde6dc28a29",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14093,
@@ -61,39 +297,68 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AToken",
+        "AaveOracle",
+        "ChefIncentivesController",
+        "Fold",
+        "LendingPool",
+        "MasterChef",
+        "MultiFeeDistribution",
+        "ProtocolOwnedDEXLiquidity",
+        "TokenVesting",
+        "ValasToken"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 60,
+      "latest_audit": "2022-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x45db28f16c21d441006069a269c0442e4cc304a7",
+      "name": "IncentiveEarner",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 4,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 23
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 14093,
-        "report_name": "PeckShield-Audit-Report-ValasFinance-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

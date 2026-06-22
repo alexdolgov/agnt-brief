@@ -1,0 +1,1674 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "billRefillers",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct CustomBillFactoryBase.BillDefaultConfig",
+        "name": "_billDefaultConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "DAO",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "billNft",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillAccounts",
+        "name": "_defaultBillAccounts",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_factoryStorage",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_billImplementationAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_treasuryImplementationAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_billCreators",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract ICustomTreasury",
+        "name": "customTreasury",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract ICustomBill",
+        "name": "bill",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "billNft",
+        "type": "address"
+      }
+    ],
+    "name": "CreatedBill",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract ICustomTreasury",
+        "name": "customTreasury",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "payoutToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "payoutAddress",
+        "type": "address"
+      }
+    ],
+    "name": "CreatedTreasury",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract ICustomBill",
+        "name": "newBillImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "SetBillImplementation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newBillNftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "SetBillNft",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newDao",
+        "type": "address"
+      }
+    ],
+    "name": "SetDao",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "SetPendingOwner",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newTreasury",
+        "type": "address"
+      }
+    ],
+    "name": "SetTreasury",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract ICustomTreasury",
+        "name": "newTreasuryImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "SetTreasuryImplementation",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BILL_CREATOR_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "billImplementationAddress",
+    "outputs": [
+      {
+        "internalType": "contract ICustomBill",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "_billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      }
+    ],
+    "name": "createBill",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "_billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      }
+    ],
+    "name": "createBillAndTreasury",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "_billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "DAO",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "billNft",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillAccounts",
+        "name": "_billAccounts",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_payoutAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_billRefillers",
+        "type": "address[]"
+      }
+    ],
+    "name": "createBillAndTreasury_CustomConfig",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_payoutToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_principalToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IVestingCurve",
+        "name": "_vestingCurve",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_tierCeilings",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_fees",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_feeInPayout",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      }
+    ],
+    "name": "createBillAndTreasury_Explorer",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "_billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "DAO",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "billNft",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillAccounts",
+        "name": "_billAccounts",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_billRefillers",
+        "type": "address[]"
+      }
+    ],
+    "name": "createBill_CustomConfig",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_payoutToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_principalToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IVestingCurve",
+        "name": "_vestingCurve",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_tierCeilings",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_fees",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_feeInPayout",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "_billTerms",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_customTreasury",
+        "type": "address"
+      }
+    ],
+    "name": "createBill_Explorer",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployedBills",
+    "outputs": [
+      {
+        "internalType": "contract ICustomBill",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployedTreasuries",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factoryStorage",
+    "outputs": [
+      {
+        "internalType": "contract IFactoryStorage",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_payoutToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_principalToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IVestingCurve",
+        "name": "_vestingCurve",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_tierCeilings",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_fees",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_feeInPayout",
+        "type": "bool"
+      }
+    ],
+    "name": "getBillCreationDetails",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillCreationDetails",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBillDefaultAccounts",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "DAO",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "billNft",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBillDefaultConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "payoutAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_controlVariable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_vestingTerm",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minimumPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxPayout",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxDebt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxTotalPayout",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_initialDebt",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBillTerms",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "controlVariable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vestingTerm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTotalPayout",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialDebt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICustomBill.BillTerms",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRoleMember",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleMemberCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_billCreators",
+        "type": "address[]"
+      }
+    ],
+    "name": "grantBillCreatorRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_billCreators",
+        "type": "address[]"
+      }
+    ],
+    "name": "revokeBillCreatorRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICustomBill",
+        "name": "_billImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "setBillImplementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IBillNft",
+        "name": "_billNft",
+        "type": "address"
+      }
+    ],
+    "name": "setBillNft",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_billRefillers",
+        "type": "address[]"
+      }
+    ],
+    "name": "setBillRefillers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_DAO",
+        "type": "address"
+      }
+    ],
+    "name": "setDao",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newPendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "setPendingOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_treasury",
+        "type": "address"
+      }
+    ],
+    "name": "setTreasury",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "_treasuryImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "setTreasuryImplementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalDeployed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_billsDeployed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_treasuriesDeployed",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryImplementationAddress",
+    "outputs": [
+      {
+        "internalType": "contract ICustomTreasury",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

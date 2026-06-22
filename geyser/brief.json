@@ -1,57 +1,363 @@
 {
   "schema_version": "2.0",
   "project_key": "geyser",
-  "generated_at": "2026-06-13T11:36:43.775Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T08:00:58.041Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "geyser",
+    "tier": 1,
+    "peak_tvl": 23048559,
+    "peak_date": "2021-09-02T00:00:00.000Z",
+    "tvl_30d_ago": 100956,
+    "tvl_90d_ago": 81635,
+    "tvl_current": 69514,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 110128,
+    "change_30d_pct": -31.144260866119893,
+    "change_90d_pct": -14.847798125803882,
+    "governance_raw": {
+      "evidence": "TVL has dropped 99.7% from its peak over 4 years ago, with no recent updates or activity on the homepage, indicating the protocol is effectively dead.",
+      "confidence": 0.9,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1753,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.69840196951141,
+    "governance_evidence": "TVL has dropped 99.7% from its peak over 4 years ago, with no recent updates or activity on the homepage, indicating the protocol is effectively dead.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 3158,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 7,
+    "total_addresses": 8,
+    "unique_implementations": 7,
+    "total_deployments": 8,
+    "audited_contracts": 3,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 50,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 93223.54887,
-    "tvl_usd": 93223.54887,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 934.781761253075,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "polygon": 934.78
+    },
+    "asd_usd": 934.781761253075,
     "website_url": "https://www.gysr.io",
-    "chains": [],
+    "chains": [
+      "ethereum",
+      "optimism",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2020",
+    "latest_audit_date": "2021-06",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Geyser is a yield protocol that enables users to stake ERC-20 or ERC-721 tokens into modular pools to earn rewards. It supports multiple reward distribution strategies (e.g., competitive, friendly, fixed, linear, multi-reward) and operates across Ethereum, Optimism, and Polygon.",
+    "relationship_narrative": "Each product family is a chain-specific deployment of the same modular staking architecture, sharing factory and info contracts for staking and reward modules. The Ethereum mainnet serves as the original deployment, while Optimism and Polygon replicate the pattern with chain-specific configurations and token bridges (e.g., L2StandardERC20 on Optimism, UChildERC20Proxy on Polygon).",
+    "product_family_count": 3,
+    "total_contracts_indexed": 142,
+    "live_contracts": 8,
+    "inactive_contracts": 134,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xc48f61a288a08f1b80c2edd74652e1276b6a168c",
+      "deployment_unit": "unit-41668",
+      "deployment_unit_proxy_count": 1,
+      "name": "UChildERC20",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "polygon",
+      "product_line": "Polygon",
+      "tvl_usd": 934.781761253075,
+      "is_proxy": true,
+      "impl_address": "0x7ab1cd617b399c06321dd230eb4af5dc481230c9",
+      "impl_name": "UChildERC20",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc48f61a288a08f1b80c2edd74652e1276b6a168c",
+          "deployment_unit": "unit-41668",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 934.781761253075,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c1ffdecc6520571d2c41087726611938a9ae99f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Geyser",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Ethereum mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Geyser",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6c1ffdecc6520571d2c41087726611938a9ae99f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13180"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x117cfd9060525452db4a34d51c0b3b7599087f05",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "L2StandardERC20",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
+      "product_line": "Optimism",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L2StandardERC20",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x117cfd9060525452db4a34d51c0b3b7599087f05",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x30c0f65d9b27ebe2cc2a49cbcb4133230b3fb381",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Ethereum mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x30c0f65d9b27ebe2cc2a49cbcb4133230b3fb381",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xb9b532eb6125f71a95ba67a1ef3c94fd5e265d68",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13181"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x2f2e7b4e12f8a7949919c833f1a49bcb012081d1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Polygon",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PoolFactory",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x2f2e7b4e12f8a7949919c833f1a49bcb012081d1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13181"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7daab81668809bd6510177254f0c56e3b739c164",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PoolMetadata",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Polygon",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PoolMetadata",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7daab81668809bd6510177254f0c56e3b739c164",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbea98c05eeae2f3bc8c3565db7551eb738c8ccab",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Ethereum mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbea98c05eeae2f3bc8c3565db7551eb738c8ccab",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13180,
@@ -61,17 +367,21 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2020",
+      "date": "2020-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Geyser",
+        "GeyserFactory",
+        "IGeyserFactory"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,44 +391,87 @@
       "report_url": "https://resources.gysr.io/gysr_v2_audit_certik.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ERC20BaseRewardModule",
+        "ERC20CompetitiveRewardInfo",
+        "ERC20CompetitiveRewardModule",
+        "ERC20CompetitiveRewardModuleFactory",
+        "ERC20FriendlyRewardModule",
+        "ERC20FriendlyRewardModuleFactory",
+        "ERC20StakingModule",
+        "ERC20StakingModuleFactory",
+        "GeyserToken",
+        "GysrUtils",
+        "IEvents",
+        "IModuleFactory",
+        "IPool",
+        "IPoolFactory",
+        "IRewardModule",
+        "IStakingModule",
+        "MathUtils",
+        "OwnerController",
+        "Pool",
+        "PoolFactory",
+        "PoolInfo"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 33.3,
+      "latest_audit": "2021-06"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
+      "latest_audit": "2020-10"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7daab81668809bd6510177254f0c56e3b739c164",
+      "name": "PoolMetadata",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 5,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 33
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13180,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 13181,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

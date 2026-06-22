@@ -1,0 +1,18 @@
+{
+  "address": "0x42387932603800d41c6fa660cff0bafef5c2314c",
+  "chain_id": 56,
+  "contract_name": "OGNFTOffering",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:43.472Z"
+}

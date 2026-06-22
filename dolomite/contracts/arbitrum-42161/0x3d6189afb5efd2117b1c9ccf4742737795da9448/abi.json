@@ -1,0 +1,276 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_usdc",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_gmxRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dfsGlp",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dolomiteMargin",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "DOLOMITE_MARGIN",
+    "outputs": [
+      {
+        "internalType": "contract IDolomiteMargin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GMX_REGISTRY",
+    "outputs": [
+      {
+        "internalType": "contract IGmxRegistryV1",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "USDC",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VAULT_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract IWrappedTokenUserVaultFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_solidAccountId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_owedMarket",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_heldMarket",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_heldAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "createActionsForWrapping",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IDolomiteStructs.ActionType",
+            "name": "actionType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "accountId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "sign",
+                "type": "bool"
+              },
+              {
+                "internalType": "enum IDolomiteStructs.AssetDenomination",
+                "name": "denomination",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum IDolomiteStructs.AssetReference",
+                "name": "ref",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IDolomiteStructs.AssetAmount",
+            "name": "amount",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "primaryMarketId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryMarketId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "otherAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "otherAccountId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IDolomiteStructs.ActionArgs[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tradeOriginator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_makerToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_takerToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountTakerToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_orderData",
+        "type": "bytes"
+      }
+    ],
+    "name": "exchange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_makerToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_takerToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_desiredMakerToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "getExchangeCost",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

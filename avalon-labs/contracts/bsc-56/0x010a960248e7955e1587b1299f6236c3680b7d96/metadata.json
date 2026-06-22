@@ -1,0 +1,18 @@
+{
+  "address": "0x010a960248e7955e1587b1299f6236c3680b7d96",
+  "chain_id": 56,
+  "contract_name": "UiIncentiveDataProviderV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "AGPL-3.0, BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:42:09.949Z"
+}

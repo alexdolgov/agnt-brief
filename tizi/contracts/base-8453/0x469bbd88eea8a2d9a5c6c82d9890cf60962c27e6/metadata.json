@@ -1,0 +1,18 @@
+{
+  "address": "0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6",
+  "chain_id": 8453,
+  "contract_name": "TiziDollar",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:01:16.706Z"
+}

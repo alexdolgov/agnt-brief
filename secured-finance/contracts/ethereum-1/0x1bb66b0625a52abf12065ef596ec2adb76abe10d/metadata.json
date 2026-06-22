@@ -1,0 +1,17 @@
+{
+  "address": "0x1bb66b0625a52abf12065ef596ec2adb76abe10d",
+  "chain_id": 1,
+  "contract_name": "StaticPriceAggregator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:06:40.312Z"
+}

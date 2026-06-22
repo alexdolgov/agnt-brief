@@ -1,0 +1,17 @@
+{
+  "address": "0x29570e3a5b8fc70a8549b7e340de32e650d7f49c",
+  "chain_id": 43114,
+  "contract_name": "lendingSwitchErc20Debug",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "000000000000000000000000d0d88a13707a384699146f0ee27e6e0457177d780000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a000000000000000000000000040a5764f90d71fe584d98dcf49c17664a60f0d800000000000000000000000082e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee000000000000000000000000835866d37afb8cb8f8334dccdaf66cf01832ff5d00000000000000000000000084e45fa0d3a82df18efd2e79422c8ca892f0d3c40000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a0000000000000000000000006d2f34b7be81666e4f842a6bc924d8dd791771fc",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:24.522Z"
+}

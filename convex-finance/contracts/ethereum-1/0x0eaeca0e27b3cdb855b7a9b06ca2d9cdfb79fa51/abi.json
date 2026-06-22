@@ -1,0 +1,41 @@
+[
+  {
+    "inputs": [],
+    "name": "CRVUSD_USD",
+    "outputs": [
+      {
+        "internalType": "contract IAggregatorStablePrice",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MKUSD_CRVUSD",
+    "outputs": [
+      {
+        "internalType": "contract IStableSwap",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

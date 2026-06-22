@@ -1,0 +1,18 @@
+{
+  "address": "0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0",
+  "chain_id": 43114,
+  "contract_name": "WETH9",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:25:09.292Z"
+}

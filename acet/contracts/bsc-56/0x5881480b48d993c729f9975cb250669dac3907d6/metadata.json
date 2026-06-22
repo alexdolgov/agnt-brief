@@ -1,0 +1,17 @@
+{
+  "address": "0x5881480b48d993c729f9975cb250669dac3907d6",
+  "chain_id": 56,
+  "contract_name": "MintReserve",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000026304442cd46cb3cee1a83a48f400ef43a3d0b5c000000000000000000000000fa777e9acf1a2f447616faa66ab868373c8c1cc90000000000000000000000009f3bcbe48e8b754f331dfc694a894e8e686ac31d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:46:56.795Z"
+}

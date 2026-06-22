@@ -1,0 +1,17 @@
+{
+  "address": "0x1023bcc94ab1b9844fa52a0ebd3dc488ecfb5797",
+  "chain_id": 137,
+  "contract_name": "PrivateTokenSwap",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:44.075Z"
+}

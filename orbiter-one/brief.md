@@ -1,41 +1,52 @@
 # Agentic Audit Brief: Orbiter One
 
+⚠️ Lifecycle status: DEAD - TVL dropped 18.1% over 90 days
+
 ## Project Overview
 
 - Project: Orbiter One (`orbiter-one`)
 - Website: [https://orbiter.one](https://orbiter.one)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:51:12.731Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-06-21T07:38:22.244Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: moonbeam
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $77,011.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 3; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Latest audit: 2023-04 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -47,9 +58,11 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ORBToken | token | moonbeam | n/a | [`0x4eeaa1...a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,20 +86,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf](https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SmartContract_Audit_Solidproof_Orbiterone.pdf](https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_Orbiterone.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf](https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf) | unknown | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [SmartContract_Audit_Solidproof_Orbiterone.pdf](https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_Orbiterone.pdf) | unknown | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| moonbeam | [`0x4eeaa1...a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ORBToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

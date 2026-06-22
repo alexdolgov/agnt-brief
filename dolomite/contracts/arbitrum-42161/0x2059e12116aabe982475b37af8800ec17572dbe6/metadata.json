@@ -1,0 +1,17 @@
+{
+  "address": "0x2059e12116aabe982475b37af8800ec17572dbe6",
+  "chain_id": 42161,
+  "contract_name": "IsolationModeTraderProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": "0xf525b07085b7d79eb4d5c14194e496be65b9d1ec",
+  "fetched_at": "2026-06-21T20:48:34.099Z"
+}

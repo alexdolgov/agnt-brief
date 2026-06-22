@@ -1,0 +1,17 @@
+{
+  "address": "0x092b558d933f069c7145c0ef4ad4c966e5d3132e",
+  "chain_id": 8453,
+  "contract_name": "ShiftAccessControl",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000006e939a0df5a2c7cb49af7568c67896fe1846b256",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:36:42.871Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xc3b85a80de19bcebd7666270acf7ba5af385bd26",
+  "chain_id": 59144,
+  "contract_name": "AlgebraCommunityVault",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000ec4f2937e57a6f39087187816ecc83191e6db1ab0000000000000000000000005b48f17fab16f5b1b0689e4788d2ed5d290f47f3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:28:19.220Z"
+}

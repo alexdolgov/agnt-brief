@@ -1,0 +1,17 @@
+{
+  "address": "0x85b08f1d877325126bd655b1aecd25a705884422",
+  "chain_id": 146,
+  "contract_name": "ReferralDistributor",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000c68f07001a8b67f2cf40ce04e974e4b4a5e0afbe",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:11:16.860Z"
+}

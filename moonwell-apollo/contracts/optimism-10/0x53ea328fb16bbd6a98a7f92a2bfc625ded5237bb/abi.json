@@ -1,0 +1,87 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "deployERC20HoldingDeposit",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "recipientAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "wellToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "reserveAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "wellChainlinkFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "reserveChainlinkFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "mTokenMarket",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "guardian",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ReserveAutomation.InitParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployReserveAutomation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

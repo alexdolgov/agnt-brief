@@ -1,0 +1,18 @@
+{
+  "address": "0x4dcbaac36253093a2d1fbd8e3f1026c097946eba",
+  "chain_id": 42161,
+  "contract_name": "PriceFeedFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": "0x28989dc4f7bd051b04caf77a789bdba75ae1d328",
+  "fetched_at": "2026-06-20T01:24:38.992Z"
+}

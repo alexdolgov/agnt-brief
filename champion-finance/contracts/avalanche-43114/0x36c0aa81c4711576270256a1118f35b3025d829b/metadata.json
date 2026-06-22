@@ -1,0 +1,17 @@
+{
+  "address": "0x36c0aa81c4711576270256a1118f35b3025d829b",
+  "chain_id": 43114,
+  "contract_name": "BVICGenesis",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000003cd3d19ab5e88a07dbbc683ff0a7ed38e833fd3e0000000000000000000000000000000000000000000000000000000063417450",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:07.225Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x66cf76f346dd051849028bbef61a8f5c33bdf16a",
+  "chain_id": 8453,
+  "contract_name": "FeeManager",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:52.691Z"
+}

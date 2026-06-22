@@ -1,19 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "harvest-flow",
-  "generated_at": "2026-06-13T13:13:09.228Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T14:06:25.181Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "harvest-flow",
+    "tier": 0,
+    "peak_tvl": 528317,
+    "peak_date": "2025-11-24T00:00:00.000Z",
+    "tvl_30d_ago": 525768,
+    "tvl_90d_ago": 525219,
+    "tvl_current": 523143,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 523873,
+    "change_30d_pct": -0.49926963984114664,
+    "change_90d_pct": -0.39526369000359846,
+    "days_since_peak": 209,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.9793362697017132
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,7 +41,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.harvestflow.io/?lng=en",
-    "chains": [],
+    "chains": [
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-03",
@@ -38,12 +56,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +80,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9d6d53b5bc498200503bc7abcbdec2b8a009460a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TokTokNft",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "HARVEST FLOW",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokTokNft",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9d6d53b5bc498200503bc7abcbdec2b8a009460a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13219,
@@ -76,9 +141,20 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9d6d53b5bc498200503bc7abcbdec2b8a009460a",
+      "name": "TokTokNft",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

@@ -1,0 +1,18 @@
+{
+  "address": "0x4a5df63b0c37b38515e4ee51baf40edd420bf7d5",
+  "chain_id": 1,
+  "contract_name": "UpgradeableProxy",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, MPL-2.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x7d63f2de19bbc0a17bbd917aa6d671b2bb21a1ed",
+  "fetched_at": "2026-06-19T08:51:10.745Z"
+}

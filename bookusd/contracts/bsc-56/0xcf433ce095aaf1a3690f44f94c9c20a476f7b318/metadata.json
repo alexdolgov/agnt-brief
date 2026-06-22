@@ -1,0 +1,18 @@
+{
+  "address": "0xcf433ce095aaf1a3690f44f94c9c20a476f7b318",
+  "chain_id": 56,
+  "contract_name": "Voting",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:47:51.647Z"
+}

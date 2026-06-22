@@ -1,0 +1,17 @@
+{
+  "address": "0x3d8facb2b65b8ceb682ade00e016c672ee6262c0",
+  "chain_id": 1,
+  "contract_name": "Voting Escrow",
+  "compiler_version": "vyper:0.3.1",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:58:04.229Z"
+}

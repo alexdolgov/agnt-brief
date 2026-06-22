@@ -1,0 +1,18 @@
+{
+  "address": "0x613ce28076289de255f1a6487437f03e37e4a71d",
+  "chain_id": 8453,
+  "contract_name": "DackieUSD",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:06.149Z"
+}

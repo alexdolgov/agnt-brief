@@ -1,0 +1,18 @@
+{
+  "address": "0x4a7e74d6a528266720ded30448569592afde0edd",
+  "chain_id": 56,
+  "contract_name": "DripBar",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:43.545Z"
+}

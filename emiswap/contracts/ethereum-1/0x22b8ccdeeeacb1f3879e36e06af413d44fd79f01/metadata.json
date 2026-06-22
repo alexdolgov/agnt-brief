@@ -1,0 +1,18 @@
+{
+  "address": "0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01",
+  "chain_id": 1,
+  "contract_name": "EmiRouter",
+  "compiler_version": "v0.6.2+commit.bacdbe57",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:01:33.620Z"
+}

@@ -1,19 +1,45 @@
 {
   "schema_version": "2.0",
   "project_key": "mev-protocol",
-  "generated_at": "2026-06-13T11:48:39.981Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:37:29.781Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "mev-protocol",
+    "tier": 1,
+    "peak_tvl": 62870146,
+    "peak_date": "2023-12-06T00:00:00.000Z",
+    "tvl_30d_ago": 104775,
+    "tvl_90d_ago": 88881,
+    "tvl_current": 85168,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 131323,
+    "change_30d_pct": -18.713433548079216,
+    "change_90d_pct": -4.177495752748056,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.86% from peak over 928 days with no recent activity or communications, indicating abandonment.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 928,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 99.8645334782585,
+    "governance_evidence": "TVL dropped 99.86% from peak over 928 days with no recent activity or communications, indicating abandonment.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 75,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,7 +51,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://mev.io/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -38,20 +66,139 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "MEV Protocol provides liquid staking for Ethereum, allowing users to stake ETH and receive a liquid staking token (mevETH) that accrues staking rewards and MEV capture. It aims to maximize yield by capturing Maximal Extractable Value (MEV) through its staking infrastructure.",
+    "relationship_narrative": "The MevEth token contract is the core liquid staking token, with WagyuStaker handling staking logic and MEV capture. MevEthRateProvider supplies exchange rate data, while MevEthRouter acts as an adapter for user interactions, and GnosisSafeProxy provides governance control.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 9,
+    "live_contracts": 3,
+    "inactive_contracts": 6,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 12,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x617c8de5bde54ffbb8d92716cc947858ca38f582",
+      "deployment_unit": "unit-41659",
+      "deployment_unit_proxy_count": 1,
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "MEV Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x617c8de5bde54ffbb8d92716cc947858ca38f582",
+          "deployment_unit": "unit-41659",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MevEth",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "MEV Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MevEth",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb60598cd27fb881b92a34afce93aa1ee647b4a93",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MevEthRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "MEV Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MevEthRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb60598cd27fb881b92a34afce93aa1ee647b4a93",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13489,
@@ -97,11 +244,32 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e",
+      "name": "MevEth",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb60598cd27fb881b92a34afce93aa1ee647b4a93",
+      "name": "MevEthRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

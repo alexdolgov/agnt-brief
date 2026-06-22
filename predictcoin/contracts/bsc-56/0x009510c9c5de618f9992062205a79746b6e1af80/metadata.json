@@ -1,0 +1,18 @@
+{
+  "address": "0x009510c9c5de618f9992062205a79746b6e1af80",
+  "chain_id": 56,
+  "contract_name": "BxdDSAResolver",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:35:56.948Z"
+}

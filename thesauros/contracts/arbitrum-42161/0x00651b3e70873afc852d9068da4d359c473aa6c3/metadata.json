@@ -1,0 +1,18 @@
+{
+  "address": "0x00651b3e70873afc852d9068da4d359c473aa6c3",
+  "chain_id": 42161,
+  "contract_name": "MorphoProvider",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T05:09:46.289Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xd45884b592e316eb816199615a95c182f75dea07",
+  "chain_id": 1,
+  "contract_name": "AtomicQueue",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "AGPL-3.0-only, Apache-2.0, GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:53:42.556Z"
+}

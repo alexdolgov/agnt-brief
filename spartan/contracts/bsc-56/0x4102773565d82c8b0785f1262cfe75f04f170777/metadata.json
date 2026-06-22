@@ -1,0 +1,18 @@
+{
+  "address": "0x4102773565d82c8b0785f1262cfe75f04f170777",
+  "chain_id": 56,
+  "contract_name": "DaoVault",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:00:05.663Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x00c83aecc790e8a4453e5dd3b0b4b3680501a7a7",
+  "chain_id": 1,
+  "contract_name": "SkaleToken",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:45:23.534Z"
+}

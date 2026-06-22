@@ -1,0 +1,18 @@
+{
+  "address": "0x00e45ee954c032535f591dafaa45126d2185c5bd",
+  "chain_id": 56,
+  "contract_name": "BondTreasury",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 25000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:21:38.370Z"
+}

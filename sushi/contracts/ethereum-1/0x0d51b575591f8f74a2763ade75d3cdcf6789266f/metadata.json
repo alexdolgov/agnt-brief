@@ -1,0 +1,18 @@
+{
+  "address": "0x0d51b575591f8f74a2763ade75d3cdcf6789266f",
+  "chain_id": 1,
+  "contract_name": "SimpleSLPTWAP1OracleV1",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIXED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:23:44.308Z"
+}

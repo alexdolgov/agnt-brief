@@ -1,0 +1,18 @@
+{
+  "address": "0x04ac48711bcdc45b4d223fb021e09da73c71095e",
+  "chain_id": 1313161554,
+  "contract_name": "PULP",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:45:32.468Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0713f532d0b03b2baaa089b6d2dd45af0ad8960b",
+  "chain_id": 56,
+  "contract_name": "KalmarBondingStrategy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "istanbul",
+  "license": "SPDX-License-Identifiers",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:48:17.868Z"
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "limitPoolFactory_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "int16",
+        "name": "tickBitmapIndex",
+        "type": "int16"
+      }
+    ],
+    "name": "getTickDataInWord",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int128",
+            "name": "liquidityDelta",
+            "type": "int128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidityAbsolute",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct TickQuoter.TickData[]",
+        "name": "populatedTicks",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "limitPoolFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

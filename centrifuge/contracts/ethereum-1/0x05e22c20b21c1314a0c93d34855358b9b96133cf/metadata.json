@@ -1,0 +1,17 @@
+{
+  "address": "0x05e22c20b21c1314a0c93d34855358b9b96133cf",
+  "chain_id": 1,
+  "contract_name": "IdentityValuation",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "00000000000000000000000019f46d8130e610c6c0f0116ea40fb781defade93",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:53.298Z"
+}

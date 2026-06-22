@@ -1,0 +1,17 @@
+{
+  "address": "0xc8b194925d55d5de9555ad1db74c149329f71def",
+  "chain_id": 1,
+  "contract_name": "Token Minter",
+  "compiler_version": "vyper:0.3.1",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:58:02.463Z"
+}

@@ -1,57 +1,344 @@
 {
   "schema_version": "2.0",
   "project_key": "yaka-finance",
-  "generated_at": "2026-06-13T15:12:35.445Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:05:28.578Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "yaka-finance",
+    "tier": 1,
+    "peak_tvl": 21235950,
+    "peak_date": "2025-07-21T00:00:00.000Z",
+    "tvl_30d_ago": 14420,
+    "tvl_90d_ago": 278128,
+    "tvl_current": 10874,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 537280,
+    "change_30d_pct": -24.590846047156727,
+    "change_90d_pct": -96.09028936317091,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.95% from peak, homepage shows $0 TVL, and a critical vulnerability alert indicates severe security issues.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 333,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.94879437934257,
+    "governance_evidence": "TVL dropped 99.95% from peak, homepage shows $0 TVL, and a critical vulnerability alert indicates severe security issues.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 798,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
+    "audited_contracts": 1,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 16.7,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 10286,
     "tvl_usd": 10286,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://yaka.finance/",
-    "chains": [],
+    "chains": [
+      "sei"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Yaka Finance is a decentralized exchange (DEX) and liquidity management protocol on the Sei network. It enables users to trade tokens, provide liquidity, and participate in governance through a ve(3,3) tokenomics model.",
+    "relationship_narrative": "The protocol consists of a single product family, Yaka V2, which encapsulates all core DEX operations. No shared infrastructure or cross-family dependencies are present in the current contract surface.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 37,
+    "live_contracts": 7,
+    "inactive_contracts": 13,
+    "singleton_contracts": 17,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 8,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 9,
+    "unverified_dependencies": 3,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x578cbecc706344c4737c59165eb2e59ec39004f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DistributeFees",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DistributeFees",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x578cbecc706344c4737c59165eb2e59ec39004f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x18ed6e09719093fa42a521dd5b50fb206204b122",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "InitialDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InitialDistributor",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x18ed6e09719093fa42a521dd5b50fb206204b122",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14146"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xac76b04f87ccbfb4ba01f76f34b9f1b770839ebe",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardsDistributor",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xac76b04f87ccbfb4ba01f76f34b9f1b770839ebe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x9f3b1c6b0cddfe7adadd7aadf72273b38eff0ebc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RouterV2",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RouterV2",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9f3b1c6b0cddfe7adadd7aadf72273b38eff0ebc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd45daff288075952822d5323f1d571e73435e929",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd45daff288075952822d5323f1d571e73435e929",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x86a247ef0fc244565bcab93936e867407ac81580",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VotingEscrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VotingEscrow",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x86a247ef0fc244565bcab93936e867407ac81580",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x51121bcae92e302f19d06c193c95e1f7b81a444b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Yaka",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Yaka V2",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Yaka",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x51121bcae92e302f19d06c193c95e1f7b81a444b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14146,
@@ -60,40 +347,101 @@
       "report_url": "https://www.beosin.com/audits/YAKA_202405231200.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "InitialDistributor",
+        "Minter"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
+      "latest_audit": "2024-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x578cbecc706344c4737c59165eb2e59ec39004f0",
+      "name": "DistributeFees",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xac76b04f87ccbfb4ba01f76f34b9f1b770839ebe",
+      "name": "RewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x9f3b1c6b0cddfe7adadd7aadf72273b38eff0ebc",
+      "name": "RouterV2",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x86a247ef0fc244565bcab93936e867407ac81580",
+      "name": "VotingEscrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x51121bcae92e302f19d06c193c95e1f7b81a444b",
+      "name": "Yaka",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 6,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 14146,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,0 +1,18 @@
+{
+  "address": "0x18de6097ce5b5b2724c9cae6ac519917f3f178c0",
+  "chain_id": 1,
+  "contract_name": "GenArt721CoreV2_PlottablesFlex",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 25,
+  "evm_version": "london",
+  "license": "LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:11.695Z"
+}

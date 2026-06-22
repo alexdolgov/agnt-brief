@@ -1,0 +1,18 @@
+{
+  "address": "0xa8e762229cc72777e2a63673562c20dd8c2f8a48",
+  "chain_id": 137,
+  "contract_name": "Admin",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:13.003Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xf7b48f136c7d060f5fc6f020f06418c53097f51b",
+  "chain_id": 8453,
+  "contract_name": "MulticallV2",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:28:13.894Z"
+}

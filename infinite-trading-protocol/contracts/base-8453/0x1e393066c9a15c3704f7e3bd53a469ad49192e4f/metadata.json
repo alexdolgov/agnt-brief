@@ -1,0 +1,17 @@
+{
+  "address": "0x1e393066c9a15c3704f7e3bd53a469ad49192e4f",
+  "chain_id": 8453,
+  "contract_name": "FluidTokenContractGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:40.512Z"
+}

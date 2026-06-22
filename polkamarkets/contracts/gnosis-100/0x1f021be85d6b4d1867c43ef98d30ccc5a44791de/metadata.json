@@ -1,0 +1,18 @@
+{
+  "address": "0x1f021be85d6b4d1867c43ef98d30ccc5a44791de",
+  "chain_id": 100,
+  "contract_name": "PredictionMarketV3Manager",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:25.928Z"
+}

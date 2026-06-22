@@ -1,0 +1,17 @@
+{
+  "address": "0x38ff2f1b4f104ee4830d7a46adbf74fa7ea07a7e",
+  "chain_id": 5000,
+  "contract_name": "OperationImpl",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:48:30.296Z"
+}

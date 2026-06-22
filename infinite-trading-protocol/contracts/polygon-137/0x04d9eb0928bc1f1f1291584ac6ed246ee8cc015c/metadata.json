@@ -1,0 +1,17 @@
+{
+  "address": "0x04d9eb0928bc1f1f1291584ac6ed246ee8cc015c",
+  "chain_id": 137,
+  "contract_name": "OpenAssetGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:43.471Z"
+}

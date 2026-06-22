@@ -1,0 +1,17 @@
+{
+  "address": "0x94660f5625ec0ed35e653859bff901de6c9eb9b7",
+  "chain_id": 43114,
+  "contract_name": "LyRebalancer",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "000000000000000000000000188b1b39c6ea974525e36c4ad4a243c3d917cd7a000000000000000000000000a5916a3c4b9dfccbfe6c27108539eda3e6b99d56000000000000000000000000bf1615f0a8c158444e2de263d0631dab34e60d620000000000000000000000009e1ee00d45252aa58623f7d771fb414aa38f0878",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:20.390Z"
+}

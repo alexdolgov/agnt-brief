@@ -1,0 +1,17 @@
+{
+  "address": "0x8917b0360a46bbd09cca71e3db78268437db2f34",
+  "chain_id": 137,
+  "contract_name": "PolygonSand",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000a6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa00000000000000000000000086c80a8aa58e0a4fa09a69624c31ab2a6cad56b8000000000000000000000000e75ce341c98400a45f579e32c95ff49681fc93fa000000000000000000000000e75ce341c98400a45f579e32c95ff49681fc93fa",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:05.063Z"
+}

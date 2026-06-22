@@ -1,0 +1,18 @@
+{
+  "address": "0x74383959d8d80004e3162aaa957fc30e8a009b20",
+  "chain_id": 1,
+  "contract_name": "AdaptivePriceCalculator",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:57:40.875Z"
+}

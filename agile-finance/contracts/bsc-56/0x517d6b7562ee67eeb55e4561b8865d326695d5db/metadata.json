@@ -1,0 +1,18 @@
+{
+  "address": "0x517d6b7562ee67eeb55e4561b8865d326695d5db",
+  "chain_id": 56,
+  "contract_name": "MASDVesting",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, NONE",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:37:34.729Z"
+}

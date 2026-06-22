@@ -1,0 +1,17 @@
+{
+  "address": "0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724",
+  "chain_id": 1,
+  "contract_name": "FalconXAAAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "000000000000000000000000c26a6fa2c37b38e549a4a1807543801db684f99c0000000000000000000000001a44076050125825900e736c501f859c50fe728c000000000000000000000000e5dab8208c1f4cce15883348b72086dbace3e64b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:22:32.805Z"
+}

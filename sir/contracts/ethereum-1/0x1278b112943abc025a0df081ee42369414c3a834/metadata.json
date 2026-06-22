@@ -1,0 +1,18 @@
+{
+  "address": "0x1278b112943abc025a0df081ee42369414c3a834",
+  "chain_id": 1,
+  "contract_name": "SIR",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, BSD, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 72,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:55:22.058Z"
+}

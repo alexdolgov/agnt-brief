@@ -1,0 +1,17 @@
+{
+  "address": "0x005eae67dadc009f18e7045debee98178025e105",
+  "chain_id": 137,
+  "contract_name": "PremiumsAccount",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:22:48.756Z"
+}

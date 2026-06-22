@@ -1,0 +1,18 @@
+{
+  "address": "0x101ac7546e60401e52450e4af291a7396d137996",
+  "chain_id": 42161,
+  "contract_name": "VaultManager",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:52.435Z"
+}

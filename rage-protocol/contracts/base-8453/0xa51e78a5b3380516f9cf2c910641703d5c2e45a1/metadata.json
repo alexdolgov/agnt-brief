@@ -1,0 +1,17 @@
+{
+  "address": "0xa51e78a5b3380516f9cf2c910641703d5c2e45a1",
+  "chain_id": 8453,
+  "contract_name": "UrmOracle",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000f0e3349f00972475a5d16721796091aa3b99783700000000000000000000000063b531588398cd17297d571e17688d31cc182075",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:20:47.296Z"
+}

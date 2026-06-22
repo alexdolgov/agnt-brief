@@ -1,0 +1,18 @@
+{
+  "address": "0xc0b2e49dfac1b85369f29a30ee074f2194b7cb52",
+  "chain_id": 8453,
+  "contract_name": "UpgradeKingDackie",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:07.570Z"
+}

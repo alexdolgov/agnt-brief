@@ -1,0 +1,59 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILiquidityPool",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IOptionsConfig",
+        "name": "optionsConfig",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IReferralStorage",
+        "name": "referralStorage",
+        "type": "address"
+      },
+      {
+        "internalType": "enum IBufferBinaryOptions.AssetCategory",
+        "name": "assetCategory",
+        "type": "uint8"
+      },
+      {
+        "internalType": "string",
+        "name": "assetPair",
+        "type": "string"
+      }
+    ],
+    "name": "deploy",
+    "outputs": [
+      {
+        "internalType": "contract IBufferBinaryOptions",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

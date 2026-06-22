@@ -1,0 +1,18 @@
+{
+  "address": "0xc0655f3dace795cc48ea1e2e7bc012c1eec912dc",
+  "chain_id": 42161,
+  "contract_name": "ControllerPeggedAssetV2",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:42:26.042Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xb60492da0c311f3da89e18853656d3fd470b2a7e",
+  "chain_id": 1,
+  "contract_name": "SirProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000790c49e370320666f0a5196cb111d6efb2956ba0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:55:21.851Z"
+}

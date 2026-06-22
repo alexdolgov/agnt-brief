@@ -1,0 +1,17 @@
+{
+  "address": "0x23ba786401fe084e35ae35e49e4872acadfb5c6a",
+  "chain_id": 43114,
+  "contract_name": "HcTokenFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:25:08.489Z"
+}

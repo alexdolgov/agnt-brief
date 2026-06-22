@@ -1,0 +1,17 @@
+{
+  "address": "0x41f7cbdff2419af57566f0a34cdf7780163ccd8e",
+  "chain_id": 1,
+  "contract_name": "TokenPriceOracle",
+  "compiler_version": "v0.8.35+commit.47b9dedd",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000047fb2585d2c56fe188d0e6ec628a38b74fceeedf",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:40:37.618Z"
+}

@@ -1,49 +1,90 @@
 {
   "schema_version": "2.0",
   "project_key": "solidly-labs",
-  "generated_at": "2026-06-13T11:12:30.206Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T10:08:16.447Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "solidly-labs",
+    "tier": 1,
+    "peak_tvl": 162527165,
+    "peak_date": "2023-03-09T00:00:00.000Z",
+    "tvl_30d_ago": 278285,
+    "tvl_90d_ago": 400376,
+    "tvl_current": 195492,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 503952,
+    "change_30d_pct": -29.75115439208006,
+    "change_90d_pct": -51.17289747637221,
+    "governance_raw": {
+      "evidence": "TVL has dropped 99.88% from its peak over 1200 days ago with no recent activity or communications indicating ongoing operations.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1200,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.87971733832926,
+    "governance_evidence": "TVL has dropped 99.88% from its peak over 1200 days ago with no recent activity or communications indicating ongoing operations.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 550,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 2,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 100,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 187311,
-    "tvl_usd": 187311,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 367055.4960293885,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 367055.5
+    },
     "asd_usd": null,
     "website_url": "https://solidly.com",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 3
+      "stale": 2,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 2,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 3,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +92,82 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x777172d858dc1599914a1c4c6c9fc48c99a60990",
+      "deployment_unit": "unit-42264",
+      "deployment_unit_proxy_count": 1,
+      "name": "BaseV2TokenInterface",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Solidly V2",
+      "tvl_usd": 367055.4960293885,
+      "is_proxy": true,
+      "impl_address": "0x04ec553dc65312c85cd914927b5f45112f8fe37c",
+      "impl_name": "BaseV2TokenInterface",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x777172d858dc1599914a1c4c6c9fc48c99a60990",
+          "deployment_unit": "unit-42264",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 367055.4960293885,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13872"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x77730ed992d286c53f3a0838232c3957daeaaf73",
+      "deployment_unit": "unit-42265",
+      "deployment_unit_proxy_count": 1,
+      "name": "VeV2Interface",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Solidly V2",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x306dd1d3d2637c13cc59686889c0b9550c13c8bb",
+      "impl_name": "VeV2Interface",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77730ed992d286c53f3a0838232c3957daeaaf73",
+          "deployment_unit": "unit-42265",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13872"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13871,
@@ -60,8 +176,8 @@
       "report_url": "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Memebox%20(Solidly%20V2%20Memecore)/Cyfrin_Memebox_Audit.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -87,12 +203,35 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseV2",
+        "BaseV2BribeFactory",
+        "BaseV2Factory",
+        "BaseV2FeeDistFactory",
+        "BaseV2Fees",
+        "BaseV2Minter",
+        "BaseV2Pair",
+        "BaseV2Router01",
+        "BaseV2Voter",
+        "BribeV2",
+        "FeeDistV2",
+        "GaugeV2",
+        "SolidlyChildImplementation",
+        "SolidlyChildProxy",
+        "SolidlyDeployer",
+        "SolidlyFactory",
+        "SolidlyImplementation",
+        "SolidlyLens",
+        "SolidlyProxy",
+        "solidly_library",
+        "veV2",
+        "ve_distV2"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -102,8 +241,8 @@
       "report_url": "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V3/cyfrin_solidlyV3.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -117,27 +256,35 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": null
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 13871,
         "report_name": "Cyfrin_Memebox_Audit.pdf"
-      },
-      {
-        "audit_id": 13872,
-        "report_name": "audit_solidly.pdf"
       },
       {
         "audit_id": 13873,

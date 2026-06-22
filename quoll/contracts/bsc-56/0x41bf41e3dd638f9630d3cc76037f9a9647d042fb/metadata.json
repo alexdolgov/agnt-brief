@@ -1,0 +1,18 @@
+{
+  "address": "0x41bf41e3dd638f9630d3cc76037f9a9647d042fb",
+  "chain_id": 56,
+  "contract_name": "WomDepositor",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:25.858Z"
+}

@@ -1,0 +1,185 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rewardToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ERC20Gauges",
+        "name": "_gaugeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IBaseV2Minter",
+        "name": "_minter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CycleError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptyGaugesError",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "rewardAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "CycleStart",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "rewardAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "QueueRewards",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "gaugeCycle",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "gauge",
+        "type": "address"
+      }
+    ],
+    "name": "gaugeQueuedRewards",
+    "outputs": [
+      {
+        "internalType": "uint112",
+        "name": "priorCycleRewards",
+        "type": "uint112"
+      },
+      {
+        "internalType": "uint112",
+        "name": "cycleRewards",
+        "type": "uint112"
+      },
+      {
+        "internalType": "uint32",
+        "name": "storedCycle",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gaugeToken",
+    "outputs": [
+      {
+        "internalType": "contract ERC20Gauges",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAccruedRewards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "accruedRewards",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minter",
+    "outputs": [
+      {
+        "internalType": "contract IBaseV2Minter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "queueRewardsForCycle",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalQueuedForCycle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "numRewards",
+        "type": "uint256"
+      }
+    ],
+    "name": "queueRewardsForCyclePaginated",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,16 @@
+# VotingDist
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x399e66e8d2b9c83351531bdcabb827f73e8ba25f` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (arbitrum [`0x399e66e8d2b9c83351531bdcabb827f73e8ba25f`](../0x399e66e8d2b9c83351531bdcabb827f73e8ba25f/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

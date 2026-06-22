@@ -1,0 +1,17 @@
+{
+  "address": "0x57f543adb4fd741e2e508cc06e8e72bdeea13fce",
+  "chain_id": 1,
+  "contract_name": "PauseAll",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 117,
+  "constructor_arguments": "0000000000000000000000003a9c05c3da48e6e26f39928653258d7d4eb594c1000000000000000000000000a9aa2d48847ec0cac8d1c7168533077cfe2db47f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:14:02.895Z"
+}

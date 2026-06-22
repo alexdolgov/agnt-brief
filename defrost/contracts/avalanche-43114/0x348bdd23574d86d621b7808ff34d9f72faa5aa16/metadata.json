@@ -1,0 +1,17 @@
+{
+  "address": "0x348bdd23574d86d621b7808ff34d9f72faa5aa16",
+  "chain_id": 43114,
+  "contract_name": "leverageFactoryDebug",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "000000000000000000000000d0d88a13707a384699146f0ee27e6e0457177d780000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a000000000000000000000000040a5764f90d71fe584d98dcf49c17664a60f0d80000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a000000000000000000000000ce4a0ca29f3d2cc6db97158a09a3a5a6d546aa88",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:25.276Z"
+}

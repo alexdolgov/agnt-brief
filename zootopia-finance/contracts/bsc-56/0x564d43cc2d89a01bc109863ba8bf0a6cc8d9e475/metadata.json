@@ -1,0 +1,17 @@
+{
+  "address": "0x564d43cc2d89a01bc109863ba8bf0a6cc8d9e475",
+  "chain_id": 56,
+  "contract_name": "ZTPUpgradeProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xa7c62d506f257d14428e87d90f4f2c485077739a",
+  "fetched_at": "2026-06-19T17:03:21.022Z"
+}

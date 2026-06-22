@@ -1,0 +1,17 @@
+{
+  "address": "0x3025f0f7deee75e804ba01b9ab18d870952aee9a",
+  "chain_id": 43114,
+  "contract_name": "ProtocolToken",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:09.004Z"
+}

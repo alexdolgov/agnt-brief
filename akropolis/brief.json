@@ -1,57 +1,159 @@
 {
   "schema_version": "2.0",
   "project_key": "akropolis",
-  "generated_at": "2026-06-13T12:11:06.256Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T20:04:28.219Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "akropolis",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2020-08-13T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 2136,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 5827.82532,
-    "tvl_usd": 5827.82532,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 81792.97847740393,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 81792.98
+    },
+    "asd_usd": 81792.97847740393,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-11",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Akropolis is a yield aggregation protocol that allows users to deposit stablecoins and other assets into various strategies (e.g., Curve, Aave, Compound) to earn optimized yields. It also includes staking and reward distribution mechanisms for its native AKRO token.",
+    "relationship_narrative": "The protocol uses a modular architecture where vaults (VaultProtocol) interact with various protocol adapters (e.g., CurveFiProtocol, AaveProtocol, CompoundProtocol) to deposit user funds into external yield sources. Pool tokens represent user shares in these strategies, while staking and reward modules manage AKRO token incentives and distribution.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 76,
+    "live_contracts": 2,
+    "inactive_contracts": 57,
+    "singleton_contracts": 17,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 32,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 2,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7",
+      "deployment_unit": "unit-40057",
+      "deployment_unit_proxy_count": 1,
+      "name": "AkropolisToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Akropolis",
+      "tvl_usd": 80960.76513403356,
+      "is_proxy": true,
+      "impl_address": "0x95801ba4892afb7c8df0c240d30880b442c1d61a",
+      "impl_name": "AkropolisToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7",
+          "deployment_unit": "unit-40057",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 80960.76513403356,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3501ec11d205fa249f2c42f5470e137b529b35d0",
+      "deployment_unit": "unit-40045",
+      "deployment_unit_proxy_count": 1,
+      "name": "StakingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Akropolis",
+      "tvl_usd": 832.2133433703661,
+      "is_proxy": true,
+      "impl_address": "0x9e983e3dac42ac48846a8d473afb951694073e01",
+      "impl_name": "StakingPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3501ec11d205fa249f2c42f5470e137b529b35d0",
+          "deployment_unit": "unit-40045",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 832.2133433703661,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12630,
@@ -60,8 +162,8 @@
       "report_url": "https://github.com/akropolisio/vortex/blob/development/audit/Xtropy-Audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -76,9 +178,30 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7",
+      "name": "AkropolisToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 80960.76513403356,
+      "risk_note": "Verified native implementation with $80,960.77 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3501ec11d205fa249f2c42f5470e137b529b35d0",
+      "name": "StakingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 832.2133433703661,
+      "risk_note": "Verified native implementation with $832.21 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

@@ -1,0 +1,17 @@
+{
+  "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
+  "chain_id": 130,
+  "contract_name": "BulkSender",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000082ca6d313bffe56e9096b16633dfd414148d66b100000000000000000000000000000000000000000000000000000cbba106e000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:44:48.218Z"
+}

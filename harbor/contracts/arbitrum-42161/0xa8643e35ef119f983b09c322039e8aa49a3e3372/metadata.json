@@ -1,0 +1,18 @@
+{
+  "address": "0xa8643e35ef119f983b09c322039e8aa49a3e3372",
+  "chain_id": 42161,
+  "contract_name": "Aggregator_stETH_AAPL_arbitrum",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 700,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:04:24.548Z"
+}

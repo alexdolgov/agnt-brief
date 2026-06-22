@@ -1,0 +1,18 @@
+{
+  "address": "0x8dafec470b0a949d2fc3dc5307f541cc8cdf80c0",
+  "chain_id": 56,
+  "contract_name": "UtilProxy",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xe093a9761894abc3189af6ff82fa210e9cb8a397",
+  "fetched_at": "2026-06-21T09:19:25.029Z"
+}

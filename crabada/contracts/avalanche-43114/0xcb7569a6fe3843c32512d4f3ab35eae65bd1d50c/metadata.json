@@ -1,0 +1,18 @@
+{
+  "address": "0xcb7569a6fe3843c32512d4f3ab35eae65bd1d50c",
+  "chain_id": 43114,
+  "contract_name": "CrabadaLegacyProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xe48b3a0dc82be39bba7b895c9ff1d788a54edc47",
+  "fetched_at": "2026-06-19T10:04:59.684Z"
+}

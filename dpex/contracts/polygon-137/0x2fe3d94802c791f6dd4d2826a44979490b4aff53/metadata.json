@@ -1,0 +1,17 @@
+{
+  "address": "0x2fe3d94802c791f6dd4d2826a44979490b4aff53",
+  "chain_id": 137,
+  "contract_name": "TOKEN_CONTRACT",
+  "compiler_version": "v0.8.1+commit.df193b15",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:09.972Z"
+}

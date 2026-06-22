@@ -1,0 +1,18 @@
+{
+  "address": "0x2ec15c533880dee580f1f6508d768fedcb6921d8",
+  "chain_id": 56,
+  "contract_name": "TradingPool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:46:13.692Z"
+}

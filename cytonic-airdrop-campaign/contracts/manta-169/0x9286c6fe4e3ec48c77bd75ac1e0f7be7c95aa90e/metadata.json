@@ -1,0 +1,17 @@
+{
+  "address": "0x9286c6fe4e3ec48c77bd75ac1e0f7be7c95aa90e",
+  "chain_id": 169,
+  "contract_name": "SyncOAppV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000003fc3aed5efc4fd6ca4785a436e7d5ed749d05fe0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:07:16.602Z"
+}

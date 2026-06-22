@@ -1,0 +1,18 @@
+{
+  "address": "0xf6d3f800623f932004b096e480a4a183cbaf6a9f",
+  "chain_id": 1,
+  "contract_name": "UsdzMigrator",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:48.205Z"
+}

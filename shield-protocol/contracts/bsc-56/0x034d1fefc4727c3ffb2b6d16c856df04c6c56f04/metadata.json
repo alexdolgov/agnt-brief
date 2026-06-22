@@ -1,0 +1,18 @@
+{
+  "address": "0x034d1fefc4727c3ffb2b6d16c856df04c6c56f04",
+  "chain_id": 56,
+  "contract_name": "MasterOracleAndy",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:38:24.881Z"
+}

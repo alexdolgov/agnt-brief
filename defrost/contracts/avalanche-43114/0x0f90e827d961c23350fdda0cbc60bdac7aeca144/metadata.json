@@ -1,0 +1,17 @@
+{
+  "address": "0x0f90e827d961c23350fdda0cbc60bdac7aeca144",
+  "chain_id": 43114,
+  "contract_name": "lendingSwitchAVAXDebug",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "000000000000000000000000d0d88a13707a384699146f0ee27e6e0457177d780000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a000000000000000000000000040a5764f90d71fe584d98dcf49c17664a60f0d80000000000000000000000006d80113e533a2c0fe82eabd35f1875dcea89ea970000000000000000000000005c0401e81bc07ca70fad469b451682c0d747ef1c000000000000000000000000a8c1d539a2381629b4f34f275bd15ce6ddbee1c40000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a0000000000000000000000003bb1120770e36d8ffa691284ae11d75adfec7cd4",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:22.824Z"
+}

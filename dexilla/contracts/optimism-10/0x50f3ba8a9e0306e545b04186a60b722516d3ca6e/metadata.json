@@ -1,0 +1,18 @@
+{
+  "address": "0x50f3ba8a9e0306e545b04186a60b722516d3ca6e",
+  "chain_id": 10,
+  "contract_name": "FeeCollector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:00:33.851Z"
+}

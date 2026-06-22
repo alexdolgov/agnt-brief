@@ -1,0 +1,18 @@
+{
+  "address": "0x3dd2d7138db1cd1af358cd228c676dad9f0f35b8",
+  "chain_id": 56,
+  "contract_name": "PCSYieldStrategy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:43.291Z"
+}

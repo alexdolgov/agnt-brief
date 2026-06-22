@@ -1,0 +1,17 @@
+{
+  "address": "0x0bbaf8ea9c644149dce1656b811ef2d7ac0b11a4",
+  "chain_id": 137,
+  "contract_name": "Platform",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:40:48.116Z"
+}

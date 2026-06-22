@@ -1,0 +1,17 @@
+{
+  "address": "0x288df80c5fe4956efd630f27b4eafdc5f34d76a0",
+  "chain_id": 43114,
+  "contract_name": "StrategyRegistry",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000001bba67a439a857c60bca5429701316e8908ab77e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:08.602Z"
+}

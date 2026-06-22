@@ -1,0 +1,17 @@
+{
+  "address": "0x4864984234195a1a97fba52038e3ad61a1dd16e4",
+  "chain_id": 100,
+  "contract_name": "ComplexRewarderTime",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000e91d153e0b41518a2ce8dd3d7944fa863463a97d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b7d311e2eb55f2f68a9440da38e7989210b9a05e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:23:43.994Z"
+}

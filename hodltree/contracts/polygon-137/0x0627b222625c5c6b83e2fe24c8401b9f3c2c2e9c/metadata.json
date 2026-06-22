@@ -1,0 +1,17 @@
+{
+  "address": "0x0627b222625c5c6b83e2fe24c8401b9f3c2c2e9c",
+  "chain_id": 137,
+  "contract_name": "LiquidityPoolV3_03",
+  "compiler_version": "v0.7.2+commit.51b20bc0",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:01:45.699Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x16f1fe2c2ea7e1ad292c364383e8b51603962747",
+  "chain_id": 56,
+  "contract_name": "VestingContract",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:04:15.008Z"
+}

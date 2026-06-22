@@ -1,0 +1,18 @@
+{
+  "address": "0x02e9081dfadd37a852f9a73c4d7d69e615e61334",
+  "chain_id": 1284,
+  "contract_name": "MErc20Delegator",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0xf19b9e20c24c8304b89373dec84b7c017e98b4fc",
+  "fetched_at": "2026-06-21T18:00:01.636Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x59941c5e0eeaf8a380d4dc68cf186bf46ef941a7",
+  "chain_id": 8453,
+  "contract_name": "BuyBackBurnMaha",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:48.525Z"
+}

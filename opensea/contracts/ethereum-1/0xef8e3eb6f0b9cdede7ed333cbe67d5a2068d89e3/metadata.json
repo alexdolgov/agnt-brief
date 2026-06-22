@@ -1,0 +1,18 @@
+{
+  "address": "0xef8e3eb6f0b9cdede7ed333cbe67d5a2068d89e3",
+  "chain_id": 1,
+  "contract_name": "MinterSetPricePolyptychV5",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 25,
+  "evm_version": "paris",
+  "license": "CC0-1.0, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:19.841Z"
+}

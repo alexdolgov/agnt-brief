@@ -1,0 +1,18 @@
+{
+  "address": "0xad161b8beb5bf2af9cda30e3988b13f62e70431b",
+  "chain_id": 1,
+  "contract_name": "LiquisClaimZap",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:35:41.809Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x888aaab8222205039b88d696a21cc3b950cae15a",
+  "chain_id": 8453,
+  "contract_name": "DackieNFT",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:06.914Z"
+}

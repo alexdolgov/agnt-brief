@@ -1,0 +1,17 @@
+{
+  "address": "0xb329c9dee4419781dade20e6adb6582ad3ea16ac",
+  "chain_id": 137,
+  "contract_name": "PriceFeedSettable",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T05:12:18.904Z"
+}

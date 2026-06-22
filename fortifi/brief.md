@@ -4,32 +4,39 @@
 
 - Project: FortiFi (`fortifi`)
 - Website: [https://www.fortifi.pro](https://www.fortifi.pro)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:35:35.838Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: active (Tier 0, 79.4% below peak)
+- Generated: 2026-06-21T12:12:08.106Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: avalanche
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $348,998.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+FortiFi is a yield aggregator on Avalanche that optimizes returns on deposited assets through automated strategies. It offers vaults that accept standard tokens and wrapped native tokens, compounding yields for users.
+
+### Architecture
+
+The two vault contracts share a common codebase and are deployed by the same deployer, indicating a single product family with no separate supporting infrastructure visible in the contract surface.
+
+## Contract Surface Quality
+
+- Indexed contracts: 108; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 106 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Unverified dependencies: 3/39.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,9 +54,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| FortiFiWNativeMASSVaultV2 | core_logic | avalanche | n/a | [`0x853e7a...9d2d73`](./contracts/avalanche-43114/0x853e7a9dcc5037cd624834dc5f33151aa49d2d73/) | ⚠️ Unaudited |
+| FortiFiWombatGGAvaxZapper | adapter | avalanche | n/a | [`0xdf4280...558a5d`](./contracts/avalanche-43114/0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,13 +90,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| avalanche | [`0x853e7a...9d2d73`](./contracts/avalanche-43114/0x853e7a9dcc5037cd624834dc5f33151aa49d2d73/) | FortiFiWNativeMASSVaultV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xdf4280...558a5d`](./contracts/avalanche-43114/0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d/) | FortiFiWombatGGAvaxZapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

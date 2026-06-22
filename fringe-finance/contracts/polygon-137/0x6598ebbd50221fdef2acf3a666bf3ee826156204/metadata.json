@@ -1,0 +1,17 @@
+{
+  "address": "0x6598ebbd50221fdef2acf3a666bf3ee826156204",
+  "chain_id": 137,
+  "contract_name": "OperatorFilterSubscription",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:03.420Z"
+}

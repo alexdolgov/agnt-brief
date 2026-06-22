@@ -1,34 +1,56 @@
 {
   "schema_version": "2.0",
   "project_key": "defirex",
-  "generated_at": "2026-06-13T12:50:11.299Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T19:51:46.726Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "defirex",
+    "tier": 0,
+    "peak_tvl": 7727224,
+    "peak_date": "2021-07-28T00:00:00.000Z",
+    "tvl_30d_ago": 4891,
+    "tvl_90d_ago": 4866,
+    "tvl_current": 4633,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 5430,
+    "change_30d_pct": -5.274994888570844,
+    "change_90d_pct": -4.78832716810522,
+    "days_since_peak": 1787,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.94004315133093
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 4606.77379,
-    "tvl_usd": 4606.77379,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 10107598.051943798,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 54124.82,
+      "ethereum": 10053473.23
+    },
+    "asd_usd": 10107598.051943798,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "bsc",
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021",
+    "latest_audit_date": "2021-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +60,25 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 373,
+    "live_contracts": 3,
+    "inactive_contracts": 325,
+    "singleton_contracts": 45,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 24,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 136,
+    "unverified_dependencies": 9,
+    "detected_codebases": [
+      "compound-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +86,113 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+      "deployment_unit": "unit-39935",
+      "deployment_unit_proxy_count": 1,
+      "name": "CErc20Delegate",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": "Defirex",
+      "tvl_usd": 10053473.22998462,
+      "is_proxy": true,
+      "impl_address": "0x3363bae2fc44da742df13cd3ee94b6bb868ea376",
+      "impl_name": "CErc20Delegate",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+          "deployment_unit": "unit-39935",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 10053473.22998462,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf",
+      "deployment_unit": "unit-39948",
+      "deployment_unit_proxy_count": 1,
+      "name": "PermittableToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Defirex",
+      "tvl_usd": 54124.82195917754,
+      "is_proxy": true,
+      "impl_address": "0xa126c73d1bdf3a3d5f719a8d38a4692186e7503f",
+      "impl_name": "PermittableToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf",
+          "deployment_unit": "unit-39948",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 54124.82195917754,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CEther",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": "Defirex",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CEther",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13003,
@@ -61,12 +202,12 @@
       "auditor": "yAudit",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -76,15 +217,28 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf",
+      "name": "PermittableToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 54124.82195917754,
+      "risk_note": "Verified native implementation with $54,124.82 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 1,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 37
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

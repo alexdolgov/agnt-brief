@@ -1,0 +1,129 @@
+[
+  {
+    "inputs": [],
+    "name": "POSITION_PRICE_LIMITS_MULTIPLIER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SLIPPAGE_MULTIPLIER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stakedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stopLossPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxSlippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ProxyCaller",
+            "name": "callerAddress",
+            "type": "ProxyCaller"
+          },
+          {
+            "internalType": "bool",
+            "name": "closed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takeProfitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract IERC20Upgradeable",
+            "name": "stakedToken",
+            "type": "IERC20Upgradeable"
+          },
+          {
+            "internalType": "contract IERC20Upgradeable",
+            "name": "rewardToken",
+            "type": "IERC20Upgradeable"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "gelatoLiquidateTaskId",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct PositionInfo",
+        "name": "position",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceNumerator",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceDenominator",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "numeratorDecimals",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "denominatorDecimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "isPriceOutsideRange",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

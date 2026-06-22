@@ -1,0 +1,17 @@
+{
+  "address": "0xdf30ecf05819f3012ced359dc8295a4e157d7afc",
+  "chain_id": 56,
+  "contract_name": "FarmLPV4",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "0000000000000000000000005881480b48d993c729f9975cb250669dac3907d600000000000000000000000055f4c8aba71a1e923edc303eb4feff14608cc226000000000000000000000000a0ffb9c1ce1fe56963b0321b32e7a0302114058b05c7cc4507068972d51162986b702635cb0c6536d97cf4a028d27fff8dce997d00000000000000000000000021e000b808f6141aca9af77ce384d7a90484f2ef00000000000000000000000055d398326f99059ff775485246999027b31979550000000000000000000000009f3bcbe48e8b754f331dfc694a894e8e686ac31d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:46:56.799Z"
+}

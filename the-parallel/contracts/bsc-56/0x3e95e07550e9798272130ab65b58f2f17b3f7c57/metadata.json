@@ -1,0 +1,17 @@
+{
+  "address": "0x3e95e07550e9798272130ab65b58f2f17b3f7c57",
+  "chain_id": 56,
+  "contract_name": "DMMPool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:22:09.519Z"
+}

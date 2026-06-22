@@ -1,0 +1,17 @@
+{
+  "address": "0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0",
+  "chain_id": 43114,
+  "contract_name": "JoePair",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:15:15.344Z"
+}

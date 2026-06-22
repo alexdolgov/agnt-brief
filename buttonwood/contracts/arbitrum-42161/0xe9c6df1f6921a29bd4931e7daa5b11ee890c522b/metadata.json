@@ -1,0 +1,18 @@
+{
+  "address": "0xe9c6df1f6921a29bd4931e7daa5b11ee890c522b",
+  "chain_id": 42161,
+  "contract_name": "UniversalVault",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:09:29.549Z"
+}

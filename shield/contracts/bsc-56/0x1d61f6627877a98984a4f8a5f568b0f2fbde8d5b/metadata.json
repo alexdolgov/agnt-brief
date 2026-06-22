@@ -1,0 +1,18 @@
+{
+  "address": "0x1d61f6627877a98984a4f8a5f568b0f2fbde8d5b",
+  "chain_id": 56,
+  "contract_name": "SLDPublicPool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:10:29.106Z"
+}

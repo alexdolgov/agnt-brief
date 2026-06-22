@@ -1,0 +1,18 @@
+{
+  "address": "0x537708006061eab80d3c2cf0ae4f78d24787f91d",
+  "chain_id": 42161,
+  "contract_name": "FeeCalculator",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 25000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:27:53.136Z"
+}

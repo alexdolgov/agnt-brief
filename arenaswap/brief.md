@@ -1,51 +1,66 @@
 # Agentic Audit Brief: ArenaSwap
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 4.0% over 90 days
+
 ## Project Overview
 
 - Project: ArenaSwap (`arenaswap`)
 - Website: [https://www.arenaswap.com/](https://www.arenaswap.com/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:19:50.333Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-06-20T01:35:26.044Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: bsc
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $31,224.36
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $4,609.12
+- TVL by chain: Bsc $4,609.12
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Verified implementations audited: 1/1 (100.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| yAudit | Tier 2 | 1 | 100.0% | 2021-06 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ArenaToken | token | bsc | n/a | [`0x2a17dc...7d27a2`](./contracts/bsc-56/0x2a17dc11a1828725cdb318e0036acf12727d27a2/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -63,17 +78,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0xbea60d...2b7e77` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [ArenaSwap Standart Smart Contract Security Audit.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20A-M/ArenaSwap%20Standart%20Smart%20Contract%20Security%20Audit.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ArenaSwap Standart Smart Contract Security Audit.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20A-M/ArenaSwap%20Standart%20Smart%20Contract%20Security%20Audit.pdf) | yAudit | Audit | 2021-06 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -85,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -94,13 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [12690] ArenaSwap Standart Smart Contract Security Audit.pdf
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1
 
 Fork inheritance lineage and inherited audits are included when available.

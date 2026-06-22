@@ -1,0 +1,18 @@
+{
+  "address": "0x78036dc2785eacd76cca4ab6eac6b8105d0d42b3",
+  "chain_id": 1,
+  "contract_name": "EthZap",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:57:39.796Z"
+}

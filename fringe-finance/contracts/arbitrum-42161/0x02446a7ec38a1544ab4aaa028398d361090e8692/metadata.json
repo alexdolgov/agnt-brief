@@ -1,0 +1,18 @@
+{
+  "address": "0x02446a7ec38a1544ab4aaa028398d361090e8692",
+  "chain_id": 42161,
+  "contract_name": "GNSBorrowingFees",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 125,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:55.586Z"
+}

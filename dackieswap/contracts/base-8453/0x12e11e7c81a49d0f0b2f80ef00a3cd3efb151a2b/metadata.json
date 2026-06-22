@@ -1,0 +1,17 @@
+{
+  "address": "0x12e11e7c81a49d0f0b2f80ef00a3cd3efb151a2b",
+  "chain_id": 8453,
+  "contract_name": "SmartStakingPoolV1",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:05.250Z"
+}

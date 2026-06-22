@@ -1,0 +1,17 @@
+{
+  "address": "0x2d31000452b16bb943a37a907cc0add73e8edddd",
+  "chain_id": 43114,
+  "contract_name": "RebateToken",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000c65bc1e906771e105fbacbd8dfe3862ee7be378e00000000000000000000000040ba16ac45e3cfd6b2e8d975a11a8cbdcb9d7abc",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:04.825Z"
+}

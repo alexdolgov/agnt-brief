@@ -1,0 +1,18 @@
+{
+  "address": "0xf0ba5f54af8d3dfd379ce97e6597d63deeea794d",
+  "chain_id": 42161,
+  "contract_name": "CLBTokenDeployerLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "paris",
+  "license": "Apache-2.0, BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:28:08.050Z"
+}

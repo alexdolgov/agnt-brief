@@ -1,0 +1,18 @@
+{
+  "address": "0x9a2c85efbbe4dd93cc9a9c925cea4a2b59c0db78",
+  "chain_id": 137,
+  "contract_name": "PolygonFarmMasterChef",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:50:42.619Z"
+}

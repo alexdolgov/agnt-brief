@@ -1,57 +1,792 @@
 {
   "schema_version": "2.0",
   "project_key": "brahma-vaults-(sunset)",
-  "generated_at": "2026-06-13T10:04:40.116Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T00:37:23.273Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "wind_down",
+  "lifecycle_signal": {
+    "slug": "brahma-vaults-(sunset)",
+    "tier": 1,
+    "peak_tvl": 4288633,
+    "peak_date": "2023-03-02T00:00:00.000Z",
+    "tvl_30d_ago": 22592,
+    "tvl_90d_ago": 22588,
+    "tvl_current": 22408,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 22958,
+    "change_30d_pct": -0.8144475920679887,
+    "change_90d_pct": -0.7968833008677173,
+    "governance_raw": {
+      "evidence": "Brahma Vaults announced transition to 'Withdrawal Only' mode and ceasing operations, with active migration to Console.",
+      "confidence": 0.95,
+      "lifecycle_status": "wind_down"
+    },
+    "days_since_peak": 1206,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.47750250487742,
+    "governance_evidence": "Brahma Vaults announced transition to 'Withdrawal Only' mode and ceasing operations, with active migration to Console.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 4892,
+    "governance_classification": "wind_down",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 14,
+    "total_addresses": 27,
+    "unique_implementations": 14,
+    "total_deployments": 27,
+    "audited_contracts": 13,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 13,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 92.9,
     "total_audits": 14,
-    "scoreable_audits": 0,
+    "scoreable_audits": 9,
     "dl_tvl_usd": 22373.92597,
-    "tvl_usd": 22373.92597,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 170.23712817266158,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "polygon": 170.24
+    },
     "asd_usd": null,
     "website_url": "https://www.brahma.fi/blog/withdrawal-mode-brahma-vaults",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "chains": [
+      "blast",
+      "ethereum",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 85.7,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
     "latest_audit_date": "2024-10",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 10,
-      "unknown": 3
+      "stale": 12,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Brahma Vaults (Sunset) is a yield aggregation protocol that automates yield strategies for user deposits. It also includes a Console infrastructure for managing smart contract wallets with modular access control and transaction validation.",
+    "relationship_narrative": "The Console family provides wallet infrastructure that could be used to manage vault interactions, but no direct on-chain dependency is visible between the Vault and Console contracts. They share deployer clusters, suggesting a common development origin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 90,
+    "live_contracts": 5,
+    "inactive_contracts": 63,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 22,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 31,
+    "unverified_dependencies": 3,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 14,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4fe66bff98efc030bdc86c733f481b089fb9dcfd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 170.23712817266158,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4fe66bff98efc030bdc86c733f481b089fb9dcfd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 170.23712817266158,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12833",
+        "audit-12834",
+        "audit-12846"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x297d327a2eaf3a1309bae07c5e4cd97d667ed4ea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConsoleFallbackHandler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConsoleFallbackHandler",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x297d327a2eaf3a1309bae07c5e4cd97d667ed4ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x297d327a2eaf3a1309bae07c5e4cd97d667ed4ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x06b916731e3cceb8470c9e7f42d3d25b790a6258",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConsoleOpBuilder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConsoleOpBuilder",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x06b916731e3cceb8470c9e7f42d3d25b790a6258",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x06b916731e3cceb8470c9e7f42d3d25b790a6258",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x88554985bb666c19538dae67a478c26baa8c4886",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ExecutionBlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ExecutionBlocker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x88554985bb666c19538dae67a478c26baa8c4886",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x88554985bb666c19538dae67a478c26baa8c4886",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xec4181ee959e47f72e9cc60274fbe53d68949e47",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ExecutorPlugin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ExecutorPlugin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xec4181ee959e47f72e9cc60274fbe53d68949e47",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xec4181ee959e47f72e9cc60274fbe53d68949e47",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0145f9674b22be444c9f0e5e2a7761643fe785be",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ExecutorRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ExecutorRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0145f9674b22be444c9f0e5e2a7761643fe785be",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x0145f9674b22be444c9f0e5e2a7761643fe785be",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe2033fd8a642e67f11df2c5567023c1900e440f8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PolicyRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PolicyRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe2033fd8a642e67f11df2c5567023c1900e440f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xe2033fd8a642e67f11df2c5567023c1900e440f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc3b1910a8cf8dd61dc5dc9620e334aaf415f96a5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PolicyValidator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PolicyValidator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc3b1910a8cf8dd61dc5dc9620e334aaf415f96a5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xc3b1910a8cf8dd61dc5dc9620e334aaf415f96a5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6d70df6f203204a11b1c8bc67b42b751e7171add",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeDeployer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeDeployer",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d70df6f203204a11b1c8bc67b42b751e7171add",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x6d70df6f203204a11b1c8bc67b42b751e7171add",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12839",
+        "audit-12840",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x37c2d7de1c70c35056011d40004063e4c20d17f8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeEnabler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeEnabler",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x37c2d7de1c70c35056011d40004063e4c20d17f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x37c2d7de1c70c35056011d40004063e4c20d17f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x36aaca9fcfadecc309fd0c82d247c374ab83d9b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeModerator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeModerator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36aaca9fcfadecc309fd0c82d247c374ab83d9b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x36aaca9fcfadecc309fd0c82d247c374ab83d9b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33d386bb9de9a583fc61d03a689351dac3a368fe",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeModeratorOverridable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeModeratorOverridable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x33d386bb9de9a583fc61d03a689351dac3a368fe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x33d386bb9de9a583fc61d03a689351dac3a368fe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x930ac9209366a2a83cb59b24257a8ce9b37b5f18",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TransactionValidator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransactionValidator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x930ac9209366a2a83cb59b24257a8ce9b37b5f18",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x930ac9209366a2a83cb59b24257a8ce9b37b5f18",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27fbc3310907c0425ea09115397a40dddc154641",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WalletRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Deployed Contracts: Console",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WalletRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x27fbc3310907c0425ea09115397a40dddc154641",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x27fbc3310907c0425ea09115397a40dddc154641",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12835",
+        "audit-12836",
+        "audit-12838",
+        "audit-12839",
+        "audit-12840",
+        "audit-12843"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12833,
@@ -66,12 +801,31 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddArrayLib",
+        "BasePositionHandler",
+        "BaseTradeExecutor",
+        "Batcher",
+        "ConvexPositionHandler",
+        "ConvexTradeExecutor",
+        "EIP712",
+        "Harvester",
+        "LyraController",
+        "LyraPositionHandler",
+        "LyraPositionHandlerL2",
+        "LyraTradeExecutor",
+        "Math",
+        "OptimismL2Wrapper",
+        "OptimismWrapper",
+        "SocketV1Controller",
+        "UniswapV3Controller",
+        "Vault"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -87,12 +841,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Batcher",
+        "ConvexTradeExecutor",
+        "Harvester",
+        "PerpPositionHandlerL2",
+        "PerpTradeExecutor",
+        "Vault"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -102,18 +863,39 @@
       "report_url": "https://github.com/spearbit/portfolio/blob/master/pdfs/Brahma-Spearbit-Security-Review.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "AddressProviderService",
+        "ConsoleFactory",
+        "ConsoleFallbackHandler",
+        "ConsoleOpBuilder",
+        "Constants",
+        "ExecutorPlugin",
+        "ExecutorRegistry",
+        "PolicyRegistry",
+        "PolicyValidator",
+        "SafeDeployer",
+        "SafeEnabler",
+        "SafeHelper",
+        "SafeModerator",
+        "SafeModeratorOverridable",
+        "SignatureCheckerLib",
+        "TransactionValidator",
+        "TypeHashHelper",
+        "Types",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 24,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -123,18 +905,35 @@
       "report_url": "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2023/ackee-blockchain-brahma-console-v2-report.pdf",
       "auditor": "Ackee Blockchain",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "AddressProviderService",
+        "ConsoleFallbackHandler",
+        "Constants",
+        "ExecutorPlugin",
+        "ExecutorRegistry",
+        "PolicyRegistry",
+        "PolicyValidator",
+        "SafeDeployer",
+        "SafeEnabler",
+        "SafeHelper",
+        "SafeModerator",
+        "SafeModeratorOverridable",
+        "TransactionValidator",
+        "TypeHashHelper",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 22,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -171,12 +970,27 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "Authorizer",
+        "BotManager",
+        "BrahRouter",
+        "CoWDCAStrategy",
+        "DCACoWAutomation",
+        "Executor",
+        "FeePayer",
+        "GelatoBot",
+        "PriceFeedManager",
+        "StrategyRegistry",
+        "SubscriptionRegistry",
+        "TrustedCoWDCAStrategy",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -192,12 +1006,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "AddressProviderService",
+        "Authorizer",
+        "BaseBot",
+        "BotManager",
+        "BrahRouter",
+        "CoWDCAStrategy",
+        "DCACoWAutomation",
+        "Executor",
+        "FeePayer",
+        "GelatoBot",
+        "PriceFeedManager",
+        "SafeDeployer",
+        "SafeHelper",
+        "SafeWalletAdapter",
+        "SubscriptionRegistry",
+        "TokenTransfer",
+        "WalletAdapterRegistry",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -213,12 +1047,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProviderService",
+        "Authorizer",
+        "BotManager",
+        "BrahRouter",
+        "CoWDCAStrategy",
+        "CoWv2Controller",
+        "DCACoWAutomation",
+        "Executor",
+        "FeePayer",
+        "GelatoBot",
+        "PriceFeedManager",
+        "SafeDeployer",
+        "StrategyRegistry",
+        "SubAccountRegistry",
+        "SubscriptionRegistry",
+        "TokenTransfer",
+        "TrustedCoWDCAStrategy",
+        "WalletAdapterRegistry",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -276,12 +1130,33 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "AddressProviderService",
+        "ConsoleFallbackHandler",
+        "ConsoleOpBuilder",
+        "Constants",
+        "ExecutorPlugin",
+        "ExecutorRegistry",
+        "IGnosisSafe",
+        "PolicyRegistry",
+        "PolicyValidator",
+        "SafeDeployer",
+        "SafeEnabler",
+        "SafeHelper",
+        "SafeModerator",
+        "SafeModeratorOverridable",
+        "SignatureCheckerLib",
+        "TransactionValidator",
+        "TypeHashHelper",
+        "Types",
+        "WalletRegistry"
+      ],
+      "matched_contracts": 24,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -339,60 +1214,112 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BalancerPositionHandler",
+        "BalancerYieldExecutor",
+        "BaseTradeExecutor",
+        "CurvePositionHandler",
+        "CurveYieldExecutor",
+        "Harvester",
+        "Vault"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 12,
+      "coverage_pct": 85.7,
+      "latest_audit": "2023-11"
+    },
+    {
+      "auditor": "Ackee Blockchain",
+      "tier": 2,
+      "contracts_covered": 11,
+      "coverage_pct": 78.6,
+      "latest_audit": "2023-10"
+    },
+    {
+      "auditor": "Bluethroat Labs",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 14.3,
+      "latest_audit": "2023-05"
+    },
+    {
+      "auditor": "Trust Security",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 14.3,
+      "latest_audit": "2023-05"
+    },
+    {
+      "auditor": "Akshay Srivatav",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 7.1,
+      "latest_audit": "2023-05"
+    },
+    {
+      "auditor": "Jeiwan",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 7.1,
+      "latest_audit": "2023-02"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 7.1,
+      "latest_audit": "2022-05"
+    },
+    {
+      "auditor": "Zellic",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 7.1,
+      "latest_audit": "2022-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x88554985bb666c19538dae67a478c26baa8c4886",
+      "name": "ExecutionBlocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 14,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 111
+    },
+    "extraction_confidence_counts": {
+      "high": 9
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 12833,
-        "report_name": "brahma-fi-audit-2022-05-consensys.pdf"
-      },
-      {
-        "audit_id": 12834,
-        "report_name": "brahma-fi-audit-2022-05-zellic.pdf"
-      },
-      {
-        "audit_id": 12835,
-        "report_name": "[Spearbit]() audit report of Brahma account"
-      },
-      {
-        "audit_id": 12836,
-        "report_name": "[Ackee Blockchain]() audit report of Brahma account"
-      },
-      {
         "audit_id": 12837,
         "report_name": "[Code4rena]() audit report of Brahma account"
-      },
-      {
-        "audit_id": 12838,
-        "report_name": "[Akshay Srivatav]()'s audit report of Brahma account"
-      },
-      {
-        "audit_id": 12839,
-        "report_name": "[Bluethroat Labs]() audit report of Brahma account"
-      },
-      {
-        "audit_id": 12840,
-        "report_name": "[Trust90]()[ | Trust Security](https://github.com/Brahma-fi/brahma-security/blob/master/audits/brahma-fi-console-audit-2023-05-trust.pdf) audit report of Brahma account"
       },
       {
         "audit_id": 12841,
@@ -403,20 +1330,12 @@
         "report_name": "brahma-fi-console-v2-audit-2023-10-c4.pdf"
       },
       {
-        "audit_id": 12843,
-        "report_name": "brahma-fi-console-v2-audit-2023-11-spearbit.pdf"
-      },
-      {
         "audit_id": 12844,
         "report_name": "[Quill Audits ]()Pentest audit report"
       },
       {
         "audit_id": 12845,
         "report_name": "brahma-fi-polygainsv2-audit-2023-02-bluethroat.pdf"
-      },
-      {
-        "audit_id": 12846,
-        "report_name": "brahma-fi-polygainsv2-audit-2023-02-jeiwan.pdf"
       }
     ],
     "inherited_remapped_matches": []

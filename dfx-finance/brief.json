@@ -1,31 +1,52 @@
 {
   "schema_version": "2.0",
   "project_key": "dfx-finance",
-  "generated_at": "2026-06-13T12:53:55.201Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T09:16:00.002Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "dfx-finance",
+    "tier": 0,
+    "peak_tvl": 50127471,
+    "peak_date": "2022-05-05T00:00:00.000Z",
+    "tvl_30d_ago": 112261,
+    "tvl_90d_ago": 111695,
+    "tvl_current": 111446,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 118751,
+    "change_30d_pct": -0.7259867629898183,
+    "change_90d_pct": -0.22292851067639555,
+    "days_since_peak": 1508,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.77767480031059
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 7,
+    "total_addresses": 13,
+    "unique_implementations": 7,
+    "total_deployments": 13,
+    "audited_contracts": 2,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 28.6,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 110955,
     "tvl_usd": 110955,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "arbitrum",
+      "base",
+      "ethereum",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2021-05",
@@ -38,20 +59,347 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "DFX Finance is a decentralized exchange protocol optimized for non-USD stablecoins and foreign exchange markets. It uses Curve-style liquidity pools to enable low-slippage swaps between pegged assets, with multiple versions deployed across Ethereum, Polygon, Base, and Arbitrum.",
+    "relationship_narrative": "The sedge family provides tokenized fiat assets that are used as trading pairs in the liquidity pools created by the DFX V2 and V3 factory contracts. The factories deploy and manage the Curve pools, while sedge tokens serve as the underlying assets for those pools.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 235,
+    "live_contracts": 13,
+    "inactive_contracts": 219,
+    "singleton_contracts": 3,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 3,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 10,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3fb5e30d3ce5f3f194c90a2689b1fd20c82f1637",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Curve",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Curve",
+      "product_line": "sedge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Curve",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3fb5e30d3ce5f3f194c90a2689b1fd20c82f1637",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x86fffd464875581a0f4b7b2ea1187c74c6fb9fba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc015f66ad7780df4d73f99c5cee415eb6b26acb0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13028"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+      "deployment_unit": "unit-42060",
+      "deployment_unit_proxy_count": 1,
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "circle",
+      "product_line": "sedge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2ce6311ddae708829bc0784c967b7d77d19fd779",
+      "impl_name": "FiatTokenV2_2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+          "deployment_unit": "unit-42060",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf75f1e19912352e1ad8c8ce9577381c277d232d0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OFTAdapterV1Decimal2",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OFTAdapterV1Decimal2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf75f1e19912352e1ad8c8ce9577381c277d232d0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bf90521ebd840947845f4466018456aab08bb09",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0bf90521ebd840947845f4466018456aab08bb09",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9bba6805f25b35bdf65e50a42015369e7825428e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x575f1ed1e14ac1152bf2f1cdfb2c1865ca246f51",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5cf6d43e4cd920fc7754926a267d46e096baa168",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbc3011980ff3462980a8ebc49d8c6585e4624406",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13028"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd52d48db08e8224ef6e2be8f54f3c84e790b1c32",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakingRewards",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakingRewards",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd52d48db08e8224ef6e2be8f54f3c84e790b1c32",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x30d940c7b4a21e10f3fcaf4faabe8fe826a5b92d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimeLock",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimeLock",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x30d940c7b4a21e10f3fcaf4faabe8fe826a5b92d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x659b4ca6e603a19dd20434bccf79a5f36473a9a4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Zap",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Zap",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x659b4ca6e603a19dd20434bccf79a5f36473a9a4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13028,
@@ -66,34 +414,87 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Assimilators",
+        "CadcToUsdAssimilator",
+        "Curve",
+        "CurveFactory",
+        "CurveMath",
+        "CurveStorage",
+        "EursToUsdAssimilator",
+        "IOracle",
+        "Orchestrator",
+        "ProportionalLiquidity",
+        "Router",
+        "Swaps",
+        "UsdcToUsdAssimilator",
+        "XsgdToUsdAssimilator"
+      ],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 28.6,
+      "latest_audit": "2021-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd52d48db08e8224ef6e2be8f54f3c84e790b1c32",
+      "name": "StakingRewards",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x30d940c7b4a21e10f3fcaf4faabe8fe826a5b92d",
+      "name": "TimeLock",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x659b4ca6e603a19dd20434bccf79a5f36473a9a4",
+      "name": "Zap",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 4,
+    "upstream": 3,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 70
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13028,
-        "report_name": "2021-05-03-Trail_of_Bits.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,0 +1,18 @@
+{
+  "address": "0x33a739b873c3ee4d53ec8ff7fa14385ece6de995",
+  "chain_id": 42161,
+  "contract_name": "ArbiDexRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:30:38.689Z"
+}

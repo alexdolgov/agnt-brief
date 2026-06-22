@@ -1,0 +1,18 @@
+{
+  "address": "0x49f77ddd4d57636ab4c98d8f18ca5f4b5210983d",
+  "chain_id": 1,
+  "contract_name": "Convex_AMO",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:23:04.175Z"
+}

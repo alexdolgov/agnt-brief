@@ -1,0 +1,17 @@
+{
+  "address": "0x4204cad97732282d261fbb7088e07557810a6408",
+  "chain_id": 1284,
+  "contract_name": "BeamShare",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000cd3b51d98478d53f4515a306be565c6eebef1d58",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:20:33.277Z"
+}

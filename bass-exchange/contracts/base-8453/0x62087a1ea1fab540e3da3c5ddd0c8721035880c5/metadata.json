@@ -1,0 +1,18 @@
+{
+  "address": "0x62087a1ea1fab540e3da3c5ddd0c8721035880c5",
+  "chain_id": 8453,
+  "contract_name": "StakedDistributor",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:49:42.636Z"
+}

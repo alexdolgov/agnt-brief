@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "alphasec",
-  "generated_at": "2026-06-13T12:13:36.630Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T14:07:53.598Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "alphasec",
+    "tier": 0,
+    "peak_tvl": 545836,
+    "peak_date": "2026-02-26T00:00:00.000Z",
+    "tvl_30d_ago": 517244,
+    "tvl_90d_ago": 519420,
+    "tvl_current": 477364,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 416776,
+    "change_30d_pct": -7.7100942688557055,
+    "change_90d_pct": -8.096723268260753,
+    "days_since_peak": 115,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 12.544427263866803
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,25 +41,38 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://app.alphasec.trade",
-    "chains": [],
+    "chains": [
+      "klaytn"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025",
-    "audit_freshness": "aging",
+    "latest_audit_date": "2025-12",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 1,
+      "fresh": 1,
+      "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +80,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x483a9ed25747711f38778a69d4d99b7e5365e506",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "AlphaSec Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x483a9ed25747711f38778a69d4d99b7e5365e506",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12652,
@@ -60,8 +125,8 @@
       "report_url": "https://docs.alphasec.trade/assets/files/251220_AlphaSec_CertiK_Audit_Report-588a526784dc5258f1ef915083342775.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025",
+      "freshness": "fresh",
+      "date": "2025-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -78,7 +143,7 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

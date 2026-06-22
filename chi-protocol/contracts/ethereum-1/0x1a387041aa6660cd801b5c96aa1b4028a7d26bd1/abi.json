@@ -1,0 +1,455 @@
+[
+  {
+    "inputs": [],
+    "name": "DAYS_IN_YEAR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SECOND_IN_YEAR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LockingManager",
+        "name": "lockingManager",
+        "type": "address"
+      },
+      {
+        "internalType": "contract StakingManager",
+        "name": "lpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "uscEthLpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "chiEthLpToken",
+        "type": "address"
+      }
+    ],
+    "name": "chiEthLpLockingApr",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "extraApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiStaking",
+        "name": "chiStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiLocking",
+        "name": "chiLocking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract USCStaking",
+        "name": "uscStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LPStaking",
+        "name": "uscEthLpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LPStaking",
+        "name": "chiEthLpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiVesting",
+        "name": "chiVesting",
+        "type": "address"
+      },
+      {
+        "internalType": "contract RewardControllerV2",
+        "name": "rewardController",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ReserveHolder",
+        "name": "reserveHolder",
+        "type": "address"
+      }
+    ],
+    "name": "chiLockingAPR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chiApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stChiApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiStaking",
+        "name": "chiStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiLocking",
+        "name": "chiLocking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract USCStaking",
+        "name": "uscStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LPStaking",
+        "name": "uscEthLpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LPStaking",
+        "name": "chiEthLpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ChiVesting",
+        "name": "chiVesting",
+        "type": "address"
+      },
+      {
+        "internalType": "contract RewardControllerV2",
+        "name": "rewardController",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ReserveHolder",
+        "name": "reserveHolder",
+        "type": "address"
+      }
+    ],
+    "name": "chiStakingAPR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "chiStakingAprInStEth",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chiLockingAprInStEth",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "uscStakingAprInStEth",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "uscEthLpStakingAprInStEth",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chiEthLpStakingAprInStEth",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      }
+    ],
+    "name": "getLPTokenPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract StakingManager",
+        "name": "lpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "uscEthLpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "chiEthLpToken",
+        "type": "address"
+      }
+    ],
+    "name": "lpStakingApr",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "stEthAprUscEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "weEthAprUscEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chiAprUscEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUscEthLpApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stEthAprChiEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "weEthAprChiEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chiAprChiEthLp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalChiEthLpApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract LockingManager",
+        "name": "lockingManager",
+        "type": "address"
+      },
+      {
+        "internalType": "contract StakingManager",
+        "name": "lpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "uscEthLpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV2Pair",
+        "name": "chiEthLpToken",
+        "type": "address"
+      }
+    ],
+    "name": "uscEthLpLockingApr",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "extraApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract stUSC",
+        "name": "_stUSC",
+        "type": "address"
+      }
+    ],
+    "name": "uscStakingApr",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract LockingManager",
+        "name": "lockingManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "chi",
+        "type": "address"
+      },
+      {
+        "internalType": "contract stUSC",
+        "name": "_stUSC",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceFeedAggregator",
+        "name": "priceFeedAggregator",
+        "type": "address"
+      }
+    ],
+    "name": "wstUscLockingApr",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "extraApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

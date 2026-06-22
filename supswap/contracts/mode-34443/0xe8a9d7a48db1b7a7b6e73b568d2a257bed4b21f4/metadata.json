@@ -1,0 +1,18 @@
+{
+  "address": "0xe8a9d7a48db1b7a7b6e73b568d2a257bed4b21f4",
+  "chain_id": 34443,
+  "contract_name": "ReferralRouter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:33.327Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2bf9d7e4173b882335b464e2fb38f5b57768ab61",
+  "chain_id": 10,
+  "contract_name": "DexillaExchangeV4",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:00:34.249Z"
+}

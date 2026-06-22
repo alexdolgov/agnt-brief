@@ -1,0 +1,18 @@
+{
+  "address": "0x12b7a6dd3a3dfde6a0f112a1bd876f704d933915",
+  "chain_id": 42161,
+  "contract_name": "PoolsharkRouter",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SSPL-1.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:21:12.049Z"
+}

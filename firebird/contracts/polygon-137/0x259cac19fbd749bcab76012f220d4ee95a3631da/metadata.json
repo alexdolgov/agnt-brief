@@ -1,0 +1,17 @@
+{
+  "address": "0x259cac19fbd749bcab76012f220d4ee95a3631da",
+  "chain_id": 137,
+  "contract_name": "SwapUtils",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:49.453Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xcd89d32fd82b01e0a11d8c9835da521c24781d29",
+  "chain_id": 43114,
+  "contract_name": "VeMoreStaking",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:23.239Z"
+}

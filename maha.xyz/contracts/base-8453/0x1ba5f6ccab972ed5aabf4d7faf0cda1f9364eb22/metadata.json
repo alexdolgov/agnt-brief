@@ -1,0 +1,17 @@
+{
+  "address": "0x1ba5f6ccab972ed5aabf4d7faf0cda1f9364eb22",
+  "chain_id": 8453,
+  "contract_name": "ZapAerodromePoolUSDC",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "0000000000000000000000001097dfe9539350cb466df9ca89a5e61195a520b0000000000000000000000000a07cf1c081f46524a133c1b6e8ee0b5f96a51255000000000000000000000000cf77a3ba9a5ca399b7c97c74d54e5b1beb874e43",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:44.515Z"
+}

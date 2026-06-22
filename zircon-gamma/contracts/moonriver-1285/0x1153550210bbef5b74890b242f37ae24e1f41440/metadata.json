@@ -1,0 +1,17 @@
+{
+  "address": "0x1153550210bbef5b74890b242f37ae24e1f41440",
+  "chain_id": 1285,
+  "contract_name": "ZirconPylonFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "0000000000000000000000006b6071ccc534fcee7b699aab87929faf8806d5bd000000000000000000000000168c95536c77be5400eed2aeee21ef64d9c8ca2e0000000000000000000000002d4ddeb8b183413e9d88a98fa3dd844e34d41c540000000000000000000000004ba754989b77925f47e26c54aaa1b03df23b32ce0000000000000000000000009aef9098af9d1e2d78fcd9b928c946a7f23307d3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:47:25.694Z"
+}

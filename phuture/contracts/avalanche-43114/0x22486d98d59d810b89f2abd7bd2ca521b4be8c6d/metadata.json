@@ -1,0 +1,17 @@
+{
+  "address": "0x22486d98d59d810b89f2abd7bd2ca521b4be8c6d",
+  "chain_id": 43114,
+  "contract_name": "OrdererAvax",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:41:20.647Z"
+}

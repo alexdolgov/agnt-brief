@@ -1,0 +1,18 @@
+{
+  "address": "0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92",
+  "chain_id": 56,
+  "contract_name": "StakedUSDX",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "berlin",
+  "license": "LGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:42:12.238Z"
+}

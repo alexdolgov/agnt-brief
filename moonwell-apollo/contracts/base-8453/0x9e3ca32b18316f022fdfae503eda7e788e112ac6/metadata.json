@@ -1,0 +1,17 @@
+{
+  "address": "0x9e3ca32b18316f022fdfae503eda7e788e112ac6",
+  "chain_id": 8453,
+  "contract_name": "CypherAutoLoad",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000996a5b8d983fa76a1555730e01c6117d90a4e6a30000000000000000000000003cb7367ac1e6a439da1f1717f8055f02e3c9d56e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:03:38.150Z"
+}

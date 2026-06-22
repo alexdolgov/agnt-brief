@@ -1,0 +1,146 @@
+[
+  {
+    "inputs": [],
+    "name": "MathOverflowedMulDiv",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplied",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "reserveRatio",
+        "type": "uint24"
+      }
+    ],
+    "name": "getBorrowRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "borrowRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplied",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "reserveRatio",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toBorrow",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "borrowRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplied",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "reserveRatio",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSupplyRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplyRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplied",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "reserveRatio",
+        "type": "uint24"
+      }
+    ],
+    "name": "getSupplyRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplyRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

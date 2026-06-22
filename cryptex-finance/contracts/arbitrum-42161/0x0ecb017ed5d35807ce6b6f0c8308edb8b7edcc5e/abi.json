@@ -1,0 +1,409 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "version",
+        "type": "uint256"
+      }
+    ],
+    "name": "InitializableAlreadyInitializedError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitializableNotInitializingError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitializableZeroVersionError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotComptroller",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotCoordinator",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotFeeWithdrawer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OwnableAlreadyInitializedError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableNotOwnerError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableNotPendingOwnerError",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "ComptrollerSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "coordinator",
+        "type": "address"
+      }
+    ],
+    "name": "CoordinatorSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "version",
+        "type": "uint256"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newPendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "PendingOwnerUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMarket",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "claimFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "comptroller",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "coordinator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "comptroller_",
+        "type": "address"
+      }
+    ],
+    "name": "setComptroller",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "coordinator_",
+        "type": "address"
+      }
+    ],
+    "name": "setCoordinator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newPendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "updatePendingOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMarket",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "UFixed6",
+            "name": "margin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "maintenance",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "linearFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "proportionalFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "adiabaticFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "scale",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct LinearAdiabatic6",
+            "name": "takerFee",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "linearFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "proportionalFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "scale",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct NoopAdiabatic6",
+            "name": "makerFee",
+            "type": "tuple"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "makerLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "efficiencyLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "liquidationFee",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "minRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maxRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "targetRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "targetUtilization",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct UJumpRateUtilizationCurve6",
+            "name": "utilizationCurve",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "k",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "min",
+                "type": "int256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "max",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct PController6",
+            "name": "pController",
+            "type": "tuple"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "minMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "minMaintenance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "staleAfter",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "makerReceiveOnly",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct RiskParameter",
+        "name": "riskParameter",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateRiskParameter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

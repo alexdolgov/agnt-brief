@@ -1,0 +1,173 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract TokenInterfaceV5",
+        "name": "_gns",
+        "type": "address"
+      },
+      {
+        "internalType": "contract GNSStakingInterfaceV6_4_1",
+        "name": "_staking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract NftInterfaceV5[5]",
+        "name": "_nfts",
+        "type": "address[5]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "DevFundUnlockScheduled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nftType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ids",
+            "type": "uint256[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct GNSCompensationHandlerV6_4_1.ClaimInput[]",
+        "name": "input",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "claimAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "penaltyAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "locked",
+        "type": "bool"
+      }
+    ],
+    "name": "NftsConverted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "devFundUnlockScheduled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gns",
+    "outputs": [
+      {
+        "internalType": "contract TokenInterfaceV5",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "nfts",
+    "outputs": [
+      {
+        "internalType": "contract NftInterfaceV5",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nftType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ids",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct GNSCompensationHandlerV6_4_1.ClaimInput[]",
+        "name": "_inputArr",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_lock",
+        "type": "bool"
+      }
+    ],
+    "name": "retireNfts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "scheduleDevFundUnlock",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "staking",
+    "outputs": [
+      {
+        "internalType": "contract GNSStakingInterfaceV6_4_1",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

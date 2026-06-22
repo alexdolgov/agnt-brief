@@ -1,0 +1,18 @@
+{
+  "address": "0x33d386bb9de9a583fc61d03a689351dac3a368fe",
+  "chain_id": 1,
+  "contract_name": "SafeModeratorOverridable",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:35:20.701Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x2585b8a7b4fa3966ddb1bba544b66724a7f95f25",
+  "chain_id": 43114,
+  "contract_name": "MasterMore",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:08.429Z"
+}

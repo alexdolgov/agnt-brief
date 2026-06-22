@@ -1,0 +1,160 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "Token6",
+        "name": "_usdc",
+        "type": "address"
+      },
+      {
+        "internalType": "Token6",
+        "name": "_usdcE",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniswapV3SwapRouter",
+        "name": "_uniswapV3Router",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC3156FlashLender6",
+        "name": "_balanceProvider",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IEmptysetMigrationReserve",
+        "name": "_reserve",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "MigratorNonZeroBalanceError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "balanceProvider",
+    "outputs": [
+      {
+        "internalType": "contract IERC3156FlashLender6",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "UFixed6",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "slippage",
+        "type": "uint256"
+      }
+    ],
+    "name": "migrate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "Token6",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "onFlashLoan",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "reserve",
+    "outputs": [
+      {
+        "internalType": "contract IEmptysetMigrationReserve",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV3Router",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV3SwapRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "usdc",
+    "outputs": [
+      {
+        "internalType": "Token6",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "usdcE",
+    "outputs": [
+      {
+        "internalType": "Token6",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

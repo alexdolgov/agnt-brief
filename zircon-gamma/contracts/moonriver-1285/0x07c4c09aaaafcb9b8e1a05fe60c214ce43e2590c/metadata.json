@@ -1,0 +1,17 @@
+{
+  "address": "0x07c4c09aaaafcb9b8e1a05fe60c214ce43e2590c",
+  "chain_id": 1285,
+  "contract_name": "ZirconRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:47:25.461Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xb926aca9eead652b7647c63c37f69dc44b70d803",
+  "chain_id": 8453,
+  "contract_name": "MaviaMarketplaceV3",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:03.237Z"
+}

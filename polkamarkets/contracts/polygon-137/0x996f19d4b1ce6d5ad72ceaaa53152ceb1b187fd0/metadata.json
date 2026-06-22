@@ -1,0 +1,17 @@
+{
+  "address": "0x996f19d4b1ce6d5ad72ceaaa53152ceb1b187fd0",
+  "chain_id": 137,
+  "contract_name": "FxERC20",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:28.503Z"
+}

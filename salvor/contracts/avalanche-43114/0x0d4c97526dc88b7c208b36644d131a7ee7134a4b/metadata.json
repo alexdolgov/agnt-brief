@@ -1,0 +1,18 @@
+{
+  "address": "0x0d4c97526dc88b7c208b36644d131a7ee7134a4b",
+  "chain_id": 43114,
+  "contract_name": "BIFKNRewarder",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:32.168Z"
+}

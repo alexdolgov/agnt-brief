@@ -1,0 +1,18 @@
+{
+  "address": "0x004065d34c6b18ce4370ced1cebde94865dbfafe",
+  "chain_id": 56,
+  "contract_name": "VAIUnitroller",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0x9817823d5c4023efb6173099928f17bb77cd1d69",
+  "fetched_at": "2026-06-19T17:50:50.926Z"
+}

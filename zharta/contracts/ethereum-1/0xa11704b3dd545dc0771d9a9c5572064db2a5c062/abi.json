@@ -1,0 +1,246 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "collection_key_hash",
+            "type": "bytes32"
+          },
+          {
+            "name": "contract",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "changed",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "ContractsChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "collection_key_hash",
+            "type": "bytes32"
+          },
+          {
+            "name": "root_hash",
+            "type": "bytes32"
+          }
+        ],
+        "indexed": false,
+        "name": "changed",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "TraitRootChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "proposed_owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "propose_owner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "collection_key_hash",
+            "type": "bytes32"
+          },
+          {
+            "name": "contract",
+            "type": "address"
+          }
+        ],
+        "name": "collections",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "change_collections_contracts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "collection_key_hash",
+            "type": "bytes32"
+          },
+          {
+            "name": "root_hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "roots",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "change_collections_trait_roots",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "collection_key_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "get_collection_status",
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "contract",
+            "type": "address"
+          },
+          {
+            "name": "trait_root",
+            "type": "bytes32"
+          }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proposed_owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "bytes32"
+      }
+    ],
+    "name": "contracts",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "bytes32"
+      }
+    ],
+    "name": "trait_roots",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

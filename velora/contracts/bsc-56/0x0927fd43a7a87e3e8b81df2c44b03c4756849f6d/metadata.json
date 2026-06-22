@@ -1,0 +1,18 @@
+{
+  "address": "0x0927fd43a7a87e3e8b81df2c44b03c4756849f6d",
+  "chain_id": 56,
+  "contract_name": "ProtectedMultiPath",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:55.120Z"
+}

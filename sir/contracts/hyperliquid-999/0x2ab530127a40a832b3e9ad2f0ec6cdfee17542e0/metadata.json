@@ -1,0 +1,18 @@
+{
+  "address": "0x2ab530127a40a832b3e9ad2f0ec6cdfee17542e0",
+  "chain_id": 999,
+  "contract_name": "Oracle",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:55:21.458Z"
+}

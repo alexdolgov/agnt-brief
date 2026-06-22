@@ -1,0 +1,17 @@
+{
+  "address": "0x8e7ad05fe711054dc4dc19e336272fc43c7a51ca",
+  "chain_id": 43114,
+  "contract_name": "AVICPool",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000059b18817ca9f4ad2dee6fbf30132df6aeb9d763d000000000000000000000000c65bc1e906771e105fbacbd8dfe3862ee7be378e000000000000000000000000b7222757c546b13957307602dee988c6c8bd32f0000000000000000000000000f708929ccfded4142420592caaef42bd41c8a367000000000000000000000000b2325584dbbde69ff0d7dd91682aacd33854c85a000000000000000000000000000000000000000000000000000000006324d5c0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:08.831Z"
+}

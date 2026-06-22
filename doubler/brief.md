@@ -1,51 +1,66 @@
 # Agentic Audit Brief: Doubler
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 15.0% over 90 days
+
 ## Project Overview
 
 - Project: Doubler (`doubler`)
 - Website: [https://doubler.pro/#/home](https://doubler.pro/#/home)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:56:14.013Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-06-21T08:15:16.161Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: manta
+- Contract surface: 2 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $107,032.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 5; live-surface contracts included: 3 (0 live, 3 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Verified implementations audited: 1/1 (100.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 2
+- Raw deployments: 3
 - Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2024-07 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Tier 1 coverage: 100.0% (SlowMist)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| SlowMist | Tier 1 | 1 | 100.0% | 2024-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Doubler | unknown | manta | n/a | 2 deployments: manta [`0x498f47...d5d926`](./contracts/manta-169/0x498f4711a706f9ad33b5d68eaa20e56a87d5d926/); manta `0xc84806...666087` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -63,17 +78,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | manta | n/a | `0x56386f...6333f0` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [SlowMist Audit Report - Doubler Lite.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20Doubler%20Lite.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SlowMist Audit Report - Doubler Lite.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20Doubler%20Lite.pdf) | SlowMist | Audit | 2024-07 | aging | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -85,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -94,13 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [13042] SlowMist Audit Report - Doubler Lite.pdf
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=4
 
 Fork inheritance lineage and inherited audits are included when available.

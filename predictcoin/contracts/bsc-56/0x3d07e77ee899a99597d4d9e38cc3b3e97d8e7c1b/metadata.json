@@ -1,0 +1,18 @@
+{
+  "address": "0x3d07e77ee899a99597d4d9e38cc3b3e97d8e7c1b",
+  "chain_id": 56,
+  "contract_name": "BxdConnectorsV2Impl",
+  "compiler_version": "v0.7.0+commit.9e61f92b",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:35:57.385Z"
+}

@@ -1,0 +1,16 @@
+# SonofDogeV2
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0xcdb943908de5ee37998a53f23467017d1a307e60` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (bsc [`0xcdb943908de5ee37998a53f23467017d1a307e60`](../0xcdb943908de5ee37998a53f23467017d1a307e60/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

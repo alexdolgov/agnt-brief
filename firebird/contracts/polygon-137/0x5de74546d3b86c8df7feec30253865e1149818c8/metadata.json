@@ -1,0 +1,17 @@
+{
+  "address": "0x5de74546d3b86c8df7feec30253865e1149818c8",
+  "chain_id": 137,
+  "contract_name": "FireBirdFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000ffad0c8b6acb224999e41e8229d0de90f9148320000000000000000000000007973b6961c8c5ca8026b9fb82332626e715ff8c7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:51.462Z"
+}

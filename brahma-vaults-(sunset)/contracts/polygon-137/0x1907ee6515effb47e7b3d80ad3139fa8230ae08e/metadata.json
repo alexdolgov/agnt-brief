@@ -1,0 +1,17 @@
+{
+  "address": "0x1907ee6515effb47e7b3d80ad3139fa8230ae08e",
+  "chain_id": 137,
+  "contract_name": "TaskDemo",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000527a819db1eb0e34426297b03bae11f2f8b3a19e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:35:21.250Z"
+}

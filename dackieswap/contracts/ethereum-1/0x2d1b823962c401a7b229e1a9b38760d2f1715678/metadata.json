@@ -1,0 +1,17 @@
+{
+  "address": "0x2d1b823962c401a7b229e1a9b38760d2f1715678",
+  "chain_id": 1,
+  "contract_name": "PancakeV3Factory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:02.760Z"
+}

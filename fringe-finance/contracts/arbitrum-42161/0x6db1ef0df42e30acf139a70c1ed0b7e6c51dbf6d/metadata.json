@@ -1,0 +1,18 @@
+{
+  "address": "0x6db1ef0df42e30acf139a70c1ed0b7e6c51dbf6d",
+  "chain_id": 42161,
+  "contract_name": "NFTPoolFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1500,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:18.402Z"
+}

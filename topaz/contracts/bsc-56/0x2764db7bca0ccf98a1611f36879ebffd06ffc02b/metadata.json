@@ -1,0 +1,18 @@
+{
+  "address": "0x2764db7bca0ccf98a1611f36879ebffd06ffc02b",
+  "chain_id": 56,
+  "contract_name": "PositionBurnHelper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:21:07.708Z"
+}

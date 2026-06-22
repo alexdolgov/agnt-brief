@@ -1,0 +1,18 @@
+{
+  "address": "0x1ba4b447d0df64da64024e5ec47da94458c1e97f",
+  "chain_id": 1,
+  "contract_name": "OptionsManager",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:57:39.445Z"
+}

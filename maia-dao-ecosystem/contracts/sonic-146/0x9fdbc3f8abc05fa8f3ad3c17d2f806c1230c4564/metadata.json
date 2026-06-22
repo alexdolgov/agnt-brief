@@ -1,0 +1,18 @@
+{
+  "address": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+  "chain_id": 146,
+  "contract_name": "GOGGLES",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 888,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 50,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:37:47.063Z"
+}

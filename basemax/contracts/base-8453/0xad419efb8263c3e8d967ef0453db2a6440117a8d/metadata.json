@@ -1,0 +1,18 @@
+{
+  "address": "0xad419efb8263c3e8d967ef0453db2a6440117a8d",
+  "chain_id": 8453,
+  "contract_name": "TokenFarmBaseMax",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:24:07.667Z"
+}

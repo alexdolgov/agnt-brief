@@ -1,0 +1,18 @@
+{
+  "address": "0x1be94d910b4489ad8cfc1536947f19699271e033",
+  "chain_id": 1,
+  "contract_name": "RewardManager",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:02:10.046Z"
+}

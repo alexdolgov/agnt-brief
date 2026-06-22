@@ -1,0 +1,123 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feed",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "price",
+        "type": "int256"
+      }
+    ],
+    "name": "InvalidUnderlyingPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feed",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "StaleUnderlyingPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feed",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "newPrice",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "prevPrice",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxDeviationPercent",
+        "type": "uint256"
+      }
+    ],
+    "name": "UnderlyingPriceDeviation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "priceFeed",
+            "type": "AggregatorV3Interface"
+          },
+          {
+            "internalType": "uint8",
+            "name": "decimals",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct PriceOracle_v1.Feed",
+        "name": "feed",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "maxAnswerAge",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPercentageDeviation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAbsoluteDeviation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTrendReversalDeviation",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PriceOracle_v1.Constraints",
+        "name": "constraints",
+        "type": "tuple"
+      }
+    ],
+    "name": "latestAnswer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

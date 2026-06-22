@@ -1,0 +1,18 @@
+{
+  "address": "0x0362259eeb3f7ae86c174396f52f5c3bee5ddeda",
+  "chain_id": 1,
+  "contract_name": "OmniWrappedFriend",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 5,
+  "evm_version": "london",
+  "license": "MIT, MIT OR Apache-2.0, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:27:11.148Z"
+}

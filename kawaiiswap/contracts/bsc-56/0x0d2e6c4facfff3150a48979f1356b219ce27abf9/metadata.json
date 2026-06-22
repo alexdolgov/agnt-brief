@@ -1,0 +1,18 @@
+{
+  "address": "0x0d2e6c4facfff3150a48979f1356b219ce27abf9",
+  "chain_id": 56,
+  "contract_name": "CalciferBuyback",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T18:01:42.536Z"
+}

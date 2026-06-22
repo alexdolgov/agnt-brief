@@ -1,0 +1,18 @@
+{
+  "address": "0x063150b24807e836eacf8c8420b8922d10b5fb58",
+  "chain_id": 8453,
+  "contract_name": "SimpleOracleStrategy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:09:49.764Z"
+}

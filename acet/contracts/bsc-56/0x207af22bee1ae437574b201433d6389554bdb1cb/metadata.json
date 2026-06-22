@@ -1,0 +1,17 @@
+{
+  "address": "0x207af22bee1ae437574b201433d6389554bdb1cb",
+  "chain_id": 56,
+  "contract_name": "SwapToFarm",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "0000000000000000000000005881480b48d993c729f9975cb250669dac3907d60000000000000000000000009f3bcbe48e8b754f331dfc694a894e8e686ac31d000000000000000000000000cfe0b919c10b1abaf68e2b99b296939198bc0358",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:46:56.628Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x5c0401e81bc07ca70fad469b451682c0d747ef1c",
+  "chain_id": 43114,
+  "contract_name": "QiAvax",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:15.558Z"
+}

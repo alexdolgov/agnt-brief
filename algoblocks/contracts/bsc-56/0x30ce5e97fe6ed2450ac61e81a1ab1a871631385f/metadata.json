@@ -1,0 +1,18 @@
+{
+  "address": "0x30ce5e97fe6ed2450ac61e81a1ab1a871631385f",
+  "chain_id": 56,
+  "contract_name": "DecubateCrowdfunding",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:22:49.475Z"
+}

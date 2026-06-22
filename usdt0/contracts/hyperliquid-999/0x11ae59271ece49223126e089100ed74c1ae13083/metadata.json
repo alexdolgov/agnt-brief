@@ -1,0 +1,17 @@
+{
+  "address": "0x11ae59271ece49223126e089100ed74c1ae13083",
+  "chain_id": 999,
+  "contract_name": "HyperLiquidComposer_V1",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:16:36.578Z"
+}

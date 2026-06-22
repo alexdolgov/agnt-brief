@@ -1,0 +1,2556 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "ChainlinkOracleSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "errorMessage",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "stackTrace",
+        "type": "string"
+      }
+    ],
+    "name": "RepayDepositFailure",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "univ3Router",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "dataStore",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "reader",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "depositHandler",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "withdrawalHandler",
+        "type": "address"
+      }
+    ],
+    "name": "StrategyParamsSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "RoleStore",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WrappedBTC",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialLongToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialShortToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct Deposit.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minMarketTokens",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Deposit.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Deposit.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Deposit.Props",
+        "name": "deposit",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EventUtils.EventLogData",
+        "name": "eventData",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterDepositCancellation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialLongToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialShortToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct Deposit.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minMarketTokens",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Deposit.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Deposit.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Deposit.Props",
+        "name": "deposit",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EventUtils.EventLogData",
+        "name": "eventData",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterDepositExecution",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct Withdrawal.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "marketTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Withdrawal.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Withdrawal.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Withdrawal.Props",
+        "name": "withdrawal",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EventUtils.EventLogData",
+        "name": "eventData",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterWithdrawalCancellation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct Withdrawal.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "marketTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Withdrawal.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Withdrawal.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Withdrawal.Props",
+        "name": "withdrawal",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EventUtils.EventLogData",
+        "name": "eventData",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterWithdrawalExecution",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "chainlinkOracle",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_returnedLongToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_returnedShortToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimatePositionProfit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "executeSwap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getDepositRecord",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "receivedMarketTokens",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shortTokenBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "longTokenBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feesPaid",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "success",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverageMultiplier",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "longToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IVodkaV2.DepositRecord",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "longToken",
+        "type": "address"
+      }
+    ],
+    "name": "getEstimatedMarketTokenPrice",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_inDecimal",
+        "type": "bool"
+      }
+    ],
+    "name": "getLatestData",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "longToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "pnlFactorType",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "maximize",
+        "type": "bool"
+      }
+    ],
+    "name": "getMarketTokenPrice",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionID",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPositionDebt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "longDebtValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shortDebtValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IVodkaV2.PositionDebt",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionID",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPositionInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "position",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "closedPositionValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "closePNL",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "positionId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "address",
+            "name": "liquidator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverageMultiplier",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "closed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidated",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "longToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IVodkaV2.PositionInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getWithdrawRecord",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "returnedUSDC",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionID",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "success",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLiquidation",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "longToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "returnedLongAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "liquidator",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IVodkaV2.WithdrawRecord",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_USDC",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_VodkaV2",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "orderRefunded",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "feesRefunded",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountRefunded",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "longTokenAmountReturned",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "shortTokenAmountReturned",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gmTokensRefunded",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositOrWithdrawal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "cancelled",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_arbitrumSequencer",
+        "type": "address"
+      }
+    ],
+    "name": "setArbitrumSequencer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle",
+        "type": "address"
+      }
+    ],
+    "name": "setChainlinkOracleForAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_roleStore",
+        "type": "address"
+      }
+    ],
+    "name": "setRoleStore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_univ3Router",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dataStore",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_reader",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_depositHandler",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_withdrawalHandler",
+        "type": "address"
+      }
+    ],
+    "name": "setStrategyParams",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_WrappedBTC",
+        "type": "address"
+      }
+    ],
+    "name": "setWrappedBTC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "strategyAddresses",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "USDC",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "WaterContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "VodkaV2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "univ3Router",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "dataStore",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "reader",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "depositHandler",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "withdrawalHandler",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tempPayableAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "userRefunds",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

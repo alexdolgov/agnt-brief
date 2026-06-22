@@ -1,0 +1,17 @@
+{
+  "address": "0x05e71dc39c3de40e017d166e605b97451e7f21b5",
+  "chain_id": 1,
+  "contract_name": "OrderBookLogic",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:06:38.075Z"
+}

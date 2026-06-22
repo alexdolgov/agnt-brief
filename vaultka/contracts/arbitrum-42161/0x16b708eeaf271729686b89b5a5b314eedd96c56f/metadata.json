@@ -1,0 +1,18 @@
+{
+  "address": "0x16b708eeaf271729686b89b5a5b314eedd96c56f",
+  "chain_id": 42161,
+  "contract_name": "VodkaVaultV2Test",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:16.376Z"
+}

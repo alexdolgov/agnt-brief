@@ -1,0 +1,18 @@
+{
+  "address": "0x4284e9c74aa8a3bbcc75cd416a1d6741a2f6219a",
+  "chain_id": 56,
+  "contract_name": "Boardroom",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:10:00.575Z"
+}

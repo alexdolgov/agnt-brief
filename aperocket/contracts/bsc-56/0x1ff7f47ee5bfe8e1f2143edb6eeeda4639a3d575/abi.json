@@ -1,0 +1,36 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalPayout",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "vestingTerm",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startTimestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "checkTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVestedPayoutAtTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "vestedPayout",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

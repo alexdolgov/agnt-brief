@@ -1,0 +1,17 @@
+{
+  "address": "0x21dfb0a12d77f4e0d2cf9008d0c2643d1e36da41",
+  "chain_id": 1284,
+  "contract_name": "PredictionMarket",
+  "compiler_version": "v0.6.2+commit.bacdbe57",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000470de4df8200000000000000000000000000008b29344f368b5fa35595325903fe0eaab70c8e1f00000000000000000000000000000000000000000000003635c9adc5dea0000000000000000000000000000083d3f4769a19f1b43337888b0290f5473cf508b2000000000000000000000000000000000000000000000000000000000003f480",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:26.954Z"
+}

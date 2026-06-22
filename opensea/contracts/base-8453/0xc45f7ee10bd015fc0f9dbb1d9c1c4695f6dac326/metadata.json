@@ -1,0 +1,18 @@
+{
+  "address": "0xc45f7ee10bd015fc0f9dbb1d9c1c4695f6dac326",
+  "chain_id": 8453,
+  "contract_name": "ERC721SeaDrop",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:10.162Z"
+}

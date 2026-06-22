@@ -1,0 +1,261 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_payment_token_addr",
+        "type": "address"
+      },
+      {
+        "name": "_nft_contract_addr",
+        "type": "address"
+      },
+      {
+        "name": "_delegation_registry_addr",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "initialise",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "nft_owner",
+        "type": "address"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "name": "expiration",
+        "type": "uint256"
+      }
+    ],
+    "name": "delegate_to_wallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "staking_addr",
+        "type": "address"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "staking_deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "staking_addr",
+        "type": "address"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "staking_withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "staking_addr",
+        "type": "address"
+      },
+      {
+        "name": "pool_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "staking_claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "staking_addr",
+        "type": "address"
+      },
+      {
+        "name": "pool_claim_method_id",
+        "type": "bytes4"
+      },
+      {
+        "name": "pool_deposit_method_id",
+        "type": "bytes4"
+      }
+    ],
+    "name": "staking_compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_operator",
+        "type": "address"
+      },
+      {
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "caller",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "payment_token",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nft_contract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "delegation_registry",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

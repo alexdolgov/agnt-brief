@@ -1,0 +1,17 @@
+{
+  "address": "0x12db9758c4d9902334c523b94e436258eb54156f",
+  "chain_id": 43114,
+  "contract_name": "AccountManager",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000ea94e11fad45675b3ed9102b8565ea7121984eb6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:40:36.276Z"
+}

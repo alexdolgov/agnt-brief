@@ -1,0 +1,18 @@
+{
+  "address": "0x236821022de85f88c29cbd0a1dad270943e12974",
+  "chain_id": 42161,
+  "contract_name": "Vester6Months",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 99,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:17.924Z"
+}

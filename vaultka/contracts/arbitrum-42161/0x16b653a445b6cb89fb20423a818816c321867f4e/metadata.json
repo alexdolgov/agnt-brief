@@ -1,0 +1,18 @@
+{
+  "address": "0x16b653a445b6cb89fb20423a818816c321867f4e",
+  "chain_id": 42161,
+  "contract_name": "HlpWithdrawalHandler",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:16.010Z"
+}

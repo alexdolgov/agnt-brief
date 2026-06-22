@@ -1,0 +1,18 @@
+{
+  "address": "0x7f35dc487a5422d6946aad733c6018f163084ed0",
+  "chain_id": 10,
+  "contract_name": "CrossChainBridgeBacker_OPTI_Celer",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:55.251Z"
+}

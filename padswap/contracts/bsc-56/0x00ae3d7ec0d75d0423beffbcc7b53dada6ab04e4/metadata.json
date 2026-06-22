@@ -1,0 +1,18 @@
+{
+  "address": "0x00ae3d7ec0d75d0423beffbcc7b53dada6ab04e4",
+  "chain_id": 56,
+  "contract_name": "LPFarm",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:17:42.259Z"
+}

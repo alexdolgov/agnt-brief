@@ -1,0 +1,17 @@
+{
+  "address": "0x16f78d75fabb869835236b5fb59c2b29f6cbbfcf",
+  "chain_id": 137,
+  "contract_name": "PolygonLandV1",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:55.723Z"
+}

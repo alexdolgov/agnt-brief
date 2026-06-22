@@ -1,0 +1,17 @@
+{
+  "address": "0x088e285acb5c3f5d011a6eaa9610abd7d8b7331e",
+  "chain_id": 42161,
+  "contract_name": "OracleRETH",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000639fe6ab55c921f74e7fac1ee960c0b6293ba612000000000000000000000000d6ab2298946840262fcc278ff31516d39ff611ef",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:21:38.995Z"
+}

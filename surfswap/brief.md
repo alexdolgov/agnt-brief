@@ -1,40 +1,51 @@
 # Agentic Audit Brief: Surfswap
 
+⚠️ Lifecycle status: DEAD - TVL dropped 4.4% over 90 days
+
 ## Project Overview
 
 - Project: Surfswap (`surfswap`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:13:51.035Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T12:59:59.976Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: kava
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $117.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2022 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Latest audit: 2022-07 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -62,19 +73,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0x889050...ca278d` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [V2 Audit by Peckshield - <>](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Surfswap-v1.0.pdf) | PeckShield | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
-| [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Beamswap-v1.0.pdf) | PeckShield | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
-| [Solidity finance](https://sourcehat.com/audits/BeamSwap) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [V2 Audit by Peckshield - <>](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Surfswap-v1.0.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Beamswap-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
+| [Solidity finance](https://sourcehat.com/audits/BeamSwap) | SourceHat | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -86,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

@@ -1,0 +1,18 @@
+{
+  "address": "0xafd5f5c6e72f0f6441e4abf2ae8ff23dee21a87a",
+  "chain_id": 137,
+  "contract_name": "RoyaltySplitter",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:05.474Z"
+}

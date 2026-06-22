@@ -1,0 +1,18 @@
+{
+  "address": "0xdb9af861aae3dd6bec86f5512d704afc621722d5",
+  "chain_id": 1,
+  "contract_name": "Factory",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 9999999,
+  "evm_version": "cancun",
+  "license": "-- BCOM --",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:33.892Z"
+}

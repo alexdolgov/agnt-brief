@@ -1,0 +1,18 @@
+{
+  "address": "0x15e530b6d79a84797cded863c80a8d4dfcd4030e",
+  "chain_id": 42161,
+  "contract_name": "TradingStorageUtils",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 67,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:06.076Z"
+}

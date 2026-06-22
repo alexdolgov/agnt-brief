@@ -1,0 +1,18 @@
+{
+  "address": "0xa1cc67170df03aabd5e39406e390ef5aa2137bbb",
+  "chain_id": 137,
+  "contract_name": "VaultReader",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:46.749Z"
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IKalmar",
+        "name": "_kalmswap",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "kalmyswap",
+    "outputs": [
+      {
+        "internalType": "contract IKalmar",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "src",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "dest",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "srcAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "routes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "oneRoute",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "routeIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "src",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "dest",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "srcAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "routes",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "parts",
+        "type": "uint256"
+      }
+    ],
+    "name": "splitRoutes",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "distribution",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

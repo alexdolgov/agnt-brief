@@ -1,0 +1,17 @@
+{
+  "address": "0x1095ae1d78366a6770ed0b435e145e420cc6c242",
+  "chain_id": 137,
+  "contract_name": "UtilProxy",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x115aab122118832f264294aa6b9fe8d10a385f8f",
+  "fetched_at": "2026-06-21T09:19:19.992Z"
+}

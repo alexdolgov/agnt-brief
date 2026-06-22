@@ -1,57 +1,292 @@
 {
   "schema_version": "2.0",
   "project_key": "bridge-mutual",
-  "generated_at": "2026-06-13T11:23:51.790Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:28:10.069Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "bridge-mutual",
+    "tier": 1,
+    "peak_tvl": 18722479,
+    "peak_date": "2021-12-04T00:00:00.000Z",
+    "tvl_30d_ago": 56219,
+    "tvl_90d_ago": 174012,
+    "tvl_current": 56212,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 173960,
+    "change_30d_pct": -0.012451306497803235,
+    "change_90d_pct": -67.69648070248029,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.7% from peak over 1660 days ago with no recent activity or communications, and the homepage promotes a V2 launch but shows no actual usage or updates.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1660,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.699761981306,
+    "governance_evidence": "TVL dropped 99.7% from peak over 1660 days ago with no recent activity or communications, and the homepage promotes a V2 launch but shows no actual usage or updates.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 5000,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
-    "contracts_verified_by_bytecode": 0,
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 2,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 3,
+    "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 40,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 56212.47191,
-    "tvl_usd": 56212.47191,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 109440.26,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 25520.26,
+      "ethereum": 83920
+    },
+    "asd_usd": 109440.26,
     "website_url": "https://www.bridgemutual.io",
-    "chains": [],
+    "chains": [
+      "bsc",
+      "ethereum",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 2
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Bridge Mutual is a decentralized insurance protocol that allows users to purchase coverage for smart contract risks, stablecoin depegs, and exchange hacks. It pools capital from liquidity providers to underwrite policies and uses a claims voting system to assess and pay out valid claims.",
+    "relationship_narrative": "The CapitalPool holds the underwriting capital and interacts with PolicyBookRegistry to manage policy books. ClaimVoting relies on staked BMI tokens from BMIStaking for voting power, while ShieldMining distributes rewards to incentivize participation. BridgeToken instances represent wrapped versions of the BMI token on different chains, and vesting contracts manage token distribution.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 56,
+    "live_contracts": 4,
+    "inactive_contracts": 46,
+    "singleton_contracts": 4,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 2,
+    "deployment_units": 17,
+    "live_deployment_units": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x725c263e32c72ddc3a19bea12c5a0479a81ee688",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BMIToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridge Mutual",
+      "tvl_usd": 83920,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BMIToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x725c263e32c72ddc3a19bea12c5a0479a81ee688",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 83920,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x31d0a7ada4d4c131eb612db48861211f63e57610",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "STARToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Bridge Mutual",
+      "tvl_usd": 25520.26,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "STARToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x31d0a7ada4d4c131eb612db48861211f63e57610",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 25520.26,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x55978a6f6a4cfa00d5a8b442e93e42c025d0890c",
+      "deployment_unit": "unit-41621",
+      "deployment_unit_proxy_count": 1,
+      "name": "BMIStaking",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridge Mutual",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x925c70e811fbc60f5900a74ce39f9f675b07c16d",
+      "impl_name": "BMIStaking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x55978a6f6a4cfa00d5a8b442e93e42c025d0890c",
+          "deployment_unit": "unit-41621",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x426f72ab027da5f5a462d377a5eb057f63082b02",
+      "deployment_unit": "unit-41620",
+      "deployment_unit_proxy_count": 1,
+      "name": "CapitalPool",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridge Mutual",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x42110a1082599176732bb3898b5bd8ff18d3e2c7",
+      "impl_name": "CapitalPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x426f72ab027da5f5a462d377a5eb057f63082b02",
+          "deployment_unit": "unit-41620",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xab7c7356f706954c3c926a690e96c7b65fa76116",
+          "deployment_unit": "unit-41633",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12864"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff13c3d2c7931e86e13c993a8cb02d68848f9613",
+      "deployment_unit": "unit-41627",
+      "deployment_unit_proxy_count": 1,
+      "name": "PolicyBookRegistry",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridge Mutual",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x009fc0fd0840adc54f44220e203a695a4e370f00",
+      "impl_name": "PolicyBookRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xff13c3d2c7931e86e13c993a8cb02d68848f9613",
+          "deployment_unit": "unit-41627",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12864"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12864,
@@ -60,18 +295,24 @@
       "report_url": "https://uploads-ssl.webflow.com/5fac3e348dbd5932a7578690/60da267d76850e5acfe4e4c2_Bridge%20Mutual%20SC%20Audit_%20ZOkyo.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BMIDaiStaking",
+        "LiquidityMining",
+        "PolicyBook",
+        "PolicyBookAdmin",
+        "PolicyBookRegistry"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,8 +322,8 @@
       "report_url": "https://diligence.security/audits/2021/03/bridge-mutual",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -96,24 +337,43 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 40,
+      "latest_audit": "2021-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x725c263e32c72ddc3a19bea12c5a0479a81ee688",
+      "name": "BMIToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 83920,
+      "risk_note": "Verified native implementation with $83,920.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 3,
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 12864,
-        "report_name": "DL audit link"
-      },
       {
         "audit_id": 12865,
         "report_name": "DL audit link"

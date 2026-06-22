@@ -1,57 +1,241 @@
 {
   "schema_version": "2.0",
   "project_key": "nodeops",
-  "generated_at": "2026-06-13T10:44:15.560Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T08:40:03.135Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "nodeops",
+    "tier": 0,
+    "peak_tvl": null,
+    "peak_date": null,
+    "tvl_30d_ago": null,
+    "tvl_90d_ago": null,
+    "tvl_current": null,
+    "tier0_reason": "no_historical_tvl",
+    "tvl_180d_ago": null,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": null,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
+    "audited_contracts": 1,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 33.3,
     "total_audits": 4,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": null,
     "tvl_usd": null,
     "tvl_source": null,
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://nodeops.network/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-06",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
+      "aging": 2,
       "stale": 0,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "NodeOps is a DePIN protocol that facilitates decentralized node operations and infrastructure services. It enables users to participate in node running and network validation through tokenized access and incentives.",
+    "relationship_narrative": "The NodeOps family relies on ERC1967Proxy contracts to provide upgradeable infrastructure for the NODE token. All contracts are deployed from a single deployer cluster, indicating a unified operational structure.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 17,
+    "live_contracts": 5,
+    "inactive_contracts": 0,
+    "singleton_contracts": 12,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 6,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x88cd830731eb5140d7fb5354fd6e25dd13c75330",
+      "deployment_unit": "unit-39448",
+      "deployment_unit_proxy_count": 1,
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8c7d9c991b9522c45b49b76d0bc84391a91be9f1",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x88cd830731eb5140d7fb5354fd6e25dd13c75330",
+          "deployment_unit": "unit-39448",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3de45d2226bb302fe86dee98a34b2d49729e5bd0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NODE",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NodeOps",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NODE",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3de45d2226bb302fe86dee98a34b2d49729e5bd0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa234b8924bb2707195664e4c4cf17668db9b7286",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13582",
+        "audit-13585"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa5511013ec470292a8035b7ab25baa6f7a64a122",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa5511013ec470292a8035b7ab25baa6f7a64a122",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6ceee1d9149fc0b878a12bbdc5cc577f49c54062",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6ceee1d9149fc0b878a12bbdc5cc577f49c54062",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13582,
@@ -66,12 +250,20 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AirdropPhase2",
+        "BurnPool",
+        "NODE",
+        "NodeVesting",
+        "RevenueManager",
+        "RevenueVault",
+        "StakingV2"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -123,39 +315,59 @@
       "report_url": "https://github.com/Quillhash/QuillAudit_Reports/blob/master/NodeOPS%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf",
       "auditor": "QuillAudits",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Airdrop",
+        "IPool",
+        "NODE",
+        "Roles"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "QuillAudits",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2024-12"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2025-06"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 2,
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 8
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13582,
-        "report_name": "2025-06-25 Audit Report - NodeOps Network.pdf"
-      },
       {
         "audit_id": 13583,
         "report_name": "DL audit link"
@@ -163,10 +375,6 @@
       {
         "audit_id": 13584,
         "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 13585,
-        "report_name": "NodeOPS Smart Contract Audit Report - QuillAudits.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,0 +1,18 @@
+{
+  "address": "0x0622c8b86f4f8fd168ca7cd07a51d69aacd755b1",
+  "chain_id": 56,
+  "contract_name": "KalmarBondingStrategyLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:48:17.685Z"
+}

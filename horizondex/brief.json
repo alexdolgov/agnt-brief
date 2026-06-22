@@ -1,31 +1,62 @@
 {
   "schema_version": "2.0",
   "project_key": "horizondex",
-  "generated_at": "2026-06-13T10:08:35.243Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:29:03.258Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "horizondex",
+    "tier": 1,
+    "peak_tvl": 2525660,
+    "peak_date": "2023-08-04T00:00:00.000Z",
+    "tvl_30d_ago": 66159,
+    "tvl_90d_ago": 69627,
+    "tvl_current": 61857,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 86775,
+    "change_30d_pct": -6.502516664399402,
+    "change_90d_pct": -11.159464001034083,
+    "governance_raw": {
+      "evidence": "TVL has dropped 97.55% from its peak and continues to decline, but the protocol's homepage still promotes active development and features, indicating it is not dead or sunsetting.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 1052,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 97.55085799355416,
+    "governance_evidence": "TVL has dropped 97.55% from its peak and continues to decline, but the protocol's homepage still promotes active development and features, indicating it is not dead or sunsetting.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 5000,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 10,
+    "total_addresses": 11,
+    "unique_implementations": 10,
+    "total_deployments": 11,
+    "audited_contracts": 5,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 8,
-    "scoreable_audits": 0,
+    "coverage_pct": 50,
+    "total_audits": 9,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 60342.18782000001,
-    "tvl_usd": 60342.18782000001,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 0.0001,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "linea": 0
+    },
+    "asd_usd": 0.0001,
     "website_url": "https://horizondex.io",
-    "chains": [],
+    "chains": [
+      "base",
+      "linea"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2023-07",
@@ -33,25 +64,419 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 7
+      "stale": 5,
+      "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "HorizonDEX is a decentralized exchange and yield protocol that enables concentrated liquidity trading, portfolio management, and yield strategies. It provides automated market making, token swaps, and structured products like rebase tokens and hedging mechanisms.",
+    "relationship_narrative": "The Factory and AlgebraFactory registries deploy and track liquidity pools, while the Exchange and Router handle swaps. Yield strategies (e.g., StrategyEts, StrategyMendiUsdc) and tokens (UsdPlusTokenV3, RebaseToken) interact with the PortfolioManager and Mark2Market for position management and valuation, with oracles (PoolOracle) providing price data.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 107,
+    "live_contracts": 11,
+    "inactive_contracts": 61,
+    "singleton_contracts": 35,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 21,
+    "live_deployment_units": 3,
+    "dependencies_extracted": 9,
+    "unverified_dependencies": 1,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13",
+      "deployment_unit": "unit-41641",
+      "deployment_unit_proxy_count": 2,
+      "name": "UsdPlusTokenV3",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 0.0001,
+      "is_proxy": true,
+      "impl_address": "0x5e32492347ca10b8418f971f66c84e9ec7b1ae40",
+      "impl_name": "UsdPlusTokenV3",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13",
+          "deployment_unit": "unit-41641",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+          "deployment_unit": "unit-41641",
+          "deployment_unit_proxy_count": 2,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.0001,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb3cc484a60bc300719aaefbd158a4e8e59d84555",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AntiSnipAttackPositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AntiSnipAttackPositionManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb3cc484a60bc300719aaefbd158a4e8e59d84555",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13242",
+        "audit-13245",
+        "audit-13247"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x438670d41d5118003b2f42cc0466fbadd760dbf4",
+      "deployment_unit": "unit-41648",
+      "deployment_unit_proxy_count": 1,
+      "name": "AntiSnipAttackPositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x438670d41d5118003b2f42cc0466fbadd760dbf4",
+      "impl_name": "AntiSnipAttackPositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x438670d41d5118003b2f42cc0466fbadd760dbf4",
+          "deployment_unit": "unit-41648",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13242",
+        "audit-13245",
+        "audit-13247"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "HorizonDEX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Factory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13241",
+        "audit-13242",
+        "audit-13245",
+        "audit-13247"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Horizon",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "HorizonDEX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Horizon",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x75d3aa57f7181bf4136438cc9cdddd86fd420a79",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockedEpoch1HZN",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockedEpoch1HZN",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x75d3aa57f7181bf4136438cc9cdddd86fd420a79",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x99aec509174cbf06f8f7e15ddeeb7bcc32363827",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x99aec509174cbf06f8f7e15ddeeb7bcc32363827",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13242",
+        "audit-13245",
+        "audit-13247"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+      "deployment_unit": "unit-41645",
+      "deployment_unit_proxy_count": 1,
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x272e156df8da513c69cb41cc7a99185d53f926bb",
+          "deployment_unit": "unit-41645",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13242",
+        "audit-13245",
+        "audit-13247"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc3454bcb7164a83549022ffea307352d4afc7a11",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc3454bcb7164a83549022ffea307352d4afc7a11",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13240,
@@ -87,12 +512,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Factory",
+        "Pool",
+        "PoolStorage",
+        "PoolTicksState"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
@@ -112,39 +542,25 @@
       "report_url": "https://github.com/Defimoonorg/Audit-Report/blob/main/Horizon-Dex.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AntiSnipAttackPositionManager",
+        "BasePositionManager",
+        "Factory",
+        "Pool",
+        "PoolOracle",
+        "Router"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 13243,
-      "audit_key": "audit-13243",
-      "report_name": "SOLIDproof Audit Proof : <><br>",
-      "report_url": "https://github.com/solidproof/projects/tree/main/2023/Horizon%20DEX",
-      "auditor": "SOLIDProof",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -154,8 +570,8 @@
       "report_url": "https://github.com/Horizon-Dex/Audits/blob/main/Horizon-Sale_Reaudit.pdf",
       "auditor": "DEFIMOON",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -185,18 +601,25 @@
       "report_url": "https://github.com/Horizon-Dex/Audits/blob/main/Horizon-Dex-Defimoon.pdf",
       "auditor": "Defimoon",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AntiSnipAttackPositionManager",
+        "BasePositionManager",
+        "Factory",
+        "Pool",
+        "PoolOracle",
+        "Router"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -206,18 +629,44 @@
       "report_url": "https://github.com/Horizon-Dex/Audits/blob/main/SmartContract_Audit_Solidproof_HorizonDEX.pdf",
       "auditor": "Solidproof",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AntiSnipAttack",
+        "AntiSnipAttackPositionManager",
+        "BasePositionManager",
+        "BytesLib",
+        "DeadlineValidation",
+        "ERC721Permit",
+        "Factory",
+        "ImmutablePeripheryStorage",
+        "LiquidityHelper",
+        "LiquidityMath",
+        "Multicall",
+        "PathHelper",
+        "Pool",
+        "PoolAddress",
+        "PoolOracle",
+        "PoolStorage",
+        "PoolTicksCounter",
+        "PoolTicksState",
+        "QuoterV2",
+        "Router",
+        "RouterTokenHelper",
+        "RouterTokenHelperWithFee",
+        "TicksFeesReader",
+        "TokenHelper",
+        "TokenPositionDescriptor"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -240,19 +689,128 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16192,
+      "audit_key": "audit-16192",
+      "report_name": "SOLIDproof Audit Proof : <><br>",
+      "report_url": "https://github.com/solidproof/projects/tree/main/2023/Horizon%20DEX",
+      "auditor": "SOLIDProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16197,
+      "audit_key": "audit-16197",
+      "report_name": "Arbalest Vault",
+      "report_url": "https://github.com/solidproof/projects/blob/main/2023/%20Arbalest%20Vault",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "DEFIMOON",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 50,
+      "latest_audit": "2023-07"
+    },
+    {
+      "auditor": "Solidproof",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 50,
+      "latest_audit": "2023-07"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 50,
+      "latest_audit": "2023-07"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1",
+      "name": "Horizon",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x75d3aa57f7181bf4136438cc9cdddd86fd420a79",
+      "name": "LockedEpoch1HZN",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b",
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc3454bcb7164a83549022ffea307352d4afc7a11",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 9,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 42
+    },
+    "extraction_confidence_counts": {
+      "high": 4
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -261,32 +819,20 @@
         "report_name": "Logo.png"
       },
       {
-        "audit_id": 13241,
-        "report_name": "HorizonDEX_SC Comparison Report_11.07.2023_SA-1644 (2).pdf"
-      },
-      {
-        "audit_id": 13242,
-        "report_name": "Horizon-Dex.pdf"
-      },
-      {
-        "audit_id": 13243,
-        "report_name": "SOLIDproof Audit Proof : <><br>"
-      },
-      {
         "audit_id": 13244,
         "report_name": "DEFIMOON Token Sale Contract Audit: <>"
       },
       {
-        "audit_id": 13245,
-        "report_name": "Horizon-Dex-Defimoon.pdf"
-      },
-      {
-        "audit_id": 13247,
-        "report_name": "SmartContract_Audit_Solidproof_HorizonDEX.pdf"
-      },
-      {
         "audit_id": 13248,
         "report_name": "In addition, our code is built entirely on Kyberswap Elastic, which has undergone [numerous audits]() with impressive results.&#x20;"
+      },
+      {
+        "audit_id": 16192,
+        "report_name": "SOLIDproof Audit Proof : <><br>"
+      },
+      {
+        "audit_id": 16197,
+        "report_name": "Arbalest Vault"
       }
     ],
     "inherited_remapped_matches": []

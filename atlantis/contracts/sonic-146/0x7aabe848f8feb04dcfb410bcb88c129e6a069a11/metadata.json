@@ -1,0 +1,17 @@
+{
+  "address": "0x7aabe848f8feb04dcfb410bcb88c129e6a069a11",
+  "chain_id": 146,
+  "contract_name": "Faucet",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000016345785d8a00000000000000000000000000000000000000000000000000015af1d78b58c40000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:01:52.081Z"
+}

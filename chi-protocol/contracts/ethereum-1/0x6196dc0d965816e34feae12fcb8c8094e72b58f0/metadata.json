@@ -1,0 +1,18 @@
+{
+  "address": "0x6196dc0d965816e34feae12fcb8c8094e72b58f0",
+  "chain_id": 1,
+  "contract_name": "wstUSC",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:11:01.232Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x03569cc076654f82679c4ba2124d64774781b01d",
+  "chain_id": 10,
+  "contract_name": "BurnMintERC20",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:03:36.429Z"
+}

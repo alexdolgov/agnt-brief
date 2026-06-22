@@ -1,0 +1,18 @@
+{
+  "address": "0x30a086f5b7a8a6256b0d0e6c9ca4cd3577e4ae70",
+  "chain_id": 1,
+  "contract_name": "HegicOptions",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:22:53.441Z"
+}

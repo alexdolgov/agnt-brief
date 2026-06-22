@@ -1,0 +1,18 @@
+{
+  "address": "0x258a1eb6537ae84cf612f06b557b6d53f49cc9a1",
+  "chain_id": 1,
+  "contract_name": "Tunnel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:22:53.437Z"
+}

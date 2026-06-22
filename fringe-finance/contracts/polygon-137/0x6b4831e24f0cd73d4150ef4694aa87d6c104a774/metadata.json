@@ -1,0 +1,18 @@
+{
+  "address": "0x6b4831e24f0cd73d4150ef4694aa87d6c104a774",
+  "chain_id": 137,
+  "contract_name": "ContributionRules",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:02.799Z"
+}

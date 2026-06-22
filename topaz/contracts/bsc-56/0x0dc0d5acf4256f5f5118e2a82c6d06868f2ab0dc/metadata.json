@@ -1,0 +1,17 @@
+{
+  "address": "0x0dc0d5acf4256f5f5118e2a82c6d06868f2ab0dc",
+  "chain_id": 56,
+  "contract_name": "NonfungibleTokenPositionDescriptor",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c424e420000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:21:08.561Z"
+}

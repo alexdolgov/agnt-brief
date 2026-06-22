@@ -1,0 +1,18 @@
+{
+  "address": "0x6c33c7f6cbb4a428fe9ee31ca500a787c9f1525b",
+  "chain_id": 10,
+  "contract_name": "sePSP",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:55.610Z"
+}

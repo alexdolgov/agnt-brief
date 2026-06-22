@@ -1,40 +1,51 @@
 # Agentic Audit Brief: Solace
 
+⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Solace (`solace`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:30:44.555Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T08:29:54.266Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: ethereum, polygon
+- Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 62; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 60 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/2 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 1
+- Raw deployments: 2
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -46,9 +57,11 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SOLACE | unknown | ethereum | n/a | 2 deployments: ethereum [`0x501ace...de9f40`](./contracts/ethereum-1/0x501ace9c35e60f03a2af4d484f49f9b1efde9f40/); polygon [`0x501ace...de9f40`](./contracts/polygon-137/0x501ace9c35e60f03a2af4d484f49f9b1efde9f40/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,13 +91,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x501ace...de9f40`](./contracts/ethereum-1/0x501ace9c35e60f03a2af4d484f49f9b1efde9f40/) | SOLACE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

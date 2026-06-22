@@ -1,0 +1,18 @@
+{
+  "address": "0xc2fe71e23ae5a508d1e6039af282ba19122c26c6",
+  "chain_id": 137,
+  "contract_name": "Ether",
+  "compiler_version": "v0.5.0+commit.1d4f565a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:01:33.583Z"
+}

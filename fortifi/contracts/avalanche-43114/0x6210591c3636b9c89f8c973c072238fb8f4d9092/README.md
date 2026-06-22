@@ -1,0 +1,16 @@
+# FortiFiSAMSVault
+
+| Field | Value |
+|---|---|
+| Chain | avalanche (43114) |
+| Address | `0x6210591c3636b9c89f8c973c072238fb8f4d9092` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (avalanche [`0x6210591c3636b9c89f8c973c072238fb8f4d9092`](../0x6210591c3636b9c89f8c973c072238fb8f4d9092/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

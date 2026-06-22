@@ -1,0 +1,18 @@
+{
+  "address": "0xc88613dc64bdc1cae4df753bf461683ad6e9c19a",
+  "chain_id": 1,
+  "contract_name": "PSMSplitLiquidationCollateral",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200000,
+  "evm_version": "london",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:50:23.200Z"
+}

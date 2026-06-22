@@ -1,0 +1,17 @@
+{
+  "address": "0x0e1e5248260bf496fb6dee8c5aae4a920a63fef6",
+  "chain_id": 8453,
+  "contract_name": "QuackOFTAdapter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:04.888Z"
+}

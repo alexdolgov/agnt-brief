@@ -1,0 +1,17 @@
+{
+  "address": "0x26a6b0dcdcfb981362afa56d581e4a7dba3be140",
+  "chain_id": 5000,
+  "contract_name": "Puff",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000420000000000000000000000000000000000001000000000000000000000000018fa05ee5e478eed8925946abb41d09aec5d34d6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:53:37.182Z"
+}

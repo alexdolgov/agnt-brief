@@ -1,0 +1,17 @@
+{
+  "address": "0x91995e005fa932a6e033281cfa7495d940b31716",
+  "chain_id": 169,
+  "contract_name": "MiningReferral",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:44:00.259Z"
+}

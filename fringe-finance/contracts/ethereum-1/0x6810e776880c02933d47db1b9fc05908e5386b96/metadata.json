@@ -1,0 +1,18 @@
+{
+  "address": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+  "chain_id": 1,
+  "contract_name": "GnosisToken",
+  "compiler_version": "v0.4.10+commit.f0d539ae",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:30.345Z"
+}

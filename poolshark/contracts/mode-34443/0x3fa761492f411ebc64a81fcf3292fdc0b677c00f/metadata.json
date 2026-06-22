@@ -1,0 +1,17 @@
+{
+  "address": "0x3fa761492f411ebc64a81fcf3292fdc0b677c00f",
+  "chain_id": 34443,
+  "contract_name": "LimitPoolFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000334a70f0cb8b9ceee3d0f4ea232581ff3dfc6e58",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:21:13.067Z"
+}

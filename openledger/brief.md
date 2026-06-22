@@ -1,41 +1,52 @@
 # Agentic Audit Brief: OpenLedger
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: OpenLedger (`openledger`)
 - Website: [https://www.openledger.xyz/](https://www.openledger.xyz/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:05:07.883Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-06-21T08:15:06.434Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: bsc, ethereum
+- Contract surface: 2 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $104,034.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 8
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -47,9 +58,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Bank | unknown | ethereum | n/a | 7 deployments: ethereum [`0x184eb0...42f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/); ethereum `0x57174a...8be718`; ethereum `0x6eca34...3b0db1`; ethereum `0xa6d416...8561b7`; ethereum `0xadb85b...79ed85`; ethereum `0xb0182c...7f15c4`; ethereum `0xd12a27...fdb143` | ⚠️ Unaudited |
+| OmnichainOpen | unknown | bsc | n/a | [`0xa227cc...739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,19 +87,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [OpenLedger-OPEN-Final-Report.pdf](https://github.com/openledger-dev/openledger/blob/master/audit/OpenLedger-OPEN-Final-Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [OpenLedger-OPEN-Final-Report.pdf](https://github.com/openledger-dev/openledger/blob/master/audit/OpenLedger-OPEN-Final-Report.pdf) | unknown | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x184eb0...42f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/) | Bank | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa227cc...739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | OmnichainOpen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

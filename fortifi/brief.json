@@ -1,19 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "fortifi",
-  "generated_at": "2026-06-13T11:35:35.838Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T12:12:08.106Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "fortifi",
+    "tier": 0,
+    "peak_tvl": 1653805,
+    "peak_date": "2024-12-09T00:00:00.000Z",
+    "tvl_30d_ago": 420518,
+    "tvl_90d_ago": 430939,
+    "tvl_current": 341037,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 504433,
+    "change_30d_pct": -18.90073671043808,
+    "change_90d_pct": -20.861885324837157,
+    "days_since_peak": 559,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 79.37864500349194
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,7 +41,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.fortifi.pro",
-    "chains": [],
+    "chains": [
+      "avalanche"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2023-10",
@@ -38,20 +56,102 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "FortiFi is a yield aggregator on Avalanche that optimizes returns on deposited assets through automated strategies. It offers vaults that accept standard tokens and wrapped native tokens, compounding yields for users.",
+    "relationship_narrative": "The two vault contracts share a common codebase and are deployed by the same deployer, indicating a single product family with no separate supporting infrastructure visible in the contract surface.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 108,
+    "live_contracts": 2,
+    "inactive_contracts": 106,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 39,
+    "unverified_dependencies": 3,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x853e7a9dcc5037cd624834dc5f33151aa49d2d73",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FortiFiWNativeMASSVaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "FortiFi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FortiFiWNativeMASSVaultV2",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x853e7a9dcc5037cd624834dc5f33151aa49d2d73",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FortiFiWombatGGAvaxZapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FortiFiWombatGGAvaxZapper",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13131,
@@ -97,9 +197,30 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x853e7a9dcc5037cd624834dc5f33151aa49d2d73",
+      "name": "FortiFiWNativeMASSVaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d",
+      "name": "FortiFiWombatGGAvaxZapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

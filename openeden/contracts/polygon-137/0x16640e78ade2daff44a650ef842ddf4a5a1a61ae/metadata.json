@@ -1,0 +1,18 @@
+{
+  "address": "0x16640e78ade2daff44a650ef842ddf4a5a1a61ae",
+  "chain_id": 137,
+  "contract_name": "BulkBalanceChecker",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:33:24.445Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2ba4549613e83f311ad199c5a2756c159447ba27",
+  "chain_id": 42161,
+  "contract_name": "VaultkaTreasury",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:18.610Z"
+}

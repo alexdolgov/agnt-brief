@@ -1,0 +1,18 @@
+{
+  "address": "0x37976466f68c7b74bea901e49263f8c7e081d42d",
+  "chain_id": 56,
+  "contract_name": "MetaVesting3",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:06:22.160Z"
+}

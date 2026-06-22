@@ -1,0 +1,18 @@
+{
+  "address": "0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e",
+  "chain_id": 1,
+  "contract_name": "MevEth",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 512,
+  "evm_version": "paris",
+  "license": "MIT, SSPL-1.-0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:37:09.527Z"
+}

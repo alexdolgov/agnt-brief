@@ -1,0 +1,17 @@
+{
+  "address": "0xb13389789e00b302eed08ef85ab4616cb08a9b3a",
+  "chain_id": 56,
+  "contract_name": "StrategyCakeSingle",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000007a4f3dae26e549e2645e83e67a74c7a096814d01",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:11:20.815Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x00bbcc069fe179855766781b4293878834d6a6ce",
+  "chain_id": 56,
+  "contract_name": "HoneycombStrategyForPancake",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T18:45:54.401Z"
+}

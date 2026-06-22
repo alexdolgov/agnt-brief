@@ -1,0 +1,18 @@
+{
+  "address": "0x977eadb6fa9b8e1a2a950ccde1a75a7b527a8cbb",
+  "chain_id": 1,
+  "contract_name": "MSIGHelper",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:35.512Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x2f67784d367bab5fd7b8dc607504e0c8de0ad696",
+  "chain_id": 204,
+  "contract_name": "STreasury",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:43:49.728Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x5e3193bb51620809d80305541738f78e17516b33",
+  "chain_id": 42220,
+  "contract_name": "UpgradableProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:44:27.277Z"
+}

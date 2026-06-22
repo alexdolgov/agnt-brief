@@ -1,0 +1,18 @@
+{
+  "address": "0x4bbe6a4001ea7f44fd667e4783e668dedf3b9453",
+  "chain_id": 137,
+  "contract_name": "PrimaryLendingPlatformModeratorV3",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:00.484Z"
+}

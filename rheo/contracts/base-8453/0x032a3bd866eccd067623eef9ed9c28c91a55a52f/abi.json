@@ -1,0 +1,2771 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EnforcedPause",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExpectedPause",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "INVALID_MARKET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "crBefore",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "crAfter",
+        "type": "uint256"
+      }
+    ],
+    "name": "MUST_IMPROVE_COLLATERAL_RATIO",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_SUPPORTED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NULL_ADDRESS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NULL_TENOR",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "oldBorrowRate",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "newBorrowRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "VariablePoolBorrowRateUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "maxDueDate",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256[]",
+                "name": "tenors",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "int256[]",
+                "name": "aprs",
+                "type": "int256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "marketRateMultipliers",
+                "type": "uint256[]"
+              }
+            ],
+            "internalType": "struct YieldCurve",
+            "name": "curveRelativeTime",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct BuyCreditLimitParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "buyCreditLimit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "maxDueDate",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256[]",
+                    "name": "tenors",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "aprs",
+                    "type": "int256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "marketRateMultipliers",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct YieldCurve",
+                "name": "curveRelativeTime",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct BuyCreditLimitParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BuyCreditLimitOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "buyCreditLimitOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "exactAmountIn",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct BuyCreditMarketParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "buyCreditMarket",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "borrower",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "creditPositionId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "exactAmountIn",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct BuyCreditMarketParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BuyCreditMarketOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "buyCreditMarketOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ClaimParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "collateralRatio",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "creditPositionWithDebtToRepayId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditPositionToCompensateId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CompensateParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "compensate",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "creditPositionWithDebtToRepayId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "creditPositionToCompensateId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CompensateParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct CompensateOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "compensateOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct CopyLimitOrdersParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "copyLimitOrders",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "copyAddress",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "minTenor",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "maxTenor",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "minAPR",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "maxAPR",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "offsetAPR",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct CopyLimitOrder",
+                "name": "copyLoanOffer",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "minTenor",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "maxTenor",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "minAPR",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "maxAPR",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "offsetAPR",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct CopyLimitOrder",
+                "name": "copyBorrowOffer",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct CopyLimitOrdersParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct CopyLimitOrdersOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "copyLimitOrdersOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "data",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nextDebtPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nextCreditPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "underlyingCollateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "underlyingBorrowToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract NonTransferrableToken",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract NonTransferrableScaledTokenV1_5",
+            "name": "borrowAToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract NonTransferrableToken",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPool",
+            "name": "variablePool",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct DataView",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "borrowATokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "debtTokenAmountToCollateralTokenAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct DepositParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct DepositParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct DepositOnBehalfOfParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "depositOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feeConfig",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "swapFeeAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationRewardPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueCollateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "feeRecipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeFeeConfigParams",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tenor",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowOfferAPR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "exactAmountIn",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct BuyCreditMarketParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getBuyCreditMarketSwapData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "forSale",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "credit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtPositionId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CreditPosition",
+            "name": "creditPosition",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditAmountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BuyCreditMarket.SwapDataBuyCreditMarket",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "creditPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCreditPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "forSale",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "credit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtPositionId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CreditPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "debtPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getDebtPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dueDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidityIndexAtRepayment",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DebtPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "debtPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getDebtPositionAssignedCollateral",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tenor",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanOfferAPR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "positionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanStatus",
+    "outputs": [
+      {
+        "internalType": "enum LoanStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPositionsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "exactAmountIn",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SellCreditMarketParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getSellCreditMarketSwapData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "forSale",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "credit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtPositionId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CreditPosition",
+            "name": "creditPosition",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditAmountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SellCreditMarket.SwapDataSellCreditMarket",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "cash",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tenor",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSwapFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserCopyLimitOrders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "copyAddress",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyLoanOffer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxTenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "offsetAPR",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct CopyLimitOrder",
+            "name": "copyBorrowOffer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct UserCopyLimitOrders",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserView",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "maxDueDate",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint256[]",
+                        "name": "tenors",
+                        "type": "uint256[]"
+                      },
+                      {
+                        "internalType": "int256[]",
+                        "name": "aprs",
+                        "type": "int256[]"
+                      },
+                      {
+                        "internalType": "uint256[]",
+                        "name": "marketRateMultipliers",
+                        "type": "uint256[]"
+                      }
+                    ],
+                    "internalType": "struct YieldCurve",
+                    "name": "curveRelativeTime",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct LimitOrder",
+                "name": "loanOffer",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "maxDueDate",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint256[]",
+                        "name": "tenors",
+                        "type": "uint256[]"
+                      },
+                      {
+                        "internalType": "int256[]",
+                        "name": "aprs",
+                        "type": "int256[]"
+                      },
+                      {
+                        "internalType": "uint256[]",
+                        "name": "marketRateMultipliers",
+                        "type": "uint256[]"
+                      }
+                    ],
+                    "internalType": "struct YieldCurve",
+                    "name": "curveRelativeTime",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct LimitOrder",
+                "name": "borrowOffer",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "openingLimitBorrowCR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "allCreditPositionsForSaleDisabled",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct User",
+            "name": "user",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowATokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct UserView",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "swapFeeAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationRewardPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueCollateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "feeRecipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeFeeConfigParams",
+        "name": "f",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "crOpening",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "crLiquidation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumCreditBorrowAToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowATokenCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTenor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct InitializeRiskConfigParams",
+        "name": "r",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "priceFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "variablePoolBorrowRateStaleRateInterval",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct InitializeOracleParams",
+        "name": "o",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "weth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingCollateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingBorrowToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "variablePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowATokenV1_5",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sizeFactory",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeDataParams",
+        "name": "d",
+        "type": "tuple"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "creditPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isCreditPositionId",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "debtPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isDebtPositionId",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "debtPositionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isDebtPositionLiquidatable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "debtPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumCollateralProfit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LiquidateParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "liquidate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidatorProfitCollateralToken",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "debtPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumCollateralProfit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minAPR",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LiquidateWithReplacementParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "liquidateWithReplacement",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidatorProfitCollateralToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "liquidatorProfitBorrowToken",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "_data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "multicall",
+    "outputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "results",
+        "type": "bytes[]"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "priceFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "variablePoolBorrowRateStaleRateInterval",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct InitializeOracleParams",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "creditPositionWithDebtToRepayId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PartialRepayParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "partialRepay",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISizeFactory",
+        "name": "_sizeFactory",
+        "type": "address"
+      }
+    ],
+    "name": "reinitialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "debtPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct RepayParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "repay",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "riskConfig",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "crOpening",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "crLiquidation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumCreditBorrowAToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowATokenCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTenor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct InitializeRiskConfigParams",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SelfLiquidateParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "selfLiquidate",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "creditPositionId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SelfLiquidateParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct SelfLiquidateOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "selfLiquidateOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "maxDueDate",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256[]",
+                "name": "tenors",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "int256[]",
+                "name": "aprs",
+                "type": "int256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "marketRateMultipliers",
+                "type": "uint256[]"
+              }
+            ],
+            "internalType": "struct YieldCurve",
+            "name": "curveRelativeTime",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SellCreditLimitParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "sellCreditLimit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "maxDueDate",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256[]",
+                    "name": "tenors",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "aprs",
+                    "type": "int256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "marketRateMultipliers",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct YieldCurve",
+                "name": "curveRelativeTime",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct SellCreditLimitParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct SellCreditLimitOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "sellCreditLimitOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "creditPositionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "exactAmountIn",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SellCreditMarketParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "sellCreditMarket",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "creditPositionId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tenor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxAPR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "exactAmountIn",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct SellCreditMarketParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct SellCreditMarketOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "sellCreditMarketOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "openingLimitBorrowCR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "allCreditPositionsForSaleDisabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "creditPositionIdsForSale",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "creditPositionIds",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct SetUserConfigurationParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "setUserConfiguration",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "openingLimitBorrowCR",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "allCreditPositionsForSaleDisabled",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "creditPositionIdsForSale",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "creditPositionIds",
+                "type": "uint256[]"
+              }
+            ],
+            "internalType": "struct SetUserConfigurationParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct SetUserConfigurationOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "setUserConfigurationOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "borrowRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "setVariablePoolBorrowRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sizeFactory",
+    "outputs": [
+      {
+        "internalType": "contract ISizeFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct UpdateConfigParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct WithdrawParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct WithdrawParams",
+            "name": "params",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "onBehalfOf",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct WithdrawOnBehalfOfParams",
+        "name": "externalParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "withdrawOnBehalfOf",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

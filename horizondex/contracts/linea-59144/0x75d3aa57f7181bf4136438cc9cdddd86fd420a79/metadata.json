@@ -1,0 +1,17 @@
+{
+  "address": "0x75d3aa57f7181bf4136438cc9cdddd86fd420a79",
+  "chain_id": 59144,
+  "contract_name": "LockedEpoch1HZN",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000b1a02a7309dfbfad1cd4adc096582c87e8a3ac10000000000000000000000000000000000000000000000000000000064f12980",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:28:17.424Z"
+}

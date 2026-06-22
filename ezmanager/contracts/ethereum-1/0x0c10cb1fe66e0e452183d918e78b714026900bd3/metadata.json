@@ -1,0 +1,18 @@
+{
+  "address": "0x0c10cb1fe66e0e452183d918e78b714026900bd3",
+  "chain_id": 1,
+  "contract_name": "UniswapAdapter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:55:55.104Z"
+}

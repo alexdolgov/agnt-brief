@@ -1,0 +1,18 @@
+{
+  "address": "0xb9833d1ee7d6b5478104f618436e5df4eaeb55c7",
+  "chain_id": 42161,
+  "contract_name": "ERC20hTokenRootFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:37:51.214Z"
+}

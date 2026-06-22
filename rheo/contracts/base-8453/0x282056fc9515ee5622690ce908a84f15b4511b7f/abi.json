@@ -1,0 +1,1060 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NULL_ADDRESS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "borrowATokenV1_5",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "BorrowATokenV1_5Added",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "borrowATokenV1_5",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "BorrowATokenV1_5Removed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "MarketAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "MarketRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldNonTransferrableScaledTokenV1_5Implementation",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newNonTransferrableScaledTokenV1_5Implementation",
+        "type": "address"
+      }
+    ],
+    "name": "NonTransferrableScaledTokenV1_5ImplementationSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "priceFeed",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "PriceFeedAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "priceFeed",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "name": "PriceFeedRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldSizeImplementation",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newSizeImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "SizeImplementationSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "borrowATokenV1_5",
+        "type": "address"
+      }
+    ],
+    "name": "addBorrowATokenV1_5",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "addMarket",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract PriceFeed",
+        "name": "priceFeed",
+        "type": "address"
+      }
+    ],
+    "name": "addPriceFeed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPool",
+        "name": "variablePool",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "underlyingBorrowToken",
+        "type": "address"
+      }
+    ],
+    "name": "createBorrowATokenV1_5",
+    "outputs": [
+      {
+        "internalType": "contract NonTransferrableScaledTokenV1_5",
+        "name": "borrowATokenV1_5",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "swapFeeAPR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationRewardPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueCollateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralProtocolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "feeRecipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeFeeConfigParams",
+        "name": "feeConfigParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "crOpening",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "crLiquidation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumCreditBorrowAToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowATokenCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minTenor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTenor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct InitializeRiskConfigParams",
+        "name": "riskConfigParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "priceFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "variablePoolBorrowRateStaleRateInterval",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct InitializeOracleParams",
+        "name": "oracleParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "weth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingCollateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingBorrowToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "variablePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowATokenV1_5",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeDataParams",
+        "name": "dataParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "createMarket",
+    "outputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IUniswapV3Pool",
+            "name": "uniswapV3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapWindow",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "averageBlockTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "baseAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "quoteAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "sequencerUptimeFeed",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PriceFeedParams",
+        "name": "_priceFeedParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "createPriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract PriceFeed",
+        "name": "priceFeed",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowATokenV1_5",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBorrowATokenV1_5Descriptions",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "descriptions",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBorrowATokensV1_5",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Metadata[]",
+        "name": "_borrowATokensV1_5",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBorrowATokensV1_5Count",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getMarket",
+    "outputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketDescriptions",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "descriptions",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarkets",
+    "outputs": [
+      {
+        "internalType": "contract ISize[]",
+        "name": "_markets",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract PriceFeed",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPriceFeedDescriptions",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "descriptions",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPriceFeeds",
+    "outputs": [
+      {
+        "internalType": "contract PriceFeed[]",
+        "name": "_priceFeeds",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPriceFeedsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "candidate",
+        "type": "address"
+      }
+    ],
+    "name": "isBorrowATokenV1_5",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "candidate",
+        "type": "address"
+      }
+    ],
+    "name": "isMarket",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "candidate",
+        "type": "address"
+      }
+    ],
+    "name": "isPriceFeed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nonTransferrableScaledTokenV1_5Implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "borrowATokenV1_5",
+        "type": "address"
+      }
+    ],
+    "name": "removeBorrowATokenV1_5",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISize",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "removeMarket",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract PriceFeed",
+        "name": "priceFeed",
+        "type": "address"
+      }
+    ],
+    "name": "removePriceFeed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "existed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nonTransferrableScaledTokenV1_5Implementation",
+        "type": "address"
+      }
+    ],
+    "name": "setNonTransferrableScaledTokenV1_5Implementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sizeImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "setSizeImplementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sizeImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

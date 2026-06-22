@@ -1,0 +1,17 @@
+{
+  "address": "0x8850dea069963fafdd7723e7d4a5854d639c7519",
+  "chain_id": 1,
+  "contract_name": "P2PLendingVaultedRefinance",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:50:53.607Z"
+}

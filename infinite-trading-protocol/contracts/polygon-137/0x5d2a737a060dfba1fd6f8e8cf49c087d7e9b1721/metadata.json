@@ -1,0 +1,17 @@
+{
+  "address": "0x5d2a737a060dfba1fd6f8e8cf49c087d7e9b1721",
+  "chain_id": 137,
+  "contract_name": "OneInchV4Guard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000064",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:41.016Z"
+}

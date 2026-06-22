@@ -1,0 +1,18 @@
+{
+  "address": "0xbc7c836d99c77f4a92c27ee9a31f833d917ccbc3",
+  "chain_id": 56,
+  "contract_name": "MASD_ERC721",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, NONE",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:19:15.313Z"
+}

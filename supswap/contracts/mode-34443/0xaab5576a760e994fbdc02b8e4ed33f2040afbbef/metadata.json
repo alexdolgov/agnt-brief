@@ -1,0 +1,18 @@
+{
+  "address": "0xaab5576a760e994fbdc02b8e4ed33f2040afbbef",
+  "chain_id": 34443,
+  "contract_name": "AccessRegistry",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:32.663Z"
+}

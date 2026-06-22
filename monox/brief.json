@@ -1,34 +1,65 @@
 {
   "schema_version": "2.0",
   "project_key": "monox",
-  "generated_at": "2026-06-13T10:32:54.142Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:38:40.321Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "monox",
+    "tier": 1,
+    "peak_tvl": 37296186,
+    "peak_date": "2021-11-30T00:00:00.000Z",
+    "tvl_30d_ago": 11025,
+    "tvl_90d_ago": 11018,
+    "tvl_current": 10951,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 11152,
+    "change_30d_pct": -0.6712018140589568,
+    "change_90d_pct": -0.6080958431657288,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.97% from peak over 4 years ago, homepage shows outdated 2021 APY and no recent activity, indicating abandonment.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1662,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.97063774832097,
+    "governance_evidence": "TVL dropped 99.97% from peak over 4 years ago, homepage shows outdated 2021 APY and no recent activity, indicating abandonment.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 1629,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 9,
+    "total_addresses": 11,
+    "unique_implementations": 9,
+    "total_deployments": 11,
+    "audited_contracts": 1,
+    "unaudited_contracts": 8,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 11.1,
     "total_audits": 4,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 10939.70558,
-    "tvl_usd": 10939.70558,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 7870.686395525126,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 7870.69
+    },
     "asd_usd": null,
     "website_url": "https://monox.finance/",
-    "chains": [],
+    "chains": [
+      "ethereum",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021",
+    "latest_audit_date": "2021-05",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +69,374 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "MonoX is a decentralized exchange protocol that uses single-sided liquidity pools, allowing users to provide liquidity and trade without needing a counterparty token pair. It aims to reduce capital requirements and slippage by pooling assets into a shared virtual pair.",
+    "relationship_narrative": "The MonoXPool contract serves as the core liquidity engine, while Monoswap handles token swaps and MonoswapStaking manages staking rewards. TransparentUpgradeableProxy is used to upgrade these core contracts, and MagicInternetMoneyV1 and Vyper_contract appear as supporting tokens or integrations.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 322,
+    "live_contracts": 11,
+    "inactive_contracts": 293,
+    "singleton_contracts": 18,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 7,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 189,
+    "unverified_dependencies": 3,
+    "detected_codebases": [
+      "uniswap-v2",
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x05323017c00874198cf1b0832922074beea0db83",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MonoToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 7870.686395525126,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonoToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2920f7d6134f4669343e70122ca9b8f19ef8fa5d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7870.686395525126,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x05323017c00874198cf1b0832922074beea0db83",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13514"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd96f48665a1410c0cd669a88898eca36b9fc2cce",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DegenBox",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DegenBox",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd96f48665a1410c0cd669a88898eca36b9fc2cce",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdfe1a5b757523ca6f7f049ac02151808e6a52111",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "InchSpellSwapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InchSpellSwapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdfe1a5b757523ca6f7f049ac02151808e6a52111",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MagicInternetMoneyV1",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "MonoX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MagicInternetMoneyV1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbd2fbaf2dc95bd78cf1cd3c5235b33d1165e6797",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "mSpellStaking",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "mSpellStaking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbd2fbaf2dc95bd78cf1cd3c5235b33d1165e6797",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x26fa3fffb6efe8c1e69103acb4044c26b9a106a9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "sSpellV1",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sSpellV1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x26fa3fffb6efe8c1e69103acb4044c26b9a106a9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1456688345527be1f37e9e627da0837d6f08c925",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "USDP",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1456688345527be1f37e9e627da0837d6f08c925",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7621ee0ce0f686b88dd70551b05f90dd3c04d6e9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VCASH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VCASH",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7621ee0ce0f686b88dd70551b05f90dd3c04d6e9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x48ddd27a4d54cd3e8c34f34f7e66e998442dbce3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vyper_contract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48ddd27a4d54cd3e8c34f34f7e66e998442dbce3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92e187a03b6cd19cb6af293ba17f2745fd2357d5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13514,
@@ -61,17 +446,23 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [
+        "MonoToken.sol",
+        "MonoXPool.sol",
+        "Monoswap.sol",
+        "MonoswapStaking.sol",
+        "VUSD.sol"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
@@ -148,24 +539,73 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 11.1,
+      "latest_audit": "2021-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdfe1a5b757523ca6f7f049ac02151808e6a52111",
+      "name": "InchSpellSwapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbd2fbaf2dc95bd78cf1cd3c5235b33d1165e6797",
+      "name": "mSpellStaking",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1456688345527be1f37e9e627da0837d6f08c925",
+      "name": "USDP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7621ee0ce0f686b88dd70551b05f90dd3c04d6e9",
+      "name": "VCASH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 5,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 27
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13514,
-        "report_name": "MonoX_Smart_Contract_Security_Audit_Report_Halborn_v1_1.pdf"
-      },
       {
         "audit_id": 13515,
         "report_name": "DL audit link"

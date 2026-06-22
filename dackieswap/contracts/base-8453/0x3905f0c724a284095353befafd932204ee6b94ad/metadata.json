@@ -1,0 +1,18 @@
+{
+  "address": "0x3905f0c724a284095353befafd932204ee6b94ad",
+  "chain_id": 8453,
+  "contract_name": "MasterChefDACKIE",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:04.973Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x441f62940ad653cac353f5ae9949b00d305eb816",
+  "chain_id": 42220,
+  "contract_name": "UtilsLib",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:44:27.047Z"
+}

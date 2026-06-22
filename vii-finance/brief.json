@@ -1,33 +1,54 @@
 {
   "schema_version": "2.0",
   "project_key": "vii-finance",
-  "generated_at": "2026-06-13T15:02:41.342Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:46:20.674Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "vii-finance",
+    "tier": 0,
+    "peak_tvl": 18662,
+    "peak_date": "2026-04-27T00:00:00.000Z",
+    "tvl_30d_ago": 16207,
+    "tvl_90d_ago": 2817,
+    "tvl_current": 12472,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 3170,
+    "change_30d_pct": -23.045597581292036,
+    "change_90d_pct": 342.7405040823571,
+    "days_since_peak": 53,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 33.16900653734862
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
+    "audited_contracts": 1,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 12478.945939999998,
     "tvl_usd": 12478.945939999998,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.vii.finance/",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "chains": [
+      "ethereum",
+      "unichain"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "Cyfrin"
+    ],
     "latest_audit_date": "2025-07",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
@@ -38,20 +59,115 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "VII Finance is a leveraged farming protocol that enables users to amplify yield from liquidity provision. It wraps Uniswap V4 positions to facilitate leveraged strategies, likely through borrowing or derivative mechanisms.",
+    "relationship_narrative": "The VII Finance contract likely coordinates user deposits and leverage, while the UniswapV4WrapperFactory instances create wrapped LP tokens that can be used as collateral or to manage leveraged positions. Both families share the same deployer cluster, indicating a unified development origin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 3,
+    "live_contracts": 3,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x77774abb84eeabae05ce00d8a1b83dfc6e93f777",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV4WrapperFactory",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Lending Protocol ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV4WrapperFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77774abb84eeabae05ce00d8a1b83dfc6e93f777",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x7777655b9474d2f3f27ee44f3fd1343e33ce2777",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14113"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x12e74f3c61f6b4d17a9c3fdb3f42e8f18a8bb394",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "VII Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x12e74f3c61f6b4d17a9c3fdb3f42e8f18a8bb394",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14113,
@@ -66,34 +182,49 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseUniswapWrapperFactory",
+        "ERC721WrapperBase",
+        "UniswapPositionValueHelper",
+        "UniswapV3Wrapper",
+        "UniswapV3WrapperFactory",
+        "UniswapV4Wrapper",
+        "UniswapV4WrapperFactory"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Cyfrin",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2025-07"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 14113,
-        "report_name": "2025-07-15-cyfrin-vii-v2.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

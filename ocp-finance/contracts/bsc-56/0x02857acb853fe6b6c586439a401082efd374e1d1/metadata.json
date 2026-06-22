@@ -1,0 +1,18 @@
+{
+  "address": "0x02857acb853fe6b6c586439a401082efd374e1d1",
+  "chain_id": 56,
+  "contract_name": "CErc20Immutable",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:12:09.061Z"
+}

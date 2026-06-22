@@ -1,13 +1,20 @@
 {
-  "total_contracts": 0,
-  "verified_fetched": 0,
-  "fetched_from_sourcify": 0,
-  "fetched_from_etherscan": 0,
-  "sourcify_full_match": 0,
-  "sourcify_partial_match": 0,
-  "unverified_skipped": 0,
+  "total_contracts": 71,
+  "verified_fetched": 12,
+  "fetched_from_sourcify": 4,
+  "fetched_from_etherscan": 8,
+  "sourcify_full_match": 2,
+  "sourcify_partial_match": 2,
+  "unverified_skipped": 4,
   "fetch_failed": 0,
-  "total_source_files": 0,
-  "chains": [],
-  "fetched_at": "2026-06-13T10:02:36.653Z"
+  "total_source_files": 328,
+  "chains": [
+    1,
+    137,
+    999,
+    8453,
+    42161,
+    534352
+  ],
+  "fetched_at": "2026-06-19T21:54:35.195Z"
 }

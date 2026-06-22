@@ -1,57 +1,587 @@
 {
   "schema_version": "2.0",
   "project_key": "nftfi",
-  "generated_at": "2026-06-13T10:21:52.924Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:11:33.167Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "nftfi",
+    "tier": 0,
+    "peak_tvl": 33290516,
+    "peak_date": "2023-05-31T00:00:00.000Z",
+    "tvl_30d_ago": 12995,
+    "tvl_90d_ago": 12669,
+    "tvl_current": 10364,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 18402,
+    "change_30d_pct": -20.24624855713736,
+    "change_90d_pct": -18.19401689162523,
+    "days_since_peak": 1115,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.96886801033665
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 12,
+    "total_addresses": 18,
+    "unique_implementations": 12,
+    "total_deployments": 18,
+    "audited_contracts": 6,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 7,
-    "scoreable_audits": 0,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 10103.28662,
     "tvl_usd": 10103.28662,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.nftfi.com/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023",
+    "latest_audit_date": "2023-02",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 5,
-      "unknown": 2
+      "stale": 6,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "NFTfi is a peer-to-peer lending protocol that enables borrowers to use their NFTs as collateral to obtain cryptocurrency loans from lenders. It supports various loan types including asset-specific loans, collection-based offers, and refinancing, all managed through a set of smart contracts that handle escrow, loan terms, and repayments.",
+    "relationship_narrative": "The NFTfi family serves as the core infrastructure, with LoanCoordinator orchestrating loan lifecycles and Escrow holding collateral. Asset Loan and Standing Collection Offer Loan families are specific loan types that rely on the core's LoanChecksAndCalculations and ERC20TransferManager for validation and token transfers. The Supporting Contracts family provides bundling capabilities that can be used across different loan types.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 70,
+    "live_contracts": 18,
+    "inactive_contracts": 50,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 21,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 12,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9f10d706d789e4c76a1a6434cd1a9841c875c0a6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AssetOfferLoan",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AssetOfferLoan",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9f10d706d789e4c76a1a6434cd1a9841c875c0a6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb6adec2acc851d30d5fb64f3137234bcdcbbad0d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CollectionOfferLoan",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CollectionOfferLoan",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb6adec2acc851d30d5fb64f3137234bcdcbbad0d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe52cec0e90115abeb3304baa36bc2655731f7934",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DirectLoanFixedCollectionOffer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Standing Collection Offer Loan",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DirectLoanFixedCollectionOffer",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe52cec0e90115abeb3304baa36bc2655731f7934",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13567"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd0a40eb7fd94ee97102ba8e9342243a2b2e22207",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DirectLoanFixedOffer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Asset Loan",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DirectLoanFixedOffer",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd0a40eb7fd94ee97102ba8e9342243a2b2e22207",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13566",
+        "audit-13568"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8252df1d8b29057d1afe3062bf5a64d503152bc8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DirectLoanFixedOfferRedeploy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Asset Loan",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DirectLoanFixedOfferRedeploy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8252df1d8b29057d1afe3062bf5a64d503152bc8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13568"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x46c9cfb32627b74f91e0b5ad575c247aec7e7847",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ImmutableBundle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ImmutableBundle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x46c9cfb32627b74f91e0b5ad575c247aec7e7847",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a129032f01eb4ddd764c1777c81b771c34a2fbe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb9f55139fc79ed58d9845461f70483f778ebfef2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13569"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa6d93abc54268cf849a93e867c129786f04fd2e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LoanCoordinator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LoanCoordinator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa6d93abc54268cf849a93e867c129786f04fd2e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa2cb0de6006eff2b5b20719152231bcd651bec2f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MigrateBundle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MigrateBundle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa2cb0de6006eff2b5b20719152231bcd651bec2f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5af0d9827e0c53e4799bb226655a1de152a425a5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Miladys",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Miladys",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5af0d9827e0c53e4799bb226655a1de152a425a5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0259119359bf053ebf42c9807752de6bbb4925f3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NftfiBundler",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Supporting Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NftfiBundler",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0259119359bf053ebf42c9807752de6bbb4925f3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13566",
+        "audit-13569"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6701b1d2e6d34727c0c37cdbd0cf421d3357dd0c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Refinancing",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Refinancing",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6701b1d2e6d34727c0c37cdbd0cf421d3357dd0c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x48ed998e778ab2663b6c49bd09dfff8efd16b934",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SmartNft",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NFTfi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SmartNft",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48ed998e778ab2663b6c49bd09dfff8efd16b934",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5660e206496808f7b5cdb8c56a696a96ae5e9b23",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77b53beb7f13bd38de9f76eed2f2c4f9efff7f4c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaabd3ebcc6ae1e87150c6184c038b94dc01a7708",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe73ece5988fff33a012cea8bb6fd5b27679fc481",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13566"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13564,
@@ -81,8 +611,8 @@
       "report_url": "https://reports.chainsecurity.com/POANetwork/ChainSecurity_POANetwork_SBCDeposit_Audit.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -103,17 +633,49 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AirdropFlashLoan",
+        "AirdropReceiver",
+        "AirdropReceiverFactory",
+        "BaseLoan",
+        "ContractKeys",
+        "CryptoKittiesWrapper",
+        "DirectLoanBaseMinimal",
+        "DirectLoanCoordinator",
+        "DirectLoanFixedOffer",
+        "ERC1155Wrapper",
+        "ERC721Wrapper",
+        "ERC9981155Extension",
+        "ERC998ERC20Extension",
+        "ERC998TopDown",
+        "IAirdropReceiverFactory",
+        "IDirectLoanBase",
+        "LoanAirdropUtils",
+        "LoanChecksAndCalculations",
+        "LoanData",
+        "NFTfiSigningUtils",
+        "NFTfiSigningUtilsContract",
+        "NftReceiver",
+        "NftfiBundler",
+        "NftfiHub",
+        "Ownable",
+        "PermittedAirdrops",
+        "PermittedERC20s",
+        "PermittedNFTsAndTypeRegistry",
+        "PermittedPartners",
+        "SmartNft",
+        "TokenTrade"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -124,17 +686,19 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "DirectLoanFixedCollectionOffer"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -145,17 +709,26 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseLoan",
+        "DirectLoanBase",
+        "DirectLoanBaseMinimal",
+        "DirectLoanFixedOffer",
+        "DirectLoanFixedOfferRedeploy",
+        "LoanData",
+        "NftReceiver",
+        "PermittedERC20s"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -166,17 +739,26 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AirdropFlashLoan",
+        "ERC998TopDown",
+        "ImmutableBundle",
+        "NftfiBundler",
+        "Ownable",
+        "PermittedNFTs",
+        "PersonalBundler",
+        "PersonalBundlerFactory"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -187,7 +769,7 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023",
+      "date": "2023-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -201,17 +783,80 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 50,
+      "latest_audit": "2023-02"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9f10d706d789e4c76a1a6434cd1a9841c875c0a6",
+      "name": "AssetOfferLoan",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb6adec2acc851d30d5fb64f3137234bcdcbbad0d",
+      "name": "CollectionOfferLoan",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa6d93abc54268cf849a93e867c129786f04fd2e6",
+      "name": "LoanCoordinator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa2cb0de6006eff2b5b20719152231bcd651bec2f",
+      "name": "MigrateBundle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6701b1d2e6d34727c0c37cdbd0cf421d3357dd0c",
+      "name": "Refinancing",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 11,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 61
+    },
+    "extraction_confidence_counts": {
+      "high": 4
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -222,22 +867,6 @@
       {
         "audit_id": 13565,
         "report_name": "download report"
-      },
-      {
-        "audit_id": 13566,
-        "report_name": "NFTfi_Ethereum_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
-      },
-      {
-        "audit_id": 13567,
-        "report_name": "NFTfi - Collection Offer Smart Contract Security Audit Report"
-      },
-      {
-        "audit_id": 13568,
-        "report_name": "NFTfi - DirectLoanFixedOffer Redeployment Smart Contract Security Audit Report"
-      },
-      {
-        "audit_id": 13569,
-        "report_name": "NFTfi - Bundles Airdrop Smart Contract Security Audit Report"
       },
       {
         "audit_id": 13570,

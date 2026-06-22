@@ -1,0 +1,455 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "uniswapV3Factory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AmountTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TEAMaxSupplyExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooMuchCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VaultDoesNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VAULT",
+    "outputs": [
+      {
+        "internalType": "contract IVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "vaultId",
+        "type": "uint48"
+      }
+    ],
+    "name": "getAddressAPE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48[]",
+        "name": "vaultIds",
+        "type": "uint48[]"
+      }
+    ],
+    "name": "getReserves",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint144",
+            "name": "reserveApes",
+            "type": "uint144"
+          },
+          {
+            "internalType": "uint144",
+            "name": "reserveLPers",
+            "type": "uint144"
+          },
+          {
+            "internalType": "int64",
+            "name": "tickPriceX42",
+            "type": "int64"
+          }
+        ],
+        "internalType": "struct SirStructs.Reserves[]",
+        "name": "reserves",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numVaults",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUserBalances",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "apeBalances",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "teaBalances",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint80[]",
+        "name": "unclaimedSirRewards",
+        "type": "uint80[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "getVaultStatus",
+    "outputs": [
+      {
+        "internalType": "enum Assistant.VaultStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "priceOfAPE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "num",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "den",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "priceOfTEA",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "num",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "den",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isAPE",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountTokens",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteBurn",
+    "outputs": [
+      {
+        "internalType": "uint144",
+        "name": "amountCollateral",
+        "type": "uint144"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDebtToken",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "debtToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountCollateral",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteCollateralToDebtToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountDebtToken",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isAPE",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint144",
+        "name": "amountCollateral",
+        "type": "uint144"
+      }
+    ],
+    "name": "quoteMint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountTokens",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isAPE",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "debtToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int8",
+            "name": "leverageTier",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct SirStructs.VaultParameters",
+        "name": "vaultParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDebtToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteMintWithDebtToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountTokens",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountCollateral",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountCollateralIdeal",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

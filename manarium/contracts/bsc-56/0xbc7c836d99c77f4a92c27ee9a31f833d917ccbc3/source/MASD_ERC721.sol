@@ -1,0 +1,94 @@
+// SPDX-License-Identifier: NONE
+pragma solidity 0.8.6;
+
+import "Ownable.sol";
+import "ERC721.sol";
+import "ERC721URIStorage.sol";
+import "ERC721Enumerable.sol";
+
+import "ContractURIMixin.sol";
+
+
+contract MASD_ERC721 is
+    ERC721,
+    ERC721Enumerable,
+    Ownable,
+    ContractURIMixin
+{
+    string public baseURI;
+
+    event BaseURISet(string newBaseURI);
+
+    constructor(address ownerAddress, string memory baseURIValue) ERC721("MASD NFT", "MASD NFT") Ownable() {
+        if (owner() != ownerAddress) {
+            transferOwnership(ownerAddress);
+        }
+        baseURI = baseURIValue;
+    }
+
+    function setBaseURI(string memory uri) external onlyOwner {
+        baseURI = uri;
+        emit BaseURISet(uri);
+    }
+
+    function _baseURI() override(ERC721) internal view returns(string memory) {
+        return baseURI;
+    }
+
+    function mint(address to, uint256 tokenId) external onlyOwner {
+        _mint(to, tokenId);
+    }
+
+    function mintBatch(address[] memory tos, uint256[] memory tokenIds) external onlyOwner {
+        require(tokenIds.length == tos.length, "arrays mismatch");
+        for (uint256 i=0; i<tokenIds.length; i++) {
+            _mint(tos[i], tokenIds[i]);
+        }
+    }
+
+    function burn(uint256 tokenId) external {
+        require(_isApprovedOrOwner(msg.sender, tokenId), "no permission");
+        _burn(tokenId);
+    }
+
+    function burnBatch(uint256[] memory tokenIds) external {
+        for (uint256 i=0; i<tokenIds.length; i++) {
+            require(_isApprovedOrOwner(msg.sender, tokenIds[i]), "no permission");
+            _burn(tokenIds[i]);
+        }
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 tokenId) internal override(ERC721, ERC721Enumerable) {
+        ERC721Enumerable._beforeTokenTransfer(from, to, tokenId);
+    }
+
+    function supportsInterface(bytes4 interfaceId) public view override(ERC721, ERC721Enumerable) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+
+    function transferFromBatch(
+        address[] memory froms,
+        address[] memory tos,
+        uint256[] memory tokenIds
+    ) external {
+        require(froms.length == tos.length, "arrays mismatch");
+        require(froms.length == tokenIds.length, "arrays mismatch");
+        for (uint256 i=0; i<froms.length; i++) {
+            transferFrom(froms[i], tos[i], tokenIds[i]);
+        }
+    }
+
+    function safeTransferFromBatch(
+        address[] memory froms,
+        address[] memory tos,
+        uint256[] memory tokenIds,
+        bytes[] memory _datas
+    ) external {
+        require(froms.length == tos.length, "arrays mismatch");
+        require(froms.length == tokenIds.length, "arrays mismatch");
+        require(froms.length == _datas.length, "arrays mismatch");
+        for (uint256 i=0; i<froms.length; i++) {
+            safeTransferFrom(froms[i], tos[i], tokenIds[i], _datas[i]);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x056424e33f8f7111128f6db4cf46f6423b077aa6",
+  "chain_id": 1,
+  "contract_name": "DfTokenizedDeposit",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:48:35.806Z"
+}

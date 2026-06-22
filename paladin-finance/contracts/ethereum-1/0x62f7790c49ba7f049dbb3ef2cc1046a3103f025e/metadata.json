@@ -1,0 +1,18 @@
+{
+  "address": "0x62f7790c49ba7f049dbb3ef2cc1046a3103f025e",
+  "chain_id": 1,
+  "contract_name": "PalPoolhPal",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 25000,
+  "evm_version": "istanbul",
+  "license": "MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:29:51.282Z"
+}

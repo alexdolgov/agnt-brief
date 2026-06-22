@@ -1,0 +1,18 @@
+{
+  "address": "0x1f73c8955e4dbb9e863261fa4e6d359e9200e525",
+  "chain_id": 42161,
+  "contract_name": "WithdrawPeriphery",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 256,
+  "evm_version": "london",
+  "license": "AGPL-3.0, BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:17.632Z"
+}

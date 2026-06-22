@@ -1,0 +1,18 @@
+{
+  "address": "0x757cd583004400ee67e5cc3c7a60c6a62e3f6d30",
+  "chain_id": 42161,
+  "contract_name": "DackieTreasury",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:02.437Z"
+}

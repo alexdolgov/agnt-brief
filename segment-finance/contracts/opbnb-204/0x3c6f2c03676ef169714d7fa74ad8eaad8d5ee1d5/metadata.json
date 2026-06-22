@@ -1,0 +1,17 @@
+{
+  "address": "0x3c6f2c03676ef169714d7fa74ad8eaad8d5ee1d5",
+  "chain_id": 204,
+  "contract_name": "ComptrollerLens",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:43:49.366Z"
+}

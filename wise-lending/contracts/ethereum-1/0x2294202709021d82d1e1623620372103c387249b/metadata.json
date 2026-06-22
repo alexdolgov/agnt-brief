@@ -1,0 +1,17 @@
+{
+  "address": "0x2294202709021d82d1e1623620372103c387249b",
+  "chain_id": 1,
+  "contract_name": "BulkDepositWrapper",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000009439e0810dd55e95efd0bee6a664325b3e344adb",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:33.965Z"
+}

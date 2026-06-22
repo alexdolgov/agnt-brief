@@ -1,0 +1,18 @@
+{
+  "address": "0x867245518f180a6bbb959ec690ad9c7206d7ce99",
+  "chain_id": 1,
+  "contract_name": "LockReleaseVault",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:08:04.530Z"
+}

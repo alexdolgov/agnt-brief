@@ -1,0 +1,18 @@
+{
+  "address": "0x221657776846890989a759ba2973e427dff5c9bb",
+  "chain_id": 1,
+  "contract_name": "ReputationToken",
+  "compiler_version": "v0.5.15+commit.6a57276f",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:02:13.368Z"
+}

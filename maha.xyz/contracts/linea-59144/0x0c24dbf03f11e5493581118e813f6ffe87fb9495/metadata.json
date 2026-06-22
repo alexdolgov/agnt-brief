@@ -1,0 +1,17 @@
+{
+  "address": "0x0c24dbf03f11e5493581118e813f6ffe87fb9495",
+  "chain_id": 59144,
+  "contract_name": "MAHAProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "000000000000000000000000d2c52dfedf2e4b23c6fa23cc93a6060574da06a00000000000000000000000007202136d70026da33628dd3f3efccb43f62a246900000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": "0xd2c52dfedf2e4b23c6fa23cc93a6060574da06a0",
+  "fetched_at": "2026-06-19T11:56:46.818Z"
+}

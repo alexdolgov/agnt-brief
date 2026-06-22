@@ -1,0 +1,169 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_plvGlpUnwrapperTrader",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_plvGlpWrapperTrader",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_plutusWhitelist",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dolomitePlvGlpWrapper",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dolomiteMargin",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "plvGlpUnwrapperTrader",
+        "type": "address"
+      }
+    ],
+    "name": "PlvGlpUnwrapperTraderSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "plvGlpWrapperTrader",
+        "type": "address"
+      }
+    ],
+    "name": "PlvGlpWrapperTraderSet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DOLOMITE_MARGIN",
+    "outputs": [
+      {
+        "internalType": "contract IDolomiteMargin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DOLOMITE_PLV_GLP_WRAPPER",
+    "outputs": [
+      {
+        "internalType": "contract IWrappedTokenUserVaultFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PLUTUS_WHITELIST",
+    "outputs": [
+      {
+        "internalType": "contract IWhitelist",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_caller",
+        "type": "address"
+      }
+    ],
+    "name": "isWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_plvGlpUnwrapperTrader",
+        "type": "address"
+      }
+    ],
+    "name": "ownerSetPlvGlpUnwrapperTrader",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_plvGlpWrapperTrader",
+        "type": "address"
+      }
+    ],
+    "name": "ownerSetPlvGlpWrapperTrader",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "plvGlpUnwrapperTrader",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "plvGlpWrapperTrader",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

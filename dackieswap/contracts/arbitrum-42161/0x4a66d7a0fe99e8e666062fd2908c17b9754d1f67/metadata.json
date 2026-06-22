@@ -1,0 +1,18 @@
+{
+  "address": "0x4a66d7a0fe99e8e666062fd2908c17b9754d1f67",
+  "chain_id": 42161,
+  "contract_name": "DackieV3LmPoolDeployerV3",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:01.918Z"
+}

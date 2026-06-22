@@ -1,41 +1,51 @@
 # Agentic Audit Brief: Tristero
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Tristero (`tristero`)
 - Website: [https://www.tristero.com/](https://www.tristero.com/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:54:45.309Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: unknown (Tier 0, 87.5% below peak)
+- Generated: 2026-06-19T13:30:29.135Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: arbitrum, base, ethereum
+- Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $353.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Tristero is a decentralized derivatives and spot trading protocol that enables users to trade with leverage or spot across multiple chains. It uses escrow contracts to custody collateral and manage trade settlement.
+
+### Architecture
+
+The protocol currently consists of a single product family, Tristero Margin, which relies on escrow contracts deployed on multiple chains. All contracts share the same deployer and are part of a unified margin trading system.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 4
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2023-09 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -47,9 +57,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| EscrowV4 | operational_periphery | arbitrum | n/a | [`0x270f52...00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | ⚠️ Unaudited |
+| TristeroEscrowV4 | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0xe40000...471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/); base [`0xe40000...471d2e`](./contracts/base-8453/0xe400000df2f227133ff74c662c9e935439471d2e/); arbitrum [`0xe40000...471d2e`](./contracts/arbitrum-42161/0xe400000df2f227133ff74c662c9e935439471d2e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,19 +86,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Tristero - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Tristero%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Tristero - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Tristero%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | [`0x270f52...00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | EscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe40000...471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/) | TristeroEscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

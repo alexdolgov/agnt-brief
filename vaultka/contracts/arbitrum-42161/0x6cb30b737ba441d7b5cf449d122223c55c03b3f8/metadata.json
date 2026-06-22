@@ -1,0 +1,18 @@
+{
+  "address": "0x6cb30b737ba441d7b5cf449d122223c55c03b3f8",
+  "chain_id": 42161,
+  "contract_name": "esVKAToken",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 99,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:21.349Z"
+}

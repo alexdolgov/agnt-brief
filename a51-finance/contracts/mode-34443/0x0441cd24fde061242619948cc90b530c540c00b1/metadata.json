@@ -1,0 +1,17 @@
+{
+  "address": "0x0441cd24fde061242619948cc90b530c540c00b1",
+  "chain_id": 34443,
+  "contract_name": "CLTZapIn",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000007e15eb462cdc67cf92af1f7102465a8f8c78487400000000000000000000000069317029384c3305fc04670c68a2b434e2d8c44c00000000000000000000000042000000000000000000000000000000000000060000000000000000000000004ef03f0ea9e744f22b768e17628ce39a2f48abe5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:02.635Z"
+}

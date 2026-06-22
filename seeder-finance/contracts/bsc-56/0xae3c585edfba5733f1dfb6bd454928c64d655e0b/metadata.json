@@ -1,0 +1,18 @@
+{
+  "address": "0xae3c585edfba5733f1dfb6bd454928c64d655e0b",
+  "chain_id": 56,
+  "contract_name": "Seed",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:15:51.908Z"
+}

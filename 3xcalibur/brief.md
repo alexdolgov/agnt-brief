@@ -1,40 +1,50 @@
 # Agentic Audit Brief: 3xcalibur
 
+⚠️ Lifecycle status: DEAD - TVL dropped 5.6% over 90 days
+
 ## Project Overview
 
 - Project: 3xcalibur (`3xcalibur`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:11:06.162Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T19:16:31.636Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: arbitrum
+- Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $2,582.17
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- On-chain TVL (included contracts): $32,649.55
+- TVL by chain: Arbitrum $32,649.55
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+3xcalibur is a decentralized exchange (DEX) protocol on Arbitrum One, enabling users to swap tokens and provide liquidity. It appears to be a Uniswap V2 fork, as indicated by its adapter registry reference.
+
+### Architecture
+
+The protocol consists of a single product family centered around its token contract, with no additional infrastructure contracts identified in the provided inventory.
+
+## Contract Surface Quality
+
+- Indexed contracts: 51; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 43 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 8
+- Raw deployments: 8
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $32,649.55
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of $32,649.55 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -46,9 +56,18 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (8)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Token | token | arbitrum | n/a | [`0xd2568a...d89fcb`](./contracts/arbitrum-42161/0xd2568accd10a4c98e87c44e9920360031ad89fcb/) | ⚠️ Unaudited |
+| Claim | unknown | arbitrum | n/a | [`0xeb8fee...b68b11`](./contracts/arbitrum-42161/0xeb8feeb4589c64959d7cbf3c7ec377328ab68b11/) | ⚠️ Unaudited |
+| Minter | operational_periphery | arbitrum | n/a | [`0x2513db...c573b0`](./contracts/arbitrum-42161/0x2513db1b4dac06ccb03931321292045fdbc573b0/) | ⚠️ Unaudited |
+| SBT | unknown | arbitrum | n/a | [`0xbb6e57...77929d`](./contracts/arbitrum-42161/0xbb6e57f1c0b35298c121b5151d2c7411da77929d/) | ⚠️ Unaudited |
+| Voter | unknown | arbitrum | n/a | [`0xe6ccdc...c5e628`](./contracts/arbitrum-42161/0xe6ccdc80c4838b670c94da07e8338589dec5e628/) | ⚠️ Unaudited |
+| VoterAux | unknown | arbitrum | n/a | [`0xbe99eb...102e28`](./contracts/arbitrum-42161/0xbe99eb17fe79f98e5865df4f0e0ccff003102e28/) | ⚠️ Unaudited |
+| VotingDist | unknown | arbitrum | n/a | [`0x399e66...8ba25f`](./contracts/arbitrum-42161/0x399e66e8d2b9c83351531bdcabb827f73e8ba25f/) | ⚠️ Unaudited |
+| VotingEscrow | operational_periphery | arbitrum | n/a | [`0x50aace...57a4f7`](./contracts/arbitrum-42161/0x50aaced9396405d1410dcb8974a6c30b9757a4f7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,13 +97,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | [`0xd2568a...d89fcb`](./contracts/arbitrum-42161/0xd2568accd10a4c98e87c44e9920360031ad89fcb/) | Token | token | $32,649.55 | Verified native implementation with $32,649.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xeb8fee...b68b11`](./contracts/arbitrum-42161/0xeb8feeb4589c64959d7cbf3c7ec377328ab68b11/) | Claim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2513db...c573b0`](./contracts/arbitrum-42161/0x2513db1b4dac06ccb03931321292045fdbc573b0/) | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xbb6e57...77929d`](./contracts/arbitrum-42161/0xbb6e57f1c0b35298c121b5151d2c7411da77929d/) | SBT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xe6ccdc...c5e628`](./contracts/arbitrum-42161/0xe6ccdc80c4838b670c94da07e8338589dec5e628/) | Voter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xbe99eb...102e28`](./contracts/arbitrum-42161/0xbe99eb17fe79f98e5865df4f0e0ccff003102e28/) | VoterAux | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x399e66...8ba25f`](./contracts/arbitrum-42161/0x399e66e8d2b9c83351531bdcabb827f73e8ba25f/) | VotingDist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x50aace...57a4f7`](./contracts/arbitrum-42161/0x50aaced9396405d1410dcb8974a6c30b9757a4f7/) | VotingEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

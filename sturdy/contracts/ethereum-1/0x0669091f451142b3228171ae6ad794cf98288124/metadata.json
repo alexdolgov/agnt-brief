@@ -1,0 +1,18 @@
+{
+  "address": "0x0669091f451142b3228171ae6ad794cf98288124",
+  "chain_id": 1,
+  "contract_name": "SturdySiloStrategy",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xdfc8cd9f2f2d306b7c0d109f005df661e14f4ff2",
+  "fetched_at": "2026-06-21T12:17:27.929Z"
+}

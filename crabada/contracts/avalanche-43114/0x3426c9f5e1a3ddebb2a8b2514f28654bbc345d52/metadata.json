@@ -1,0 +1,17 @@
+{
+  "address": "0x3426c9f5e1a3ddebb2a8b2514f28654bbc345d52",
+  "chain_id": 43114,
+  "contract_name": "IGame",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T10:04:59.352Z"
+}

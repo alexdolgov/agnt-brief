@@ -1,0 +1,18 @@
+{
+  "address": "0x9b5fa2c42713f7fd4201d5f12dd49962d1a64b6b",
+  "chain_id": 8453,
+  "contract_name": "ThroneV3PoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:27.679Z"
+}

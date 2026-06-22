@@ -1,0 +1,18 @@
+{
+  "address": "0x7a293eefe1dad17664c538a04c626814c12012f4",
+  "chain_id": 42161,
+  "contract_name": "InstantDepositRouter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:23:27.363Z"
+}

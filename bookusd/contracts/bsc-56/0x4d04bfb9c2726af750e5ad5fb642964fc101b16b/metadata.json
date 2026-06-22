@@ -1,0 +1,18 @@
+{
+  "address": "0x4d04bfb9c2726af750e5ad5fb642964fc101b16b",
+  "chain_id": 56,
+  "contract_name": "PriceFeed",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:47:50.054Z"
+}

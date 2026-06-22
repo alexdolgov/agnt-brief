@@ -1,0 +1,18 @@
+{
+  "address": "0x274af57cc969ca96980ba043332d4fb79f496708",
+  "chain_id": 1,
+  "contract_name": "ERC20Vault",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:05:59.886Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x464a53459ffc18bef5de2b4ecbba4166f71f693f",
+  "chain_id": 10,
+  "contract_name": "MultipleMerkleDistributorReader",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:03:56.882Z"
+}

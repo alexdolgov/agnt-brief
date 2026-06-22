@@ -1,0 +1,17 @@
+{
+  "address": "0x38ed8b2a7e8c70d8f44414f7605a221defb0b848",
+  "chain_id": 43114,
+  "contract_name": "FastPriceFeed",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:10.128Z"
+}

@@ -1,31 +1,51 @@
 {
   "schema_version": "2.0",
   "project_key": "champion-finance",
-  "generated_at": "2026-06-13T12:41:07.250Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T12:25:52.555Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "champion-finance",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2022-08-27T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 1392,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 7,
+    "total_addresses": 10,
+    "unique_implementations": 7,
+    "total_deployments": 10,
+    "audited_contracts": 2,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 28.6,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 23.8565,
-    "tvl_usd": 23.8565,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 35681.14247764386,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 35681.14
+    },
+    "asd_usd": 686.18649736955,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "avalanche"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2022-07",
@@ -38,20 +58,316 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Champion Finance is an algorithmic stablecoin protocol on Avalanche that maintains a basket of synthetic assets pegged to real-world ETFs. It uses seigniorage and bonding mechanisms to stabilize token prices, with governance and reward distribution handled through boardroom contracts.",
+    "relationship_narrative": "The MainToken and ShareToken are the primary assets, with Boardroom contracts enabling ShareToken staking to earn rewards. Proxies are used extensively to allow upgradeability of core logic, and multiple Treasury, RewardPool, and ETF-related contracts (seen in proxy trees) support the system's stability and reward distribution.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 225,
+    "live_contracts": 10,
+    "inactive_contracts": 171,
+    "singleton_contracts": 44,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 23,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 29,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 7,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x5fa3c882eef3a8d49c4466eeb7fbabb75a88643f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ShareToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 18766.56480934,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ShareToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x5fa3c882eef3a8d49c4466eeb7fbabb75a88643f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc65bc1e906771e105fbacbd8dfe3862ee7be378e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 18766.56480934,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12894"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0fb3e4e84fb78c93e466a2117be7bc8bc063e430",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MainToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 16228.391170934308,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MainToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x0fb3e4e84fb78c93e466a2117be7bc8bc063e430",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x59b18817ca9f4ad2dee6fbf30132df6aeb9d763d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 16228.391170934308,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12894"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x53b506bb5257d9effc86ff80d6c12e51d722e615",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 686.18649736955,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EVICToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x53b506bb5257d9effc86ff80d6c12e51d722e615",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x74fefa839a96a1632a29e0fcf0907d0f88528658",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 686.18649736955,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xcc0213cb713bed8f89c0225196e1afc38705b85d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AOEAToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AOEAToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xcc0213cb713bed8f89c0225196e1afc38705b85d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x3cd3d19ab5e88a07dbbc683ff0a7ed38e833fd3e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BVICToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x3cd3d19ab5e88a07dbbc683ff0a7ed38e833fd3e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x6197f1b4198296b637b731e9994bc366d29cccaa",
+      "deployment_unit": "unit-39739",
+      "deployment_unit_proxy_count": 1,
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1b730d32c06fa5a5343a4a0d19e3b3b2a07cdf92",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x6197f1b4198296b637b731e9994bc366d29cccaa",
+          "deployment_unit": "unit-39739",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xad92430a77854d72fcbbc5f4ec1e9f89d7585b90",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UVICToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xad92430a77854d72fcbbc5f4ec1e9f89d7585b90",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 12894,
@@ -66,34 +382,91 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Boardroom",
+        "ContractGuard",
+        "GenesisRewardPool",
+        "MainToken",
+        "NodePool",
+        "ShareToken",
+        "ShareTokenRewardPool",
+        "Treasury"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 28.6,
+      "latest_audit": "2022-07"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x53b506bb5257d9effc86ff80d6c12e51d722e615",
+      "name": "EVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 686.18649736955,
+      "risk_note": "Verified native implementation with $686.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xcc0213cb713bed8f89c0225196e1afc38705b85d",
+      "name": "AOEAToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x3cd3d19ab5e88a07dbbc683ff0a7ed38e833fd3e",
+      "name": "BVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xad92430a77854d72fcbbc5f4ec1e9f89d7585b90",
+      "name": "UVICToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 6,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 39
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 12894,
-        "report_name": "Champion Finance.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

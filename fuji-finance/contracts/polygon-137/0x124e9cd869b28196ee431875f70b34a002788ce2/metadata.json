@@ -1,0 +1,18 @@
+{
+  "address": "0x124e9cd869b28196ee431875f70b34a002788ce2",
+  "chain_id": 137,
+  "contract_name": "FujiAdmin",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:41:46.870Z"
+}

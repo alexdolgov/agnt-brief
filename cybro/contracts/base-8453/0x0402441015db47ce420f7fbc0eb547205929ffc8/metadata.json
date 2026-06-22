@@ -1,0 +1,17 @@
+{
+  "address": "0x0402441015db47ce420f7fbc0eb547205929ffc8",
+  "chain_id": 8453,
+  "contract_name": "FeeProvider",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 450,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000002710",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:54:30.113Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x43a8b0d08b9857d14b77cde20574c586929cb64a",
+  "chain_id": 137,
+  "contract_name": "F2Swapper",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:41:48.470Z"
+}

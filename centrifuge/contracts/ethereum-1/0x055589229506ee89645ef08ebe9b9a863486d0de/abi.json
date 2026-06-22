@@ -1,0 +1,206 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISafe",
+        "name": "opsSafe_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICreatePool",
+        "name": "hub_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMultiAdapter",
+        "name": "multiAdapter_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AdapterAlreadyWired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AdaptersAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FileUnrecognizedParam",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotTheAuthorizedSafe",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "what",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "data",
+        "type": "address"
+      }
+    ],
+    "name": "File",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "GLOBAL_POOL",
+    "outputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      },
+      {
+        "internalType": "AssetId",
+        "name": "currency",
+        "type": "uint128"
+      }
+    ],
+    "name": "createPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "what",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "data",
+        "type": "address"
+      }
+    ],
+    "name": "file",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hub",
+    "outputs": [
+      {
+        "internalType": "contract ICreatePool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "contract IAdapter[]",
+        "name": "adapters",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint8",
+        "name": "threshold",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "recoveryIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "initAdapters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "multiAdapter",
+    "outputs": [
+      {
+        "internalType": "contract IMultiAdapter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "opsSafe",
+    "outputs": [
+      {
+        "internalType": "contract ISafe",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "adapter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "wire",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

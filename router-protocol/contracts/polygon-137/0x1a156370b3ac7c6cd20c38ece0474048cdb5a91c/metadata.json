@@ -1,0 +1,17 @@
+{
+  "address": "0x1a156370b3ac7c6cd20c38ece0474048cdb5a91c",
+  "chain_id": 137,
+  "contract_name": "ETHHandler",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 320,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T10:57:16.731Z"
+}

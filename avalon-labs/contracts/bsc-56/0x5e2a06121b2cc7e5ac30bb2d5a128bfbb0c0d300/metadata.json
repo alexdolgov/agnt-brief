@@ -1,0 +1,18 @@
+{
+  "address": "0x5e2a06121b2cc7e5ac30bb2d5a128bfbb0c0d300",
+  "chain_id": 56,
+  "contract_name": "sAVL",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 49,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:42:11.640Z"
+}

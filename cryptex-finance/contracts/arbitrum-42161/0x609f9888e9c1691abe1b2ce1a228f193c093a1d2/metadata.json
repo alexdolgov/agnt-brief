@@ -1,0 +1,18 @@
+{
+  "address": "0x609f9888e9c1691abe1b2ce1a228f193c093a1d2",
+  "chain_id": 42161,
+  "contract_name": "CheckpointLib",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:14:41.004Z"
+}

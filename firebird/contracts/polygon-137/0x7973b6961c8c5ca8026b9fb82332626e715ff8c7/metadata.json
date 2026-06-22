@@ -1,0 +1,18 @@
+{
+  "address": "0x7973b6961c8c5ca8026b9fb82332626e715ff8c7",
+  "chain_id": 137,
+  "contract_name": "FireBirdFormula",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "SEE LICENSE IN LICENSE",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:52.061Z"
+}

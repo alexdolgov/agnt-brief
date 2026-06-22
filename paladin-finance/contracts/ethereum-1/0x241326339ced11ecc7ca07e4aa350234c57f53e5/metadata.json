@@ -1,0 +1,18 @@
+{
+  "address": "0x241326339ced11ecc7ca07e4aa350234c57f53e5",
+  "chain_id": 1,
+  "contract_name": "ControllerProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 25000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xcf131548b18d55fb29df2df47b360c41389ebb2b",
+  "fetched_at": "2026-06-20T00:29:50.204Z"
+}

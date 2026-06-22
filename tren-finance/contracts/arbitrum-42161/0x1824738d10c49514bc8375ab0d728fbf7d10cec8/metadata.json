@@ -1,0 +1,17 @@
+{
+  "address": "0x1824738d10c49514bc8375ab0d728fbf7d10cec8",
+  "chain_id": 42161,
+  "contract_name": "TrenBoxStorage",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:21:39.543Z"
+}

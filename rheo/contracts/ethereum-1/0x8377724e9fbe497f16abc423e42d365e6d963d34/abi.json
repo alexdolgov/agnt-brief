@@ -1,0 +1,257 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IUniswapV3Pool",
+            "name": "uniswapV3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapWindow",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "averageBlockTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "baseAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "quoteAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "sequencerUptimeFeed",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PriceFeedParams",
+        "name": "chainlinkPriceFeedParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IUniswapV3Pool",
+            "name": "uniswapV3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapWindow",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "averageBlockTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "baseAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "quoteAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "sequencerUptimeFeed",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PriceFeedParams",
+        "name": "uniswapV3BasePriceFeedParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IUniswapV3Pool",
+            "name": "uniswapV3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapWindow",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "averageBlockTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "baseAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "quoteAggregator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteStalePriceInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "sequencerUptimeFeed",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PriceFeedParams",
+        "name": "uniswapV3QuotePriceFeedParams",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "chainlinkPriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract ChainlinkPriceFeed",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "description",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV3BasePriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract UniswapV3PriceFeed",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV3QuotePriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract UniswapV3PriceFeed",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

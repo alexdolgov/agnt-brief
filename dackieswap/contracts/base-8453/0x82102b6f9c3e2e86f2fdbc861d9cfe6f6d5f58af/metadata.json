@@ -1,0 +1,18 @@
+{
+  "address": "0x82102b6f9c3e2e86f2fdbc861d9cfe6f6d5f58af",
+  "chain_id": 8453,
+  "contract_name": "SmartChefNFTFactoryByTier",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:06.869Z"
+}

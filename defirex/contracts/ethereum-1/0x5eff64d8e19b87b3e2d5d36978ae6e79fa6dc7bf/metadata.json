@@ -1,0 +1,18 @@
+{
+  "address": "0x5eff64d8e19b87b3e2d5d36978ae6e79fa6dc7bf",
+  "chain_id": 1,
+  "contract_name": "IcsToken",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:48:39.421Z"
+}

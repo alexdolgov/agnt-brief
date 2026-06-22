@@ -1,0 +1,18 @@
+{
+  "address": "0x480c32c8df2a0b7004b294049ca2f799c752f147",
+  "chain_id": 1,
+  "contract_name": "ZapMint",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:46.581Z"
+}

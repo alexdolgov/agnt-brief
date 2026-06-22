@@ -1,0 +1,17 @@
+{
+  "address": "0x0e8da9ce94fafe134e0a255c3a79b9588d4e6f74",
+  "chain_id": 56,
+  "contract_name": "CErc20Delegator",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x75088ae1164129fd358be9ad8fa295d1979ded0f",
+  "fetched_at": "2026-06-19T20:01:51.967Z"
+}

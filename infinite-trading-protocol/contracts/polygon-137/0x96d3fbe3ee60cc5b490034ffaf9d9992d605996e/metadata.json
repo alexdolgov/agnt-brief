@@ -1,0 +1,17 @@
+{
+  "address": "0x96d3fbe3ee60cc5b490034ffaf9d9992d605996e",
+  "chain_id": 137,
+  "contract_name": "OdosV3ContractGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "0000000000000000000000008fab778ce0e6f2d3fa3c73c703310c824840a4b6",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:41.737Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x3de0ca61900de4be54e2e113513f51a5236ee2ab",
+  "chain_id": 56,
+  "contract_name": "ThenaDelegatePool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:25.211Z"
+}

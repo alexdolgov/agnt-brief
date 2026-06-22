@@ -1,0 +1,18 @@
+{
+  "address": "0x690002da1f2d828d72aa89367623df7a432e85a9",
+  "chain_id": 1,
+  "contract_name": "MAHATimelockController",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:47.189Z"
+}

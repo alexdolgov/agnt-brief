@@ -1,0 +1,17 @@
+{
+  "address": "0x453e522d3a78753f71f2cb67fc2c6b4c54670b84",
+  "chain_id": 137,
+  "contract_name": "StakePoolEpochRewardCreator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:50.295Z"
+}

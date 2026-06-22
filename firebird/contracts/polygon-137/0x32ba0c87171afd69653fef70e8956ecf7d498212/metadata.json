@@ -1,0 +1,17 @@
+{
+  "address": "0x32ba0c87171afd69653fef70e8956ecf7d498212",
+  "chain_id": 137,
+  "contract_name": "FireBirdZap",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000a5e0829caced8ffdd4de3c43696c57f7d7a678ff0000000000000000000000004bfbf7fcc9776ce8285b059fb77e7bb2a5c5e365",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:51.526Z"
+}

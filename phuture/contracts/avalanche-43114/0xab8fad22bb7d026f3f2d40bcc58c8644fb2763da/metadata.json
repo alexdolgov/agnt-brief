@@ -1,0 +1,17 @@
+{
+  "address": "0xab8fad22bb7d026f3f2d40bcc58c8644fb2763da",
+  "chain_id": 43114,
+  "contract_name": "ChainlinkPriceOracle",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000003dad1208afec6eccda25169a5d16119ce2ba76bd000000000000000000000000b97ef9ef8734c71904d8002f8b6bc66dd9c48a6e000000000000000000000000f096872672f44d6eba71458d74fe67f9a77a23b9000000000000000000000000000000000000000000000000000000000002a300",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:41:23.965Z"
+}

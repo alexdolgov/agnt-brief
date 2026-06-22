@@ -1,0 +1,18 @@
+{
+  "address": "0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb",
+  "chain_id": 56,
+  "contract_name": "HectagonTreasury",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:33:30.700Z"
+}

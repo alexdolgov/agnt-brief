@@ -1,0 +1,18 @@
+{
+  "address": "0xa6a96fa698a6d5afcef6e8efeacaae7ee43f2486",
+  "chain_id": 1,
+  "contract_name": "Timelock",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 888888,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:17:29.619Z"
+}

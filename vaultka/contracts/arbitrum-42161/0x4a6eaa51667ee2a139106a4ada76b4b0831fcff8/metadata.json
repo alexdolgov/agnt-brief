@@ -1,0 +1,18 @@
+{
+  "address": "0x4a6eaa51667ee2a139106a4ada76b4b0831fcff8",
+  "chain_id": 42161,
+  "contract_name": "LeverageVaultV8",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:20.183Z"
+}

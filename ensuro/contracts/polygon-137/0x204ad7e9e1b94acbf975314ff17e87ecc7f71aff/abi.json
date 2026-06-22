@@ -1,0 +1,159 @@
+[
+  {
+    "inputs": [],
+    "name": "AllowanceShouldGoBackToZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AtLeastOneRoute",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CurveRouterCantBeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidProtocol",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[11]",
+            "name": "route",
+            "type": "address[11]"
+          },
+          {
+            "internalType": "uint256[5][5]",
+            "name": "swapParams",
+            "type": "uint256[5][5]"
+          },
+          {
+            "internalType": "address[5]",
+            "name": "pools",
+            "type": "address[5]"
+          }
+        ],
+        "internalType": "struct CurveRoutes.CurveRoute",
+        "name": "route",
+        "type": "tuple"
+      }
+    ],
+    "name": "InvalidRoute",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxSlippageCannotBeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "received",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "ReceivedLessThanAcceptable",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      }
+    ],
+    "name": "RouteNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "spent",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountInMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "SpentMoreThanAcceptable",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "nSwaps",
+        "type": "uint8"
+      }
+    ],
+    "name": "TooManySwaps",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniswapFeeTierCannotBeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniswapRouterCannotBeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum SwapLibrary.SwapProtocol",
+            "name": "protocol",
+            "type": "SwapLibrary.SwapProtocol"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxSlippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "customParams",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapLibrary.SwapConfig",
+        "name": "swapConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "validate",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

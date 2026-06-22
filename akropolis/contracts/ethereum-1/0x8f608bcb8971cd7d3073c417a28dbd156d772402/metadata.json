@@ -1,0 +1,18 @@
+{
+  "address": "0x8f608bcb8971cd7d3073c417a28dbd156d772402",
+  "chain_id": 1,
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.5.3+commit.10d17f24",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:03:37.145Z"
+}

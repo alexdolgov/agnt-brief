@@ -1,0 +1,18 @@
+{
+  "address": "0xa86ba3b6d83139a49b649c05dbb69e0726db69cf",
+  "chain_id": 1,
+  "contract_name": "OwnedRegistrar",
+  "compiler_version": "v0.4.25+commit.59dbf8f1",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:37.147Z"
+}

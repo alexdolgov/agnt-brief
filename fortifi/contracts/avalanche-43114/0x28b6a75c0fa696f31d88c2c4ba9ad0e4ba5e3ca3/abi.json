@@ -1,0 +1,630 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_contracts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "_tokenIds",
+        "type": "uint256[][]"
+      }
+    ],
+    "name": "getMASSInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "depositToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isSAMS",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct IMASS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMASS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IMASS.TokenInfo",
+        "name": "_info1",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "depositToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isSAMS",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct IMASS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMASS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IMASS.TokenInfo",
+        "name": "_info2",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "depositToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isSAMS",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct IMASS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMASS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IMASS.TokenInfo",
+        "name": "_info3",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "depositToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isSAMS",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct IMASS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMASS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IMASS.TokenInfo",
+        "name": "_info4",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "depositToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "oracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isSAMS",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct IMASS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IMASS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IMASS.TokenInfo",
+        "name": "_info5",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_contracts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "_tokenIds",
+        "type": "uint256[][]"
+      }
+    ],
+    "name": "getSAMSInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  }
+                ],
+                "internalType": "struct ISAMS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISAMS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ISAMS.TokenInfo",
+        "name": "_info1",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  }
+                ],
+                "internalType": "struct ISAMS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISAMS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ISAMS.TokenInfo",
+        "name": "_info2",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  }
+                ],
+                "internalType": "struct ISAMS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISAMS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ISAMS.TokenInfo",
+        "name": "_info3",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  }
+                ],
+                "internalType": "struct ISAMS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISAMS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ISAMS.TokenInfo",
+        "name": "_info4",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isFortiFi",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "bps",
+                    "type": "uint16"
+                  }
+                ],
+                "internalType": "struct ISAMS.Strategy",
+                "name": "strategy",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "receipt",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISAMS.Position[]",
+            "name": "positions",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ISAMS.TokenInfo",
+        "name": "_info5",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

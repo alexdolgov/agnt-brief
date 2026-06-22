@@ -1,0 +1,17 @@
+{
+  "address": "0x7307cb81d773ba3bbfba60e2092ddcdb4cf03bd0",
+  "chain_id": 137,
+  "contract_name": "Playerbook",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000008ac7230489e80000000000000000000000000000bd836e5fe987401e04c629f53b036ebb6adbfeec000000000000000000000000671124f02d0a4739eaa74441321af67385059de5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:51:54.869Z"
+}

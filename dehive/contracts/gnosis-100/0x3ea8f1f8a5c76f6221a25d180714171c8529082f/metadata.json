@@ -1,0 +1,17 @@
+{
+  "address": "0x3ea8f1f8a5c76f6221a25d180714171c8529082f",
+  "chain_id": 100,
+  "contract_name": "ClusterTokenV2",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:19:22.186Z"
+}

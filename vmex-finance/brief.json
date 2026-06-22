@@ -1,31 +1,51 @@
 {
   "schema_version": "2.0",
   "project_key": "vmex-finance",
-  "generated_at": "2026-06-13T15:02:41.986Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T19:22:08.016Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "vmex-finance",
+    "tier": 0,
+    "peak_tvl": 250973,
+    "peak_date": "2024-01-03T00:00:00.000Z",
+    "tvl_30d_ago": 2153,
+    "tvl_90d_ago": 2137,
+    "tvl_current": 2024,
+    "tier0_reason": "long_term_collapse_from_peak",
+    "tvl_180d_ago": 2363,
+    "change_30d_pct": -5.991639572689271,
+    "change_90d_pct": -5.287786616752457,
+    "days_since_peak": 898,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.1935387471959
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 3244.4206300000005,
-    "tvl_usd": 3244.4206300000005,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 29359.999999999996,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "optimism": 29360
+    },
+    "asd_usd": 29359.999999999996,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "optimism"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2023",
@@ -38,12 +58,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 6,
+    "live_contracts": 1,
+    "inactive_contracts": 5,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +82,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VMEXToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "VMEX Finance",
+      "tvl_usd": 29359.999999999996,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VMEXToken",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 29359.999999999996,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 14114,
@@ -76,9 +143,20 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312",
+      "name": "VMEXToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 29359.999999999996,
+      "risk_note": "Verified native implementation with $29,360.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

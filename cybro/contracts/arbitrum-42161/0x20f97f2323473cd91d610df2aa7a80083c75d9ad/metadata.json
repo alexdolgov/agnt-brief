@@ -1,0 +1,18 @@
+{
+  "address": "0x20f97f2323473cd91d610df2aa7a80083c75d9ad",
+  "chain_id": 42161,
+  "contract_name": "LPManagerV4",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "prague",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:54:30.554Z"
+}

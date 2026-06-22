@@ -1,0 +1,703 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract Comptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "cTokenMetaDataList",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "underlyingAssetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "underlyingDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "underlyingSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint8",
+                "name": "decimals",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bool",
+                "name": "isNative",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalBorrows",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "oraclePrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalReserves",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "cash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserveFactorMantissa",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "exchangeRateCurrent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "multiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kink",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "jumpMultiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isMintPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isBorrowPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isSeizePaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isTransferPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyCap",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ProtocolLens.CTokenInfo",
+            "name": "cTokenInfo",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mySuppliedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myCTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myRealTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "allowance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ProtocolLens.AccountInfo",
+            "name": "accountInfo",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProtocolLens.CTokenMetaData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Comptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "cTokenMetaDataListAuth",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "underlyingAssetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "underlyingDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "underlyingSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint8",
+                "name": "decimals",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bool",
+                "name": "isNative",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalBorrows",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "oraclePrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalReserves",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "cash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserveFactorMantissa",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "exchangeRateCurrent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "multiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kink",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "jumpMultiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isMintPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isBorrowPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isSeizePaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isTransferPaused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyCap",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ProtocolLens.CTokenInfo",
+            "name": "cTokenInfo",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mySuppliedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myCTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myRealTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "allowance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ProtocolLens.AccountInfo",
+            "name": "accountInfo",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProtocolLens.CTokenMetaData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract CToken",
+        "name": "cToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getAccountInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "mySuppliedBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myBorrowedBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myCTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myRealTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allowance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ProtocolLens.AccountInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract CToken",
+        "name": "cToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Comptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "getCTokenInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "underlyingAssetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingDecimals",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "underlyingSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "decimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isNative",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBorrows",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "oraclePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalReserves",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cash",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactorMantissa",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "exchangeRateCurrent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "multiplierPerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "kink",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "jumpMultiplierPerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMintPaused",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBorrowPaused",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isSeizePaused",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTransferPaused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyCap",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ProtocolLens.CTokenInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract CToken",
+        "name": "cToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Comptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "getOraclePrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mainCTokenSymbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mainSymbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ComptrollerLensInterface",
+        "name": "comptroller",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "rewardsAccrued",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "rewardTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "accrued",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0xc2bc94c9e7fd469617f99aede60d73d3dbb53099",
+  "chain_id": 42161,
+  "contract_name": "Bartender",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:22.347Z"
+}

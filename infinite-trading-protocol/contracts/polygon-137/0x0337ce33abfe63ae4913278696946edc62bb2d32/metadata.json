@@ -1,0 +1,17 @@
+{
+  "address": "0x0337ce33abfe63ae4913278696946edc62bb2d32",
+  "chain_id": 137,
+  "contract_name": "DHedgePoolAggregator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:36.057Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xe277b45ff6ea125890f7c541e280ec8fe29dbd53",
+  "chain_id": 43114,
+  "contract_name": "Vintner",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T10:02:25.695Z"
+}

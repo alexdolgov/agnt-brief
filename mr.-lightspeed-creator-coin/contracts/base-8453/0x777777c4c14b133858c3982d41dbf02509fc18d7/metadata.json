@@ -1,0 +1,18 @@
+{
+  "address": "0x777777c4c14b133858c3982d41dbf02509fc18d7",
+  "chain_id": 8453,
+  "contract_name": "ZoraHookRegistry",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, ZORA-DELAYED-OSL-v1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:25:52.764Z"
+}

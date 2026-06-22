@@ -1,0 +1,17 @@
+{
+  "address": "0x450150f7e3a90d396461143387067a4f0af7ed1d",
+  "chain_id": 137,
+  "contract_name": "A51DevelopmentWallet",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:05.068Z"
+}

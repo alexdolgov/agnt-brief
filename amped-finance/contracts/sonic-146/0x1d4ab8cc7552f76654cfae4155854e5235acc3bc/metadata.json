@@ -1,0 +1,17 @@
+{
+  "address": "0x1d4ab8cc7552f76654cfae4155854e5235acc3bc",
+  "chain_id": 146,
+  "contract_name": "AmpedSwapRouter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:46:06.662Z"
+}

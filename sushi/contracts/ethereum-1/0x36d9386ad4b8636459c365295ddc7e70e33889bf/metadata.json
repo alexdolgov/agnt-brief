@@ -1,0 +1,18 @@
+{
+  "address": "0x36d9386ad4b8636459c365295ddc7e70e33889bf",
+  "chain_id": 1,
+  "contract_name": "ThreeCryptoLevSwapper",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:23:46.433Z"
+}

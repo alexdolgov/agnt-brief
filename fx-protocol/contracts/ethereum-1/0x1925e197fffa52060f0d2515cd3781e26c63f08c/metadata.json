@@ -1,0 +1,18 @@
+{
+  "address": "0x1925e197fffa52060f0d2515cd3781e26c63f08c",
+  "chain_id": 1,
+  "contract_name": "RewardTokenWrapper",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:58:01.420Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x442d2b6ffa3f68a08655b067ec76a6a7f3565e9d",
+  "chain_id": 56,
+  "contract_name": "MetaLuckyNumber",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:06:22.497Z"
+}

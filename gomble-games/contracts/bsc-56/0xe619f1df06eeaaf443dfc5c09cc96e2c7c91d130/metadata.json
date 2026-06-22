@@ -1,0 +1,17 @@
+{
+  "address": "0xe619f1df06eeaaf443dfc5c09cc96e2c7c91d130",
+  "chain_id": 56,
+  "contract_name": "TestAuction",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:33:32.638Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x5704c014a86195a7627f8c1f1da8834fa05dc2c8",
+  "chain_id": 56,
+  "contract_name": "RandomNumberGenerator",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T18:01:42.951Z"
+}

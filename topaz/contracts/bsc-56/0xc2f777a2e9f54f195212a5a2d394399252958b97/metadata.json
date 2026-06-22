@@ -1,0 +1,17 @@
+{
+  "address": "0xc2f777a2e9f54f195212a5a2d394399252958b97",
+  "chain_id": 56,
+  "contract_name": "CLGauge",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:21:12.670Z"
+}

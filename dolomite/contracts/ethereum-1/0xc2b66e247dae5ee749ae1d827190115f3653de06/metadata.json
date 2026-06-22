@@ -1,0 +1,17 @@
+{
+  "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+  "chain_id": 1,
+  "contract_name": "DolomiteOwnerV2",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000a75c21c5be284122a87a37a76cc6c4dd3e55a1d4000000000000000000000000000000000000000000000000000000000000012c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:48:28.283Z"
+}

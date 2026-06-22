@@ -1,0 +1,18 @@
+{
+  "address": "0x21c971d78e1a398710d964ed1ac4c80e5940ed25",
+  "chain_id": 43114,
+  "contract_name": "SimpleHoldingStrategy",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 60,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:06.950Z"
+}

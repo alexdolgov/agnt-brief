@@ -1,0 +1,17 @@
+{
+  "address": "0x0c87f9f6c052060b28dea1e4acfd24a407ac33fa",
+  "chain_id": 1284,
+  "contract_name": "xWELLRouter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 50,
+  "constructor_arguments": "000000000000000000000000a88594d404727625a9437c3f886c7643872296ae000000000000000000000000511ab53f793683763e5a8829738301368a2411e30000000000000000000000000d45033775b290d69462944289b7a402a651b460000000000000000000000000734abbce07679c9a6b4fe3bc16325e028fa6dbb7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:00:01.664Z"
+}

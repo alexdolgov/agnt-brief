@@ -1,0 +1,18 @@
+{
+  "address": "0x7ea9b4d1d87611b17f90a3543c0a2d0b4269ca10",
+  "chain_id": 56,
+  "contract_name": "AmpleSwapLottery",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:26:31.442Z"
+}

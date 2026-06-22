@@ -1,0 +1,18 @@
+{
+  "address": "0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7",
+  "chain_id": 1284,
+  "contract_name": "ORBToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:38:18.886Z"
+}

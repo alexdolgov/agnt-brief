@@ -1,0 +1,17 @@
+{
+  "address": "0xbca9cb2bd9e2c09dba75eabd1faa3bcb1d512752",
+  "chain_id": 137,
+  "contract_name": "DexiGovSwap",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:45:31.980Z"
+}

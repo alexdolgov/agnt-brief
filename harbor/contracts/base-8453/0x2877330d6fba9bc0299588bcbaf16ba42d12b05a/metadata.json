@@ -1,0 +1,18 @@
+{
+  "address": "0x2877330d6fba9bc0299588bcbaf16ba42d12b05a",
+  "chain_id": 8453,
+  "contract_name": "Aggregator_stETH_BOM5_base",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 700,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:04:20.271Z"
+}

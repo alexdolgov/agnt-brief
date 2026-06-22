@@ -1,0 +1,17 @@
+{
+  "address": "0x85fe1d3611cf0e35c14af76aad3a725c78af36c6",
+  "chain_id": 56,
+  "contract_name": "Payment",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:33:32.239Z"
+}

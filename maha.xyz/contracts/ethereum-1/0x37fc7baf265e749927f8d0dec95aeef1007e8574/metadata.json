@@ -1,0 +1,18 @@
+{
+  "address": "0x37fc7baf265e749927f8d0dec95aeef1007e8574",
+  "chain_id": 1,
+  "contract_name": "sUSDeCollectorCron",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:46.245Z"
+}

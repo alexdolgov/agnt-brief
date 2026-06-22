@@ -1,0 +1,18 @@
+{
+  "address": "0x1767102dc35b1593f39564a96aabbbd31fd302c2",
+  "chain_id": 56,
+  "contract_name": "WOWToken",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:26:30.839Z"
+}

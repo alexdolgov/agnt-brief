@@ -1,0 +1,56 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "token",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPriceAndBalanceForTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "balanceAVAX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint112",
+        "name": "reserveAVAXUSDC",
+        "type": "uint112"
+      },
+      {
+        "internalType": "uint112",
+        "name": "reserveUSDC",
+        "type": "uint112"
+      },
+      {
+        "internalType": "uint112[]",
+        "name": "reserveTOKENs",
+        "type": "uint112[]"
+      },
+      {
+        "internalType": "uint112[]",
+        "name": "reserveAVAXTOKENs",
+        "type": "uint112[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,57 +1,2076 @@
 {
   "schema_version": "2.0",
   "project_key": "cybro",
-  "generated_at": "2026-06-13T10:06:12.641Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T08:56:25.705Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "cybro",
+    "tier": 0,
+    "peak_tvl": 582328,
+    "peak_date": "2026-02-19T00:00:00.000Z",
+    "tvl_30d_ago": 75493,
+    "tvl_90d_ago": 75493,
+    "tvl_current": 75493,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 142663,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 122,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 87.0360003297111
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
-    "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 14,
-    "scoreable_audits": 0,
+    "total_contracts": 34,
+    "total_addresses": 101,
+    "unique_implementations": 34,
+    "total_deployments": 101,
+    "audited_contracts": 15,
+    "unaudited_contracts": 8,
+    "contracts_verified_audited": 14,
+    "contracts_verified_unaudited": 8,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 11,
+    "coverage_pct": 65.2,
+    "total_audits": 25,
+    "scoreable_audits": 12,
     "dl_tvl_usd": 103899.90040999999,
-    "tvl_usd": 103899.90040999999,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 1890125.9683929558,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 17703.3,
+      "base": 1724.39,
+      "blast": 1870698.27
+    },
+    "asd_usd": 1871751.1642413107,
     "website_url": "https://app.cybro.io",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": "2025-12",
+    "chains": [
+      "arbitrum",
+      "base",
+      "blast",
+      "bsc",
+      "ethereum",
+      "unichain"
+    ],
+    "tier1_coverage_pct": 8.7,
+    "tier1_auditors": [
+      "Code4rena"
+    ],
+    "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 3,
+      "fresh": 8,
+      "aging": 10,
       "stale": 3,
-      "unknown": 7
+      "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Cybro is a multi-chain yield aggregator that deploys user deposits into various DeFi strategies (lending, liquidity provision, staking) through a system of vaults and indexes. It optimizes yields across protocols like Aave, Compound, and Stargate, while managing fees and governance via dedicated infrastructure.",
+    "relationship_narrative": "The Cybro family is the central hub, with vaults and indexes relying on shared FeeProvider and ProtocolFeeCollector contracts for fee management. Staking contracts (CYBROStaking, LockedCYBRO) interact with the CYBRO token and may feed into vault strategies, while LPManager contracts govern liquidity provision across DEXs. The Vaults family appears to be an extension of the core vault system, reusing OneClickIndex infrastructure.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 753,
+    "live_contracts": 100,
+    "inactive_contracts": 118,
+    "singleton_contracts": 534,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 338,
+    "live_deployment_units": 14,
+    "dependencies_extracted": 28,
+    "unverified_dependencies": 3,
+    "detected_codebases": [
+      "uniswap-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 34,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x963eec23618bbc8e1766661d5f263f18094ae4d5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CYBROToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CYBRO Smart Contracts",
+      "tvl_usd": 1870031.9175203107,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CYBROToken",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x963eec23618bbc8e1766661d5f263f18094ae4d5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1870031.9175203107,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbde5296ea786a12c4bfd60408063816e36a2f4b1",
+      "deployment_unit": "unit-41956",
+      "deployment_unit_proxy_count": 1,
+      "name": "LidoVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Vaults",
+      "tvl_usd": 17700.279980586798,
+      "is_proxy": true,
+      "impl_address": "0x431b979205c7fbc23acc64d9c84286da818fb74e",
+      "impl_name": "LidoVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbde5296ea786a12c4bfd60408063816e36a2f4b1",
+          "deployment_unit": "unit-41956",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 17700.279980586798,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16271"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x578e7261b9d3c143700a735526bfd63713f639c5",
+      "deployment_unit": "unit-41789",
+      "deployment_unit_proxy_count": 1,
+      "name": "SparkVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Cybro",
+      "tvl_usd": 1719.246721,
+      "is_proxy": true,
+      "impl_address": "0x440d2960f1621696278b196ceb1f1406674e5a72",
+      "impl_name": "SparkVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x578e7261b9d3c143700a735526bfd63713f639c5",
+          "deployment_unit": "unit-41789",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1719.246721,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xbfb18eda8961ee33e38678caf2bceb2d23aedfea",
+      "deployment_unit": "unit-42031",
+      "deployment_unit_proxy_count": 1,
+      "name": "BlasterSwapV2Vault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 274.59020716934697,
+      "is_proxy": true,
+      "impl_address": "0xde0d8bd89dc11cf406931e5a841f73240b945962",
+      "impl_name": "BlasterSwapV2Vault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xbfb18eda8961ee33e38678caf2bceb2d23aedfea",
+          "deployment_unit": "unit-42031",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 274.59020716934697,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12986"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xdccde9c6800bea86e2e91cf54a870ba3ff6faf9f",
+      "deployment_unit": "unit-42045",
+      "deployment_unit_proxy_count": 1,
+      "name": "CompoundVault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "Cybro",
+      "tvl_usd": 215.0852586549085,
+      "is_proxy": true,
+      "impl_address": "0xd2e55953a8a038e3f6e4840bcdaabc21587e2eb5",
+      "impl_name": "CompoundVault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xdccde9c6800bea86e2e91cf54a870ba3ff6faf9f",
+          "deployment_unit": "unit-42045",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 215.0852586549085,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x567103a40c408b2b8f766016c57a092a180397a1",
+      "deployment_unit": "unit-42003",
+      "deployment_unit_proxy_count": 1,
+      "name": "CompoundVault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "Cybro",
+      "tvl_usd": 77.94341219406529,
+      "is_proxy": true,
+      "impl_address": "0x4abf82f50c153cc48a40e9e36ac4bbf88a6f3907",
+      "impl_name": "CompoundVault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x567103a40c408b2b8f766016c57a092a180397a1",
+          "deployment_unit": "unit-42003",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 77.94341219406529,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xf56dab7b7b2954aa86a591f164205e6cdd33797e",
+      "deployment_unit": "unit-42051",
+      "deployment_unit_proxy_count": 1,
+      "name": "AaveVault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Cybro",
+      "tvl_usd": 68.40826080618834,
+      "is_proxy": true,
+      "impl_address": "0x99f4c8383c2ffa240e35cfa596b246f06714a0bf",
+      "impl_name": "AaveVault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xf56dab7b7b2954aa86a591f164205e6cdd33797e",
+          "deployment_unit": "unit-42051",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 68.40826080618834,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12984",
+        "audit-16283"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x7458ac85593472ba501ee361449638ed180a7ee7",
+      "deployment_unit": "unit-42012",
+      "deployment_unit_proxy_count": 1,
+      "name": "AaveVault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Cybro",
+      "tvl_usd": 20.628762256989262,
+      "is_proxy": true,
+      "impl_address": "0xb9855dae91ff5c313f638a2837f709fb347c09e1",
+      "impl_name": "AaveVault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x7458ac85593472ba501ee361449638ed180a7ee7",
+          "deployment_unit": "unit-42012",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 20.628762256989262,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12984",
+        "audit-16283"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x4f3da57dbfb2b85c96e3556c5f1859ef88f5d6b1",
+      "deployment_unit": "unit-42000",
+      "deployment_unit_proxy_count": 1,
+      "name": "AaveVault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Cybro",
+      "tvl_usd": 7.853162894752969,
+      "is_proxy": true,
+      "impl_address": "0x952313e164e016c82f704726b885920840ec58ac",
+      "impl_name": "AaveVault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x4f3da57dbfb2b85c96e3556c5f1859ef88f5d6b1",
+          "deployment_unit": "unit-42000",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7.853162894752969,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12984",
+        "audit-16283"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x84fbcde24b75f3d45863e82282683dff16c398b7",
+      "deployment_unit": "unit-41813",
+      "deployment_unit_proxy_count": 1,
+      "name": "LidoVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Cybro",
+      "tvl_usd": 5.145131590346318,
+      "is_proxy": true,
+      "impl_address": "0x15c2cb81eb1eee1d0e5def4fce067cbb62f5c612",
+      "impl_name": "LidoVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x84fbcde24b75f3d45863e82282683dff16c398b7",
+          "deployment_unit": "unit-41813",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5.145131590346318,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16271"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x320cd9d00961fb45857a043efea77dc6b9db5d95",
+      "deployment_unit": "unit-41906",
+      "deployment_unit_proxy_count": 1,
+      "name": "StargateVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Cybro",
+      "tvl_usd": 3.024258,
+      "is_proxy": true,
+      "impl_address": "0x903e1fc662bb33dd355600462a8e80116309c818",
+      "impl_name": "StargateVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x320cd9d00961fb45857a043efea77dc6b9db5d95",
+          "deployment_unit": "unit-41906",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3.024258,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12986"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x9cc62ef691e869c05fd2ec41839889d4e74c3a3f",
+      "deployment_unit": "unit-42022",
+      "deployment_unit_proxy_count": 1,
+      "name": "CompoundVaultETH",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "Cybro",
+      "tvl_usd": 1.8442167578230926,
+      "is_proxy": true,
+      "impl_address": "0x466741d2732deae781b08738c3bdc33a438e5e2f",
+      "impl_name": "CompoundVaultETH",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x9cc62ef691e869c05fd2ec41839889d4e74c3a3f",
+          "deployment_unit": "unit-42022",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.8442167578230926,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12984"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xe472ccb182a51c589034957cd6291d0b64eaaab2",
+      "deployment_unit": "unit-42047",
+      "deployment_unit_proxy_count": 1,
+      "name": "BlasterSwapV3Vault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 0.001500733598128083,
+      "is_proxy": true,
+      "impl_address": "0x6bbc9b7cd2fec26f3ddac617f56f0a49afc3edb9",
+      "impl_name": "BlasterSwapV3Vault",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xe472ccb182a51c589034957cd6291d0b64eaaab2",
+          "deployment_unit": "unit-42047",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.001500733598128083,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12986"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4aa185859b5ea4799029af65b89af6874812f281",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AutoManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AutoManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4aa185859b5ea4799029af65b89af6874812f281",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa9972b1fac35fdd8cbdbaa315a002b2ad91d2ad6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CYBROOFT",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CYBROOFT",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd58826d2c0babf1a60d8b508160b52e9c19aff07",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa9972b1fac35fdd8cbdbaa315a002b2ad91d2ad6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12989",
+        "audit-16274"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x7bb6cac7e47e8149c4ef62b759ee8b2e56c0304f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CYBROOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CYBROOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x7bb6cac7e47e8149c4ef62b759ee8b2e56c0304f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x03b7becb964ab0ebad805683d14f338504152707",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CYBROStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CYBRO and LCYBRO Staking Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CYBROStaking",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x03b7becb964ab0ebad805683d14f338504152707",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x13a2a10c5f800199d2a1b2db4972effdee3eeaa5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xd01d2b926edb4e9df43abc2f97b0655845ada688",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12985"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x66e424337c0f888dccbcf2e0730a00a526d716f6",
+      "deployment_unit": "unit-41721",
+      "deployment_unit_proxy_count": 1,
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66e424337c0f888dccbcf2e0730a00a526d716f6",
+          "deployment_unit": "unit-41721",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x2f3af664ecdbc66f832e12f0df38180b2807e8a2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockedCYBRO",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockedCYBRO",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x2f3af664ecdbc66f832e12f0df38180b2807e8a2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x9ac9b1f582edc6121c826b96c94df331a8f66919",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12985"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x3e7f5cf6372b2b1f029c7294190057828f42b75f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockedCYBROStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockedCYBROStaking",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x3e7f5cf6372b2b1f029c7294190057828f42b75f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xc222a3ad92a5a5c36d9128e4359a7ed07fea3a0f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xe27c6d3799d37afdae59627148b521cd99d90003",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12985"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x03d2fa92d845da3f13d27885d6269ed4f67f4c0f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LPManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LPManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0ea8efdb32b780f583ab576604a563f8e4aa6868",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x7ad4e1e8fae276b9debb40340dc65d6a2274189b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xdb656402d9cb8a815bd1934bfc0e71fdba203d0b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7a37c61b20e19d8d3ff6ff652868ffaeea185c7b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb3da213b0005df568a222876e5f5db61c985936f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x03d2fa92d845da3f13d27885d6269ed4f67f4c0f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0964b7a10631f2139dcf2e0aa1b621f97a19e998",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0a3066e012ffe47ae7fcbeee6b6c07f7c72f96df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x128452f132d6e320be369e5d6834f3686d04a3eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x22b2ad379a535ce101e1d62cb4bc43f605d29e89",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x258af6260a352464a8ea02c14df4062215af707a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2dd169bed96341ead731022ef1de871d58958ded",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x36cf76883cfa81e5017858d9adbcd417fa418260",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x38a8dafb227dae7975225f39571bd3d56fece1e8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x471c8a4537ee0197de72628aad89ae024ed65c20",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x49330713ada5d6c1e1c2a2cfd883c7ee68d0a5bf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4f6008d1ad72be1fc62926f29fa7d131044e46cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5575fc828fbc92d9f81c9572f17b11d5789560d2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5c9d2771451221989f2e5d7d71f207c1fbc46e44",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5ecb3242e55ac1d4593787557c0775ecc15b2f1b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x77948e14e30aa1e61aac03f5bb25bb59fc078ad4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x87154a538ff077fe2d7afb511e48b5decdb07d1f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa24cdc613f76be668004486ad19ff5036b1d3faf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb1de2f259e39726cc2bd7b017ac7ecc55fb07c20",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb3e370e1194feabc5be79c386f77dd5f76338e96",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbd070448fa8f9ee1b8c0dce3bc0446d1c4a27c8e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd18cd81329789bbbf962814b27ba70821c645941",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd1a5b950ba74f88e50e450de9e9227c9d522c604",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd2040298a85e3e085c16b822292d22e7179b5123",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xec1c200c7f8f916302a13dc73538f07f363c14b3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf06166ea86a03baf6d84adf000547d4971c55e5f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf401483e5d5b7e72ad845634dd7593a307c0abca",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf9692890bae246050eed3d34ea34ee71d5930d1d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12990",
+        "audit-16267",
+        "audit-16268",
+        "audit-16276",
+        "audit-16282"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x20f97f2323473cd91d610df2aa7a80083c75d9ad",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LPManagerV4",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LPManagerV4",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x20f97f2323473cd91d610df2aa7a80083c75d9ad",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x77369bbebd14e91a6688bf400d560c89f38a2f32",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeV3AutoManager",
+      "role": "governance",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3AutoManager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x77369bbebd14e91a6688bf400d560c89f38a2f32",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16267"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6ce9b6288bdf6091d4ce071a81a12e96103b4029",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeV3LPManager",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3LPManager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6ce9b6288bdf6091d4ce071a81a12e96103b4029",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9afb3e81c6a38f4d816103251d4ba76d1e62d5d3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16267"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x01623abc8fb5fe01486e1a55c0c98a1b722b066c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProtocolFeeCollector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProtocolFeeCollector",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd8287038f3138ce806992915e4e3981c2151d6b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf401483e5d5b7e72ad845634dd7593a307c0abca",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x2d6f2a40b577deab4fbf67b88d61c7bf82f9b028",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x38694d9bf8974b1129c4f41b48eb8620d735535b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x4164ca66d1fedd669a855cbc2a1d45fb9cfbcf71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x4f654ea5134cd441de1f256f072e8ab36c893e66",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x8c21870662ed498bdea16787392ef4ebb6801ff7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xc6ac03d0a68dcb9e220d84b395a67d90045b486a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xfb84664e669f8aae284c626dc7b31c4e45101348",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x567103a40c408b2b8f766016c57a092a180397a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd3bece9ecec369de0e8ba70ec5385262a9c79b13",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x01623abc8fb5fe01486e1a55c0c98a1b722b066c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x03ef21cdd9609668996aaaecdd9dfddfe7cad110",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1081d9c0998b9722d0ef1749af28ff3b795e30bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x26b9f174d2a09ef602251c0832bf5559650df66d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x50d96936187e14f357035b0a24c3a465a7697abc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5e370379d3ffd745533a4bba5ec2df634680b8a6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x69706db1b23be2188e49b3be5787b59d2e929989",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x84fbcde24b75f3d45863e82282683dff16c398b7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9fd1e053f65181a930181fb6885e7f40c993a6ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb05961e49c6f94688d6107a59ca43015102ec24e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbf2922b0e077a9c9cec09683ebbe1d549675ce25",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc185fb364fd22ded0b1cd7e5fe5b6fd7f7c1ecc3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc75e10d7c27f9ede7fcb92fa4ae3fe9ada84cdc1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdb187495d2dc2ddf025c100aa1a34274d72c86f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe2298074b2e228a532f2be899da43b66d6ff112b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xeb2538acee5cffcc9ba02a58cd9b37d4735ef368",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xedb9f6363bd925b44493a8f82468160ca0debf85",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfd3be1d641adaa64c005dc2d6a2ff5bea96ad744",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16267",
+        "audit-16268",
+        "audit-16276",
+        "audit-16282"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x081295ac2c9b425af1c570b933925d44e3f52e54",
+      "deployment_unit": "unit-41979",
+      "deployment_unit_proxy_count": 1,
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x081295ac2c9b425af1c570b933925d44e3f52e54",
+          "deployment_unit": "unit-41979",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x4cc28bc851e874a7187f71bed63daa3ec9fe406d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x4cc28bc851e874a7187f71bed63daa3ec9fe406d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2ce2701ad396982ef0bf2efb4d03a4d7c638574c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3AutoManager",
+      "role": "governance",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3AutoManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2ce2701ad396982ef0bf2efb4d03a4d7c638574c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16267"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9a592115fa75a1a53e45974e8810aedd212828f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3LPManager",
+      "role": "governance",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Cybro",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3LPManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9a592115fa75a1a53e45974e8810aedd212828f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16267"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x50ef2054a075ee8e161303104741ab185fcf9ba0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x50ef2054a075ee8e161303104741ab185fcf9ba0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x64b6d02a38507a1254a7e0d25cbd8df826a4641c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x64b6d02a38507a1254a7e0d25cbd8df826a4641c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x6900297ef327d42b52283985ff3ee65f5bcaffc3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x6900297ef327d42b52283985ff3ee65f5bcaffc3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xb985b4b7e2b570bd23705ba9953fa3f514ea7b39",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xb985b4b7e2b570bd23705ba9953fa3f514ea7b39",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xba823db05e1c0321b838743ffd78ef3473946aa3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xba823db05e1c0321b838743ffd78ef3473946aa3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 12982,
@@ -60,19 +2079,33 @@
       "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20One%20Click%20Lending%20Security%20Analysis%20by%20Pessimistic.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12982,
+          "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20One%20Click%20Lending%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16272,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/f40db8cccb17070232cd20a8e1bfd613cbf7ad5c/CYBRO%20One%20Click%20Lending%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16278,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20One%20Click%20Lending%20Security%20Analysis%20by%20Pessimistic.pdf"
+        }
+      ]
     },
     {
       "audit_id": 12983,
@@ -81,19 +2114,33 @@
       "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20Security%20Analysis%20by%20Pessimistic.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name|n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12983,
+          "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16270,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/e3a603ccd5be237b54d26ed506f3138a7218064b/CYBRO%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16279,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20Security%20Analysis%20by%20Pessimistic.pdf"
+        }
+      ]
     },
     {
       "audit_id": 12984,
@@ -108,13 +2155,29 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveVault",
+        "BaseVault",
+        "CompoundVaultErc20",
+        "CompoundVaultEth",
+        "JuiceVault"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12984,
+          "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf"
+        },
+        {
+          "audit_id": 16269,
+          "report_url": "https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/CYBRO%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf"
+        }
+      ]
     },
     {
       "audit_id": 12985,
@@ -123,19 +2186,37 @@
       "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20Staking%20Security%20Analysis%20by%20Pessimistic.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CYBROStaking",
+        "LockedCYBRO",
+        "LockedCYBROStaking"
+      ],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12985,
+          "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20Staking%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16275,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/0bede3f03ec209a03067347dbdaf3ec3c9b81612/CYBRO%20Staking%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16280,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20Staking%20Security%20Analysis%20by%20Pessimistic.pdf"
+        }
+      ]
     },
     {
       "audit_id": 12986,
@@ -144,19 +2225,37 @@
       "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/Cybro%20Vault%20Smart%20Contract%20Audit%20-%20QuillAudits.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlgebraVault",
+        "BaseVault",
+        "BlasterSwapV2Vault",
+        "BlasterSwapV3Vault",
+        "BufferVault",
+        "StargateVault",
+        "YieldStakingVault"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12986,
+          "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/Cybro%20Vault%20Smart%20Contract%20Audit%20-%20QuillAudits.pdf"
+        },
+        {
+          "audit_id": 16273,
+          "report_url": "https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/Cybro%20Vault%20Smart%20Contract%20Audit%20-%20QuillAudits.pdf"
+        }
+      ]
     },
     {
       "audit_id": 12987,
@@ -207,18 +2306,21 @@
       "report_url": "https://skynet.certik.com/projects/cybro",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CYBROAdapter",
+        "CYBROOFT"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -234,12 +2336,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CYBRO Token",
+        "LPManager",
+        "Locked CYBRO Token",
+        "Staking"
+      ],
+      "matched_contracts": 33,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -346,19 +2453,397 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16256,
+      "audit_key": "audit-16256",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://cybro.io/legals/cybro-privacy.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16257,
+      "audit_key": "audit-16257",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://cybro.io/legals/cybro-terms-of-use.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16265,
+      "audit_key": "audit-16265",
+      "report_name": "hexens-cybro-mar-26(Final).pdf",
+      "report_url": "https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/hexens-cybro-mar-26(Final).pdf",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16266,
+      "audit_key": "audit-16266",
+      "report_name": "Scope: <>",
+      "report_url": "https://hexens.io/audit-reports/cybro-v3-v4-automation-mar-2026",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16267,
+      "audit_key": "audit-16267",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://github.com/pessimistic-io/audits/blob/a27871ebd7f6e36d0f61604a8edf9e53be096473/CYBRO%20Liquidity%20manager%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "Pessimistic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseAutoManagerV3",
+        "BaseLPManagerV3",
+        "BaseManagerV3",
+        "ILPManager",
+        "IProtocolFeeCollector",
+        "LPManager",
+        "PancakeV3AutoManager",
+        "PancakeV3BaseLPManager",
+        "PancakeV3LPManager",
+        "ProtocolFeeCollector",
+        "UniswapV3AutoManager",
+        "UniswapV3BaseLPManager",
+        "UniswapV3LPManager"
+      ],
+      "matched_contracts": 61,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 16267,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/a27871ebd7f6e36d0f61604a8edf9e53be096473/CYBRO%20Liquidity%20manager%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16277,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20Liquidity%20manager%20Security%20Analysis%20by%20Pessimistic.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 16268,
+      "audit_key": "audit-16268",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://github.com/pessimistic-io/audits/blob/5bafc9eb1003bcc443caa7282d381c752373a624/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ILPManager",
+        "IProtocolFeeCollector",
+        "LPManager",
+        "ProtocolFeeCollector"
+      ],
+      "matched_contracts": 56,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16271,
+      "audit_key": "audit-16271",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://github.com/pessimistic-io/audits/blob/cccca3bd4fedf5955fcf178fefd7b4ebb75de0a1/Cybro%20LidoVault%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "Pessimistic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [
+        "BaseVault",
+        "FeeProvider",
+        "LidoVault",
+        "OracleData",
+        "StakedAmount"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 16271,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/cccca3bd4fedf5955fcf178fefd7b4ebb75de0a1/Cybro%20LidoVault%20Security%20Analysis%20by%20Pessimistic.pdf"
+        },
+        {
+          "audit_id": 16281,
+          "report_url": "https://github.com/pessimistic-io/audits/blob/main/Cybro%20LidoVault%20Security%20Analysis%20by%20Pessimistic.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 16274,
+      "audit_key": "audit-16274",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://skynet.certik.com/projects/cybro?auditId=CYBRO%20Token%20-%20Audit",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CYBROAdapter",
+        "CYBROOFT"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16276,
+      "audit_key": "audit-16276",
+      "report_name": "CYBRO LPManager Security Analysis by Pessimistic.pdf",
+      "report_url": "https://github.com/pessimistic-io/audits/blob/main/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "Pessimistic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ILPManager",
+        "IProtocolFeeCollector",
+        "LPManager",
+        "ProtocolFeeCollector"
+      ],
+      "matched_contracts": 56,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16282,
+      "audit_key": "audit-16282",
+      "report_name": "CYBRO LPManager Security Analysis by Pessimistic.pdf",
+      "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/CYBRO%20LPManager%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "Pessimistic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ILPManager",
+        "IProtocolFeeCollector",
+        "LPManager",
+        "ProtocolFeeCollector"
+      ],
+      "matched_contracts": 56,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16283,
+      "audit_key": "audit-16283",
+      "report_name": "Cybro V3 Smart Contract Audit Report - QuillAudits.pdf",
+      "report_url": "https://github.com/cybro-io/dapp-contracts-audits/blob/main/Cybro%20V3%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf",
+      "auditor": "QuillAudits",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveVault",
+        "BaseVault",
+        "Exchange",
+        "FeeProvider",
+        "OneClickIndex",
+        "Oracle"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Pessimistic",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 34.8,
+      "latest_audit": "2026-02"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 26.1,
+      "latest_audit": "2025-12"
+    },
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 8.7,
+      "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 4.3,
+      "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 4.3,
+      "latest_audit": "2024-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x963eec23618bbc8e1766661d5f263f18094ae4d5",
+      "name": "CYBROToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 1870031.9175203107,
+      "risk_note": "Verified native implementation with $1,870,031.92 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4aa185859b5ea4799029af65b89af6874812f281",
+      "name": "AutoManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x7bb6cac7e47e8149c4ef62b759ee8b2e56c0304f",
+      "name": "CYBROOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x20f97f2323473cd91d610df2aa7a80083c75d9ad",
+      "name": "LPManagerV4",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "native": 10,
+    "upstream": 9,
+    "standard_library": 9,
+    "needs_review": 6
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2232
+    },
+    "extraction_confidence_counts": {
+      "high": 11,
+      "medium": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -371,32 +2856,12 @@
         "report_name": "CYBRO Security Analysis by Pessimistic.pdf"
       },
       {
-        "audit_id": 12984,
-        "report_name": "CYBRO Smart Contract Audit Report - QuillAudits.pdf"
-      },
-      {
-        "audit_id": 12985,
-        "report_name": "CYBRO Staking Security Analysis by Pessimistic.pdf"
-      },
-      {
-        "audit_id": 12986,
-        "report_name": "Cybro Vault Smart Contract Audit - QuillAudits.pdf"
-      },
-      {
         "audit_id": 12987,
         "report_name": "Rendered PDF capture"
       },
       {
         "audit_id": 12988,
         "report_name": "Rendered PDF capture"
-      },
-      {
-        "audit_id": 12989,
-        "report_name": "CertiK"
-      },
-      {
-        "audit_id": 12990,
-        "report_name": "Security Audits"
       },
       {
         "audit_id": 12991,
@@ -417,6 +2882,22 @@
       {
         "audit_id": 12995,
         "report_name": "- [Security report / 10th May 2024]()"
+      },
+      {
+        "audit_id": 16256,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 16257,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 16265,
+        "report_name": "hexens-cybro-mar-26(Final).pdf"
+      },
+      {
+        "audit_id": 16266,
+        "report_name": "Scope: <>"
       }
     ],
     "inherited_remapped_matches": []

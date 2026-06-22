@@ -1,0 +1,17 @@
+{
+  "address": "0x01532fb7cbead7c5cf8f58ead92e7ce027e19f75",
+  "chain_id": 137,
+  "contract_name": "BufferBinaryOptions",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:38.610Z"
+}

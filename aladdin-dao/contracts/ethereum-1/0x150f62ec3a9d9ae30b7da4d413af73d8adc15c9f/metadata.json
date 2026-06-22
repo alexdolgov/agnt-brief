@@ -1,0 +1,18 @@
+{
+  "address": "0x150f62ec3a9d9ae30b7da4d413af73d8adc15c9f",
+  "chain_id": 1,
+  "contract_name": "ETHLSDConverter",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:57:58.084Z"
+}

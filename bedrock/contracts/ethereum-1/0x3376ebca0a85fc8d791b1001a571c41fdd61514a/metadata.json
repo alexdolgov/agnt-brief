@@ -1,0 +1,18 @@
+{
+  "address": "0x3376ebca0a85fc8d791b1001a571c41fdd61514a",
+  "chain_id": 1,
+  "contract_name": "RockXETH",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:58:21.748Z"
+}

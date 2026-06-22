@@ -1,0 +1,76 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "exchangeRouterContractGuard",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolManagerLogic",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "markets",
+        "type": "address[]"
+      }
+    ],
+    "name": "checkMarketsAndTokensSupportedForClaiming",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "exchangeRouterContractGuard",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolManagerLogic",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
+      }
+    ],
+    "name": "validateCancelDeposit",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "exchangeRouterContractGuard",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolManagerLogic",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
+      }
+    ],
+    "name": "validateCancelOrder",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

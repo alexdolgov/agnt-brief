@@ -1,0 +1,445 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rage",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rageUsdcPool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "consultOracle",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getCircleTwapUsdcPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getCircleUsdcPriceAfterBondDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "hestiaAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "circleAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getHestiaCircleTwapUsdcPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getHestiaTwapUsdcPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getHestiaUsdcPriceAfterBondDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPcircleInCircleAfterDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPcircleRequiredForCircle",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getPcircleUsdcPriceAfterDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPhestiaInHestiaAfterDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPhestiaRequiredForHestia",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getPhestiaUsdcPriceAfterDebond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getPrices",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "wethTwapUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaTwapUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleTwapUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaCircleTwapUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageTwapUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaUsdcPriceAfterBondDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleUsdcPriceAfterBondDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pHestiaUsdcPriceAfterDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleUsdcPriceAfterDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pHestiaInHestiaAfterDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleInCircleAfterDebond",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pHestiaRequiredForHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleRequiredForCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pHestiaRequiredForHestiaResult",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleRequiredForCircleResult",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.OraclePrices",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getRageTwapUsdcPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "interval",
+        "type": "uint32"
+      }
+    ],
+    "name": "getWethTwapUsdcPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

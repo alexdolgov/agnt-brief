@@ -1,0 +1,18 @@
+{
+  "address": "0x20904c92304cae9d20c48c6c44f9a7b7b7b38f42",
+  "chain_id": 56,
+  "contract_name": "MasterChefGoblin",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:48:20.061Z"
+}

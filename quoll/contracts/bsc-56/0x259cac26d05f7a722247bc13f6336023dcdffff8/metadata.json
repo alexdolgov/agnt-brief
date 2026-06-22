@@ -1,0 +1,18 @@
+{
+  "address": "0x259cac26d05f7a722247bc13f6336023dcdffff8",
+  "chain_id": 56,
+  "contract_name": "NativeZapper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:22.581Z"
+}

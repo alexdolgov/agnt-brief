@@ -1,0 +1,18 @@
+{
+  "address": "0x95847a1982db4622dc9014f6f0bec7cbc6b9a672",
+  "chain_id": 137,
+  "contract_name": "PolygonLandV2",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:04.439Z"
+}

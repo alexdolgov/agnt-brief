@@ -1,0 +1,798 @@
+[
+  {
+    "inputs": [],
+    "name": "AlreadyRedeemed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "MissingAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoRedemptionAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoRepaymentAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRedemptionPeriod",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRepaymentPeriod",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "EmergencySettlementExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "taker",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountInFV",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeInFV",
+        "type": "uint256"
+      }
+    ],
+    "name": "OrderFilled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint48",
+        "name": "orderId",
+        "type": "uint48"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "maker",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountInFV",
+        "type": "uint256"
+      }
+    ],
+    "name": "OrderPartiallyFilled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "taker",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountInFV",
+        "type": "uint256"
+      }
+    ],
+    "name": "OrdersFilledInAsync",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RedemptionExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RepaymentExecuted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BASE_MIN_DEBT_UNIT_PRICE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_presentValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateFVFromPV",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "futureValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "_presentValue",
+        "type": "int256"
+      }
+    ],
+    "name": "calculateFVFromPV",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "futureValue",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "ccy",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingLendOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingBorrowOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.AdditionalFunds",
+        "name": "_additionalFunds",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_liquidationThresholdRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateFunds",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "workingLendOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unallocatedCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingBorrowOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.CalculatedFunds",
+        "name": "funds",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "_futureValue",
+        "type": "int256"
+      }
+    ],
+    "name": "calculatePVFromFV",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "presentValue",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "ccy",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingLendOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingBorrowOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.AdditionalFunds",
+        "name": "_additionalFunds",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_liquidationThresholdRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateTotalFundsInBaseCurrency",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "plusDepositAmountInAdditionalFundsCcy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minusDepositAmountInAdditionalFundsCcy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingLendOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingBorrowOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILendingMarketController.CalculatedTotalFunds",
+        "name": "totalFunds",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minDebtUnitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "getActualFunds",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "presentValue",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "futureValue",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingLendOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "workingBorrowOrdersAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "genesisValue",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "genesisValueInPV",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "genesisValueInFV",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct FundManagementLogic.ActualFunds",
+        "name": "actualFunds",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minDebtUnitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCurrentMinDebtUnitPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getGenesisValue",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "amount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amountInPV",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amountInFV",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getPosition",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "presentValue",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "futureValue",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUsedMaturities",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "maturities",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

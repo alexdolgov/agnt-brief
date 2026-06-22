@@ -1,0 +1,18 @@
+{
+  "address": "0x137701708f7139b563e77d71e8158364ff1a934c",
+  "chain_id": 56,
+  "contract_name": "ConnectV2PancakeswapV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:35:57.362Z"
+}

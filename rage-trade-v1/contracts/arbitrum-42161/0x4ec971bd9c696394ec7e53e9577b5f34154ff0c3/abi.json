@@ -1,0 +1,404 @@
+[
+  {
+    "inputs": [],
+    "name": "R",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDepositCap",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newKeeperAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "rebalanceTimeThreshold",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "rebalancePriceThresholdBps",
+        "type": "uint16"
+      }
+    ],
+    "name": "BaseParamsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "crvSlippageTolerance",
+        "type": "uint256"
+      }
+    ],
+    "name": "CrvSwapFailedDueToSlippage",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeBps",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stablecoinSlippage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "crvHarvestThreshold",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "crvSlippageTolerance",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "crvOracle",
+        "type": "address"
+      }
+    ],
+    "name": "CurveParamsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "closePositionSlippageSqrtToleranceBps",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "resetPositionThresholdBps",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "minNotionalPositionToCloseThreshold",
+        "type": "uint64"
+      }
+    ],
+    "name": "EightyTwentyParamsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeesWithdrawn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "crvAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Harvested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "Rebalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "depositor",
+        "type": "address"
+      }
+    ],
+    "name": "Staked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lpPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "StateInfo",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "TokenPositionClosed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract ILPPriceGetter",
+        "name": "lpPriceHolder",
+        "type": "ILPPriceGetter"
+      }
+    ],
+    "name": "getMarketValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "marketValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILPPriceGetter",
+        "name": "lpPriceHolder",
+        "type": "ILPPriceGetter"
+      }
+    ],
+    "name": "getPriceX128",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "priceX128",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "rageVPool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "uint32",
+        "name": "rageTwapDuration",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTwapSqrtPriceX96",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "twapSqrtPriceX96",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "int256",
+        "name": "vaultMarketValue",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "SQRT_PRICE_FACTOR_PIPS",
+        "type": "uint64"
+      }
+    ],
+    "name": "getUpdatedBaseRangeParams",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "baseTickLowerUpdate",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "baseTickUpperUpdate",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "baseLiquidityUpdate",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "rageVPool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "uint32",
+        "name": "rageTwapDuration",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "rebalancePriceThresholdBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "int24",
+        "name": "baseTickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "baseTickUpper",
+        "type": "int24"
+      }
+    ],
+    "name": "isValidRebalanceRangeWithoutCheckReset",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isValid",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountBeforeWithdraw",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountWithdrawn",
+        "type": "uint256"
+      }
+    ],
+    "name": "simulateBeforeWithdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "updatedAmountWithdrawn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "tokensToTrade",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "bool",
+        "name": "isTickUpper",
+        "type": "bool"
+      }
+    ],
+    "name": "sqrtPriceX96ToValidTick",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "roundedTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

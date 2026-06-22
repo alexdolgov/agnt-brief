@@ -1,0 +1,17 @@
+{
+  "address": "0x58dab09bba10b53ef684eefe45025e1cbf604f12",
+  "chain_id": 1,
+  "contract_name": "ETHUniV3LPFarmingStrategy",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000ef8629d568adca04d0ac52c7388d5377872d7f61",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:39:03.162Z"
+}

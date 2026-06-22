@@ -1,0 +1,17 @@
+{
+  "address": "0x4ebcfb9f8b4df38ce149c655541d591afb6a03bd",
+  "chain_id": 137,
+  "contract_name": "PolygonLandBaseToken",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:01.967Z"
+}

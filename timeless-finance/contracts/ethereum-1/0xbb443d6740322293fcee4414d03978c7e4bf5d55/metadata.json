@@ -1,0 +1,18 @@
+{
+  "address": "0xbb443d6740322293fcee4414d03978c7e4bf5d55",
+  "chain_id": 1,
+  "contract_name": "ERC4626Gate",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:46:49.736Z"
+}

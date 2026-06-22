@@ -1,0 +1,18 @@
+{
+  "address": "0x12300319ddb0ebfef8380fb5767b0ddd1e31a704",
+  "chain_id": 56,
+  "contract_name": "Lock",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later Or MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:46:43.847Z"
+}

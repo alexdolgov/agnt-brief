@@ -1,0 +1,310 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newLoanDuration",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newMaximumRepaymentAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_renegotiationFee",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct LoanData.Signature",
+        "name": "_signature",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "isValidLenderRenegotiationSignature",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newLoanDuration",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newMaximumRepaymentAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_renegotiationFee",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct LoanData.Signature",
+        "name": "_signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "isValidLenderRenegotiationSignature",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanPrincipalAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maximumRepaymentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftCollateralId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftCollateralContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "loanDuration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "loanAdminFeeInBasisPoints",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "loanERC20Denomination",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referrer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LoanData.Offer",
+        "name": "_offer",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct LoanData.Signature",
+        "name": "_signature",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "isValidLenderSignature",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanPrincipalAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maximumRepaymentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftCollateralId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftCollateralContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "loanDuration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "loanAdminFeeInBasisPoints",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "loanERC20Denomination",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referrer",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LoanData.Offer",
+        "name": "_offer",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct LoanData.Signature",
+        "name": "_signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "isValidLenderSignature",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x6d8d0ea1834ac780ba3ce67241ed93aad6e9efe7",
+  "chain_id": 81457,
+  "contract_name": "Exchange",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000430000000000000000000000000000000000000400000000000000000000000043000000000000000000000000000000000000030000000000000000000000000af23b08bcd8ad35d1e8e8f2d2b779024bd8d24a000000000000000000000000cd31d2a13510f6424af1a292d9ce73aa9be815f2",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:54:32.517Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x46b6d5732d1b86f4fac7572efb675afbaba8164b",
+  "chain_id": 146,
+  "contract_name": "DividendsV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000004e0bd8bd175bd3ba4d20e068a56ea213289c4e8400000000000000000000000000000000000000000000000000000000683159a3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:01:52.379Z"
+}

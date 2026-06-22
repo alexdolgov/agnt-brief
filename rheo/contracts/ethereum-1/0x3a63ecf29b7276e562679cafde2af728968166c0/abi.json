@@ -1,0 +1,110 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "baseAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "intermediate1Aggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "quoteAggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "intermediate2Aggregator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "baseStalePriceInterval",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "intermediate1StalePriceInterval",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "quoteStalePriceInterval",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "intermediate2StalePriceInterval",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "NULL_ADDRESS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NULL_STALE_PRICE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "baseToIntermediate1",
+    "outputs": [
+      {
+        "internalType": "contract PriceFeedChainlinkMul",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "quoteToIntermediate2",
+    "outputs": [
+      {
+        "internalType": "contract PriceFeedChainlinkMul",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,19 +1,45 @@
 {
   "schema_version": "2.0",
   "project_key": "orbiter-one",
-  "generated_at": "2026-06-13T11:51:12.731Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:38:22.244Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "orbiter-one",
+    "tier": 1,
+    "peak_tvl": 168620,
+    "peak_date": "2023-07-31T00:00:00.000Z",
+    "tvl_30d_ago": 2580,
+    "tvl_90d_ago": 1998,
+    "tvl_current": 1636,
+    "tier0_reason": "long_term_collapse_from_peak",
+    "tvl_180d_ago": 3828,
+    "change_30d_pct": -36.58914728682171,
+    "change_90d_pct": -18.11811811811812,
+    "governance_raw": {
+      "evidence": "The protocol's homepage is blocked by Cloudflare with no accessible content, and TVL has dropped 99% from its peak over 1056 days ago, indicating abandonment.",
+      "confidence": 0.9,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1056,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.02977108290831,
+    "governance_evidence": "The protocol's homepage is blocked by Cloudflare with no accessible content, and TVL has dropped 99% from its peak over 1056 days ago, indicating abandonment.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 744,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -25,25 +51,38 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://orbiter.one",
-    "chains": [],
+    "chains": [
+      "moonbeam"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2023-04",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 2
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 1,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +90,43 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1284,
+      "chain_name": "moonbeam",
+      "address": "0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ORBToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Orbiter One",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ORBToken",
+      "deployments": [
+        {
+          "chain_id": 1284,
+          "chain_name": "moonbeam",
+          "address": "0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13647,
@@ -60,8 +135,8 @@
       "report_url": "https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -81,8 +156,8 @@
       "report_url": "https://github.com/solidproof/projects/blob/main/Orbiterone/SmartContract_Audit_Solidproof_Orbiterone.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -97,9 +172,20 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1284,
+      "chain_name": "moonbeam",
+      "address": "0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7",
+      "name": "ORBToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

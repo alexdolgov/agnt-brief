@@ -1,0 +1,293 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_cvxfxb",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_frax",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_sfrax",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fraxlend",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BORROW_MORE_DIFF",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RATE_STEP",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "REWARDS_CYCLE_LENGTH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UTIL_CAP",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UTIL_PREC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "calcBorrowUpdate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "calcUtilBounds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "useUtil",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cvxfxb",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "frax",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fraxlend",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fraxlendCurrentUtil",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentUtil",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fraxlendRates",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lowRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "highRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lowUtil",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentUtil",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "highUtil",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "needsUpdate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardsPerSecond",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "low",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "current",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "high",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lowUtil",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentUtil",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "highUtil",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sfrax",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sfraxRates",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fraxPerSecond",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "update",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

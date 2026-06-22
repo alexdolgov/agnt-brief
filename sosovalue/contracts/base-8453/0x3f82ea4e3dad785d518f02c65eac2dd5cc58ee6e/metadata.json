@@ -1,0 +1,17 @@
+{
+  "address": "0x3f82ea4e3dad785d518f02c65eac2dd5cc58ee6e",
+  "chain_id": 8453,
+  "contract_name": "ChristmasAirdrop",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000004995e09092b1fae81b165605a051e0ecfcf0dc8b4f7e76e0b55663e5b69102d14764fe19452af123e7e6c2e8dcb2b0032ad6669700000000000000000000000000000000000000000000000000000000677e68c0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:25:54.986Z"
+}

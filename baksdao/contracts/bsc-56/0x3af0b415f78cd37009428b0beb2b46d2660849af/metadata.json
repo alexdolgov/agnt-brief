@@ -1,0 +1,18 @@
+{
+  "address": "0x3af0b415f78cd37009428b0beb2b46d2660849af",
+  "chain_id": 56,
+  "contract_name": "Depositary",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:45:53.402Z"
+}

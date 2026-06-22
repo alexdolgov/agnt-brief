@@ -1,0 +1,18 @@
+{
+  "address": "0x6900064e7a3920c114e25b5fe4780f26520e3231",
+  "chain_id": 1,
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:47.205Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x3bdeae3a0db5db37f260fed77438af91729573b2",
+  "chain_id": 137,
+  "contract_name": "MerkleDistributor",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000013748d548d95d78a3c83fe3f32604b4796cffa23e2850af66a47f87aeddf351a730d8a8feaa3cedaf8e79c5f65ba3384a35721b200000000000000000000000000482b66aa7a69c9982c030cd9627a86288ffa2d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:42:41.136Z"
+}

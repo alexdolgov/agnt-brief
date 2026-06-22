@@ -1,0 +1,17 @@
+{
+  "address": "0x28f2ab0564db515a31f2d1d99d4b9d348fc57d51",
+  "chain_id": 43114,
+  "contract_name": "DepositManager",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000007284cfee5f4e6db7b49829568632215a40ad2b4e000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000f0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:41:19.506Z"
+}

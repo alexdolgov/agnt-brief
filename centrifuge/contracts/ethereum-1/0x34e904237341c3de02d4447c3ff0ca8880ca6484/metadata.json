@@ -1,0 +1,17 @@
+{
+  "address": "0x34e904237341c3de02d4447c3ff0ca8880ca6484",
+  "chain_id": 1,
+  "contract_name": "AxelarAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000035c837f0a54b715a23d193e1476bfc9bc30073be0000000000000000000000004f4495243837681061c4743b74b3eedf548d56a50000000000000000000000002d5d7d31f671f86c782533cc367f14109a082712000000000000000000000000b3c086db30c1be6e40d8775607c3662ab160bda5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:56.117Z"
+}

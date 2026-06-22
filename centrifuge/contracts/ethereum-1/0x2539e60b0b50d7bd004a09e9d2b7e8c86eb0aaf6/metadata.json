@@ -1,0 +1,17 @@
+{
+  "address": "0x2539e60b0b50d7bd004a09e9d2b7e8c86eb0aaf6",
+  "chain_id": 1,
+  "contract_name": "OnOfframpManagerFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "0000000000000000000000003b150b19245d2c366bc8f18c775b725dfb298f7100000000000000000000000012a110ce5f0fc871cc72bc7ecaf35cf39dd0f43e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:53.536Z"
+}

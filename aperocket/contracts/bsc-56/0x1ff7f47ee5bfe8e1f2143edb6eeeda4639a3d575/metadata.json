@@ -1,0 +1,17 @@
+{
+  "address": "0x1ff7f47ee5bfe8e1f2143edb6eeeda4639a3d575",
+  "chain_id": 56,
+  "contract_name": "LinearVestingCurve",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:51:46.009Z"
+}

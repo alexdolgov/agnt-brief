@@ -1,0 +1,18 @@
+{
+  "address": "0x061bc5884c7dfb4d6514f4101047f8c010fc06a4",
+  "chain_id": 42161,
+  "contract_name": "ArrayGetters",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:58.334Z"
+}

@@ -1,40 +1,50 @@
 # Agentic Audit Brief: Based Finance
 
+⚠️ Lifecycle status: DEAD - TVL changed 10.7% over 90 days
+
 ## Project Overview
 
 - Project: Based Finance (`based-finance`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:28:55.764Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T13:17:44.349Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Chains: fantom
+- Contract surface: 12 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $189.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Based Finance is a DeFi protocol on Fantom offering yield generation and algorithmic stablecoin products. It includes a first-generation set of contracts for yield and algo-stables, and a next-generation set that likely iterates on these mechanisms.
+
+### Architecture
+
+The two families represent sequential versions of the protocol, with Based Next Generation likely replacing or coexisting with the original Based Finance. They may share underlying tokens or infrastructure, but the contract surface shows no direct cross-references.
+
+## Contract Surface Quality
+
+- Indexed contracts: 12; live-surface contracts included: 12 (0 live, 12 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 12
+- Unique implementations: 12
+- Raw deployments: 12
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-03 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -62,11 +72,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | fantom | n/a | `0x04068d...5d5b75` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x049d68...3a3c7a` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x0a10da...0c53a5` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x407c47...24a759` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x49c290...54ab7a` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x525ca3...943379` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x62a2ff...0851fe` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x8d7d34...ed89ae` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xa0e0f4...405831` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xaebff2...5fa2ed` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xe5009d...f0e5cd` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xfb98b3...ea213b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -84,10 +107,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 1 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 

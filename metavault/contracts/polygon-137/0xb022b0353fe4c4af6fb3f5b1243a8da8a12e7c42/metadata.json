@@ -1,0 +1,18 @@
+{
+  "address": "0xb022b0353fe4c4af6fb3f5b1243a8da8a12e7c42",
+  "chain_id": 137,
+  "contract_name": "VaultPriceFeed",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:47.667Z"
+}

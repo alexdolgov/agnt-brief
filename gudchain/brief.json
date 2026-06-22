@@ -1,34 +1,64 @@
 {
   "schema_version": "2.0",
   "project_key": "gudchain",
-  "generated_at": "2026-06-13T13:14:18.929Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T07:37:17.714Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "gudchain",
+    "tier": 1,
+    "peak_tvl": 3986022,
+    "peak_date": "2024-12-17T00:00:00.000Z",
+    "tvl_30d_ago": 81739,
+    "tvl_90d_ago": 80854,
+    "tvl_current": 76342,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 147634,
+    "change_30d_pct": -6.602723302218036,
+    "change_90d_pct": -5.580428921265491,
+    "governance_raw": {
+      "evidence": "TVL dropped 98% from peak but homepage shows active branding and wallet connection options, indicating ongoing operations.",
+      "confidence": 0.8,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 551,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 98.08475718397942,
+    "governance_evidence": "TVL dropped 98% from peak but homepage shows active branding and wallet connection options, indicating ongoing operations.",
+    "governance_confidence": 0.8,
+    "governance_text_chars": 424,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 1,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 100,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 75249.48607,
-    "tvl_usd": 75249.48607,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 17492.04044767312,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 17492.04
+    },
     "asd_usd": null,
     "website_url": "https://gudchain.com/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024",
+    "latest_audit_date": "2024-04",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +68,69 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 2,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
     "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd7419a0c753378a86c3342ae0c1a4577b9baec83",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GudPartnerPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 17492.04044767312,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GudPartnerPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd7419a0c753378a86c3342ae0c1a4577b9baec83",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 17492.04044767312,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13210"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13210,
@@ -61,39 +140,52 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2024",
+      "date": "2024-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "GudDeposits",
+        "GudPartnerPool",
+        "GudTimelock",
+        "GudVaultV0",
+        "GudVaultV1"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2024-04"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13210,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

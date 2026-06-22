@@ -1,0 +1,18 @@
+{
+  "address": "0xc14f24cf3768a0997e39ae11f288ea421485ef54",
+  "chain_id": 1,
+  "contract_name": "BridgeEth",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:14:04.743Z"
+}

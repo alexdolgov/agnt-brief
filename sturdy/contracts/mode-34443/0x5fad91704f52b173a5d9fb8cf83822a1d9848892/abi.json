@@ -1,0 +1,45 @@
+[
+  {
+    "inputs": [],
+    "name": "AG_INVALID_CONFIGURATION",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AG_REPAY_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_silo",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_repayAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_collateralAsset",
+        "type": "address"
+      }
+    ],
+    "name": "repayAndWithdrawCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

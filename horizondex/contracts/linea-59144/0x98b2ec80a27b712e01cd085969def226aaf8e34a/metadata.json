@@ -1,0 +1,17 @@
+{
+  "address": "0x98b2ec80a27b712e01cd085969def226aaf8e34a",
+  "chain_id": 59144,
+  "contract_name": "BasePluginV1Factory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "000000000000000000000000ec4f2937e57a6f39087187816ecc83191e6db1ab",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:28:18.256Z"
+}

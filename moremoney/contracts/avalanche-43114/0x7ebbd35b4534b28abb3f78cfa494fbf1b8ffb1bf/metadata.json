@@ -1,0 +1,17 @@
+{
+  "address": "0x7ebbd35b4534b28abb3f78cfa494fbf1b8ffb1bf",
+  "chain_id": 43114,
+  "contract_name": "VestingLaunchReward",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000d9d90f882cddd6063959a9d837b05cb748718a05",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:18.542Z"
+}

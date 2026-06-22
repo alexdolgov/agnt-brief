@@ -1,0 +1,18 @@
+{
+  "address": "0xaa4231767dcc675c4bf8fdb3c7df7c86e012aedd",
+  "chain_id": 42161,
+  "contract_name": "CommonHealthCheck",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:28:51.575Z"
+}

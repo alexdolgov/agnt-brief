@@ -1,0 +1,18 @@
+{
+  "address": "0x012235f86f9fba5517a9c03e9a071d9f4ccd204c",
+  "chain_id": 56,
+  "contract_name": "StrategyAddTwoSidesOptimal",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:48:17.238Z"
+}

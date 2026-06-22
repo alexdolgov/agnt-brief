@@ -1,57 +1,332 @@
 {
   "schema_version": "2.0",
   "project_key": "dehive",
-  "generated_at": "2026-06-13T11:31:28.966Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T09:20:43.142Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "dehive",
+    "tier": 0,
+    "peak_tvl": 542260,
+    "peak_date": "2022-02-11T00:00:00.000Z",
+    "tvl_30d_ago": 2353,
+    "tvl_90d_ago": 2301,
+    "tvl_current": 2131,
+    "tier0_reason": "long_term_collapse_from_peak",
+    "tvl_180d_ago": 2907,
+    "change_30d_pct": -9.434764130896728,
+    "change_90d_pct": -7.388092133854846,
+    "days_since_peak": 1591,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.60701508501457
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 6,
+    "total_addresses": 8,
+    "unique_implementations": 6,
+    "total_deployments": 8,
+    "audited_contracts": 1,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 20,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 114512.20143,
-    "tvl_usd": 114512.20143,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 342965.14696059615,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 27370.06,
+      "ethereum": 297687.75,
+      "polygon": 17907.33
+    },
+    "asd_usd": 342965.14696059615,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "bsc",
+      "ethereum",
+      "gnosis",
+      "polygon"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021",
+    "latest_audit_date": "2021-09",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "DeHive is a DeFi protocol that offers tokenized index products (ClusterTokens) and yield-optimization strategies. Users can gain diversified exposure to curated crypto assets and earn yield through staking and automated farming strategies.",
+    "relationship_narrative": "All contracts belong to a single DeHive family, sharing a common proxy infrastructure (UtilProxy) that routes calls to various logic implementations. ClusterTokens represent index products, while StakingPools, StakingDHV, and ImpulseStaking contracts manage staking and yield strategies, often interacting with external DEX pairs (UniswapV2Pair, PancakePair) and cross-chain tokens (AnyswapV5ERC20).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 358,
+    "live_contracts": 8,
+    "inactive_contracts": 155,
+    "singleton_contracts": 195,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 96,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 2,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "compound-v2",
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x62dc4817588d53a056cbbd18231d91ffccd34b2a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DHVToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "DeHive",
+      "tvl_usd": 297687.7542637894,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DHVToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x62dc4817588d53a056cbbd18231d91ffccd34b2a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 297687.7542637894,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x58759dd469ae5631c42cf8a473992335575b58d7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AnyswapV5ERC20",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "Anyswap",
+      "product_line": "DeHive",
+      "tvl_usd": 45277.39269680675,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AnyswapV5ERC20",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x58759dd469ae5631c42cf8a473992335575b58d7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 27370.061929906362,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5fcb9de282af6122ce3518cde28b7089c9f97b26",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 17907.330766900388,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0a684421ef48b431803bfd75f38675eab1e38ed5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ClusterToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "DeHive",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ClusterToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0a684421ef48b431803bfd75f38675eab1e38ed5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4964b3b599b82c3fddc56e3a9ffd77d48c6af0f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13011",
+        "audit-13012"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xf557b2b73b872e6d2f43826f9d77b7402a363bc0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ClusterTokenV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "DeHive",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ClusterTokenV2",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xf557b2b73b872e6d2f43826f9d77b7402a363bc0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x72ba008b631d9fd5a8e8013023cb3c05e19a7ca9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "PancakeSwap",
+      "product_line": "DeHive",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakePair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x72ba008b631d9fd5a8e8013023cb3c05e19a7ca9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xfbdd194376de19a88118e84e279b977f165d01b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "DeHive",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfbdd194376de19a88118e84e279b977f165d01b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13011,
@@ -61,17 +336,24 @@
       "auditor": "Hacken",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021",
+      "date": "2021-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ClusterToken",
+        "Controller",
+        "DexAdapterCore",
+        "QickswapAdapter",
+        "StakingDHV",
+        "UniswapAdapter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,44 +363,83 @@
       "report_url": "https://github.com/DeHive-finance/dehive-audits/blob/main/DeHive-Zokyo-Audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ClusterToken",
+        "Controller",
+        "DexAdapterCore",
+        "QuickSwapAdapter",
+        "StakingDHV",
+        "StakingPools",
+        "UniswapAdapter"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Hacken",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2021-08"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2021-09"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x62dc4817588d53a056cbbd18231d91ffccd34b2a",
+      "name": "DHVToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 297687.7542637894,
+      "risk_note": "Verified native implementation with $297,687.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xf557b2b73b872e6d2f43826f9d77b7402a363bc0",
+      "name": "ClusterTokenV2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
+    "native": 4,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 105
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13011,
-        "report_name": "DeHive-Hacken-Audit.pdf"
-      },
-      {
-        "audit_id": 13012,
-        "report_name": "DeHive-Zokyo-Audit.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,0 +1,18 @@
+{
+  "address": "0x84f74e97ebab432cee185d601290ce0a483987a5",
+  "chain_id": 56,
+  "contract_name": "LockersProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0xc4219f3e8ee08054fa6663c05b57b67cde4d58b6",
+  "fetched_at": "2026-06-21T14:39:07.357Z"
+}

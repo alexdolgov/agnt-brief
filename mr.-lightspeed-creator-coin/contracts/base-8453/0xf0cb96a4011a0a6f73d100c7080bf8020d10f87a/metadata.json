@@ -1,0 +1,17 @@
+{
+  "address": "0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a",
+  "chain_id": 8453,
+  "contract_name": "CreatorCoin",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 75,
+  "constructor_arguments": "0000000000000000000000007bf90111ad7c22bec9e9dff8a01a44713cc1b1b60000000000000000000000007777777f279eba3d3ad8f4e708545291a6fdba8b000000000000000000000000498581ff718922c3f8e6a244956af099b2652b2b000000000000000000000000660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:25:53.671Z"
+}

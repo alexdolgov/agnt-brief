@@ -1,0 +1,225 @@
+[
+  {
+    "inputs": [],
+    "name": "AddLiquidityDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyClosedPosition",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClaimPositionCallbackError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClosePositionDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DuplicatedTradingFeeRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExceedMaxAllowableLeverage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExceedMaxAllowableTradingFee",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_initializationContractAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "InitializationFunctionReverted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLpReceiptAction",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTransferredTokenAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowableMakerMargin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotClaimableLpReceipt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotClaimablePosition",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughMarginTransferred",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotExistLpReceipt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotExistPosition",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotPermitted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotWithdrawableLpReceipt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAccessableByDao",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAccessableByFactoryOrDao",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAccessableByLiquidator",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAccessableByVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OpenPositionDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RemoveLiquidityDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooSmallAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooSmallTakerMargin",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "facetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IDiamondCut.FacetCutAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes4[]",
+            "name": "functionSelectors",
+            "type": "bytes4[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IDiamondCut.FacetCut[]",
+        "name": "_diamondCut",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_init",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "_calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "DiamondCut",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "facetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IDiamondCut.FacetCutAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes4[]",
+            "name": "functionSelectors",
+            "type": "bytes4[]"
+          }
+        ],
+        "internalType": "struct IDiamondCut.FacetCut[]",
+        "name": "_cut",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_init",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "diamondCut",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

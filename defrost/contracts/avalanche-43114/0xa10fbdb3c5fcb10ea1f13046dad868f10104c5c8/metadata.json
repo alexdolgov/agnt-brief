@@ -1,0 +1,18 @@
+{
+  "address": "0xa10fbdb3c5fcb10ea1f13046dad868f10104c5c8",
+  "chain_id": 43114,
+  "contract_name": "FarmUsdcWithJoeV3",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:27.889Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x004d956c022bd0791fc34c4b4f06ec65d499dd5d",
+  "chain_id": 1,
+  "contract_name": "HourglassERC20TBT",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:53:36.835Z"
+}

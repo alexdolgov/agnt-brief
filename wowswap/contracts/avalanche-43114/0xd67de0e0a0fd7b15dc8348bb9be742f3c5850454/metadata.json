@@ -1,0 +1,18 @@
+{
+  "address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454",
+  "chain_id": 43114,
+  "contract_name": "AnyswapV4ERC20",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:26:30.964Z"
+}

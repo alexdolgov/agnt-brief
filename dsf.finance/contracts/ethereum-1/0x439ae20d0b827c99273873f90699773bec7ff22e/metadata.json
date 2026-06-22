@@ -1,0 +1,18 @@
+{
+  "address": "0x439ae20d0b827c99273873f90699773bec7ff22e",
+  "chain_id": 1,
+  "contract_name": "DSFuserDataMk4",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "osaka",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:40:37.324Z"
+}

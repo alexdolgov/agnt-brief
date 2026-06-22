@@ -1,0 +1,18 @@
+{
+  "address": "0xbdde08bd57e5c9fd563ee7ac61618cb2ecdc0ce0",
+  "chain_id": 1,
+  "contract_name": "GenArt721CoreV2_CryptoCitizens",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:19.162Z"
+}

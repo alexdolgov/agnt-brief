@@ -1,0 +1,1769 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rce",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rage",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "calc",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "swap",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rOption",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "ClaimProcessed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "ClaimReserved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "OptionCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "OptionRefunded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "RageMinted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getActiveAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activePhestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "activePcircle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getActiveAssetsUsdcValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "rageAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAssetsFromRage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "hestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "circle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBackingPerShare",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBonusAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "bonusHestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bonusCircle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getClaim",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableStart",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableEnd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageAfterFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastClaimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastClaimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimValidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Claim",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getClaimWallets",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFmv",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInvestPercents",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "percentHestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "percentCircle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOption",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionType",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "walletCreated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "walletUpdated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateMintable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdpAble",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateRefundable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcRefund",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configMintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Option",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPendingAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "pendingHestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pendingCircle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRageFromUsdc",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRageUnderlying",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "underlyingHestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "underlyingCircle",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "hestiaValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "circleValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "hestiaPercent",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "circlePercent",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRawAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rawHestia",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rawCircle",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "status",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextConfigTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pendingHestia",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pendingCircle",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalOptions",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionsMint",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionsAdp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionsAdpValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionsRefund",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionsRefundValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalInvest",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalInvestorBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalEcosystemBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalDebt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalClaims",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalAdpDilution",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimsProcessed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimsHestia",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimsCircle",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RageStructs.RbpStateValue",
+            "name": "state",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "minInvest",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxInvest",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "hestiaPercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "investorBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mintDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adpDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adpPercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ecosystemBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "refundPercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "refundDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minClaim",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxClaim",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimValidity",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint32",
+                "name": "twap",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct RageStructs.RbpConfig",
+            "name": "config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "lastInvest",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastMintRage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastRefund",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "lastReserveClaim",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lastClaim",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RageStructs.RbpRecent",
+            "name": "recent",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct RageStructs.RbpState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getViewState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeAssetsUsdcValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rawHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rawCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activePhestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activePcircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "investPercentHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "investPercentCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingHestiaValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingCircleValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingTotalValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageFromOnePercentUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaFromOnePercentRage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleFromOnePercentRage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.RbpViewState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "referral",
+        "type": "address"
+      }
+    ],
+    "name": "invest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "referral",
+        "type": "address"
+      }
+    ],
+    "name": "investEth",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "investOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionType",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "canInvest",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAmountValid",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isPercentValid",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "hasBonus",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimatedValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateMintable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdpAble",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateRefundable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcRefund",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcHestiaBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcCircleBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configMintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.InvestOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "mintRage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "optionOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canMint",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canMintWithAdp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canRefund",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "hasRefundUsdc",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMint",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMintValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcCurrent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "mintValueProfitable",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "mintBackingProfitable",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct RageStructs.OptionOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "processClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "processClaimOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "canClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "hasBalance",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isValid",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurnValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pHestiaNeeded",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleNeeded",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recalcClaimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recalcClaimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recalcClaimValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.ClaimOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "optionId",
+        "type": "uint256"
+      }
+    ],
+    "name": "refund",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "rageAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "reserveClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rageAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "reserveClaimOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "canReserve",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "hasActiveClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isFirstClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurnValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageAfterFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableStart",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableEnd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimValidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.ReserveClaimOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "investorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "mintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ecosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minClaim",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxClaim",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimValidity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twap",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct RageStructs.RbpConfig",
+        "name": "newConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "setConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "name": "setStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAdr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

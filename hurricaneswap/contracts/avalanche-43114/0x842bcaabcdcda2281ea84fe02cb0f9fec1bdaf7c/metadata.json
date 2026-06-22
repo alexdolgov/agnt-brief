@@ -1,0 +1,17 @@
+{
+  "address": "0x842bcaabcdcda2281ea84fe02cb0f9fec1bdaf7c",
+  "chain_id": 43114,
+  "contract_name": "LPMigration",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:25:10.896Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x35c61b46edd634cb4c24cf19ff4779586cdbe56f",
+  "chain_id": 43114,
+  "contract_name": "UVICBoardroom",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:05.426Z"
+}

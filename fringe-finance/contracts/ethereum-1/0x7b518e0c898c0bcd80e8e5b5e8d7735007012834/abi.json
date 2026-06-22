@@ -1,0 +1,75 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICurvePool",
+        "name": "curvePool",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IWOETH",
+        "name": "priceFeed",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IOracleRelay",
+        "name": "ethOracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "_curvePool",
+    "outputs": [
+      {
+        "internalType": "contract ICurvePool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_ethOracle",
+    "outputs": [
+      {
+        "internalType": "contract IOracleRelay",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_priceFeed",
+    "outputs": [
+      {
+        "internalType": "contract IWOETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "uniswapV3Factory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "weth",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AmountInZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "AmountTooLargeForUint128",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BpsOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "spotOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "twapOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxDeviationBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "DeviationTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoValidPools",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SameToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TwapSecondsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV3Factory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "amountIn",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "twapSeconds",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minLiqRatioBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "enum TwapGuardV3.RefMode",
+        "name": "mode",
+        "type": "uint8"
+      }
+    ],
+    "name": "getTwapReference",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "twapOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "refFee",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint8",
+        "name": "poolsFound",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint128",
+        "name": "minLiquidity",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "twapSeconds",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minLiqRatioBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "enum TwapGuardV3.RefMode",
+        "name": "mode",
+        "type": "uint8"
+      }
+    ],
+    "name": "getTwapReferenceViaWeth",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "twapOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "amountIn",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint256",
+        "name": "spotOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "twapSeconds",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minLiqRatioBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDeviationBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "enum TwapGuardV3.RefMode",
+        "name": "mode",
+        "type": "uint8"
+      }
+    ],
+    "name": "requireSpotWithinTwap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "twapOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

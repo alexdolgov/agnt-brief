@@ -1,0 +1,1228 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AddressEqZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowedToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyVault",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongNewStrategy",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "profit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loss",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "debtPayment",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "debtOutstanding",
+        "type": "uint256"
+      }
+    ],
+    "name": "Harvested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newStrategist",
+        "type": "address"
+      }
+    ],
+    "name": "UpdatedStrategist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "balanceOfWant",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "emergencyExit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "estimatedTotalAssets",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "YtToWantRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WantToLpYtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PtToSyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToPtRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "LpToSyPtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OffChainData",
+        "name": "_offChainData",
+        "type": "tuple"
+      }
+    ],
+    "name": "harvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "_strategyName",
+            "type": "string"
+          },
+          {
+            "internalType": "contract IYtToken",
+            "name": "ytToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ISyContract",
+            "name": "syToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "ptToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPtPriceOracle",
+            "name": "ptOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolUnderlyingToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolArbToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolPendleToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "extraDex",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieStaking",
+            "name": "penpieStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieMaster",
+            "name": "penpieMaster",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IMarket",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPendleRouter",
+            "name": "pendleRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pendleStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeUnderlyingToWant",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeArbToWeth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feePendleToWeth",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct PendleGeneralInfo",
+        "name": "_info",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mainAdmin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "keeper",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategist",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "addressToApprove",
+        "type": "address[]"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "keeper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mainInfo",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_strategyName",
+        "type": "string"
+      },
+      {
+        "internalType": "contract IYtToken",
+        "name": "ytToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyContract",
+        "name": "syToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "ptToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPtPriceOracle",
+        "name": "ptOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "underlyingAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolUnderlyingToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolArbToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolPendleToWeth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "extraDex",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPenpieStaking",
+        "name": "penpieStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPenpieMaster",
+        "name": "penpieMaster",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMarket",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPendleRouter",
+        "name": "pendleRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pendleStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "slippage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feeUnderlyingToWant",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feeArbToWeth",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "feePendleToWeth",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newStrategy",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "YtToWantRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WantToLpYtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PtToSyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToPtRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "LpToSyPtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OffChainData",
+        "name": "_offChainData",
+        "type": "tuple"
+      }
+    ],
+    "name": "migrate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendleLogic",
+    "outputs": [
+      {
+        "internalType": "contract IPendleLogic",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_keeper",
+        "type": "address"
+      }
+    ],
+    "name": "setKeeper",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "_strategyName",
+            "type": "string"
+          },
+          {
+            "internalType": "contract IYtToken",
+            "name": "ytToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ISyContract",
+            "name": "syToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "ptToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPtPriceOracle",
+            "name": "ptOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolUnderlyingToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolArbToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolPendleToWeth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "extraDex",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieStaking",
+            "name": "penpieStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPenpieMaster",
+            "name": "penpieMaster",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IMarket",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IPendleRouter",
+            "name": "pendleRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pendleStaking",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeUnderlyingToWant",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feeArbToWeth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "feePendleToWeth",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct PendleGeneralInfo",
+        "name": "_newInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "setMainInfo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newRouter",
+        "type": "address"
+      }
+    ],
+    "name": "setNewPendleRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newPendleLogic",
+        "type": "address"
+      }
+    ],
+    "name": "setPendleLogic",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_newSlippage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setSlippage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_strategist",
+        "type": "address"
+      }
+    ],
+    "name": "setStrategist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_option",
+        "type": "bool"
+      }
+    ],
+    "name": "setSwapOption",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "strategist",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "sweep",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vault",
+    "outputs": [
+      {
+        "internalType": "contract IOnChainVaultPendle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "want",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amountNeeded",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "YtToWantRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WantToLpYtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PtToSyRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToPtRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "LpToSyPtProportion",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "PyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SyToAssetRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OffChainData",
+        "name": "_offChainData",
+        "type": "tuple"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loss",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawMoneyToVaultAfterMaturity",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

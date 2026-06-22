@@ -1,0 +1,18 @@
+{
+  "address": "0x19e4eaa364192491e8a8eeb55df42c8af6d25d09",
+  "chain_id": 56,
+  "contract_name": "ZTPUpgradeProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x4443a97a86309e3de9328e972b35104a1ab30b8e",
+  "fetched_at": "2026-06-19T17:03:20.334Z"
+}

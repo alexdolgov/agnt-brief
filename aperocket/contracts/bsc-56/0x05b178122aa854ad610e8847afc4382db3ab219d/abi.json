@@ -1,0 +1,436 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "treasury",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bill",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "BillCreation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newFactory",
+        "type": "address"
+      }
+    ],
+    "name": "FactoryChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "SetPendingOwner",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "billDetails",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "payoutToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "principalToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "treasuryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "billAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "billNft",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startVestingTimestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minPoints",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxPoints",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "billFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_billId",
+        "type": "uint256"
+      }
+    ],
+    "name": "billFees",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBillDetails",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "treasuryAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "billAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "billNft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startVestingTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minPoints",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPoints",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IFactoryTieredSaleStorage.BillDetails",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "indexOfBill",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "payoutToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "principalToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IVestingCurve",
+            "name": "vestingCurve",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "tierCeilings",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fees",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startVestingTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "feeInPayout",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ICustomBillBase.BillCreationDetails",
+        "name": "_billCreationDetails",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "_customTreasury",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_customBill",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_billNFT",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minPoints",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "pushBill",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_bill",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_factory",
+        "type": "address"
+      }
+    ],
+    "name": "setFactoryAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newPendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "setPendingOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalBills",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x17f511ec08dd6f5e36acbc73b64306eaec55393c",
+  "chain_id": 137,
+  "contract_name": "AssignmentStakingModuleFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:18.676Z"
+}

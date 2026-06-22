@@ -1,0 +1,402 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "uniswapV3Factory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "NoUniswapPool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OracleNotInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniswapFeeTierIndexOutOfBounds",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "feeTierPrevious",
+        "type": "uint24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "feeTierSelected",
+        "type": "uint24"
+      }
+    ],
+    "name": "OracleFeeTierChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token0",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token1",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "feeTierSelected",
+        "type": "uint24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint136",
+        "name": "avLiquidity",
+        "type": "uint136"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "period",
+        "type": "uint40"
+      }
+    ],
+    "name": "OracleInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token0",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token1",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "priceTruncated",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "int64",
+        "name": "priceTickX42",
+        "type": "int64"
+      }
+    ],
+    "name": "PriceUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      }
+    ],
+    "name": "UniswapFeeTierAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint136",
+        "name": "avLiquidity",
+        "type": "uint136"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "period",
+        "type": "uint40"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "cardinalityToIncrease",
+        "type": "uint16"
+      }
+    ],
+    "name": "UniswapOracleProbed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "TWAP_DURATION",
+    "outputs": [
+      {
+        "internalType": "uint40",
+        "name": "",
+        "type": "uint40"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "debtToken",
+        "type": "address"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "int64",
+        "name": "",
+        "type": "int64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUniswapFeeTiers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          }
+        ],
+        "internalType": "struct SirStructs.UniswapFeeTier[]",
+        "name": "uniswapFeeTiers",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      }
+    ],
+    "name": "newUniswapFeeTier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token0",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token1",
+        "type": "address"
+      }
+    ],
+    "name": "state",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int64",
+            "name": "tickPriceX42",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timeStampPrice",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "indexFeeTier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "indexFeeTierProbeNext",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timeStampFeeTier",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "initialized",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint24",
+                "name": "fee",
+                "type": "uint24"
+              },
+              {
+                "internalType": "int24",
+                "name": "tickSpacing",
+                "type": "int24"
+              }
+            ],
+            "internalType": "struct SirStructs.UniswapFeeTier",
+            "name": "uniswapFeeTier",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SirStructs.OracleState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      }
+    ],
+    "name": "uniswapFeeTierAddressOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB",
+        "type": "address"
+      }
+    ],
+    "name": "uniswapFeeTierOf",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collateralToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "debtToken",
+        "type": "address"
+      }
+    ],
+    "name": "updateOracleState",
+    "outputs": [
+      {
+        "internalType": "int64",
+        "name": "tickPriceX42",
+        "type": "int64"
+      },
+      {
+        "internalType": "address",
+        "name": "uniswapPoolAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

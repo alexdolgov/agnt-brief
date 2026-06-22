@@ -1,0 +1,18 @@
+{
+  "address": "0x0a2d7ddd83f04e2afaf5d8f6f08baa97bb11ab5d",
+  "chain_id": 42161,
+  "contract_name": "SignedOperationProxy",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:48:27.480Z"
+}

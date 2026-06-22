@@ -1,0 +1,17 @@
+{
+  "address": "0x6ee56be577ac55398ac4811505b5895d0a900886",
+  "chain_id": 43114,
+  "contract_name": "IsolatedLending",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 55,
+  "constructor_arguments": "0000000000000000000000008f1ca3288764f0bc18eefeca6d821d8bc93c99bf",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:17.342Z"
+}

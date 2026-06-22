@@ -1,0 +1,17 @@
+{
+  "address": "0x395abe38a8a89bcbd96b71712eeba55486faa273",
+  "chain_id": 43114,
+  "contract_name": "EquivalentScaledOracle",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "0000000000000000000000001bba67a439a857c60bca5429701316e8908ab77e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:10.532Z"
+}

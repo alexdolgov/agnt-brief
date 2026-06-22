@@ -1,0 +1,157 @@
+[
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "actionStatus",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeActionStatus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rebaseCount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isExit",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastUpdateTimeStamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "manualSwapsCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "actions",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodePositionActions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "mode",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "actionName",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct ICLTBase.StrategyPayload[]",
+            "name": "exitStrategy",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "actionName",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct ICLTBase.StrategyPayload[]",
+            "name": "rebaseStrategy",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "actionName",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct ICLTBase.StrategyPayload[]",
+            "name": "liquidityDistribution",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ICLTBase.PositionActions",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidityAmount",
+        "type": "uint128"
+      }
+    ],
+    "name": "getStrategyReserves",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserves0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserves1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

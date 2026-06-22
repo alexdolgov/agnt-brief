@@ -1,0 +1,17 @@
+{
+  "address": "0x8350450aaf0f3139609d823f2cda02d39e46b5bd",
+  "chain_id": 34443,
+  "contract_name": "SupV3PoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:32.862Z"
+}

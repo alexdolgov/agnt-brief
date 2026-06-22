@@ -1,0 +1,18 @@
+{
+  "address": "0x157372f9d3c94609adfb967741a0afc0c1db1bbf",
+  "chain_id": 1,
+  "contract_name": "StarterPackV1",
+  "compiler_version": "v0.6.5+commit.f956cc89",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:09.018Z"
+}

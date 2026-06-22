@@ -1,0 +1,18 @@
+{
+  "address": "0xd2b47125fc10e63a78463c2985c4d7c15e827c97",
+  "chain_id": 42161,
+  "contract_name": "VaultV2_3",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:27:01.716Z"
+}

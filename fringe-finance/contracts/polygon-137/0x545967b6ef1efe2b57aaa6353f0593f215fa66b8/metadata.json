@@ -1,0 +1,18 @@
+{
+  "address": "0x545967b6ef1efe2b57aaa6353f0593f215fa66b8",
+  "chain_id": 137,
+  "contract_name": "PolygonSandClaim",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:01.435Z"
+}

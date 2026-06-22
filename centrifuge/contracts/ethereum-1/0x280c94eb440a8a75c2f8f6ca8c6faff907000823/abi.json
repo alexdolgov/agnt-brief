@@ -1,0 +1,309 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IHub",
+        "name": "hub_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "navUpdater_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidShareClass",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MismatchedEpochs",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MulDiv_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Uint128_Overflow",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "fromCentrifugeId",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "toCentrifugeId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "sharesTransferred",
+        "type": "uint128"
+      }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "newNAV",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "newIssuance",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "D18",
+        "name": "newPricePoolPerShare",
+        "type": "uint128"
+      }
+    ],
+    "name": "Update",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "hub",
+    "outputs": [
+      {
+        "internalType": "contract IHub",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "name": "metrics",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "netAssetValue",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "issuance",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "navUpdater",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      }
+    ],
+    "name": "networkMetrics",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "netAssetValue",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "issuance",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "transferredIn",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "transferredOut",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint32",
+        "name": "issueEpochsBehind",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "revokeEpochsBehind",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "fromCentrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "toCentrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint128",
+        "name": "sharesTransferred",
+        "type": "uint128"
+      }
+    ],
+    "name": "onTransfer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "ShareClassId",
+        "name": "scId",
+        "type": "bytes16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "centrifugeId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint128",
+        "name": "netAssetValue",
+        "type": "uint128"
+      }
+    ],
+    "name": "onUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "poolId",
+        "type": "uint64"
+      }
+    ],
+    "name": "pricePoolPerShare",
+    "outputs": [
+      {
+        "internalType": "D18",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "shareClassManager",
+    "outputs": [
+      {
+        "internalType": "contract IShareClassManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

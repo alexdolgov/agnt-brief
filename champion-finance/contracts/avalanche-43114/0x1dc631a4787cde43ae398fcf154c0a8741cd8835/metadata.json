@@ -1,0 +1,17 @@
+{
+  "address": "0x1dc631a4787cde43ae398fcf154c0a8741cd8835",
+  "chain_id": 43114,
+  "contract_name": "EtfTreasury",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:04.065Z"
+}

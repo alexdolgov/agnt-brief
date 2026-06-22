@@ -1,0 +1,18 @@
+{
+  "address": "0x0618bb1d384fb98aff54344c659863a114d67e18",
+  "chain_id": 1,
+  "contract_name": "EthDexAggregatorV1",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:30.783Z"
+}

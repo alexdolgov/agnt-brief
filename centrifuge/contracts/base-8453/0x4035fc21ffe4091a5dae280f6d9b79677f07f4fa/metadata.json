@@ -1,0 +1,17 @@
+{
+  "address": "0x4035fc21ffe4091a5dae280f6d9b79677f07f4fa",
+  "chain_id": 8453,
+  "contract_name": "SpellBase",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000005b82ffdac6d77fbd21a4eeb9b8c540f77eed1231000000000000000000000000c437514fd99d46505757bca95261430a57f752d40000000000000000000000006215b227c64262f7487e7881fba39a68fbf5ab35",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:53.695Z"
+}

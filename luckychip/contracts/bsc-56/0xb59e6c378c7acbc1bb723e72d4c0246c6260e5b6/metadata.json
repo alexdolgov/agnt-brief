@@ -1,0 +1,18 @@
+{
+  "address": "0xb59e6c378c7acbc1bb723e72d4c0246c6260e5b6",
+  "chain_id": 56,
+  "contract_name": "LuckyChipAirdrop",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:46:34.741Z"
+}

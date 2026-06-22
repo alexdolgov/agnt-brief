@@ -1,0 +1,18 @@
+{
+  "address": "0xbefe614a45a8300f2a4a00fb634b7137b6b1bc47",
+  "chain_id": 1,
+  "contract_name": "RLPReader",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:40:37.074Z"
+}

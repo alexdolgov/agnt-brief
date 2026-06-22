@@ -1,34 +1,54 @@
 {
   "schema_version": "2.0",
   "project_key": "arbitrum-exchange",
-  "generated_at": "2026-06-13T12:18:43.830Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:32:02.828Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "arbitrum-exchange",
+    "tier": 0,
+    "peak_tvl": 142844470,
+    "peak_date": "2023-03-28T00:00:00.000Z",
+    "tvl_30d_ago": 14905,
+    "tvl_90d_ago": 14321,
+    "tvl_current": 12226,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 20230,
+    "change_30d_pct": -17.973834283797384,
+    "change_90d_pct": -14.628866699252846,
+    "days_since_peak": 1179,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.99144104073471
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 6,
+    "total_addresses": 8,
+    "unique_implementations": 6,
+    "total_deployments": 8,
+    "audited_contracts": 3,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 11865,
-    "tvl_usd": 11865,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 3205.8651061887326,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 3205.87
+    },
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "arbitrum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023",
+    "latest_audit_date": "2023-03",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +58,270 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Arbitrum Exchange is a decentralized exchange (DEX) on Arbitrum One that enables users to trade tokens, provide liquidity, and earn yield through staking and farming mechanisms. It features a factory for creating liquidity pools, flexible and standard pool contracts, and a native ARX token for incentives.",
+    "relationship_narrative": "The ArbDexFactory deploys and registers ARXPool and ARXFlexiblePool contracts, which hold liquidity and facilitate swaps. The ArxToken is distributed as rewards through MasterChef and SmartChefInitializable staking contracts, incentivizing liquidity provision across the pools.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 207,
+    "live_contracts": 8,
+    "inactive_contracts": 199,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x94e0e99759753d4ad17e508cf7ee25d2ea002486",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ArxToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 3179.1799874332364,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArxToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x94e0e99759753d4ad17e508cf7ee25d2ea002486",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd5954c3084a1ccd70b4da011e67760b8e78aee84",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3179.1799874332364,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12668"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xee1d57ace6350d70e8161632769d29d34b2fbfc8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ARXPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Arbitrum Exchange V2",
+      "tvl_usd": 26.68511875549638,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ARXPool",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xee1d57ace6350d70e8161632769d29d34b2fbfc8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 26.68511875549638,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12668"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e48298a5fe88e4d62985dff65dee39a25914975",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ArbiDexRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbiDexRouter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3e48298a5fe88e4d62985dff65dee39a25914975",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7238fb45146bd8fcb2c463dc119a53494be57aac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x97c397b23836ebaa1f5602894caa469537e85f21",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ArbiDexZapV1",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbiDexZapV1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x97c397b23836ebaa1f5602894caa469537e85f21",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd2bcfd6b84e778d2de5bb6a167ecbbef5d053a06",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Arbitrum Exchange V2",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd2bcfd6b84e778d2de5bb6a167ecbbef5d053a06",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12668"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x75bca51be93e97ff7d3198506f368b472730265a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SmartChefInitializable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Arbitrum Exchange V2",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SmartChefInitializable",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x75bca51be93e97ff7d3198506f368b472730265a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12668,
@@ -61,39 +331,100 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023",
+      "date": "2023-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ARBDEX TOKEN",
+        "ARX Token",
+        "ARXFlexiblepool",
+        "ARXPool",
+        "ARXPoolABI",
+        "ARXToken",
+        "ArbDexPairABI",
+        "ArbiFlexPool",
+        "ArxTokenV2ABI",
+        "Dummy Token",
+        "Earn USDC",
+        "Earn WBTC",
+        "Earn WETH",
+        "Factory",
+        "MasterChefV2",
+        "MasterChefv2",
+        "Masterchef",
+        "Presale",
+        "Router",
+        "SmartChefFactory",
+        "SmartChefInitializableABI",
+        "Zapper"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 50,
+      "latest_audit": "2023-03"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e48298a5fe88e4d62985dff65dee39a25914975",
+      "name": "ArbiDexRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x97c397b23836ebaa1f5602894caa469537e85f21",
+      "name": "ArbiDexZapV1",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x75bca51be93e97ff7d3198506f368b472730265a",
+      "name": "SmartChefInitializable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 6,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 37
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 12668,
-        "report_name": "ARBITRUM EXCHANGE Full AUDIT Report.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

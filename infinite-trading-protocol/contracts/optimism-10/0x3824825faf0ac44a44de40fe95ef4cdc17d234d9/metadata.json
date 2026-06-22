@@ -1,0 +1,18 @@
+{
+  "address": "0x3824825faf0ac44a44de40fe95ef4cdc17d234d9",
+  "chain_id": 10,
+  "contract_name": "LyraOptionMarketWrapperContractGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:41.282Z"
+}

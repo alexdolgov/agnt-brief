@@ -1,0 +1,18 @@
+{
+  "address": "0x030c7c2833d0cd321255ef13775eb9458b6cebdc",
+  "chain_id": 42161,
+  "contract_name": "RamsesCLAssetGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:37.715Z"
+}

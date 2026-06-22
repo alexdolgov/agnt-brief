@@ -1,0 +1,18 @@
+{
+  "address": "0x223f3862f28848784432dc48346d133aba94fbd4",
+  "chain_id": 42161,
+  "contract_name": "BoostAggregatorFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, GPL-2.0-or-later, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 89,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:37:47.978Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x199b84b58ab0747692e70524c06b8e0f75cae5ca",
+  "chain_id": 42161,
+  "contract_name": "ZyberCappedSale",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:27:02.314Z"
+}

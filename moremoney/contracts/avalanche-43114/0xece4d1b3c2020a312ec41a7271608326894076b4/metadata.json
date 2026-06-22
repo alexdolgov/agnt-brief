@@ -1,0 +1,18 @@
+{
+  "address": "0xece4d1b3c2020a312ec41a7271608326894076b4",
+  "chain_id": 43114,
+  "contract_name": "StakedMaximizerERC20",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:24.448Z"
+}

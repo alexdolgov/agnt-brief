@@ -1,0 +1,17 @@
+{
+  "address": "0x3133ff5efa4f3490ef090a6201c532062bbc4547",
+  "chain_id": 34443,
+  "contract_name": "PancakeInterfaceMulticallV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:31.607Z"
+}

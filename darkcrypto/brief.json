@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "darkcrypto",
-  "generated_at": "2026-06-13T12:48:51.941Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T00:09:08.239Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "darkcrypto",
+    "tier": 1,
+    "peak_tvl": 56254227,
+    "peak_date": "2022-04-29T00:00:00.000Z",
+    "tvl_30d_ago": 25097,
+    "tvl_90d_ago": 15173,
+    "tvl_current": 11766,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 30386,
+    "change_30d_pct": -53.117902538151974,
+    "change_90d_pct": -22.45435971791999,
+    "governance_raw": {
+      "evidence": "TVL has dropped 99.98% from its peak over 4 years ago with no recent communications or activity.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1513,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 99.97908423841643,
+    "governance_evidence": "TVL has dropped 99.98% from its peak over 4 years ago with no recent communications or activity.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 45,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,10 +51,12 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.darkcrypto.finance",
-    "chains": [],
+    "chains": [
+      "cronos"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-02",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,20 +66,207 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "DarkCrypto is an algorithmic stablecoin protocol on Cronos that maintains a dollar-pegged token through seigniorage and bonding mechanisms, using a multi-token system to stabilize its value.",
+    "relationship_narrative": "All contracts belong to a single product family with no explicit sub-groupings; they likely interact through shared token logic and stabilization mechanisms, but no distinct infrastructure contracts are identified.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 5,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x2e7d17abcb9a2a40ec482b2ac9a9f811c12bf630",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "DarkCrypto",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x2e7d17abcb9a2a40ec482b2ac9a9f811c12bf630",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x42b652a523367e7407fb4bf2fa1f430781e7db8c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "DarkCrypto",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x42b652a523367e7407fb4bf2fa1f430781e7db8c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x83b2ac8642ae46fc2823bc959ffeb3c1742c48b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "DarkCrypto",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x83b2ac8642ae46fc2823bc959ffeb3c1742c48b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x9d3bbb0e988d9fb2d55d07fe471be2266ad9c81c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "DarkCrypto",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x9d3bbb0e988d9fb2d55d07fe471be2266ad9c81c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xaa0845ee17e4f1d4f3a8c22cb1e8102bacf56a77",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "DarkCrypto",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xaa0845ee17e4f1d4f3a8c22cb1e8102bacf56a77",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 12998,
@@ -61,7 +276,7 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -81,7 +296,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {},

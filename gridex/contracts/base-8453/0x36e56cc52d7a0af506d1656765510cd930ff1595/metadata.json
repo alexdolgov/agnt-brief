@@ -1,0 +1,18 @@
+{
+  "address": "0x36e56cc52d7a0af506d1656765510cd930ff1595",
+  "chain_id": 8453,
+  "contract_name": "MakerOrderManager",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 100000000,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:48:27.513Z"
+}

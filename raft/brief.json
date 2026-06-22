@@ -1,31 +1,51 @@
 {
   "schema_version": "2.0",
   "project_key": "raft",
-  "generated_at": "2026-06-13T14:17:31.725Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:51:51.908Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "raft",
+    "tier": 0,
+    "peak_tvl": 64859021,
+    "peak_date": "2023-07-05T00:00:00.000Z",
+    "tvl_30d_ago": 17517,
+    "tvl_90d_ago": 17048,
+    "tvl_current": 13978,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 24550,
+    "change_30d_pct": -20.203231146885884,
+    "change_90d_pct": -18.007977475363678,
+    "days_since_peak": 1080,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.97844864170861
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 13521.83932,
-    "tvl_usd": 13521.83932,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 23921839.27842678,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 23921839.28
+    },
+    "asd_usd": 23921839.27842678,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2023-04",
@@ -38,20 +58,209 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Raft is a collateralized debt position (CDP) protocol that allows users to mint a stablecoin against liquid staking derivatives and other collateral. It manages interest rate positions, governance, and liquidity provisioning for its ecosystem.",
+    "relationship_narrative": "The Raft family shares a common stablecoin (swETH) and collateral infrastructure. The TransparentUpgradeableProxy serves as the main token, while WrappedCollateralToken wraps collateral for use in the system. ChaiPSM likely acts as a peg stability module, and WeightedPool provides liquidity. Governance and position management contracts interact with these core tokens.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 143,
+    "live_contracts": 5,
+    "inactive_contracts": 138,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 44,
+    "unverified_dependencies": 4,
+    "detected_codebases": [
+      "balancer-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+      "deployment_unit": "unit-40447",
+      "deployment_unit_proxy_count": 1,
+      "name": "swETH",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Raft",
+      "tvl_usd": 23788589.27842678,
+      "is_proxy": true,
+      "impl_address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
+      "impl_name": "swETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+          "deployment_unit": "unit-40447",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 23788589.27842678,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4c5cb5d87709387f8821709f7a6664f00dcf0c93",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RaftToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 133250,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RaftToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4c5cb5d87709387f8821709f7a6664f00dcf0c93",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 133250,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x06af07097c9eeb7fd685c692751d5c66db49c215",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Chai",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Raft",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Chai",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x06af07097c9eeb7fd685c692751d5c66db49c215",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x45d117011da1d49ba86af6ced94126488084186f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VotingEscrow",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Raft",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VotingEscrow",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x45d117011da1d49ba86af6ced94126488084186f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe91888a1d08e37598867d213a4acb5692071bb3a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WeightedPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "balancer",
+      "product_line": "Raft",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WeightedPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe91888a1d08e37598867d213a4acb5692071bb3a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13731,
@@ -66,7 +275,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -76,15 +285,28 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4c5cb5d87709387f8821709f7a6664f00dcf0c93",
+      "name": "RaftToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 133250,
+      "risk_note": "Verified native implementation with $133,250.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "native": 1,
+    "upstream": 1,
+    "standard_library": 1,
+    "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 47
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

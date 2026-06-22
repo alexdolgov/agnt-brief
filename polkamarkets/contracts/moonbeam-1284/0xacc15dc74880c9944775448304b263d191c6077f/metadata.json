@@ -1,0 +1,17 @@
+{
+  "address": "0xacc15dc74880c9944775448304b263d191c6077f",
+  "chain_id": 1284,
+  "contract_name": "WETH9",
+  "compiler_version": "v0.4.19+commit.c4cbbb05",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:29.328Z"
+}

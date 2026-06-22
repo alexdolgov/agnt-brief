@@ -1,0 +1,1879 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "interest",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "payment_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "start_time",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_token_id",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "upfront_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest_bps",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "fees",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "pro_rata",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "offer_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "offer_tracing_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "LoanCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "interest",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "payment_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "start_time",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_token_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "upfront_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest_bps",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "fees",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "pro_rata",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "original_loan_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "paid_principal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "paid_interest",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "paid_settlement_fees",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "offer_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "offer_tracing_id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "LoanReplaced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "interest",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "payment_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "start_time",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_token_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "upfront_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest_bps",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "fees",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "pro_rata",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "original_loan_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "paid_principal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "paid_interest",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "paid_settlement_fees",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "borrower_compensation",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "offer_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "offer_tracing_id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "LoanReplacedByLender",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "payment_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "paid_principal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "paid_interest",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "type",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "wallet",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "name": "paid_settlement_fees",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "LoanPaid",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_contract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_token_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanCollateralClaimed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "offer_id",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collection_key_hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "offer_type",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "proposed_owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "old_settlement_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "new_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "new_settlement_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProtocolFeeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "old_wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "ProtocolWalletChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "value",
+        "type": "bool"
+      }
+    ],
+    "name": "ProxyAuthorizationChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferFailed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PendingTransfersClaimed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_payment_token",
+        "type": "address"
+      },
+      {
+        "name": "_p2p_control",
+        "type": "address"
+      },
+      {
+        "name": "_delegation_registry",
+        "type": "address"
+      },
+      {
+        "name": "_cryptopunks",
+        "type": "address"
+      },
+      {
+        "name": "_protocol_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_protocol_settlement_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_protocol_wallet",
+        "type": "address"
+      },
+      {
+        "name": "_max_protocol_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_max_protocol_settlement_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_max_lender_broker_settlement_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "_max_borrower_broker_settlement_fee",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "name": "protocol_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "protocol_settlement_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "set_protocol_fee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "new_protocol_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "change_protocol_wallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_proxy",
+        "type": "address"
+      },
+      {
+        "name": "_value",
+        "type": "bool"
+      }
+    ],
+    "name": "set_proxy_authorization",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "propose_owner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "principal",
+                "type": "uint256"
+              },
+              {
+                "name": "interest",
+                "type": "uint256"
+              },
+              {
+                "name": "payment_token",
+                "type": "address"
+              },
+              {
+                "name": "duration",
+                "type": "uint256"
+              },
+              {
+                "name": "origination_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_upfront_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_settlement_fee_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_address",
+                "type": "address"
+              },
+              {
+                "name": "offer_type",
+                "type": "uint256"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_min",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_max",
+                "type": "uint256"
+              },
+              {
+                "name": "collection_key_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "trait_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "name": "pro_rata",
+                "type": "bool"
+              },
+              {
+                "name": "size",
+                "type": "uint256"
+              },
+              {
+                "name": "tracing_id",
+                "type": "bytes32"
+              }
+            ],
+            "name": "offer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "name": "v",
+                "type": "uint256"
+              },
+              {
+                "name": "r",
+                "type": "uint256"
+              },
+              {
+                "name": "s",
+                "type": "uint256"
+              }
+            ],
+            "name": "signature",
+            "type": "tuple"
+          }
+        ],
+        "name": "offer",
+        "type": "tuple"
+      },
+      {
+        "name": "collateral_token_id",
+        "type": "uint256"
+      },
+      {
+        "name": "collateral_proof",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "delegate",
+        "type": "address"
+      },
+      {
+        "name": "borrower_broker_upfront_fee_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "borrower_broker_settlement_fee_bps",
+        "type": "uint256"
+      },
+      {
+        "name": "borrower_broker",
+        "type": "address"
+      }
+    ],
+    "name": "create_loan",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_tracing_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "name": "payment_token",
+            "type": "address"
+          },
+          {
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "name": "start_time",
+            "type": "uint256"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "name": "collateral_contract",
+            "type": "address"
+          },
+          {
+            "name": "collateral_token_id",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "name": "type",
+                "type": "uint256"
+              },
+              {
+                "name": "upfront_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "interest_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "wallet",
+                "type": "address"
+              }
+            ],
+            "name": "fees",
+            "type": "tuple[]"
+          },
+          {
+            "name": "pro_rata",
+            "type": "bool"
+          },
+          {
+            "name": "delegate",
+            "type": "address"
+          }
+        ],
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "settle_loan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_tracing_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "name": "payment_token",
+            "type": "address"
+          },
+          {
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "name": "start_time",
+            "type": "uint256"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "name": "collateral_contract",
+            "type": "address"
+          },
+          {
+            "name": "collateral_token_id",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "name": "type",
+                "type": "uint256"
+              },
+              {
+                "name": "upfront_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "interest_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "wallet",
+                "type": "address"
+              }
+            ],
+            "name": "fees",
+            "type": "tuple[]"
+          },
+          {
+            "name": "pro_rata",
+            "type": "bool"
+          },
+          {
+            "name": "delegate",
+            "type": "address"
+          }
+        ],
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "claim_defaulted_loan_collateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_tracing_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "name": "payment_token",
+            "type": "address"
+          },
+          {
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "name": "start_time",
+            "type": "uint256"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "name": "collateral_contract",
+            "type": "address"
+          },
+          {
+            "name": "collateral_token_id",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "name": "type",
+                "type": "uint256"
+              },
+              {
+                "name": "upfront_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "interest_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "wallet",
+                "type": "address"
+              }
+            ],
+            "name": "fees",
+            "type": "tuple[]"
+          },
+          {
+            "name": "pro_rata",
+            "type": "bool"
+          },
+          {
+            "name": "delegate",
+            "type": "address"
+          }
+        ],
+        "name": "loan",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "principal",
+                "type": "uint256"
+              },
+              {
+                "name": "interest",
+                "type": "uint256"
+              },
+              {
+                "name": "payment_token",
+                "type": "address"
+              },
+              {
+                "name": "duration",
+                "type": "uint256"
+              },
+              {
+                "name": "origination_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_upfront_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_settlement_fee_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_address",
+                "type": "address"
+              },
+              {
+                "name": "offer_type",
+                "type": "uint256"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_min",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_max",
+                "type": "uint256"
+              },
+              {
+                "name": "collection_key_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "trait_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "name": "pro_rata",
+                "type": "bool"
+              },
+              {
+                "name": "size",
+                "type": "uint256"
+              },
+              {
+                "name": "tracing_id",
+                "type": "bytes32"
+              }
+            ],
+            "name": "offer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "name": "v",
+                "type": "uint256"
+              },
+              {
+                "name": "r",
+                "type": "uint256"
+              },
+              {
+                "name": "s",
+                "type": "uint256"
+              }
+            ],
+            "name": "signature",
+            "type": "tuple"
+          }
+        ],
+        "name": "offer",
+        "type": "tuple"
+      },
+      {
+        "name": "collateral_proof",
+        "type": "bytes32[]"
+      },
+      {
+        "name": "borrower_broker_upfront_fee_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "borrower_broker_settlement_fee_bps",
+        "type": "uint256"
+      },
+      {
+        "name": "borrower_broker",
+        "type": "address"
+      }
+    ],
+    "name": "replace_loan",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "offer_tracing_id",
+            "type": "bytes32"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "name": "payment_token",
+            "type": "address"
+          },
+          {
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "name": "start_time",
+            "type": "uint256"
+          },
+          {
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "name": "collateral_contract",
+            "type": "address"
+          },
+          {
+            "name": "collateral_token_id",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "name": "type",
+                "type": "uint256"
+              },
+              {
+                "name": "upfront_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "interest_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "wallet",
+                "type": "address"
+              }
+            ],
+            "name": "fees",
+            "type": "tuple[]"
+          },
+          {
+            "name": "pro_rata",
+            "type": "bool"
+          },
+          {
+            "name": "delegate",
+            "type": "address"
+          }
+        ],
+        "name": "loan",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "principal",
+                "type": "uint256"
+              },
+              {
+                "name": "interest",
+                "type": "uint256"
+              },
+              {
+                "name": "payment_token",
+                "type": "address"
+              },
+              {
+                "name": "duration",
+                "type": "uint256"
+              },
+              {
+                "name": "origination_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_upfront_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_settlement_fee_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_address",
+                "type": "address"
+              },
+              {
+                "name": "offer_type",
+                "type": "uint256"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_min",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_max",
+                "type": "uint256"
+              },
+              {
+                "name": "collection_key_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "trait_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "name": "pro_rata",
+                "type": "bool"
+              },
+              {
+                "name": "size",
+                "type": "uint256"
+              },
+              {
+                "name": "tracing_id",
+                "type": "bytes32"
+              }
+            ],
+            "name": "offer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "name": "v",
+                "type": "uint256"
+              },
+              {
+                "name": "r",
+                "type": "uint256"
+              },
+              {
+                "name": "s",
+                "type": "uint256"
+              }
+            ],
+            "name": "signature",
+            "type": "tuple"
+          }
+        ],
+        "name": "offer",
+        "type": "tuple"
+      },
+      {
+        "name": "collateral_proof",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "replace_loan_lender",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "name": "principal",
+                "type": "uint256"
+              },
+              {
+                "name": "interest",
+                "type": "uint256"
+              },
+              {
+                "name": "payment_token",
+                "type": "address"
+              },
+              {
+                "name": "duration",
+                "type": "uint256"
+              },
+              {
+                "name": "origination_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_upfront_fee_amount",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_settlement_fee_bps",
+                "type": "uint256"
+              },
+              {
+                "name": "broker_address",
+                "type": "address"
+              },
+              {
+                "name": "offer_type",
+                "type": "uint256"
+              },
+              {
+                "name": "token_id",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_min",
+                "type": "uint256"
+              },
+              {
+                "name": "token_range_max",
+                "type": "uint256"
+              },
+              {
+                "name": "collection_key_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "trait_hash",
+                "type": "bytes32"
+              },
+              {
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "name": "lender",
+                "type": "address"
+              },
+              {
+                "name": "pro_rata",
+                "type": "bool"
+              },
+              {
+                "name": "size",
+                "type": "uint256"
+              },
+              {
+                "name": "tracing_id",
+                "type": "bytes32"
+              }
+            ],
+            "name": "offer",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "name": "v",
+                "type": "uint256"
+              },
+              {
+                "name": "r",
+                "type": "uint256"
+              },
+              {
+                "name": "s",
+                "type": "uint256"
+              }
+            ],
+            "name": "signature",
+            "type": "tuple"
+          }
+        ],
+        "name": "offer",
+        "type": "tuple"
+      }
+    ],
+    "name": "revoke_offer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim_pending_transfers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_operator",
+        "type": "address"
+      },
+      {
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proposed_owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "payment_token",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "bytes32"
+      }
+    ],
+    "name": "loans",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "delegation_registry",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cryptopunks",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "p2p_control",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_wallet",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_upfront_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocol_settlement_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "max_protocol_upfront_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "max_protocol_settlement_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "max_lender_broker_settlement_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "max_borrower_broker_settlement_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "bytes32"
+      }
+    ],
+    "name": "offer_count",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "bytes32"
+      }
+    ],
+    "name": "revoked_offers",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "name": "authorized_proxies",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "name": "pending_transfers",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x055ac8a3ef4b7ec2aae7303293d4859aa1901f20",
+  "chain_id": 137,
+  "contract_name": "MyTradePool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:21:44.854Z"
+}

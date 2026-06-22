@@ -1,0 +1,18 @@
+{
+  "address": "0x154e2b1dbe9f493ff7938e5d686366138ddce017",
+  "chain_id": 42161,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x8546609a40e86e7b54247e10a8f5caea47d3cb83",
+  "fetched_at": "2026-06-19T11:26:16.823Z"
+}

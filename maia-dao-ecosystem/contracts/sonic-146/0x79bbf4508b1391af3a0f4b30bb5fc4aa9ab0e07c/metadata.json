@@ -1,0 +1,18 @@
+{
+  "address": "0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c",
+  "chain_id": 146,
+  "contract_name": "HeyAnon",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 77777,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:37:46.446Z"
+}

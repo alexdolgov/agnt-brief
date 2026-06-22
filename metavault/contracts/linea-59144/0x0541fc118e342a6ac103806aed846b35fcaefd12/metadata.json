@@ -1,0 +1,17 @@
+{
+  "address": "0x0541fc118e342a6ac103806aed846b35fcaefd12",
+  "chain_id": 59144,
+  "contract_name": "AddressStorage",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:40.518Z"
+}

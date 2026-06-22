@@ -1,0 +1,17 @@
+{
+  "address": "0x24d6d6af23cd865b4dee7f169ca60bf07b4dd9ae",
+  "chain_id": 42161,
+  "contract_name": "Diamond",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xe837662456ba6d2e3a87d4daa84c4ecad8856c56",
+  "fetched_at": "2026-06-21T05:25:07.272Z"
+}

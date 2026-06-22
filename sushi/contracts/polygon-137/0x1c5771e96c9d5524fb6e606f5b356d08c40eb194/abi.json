@@ -1,0 +1,58 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "constantProductPoolFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPoolsForTokens",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "tokenA",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tokenB",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint112",
+            "name": "reserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "reserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint16",
+            "name": "swapFeeAndTwapSupport",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ConstantProductPoolFactoryHelper.ConstantProductPoolInfo[]",
+        "name": "poolInfos",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "length",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

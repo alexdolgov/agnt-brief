@@ -1,0 +1,17 @@
+{
+  "address": "0xdb9c27762045addd713182521c0580c68bdf700a",
+  "chain_id": 1,
+  "contract_name": "SyncDepositVaultFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "0000000000000000000000007ed48c31f2fdc40d37407cbabf0870b2b688368f000000000000000000000000ff8ed1862f6ac3a8e89b81c75507c225e36e273d000000000000000000000000f48256abddf96ecddc4b3dbd23e8c1921f9761ae000000000000000000000000b3c086db30c1be6e40d8775607c3662ab160bda5",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:20:01.694Z"
+}

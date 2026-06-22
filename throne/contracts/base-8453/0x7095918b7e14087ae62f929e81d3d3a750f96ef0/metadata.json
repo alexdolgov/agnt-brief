@@ -1,0 +1,18 @@
+{
+  "address": "0x7095918b7e14087ae62f929e81d3d3a750f96ef0",
+  "chain_id": 8453,
+  "contract_name": "ThroneV2Router",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:27.105Z"
+}

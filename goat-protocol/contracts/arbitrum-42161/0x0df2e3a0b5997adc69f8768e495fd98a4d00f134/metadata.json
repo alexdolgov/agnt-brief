@@ -1,0 +1,18 @@
+{
+  "address": "0x0df2e3a0b5997adc69f8768e495fd98a4d00f134",
+  "chain_id": 42161,
+  "contract_name": "Multistrategy",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "GNU AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:23:26.187Z"
+}

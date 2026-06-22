@@ -1,57 +1,124 @@
 {
   "schema_version": "2.0",
   "project_key": "lorenzo-protocol",
-  "generated_at": "2026-06-13T13:37:53.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T18:50:44.023Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "lorenzo-protocol",
+    "tier": 0,
+    "peak_tvl": 847826010,
+    "peak_date": "2025-10-10T00:00:00.000Z",
+    "tvl_30d_ago": 540035529,
+    "tvl_90d_ago": 511171052,
+    "tvl_current": 531501235,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 575251089,
+    "change_30d_pct": -1.580320838483203,
+    "change_90d_pct": 3.977178073847578,
+    "days_since_peak": 254,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 37.3101050532762
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 540549516,
-    "tvl_usd": 540549516,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 131.8780224376635,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 131.88
+    },
+    "asd_usd": 131.8780224376635,
     "website_url": "https://www.lorenzo-protocol.xyz",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-04",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
     "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972",
+      "deployment_unit": "unit-43652",
+      "deployment_unit_proxy_count": 1,
+      "name": "sUSD1PlusVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Lorenzo sUSD1+",
+      "tvl_usd": 131.8780224376635,
+      "is_proxy": true,
+      "impl_address": "0x6e0f4dc0d748e4917b418357d989b2023b8b7a20",
+      "impl_name": "sUSD1PlusVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972",
+          "deployment_unit": "unit-43652",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 131.8780224376635,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13395,
@@ -60,8 +127,8 @@
       "report_url": "https://github.com/Lorenzo-Protocol/lorenzo/blob/main/audit/Lorenzo%20Protocol%20-%20Zellic%20Audit%20Report.pdf",
       "auditor": "Zellic",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -80,7 +147,7 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

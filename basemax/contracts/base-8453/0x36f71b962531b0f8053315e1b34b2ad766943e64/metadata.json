@@ -1,0 +1,18 @@
+{
+  "address": "0x36f71b962531b0f8053315e1b34b2ad766943e64",
+  "chain_id": 8453,
+  "contract_name": "EIP173Proxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xe38d9b36048858ac4be3766543334924a9a507f3",
+  "fetched_at": "2026-06-19T11:24:06.097Z"
+}

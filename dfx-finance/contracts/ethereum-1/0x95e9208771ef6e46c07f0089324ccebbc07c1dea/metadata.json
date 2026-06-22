@@ -1,0 +1,18 @@
+{
+  "address": "0x95e9208771ef6e46c07f0089324ccebbc07c1dea",
+  "chain_id": 1,
+  "contract_name": "DFXSnapshot",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:14:25.049Z"
+}

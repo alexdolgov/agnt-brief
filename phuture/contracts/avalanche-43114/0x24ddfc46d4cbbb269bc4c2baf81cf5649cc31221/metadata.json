@@ -1,0 +1,18 @@
+{
+  "address": "0x24ddfc46d4cbbb269bc4c2baf81cf5649cc31221",
+  "chain_id": 43114,
+  "contract_name": "OrderHelper",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:41:19.501Z"
+}

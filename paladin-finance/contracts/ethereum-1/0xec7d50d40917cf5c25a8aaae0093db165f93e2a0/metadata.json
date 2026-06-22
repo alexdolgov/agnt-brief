@@ -1,0 +1,18 @@
+{
+  "address": "0xec7d50d40917cf5c25a8aaae0093db165f93e2a0",
+  "chain_id": 1,
+  "contract_name": "DullahanRegistry",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:29:52.696Z"
+}

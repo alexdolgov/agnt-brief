@@ -1,0 +1,18 @@
+{
+  "address": "0x334ad834cd4481bb02d09615e7c11a00579a7909",
+  "chain_id": 43114,
+  "contract_name": "QiErc20Delegator",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x76145e99d3f4165a313e8219141ae0d26900b710",
+  "fetched_at": "2026-06-19T21:31:09.478Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xe19671022a3972084bf0e842fcec6043ddda25e3",
+  "chain_id": 42161,
+  "contract_name": "HundredLendingAMO_ARBI",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:23.491Z"
+}

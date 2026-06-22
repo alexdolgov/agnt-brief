@@ -1,0 +1,18 @@
+{
+  "address": "0xa912cb42ef8a9e5898cae13f678d372b1a18db82",
+  "chain_id": 42161,
+  "contract_name": "AltitudeFarms",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:59:10.136Z"
+}

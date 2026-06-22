@@ -1,0 +1,18 @@
+{
+  "address": "0x0667eed0a0aab930af74a3dfedd263a73994f216",
+  "chain_id": 56,
+  "contract_name": "VAIVaultProxy",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xa52f2a56abb7cbdd378bc36c6088fafeaf9ac423",
+  "fetched_at": "2026-06-19T17:50:51.247Z"
+}

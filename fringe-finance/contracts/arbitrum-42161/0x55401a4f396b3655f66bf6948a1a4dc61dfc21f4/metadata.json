@@ -1,0 +1,18 @@
+{
+  "address": "0x55401a4f396b3655f66bf6948a1a4dc61dfc21f4",
+  "chain_id": 42161,
+  "contract_name": "CamelotMaster",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:15.669Z"
+}

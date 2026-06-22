@@ -1,0 +1,18 @@
+{
+  "address": "0x16eccfdbb4ee1a85a33f3a9b21175cd7ae753db4",
+  "chain_id": 1,
+  "contract_name": "Route",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T10:57:14.721Z"
+}

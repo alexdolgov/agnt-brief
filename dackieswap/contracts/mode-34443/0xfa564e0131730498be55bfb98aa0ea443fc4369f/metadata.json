@@ -1,0 +1,17 @@
+{
+  "address": "0xfa564e0131730498be55bfb98aa0ea443fc4369f",
+  "chain_id": 34443,
+  "contract_name": "SoneiumV3LmPoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000008817d540325f3680c59cf4ac6225f3e1173a4a99",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:04.292Z"
+}

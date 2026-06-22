@@ -1,0 +1,18 @@
+{
+  "address": "0x12ca522ce3220a4f34633ded7064e871ea676c83",
+  "chain_id": 1,
+  "contract_name": "ERC20CompetitiveRewardModuleInfo",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "BSD-4-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:18.032Z"
+}

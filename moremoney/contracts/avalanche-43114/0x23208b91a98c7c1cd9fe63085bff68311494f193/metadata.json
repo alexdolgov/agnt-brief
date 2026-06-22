@@ -1,0 +1,17 @@
+{
+  "address": "0x23208b91a98c7c1cd9fe63085bff68311494f193",
+  "chain_id": 43114,
+  "contract_name": "BonusDistributor",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000008087a341d32d445d9ac8acc9c14f5781e04a26d2000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd4",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:07.593Z"
+}

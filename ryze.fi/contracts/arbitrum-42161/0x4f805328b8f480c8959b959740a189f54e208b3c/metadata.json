@@ -1,0 +1,18 @@
+{
+  "address": "0x4f805328b8f480c8959b959740a189f54e208b3c",
+  "chain_id": 42161,
+  "contract_name": "RyzeCreditTokenMinter",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:59:28.019Z"
+}

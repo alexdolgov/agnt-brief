@@ -1,0 +1,18 @@
+{
+  "address": "0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f",
+  "chain_id": 1,
+  "contract_name": "ERC1155PredicateProxy",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xcfa65db73cb45d458d0a98006d3d558b5e1f021d",
+  "fetched_at": "2026-06-21T06:22:04.662Z"
+}

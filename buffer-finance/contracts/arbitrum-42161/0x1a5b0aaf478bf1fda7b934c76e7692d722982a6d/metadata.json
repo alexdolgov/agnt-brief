@@ -1,0 +1,18 @@
+{
+  "address": "0x1a5b0aaf478bf1fda7b934c76e7692d722982a6d",
+  "chain_id": 42161,
+  "contract_name": "BFR",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:08:57.673Z"
+}

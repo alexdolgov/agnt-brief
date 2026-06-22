@@ -1,0 +1,17 @@
+{
+  "address": "0xfa64cc164b87de05382dd7efb3b2236ce8d90709",
+  "chain_id": 1,
+  "contract_name": "PriceFeedMorphoChainlinkOracleV2",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "000000000000000000000000cc62a6fad56ee6277250eabe49959002da42191c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:14:03.841Z"
+}

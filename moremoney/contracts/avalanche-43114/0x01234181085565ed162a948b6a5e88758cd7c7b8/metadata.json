@@ -1,0 +1,17 @@
+{
+  "address": "0x01234181085565ed162a948b6a5e88758cd7c7b8",
+  "chain_id": 43114,
+  "contract_name": "GLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:00.883Z"
+}

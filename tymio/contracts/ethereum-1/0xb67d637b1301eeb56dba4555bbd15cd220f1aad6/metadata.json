@@ -1,0 +1,18 @@
+{
+  "address": "0xb67d637b1301eeb56dba4555bbd15cd220f1aad6",
+  "chain_id": 1,
+  "contract_name": "PayerV3",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:19:26.169Z"
+}

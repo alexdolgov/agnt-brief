@@ -1,0 +1,16 @@
+# VelodromeCLGaugeContractGuard
+
+| Field | Value |
+|---|---|
+| Chain | base (8453) |
+| Address | `0x0046b9fc7500bfc1234a71ed641d1047e3aa47e0` |
+| Role | operational_periphery |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (base [`0x0046b9fc7500bfc1234a71ed641d1047e3aa47e0`](../0x0046b9fc7500bfc1234a71ed641d1047e3aa47e0/)) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

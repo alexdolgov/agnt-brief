@@ -1,0 +1,18 @@
+{
+  "address": "0xd4f7b4bc46e6e499d35335d270fd094979d815a0",
+  "chain_id": 56,
+  "contract_name": "BondedFeeDistributor",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:27:44.550Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x14edd59846a3932af78e1a7c1fa58f25dc2b09a3",
+  "chain_id": 146,
+  "contract_name": "ShortsTrackerTimelock",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:46:05.696Z"
+}

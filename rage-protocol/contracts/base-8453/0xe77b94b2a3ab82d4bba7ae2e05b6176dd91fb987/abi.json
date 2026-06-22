@@ -1,0 +1,1535 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "walletCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Autocompound",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTemplars",
+        "type": "uint256"
+      }
+    ],
+    "name": "Buy",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalBalance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "walletAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "distributedTotal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "distributedPtknOwner",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "distributedTknOwner",
+        "type": "uint256"
+      }
+    ],
+    "name": "CloseTemple",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTemplars",
+        "type": "uint256"
+      }
+    ],
+    "name": "Compound",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "burnTax",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "referralBonus",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "buyFragmentBoost",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sellTemplarPenalty",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sellLimit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "marketBoostBuy",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "marketBoostCompound",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minCircle",
+        "type": "uint256"
+      }
+    ],
+    "name": "ConfigChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Drip",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "EternalTemple",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "OpenTemple",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "burn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sent",
+        "type": "uint256"
+      }
+    ],
+    "name": "Sell",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "automator",
+        "type": "address"
+      }
+    ],
+    "name": "SetAutomator",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "autocompound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ref",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "buy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateBurnTax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "userTemplars",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSellAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateDynamicSellPenalty",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marketFragment",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateFragmentBuy",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fragment",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marketFragment",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateFragmentSell",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateSellLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "closeTemple",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertPtknToTkn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tknAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertTknToPtkn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "ptknAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "adr",
+        "type": "address"
+      }
+    ],
+    "name": "doesCultLeaderExist",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "drip",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "eternalTemple",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllLeaders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "exists",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templarShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "contractShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyFragments",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "estimatedDailyValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canReceiveReferral",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSendReferral",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "lastReferralTo",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastReferralToTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralToCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralToFragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "lastReferralFrom",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastReferralFromTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromFragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canBuy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentFromBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "buyReferralTo",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "buyReferralReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentReferralTo",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTemplarsReferralTo",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canCompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundNewTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundNewTemplarsFromCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canAutocompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canRegisterAutocompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "registerAutocompoundActive",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "registerAutocompoundUntil",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSell",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCircleFound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellEstimatedTax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCircleRemaining",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTemplarsPenalty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "firstTx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastTx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastAutocompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastRegisterAutocompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "registerAutocompoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastSell",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTotal",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CircleTemple.CultLeaderOverview[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "adr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "buyReferral",
+        "type": "address"
+      }
+    ],
+    "name": "getCultLeaderOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "exists",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fragmentValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templarShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "contractShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyFragments",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "estimatedDailyValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canReceiveReferral",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSendReferral",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "lastReferralTo",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastReferralToTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralToCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralToFragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "lastReferralFrom",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastReferralFromTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromFragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralFromTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canBuy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentFromBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "buyReferralTo",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "buyReferralReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentReferralTo",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTemplarsReferralTo",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyNewTemplarsFromBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canCompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundNewTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundNewTemplarsFromCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canAutocompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canRegisterAutocompound",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "registerAutocompoundActive",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "registerAutocompoundUntil",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSell",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCircleFound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellEstimatedTax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCircleRemaining",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTemplarsPenalty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTotalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellMarketImpact",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "firstTx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastTx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTotal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "compoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastAutocompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastRegisterAutocompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "registerAutocompoundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastSell",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTotal",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CircleTemple.CultLeaderOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "version",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "automator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nextConfigTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastAutocompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastDrip",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "templeStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "templeEternal",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "walletCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pCircleBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circlePodsBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTknRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleSellLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketFragment",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalTemplars",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templeSpeed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templeRoi",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "burnTax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyFragmentBoost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellTemplarPenalty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketBoostBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketBoostCompound",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketBoostSell",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSell",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidityDrip",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dripInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autocompoundDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templarRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "pods",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "launchTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "templarsOnePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleForOnePercent",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CircleTemple.State",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWallets",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "openTemple",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "registerAutocompound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sell",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "automator",
+        "type": "address"
+      }
+    ],
+    "name": "setAutomator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "burnTax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referralBonus",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyFragmentBoost",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellTemplarPenalty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellLimit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marketBoostBuy",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marketBoostCompound",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minCircle",
+        "type": "uint256"
+      }
+    ],
+    "name": "setConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x5a740037688589b26d6008bc1b32786db6b41b40",
+  "chain_id": 56,
+  "contract_name": "PerpsV2ExchangeRate",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:38:00.064Z"
+}

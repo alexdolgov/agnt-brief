@@ -1,0 +1,18 @@
+{
+  "address": "0x1584c8cb1d2d44ff2e39038877e634b87799d584",
+  "chain_id": 1,
+  "contract_name": "YieldReserve",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:10:07.222Z"
+}

@@ -1,41 +1,51 @@
 # Agentic Audit Brief: Rubic
 
+⚠️ Lifecycle status: DECLINING - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Rubic (`rubic`)
 - Website: [https://app.rubic.exchange/](https://app.rubic.exchange/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:23:25.252Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-06-21T10:05:05.467Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: kava
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $148,213.06
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Rubic is a DEX aggregator that enables users to swap tokens across multiple decentralized exchanges, finding the best rates and routing trades efficiently.
+
+### Architecture
+
+All contracts belong to a single product family with no explicit separation of roles; they likely work together to perform aggregation logic, but no shared infrastructure or dependencies are discernible from the provided data.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 4
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-11 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -63,17 +73,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | kava | n/a | `0x3333b1...370333` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x8d9ae5...7fd9f5` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0x8e3bcc...16e08a` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xa96cdb...69cf5d` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/rubic-finance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://skynet.certik.com/projects/rubic-finance) | CertiK | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -88,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

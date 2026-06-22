@@ -1,0 +1,17 @@
+{
+  "address": "0xa637f498f73322dca6587189af8271b215ffedf5",
+  "chain_id": 137,
+  "contract_name": "MerklRewardsInvestStrategy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:22:53.752Z"
+}

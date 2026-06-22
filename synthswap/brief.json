@@ -1,34 +1,64 @@
 {
   "schema_version": "2.0",
   "project_key": "synthswap",
-  "generated_at": "2026-06-13T14:46:51.228Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-22T10:42:19.673Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-22-727228-695b",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "synthswap",
+    "tier": 1,
+    "peak_tvl": 4950749,
+    "peak_date": "2023-08-31T00:00:00.000Z",
+    "tvl_30d_ago": 18175,
+    "tvl_90d_ago": 19315,
+    "tvl_current": 16037,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 24261,
+    "change_30d_pct": -11.763411279229711,
+    "change_90d_pct": -16.971265855552677,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.68% from peak over 1026 days, but the protocol still has a live homepage, documentation, and mentions of V2/V3 and cross-chain swaps, indicating it remains operational.",
+      "confidence": 0.8,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 1026,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.67606921700131,
+    "governance_evidence": "TVL dropped 99.68% from peak over 1026 days, but the protocol still has a live homepage, documentation, and mentions of V2/V3 and cross-chain swaps, indicating it remains operational.",
+    "governance_confidence": 0.8,
+    "governance_text_chars": 376,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
+    "audited_contracts": 4,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 44.4,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 16722,
-    "tvl_usd": 16722,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 12176.485655905102,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 12176.49
+    },
     "asd_usd": null,
     "website_url": "https://synthswap.io",
-    "chains": [],
+    "chains": [
+      "base"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023",
+    "latest_audit_date": "2023-05",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,62 +68,453 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Synthswap is a decentralized exchange and perpetual futures trading platform on Base. It offers spot trading via an automated market maker and leveraged futures trading through a vault-based system, with shared liquidity and reward mechanisms.",
+    "relationship_narrative": "The DEX and Futures Trading families share the Synth token for incentives and governance, with the TimelockController providing administrative control. The Vault in Futures Trading may utilize liquidity from DEX pairs, and reward contracts distribute fees across both families.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 42,
+    "live_contracts": 9,
+    "inactive_contracts": 33,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 11,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbd2dbb8ecea9743ca5b16423b4eaa26bdcfe5ed2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SynthToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Smart Contracts",
+      "tvl_usd": 12176.485655905102,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SynthToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbd2dbb8ecea9743ca5b16423b4eaa26bdcfe5ed2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 12176.485655905102,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16675"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb8b0e1ebd2266a0dff7da4ebee8daaaa6810508f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Dividends",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Dividends",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb8b0e1ebd2266a0dff7da4ebee8daaaa6810508f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16675"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x67599b62d6864621704b2a124857fcfa39b8291d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SLP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Smart Contracts&amp;#x20;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SLP",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x67599b62d6864621704b2a124857fcfa39b8291d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xef153cb7bfc04c657cb7f582c7411556320098b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SynthChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SynthChef",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xef153cb7bfc04c657cb7f582c7411556320098b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16675"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SynthPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SynthPair",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8734b3264dbd22f899bcef4e92d442d538abeff0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SynthRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SynthRouter",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8734b3264dbd22f899bcef4e92d442d538abeff0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x253f744e6faf9c7a452a819bb9e07314ca735a05",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vesting",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x253f744e6faf9c7a452a819bb9e07314ca735a05",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4200000000000000000000000000000000000006",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WETH9",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "wrapped-ethereum",
+      "product_line": "**DEX**",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETH9",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4200000000000000000000000000000000000006",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x01cc6b33c63cee896521d63451896c14d42d05ea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "XSynthToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Smart Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XSynthToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x01cc6b33c63cee896521d63451896c14d42d05ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-16675"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
-      "audit_id": 13996,
-      "audit_key": "audit-13996",
+      "audit_id": 16675,
+      "audit_key": "audit-16675",
       "report_name": "PeckShield-Audit-Report-SynthSwap-v1.0.pdf",
       "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-SynthSwap-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2023",
+      "date": "2023-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Dividends",
+        "MultipleRewards",
+        "SynthChef",
+        "SynthToken",
+        "XSynthToken"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 44.4,
+      "latest_audit": "2023-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x67599b62d6864621704b2a124857fcfa39b8291d",
+      "name": "SLP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28",
+      "name": "SynthPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8734b3264dbd22f899bcef4e92d442d538abeff0",
+      "name": "SynthRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x253f744e6faf9c7a452a819bb9e07314ca735a05",
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 8,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 4
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13996,
-        "report_name": "PeckShield-Audit-Report-SynthSwap-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,0 +1,17 @@
+{
+  "address": "0x7829e5ca4286df66e9f58160544097db517a3b8c",
+  "chain_id": 8453,
+  "contract_name": "PoolManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "000000000000000000000000000000e5cadeb42dea6965ebe33af4b9238d306a000000000000000000000000e79f06573d6af1b66166a926483ba00924285d20000000000000000000000000523b1332d0232c497f56f7c7a478168fee167069",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:19:51.510Z"
+}

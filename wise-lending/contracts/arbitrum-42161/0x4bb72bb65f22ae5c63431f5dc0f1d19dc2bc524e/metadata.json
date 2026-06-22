@@ -1,0 +1,18 @@
+{
+  "address": "0x4bb72bb65f22ae5c63431f5dc0f1d19dc2bc524e",
+  "chain_id": 42161,
+  "contract_name": "APYViewer",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "shanghai",
+  "license": "-- WISE --",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:33.781Z"
+}

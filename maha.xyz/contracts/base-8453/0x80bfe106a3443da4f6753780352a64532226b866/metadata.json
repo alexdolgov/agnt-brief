@@ -1,0 +1,17 @@
+{
+  "address": "0x80bfe106a3443da4f6753780352a64532226b866",
+  "chain_id": 8453,
+  "contract_name": "MahaUIHelper",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 47,
+  "constructor_arguments": "00000000000000000000000029482dbc6e646a9ef517b5381e95acd5bdc8af07",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:48.795Z"
+}

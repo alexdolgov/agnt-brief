@@ -1,0 +1,18 @@
+{
+  "address": "0x27f7bdc4efb93056d195ee0b9d976ce828731a7e",
+  "chain_id": 1088,
+  "contract_name": "BaseV1BribeFactory",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:37:48.837Z"
+}

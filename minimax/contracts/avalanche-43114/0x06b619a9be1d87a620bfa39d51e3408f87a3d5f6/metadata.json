@@ -1,0 +1,17 @@
+{
+  "address": "0x06b619a9be1d87a620bfa39d51e3408f87a3d5f6",
+  "chain_id": 43114,
+  "contract_name": "PositionBalanceLib",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T10:52:56.388Z"
+}

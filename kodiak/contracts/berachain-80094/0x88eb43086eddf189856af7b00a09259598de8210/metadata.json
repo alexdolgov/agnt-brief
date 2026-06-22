@@ -1,0 +1,17 @@
+{
+  "address": "0x88eb43086eddf189856af7b00a09259598de8210",
+  "chain_id": 80094,
+  "contract_name": "TokenMigrator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000e8d7b965ba082835ea917f2b173ff3e035b69eeb000000000000000000000000040ea7d4b559357425407fdfc3c774c5dfc0467700000000000000000000000000000000000000000000000000000000694aa0600000000000000000000000000000000000000000000000000000000069722d60",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:16:15.000Z"
+}

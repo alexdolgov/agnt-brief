@@ -1,0 +1,18 @@
+{
+  "address": "0xe18b9a8ece389879fd7c5fa2749f9b6e05817262",
+  "chain_id": 56,
+  "contract_name": "HectagonNFT",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:33:32.086Z"
+}

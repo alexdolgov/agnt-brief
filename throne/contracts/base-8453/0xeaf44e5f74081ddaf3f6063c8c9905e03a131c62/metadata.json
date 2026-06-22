@@ -1,0 +1,18 @@
+{
+  "address": "0xeaf44e5f74081ddaf3f6063c8c9905e03a131c62",
+  "chain_id": 8453,
+  "contract_name": "ThroneTimelock",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:28.273Z"
+}

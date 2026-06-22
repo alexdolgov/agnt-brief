@@ -1,0 +1,17 @@
+{
+  "address": "0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56",
+  "chain_id": 59144,
+  "contract_name": "Position",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:02.032Z"
+}

@@ -1,0 +1,310 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract StrategyManager",
+        "name": "_strategyManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_withdrawFeeWad",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_withdrawFeeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_bridgeFeeWad",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BridgeAmountNotConsumed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BridgeFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ForceDeallocateFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBridgeFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDecimalScale",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidWithdrawFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiqResetFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MultipleOwnersDetected",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NonZeroPenalty",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NormalizationOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OffsetOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyDelegateCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReceiverNotEnabled",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SlippageExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroWithdrawAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "safe",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "intendedRecipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "bridged",
+        "type": "bool"
+      }
+    ],
+    "name": "WithdrawExecuted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BRIDGE_FEE_WAD",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STRATEGY_MANAGER",
+    "outputs": [
+      {
+        "internalType": "contract StrategyManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WITHDRAW_FEE_RECIPIENT",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WITHDRAW_FEE_WAD",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC4626",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "withdrawAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "withdrawAssetPerShare",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositAssetPerShare",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "marketId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isIncrease",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "extraData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct RebalanceData[]",
+        "name": "rebalanceData",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "forceDeallocateAdapterIndices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes",
+        "name": "bridgePayload",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bridgeOffsets",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bridgeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bridgeTarget",
+        "type": "address"
+      }
+    ],
+    "name": "executeWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

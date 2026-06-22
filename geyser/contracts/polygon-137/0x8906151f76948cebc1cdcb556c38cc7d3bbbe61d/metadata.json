@@ -1,0 +1,18 @@
+{
+  "address": "0x8906151f76948cebc1cdcb556c38cc7d3bbbe61d",
+  "chain_id": 137,
+  "contract_name": "ERC20BondStakingModuleInfo",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:19.319Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1a8ae46098ff418e2054243491544ed8564c3cdb",
+  "chain_id": 8453,
+  "contract_name": "FeeSplitter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "BSD-3-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:03:33.433Z"
+}

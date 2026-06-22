@@ -1,0 +1,18 @@
+{
+  "address": "0xe606ae6d6394a977a8b0926557bf9d291051f989",
+  "chain_id": 42161,
+  "contract_name": "ETHPriceFeed",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:04:25.481Z"
+}

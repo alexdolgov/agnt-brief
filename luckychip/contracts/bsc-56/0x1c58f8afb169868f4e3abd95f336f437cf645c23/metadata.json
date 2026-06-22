@@ -1,0 +1,18 @@
+{
+  "address": "0x1c58f8afb169868f4e3abd95f336f437cf645c23",
+  "chain_id": 56,
+  "contract_name": "BetMiningDistributor",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:46:33.082Z"
+}

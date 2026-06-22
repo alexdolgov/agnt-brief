@@ -1,0 +1,18 @@
+{
+  "address": "0x8786d9635d3cbe2d07e2b74917548aee77d99cd2",
+  "chain_id": 1,
+  "contract_name": "STokensManagerProxyAdmin",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, MPL-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:51:11.842Z"
+}

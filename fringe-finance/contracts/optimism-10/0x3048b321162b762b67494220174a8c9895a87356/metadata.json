@@ -1,0 +1,18 @@
+{
+  "address": "0x3048b321162b762b67494220174a8c9895a87356",
+  "chain_id": 10,
+  "contract_name": "PrimaryLendingPlatformAtomicRepayment",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:51.550Z"
+}

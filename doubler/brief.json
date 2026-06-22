@@ -1,49 +1,90 @@
 {
   "schema_version": "2.0",
   "project_key": "doubler",
-  "generated_at": "2026-06-13T12:56:14.013Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T08:15:16.161Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "doubler",
+    "tier": 1,
+    "peak_tvl": 5067679,
+    "peak_date": "2024-07-11T00:00:00.000Z",
+    "tvl_30d_ago": 138893,
+    "tvl_90d_ago": 132958,
+    "tvl_current": 113010,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 197703,
+    "change_30d_pct": -18.635208397831423,
+    "change_90d_pct": -15.003234104002768,
+    "governance_raw": {
+      "evidence": "TVL has dropped 97.77% from its all-time peak and continues to decline by 15% over 90 days, but the protocol's homepage still promotes its features and has active social links, indicating it remains operational.",
+      "confidence": 0.85,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 710,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 97.76998503654238,
+    "governance_evidence": "TVL has dropped 97.77% from its all-time peak and continues to decline by 15% over 90 days, but the protocol's homepage still promotes its features and has active social links, indicating it remains operational.",
+    "governance_confidence": 0.85,
+    "governance_text_chars": 2500,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
+    "audited_contracts": 1,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 107032.66815,
     "tvl_usd": 107032.66815,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://doubler.pro/#/home",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "chains": [
+      "manta"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "SlowMist"
+    ],
+    "latest_audit_date": "2024-07",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 5,
+    "live_contracts": 0,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +92,91 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x498f4711a706f9ad33b5d68eaa20e56a87d5d926",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Doubler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Doubler",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Doubler",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x498f4711a706f9ad33b5d68eaa20e56a87d5d926",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc8480647eeb358df638ca882362ce528cc666087",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13042"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x56386f04111057a5d8df8d719827038b716333f0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Doubler",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x56386f04111057a5d8df8d719827038b716333f0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13042,
@@ -60,40 +185,52 @@
       "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20Doubler%20Lite.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Doubler",
+        "DoublerFactory",
+        "FastPriceFeed",
+        "RBToken"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "SlowMist",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2024-07"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 4
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13042,
-        "report_name": "SlowMist Audit Report - Doubler Lite.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

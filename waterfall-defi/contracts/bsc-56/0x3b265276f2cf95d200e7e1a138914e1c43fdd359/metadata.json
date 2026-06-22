@@ -1,0 +1,18 @@
+{
+  "address": "0x3b265276f2cf95d200e7e1a138914e1c43fdd359",
+  "chain_id": 56,
+  "contract_name": "StrategyVenus",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:13:30.553Z"
+}

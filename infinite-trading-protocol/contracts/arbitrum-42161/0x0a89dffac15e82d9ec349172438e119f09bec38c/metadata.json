@@ -1,0 +1,18 @@
+{
+  "address": "0x0a89dffac15e82d9ec349172438e119f09bec38c",
+  "chain_id": 42161,
+  "contract_name": "GmxExchangeRouterContractGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 70,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:39.504Z"
+}

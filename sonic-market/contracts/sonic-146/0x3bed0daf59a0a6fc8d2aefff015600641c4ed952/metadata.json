@@ -1,0 +1,17 @@
+{
+  "address": "0x3bed0daf59a0a6fc8d2aefff015600641c4ed952",
+  "chain_id": 146,
+  "contract_name": "SonicMarketGem",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "00000000000000000000000000000000000000000000d3c21bcecceda1000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:28:03.597Z"
+}

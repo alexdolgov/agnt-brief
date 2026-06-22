@@ -1,0 +1,18 @@
+{
+  "address": "0xb46f8cf42e504efe8bef895f848741daa55e9f1d",
+  "chain_id": 1,
+  "contract_name": "VaultParameters",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "bsl-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:34:37.196Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x65bf1e4a5af9939549afc7c8e9d2438f5ed1d27e",
+  "chain_id": 1284,
+  "contract_name": "SetText",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:26.713Z"
+}

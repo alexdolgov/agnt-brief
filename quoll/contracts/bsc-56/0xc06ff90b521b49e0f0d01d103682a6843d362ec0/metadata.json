@@ -1,0 +1,18 @@
+{
+  "address": "0xc06ff90b521b49e0f0d01d103682a6843d362ec0",
+  "chain_id": 56,
+  "contract_name": "VlQuo",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:58:30.876Z"
+}

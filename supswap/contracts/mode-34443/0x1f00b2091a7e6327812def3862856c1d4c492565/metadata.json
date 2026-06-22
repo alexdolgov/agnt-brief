@@ -1,0 +1,18 @@
+{
+  "address": "0x1f00b2091a7e6327812def3862856c1d4c492565",
+  "chain_id": 34443,
+  "contract_name": "TokenValidator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T00:19:30.586Z"
+}

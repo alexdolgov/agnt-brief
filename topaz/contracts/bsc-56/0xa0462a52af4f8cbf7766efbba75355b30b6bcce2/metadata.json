@@ -1,0 +1,17 @@
+{
+  "address": "0xa0462a52af4f8cbf7766efbba75355b30b6bcce2",
+  "chain_id": 56,
+  "contract_name": "CustomSwapFeeModule",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "00000000000000000000000073dc984d9490286e735548f61dfccec67af82ed9",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:21:13.621Z"
+}

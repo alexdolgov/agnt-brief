@@ -1,0 +1,18 @@
+{
+  "address": "0x03aef503d5e5be4dfb02b3425b737006a9b390eb",
+  "chain_id": 1,
+  "contract_name": "CrvUSDYv3CRVCrvUSDOracle",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1660,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, ISC, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:17:27.368Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xe6c2b672b3eb64a1f460adcd9676a3b6c67abd4d",
+  "chain_id": 1,
+  "contract_name": "MaviaOFTAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:42.385Z"
+}

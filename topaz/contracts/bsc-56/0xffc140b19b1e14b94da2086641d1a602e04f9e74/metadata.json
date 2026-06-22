@@ -1,0 +1,17 @@
+{
+  "address": "0xffc140b19b1e14b94da2086641d1a602e04f9e74",
+  "chain_id": 56,
+  "contract_name": "ConnectorV2",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000001e98c8226e7d452e1888e3d3d2f929346321c6c300000000000000000000000065e6cd0ef5d3467030103cf3d433034e570b57840000000000000000000000002f80f810a114223ac69e34e84e735cad515dad67",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:21:14.793Z"
+}

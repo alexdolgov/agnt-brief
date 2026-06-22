@@ -1,0 +1,18 @@
+{
+  "address": "0x14f6dfee761455247c6bf2b2b052a1f6245dd6fb",
+  "chain_id": 137,
+  "contract_name": "AccessManagedProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": "0x48ddc33fe54ed84121163f5e05e35e48314897a4",
+  "fetched_at": "2026-06-21T14:22:47.506Z"
+}

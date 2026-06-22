@@ -1,0 +1,18 @@
+{
+  "address": "0x652afd341346a016f397cc5ef3384ddcad9bb52c",
+  "chain_id": 1,
+  "contract_name": "TestToken",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:58.758Z"
+}

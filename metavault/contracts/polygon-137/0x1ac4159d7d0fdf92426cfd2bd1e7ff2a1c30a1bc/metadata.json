@@ -1,0 +1,17 @@
+{
+  "address": "0x1ac4159d7d0fdf92426cfd2bd1e7ff2a1c30a1bc",
+  "chain_id": 137,
+  "contract_name": "MvxDispenser",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000002760e46d9bb43dafcbecaad1f64b93207f9f0ed7000000000000000000000000000000000000000000000000000000006773dcc0",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:42.813Z"
+}

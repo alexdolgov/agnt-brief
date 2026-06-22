@@ -1,0 +1,1522 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minimumReliableAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyItayosePeriod",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotMaker",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MarketNotOpened",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "MissingAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoOrderExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotItayosePeriod",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotPreOrderPeriod",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "name": "OnlyAcceptedContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ResolverAlreadyRegistered",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "name",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      }
+    ],
+    "name": "CacheUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "buildCache",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "_side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_unitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateFilledAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "filledAmountInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderFeeInFV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "placedAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint48",
+        "name": "_orderId",
+        "type": "uint48"
+      }
+    ],
+    "name": "cancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "cleanUpOrders",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activeLendOrderCount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "activeBorrowOrderCount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "removedLendOrderFutureValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "removedBorrowOrderFutureValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "removedLendOrderAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "removedBorrowOrderAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_openingDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_preOpeningDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "createOrderBook",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_maturedOrderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_newNearestOrderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newMaturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_openingDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_autoRollUnitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeAutoRoll",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "executeItayoseCall",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "openingUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalOffsetAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "openingDate",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "orderId",
+            "type": "uint48"
+          },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PartiallyFilledOrder",
+        "name": "partiallyFilledLendingOrder",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "orderId",
+            "type": "uint48"
+          },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PartiallyFilledOrder",
+        "name": "partiallyFilledBorrowingOrder",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "_side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_unitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeOrder",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ignoredAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct FilledOrder",
+        "name": "filledOrder",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "orderId",
+            "type": "uint48"
+          },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PartiallyFilledOrder",
+        "name": "partiallyFilledOrder",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeInFV",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "_side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_unitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "executePreOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getBestBorrowUnitPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8[]",
+        "name": "_orderBookIds",
+        "type": "uint8[]"
+      }
+    ],
+    "name": "getBestBorrowUnitPrices",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getBestLendUnitPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8[]",
+        "name": "_orderBookIds",
+        "type": "uint8[]"
+      }
+    ],
+    "name": "getBestLendUnitPrices",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_count",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBlockUnitPriceAverage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getBlockUnitPriceHistory",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "unitPrices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint48",
+        "name": "timestamp",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowOrderBook",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "unitPrices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "quantities",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "next",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getBorrowOrderIds",
+    "outputs": [
+      {
+        "internalType": "uint48[]",
+        "name": "activeOrderIds",
+        "type": "uint48[]"
+      },
+      {
+        "internalType": "uint48[]",
+        "name": "inActiveOrderIds",
+        "type": "uint48[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCircuitBreakerLimitRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCircuitBreakerThresholds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxLendUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBorrowUnitPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCurrency",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "currency",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getItayoseEstimation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "openingUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastLendUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastBorrowUnitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalOffsetAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maturity",
+        "type": "uint256"
+      }
+    ],
+    "name": "getItayoseLog",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "openingUnitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastLendUnitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBorrowUnitPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ItayoseLog",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getLastOrderTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint48",
+        "name": "",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLendOrderBook",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "unitPrices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "quantities",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "next",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getLendOrderIds",
+    "outputs": [
+      {
+        "internalType": "uint48[]",
+        "name": "activeOrderIds",
+        "type": "uint48[]"
+      },
+      {
+        "internalType": "uint48[]",
+        "name": "inActiveOrderIds",
+        "type": "uint48[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getMarketUnitPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8[]",
+        "name": "_orderBookIds",
+        "type": "uint8[]"
+      }
+    ],
+    "name": "getMaturities",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "maturities",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getMaturity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getOpeningDate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "openingDate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint48",
+        "name": "_orderId",
+        "type": "uint48"
+      }
+    ],
+    "name": "getOrder",
+    "outputs": [
+      {
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "unitPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "maker",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isPreOrder",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getOrderBookDetail",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "openingDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "preOpeningDate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOrderFeeRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRevision",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minUnitPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalAmountFromBorrowOrders",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inactiveAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inactiveFutureValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getTotalAmountFromLendOrders",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inactiveAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inactiveFutureValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_resolver",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_ccy",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderFeeRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_cbLimitRange",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "isItayosePeriod",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "isMatured",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "isOpened",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "isPreOrderPeriod",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      }
+    ],
+    "name": "isReady",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isResolverCached",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "requiredContracts",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "contracts",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "resolver",
+    "outputs": [
+      {
+        "internalType": "contract IAddressResolver",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_orderBookId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum ProtocolTypes.Side",
+        "name": "_side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_futureValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "unwindPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ignoredAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct FilledOrder",
+        "name": "filledOrder",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "orderId",
+            "type": "uint48"
+          },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "futureValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PartiallyFilledOrder",
+        "name": "partiallyFilledOrder",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeInFV",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_cbLimitRange",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateCircuitBreakerLimitRange",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_orderFeeRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateOrderFeeRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x1b98145e25b24b391e8410df05ad71ff4c11e3df",
+  "chain_id": 56,
+  "contract_name": "HintHelpers",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:47:49.027Z"
+}

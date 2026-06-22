@@ -1,0 +1,155 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "dolomiteMargin",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "weth",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "DOLOMITE_MARGIN",
+    "outputs": [
+      {
+        "internalType": "contract IDolomiteMargin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "contract WETH9",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "number",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Account.Info[]",
+        "name": "accounts",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum Actions.ActionType",
+            "name": "actionType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "accountId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "sign",
+                "type": "bool"
+              },
+              {
+                "internalType": "enum Types.AssetDenomination",
+                "name": "denomination",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum Types.AssetReference",
+                "name": "ref",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Types.AssetAmount",
+            "name": "amount",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "primaryMarketId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryMarketId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "otherAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "otherAccountId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Actions.ActionArgs[]",
+        "name": "actions",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address payable",
+        "name": "sendEthTo",
+        "type": "address"
+      }
+    ],
+    "name": "operate",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

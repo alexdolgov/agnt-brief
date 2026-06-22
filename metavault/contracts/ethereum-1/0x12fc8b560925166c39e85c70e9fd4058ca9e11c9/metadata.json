@@ -1,0 +1,18 @@
+{
+  "address": "0x12fc8b560925166c39e85c70e9fd4058ca9e11c9",
+  "chain_id": 1,
+  "contract_name": "MetavaultGovClub",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:40.187Z"
+}

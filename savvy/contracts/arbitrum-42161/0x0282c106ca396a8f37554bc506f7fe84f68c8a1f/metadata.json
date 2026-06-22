@@ -1,0 +1,18 @@
+{
+  "address": "0x0282c106ca396a8f37554bc506f7fe84f68c8a1f",
+  "chain_id": 42161,
+  "contract_name": "JonesDAOTokenAdapterWithArbRewards",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T09:35:42.271Z"
+}

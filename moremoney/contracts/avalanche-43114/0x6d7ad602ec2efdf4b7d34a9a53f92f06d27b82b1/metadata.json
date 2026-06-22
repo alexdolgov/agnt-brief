@@ -1,0 +1,18 @@
+{
+  "address": "0x6d7ad602ec2efdf4b7d34a9a53f92f06d27b82b1",
+  "chain_id": 43114,
+  "contract_name": "Staking",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:16.498Z"
+}

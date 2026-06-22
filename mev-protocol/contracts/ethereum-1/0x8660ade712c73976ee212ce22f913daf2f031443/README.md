@@ -1,0 +1,16 @@
+# WagyuStaker
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x8660ade712c73976ee212ce22f913daf2f031443` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x8660ade712c73976ee212ce22f913daf2f031443`](../0x8660ade712c73976ee212ce22f913daf2f031443/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

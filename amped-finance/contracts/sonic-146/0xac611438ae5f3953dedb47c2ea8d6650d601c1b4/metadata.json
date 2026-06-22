@@ -1,0 +1,17 @@
+{
+  "address": "0xac611438ae5f3953dedb47c2ea8d6650d601c1b4",
+  "chain_id": 146,
+  "contract_name": "AmpOFT",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 90,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:46:07.913Z"
+}

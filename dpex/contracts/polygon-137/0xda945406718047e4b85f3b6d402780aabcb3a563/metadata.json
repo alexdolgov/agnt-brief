@@ -1,0 +1,17 @@
+{
+  "address": "0xda945406718047e4b85f3b6d402780aabcb3a563",
+  "chain_id": 137,
+  "contract_name": "DPEXCallExecutor",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:14.444Z"
+}

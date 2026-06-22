@@ -1,0 +1,18 @@
+{
+  "address": "0x9727d535165e19590013bddea8fd85dd618b9af7",
+  "chain_id": 43114,
+  "contract_name": "CurvePoolRewards",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:20.448Z"
+}

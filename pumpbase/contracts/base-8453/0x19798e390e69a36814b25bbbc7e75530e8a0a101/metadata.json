@@ -1,0 +1,18 @@
+{
+  "address": "0x19798e390e69a36814b25bbbc7e75530e8a0a101",
+  "chain_id": 8453,
+  "contract_name": "LaunchpadTokenFactory",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:46:34.905Z"
+}

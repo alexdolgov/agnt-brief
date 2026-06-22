@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "huckleberry",
-  "generated_at": "2026-06-13T13:16:41.208Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-22T10:37:21.580Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-22-727228-695b",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "huckleberry",
+    "tier": 1,
+    "peak_tvl": 17455690,
+    "peak_date": "2021-11-21T00:00:00.000Z",
+    "tvl_30d_ago": 28950,
+    "tvl_90d_ago": 24321,
+    "tvl_current": 23713,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 31000,
+    "change_30d_pct": -18.08981001727116,
+    "change_90d_pct": -2.499897208174006,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.86% from its peak over 4 years ago with no recent activity or communication indicating ongoing operations.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1674,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 99.86415317870564,
+    "governance_evidence": "TVL dropped 99.86% from its peak over 4 years ago with no recent activity or communication indicating ongoing operations.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 179,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -25,7 +51,9 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.huckleberry.finance/",
-    "chains": [],
+    "chains": [
+      "moonriver"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2021-09",
@@ -38,20 +66,279 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Huckleberry is a DeFi protocol on Moonriver offering a decentralized exchange (AMM) and a lending market, enabling users to swap tokens and borrow or lend assets.",
+    "relationship_narrative": "The single deployer cluster suggests shared infrastructure, but only one lending contract is identified; the AMM contracts are not explicitly listed, so no cross-family relationships are visible.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 38,
+    "live_contracts": 7,
+    "inactive_contracts": 31,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 8,
+    "unverified_dependencies": 2,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FINN",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Huckleberry Lending",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FINN",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x37619cc85325afea778830e184cb60a3abc9210b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FinnBar",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FinnBar",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x37619cc85325afea778830e184cb60a3abc9210b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HuckleberryFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HuckleberryFarm",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x900f1ec5819fa087d368877cd03b265bf1802667",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MappingTokenV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MappingTokenV2",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x900f1ec5819fa087d368877cd03b265bf1802667",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TomVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TomVault",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xe31a0da5e59df4c82c60d2dd14be64e7ec7c994f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xe31a0da5e59df4c82c60d2dd14be64e7ec7c994f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x42588054a46a074daf2adeec97cd419749a9e263",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x42588054a46a074daf2adeec97cd419749a9e263",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13238,
@@ -76,12 +363,63 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756",
+      "name": "FINN",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x37619cc85325afea778830e184cb60a3abc9210b",
+      "name": "FinnBar",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6",
+      "name": "HuckleberryFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x900f1ec5819fa087d368877cd03b265bf1802667",
+      "name": "MappingTokenV2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7",
+      "name": "TomVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 5,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

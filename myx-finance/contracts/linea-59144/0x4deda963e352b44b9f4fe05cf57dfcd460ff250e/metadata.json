@@ -1,0 +1,17 @@
+{
+  "address": "0x4deda963e352b44b9f4fe05cf57dfcd460ff250e",
+  "chain_id": 59144,
+  "contract_name": "PoolTokenFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "00000000000000000000000034df93f37f327757684ae502b47c787c38465037",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:46:38.036Z"
+}

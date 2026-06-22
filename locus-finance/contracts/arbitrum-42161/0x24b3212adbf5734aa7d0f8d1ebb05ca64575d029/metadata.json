@@ -1,0 +1,18 @@
+{
+  "address": "0x24b3212adbf5734aa7d0f8d1ebb05ca64575d029",
+  "chain_id": 42161,
+  "contract_name": "HopStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT, MIT OR Apache-2.0, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T05:25:06.781Z"
+}

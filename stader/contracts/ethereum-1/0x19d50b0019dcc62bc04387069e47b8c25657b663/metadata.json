@@ -1,0 +1,18 @@
+{
+  "address": "0x19d50b0019dcc62bc04387069e47b8c25657b663",
+  "chain_id": 1,
+  "contract_name": "Stader",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:52:50.941Z"
+}

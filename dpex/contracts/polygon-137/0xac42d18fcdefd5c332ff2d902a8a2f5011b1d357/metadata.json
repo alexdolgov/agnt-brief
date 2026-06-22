@@ -1,0 +1,18 @@
+{
+  "address": "0xac42d18fcdefd5c332ff2d902a8a2f5011b1d357",
+  "chain_id": 137,
+  "contract_name": "NFT_Collection",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:13.223Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x70542a9918171d4316c1a1f70d041564cef496b4",
+  "chain_id": 1,
+  "contract_name": "WiseRewards",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "cancun",
+  "license": "-- BCOM --, -- WISE --",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:39:33.481Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4535e52cdf3ab787b379b7b72b5990767e6747e4",
+  "chain_id": 137,
+  "contract_name": "UChildERC20Proxy",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xbc4aee01f7e396b927b6dbca957af5e7e707e80c",
+  "fetched_at": "2026-06-19T21:21:44.747Z"
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "inputs": [],
+    "name": "DoesntExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollateralIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLeverage",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isIncrease",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ITradingCallbacks.CancelReason",
+        "name": "cancelReason",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "marketPrice",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "collateralDelta",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "newLeverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liqPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "govFeeCollateral",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUpdateLeverage.UpdateLeverageValues",
+        "name": "values",
+        "type": "tuple"
+      }
+    ],
+    "name": "LeverageUpdateExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isIncrease",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newLeverage",
+        "type": "uint256"
+      }
+    ],
+    "name": "LeverageUpdateInitiated",
+    "type": "event"
+  }
+]

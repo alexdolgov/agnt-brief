@@ -1,0 +1,885 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "fundingFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "interestFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "riskFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxPendingGlobal",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxPendingLocal",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maxPriceDeviation",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "closed",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "settle",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct MarketParameter",
+            "name": "marketParameter",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "UFixed6",
+                "name": "margin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maintenance",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "UFixed6",
+                    "name": "linearFee",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "proportionalFee",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "adiabaticFee",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "scale",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct LinearAdiabatic6",
+                "name": "takerFee",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "UFixed6",
+                    "name": "linearFee",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "proportionalFee",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "scale",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct NoopAdiabatic6",
+                "name": "makerFee",
+                "type": "tuple"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "efficiencyLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "liquidationFee",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "UFixed6",
+                    "name": "minRate",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "maxRate",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "targetRate",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "UFixed6",
+                    "name": "targetUtilization",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct UJumpRateUtilizationCurve6",
+                "name": "utilizationCurve",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "UFixed6",
+                    "name": "k",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "Fixed6",
+                    "name": "min",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "Fixed6",
+                    "name": "max",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct PController6",
+                "name": "pController",
+                "type": "tuple"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "minMargin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "minMaintenance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "staleAfter",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "makerReceiveOnly",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct RiskParameter",
+            "name": "riskParameter",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "price",
+                "type": "int256"
+              },
+              {
+                "internalType": "bool",
+                "name": "valid",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct OracleVersion",
+            "name": "latestOracleVersion",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentTimestamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "currentId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "latestId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "protocolFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "oracleFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "riskFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "latestPrice",
+                "type": "int256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "exposure",
+                "type": "int256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "Fixed6",
+                    "name": "_value",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "Fixed6",
+                    "name": "_skew",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct PAccumulator6",
+                "name": "pAccumulator",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct Global",
+            "name": "global",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "currentId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "latestId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "claimable",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Local",
+            "name": "local",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maker",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "long",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "short",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Position",
+            "name": "latestPositionGlobal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maker",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "long",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "short",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Position",
+            "name": "latestPositionLocal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "protection",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerReferral",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerReferral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Order",
+            "name": "pendingGlobal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "protection",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerReferral",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerReferral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Order",
+            "name": "pendingLocal",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IMarket.Context",
+        "name": "context",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "operator",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "signer",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "liquidator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderReferrer",
+            "type": "address"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "orderReferralFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "guaranteeReferrer",
+            "type": "address"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "guaranteeReferralFee",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "protection",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerReferral",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerReferral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Order",
+            "name": "orderGlobal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "collateral",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "longNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "shortNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "protection",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "makerReferral",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerReferral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Order",
+            "name": "orderLocal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maker",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "long",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "short",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Position",
+            "name": "currentPositionGlobal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maker",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "long",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "short",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Position",
+            "name": "currentPositionLocal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "notional",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "referral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Guarantee",
+            "name": "guaranteeGlobal",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "orders",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "notional",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerPos",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerNeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "takerFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "referral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Guarantee",
+            "name": "guaranteeLocal",
+            "type": "tuple"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "collateralization",
+            "type": "uint256"
+          },
+          {
+            "internalType": "Fixed6",
+            "name": "priceAdjustment",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct IMarket.UpdateContext",
+        "name": "updateContext",
+        "type": "tuple"
+      },
+      {
+        "internalType": "Fixed6",
+        "name": "collateral",
+        "type": "int256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "newMaker",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "newLong",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "newShort",
+        "type": "uint256"
+      }
+    ],
+    "name": "process",
+    "outputs": [
+      {
+        "internalType": "Fixed6",
+        "name": "",
+        "type": "int256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "UFixed6",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

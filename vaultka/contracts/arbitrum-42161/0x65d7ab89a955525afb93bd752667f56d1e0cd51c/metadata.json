@@ -1,0 +1,18 @@
+{
+  "address": "0x65d7ab89a955525afb93bd752667f56d1e0cd51c",
+  "chain_id": 42161,
+  "contract_name": "VKAPublicSale",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 99,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:21.009Z"
+}

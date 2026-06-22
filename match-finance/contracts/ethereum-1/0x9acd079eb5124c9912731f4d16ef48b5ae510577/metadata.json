@@ -1,0 +1,18 @@
+{
+  "address": "0x9acd079eb5124c9912731f4d16ef48b5ae510577",
+  "chain_id": 1,
+  "contract_name": "MatchToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:02:11.507Z"
+}

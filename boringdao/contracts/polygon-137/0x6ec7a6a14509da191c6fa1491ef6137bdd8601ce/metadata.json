@@ -1,0 +1,18 @@
+{
+  "address": "0x6ec7a6a14509da191c6fa1491ef6137bdd8601ce",
+  "chain_id": 137,
+  "contract_name": "TwoWayChef",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:22:50.617Z"
+}

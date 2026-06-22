@@ -1,0 +1,18 @@
+{
+  "address": "0x00a8e14d66af42958d89486a0c00fa28bbe65033",
+  "chain_id": 56,
+  "contract_name": "IFOByProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:51:41.775Z"
+}

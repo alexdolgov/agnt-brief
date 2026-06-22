@@ -1,0 +1,950 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "ownerIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "proposedOwnerIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "proposedOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "ownerIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "proposedOwnerIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "proposedOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "currentValue",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "newValue",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "InterestAccrualPeriodChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "currentValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LendingPoolPeripheralAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "currentValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "CollateralVaultPeripheralAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "currentValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LiquidationsPeripheralAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "currentValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newValue",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LiquidityControlsAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "value",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "ContractStatusChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "erc20TokenContractIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "ContractDeprecated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "duration",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "name": "collaterals",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "name": "genesisToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "interestAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LoanPayment",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LoanPaid",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "erc20TokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "LoanDefaulted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PaymentSent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "walletIndexed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PaymentReceived",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_interestAccrualPeriod",
+        "type": "uint256"
+      },
+      {
+        "name": "_loansCoreContract",
+        "type": "address"
+      },
+      {
+        "name": "_lendingPoolPeripheralContract",
+        "type": "address"
+      },
+      {
+        "name": "_collateralVaultPeripheralContract",
+        "type": "address"
+      },
+      {
+        "name": "_genesisContract",
+        "type": "address"
+      },
+      {
+        "name": "_isPayable",
+        "type": "bool"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "proposeOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeInterestAccrualPeriod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "setLendingPoolPeripheralAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "setCollateralVaultPeripheralAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "setLiquidationsPeripheralAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "setLiquidityControlsAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_flag",
+        "type": "bool"
+      }
+    ],
+    "name": "changeContractStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "deprecate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "erc20TokenSymbol",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "name": "_timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanPayableAmount",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "_interest",
+        "type": "uint256"
+      },
+      {
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "_collaterals",
+        "type": "tuple[]"
+      },
+      {
+        "name": "_delegations",
+        "type": "bool"
+      },
+      {
+        "name": "_deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "_nonce",
+        "type": "uint256"
+      },
+      {
+        "name": "_genesisToken",
+        "type": "uint256"
+      },
+      {
+        "name": "_v",
+        "type": "uint256"
+      },
+      {
+        "name": "_r",
+        "type": "uint256"
+      },
+      {
+        "name": "_s",
+        "type": "uint256"
+      }
+    ],
+    "name": "reserve",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "_interest",
+        "type": "uint256"
+      },
+      {
+        "name": "_maturity",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "_collaterals",
+        "type": "tuple[]"
+      },
+      {
+        "name": "_delegations",
+        "type": "bool"
+      },
+      {
+        "name": "_deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "_nonce",
+        "type": "uint256"
+      },
+      {
+        "name": "_genesisToken",
+        "type": "uint256"
+      },
+      {
+        "name": "_v",
+        "type": "uint256"
+      },
+      {
+        "name": "_r",
+        "type": "uint256"
+      },
+      {
+        "name": "_s",
+        "type": "uint256"
+      }
+    ],
+    "name": "reserveEth",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "pay",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "settleDefault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "name": "_collateralAddress",
+        "type": "address"
+      },
+      {
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "name": "_value",
+        "type": "bool"
+      }
+    ],
+    "name": "setDelegation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proposedOwner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "interestAccrualPeriod",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isAcceptingLoans",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isDeprecated",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "loansCoreContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lendingPoolPeripheralContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collateralVaultPeripheralContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liquidationsPeripheralContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liquidityControlsContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "genesisContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isPayable",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

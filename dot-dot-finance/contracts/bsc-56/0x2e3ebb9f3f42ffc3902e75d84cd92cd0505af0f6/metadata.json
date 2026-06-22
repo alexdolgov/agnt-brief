@@ -1,0 +1,18 @@
+{
+  "address": "0x2e3ebb9f3f42ffc3902e75d84cd92cd0505af0f6",
+  "chain_id": 56,
+  "contract_name": "CoreMinter",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:27:42.248Z"
+}

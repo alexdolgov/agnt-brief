@@ -1,0 +1,17 @@
+{
+  "address": "0xb13f8c9b89f00a11b4df5b68ed226b17f650a1ab",
+  "chain_id": 137,
+  "contract_name": "StratX2_HEROV3",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:51:54.346Z"
+}

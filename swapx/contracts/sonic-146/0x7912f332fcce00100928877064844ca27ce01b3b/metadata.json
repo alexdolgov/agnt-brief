@@ -1,0 +1,17 @@
+{
+  "address": "0x7912f332fcce00100928877064844ca27ce01b3b",
+  "chain_id": 146,
+  "contract_name": "veNFTAPI",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:11:16.768Z"
+}

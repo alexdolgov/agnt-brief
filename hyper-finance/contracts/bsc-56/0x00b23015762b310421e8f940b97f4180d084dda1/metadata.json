@@ -1,0 +1,18 @@
+{
+  "address": "0x00b23015762b310421e8f940b97f4180d084dda1",
+  "chain_id": 56,
+  "contract_name": "StrategyLendVenus",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:11:19.683Z"
+}

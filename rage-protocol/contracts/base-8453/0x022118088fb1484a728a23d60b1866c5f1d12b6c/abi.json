@@ -1,0 +1,849 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "allowHestia",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "allowCircle",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "payFortress",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "percentMultisig",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusMax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minUsdcValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twap",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct TowerStructs.OtcConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "ConfigChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputType",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputForMultisig",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputForBacking",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputForFortress",
+        "type": "uint256"
+      }
+    ],
+    "name": "OtcExecuted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "fortressData",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcPooled",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usdcStored",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "urmPooled",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "urmStored",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "urmBorrowed",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "fortressPreSync",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "syncRequested",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "urmRequested",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fortressSync",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "automator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageDepotValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ragePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circlePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "urmPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusCurrent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusNextIncrement",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusLastReset",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "wallet",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "canOtc",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "userBalance",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "contractBalance",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputType",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minInput",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maxInput",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "outputAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "outputBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "outputValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputForMultisig",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForMultisig",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputForBacking",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForBacking",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputForFortress",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForFortress",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "percentMultisig",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rageBalance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TowerStructs.OtcOverview",
+            "name": "lastTx",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "txCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "batchTxCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txHestiaCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txCircleCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txUsdcCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txUrmCount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForMultisig",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForBacking",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inputValueForFortress",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "fortressUrmAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "hestiaAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "circleAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "usdcAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "urmAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rageOutputAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rageOutputValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rageOutputBonus",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextConfigTime",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TowerStructs.OtcState",
+            "name": "state",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "active",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "allowHestia",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "allowCircle",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "payFortress",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "percentMultisig",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bonusInterval",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bonusMin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bonusMax",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minUsdcValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint32",
+                "name": "twap",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct TowerStructs.OtcConfig",
+            "name": "config",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TowerStructs.OtcGetState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "inputAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inputType",
+        "type": "uint256"
+      }
+    ],
+    "name": "otc",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inputAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inputType",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "userBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "otcOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "canOtc",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "userBalance",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "contractBalance",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minInput",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxInput",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outputAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outputBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outputValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputForMultisig",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputValueForMultisig",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputForBacking",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputValueForBacking",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputForFortress",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputValueForFortress",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "percentMultisig",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TowerStructs.OtcOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "allowHestia",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "allowCircle",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "payFortress",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "percentMultisig",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bonusMax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minUsdcValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twap",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct TowerStructs.OtcConfig",
+        "name": "newConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "setConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawEth",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAdr",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

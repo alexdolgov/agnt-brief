@@ -1,0 +1,18 @@
+{
+  "address": "0x0cbafbc90ac72e725023e195462ef31c7076c25f",
+  "chain_id": 137,
+  "contract_name": "TokenSplitter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:04:19.275Z"
+}

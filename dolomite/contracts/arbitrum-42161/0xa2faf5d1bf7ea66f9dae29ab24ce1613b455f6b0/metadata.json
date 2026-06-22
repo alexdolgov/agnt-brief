@@ -1,0 +1,18 @@
+{
+  "address": "0xa2faf5d1bf7ea66f9dae29ab24ce1613b455f6b0",
+  "chain_id": 42161,
+  "contract_name": "RegistryProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": null,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "Apache-2.0, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": "0x5296adc33f75785b6dd87a2de8bdade9fdedbb56",
+  "fetched_at": "2026-06-21T20:48:35.932Z"
+}

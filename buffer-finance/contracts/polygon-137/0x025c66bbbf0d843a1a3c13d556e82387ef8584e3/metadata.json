@@ -1,0 +1,18 @@
+{
+  "address": "0x025c66bbbf0d843a1a3c13d556e82387ef8584e3",
+  "chain_id": 137,
+  "contract_name": "BufferRouter",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:08:57.155Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1d8cce301b7411c5bc6b2a96afaa9a8118549a8f",
+  "chain_id": 42161,
+  "contract_name": "ClaimEthMulticall",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:43:16.942Z"
+}

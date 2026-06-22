@@ -1,0 +1,678 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMarketFactory",
+        "name": "_marketFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidDomainError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidExpiryError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidGroupError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidNonceError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidSignatureError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VerifierInvalidSignerError",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "group",
+        "type": "uint256"
+      }
+    ],
+    "name": "GroupCancelled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "NonceCancelled",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "group",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelGroup",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "group",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "signer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "domain",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "group",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiry",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Common",
+            "name": "common",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct GroupCancellation",
+        "name": "groupCancellation",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "cancelGroupWithSignature",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelNonce",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "domain",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "group",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Common",
+        "name": "common",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "cancelNonceWithSignature",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "groups",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "nonces",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IMarket",
+            "name": "market",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "UFixed6",
+            "name": "maxFee",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "signer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "domain",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "group",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiry",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Common",
+            "name": "common",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Action",
+        "name": "action",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "contract IMarket",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orderId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maxFee",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "signer",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "domain",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "group",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "expiry",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct Common",
+                "name": "common",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct Action",
+            "name": "action",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct CancelOrderAction",
+        "name": "action",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyCancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "domain",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "group",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Common",
+        "name": "common",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyCommon",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "group",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "signer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "domain",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "group",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiry",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Common",
+            "name": "common",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct GroupCancellation",
+        "name": "groupCancellation",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyGroupCancellation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint8",
+                "name": "side",
+                "type": "uint8"
+              },
+              {
+                "internalType": "int8",
+                "name": "comparison",
+                "type": "int8"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "price",
+                "type": "int256"
+              },
+              {
+                "internalType": "Fixed6",
+                "name": "delta",
+                "type": "int256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maxFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isSpent",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "referrer",
+                "type": "address"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "UFixed6",
+                    "name": "amount",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "fixedFee",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "unwrap",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct InterfaceFee",
+                "name": "interfaceFee",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct TriggerOrder",
+            "name": "order",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "contract IMarket",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "orderId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "UFixed6",
+                "name": "maxFee",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "signer",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "domain",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "group",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "expiry",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct Common",
+                "name": "common",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct Action",
+            "name": "action",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct PlaceOrderAction",
+        "name": "action",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyPlaceOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

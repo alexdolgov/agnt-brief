@@ -1,0 +1,18 @@
+{
+  "address": "0x211c4edf29b6758ae3c788b8f9c1802d20ecaafe",
+  "chain_id": 1,
+  "contract_name": "MinterDALinV1",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": "LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:11.978Z"
+}

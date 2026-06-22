@@ -1,0 +1,17 @@
+{
+  "address": "0x29cc07bb162351e2b977ec1e1a8a8a0239a57a49",
+  "chain_id": 43114,
+  "contract_name": "traderjoeSwapDebug",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000d0d88a13707a384699146f0ee27e6e0457177d780000000000000000000000003cd5854fe3a13707b7882d8290d3cae793a7751a000000000000000000000000040a5764f90d71fe584d98dcf49c17664a60f0d800000000000000000000000060ae616a2155ee3d9a68541ba4544862310933d4000000000000000000000000ce4a0ca29f3d2cc6db97158a09a3a5a6d546aa88",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:24.712Z"
+}

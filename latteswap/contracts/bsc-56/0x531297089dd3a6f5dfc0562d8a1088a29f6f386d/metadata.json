@@ -1,0 +1,17 @@
+{
+  "address": "0x531297089dd3a6f5dfc0562d8a1088a29f6f386d",
+  "chain_id": 56,
+  "contract_name": "OffChainOracle",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:50.307Z"
+}

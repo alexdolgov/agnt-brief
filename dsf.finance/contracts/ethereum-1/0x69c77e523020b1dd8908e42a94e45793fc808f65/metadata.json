@@ -1,0 +1,17 @@
+{
+  "address": "0x69c77e523020b1dd8908e42a94e45793fc808f65",
+  "chain_id": 1,
+  "contract_name": "DSFanalyticsMk3",
+  "compiler_version": "v0.8.35+commit.47b9dedd",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "00000000000000000000000022586ea4fdaa9ef012581109b336f0124530ae690000000000000000000000000b9d1e9ac8d2e407b75222cd132dbfafafb7125700000000000000000000000041f7cbdff2419af57566f0a34cdf7780163ccd8e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:40:38.912Z"
+}

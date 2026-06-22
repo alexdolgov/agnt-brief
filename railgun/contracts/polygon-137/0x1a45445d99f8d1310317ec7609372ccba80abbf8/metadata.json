@@ -1,0 +1,17 @@
+{
+  "address": "0x1a45445d99f8d1310317ec7609372ccba80abbf8",
+  "chain_id": 137,
+  "contract_name": "TreasuryMigration",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1600,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:01:13.700Z"
+}

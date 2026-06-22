@@ -1,0 +1,18 @@
+{
+  "address": "0x058dd4f5415ee2efdd5c90edef15a5610ce5ec4b",
+  "chain_id": 42161,
+  "contract_name": "GNSPriceAggregator",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 75,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:57.794Z"
+}

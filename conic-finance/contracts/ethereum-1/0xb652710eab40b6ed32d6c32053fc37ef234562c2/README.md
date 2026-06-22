@@ -1,0 +1,16 @@
+# InflationRedirectionPool
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0xb652710eab40b6ed32d6c32053fc37ef234562c2` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0xb652710eab40b6ed32d6c32053fc37ef234562c2`](../0xb652710eab40b6ed32d6c32053fc37ef234562c2/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

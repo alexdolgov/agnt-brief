@@ -4,27 +4,27 @@
 
 - Project: Coinstore (`coinstore`)
 - Website: [https://www.coinstore.com/](https://www.coinstore.com/)
-- Lifecycle: unknown
-- Generated: 2026-06-17T07:01:01.871Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: active (Tier 0, 14% below peak)
+- Generated: 2026-06-21T17:19:48.113Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: bsc
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $54,840,712.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -35,9 +35,9 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -71,11 +71,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x6148f7...e71c5f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

@@ -1,0 +1,18 @@
+{
+  "address": "0x041d005ef436c41383ad9a36bc86aee6cc526d07",
+  "chain_id": 137,
+  "contract_name": "MvxVester",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T22:11:40.108Z"
+}

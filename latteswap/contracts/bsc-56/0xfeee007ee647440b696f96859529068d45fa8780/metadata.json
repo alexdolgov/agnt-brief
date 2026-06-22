@@ -1,0 +1,17 @@
+{
+  "address": "0xfeee007ee647440b696f96859529068d45fa8780",
+  "chain_id": 56,
+  "contract_name": "BeanBag",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 168,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000008d78c2ff1fb4fba08c7691dfeac7bb425a91c81a",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:54:45.605Z"
+}

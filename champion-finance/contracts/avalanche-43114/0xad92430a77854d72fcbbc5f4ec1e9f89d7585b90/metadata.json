@@ -1,0 +1,17 @@
+{
+  "address": "0xad92430a77854d72fcbbc5f4ec1e9f89d7585b90",
+  "chain_id": 43114,
+  "contract_name": "UVICToken",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000409968a6e6cb006e8919de46a894138c43ee1d22000000000000000000000000b2325584dbbde69ff0d7dd91682aacd33854c85a000000000000000000000000a7d7079b0fead91f3e65f86e8915cb59c1a4c66400000000000000000000000060ae616a2155ee3d9a68541ba4544862310933d4",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:10.441Z"
+}

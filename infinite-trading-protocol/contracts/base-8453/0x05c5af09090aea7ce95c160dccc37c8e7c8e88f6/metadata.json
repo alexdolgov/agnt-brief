@@ -1,0 +1,17 @@
+{
+  "address": "0x05c5af09090aea7ce95c160dccc37c8e7c8e88f6",
+  "chain_id": 8453,
+  "contract_name": "PancakeNonfungiblePositionGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "00000000000000000000000008a664ca241dd50b1dd5c9ebb97eca33ac6f744e000000000000000000000000c6a2db661d5a5690172d8eb0a7dea2d3008665a3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:42:39.955Z"
+}

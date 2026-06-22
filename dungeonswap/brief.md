@@ -1,41 +1,52 @@
 # Agentic Audit Brief: DungeonSwap
 
+⚠️ Lifecycle status: DEAD - TVL dropped 7.2% over 90 days
+
 ## Project Overview
 
 - Project: DungeonSwap (`dungeonswap`)
 - Website: [https://dungeonswap.app](https://dungeonswap.app)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:58:37.920Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-06-20T01:11:22.882Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: bsc
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $28,399.93
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $12,090.01
+- TVL by chain: Bsc $12,090.01
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 4; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 1; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- ASD (verified + unaudited TVL): $12,090.01
+- Latest audit: 2021-04 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of $12,090.01 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -47,9 +58,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| DNDToken | token | bsc | n/a | [`0x14c358...7af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | ⚠️ Unaudited |
+| DungeonMaster | unknown | bsc | n/a | [`0x3720f1...2d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,19 +87,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DungeonSwap.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20A-M/DungeonSwap.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DungeonSwap.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20A-M/DungeonSwap.pdf) | unknown | Audit | 2021-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | [`0x14c358...7af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | DNDToken | token | $12,090.01 | Verified native implementation with $12,090.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3720f1...2d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | DungeonMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

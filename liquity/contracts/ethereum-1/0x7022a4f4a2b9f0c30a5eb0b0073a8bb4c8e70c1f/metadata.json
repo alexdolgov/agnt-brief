@@ -1,0 +1,17 @@
+{
+  "address": "0x7022a4f4a2b9f0c30a5eb0b0073a8bb4c8e70c1f",
+  "chain_id": 1,
+  "contract_name": "WETHZapper",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 51,
+  "constructor_arguments": "00000000000000000000000020f7c9ad66983f6523a0881d0f824065414175260000000000000000000000005ede834e9ec3503ad7dfc421ecd5c9eb82ab8fb90000000000000000000000003028b62a8388132d7193fe27cac1c2891d9af6be",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:03:40.105Z"
+}

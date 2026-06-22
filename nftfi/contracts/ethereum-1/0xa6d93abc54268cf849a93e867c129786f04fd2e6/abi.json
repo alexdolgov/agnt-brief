@@ -1,0 +1,702 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nftfiHub",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_offerTypes",
+        "type": "string[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_loanContracts",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotLoanCreatorContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DisabledLoanContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FunctionInformationArityMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LoanContractAlreadyRegistered",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LoanStatusMustBeNEW",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRegisteredLoanContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ObligationReceiptAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ObligationReceiptZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OfferTypeIsEmpty",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyDeployer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PromissoryNoteAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PromissoryNoteDoesntExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PromissoryNoteZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "offerType",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "TypeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint32",
+        "name": "loanId",
+        "type": "uint32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "loanContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ILoanCoordinator.StatusType",
+        "name": "newStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdateStatus",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptTransferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_offerType",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelLoanCommitment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelTransferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "checkAndInvalidateNonce",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "checkNonce",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_offerType",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "deleteOfferType",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "disableLoanContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "enableLoanContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_offerType",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getDefaultLoanContractForOfferType",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      }
+    ],
+    "name": "getLoanData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "loanContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "smartNftId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "enum ILoanCoordinator.StatusType",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ILoanCoordinator.Loan",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      }
+    ],
+    "name": "getLoanDataAndOfferType",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "loanContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "smartNftId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "enum ILoanCoordinator.StatusType",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ILoanCoordinator.Loan",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "getTypeOfLoanContract",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_offerType",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWhetherNonceHasBeenUsedForUser",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hub",
+    "outputs": [
+      {
+        "internalType": "contract INftfiHub",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_promissoryNoteToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_obligationReceiptToken",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "isLoanContractDisabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "isValidLoanId",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "validity",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      }
+    ],
+    "name": "mintObligationReceipt",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      }
+    ],
+    "name": "mintPromissoryNote",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "obligationReceiptToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "promissoryNoteToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "registerLoan",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_offerType",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      }
+    ],
+    "name": "registerOfferType",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string[]",
+        "name": "_offerTypes",
+        "type": "string[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_loanContracts",
+        "type": "address[]"
+      }
+    ],
+    "name": "registerOfferTypes",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rejectTransferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newOwnerCandidate",
+        "type": "address"
+      }
+    ],
+    "name": "requestTransferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      }
+    ],
+    "name": "resetSmartNfts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_loanId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bool",
+        "name": "_repaid",
+        "type": "bool"
+      }
+    ],
+    "name": "resolveLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "smartNftIdCounter",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalNumLoans",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0xb012e882c82ef3ca0ce526f2374887b4429a7228",
+  "chain_id": 1,
+  "contract_name": "PreSale",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:48:40.576Z"
+}

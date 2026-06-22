@@ -1,0 +1,119 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_totalSupply",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_depositValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_poolManagerLogic",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_poolFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "computeLiquidityMintTo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "recipient",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "manager",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dao",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referrer",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PoolLogicLib.LiquidityMintTo",
+        "name": "liquidityMintTo",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_redeemAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_poolManagerLogic",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_poolFactory",
+        "type": "address"
+      }
+    ],
+    "name": "computePoolTokensAllocation",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "toBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "toTransferManager",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "toTransferDao",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "toGetPortionFrom",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PoolLogicLib.PoolTokensAllocation",
+        "name": "tokens",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

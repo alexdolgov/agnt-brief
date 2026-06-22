@@ -1,0 +1,197 @@
+[
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "pool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimatedValueInToken0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "value0",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "pool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimatedValueInToken1",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "value1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "_pool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_liquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "getAmountsForLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "_pool",
+        "type": "IUniswapV3Pool"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLiquidityForAmounts",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "_tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_liquidity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeGrowthGlobalX128",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeGrowthInsideLastX128",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeGrowthOutsideX128Lower",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeGrowthOutsideX128Upper",
+        "type": "uint256"
+      }
+    ],
+    "name": "potisionSwapFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "swapFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

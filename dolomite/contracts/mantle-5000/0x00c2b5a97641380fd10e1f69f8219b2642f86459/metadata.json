@@ -1,0 +1,17 @@
+{
+  "address": "0x00c2b5a97641380fd10e1f69f8219b2642f86459",
+  "chain_id": 5000,
+  "contract_name": "GettersImpl",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T20:48:24.893Z"
+}

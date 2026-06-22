@@ -1,21 +1,37 @@
 {
   "schema_version": "2.0",
   "project_key": "pegasusdollar",
-  "generated_at": "2026-06-13T11:52:38.859Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:57:27.620Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "pegasusdollar",
+    "tier": 0,
+    "peak_tvl": 20093913,
+    "peak_date": "2022-04-13T00:00:00.000Z",
+    "tvl_30d_ago": 14103,
+    "tvl_90d_ago": 14183,
+    "tvl_current": 13971,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 14344,
+    "change_30d_pct": -0.9359710699851096,
+    "change_90d_pct": -1.4947472326024114,
+    "days_since_peak": 1528,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.93047148158747
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 7,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
@@ -25,33 +41,292 @@
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
+    "chains": [
+      "cronos"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-03",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Pegasusdollar is an algorithmic stablecoin protocol on Cronos that maintains a dollar-pegged token through seigniorage and bonding mechanisms. It uses a multi-contract system to manage minting, redemption, and treasury operations.",
+    "relationship_narrative": "All contracts belong to a single product family with no explicit sub-groupings; they likely share infrastructure for stablecoin operations such as minting, bonding, and treasury management, though exact roles are undetermined from available data.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 7,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 7,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x43713f13a350d104319126c13cd7402822a44f6b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x43713f13a350d104319126c13cd7402822a44f6b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x7614a4ceb3acdfcd4841d7bd76c30e7a401e83cd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x7614a4ceb3acdfcd4841d7bd76c30e7a401e83cd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x8efbaa6080412d7832025b03b9239d0be1e2aa3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x8efbaa6080412d7832025b03b9239d0be1e2aa3b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x97749c9b61f878a880dfe312d2594ae07aed7656",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xb8df27c687c6af9afe845a2afad2d01e199f4878",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xb8df27c687c6af9afe845a2afad2d01e199f4878",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xbbd4650eea85f9dbd83d6fb2a6e8b3d8f32fe1c5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xbbd4650eea85f9dbd83d6fb2a6e8b3d8f32fe1c5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xdd403db142a320261858840103b907c2486240c6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Pegasusdollar",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xdd403db142a320261858840103b907c2486240c6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13662,
@@ -61,7 +336,7 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -75,14 +350,14 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 13663,
-      "audit_key": "audit-13663",
+      "audit_id": 15992,
+      "audit_key": "audit-15992",
       "report_name": "SmartContract_Audit_Solidproof_PegasusDollar.pdf",
       "report_url": "https://github.com/solidproof/projects/blob/main/PegasusDollar/SmartContract_Audit_Solidproof_PegasusDollar.pdf",
       "auditor": "Solidproof",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -102,7 +377,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -115,7 +390,7 @@
         "report_name": "PeckShield-Audit-Report-PegasusDollar-v1.0.pdf"
       },
       {
-        "audit_id": 13663,
+        "audit_id": 15992,
         "report_name": "SmartContract_Audit_Solidproof_PegasusDollar.pdf"
       }
     ],

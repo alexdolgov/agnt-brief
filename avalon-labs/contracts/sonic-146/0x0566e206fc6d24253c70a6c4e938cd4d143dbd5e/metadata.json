@@ -1,0 +1,17 @@
+{
+  "address": "0x0566e206fc6d24253c70a6c4e938cd4d143dbd5e",
+  "chain_id": 146,
+  "contract_name": "VariableDebtToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:42:10.901Z"
+}

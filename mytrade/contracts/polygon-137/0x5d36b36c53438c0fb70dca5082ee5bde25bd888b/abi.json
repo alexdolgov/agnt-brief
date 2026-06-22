@@ -1,0 +1,837 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_WETH",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_uniswapV2Factory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_maker",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromTokenNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toTokenNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "addOrder",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_maker",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromTokenNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toTokenNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "addOrderForETH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_maker",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toTokenNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "addOrderWithETH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromTokenNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toTokenNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "addOrderWithPreDiposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "allUserDiposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_num",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrderForNum",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_num",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrderForNumWithPreDiposit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_num",
+        "type": "uint256"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feeAddr",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "flashLoan",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "forPreDiposit",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromTokenNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toTokenNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_depth",
+        "type": "uint256"
+      }
+    ],
+    "name": "getClosestOrderIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "closestOrderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "isEnd",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      }
+    ],
+    "name": "getLastOrderIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastOrderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getNextOrderIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "nextOrderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_orderIndexs",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getOrderByIndexBatch",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "makers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "fromTokenAddrs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "fromTokenNumbers",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "timestamps",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "remainNumbers",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "toTokenNumbers",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "toTokenSums",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderStartIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_records",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPageOrders",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "orderIndexs",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_toTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPreOrderIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "preOrderIndex",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isOwner",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "myTradeOrderMining",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenA",
+        "type": "address"
+      }
+    ],
+    "name": "safeApproveFlashLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_feeAddr",
+        "type": "address"
+      }
+    ],
+    "name": "setFeeAddr",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_forPreDiposit",
+        "type": "address"
+      }
+    ],
+    "name": "setForPreDiposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinLimit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_myTradeOrderBookExtAddr",
+        "type": "address"
+      }
+    ],
+    "name": "setMyTradeOrderBookExtAddr",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_myTradeOrderMining",
+        "type": "address"
+      }
+    ],
+    "name": "setMyTradeOrderMining",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_swapMininng",
+        "type": "address"
+      }
+    ],
+    "name": "setSwapMining",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "swapMining",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV2Factory",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV2Factory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "userDiposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_num",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

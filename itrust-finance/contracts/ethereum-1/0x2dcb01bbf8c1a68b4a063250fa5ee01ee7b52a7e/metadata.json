@@ -1,0 +1,17 @@
+{
+  "address": "0x2dcb01bbf8c1a68b4a063250fa5ee01ee7b52a7e",
+  "chain_id": 1,
+  "contract_name": "IdleCreditVaultFactory",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:22:31.332Z"
+}

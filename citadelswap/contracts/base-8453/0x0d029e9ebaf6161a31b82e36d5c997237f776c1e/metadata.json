@@ -1,0 +1,18 @@
+{
+  "address": "0x0d029e9ebaf6161a31b82e36d5c997237f776c1e",
+  "chain_id": 8453,
+  "contract_name": "DividendsV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:37:04.852Z"
+}

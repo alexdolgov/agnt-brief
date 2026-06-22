@@ -1,49 +1,82 @@
 {
   "schema_version": "2.0",
   "project_key": "klend",
-  "generated_at": "2026-06-13T13:31:47.257Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T20:03:04.638Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "klend",
+    "tier": 0,
+    "peak_tvl": 1794918,
+    "peak_date": "2021-12-08T00:00:00.000Z",
+    "tvl_30d_ago": 1447,
+    "tvl_90d_ago": 1447,
+    "tvl_current": 1447,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 1447,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 1654,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.91938350387038
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 2,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 100,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 5802.518840000001,
     "tvl_usd": 5802.518840000001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "SlowMist"
+    ],
+    "latest_audit_date": "2021-03",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 60,
+    "live_contracts": 2,
+    "inactive_contracts": 52,
+    "singleton_contracts": 6,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 2,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 15,
+    "unverified_dependencies": 1,
+    "detected_codebases": [
+      "compound-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +84,82 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2c334c6cbc0547e759084bd8d469f933b17ff481",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CEther",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CEther",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2c334c6cbc0547e759084bd8d469f933b17ff481",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13348"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xf95995d642c652e9a7d124d546a7bdf297c6d0fb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Comp",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "KLend",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Comp",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf95995d642c652e9a7d124d546a7bdf297c6d0fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13348"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13348,
@@ -60,40 +168,80 @@
       "report_url": "https://github.com/klend-lab/klend-protocol/blob/main/slowmist.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CETHToken",
+        "CErc20",
+        "CErc20Delegate",
+        "CErc20Delegator",
+        "CEther",
+        "CToken",
+        "CTokenInterfaces",
+        "CarefulMath",
+        "Comp",
+        "Comptroller",
+        "ComptrollerInterface",
+        "ComptrollerStorage",
+        "EIP20Interface",
+        "EIP20NonStandardInterface",
+        "ETHInterestRateModel",
+        "ErrorReporter",
+        "Exponential",
+        "ExponentialNoError",
+        "GovernorAlpha",
+        "InterestRateModel",
+        "InviterStorage",
+        "JumpRateModelV2",
+        "KLTRelease",
+        "KLendPool",
+        "KLendPriceOracle",
+        "PriceOracle",
+        "PriceOracleProxy",
+        "ReentrancyGuard",
+        "SafeMath",
+        "Timelock",
+        "Unitroller",
+        "WhitePaperInterestRateModel"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "SlowMist",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": "2021-03"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 39
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13348,
-        "report_name": "slowmist.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

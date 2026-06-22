@@ -1,0 +1,18 @@
+{
+  "address": "0x59ae80a4c29df80fb2c61e657f3c7fa98ca985c1",
+  "chain_id": 42161,
+  "contract_name": "BorrowingFeesUtils",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 71,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:16.122Z"
+}

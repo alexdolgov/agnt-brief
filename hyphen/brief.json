@@ -1,57 +1,751 @@
 {
   "schema_version": "2.0",
   "project_key": "hyphen",
-  "generated_at": "2026-06-13T10:08:38.260Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T08:21:25.326Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "hyphen",
+    "tier": 1,
+    "peak_tvl": 30155542,
+    "peak_date": "2025-06-07T00:00:00.000Z",
+    "tvl_30d_ago": 100361,
+    "tvl_90d_ago": 100361,
+    "tvl_current": 100361,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 145588,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "governance_raw": {
+      "evidence": "The protocol's TVL has dropped 99.67% from its peak, but the homepage shows active development and partnerships, indicating it is still operational.",
+      "confidence": 0.3,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 379,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.66718887029124,
+    "governance_evidence": "The protocol's TVL has dropped 99.67% from its peak, but the homepage shows active development and partnerships, indicating it is still operational.",
+    "governance_confidence": 0.3,
+    "governance_text_chars": 4258,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 15,
+    "total_addresses": 23,
+    "unique_implementations": 15,
+    "total_deployments": 23,
+    "audited_contracts": 7,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 10,
-    "scoreable_audits": 0,
+    "contracts_unverified": 5,
+    "coverage_pct": 70,
+    "total_audits": 11,
+    "scoreable_audits": 10,
     "dl_tvl_usd": 100361.00731,
     "tvl_usd": 100361.00731,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.biconomy.io",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "chains": [
+      "base",
+      "ethereum",
+      "optimism",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 50,
+    "tier1_auditors": [
+      "Cyfrin",
+      "Spearbit"
+    ],
     "latest_audit_date": "2026-05",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 5,
-      "stale": 1,
-      "unknown": 3
+      "aging": 9,
+      "stale": 0,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Hyphen is a bridge protocol enabling cross-chain asset transfers. It uses smart contract wallets and paymasters to facilitate gasless transactions and account abstraction across Ethereum, Base, Polygon, and Optimism.",
+    "relationship_narrative": "The Nexus & MEE family builds on the Legacy Contracts by upgrading wallet and validator implementations. Sponsorship Paymaster Contracts and Base & Optimism families integrate with the wallet infrastructure to enable gasless and token-based fee payments across chains.",
+    "product_family_count": 7,
+    "total_contracts_indexed": 25,
+    "live_contracts": 9,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 14,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 10,
+    "unverified_dependencies": 1,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0000006087310897e0bffcb3f0ed3704f7146852",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BiconomySponsorshipPaymaster",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Sponsorship Paymaster Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BiconomySponsorshipPaymaster",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000072a5f551d6e80b2f6ad4fb256a27841bbc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0000006087310897e0bffcb3f0ed3704f7146852",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x00000072a5f551d6e80b2f6ad4fb256a27841bbc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0000006087310897e0bffcb3f0ed3704f7146852",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EntryPoint",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "​ Legacy Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EntryPoint",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000001f1c68bd5bf69aa1ccc1d429700d41da",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EtherForwarder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Composability & Utility",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EtherForwarder",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000001f1c68bd5bf69aa1ccc1d429700d41da",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000afe527a978ecb761008af475cff04132a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000d12897ddadc2044614a9677b191a2d95",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "K1MeeValidator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "K1MeeValidator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000d12897ddadc2044614a9677b191a2d95",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000e894100becfc7c934ab7ac8fba08a44c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13271",
+        "audit-13274",
+        "audit-13275"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000002d6db27c52e3c11c1cf24072004ac75cba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "K1Validator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Legacy Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "K1Validator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000002d6db27c52e3c11c1cf24072004ac75cba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13266",
+        "audit-13267",
+        "audit-13268",
+        "audit-13269",
+        "audit-13270"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000024115aa990f0bae0b6b0d5b8f68b684cd6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "K1ValidatorFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Legacy Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "K1ValidatorFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000024115aa990f0bae0b6b0d5b8f68b684cd6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13266",
+        "audit-13267",
+        "audit-13270"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000004f43c49e93c970e84001853a70923b03",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Nexus",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Nexus",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000004f43c49e93c970e84001853a70923b03",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000008761e87f023f65c49dc9cb1c7edfeaaf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13266",
+        "audit-13267",
+        "audit-13268",
+        "audit-13269",
+        "audit-13270",
+        "audit-13271",
+        "audit-13272"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000001d1d5004a02bafab9de2d6ce5b7b13de",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NexusAccountFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NexusAccountFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000001d1d5004a02bafab9de2d6ce5b7b13de",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000226cada0d8b36034f5d5c06855f59f6f3a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13266",
+        "audit-13267",
+        "audit-13270",
+        "audit-13271"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000d3254452a909e4eed47455af7e27c289",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "NexusBootstrap",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NexusBootstrap",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000d3254452a909e4eed47455af7e27c289",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000f5b753fdd20c5ca2d7c1210b3ab1ea5903",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13269",
+        "audit-13270"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000671eb337e12fe5db0e788f32e1d71b183",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Storage",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Composability & Utility",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Storage",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000671eb337e12fe5db0e788f32e1d71b183",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13267",
+        "audit-13270",
+        "audit-13272",
+        "audit-13273"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000001964d23c59962fc7a912872ee8fb3b6a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000001964d23c59962fc7a912872ee8fb3b6a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000c8b6b3329cea5d15c9d8c15f1f254ec3c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000c8b6b3329cea5d15c9d8c15f1f254ec3c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000c4781be3349f81d341027fd7a4edfa4dd2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000c4781be3349f81d341027fd7a4edfa4dd2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4b19129ea58431a06d01054f69acae5de50633b6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "200",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4b19129ea58431a06d01054f69acae5de50633b6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe854c84cd68fc434cb3b0042c29235d452cad977",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Nexus & MEE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe854c84cd68fc434cb3b0042c29235d452cad977",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13266,
@@ -60,18 +754,31 @@
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/CodeHawks-Cyfrin-Competition-170924.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024",
+      "freshness": "aging",
+      "date": "2024-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseAccount",
+        "BiconomyMetaFactory",
+        "Bootstrap",
+        "INexusAccountFactory",
+        "K1Validator",
+        "K1ValidatorFactory",
+        "ModuleManager",
+        "Nexus",
+        "NexusAccountFactory",
+        "RegistryAdapter",
+        "RegistryBootstrap",
+        "RegistryFactory"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,18 +788,46 @@
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-0708-updated.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseAccount",
+        "Bootstrap",
+        "Constants",
+        "EIP712",
+        "ExecLib",
+        "ExecutionHelper",
+        "IERC7484",
+        "IFallback",
+        "IHook",
+        "IModuleManagerEvents",
+        "INexus",
+        "IStorage",
+        "IValidator",
+        "K1Validator",
+        "K1ValidatorFactory",
+        "LocalCallDataParserLib",
+        "ModeLib",
+        "ModuleManager",
+        "ModuleTypeLib",
+        "Nexus",
+        "NexusAccountFactory",
+        "NonceLib",
+        "Receiver",
+        "RegistryAdapter",
+        "RegistryBootstrap",
+        "RegistryFactory",
+        "Storage"
+      ],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -102,18 +837,24 @@
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-erc7739-addon-final.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Constants",
+        "ERC7739Validator",
+        "K1Validator",
+        "Nexus",
+        "SentinelList"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -123,18 +864,24 @@
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/Biconomy-Nexus_Zenith-Audit-Report.pdf",
       "auditor": "Zenith",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "K1Validator",
+        "ModuleManager",
+        "Nexus",
+        "NexusBootstrap",
+        "NexusProxy"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -150,12 +897,38 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssociatedArrayLib",
+        "BaseAccount",
+        "BiconomyMetaFactory",
+        "BootstrapLib",
+        "BytesLib",
+        "EnumerableMap4337",
+        "EnumerableSet4337",
+        "ExecLib",
+        "ExecutionHelper",
+        "Initializable",
+        "K1Validator",
+        "K1ValidatorFactory",
+        "LocalCallDataParserLib",
+        "ModeLib",
+        "ModuleManager",
+        "ModuleTypeLib",
+        "Nexus",
+        "NexusAccountFactory",
+        "NexusBootstrap",
+        "NonceLib",
+        "ProxyLib",
+        "RegistryAdapter",
+        "RegistryFactory",
+        "Stakeable",
+        "Storage"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -171,12 +944,20 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ComposabilityDataTypes",
+        "ComposableExecutionLib",
+        "ComposableExecutionModule",
+        "K1MeeValidator",
+        "Nexus",
+        "NexusAccountFactory",
+        "NodePaymaster"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -192,12 +973,18 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ComposableExecutionLib",
+        "ComposableExecutionModule",
+        "ModuleManager",
+        "Nexus",
+        "Storage"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -213,13 +1000,30 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ComposabilityDataTypes",
+        "ComposableExecutionBase",
+        "ComposableExecutionLib",
+        "ComposableExecutionModule",
+        "Constants",
+        "Storage"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13273,
+          "report_url": "https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability-Pashov-Review.pdf"
+        },
+        {
+          "audit_id": 16248,
+          "report_url": "https://github.com/bcnmy/erc8211-contracts/blob/main/audits/2025-03-Composability-Pashov-Review.pdf"
+        }
+      ]
     },
     {
       "audit_id": 13274,
@@ -234,12 +1038,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "EcdsaLib",
+        "K1MeeValidator",
+        "NodePaymaster",
+        "PermitValidatorLib",
+        "SimpleValidatorLib",
+        "TxValidatorLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -255,6 +1066,32 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseNodePaymaster",
+        "Constants",
+        "K1MeeValidator",
+        "NodePaymaster"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 16245,
+      "audit_key": "audit-16245",
+      "report_name": ".gitkeep",
+      "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/.gitkeep",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -264,59 +1101,77 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Pashov Audit Group",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 70,
+      "latest_audit": "2026-05"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 5,
+      "coverage_pct": 50,
+      "latest_audit": "2025-03"
+    },
+    {
+      "auditor": "Cyfrin",
+      "tier": 1,
+      "contracts_covered": 4,
+      "coverage_pct": 40,
+      "latest_audit": "2024-09"
+    },
+    {
+      "auditor": "Zenith",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 40,
+      "latest_audit": "2025-04"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0000006087310897e0bffcb3f0ed3704f7146852",
+      "name": "BiconomySponsorshipPaymaster",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000001f1c68bd5bf69aa1ccc1d429700d41da",
+      "name": "EtherForwarder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 14,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 45
+    },
+    "extraction_confidence_counts": {
+      "high": 10
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 13266,
-        "report_name": "CodeHawks-Cyfrin-Competition-170924.pdf"
-      },
-      {
-        "audit_id": 13267,
-        "report_name": "* [Core audit]()"
-      },
-      {
-        "audit_id": 13268,
-        "report_name": "* [ERC-7739]()"
-      },
-      {
-        "audit_id": 13269,
-        "report_name": "Biconomy-Nexus_Zenith-Audit-Report.pdf"
-      },
-      {
-        "audit_id": 13270,
-        "report_name": "Nexus-Pashov-Review_2025-03.pdf"
-      },
-      {
-        "audit_id": 13271,
-        "report_name": "The composability module is **audited by Pashov Audit Group** ([May 2026 report]()) and deployed deterministically at `0x0000821108B5C9F3fe17E40811bE5b66DaF8f0e7` (module) and `0x00008211dea1Aca67ac55fc44AE3bF88CF41281d` (storage) on every supported chain."
-      },
-      {
-        "audit_id": 13272,
-        "report_name": "* [Zenith Report (2025-03)]()"
-      },
-      {
-        "audit_id": 13273,
-        "report_name": "* [Pashov Report (2025-03)]()"
-      },
-      {
-        "audit_id": 13274,
-        "report_name": "2025-02 Zenith Audit Report - Biconomy MEE Contracts.pdf"
-      },
-      {
-        "audit_id": 13275,
-        "report_name": "2025-04 Zenith Audit Report - Node PM Sponsorship.pdf"
+        "audit_id": 16245,
+        "report_name": ".gitkeep"
       }
     ],
     "inherited_remapped_matches": []

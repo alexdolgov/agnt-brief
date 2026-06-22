@@ -1,0 +1,18 @@
+{
+  "address": "0x26d5c18984a6a2b92382e801c06635d3e6fd7995",
+  "chain_id": 42161,
+  "contract_name": "TokenStaking",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:38:51.918Z"
+}

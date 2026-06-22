@@ -1,0 +1,17 @@
+{
+  "address": "0x4a30cb77aac31c9b7fec0700feacd3bdb44147f6",
+  "chain_id": 43114,
+  "contract_name": "FortiFiPriceOracle",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0x000000000000000000000000a25eaf2906fa1a3a13edac9b9657108af7b703e3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:09:56.857Z"
+}

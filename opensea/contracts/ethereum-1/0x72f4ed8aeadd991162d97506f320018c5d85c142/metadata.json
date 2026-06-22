@@ -1,0 +1,18 @@
+{
+  "address": "0x72f4ed8aeadd991162d97506f320018c5d85c142",
+  "chain_id": 1,
+  "contract_name": "MinterSetPricePolyptychERC20V5",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 25,
+  "evm_version": "paris",
+  "license": "CC0-1.0, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T09:34:17.689Z"
+}

@@ -1,0 +1,924 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rage",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rSwap",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nftId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "owner1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner2",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "automator",
+        "type": "address"
+      }
+    ],
+    "name": "AutomatorSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stackRage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stackHestia",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "boostRage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "crushDecrease",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "crushBuy",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "burstRage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "burstLoop",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "slippage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "podAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sideAddress1",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sideAddress2",
+        "type": "address"
+      }
+    ],
+    "name": "ConfigChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nftId",
+        "type": "uint256"
+      }
+    ],
+    "name": "LockNft",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageIncrease",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcIncrease",
+        "type": "uint256"
+      }
+    ],
+    "name": "PoolBoosted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageCollected",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcCollected",
+        "type": "uint256"
+      }
+    ],
+    "name": "RageBursted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proposer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingRbp",
+        "type": "address"
+      }
+    ],
+    "name": "RageBuyingProtocolProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newRbp",
+        "type": "address"
+      }
+    ],
+    "name": "RageBuyingProtocolSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageBurned",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcBought",
+        "type": "uint256"
+      }
+    ],
+    "name": "RageCrushed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RageTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SupplyBurned",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "percent",
+        "type": "uint256"
+      }
+    ],
+    "name": "SupplyRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageSold",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pHestia",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pCircle",
+        "type": "uint256"
+      }
+    ],
+    "name": "UnderlyingStacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "requester",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "activeSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "YearlyAllowanceRequested",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "burnSupply",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getActiveSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAutomator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMultisig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOwners",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "owner1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner2",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRageBuyingProtocol",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRageInNft",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "rageSwapper",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "multisig",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcBalance",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "stackRage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "stackHestia",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "boostRage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint128",
+                "name": "crushDecrease",
+                "type": "uint128"
+              },
+              {
+                "internalType": "bool",
+                "name": "crushBuy",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "burstRage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "burstLoop",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "podAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "sideAddress1",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "sideAddress2",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RageStructs.RceConfig",
+            "name": "config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "nextBoostTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextStackTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextCrushTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextBurstTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextConfigTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextYearlyAllowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "poolToken0",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nftLocked",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "rageBuyingProtocol",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "pendingRbp",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "ownerProposer",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "owner1",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "owner2",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "automator",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountAllowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountTransfer",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountMint",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountRageStack",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountUsdcBoost",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountRageBoost",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountUsdcCrush",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastStackTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastStackAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastBoostTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastBoostAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastCrushTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastCrushAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastBurstTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastBurstAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RageStructs.RceStateValue",
+            "name": "state",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct RageStructs.RceState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockNFT",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolBoost",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rageBurst",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rageCrush",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "percent",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestSupply",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "percent",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestYearlyAllowance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "automator",
+        "type": "address"
+      }
+    ],
+    "name": "setAutomator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stackRage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stackHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostRage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "crushDecrease",
+            "type": "uint128"
+          },
+          {
+            "internalType": "bool",
+            "name": "crushBuy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "burstRage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "burstLoop",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "podAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sideAddress1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sideAddress2",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct RageStructs.RceConfig",
+        "name": "newConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "setConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newRbp",
+        "type": "address"
+      }
+    ],
+    "name": "setRageBuyingProtocol",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stackUnderlying",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferRage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawEth",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAdr",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

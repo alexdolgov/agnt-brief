@@ -1,0 +1,18 @@
+{
+  "address": "0x5145cedb4aad80226e28adb453c6ab4c710160fa",
+  "chain_id": 8453,
+  "contract_name": "LiquidityLock",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:37:20.353Z"
+}

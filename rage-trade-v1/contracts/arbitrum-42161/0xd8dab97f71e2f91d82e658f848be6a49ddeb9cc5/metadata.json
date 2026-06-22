@@ -1,0 +1,18 @@
+{
+  "address": "0xd8dab97f71e2f91d82e658f848be6a49ddeb9cc5",
+  "chain_id": 42161,
+  "contract_name": "VPoolWrapper",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 4999,
+  "evm_version": "london",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:08:31.732Z"
+}

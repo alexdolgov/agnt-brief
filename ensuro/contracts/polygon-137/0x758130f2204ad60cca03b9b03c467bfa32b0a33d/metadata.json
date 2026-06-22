@@ -1,0 +1,17 @@
+{
+  "address": "0x758130f2204ad60cca03b9b03c467bfa32b0a33d",
+  "chain_id": 137,
+  "contract_name": "ERC4626InvestStrategy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:22:48.447Z"
+}

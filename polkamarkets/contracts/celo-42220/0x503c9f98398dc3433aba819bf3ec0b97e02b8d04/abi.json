@@ -1,0 +1,204 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPredictionMarketV3",
+        "name": "_PredictionMarketV3",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "PredictionMarketV3",
+    "outputs": [
+      {
+        "internalType": "contract IPredictionMarketV3",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserAllMarketsData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "outcomeShares",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "voidedSharesToClaim",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PredictionMarketV3Querier.UserMarketData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserMarketData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "outcomeShares",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "voidedSharesToClaim",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PredictionMarketV3Querier.UserMarketData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "marketIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserMarketsData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "outcomeShares",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "winningsClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityToClaim",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityClaimed",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "voidedSharesToClaim",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PredictionMarketV3Querier.UserMarketData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

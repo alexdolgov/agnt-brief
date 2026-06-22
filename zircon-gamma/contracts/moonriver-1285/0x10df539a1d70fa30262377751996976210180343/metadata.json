@@ -1,0 +1,17 @@
+{
+  "address": "0x10df539a1d70fa30262377751996976210180343",
+  "chain_id": 1285,
+  "contract_name": "ZirconPeripheralLibrary",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:47:25.907Z"
+}

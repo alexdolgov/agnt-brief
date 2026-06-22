@@ -1,0 +1,17 @@
+{
+  "address": "0x0487fefa67443696922e4206126c394c3bf26d70",
+  "chain_id": 146,
+  "contract_name": "RewardsController",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:42:11.881Z"
+}

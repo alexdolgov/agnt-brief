@@ -1,0 +1,181 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IChromaticMarketFactory",
+        "name": "_factory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IAutomateBP",
+        "name": "automate",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAccessableByDao",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lp",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bp",
+        "type": "address"
+      }
+    ],
+    "name": "ChromaticBPCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "automateBP",
+        "type": "address"
+      }
+    ],
+    "name": "SetAutomateBP",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "automateBP",
+    "outputs": [
+      {
+        "internalType": "contract IAutomateBP",
+        "name": "automate",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bpList",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "bpAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lp",
+        "type": "address"
+      }
+    ],
+    "name": "bpListByLP",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "bpAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IChromaticLP",
+            "name": "lp",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalReward",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minRaisingTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxRaisingTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTimeOfWarmup",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDurationOfWarmup",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "durationOfLockup",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BPConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "createBP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "marketFactory",
+    "outputs": [
+      {
+        "internalType": "contract IChromaticMarketFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAutomateBP",
+        "name": "automate",
+        "type": "address"
+      }
+    ],
+    "name": "setAutomateBP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

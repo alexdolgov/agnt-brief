@@ -1,0 +1,1555 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rce",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "calc",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "approved",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "Approval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
+    ],
+    "name": "ApprovalForAll",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "newBaseURI",
+        "type": "string"
+      }
+    ],
+    "name": "BaseUriUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "OptionMinted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "approve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "balanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "contractURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "exists",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllClaims",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableStart",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateClaimableEnd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageAfterFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastClaimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastClaimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configClaimValidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Claim[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllForOwner",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionType",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "walletCreated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "walletUpdated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateMintable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdpAble",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateRefundable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcRefund",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configMintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Option[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllOptions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionType",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "walletCreated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "walletUpdated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateMintable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdpAble",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateRefundable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcRefund",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configMintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Option[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getApproved",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getClaimsOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "activeClaimsCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimedCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingClaimsCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableNowCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredClaimsCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalRageToBurn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimedHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimedCircle",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.ClaimsOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOption",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionType",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "walletCreated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "walletUpdated",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateCreated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateUpdated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateMintable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdpAble",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateRefundable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fmv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backingPerShare",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcRefund",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageEstimated",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleEcosystemBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configHestiaPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configCirclePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configMintDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configAdpPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "configRefundDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.Option",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "twap",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "refundTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOptionsOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalDebtReal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adpDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adpDebtReal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundDebtReal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "mintableRage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcInvested",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleInvestorBonus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionActiveCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionMintCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionAdpCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionRefundCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalPendingHestia",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalPendingCircle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsRefundableWithinThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundDebtRealThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsMintableNow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsAdpAbleNow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionsRefundableNow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAdpDilution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalRefundValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalRageMinted",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RageStructs.OptionsOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRageBuyingProtocol",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRageChaosEngine",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "rce",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rbp",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "baseUri",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "contractUri",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct RageStructs.RonState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      }
+    ],
+    "name": "isApprovedForAll",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "isAutomator",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "isRageBuyingProtocol",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "mint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "ownerOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "safeTransferFrom",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "safeTransferFrom",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
+    ],
+    "name": "setApprovalForAll",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "newBaseURI",
+        "type": "string"
+      }
+    ],
+    "name": "setBaseURI",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "symbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferFrom",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x03bcd63abaf8452e2675e5ddf5f62dc8036edfb6",
+  "chain_id": 137,
+  "contract_name": "Batch",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "0000000000000000000000007051cb544c4a8d5aad1be46cc9524e48108e60b4",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:21:54.111Z"
+}

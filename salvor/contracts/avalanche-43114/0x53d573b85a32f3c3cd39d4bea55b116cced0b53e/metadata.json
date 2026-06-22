@@ -1,0 +1,17 @@
+{
+  "address": "0x53d573b85a32f3c3cd39d4bea55b116cced0b53e",
+  "chain_id": 43114,
+  "contract_name": "LitterBox",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:41.577Z"
+}

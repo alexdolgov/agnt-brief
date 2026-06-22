@@ -1,0 +1,18 @@
+{
+  "address": "0xffcdaad0d17cad6d83268a536ffb6b3cc14ca75c",
+  "chain_id": 8453,
+  "contract_name": "StableSwapWNATIVEHelper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:28.470Z"
+}

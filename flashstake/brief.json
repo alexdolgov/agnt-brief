@@ -1,57 +1,598 @@
 {
   "schema_version": "2.0",
   "project_key": "flashstake",
-  "generated_at": "2026-06-13T11:01:09.424Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-20T02:44:07.681Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "flashstake",
+    "tier": 1,
+    "peak_tvl": 5459122,
+    "peak_date": "2023-05-29T00:00:00.000Z",
+    "tvl_30d_ago": 45664,
+    "tvl_90d_ago": 45171,
+    "tvl_current": 37199,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 62310,
+    "change_30d_pct": -18.537578836720392,
+    "change_90d_pct": -17.64849128865865,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.3% from peak, but the protocol still has a functional website and dApp, no shutdown announcement.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 1118,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.31859005898751,
+    "governance_evidence": "TVL dropped 99.3% from peak, but the protocol still has a functional website and dApp, no shutdown announcement.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 2741,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 12,
+    "total_addresses": 18,
+    "unique_implementations": 12,
+    "total_deployments": 18,
+    "audited_contracts": 3,
+    "unaudited_contracts": 9,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 25,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 36640.74938,
-    "tvl_usd": 36640.74938,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 1250340.1246326338,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 274924.62,
+      "ethereum": 975415.5
+    },
+    "asd_usd": 274924.6246326338,
     "website_url": "https://flashstake.io/",
-    "chains": [],
+    "chains": [
+      "arbitrum",
+      "ethereum",
+      "optimism"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-07",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 1
+      "stale": 3,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Flashstake is a DeFi protocol that lets users instantly receive upfront yield on staked assets by locking tokens for a chosen duration. It issues fTokens representing the staked position and uses a time-based incentive mechanism to distribute rewards.",
+    "relationship_narrative": "All families share the Flash Protocol core logic (FlashProtocol, FlashProtocolProxyV2) and token standards (FlashToken, FlashNFT, FTokenAccumulatorV3) deployed across chains. The FlashFTokenFactory registry and FlashBack/FlashBackLM contracts provide shared infrastructure for fToken creation and liquidity mining rewards on mainnet and Arbitrum.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 73,
+    "live_contracts": 18,
+    "inactive_contracts": 55,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
+    "dependencies_extracted": 3,
+    "unverified_dependencies": 0,
+    "detected_codebases": [
+      "uniswap-v2"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet (Ethereum)",
+      "tvl_usd": 975415.5,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 975415.5,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13129"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc628534100180582e43271448098cb2c185795bd",
+      "deployment_unit": "unit-41038",
+      "deployment_unit_proxy_count": 1,
+      "name": "StandardArbERC20",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Arbitrum",
+      "tvl_usd": 274924.6246326338,
+      "is_proxy": true,
+      "impl_address": "0x3f770ac673856f105b586bb393d122721265ad46",
+      "impl_name": "StandardArbERC20",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc628534100180582e43271448098cb2c185795bd",
+          "deployment_unit": "unit-41038",
+          "deployment_unit_proxy_count": 1,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 274924.6246326338,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x907a749631ad4149df1d49ee2fd40517b12df573",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashGLPStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashGLPStrategy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x907a749631ad4149df1d49ee2fd40517b12df573",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet (Ethereum)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashNFT",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe15314691e916087028a6bf4b8bd1ced1fd41996",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13129"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashProtocol",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet (Ethereum)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashProtocol",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13128",
+        "audit-13129",
+        "audit-16149"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9497116d258924621c60384f53afab29cb3ae193",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashProtocolProxyV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Arbitrum",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashProtocolProxyV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb6db29351c57dbd678e914fbba0d400df2806e6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9497116d258924621c60384f53afab29cb3ae193",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x08719dcab4684603aab851f8bc2d26ab98b50a77",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FTokenAccumulatorV3",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Arbitrum",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FTokenAccumulatorV3",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xefd1d1eb731bf69f400023c009da79d58765b160",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xcb1205ac28693beda01e0b66e9b4d06231609bfd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x08719dcab4684603aab851f8bc2d26ab98b50a77",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x86bea60374f220de9769b2fef2db725bc1cdd335",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "L2StandardERC20",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "Optimism",
+      "product_line": "Optimistic Ethereum (Optimism)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L2StandardERC20",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x86bea60374f220de9769b2fef2db725bc1cdd335",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x21d929770398df5146346390d2973bf3f30b7684",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LiquidStake",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet (Ethereum)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidStake",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x21d929770398df5146346390d2973bf3f30b7684",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7cd98120d44964ccb670f26dc5e3fde23f345e23",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb2f7f05e204796df9bbed12d6d1be687089b929d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MessageDB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MessageDB",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb2f7f05e204796df9bbed12d6d1be687089b929d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb1c33de7a914f4d9ba293a055822cbc6e662a698",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Flashstake",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb1c33de7a914f4d9ba293a055822cbc6e662a698",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x082aeb8d095b4ea1ad935035ef1239928ac59dd1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "xFlash",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xFlash",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x082aeb8d095b4ea1ad935035ef1239928ac59dd1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13128,
@@ -61,17 +602,22 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FlashBack",
+        "FlashProtocol",
+        "FlashStrategy",
+        "FlashStrategyAAVEv2"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -81,69 +627,160 @@
       "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuSS80x7aqdxZF3ZpWjhq%2Fuploads%2FROj5eOQnrj9vn3lRfpgw%2Fsecure3_flashstake_audit.pdf?alt=media",
       "auditor": "Secure3/Openkertify",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "DataTypes",
+        "FlashBack",
+        "FlashFToken",
+        "FlashFTokenFactory",
+        "FlashNFT",
+        "FlashProtocol",
+        "FlashStrategyAAVEv2",
+        "FlashToken",
+        "IAaveIncentivesController",
+        "IERC20C",
+        "IFlashFToken",
+        "IFlashFTokenFactory",
+        "IFlashNFT",
+        "IFlashStrategy",
+        "ILendingPool",
+        "ILendingPoolAddressesProvider",
+        "IUserIncentive",
+        "UserIncentive"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 13130,
-      "audit_key": "audit-13130",
+      "audit_id": 16149,
+      "audit_key": "audit-16149",
       "report_name": "PeckShield-Audit-Report-Flashstake-v1.0.pdf",
       "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Flashstake-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FlashBack",
+        "FlashProtocol",
+        "FlashStrategy",
+        "FlashStrategyAAVEv2"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Secure3/Openkertify",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 25,
+      "latest_audit": "2022-07"
+    },
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 8.3,
+      "latest_audit": "2022-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x907a749631ad4149df1d49ee2fd40517b12df573",
+      "name": "FlashGLPStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9497116d258924621c60384f53afab29cb3ae193",
+      "name": "FlashProtocolProxyV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x08719dcab4684603aab851f8bc2d26ab98b50a77",
+      "name": "FTokenAccumulatorV3",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x21d929770398df5146346390d2973bf3f30b7684",
+      "name": "LiquidStake",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb2f7f05e204796df9bbed12d6d1be687089b929d",
+      "name": "MessageDB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x082aeb8d095b4ea1ad935035ef1239928ac59dd1",
+      "name": "xFlash",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
+    "native": 9,
+    "upstream": 1,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 35
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13128,
-        "report_name": "spaces/uSS80x7aqdxZF3ZpWjhq/uploads/g1J8rkqBRiuPZER4ImQk/peckshield_flashstake_audit.pdf"
-      },
-      {
-        "audit_id": 13129,
-        "report_name": "spaces/uSS80x7aqdxZF3ZpWjhq/uploads/ROj5eOQnrj9vn3lRfpgw/secure3_flashstake_audit.pdf"
-      },
-      {
-        "audit_id": 13130,
-        "report_name": "PeckShield-Audit-Report-Flashstake-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

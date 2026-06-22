@@ -1,40 +1,50 @@
 # Agentic Audit Brief: Seedify
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Seedify (`seedify`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T14:27:07.513Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-06-20T01:37:44.517Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: arbitrum, bsc, ethereum
+- Contract surface: 5 unique implementations (35 raw deployments)
 - DeFi Llama TVL: $32,109.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Seedify is a launchpad and incubator for blockchain projects, enabling users to stake SFUND tokens to participate in initial DEX offerings (IDOs) and earn rewards. It provides token locking, staking, and cross-chain token functionality to support project launches and community engagement.
+
+### Architecture
+
+The SFUND_OFTv1 token serves as the cross-chain utility token, while IDOLocking contracts manage staking for IDO participation across multiple chains. SMD_v5 likely handles reward distribution or staking mechanics, and InitializableERC20 may be used for project tokens launched through the platform.
+
+## Contract Surface Quality
+
+- Indexed contracts: 79; live-surface contracts included: 35 (35 live, 0 unknown).
+- Excluded by liveness: 44 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 5
+- Raw deployments: 35
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-11 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -46,9 +56,15 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (5)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| IDOLocking | unknown | bsc | n/a | 24 deployments: ethereum `0x1d2227...360877`; ethereum `0x399c4a...83ac85`; ethereum `0x453bbf...892754`; ethereum `0x569399...be2c5c`; ethereum `0x80c4c6...2e81c3`; ethereum `0x844645...873d9a`; ethereum `0xbcc572...752fcf`; ethereum `0xc8c639...534e00`; bsc [`0x027fc3...d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/); bsc `0x5745b7...441576`; bsc `0x5b3849...e55273`; bsc `0x60b9f7...8dbfd4`; bsc `0x66b8c1...a6ad0b`; bsc `0x890047...98f776`; bsc `0x89aaab...384859`; bsc `0xb667c4...9fba69`; bsc `0xd01650...8ff47f`; bsc `0xf420f0...670054`; arbitrum `0x129973...bba4a0`; arbitrum `0x1d2227...360877`; arbitrum `0x4d40f0...cdd252`; arbitrum `0x9f07a4...114805`; arbitrum `0xaae435...47d6cd`; arbitrum `0xc30be1...43679a` | ⚠️ Unaudited |
+| InitializableERC20 | token | bsc | n/a | [`0x477bc8...045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | ⚠️ Unaudited |
+| SFUND_OFTv1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x560363...32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/); arbitrum [`0x560363...32fa60`](./contracts/arbitrum-42161/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | ⚠️ Unaudited |
+| SMD_v5 | unknown | bsc | n/a | 6 deployments: ethereum `0x925722...c4ab67`; ethereum `0xc5911e...db7537`; bsc [`0x1f1056...eb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/); bsc `0x71d058...a788c0`; arbitrum `0x86bc92...2fd99f`; arbitrum `0xd23223...b53565` | ⚠️ Unaudited |
+| Staking | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xa63fd3...0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/); arbitrum `0xe85239...2085eb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -72,21 +88,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://assets.website-files.com/5f99eb79d508ca853be5f2e8/61cadee5f08b9f251e0e719e_Seedify%20audit%20report.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://assets.website-files.com/5f99eb79d508ca853be5f2e8/61cadee5f08b9f251e0e719e_Seedify%20audit%20report.pdf) | yAudit | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | [`0x027fc3...d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/) | IDOLocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x560363...32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | SFUND_OFTv1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1f1056...eb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/) | SMD_v5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xa63fd3...0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

@@ -1,0 +1,17 @@
+{
+  "address": "0x000000001d1d5004a02bafab9de2d6ce5b7b13de",
+  "chain_id": 1,
+  "contract_name": "NexusAccountFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 777,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "000000000000000000000000000000004f43c49e93c970e84001853a70923b03000000000000000000000000129443ca2a9dec2020808a2868b38dda457eacc7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:20:36.679Z"
+}

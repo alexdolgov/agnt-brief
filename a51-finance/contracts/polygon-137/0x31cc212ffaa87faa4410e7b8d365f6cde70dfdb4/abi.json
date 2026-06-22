@@ -1,0 +1,206 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "zeroForOne",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0Recieved",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1Recieved",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "amountsDirection",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserves0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserves1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IAlgebraPool",
+            "name": "pool",
+            "type": "IAlgebraPool"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          }
+        ],
+        "internalType": "struct ICLTBase.StrategyKey",
+        "name": "key",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "getAmountsForLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IAlgebraPool",
+            "name": "pool",
+            "type": "IAlgebraPool"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          }
+        ],
+        "internalType": "struct ICLTBase.StrategyKey",
+        "name": "key",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLiquidityForAmounts",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAlgebraPool",
+        "name": "pool",
+        "type": "IAlgebraPool"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickUpper",
+        "type": "int24"
+      }
+    ],
+    "name": "getPositionLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "tokensOwed0",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "tokensOwed1",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAlgebraPool",
+        "name": "pool",
+        "type": "IAlgebraPool"
+      }
+    ],
+    "name": "getSqrtRatioX96AndTick",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint16",
+        "name": "observationCardinality",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

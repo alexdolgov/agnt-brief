@@ -1,0 +1,17 @@
+{
+  "address": "0x21d3d7f03b5406d0bfa5cc1a9958ae21b8dfbc22",
+  "chain_id": 1284,
+  "contract_name": "Voting",
+  "compiler_version": "v0.6.2+commit.bacdbe57",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000008b29344f368b5fa35595325903fe0eaab70c8e1f0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:27.003Z"
+}

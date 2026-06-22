@@ -1,0 +1,18 @@
+{
+  "address": "0x3520e1a10038131a3c00bf2158835a75e929642d",
+  "chain_id": 10,
+  "contract_name": "MetaMorphoV1_1",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 125,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T16:03:34.030Z"
+}

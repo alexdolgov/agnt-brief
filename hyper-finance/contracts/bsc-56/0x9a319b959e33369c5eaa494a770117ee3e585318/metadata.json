@@ -1,0 +1,18 @@
+{
+  "address": "0x9a319b959e33369c5eaa494a770117ee3e585318",
+  "chain_id": 56,
+  "contract_name": "SushiToken",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:11:20.242Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1a4b306ba14d3fb8a49925675f8edb7ef607c422",
+  "chain_id": 1,
+  "contract_name": "PancakeV3PoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:09:03.095Z"
+}

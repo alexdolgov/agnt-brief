@@ -1,0 +1,17 @@
+{
+  "address": "0xec035081376ce975ba9eaf28dfec7c7a4c483b85",
+  "chain_id": 56,
+  "contract_name": "TroveManager",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 87,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T14:57:18.355Z"
+}

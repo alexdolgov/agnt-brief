@@ -1,0 +1,18 @@
+{
+  "address": "0x1a6e9fd892b6ca3c6617f31164dbc6f00fb54369",
+  "chain_id": 42161,
+  "contract_name": "GOA_Redeem",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:23:26.973Z"
+}

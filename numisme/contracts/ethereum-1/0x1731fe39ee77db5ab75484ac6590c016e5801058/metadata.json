@@ -1,0 +1,18 @@
+{
+  "address": "0x1731fe39ee77db5ab75484ac6590c016e5801058",
+  "chain_id": 1,
+  "contract_name": "MinterWrapper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:32:27.592Z"
+}

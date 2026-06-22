@@ -1,0 +1,51 @@
+[
+  {
+    "inputs": [],
+    "name": "R",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "btcAmountInBtcSwap",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "ethAmountInEthSwap",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "btcSellPath",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "ethSellPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "quoteCombinedSwap",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "usdcAmountInBtcSwap",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "usdcAmountInEthSwap",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

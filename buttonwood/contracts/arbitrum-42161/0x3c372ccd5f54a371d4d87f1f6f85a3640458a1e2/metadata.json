@@ -1,0 +1,18 @@
+{
+  "address": "0x3c372ccd5f54a371d4d87f1f6f85a3640458a1e2",
+  "chain_id": 42161,
+  "contract_name": "PartyVaultRouter",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:09:28.909Z"
+}

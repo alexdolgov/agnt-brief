@@ -1,0 +1,18 @@
+{
+  "address": "0x80bacc0deae5213de50b236e3680b6bdcc17b2f2",
+  "chain_id": 42161,
+  "contract_name": "WaterDendyToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:38:52.296Z"
+}

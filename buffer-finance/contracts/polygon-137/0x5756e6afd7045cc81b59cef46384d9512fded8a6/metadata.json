@@ -1,0 +1,17 @@
+{
+  "address": "0x5756e6afd7045cc81b59cef46384d9512fded8a6",
+  "chain_id": 137,
+  "contract_name": "ReferralStorage",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:08:57.734Z"
+}

@@ -1,79 +1,199 @@
 {
   "schema_version": "2.0",
   "project_key": "enjoyoors",
-  "generated_at": "2026-06-13T10:58:46.692Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-19T22:24:43.857Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "enjoyoors",
+    "tier": 0,
+    "peak_tvl": 51966,
+    "peak_date": "2025-10-15T00:00:00.000Z",
+    "tvl_30d_ago": 11256,
+    "tvl_90d_ago": 14180,
+    "tvl_current": 11256,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 15538,
+    "change_30d_pct": 0,
+    "change_90d_pct": -20.62059238363893,
+    "days_since_peak": 247,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 78.33968363930262
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 2,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 66.7,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 11256.95749,
-    "tvl_usd": 11256.95749,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
+    "tvl_usd": 5427.908118934569,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 5427.91
+    },
     "asd_usd": null,
     "website_url": "http://enjoyoors.xyz",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-03",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 3,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Enjoyoors is a Collateralized Debt Position (CDP) protocol on Ethereum that allows users to deposit collateral and mint a stablecoin against it. The protocol manages vaults to maintain collateralization ratios and facilitate liquidations if needed.",
+    "relationship_narrative": "The protocol consists of a single product family with one core vault contract. No shared infrastructure or cross-family relationships are present.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
+    "live_contracts": 3,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 1,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
-  "audits": [
+  "contracts": [
     {
-      "audit_id": 13083,
-      "audit_key": "audit-13083",
-      "report_name": "Enjoyoors EVM Vaults Security Audit Report.pdf",
-      "report_url": "https://github.com/mixbytes/audits_public/blob/master/Enjoyoors/EVM%20Vaults/Enjoyoors%20EVM%20Vaults%20Security%20Audit%20Report.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x59660cb83da31ec23f9d992c11f80fc527046409",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EnjoyoorsVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Enjoyoors",
+      "tvl_usd": 5427.908118934569,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EnjoyoorsVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x59660cb83da31ec23f9d992c11f80fc527046409",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5427.908118934569,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15970"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8a4e79d2e12d253f6cefec473439b4b0e98b7c17",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EnjoyoorsWithdrawalApprover",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EnjoyoorsWithdrawalApprover",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8a4e79d2e12d253f6cefec473439b4b0e98b7c17",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-15970"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8b3f27ae96c43a301067c77dc445af2299ff7b04",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TokenLister",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenLister",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8b3f27ae96c43a301067c77dc445af2299ff7b04",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [
     {
       "audit_id": 13084,
       "audit_key": "audit-13084",
@@ -81,8 +201,8 @@
       "report_url": "https://github.com/Quillhash/QuillAudit_Reports/blob/master/Enjoyoors%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -102,8 +222,8 @@
       "report_url": "https://movebit.xyz/reports/Enjoyoors-Audit-Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -115,26 +235,77 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 15970,
+      "audit_key": "audit-15970",
+      "report_name": "Enjoyoors EVM Vaults Security Audit Report.pdf",
+      "report_url": "https://github.com/mixbytes/audits_public/blob/master/Enjoyoors/EVM%20Vaults/Enjoyoors%20EVM%20Vaults%20Security%20Audit%20Report.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Access",
+        "Asserts",
+        "EnjoyoorsVault",
+        "EnjoyoorsVaultBase",
+        "EnjoyoorsVaultDeposits",
+        "EnjoyoorsVaultWithdrawals",
+        "EnjoyoorsWithdrawalApprover",
+        "Pauses",
+        "Setup",
+        "TokenListing"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
+      "latest_audit": "2025-03"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8b3f27ae96c43a301067c77dc445af2299ff7b04",
+      "name": "TokenLister",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13083,
-        "report_name": "Enjoyoors EVM Vaults Security Audit Report.pdf"
-      },
       {
         "audit_id": 13084,
         "report_name": "Enjoyoors Smart Contract Audit Report - QuillAudits.pdf"

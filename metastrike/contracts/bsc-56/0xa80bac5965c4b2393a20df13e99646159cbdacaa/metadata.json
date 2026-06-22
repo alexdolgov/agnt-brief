@@ -1,0 +1,18 @@
+{
+  "address": "0xa80bac5965c4b2393a20df13e99646159cbdacaa",
+  "chain_id": 56,
+  "contract_name": "MetastrikeBoxV3",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:06:23.239Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4498e12f4e975c44fb92855ae5820b0bfb93c82d",
+  "chain_id": 42161,
+  "contract_name": "IDOLocking",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:36:45.472Z"
+}

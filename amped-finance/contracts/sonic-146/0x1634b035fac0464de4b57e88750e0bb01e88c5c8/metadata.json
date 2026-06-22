@@ -1,0 +1,17 @@
+{
+  "address": "0x1634b035fac0464de4b57e88750e0bb01e88c5c8",
+  "chain_id": 146,
+  "contract_name": "VaultErrorController",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:46:05.833Z"
+}

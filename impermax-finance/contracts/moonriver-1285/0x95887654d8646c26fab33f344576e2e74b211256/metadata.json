@@ -1,0 +1,17 @@
+{
+  "address": "0x95887654d8646c26fab33f344576e2e74b211256",
+  "chain_id": 1285,
+  "contract_name": "StakedLPTokenFactory024",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000aa30ef758139ae4a7f798112902bf6d65612045f000000000000000000000000a3dce528195b8d15ea166c623db197b2c3f8d1270000000000000000000000006bd193ee6d2104f14f94e2ca6efefae561a4334b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:31.084Z"
+}

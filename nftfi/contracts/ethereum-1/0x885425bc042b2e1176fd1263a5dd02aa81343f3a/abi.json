@@ -1,0 +1,147 @@
+[
+  {
+    "inputs": [],
+    "name": "obligationReceiptDoesntExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanIdentifier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowerAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanIdentifier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCollateral",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "nftCollateralContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nftCollateralId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanIdentifier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPayoffDetails",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "loanERC20Denomination",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maximumRepaymentAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanIdentifier",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_payBackToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_payBackAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "payOffRefinancable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_loanContract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanIdentifier",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferBorrowerRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

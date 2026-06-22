@@ -1,0 +1,17 @@
+{
+  "address": "0x9957fd65ee322c1302d9e3849bb7ee4e8ccd94a0",
+  "chain_id": 43114,
+  "contract_name": "InterestRateController",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000009e1ee00d45252aa58623f7d771fb414aa38f0878",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:20.758Z"
+}

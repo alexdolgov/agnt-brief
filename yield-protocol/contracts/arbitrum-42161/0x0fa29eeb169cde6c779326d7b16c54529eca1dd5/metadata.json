@@ -1,0 +1,18 @@
+{
+  "address": "0x0fa29eeb169cde6c779326d7b16c54529eca1dd5",
+  "chain_id": 42161,
+  "contract_name": "Pool",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:34:28.126Z"
+}

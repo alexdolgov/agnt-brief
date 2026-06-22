@@ -1,0 +1,17 @@
+{
+  "address": "0x04f378cce9fd270fc136fdfc78a8afabd475fc21",
+  "chain_id": 1,
+  "contract_name": "LPFarmingHelper",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000058dab09bba10b53ef684eefe45025e1cbf604f12000000000000000000000000c36442b4a4522e871399cd717abdd847ab11fe88",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:39:02.170Z"
+}

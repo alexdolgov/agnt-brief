@@ -1,0 +1,17 @@
+{
+  "address": "0xedf7732991b3de8f46fb97dcd4c5cdb28e6ad859",
+  "chain_id": 1329,
+  "contract_name": "TeaREX",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "00000000000000000000000022c0b6314de59085cab05c2e779a9078ad2d5d90",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:50:41.795Z"
+}

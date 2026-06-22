@@ -1,0 +1,18 @@
+{
+  "address": "0x090194f1eedc134a680e3b488abb2d212dba8c01",
+  "chain_id": 1329,
+  "contract_name": "RewardLib",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T17:40:35.381Z"
+}

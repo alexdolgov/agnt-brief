@@ -1,0 +1,18 @@
+{
+  "address": "0x652c84232c3e9671907a53ea8aa5514e2cc540ac",
+  "chain_id": 137,
+  "contract_name": "StableSwapFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:25:51.531Z"
+}

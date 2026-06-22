@@ -1,0 +1,18 @@
+{
+  "address": "0x39b9891ba3c5a8fe69c19f54db2fd90a483b780a",
+  "chain_id": 1,
+  "contract_name": "Underlying",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 833,
+  "evm_version": "london",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:27:50.034Z"
+}

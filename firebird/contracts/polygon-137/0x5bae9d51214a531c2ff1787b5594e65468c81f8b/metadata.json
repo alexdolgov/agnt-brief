@@ -1,0 +1,17 @@
+{
+  "address": "0x5bae9d51214a531c2ff1787b5594e65468c81f8b",
+  "chain_id": 137,
+  "contract_name": "UpgradableProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c14502e13f95cbd32cea7ecfe5bd5c90a1c67a19",
+  "implementation_address": "0x828be226a7b684ff7115785f8f95cd40e0548a25",
+  "fetched_at": "2026-06-19T23:25:52.204Z"
+}

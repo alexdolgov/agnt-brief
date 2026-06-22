@@ -1,0 +1,17 @@
+{
+  "address": "0x5cc5cefd034fdc4728d487a72ca58a410cddcd6b",
+  "chain_id": 1,
+  "contract_name": "DefaultPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "0000000000000000000000006106046f031a22713697e04c08b330ddaf3e8789",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T18:03:39.744Z"
+}

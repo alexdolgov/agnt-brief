@@ -1,0 +1,18 @@
+{
+  "address": "0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f",
+  "chain_id": 56,
+  "contract_name": "DungeonMaster",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:11:15.236Z"
+}

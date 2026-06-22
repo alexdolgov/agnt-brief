@@ -1,0 +1,18 @@
+{
+  "address": "0x7520aa7f8dfa6c2f5024f419b33c7c221a647c51",
+  "chain_id": 1,
+  "contract_name": "AggregatorFactory",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T12:17:35.756Z"
+}

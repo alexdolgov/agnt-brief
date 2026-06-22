@@ -1,0 +1,145 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldKFactor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptu",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptb",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_reserveTranslated1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gamma",
+        "type": "uint256"
+      }
+    ],
+    "name": "anchorFactorFloatBurn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "anchorKFactor",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isLineFormula",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldKFactor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "adjustedVab",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_reserveTranslated0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_reserveTranslated1",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateAnchorFactor",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "anchorKFactor",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "isLineFormula",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptu",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptb",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldKFactor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "adjustedVab",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_reserveTranslated1",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateAnchorFactorBurn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "anchorKFactor",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

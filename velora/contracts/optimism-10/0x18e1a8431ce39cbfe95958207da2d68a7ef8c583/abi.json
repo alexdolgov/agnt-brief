@@ -1,0 +1,154 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "_PSP",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_WETH",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_sePSP",
+        "type": "address"
+      },
+      {
+        "internalType": "contract I_sePSP2",
+        "name": "_sePSP2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_PSP_Supplier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "PermitFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PSP",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PSP_Supplier",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sePSP1Amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBptOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sePSPPermit",
+        "type": "bytes"
+      }
+    ],
+    "name": "migrateSePSP1AndETHtoSePSP2",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sePSP1Amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "wethAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBptOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sePSPPermit",
+        "type": "bytes"
+      }
+    ],
+    "name": "migrateSePSP1AndWETHtoSePSP2",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sePSP",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sePSP2",
+    "outputs": [
+      {
+        "internalType": "contract I_sePSP2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

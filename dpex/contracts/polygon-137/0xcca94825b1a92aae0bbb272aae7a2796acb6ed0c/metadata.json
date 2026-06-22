@@ -1,0 +1,18 @@
+{
+  "address": "0xcca94825b1a92aae0bbb272aae7a2796acb6ed0c",
+  "chain_id": 137,
+  "contract_name": "Bulksender",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T13:09:13.843Z"
+}

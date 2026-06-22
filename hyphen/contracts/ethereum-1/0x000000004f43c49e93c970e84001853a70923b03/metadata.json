@@ -1,0 +1,17 @@
+{
+  "address": "0x000000004f43c49e93c970e84001853a70923b03",
+  "chain_id": 1,
+  "contract_name": "Nexus",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 777,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 53,
+  "constructor_arguments": "0000000000000000000000000000000071727de22e5e9d8baf0edac6f37da03200000000000000000000000000000000d12897ddadc2044614a9677b191a2d9500000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000014eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T08:20:35.683Z"
+}

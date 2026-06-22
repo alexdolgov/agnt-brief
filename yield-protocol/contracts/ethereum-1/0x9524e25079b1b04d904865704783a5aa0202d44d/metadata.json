@@ -1,0 +1,18 @@
+{
+  "address": "0x9524e25079b1b04d904865704783a5aa0202d44d",
+  "chain_id": 1,
+  "contract_name": "RolesAuthority",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "AGPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T10:34:30.783Z"
+}

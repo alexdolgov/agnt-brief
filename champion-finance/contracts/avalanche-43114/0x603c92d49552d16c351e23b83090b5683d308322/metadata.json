@@ -1,0 +1,17 @@
+{
+  "address": "0x603c92d49552d16c351e23b83090b5683d308322",
+  "chain_id": 43114,
+  "contract_name": "EVICSwapToken",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000409968a6e6cb006e8919de46a894138c43ee1d2200000000000000000000000060ae616a2155ee3d9a68541ba4544862310933d400000000000000000000000049d5c2bdffac6ce2bfdb6640f4f80f226bc10bab00000000000000000000000074fefa839a96a1632a29e0fcf0907d0f88528658",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T12:24:08.025Z"
+}

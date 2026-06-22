@@ -1,0 +1,17 @@
+{
+  "address": "0x10526c0f2da061debad70c4087876bab42d24c77",
+  "chain_id": 43114,
+  "contract_name": "KovinJeckpotData",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000070b145d9636747e45fc2fc6245b0f9cd4d7febc3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:20:33.077Z"
+}

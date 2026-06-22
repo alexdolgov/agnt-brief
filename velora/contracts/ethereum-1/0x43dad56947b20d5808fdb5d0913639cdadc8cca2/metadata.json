@@ -1,0 +1,18 @@
+{
+  "address": "0x43dad56947b20d5808fdb5d0913639cdadc8cca2",
+  "chain_id": 1,
+  "contract_name": "Adapter03",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "ISC, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:59.002Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0e87b7d4a55b0c8fd3940e833c614dfc5e291550",
+  "chain_id": 137,
+  "contract_name": "OnERC721Received",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "ISC",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T11:10:56.726Z"
+}

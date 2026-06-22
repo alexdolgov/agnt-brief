@@ -1,0 +1,18 @@
+{
+  "address": "0xd8f3e2001152b3614c532260abf5522c4e762d8b",
+  "chain_id": 42161,
+  "contract_name": "oA51",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, AGPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T23:13:01.001Z"
+}

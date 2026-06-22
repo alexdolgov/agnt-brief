@@ -1,0 +1,18 @@
+{
+  "address": "0x13aa40651890a45f35baa0a65874c7f91a3d7c4c",
+  "chain_id": 42161,
+  "contract_name": "MerkleClaimMultipleERC20",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:16:08.939Z"
+}

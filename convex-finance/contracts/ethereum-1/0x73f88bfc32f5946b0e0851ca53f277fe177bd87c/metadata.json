@@ -1,0 +1,18 @@
+{
+  "address": "0x73f88bfc32f5946b0e0851ca53f277fe177bd87c",
+  "chain_id": 1,
+  "contract_name": "StashFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T19:23:09.176Z"
+}

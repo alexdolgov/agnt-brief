@@ -1,41 +1,51 @@
 # Agentic Audit Brief: Sector Finance
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 9.8% over 90 days
+
 ## Project Overview
 
 - Project: Sector Finance (`sector-finance`)
 - Website: [https://sector.finance](https://sector.finance)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:00:55.495Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-06-21T07:02:23.233Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: moonriver, optimism
+- Contract surface: 4 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $55,754.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Sector Finance is a yield optimization protocol that deploys user deposits into structured vaults to generate returns. It uses factory contracts to create and manage these vaults across multiple chains.
+
+### Architecture
+
+The SectorFactory contracts act as registries that deploy and manage vault instances (SCYWEpochVaultU, SCYVaultU) via beacon proxies (SectorBeacon, UpgradeableBeacon). The sectGrail contract likely serves as a shared reward or governance token across the vault ecosystem.
+
+## Contract Surface Quality
+
+- Indexed contracts: 180; live-surface contracts included: 5 (1 live, 4 unknown).
+- Excluded by liveness: 165 inactive, 10 singleton, 0 uninitialized.
+- Deployment units: 0/5 live.
+- Detected codebases: compound-v2, uniswap-v2
+- Dependencies extracted: 5; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 5
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -47,9 +57,13 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (3)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| SectorBeacon | registry | moonriver | n/a | [`0xdbd42b...08cdd2`](./contracts/moonriver-1285/0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2/) | ⚠️ Unaudited |
+| USDCmovrSOLARwell | unknown | moonriver | n/a | [`0x94ea93...6a6989`](./contracts/moonriver-1285/0x94ea9337db519602ee42aa2238aa1927c96a6989/) | ⚠️ Unaudited |
+| VaultUpgradable | core_logic | moonriver | n/a | 2 deployments: moonriver [`0x96b6a3...77e1f6`](./contracts/moonriver-1285/0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6/); moonriver `0x97b4d1...6e6b51` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -63,11 +77,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | optimism | n/a | `0x4b0768...8a45df` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -80,16 +96,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| moonriver | [`0xdbd42b...08cdd2`](./contracts/moonriver-1285/0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2/) | SectorBeacon | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x94ea93...6a6989`](./contracts/moonriver-1285/0x94ea9337db519602ee42aa2238aa1927c96a6989/) | USDCmovrSOLARwell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x96b6a3...77e1f6`](./contracts/moonriver-1285/0x96b6a3e2048db602ffd71e5a2c7351673a77e1f6/) | VaultUpgradable | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

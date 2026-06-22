@@ -1,0 +1,18 @@
+{
+  "address": "0x15088c29cc3106f770ff8f5e5627cb1f62fa160d",
+  "chain_id": 1,
+  "contract_name": "WHERC20v2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 64,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T20:57:39.103Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x8850a5200050ec4307f2bdc26bec5f7ca7ada664",
+  "chain_id": 43114,
+  "contract_name": "PositionRouterReader",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:19.339Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xe372ed8d188517ef4d4bc464c0c068d2002e2903",
+  "chain_id": 1,
+  "contract_name": "EstateSale",
+  "compiler_version": "v0.6.5+commit.f956cc89",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T06:22:41.988Z"
+}

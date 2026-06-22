@@ -1,0 +1,18 @@
+{
+  "address": "0x05de10e375b03e9072f4ac7b1166ccfee53e7003",
+  "chain_id": 56,
+  "contract_name": "MetaSingleStakingV2",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:06:21.669Z"
+}

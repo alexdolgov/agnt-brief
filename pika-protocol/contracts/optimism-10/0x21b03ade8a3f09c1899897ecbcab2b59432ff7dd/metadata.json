@@ -1,0 +1,18 @@
+{
+  "address": "0x21b03ade8a3f09c1899897ecbcab2b59432ff7dd",
+  "chain_id": 10,
+  "contract_name": "PikaPriceFeedPyth",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T13:03:55.819Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x39c5805be41da004082acff52faf744847fd2ec7",
+  "chain_id": 43114,
+  "contract_name": "IndexHelper",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:41:21.363Z"
+}

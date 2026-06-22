@@ -1,0 +1,18 @@
+{
+  "address": "0x1811b7ed3b613805a9a4b4b1b80c99d58af32576",
+  "chain_id": 56,
+  "contract_name": "Wtf",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T02:38:51.765Z"
+}

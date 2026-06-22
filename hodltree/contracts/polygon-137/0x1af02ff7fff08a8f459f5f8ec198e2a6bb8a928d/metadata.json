@@ -1,0 +1,17 @@
+{
+  "address": "0x1af02ff7fff08a8f459f5f8ec198e2a6bb8a928d",
+  "chain_id": 137,
+  "contract_name": "Lender",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:01:45.213Z"
+}

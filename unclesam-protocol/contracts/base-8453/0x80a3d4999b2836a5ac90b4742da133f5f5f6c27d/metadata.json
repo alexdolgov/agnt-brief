@@ -1,0 +1,18 @@
+{
+  "address": "0x80a3d4999b2836a5ac90b4742da133f5f5f6c27d",
+  "chain_id": 8453,
+  "contract_name": "UncleSam",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:13:58.888Z"
+}

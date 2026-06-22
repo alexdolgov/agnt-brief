@@ -1,34 +1,55 @@
 {
   "schema_version": "2.0",
   "project_key": "fuji-finance",
-  "generated_at": "2026-06-13T11:00:00.973Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T09:46:05.701Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "fuji-finance",
+    "tier": 0,
+    "peak_tvl": 2553725,
+    "peak_date": "2021-12-01T00:00:00.000Z",
+    "tvl_30d_ago": 180289,
+    "tvl_90d_ago": 174805,
+    "tvl_current": 150298,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 248143,
+    "change_30d_pct": -16.634958316924493,
+    "change_90d_pct": -14.019621864363147,
+    "days_since_peak": 1663,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 94.11455814545418
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 1,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 144602,
     "tvl_usd": 144602,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://fuji.finance/",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": "2022-11",
+    "chains": [
+      "ethereum",
+      "fantom"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
+    "latest_audit_date": "2022-12",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +59,26 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 2,
+    "total_contracts_indexed": 251,
+    "live_contracts": 1,
+    "inactive_contracts": 218,
+    "singleton_contracts": 31,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 14,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 33,
+    "unverified_dependencies": 4,
+    "detected_codebases": [
+      "aave-v2",
+      "aave-v3"
+    ]
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +86,81 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1cf24e4ec41da581bee223e1affebb62a5a95484",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FujiERC1155",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Fuji V1",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FujiERC1155",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1cf24e4ec41da581bee223e1affebb62a5a95484",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13141",
+        "audit-13142"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xb4e2ec87f8e6e166929a900ed433c4589d721d70",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Fuji V1",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xb4e2ec87f8e6e166929a900ed433c4589d721d70",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13141,
@@ -66,12 +175,46 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveFlashLoans",
+        "AlphaWhitelist",
+        "Controller",
+        "CreamFlashLoans",
+        "DyDxFlashLoans",
+        "Errors",
+        "Flasher",
+        "Fliquidator",
+        "FujiAdmin",
+        "FujiBaseERC1155",
+        "FujiERC1155",
+        "FujiMapping",
+        "IAlphaWhiteList",
+        "IFujiAdmin",
+        "IFujiERC1155",
+        "IProvider",
+        "IVault",
+        "LibFlashLoan",
+        "LibUniERC20",
+        "LibUniversalERC20",
+        "LibVault",
+        "MathUtils",
+        "ProviderAave",
+        "ProviderCompound",
+        "ProviderDYDX",
+        "ProviderIronBank",
+        "ProviderLQTY",
+        "VaultBase",
+        "VaultETHDAI",
+        "VaultETHUSDC",
+        "VaultETHUSDT",
+        "VaultHarvester",
+        "WadRayMath"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -82,17 +225,37 @@
       "auditor": "Trail of Bits",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2021-11",
+      "date": "2021-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Claimable",
+        "ClaimableUpgradeable",
+        "Controller",
+        "DyDxFlashLoans",
+        "DyDxFlashloanBase",
+        "F1155Manager",
+        "FLiquidator",
+        "Flasher",
+        "FujiAdmin",
+        "FujiBaseERC1155",
+        "FujiERC1155",
+        "FujiMapping",
+        "FujiOracle",
+        "FujiVault",
+        "Harvester",
+        "Proxy",
+        "Swapper",
+        "VaultBaseUpgradeable",
+        "VaultControlUpgradeable"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -103,12 +266,12 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022-11",
+      "date": "2022-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -117,28 +280,39 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2021-10"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2022-12"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 166
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13141,
-        "report_name": "Fuji_Securing_2021-07.pdf"
-      },
-      {
-        "audit_id": 13142,
-        "report_name": "Fuji_TrailOfBits_2021-11.pdf"
-      },
       {
         "audit_id": 13143,
         "report_name": "2022_11_Fujidao_Labs_OU.pdf"

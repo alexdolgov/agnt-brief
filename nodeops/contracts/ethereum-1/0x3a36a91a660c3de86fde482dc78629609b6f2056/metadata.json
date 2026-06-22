@@ -1,0 +1,18 @@
+{
+  "address": "0x3a36a91a660c3de86fde482dc78629609b6f2056",
+  "chain_id": 1,
+  "contract_name": "NodeOFTAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T08:39:57.087Z"
+}

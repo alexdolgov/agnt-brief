@@ -1,34 +1,54 @@
 {
   "schema_version": "2.0",
   "project_key": "savvy",
-  "generated_at": "2026-06-13T14:24:34.838Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
-  "lifecycle_status": null,
-  "lifecycle_signal": null,
+  "generated_at": "2026-06-21T09:36:11.237Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "savvy",
+    "tier": 0,
+    "peak_tvl": 1070365,
+    "peak_date": "2023-12-06T00:00:00.000Z",
+    "tvl_30d_ago": 153330,
+    "tvl_90d_ago": 140379,
+    "tvl_current": 131722,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 177455,
+    "change_30d_pct": -14.092480271310245,
+    "change_90d_pct": -6.166876812058784,
+    "days_since_peak": 928,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 87.69373064328524
+  },
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
-    "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "total_contracts": 2,
+    "total_addresses": 4,
+    "unique_implementations": 2,
+    "total_deployments": 4,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 126421.30928,
-    "tvl_usd": 126421.30928,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 530876.0126917274,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 530876.01
+    },
+    "asd_usd": 17040.2,
     "website_url": "https://savvydefi.io",
-    "chains": [],
+    "chains": [
+      "arbitrum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2023-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
@@ -38,12 +58,23 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1,
+    "total_contracts_indexed": 164,
+    "live_contracts": 4,
+    "inactive_contracts": 70,
+    "singleton_contracts": 90,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 34,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -51,7 +82,102 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xeee18334c414a47fb886a7317e1885b2bfb8c2a6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SavvySyntheticToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 513835.81269172736,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SavvySyntheticToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xeee18334c414a47fb886a7317e1885b2bfb8c2a6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 256440.69558899454,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf202ab403cd7e90197ec0f010ee897e283037706",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 164085.88539403855,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf7728582002ef82908c8242cf552e969ba863ffa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 93309.23170869431,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13804"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x43ab8f7d2a8dd4102ccea6b438f6d747b1b9f034",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SavvyProtocolToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Savvy",
+      "tvl_usd": 17040.2,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SavvyProtocolToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x43ab8f7d2a8dd4102ccea6b438f6d747b1b9f034",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 17040.2,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 13804,
@@ -61,39 +187,75 @@
       "auditor": "Halborn",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2023-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Allowlist",
+        "InfoAggregator",
+        "Math",
+        "SavvyActionBatcher",
+        "SavvyBooster",
+        "SavvyLGE",
+        "SavvyPositionManager",
+        "SavvyPriceFeed",
+        "SavvyRedlist",
+        "SavvySage",
+        "SavvySwap",
+        "SavvySyntheticToken",
+        "VeERC20Upgradeable",
+        "VeSvy",
+        "WrapTokenGateway",
+        "YieldStrategyManager",
+        "YieldYakAdapter"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-01"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x43ab8f7d2a8dd4102ccea6b438f6d747b1b9f034",
+      "name": "SavvyProtocolToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 17040.2,
+      "risk_note": "Verified native implementation with $17,040.20 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 56
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13804,
-        "report_name": "Savvy_DeFi_Smart_Contract_Securtity_Audit_Report_Halborn_Final.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

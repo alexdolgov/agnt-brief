@@ -1,0 +1,97 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPermit2",
+        "name": "permit2_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PERMIT2",
+    "outputs": [
+      {
+        "internalType": "contract IPermit2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum TransferHelper.TransferFromType",
+            "name": "transferType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "transferData",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "transferSignature",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "witness",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "string",
+            "name": "witnessType",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct TransferHelper.TransferFromData[]",
+        "name": "transfers",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "transferFromAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

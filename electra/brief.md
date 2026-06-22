@@ -1,41 +1,52 @@
 # Agentic Audit Brief: Electra
 
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 64.9% over 90 days
+
 ## Project Overview
 
 - Project: Electra (`electra`)
 - Website: [https://electra.trade/](https://electra.trade/)
-- Lifecycle: unknown
-- Generated: 2026-06-13T11:34:06.468Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: unknown (Tier 0, 81.5% below peak)
+- Generated: 2026-06-21T07:47:49.876Z
+- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $81,742.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 9; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 5 inactive, 2 singleton, 0 uninitialized.
+- Deployment units: 1/2 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 1
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -47,9 +58,11 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| TUP_old | proxy | ethereum | unit-41660 | [`0xfc6383...0f7127`](./contracts/ethereum-1/0xfc63831f1c517d196470f03a61afd3d0cc0f7127/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -63,11 +76,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xc4ae1e...268fcf` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -88,8 +103,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 1 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

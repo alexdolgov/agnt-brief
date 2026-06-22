@@ -1,0 +1,18 @@
+{
+  "address": "0x2f2e7b4e12f8a7949919c833f1a49bcb012081d1",
+  "chain_id": 137,
+  "contract_name": "PoolFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:58:18.941Z"
+}

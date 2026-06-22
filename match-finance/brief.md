@@ -1,40 +1,50 @@
 # Agentic Audit Brief: Match Finance
 
+⚠️ Lifecycle status: DEAD - TVL dropped 32.5% over 90 days
+
 ## Project Overview
 
 - Project: Match Finance (`match-finance`)
-- Lifecycle: unknown
-- Generated: 2026-06-13T13:42:42.196Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 0, 100% below peak)
+- Generated: 2026-06-19T19:03:42.272Z
+- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Chains: ethereum
+- Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $2,154.90
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- On-chain TVL (included contracts): $30,149.39
+- TVL by chain: Ethereum $30,149.39
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Match Finance is a yield aggregator on Ethereum that optimizes returns through strategies like liquid staking and liquidity provision. It offers staking, vesting, and reward management for its native MATCH token, enabling users to earn enhanced yields.
+
+### Architecture
+
+The MatchPool serves as the central yield aggregation hub, while LybraStETHVault implements a specific liquid staking strategy. VLMatchStaking manages MATCH token staking, and all core contracts are accessed via TransparentUpgradeableProxy instances, with UniswapV2Pair providing liquidity for the MATCH token.
+
+## Contract Surface Quality
+
+- Indexed contracts: 98; live-surface contracts included: 11 (11 live, 0 unknown).
+- Excluded by liveness: 65 inactive, 22 singleton, 0 uninitialized.
+- Deployment units: 0/11 live.
+- Detected codebases: uniswap-v2
+- Dependencies extracted: 3; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 9
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- ASD (verified + unaudited TVL): $30,149.39
+- Latest audit: 2023-09 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of $30,149.39 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -46,9 +56,12 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| LybraStETHVault | core_logic | ethereum | n/a | [`0xa980d4...e06f0e`](./contracts/ethereum-1/0xa980d4c0c2e48d305b582aa439a3575e3de06f0e/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x3a0ef6...01e569`](./contracts/ethereum-1/0x3a0ef60e803aae8e94f741e7f61c7cbe9501e569/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -62,32 +75,44 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xc2966a...2ed89e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc62686...4647c5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc83535...4690ff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd585aa...52f247` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdf3ac4...4262cc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe0dcb3...705153` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xec7c6c...c5956d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xed1167...981ebd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf284b9...2b8825` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://beosin.com/audits/Match-Finance_202309281659.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://beosin.com/audits/Match-Finance_202309281659.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xa980d4...e06f0e`](./contracts/ethereum-1/0xa980d4c0c2e48d305b582aa439a3575e3de06f0e/) | LybraStETHVault | core_logic | $30,149.39 | Verified native implementation with $30,149.39 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 2 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 
@@ -96,7 +121,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Match method counts: extraction_exact=9
 
 Zero-match audit list:
 

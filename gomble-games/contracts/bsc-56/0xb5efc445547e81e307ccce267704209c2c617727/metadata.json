@@ -1,0 +1,18 @@
+{
+  "address": "0xb5efc445547e81e307ccce267704209c2c617727",
+  "chain_id": 56,
+  "contract_name": "OGSpaceship",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T17:33:32.132Z"
+}

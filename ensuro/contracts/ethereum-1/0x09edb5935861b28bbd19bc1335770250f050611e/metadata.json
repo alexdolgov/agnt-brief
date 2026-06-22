@@ -1,0 +1,17 @@
+{
+  "address": "0x09edb5935861b28bbd19bc1335770250f050611e",
+  "chain_id": 1,
+  "contract_name": "AccessManagedProxy",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0x2343d9437d454f91cce01fd1e94c6b97d59840b1",
+  "fetched_at": "2026-06-21T14:22:48.199Z"
+}

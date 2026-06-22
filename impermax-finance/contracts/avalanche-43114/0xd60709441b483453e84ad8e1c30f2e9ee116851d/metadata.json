@@ -1,0 +1,17 @@
+{
+  "address": "0xd60709441b483453e84ad8e1c30f2e9ee116851d",
+  "chain_id": 43114,
+  "contract_name": "StakedLPToken0222",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:24:35.871Z"
+}

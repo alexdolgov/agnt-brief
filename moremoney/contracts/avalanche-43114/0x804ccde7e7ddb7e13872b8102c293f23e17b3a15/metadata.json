@@ -1,0 +1,17 @@
+{
+  "address": "0x804ccde7e7ddb7e13872b8102c293f23e17b3a15",
+  "chain_id": 43114,
+  "contract_name": "StrategyTokenActivation",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:18.982Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x045af95caabb5971183c411abd7c81f2e122706d",
+  "chain_id": 42220,
+  "contract_name": "Copump",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T18:14:08.686Z"
+}

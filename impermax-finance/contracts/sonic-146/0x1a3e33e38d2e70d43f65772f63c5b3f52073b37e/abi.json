@@ -1,0 +1,908 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_whitelist",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safetyMarginSqrt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationIncentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+            "name": "collateralConfig",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable0Config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable1Config",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum IImpermaxWhitelist.State",
+            "name": "whitelistState",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IImpermaxConfigManager.PairConfig[]",
+        "name": "proposal",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "ApprovedProposal",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "BecomeContractAdmin",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "NewAdmin",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldPendingAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "NewPendingAdmin",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safetyMarginSqrt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationIncentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+            "name": "collateralConfig",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable0Config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable1Config",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum IImpermaxWhitelist.State",
+            "name": "whitelistState",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IImpermaxConfigManager.PairConfig[]",
+        "name": "proposal",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "NewProposal",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safetyMarginSqrt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationIncentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+            "name": "collateralConfig",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable0Config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable1Config",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum IImpermaxWhitelist.State",
+            "name": "whitelistState",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IImpermaxConfigManager.PairConfig[]",
+        "name": "proposal",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "RejectedProposal",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "TransferContractOwnership",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "_acceptAdmin",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ownableContract",
+        "type": "address"
+      }
+    ],
+    "name": "_becomeContractAdmin",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ownableContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "_setContractAdmin",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newPendingAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "_setPendingAdmin",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "admin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "approveProposal",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getProposal",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safetyMarginSqrt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationIncentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+            "name": "collateralConfig",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable0Config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable1Config",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum IImpermaxWhitelist.State",
+            "name": "whitelistState",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IImpermaxConfigManager.PairConfig[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safetyMarginSqrt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationIncentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+            "name": "collateralConfig",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable0Config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "reserveFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kinkUtilizationRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "adjustSpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "borrowTracker",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+            "name": "borrowable1Config",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum IImpermaxWhitelist.State",
+            "name": "whitelistState",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IImpermaxConfigManager.PairConfig[]",
+        "name": "proposal",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "makeProposal",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "pendingAdmin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "proposals",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pair",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "safetyMarginSqrt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationIncentive",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationFee",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IImpermaxConfigManager.CollateralConfig",
+        "name": "collateralConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "kinkUtilizationRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adjustSpeed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowTracker",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+        "name": "borrowable0Config",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "kinkUtilizationRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "adjustSpeed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowTracker",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IImpermaxConfigManager.BorrowableConfig",
+        "name": "borrowable1Config",
+        "type": "tuple"
+      },
+      {
+        "internalType": "enum IImpermaxWhitelist.State",
+        "name": "whitelistState",
+        "type": "uint8"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "proposalsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "rejectProposal",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "whitelist",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x0134eb236b47186021a50d25a51365ac77e39eb3",
+  "chain_id": 1285,
+  "contract_name": "MoonLock",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-22T11:13:28.315Z"
+}

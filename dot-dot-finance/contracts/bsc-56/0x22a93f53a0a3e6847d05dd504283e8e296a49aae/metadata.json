@@ -1,0 +1,18 @@
+{
+  "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+  "chain_id": 56,
+  "contract_name": "TokenLocker",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T19:27:42.370Z"
+}

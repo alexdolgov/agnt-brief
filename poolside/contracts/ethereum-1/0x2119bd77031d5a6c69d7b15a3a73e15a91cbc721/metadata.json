@@ -1,0 +1,18 @@
+{
+  "address": "0x2119bd77031d5a6c69d7b15a3a73e15a91cbc721",
+  "chain_id": 1,
+  "contract_name": "WethLoanRouter",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-only, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-20T01:42:16.861Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xc0acdc059af9e92e2b054e09b75ec4311484461f",
+  "chain_id": 43114,
+  "contract_name": "LMQiErc20",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T07:56:28.502Z"
+}

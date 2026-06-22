@@ -1,0 +1,17 @@
+{
+  "address": "0x46176bbc8f704aae26a9dfc035974540a4912b6d",
+  "chain_id": 43114,
+  "contract_name": "YieldYakAVAXStrategy2",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 60,
+  "constructor_arguments": "000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c70000000000000000000000009e1ee00d45252aa58623f7d771fb414aa38f0878",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T21:31:13.185Z"
+}

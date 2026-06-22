@@ -1,0 +1,18 @@
+{
+  "address": "0x3af57c0f8e76277f58ca09d03ace050c5dca4671",
+  "chain_id": 42161,
+  "contract_name": "Manager_Arbitrum",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 76,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T15:14:39.846Z"
+}

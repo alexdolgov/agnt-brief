@@ -1,0 +1,1170 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "urm",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "urmSwapper",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "urmOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "urmUsdcPool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nftId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "urmSold",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcReceived",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcToLp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "usdcToBuy",
+        "type": "uint256"
+      }
+    ],
+    "name": "AbovePegDefenseExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "sellRage",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rageSold",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "urmReceived",
+        "type": "uint256"
+      }
+    ],
+    "name": "BelowPegDefenseExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "FortressFinalSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "urmAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "FortressPaid",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nftId",
+        "type": "uint256"
+      }
+    ],
+    "name": "NftLocked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SupplyBurned",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "percent",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minted",
+        "type": "uint256"
+      }
+    ],
+    "name": "SupplyRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "towerAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "slot",
+        "type": "uint8"
+      }
+    ],
+    "name": "TowerRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "towerAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "slot",
+        "type": "uint8"
+      }
+    ],
+    "name": "TowerSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "recipientPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UrmStructs.FortressTowerConfig[9]",
+        "name": "configs",
+        "type": "tuple[9]"
+      }
+    ],
+    "name": "TowersConfigSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "requested",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "transferred",
+        "type": "uint256"
+      }
+    ],
+    "name": "UrmRequested",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "towerAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "slot",
+        "type": "uint8"
+      }
+    ],
+    "name": "addTower",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "version",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "automator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner2",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rbpAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "urmUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageUsdcPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "urmBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdcBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hestiaBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circleBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingAssetsValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDefenseSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ragePoolUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageDepotValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageDepotRage",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "assetsValuePercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ragePoolPercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint32",
+                "name": "twap",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "abovePegThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "belowPegThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "belowPegThreshold2",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "abovePegDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "belowPegDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "abovePegBuy",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pegDefenseTarget",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "requestSupplyPercent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "requestSupplyMin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "burnSupplyMin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "syncTowers",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collectFeesDelay",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "liquidityIncrease",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct UrmStructs.FortressConfig",
+            "name": "config",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tower1",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower2",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower3",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower4",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower5",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower6",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower7",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower8",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tower9",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "pendingTower",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "ownerProposerTower",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "pendingTowerActive",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "pendingTowerSlot",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bool",
+                "name": "pendingTowerIsAdd",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "fortressFinalProposer",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "fortressFinal",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "urmUsdcPoolToken0",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "nftLocked",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextConfigTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nextPegDefenseTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "defenseCounter",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastPegDefense",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastPegDefenseType",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastCollectFees",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "urmSoldAbovePeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalRageBuy",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalHestiaBuy",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalCircleBuy",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "urmBoughtBelowPeg",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalRageSold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalHestiaSold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalCircleSold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountUrmMinted",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastRequestSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountUrmBurned",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastBurnSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "payFortressUrm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nftFeesUrm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "recipientUrm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "yieldUrm",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct UrmStructs.FortressStateValue",
+            "name": "state",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockNft",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "overview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "towerUsdcPooled",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUsdcStored",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUsdc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUrmPooled",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUrmStored",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUrmBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "towerUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalUsdcPooled",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalUrmPooled",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalExcludedUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalIncludedUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageDefense",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rageDefenseValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingDefense",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingDefenseValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "softDefense",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hardDefense",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "counterDefense",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "softDefenseSurplus",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalDefense",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalDefenseSurplus",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "backableUrm",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressOverview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "urmAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "payFortress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "defenseSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "pegDefense",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "defenseSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "pegDefenseOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "pegDefenseAvailable",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "pegDefenseValid",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "requestSupply",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "collectFees",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "towerSyncActive",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "towerSyncRequested",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool[9]",
+            "name": "preSyncRequested",
+            "type": "bool[9]"
+          },
+          {
+            "internalType": "uint256[9]",
+            "name": "preSyncUrm",
+            "type": "uint256[9]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "urmToSell",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityIncrease",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "abovePegDefense",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "belowPegDefense",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "belowPegDefenseEnoughRage",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "belowPegDefenseEnoughUnderlying",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "burnSupply",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "required",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressPegDefenseOverview",
+        "name": "pdo",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "towerAddr",
+        "type": "address"
+      }
+    ],
+    "name": "removeTower",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "assetsValuePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ragePoolPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twap",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "abovePegThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "belowPegThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "belowPegThreshold2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "abovePegDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "belowPegDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "abovePegBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pegDefenseTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestSupplyPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestSupplyMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "burnSupplyMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "syncTowers",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collectFeesDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "liquidityIncrease",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressConfig",
+        "name": "newConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "setConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "setFortressFinal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "recipientPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressTowerConfig[9]",
+        "name": "configs",
+        "type": "tuple[9]"
+      }
+    ],
+    "name": "setTowersConfigs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "towersOverview",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "towerAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "slot",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipientPercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastRequest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipientUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payFortressUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateAdd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestableUrm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "urmBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct UrmStructs.FortressTower[9]",
+        "name": "records",
+        "type": "tuple[9]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAdr",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

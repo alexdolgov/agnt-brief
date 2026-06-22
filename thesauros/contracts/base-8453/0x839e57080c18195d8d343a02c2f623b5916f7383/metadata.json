@@ -1,0 +1,17 @@
+{
+  "address": "0x839e57080c18195d8d343a02c2f623b5916f7383",
+  "chain_id": 8453,
+  "contract_name": "VaultManager",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-21T05:09:46.188Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x14f35dd7fc90eb577b79d3de945a949c06d09dd2",
+  "chain_id": 42161,
+  "contract_name": "XERC20",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-19T11:56:46.083Z"
+}
